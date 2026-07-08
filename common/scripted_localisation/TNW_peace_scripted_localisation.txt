@@ -1,0 +1,119 @@
+defined_text = {
+	#战争结语
+	name = TNW_Getwarpeacet
+#	text = {
+		#刻晴战败（例子）
+#		trigger = {
+#			event_target:winning_country = {
+#				or = {
+#					is_nominate_liyue = yes
+#					original_tag = ZDG
+#				}
+#			}
+#			event_target:losing_country = {
+#				original_tag = KQG
+#				NOT = {
+#					is_subject_of = ZDG
+#				}
+#			}
+#		}
+#		localization_key = TNW_Keqingzhanbai
+#	}
+	text = {
+		#巴伐利亚战败
+		trigger = {
+			event_target:winning_country = {
+				original_tag = WGR
+			}
+			event_target:losing_country = {
+				original_tag = GER
+			}
+		}
+		localization_key = TNW_GER_zhanbaitonyonjieyu
+	}
+	text = {
+		#解放阵线赢得带英内战
+		trigger = {
+			event_target:winning_country = {
+				original_tag = BLF
+			}
+			event_target:losing_country = {
+				original_tag = ENG
+			}
+		}
+		localization_key = TNW_BLF_win_civil_war
+	}
+	text = {
+		#劳保赢得带英内战
+		trigger = {
+			event_target:winning_country = {
+				original_tag = ENG
+			}
+			event_target:losing_country = {
+				original_tag = BLF
+			}
+		}
+		localization_key = TNW_ENG_win_civil_war
+	}
+	#通用结语
+	text = {
+		localization_key = TNW_zhanbaitonyonjieyu
+	}
+}
+
+defined_text = {
+	#战争描述
+	name = TNW_Getwapeace_description
+#	text = {
+#		#联合阵线成功（例子）
+#		trigger = {
+#			event_target:winning_country = {
+#				has_global_flag = liyue_unified
+#			}
+#			event_target:losing_country = {
+#				original_tag = ZDG
+#			}
+#		}
+#		localization_key = TNW_lianhezhenxianchenggon
+#	}
+	text = {
+		#巴伐利亚战败
+		trigger = {
+			event_target:winning_country = {
+				original_tag = WGR
+			}
+			event_target:losing_country = {
+				original_tag = GER
+			}
+		}
+		localization_key = TNW_GER_wapeace_description_tonyon
+	}
+	text = {
+		#解放阵线赢得带英内战
+		trigger = {
+			event_target:winning_country = {
+				original_tag = BLF
+			}
+			event_target:losing_country = {
+				original_tag = ENG
+			}
+		}
+		localization_key = TNW_BLF_win_civil_war_wapeace_description
+	}
+	text = {
+		#劳保赢得带英内战
+		trigger = {
+			event_target:winning_country = {
+				original_tag = ENG
+			}
+			event_target:losing_country = {
+				original_tag = BLF
+			}
+		}
+		localization_key = TNW_ENG_win_civil_war_wapeace_description
+	}
+	#通用描述
+	text = {
+		localization_key = TNW_wapeace_description_tonyon
+	}
+}

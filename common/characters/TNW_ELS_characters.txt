@@ -1,0 +1,16 @@
+characters = {
+	ELS_Farabundo_Marti = {
+		name = ELS_Farabundo_Marti
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ELS_Farabundo_Marti
+			}
+		}
+		country_leader = {
+			desc = ELS_Farabundo_Marti_desc
+			ideology = Classical_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+}

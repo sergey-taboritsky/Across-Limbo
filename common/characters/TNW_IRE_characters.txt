@@ -1,0 +1,19 @@
+characters = {
+	#皮达尔·奥唐奈尔
+	IRE_Peadar_ODonnell = {
+		name = IRE_Peadar_ODonnell
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IRE_Peadar_ODonnell
+			}
+		}
+		country_leader = {
+			desc = IRE_Peadar_ODonnell_desc
+			ideology = Left_wing_nationalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

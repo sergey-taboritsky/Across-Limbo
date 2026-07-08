@@ -1,0 +1,114 @@
+add_namespace = SHX_event
+
+country_event = {
+	id = SHX_event.1
+	title = SHX_event.1.t
+	desc = SHX_event.1.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SHX_event.1.a
+		CHI = {
+			end_puppet = YUN
+			end_puppet = GXC
+			end_puppet = XSM
+			end_puppet = SHX
+			end_puppet = TIB
+		}
+		set_politics = {
+			ruling_party = Absolutism
+			elections_allowed = no
+		}
+		set_popularities = {
+			communist = 3
+			syndicalism = 0
+			socialism = 4
+			Social_democracy = 2
+			Liberalism = 4
+			Conservatism = 18
+			Authoritarianism = 21
+			Absolutism = 48
+			Nationalism = 0
+		}
+		hidden_effect = {
+			country_event = { id = SHX_event.2 days = 28 }
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = CHI_news_event.1
+			}
+		}
+	}
+}
+country_event = {
+	id = SHX_event.2
+	title = SHX_event.2.t
+	desc = SHX_event.2.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SHX_event.2.a
+		set_global_flag = CHI_central_plains_war_global_flag
+		set_cosmetic_tag = SHX_beiping_government
+		SHX = {
+			transfer_state = 608
+			transfer_state = 609
+			transfer_state = 614
+			transfer_state = 1118
+			every_owned_state = {
+				add_core_of = SHX
+			}
+			declare_war_on = {
+				target = CHI
+				type = civil_war
+			}
+		}
+		set_capital = 608
+		set_autonomy = {
+			target = GXC
+			autonomous_state = autonomy_sea_warlord_subject
+		}
+		GXC = {
+			set_cosmetic_tag = SHX_beiping_government_south
+			transfer_state = 603
+			transfer_state = 605
+			transfer_state = 748
+			transfer_state = 1116
+			every_owned_state = {
+				add_core_of = GXC
+			}
+		}
+		SCN = {
+			transfer_state = 751
+			transfer_state = 1120
+			transfer_state = 753
+			transfer_state = 752
+			every_owned_state = {
+				add_core_of = SCN
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = CHI_news_event.2
+			}
+		}
+		CHI = {
+			country_event = { id = CHI_event.4 }
+			if = {
+				limit = {
+					has_country_flag = CHI_Tan_Pingshan_in_Guangdong_flag
+				}
+				country_event = { id = CHI_event.6 days = 7 }
+			}
+			else = {
+				country_event = { id = CHI_event.5 days = 7 }
+			}
+		}
+	}
+}

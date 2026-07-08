@@ -1,0 +1,16 @@
+scripted_gui = {
+	TNW_FRA_souvarine_treint_balance_Scripted_GUI = {
+		context_type = decision_category
+		window_name = "TNW_FRA_souvarine_treint_balance_Scripted_GUI"
+
+		properties = {
+			FRA_internal_balance_gui_window_progress = {
+				frame = FRA_internal_balance_total_var
+			}
+		}
+		effects = {
+		}
+		triggers = {
+		}
+	}
+}

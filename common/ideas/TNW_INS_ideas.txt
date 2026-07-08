@@ -1,0 +1,49 @@
+ideas = {
+	country = {
+		INS_Republik_yang_Belum_Selesai = {
+			allowed = {
+				original_tag = INS
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+			}
+		}
+		INS_Mata_dari_Seberang = {
+			allowed = {
+				original_tag = INS
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+			}
+		}
+		INS_Oposisi_Berkepala_Tiga = {
+			allowed = {
+				original_tag = INS
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+			}
+		}
+		INS_Mesin_Jawa = {
+			allowed = {
+				original_tag = INS
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+			}
+		}
+		INS_Tentara_Gado_Gado = {
+			allowed = {
+				original_tag = INS
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+			}
+		}
+	}
+}

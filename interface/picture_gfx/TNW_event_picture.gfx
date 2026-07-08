@@ -1,0 +1,68 @@
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_news_event_BRM_War_Outbreak"
+		texturefile = "gfx/event_pictures/BRM_War_Outbreak.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_TUR_Sultans_Death"
+		texturefile = "gfx/event_pictures/TUR_Sultans_Death.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_JAP_ceasefire_agreement"
+		texturefile = "gfx/event_pictures/JAP_ceasefire_agreement.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_JAP_Syndicalism_Realised"
+		texturefile = "gfx/event_pictures/JAP_Syndicalism_Realised.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_JAP_Syndicalism_Failure"
+		texturefile = "gfx/event_pictures/JAP_Syndicalism_Failure.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_JAP_Northern_Aggression_1"
+		texturefile = "gfx/event_pictures/JAP_Northern_Aggression_1.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_JAP_Northern_Aggression_2"
+		texturefile = "gfx/event_pictures/JAP_Northern_Aggression_2.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_JAP_Svellemoi_Crisis"
+		texturefile = "gfx/event_pictures/JAP_Svellemoi_Crisis.png"
+	}
+
+	spriteType = {
+		name = "GFX_event_JAP_taiwannanbowan"
+		texturefile = "gfx/event_pictures/JAP_taiwannanbowan.jpg"
+	}	
+	spriteType = {
+		name = "GFX_event_JAP_democracy_victory"
+		texturefile = "gfx/event_pictures/JAP_happy_Katayama_Tetsu.dds"
+	}	
+	spriteType = {
+		name = "GFX_event_JAP_Toseiha_victory"
+		texturefile = "gfx/event_pictures/JAP_tetsuzan_nagata.dds"
+	}	
+	spriteType = {
+		name = "GFX_event_JAP_Kodoha_victory"
+		texturefile = "gfx/event_pictures/JAP_Fumimaro_Konoe.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_Vienna_Spring"
+		texturefile = "gfx/event_pictures/Vienna_Spring.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_Operation_Thunderstorm"
+		texturefile = "gfx/event_pictures/Operation_Thunderstorm.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_generic_Nuke"
+		texturefile = "gfx/event_pictures/generic_Nuke.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_British_Civil_War"
+		texturefile = "gfx/event_pictures/British_Civil_War.dds"
+	}
+}

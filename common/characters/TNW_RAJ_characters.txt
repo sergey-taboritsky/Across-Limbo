@@ -1,0 +1,19 @@
+characters = {
+	#萨达尔·帕特尔
+	RAJ_Sardar_Patel = {
+		name = RAJ_Sardar_Patel
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RAJ_Sardar_Patel
+			}
+		}
+		country_leader = {
+			desc = RAJ_Sardar_Patel_desc
+			ideology = National_Conservatism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

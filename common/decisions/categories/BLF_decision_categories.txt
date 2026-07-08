@@ -1,0 +1,10 @@
+BLF_debug = {
+	icon = GFX_decision_category_SOV_permanent_revolution
+	allowed = {
+		original_tag = BLF
+	}
+	visible = {
+		is_debug = yes
+	}
+	priority = 100
+}

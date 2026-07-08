@@ -1,0 +1,24 @@
+﻿capital = 59
+
+set_research_slots = 3
+set_convoys = 50
+set_stability = 0.75
+
+recruit_character = DDR_Anton_Rosinke
+recruit_character = DDR_Otto_Grotewohl
+
+set_politics = {
+	ruling_party = syndicalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+set_popularities = {
+	syndicalism = 60
+	socialism = 40
+}
+
+add_ideas = {
+	phalanstere_aligned_nation
+}

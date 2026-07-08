@@ -1,0 +1,28 @@
+﻿l_simp_chinese:
+#人物
+ SWE_Frans_Severin: "弗朗斯·塞韦林"
+ SWE_Frans_Severin_desc: ""
+
+#民族精神
+ 
+#政党名字
+ SWE_communist_party: "-"
+ SWE_communist_party_long: "-"
+ SWE_syndicalism_party: "瑞典工人中央组织"
+ SWE_syndicalism_party_long: "瑞典工人中央组织(Sveriges Arbetares Central Ollanisation)"
+ SWE_socialism_party: "-"
+ SWE_socialism_party_long: "-"
+ SWE_Social_democracy_party: ""
+ SWE_Social_democracy_party_long: "-"
+ SWE_Liberalism_party: "-"
+ SWE_Liberalism_party_long: "-"
+ SWE_Conservatism_party: "-"
+ SWE_Conservatism_party_long: "-"
+ SWE_Authoritarianism_party: "-"
+ SWE_Authoritarianism_party_long: "-"
+ SWE_Absolutism_party: "-"
+ SWE_Absolutism_party_long: "-"
+ SWE_Nationalism_party: "-"
+ SWE_Nationalism_party_long: "-"
+
+#事件

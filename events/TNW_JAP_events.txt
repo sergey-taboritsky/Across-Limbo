@@ -1,0 +1,487 @@
+add_namespace = JAP_event
+add_namespace = JAP_news_event
+
+news_event = {
+	id = JAP_news_event.1
+	title = JAP_news_event.1.t
+	desc = JAP_news_event.1.d
+	picture = GFX_news_event_JAP_ceasefire_agreement
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_idea = phalanstere_aligned_nation
+					has_idea = moscow_aligned_nation
+					original_tag = CHI
+					original_tag = PRC
+					original_tag = JAP
+					original_tag = IAS
+				}
+			}
+		}
+		name = JAP_news_event.1.a
+	}
+	option = {
+		name = JAP_news_event.1.b
+		trigger = {
+			has_idea = phalanstere_aligned_nation
+			NOT = {
+				original_tag = CHI
+				original_tag = PRC
+				original_tag = JAP
+				original_tag = IAS
+			}
+		}
+	}
+	option = {
+		trigger = {
+			has_idea = moscow_aligned_nation
+			NOT = {
+				original_tag = CHI
+				original_tag = PRC
+				original_tag = JAP
+				original_tag = IAS
+			}
+		}
+		name = JAP_news_event.1.c
+	}
+	option = {
+		trigger = {
+			OR = {
+				original_tag = CHI
+				original_tag = PRC
+			}
+		}
+		name = JAP_news_event.1.e
+	}
+	option = {
+		trigger = {
+			original_tag = JAP
+		}
+		name = JAP_news_event.1.f
+	}
+	option = {
+		trigger = {
+			original_tag = IAS
+		}
+		name = JAP_news_event.1.g
+	}
+}
+news_event = {
+	id = JAP_news_event.2
+	title = JAP_news_event.2.t
+	desc = JAP_news_event.2.d
+	picture = GFX_news_event_JAP_Syndicalism_Realised
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_idea = phalanstere_aligned_nation
+					has_idea = moscow_aligned_nation
+					original_tag = CHI
+					original_tag = PRC
+					original_tag = USA
+				}
+			}
+		}
+		name = JAP_news_event.2.a
+	}
+	option = {
+		trigger = {
+			has_idea = phalanstere_aligned_nation
+			NOT = {
+				original_tag = CHI
+				original_tag = PRC
+				original_tag = USA
+			}
+		}
+		name = JAP_news_event.2.b
+	}
+	option = {
+		trigger = {
+			original_tag = USA
+		}
+		name = JAP_news_event.2.c
+	}
+	option = {
+		trigger = {
+			has_idea = moscow_aligned_nation
+			NOT = {
+				original_tag = CHI
+				original_tag = PRC
+			}
+		}
+		name = JAP_news_event.3.e
+	}
+	option = {
+		trigger = {
+			OR = {
+				original_tag = CHI
+				original_tag = PRC
+			}
+		}
+		name = JAP_news_event.2.f
+	}
+}
+
+news_event = {
+	id = JAP_news_event.3
+	title = JAP_news_event.3.t
+	desc = JAP_news_event.3.d
+	picture = GFX_news_event_JAP_Syndicalism_Failure
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_idea = phalanstere_aligned_nation
+					has_idea = moscow_aligned_nation
+					original_tag = CHI
+					original_tag = PRC
+				}
+			}
+		}
+		name = JAP_news_event.3.a
+	}
+	option = {
+		trigger = {
+			has_idea = phalanstere_aligned_nation
+			NOT = {
+				original_tag = CHI
+				original_tag = PRC
+			}
+		}
+		name = JAP_news_event.3.b
+	}
+	option = {
+		trigger = {
+			has_idea = moscow_aligned_nation
+			NOT = {
+				original_tag = CHI
+				original_tag = PRC
+			}
+		}
+		name = JAP_news_event.3.c
+	}
+	option = {
+		trigger = {
+			OR = {
+				original_tag = CHI
+				original_tag = PRC
+			}
+		}
+		name = JAP_news_event.3.e
+	}
+}
+
+news_event = {
+	id = JAP_news_event.4
+	title = JAP_news_event.4.t
+	desc = JAP_news_event.4.d
+	picture = GFX_news_event_JAP_Northern_Aggression_1
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_idea = phalanstere_aligned_nation
+					has_idea = moscow_aligned_nation
+					original_tag = CHI
+					original_tag = PRC
+				}
+			}
+		}
+		name = JAP_news_event.4.a
+	}
+	option = {
+		trigger = {
+			has_idea = phalanstere_aligned_nation
+			NOT = {
+				original_tag = CHI
+				original_tag = PRC
+			}
+		}
+		name = JAP_news_event.4.b
+	}
+	option = {
+		trigger = {
+			has_idea = moscow_aligned_nation
+			NOT = {
+				original_tag = CHI
+				original_tag = PRC
+			}
+		}
+		name = JAP_news_event.4.c
+	}
+	option = {
+		trigger = {
+			OR = {
+				original_tag = CHI
+				original_tag = PRC
+			}
+		}
+		name = JAP_news_event.4.e
+	}
+}
+
+news_event = {
+	id = JAP_news_event.5
+	title = JAP_news_event.5.t
+	desc = JAP_news_event.5.d
+	picture = GFX_news_event_JAP_Northern_Aggression_2
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_idea = phalanstere_aligned_nation
+					has_idea = moscow_aligned_nation
+					original_tag = CHI
+					original_tag = PRC
+				}
+			}
+		}
+		name = JAP_news_event.5.a
+	}
+	option = {
+		trigger = {
+			has_idea = phalanstere_aligned_nation
+			NOT = {
+				original_tag = CHI
+				original_tag = PRC
+			}
+		}
+		name = JAP_news_event.5.b
+	}
+	option = {
+		trigger = {
+			has_idea = moscow_aligned_nation
+			NOT = {
+				original_tag = CHI
+				original_tag = PRC
+			}
+		}
+		name = JAP_news_event.5.c
+	}
+	option = {
+		trigger = {
+			OR = {
+				original_tag = CHI
+				original_tag = PRC
+			}
+		}
+		name = JAP_news_event.5.e
+	}
+}
+
+news_event = {
+	id = JAP_news_event.6
+	title = JAP_news_event.6.t
+	desc = JAP_news_event.6.d
+	picture = GFX_news_event_JAP_Svellemoi_Crisis
+	is_triggered_only = yes
+	
+	option = {
+		name = JAP_news_event.5.a
+	}
+}
+
+country_event = {
+	id = JAP_event.1
+	title = JAP_event.1.t
+	desc = JAP_event.1.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.1.a
+	}
+}
+country_event = {
+	id = JAP_event.2
+	title = JAP_event.2.t
+	desc = JAP_event.2.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.2.a
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = JAP_news_event.1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JAP_event.100
+	title = JAP_event.100.t
+	desc = JAP_event.100.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.100.a
+		set_politics = {
+			ruling_party = communist
+		}
+		add_popularities = {
+			ideology = communist
+			popularity = 1
+		}
+		set_party_name = {
+			ideology = communist
+			long_name = JAP_communist_JCLP_party_long
+			name = JAP_communist_JCLP_party
+		}
+		promote_character = JAP_Fukumoto_Kazuo
+	}
+	option = {
+		name = JAP_event.100.b
+		set_politics = {
+			ruling_party = communist
+		}
+		add_popularities = {
+			ideology = communist
+			popularity = 1
+		}
+		set_party_name = {
+			ideology = communist
+			long_name = JAP_communist_JSP_LZXH_party_long
+			name = JAP_communist_JSP_LZXH_party
+		}
+		promote_character = JAP_Sakisaka_Itsuro
+	}
+	option = {
+		name = JAP_event.100.c
+		set_politics = {
+			ruling_party = communist
+		}
+		add_popularities = {
+			ideology = communist
+			popularity = 1
+		}
+		set_party_name = {
+			ideology = communist
+			long_name = JAP_communist_maoism_party_long
+			name = JAP_communist_maoism_party
+		}
+		promote_character = JAP_Kuroda_Hisao
+	}
+}
+country_event = {
+	id = JAP_event.101
+	title = JAP_event.101.t
+	desc = JAP_event.101.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.101.a
+		set_politics = {
+			ruling_party = syndicalism
+		}
+		add_popularities = {
+			ideology = syndicalism
+			popularity = 1
+		}
+		set_party_name = {
+			ideology = syndicalism
+			long_name = JAP_syndicalism_TUC_party_long
+			name = JAP_syndicalism_TUC_party
+		}
+		promote_character = JAP_Minoru_Takano
+	}
+	option = {
+		name = JAP_event.101.b
+		set_politics = {
+			ruling_party = socialism
+		}
+		add_popularities = {
+			ideology = socialism
+			popularity = 1
+		}
+		set_party_name = {
+			ideology = socialism
+			long_name = JAP_socialism_establishment_party_long
+			name = JAP_socialism_establishment_party
+		}
+		promote_character = JAP_Oyama_Ikuo
+	}
+	option = {
+		name = JAP_event.101.c
+		set_politics = {
+			ruling_party = socialism
+		}
+		add_popularities = {
+			ideology = socialism
+			popularity = 1
+		}
+		set_party_name = {
+			ideology = socialism
+			long_name = JAP_socialism_planning_party_long
+			name = JAP_socialism_planning_party
+		}
+		promote_character = JAP_Kazahaya_Yasoji
+	}
+}
+country_event = {
+	id = JAP_event.102
+	title = JAP_event.102.t
+	desc = JAP_event.102.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.102.a
+		set_politics = {
+			ruling_party = Social_democracy
+		}
+		add_popularities = {
+			ideology = Social_democracy
+			popularity = 1
+		}
+		set_party_name = {
+			ideology = Social_democracy
+			long_name = JAP_Social_democracy_DSP_party_long
+			name = JAP_Social_democracy_DSP_party
+		}
+		promote_character = JAP_Nishio_Suehiro
+	}
+	option = {
+		name = JAP_event.102.b
+		set_politics = {
+			ruling_party = Social_democracy
+		}
+		add_popularities = {
+			ideology = Social_democracy
+			popularity = 1
+		}
+		set_party_name = {
+			ideology = Social_democracy
+			long_name = JAP_Social_democracy_JSP_reformist_party_long
+			name = JAP_Social_democracy_JSP_reformist_party
+		}
+		promote_character = JAP_Eda_Saburo
+	}
+	option = {
+		name = JAP_event.102.c
+		set_politics = {
+			ruling_party = Absolutism
+		}
+		add_popularities = {
+			ideology = Absolutism
+			popularity = 1
+		}
+		set_party_name = {
+			ideology = Absolutism
+			long_name = JAP_Absolutism_occupation_party_long
+			name = JAP_Absolutism_occupation_party
+		}
+		promote_character = JAP_Jack_Shirai
+	}
+}

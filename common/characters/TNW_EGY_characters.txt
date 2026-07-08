@@ -1,0 +1,111 @@
+characters = {
+	#卡迈勒·哈利姆
+	EGY_Kamal_Abd_al_Halim = {
+		name = EGY_Kamal_Abd_al_Halim
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_EGY_Kamal_Abd_al_Halim
+			}
+		}
+		country_leader = {
+			desc = EGY_Kamal_Abd_al_Halim_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+	}
+	#亨利·库里尔
+	EGY_Henri_Curiel = {
+		name = EGY_Henri_Curiel
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_EGY_Henri_Curiel
+			}
+
+		}
+		country_leader = {
+			desc = EGY_Henri_Curiel_desc
+			ideology = Marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+	}
+	#希里尔·施瓦茨
+	EGY_Hillel_Schwartz = {
+		name = EGY_Hillel_Schwartz
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_EGY_Hillel_Schwartz
+			}
+		}
+		country_leader = {
+			desc = EGY_Hillel_Schwartz_desc
+			ideology = market_socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+	}
+	#尤塞夫·达尔维什
+	EGY_Youssef_Darwish = {
+		name = EGY_Youssef_Darwish
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_EGY_Youssef_Darwish
+			}
+		}
+		country_leader = {
+			desc = EGY_Youssef_Darwish_desc
+			ideology = Centralised_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+	}
+	#穆罕默德·纳吉布
+	EGY_Mohammed_Naguib = {
+		name = EGY_Mohammed_Naguib
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_EGY_Mohammed_Naguib
+			}
+		}
+		country_leader = {
+			desc = EGY_Mohammed_Naguib_desc
+			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+	}
+	#易卜拉辛·舒克里
+	EGY_Ibrahim_Shoukri = {
+		name = EGY_Ibrahim_Shoukri
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_EGY_Ibrahim_Shoukri
+			}
+		}
+		country_leader = {
+			desc = EGY_Ibrahim_Shoukri_desc
+			ideology = Ultra_Nationalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+	}
+}

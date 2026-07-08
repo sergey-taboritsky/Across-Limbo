@@ -1,0 +1,32 @@
+﻿capital = 335 #Jakarta
+
+#oob = "INS_1936"
+
+set_research_slots = 2
+
+set_convoys = 25
+set_popularities = {
+	communist = 9
+	syndicalism = 6
+	socialism = 8
+	Social_democracy = 10
+	Liberalism = 3
+	Conservatism = 17
+	Authoritarianism = 32
+	Absolutism = 0
+	Nationalism = 15
+}
+
+set_politics = {
+	ruling_party = Authoritarianism
+	elections_allowed = no
+}
+recruit_character = INS_Raden_Soetomo
+
+add_ideas = {
+	INS_Republik_yang_Belum_Selesai
+	INS_Mata_dari_Seberang
+	INS_Oposisi_Berkepala_Tiga
+	INS_Mesin_Jawa
+	INS_Tentara_Gado_Gado
+}

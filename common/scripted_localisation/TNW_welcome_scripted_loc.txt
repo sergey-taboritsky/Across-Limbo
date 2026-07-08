@@ -1,0 +1,326 @@
+defined_text = {
+	name = Get_TNW_welcome_change_button_text
+	text = {
+		trigger = {
+			check_variable = { temp_v = 1 }
+		}
+		localization_key = county_introduce
+	}
+	text = {
+		trigger = {
+			check_variable = { temp_v = 2 }
+		}
+		localization_key = thanks
+	}
+}
+defined_text = {
+	name = Get_TNW_welcome_country_intro_picture
+	text = {
+		trigger = { tag = FRA }
+		localization_key = GFX_TNW_welcome_FRA_intro_picture
+	}
+	text = {
+		trigger = { tag = BUL }
+		localization_key = GFX_TNW_welcome_BUL_intro_picture
+	}
+	text = {
+		trigger = { tag = DDR }
+		localization_key = GFX_TNW_welcome_DDR_intro_picture
+	}
+	text = {
+		trigger = { tag = SOV }
+		localization_key = GFX_TNW_welcome_SOV_intro_picture
+	}
+	text = {
+		trigger = { tag = WGR }
+		localization_key = GFX_TNW_welcome_WGR_intro_picture
+	}
+	text = {
+		trigger = { tag = JAP }
+		localization_key = GFX_TNW_welcome_JAP_intro_picture
+	}
+	text = {
+		trigger = { tag = ENG }
+		localization_key = GFX_TNW_welcome_ENG_intro_picture
+	}
+	text = {
+		trigger = { tag = GRE }
+		localization_key = GFX_TNW_welcome_GRE_intro_picture
+	}
+	text = {
+		trigger = { tag = TUR }
+		localization_key = GFX_TNW_welcome_TUR_intro_picture
+	}
+	text = {
+		trigger = { tag = POL }
+		localization_key = GFX_TNW_welcome_POL_intro_picture
+	}
+	text = {
+		trigger = { tag = TAT }
+		localization_key = GFX_TNW_welcome_TAT_intro_picture
+	}
+	text = {
+		trigger = { tag = CHI }
+		localization_key = GFX_TNW_welcome_TAT_intro_picture
+	}
+	text = {
+		trigger = { tag = MAL }
+		localization_key = GFX_TNW_welcome_TAT_intro_picture
+	}
+}
+defined_text = {
+	name = Get_TNW_welcome_country_intro_text
+	text = {
+		trigger = { 
+			tag = FRA 
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_FRA_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = BUL 
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_BUL_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = BUL 
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_BUL_intro_text_2
+	}
+	#
+	text = {
+		trigger = { 
+			tag = DDR 
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_DDR_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = DDR 
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_DDR_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = DDR 
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_DDR_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = DDR 
+			check_variable = { current_page = 4 }
+		}
+		localization_key = TNW_welcome_DDR_intro_text_4
+	}
+	text = {
+		trigger = { 
+			tag = DDR 
+			check_variable = { current_page = 5 }
+		}
+		localization_key = TNW_welcome_DDR_intro_text_5
+	}
+	text = {
+		trigger = { 
+			tag = SOV
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_SOV_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = WGR 
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_WGR_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = JAP 
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_JAP_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = JAP 
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_JAP_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = JAP 
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_JAP_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = JAP 
+			check_variable = { current_page = 4 }
+		}
+		localization_key = TNW_welcome_JAP_intro_text_4
+	}
+	text = {
+		trigger = { 
+			tag = JAP 
+			check_variable = { current_page = 5 }
+		}
+		localization_key = TNW_welcome_JAP_intro_text_5
+	}
+	text = {
+		trigger = { 
+			tag = ENG 
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_ENG_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = ENG 
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_ENG_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = ENG 
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_ENG_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = GRE 
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_GRE_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = GRE 
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_GRE_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = TUR 
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_TUR_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = TUR 
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_TUR_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = POL 
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_POL_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = POL 
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_POL_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = POL 
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_POL_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = TAT 
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_TAT_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = TAT 
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_TAT_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = CHI
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_CHI_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = CHI
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_CHI_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = CHI
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_CHI_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = CHI
+			check_variable = { current_page = 4 }
+		}
+		localization_key = TNW_welcome_CHI_intro_text_4
+	}
+	text = {
+		trigger = { 
+			tag = CHI
+			check_variable = { current_page = 5 }
+		}
+		localization_key = TNW_welcome_CHI_intro_text_5
+	}
+	text = {
+		trigger = { 
+			tag = MAL
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_MAL_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = MAL
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_MAL_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = MAL
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_MAL_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = MAL
+			check_variable = { current_page = 4 }
+		}
+		localization_key = TNW_welcome_MAL_intro_text_4
+	}
+}

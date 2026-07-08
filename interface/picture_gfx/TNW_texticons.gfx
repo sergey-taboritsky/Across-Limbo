@@ -1,0 +1,7 @@
+spriteTypes = {	
+	spriteType = {
+		name = "Guderian_signature"
+		texturefile = "gfx/interface/text_icon/Guderian_signature.dds"
+		legacy_lazy_load = no
+	}
+}

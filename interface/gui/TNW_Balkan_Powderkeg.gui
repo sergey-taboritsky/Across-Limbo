@@ -1,0 +1,114 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "TNW_Balkan_Powderkeg_Scripted_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 100%% height= 450 }
+
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Agean"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Agean"
+	    	position = { x= 290 y = 240 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Agean_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Albania"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Albania"
+	    	position = { x= 179 y = 179 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Albania_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Bulgaria"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Bulgaria"
+	    	position = { x= 240 y = 141 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Bulgaria_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Dobrugea"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Dobrugea"
+	    	position = { x= 319 y = 114 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Dobrugea_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Greece"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Greece"
+	    	position = { x= 182 y = 223 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Greece_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Illyria"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Illyria"
+	    	position = { x= 70 y = 81 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Illyria_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Kosovo"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Kosovo"
+	    	position = { x= 197 y = 159 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Kosovo_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Macedonia"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Macedonia"
+	    	position = { x= 203 y = 186 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Macedonia_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Moldavia"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Moldavia"
+	    	position = { x= 312 y = 37 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Moldavia_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Montenegro"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Montenegro"
+	    	position = { x= 162 y = 154 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Montenegro_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Nis"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Nis"
+	    	position = { x= 216 y = 125 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Nis_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Romania"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Romania"
+	    	position = { x= 241 y = 50 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Romania_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Serbia"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Serbia"
+	    	position = { x= 176 y = 124 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Serbia_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_South_Macedonia"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_South_Macedonia"
+	    	position = { x= 210 y = 191 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_South_Macedonia_tt"
+	    }
+		buttonType = {
+		    name ="TNW_Balkan_Powderkeg_Button_Thrace"
+			spriteType = "GFX_TNW_Balkan_Powderkeg_Button_Thrace"
+	    	position = { x= 313 y = 189 }
+			scale = 0.3
+	    	pdx_tooltip = "TNW_Balkan_Powderkeg_Button_Thrace_tt"
+	    }
+	}
+}

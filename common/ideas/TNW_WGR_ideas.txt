@@ -1,0 +1,256 @@
+ideas = {
+	country = {
+		#脆弱的和平
+		WGR_Fragile_peace = {
+			picture = GFX_idea_WGR_Fragile_peace
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = DDR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		#巴伐利亚独立危机
+		WGR_Bavarian_independence_crisis = {
+			picture = GFX_idea_WGR_Bavarian_independence_crisis
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				stability_weekly = -0.005
+				war_support_factor = -0.2
+				mobilization_speed = -0.2
+				conscription_factor = -0.2
+				political_power_factor = -0.2
+				TNW_Degree_extreme_organizations = 1
+			}
+		}
+		#巴伐利亚独立危机
+		WGR_Bavarian_independence_crisis_2 = {
+			picture = GFX_idea_WGR_Bavarian_independence_crisis
+			name = WGR_Bavarian_independence_crisis
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				stability_weekly = -0.002
+				war_support_factor = -0.2
+				mobilization_speed = -0.2
+				conscription_factor = -0.2
+				political_power_factor = -0.2
+				TNW_Degree_extreme_organizations = 1
+			}
+		}
+		#巴伐利亚独立危机
+		WGR_Bavarian_independence_crisis_3 = {
+			picture = GFX_idea_WGR_Bavarian_independence_crisis
+			name = WGR_Bavarian_independence_crisis
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.15
+				mobilization_speed = -0.15
+				conscription_factor = -0.15
+				political_power_factor = -0.15
+			}
+		}
+		#巴伐利亚独立危机
+		WGR_Bavarian_independence_crisis_4 = {
+			picture = GFX_idea_WGR_Bavarian_independence_crisis
+			name = WGR_Bavarian_independence_crisis
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.1
+				mobilization_speed = -0.1
+				conscription_factor = -0.1
+				political_power_factor = -0.1
+			}
+		}
+		#巴伐利亚独立危机
+		WGR_Bavarian_independence_crisis_5 = {
+			picture = GFX_idea_WGR_Bavarian_independence_crisis
+			name = WGR_Bavarian_independence_crisis
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.05
+				mobilization_speed = -0.05
+				conscription_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+		#羸弱不堪的经济
+		WGR_A_weak_economy = {
+			picture = GFX_idea_WGR_A_weak_economy
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				TNW_Degree_industrial_development = -1
+				global_building_slots_factor = -0.2
+				production_speed_buildings_factor = -0.2
+				local_resources_factor = -0.2
+				consumer_goods_factor = 0.5
+			}
+		}
+		#腐败的国防军
+		WGR_Corrupt_Wehrmacht = {
+			picture = GFX_idea_WGR_Corrupt_Wehrmacht
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				TNW_Degree_military_development = -1
+				experience_gain_army_factor = -0.5
+				experience_gain_navy_factor = -0.5
+				experience_gain_air_factor = -0.5
+				consumer_goods_factor = 0.1
+				army_core_attack_factor = -0.1
+				army_core_defence_factor = -0.1
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_speed_factor = -0.2
+				land_doctrine_cost_factor = 1
+				naval_doctrine_cost_factor = 1
+				air_doctrine_cost_factor = 1
+				supply_consumption_factor = 0.2
+				army_org_factor = -0.2
+				army_morale_factor = -0.2
+			}
+		}
+		#利用自由军团
+		WGR_Take_advantage_of_the_Freikorps = {
+			picture = GFX_idea_WGR_Take_advantage_of_the_Freikorps
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.05
+				weekly_manpower = 100
+				mobilization_speed = 0.05
+				required_garrison_factor = -0.05
+				political_power_cost = 0.1
+			}
+		}
+		#利用自由军团
+		WGR_Take_advantage_of_the_Freikorps_2 = {
+			picture = GFX_idea_WGR_Take_advantage_of_the_Freikorps
+			allowed = {
+				always = yes
+			}
+			name = WGR_Take_advantage_of_the_Freikorps
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.05
+				weekly_manpower = 100
+				mobilization_speed = 0.05
+				required_garrison_factor = -0.05
+				political_power_cost = 0.15
+			}
+		}
+		#不被信任的政府
+		WGR_A_government_that_is_not_trusted = {
+			picture = GFX_idea_WGR_A_government_that_is_not_trusted
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.1
+				political_advisor_cost_factor = 1
+				mobilization_laws_cost_factor = 1
+				trade_laws_cost_factor = 1
+				economy_cost_factor = 1
+				stability_factor = -0.2
+				war_support_factor = -0.2
+			}
+		}
+		#不被信任的政府
+		WGR_A_government_that_is_not_trusted_2 = {
+			picture = GFX_idea_WGR_A_government_that_is_not_trusted
+			name = WGR_A_government_that_is_not_trusted
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.1
+				political_advisor_cost_factor = 1
+				mobilization_laws_cost_factor = 1
+				trade_laws_cost_factor = 1
+				economy_cost_factor = 1
+				stability_factor = -0.15
+				war_support_factor = -0.2
+			}
+		}
+		#扩编警察部队
+		WGR_Expand_the_police_force = {
+			picture = GFX_idea_WGR_A_government_that_is_not_trusted
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 500
+				stability_weekly = 0.001
+			}
+		}
+		#成功被镇压的极端组织
+		WGR_Extremist_groups_that_have_been_successfully_suppressed = {
+			picture = GFX_idea_WGR_Extremist_groups_that_have_been_successfully_suppressed
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.002
+				political_power_factor = 0.15
+			}
+		}
+		#投资巴伐利亚地区
+		WGR_idea_01 = {
+			picture = GFX_idea_WGR_Extremist_groups_that_have_been_successfully_suppressed
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+		}
+		#投资巴伐利亚地区
+		WGR_idea_02 = {
+			picture = GFX_idea_WGR_Extremist_groups_that_have_been_successfully_suppressed
+			name = WGR_idea_01
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+}

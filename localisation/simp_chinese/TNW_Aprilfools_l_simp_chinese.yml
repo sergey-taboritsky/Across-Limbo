@@ -1,0 +1,43 @@
+﻿l_simp_chinese:
+#国家
+ CHI_AprilFools_faction: "三民主义国际"
+
+ CHI_AprilFools: "中华民国"
+ CHI_AprilFools_DEF: "中华民国"
+ USA_AprilFools: "新大陆行辕政治委员会"
+ USA_AprilFools_DEF: "新大陆行辕政治委员会"
+ ENG_AprilFools: "伦敦行辕政治委员会"
+ ENG_AprilFools_DEF: "伦敦行辕政治委员会"
+ FRA_AprilFools: "拉丁绥靖区"
+ FRA_AprilFools_DEF: "拉丁绥靖区"
+ GER_AprilFools: "日耳曼尼亚绥靖区"
+ GER_AprilFools_DEF: "日耳曼尼亚绥靖区"
+ PAL_AprilFools: "耶路撒冷行辕政治委员会"
+ PAL_AprilFools_DEF: "耶路撒冷行辕政治委员会"
+ HUN_AprilFools: "巴尔干绥靖区"
+ HUN_AprilFools_DEF: "巴尔干绥靖区"
+ RUS_AprilFools: "莫斯科行辕政治委员会"
+ RUS_AprilFools_DEF: "莫斯科行辕政治委员会"
+ MAL_AprilFools: "星岛行辕政治委员会"
+ MAL_AprilFools_DEF: "星岛行辕政治委员会"
+ KOR_AprilFools: "东洋绥靖区"
+ KOR_AprilFools_DEF: "东洋绥靖区"
+ FER_AprilFools: "中兴省"
+ FER_AprilFools_DEF: "中兴省"
+ YAK_AprilFools: "太平省"
+ YAK_AprilFools_DEF: "太平省"
+ TAY_AprilFools: "永宁省"
+ TAY_AprilFools_DEF: "永宁省"
+ KAZ_AprilFools: "永安省"
+ KAZ_AprilFools_DEF: "永安省"
+
+#政党
+ TNW_Aprilfools_party: "国民党"
+ TNW_Aprilfools_party_long: "中国国民党"
+
+#人物
+ PRC_Chen_Qiyuan: "陈其瑗"
+ PRC_Chen_Qiyuan_desc: "§Y出生于：§!§L1887年3月10日，大清帝国，广东省广州府番禺县§!\n\n§Y政治面貌：§!§p中国民主劳动党§!\n\n§Y人物背景：§!§L§!"
+ PRC_Ji_Fang: "季方"
+ PRC_Ji_Fang_desc: ""
+ PRC_Politburo_of_the_CCP: "中华苏维埃共和国临时中央政府"

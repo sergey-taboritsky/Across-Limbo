@@ -1,0 +1,434 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_WGR_0_1_0"
+		texturefile = "gfx/interface/goals/WGR_0_1_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_1"
+		texturefile = "gfx/interface/goals/WGR_0_1_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_10"
+		texturefile = "gfx/interface/goals/WGR_0_1_10.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_11"
+		texturefile = "gfx/interface/goals/WGR_0_1_11.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_12"
+		texturefile = "gfx/interface/goals/WGR_0_1_12.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_13"
+		texturefile = "gfx/interface/goals/WGR_0_1_13.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_14"
+		texturefile = "gfx/interface/goals/WGR_0_1_14.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_15"
+		texturefile = "gfx/interface/goals/WGR_0_1_15.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_16"
+		texturefile = "gfx/interface/goals/WGR_0_1_16.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_17"
+		texturefile = "gfx/interface/goals/WGR_0_1_17.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_18"
+		texturefile = "gfx/interface/goals/WGR_0_1_18.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_19"
+		texturefile = "gfx/interface/goals/WGR_0_1_19.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_2"
+		texturefile = "gfx/interface/goals/WGR_0_1_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_20"
+		texturefile = "gfx/interface/goals/WGR_0_1_20.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_21"
+		texturefile = "gfx/interface/goals/WGR_0_1_21.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_22"
+		texturefile = "gfx/interface/goals/WGR_0_1_22.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_23"
+		texturefile = "gfx/interface/goals/WGR_0_1_23.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_25"
+		texturefile = "gfx/interface/goals/WGR_0_1_25.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_3"
+		texturefile = "gfx/interface/goals/WGR_0_1_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_4"
+		texturefile = "gfx/interface/goals/WGR_0_1_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_5"
+		texturefile = "gfx/interface/goals/WGR_0_1_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_6"
+		texturefile = "gfx/interface/goals/WGR_0_1_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_7"
+		texturefile = "gfx/interface/goals/WGR_0_1_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_8"
+		texturefile = "gfx/interface/goals/WGR_0_1_8.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_0_1_9"
+		texturefile = "gfx/interface/goals/WGR_0_1_9.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Abolish_Article175"
+		texturefile = "gfx/interface/goals/WGR_Abolish_Article175.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Allow_for_public_elections"
+		texturefile = "gfx/interface/goals/WGR_Allow_for_public_elections.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_All_media_are_free"
+		texturefile = "gfx/interface/goals/WGR_All_media_are_free.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Cardiac_pacemaker"
+		texturefile = "gfx/interface/goals/WGR_Cardiac_pacemaker.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Clean_up_corruption"
+		texturefile = "gfx/interface/goals/WGR_Clean_up_corruption.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Expand_education_funding"
+		texturefile = "gfx/interface/goals/WGR_Expand_education_funding.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Fair_diligent_and_openminded"
+		texturefile = "gfx/interface/goals/WGR_Fair_diligent_and_openminded.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Family_suffrage"
+		texturefile = "gfx/interface/goals/WGR_Family_suffrage.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Forward_for_the_German_people"
+		texturefile = "gfx/interface/goals/WGR_Forward_for_the_German_people.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_German_National_Academy_Sciences"
+		texturefile = "gfx/interface/goals/WGR_German_National_Academy_Sciences.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Grain_procurement"
+		texturefile = "gfx/interface/goals/WGR_Grain_procurement.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Heavy_industry_subsidies"
+		texturefile = "gfx/interface/goals/WGR_Heavy_industry_subsidies.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Interracial_equality"
+		texturefile = "gfx/interface/goals/WGR_Interracial_equality.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Medical_reform"
+		texturefile = "gfx/interface/goals/WGR_Medical_reform.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_New_Road"
+		texturefile = "gfx/interface/goals/WGR_New_Road.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_New_water_conservancy"
+		texturefile = "gfx/interface/goals/WGR_New_water_conservancy.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_patent_protection"
+		texturefile = "gfx/interface/goals/WGR_patent_protection.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Please_exit_the_nobles"
+		texturefile = "gfx/interface/goals/WGR_Please_exit_the_nobles.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Prosperity_and_stable_development"
+		texturefile = "gfx/interface/goals/WGR_Prosperity_and_stable_development.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Restricting_officials"
+		texturefile = "gfx/interface/goals/WGR_Restricting_officials.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Revitalizing_the_economy"
+		texturefile = "gfx/interface/goals/WGR_Revitalizing_the_economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Sexual_liberation"
+		texturefile = "gfx/interface/goals/WGR_Sexual_liberation.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Silence_then_remain_silent"
+		texturefile = "gfx/interface/goals/WGR_Silence_then_remain_silent.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_The_liberation_of_thought"
+		texturefile = "gfx/interface/goals/WGR_The_liberation_of_thought.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_The_trade_union_serves_as_the_mouthpiece"
+		texturefile = "gfx/interface/goals/WGR_The_trade_union_serves_as_the_mouthpiece.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_The_victory_of_the_Social_Democrats"
+		texturefile = "gfx/interface/goals/WGR_The_victory_of_the_Social_Democrats.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Unify_the_banking_industry"
+		texturefile = "gfx/interface/goals/WGR_Unify_the_banking_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_When_the_blue_sky_kisses_the_earth"
+		texturefile = "gfx/interface/goals/WGR_When_the_blue_sky_kisses_the_earth.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_When_the_breeze_blows_the_Buddha_Field"
+		texturefile = "gfx/interface/goals/WGR_When_the_breeze_blows_the_Buddha_Field.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_When_the_soul_unfolds_its_wings"
+		texturefile = "gfx/interface/goals/WGR_When_the_soul_unfolds_its_wings.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Women_Rights_Law"
+		texturefile = "gfx/interface/goals/WGR_Women_Rights_Law.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Women_suffrage"
+		texturefile = "gfx/interface/goals/WGR_Women_suffrage.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Work_as_substitute_for_relief"
+		texturefile = "gfx/interface/goals/WGR_Work_as_substitute_for_relief.dds"
+	}
+	SpriteType = {
+		name = "GFX_WGR_Freedom_equality_fraternity"
+		texturefile = "gfx/interface/goals/WGR_Freedom_equality_fraternity.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_Liebknecht_final_days"
+		texturefile = "gfx/interface/goals/DDR_Liebknecht_final_days.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_review_politics"
+		texturefile = "gfx/interface/goals/DDR_review_politics.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_providing_special_support"
+		texturefile = "gfx/interface/goals/DDR_providing_special_support.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_Farewell_address"
+		texturefile = "gfx/interface/goals/DDR_Farewell_address.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_review_industry"
+		texturefile = "gfx/interface/goals/DDR_review_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_banking_reform"
+		texturefile = "gfx/interface/goals/DDR_banking_reform.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_review_agriculture"
+		texturefile = "gfx/interface/goals/DDR_review_agriculture.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_agricultural_subsidies"
+		texturefile = "gfx/interface/goals/DDR_agricultural_subsidies.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_review_red_army"
+		texturefile = "gfx/interface/goals/DDR_review_red_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_anti_Freikorps_effort"
+		texturefile = "gfx/interface/goals/DDR_anti_Freikorps_effort.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_review_diplomacy"
+		texturefile = "gfx/interface/goals/DDR_review_diplomacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_Nordic_friendship"
+		texturefile = "gfx/interface/goals/DDR_Nordic_friendship.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_the_fourth_Volkskammer"
+		texturefile = "gfx/interface/goals/DDR_the_fourth_Volkskammer.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_the_next_world_war"
+		texturefile = "gfx/interface/goals/DDR_the_next_world_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_Verwaltung_Aufklarung"
+		texturefile = "gfx/interface/goals/DDR_Verwaltung_Aufklarung.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_help_world_revolution"
+		texturefile = "gfx/interface/goals/DDR_help_world_revolution.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_establish_KdoGT"
+		texturefile = "gfx/interface/goals/DDR_establish_KdoGT.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_penetrating_the_border"
+		texturefile = "gfx/interface/goals/DDR_penetrating_the_border.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_italy_volunteer"
+		texturefile = "gfx/interface/goals/DDR_italy_volunteer.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_china_volunteer"
+		texturefile = "gfx/interface/goals/DDR_china_volunteer.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nordic_volunteer"
+		texturefile = "gfx/interface/goals/DDR_nordic_volunteer.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_spain_volunteer"
+		texturefile = "gfx/interface/goals/DDR_spain_volunteer.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_hungary_volunteer"
+		texturefile = "gfx/interface/goals/DDR_hungary_volunteer.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_strengthen_border_army"
+		texturefile = "gfx/interface/goals/DDR_strengthen_border_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_Unternehmen_Siegfried"
+		texturefile = "gfx/interface/goals/DDR_Unternehmen_Siegfried.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_crypto_bomb_focus"
+		texturefile = "gfx/interface/goals/DDR_crypto_bomb_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_strengthen_border"
+		texturefile = "gfx/interface/goals/DDR_strengthen_border.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_strengthen_costal"
+		texturefile = "gfx/interface/goals/DDR_strengthen_costal.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_Unternehmen_Walpurgisnacht"
+		texturefile = "gfx/interface/goals/DDR_Unternehmen_Walpurgisnacht.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_reorganize_general_staff"
+		texturefile = "gfx/interface/goals/DDR_reorganize_general_staff.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_military_political_departement"
+		texturefile = "gfx/interface/goals/DDR_military_political_departement.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_soldiers_and_civilians"
+		texturefile = "gfx/interface/goals/DDR_soldiers_and_civilians.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_Obey_discipline"
+		texturefile = "gfx/interface/goals/DDR_Obey_discipline.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_officers_initiative"
+		texturefile = "gfx/interface/goals/DDR_officers_initiative.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_reform_military_organization"
+		texturefile = "gfx/interface/goals/DDR_reform_military_organization.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_officers_and_soldiers"
+		texturefile = "gfx/interface/goals/DDR_officers_and_soldiers.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_discipline_and_style_building"
+		texturefile = "gfx/interface/goals/DDR_discipline_and_style_building.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_new_generals"
+		texturefile = "gfx/interface/goals/DDR_new_generals.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_new_military_officer"
+		texturefile = "gfx/interface/goals/DDR_new_military_officer.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_Another_year_of_blandness"
+		texturefile = "gfx/interface/goals/ENG_Another_year_of_blandness.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_New_Years_address"
+		texturefile = "gfx/interface/goals/ENG_New_Years_address.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_maintain_the_status"
+		texturefile = "gfx/interface/goals/ENG_maintain_the_status.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_Cut_government_spending"
+		texturefile = "gfx/interface/goals/ENG_Cut_government_spending.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_call_transformation"
+		texturefile = "gfx/interface/goals/ENG_call_transformation.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_Establish_pension_system"
+		texturefile = "gfx/interface/goals/ENG_Establish_pension_system.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_Imperial_Charter_negotiations"
+		texturefile = "gfx/interface/goals/ENG_Imperial_Charter_negotiations.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_Slum_clearance"
+		texturefile = "gfx/interface/goals/ENG_Slum_clearance.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_Provide_housing"
+		texturefile = "gfx/interface/goals/ENG_Provide_housing.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_National_health_service"
+		texturefile = "gfx/interface/goals/ENG_National_health_service.dds"
+	}
+}

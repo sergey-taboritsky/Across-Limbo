@@ -1,0 +1,15 @@
+characters = {
+	GHA_Thomas_Hutton_Mills = {
+		name = GHA_Thomas_Hutton_Mills
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_GHA_Thomas_Hutton_Mills
+			}
+		}
+		country_leader={
+			ideology= Popular_Front
+			expire="1936.1.1"
+		}
+		
+	}
+}

@@ -1,0 +1,67 @@
+﻿capital = 797
+
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1935.2.8"
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 17
+	syndicalism = 6
+	socialism = 22
+	Social_democracy = 12
+	Liberalism = 7
+	Conservatism = 9
+	Authoritarianism = 6
+	Absolutism = 18
+	Nationalism = 3
+
+}
+
+set_convoys = 20
+set_stability = 0.5
+set_war_support = 0.3
+
+recruit_character = TUR_Sadrettin_Celal_Andel
+
+recruit_character = TUR_Mehmed_VII
+recruit_character = TUR_Ahmed_V_Nihad
+
+recruit_character = TUR_Ismet_Inonu
+recruit_character = TUR_Fevzi_Cakmak
+recruit_character = TUR_Celal_Bayar
+recruit_character = TUR_Adnan_Menderes
+recruit_character = TUR_Cemil_Sait_Barlas
+recruit_character = TUR_Fuat_Kopluru
+recruit_character = TUR_Refik_Koraltan
+recruit_character = TUR_Emin_Sazak
+
+recruit_character = CIN_Sevket_Surreya_Aydemir
+recruit_character = CIN_Huseyin_Burhanettin_Daybelge
+recruit_character = CIN_Ismail_Husrev_Tokin
+recruit_character = CIN_Ismail_Bilen
+recruit_character = CIN_Zeki_Bastamar
+recruit_character = CIN_Yakup_Kadri_Karaosmanoglu
+
+recruit_character = DAG_Ibrahim_Sukru_Sokmensuer
+recruit_character = DAG_Recep_Peker
+recruit_character = DAG_Falih_Rifki_Atay
+recruit_character = DAG_Ahmet_Ferit_Tek
+recruit_character = DAG_Hamdullah_Suphi_Tarinover
+
+add_ideas = {
+	TUR_economic_shock
+	TUR_collapsing_government
+	TUR_army_near_destruction
+	TUR_Treaty_of_Ankara
+	TUR_raqdicalised_kadro_activities
+
+	TUR_Ismet_Inonu_hog
+}
+
+set_country_flag = TUR_Ismet_Grand_Vizier_flag
+set_country_flag = has_second_leader_flag
+
+#country_event = { id = TUR_event.1 days = 12 }

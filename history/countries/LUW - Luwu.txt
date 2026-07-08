@@ -1,0 +1,37 @@
+﻿capital = 271
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.3
+add_ideas = {
+}
+
+set_convoys = 30
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	Liberalism = 18
+	Absolutism = 52
+	Social_democracy = 19
+	Authoritarianism = 11
+}
+
+#recruit_character = INS_Andi_Djemma
+create_country_leader = {
+	name = INS_Andi_Djemma
+	picture = GFX_portrait_large_INS_Andi_Djemma
+	desc = INS_Andi_Djemma_desc
+	ideology = absolute_monarchy
+	expire = "2022.10.20.1"
+	id = -1
+	traits = {}
+}
+
+create_faction_from_template = faction_template_Sulawesi_Confederation
+add_to_faction = BTO
+add_to_faction = BON

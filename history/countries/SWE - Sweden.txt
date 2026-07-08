@@ -1,0 +1,25 @@
+﻿capital = 141	
+
+#add_opinion_modifier = { target = GER modifier = GER_SWE_historic_trade_Partners } CUT
+#oob = "SWE_1936"
+
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = syndicalism
+	last_election = "1932.9.18"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	syndicalism = 100
+}
+
+set_convoys = 25
+
+recruit_character = SWE_Frans_Severin
+
+
+add_ideas = {
+	phalanstere_aligned_nation
+}

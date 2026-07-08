@@ -1,0 +1,20 @@
+﻿capital = 100 #Iceland
+
+set_research_slots = 2
+
+
+set_convoys = 30
+set_stability = 0.65
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1933.10.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	Liberalism = 96
+	Nationalism = 2
+	communist = 2
+}
+

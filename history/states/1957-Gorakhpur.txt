@@ -1,0 +1,32 @@
+state = {
+	id = 1957
+	name = "STATE_1957"
+
+	history = {
+		owner = RAJ
+		victory_points = {
+			7334 10
+		}
+		victory_points = {
+			7064 5
+		}
+		buildings = {
+			infrastructure = 2
+			
+			18923 = {
+				bunker = 3
+			}
+		}
+		add_core_of = RAJ
+		
+		set_state_flag = GDP_regions_uttar_pradesh
+	}
+
+	provinces = {
+		7064 7334 18902 18923
+	}
+	manpower = 8513423
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

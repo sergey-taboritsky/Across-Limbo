@@ -1,0 +1,8 @@
+RUS_Arms_are_wasted = {  #军备废驰
+	icon = GFX_idea_RUS_hongjun
+	enable = { always = yes }
+    army_org_factor = RUS_army_org_factor #陆军组织度
+	army_attack_factor = RUS_army_attack_factor #陆军进攻
+	army_defence_factor = RUS_army_defence_factor #陆军防御
+	army_speed_factor = RUS_army_speed_factor #陆军师速度
+}

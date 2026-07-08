@@ -1,0 +1,198 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "TNW_welcome_gui"
+		position = { x = 0 y = 0 }
+		size = { width = 776 height = 440 }
+		moveable = yes
+		orientation = CENTER
+		origo = center
+		clipping = no
+
+		background = { 
+			name = "background"
+			quadTextureSprite = "GFX_welcome_gui_bg" 
+		}
+        #iconType = {
+		#	name = "TNW_welcome_gui_bg_icon"
+		#	quadTextureSprite = "GFX_welcome_gui_bg" 
+		#	position = { x = 0 y = 0 }
+		#	alwaystransparent = yes
+		#}
+		containerWindowType = {
+			name = "TNW_welcome_intro"
+			position = { x = 26 y = 22 }
+			size = { width = 666 height = 398 }
+			orientation = CENTER_UP
+			origo = center_up
+			clipping = no
+
+			background = { quadTextureSprite = "GFX_tiled_generic_bg_1" }
+
+			containerWindowType = {
+				name = welcome_splash_tab_button_container
+				position = { x = -315 y = 22 }
+				size = { width = 630 height = 60 }
+				orientation = CENTER_UP
+
+				buttonType = {
+					name = "tab_1"
+					position = { x = 0 y = 0 }
+					quadTextureSprite ="GFX_strategic_air_sort"
+					buttonText = "KR_welcome_splash_tab_1"
+					font = "hoi_18mbs"
+					clicksound = click_default
+				}
+			}
+
+			containerWindowType = {
+				name = content_bkgr_bottom_layer
+				position = { x = 4 y = -8 }
+				size = { width = 684 height = 412 }
+				orientation = CENTER_UP
+				origo = center_up
+
+				background = { quadTextureSprite = GFX_tiled_window_thin_border }
+
+				containerWindowType = {
+					name = content_bkgr_top_layer
+					position = { x = -1 y = 4 }
+					size = { width = 673 height = 402 }
+					orientation = CENTER_UP
+					origo = center_up
+
+					background = { quadTextureSprite = GFX_tiled_generic_bg_1 }
+				}
+			}
+            
+			gridboxtype = {
+				name = "TNW_welcome_change_button_grid"
+				position = { x = -92 y = 50 }
+				size = { width = 120 height = 100%% }
+				slotsize = { width = 120 height = 140 }
+				#max_slots = { x = 1 y = 1 }
+				max_slots_horizontal = 1
+				max_slots_vertical = 114514
+				add_horizontal = no
+			}
+            
+			buttonType = {
+				name = "TNW_welcome_close_button"
+				position = { x = -120 y = -26 }
+				orientation = center_down
+
+				quadTextureSprite = "GFX_intro_screen_continue_button"
+				buttonText = "TNW_welcome_close_button_text"
+				buttonFont = "hoi_24header"
+				clicksound = click_default
+				oversound = ui_menu_over
+				shortcut = "c"
+			}
+		}	
+	}
+    containerWindowType = {
+		name = "TNW_welcome_change_button_entry"
+		size = { width = 120 height = 40 }
+		position = { x = 0 y = 0 }
+        
+		buttonType ={
+			name ="TNW_welcome_change_button"
+			quadTextureSprite = "GFX_TNW_welcome_change_button"
+			position = { x = 0 y = 0 }
+		}
+		instantTextboxType = { 
+			name = "TNW_welcome_change_button_text"
+			position = { x = 0 y = 4 }
+			font = "hoi_18mbs"
+			text = "[Get_TNW_welcome_change_button_text]"
+			maxWidth = 100
+			maxHeight = 36
+			format = center
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "TNW_welcome_country_intro"
+		position = { x = 70 y = 0 }
+		size = { width = 694 height = 428 }
+		margin = { left = 16 right = 16 }
+		clipping = yes
+
+		## backdrop texticon scripted loc textbox
+		containerWindowType = {
+			name = "TNW_welcome_country_intro_picture_container"
+			size = { width = 172 height = 352 }
+			position = { x = -172 y = 40 }
+			orientation = UPPER_RIGHT
+
+			#background = { quadTextureSprite = "GFX_tiled_paper_bg2" }
+
+			iconType = {
+				name = "TNW_welcome_country_intro_picture"
+				position = { x = 2 y = 2 }
+			}
+			iconType = {
+				name = "GFX_tiled_paper_bg2"
+				position = { x = 0 y = 0 }
+			}
+		}
+
+		containerWindowType = {
+			name = "TNW_welcome_country_intro_text_container"
+			position = { x = 0 y = 0 }
+			margin = { left = 8 right = 8 }
+
+			instantTextboxType = {
+				name = "TNW_welcome_country_name"
+				text = "[ROOT.GetName]"
+				position = { x = 120 y = 24 }
+				font = "hoi_20bs"
+				format = center
+				maxWidth = 240
+			}
+
+			instantTextboxType = {
+				name = "TNW_welcome_country_intro_text"
+				text = "[Get_TNW_welcome_country_intro_text]"
+				position = { x = 0 y = 49 }
+				font = "hoi_18b"
+				maxWidth = 466
+				maxHeight = 332
+				scrollbartype = "standardtext_slider"
+			}
+
+			buttonType = {
+				name = "previous_page_button"
+				quadTextureSprite = "GFX_browser_back"
+				position = { x = 120 y = 382 }
+				orientation = CENTER
+			}
+
+			buttonType = {
+				name = "next_page_button"
+				quadTextureSprite = "GFX_browser_forward"
+				position = { x = 160 y = 382 }
+				orientation = CENTER
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "TNW_welcome_thanks"
+		position = { x = 70 y = 0 }
+		size = { width = 694 height = 428 }
+		margin = { left = 16 right = 16 }
+		clipping = yes
+
+		instantTextboxType = {
+			name = "TNW_welcome_thanks_text"
+			text = "TNW_welcome_thanks_text"
+			position = { x = 0 y = 48 }
+			font = "hoi_18b"
+			maxWidth = 466
+			maxHeight = 332
+			scrollbartype = "standardtext_slider"
+		}
+	}
+}
+

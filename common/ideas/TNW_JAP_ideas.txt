@@ -1,0 +1,74 @@
+ideas = {
+	country = {
+		#崇仁天皇
+		JAP_Emperor_Chongren_County = {
+			picture = GER_The_remnants_of_the_resistance
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		#一个时代的稳定？
+		JAP_The_stability_of_an_era = {
+			picture = JAP_The_stability_of_an_era
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.025
+				political_power_cost = 0.8
+				war_stability_factor = -0.25
+				surrender_limit = -0.5
+			}
+		}
+		#首届左翼内阁
+		JAP_The_first_leftwing_cabinet = {
+			picture = JAP_The_first_leftwing_cabinet
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				non_core_manpower = 0.18
+				communist_drift = 0.01
+				Social_democracy_drift = 0.01
+				Authoritarianism_drift = 0.01
+				socialism_drift = 0.01
+			}
+		}
+		#日本经济萧条
+		JAP_Recession  = {
+			picture = JAP_Recession
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor =  0.06
+                consumer_goods_factor = 0.60
+				production_speed_buildings_factor = -0.66
+				production_speed_arms_factory_factor = 0.36
+			}
+		}
+		#甘尽苦来
+		JAP_best_comes_from_the_worst = {
+			picture = JAP_best_comes_from_the_worst
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.5
+				land_doctrine_cost_factor = 0.5
+				naval_doctrine_cost_factor = 0.5
+				air_doctrine_cost_factor = 0.5
+				drift_defence_factor = 0.5
+			}
+		}
+	}
+}

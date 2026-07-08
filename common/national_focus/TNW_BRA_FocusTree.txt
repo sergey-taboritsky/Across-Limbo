@@ -1,0 +1,555 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+### search_filters = {FOCUS_FILTER_ARMY_XP}
+### search_filters = {FOCUS_FILTER_NAVY_XP}
+### search_filters = {FOCUS_FILTER_AIR_XP}
+### search_filters = {FOCUS_FILTER_BALANCE_OF_POWERS}
+### search_filters = {FOCUS_FILTER_POLITICAL_CHARACTER}
+### search_filters = {FOCUS_FILTER_MILITARY_CHARACTER}
+### search_filters = {FOCUS_FILTER_INTERNATIONAL_TRADE}
+focus_tree = {
+	id = BRA_endgame_revolution
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BRA
+		}
+	}
+	default = no
+	###赤旗飘扬里约城
+	focus = {
+		id = BRA_redflag_over_rio
+		icon = GFX_BRA_redflag_over_rio
+		x = 12
+		y = 0
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###打碎寡头经济
+	focus = {
+		id = BRA_end_oligarchy
+		icon = GFX_BRA_end_oligarchy
+		prerequisite = {
+			focus = BRA_redflag_over_rio
+		}
+		relative_position_id = BRA_redflag_over_rio
+		x = -2
+		y = 1
+	}
+	###处理旧当权派
+	focus = {
+		id = BRA_deal_with_varguists
+		icon = GFX_BRA_deal_with_varguists
+		prerequisite = {
+			focus = BRA_redflag_over_rio
+		}
+		relative_position_id = BRA_redflag_over_rio
+		x = 0
+		y = 1
+	}
+	###改造军队
+	focus = {
+		id = BRA_reorganize_military
+		icon = GFX_BRA_reorganize_military
+		prerequisite = {
+			focus = BRA_redflag_over_rio
+		}
+		relative_position_id = BRA_redflag_over_rio
+		x = 2
+		y = 1
+	}
+	###革委会全体会议
+	focus = {
+		id = BRA_revolutionary_council
+		icon = GFX_BRA_revolutionary_council
+		prerequisite = {
+			focus = BRA_end_oligarchy
+		}
+		prerequisite = {
+			focus = BRA_deal_with_varguists
+		}
+		prerequisite = {
+			focus = BRA_reorganize_military
+		}
+		relative_position_id = BRA_redflag_over_rio
+		x = 0
+		y = 2
+	}
+	###民主平等之梦
+	focus = {
+		id = BRA_Adhemar_elected
+		icon = GFX_BRA_Adhemar_elected
+		prerequisite = {
+			focus = BRA_revolutionary_council
+		}
+		mutually_exclusive = {
+			focus = BRA_Lacerda_elected
+		}
+		relative_position_id = BRA_revolutionary_council
+		x = -4
+		y = 1
+	}
+	###打破人身禁锢
+	focus = {
+		id = BRA_smash_confining_economy
+		icon = GFX_BRA_smash_confining_economy
+		prerequisite = {
+			focus = BRA_Adhemar_elected
+		}
+		relative_position_id = BRA_Adhemar_elected
+		x = -1
+		y = 1
+	}
+	###激进进步主义
+	focus = {
+		id = BRA_radical_progressivism
+		icon = GFX_BRA_radical_progressivism
+		prerequisite = {
+			focus = BRA_smash_confining_economy
+		}
+		mutually_exclusive = {
+			focus = BRA_revert_societal_conservatism
+		}
+		relative_position_id = BRA_smash_confining_economy
+		x = -2
+		y = 1
+	}
+	###扭转保守社会政策
+	focus = {
+		id = BRA_revert_societal_conservatism
+		icon = GFX_BRA_revert_societal_conservatism
+		prerequisite = {
+			focus = BRA_smash_confining_economy
+		}
+		mutually_exclusive = {
+			focus = BRA_radical_progressivism
+		}
+		relative_position_id = BRA_smash_confining_economy
+		x = 0
+		y = 1
+	}
+	###创办工人法庭
+	focus = {
+		id = BRA_worker_kangaroo_courts
+		icon = GFX_BRA_worker_kangaroo_courts
+		prerequisite = {
+			focus = BRA_Adhemar_elected
+		}
+		relative_position_id = BRA_Adhemar_elected
+		x = 1
+		y = 1
+	}
+	###削减中央机构
+	focus = {
+		id = BRA_cutdown_central_bureaucracy
+		icon = GFX_BRA_cutdown_central_bureaucracy
+		prerequisite = {
+			focus = BRA_worker_kangaroo_courts
+		}
+		mutually_exclusive = {
+			focus = BRA_enact_true_federalism
+		}
+		relative_position_id = BRA_worker_kangaroo_courts
+		x = 0
+		y = 1
+	}
+	###落实联邦制
+	focus = {
+		id = BRA_enact_true_federalism
+		icon = GFX_BRA_enact_true_federalism
+		prerequisite = {
+			focus = BRA_worker_kangaroo_courts
+		}
+		mutually_exclusive = {
+			focus = BRA_cutdown_central_bureaucracy
+		}
+		relative_position_id = BRA_worker_kangaroo_courts
+		x = 2
+		y = 1
+	}
+	###实现自由选举
+	focus = {
+		id = BRA_democratic_elections_Adhemar
+		icon = GFX_BRA_democratic_elections_Adhemar
+		prerequisite = {
+			focus = BRA_radical_progressivism
+			focus = BRA_revert_societal_conservatism
+		}
+		prerequisite = {
+			focus = BRA_cutdown_central_bureaucracy
+			focus = BRA_enact_true_federalism
+		}
+		relative_position_id = BRA_Adhemar_elected
+		x = 0
+		y = 3
+	}
+	###社会进步党
+	focus = {
+		id = BRA_social_progressive_party_elected
+		icon = GFX_BRA_social_progressive_party_elected
+		prerequisite = {
+			focus = BRA_democratic_elections_Adhemar
+		}
+		relative_position_id = BRA_democratic_elections_Adhemar
+		x = -4
+		y = 1
+	}
+	###新红色堡垒
+	focus = {
+		id = BRA_new_red_fortress
+		icon = GFX_BRA_new_red_fortress
+		prerequisite = {
+			focus = BRA_social_progressive_party_elected
+		}
+		relative_position_id = BRA_social_progressive_party_elected
+		x = 0
+		y = 1
+	}
+	###建设社会主义民主
+	focus = {
+		id = BRA_socialist_democracy
+		icon = GFX_BRA_socialist_democracy
+		prerequisite = {
+			focus = BRA_new_red_fortress
+		}
+		mutually_exclusive = {
+			focus = BRA_ensure_future_elections
+		}
+		relative_position_id = BRA_new_red_fortress
+		x = -1
+		y = 1
+	}
+	###备战下次选举
+	focus = {
+		id = BRA_ensure_future_elections
+		icon = GFX_BRA_ensure_future_elections
+		prerequisite = {
+			focus = BRA_new_red_fortress
+		}
+		mutually_exclusive = {
+			focus = BRA_socialist_democracy
+		}
+		relative_position_id = BRA_new_red_fortress
+		x = 1
+		y = 1
+	}
+	###市场越自由，人民越自由！
+	focus = {
+		id = BRA_authentic_free_market
+		icon = GFX_BRA_authentic_free_market
+		prerequisite = {
+			focus = BRA_socialist_democracy
+			focus = BRA_ensure_future_elections
+		}
+		relative_position_id = BRA_new_red_fortress
+		x = 0
+		y = 2
+	}
+	###鼓励工会发展
+	focus = {
+		id = BRA_appease_trade_unions
+		icon = GFX_BRA_appease_trade_unions
+		prerequisite = {
+			focus = BRA_social_progressive_party_elected
+			focus = BRA_social_democrat_party_elected
+		}
+		relative_position_id = BRA_democratic_elections_Adhemar
+		x = -2
+		y = 2
+	}
+	###社会民主党
+	focus = {
+		id = BRA_social_democrat_party_elected
+		icon = GFX_BRA_social_democrat_party_elected
+		prerequisite = {
+			focus = BRA_democratic_elections_Adhemar
+		}
+		relative_position_id = BRA_democratic_elections_Adhemar
+		x = 0
+		y = 1
+	}
+	###赎清罪孽
+	focus = {
+		id = BRA_repent_mistakes
+		icon = GFX_BRA_repent_mistakes
+		prerequisite = {
+			focus = BRA_social_democrat_party_elected
+		}
+		relative_position_id = BRA_social_democrat_party_elected
+		x = 0
+		y = 1
+	}
+	###基础设施更新计划
+	focus = {
+		id = BRA_infrastructure_replenishment
+		icon = GFX_BRA_infrastructure_replenishment
+		prerequisite = {
+			focus = BRA_repent_mistakes
+		}
+		relative_position_id = BRA_repent_mistakes
+		x = 0
+		y = 1
+	}
+	###五载任期满，跨越五十年！
+	focus = {
+		id = BRA_fifty_years_in_five
+		icon = GFX_BRA_fifty_years_in_five
+		prerequisite = {
+			focus = BRA_infrastructure_replenishment
+		}
+		relative_position_id = BRA_infrastructure_replenishment
+		x = 0
+		y = 1
+	}
+	###暴政不再
+	focus = {
+		id = BRA_refuse_dictatorships
+		icon = GFX_BRA_refuse_dictatorships
+		prerequisite = {
+			focus = BRA_united_democrat_party_elected
+			focus = BRA_social_democrat_party_elected
+		}
+		relative_position_id = BRA_democratic_elections_Adhemar
+		x = 2
+		y = 2
+	}
+	###统一民主党
+	focus = {
+		id = BRA_united_democrat_party_elected
+		icon = GFX_BRA_united_democrat_party_elected
+		prerequisite = {
+			focus = BRA_democratic_elections_Adhemar
+		}
+		relative_position_id = BRA_democratic_elections_Adhemar
+		x = 4
+		y = 1
+	}
+	###管控市场竞争
+	focus = {
+		id = BRA_reign_market_competition
+		icon = GFX_BRA_reign_market_competition
+		prerequisite = {
+			focus = BRA_united_democrat_party_elected
+		}
+		relative_position_id = BRA_united_democrat_party_elected
+		x = 0
+		y = 1
+	}
+	###外交中立化
+	focus = {
+		id = BRA_neutral_diplomatic_stance
+		icon = GFX_BRA_neutral_diplomatic_stance
+		prerequisite = {
+			focus = BRA_reign_market_competition
+		}
+		relative_position_id = BRA_reign_market_competition
+		x = 0
+		y = 1
+	}
+	###生命诚可贵，自由价更高！
+	focus = {
+		id = BRA_everything_for_freedom
+		icon = GFX_BRA_everything_for_freedom
+		prerequisite = {
+			focus = BRA_neutral_diplomatic_stance
+		}
+		relative_position_id = BRA_neutral_diplomatic_stance
+		x = 0
+		y = 1
+	}
+	###走向工人革命
+	focus = {
+		id = BRA_Lacerda_elected
+		icon = GFX_BRA_Lacerda_elected
+		prerequisite = {
+			focus = BRA_revolutionary_council
+		}
+		mutually_exclusive = {
+			focus = BRA_Adhemar_elected
+		}
+		relative_position_id = BRA_revolutionary_council
+		x = 4
+		y = 1
+	}
+	###清算劳工部
+	focus = {
+		id = BRA_purge_labour_departments
+		icon = GFX_BRA_purge_labour_departments
+		prerequisite = {
+			focus = BRA_Lacerda_elected
+		}
+		relative_position_id = BRA_Lacerda_elected
+		x = -2
+		y = 1
+	}
+	###合并工会体系
+	focus = {
+		id = BRA_merge_unions
+		icon = GFX_BRA_merge_unions
+		prerequisite = {
+			focus = BRA_Lacerda_elected
+		}
+		relative_position_id = BRA_Lacerda_elected
+		x = 0
+		y = 1
+	}
+	###驯服工厂委员会
+	focus = {
+		id = BRA_bind_factory_committee
+		icon = GFX_BRA_bind_factory_committee
+		prerequisite = {
+			focus = BRA_Lacerda_elected
+		}
+		relative_position_id = BRA_Lacerda_elected
+		x = 2
+		y = 1
+	}
+	###成立巴西劳总联
+	focus = {
+		id = BRA_found_labour_congress
+		icon = GFX_BRA_found_labour_congress
+		prerequisite = {
+			focus = BRA_purge_labour_departments
+		}
+		prerequisite = {
+			focus = BRA_merge_unions
+		}
+		prerequisite = {
+			focus = BRA_bind_factory_committee
+		}
+		relative_position_id = BRA_Lacerda_elected
+		x = 0
+		y = 2
+	}
+	###埋葬一党专政
+	focus = {
+		id = BRA_bury_one_party_system
+		icon = GFX_BRA_bury_one_party_system
+		prerequisite = {
+			focus = BRA_found_labour_congress
+		}
+		relative_position_id = BRA_found_labour_congress
+		x = -2
+		y = 1
+	}
+	###转移机构效忠方
+	focus = {
+		id = BRA_switch_department_loyalties
+		icon = GFX_BRA_switch_department_loyalties
+		prerequisite = {
+			focus = BRA_bury_one_party_system
+		}
+		relative_position_id = BRA_bury_one_party_system
+		x = 0
+		y = 1
+	}
+	###团结工人代表
+	focus = {
+		id = BRA_unite_worker_representatives
+		icon = GFX_BRA_unite_worker_representatives
+		prerequisite = {
+			focus = BRA_switch_department_loyalties
+		}
+		relative_position_id = BRA_switch_department_loyalties
+		x = 0
+		y = 1
+	}
+	###确保稳定转型
+	focus = {
+		id = BRA_ensure_smooth_transition
+		icon = GFX_BRA_ensure_smooth_transition
+		prerequisite = {
+			focus = BRA_found_labour_congress
+		}
+		relative_position_id = BRA_found_labour_congress
+		x = 2
+		y = 1
+	}
+	###增发福利
+	focus = {
+		id = BRA_increase_welfare
+		icon = GFX_BRA_increase_welfare
+		prerequisite = {
+			focus = BRA_ensure_smooth_transition
+		}
+		relative_position_id = BRA_ensure_smooth_transition
+		x = 0
+		y = 1
+	}
+	###人民经济学
+	focus = {
+		id = BRA_peoples_economics
+		icon = GFX_BRA_peoples_economics
+		prerequisite = {
+			focus = BRA_increase_welfare
+		}
+		relative_position_id = BRA_increase_welfare
+		x = 0
+		y = 1
+	}
+	###革命的伟大领袖
+	focus = {
+		id = BRA_great_revolutionary_leader
+		icon = GFX_BRA_great_revolutionary_leader
+		prerequisite = {
+			focus = BRA_bury_one_party_system
+			focus = BRA_ensure_smooth_transition
+		}
+		relative_position_id = BRA_found_labour_congress
+		x = 0
+		y = 2
+	}
+	###革委会第二次全会
+	focus = {
+		id = BRA_second_revolution_congress
+		icon = GFX_BRA_second_revolution_congress
+		prerequisite = {
+			focus = BRA_unite_worker_representatives
+		}
+		prerequisite = {
+			focus = BRA_peoples_economics
+		}
+		relative_position_id = BRA_found_labour_congress
+		x = 0
+		y = 4
+	}
+	###巩固工会革命
+	focus = {
+		id = BRA_entrench_union_revolution
+		icon = GFX_BRA_entrench_union_revolution
+		prerequisite = {
+			focus = BRA_second_revolution_congress
+		}
+		mutually_exclusive = {
+			focus = BRA_black_horse_prevails
+		}
+		relative_position_id = BRA_second_revolution_congress
+		x = -1
+		y = 1
+	}
+	###委员会黑马
+	focus = {
+		id = BRA_black_horse_prevails
+		icon = GFX_BRA_black_horse_prevails
+		prerequisite = {
+			focus = BRA_second_revolution_congress
+		}
+		mutually_exclusive = {
+			focus = BRA_entrench_union_revolution
+		}
+		relative_position_id = BRA_second_revolution_congress
+		x = 1
+		y = 1
+	}
+}

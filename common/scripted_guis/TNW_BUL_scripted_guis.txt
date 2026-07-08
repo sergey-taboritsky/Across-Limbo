@@ -1,0 +1,41 @@
+scripted_gui = {
+	TNW_BUL_parliament_gui = {
+		context_type = decision_category
+		window_name = "TNW_BUL_parliament_gui_container"
+
+		dynamic_lists = {
+			parliament_main_grid = {
+				array = parliament_main_array
+				index = parliament_main_index
+				change_scope = no
+				entry_container = TNW_BUL_parliament_main_entry
+			}
+			TNW_BUL_parliament_semicircle_main_grid = {
+				array = parliament_main_array
+				index = parliament_main_index
+				change_scope = no
+				entry_container = TNW_BUL_parliament_semicircle_main_entry
+			}
+			TNW_BUL_parliament_member_grid = {
+				array = parliament_member_array
+				index = parliament_member_index
+				change_scope = no
+				entry_container = TNW_BUL_parliament_member_entry
+			}
+		}
+
+		properties = {
+			TNW_BUL_parliament_main_icon = {
+				frame = v
+			}
+			TNW_BUL_parliament_semicircle_main_icon = {
+				frame = v
+				x = parliament_x_array^parliament_main_index
+				y = parliament_y_array^parliament_main_index
+			}
+			TNW_BUL_parliament_member_icon = {
+				frame = v
+			}
+		}
+	}
+}

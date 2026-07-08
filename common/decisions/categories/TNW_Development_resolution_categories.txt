@@ -1,0 +1,11 @@
+#进度条决议
+TNW_Development_resolution_categories = {
+	allowed = {
+		always = yes
+	}
+	visible = {
+	    
+	}
+    scripted_gui = TNW_Level_of_development_gui
+	visible_when_empty = yes
+}

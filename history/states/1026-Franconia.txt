@@ -1,0 +1,25 @@
+state = {
+	id = 1026
+	name = "STATE_1026"
+	history = {
+		owner = DDR
+		buildings = {
+			
+			
+			
+			
+			infrastructure = 6
+			
+		}
+		add_core_of = DDR
+		victory_points = { 11544 20 }
+		victory_points = { 11529 4 }
+		victory_points = { 561 2 }
+	}
+	provinces = {
+		11529 9572 11544 561
+	}
+	manpower = 1351263
+	buildings_max_level_factor = 1.000
+	state_category = large_city
+}

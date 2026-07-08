@@ -1,0 +1,38 @@
+﻿capital = 112
+
+#oob = "POR_1936"
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	tech_support = 1		
+	tech_engineers = 1
+	basic_train = 1
+}
+
+recruit_character = POR_Jose_Carlos_Rates
+
+set_convoys = 50
+set_politics = {
+	ruling_party = communist
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Nationalism = 10
+	communist = 60
+	Authoritarianism = 10
+	Liberalism = 20
+}
+
+set_convoys = 100
+set_stability = 0.75
+
+add_ideas = {
+	phalanstere_aligned_nation
+}

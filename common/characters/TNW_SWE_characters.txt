@@ -1,0 +1,19 @@
+characters = {
+	#弗朗斯·塞韦林
+	SWE_Frans_Severin = {
+		name = SWE_Frans_Severin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SWE_Frans_Severin
+			}
+		}
+		country_leader = {
+			desc = SWE_Frans_Severin_desc
+			ideology = Centralised_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

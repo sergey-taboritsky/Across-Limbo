@@ -1,0 +1,39 @@
+capital = 519
+#oob = "DDR_1936"
+# Starting tech
+
+set_research_slots = 4
+set_convoys = 50
+set_stability = 0.75
+
+recruit_character = DDR_Paul_Frolich
+set_politics = {
+	ruling_party = communist 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+set_popularities = {
+	communist = 34
+	socialism = 17
+	Social_democracy = 3
+	Liberalism = 22
+	Conservatism = 4
+	Absolutism = 9
+	Authoritarianism = 10
+	Nationalism = 1
+}
+
+add_ideas = {
+	phalanstere_aligned_nation
+	#DDR_Fragile_peace
+	#DDR_Route_battles
+	#DDR_Above_the_ruins
+	#DDR_The_red_flag_is_already_standing
+	#DDR_Backward_eastern_regions
+	#DDR_Red_Spear
+	#RUS_gong_chang_guo_ji
+	#DDR_Member_States_of_the_USSR_the_German_Soviet
+	#DDR_Crimson_Ship
+}

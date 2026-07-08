@@ -1,0 +1,27 @@
+﻿capital = 612
+
+recruit_character = CHI_Guo_Daofu
+recruit_character = CHI_Bai_Haifeng
+recruit_character = CHI_Demchukdonrub
+recruit_character = CHI_Bai_Yunti
+recruit_character = CHI_Fu_Zuoyi
+
+set_politics = {
+	ruling_party = Social_democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+set_popularities = {
+	communist = 13
+	syndicalism = 0
+	socialism = 8
+	Social_democracy = 35
+	Liberalism = 0
+	Conservatism = 14
+	Authoritarianism = 7
+	Absolutism = 19
+	Nationalism = 4
+}

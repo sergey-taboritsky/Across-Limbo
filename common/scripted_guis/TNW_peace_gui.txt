@@ -1,0 +1,27 @@
+scripted_gui = {
+	TNW_warpeace_window = {
+		window_name = "TNW_warpeace_window"
+		context_type = player_context
+		dirty = global.TNW_warpeace_dirty
+		visible = {
+			is_ai = no
+			has_global_flag = TNW_warpeace_show_gui
+		}
+		properties = {
+			flag_1 = {
+				image = "[winning_country.GetFlag]"
+			}
+			flag_2 = {
+				image = "[losing_country.GetFlag]"
+			}
+		}
+		effects = {
+			close_button_click = {
+				clr_global_flag = TNW_warpeace_show_gui
+				clear_global_event_target = winning_country
+				clear_global_event_target = losing_country
+				add_to_variable = { global.TNW_warpeace_dirty = 1 }
+			}
+		}
+	}
+}

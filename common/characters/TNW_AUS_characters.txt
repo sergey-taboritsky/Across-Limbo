@@ -1,0 +1,20 @@
+characters = {
+	####卡尔一世
+	AUS_Charles_I_of_Austria = {
+		name = AUS_Charles_I_of_Austria
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AUS_Charles_I_of_Austria
+			}
+		}
+		country_leader = {
+			desc = AUS_Charles_I_of_Austria_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			    AUS_Those_who_hold_contradictions
+			}
+		}
+	}
+}

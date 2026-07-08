@@ -1,0 +1,107 @@
+
+#地区状态
+defined_text = {
+	name = GetENGCONStatus
+	text = {
+		trigger = {
+				check_variable = { ENG_Connaught_status = 1 }
+			}
+			localization_key = ENG_control
+		}
+	text = {
+		trigger = {
+				check_variable = { ENG_Connaught_status = 2 }
+			}
+			localization_key = Conflict_control
+		}
+	text = {
+		trigger = {
+				check_variable = { ENG_Connaught_status = 3 }
+			}
+			localization_key = IRE_control
+		}
+}
+defined_text = {
+	name = GetNORIREStatus
+	text = {
+		trigger = {
+				check_variable = { ENG_Northern_Ireland_status = 1 }
+			}
+			localization_key = ENG_control
+		}
+	text = {
+		trigger = {
+				check_variable = { ENG_Northern_Ireland_status = 2 }
+			}
+			localization_key = Conflict_control
+		}
+	text = {
+		trigger = {
+				check_variable = { ENG_Northern_Ireland_status = 3 }
+			}
+			localization_key = IRE_control
+		}
+}
+defined_text = {
+	name = GetENGMUNStatus
+	text = {
+		trigger = {
+				check_variable = { ENG_Munster_status = 1 }
+			}
+			localization_key = ENG_control
+		}
+	text = {
+		trigger = {
+				check_variable = { ENG_Munster_status = 2 }
+			}
+			localization_key = Conflict_control
+		}
+	text = {
+		trigger = {
+				check_variable = { ENG_Munster_status = 3 }
+			}
+			localization_key = IRE_control
+		}
+}
+defined_text = {
+	name = GetENGLEIStatus
+	text = {
+		trigger = {
+				check_variable = { ENG_Leinster_status = 1 }
+			}
+			localization_key = ENG_control
+		}
+	text = {
+		trigger = {
+				check_variable = { ENG_Leinster_status = 2 }
+			}
+			localization_key = Conflict_control
+		}
+	text = {
+		trigger = {
+				check_variable = { ENG_Leinster_status = 3 }
+			}
+			localization_key = IRE_control
+		}
+}
+defined_text = {
+	name = GetENGCOUFERStatus
+	text = {
+		trigger = {
+				check_variable = { ENG_County_Tyrone_and_Fermanagh_status = 1 }
+			}
+			localization_key = ENG_control
+		}
+	text = {
+		trigger = {
+				check_variable = { ENG_County_Tyrone_and_Fermanagh_status = 2 }
+			}
+			localization_key = Conflict_control
+		}
+	text = {
+		trigger = {
+				check_variable = { ENG_County_Tyrone_and_Fermanagh_status = 3 }
+			}
+			localization_key = IRE_control
+		}
+}

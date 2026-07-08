@@ -1,0 +1,25 @@
+﻿l_simp_chinese:
+#政党
+ ITA_communist_party: "意大利工人党"
+ ITA_communist_party_long: "意大利工人党(Partito Operaio Italiano)\n\n§W意大利工人党§!\n"
+ ITA_syndicalism_party: "工团联盟-工团国际意大利支部"
+ ITA_syndicalism_party_long: "意大利工团联盟-工团国际意大利支部(Unione Sindacale Italiana - Sezione Italiana dell'Internazionale Operaia Sindacalista)"
+ ITA_socialism_party: "意大利工人党"
+ ITA_socialism_party_long: "意大利工人党(Partito Operaio Italiano)\n\n§W意大利工人党§!\n"
+ ITA_Social_democracy_party: "社会民主党"
+ ITA_Social_democracy_party_long: "意大利社会民主党(Partito Socialista Democratico Italiano)"
+ ITA_Liberalism_party: "共和党"
+ ITA_Liberalism_party_long: "意大利共和党(Partito Repubblicano Italiano)"
+ ITA_Conservatism_party: "-"
+ ITA_Conservatism_party_long: "-"
+ ITA_Authoritarianism_party: "-"
+ ITA_Authoritarianism_party_long: ""
+ ITA_Absolutism_party: "意大利红军"
+ ITA_Absolutism_party_long: "意大利工农红军"
+ ITA_Nationalism_party: "革命行动法西斯"
+ ITA_Nationalism_party_long: "革命行动法西斯(Fascio d'Azione Rivoluzionaria)"
+
+#顾问
+ ITA_Pierre_Tresso: "皮埃尔·特雷索"
+ ITA_Pierre_Tresso_desc: ""
+ #民族精神 

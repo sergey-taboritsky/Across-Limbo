@@ -1,0 +1,220 @@
+ideas = {
+	###不可更改政策
+	political_system = {
+		#政治制度 
+		law = yes
+		use_list_view = yes
+		constitutional_monarchy = {
+			#立宪君主国
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		parliamentary_republic = {
+			#议会共和国
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		chinese_constitutionalism = {
+			#三民主义宪政
+			visible = {
+				tag = CHI
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		presidental_republic = {
+			#总统制共和国
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		communal_federation = {
+			#自治公社联合体
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		soviet_republic = {
+			#委员会共和国
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+	}
+	economy_system = {
+		#工业化等级 
+		law = yes
+		use_list_view = yes
+		free_market_economy = {
+			#自由市场经济
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		command_economy = {
+			#指令经济
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		planned_market_economy = {
+			#计划-合作社混合制
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		anarchist_economy = {
+			#无政府主义合作社
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		state_capitalism = {
+			#国家资本主义
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		chinese_bureaucratic_economy = {
+			#官僚资本主义
+			visible = {
+				tag = CHI
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		mosleyism_economy = {
+			#莫斯利-凯恩斯主义
+			visible = {
+				tag = ENG
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+	}
+	regional_governance = {
+		#地方制度
+		law = yes
+		use_list_view = yes
+		unitary_state = {
+			#单一制
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		chinese_federalism = {
+			#行为联省
+			visible = {
+				tag = CHI
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		united_federation = {
+			#联邦制
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		union_states = {
+			#国家联盟
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		feudal_aristocracy = {
+			#贵族分封制
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		no_central_governance = {
+			#无中央政府
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+	}
+}

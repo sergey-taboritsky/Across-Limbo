@@ -1,0 +1,25 @@
+on_actions = {
+	# ROOT is country, this is ran for every country
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_tech = nukes
+				}
+				if = {
+					limit = {
+						NOT = { has_global_flag = first_nuke_done }
+						num_of_nukes > 0.99
+					}
+					every_country = {
+						limit = {
+							is_ai = no
+						}
+						news_event = { id = Nuke_news.1 days = 1 }
+					}
+					set_global_flag = first_nuke_done
+				}
+			}
+		}
+	}
+}

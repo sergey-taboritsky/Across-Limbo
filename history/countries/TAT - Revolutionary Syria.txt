@@ -1,0 +1,62 @@
+﻿capital = 249 #Aleppo
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+
+set_politics = {
+	ruling_party = Social_democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 31
+	syndicalism = 3
+	socialism = 10
+	Social_democracy = 37
+	Liberalism = 0
+	Conservatism = 0
+	Absolutism = 0
+	Authoritarianism = 19
+	Nationalism = 0
+}
+
+recruit_character = TAT_Constantin_Zureik
+recruit_character = TAT_Farajallah_El_Helou
+recruit_character = TAT_Khalid_Bakdash
+recruit_character = TAT_Mustapha_Aris
+recruit_character = TAT_Nicolas_Chaoui
+recruit_character = TAT_Wadie_Haddad
+recruit_character = TAT_Hani_al_Hindi
+recruit_character = TAT_George_Habash
+recruit_character = TAT_Jassem_Alwan
+
+add_ideas = {
+	TAT_chaotic_revolution_idea
+	TAT_supplies_shortage_idea
+	TAT_arab_army_idea
+	#cabinet
+	TAT_Farajallah_El_Helou_hog
+	TAT_George_Habash_advisor
+	TAT_Mustapha_Aris_advisor
+	TAT_George_Habash_advisor
+	TAT_Wadie_Haddad_advisor
+	TAT_Jassem_Alwan_theorist
+}

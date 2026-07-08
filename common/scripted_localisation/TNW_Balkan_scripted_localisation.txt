@@ -1,0 +1,839 @@
+defined_text = { #巴尔干霸权
+	name = Get_TNW_balkan_hegemon
+	#text = {
+	#	trigger = {
+	#		check_variable = {
+	#			global.TNW_Balkan_Powderkeg_Button_Agean_frame_var = 1
+	#		}
+	#	}
+	#	localization_key = TNW_balkan_regionstat_neutral_tt
+	#}
+	text = {
+		localization_key = TNW_balkan_hegemon_BUL
+	}
+}
+
+defined_text = { #爱琴海
+	name = Get_TNW_balkan_regionstat_Agean
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Agean_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Agean_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Agean_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Agean_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Agean_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Agean_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #阿尔巴尼亚
+	name = Get_TNW_balkan_regionstat_Albania
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Albania_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Albania_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Albania_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Albania_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Albania_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Albania_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #保加利亚
+	name = Get_TNW_balkan_regionstat_Bulgaria
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Bulgaria_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Bulgaria_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Bulgaria_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Bulgaria_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Bulgaria_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Bulgaria_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #多布罗加
+	name = Get_TNW_balkan_regionstat_Dobrugea
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Dobrugea_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Dobrugea_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Dobrugea_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Dobrugea_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Dobrugea_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Dobrugea_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #伊利里亚
+	name = Get_TNW_balkan_regionstat_Illyria
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Illyria_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Illyria_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Illyria_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Illyria_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Illyria_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Illyria_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #希腊
+	name = Get_TNW_balkan_regionstat_Greece
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Greece_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Greece_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Greece_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Greece_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Greece_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Greece_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #科索沃
+	name = Get_TNW_balkan_regionstat_Kosovo
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Kosovo_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Kosovo_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Kosovo_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Kosovo_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Kosovo_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Kosovo_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #马其顿
+	name = Get_TNW_balkan_regionstat_Macedonia
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Macedonia_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Macedonia_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Macedonia_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Macedonia_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Macedonia_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Macedonia_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #摩尔达维亚
+	name = Get_TNW_balkan_regionstat_Moldavia
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Moldavia_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Moldavia_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Moldavia_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Moldavia_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Moldavia_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Moldavia_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #黑山
+	name = Get_TNW_balkan_regionstat_Montenegro
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Montenegro_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Montenegro_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Montenegro_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Montenegro_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Montenegro_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Montenegro_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #尼什
+	name = Get_TNW_balkan_regionstat_Nis
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Nis_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Nis_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Nis_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Nis_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Nis_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Nis_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #罗马尼亚
+	name = Get_TNW_balkan_regionstat_Romania
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Romania_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Romania_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Romania_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Romania_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Romania_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Romania_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #塞尔维亚
+	name = Get_TNW_balkan_regionstat_Serbia
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Serbia_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Serbia_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Serbia_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Serbia_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Serbia_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Serbia_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #南马其顿
+	name = Get_TNW_balkan_regionstat_South_Macedonia
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_South_Macedonia_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_South_Macedonia_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_South_Macedonia_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_South_Macedonia_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_South_Macedonia_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_South_Macedonia_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #色雷斯
+	name = Get_TNW_balkan_regionstat_Thrace
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Thrace_frame_var = 1
+			}
+		}
+		localization_key = TNW_balkan_regionstat_neutral_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Thrace_frame_var = 2
+			}
+		}
+		localization_key = TNW_balkan_regionstat_conflicting_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Thrace_frame_var = 3
+			}
+		}
+		localization_key = TNW_balkan_regionstat_paris_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Thrace_frame_var = 4
+			}
+		}
+		localization_key = TNW_balkan_regionstat_moscow_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Thrace_frame_var = 5
+			}
+		}
+		localization_key = TNW_balkan_regionstat_vienna_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.TNW_Balkan_Powderkeg_Button_Thrace_frame_var = 6
+			}
+		}
+		localization_key = TNW_balkan_regionstat_constantinople_tt
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}

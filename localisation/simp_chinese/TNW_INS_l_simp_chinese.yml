@@ -1,0 +1,86 @@
+﻿l_simp_chinese:
+#领导人
+ INS_Raden_Soetomo: "拉登·苏托莫"
+ INS_Raden_Soetomo_desc: "§Y出生于：§!§L1888年7月30日，荷属东印度巴达维亚，雅加达§!"
+ INS_Raden_Soetomo_trait: "重病缠身"
+ INS_Maulana_Muhammad_Djalaluddin_II: "马乌兰纳·穆罕默德·贾拉鲁丁二世"
+ INS_Maulana_Muhammad_Djalaluddin_II_desc: ""
+ INS_Christiaan_Robbert_Steven_Soumokil: "克里斯蒂安·R·S·苏莫基尔"
+ INS_Christiaan_Robbert_Steven_Soumokil_desc: "§Y出生于：§!§L1905年10月10日，荷属东印度巴达维亚，雅加达§!"
+ INS_Andi_Mappanyukki: "安迪·马帕纽基"
+ INS_Andi_Mappanyukki_desc: "§Y出生于：§!§L1885年12月8日，荷属东印度苏拉威西，望加锡§!"
+ INS_Muhammad_Tahir_Muhibuddin: "穆罕默德·塔希尔·穆希卜丁"
+ INS_Muhammad_Tahir_Muhibuddin_desc: "§Y出生于：§!§L1908年12月14日，荷属东印度苏拉威西，望加锡§!"
+ INS_Andi_Djemma: "安迪·杰玛"
+ INS_Andi_Djemma_desc: "§Y出生于：§!§L1901年12月12日，荷属东印度苏拉威西，望加锡§!"
+ INS_Muhammad_Falihi: "穆罕默德·法利希"
+ INS_Muhammad_Falihi_desc: "§Y出生于：§!§L1900年12月14日，荷属东印度苏拉威西，望加锡§!"
+ INS_Tjokorda_Gde_Raka_Soekawati: "乔克达·德·拉卡·苏卡瓦蒂"
+ INS_Tjokorda_Gde_Raka_Soekawati_desc: "§Y出生于：§!§L1899年12月14日，荷属东印度巴厘岛，登巴萨§!"
+ INS_Tuanku_Raja_Ibrahim: "端古·拉贾·易卜拉欣"
+ INS_Tuanku_Raja_Ibrahim_desc: "§Y出生于：§!§L1900年12月14日，荷属东印度苏门答腊，班达亚齐§!"
+ INS_Bernard_Wilhelm_Lapian: "伯纳德·威廉·拉皮安"
+ INS_Bernard_Wilhelm_Lapian_desc: "§Y出生于：§!§L1903年12月14日，荷属东印度苏拉威西，万鸦老§!"
+#政党名字
+ INS_communist_party: "印度尼西亚共产主义工人党"
+ INS_communist_party_long: "印度尼西亚共产主义工人党(Partai Buruh Komunis Indonesia)"
+ INS_syndicalism_party: "印度尼西亚农工代表大会"
+ INS_syndicalism_party_long: "印度尼西亚农工代表大会(Kongres Buruh Tani Indonesia)"
+ INS_socialism_party: "印度尼西亚社会民主工人党"
+ INS_socialism_party_long: "印度尼西亚社会民主工人党(Partai Buruh Sosial Demokrat Indonesia)"
+ INS_Social_democracy_party: "印度尼西亚民族党"
+ INS_Social_democracy_party_long: "印度尼西亚民族党(Partai Nasional Indonesia)"
+ INS_Liberalism_party: "印度尼西亚民族党"
+ INS_Liberalism_party_long: "印度尼西亚民族党(Partai Nasional Indonesia)"
+ INS_Conservatism_party: "伊斯兰之家“达鲁伊斯兰”"
+ INS_Conservatism_party_long: "达鲁伊斯兰/伊斯兰之家(Darul Islam/Tentara Islam Indonesia)"
+ INS_Authoritarianism_party: "印度尼西亚民族党"
+ INS_Authoritarianism_party_long: "印度尼西亚民族党(Partai Nasional Indonesia)"
+ INS_Absolutism_party: "印度尼西亚国防军"
+ INS_Absolutism_party_long: "印度尼西亚国防军(Pasukan Defensif Indonesia)"
+ INS_Nationalism_party: "大印度尼西亚党"
+ INS_Nationalism_party_long: "大印度尼西亚党(Partai Indonesia Raya/'Parindra')"
+
+ MKS_Absolutism_party: "松巴雅戈瓦"
+ MKS_Absolutism_party_long: "戈瓦苏丹王家政府(Sombayya ri Gowa)"
+ BON_Absolutism_party: "阿隆博纳"
+ BON_Absolutism_party_long: "博纳领土之君政府(Arung Mangkaue' ri Bone)"
+ LUW_Absolutism_party: "拿督卢雾"
+ LUW_Absolutism_party_long: "卢雾笼罩与保护者(Datu Mappanjunge' ri Luwu)"
+ BTO_Conservatism_party: "梭林布纳议会"
+ BTO_Conservatism_party_long: "布通苏丹国议会(Siolimbona)"
+
+#民族精神
+ INS_Republik_yang_Belum_Selesai: "未竟的共和国"
+ INS_Republik_yang_Belum_Selesai_desc: "印度尼西亚共和国宣称拥有从沙璜到马老奇的主权，然而其政令却几乎无法越过龙目岛。放眼望去，只有爪哇岛和苏门答腊南部飘扬着红白旗，亚齐与东部群岛却从未接受过雅加达的权威。首都印制的每一张地图都是一种“一厢情愿制图法”——一个徒有其名的共和国，其领土主张超出了实际控制范围一千公里。\n\n正如总理所警告的那样：“我的斗争较为容易，因为是为了驱逐殖民者。但你们的斗争将更加艰难，因为你们要对抗自己的同胞。”"
+ INS_Mata_dari_Seberang: "隔岸有眼"
+ INS_Mata_dari_Seberang_desc: "从望加锡到坤甸，从万鸦老到登巴萨——每一位地方酋长、苏丹和临时总督都带着同样的疑问注视着雅加达：他们什么时候会来对付我们？共和国的宣传广播毫不掩饰。每一份投放在苏拉威西的传单都在谈论“统一”。每一次电台演讲都以“从沙璜到马老奇”作结。各地区则以重整军备和彼此间的秘密外交作为回应——一道怀疑的包围圈正环绕着这个尚未赢得信任便已宣称拥有其土地的国家。"
+ INS_Oposisi_Berkepala_Tiga: "毒蛇的三头"
+ INS_Oposisi_Berkepala_Tiga_desc: "“国家的力量在于团结，国家的弱点在于分裂。没有团结，我们将再次被帝国主义踩在脚下。”话虽有力，但如今共和国的大厦是一座内部分裂的房子，裂痕朝三个方向延伸：\n\n社会主义者——沙里尔的继承者，茉莉芬清洗的幸存者。他们身居议会，却梦想着完成1945年未竟的革命。他们的网络遍布铁路工会和巨港的石油工人之中。他们在等待。\n\n伊斯兰之家——卡托苏维里约的遗产并未随其被捕而消亡。在西爪哇高地，村民服从的是伊玛目而非行政长官。伊斯兰极端分子低语道，东京扶植的共和国并不比海牙的殖民地强多少：不过是换了一批狱卒的世俗牢笼。他们要求建立“印度尼西亚伊斯兰国”——而且他们手中有枪。\n\n印度尼西亚党的激进分子——老牌的“大印度尼西亚”人马。苏托莫残余的威名尚且能够强迫其效忠，但这一妥协安排终将陷入火海。"
+ INS_Mesin_Jawa: "爪哇引擎"
+ INS_Mesin_Jawa_desc: "爪哇既是车间，也是账房。在日占时期，该岛的种植园经济体系被重组——橡胶运往神户，奎宁运往大阪，大米运往关东军。当日军的驻屯军灰飞烟灭后，基础设施保留了下来。铁路准点运行。仅丹戎不碌港处理的吨位便超过了泗水以东所有港口的总和。\n\n共和国是一个残缺国家，但它是一个运转中的残缺国家，仅凭这份繁荣便足以让心怀不满者继续依附于这一建国大业。当苏拉威西还在用独木舟交易椰干时，这里的种植园和炼油厂正轰鸣作响。无论其前路究竟如何。\n\n“为了实现完全独立的印度尼西亚，我们必须能够在经济领域自力更生。这才是独立的真正含义。”"
+ INS_Tentara_Gado_Gado: "什锦之军"
+ INS_Tentara_Gado_Gado_desc: "共和国继承的不是一支军队，而是一群武装团伙的狂欢。由日本人训练的乡土防卫义勇军只知道挖战壕，别的几乎一无所知。人民民兵英勇无比，纪律却差得令人发指。野战元帅指挥着营级单位，中士却能和上校讨价还价。每个团都是军头的私人领地；每道动员令都是一场谈判。\n\n“我们的军队不是雇佣军。我们的军队是人民军队，是诞生于人民苦难腹中的军队，他们战斗不是为了薪饷，而是为了信念。”"
+
+ # "Kemerdekaan hanyalah jembatan emas. Di seberang jembatan itu, kita baru bisa membangun masyarakat Indonesia merdeka." > — Soekarno, Pidato Lahirnya Pancasila, 1 Juni 1945
+ #独立乃是一座黄金之桥。只有走到桥的对岸，我们方能建设一个自由的印度尼西亚社会。 - 《潘查希拉演说》，1945年6月1日，苏加诺
+
+#事件
+
+#新闻
+ INS_news_event.1.t: "望加锡战争"
+ INS_news_event.1.d: "在荷兰、日本相继退出后，苏拉威西岛的秩序似乎回到了数百年前的传统时代，平稳而祥和。不过，随着望加锡周边的戈瓦苏丹国向卢雾、布通和博纳三个王国同时宣战，岛上的局势再一次迅速恶化下来。据悉，戈瓦苏丹国宣称要完成被荷兰殖民者打断的“苏拉威西统一大业”，而卢雾王国组建的“苏拉威西邦联”则宣布誓死捍卫自己的独立。\n\n尽管交战中的几方势力均为武吉斯人国家，但对外干预的迹象明显存在：戈瓦军队手中俨然充满了爪哇产品，而印度尼西亚显然期望亲近己方的戈瓦能够统一全岛，进而让日惹对其施加影响力。不过，目前由于明面上的岛上第一强国哥伦打洛仍被内部纷争牵扯精力无力加入战局，苏拉威西的局势仍然扑朔迷离。"
+ INS_news_event.1.a: "日惹展露了它的獠牙。"
+
+#GUI
+
+#BOP
+
+#决议
+
+#国策
+ #: ""
+ #_desc: ""
+
+#阵营
+ Sulawesi_Confederation: "苏拉威西邦联"

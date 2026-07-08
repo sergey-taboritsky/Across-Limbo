@@ -1,0 +1,298 @@
+add_namespace = WGR_event
+add_namespace = WGR_newevent
+#巴伐利亚问题
+country_event = {
+	id = WGR_event.1
+	title = WGR_event.1.t
+	desc = WGR_event.1.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = WGR_event.1.a
+	}
+}
+
+#军事戒严的必要性
+country_event = {
+	id = WGR_event.2
+	title = WGR_event.2.t
+	desc = WGR_event.2.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = WGR_event.2.a
+	}
+}
+
+#增加警力
+country_event = {
+	id = WGR_event.3
+	title = WGR_event.3.t
+	desc = WGR_event.3.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = WGR_event.3.a
+	}
+}
+
+#宁肯错抓一千，不肯放过一个
+country_event = {
+	id = WGR_event.4
+	title = WGR_event.4.t
+	desc = WGR_event.4.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = WGR_event.4.a
+	}
+}
+
+#申请拨款发展巴伐利亚地区的经济状况
+country_event = {
+	id = WGR_event.5
+	title = WGR_event.5.t
+	desc = WGR_event.5.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = WGR_event.5.a
+		custom_effect_tooltip = WGRevent5_tt
+		add_to_variable = {
+			WGR_Bavarian_extremist_group_readiness = -10
+		}
+		clamp_variable = {
+			var = WGR_Bavarian_extremist_group_readiness
+			min = 0
+			max = 100
+		}
+		add_timed_idea = {
+			idea = WGR_idea_01 #投资巴伐利亚地区
+			days = 30
+		}
+		52 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = WGR_event.5.b
+		add_timed_idea = {
+			idea = WGR_idea_02 #投资巴伐利亚地区
+			days = 30
+		}
+		custom_effect_tooltip = WGR_0_1_4_tt
+		add_to_variable = {
+			WGR_Bavarian_extremist_group_readiness = -5
+		}
+		clamp_variable = {
+			var = WGR_Bavarian_extremist_group_readiness
+			min = 0
+			max = 100
+		}
+		52 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+#逮捕希特勒
+country_event = {
+	id = WGR_event.6
+	title = WGR_event.6.t
+	desc = WGR_event.6.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = WGR_event.6.a
+		custom_effect_tooltip = WGR_event_6_custom
+		set_country_flag = WGR_Hitler_was_solved
+	}
+}
+
+#巴伐利亚地区爆发起义
+country_event = {
+	id = WGR_event.7
+	title = WGR_event.7.t
+	desc = WGR_event.7.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = WGR_event.7.a
+	}
+}
+#德意志1937年选举
+country_event = {
+	id = WGR_event.8
+	title = WGR_event.8.t
+	desc = WGR_event.8.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	trigger = {
+		date > 1937.3.1
+		date < 1937.3.3
+		original_tag = WGR
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = WGR_event.8.a
+        custom_effect_tooltip = WGR_decision_02_02_tt
+		set_country_flag = WGR_decision_02_02_flag
+		set_country_flag = WGR_German_1937_elections_flag
+		custom_effect_tooltip = TNW_unlock_decision_tt
+		unlock_decision_category_tooltip = WGR_German_1937_elections
+		
+	}
+	option = {
+		name = WGR_event.8.b
+		custom_effect_tooltip = WGR_decision_02_03_tt
+		set_country_flag = WGR_decision_02_03_flag
+		set_country_flag = WGR_German_1937_elections_flag
+		custom_effect_tooltip = TNW_unlock_decision_tt
+		unlock_decision_category_tooltip = WGR_German_1937_elections
+		
+	}
+	option = {
+		name = WGR_event.8.c
+		custom_effect_tooltip = WGR_decision_02_03_tt
+		set_country_flag = WGR_decision_02_03_flag
+		set_country_flag = WGR_German_1937_elections_flag
+		custom_effect_tooltip = TNW_unlock_decision_tt
+		unlock_decision_category_tooltip = WGR_German_1937_elections
+	}
+	option = {
+		name = WGR_event.8.e
+		custom_effect_tooltip = WGR_decision_02_03_tt
+		set_country_flag = WGR_decision_02_03_flag
+		custom_effect_tooltip = TNW_unlock_decision_tt
+		unlock_decision_category_tooltip = WGR_German_1937_elections
+		set_country_flag = WGR_German_1937_elections_flag
+	}
+}
+#民主党的建议
+country_event = {
+	id = WGR_event.9
+	title = WGR_event.9.t
+	desc = WGR_event.9.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = WGR_event.9.a
+	}
+}
+#民主党的建议
+country_event = {
+	id = WGR_event.10
+	title = WGR_event.10.t
+	desc = WGR_event.10.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = WGR_event.10.a
+		custom_effect_tooltip = WGR_event10_tt
+        load_focus_tree = WGR_Community_Focus
+	}
+}
+#巴伐利亚地区爆发叛乱
+news_event = {
+	id = WGR_newevent.1
+	title = WGR_newevent.1.t
+	desc = WGR_newevent.1.d
+	is_triggered_only = yes
+	#picture = GFX_news_event_death_of_morax
+	major = yes
+	option = {
+		trigger = {
+			original_tag = WGR
+		}
+		name = WGR_newevent.1.a
+	}
+	option = {
+		trigger = {
+			is_in_faction_with = WGR
+			NOT = {
+				original_tag = WGR
+			}
+		}
+		name = WGR_newevent.1.b
+	}
+	option = {
+		trigger = {
+			is_in_faction_with = SOV
+		}
+		name = WGR_newevent.1.c
+	}
+	option = {
+		trigger = {
+			NOT = {
+				is_in_faction_with = SOV
+				is_in_faction_with = WGR
+				original_tag = WGR
+			}
+		}
+		name = WGR_newevent.1.e
+	}
+}
+#巴伐利亚地区极端组织被镇压
+news_event = {
+	id = WGR_newevent.2
+	title = WGR_newevent.2.t
+	desc = WGR_newevent.2.d
+	is_triggered_only = yes
+	#picture = GFX_news_event_death_of_morax
+	major = yes
+	option = {
+		trigger = {
+			original_tag = WGR
+		}
+		name = WGR_newevent.2.a
+	}
+	option = {
+		trigger = {
+			is_in_faction_with = WGR
+			NOT = {
+				original_tag = WGR
+			}
+		}
+		name = WGR_newevent.2.b
+	}
+	option = {
+		trigger = {
+			is_in_faction_with = SOV
+		}
+		name = WGR_newevent.2.c
+	}
+	option = {
+		trigger = {
+			NOT = {
+				is_in_faction_with = SOV
+				is_in_faction_with = WGR
+				original_tag = WGR
+			}
+		}
+		name = WGR_newevent.2.e
+	}
+}
+
+
+

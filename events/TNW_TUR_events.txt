@@ -1,0 +1,689 @@
+add_namespace = TUR_event
+add_namespace = TUR_news_event
+country_event = {
+	id = TUR_event.1
+	title = TUR_event.1.t
+	desc = TUR_event.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = TUR_event.2 days = 25 } } }
+	option = {
+		name = TUR_event.1.a
+		add_manpower = -1
+		kill_ideology_leader = Authoritarianism
+		promote_character = TUR_Ahmed_V_Nihad
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = TUR_news_event.1
+			}
+		}
+	}
+}
+country_event = {
+	id = TUR_event.2
+	title = TUR_event.2.t
+	desc = TUR_event.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			set_global_flag = TNW_Middle_East_War_begin_global_flag
+			country_event = { id = TUR_event.3 days = 5 }
+		}
+	}
+	option = {
+		name = TUR_event.2.a
+		remove_ideas = TUR_Ismet_Inonu_hog
+		clr_country_flag = TUR_Ismet_Grand_Vizier_flag
+		clr_country_flag = has_second_leader_flag
+		TUR_Ahmed_V_Nihad = { set_nationality = KAL }
+		hidden_effect = {
+			KAL = {
+				promote_character = TUR_Ahmed_V_Nihad
+				transfer_state = 163
+				transfer_state = 164
+				transfer_state = 339
+				transfer_state = 340
+				transfer_state = 342
+				transfer_state = 343
+				transfer_state = 345
+				transfer_state = 349
+				transfer_state = 1267
+			}
+			TUR = {
+				every_core_state = {
+					add_core_of = KAL
+				}
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = TUR_news_event.2
+			}
+		}
+	}
+	option = {
+		name = TUR_event.2.b
+		remove_ideas = TUR_Ismet_Inonu_hog
+		clr_country_flag = TUR_Ismet_Grand_Vizier_flag
+		clr_country_flag = has_second_leader_flag
+		TUR_Ahmed_V_Nihad = { set_nationality = KAL }
+		hidden_effect = {
+			KAL = {
+				promote_character = TUR_Ahmed_V_Nihad
+				transfer_state = 163
+				transfer_state = 164
+				transfer_state = 339
+				transfer_state = 340
+				transfer_state = 342
+				transfer_state = 343
+				transfer_state = 345
+				transfer_state = 349
+				transfer_state = 1267
+				change_tag_from = TUR
+			}
+			TUR = {
+				every_core_state = {
+					add_core_of = KAL
+				}
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = TUR_news_event.2
+			}
+		}
+	}
+}
+country_event = {
+	id = TUR_event.3
+	title = TUR_event.3.t
+	desc = TUR_event.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = TUR_event.4 days = 8 } } }
+	option = {
+		name = TUR_event.3.a
+		set_cosmetic_tag = TUR_ankara_government
+		set_capital = { state = 49 remember_old_capital = no }
+	}
+}
+country_event = {
+	id = TUR_event.4
+	title = TUR_event.4.t
+	desc = TUR_event.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = TUR_event.5 days = 16 } } }
+	option = {
+		name = TUR_event.4.a
+		GRE = {
+			transfer_state = 187
+			transfer_state = 164
+			transfer_state = 183
+			transfer_state = 1328
+			transfer_state = 2322
+			transfer_state = 2323
+		}
+        set_variable = {
+            global.TNW_Balkan_Powderkeg_Button_Agean_frame_var = 3
+        }
+	}
+}
+country_event = {
+	id = TUR_event.5
+	title = TUR_event.5.t
+	desc = TUR_event.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = TUR_event.6 days = 4 } } }
+	option = {
+		name = TUR_event.5.a
+		TUR = {
+			end_puppet = EGY
+			end_puppet = LBA
+			end_puppet = YEM
+			end_puppet = HEJ
+			end_puppet = SAU
+			end_puppet = UAE
+		}
+	}
+}
+country_event = {
+	id = TUR_event.6
+	title = TUR_event.6.t
+	desc = TUR_event.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = TUR_event.7 days = 10 } } }
+	option = {
+		name = TUR_event.6.a
+		SYR = {
+			transfer_state = 453
+			transfer_state = 454
+			transfer_state = 455
+			transfer_state = 470
+			transfer_state = 473
+			transfer_state = 553
+			transfer_state = 554
+			transfer_state = 677
+			transfer_state = 680
+			transfer_state = 782
+			transfer_state = 965
+			transfer_state = 1124
+			transfer_state = 1126
+			transfer_state = 1240
+			transfer_state = 1241
+			transfer_state = 1242
+			transfer_state = 1243
+			transfer_state = 1244
+			transfer_state = 1245
+			transfer_state = 1246
+			transfer_state = 1248
+			transfer_state = 1304
+			transfer_state = 1305
+			transfer_state = 1306
+			transfer_state = 1365
+			transfer_state = 1366
+			transfer_state = 1367
+			transfer_state = 1368
+			transfer_state = 1369
+			transfer_state = 1370
+			transfer_state = 1371
+			transfer_state = 1437
+			transfer_state = 1446
+			transfer_state = 1447
+			transfer_state = 1449
+			transfer_state = 1450
+			transfer_state = 1785
+			transfer_state = 1786
+			transfer_state = 1988
+			transfer_state = 2148
+			transfer_state = 2149
+			transfer_state = 2150
+			transfer_state = 2151
+			transfer_state = 2154
+			transfer_state = 2155
+		}
+		IRQ = {
+			transfer_state = 291
+			transfer_state = 656
+			transfer_state = 675
+			transfer_state = 676
+			transfer_state = 781
+			transfer_state = 916
+			transfer_state = 924
+			transfer_state = 1333
+			transfer_state = 1334
+			transfer_state = 1773
+			transfer_state = 1774
+			transfer_state = 1775
+			transfer_state = 1776
+			transfer_state = 1777
+			transfer_state = 1778
+			transfer_state = 1779
+			transfer_state = 1780
+			transfer_state = 1781
+			transfer_state = 1993
+		}
+		hidden_effect = {
+			SYR = {
+				every_owned_state = {
+					add_core_of = SYR
+					remove_core_of = TUR
+					remove_core_of = KAL
+				}
+			}
+			IRQ = {
+				every_owned_state = {
+					add_core_of = IRQ
+					remove_core_of = TUR
+					remove_core_of = KAL
+				}
+			}
+		}
+	}
+	option = {
+		name = TUR_event.6.b
+		SYR = {
+			transfer_state = 453
+			transfer_state = 454
+			transfer_state = 455
+			transfer_state = 470
+			transfer_state = 473
+			transfer_state = 553
+			transfer_state = 554
+			transfer_state = 677
+			transfer_state = 680
+			transfer_state = 782
+			transfer_state = 965
+			transfer_state = 1124
+			transfer_state = 1126
+			transfer_state = 1240
+			transfer_state = 1241
+			transfer_state = 1242
+			transfer_state = 1243
+			transfer_state = 1244
+			transfer_state = 1245
+			transfer_state = 1246
+			transfer_state = 1248
+			transfer_state = 1304
+			transfer_state = 1305
+			transfer_state = 1306
+			transfer_state = 1365
+			transfer_state = 1366
+			transfer_state = 1367
+			transfer_state = 1368
+			transfer_state = 1369
+			transfer_state = 1370
+			transfer_state = 1371
+			transfer_state = 1437
+			transfer_state = 1446
+			transfer_state = 1447
+			transfer_state = 1449
+			transfer_state = 1450
+			transfer_state = 1785
+			transfer_state = 1786
+			transfer_state = 1988
+			transfer_state = 2148
+			transfer_state = 2149
+			transfer_state = 2150
+			transfer_state = 2151
+			transfer_state = 2154
+			transfer_state = 2155
+		}
+		IRQ = {
+			transfer_state = 291
+			transfer_state = 656
+			transfer_state = 675
+			transfer_state = 676
+			transfer_state = 781
+			transfer_state = 916
+			transfer_state = 924
+			transfer_state = 1333
+			transfer_state = 1334
+			transfer_state = 1773
+			transfer_state = 1774
+			transfer_state = 1775
+			transfer_state = 1776
+			transfer_state = 1777
+			transfer_state = 1778
+			transfer_state = 1779
+			transfer_state = 1780
+			transfer_state = 1781
+			transfer_state = 1993
+		}
+		hidden_effect = {
+			SYR = {
+				every_owned_state = {
+					add_core_of = SYR
+					remove_core_of = TUR
+					remove_core_of = KAL
+				}
+			}
+			IRQ = {
+				every_owned_state = {
+					add_core_of = IRQ
+					remove_core_of = TUR
+					remove_core_of = KAL
+				}
+			}
+		}
+		SYR = {
+			change_tag_from = TUR
+		}
+	}
+	option = {
+		name = TUR_event.6.c
+		SYR = {
+			transfer_state = 453
+			transfer_state = 454
+			transfer_state = 455
+			transfer_state = 470
+			transfer_state = 473
+			transfer_state = 553
+			transfer_state = 554
+			transfer_state = 677
+			transfer_state = 680
+			transfer_state = 782
+			transfer_state = 965
+			transfer_state = 1124
+			transfer_state = 1126
+			transfer_state = 1240
+			transfer_state = 1241
+			transfer_state = 1242
+			transfer_state = 1243
+			transfer_state = 1244
+			transfer_state = 1245
+			transfer_state = 1246
+			transfer_state = 1248
+			transfer_state = 1304
+			transfer_state = 1305
+			transfer_state = 1306
+			transfer_state = 1365
+			transfer_state = 1366
+			transfer_state = 1367
+			transfer_state = 1368
+			transfer_state = 1369
+			transfer_state = 1370
+			transfer_state = 1371
+			transfer_state = 1437
+			transfer_state = 1446
+			transfer_state = 1447
+			transfer_state = 1449
+			transfer_state = 1450
+			transfer_state = 1785
+			transfer_state = 1786
+			transfer_state = 1988
+			transfer_state = 2148
+			transfer_state = 2149
+			transfer_state = 2150
+			transfer_state = 2151
+			transfer_state = 2154
+			transfer_state = 2155
+		}
+		IRQ = {
+			transfer_state = 291
+			transfer_state = 656
+			transfer_state = 675
+			transfer_state = 676
+			transfer_state = 781
+			transfer_state = 916
+			transfer_state = 924
+			transfer_state = 1333
+			transfer_state = 1334
+			transfer_state = 1773
+			transfer_state = 1774
+			transfer_state = 1775
+			transfer_state = 1776
+			transfer_state = 1777
+			transfer_state = 1778
+			transfer_state = 1779
+			transfer_state = 1780
+			transfer_state = 1781
+			transfer_state = 1993
+		}
+		hidden_effect = {
+			SYR = {
+				every_owned_state = {
+					add_core_of = SYR
+					remove_core_of = TUR
+					remove_core_of = KAL
+				}
+			}
+			IRQ = {
+				every_owned_state = {
+					add_core_of = IRQ
+					remove_core_of = TUR
+					remove_core_of = KAL
+				}
+			}
+		}
+		IRQ = {
+			change_tag_from = TUR
+		}
+	}
+}
+country_event = {
+	id = TUR_event.7
+	title = TUR_event.7.t
+	desc = TUR_event.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = TUR_event.8 days = 5 } } }
+	option = {
+		name = TUR_event.7.a
+		RUS = {
+			transfer_state = 341
+		}
+		BUL = {
+			transfer_state = 1267
+			transfer_state = 2601
+		}
+        set_variable = {
+            global.TNW_Balkan_Powderkeg_Button_Thrace_frame_var = 4
+        }
+	}
+}
+country_event = {
+	id = TUR_event.8
+	title = TUR_event.8.t
+	desc = TUR_event.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = TUR_event.9 days = 20 } } }
+	option = {
+		name = TUR_event.8.a
+		set_cosmetic_tag = TUR_ankara_republic
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = TUR_news_event.3
+			}
+		}
+	}
+}
+country_event = {
+	id = TUR_event.9
+	title = TUR_event.9.t
+	desc = TUR_event.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = TUR_event.10 days = 3 } } }
+	option = {
+		name = TUR_event.9.a
+		ARM = {
+			transfer_state = 350
+			transfer_state = 1989
+			transfer_state = 1990
+			transfer_state = 1991
+		}
+		DAG = {
+			transfer_state = 352
+			transfer_state = 353
+			transfer_state = 354
+			transfer_state = 1992
+		}
+		hidden_effect = {
+			ARM = {
+				every_owned_state = {
+					add_core_of = ARM
+					add_core_of = DAG
+				}
+			}
+			DAG = {
+				every_owned_state = {
+					add_core_of = DAG
+					add_core_of = ARM
+				}
+			}
+		}
+	}
+	option = {
+		name = TUR_event.9.b
+		ARM = {
+			transfer_state = 350
+			transfer_state = 1989
+			transfer_state = 1990
+			transfer_state = 1991
+		}
+		DAG = {
+			transfer_state = 352
+			transfer_state = 353
+			transfer_state = 354
+			transfer_state = 1992
+		}
+		hidden_effect = {
+			ARM = {
+				every_owned_state = {
+					add_core_of = ARM
+					add_core_of = DAG
+				}
+			}
+			DAG = {
+				every_owned_state = {
+					add_core_of = DAG
+					add_core_of = ARM
+				}
+			}
+		}
+		DAG = {
+			change_tag_from = TUR
+		}
+	}
+	option = {
+		name = TUR_event.9.c
+		ARM = {
+			transfer_state = 350
+			transfer_state = 1989
+			transfer_state = 1990
+			transfer_state = 1991
+		}
+		DAG = {
+			transfer_state = 352
+			transfer_state = 353
+			transfer_state = 354
+			transfer_state = 1992
+		}
+		hidden_effect = {
+			ARM = {
+				every_owned_state = {
+					add_core_of = ARM
+					add_core_of = DAG
+				}
+			}
+			DAG = {
+				every_owned_state = {
+					add_core_of = DAG
+					add_core_of = ARM
+				}
+			}
+		}
+		ARM = {
+			change_tag_from = TUR
+		}
+	}
+}
+country_event = {
+	id = TUR_event.10
+	title = TUR_event.10.t
+	desc = TUR_event.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TUR_event.10.a
+		CIN = {
+			transfer_state = 344
+			transfer_state = 346
+			transfer_state = 348
+		}
+		hidden_effect = {
+			CIN = {
+				every_owned_state = {
+					add_core_of = CIN
+				}
+			}
+		}
+	}
+	option = {
+		name = TUR_event.10.b
+		CIN = {
+			transfer_state = 344
+			transfer_state = 346
+			transfer_state = 348
+		}
+		hidden_effect = {
+			CIN = {
+				every_owned_state = {
+					add_core_of = CIN
+				}
+			}
+		}
+		CIN = {
+			change_tag_from = TUR
+		}
+	}
+}
+
+news_event = {
+	id = TUR_news_event.1
+	title = TUR_news_event.1.t
+	desc = TUR_news_event.1.d
+	picture = GFX_news_event_TUR_Sultans_Death
+	fire_only_once = no
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = TUR_news_event.1.a
+		trigger = {
+			tag = TUR
+		}
+	}
+	option = {
+		name = TUR_news_event.1.b
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = FRA
+				is_in_faction_with = RUS
+				is_in_faction_with = FRA
+				has_idea = moscow_aligned_nation
+				has_idea = phalanstere_aligned_nation
+			}
+		}
+	}
+	option = {
+		name = TUR_news_event.1.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = TUR
+					tag = RUS
+					tag = FRA
+					is_in_faction_with = RUS
+					is_in_faction_with = FRA
+					has_idea = moscow_aligned_nation
+					has_idea = phalanstere_aligned_nation
+				}
+			}
+		}
+	}
+}
+news_event = {
+	id = TUR_news_event.2
+	title = TUR_news_event.2.t
+	desc = TUR_news_event.2.d
+	picture = GFX_news_event_TUR_Sultans_Death
+	fire_only_once = no
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = TUR_news_event.2.a
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				set_temp_variable = { TNW_temp_super_event = token:SE_Turkish_Civil_War }
+				TNW_fire_super_event = yes
+			}
+		}
+	}
+}
+news_event = {
+	id = TUR_news_event.3
+	title = TUR_news_event.3.t
+	desc = TUR_news_event.3.d
+	picture = GFX_news_event_TUR_Sultans_Death
+	fire_only_once = no
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = TUR_news_event.3.a
+	}
+}

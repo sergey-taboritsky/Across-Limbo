@@ -1,0 +1,22 @@
+Get_grid_Faction = {
+	clear_array = ROOT.grid_faction_array
+	for_each_scope_loop = {
+		array = global.countries
+		if = {
+			limit = {
+				THIS = {
+				OR = {
+					has_idea = DDR_Member_States_of_the_USSR_the_German_Soviet
+					has_idea = RUS_jia_meng_guo
+				    }
+			    }
+			}
+			add_to_array = { ROOT.grid_faction_array = THIS }
+		}
+	}
+	ROOT = {
+		set_country_flag = faction_gui_open
+	}
+}
+
+

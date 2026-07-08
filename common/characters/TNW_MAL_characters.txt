@@ -1,0 +1,36 @@
+characters = {
+	#李振殿
+	MAL_Li_Zhendian = {
+		name = MAL_Li_Zhendian
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_Li_Zhendian
+			}
+		}
+		country_leader = {
+			desc = MAL_Li_Zhendian_desc
+			ideology = tridemism_authdem
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#彭泽民
+	MAL_Peng_Zemin = {
+		name = MAL_Peng_Zemin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_Peng_Zemin
+			}
+		}
+		country_leader = {
+			desc = MAL_Peng_Zemin_desc
+			ideology = tridemism_left
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

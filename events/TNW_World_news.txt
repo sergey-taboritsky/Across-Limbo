@@ -1,0 +1,136 @@
+add_namespace = World_news
+add_namespace = Nuke_news
+#二战爆发
+news_event = {
+	id = World_news.1
+	title = World_news.1.t
+	desc = World_news.1.d
+	picture = GFX_news_event_generic_panzer_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = World_news.1.tt
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				set_temp_variable = { TNW_temp_super_event = token:World_War_II }
+				TNW_fire_super_event = yes
+			}
+		}
+	}
+}
+#布尔什维克向西进军
+news_event = {
+	id = World_news.2
+	title = World_news.2.t
+	desc = World_news.2.d
+	picture = GFX_news_event_generic_panzer_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = World_news.2.tt
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				set_temp_variable = { TNW_temp_super_event = token:Bolsheviks_marched_westward }
+				TNW_fire_super_event = yes
+			}
+		}
+	}
+}
+#第三次巴尔干战争
+news_event = {
+	id = World_news.3
+	title = World_news.3.t
+	desc = World_news.3.d
+	picture = GFX_news_event_generic_panzer_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = World_news.3.tt
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				set_temp_variable = { TNW_temp_super_event = token:Third_Balkan_War }
+				TNW_fire_super_event = yes
+			}
+		}
+	}
+}
+#大雷雨行动
+news_event = {
+	id = World_news.4
+	title = World_news.4.t
+	desc = World_news.4.d
+	picture = GFX_news_event_Operation_Thunderstorm
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = World_news.4.tt
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				set_temp_variable = { TNW_temp_super_event = token:Operation_Thunderstorm }
+				TNW_fire_super_event = yes
+			}
+		}
+	}
+}
+#不列颠内战
+news_event = {
+	id = World_news.5
+	title = World_news.5.t
+	desc = World_news.5.d
+	picture = GFX_news_event_British_Civil_War
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = World_news.5.tt
+		trigger = {
+			tag = ENG
+		}
+	}
+	option = {
+		name = World_news.5.td
+		trigger = {
+			tag = BLF
+		}
+	}
+	option = {
+		name = World_news.5.ta
+		trigger = {
+			NOT = {
+				or = {
+					tag = BLF
+					tag = ENG
+				}
+			}
+		}
+	}
+}
+
+#核武器
+news_event = {
+	id = Nuke_news.1
+	title = Nuke_news.1.t
+	desc = Nuke_news.1.d
+	picture = GFX_news_event_generic_Nuke
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = Nuke_news.1.tt
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				set_temp_variable = { TNW_temp_super_event = token:Nuke_Bomb }
+				TNW_fire_super_event = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+#工业发展水平
+TNW_Degree_industrial_development = {
+	color_type = good
+	value_type = number
+	precision = 2
+	category = country
+}
+#科研发展水平
+TNW_Development_scientific_research = {
+	color_type = good
+	value_type = number
+	precision = 2
+	category = country
+}
+#军事发展水平
+TNW_Degree_military_development = {
+	color_type = good
+	value_type = number
+	precision = 2
+	category = country
+}
+#农业发展水平
+TNW_Degree_agriculture_development = {
+	color_type = good
+	value_type = number
+	precision = 2
+	category = country
+}
+#治理发展水平
+TNW_Degree_bureaucracy_efficiency = {
+	color_type = good
+	value_type = number
+	precision = 2
+	category = country
+}

@@ -1,0 +1,377 @@
+focus_tree = {
+	id = TAT_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TAT
+		}
+	}
+	default = no
+	###巩固阿勒颇城区
+	focus = {
+		id = TAT_suppress_Aleppo
+		icon = GFX_TAT_suppress_Aleppo
+		x = 6
+		y = 0
+		cost = 3
+		completion_reward = {
+			249 = {
+				add_building_construction = { type = bunker province = 6338 level = 3 }
+				add_extra_state_shared_building_slots = 1
+			}
+			add_stability = 0.05
+			add_political_power = -15
+		}
+	}
+	###联络阿达纳
+	focus = {
+		id = TAT_contact_radical_CHP
+		icon = GFX_TAT_contact_radical_CHP
+		relative_position_id = TAT_suppress_Aleppo
+		x = 2
+		y = 0
+		cost = 4
+		completion_reward = {
+		}
+	}
+	###寻求巴黎承认
+	focus = {
+		id = TAT_seek_Paris_recognition
+		icon = GFX_TAT_seek_Paris_recognition
+		relative_position_id = TAT_suppress_Aleppo
+		x = 4
+		y = 0
+		cost = 3
+		completion_reward = {
+		}
+	}
+	###成立革命统一战线
+	focus = {
+		id = TAT_form_united_front
+		icon = GFX_TAT_form_united_front
+		prerequisite = {
+			focus = TAT_suppress_Aleppo
+		}
+		prerequisite = {
+			focus = TAT_contact_radical_CHP
+		}
+		prerequisite = {
+			focus = TAT_seek_Paris_recognition
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = 2
+		y = 1
+		cost = 7
+		completion_reward = {
+			set_party_name = {
+				ideology = communist
+				long_name = TAT_socialism_party_long
+				name = TAT_socialism_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = TAT_socialism_party_long
+				name = TAT_socialism_party
+			}
+			set_power_balance = {
+				id = TAT_revolution_front_balance
+				left_side = TAT_communist_party_bop
+				right_side = TAT_national_revolutionary_bop
+			}
+			add_power_balance_value = {
+				id = TAT_revolution_front_balance
+				value = 0.05
+			}
+		}
+	}
+	###巩固革命政权
+	focus = {
+		id = TAT_consolidate_revolution
+		icon = GFX_TAT_consolidate_revolution
+		prerequisite = {
+			focus = TAT_form_united_front
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = 6
+		y = 2
+		cost = 3
+		completion_reward = {
+		}
+	}
+	###动员人民民兵
+	focus = {
+		id = TAT_mobilize_militia
+		icon = GFX_TAT_mobilize_militia
+		prerequisite = {
+			focus = TAT_consolidate_revolution
+		}
+		available = {
+			has_political_power > 24
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = 4
+		y = 3
+		cost = 3
+		mutually_exclusive = {
+			focus = TAT_increase_conscription
+		}
+		completion_reward = {
+			add_political_power = -25
+			swap_ideas = {
+				remove_idea = TAT_arab_army_idea
+				add_idea = TAT_arab_army_1_idea
+			}
+			add_power_balance_value = {
+				id = TAT_revolution_front_balance
+				value = -0.10
+			}
+		}
+	}
+	###扩展征兵范畴
+	focus = {
+		id = TAT_increase_conscription
+		icon = GFX_TAT_increase_conscription
+		prerequisite = {
+			focus = TAT_consolidate_revolution
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = 6
+		y = 3
+		cost = 3
+		mutually_exclusive = {
+			focus = TAT_mobilize_militia
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TAT_arab_army_idea
+				add_idea = TAT_arab_army_2_idea
+			}
+			add_power_balance_value = {
+				id = TAT_revolution_front_balance
+				value = 0.10
+			}
+		}
+	}
+	###颁布征收法令
+	focus = {
+		id = TAT_impose_levy_act
+		icon = GFX_TAT_impose_levy_act
+		prerequisite = {
+			focus = TAT_consolidate_revolution
+		}
+		bypass = {
+			NOT = {
+				has_idea = TAT_supplies_shortage_idea
+			}
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = 8
+		y = 3
+		cost = 3
+		completion_reward = {
+			remove_ideas = TAT_supplies_shortage_idea
+			add_timed_idea = {
+				idea = TAT_wartime_socialist_policy_idea
+				days = 180
+			}
+		}
+	}
+	###争取埃及支持
+	focus = {
+		id = TAT_seek_Egyptian_support
+		icon = GFX_TAT_seek_Egyptian_support
+		prerequisite = {
+			focus = TAT_impose_levy_act
+		}
+		prerequisite = {
+			focus = TAT_mobilize_militia
+			focus = TAT_increase_conscription
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = 4
+		y = 4
+		cost = 3
+		completion_reward = {
+		}
+	}
+	###遣使的黎波里
+	focus = {
+		id = TAT_embassy_in_Tripoli
+		icon = GFX_TAT_embassy_in_Tripoli
+		prerequisite = {
+			focus = TAT_impose_levy_act
+		}
+		prerequisite = {
+			focus = TAT_mobilize_militia
+			focus = TAT_increase_conscription
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = 8
+		y = 4
+		cost = 3
+		completion_reward = {
+		}
+	}
+	###解放黎凡特
+	focus = {
+		id = TAT_liberate_Levant
+		icon = GFX_TAT_liberate_Levant
+		prerequisite = {
+			focus = TAT_form_united_front
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = -2
+		y = 2
+		cost = 3
+		completion_reward = {
+			add_command_power = -25
+
+		}
+	}
+	###终结帝国残留
+	focus = {
+		id = TAT_destroy_imperial_remnant
+		icon = GFX_TAT_destroy_imperial_remnant
+		prerequisite = {
+			focus = TAT_liberate_Levant
+		}
+		bypass = {
+			NOT = {
+				country_exists = SYR
+			}
+		}
+		available = {
+			has_war = no
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = -4
+		y = 3
+		cost = 3
+		completion_reward = {
+			declare_war_on = {
+				target = SYR
+				type = civil_war
+			}
+		}
+	}
+	###镇压社会民族党
+	focus = {
+		id = TAT_attack_SSNP
+		icon = GFX_TAT_attack_SSNP
+		prerequisite = {
+			focus = TAT_liberate_Levant
+		}
+		bypass = {
+			NOT = {
+				country_exists = LEB
+			}
+		}
+		available = {
+			has_war = no
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = -2
+		y = 3
+		cost = 3
+		completion_reward = {
+			declare_war_on = {
+				target = LEB
+				type = civil_war
+			}
+		}
+	}
+	###推翻圣裔王国
+	focus = {
+		id = TAT_overthrow_Hashemites
+		icon = GFX_TAT_overthrow_Hashemites
+		prerequisite = {
+			focus = TAT_liberate_Levant
+		}
+		bypass = {
+			NOT = {
+				country_exists = JOR
+			}
+		}
+		available = {
+			has_war = no
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = 0
+		y = 3
+		cost = 3
+		completion_reward = {
+			declare_war_on = {
+				target = JOR
+				type = civil_war
+			}
+		}
+	}
+	###解放圣城
+	focus = {
+		id = TAT_liberate_holy_city
+		icon = GFX_TAT_liberate_holy_city
+		prerequisite = {
+			focus = TAT_liberate_Levant
+		}
+		bypass = {
+			NOT = {
+				country_exists = PAL
+			}
+		}
+		available = {
+			has_war = no
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = -3
+		y = 4
+		cost = 3
+		completion_reward = {
+			declare_war_on = {
+				target = PAL
+				type = civil_war
+			}
+		}
+	}
+	###驱逐外来者
+	focus = {
+		id = TAT_cast_out_foreigners
+		icon = GFX_TAT_cast_out_foreigners
+		prerequisite = {
+			focus = TAT_liberate_Levant
+		}
+		bypass = {
+			NOT = {
+				country_exists = ISR
+			}
+		}
+		available = {
+			has_war = no
+		}
+		relative_position_id = TAT_suppress_Aleppo
+		x = -1
+		y = 4
+		cost = 3
+		completion_reward = {
+			declare_war_on = {
+				target = ISR
+				type = civil_war
+			}
+		}
+	}
+	###共同欢庆，革命胜利
+	focus = {
+		id = TAT_Syrian_revolution_prevail
+		icon = GFX_TAT_Syrian_revolution_prevail
+		prerequisite = {
+			focus = TAT_form_united_front
+		}
+
+		relative_position_id = TAT_suppress_Aleppo
+		x = 2
+		y = 5
+		cost = 3
+		completion_reward = {
+		}
+	}
+}

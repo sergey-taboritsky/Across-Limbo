@@ -1,0 +1,178 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_state = {
+                if = {
+                    limit = {
+                        OR = {
+                            has_state_category = wasteland
+                            has_state_category = enclave
+                            has_state_category = tiny_island
+                        }
+                        
+                    }
+                    set_variable = { This.SD_man_poor_var = 95 }
+                    set_variable = { This.SD_man_normal_var = 5 }
+                    set_variable = { This.SD_man_rich_var = 0 }
+
+                    set_variable = { This.SD_state_development_var = 0 }
+                    set_variable = { This.SD_state_developing_var = 0.5 }
+                    set_variable = { This.SD_state_undeveloped_var = 99.5 }
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            has_state_category = small_island
+                        }
+                        
+                    }
+                    set_variable = { This.SD_man_poor_var = 85 }
+                    set_variable = { This.SD_man_normal_var = 14 }
+                    set_variable = { This.SD_man_rich_var = 1 }
+
+                    set_variable = { This.SD_state_development_var = 0 }
+                    set_variable = { This.SD_state_developing_var = 0.5 }
+                    set_variable = { This.SD_state_undeveloped_var = 99.5 }
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            has_state_category = rural
+                            has_state_category = pastoral
+                        }
+                        
+                    }
+                    set_variable = { This.SD_man_poor_var = 75 }
+                    set_variable = { This.SD_man_normal_var = 24 }
+                    set_variable = { This.SD_man_rich_var = 1 }
+
+                    set_variable = { This.SD_state_development_var = 2 }
+                    set_variable = { This.SD_state_developing_var = 1 }
+                    set_variable = { This.SD_state_undeveloped_var = 97 }
+                }
+                else_if = {
+                    limit = {
+                        has_state_category = town
+                    }
+                    set_variable = { This.SD_man_poor_var = 65 }
+                    set_variable = { This.SD_man_normal_var = 32 }
+                    set_variable = { This.SD_man_rich_var = 3 }
+
+                    set_variable = { This.SD_state_development_var = 5 }
+                    set_variable = { This.SD_state_developing_var = 1 }
+                    set_variable = { This.SD_state_undeveloped_var = 94 }
+                }
+                else_if = {
+                    limit = {
+                        has_state_category = large_town
+                    }
+                    set_variable = { This.SD_man_poor_var = 55 }
+                    set_variable = { This.SD_man_normal_var = 40 }
+                    set_variable = { This.SD_man_rich_var = 5 }
+
+                    set_variable = { This.SD_state_development_var = 7 }
+                    set_variable = { This.SD_state_developing_var = 1 }
+                    set_variable = { This.SD_state_undeveloped_var = 92 }
+                }
+                else_if = {
+                    limit = {
+                        has_state_category = city
+                    }
+                    set_variable = { This.SD_man_poor_var = 50 }
+                    set_variable = { This.SD_man_normal_var = 43 }
+                    set_variable = { This.SD_man_rich_var = 7 }
+
+                    set_variable = { This.SD_state_development_var = 10 }
+                    set_variable = { This.SD_state_developing_var = 1 }
+                    set_variable = { This.SD_state_undeveloped_var = 89 }
+                }
+                else_if = {
+                    limit = {
+                        has_state_category = large_city
+                    }
+                    set_variable = { This.SD_man_poor_var = 45 }
+                    set_variable = { This.SD_man_normal_var = 45 }
+                    set_variable = { This.SD_man_rich_var = 10 }
+
+                    set_variable = { This.SD_state_development_var = 13 }
+                    set_variable = { This.SD_state_developing_var = 1.5 }
+                    set_variable = { This.SD_state_undeveloped_var = 85.5 }
+                }
+                else_if = {
+                    limit = {
+                        has_state_category = metropolis
+                    }
+                    set_variable = { This.SD_man_poor_var = 40 }
+                    set_variable = { This.SD_man_normal_var = 50 }
+                    set_variable = { This.SD_man_rich_var = 10 }
+
+                    set_variable = { This.SD_state_development_var = 15 }
+                    set_variable = { This.SD_state_developing_var = 1.5 }
+                    set_variable = { This.SD_state_undeveloped_var = 83.5 }
+                }
+                else_if = {
+                    limit = {
+                        has_state_category = megalopolis
+                    }
+                    set_variable = { This.SD_man_poor_var = 40 }
+                    set_variable = { This.SD_man_normal_var = 47 }
+                    set_variable = { This.SD_man_rich_var = 13 }
+
+                    set_variable = { This.SD_state_development_var = 20 }
+                    set_variable = { This.SD_state_developing_var = 1.5 }
+                    set_variable = { This.SD_state_undeveloped_var = 78.5 }
+                }
+                else = {
+                    set_variable = { This.SD_man_poor_var = 55 }
+                    set_variable = { This.SD_man_normal_var = 40 }
+                    set_variable = { This.SD_man_rich_var = 5 }
+
+                    set_variable = { This.SD_state_development_var = 0 }
+                    set_variable = { This.SD_state_developing_var = 1 }
+                    set_variable = { This.SD_state_undeveloped_var = 99 }
+                }
+
+                set_variable = {
+                    var = THIS.SD_state_developing_var_added
+                    value = 0
+                }
+
+                SD_build_pie_man = yes
+				add_dynamic_modifier = {
+					modifier = SD_manpower_modifier
+				} 
+                SD_cal_man_modifier = yes
+
+
+                SD_build_pie_develop = yes
+
+			}
+		}
+	}
+    on_monthly = {
+        effect = {
+            every_owned_state = {
+
+                #人口
+                SD_add_man_from_develop = yes
+                SD_cal_pie_var_man = yes
+                SD_build_pie_man = yes
+                SD_cal_man_modifier = yes
+
+                #地区发展
+                SD_state_monthly_update = yes
+
+            }
+        }
+    }
+    on_state_control_changed = {
+        effect = {
+            This = {
+                set_variable = {
+                    var = This.SD_state_developing_var
+                    value = 0.5
+                } 
+            }
+        }
+    }
+}

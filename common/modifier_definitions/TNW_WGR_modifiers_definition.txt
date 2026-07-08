@@ -1,0 +1,7 @@
+#巴伐利亚极组织准备度
+TNW_Degree_extreme_organizations = {
+	color_type = bad
+	value_type = number
+	precision = 2
+	category = country
+}

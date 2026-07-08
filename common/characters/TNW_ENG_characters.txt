@@ -1,0 +1,200 @@
+characters = {
+	#奥斯瓦尔德·莫斯利
+	ENG_Oswald_Mosley = {
+		name = ENG_Oswald_Mosley
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ENG_Oswald_Mosley
+			}
+
+		}
+		country_leader = {
+			desc = ENG_Oswald_Mosley_desc
+			ideology = Socialism_Britain
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+				ENG_Popular_prime_minister
+			}
+			
+		}
+	}
+	#克莱门特·艾德礼
+	ENG_Clement_Attlee = {
+		name = ENG_Clement_Attlee
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ENG_Clement_Attlee
+			}
+		}
+		country_leader = {
+			desc = ENG_Clement_Attlee_desc
+			ideology = reformism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+	}
+#部长
+	#安奈林·贝文
+	ENG_Aneurin_Bevan = {
+		name = ENG_Aneurin_Bevan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ENG_Aneurin_Bevan
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = ENG_Aneurin_Bevan_hog
+			allowed = { original_tag = ENG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#沃尔特·埃利奥特
+	ENG_Walter_Elliot = {
+		name = ENG_Walter_Elliot
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ENG_Walter_Elliot
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_Walter_Elliot_advisor
+			allowed = { original_tag = ENG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#奥利弗·斯坦利
+	ENG_Oliver_Stanley = {
+		name = ENG_Oliver_Stanley
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ENG_Oliver_Stanley
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_Oliver_Stanley_advisor
+			allowed = { original_tag = ENG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#西里尔·乔德
+	ENG_Cyril_Joad = {
+		name = ENG_Cyril_Joad
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ENG_Cyril_Joad
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_Cyril_Joad_advisor
+			allowed = { original_tag = ENG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#玛丽·理查德森
+	ENG_Mary_Richardson = {
+		name = ENG_Mary_Richardson
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ENG_Mary_Richardson
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_Mary_Richardson_advisor
+			allowed = { original_tag = ENG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#约翰·斯特雷奇
+	ENG_John_Strachey = {
+		name = ENG_John_Strachey
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ENG_John_Strachey
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_John_Strachey_advisor
+			allowed = { original_tag = ENG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#杰克·琼斯
+	ENG_Jack_Jones = {
+		name = ENG_Jack_Jones
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ENG_Jack_Jones
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_Jack_Jones_advisor
+			allowed = { original_tag = ENG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	#巴里·多姆维尔
+	ENG_Barry_Domvile = {
+		name = ENG_Barry_Domvile
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ENG_Barry_Domvile
+			}
+		}
+		navy_leader={
+			desc = ENG_Barry_Domvile_desc
+			traits={ navy_career_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=1
+		}
+	}
+}

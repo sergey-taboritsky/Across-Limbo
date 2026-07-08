@@ -1,0 +1,19 @@
+state = {
+	id = 1967
+	name = "STATE_1967"
+	manpower = 35784
+
+	state_category = rural
+	history = {
+		owner = ELS
+		add_core_of = ELS
+		add_claim_by = ELS
+		add_claim_by = ENG
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces = {
+		16167 16168 16169
+	}
+}

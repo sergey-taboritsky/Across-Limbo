@@ -1,0 +1,11 @@
+leader_traits = {
+	#大帐篷领导者
+    WGR_traits_01 = {
+		random = no
+		political_power_cost = -0.10
+		Conservatism_drift = 0.01
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

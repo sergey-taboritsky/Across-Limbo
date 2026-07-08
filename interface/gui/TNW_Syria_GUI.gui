@@ -1,0 +1,65 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TNW_TAT_indoctrination_gui"
+		position = { x = 0 y = 0 }
+		size = { width = 480 height = 482 }
+
+		instantTextBoxType = {
+			name = "TNW_TAT_ideology_mech_description_textbox"
+			position = { x = -5 y = 45 }
+			text = TNW_TAT_ideology_mech_description_textbox_tt
+			text_color_code = Y
+			font = "hoi_18mbs"
+			format = centre
+			maxWidth = 410
+		}
+        iconType = {
+			name = "TNW_Syria_TAT_arab_communism"
+			quadTextureSprite = "GFX_TNW_Syria_TAT_arab_communism" 
+			position = { x = 410 y = 30 }
+			pdx_tooltip = TNW_Syria_TAT_arab_communism_tt
+		}
+        iconType = {
+			name = "TNW_Syria_TAT_arab_nationalism"
+			quadTextureSprite = "GFX_TNW_Syria_TAT_arab_nationalism" 
+			position = { x = 410 y = 120 }
+			pdx_tooltip = TNW_Syria_TAT_arab_nationalism_tt
+		}
+        iconType = {
+			name = "TNW_TAT_ideology_state_progressbar"
+			quadTextureSprite = "GFX_TNW_Syria_TAT_ideology_progressbar" 
+			position = { x = 115 y = 300 }
+			pdx_tooltip = TNW_ideology_state_progressbar_tt
+		}
+		instantTextBoxType = {
+			name = "TNW_TAT_ideology_dominance_textbox"
+			position = { x = -5 y = 260 }
+			text = "TNW_TAT_ideology_dominance_textbox_tt"
+			text_color_code = Y
+			font = "hoi_24b"
+			format = centre
+			maxWidth = 482
+		}
+		buttonType = {
+			name = "TNW_TAT_ideology_party_decisions_button"
+			position = { x = 70 y = 380 }
+
+			quadTextureSprite = "GFX_TAT_decision_GUI_button"
+			buttonText = "TAT_ideology_party_decisions_tt"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "TNW_TAT_ideology_masses_decisions_button"
+			position = { x = 300 y = 380 }
+
+			quadTextureSprite = "GFX_TAT_decision_GUI_button"
+			buttonText = "TAT_ideology_masses_decisions_tt"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+	}
+}
+

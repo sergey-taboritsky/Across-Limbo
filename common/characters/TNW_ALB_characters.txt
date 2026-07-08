@@ -1,0 +1,106 @@
+characters = {
+	ALB_Mehdi_Frasheri = {
+		name = ALB_Mehdi_Frasheri
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ALB_Mehdi_Frasheri
+			}
+		}
+		country_leader = {
+			desc = ALB_Mehdi_Frasheri_desc
+			ideology = National_liberalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	ALB_Milos_Gjergj_Nikolla = {
+		name = ALB_Milos_Gjergj_Nikolla
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ALB_Milos_Gjergj_Nikolla
+			}
+		}
+		country_leader = {
+			desc = ALB_Milos_Gjergj_Nikolla_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		country_leader = {
+			desc = ALB_Milos_Gjergj_Nikolla_desc
+			ideology = Liberalism_socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	ALB_Mehmet_Ismail_Shehu = {
+		name = ALB_Mehmet_Ismail_Shehu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ALB_Mehmet_Ismail_Shehu
+			}
+		}
+		country_leader = {
+			desc = ALB_Mehmet_Ismail_Shehu_desc
+			ideology = National_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	ALB_Ahmed_Myftar = { #Islamic Soc
+		name = ALB_Ahmed_Myftar
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ALB_Ahmed_Myftar
+			}
+		}
+		country_leader = {
+			desc = ALB_Ahmed_Myftar_desc
+			ideology = religious_socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	ALB_Eqrem_Libohova = { #Army puppet
+		name = ALB_Eqrem_Libohova
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ALB_Eqrem_Libohova
+			}
+		}
+		country_leader = {
+			desc = ALB_Eqrem_Libohova_desc
+			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	ALB_Themistokli_Germenji = { #Ultranat
+		name = ALB_Themistokli_Germenji
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ALB_Themistokli_Germenji
+			}
+		}
+		country_leader = {
+			desc = ALB_Themistokli_Germenji_desc
+			ideology = Ultra_Nationalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

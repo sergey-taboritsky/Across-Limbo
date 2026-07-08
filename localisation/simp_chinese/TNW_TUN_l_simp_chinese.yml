@@ -1,0 +1,26 @@
+﻿l_simp_chinese:
+ #顾问
+ TUN_Wahib_al_Ghanim: "瓦希卜·加奈姆"
+ 
+ #政党名字
+ TUN_communist_party: "-"
+ TUN_communist_party_long: "-"
+ TUN_syndicalism_party: "-"
+ TUN_syndicalism_party_long: "-"
+ TUN_socialism_party: "-"
+ TUN_socialism_party_long: "-"
+ TUN_Social_democracy_party: "复兴运动"
+ TUN_Social_democracy_party_long: "复兴运动"
+ TUN_Liberalism_party: "-"
+ TUN_Liberalism_party_long: "-"
+ TUN_Conservatism_party: "-"
+ TUN_Conservatism_party_long: "-"
+ TUN_Authoritarianism_party: "-"
+ TUN_Authoritarianism_party_long: "-"
+ TUN_Absolutism_party: "-"
+ TUN_Absolutism_party_long: "-"
+ TUN_Nationalism_party: "-"
+ TUN_Nationalism_party_long: "-"
+
+ TUN_HBAI_party: "阿拉伯复兴社会党"
+ TUN_HBAI_party_long: "阿拉伯复兴社会党(Hizb al-Ba'th al-Arabi al-Ishtiraki)"

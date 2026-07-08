@@ -1,0 +1,137 @@
+﻿l_simp_chinese:
+ TAT_SYR: "叙利亚革命共和国"
+ TAT_DEF: "叙利亚革命共和国"
+ TAT_ADJ: "叙利亚"
+
+#领导人
+ TAT_Constantin_Zureik: "康斯坦丁·祖雷克"
+ TAT_Constantin_Zureik_desc: ""
+ TAT_Farajallah_El_Helou: "法拉贾拉·埃尔赫卢" #共产党雅典派，总理
+ TAT_Farajallah_El_Helou_hog: "法拉贾拉·埃尔赫卢"
+ TAT_Farajallah_El_Helou_desc: ""
+ TAT_Khalid_Bakdash: "哈立德·巴格达什" #共产党巴黎派 司法部长
+ TAT_Khalid_Bakdash_advisor: "哈立德·巴格达什"
+ TAT_Khalid_Bakdash_desc: ""
+ TAT_Mustapha_Aris: "穆斯塔法·阿里斯" #总工会，劳工部长
+ TAT_Mustapha_Aris_advisor: "穆斯塔法·阿里斯"
+ TAT_Mustapha_Aris_desc: ""
+ TAT_Nicolas_Chaoui: "尼古拉斯·乔伊" #黎共
+ TAT_Nicolas_Chaoui_desc: ""
+ TAT_Wadie_Haddad: "瓦迪·哈达德" #民革党 https://everything.explained.today/Wadie_Haddad/ 外交部长
+ TAT_Wadie_Haddad_advisor: "瓦迪·哈达德"
+ TAT_Wadie_Haddad_desc: ""
+ TAT_Hani_al_Hindi: "哈尼·欣迪" #民革党 https://everything.explained.today/Hani_al-Hindi/
+ TAT_Hani_al_Hindi_desc: ""
+ TAT_George_Habash: "乔治·哈巴什" #民革党 内政部长
+ TAT_George_Habash_advisor: "乔治·哈巴什"
+ TAT_George_Habash_desc: ""
+ TAT_Jassem_Alwan: "贾西姆·阿勒万" #民革党军人 https://everything.explained.today/Jassem_Alwan/ 国防部长
+ TAT_Jassem_Alwan_theorist: "贾西姆·阿勒万"
+ TAT_Jassem_Alwan_desc: ""
+ 
+#政党名字
+ TAT_communist_party: "大叙利亚共产党"
+ TAT_communist_party_long: "大叙利亚共产党"
+ TAT_syndicalism_party: "工团国际阿拉伯支部"
+ TAT_syndicalism_party_long: "工团国际阿拉伯支部"
+ TAT_socialism_party: "革命阵线"
+ TAT_socialism_party_long: "叙利亚反帝共和革命阵线"
+ TAT_Social_democracy_party: "革命阵线"
+ TAT_Social_democracy_party_long: "叙利亚反帝共和革命阵线"
+ TAT_Liberalism_party: "人民党"
+ TAT_Liberalism_party: "叙利亚人民党"
+ TAT_Conservatism_party: "民族集团"
+ TAT_Conservatism_party_long: "民族集团"
+ TAT_Authoritarianism_party: "民族革命党"
+ TAT_Authoritarianism_party_long: "阿拉伯民族革命党"
+ TAT_Absolutism_party: "叙利亚共和军"
+ TAT_Absolutism_party_long: "叙利亚共和军"
+ TAT_Nationalism_party: "叙利亚社会民族党"
+ TAT_Nationalism_party_long: "叙利亚社会民族党"
+
+#民族精神
+ TAT_chaotic_revolution_idea: "混乱的革命"
+ TAT_chaotic_revolution_idea_desc: ""
+ TAT_chaotic_revolution_1_idea: "混乱的革命"
+ TAT_chaotic_revolution_1_idea_desc: ""
+ TAT_chaotic_revolution_2_idea: "混乱的革命"
+ TAT_chaotic_revolution_2_idea_desc: ""
+ TAT_arab_army_idea: "阿拉伯革命军"
+ TAT_arab_army_idea_desc: ""
+ TAT_arab_army_1_idea: "阿拉伯革命军"
+ TAT_arab_army_1_idea_desc: ""
+ TAT_arab_army_2_idea: "阿拉伯革命军"
+ TAT_arab_army_2_idea_desc: ""
+ TAT_supplies_shortage_idea: "物资短缺"
+ TAT_supplies_shortage_idea_desc: ""
+ TAT_wartime_socialist_policy_idea: "战时社会主义政策"
+ TAT_wartime_socialist_policy_idea_desc: ""
+
+#事件
+ TAT_event.1.t: "弥合旧怨"
+ TAT_event.1.d: "康米"
+ TAT_event.1.a: "康米"
+
+#新闻
+
+#GUI
+ TNW_TAT_ideology_mech_description_textbox_tt: "由于统一战线的特殊性质，革命联盟的意识形态主张容纳了其各个主要成员的诉求。左翼希望得到社会主义，右翼则渴求泛阿拉伯民族统一，而民间对这两种思潮也有各自的看法。为了维系阵线团结，建设新国家，两种思潮的冲突必须得到调和。\n\n而如果我们未能做到，那么联盟的解体就将在所难免。"
+ TNW_Syria_TAT_arab_communism_tt: "社会主义主要由民革党左翼与大叙利亚共产党所主张，他们希望模仿巴黎、伦敦等西方范式，建立工农国家，与欧美结盟。"
+ TNW_Syria_TAT_arab_nationalism_tt: "民族主义主要由民革党右翼、前复兴运动成员与部分军官所主张。他们对社会主义政策并不感冒，但主张阿拉伯民族统一，使强大阿拉伯国家屹立于世界。"
+ TNW_ideology_state_progressbar_tt: "社会主义倾向：\n民族主义倾向："
+ TNW_TAT_ideology_dominance_textbox_tt: "意识形态状态：[Get_TAT_ideology_dominant]"
+ TAT_ideology_party_decisions_tt: "政界"
+ TAT_ideology_masses_decisions_tt: "民间"
+
+#BOP
+ TAT_revolution_front_balance: "革命阵线权斗"
+ TAT_communist_party_bop: "共产党得势"
+ TAT_national_revolutionary_bop: "民革党得势"
+ TAT_communist_nationalist_balance: "共产党-民革党均势"
+ TAT_communist_party_bop_1: "大叙利亚共产党主导"
+ TAT_communist_party_bop_2: "大叙利亚共产党优势"
+ TAT_communist_party_bop_3: "大叙利亚共产党倾向"
+ TAT_national_revolutionary_bop_1: "民族革命党主导"
+ TAT_national_revolutionary_bop_2: "民族革命党优势"
+ TAT_national_revolutionary_bop_3: "民族革命党倾向"
+
+#决议
+ TAT_ideology_decision_categories: "意识形态构建"
+
+#国策
+ TAT_suppress_Aleppo: "巩固阿勒颇城区"
+ TAT_suppress_Aleppo_desc: "尽管我们的革命取得了初步成功，但作为临时首都的阿勒颇城内仍有许多前合作者反对我们的革命。现如今，全面战争随时可能爆发，我们务必尽快巩固对城区的控制。无论什么手段，说教也好，抓捕也罢，必须将合作者与社会民族党势力清除出我们的心脏地带。"
+ TAT_contact_radical_CHP: "联络阿达纳"
+ TAT_contact_radical_CHP_desc: "紧邻我方控制区的阿达纳地区，如今掌握在土耳其人民党“左翼”的手中，或许我们能够从中得到所需的支持。尽管人民党当局与我们的运动存在历史矛盾，但现如今的乱局中，任何盟友都显得弥足珍贵。"
+ TAT_seek_Paris_recognition: "寻求巴黎承认"
+ TAT_seek_Paris_recognition_desc: "长久以来，社会主义反殖民委员会对复兴运动远比对我方更加熟悉，而如今这种陌生导致的疏离对获取法国援助将会带来极度负面的影响。我们应当组建一个代表团联系反殖委，并申请我们所需的物资与军火援助。"
+ TAT_form_united_front: "成立革命统一战线"
+ TAT_form_united_front_desc: "民革党与共产党的矛盾已经初步缓解，我们政权的生存危机已然解除，是时候准备下一阶段行动，解放整个大叙利亚了。为了达成这一目标，我们应该将临时达成的统一战线正式化，让这一组织指导革命行动，从而协调原本各自为战的各革命盟友。"
+ TAT_consolidate_revolution: "巩固革命政权"
+ TAT_consolidate_revolution_desc: ""
+ TAT_mobilize_militia: "动员人民民兵"
+ TAT_mobilize_militia_desc: ""
+ TAT_increase_conscription: "扩展征兵范畴"
+ TAT_increase_conscription_desc: ""
+ TAT_impose_levy_act: "颁布征收法令"
+ TAT_impose_levy_act_desc: ""
+ TAT_seek_Egyptian_support: "争取埃及支持"
+ TAT_seek_Egyptian_support_desc: ""
+ TAT_embassy_in_Tripoli: "遣使的黎波里"
+ TAT_embassy_in_Tripoli_desc: ""
+ TAT_liberate_Levant: "解放黎凡特"
+ TAT_liberate_Levant_desc: "革命军队已经准备就绪，士气高昂；而南方的各路反动敌人正在陷入自相残杀的混乱中，没有什么时机比现在更适合开始军事行动了。我们将统一大叙利亚，将这片土地染上红色，并让黎凡特成为全阿拉伯革命的第一站！"
+ TAT_destroy_imperial_remnant: "终结帝国残留"
+ TAT_destroy_imperial_remnant_desc: "尽管军管区已经在1947年的大起义中崩溃，但帝国效忠派仍然盘踞在大马士革城中，占据着叙利亚最宝贵的沃土。我们将终结这一残暴怪物的碎片，让叙利亚从暴政中彻底解放出来。"
+ TAT_attack_SSNP: "镇压社会民族党"
+ TAT_attack_SSNP_desc: "向莫斯科效仿的极端主义者如今盘踞在西部海岸，推行他们疯狂的密契崇拜与种族纯净政策。他们甚至要将大叙利亚单独列为一个民族——真正的阿拉伯解放者不应当与他们为伍，我们应当立刻动员军队将这些狂想家剿灭。"
+ TAT_overthrow_Hashemites: "推翻圣裔王国"
+ TAT_overthrow_Hashemites_desc: "安曼城如今正陷于哈希姆贵族自封的“第二次阿拉伯大起义”中。他们自封解放者，却扮演着比奥斯曼帝国更残暴的压迫者，还意图用虚无缥缈的先知血缘将其奴役扩展到全叙利亚。为了革命，我们将把他们无情消灭，解放其治下人民。"
+ TAT_liberate_holy_city: "解放圣城"
+ TAT_liberate_holy_city_desc: "占据圣城的宗教原教旨主义者向来都是社会主义与共和主义的敌人。尽管其军队狂热，但我们的工人民兵与革命军拥有更强的组织与更先进的战术，击败他们将会轻而易举。"
+ TAT_cast_out_foreigners: "驱逐外来者"
+ TAT_cast_out_foreigners_desc: "希伯来伊舒夫是穆塔萨勒夫领在巴勒斯坦二十年统治留下的伤疤，而如今南部沙漠中的伊舒夫军队无疑是这道伤疤将要化脓的征兆。在他们能够造成更多痛苦前，我们必须将其击败，让阿拉伯民族从最后的殖民主义残余中解放出来。"
+ TAT_Syrian_revolution_prevail: "共同欢庆，革命胜利"
+ TAT_Syrian_revolution_prevail_desc: ""
+ #: ""
+ #_desc: ""

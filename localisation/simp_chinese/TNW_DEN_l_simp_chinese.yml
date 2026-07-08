@@ -1,0 +1,30 @@
+﻿l_simp_chinese:
+#人物
+ DEN_Frederick_IX: "腓特烈九世"
+ DEN_Frederick_IX_desc: ""
+ DEN_Alsing_Andersen: "阿尔辛·安德生"
+ DEN_Alsing_Andersen_desc: ""
+
+#民族精神
+ 
+#政党名字
+ DEN_communist_party: "-"
+ DEN_communist_party_long: "-"
+ DEN_syndicalism_party: "-"
+ DEN_syndicalism_party_long: "-"
+ DEN_socialism_party: "社民党 - 左翼"
+ DEN_socialism_party_long: "丹麦社会民主党(Socialdemokratiet)"
+ DEN_Social_democracy_party: "社民党"
+ DEN_Social_democracy_party_long: "丹麦社会民主党(Socialdemokratiet)"
+ DEN_Liberalism_party: "-"
+ DEN_Liberalism_party_long: "-"
+ DEN_Conservatism_party: "-"
+ DEN_Conservatism_party_long: "-"
+ DEN_Authoritarianism_party: "-"
+ DEN_Authoritarianism_party_long: "-"
+ DEN_Absolutism_party: "-"
+ DEN_Absolutism_party_long: "-"
+ DEN_Nationalism_party: "-"
+ DEN_Nationalism_party_long: "-"
+
+#事件

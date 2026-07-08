@@ -1,0 +1,32 @@
+music = {
+	name = "TNW_King_George_V_death"
+	file = "TNW_King_George_V_death.ogg"
+}
+music = {
+	name = "TNW_World_War_II"
+	file = "TNW_World_War_II.ogg"
+}
+music = {
+	name = "TNW_Bolsheviks_marched_westward"
+	file = "TNW_Bolsheviks_marched_westward.ogg"
+}
+music = {
+	name = "TNW_Third_Balkan_War"
+	file = "TNW_Bolsheviks_marched_westward.ogg"
+}
+music = {
+	name = "TNW_Operation_Thunderstorm"
+	file = "TNW_Operation_Thunderstorm.ogg"
+}
+music = {
+	name = "TNW_Nuke_Bomb"
+	file = "TNW_Nuke_Bomb.ogg"
+}
+music = {
+	name = "TNW_Turkish_Civil_War"
+	file = "TNW_Turkish_Civil_War.ogg"
+}
+music = {
+	name = "TNW_Central_Plains_War"
+	file = "TNW_Central_Plains_War.ogg"
+}

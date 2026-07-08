@@ -1,0 +1,24 @@
+﻿capital = 2374
+
+recruit_character = CHI_Liu_leader_char
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 0
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 0
+	conservatism = 0
+	Authoritarianism = 40
+	Absolutism = 60
+	Nationalism = 0
+}
+
+add_ideas = {
+}

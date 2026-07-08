@@ -1,0 +1,19 @@
+﻿capital = 441
+
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Authoritarianism = 3
+	communist = 2
+	syndicalism = 4
+	Social_democracy = 18
+	socialism = 12
+	Liberalism = 4
+	Conservatism = 38
+	Absolutism = 6
+	Nationalism = 13
+}

@@ -1,0 +1,483 @@
+ideas = {
+	###不可更改政策
+	armed_forces = {
+		#识字率 
+		law = yes
+		use_list_view = yes
+		War_machines = {
+			#文盲遍地    
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.1
+				research_speed_factor = -0.15
+				army_org_factor = -0.2
+				conscription_factor = 0.25
+				custom_modifier_tooltip = War_machines_tt
+			}
+			cancel_if_invalid = no
+		}
+		Professional_army = {
+			#权贵垄断
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = 0.075
+				research_speed_factor = -0.1
+				army_org_factor = -0.1
+				conscription_factor = -0.25
+				custom_modifier_tooltip = Professional_army_tt
+			}
+			cancel_if_invalid = no
+		}
+		Conscription_militia = {
+			#富者得智
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.05
+				stability_factor = -0.025
+				research_speed_factor = -0.05
+				army_org_factor = -0.05
+				conscription_factor = -0.1
+				custom_modifier_tooltip = Conscription_militia_tt
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		Mercenary_army = {
+			#普遍识字
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.05
+				stability_factor = -0.075
+				research_speed_factor = 0.05
+				army_org_factor = 0.05
+				conscription_factor = 0.1
+				custom_modifier_tooltip = Mercenary_army_tt
+			}
+			cancel_if_invalid = no
+		}
+		Armed_police = {
+			#民智皆开
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = -0.1
+				research_speed_factor = 0.1
+				army_org_factor = 0.1
+				conscription_factor = 0.25
+				custom_modifier_tooltip = Armed_police_tt
+			}
+			cancel_if_invalid = no
+		}
+	}
+	Research_and_Education = {
+		#技术发展
+		law = yes
+		use_list_view = yes
+		Golden_Age_Research = {
+			#手工业作坊 
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = 0.1
+				industrial_capacity_factory = -0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = -0.1
+				custom_modifier_tooltip = Golden_Age_Research_tt
+			}
+			cancel_if_invalid = no
+		}
+		Higher_education = {
+			#局部机械化
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				industrial_capacity_factory = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.05
+				custom_modifier_tooltip = Higher_education_tt
+			}
+			cancel_if_invalid = no
+		}
+		Compulsory_education = {
+			#大部工业化
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.025
+				industrial_capacity_factory = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				custom_modifier_tooltip = Compulsory_education_tt
+			}
+			cancel_if_invalid = no
+		}
+		Vocational_education = {
+			#现代流水线
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = -0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				custom_modifier_tooltip = Vocational_education_tt
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		Lack_education = {
+			#早期自动化
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = -0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				custom_modifier_tooltip = Lack_education_tt
+			}
+			cancel_if_invalid = no
+		}
+	}
+	Industrial_development = {
+		#工业等级
+		law = yes
+		use_list_view = yes
+		Steel_City = {
+			#三饥两饱
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				army_morale_factor = -0.15
+				conscription_factor = -0.2
+				drift_defence_factor = -0.25
+				custom_modifier_tooltip = Steel_City_tt
+			}
+			cancel_if_invalid = no
+		}
+		Mechanical_roar = {
+			#普遍贫困  
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				army_morale_factor = -0.1
+				conscription_factor = -0.15
+				drift_defence_factor = -0.1
+				custom_modifier_tooltip = Mechanical_roar_tt
+			}
+			cancel_if_invalid = no
+		}
+		Gear_operation = {
+			#两极分化
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.075
+				production_speed_buildings_factor = 0.05
+				army_morale_factor = -0.05
+				conscription_factor = -0.1
+				drift_defence_factor = -0.25
+				custom_modifier_tooltip = Gear_operation_tt
+			}
+			cancel_if_invalid = no
+		}
+		Initial_scale = {
+			#衣食无忧
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.025
+				production_speed_buildings_factor = 0.1
+				army_morale_factor = 0.05
+				conscription_factor = -0.05
+				drift_defence_factor = -0.15
+				custom_modifier_tooltip = Initial_scale_tt
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		Men_plough_Women_weave = {
+			#消费繁荣
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				army_morale_factor = 0.1
+				conscription_factor = 0.05
+				drift_defence_factor = -0.1
+				custom_modifier_tooltip = Men_plough_Women_weave_tt
+			}
+			cancel_if_invalid = no
+		}
+	}
+	Agriculture_development = {
+		#农业等级  
+		law = yes
+		use_list_view = yes
+		Primitive_planting = {
+			#刀耕火种
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = Primitive_planting_tt
+			}
+			cancel_if_invalid = no
+		}
+		Traditional_labor = {
+			#传统农业
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = Traditional_labor_tt
+			}
+			cancel_if_invalid = no
+		}
+		Chemical_fertilizers = {
+			#化学农业
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = Chemical_fertilizers_tt
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		Mechanical_farming = {
+			#机械化农业
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = Mechanical_farming_tt
+			}
+			cancel_if_invalid = no
+		}
+		Automated_farmland = {
+			#自动化农业
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = Automated_farmland_tt
+			}
+			cancel_if_invalid = no
+		}
+	}
+	Bureaucratic_efficiency = {
+		#行政效率  
+		law = yes
+		use_list_view = yes
+		level_1 = {
+			#政府崩溃
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = Primitive_planting_tt
+			}
+			cancel_if_invalid = no
+		}
+		level_2 = {
+			#管理混乱
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = Traditional_labor_tt
+			}
+			cancel_if_invalid = no
+		}
+		level_3 = {
+			#按流程运作
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = Chemical_fertilizers_tt
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		level_4 = {
+			#高效政府
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = Mechanical_farming_tt
+			}
+			cancel_if_invalid = no
+		}
+		level_5 = {
+			#政通人和
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = you_degree_of_social_development_no
+					always = no
+				}
+			}
+			cost = 500
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = Automated_farmland_tt
+			}
+			cancel_if_invalid = no
+		}
+	}
+}

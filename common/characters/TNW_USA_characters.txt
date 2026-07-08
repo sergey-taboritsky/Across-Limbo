@@ -1,0 +1,16 @@
+characters = {
+	USA_Elizabeth_Gurley_Flynn = {
+		name = USA_Elizabeth_Gurley_Flynn
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_USA_Elizabeth_Gurley_Flynn
+			}
+		}
+		country_leader = {
+			desc = USA_Elizabeth_Gurley_Flynn_desc
+			ideology = american_unionism
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+}

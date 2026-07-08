@@ -1,0 +1,33 @@
+﻿capital = 592
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = CHI_Tan_Pingshan
+
+
+add_ideas = {
+	limited_conscription
+}
+
+
+set_politics = {
+	ruling_party = socialism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 13
+	syndicalism = 26
+	socialism = 34
+	Social_democracy = 2
+	Liberalism = 21
+	Conservatism = 4 
+	Authoritarianism = 0
+	Absolutism = 0
+	Nationalism = 0
+
+}

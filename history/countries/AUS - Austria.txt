@@ -1,0 +1,27 @@
+﻿capital = 4
+recruit_character = AUS_Charles_I_of_Austria
+set_research_slots = 3
+
+
+recruit_character = AUS_Charles_I_of_Austria
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Absolutism = 68
+	Nationalism = 20
+	Liberalism = 11
+	communist = 1
+}
+add_ideas =  {
+	AUS_The_Lion_of_desertion
+	AUS_Martial_Law_of_1920
+	AUS_The_hangover_from_Budapest
+	AUS_The_Austrian_economy_is_depressed
+}
+set_stability = 0.50

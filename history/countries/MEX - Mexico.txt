@@ -1,0 +1,24 @@
+﻿capital = 277
+
+#oob = "MEX_1936"
+
+# Starting tech
+
+recruit_character = MEX_Vincente_Toledano
+
+set_convoys = 45
+set_stability = 0.2
+set_war_support = 0.1
+
+set_politics = {
+	ruling_party = syndicalism
+	last_election = "1934.7.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	Social_democracy = 18
+	socialism = 20
+	communist = 9
+	syndicalism = 53
+}

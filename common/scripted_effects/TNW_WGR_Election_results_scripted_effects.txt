@@ -1,0 +1,48 @@
+WGR_result_election_decided = {
+	#第一步 新建数组
+	add_to_temp_array = { WGR_Elections_temp_array = WGR_central_party} #1  WGR_Elections_temp_array就是数组名字，可以随便定义
+	add_to_temp_array = { WGR_Elections_temp_array = WGR_social_democrats} #2 然后array^index就是指某个数组的第几个变量，比如WGR_Elections_temp_array^0就是WGR_central_party
+	add_to_temp_array = { WGR_Elections_temp_array = WGR_National_People} #3 
+	add_to_temp_array = { WGR_Elections_temp_array = WGR_State_Socialist_Workers_Party} #4
+
+	#第二步 找到最高值
+	find_highest_in_array = {  #这是一个数组专属effec，把对应数组里面最大值的数值存到temp_largest这个变量，最大值的序号存到temp_index变量
+		array = WGR_Elections_temp_array
+		value = temp_largest
+		index = temp_index
+	}
+
+	#第三步 找出最大值对应变量
+	for_each_loop = {
+		array = WGR_Elections_temp_array #数组名字
+		index = i      
+		value = v      
+		break = WGR_Elections_break 
+
+		if = {
+			limit = {
+				check_variable = {
+					v = temp_largest
+				}	
+			}
+			add_to_temp_variable = {
+				count_var = 1
+			}
+			set_variable = { highest_index = i }
+			add_to_variable = { highest_index = 1 }
+		}
+
+		#排除最大值不唯一情况
+		if = {
+			limit = {
+				check_variable = {
+					count_var > 1
+				}	
+			}
+			set_variable = { highest_index = 0 }
+			set_temp_variable = {
+				WGR_Elections_break = 1
+			}
+		}
+	}
+}

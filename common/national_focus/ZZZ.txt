@@ -1,0 +1,15 @@
+
+focus_tree = {
+	id = ZZZ_national_focus #如果你改了这个你的选剧本界面会炸
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = ZZZ
+			}
+		}
+	}
+	default = no
+}
+

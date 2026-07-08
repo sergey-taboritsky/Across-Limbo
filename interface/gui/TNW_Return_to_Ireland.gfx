@@ -1,0 +1,82 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_ENG_Ireland_State_Outline"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_Ireland_State_Outline.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_North_Ireland_ENG"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_North_Ireland_ENG.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_North_Ireland_IRE"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_North_Ireland_IRE.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_North_Ireland_Conflict"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_North_Ireland_Conflict.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_Munster_ENG"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_Munster_ENG.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_Munster_IRE"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_Munster_IRE.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_Munster_Conflict"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_Munster_Conflict.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_Leinster_ENG"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_Leinster_ENG.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_Leinster_IRE"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_Leinster_IRE.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_Leinster_Conflict"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_Leinster_Conflict.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_County_Tyrone_and_Fermanagh_ENG"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_County_Tyrone_and_Fermanagh_ENG.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_County_Tyrone_and_Fermanagh_IRE"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_County_Tyrone_and_Fermanagh_IRE.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_County_Tyrone_and_Fermanagh_Conflict"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_County_Tyrone_and_Fermanagh_Conflict.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_Connaught_ENG"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_Connaught_ENG.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_Connaught_IRE"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_Connaught_IRE.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_Connaught_Conflict"
+		texturefile = "gfx/TNW_scripted_guis/TNW_ENG/ENG_Connaught_Conflict.png"
+		transparencecheck = yes
+	}
+}

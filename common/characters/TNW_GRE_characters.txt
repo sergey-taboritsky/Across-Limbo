@@ -1,0 +1,111 @@
+characters = {
+	#潘德利斯·波利欧普洛斯
+	GRE_Pandelis_Pouliopoulos = {
+		name = GRE_Pandelis_Pouliopoulos
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_GRE_Pandelis_Pouliopoulos
+			}
+		}
+		country_leader = {
+			desc = GRE_Pandelis_Pouliopoulos_desc
+			ideology = Marxism_Leninism
+			expire = "2022.1.1.1"
+			id = -1
+			traits = {
+				GRE_Maker_of_Greece
+			}
+		}
+	}
+	#康斯坦丁诺斯·斯佩拉斯
+	GRE_Constantinos_Speras = {
+		name = GRE_Constantinos_Speras
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_GRE_Constantinos_Speras
+			}
+		}
+		country_leader = {
+			desc = GRE_Constantinos_Speras_desc
+			ideology = Anarchist_Syndicalism
+			expire = "2022.1.1.1"
+			id = -1
+		}
+	}
+	#马科斯·瓦菲阿迪斯
+	GRE_Markos_Vafiadis = {
+		name = GRE_Markos_Vafiadis
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_GRE_Markos_Vafiadis
+			}
+		}
+		country_leader = {
+			desc = GRE_Markos_Vafiadis_desc
+			ideology = market_socialism
+			expire = "2022.1.1.1"
+			id = -1
+		}
+	}
+	#阿夫拉姆·贝纳若亚
+	GRE_Avraam_Benaroya = {
+		name = GRE_Avraam_Benaroya
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_GRE_Avraam_Benaroya
+			}
+		}
+		country_leader = {
+			desc = GRE_Avraam_Benaroya_desc
+			ideology = reformism
+			expire = "2022.1.1.1"
+			id = -1
+		}
+	}
+	#格里戈里奥斯·希安托斯
+	GRE_Georgios_Siantos = {
+		name = GRE_Georgios_Siantos
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_GRE_Georgios_Siantos
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = GRE_Georgios_Siantos_hog
+			allowed = { original_tag = GRE }
+			ledger = civilian
+			traits = {
+			}
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#阿里斯·韦卢吉奥蒂斯
+	GRE_Aris_Velouchiotis = {
+		name = GRE_Aris_Velouchiotis
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_GRE_Aris_Velouchiotis
+			}
+		}
+		country_leader = {
+			desc = GRE_Aris_Velouchiotis_desc
+			ideology = Red_military_government
+			expire = "2022.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = theorist
+			idea_token = GRE_Aris_Velouchiotis_theorist
+			allowed = { original_tag = GRE }
+			traits = {
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+}

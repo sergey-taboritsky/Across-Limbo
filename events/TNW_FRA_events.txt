@@ -1,0 +1,265 @@
+add_namespace = FRA_event
+add_namespace = FRA_UROE_event
+
+country_event = {
+	id = FRA_event.1
+	title = FRA_event.1.t
+	desc = FRA_event.1.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_event.1.a
+		add_manpower = -1
+		set_country_flag = FRA_serge_dead_flag
+	}
+}
+country_event = {
+	id = FRA_event.2
+	title = FRA_event.2.t
+	desc = FRA_event.2.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_event.2.a
+		retire_character = FRA_Marcel_Cachin
+		promote_character = FRA_Communard_Central_Committee
+		custom_effect_tooltip = FRA_event_2_a_tt
+		set_country_flag = FRA_souvarine_treint_balance_active_flag
+		if = {
+			limit = {
+				has_country_flag = FRA_cachin_era_souvarine_flag
+			}
+			add_power_balance_value = {
+				id = FRA_souvarine_treint_balance
+				value = -0.15
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_cachin_era_souvarine_flag
+			}
+			add_power_balance_value = {
+				id = FRA_souvarine_treint_balance
+				value = 0.15
+			}
+		}
+		else = {
+			add_power_balance_value = {
+				id = FRA_souvarine_treint_balance
+				value = 0
+			}
+		}
+		hidden_effect = {
+			FRA_souvarine_treint_balance_initiate_vars = yes
+			load_focus_tree = FRA_dual_regime
+			activate_mission = FRA_souvarine_treint_balance_momentum_buildup_decision
+		}
+	}
+}
+country_event = {
+	id = FRA_event.3
+	title = FRA_event.3.t
+	desc = FRA_event.3.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_event.3.a
+		if = {
+			limit = {
+				check_variable = {
+					FRA_Commune_Council_index_var = 1
+				}
+			}
+			set_temp_variable = {
+				FRA_Commune_Council_leaning_change_var = -5
+			}
+			FRA_Commune_Council_leaning_change = yes
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					FRA_Commune_Council_index_var = -1
+				}
+			}
+			set_temp_variable = {
+				FRA_Commune_Council_leaning_change_var = 5
+			}
+			FRA_Commune_Council_leaning_change = yes
+		}
+	}
+	option = {
+		name = FRA_event.3.b
+		if = {
+			limit = {
+				check_variable = {
+					FRA_Commune_Council_index_var = 1
+				}
+			}
+			set_temp_variable = {
+				FRA_Commune_Council_leaning_change_var = 5
+			}
+			FRA_Commune_Council_leaning_change = yes
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					FRA_Commune_Council_index_var = -1
+				}
+			}
+			set_temp_variable = {
+				FRA_Commune_Council_leaning_change_var = -5
+			}
+			FRA_Commune_Council_leaning_change = yes
+		}
+	}
+}
+#交还莱茵兰
+country_event = {
+	id = FRA_UROE_event.1
+	title = FRA_UROE_event.1.t
+	desc = FRA_UROE_event.1.d
+	immediate = {
+		hidden_effect = {
+			country_event = { id = FRA_UROE_event.2 days = 8 }
+		}
+	}
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_UROE_event.1.a
+		add_state_claim = 1053
+		add_political_power = -25
+	}
+	option = {
+		name = FRA_UROE_event.1.b
+	}
+}
+country_event = {
+	id = FRA_UROE_event.2
+	title = FRA_UROE_event.2.t
+	desc = FRA_UROE_event.2.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_UROE_event.2.a
+		SAR = {
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
+			}
+			hidden_effect = {
+				set_popularities = {
+					communist = 40
+					syndicalism = 30
+					socialism = 30
+					Social_democracy = 0
+					Liberalism = 0
+					Conservatism = 0
+					Absolutism = 0
+					Authoritarianism = 0
+					Nationalism = 0
+				}
+			}
+		}
+		DDR = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.06
+			}
+		}
+	}
+	option = {
+		name = FRA_UROE_event.2.b
+		SAR = {
+			set_politics = {
+				ruling_party = syndicalism
+				elections_allowed = no
+			}
+			hidden_effect = {
+				set_popularities = {
+					communist = 30
+					syndicalism = 40
+					socialism = 30
+					Social_democracy = 0
+					Liberalism = 0
+					Conservatism = 0
+					Absolutism = 0
+					Authoritarianism = 0
+					Nationalism = 0
+				}
+			}
+		}
+		DDR = {
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.03
+			}
+			add_stability = 0.02
+			add_war_support = 0.03
+		}
+	}
+	option = {
+		name = FRA_UROE_event.2.c
+		SAR = {
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = no
+			}
+			hidden_effect = {
+				set_popularities = {
+					communist = 30
+					syndicalism = 30
+					socialism = 40
+					Social_democracy = 0
+					Liberalism = 0
+					Conservatism = 0
+					Absolutism = 0
+					Authoritarianism = 0
+					Nationalism = 0
+				}
+			}
+		}
+		DDR = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = FRA_benevolent_occupier
+			}
+		}
+	}
+	option = {
+		name = FRA_UROE_event.2.e
+		
+		DDR = {
+			random_list = {
+				1 = {
+					add_popularity = {
+						ideology = communist
+						popularity = 0.03
+					}
+				}
+				1 = {
+					add_popularity = {
+						ideology = socialism
+						popularity = 0.03
+					}
+				}
+				1 = {
+					add_popularity = {
+						ideology = syndicalism
+						popularity = 0.03
+					}
+				}
+			}
+		}
+		add_political_power = 20
+	}
+}

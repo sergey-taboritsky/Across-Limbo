@@ -1,0 +1,255 @@
+on_actions = {
+	# ROOT is country, this is ran for every country
+	on_monthly_FIJ = {
+		effect = {
+			every_country = {
+				#Private Sector Growth
+				set_temp_variable = {
+					TNW_econ_mech_tag_monthly_growth = TNW_econ_mech_tag_growth_rate
+				}
+				multiply_temp_variable = {
+					TNW_econ_mech_tag_monthly_growth = TNW_econ_mech_tag_private_firms_num
+				}
+				divide_temp_variable = {
+					TNW_econ_mech_tag_monthly_growth = 1200
+				}
+				set_temp_variable = {
+					TNW_econ_mech_tag_monthly_growth_fraction = TNW_econ_mech_tag_monthly_growth
+				}
+				round_temp_variable = TNW_econ_mech_tag_monthly_growth
+				add_to_variable = {
+					TNW_econ_mech_tag_growth_accumulation = TNW_econ_mech_tag_monthly_growth
+				}
+				subtract_from_variable = {
+					TNW_econ_mech_tag_growth_accumulation = TNW_econ_mech_tag_monthly_growth_fraction
+				}
+				set_temp_variable = {
+					TNW_econ_mech_tag_private_firms_num_temp = TNW_econ_mech_tag_private_firms_num
+				}
+				add_to_temp_variable = {
+					TNW_econ_mech_tag_private_firms_num_temp = TNW_econ_mech_tag_monthly_growth
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TNW_econ_mech_tag_private_firms_num_temp > 0
+						}
+					}
+					set_variable = {
+						TNW_econ_mech_tag_private_firms_num = TNW_econ_mech_tag_private_firms_num_temp
+					}
+					add_offsite_building = { type = industrial_complex level = var:TNW_econ_mech_tag_monthly_growth }
+				}
+				else = {
+					set_variable = {
+						TNW_econ_mech_tag_private_firms_num = 0
+					}
+					add_offsite_building = { type = industrial_complex level = -1145141919810 }
+				}
+				if = {
+					check_variable = {
+						TNW_econ_mech_tag_growth_accumulation > 1
+					}
+					add_to_variable = {
+						TNW_econ_mech_tag_private_firms_num = 1
+					}
+					set_variable = {
+						TNW_econ_mech_tag_growth_accumulation = 0
+						add_offsite_building = { type = industrial_complex level = 1 }
+					}
+				}
+				else_if = {
+					check_variable = {
+						TNW_econ_mech_tag_growth_accumulation < -1
+					}
+					subtract_from_variable = {
+						TNW_econ_mech_tag_private_firms_num = 1
+					}
+					set_variable = {
+						TNW_econ_mech_tag_growth_accumulation = 0
+						add_offsite_building = { type = industrial_complex level = -1 }
+					}
+				}
+				set_temp_variable = {
+					TNW_ecom_mech_tag_income_from_private_temp = TNW_econ_mech_tag_private_firms_num
+				}
+				multiply_temp_variable = {
+					TNW_ecom_mech_tag_income_from_private_temp = TNW_econ_mech_tag_private_tax_rate
+				}
+				add_to_variable = {
+					TNW_ecom_mech_tag_treasury = TNW_ecom_mech_tag_income_from_private_temp
+				}
+                #Stateowned Sector Money
+                set_temp_variable = {
+                    TNW_ecom_mech_tag_income_from_stateowned_temp = num_of_civilian_factories
+                }
+                add_to_temp_variable = {
+                    TNW_ecom_mech_tag_income_from_stateowned_temp = num_of_available_military_factories #spare factories generate money
+                }
+                subtract_from_temp_variable = {
+                    TNW_ecom_mech_tag_income_from_stateowned_temp = TNW_econ_mech_tag_private_firms_num
+                }
+                multiply_temp_variable = {
+                    TNW_ecom_mech_tag_income_from_stateowned_temp = TNW_econ_mech_tag_state_tax_rate
+                }
+                set_temp_variable = {
+                    TNW_ecom_mech_tag_cost_arms_factory_temp = num_of_military_factories
+                }
+                add_to_temp_variable = {
+                    TNW_ecom_mech_tag_cost_arms_factory_temp = num_of_naval_factories
+                }
+                subtract_from_temp_variable = {
+                    TNW_ecom_mech_tag_cost_arms_factory_temp = num_of_available_military_factories #spare factories generate money
+                }
+                multiply_temp_variable = {
+                    TNW_ecom_mech_tag_cost_arms_factory_temp = TNW_econ_mech_tag_unit_factory_maintenance_cost
+                }
+                add_to_variable = {
+                    TNW_ecom_mech_tag_treasury = TNW_ecom_mech_tag_income_from_stateowned_temp
+                }
+                subtract_from_variable = {
+                    TNW_ecom_mech_tag_treasury = TNW_ecom_mech_tag_cost_arms_factory_temp
+                }
+                #Poll Tax
+                every_owned_state = {
+                    set_temp_variable = {
+                        TNW_ecom_mech_state_taxfund = state_population
+                    }
+                    multiply_temp_variable = {
+                        TNW_ecom_mech_state_taxfund = TNW_econ_mech_tag_personal_taxrate
+                    }
+                    if = {
+                        limit = {
+                            has_state_category = enclave
+                        }
+                        multiply_temp_variable = {
+                            TNW_ecom_mech_state_taxfund = 0.1
+                        }
+                        add_to_variable = {
+                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            has_state_category = wasteland
+                        }
+                        multiply_temp_variable = {
+                            TNW_ecom_mech_state_taxfund = 0.1
+                        }
+                        add_to_variable = {
+                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            has_state_category = tiny_island
+                        }
+                        multiply_temp_variable = {
+                            TNW_ecom_mech_state_taxfund = 0.1
+                        }
+                        add_to_variable = {
+                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            has_state_category = small_island
+                        }
+                        multiply_temp_variable = {
+                            TNW_ecom_mech_state_taxfund = 0.25
+                        }
+                        add_to_variable = {
+                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            has_state_category = pastoral
+                        }
+                        multiply_temp_variable = {
+                            TNW_ecom_mech_state_taxfund = 0.25
+                        }
+                        add_to_variable = {
+                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            has_state_category = rural
+                        }
+                        multiply_temp_variable = {
+                            TNW_ecom_mech_state_taxfund = 0.4
+                        }
+                        add_to_variable = {
+                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            has_state_category = town
+                        }
+                        multiply_temp_variable = {
+                            TNW_ecom_mech_state_taxfund = 0.4
+                        }
+                        add_to_variable = {
+                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            has_state_category = large_town
+                        }
+                        multiply_temp_variable = {
+                            TNW_ecom_mech_state_taxfund = 0.7
+                        }
+                        add_to_variable = {
+                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            has_state_category = city
+                        }
+                        add_to_variable = {
+                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            has_state_category = large_city
+                        }
+                        multiply_temp_variable = {
+                            TNW_ecom_mech_state_taxfund = 1.4
+                        }
+                        add_to_variable = {
+                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            has_state_category = metropolis
+                        }
+                        multiply_temp_variable = {
+                            TNW_ecom_mech_state_taxfund = 2
+                        }
+                        add_to_variable = {
+                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            has_state_category = megalopolis
+                        }
+                        multiply_temp_variable = {
+                            TNW_ecom_mech_state_taxfund = 3
+                        }
+                        add_to_variable = {
+                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                        }
+                    }
+                }
+                #Resource Export
+			}
+		}
+	}
+}

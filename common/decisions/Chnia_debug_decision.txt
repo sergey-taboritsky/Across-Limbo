@@ -1,0 +1,302 @@
+China_unified_decision = {
+	China_unified_decision_PRC = {
+		visible = {
+			tag = PRC
+		}
+		complete_effect = {
+			set_cosmetic_tag = PRC_united
+			PRC = {
+				set_capital = 608
+				transfer_state = 524
+				annex_country = {
+					target = CHI
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = ROC
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = YUN
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = GXC
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = SCN
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = MEN
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = XSM
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = SHX
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = BEJ
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = MAN
+					transfer_troops = yes
+				}
+				every_owned_state = {
+					
+					remove_core_of = CHI
+					remove_core_of = ROC
+					remove_core_of = YUN
+					remove_core_of = GXC
+					remove_core_of = SCN
+					remove_core_of = MEN
+					remove_core_of = XSM
+					remove_core_of = SHX
+					remove_core_of = BEJ
+					remove_core_of = MAN
+				}
+				set_autonomy = {
+					target = TIB
+					autonomous_state = autonomy_puppet
+				}
+				set_autonomy = {
+					target = MON
+					autonomous_state = autonomy_puppet
+				}
+				set_autonomy = {
+					target = FER
+					autonomous_state = autonomy_puppet
+				}
+			}
+			SIK = {
+				set_cosmetic_tag = PRC_SIK_united
+				every_owned_state = {
+					
+				}
+			}
+			TIB = {
+				set_cosmetic_tag = PRC_TIB_united
+				every_owned_state = {
+					
+				}
+			}
+			MON = {
+				set_cosmetic_tag = PRC_MON_united
+				every_owned_state = {
+					
+				}
+			}
+			FER = {
+				transfer_state = 408
+				transfer_state = 409
+				transfer_state = 657
+				transfer_state = 560
+				set_cosmetic_tag = PRC_FER_united
+				every_owned_state = {
+					
+				}
+			}
+			RAJ = {
+				transfer_state = 1056
+			}
+		}
+	}
+	China_unified_decision_CHI = {
+		visible = {
+			tag = CHI
+		}
+		complete_effect = {
+			set_cosmetic_tag = CHI_united
+			CHI = {
+				transfer_state = 524
+				annex_country = {
+					target = PRC
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = ROC
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = YUN
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = GXC
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = SCN
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = MEN
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = XSM
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = SHX
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = BEJ
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = MAN
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = SIK
+					transfer_troops = yes
+				}
+				every_owned_state = {
+					add_core_of = CHI
+					remove_core_of = PRC
+					remove_core_of = ROC
+					remove_core_of = YUN
+					remove_core_of = GXC
+					remove_core_of = SCN
+					remove_core_of = MEN
+					remove_core_of = XSM
+					remove_core_of = SHX
+					remove_core_of = BEJ
+					remove_core_of = MAN
+					remove_core_of = SIK
+				}
+				set_autonomy = {
+					target = TIB
+					autonomous_state = autonomy_puppet
+				}
+				set_autonomy = {
+					target = MON
+					autonomous_state = autonomy_puppet
+				}
+				set_autonomy = {
+					target = KAZ
+					autonomous_state = autonomy_puppet
+				}
+			}
+			TIB = {
+				set_cosmetic_tag = CHI_TIB_united
+				every_owned_state = {
+					add_core_of = CHI
+				}
+			}
+			MON = {
+				set_cosmetic_tag = CHI_MON_united
+				every_owned_state = {
+					add_core_of = CHI
+				}
+			}
+			KAZ = {
+				set_cosmetic_tag = CHI_KAZ_united
+			}
+		}
+	}
+	China_unified_decision_ROC = {
+		visible = {
+			tag = ROC
+		}
+		complete_effect = {
+			set_cosmetic_tag = CHI_united
+			ROC = {
+				transfer_state = 524
+				annex_country = {
+					target = PRC
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = CHI
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = YUN
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = GXC
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = SCN
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = MEN
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = XSM
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = SHX
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = BEJ
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = MAN
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = SIK
+					transfer_troops = yes
+				}
+				every_owned_state = {
+					add_core_of = CHI
+					remove_core_of = PRC
+					remove_core_of = CHI
+					remove_core_of = YUN
+					remove_core_of = GXC
+					remove_core_of = SCN
+					remove_core_of = MEN
+					remove_core_of = XSM
+					remove_core_of = SHX
+					remove_core_of = BEJ
+					remove_core_of = MAN
+					remove_core_of = SIK
+				}
+				set_autonomy = {
+					target = TIB
+					autonomous_state = autonomy_puppet
+				}
+				set_autonomy = {
+					target = MON
+					autonomous_state = autonomy_puppet
+				}
+				set_autonomy = {
+					target = KAZ
+					autonomous_state = autonomy_puppet
+				}
+			}
+			TIB = {
+				set_cosmetic_tag = CHI_TIB_united
+				every_owned_state = {
+					add_core_of = ROC
+				}
+			}
+			MON = {
+				set_cosmetic_tag = CHI_MON_united
+				every_owned_state = {
+					add_core_of = ROC
+				}
+			}
+			KAZ = {
+				set_cosmetic_tag = CHI_KAZ_united
+			}
+		}
+	}
+}

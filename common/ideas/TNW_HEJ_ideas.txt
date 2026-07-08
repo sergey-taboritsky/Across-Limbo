@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		TNW_HEJ_lord_of_arabia = {
+			allowed = {
+				original_tag = HEJ
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				stability_factor = -0.05
+				army_morale_factor = 0.05
+			}
+		}
+		TNW_HEJ_disloyal_feudal_lords = {
+			allowed = {
+				original_tag = HEJ
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				stability_weekly = -0.001
+				recruitable_population_factor = -0.25
+			}
+		}
+		TNW_HEJ_shadow_of_britain = {
+			allowed = {
+				original_tag = HEJ
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				political_power_factor = -0.05
+				improve_relations_maintain_cost_factor = 1
+			}
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.1
+				mic_to_target_factor = 0.1
+			}
+		}
+		TNW_HEJ_hashem_armaco = {
+			allowed = {
+				original_tag = HEJ
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				consumer_goods_factor = -0.15
+				local_resources_factor = 0.25
+			}
+		}
+	}
+}

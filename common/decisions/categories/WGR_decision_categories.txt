@@ -1,0 +1,26 @@
+WGR_Bavarian_independence_crisis_decision = {
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_decision_pic_Bavaria
+	allowed = {
+		original_tag = WGR
+	}
+	visible = {
+		NOT = {
+			has_country_flag = WGR_NO_WGR_Bavarian_independence_crisis_decision
+		}
+	}
+	priority = 100
+}
+
+WGR_German_1937_elections = {
+	icon = GFX_decision_category_usa_congress
+	picture = GFX_decision_pic_West_German_Parliament
+	allowed = {
+		original_tag = WGR
+	}
+	visible = {
+		has_country_flag = WGR_German_1937_elections_flag
+	}
+	visible_when_empty = yes
+	priority = 100
+}

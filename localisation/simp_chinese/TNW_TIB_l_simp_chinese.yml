@@ -1,0 +1,15 @@
+﻿l_simp_chinese:
+
+#顾问
+ TIB_Qoigyi_Gyaincain: "确吉坚赞"
+ TIB_Qoigyi_Gyaincain_desc: ""
+
+#政党名字
+ TIB_communist_party:0 "-"
+ TIB_socialism_party:0 "-"
+ TIB_Social_democracy_party:0 "西藏改革党"
+ TIB_Liberalism_party:0 "求幸福者同盟"
+ TIB_Conservatism_party:0 "班禅派"
+ TIB_Authoritarianism_party:0 "三法座"
+ TIB_Absolutism_party:0 "噶厦集团"
+ TIB_Nationalism_party:0 "赤门派"

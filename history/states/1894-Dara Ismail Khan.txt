@@ -1,0 +1,25 @@
+state = {
+	id = 1894
+	name = "STATE_1894"
+	provinces = {
+		1978 16002
+	}
+	history = {
+		owner = AFG
+		victory_points = { 16002 1 }
+		victory_points = { 1978 5 }
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = AFG
+		add_claim_by = RAJ
+		
+		
+		
+		set_state_flag = state_renamings
+	}
+	manpower = 878810
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+}

@@ -1,0 +1,92 @@
+defined_text = {
+	name = cold_war_loc_thing
+
+	### if you do changes to the file and the error log floods with "invalid idea" erors , just close and reopen the game and its fixed ###
+	### -durango ###
+	
+	text = {
+		trigger = {
+			NOT = { original_tag = FRA }
+			has_idea = phalanstere_aligned_nation
+		}
+		localization_key = nation_is_aligned_with_phalanstere
+	}
+	
+	text = {
+		trigger = {
+			original_tag = FRA
+			has_idea = phalanstere_aligned_nation
+		}
+		localization_key = FRA_special_cold_war_text
+	
+	}
+	
+	text = {
+		trigger = {
+			NOT = { original_tag = RUS }
+			has_idea = moscow_aligned_nation 
+		}
+		localization_key = nation_is_aligned_with_moscow
+	}
+	
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_idea = moscow_aligned_nation
+		}
+		localization_key = RUS_special_cold_war_text
+	
+	}
+
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_idea = phalanstere_aligned_nation
+					has_idea = moscow_aligned_nation 
+				}
+			}
+		}
+		localization_key = nation_is_aligned_with_noone
+	}
+
+}
+
+defined_text = {
+	name = cold_war_delayed_loc_thing
+	text = {
+		trigger = {
+			original_tag = FRA
+			has_idea = phalanstere_aligned_nation
+		}
+		localization_key = FRA_special_cold_war_description
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_idea = moscow_aligned_nation
+		}
+		localization_key = RUS_special_cold_war_description
+	}
+}
+
+defined_text = {
+	name = GetAlignmentIcon
+	text = { trigger = { tag = FRA } localization_key = GFX_alignment_icon_FRA }
+	text = { trigger = { tag = RUS } localization_key = GFX_alignment_icon_RUS }
+	#text = {
+	#	trigger = {
+	#		meta_trigger = {
+	#			text = { set_temp_variable = { country_alignment_icon = token:GFX_alignment_icon_[TAG] } }
+	#			TAG = "[FROM.GetTag]"
+	#		}
+	#	}
+	#	localization_key = "[?country_alignment_icon.GetTokenKey]"
+	#}
+}
+
+defined_text = {
+	name = GetAlignmentIcon_Drippy
+	text = { trigger = { has_idea = phalanstere_aligned_nation } localization_key = GFX_alignment_INTERNATIONALE }
+	text = { trigger = { has_idea = moscow_aligned_nation } localization_key = GFX_alignment_KONIGSBURG }
+}

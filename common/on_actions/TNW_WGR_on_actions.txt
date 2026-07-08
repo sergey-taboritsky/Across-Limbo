@@ -1,0 +1,15 @@
+on_actions = {
+	on_monthly_WGR = {
+		effect = {
+			#每月增加准备度
+			if = {
+				limit = {
+					has_idea = WGR_Bavarian_independence_crisis
+				}
+				add_to_variable = {
+					WGR_Bavarian_extremist_group_readiness = 1
+				}
+			}
+		}
+	}
+}

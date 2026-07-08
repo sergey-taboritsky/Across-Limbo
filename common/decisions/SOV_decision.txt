@@ -1,0 +1,71 @@
+SOV_Subvert_Britain = {
+	#
+	SOV_Subvert_Britain_1_debug = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = { id = World_news.5 days = 1 }
+			}
+			BLF = {
+				inherit_technology = ENG
+				transfer_state = 128
+				transfer_state = 132
+				transfer_state = 127
+				transfer_state = 131
+				transfer_state = 133
+				transfer_state = 121
+				declare_war_on = { target = ENG type = annex_everything }
+				load_oob = "BLF_BCW"
+				set_convoys = 50
+			}
+			SOV = {
+				add_to_faction = BLF
+			}
+			every_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_core_of = BLF
+			}
+		}
+	}
+
+	SOV_Subvert_Britain_1 = {
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					SOV_Subvert_Britain_var > 99
+				}
+				tooltip = SOV_Subvert_Britain_1_custom_trigger
+			}
+			FRA = {
+				has_capitulated = yes
+			}
+			WGR = {
+				has_capitulated = yes
+			}
+			has_war_with = ENG
+		}
+		visible = {
+			#has_war_with = ENG
+		}
+		ai_will_do = {
+			base = 100
+		}
+		cost = 100
+		days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = SOV_Subvert_Britain_1_custom
+			hidden_effect = {
+				ENG = {
+					country_event = ENG_event.5
+				}
+			}
+		}
+	}
+}

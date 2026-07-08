@@ -1,0 +1,10 @@
+TAT_ideology_decision_categories = {
+	allowed = {
+		always = yes
+	}
+	visible = {
+	    tag = TAT
+	}
+    scripted_gui = TNW_TAT_indoctrination_gui
+	visible_when_empty = yes
+}

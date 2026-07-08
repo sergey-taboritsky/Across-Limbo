@@ -1,0 +1,108 @@
+defined_text = {
+	name = Get_CHI_army_chief_person
+	text = {
+		trigger = {
+			check_variable = { CHI_army_position_1_framevar = 2 }
+		}
+		localization_key = CHI_army_chief_Bai_Chongxi
+	}
+	text = {
+		localization_key = CHI_army_position_vacant_tt
+	}
+}
+defined_text = {
+	name = Get_CHI_army_chief_desc
+	text = {
+		trigger = {
+			check_variable = { CHI_army_position_1_framevar = 2 }
+		}
+		localization_key = CHI_army_chief_Bai_Chongxi_desc
+	}
+	text = {
+		localization_key = CHI_army_position_vacant_tt
+	}
+}
+defined_text = {
+	name = Get_CHI_gendarmie_chief_person
+	text = {
+		trigger = {
+			has_country_flag = CHI_gendarmie_chief_Liu_Shiyi_flag
+		}
+		localization_key = CHI_gendarmie_chief_Liu_Shiyi
+	}
+	text = {
+		localization_key = CHI_army_position_vacant_tt
+	}
+}
+defined_text = {
+	name = Get_CHI_gendarmie_chief_desc
+	text = {
+		trigger = {
+			has_country_flag = CHI_gendarmie_chief_Liu_Shiyi_flag
+		}
+		localization_key = CHI_gendarmie_chief_Liu_Shiyi_desc
+	}
+	text = {
+		localization_key = CHI_army_position_vacant_tt
+	}
+}
+defined_text = {
+	name = Get_CHI_supply_chief_person
+	text = {
+		trigger = {
+			has_country_flag = CHI_supply_chief_Chen_Liangzuo_flag
+		}
+		localization_key = CHI_supply_chief_Chen_Liangzuo
+	}
+	text = {
+		localization_key = CHI_army_position_vacant_tt
+	}
+}
+defined_text = {
+	name = Get_CHI_supply_chief_desc
+	text = {
+		trigger = {
+			has_country_flag = CHI_supply_chief_Chen_Liangzuo_flag
+		}
+		localization_key = CHI_supply_chief_Chen_Liangzuo_desc
+	}
+	text = {
+		localization_key = CHI_army_position_vacant_tt
+	}
+}
+defined_text = {
+	name = Get_CHI_armyreform_GUI_current_tab
+	text = {
+		trigger = {
+			has_country_flag = CHI_army_reformbutton_1_clicked_flag
+		}
+		localization_key = CHI_army_reformbutton_1_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = CHI_army_reformbutton_2_clicked_flag
+		}
+		localization_key = CHI_army_reformbutton_2_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = CHI_army_reformbutton_3_clicked_flag
+		}
+		localization_key = CHI_army_reformbutton_3_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = CHI_army_reformbutton_4_clicked_flag
+		}
+		localization_key = CHI_army_reformbutton_4_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = CHI_army_reformbutton_5_clicked_flag
+		}
+		localization_key = CHI_army_reformbutton_5_tt
+	}
+	text = {
+		localization_key = CHI_army_reformbutton_none_tt
+	}
+}

@@ -1,0 +1,69 @@
+ideas = {
+	country = {
+		#朝阳国度
+		MAL_Sunrise_State = {
+			picture = MAL_Sunrise_State
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+				construction_speed_buildings_factor = 0.15
+				political_power_factor = 0.05
+			}
+		}
+		#党内派系
+		MAL_Party_Factionalism = {
+			picture = GFX_idea_MAL_Party_Factionalism
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.025
+				political_power_factor = -0.10
+				socialism_drift = 0.01
+				Conservatism_drift = 0.01
+				drift_defence_factor = -0.25
+			}
+		}
+		#一国三军
+		MAL_Three_Armies = {
+			picture = GFX_idea_MAL_Three_Armies
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				compliance_growth = -0.10
+				required_garrison_factor = 0.10
+				resistance_growth = 0.20
+				army_org_factor = -0.15
+				army_morale_factor = -0.15
+				command_power_gain_mult = -0.50
+				army_chief_cost_factor = 0.50
+	            navy_chief_cost_factor = 0.50
+	            air_chief_cost_factor = 0.50
+	            high_command_cost_factor = 0.50
+				military_leader_cost_factor = 0.50
+			}
+		}
+		#烽烟四起
+		MAL_Liberation_Front_Insurgency = {
+			picture = GFX_idea_MAL_Liberation_Front_Insurgency
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.25
+				stability_weekly = -0.05
+				war_support_weekly = -0.05
+				army_org_factor = -0.075
+				construction_speed_buildings_factor = -0.10
+			}
+		}
+	}
+}

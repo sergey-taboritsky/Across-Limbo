@@ -1,0 +1,24 @@
+﻿capital = 908
+
+add_manpower = 15000
+
+add_ideas = {
+	bba_AFA_skilled_desert_warriors
+}
+
+set_convoys = 10
+
+recruit_character = AFA_sultan_mohamed_yayyo_of_aussa
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Liberalism = 0
+	Nationalism = 20
+	communist = 5
+	Authoritarianism = 75
+}

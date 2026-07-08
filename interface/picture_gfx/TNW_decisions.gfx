@@ -1,0 +1,17 @@
+spriteTypes = {	
+
+	### 决议照片
+	spriteType = {
+		name = "GFX_decision_pic_Bavaria"
+		texturefile = "gfx/interface/decisions/decision_pic_Bavaria.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_pic_West_German_Parliament"
+		texturefile = "gfx/interface/decisions/decision_pic_West_German_Parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_pic_SOV_Subvert_Britain"
+		texturefile = "gfx/interface/decisions/decision_pic_SOV_Subvert_Britain.dds"
+	}
+	
+}

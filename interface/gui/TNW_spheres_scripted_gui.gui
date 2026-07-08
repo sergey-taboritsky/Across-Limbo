@@ -1,0 +1,38 @@
+guiTypes = {
+	containerwindowtype = {
+		name = "TNW_alignment_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 72 height = 72 }
+		
+		iconType = {
+			name = "alignment_icon"
+			pdx_tooltip = cold_war_map_tooltip
+			pdx_tooltip_delayed = cold_war_map_tooltip_delayed
+		}
+	}
+	
+	containerWindowType = {
+		name = "TNW_secondary_leader_gui_window"
+		position = { x = 13 y = 233 }
+		
+		iconType = {
+			name = "secondary_leader_toggler"
+			spriteType = GFX_secondary_leader_button
+			pdx_tooltip = person_of_interest_tt
+			scale = 0.6
+		}
+	}
+	
+	containerWindowType = {
+		name = "TNW_secondary_leader_gui_window_dip"
+		position = { x = 18 y = 242 }
+		size = { width = 32 height = 32 }
+		
+		iconType = {
+			name = "secondary_leader_displayer"
+			spriteType = GFX_secondary_leader_button
+			pdx_tooltip = person_of_interest_them_tt
+			scale = 0.5
+		}
+	}
+}

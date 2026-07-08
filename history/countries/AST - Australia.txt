@@ -1,0 +1,26 @@
+﻿capital = 285
+
+set_stability = 0.8
+set_war_support = 0.3
+# Starting tech
+recruit_character = AST_Joseph_Benedict_Chifley
+
+set_politics = {
+	ruling_party = Social_democracy
+	last_election = "1934.9.15"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communist = 0
+	socialism = 0
+	Social_democracy = 35
+	Liberalism = 32
+	Conservatism = 15
+	Absolutism = 2
+	Authoritarianism = 13
+	Nationalism = 3
+}
+
+set_convoys = 100

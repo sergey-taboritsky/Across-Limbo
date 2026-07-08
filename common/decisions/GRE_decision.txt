@@ -1,0 +1,71 @@
+GRE_debug_decision = {
+	
+	GRE_decision_01= {
+		activation = {
+			original_tag = GRE
+		}
+		available = {
+			original_tag = GRE
+			date > 1937.1.1
+		}
+		is_good = yes
+		fired_only_once = yes
+		days_mission_timeout = 270
+		timeout_effect = {
+			random_list = { 
+				12.5 = { 
+					set_politics = { ruling_party = communist } 
+					add_popularity = { ideology = communist popularity = 1 }
+					country_event = { id  = GRE_event.1 }
+					news_event = { id = GRE_news_event.1 }
+				} 
+				12.5 = { 
+					set_politics = { ruling_party = socialism } 
+					add_popularity = { ideology = socialism popularity = 1 }
+					country_event = { id  = GRE_event.2 }
+					news_event = { id = GRE_news_event.2 }
+				 }
+				12.5 = { 
+					set_politics = { ruling_party = Social_democracy } 
+					add_popularity = { ideology = Social_democracy popularity = 1 }
+					country_event = { id  = GRE_event.3 }
+					news_event = { id = GRE_news_event.3 }
+				 }
+				12.5 = { 
+					set_politics = { ruling_party = Liberalism }  
+					add_popularity = { ideology = Liberalism popularity = 1 }
+					country_event = { id  = GRE_event.4 }
+					news_event = { id = GRE_news_event.4 }
+				}
+				12.5 = { 
+					set_politics = { ruling_party = Conservatism } 
+					add_popularity = { ideology = Conservatism popularity = 1 }
+					country_event = { id  = GRE_event.5 }
+					news_event = { id = GRE_news_event.5 }
+				 }
+				12.5 = { 
+					set_politics = { ruling_party = Authoritarianism } 
+					add_popularity = { ideology = Authoritarianism popularity = 1 }
+					country_event = { id  = GRE_event.6 }
+					news_event = { id = GRE_news_event.6 }
+				 }
+				12.5 = { 
+					set_politics = { ruling_party = Absolutism }
+					add_popularity = { ideology = Absolutism popularity = 1 }
+					country_event = { id  = GRE_event.7 }
+					news_event = { id = GRE_news_event.7 }
+				  }
+				12.5 = { 
+					set_politics = { ruling_party = Nationalism } 
+					add_popularity = { ideology = Nationalism popularity = 1 }
+					country_event = { id  = GRE_event.8 }
+					news_event = { id = GRE_news_event.8 }
+				 }
+
+			}
+		}
+		complete_effect = {
+
+		}
+	}
+}

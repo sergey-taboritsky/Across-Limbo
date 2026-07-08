@@ -1,0 +1,25 @@
+spriteTypes = {
+	##进度条
+	progressbartype = {
+		name = "GFX_TNW_Progress_bar"
+		textureFile1 = "gfx/TNW_scripted_guis/TNW_Level_of_development/TNW_Progress_bar_is_full.png"
+		textureFile2 = "gfx/TNW_scripted_guis/TNW_Level_of_development/TNW_The_progress_of_development_is_empty.png"
+		size = {
+			x = 301
+			y = 42
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+		color = {
+			1
+			1
+			1
+		}
+		colortwo = {
+			1
+			1
+			1
+		}
+		steps = 100
+	}
+}

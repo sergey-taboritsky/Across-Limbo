@@ -1,0 +1,51 @@
+﻿l_simp_chinese:
+#领导人
+ DAG_Ibrahim_Sukru_Sokmensuer: "易卜拉欣·苏克鲁·索克曼苏尔" #法官，傀儡领袖，司法部长
+ DAG_Ibrahim_Sukru_Sokmensuer_desc: ""
+ DAG_Recep_Peker: "雷杰普·佩克尔" #领袖，人民党强硬派
+ DAG_Recep_Peker_desc: ""
+ DAG_Falih_Rifki_Atay: "法利赫·里夫基·阿塔伊" #人民党强硬派 总理
+ DAG_Falih_Rifki_Atay_advisor: "法利赫·里夫基·阿塔伊"
+ DAG_Falih_Rifki_Atay_hog: "法利赫·里夫基·阿塔伊"
+ DAG_Omer_Mumtaz_Okmen: "穆姆塔兹·奥克曼" #人民党强硬派 经济部长
+ DAG_Omer_Mumtaz_Okmen_advisor: "穆姆塔兹·奥克曼"
+ DAG_Ahmet_Ferit_Tek: "艾哈迈德·费里特·泰克" #突厥派 内政部长
+ DAG_Ahmet_Ferit_Tek_advisor: "艾哈迈德·费里特·泰克"
+ DAG_Hamdullah_Suphi_Tarinover: "哈姆杜拉·苏普希" #突厥派 教育部长
+ DAG_Hamdullah_Suphi_Tarinover_advisor: "哈姆杜拉·苏普希"
+
+#政党名字
+ DAG_communist_party: "工农社会党"
+ DAG_communist_party_long: "土耳其工农社会党(Türkiye İşçi ve Çiftçi Sosyalist Fırkası)"
+ DAG_syndicalism_party: "工农社会党"
+ DAG_syndicalism_party_long: "土耳其工农社会党(Türkiye İşçi ve Çiftçi Sosyalist Fırkası)"
+ DAG_socialism_party: "工农社会党"
+ DAG_socialism_party_long: "土耳其工农社会党(Türkiye İşçi ve Çiftçi Sosyalist Fırkası)"
+ DAG_Social_democracy_party: "工农社会党"
+ DAG_Social_democracy_party_long: "土耳其工农社会党(Türkiye İşçi ve Çiftçi Sosyalist Fırkası)"
+ DAG_Liberalism_party: "自由协约党"
+ DAG_Liberalism_party: "自由协约党"
+ DAG_Conservatism_party: "穆罕默德联盟党"
+ DAG_Conservatism_party_long: "穆罕默德联盟党"
+ DAG_Authoritarianism_party: "土耳其人民党 - 安卡拉派"
+ DAG_Authoritarianism_party_long: "土耳其人民党(Türkiye Halk Fırkası)"
+ DAG_Absolutism_party: "民族纯净委员会"
+ DAG_Absolutism_party_long: "土耳其共和国民族纯净委员会"
+ DAG_Nationalism_party: "土耳其人民党 - 激进派"
+ DAG_Nationalism_party_long: "土耳其人民党(Türkiye Halk Fırkası)"
+
+#民族精神
+
+#事件
+
+#新闻
+
+#GUI
+
+#BOP
+
+#决议
+
+#国策
+ #: ""
+ #_desc: ""

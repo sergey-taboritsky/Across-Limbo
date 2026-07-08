@@ -1,0 +1,19 @@
+﻿capital = 794
+
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 10
+	Authoritarianism = 0
+	Absolutism = 60
+	Nationalism = 30
+}
+
+recruit_character = INS_Maulana_Muhammad_Djalaluddin_II

@@ -1,0 +1,50 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "TNW_FRA_souvarine_treint_balance_Scripted_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 450 height= 170 }
+
+		buttonType = {
+		    name ="FRA_department_button_Party_Central"
+			spriteType = "GFX_FRA_department_button"
+	    	position = { x= 125 y = 25 }
+	    	pdx_tooltip = "FRA_Party_Central_button_tt"
+			pdx_tooltip_delayed = "FRA_Party_Central_button_delayed_tt"
+		}
+	    buttonType = {
+	    	name ="FRA_department_button_Commune_Council"
+		    spriteType = "GFX_FRA_department_button"
+			position = { x= 175 y = 75 }
+	    	pdx_tooltip = "FRA_Commune_Council_button_tt"
+			pdx_tooltip_delayed = "FRA_Commune_Council_button_delayed_tt"
+	    }
+	    buttonType = {
+	    	name ="FRA_department_button_Departemnt_Conference"
+		    spriteType = "GFX_FRA_department_button"
+			position = { x= 225 y = 25 }
+	    	pdx_tooltip = "FRA_Department_Conference_button_tt"
+			pdx_tooltip_delayed = "FRA_Department_Conference_button_delayed_tt"
+	    }
+	    buttonType = {
+	    	name ="FRA_department_button_Red_Army_High_Command"
+		    spriteType = "GFX_FRA_department_button"
+			position = { x= 275 y = 75 }
+	    	pdx_tooltip = "FRA_Red_Army_High_Command_button_tt"
+			pdx_tooltip_delayed = "FRA_Red_Army_High_Command_button_delayed_tt"
+	    }
+	    buttonType = {
+	    	name ="FRA_department_button_Third_International"
+		    spriteType = "GFX_FRA_department_button"
+			position = { x= 325 y = 25 }
+	    	pdx_tooltip = "FRA_Third_International_button_tt"
+			pdx_tooltip_delayed = "FRA_Third_International_button_delayed_tt"
+	    }
+		iconType = {
+			name ="FRA_internal_balance_gui_window_progress"
+			spriteType = "GFX_FRA_internal_Progress_bar"
+			pdx_tooltip = "FRA_internal_balance_gui_window_progress_tt"
+			position = { x= 50 y = 125 }
+	    }
+	}
+}

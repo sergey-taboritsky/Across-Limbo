@@ -1,0 +1,22 @@
+scripted_gui = {
+	TNW_Super_Events = {
+		context_type = player_context
+		window_name = "TNW_Super_Events"
+		dirty = TNW_Super_Event
+
+		visible = {
+			is_ai = no
+			has_variable = TNW_super_event
+		}
+		triggers = {
+		}
+		properties = {
+			SE_image = { image = "[TNWGetSuperEventImage]" }
+		}
+		effects = {
+			SE_option_click = {
+				clear_variable = TNW_super_event
+			}
+		}
+	}
+}

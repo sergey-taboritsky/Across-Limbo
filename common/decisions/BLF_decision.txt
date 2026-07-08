@@ -1,0 +1,704 @@
+BLF_debug = {
+	#不列颠共产党执政：亚瑟·霍纳
+	BLF_debug_1= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = communist
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 32
+				socialism = 28
+				Social_democracy = 23
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 5
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_Arthur_Horner
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_Arthur_Horner_DESC"
+					ideology = Marxism
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_Arthur_Horner = {
+				promote_character = yes
+			}
+		}
+	}
+	#不列颠共产党执政：哈里·波立特
+	BLF_debug_2= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = communist
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 32
+				socialism = 28
+				Social_democracy = 23
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 5
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_Harry_Pollitt
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_Harry_Pollitt_DESC"
+					ideology = Marxism_Leninism
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_Harry_Pollitt = {
+				promote_character = yes
+			}
+		}
+	}
+	#不列颠共产党执政：威利·加拉赫尔
+	BLF_debug_3= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = communist
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 32
+				socialism = 28
+				Social_democracy = 23
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 5
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_Willie_Gallacher
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_Willie_Gallacher_DESC"
+					ideology = Marxism_Leninism
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_Willie_Gallacher = {
+				promote_character = yes
+			}
+		}
+	}
+	#不列颠共产党执政：西尔维亚·潘克赫特
+	BLF_debug_4= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = communist
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 32
+				socialism = 28
+				Social_democracy = 23
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 5
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_Sylvia_Pankhurst
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_Sylvia_Pankhurst_DESC"
+					ideology = Left_wing_communism
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_Sylvia_Pankhurst = {
+				promote_character = yes
+			}
+		}
+	}
+	#英国统一社会党执政：克莱门特·艾德礼
+	BLF_debug_5= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = socialism
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 25
+				socialism = 35
+				Social_democracy = 23
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 5
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_Clement_Attlee
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_Clement_Attlee_DESC"
+					ideology = Socialism_Britain
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_Clement_Attlee = {
+				promote_character = yes
+			}
+		}
+	}
+	#英国统一社会党执政：大卫·柯克伍德
+	BLF_debug_6= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = socialism
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 25
+				socialism = 35
+				Social_democracy = 23
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 5
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_David_Kirkwood
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_David_Kirkwood_DESC"
+					ideology = Popular_Front
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_David_Kirkwood = {
+				promote_character = yes
+			}
+		}
+	}
+	#英国统一社会党执政：芬纳·布罗克韦
+	BLF_debug_7= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = socialism
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 25
+				socialism = 35
+				Social_democracy = 23
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 5
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_Fenner_Brockway
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_Fenner_Brockway_DESC"
+					ideology = Socialism_Britain
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_Fenner_Brockway = {
+				promote_character = yes
+			}
+		}
+	}
+	#英国统一社会党执政：塞西尔·马龙
+	BLF_debug_8= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = socialism
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 25
+				socialism = 35
+				Social_democracy = 23
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 5
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_Cecil_Malone
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_Cecil_Malone_DESC"
+					ideology = Socialism_Britain
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_Cecil_Malone = {
+				promote_character = yes
+			}
+		}
+	}
+	#国家社会主义党执政：曼尼·辛威尔
+	BLF_debug_9= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = Social_democracy
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 25
+				socialism = 25
+				Social_democracy = 33
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 5
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_Manny_Shinwell
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_Manny_Shinwell_DESC"
+					ideology = progressivism
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_Manny_Shinwell = {
+				promote_character = yes
+			}
+		}
+	}
+	#国家社会主义党执政：沃尔顿·纽博尔德
+	BLF_debug_10= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = Social_democracy
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 25
+				socialism = 25
+				Social_democracy = 33
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 5
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_Walton_Newbold
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_Walton_Newbold_DESC"
+					ideology = Social_democratic
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_Walton_Newbold = {
+				promote_character = yes
+			}
+		}
+	}
+	#国家社会主义党执政：杰西·斯蒂芬
+	BLF_debug_11= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = Social_democracy
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 25
+				socialism = 25
+				Social_democracy = 33
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 5
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_Jessie_Stephen
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_Jessie_Stephen_DESC"
+					ideology = progressivism
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_Jessie_Stephen = {
+				promote_character = yes
+			}
+		}
+	}
+	#英国人民党执政：约翰·贝克特
+	BLF_debug_12= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = Authoritarianism
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 18
+				socialism = 20
+				Social_democracy = 20
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 30
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_John_Beckett
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_John_Beckett_DESC"
+					ideology = Left_wing_corporatism
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_John_Beckett = {
+				promote_character = yes
+			}
+		}
+	}
+	#英国人民党执政：杰弗里·哈姆
+	BLF_debug_13= {
+		complete_effect = {
+			set_politics = {
+				ruling_party = Authoritarianism
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = no 
+			}
+			set_popularities = {
+				communist = 18
+				socialism = 20
+				Social_democracy = 20
+				Liberalism = 0
+				Conservatism = 0
+				Absolutism = 12
+				Authoritarianism = 30
+				Nationalism = 0
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = BLF_ENG_communist_party
+				name = BLF_ENG_communist_party
+			}
+			set_party_name = {
+				ideology = socialism
+				long_name = BLF_ENG_socialism_party
+				name = BLF_ENG_socialism_party
+			}
+			set_party_name = {
+				ideology = Social_democracy
+				long_name = BLF_ENG_Social_democracy_party
+				name = BLF_ENG_Social_democracy_party
+			}
+			set_party_name = {
+				ideology = Authoritarianism
+				long_name = BLF_ENG_Authoritarianism_party
+				name = BLF_ENG_Authoritarianism_party
+			}
+			add_country_leader_role = {
+				character = BLF_Jeffrey_Hamm
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_BLF_Jeffrey_Hamm_DESC"
+					ideology = Social_nationalism
+					expire = "2000.1.1.1"
+					traits = {  }
+				}
+			}
+			BLF_Jeffrey_Hamm = {
+				promote_character = yes
+			}
+		}
+	}
+}

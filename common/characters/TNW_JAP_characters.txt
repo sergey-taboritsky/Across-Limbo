@@ -1,0 +1,178 @@
+characters = {
+	#托马斯·比森
+	JAP_Thomas_Bisson = {
+		name = JAP_Thomas_Bisson
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Thomas_Bisson
+			}
+		}
+		country_leader = {
+			desc = JAP_Thomas_Bisson_desc
+			ideology = Classical_Syndicalism
+			traits = { JAP_A_swimmer_in_a_muddy_stream }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#高野实
+	JAP_Minoru_Takano = {
+		name = JAP_Minoru_Takano
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Minoru_Takano
+			}
+		}
+		country_leader = {
+			desc = JAP_Minoru_Takano_desc
+			ideology = Japanese_Syndicalism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#大山郁夫
+	JAP_Oyama_Ikuo = {
+		name = JAP_Oyama_Ikuo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Oyama_Ikuo
+			}
+		}
+		country_leader = {
+			desc = JAP_Oyama_Ikuo_desc
+			ideology = Liberalism_socialism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#江田三郎
+	JAP_Eda_Saburo = {
+		name = JAP_Eda_Saburo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Eda_Saburo
+			}
+		}
+		country_leader = {
+			desc = JAP_Eda_Saburo_desc
+			ideology = reformism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#西尾末广
+	JAP_Nishio_Suehiro = {
+		name = JAP_Nishio_Suehiro
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Nishio_Suehiro
+			}
+		}
+		country_leader = {
+			desc = JAP_Nishio_Suehiro_desc
+			ideology = Social_democratic
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#向坂逸郎
+	JAP_Sakisaka_Itsuro = {
+		name = JAP_Sakisaka_Itsuro
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Sakisaka_Itsuro
+			}
+		}
+		country_leader = {
+			desc = JAP_Sakisaka_Itsuro_desc
+			ideology = Japanese_Marxism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#浅沼稻次郎
+	JAP_Asanuma_Inejiro = {
+		name = JAP_Asanuma_Inejiro
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Asanuma_Inejiro
+			}
+		}
+		country_leader = {
+			desc = JAP_Asanuma_Inejiro_desc
+			ideology = Left_wing_nationalism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#杰克·白井
+	JAP_Jack_Shirai = {
+		name = JAP_Jack_Shirai
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Jack_Shirai
+			}
+		}
+		country_leader = {
+			desc = JAP_Jack_Shirai_desc
+			ideology = Red_military_government
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#福本和夫
+	JAP_Fukumoto_Kazuo = {
+		name = JAP_Fukumoto_Kazuo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Fukumoto_Kazuo
+			}
+		}
+		country_leader = {
+			desc = JAP_Fukumoto_Kazuo_desc
+			ideology = Fukumotoism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#风早八十二
+	JAP_Kazahaya_Yasoji = {
+		name = JAP_Kazahaya_Yasoji
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Kazahaya_Yasoji
+			}
+		}
+		country_leader = {
+			desc = JAP_Kazahaya_Yasoji_desc
+			ideology = Production_Supremacism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#黑田寿男
+	JAP_Kuroda_Hisao = {
+		name = JAP_Kuroda_Hisao
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Kuroda_Hisao
+			}
+		}
+		country_leader = {
+			desc = JAP_Kuroda_Hisao_desc
+			ideology = Marxism_Leninism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+}

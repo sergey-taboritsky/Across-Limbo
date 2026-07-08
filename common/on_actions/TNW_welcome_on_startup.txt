@@ -1,0 +1,55 @@
+
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_variable = { TNW_welcome_gui_var = 1 }
+				set_variable = { current_page = 1 }
+				add_to_array = { TNW_welcome_change_button_array = 1 }
+				add_to_array = { TNW_welcome_change_button_array = 2 }
+			}
+			FRA = {
+				set_variable = { country_intro_page_max = 1 }
+			}
+			BUL = {
+				set_variable = { country_intro_page_max = 2 }
+			}
+			DDR = {
+				set_variable = { country_intro_page_max = 4 }
+			}
+			WGR = {
+				set_variable = { country_intro_page_max = 1 }
+			}
+			SOV = {
+				set_variable = { country_intro_page_max = 1 }
+			}
+			JAP = {
+				set_variable = { country_intro_page_max = 5 }
+			}
+			ENG = {
+				set_variable = { country_intro_page_max = 3 }
+			}
+			GRE = {
+				set_variable = { country_intro_page_max = 2 }
+			}
+			TUR = {
+				set_variable = { country_intro_page_max = 2 }
+			}
+			POL = {
+				set_variable = { country_intro_page_max = 3 }
+			}
+			TAT = {
+				set_variable = { country_intro_page_max = 2 }
+			}
+			CHI = {
+				set_variable = { country_intro_page_max = 5 }
+			}
+			MAL = {
+				set_variable = { country_intro_page_max = 4 }
+			}
+		}
+	}
+}

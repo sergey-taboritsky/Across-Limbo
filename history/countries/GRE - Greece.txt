@@ -1,0 +1,62 @@
+﻿capital = 797
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	trench_warfare = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = communist
+	last_election = "1935.6.9"
+	election_frequency = 7
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 51
+	syndicalism = 18
+	socialism = 13
+	Social_democracy = 11
+	Liberalism = 0
+	Conservatism = 0
+	Authoritarianism = 0
+	Absolutism = 7
+	Nationalism = 0
+
+}
+
+set_stability = 0.72
+set_war_support = 0.23
+set_convoys = 80
+
+
+
+recruit_character = GRE_Pandelis_Pouliopoulos
+recruit_character = GRE_Constantinos_Speras
+recruit_character = GRE_Markos_Vafiadis
+recruit_character = GRE_Avraam_Benaroya
+recruit_character = GRE_Aris_Velouchiotis
+recruit_character = GRE_Georgios_Siantos
+
+add_ideas = {
+	phalanstere_aligned_nation
+	GRE_Proud_winner
+	GRE_Industrial_Despair
+	GRE_The_undercurrent_of_politics
+
+	GRE_Georgios_Siantos_hog
+	GRE_Aris_Velouchiotis_theorist
+}
+
+set_country_flag = balkan_powderkeg_active_flag

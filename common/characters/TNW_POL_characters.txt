@@ -1,0 +1,73 @@
+characters = {
+	#爱德华·雷兹-希米格维
+	POL_Edward_Rydz_Smigly = {
+		name = POL_Edward_Rydz_Smigly
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_POL_Edward_Rydz_Smigly
+			}
+		}
+		country_leader = {
+			desc = POL_Edward_Rydz_Smigly_desc
+			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#康斯坦丁·罗科索夫斯基
+	POL_Konstantin_Rokossovsky = {
+		name = POL_Konstantin_Rokossovsky
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_POL_Konstantin_Rokossovsky
+			}
+		}
+		country_leader = {
+			desc = POL_Konstantin_Rokossovsky_desc
+			ideology = Red_military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+				POL_Mental_imbalance
+			}
+		}
+	}
+	#朱利安·莱斯钦斯基
+	POL_Julian_Leschinski = {
+		name = POL_Julian_Leschinski
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_POL_Julian_Leschinski
+			}
+		}
+		country_leader = {
+			desc = POL_Julian_Leschinski_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+				POL_Biting_publicist
+				}
+			}
+		}
+	#斯坦尼斯瓦夫·帕特克
+	POL_Stanislaw_Patek = {
+		name = POL_Stanislaw_Patek
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_POL_Stanislaw_Patek
+			}
+		}
+		country_leader = {
+			desc = POL_Stanislaw_Patek_desc
+			ideology = Liberalism_socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+				POL_Excellent_defender
+			}
+		}
+	}
+}

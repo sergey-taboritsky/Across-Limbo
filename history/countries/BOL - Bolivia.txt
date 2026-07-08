@@ -1,0 +1,14 @@
+﻿capital = 302
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1934.11.11"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	Authoritarianism = 32
+	Liberalism = 54
+	communist = 12
+	Nationalism = 2
+}

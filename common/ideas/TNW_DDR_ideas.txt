@@ -1,0 +1,120 @@
+ideas = {
+	country = {
+		#脆弱的和平
+		DDR_Fragile_peace = {
+			picture = WGR_Fragile_peace
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10	
+			}
+		    targeted_modifier = {
+				tag = WGR
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10				
+			}
+		}
+		##绯红之翼
+		DDR_Route_battles = {
+			picture = GFX_idea_DDR_Route_battles
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+			    experience_gain_air_factor = -0.10
+				air_untrained_pilots_penalty_factor = -0.17
+				air_doctrine_cost_factor = 1
+			}
+		}
+		#在废墟中复苏
+		DDR_Above_the_ruins = {
+			picture = GFX_idea_DDR_Above_the_ruins
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.20
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = -0.10
+				industry_repair_factor = 0.10
+			}
+		}
+		#偃旗息鼓的“祖国军
+		DDR_The_red_flag_is_already_standing = {
+			picture = GFX_idea_DDR_The_red_flag_is_already_standing
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.10
+				stability_factor = -0.05
+			}
+		}
+		#落后的东部地区
+		DDR_Backward_eastern_regions = {
+			picture = GFX_idea_DDR_Backward_eastern_regions
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.20
+				conscription_factor = -0.30
+			}
+		}
+		#猩红之矛
+		DDR_Red_Spear = {
+			picture = GFX_idea_DDR_Red_Spear
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {	
+				experience_gain_army_factor = -0.10
+				conscription_factor = -0.20
+				training_time_army_factor = -0.30
+				mobilization_speed = 0.40
+				mobilization_laws_cost_factor = -0.50
+			}
+		}
+		#绛红之舰
+		DDR_Crimson_Ship = {
+			picture = GFX_idea_DDR_Crimson_Ship
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {	
+				experience_gain_navy_factor = -0.10
+				conscription_factor = -0.10
+				naval_retreat_chance = -0.10
+				naval_critical_score_chance_factor = 0.10
+				naval_has_potf_in_combat_attack = 0.10
+			}
+		}
+		#苏联加盟国-德意志苏维埃
+		DDR_Member_States_of_the_USSR_the_German_Soviet = {
+			picture = GFX_idea_DDR_Member_States_of_the_USSR_the_German_Soviet
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+			}
+		}
+	}
+}

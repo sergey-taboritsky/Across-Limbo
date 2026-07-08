@@ -1,0 +1,751 @@
+scripted_gui = {
+	State_development_open = {
+		window_name = State_development_open
+		context_type = selected_state_context
+		parent_window_token = selected_state_view
+		effects = {
+			State_development_open_button_click = {
+				set_global_flag = Open_State_development_gui_flag
+			}
+		}
+		properties = {
+			State_development_open_button = {
+				frame = 3
+			}
+		}
+	}
+	State_development_gui = {
+		window_name = State_development_gui
+		context_type = selected_state_context
+		parent_window_token = selected_state_view
+
+		visible = {
+			has_global_flag = Open_State_development_gui_flag
+		}
+
+
+		effects = {
+			State_development_close_button_click = {
+				clr_global_flag = Open_State_development_gui_flag
+			}
+
+			SD_man_action_level_up_button_click = {
+				ROOT = {
+					add_political_power = -10
+				}
+				THIS = {
+					if = {
+						limit = {
+							check_variable = {
+								var = SD_man_poor_var
+								value = 0
+								compare = greater_than
+							}
+						}
+						add_to_variable = {
+							var = This.SD_man_poor_var
+							value = -0.5
+						}
+						add_to_variable = {
+							var = This.SD_man_normal_var
+							value = 1
+						}
+						add_to_variable = {
+							var = This.SD_man_rich_var
+							value = 0.5
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								var = SD_man_poor_var
+								value = 0
+								compare = less_than_or_equals
+							}
+						}
+						add_to_variable = {
+							var = This.SD_man_rich_var
+							value = 0.5
+						}
+					}
+					SD_cal_pie_var_man = yes
+					SD_build_pie_man = yes
+					SD_cal_man_modifier = yes
+				}
+			}
+			SD_man_action_level_up_button_right_click = {
+				for_loop_effect = {
+					start = 0
+					end = 10 
+					compare_type = less_than_or_equals 
+					add = 1
+					ROOT = {
+						add_political_power = -10
+					}
+					THIS = {
+						if = {
+							limit = {
+								check_variable = {
+									var = SD_man_poor_var
+									value = 0
+									compare = greater_than
+								}
+							}
+							add_to_variable = {
+								var = This.SD_man_poor_var
+								value = -0.5
+							}
+							add_to_variable = {
+								var = This.SD_man_normal_var
+								value = 1
+							}
+							add_to_variable = {
+								var = This.SD_man_rich_var
+								value = 0.5
+							}
+						}
+						if = {
+							limit = {
+								check_variable = {
+									var = SD_man_poor_var
+									value = 0
+									compare = less_than_or_equals
+								}
+							}
+							add_to_variable = {
+								var = This.SD_man_rich_var
+								value = 0.5
+							}
+						}
+						SD_cal_pie_var_man = yes
+						SD_build_pie_man = yes
+						SD_cal_man_modifier = yes
+					}
+				}
+
+
+			}
+
+			SD_man_action_Requisition_factory_button_click = {
+				ROOT = {
+					add_political_power = -100
+				}
+				THIS = {
+					add_to_variable = {
+						var = This.SD_man_poor_var
+						value = 5
+					}
+					add_to_variable = {
+						var = This.SD_man_normal_var
+						value = -5
+					}
+					add_to_variable = {
+						var = This.SD_man_rich_var
+						value = -2
+					}
+					SD_cal_pie_var_man = yes
+					SD_build_pie_man = yes
+					SD_cal_man_modifier = yes
+				}
+				THIS = {
+					if = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+			}
+
+			SD_state_action_level_up_button_click = {
+				ROOT = {
+					add_political_power = -30
+				}
+				SD_state_monthly_update = yes
+			}
+			SD_state_action_level_up_button_right_click = {
+				for_loop_effect = {
+					start = 0
+					end = 10 
+					compare_type = less_than_or_equals 
+					add = 1
+					ROOT = {
+						add_political_power = -30
+					}
+					SD_state_monthly_update = yes
+				}
+			}
+
+
+			SD_state_action_Invest_Construction_button_click = {
+				ROOT = {
+					add_political_power = -100
+				}
+				add_to_variable = {
+					var = THIS.SD_state_developing_var_added
+					value = 1
+				}
+				add_to_variable = {
+					var = THIS.SD_state_developing_var
+					value = 1
+				}
+				add_to_variable = {
+					var = THIS.SD_state_undeveloped_var
+					value = -1
+				}
+				# SD_build_pie_develop = yes
+			}
+
+
+
+			SD_state_action_Exploit_Resources_button_click = {
+				ROOT = {
+					add_political_power = -30
+				}
+				THIS = {
+					add_to_variable = {
+						var = THIS.SD_state_development_var
+						value = -5
+					}
+					add_to_variable = {
+						var = THIS.SD_state_undeveloped_var
+						value = 5
+					}
+					add_to_variable = {
+						var = This.SD_state_undeveloped_var
+						value = This.SD_state_developing_var
+					}
+					SD_build_pie_develop = yes
+					random_list = {
+						15 ={
+							if = {
+								limit = {
+									check_variable = {
+										var = resource@aluminium
+										value = 0
+										compare = greater_than
+									}
+								}
+								add_resource = {
+									type = aluminium
+									amount = 4
+									state = THIS
+								}
+							}
+							else = {
+								add_resource = {
+									type = aluminium
+									amount = 2
+									state = THIS
+								}
+							}
+						}
+						15 ={
+							if = {
+								limit = {
+									check_variable = {
+										var = resource@steel
+										value = 0
+										compare = greater_than
+									}
+								}
+								add_resource = {
+									type = steel
+									amount = 6
+									state = THIS
+								}
+							}
+							else = {
+								add_resource = {
+									type = steel
+									amount = 3
+									state = THIS
+								}
+							}
+						}
+						15 ={
+							if = {
+								limit = {
+									check_variable = {
+										var = resource@tungsten
+										value = 0
+										compare = greater_than
+									}
+								}
+								add_resource = {
+									type = tungsten
+									amount = 4
+									state = THIS
+								}
+							}
+							else = {
+								add_resource = {
+									type = tungsten
+									amount = 2
+									state = THIS
+								}
+							}
+						}
+						15 ={
+							if = {
+								limit = {
+									check_variable = {
+										var = resource@chromium
+										value = 0
+										compare = greater_than
+									}
+								}
+								add_resource = {
+									type = chromium
+									amount = 4
+									state = THIS
+								}
+							}
+							else = {
+								add_resource = {
+									type = chromium
+									amount = 2
+									state = THIS
+								}
+							}
+						}
+						15 ={
+							if = {
+								limit = {
+									check_variable = {
+										var = resource@oil
+										value = 0
+										compare = greater_than
+									}
+								}
+								add_resource = {
+									type = oil
+									amount = 6
+									state = THIS
+								}
+							}
+							else = {
+								add_resource = {
+									type = oil
+									amount = 3
+									state = THIS
+								}
+							}
+						}
+						15 ={
+							if = {
+								limit = {
+									check_variable = {
+										var = resource@rubber
+										value = 0
+										compare = greater_than
+									}
+								}
+								add_resource = {
+									type = rubber
+									amount = 6
+									state = THIS
+								}
+							}
+							else = {
+								add_resource = {
+									type = rubber
+									amount = 3
+									state = THIS
+								}
+							}
+						}
+						10 = { 
+							add_resource = {
+								type = aluminium
+								amount = 2
+								state = THIS
+							}
+							add_resource = {
+								type = steel
+								amount = 3
+								state = THIS
+							}
+							add_resource = {
+								type = chromium
+								amount = 4
+								state = THIS
+							}
+							add_resource = {
+								type = tungsten
+								amount = 2
+								state = THIS
+							}
+						}
+					}
+				}
+			}
+
+		}
+
+		triggers = {
+			
+			SD_man_action_level_up_button_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+			SD_man_action_button_colour_bg_0_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+			SD_man_action_button_colour_0_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+
+
+			SD_man_action_Requisition_factory_button_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+			SD_man_action_button_colour_bg_1_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+			SD_man_action_button_colour_1_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+
+
+
+			SD_state_action_level_up_button_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+			SD_state_action_button_colour_bg_0_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+			SD_state_action_button_colour_0_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+
+
+			SD_state_action_Invest_Construction_button_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+			SD_state_action_button_colour_bg_1_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+			SD_state_action_button_colour_1_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+
+
+			SD_state_action_Exploit_Resources_button_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+			SD_state_action_button_colour_bg_2_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+			SD_state_action_button_colour_2_visible = {
+				THIS = {
+					OWNER = {
+						OR = {
+							tag = ROOT 
+							OVERLORD = {
+								tag = ROOT
+							}
+						}
+					}
+				}
+			}
+
+
+
+
+
+
+
+
+
+
+
+			SD_man_action_level_up_button_click_enabled = {
+				ROOT = {
+					has_political_power > 9
+				}
+				THIS = {
+					check_variable = {
+						var = This.SD_man_rich_var
+						value = 100
+						compare = less_than
+					}
+				}
+			}
+			SD_man_action_level_up_button_right_click_enabled = {
+				ROOT = {
+					has_political_power > 99
+				}
+				THIS = {
+					check_variable = {
+						var = This.SD_man_rich_var
+						value = 100
+						compare = less_than
+					}
+				}
+			}
+
+
+
+
+
+			SD_man_action_Requisition_factory_button_click_enabled = {
+				ROOT = {
+					has_political_power > 99
+				}
+				THIS = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+					}
+				}
+			}
+			SD_state_action_level_up_button_click_enabled = {
+				ROOT = {
+					has_political_power > -451
+				}
+				THIS = {
+					if = {
+						limit = {
+							has_state_category = megalopolis
+						}
+						check_variable = {
+							var = THIS.SD_state_development_var
+							value = 100
+							compare = less_than
+						}
+					}
+				}
+			}
+			SD_state_action_level_up_button_right_click_enabled = {
+				ROOT = {
+					has_political_power > 0
+				}
+				THIS = {
+					if = {
+						limit = {
+							has_state_category = megalopolis
+						}
+						check_variable = {
+							var = THIS.SD_state_development_var
+							value = 100
+							compare = less_than
+						}
+					}
+				}
+			}
+
+
+
+			SD_state_action_Invest_Construction_button_click_enabled = {
+				ROOT = {
+					has_political_power > -99
+				}
+				THIS = {
+					if = {
+						limit = {
+							has_state_category = megalopolis
+						}
+						check_variable = {
+							var = THIS.SD_state_development_var
+							value = 100
+							compare = less_than
+						}
+					}
+					check_variable = {
+						var = THIS.SD_state_developing_var_added
+						value = 4
+						compare = less_than_or_equals
+					}
+				}
+			}
+
+			SD_state_action_Exploit_Resources_button_click_enabled = { 
+				ROOT = {
+					has_political_power > -99
+				}
+				THIS = {
+					check_variable = {
+						var = THIS.SD_state_development_var
+						value = 5
+						compare = greater_than_or_equals
+					}
+				}
+			}
+
+
+
+
+
+		}
+
+		properties = {
+			SD_manpower_poor = {
+				frame = This.SD_man_poor_pie_var
+			}
+			SD_manpower_normal = {
+				frame = This.SD_man_normal_pie_var
+			}
+			SD_manpower_rich = {
+				frame = This.SD_man_rich_pie_var
+			}
+
+			SD_man_action_button_colour_0 = {
+				frame = 2
+			}
+			SD_man_action_button_colour_1 = {
+				frame = 4
+			}
+			SD_state_action_button_colour_0 = {
+				frame = 2
+			}
+			SD_state_action_button_colour_1 = {
+				frame = 2
+			}
+			SD_state_action_button_colour_2 = {
+				frame = 4
+			}
+
+			SD_state_developed_icon = {
+				frame = This.SD_state_development_pie_var
+			}
+			SD_state_developing_icon = {
+				frame = This.SD_state_developing_pie_var
+			}
+			SD_state_undeveloped_icon = {
+				frame = 100
+			} 
+		}
+	}
+}

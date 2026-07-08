@@ -1,0 +1,355 @@
+spriteTypes = {
+#中国
+	#中华民国国军
+	spriteType = {
+		name = "GFX_idea_TNW_CHI_national_armed_forces"
+		texturefile = "gfx/interface/ideas/TNW_CHI_national_armed_forces.png"
+	}
+	#国家经济状态
+	spriteType = {
+		name = "GFX_idea_TNW_CHI_state_of_economy"
+		texturefile = "gfx/interface/ideas/TNW_CHI_state_of_economy.png"
+	}
+	#宪政过渡期
+	spriteType = {
+		name = "GFX_idea_TNW_CHI_constitutional_transition"
+		texturefile = "gfx/interface/ideas/TNW_CHI_constitutional_transition.png"
+	}
+	#国民党：党员，党阀与党争
+	spriteType = {
+		name = "GFX_idea_TNW_CHI_untamed_kuomintang"
+		texturefile = "gfx/interface/ideas/TNW_CHI_untamed_kuomintang.png"
+	}
+	#国忌日协定
+	spriteType = {
+		name = "GFX_idea_TNW_CHI_april_accords"
+		texturefile = "gfx/interface/ideas/TNW_CHI_april_accords.png"
+	}
+	#中国左翼的分裂
+	spriteType = {
+		name = "GFX_idea_TNW_CHI_leftists_split"
+		texturefile = "gfx/interface/ideas/TNW_CHI_leftists_split.png"
+	}
+	#搁置中的中俄谈判
+	spriteType = {
+		name = "GFX_idea_TNW_CHI_stalled_talks_with_russia"
+		texturefile = "gfx/interface/ideas/TNW_CHI_stalled_talks_with_russia.png"
+	}
+	#经济崩溃倒计时
+	spriteType = {
+		name = "GFX_idea_TNW_CHI_economic_ruin_countdown"
+		texturefile = "gfx/interface/ideas/TNW_CHI_economic_ruin_countdown.png"
+	}
+	#红日出川
+	spriteType = {
+		name = "GFX_idea_SCN_Red_Star_Over_Sichuan"
+		texturefile = "gfx/interface/ideas/TNW_SCN_Red_Star_Over_Sichuan.png"
+	}
+#英国
+	#二十载红色伦敦
+	spriteType = {
+		name = "GFX_idea_ENG_Twenty_Years_of_Red_London"
+		texturefile = "gfx/interface/ideas/BLF_Rush_to_London.dds"
+	}
+	#莫斯利主义经济
+	spriteType = {
+		name = "GFX_idea_ENG_Mosleynomics"
+		texturefile = "gfx/interface/ideas/ENG_Mosleynomics.dds"
+	}
+	#不满的工人
+	spriteType = {
+		name = "GFX_idea_ENG_Unsatisfied_workers"
+		texturefile = "gfx/interface/ideas/ENG_Unsatisfied_workers.dds"
+	}
+	#分裂的国家机器
+	spriteType = {
+		name = "GFX_idea_ENG_splitting_government"
+		texturefile = "gfx/interface/ideas/ENG_splitting_government.dds"
+	}
+#法国
+	#日益严峻的人口问题
+	spriteType = {
+		name = "GFX_idea_FRA_Growing_demographic_problems"
+		texturefile = "gfx/interface/ideas/FRA_Growing_demographic_problems.dds"
+	}
+#星洲
+	#朝阳国度
+	spriteType = {
+		name = "GFX_idea_MAL_Sunrise_State"
+		texturefile = "gfx/interface/ideas/TNW_MAL_Sunrise_State.png"
+	}
+	#统治集团的分裂
+	spriteType = {
+		name = "GFX_idea_MAL_Party_Factionalism"
+		texturefile = "gfx/interface/ideas/TNW_MAL_Party_Factionalism.png"
+	}
+	#一国三军
+	spriteType = {
+		name = "GFX_idea_MAL_Three_Armies"
+		texturefile = "gfx/interface/ideas/TNW_MAL_Three_Armies.png"
+	}
+
+
+	#民族精神
+	#苏俄红军
+	spriteType = {
+		name = "GFX_idea_RUS_hongjun"
+		texturefile = "gfx/interface/ideas/RUS_hongjun.dds"
+	}
+	#革命始源地
+	spriteType = {
+		name = "GFX_idea_RUS_birthplace_revolution"
+		texturefile = "gfx/interface/ideas/RUS_birthplace_revolution.dds"
+	}
+	#未完成的工业化
+	spriteType = {
+		name = "GFX_idea_RUS_weiwancheng_gongyehua"
+		texturefile = "gfx/interface/ideas/RUS_weiwancheng_gongyehua.dds"
+	}
+	#城乡矛盾
+	spriteType = {
+		name = "GFX_idea_RUS_chenxiang_maodun"
+		texturefile = "gfx/interface/ideas/RUS_chenxiang_maodun.dds"
+	}
+	#一五计划
+	spriteType = {
+		name = "GFX_idea_RUS_one_five_jihua"
+		texturefile = "gfx/interface/ideas/RUS_one_five_jihua.dds"
+	}
+	#宗教问题
+	spriteType = {
+		name = "GFX_idea_RUS_zongjiao_wenti"
+		texturefile = "gfx/interface/ideas/RUS_zongjiao_wenti.dds"
+	}
+	#共产国际成员
+	spriteType = {
+		name = "GFX_idea_gong_chang_guo_ji"
+		texturefile = "gfx/interface/ideas/gong_chang_guo_ji.dds"
+	}
+	#苏联加盟国-苏俄
+	spriteType = {
+		name = "GFX_idea_RUS_jia_meng_guo_rus"
+		texturefile = "gfx/interface/ideas/RUS_jia_meng_guo_rus.dds"
+	}
+	#腐败的国防军
+	spriteType = {
+		name = "GFX_idea_WGR_Corrupt_Wehrmacht"
+		texturefile = "gfx/interface/ideas/WGR_Corrupt_Wehrmacht.dds"
+	}
+	#利用自由军团
+	spriteType = {
+		name = "GFX_idea_WGR_Take_advantage_of_the_Freikorps"
+		texturefile = "gfx/interface/ideas/WGR_Take_advantage_of_the_Freikorps.dds"
+	}
+	#巴伐利亚独立危机
+	spriteType = {
+		name = "GFX_idea_WGR_Bavarian_independence_crisis"
+		texturefile = "gfx/interface/ideas/WGR_Bavarian_independence_crisis.dds"
+	}
+	#羸弱不堪的经济
+	spriteType = {
+		name = "GFX_idea_WGR_A_weak_economy"
+		texturefile = "gfx/interface/ideas/WGR_A_weak_economy.dds"
+	}
+	#脆弱的和平
+	spriteType = {
+		name = "GFX_idea_WGR_Fragile_peace"
+		texturefile = "gfx/interface/ideas/WGR_Fragile_peace.dds"
+	}
+	#不被信任的政府
+	spriteType = {
+		name = "GFX_idea_WGR_A_government_that_is_not_trusted"
+		texturefile = "gfx/interface/ideas/WGR_A_government_that_is_not_trusted.dds"
+	}
+	#苏联加盟国-德意志苏维埃
+	spriteType = {
+		name = "GFX_idea_DDR_Member_States_of_the_USSR_the_German_Soviet"
+		texturefile = "gfx/interface/ideas/DDR_Member_States_of_the_USSR_the_German_Soviet.dds"
+	}
+	#一片废墟之上
+	spriteType = {
+		name = "GFX_idea_DDR_Above_the_ruins"
+		texturefile = "gfx/interface/ideas/DDR_Above_the_ruins.dds"
+	}
+	#红色之矛
+	spriteType = {
+		name = "GFX_idea_DDR_Red_Spear"
+		texturefile = "gfx/interface/ideas/DDR_Red_Spear.dds"
+	}
+	#偃旗息鼓的“祖国军”
+	spriteType = {
+		name = "GFX_idea_DDR_The_red_flag_is_already_standing"
+		texturefile = "gfx/interface/ideas/DDR_The_red_flag_is_already_standing.dds"
+	}
+	#绯红之翼
+	spriteType = {
+		name = "GFX_idea_DDR_Route_battles"
+		texturefile = "gfx/interface/ideas/DDR_Route_battles.dds"
+	}
+	#落后的东部地区
+	spriteType = {
+		name = "GFX_idea_DDR_Backward_eastern_regions"
+		texturefile = "gfx/interface/ideas/DDR_Backward_eastern_regions.dds"
+	}
+	#巴尔干火药桶
+	spriteType = {
+		name = "GFX_idea_HUN_Balkan_powder_keg"
+		texturefile = "gfx/interface/ideas/HUN_Balkan_powder_keg.dds"
+	}
+	#一切权力归于苏维埃
+	spriteType = {
+		name = "GFX_idea_HUN_All_power_rests_with_the_Soviets"
+		texturefile = "gfx/interface/ideas/HUN_All_power_rests_with_the_Soviets.dds"
+	}
+	#红色恐怖
+	spriteType = {
+		name = "GFX_idea_HUN_Red_Terror"
+		texturefile = "gfx/interface/ideas/HUN_Red_Terror.dds"
+	}
+	#猖獗的反动派
+	spriteType = {
+		name = "GFX_idea_HUN_Rampant_reactionaries"
+		texturefile = "gfx/interface/ideas/HUN_Rampant_reactionaries.dds"
+	}
+	#联邦之梦
+	spriteType = {
+		name = "GFX_idea_HUN_The_dream_of_the_Union"
+		texturefile = "gfx/interface/ideas/HUN_The_dream_of_the_Union.dds"
+	}
+	#多民族军队
+	spriteType = {
+		name = "GFX_idea_HUN_Multi_ethnic_army"
+		texturefile = "gfx/interface/ideas/HUN_Multi_ethnic_army.dds"
+	}
+	#脱疆之狮
+	spriteType = {
+		name = "GFX_idea_AUS_The_Lion_of_desertion"
+		texturefile = "gfx/interface/ideas/AUS_The_Lion_of_desertion.dds"
+	}
+	#一九二零戒严法
+	spriteType = {
+		name = "GFX_idea_AUS_Martial_Law_of_1920"
+		texturefile = "gfx/interface/ideas/AUS_Martial_Law_of_1920.dds"
+	}
+	#布达佩斯的余毒
+	spriteType = {
+		name = "GFX_idea_AUS_The_hangover_from_Budapest"
+		texturefile = "gfx/interface/ideas/AUS_The_hangover_from_Budapest.dds"
+	}
+	#奥地利经济萧条
+	spriteType = {
+		name = "GFX_idea_AUS_The_Austrian_economy_is_depressed"
+		texturefile = "gfx/interface/ideas/AUS_The_Austrian_economy_is_depressed.dds"
+	}
+	#纳粹冲锋队
+	spriteType = {
+		name = "GFX_idea_GER_Sturmabteilung"
+		texturefile = "gfx/interface/ideas/GER_Sturmabteilung.dds"
+	}
+	#残存的反抗分子
+	spriteType = {
+		name = "GFX_idea_GER_The_remnants_of_the_resistance"
+		texturefile = "gfx/interface/ideas/GER_The_remnants_of_the_resistance.dds"
+	}
+	#闪电战
+	spriteType = {
+		name = "GFX_idea_GER_Blitzkrieg"
+		texturefile = "gfx/interface/ideas/GER_Blitzkrieg.dds"
+	}
+	#崇仁天皇
+	spriteType = {
+		name = "GFX_idea_JAP_Emperor_Chongren_County"
+		texturefile = "gfx/interface/ideas/JAP_Emperor_Chongren_County.dds"
+	}
+	#甘尽苦来
+	spriteType = {
+		name = "GFX_idea_JAP_best_comes_from_the_worst"
+		texturefile = "gfx/interface/ideas/JAP_best_comes_from_the_worst.dds"
+	}
+	#日本经济萧条
+	spriteType = {
+		name = "GFX_idea_JAP_Recession"
+		texturefile = "gfx/interface/ideas/JAP_Recession.dds"
+	}
+	#首届左翼内阁
+	spriteType = {
+		name = "GFX_idea_JAP_The_first_leftwing_cabinet"
+		texturefile = "gfx/interface/ideas/JAP_The_first_leftwing_cabinet.dds"
+	}
+	#一个时代的稳定？
+	spriteType = {
+		name = "GFX_idea_JAP_The_stability_of_an_era"
+		texturefile = "gfx/interface/ideas/JAP_The_stability_of_an_era.dds"
+	}
+
+	#绛红之舰
+	spriteType = {
+		name = "GFX_idea_DDR_Crimson_Ship"
+		texturefile = "gfx/interface/ideas/DDR_Crimson_Ship.dds"
+	}
+	#北爱尔兰的共和军
+	spriteType = {
+		name = "GFX_idea_ENG_IRA_in_north_Ireland"
+		texturefile = "gfx/interface/ideas/ENG_IRA_in_north_Ireland.dds"
+	}
+	#乔治五世
+	spriteType = {
+		name = "GFX_idea_ENG_George_V"
+		texturefile = "gfx/interface/ideas/ENG_George_V.dds"
+	}
+	#工人起义
+	spriteType = {
+		name = "GFX_idea_BLF_British_Civil_War"
+		texturefile = "gfx/interface/ideas/BLF_British_Civil_War.dds"
+	}
+	#到街垒去
+	spriteType = {
+		name = "GFX_idea_BLF_Go_to_the_barricades"
+		texturefile = "gfx/interface/ideas/BLF_Go_to_the_barricades.dds"
+	}
+	#被封锁的补给线
+	spriteType = {
+		name = "GFX_idea_BLF_Blocked_supply_lines"
+		texturefile = "gfx/interface/ideas/BLF_Blocked_supply_lines.dds"
+	}
+	#卡西克控制网络
+	spriteType = {
+		name = "GFX_idea_FRA_Kasik_controls_network"
+		texturefile = "gfx/interface/ideas/FRA_Kasik_controls_network.dds"
+	}
+	#繁荣计划
+	spriteType = {
+		name = "GFX_idea_FRA_Prosperity_Plan"
+		texturefile = "gfx/interface/ideas/FRA_Prosperity_Plan.dds"
+	}
+	#“玛士撒拉式”的军官团
+	spriteType = {
+		name = "GFX_idea_FRA_Methuselah_style_officer_corps"
+		texturefile = "gfx/interface/ideas/FRA_Methuselah_style_officer_corps.dds"
+	}
+	#傀儡政府
+	spriteType = {
+		name = "GFX_idea_TUR_Puppet_government"
+		texturefile = "gfx/interface/ideas/TUR_Puppet_government.dds"
+	}
+	#合法性：阴霾笼罩
+	spriteType = {
+		name = "GFX_idea_POL_In_a_haze"
+		texturefile = "gfx/interface/ideas/POL_In_a_haze.dds"
+	}
+	#四分五裂的资产阶级政敌
+	spriteType = {
+		name = "GFX_idea_POL_The_divided_political_enemies_of_the_bourgeoisie"
+		texturefile = "gfx/interface/ideas/POL_The_divided_political_enemies_of_the_bourgeoisie.dds"
+	}
+	#军事高压
+	spriteType = {
+		name = "GFX_idea_POL_Military_coercion"
+		texturefile = "gfx/interface/ideas/POL_Military_coercion.dds"
+	}
+	#苏联加盟国-波兰苏维埃
+	spriteType = {
+		name = "GFX_idea_POL_Polish_Soviet"
+		texturefile = "gfx/interface/ideas/POL_Polish_Soviet.dds"
+	}
+}

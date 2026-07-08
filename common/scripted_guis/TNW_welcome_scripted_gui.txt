@@ -1,0 +1,100 @@
+scripted_gui = {
+
+	TNW_welcome_gui = {
+		context_type = player_context
+		window_name = "TNW_welcome_gui"
+		dirty = TNW_welcome_gui_var
+
+		ai_enabled = { always = no }
+
+		visible = {
+			has_variable = TNW_welcome_gui_var
+		}
+        dynamic_lists = {
+			TNW_welcome_change_button_grid = {
+				array = TNW_welcome_change_button_array
+				index = temp_i
+				value = temp_v
+				entry_container = TNW_welcome_change_button_entry
+			}
+		}
+		triggers = {
+			TNW_welcome_change_button_click_enabled = { 
+				NOT = { 
+					check_variable = { TNW_welcome_gui_var = temp_v } 
+				} 
+			}
+		}
+
+		effects = {
+			TNW_welcome_change_button_click = { 
+				set_variable = { TNW_welcome_gui_var = temp_v } 
+			}
+			TNW_welcome_close_button_click = { clear_variable = TNW_welcome_gui_var }
+		}
+	}
+
+	TNW_welcome_country_intro = {
+		context_type = player_context
+		window_name = "TNW_welcome_country_intro"
+		parent_window_name = "TNW_welcome_gui"
+		dirty = TNW_welcome_gui_var
+		dirty = current_page
+
+		ai_enabled = { always = no }
+
+		visible = {
+			check_variable = { TNW_welcome_gui_var = 1 }
+		}
+        
+		properties = {
+			TNW_welcome_country_intro_picture = {
+				image = "[Get_TNW_welcome_country_intro_picture]"
+			}
+		}
+
+		triggers = {
+			previous_page_button_visible = { 
+				check_variable = { country_intro_page_max > 1 }
+		    }
+			next_page_button_visible = { 
+				check_variable = { country_intro_page_max > 1 }
+			} 
+
+			previous_page_button_click_enabled = { 
+				check_variable = { current_page > 1 } 
+			}
+			next_page_button_click_enabled = { 
+				check_variable = { current_page < country_intro_page_max } 
+			}
+		}
+
+		effects = {
+			previous_page_button_click = {
+				add_to_variable = { current_page = -1 }
+			}
+			next_page_button_click = {
+				add_to_variable = { current_page = 1 }
+			}
+		}
+	}
+
+	TNW_welcome_thanks = {
+		context_type = player_context
+		window_name = "TNW_welcome_thanks"
+		parent_window_name = "TNW_welcome_gui"
+		dirty = TNW_welcome_gui_var
+
+		ai_enabled = { always = no }
+
+		visible = {
+			check_variable = { TNW_welcome_gui_var = 2 }
+		}
+
+		triggers = {
+		}
+
+		effects = {
+		}
+	}
+}

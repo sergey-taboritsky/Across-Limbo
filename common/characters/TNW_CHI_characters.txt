@@ -1,0 +1,1309 @@
+characters = {
+	#张知本
+	CHI_Zhang_Zhiben = {
+		name = CHI_Zhang_Zhiben
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhang_Zhiben
+			}
+		}
+		country_leader = {
+			desc = CHI_Zhang_Zhiben_desc
+			ideology = tridemism_conservative
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#李宗仁
+	CHI_Li_Zongren = {
+		name = CHI_Li_Zongren
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Li_Zongren
+			}
+		}
+	}
+	#陈立夫
+	CHI_Chen_Lifu = {
+		name = CHI_Chen_Lifu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Chen_Lifu
+			}
+		}
+		country_leader = {
+			desc = CHI_Chen_Lifu_desc
+			ideology = tridemism_left
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#黄绍竑
+	CHI_Huang_Shaohong = {
+		name = CHI_Huang_Shaohong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Huang_Shaohong
+				small = GFX_portrait_small_CHI_Huang_Shaohong
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = CHI_Huang_Shaohong_hog
+			allowed = { original_tag = CHI }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#何成濬
+	CHI_He_Chengjun = {
+		name = CHI_He_Chengjun
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_He_Chengjun
+				small = GFX_portrait_small_CHI_He_Chengjun
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = CHI_He_Chengjun_theorist
+			allowed = { original_tag = CHI }
+			traits = {
+				mobile_warfare_expert
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		corps_commander = {
+			desc = CHI_He_Chengjun_theorist_desc
+			traits = { inflexible_strategist war_hero }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	#熊式晖
+	CHI_Xiong_Shihui = {
+		name = CHI_Xiong_Shihui
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Xiong_Shihui
+				small = GFX_portrait_small_CHI_Xiong_Shihui
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHI_Xiong_Shihui_advisor
+			allowed = { original_tag = CHI }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#甘乃光
+	CHI_Gan_Naiguang = {
+		name = CHI_Gan_Naiguang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Gan_Naiguang
+				small = GFX_portrait_small_CHI_Gan_Naiguang
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHI_Gan_Naiguang_advisor
+			allowed = { original_tag = CHI }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#饶漱石
+	CHI_Rao_Shushi = {
+		name = CHI_Rao_Shushi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Rao_Shushi
+				small = GFX_portrait_small_CHI_Rao_Shushi
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHI_Rao_Shushi_advisor
+			allowed = { original_tag = CHI }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#晏阳初
+	CHI_Yan_Yangchu = {
+		name = CHI_Yan_Yangchu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Yan_Yangchu
+				small = GFX_portrait_small_CHI_Yan_Yangchu
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHI_Yan_Yangchu_advisor
+			allowed = { original_tag = CHI }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#白崇禧
+	CHI_Bai_Chongxi = {
+		name = CHI_Bai_Chongxi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Bai_Chongxi
+				small = GFX_portrait_small_CHI_Bai_Chongxi
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = CHI_Bai_Chongxi_army_chief
+			allowed = { original_tag = BUL }
+			traits = {
+				army_artillery_2
+			}
+			#ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#胡子昂
+	CHI_Hu_Ziang = {
+		name = CHI_Hu_Ziang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Hu_Ziang
+				small = GFX_portrait_small_CHI_Hu_Ziang
+			}
+		}
+	}
+	#黄旭初
+	CHI_Huang_Xuchu = {
+		name = CHI_Huang_Xuchu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Huang_Xuchu
+				small = GFX_portrait_small_CHI_Huang_Xuchu
+			}
+		}
+	}
+	#谷正伦
+	CHI_Gu_Zhenglun = {
+		name = CHI_Gu_Zhenglun
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Gu_Zhenglun
+				small = GFX_portrait_small_CHI_Gu_Zhenglun
+			}
+		}
+	}
+	#程潜
+	CHI_Cheng_Qian = {
+		name = CHI_Cheng_Qian
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Cheng_Qian
+				small = GFX_portrait_small_CHI_Cheng_Qian
+			}
+		}
+	}
+	#黄启汉
+	CHI_Huang_Qihan = {
+		name = CHI_Huang_Qihan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Huang_Qihan
+				small = GFX_portrait_small_CHI_Huang_Qihan
+			}
+		}
+	}
+	#吴铁城
+	CHI_Wu_Tiecheng = {
+		name = CHI_Wu_Tiecheng
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Wu_Tiecheng
+				small = GFX_portrait_small_CHI_Wu_Tiecheng
+			}
+		}
+	}
+	#陈绍宽
+	CHI_Chen_Shaokuan = {
+		name = CHI_Chen_Shaokuan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Chen_Shaokuan
+				small = GFX_portrait_small_CHI_Chen_Shaokuan
+			}
+		}
+	}
+	#程天放
+	CHI_Cheng_Tianfang = {
+		name = CHI_Cheng_Tianfang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Cheng_Tianfang
+				small = GFX_portrait_small_CHI_Cheng_Tianfang
+			}
+		}
+	}
+	#吴国桢
+	CHI_Wu_Guozhen = {
+		name = CHI_Wu_Guozhen
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Wu_Guozhen
+				small = GFX_portrait_small_CHI_Wu_Guozhen
+			}
+		}
+	}
+	#吴忠信
+	CHI_Wu_Zhongxin = {
+		name = CHI_Wu_Zhongxin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Wu_Zhongxin
+			}
+		}
+	}
+	#潘汉年
+	CHI_Pan_Hannian = {
+		name = CHI_Pan_Hannian
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Pan_Hannian
+			}
+		}
+	}
+	#夏威
+	CHI_Xia_Wei = {
+		name = CHI_Xia_Wei
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Xia_Wei
+				small = GFX_portrait_small_CHI_Xia_Wei
+			}
+		}
+		field_marshal = {
+			desc = CHI_Xia_Wei_commander_desc
+			traits = { war_hero CHI_army_faction_Baoding_trait }
+			skill = 6
+			attack_skill = 5
+			defense_skill = 7
+			planning_skill = 6
+			logistics_skill = 4
+		}
+	}
+	#徐启明
+	CHI_Xu_Qiming = {
+		name = CHI_Xu_Qiming
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Xu_Qiming
+			}
+		}
+		field_marshal = {
+			desc = CHI_Xu_Qiming_commander_desc
+			traits = { CHI_army_faction_Baoding_trait }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+	#莫树杰
+	CHI_Mo_Shujie = {
+		name = CHI_Mo_Shujie
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Mo_Shujie
+			}
+		}
+		field_marshal = {
+			desc = CHI_Mo_Shujie_commander_desc
+			traits = { CHI_army_faction_Baoding_trait }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+	#贺维珍
+	CHI_He_Weizhen = {
+		name = CHI_He_Weizhen
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_He_Weizhen
+			}
+		}
+		field_marshal = {
+			desc = CHI_He_Weizhen_commander_desc
+			traits = { CHI_army_faction_Baoding_trait }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#甘丽初
+	CHI_Gan_Lichu = {
+		name = CHI_Gan_Lichu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Gan_Lichu
+			}
+		}
+		field_marshal = {
+			desc = CHI_Gan_Lichu_commander_desc
+			traits = { CHI_army_faction_Whampoa_trait }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 3
+		}
+	}
+	#阚维雍
+	CHI_Kan_Weiyong = {
+		name = CHI_Kan_Weiyong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Kan_Weiyong
+			}
+		}
+		field_marshal = {
+			desc = CHI_Kan_Weiyong_commander_desc
+			traits = { CHI_army_faction_Whampoa_trait }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 5
+		}
+	}
+	#韦永成
+	CHI_Wei_Yongcheng = {
+		name = CHI_Wei_Yongcheng
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Wei_Yongcheng
+			}
+		}
+		field_marshal = {
+			desc = CHI_Wei_Yongcheng_commander_desc
+			traits = { CHI_army_faction_Designer_trait }
+			skill = 4
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	#韦云凇
+	CHI_Wei_Yunsong = {
+		name = CHI_Wei_Yunsong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Wei_Yunsong
+			}
+		}
+		field_marshal = {
+			desc = CHI_Wei_Yunsong_commander_desc
+			traits = { CHI_army_faction_Guangxi_trait }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	#张淦
+	CHI_Zhang_Gan = {
+		name = CHI_Zhang_Gan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhang_Gan
+			}
+		}
+		field_marshal = {
+			desc = CHI_Zhang_Gan_commander_desc
+			traits = { CHI_army_faction_Guangxi_trait }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#钟祖培
+	CHI_Zhong_Zupei = {
+		name = CHI_Zhong_Zupei
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhong_Zupei
+			}
+		}
+		field_marshal = {
+			desc = CHI_Zhong_Zupei_commander_desc
+			traits = { CHI_army_faction_Guangxi_trait }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 5
+		}
+	}
+	#卫立煌
+	CHI_Wei_Lihuang = {
+		name = CHI_Wei_Lihuang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Wei_Lihuang
+			}
+		}
+		field_marshal = {
+			desc = CHI_Wei_Lihuang_commander_desc
+			traits = { }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 6
+		}
+	}
+	#李品仙
+	CHI_Li_Pinxian = {
+		name = CHI_Li_Pinxian
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Li_Pinxian
+			}
+		}
+		corps_commander = {
+			desc = CHI_Li_Pinxian_commander_desc
+			traits = { CHI_army_faction_Baoding_trait }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	#范汉杰
+	CHI_Fan_Hanjie = {
+		name = CHI_Fan_Hanjie
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Fan_Hanjie
+			}
+		}
+		corps_commander = {
+			desc = CHI_Fan_Hanjie_commander_desc
+			traits = { CHI_army_faction_Baoding_trait }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	#覃连芳
+	CHI_Tan_Lianfang = {
+		name = CHI_Tan_Lianfang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Tan_Lianfang
+			}
+		}
+		corps_commander = {
+			desc = CHI_Tan_Lianfang_commander_desc
+			traits = { CHI_army_faction_Baoding_trait }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#张义纯
+	CHI_Zhang_Yichun = {
+		name = CHI_Zhang_Yichun
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhang_Yichun
+			}
+		}
+		corps_commander = {
+			desc = CHI_Zhang_Yichun_commander_desc
+			traits = { CHI_army_faction_Baoding_trait }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 5
+		}
+	}
+	#关麟征
+	CHI_Guan_Linzheng = {
+		name = CHI_Guan_Linzheng
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Guan_Linzheng
+			}
+		}
+		corps_commander = {
+			desc = CHI_Guan_Linzheng_commander_desc
+			traits = { CHI_army_faction_Baoding_trait }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	#王敬久
+	CHI_Wang_Jingjiu = {
+		name = CHI_Wang_Jingjiu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Wang_Jingjiu
+			}
+		}
+		corps_commander = {
+			desc = CHI_Wang_Jingjiu_commander_desc
+			traits = { CHI_army_faction_Baoding_trait }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	#谭何易
+	CHI_Tan_Heyi = {
+		name = CHI_Tan_Heyi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Tan_Heyi
+			}
+		}
+		corps_commander = {
+			desc = CHI_Tan_Heyi_commander_desc
+			traits = { CHI_army_faction_Baoding_trait }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	#杜聿明
+	CHI_Du_Yuming = {
+		name = CHI_Du_Yuming
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Du_Yuming
+			}
+		}
+		corps_commander = {
+			desc = CHI_Du_Yuming_commander_desc
+			traits = { CHI_army_faction_Whampoa_trait }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	#郑洞国
+	CHI_Zheng_Dongguo = {
+		name = CHI_Zheng_Dongguo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zheng_Dongguo
+			}
+		}
+		corps_commander = {
+			desc = CHI_Zheng_Dongguo_commander_desc
+			traits = { CHI_army_faction_Whampoa_trait }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	#黄杰
+	CHI_Huang_Jie = {
+		name = CHI_Huang_Jie
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Huang_Jie
+			}
+		}
+		corps_commander = {
+			desc = CHI_Huang_Jie_commander_desc
+			traits = { CHI_army_faction_Whampoa_trait }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	#陈明仁
+	CHI_Chen_Mingren = {
+		name = CHI_Chen_Mingren
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Chen_Mingren
+			}
+		}
+		corps_commander = {
+			desc = CHI_Chen_Mingren_commander_desc
+			traits = { CHI_army_faction_Whampoa_trait }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	#廖耀湘
+	CHI_Liao_Yaoxiang = {
+		name = CHI_Liao_Yaoxiang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Liao_Yaoxiang
+			}
+		}
+		corps_commander = {
+			desc = CHI_Liao_Yaoxiang_commander_desc
+			traits = { CHI_army_faction_Whampoa_trait }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#刘玉章
+	CHI_Liu_Yuzhang = {
+		name = CHI_Liu_Yuzhang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Liu_Yuzhang
+			}
+		}
+		corps_commander = {
+			desc = CHI_Liu_Yuzhang_commander_desc
+			traits = { CHI_army_faction_Whampoa_trait }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	#徐庭瑶
+	CHI_Xu_Tingyao = {
+		name = CHI_Xu_Tingyao
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Xu_Tingyao
+			}
+		}
+		corps_commander = {
+			desc = CHI_Xu_Tingyao_commander_desc
+			traits = { CHI_army_faction_Whampoa_trait }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	#胡琏
+	CHI_Hu_Lian = {
+		name = CHI_Hu_Lian
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Hu_Lian
+			}
+		}
+		corps_commander = {
+			desc = CHI_Hu_Lian_commander_desc
+			traits = { CHI_army_faction_Whampoa_trait }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	#李弥
+	CHI_Li_Mi = {
+		name = CHI_Li_Mi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Li_Mi
+			}
+		}
+		corps_commander = {
+			desc = CHI_Li_Mi_commander_desc
+			traits = { CHI_army_faction_Whampoa_trait }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#刘斐
+	CHI_Liu_Fei = {
+		name = CHI_Liu_Fei
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Liu_Fei
+			}
+		}
+		corps_commander = {
+			desc = CHI_Liu_Fei_commander_desc
+			traits = { CHI_army_faction_Designer_trait }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	#钟纪
+	CHI_Zhong_Ji = {
+		name = CHI_Zhong_Ji
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhong_Ji
+			}
+		}
+		corps_commander = {
+			desc = CHI_Zhong_Ji_commander_desc
+			traits = { CHI_army_faction_Designer_trait }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	#罗奇
+	CHI_Luo_Qi = {
+		name = CHI_Luo_Qi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Luo_Qi
+			}
+		}
+		corps_commander = {
+			desc = CHI_Luo_Qi_commander_desc
+			traits = { CHI_army_faction_Designer_trait }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+	#石觉
+	CHI_Shi_Jue = {
+		name = CHI_Shi_Jue
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Shi_Jue
+			}
+		}
+		corps_commander = {
+			desc = CHI_Shi_Jue_commander_desc
+			traits = { CHI_army_faction_Designer_trait }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#郭寄峤
+	CHI_Guo_Jiqiao = {
+		name = CHI_Guo_Jiqiao
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Guo_Jiqiao
+			}
+		}
+		corps_commander = {
+			desc = CHI_Guo_Jiqiao_commander_desc
+			traits = { CHI_army_faction_Designer_trait }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	#钟彬
+	CHI_Zhong_Bin = {
+		name = CHI_Zhong_Bin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhong_Bin
+			}
+		}
+		corps_commander = {
+			desc = CHI_Zhong_Bin_commander_desc
+			traits = { CHI_army_faction_Designer_trait }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	#方天
+	CHI_Fang_Tian = {
+		name = CHI_Fang_Tian
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Fang_Tian
+			}
+		}
+		corps_commander = {
+			desc = CHI_Fang_Tian_commander_desc
+			traits = { CHI_army_faction_Designer_trait }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	#陈大庆
+	CHI_Chen_Daqing = {
+		name = CHI_Chen_Daqing
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Chen_Daqing
+			}
+		}
+		corps_commander = {
+			desc = CHI_Chen_Daqing_commander_desc
+			traits = { CHI_army_faction_Designer_trait }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#高魁元
+	CHI_Gao_Kuiyuan = {
+		name = CHI_Gao_Kuiyuan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Gao_Kuiyuan
+			}
+		}
+		corps_commander = {
+			desc = CHI_Gao_Kuiyuan_commander_desc
+			traits = { CHI_army_faction_Designer_trait }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	#黎行恕
+	CHI_Li_Xingshu = {
+		name = CHI_Li_Xingshu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Li_Xingshu
+			}
+		}
+		corps_commander = {
+			desc = CHI_Li_Xingshu_commander_desc
+			traits = { CHI_army_faction_Designer_trait }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#苏祖馨
+	CHI_Su_Zuxin = {
+		name = CHI_Su_Zuxin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Su_Zuxin
+			}
+		}
+		corps_commander = {
+			desc = CHI_Su_Zuxin_commander_desc
+			traits = { CHI_army_faction_Guangxi_trait }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#李本一
+	CHI_Li_Benyi = {
+		name = CHI_Li_Benyi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Li_Benyi
+			}
+		}
+		corps_commander = {
+			desc = CHI_Li_Benyi_commander_desc
+			traits = { CHI_army_faction_Guangxi_trait }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	#尹承纲
+	CHI_Yin_Chenggang = {
+		name = CHI_Yin_Chenggang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Yin_Chenggang
+			}
+		}
+		corps_commander = {
+			desc = CHI_Yin_Chenggang_commander_desc
+			traits = { CHI_army_faction_Guangxi_trait }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 5
+		}
+	}
+	#莫德宏
+	CHI_Mo_Dehong = {
+		name = CHI_Mo_Dehong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Mo_Dehong
+			}
+		}
+		corps_commander = {
+			desc = CHI_Mo_Dehong_commander_desc
+			traits = { CHI_army_faction_Guangxi_trait }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	#海竞强
+	CHI_Hai_Jingqiang = {
+		name = CHI_Hai_Jingqiang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Hai_Jingqiang
+			}
+		}
+		corps_commander = {
+			desc = CHI_Hai_Jingqiang_commander_desc
+			traits = { CHI_army_faction_Guangxi_trait }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#张轸
+	CHI_Zhang_Zhen = {
+		name = CHI_Zhang_Zhen
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhang_Zhen
+			}
+		}
+		corps_commander = {
+			desc = CHI_Zhang_Zhen_commander_desc
+			traits = { }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 3
+		}
+	}
+	#徐祖诒
+	CHI_Xu_Zuyi = {
+		name = CHI_Xu_Zuyi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Xu_Zuyi
+			}
+		}
+		corps_commander = {
+			desc = CHI_Xu_Zuyi_commander_desc
+			traits = { }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	#孙立人
+	CHI_Sun_Liren = {
+		name = CHI_Sun_Liren
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Sun_Liren
+			}
+		}
+		corps_commander = {
+			desc = CHI_Sun_Liren_commander_desc
+			traits = { }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+	#朱德
+	CHI_Zhu_De = {
+		name = CHI_Zhu_De
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhu_De
+			}
+		}
+		country_leader = {
+			desc = CHI_Zhu_De_desc
+			ideology = interim_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#刘文辉#
+	CHI_Liu_leader_char = {
+		name = CHI_Liu_Wenhui
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Liu_Wenhui
+			}
+		}
+		country_leader={
+			ideology= tridemism_authdem
+			expire="1936.1.1"
+		}
+		country_leader={
+			ideology= Junshen_government
+			expire="1936.1.1"
+		}
+		
+	}
+#old
+	#宋庆龄
+	CHI_Song_Qingling = {
+		name = CHI_Song_Qingling
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Song_Qingling
+			}
+		}
+		country_leader = {
+			desc = CHI_Song_Qingling_desc
+			ideology = tridemism_left
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+				CHI_great_president_who_isin_adilemma
+			}
+		}
+	}
+	#邓演达
+	CHI_Deng_Yanda = {
+		name = CHI_Deng_Yanda
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Deng_Yanda
+			}
+		}
+	}
+	#陈铭枢
+	CHI_Chen_Mingshu = {
+		name = CHI_Chen_Mingshu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Chen_Mingshu
+				small = GFX_portrait_small_CHI_Chen_Mingshu
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = CHI_Chen_Mingshu_hog
+			allowed = { original_tag = CHI }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#董必武
+	CHI_Dong_Biwu = {
+		name = CHI_Dong_Biwu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Dong_Biwu
+			}
+		}
+		country_leader = {
+			desc = CHI_Dong_Biwu_desc
+			ideology = Marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		country_leader = {
+			desc = CHI_Dong_Biwu_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#方志敏
+	CHI_Fang_Zhimin = {
+		name = CHI_Fang_Zhimin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Fang_Zhimin
+			}
+		}
+	}
+	#谭平山
+	CHI_Tan_Pingshan = {
+		name = CHI_Tan_Pingshan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Tan_Pingshan
+			}
+		}
+		country_leader = {
+			desc = CHI_Tan_Pingshan_desc
+			ideology = Liberalism_socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#阎锡山
+	CHI_Yan_Xishan_leader = {
+		name = CHI_Yan_Xishan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Yan_Xishan
+			}
+		}
+		country_leader = {
+			desc = CHI_Yan_Xishan_desc
+			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#孙科
+	CHI_Sun_Ke = {
+		name = CHI_Sun_Ke
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Sun_Ke
+			}
+		}
+	}
+	#张发奎
+	CHI_Zhang_Fakui = {
+		name = CHI_Zhang_Fakui
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhang_Fakui
+			}
+		}
+	}
+	#张国焘
+	CHI_Zhang_Guotao = {
+		name = CHI_Zhang_Guotao
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhang_Guotao
+			}
+		}
+		country_leader = {
+			desc = CHI_Tan_Pingshan_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = CHI }
+					has_global_flag = CHI_central_plains_war_global_flag
+					OR = {
+						ROOT = { tag = SHX }
+						ROOT = { tag = GXC }
+					}
+				}
+				if = {
+					limit = { FROM.FROM = { state = 1115 } } #武汉
+				 	add_manpower = 15000
+					FROM = {
+						set_country_flag = CHI_cpw_lost_Wuhan_flag
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 592 } } #广州
+				 	add_manpower = 10000
+					FROM = {
+						set_country_flag = CHI_cpw_lost_Guangzhou_flag
+					}
+				}
+			}
+		}
+	}
+	on_daily_CHI = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = CHI_cpw_lost_Wuhan_flag
+					has_country_flag = CHI_cpw_lost_Guangzhou_flag
+				}
+				country_event = { id = CHI_event.7 }
+			}
+		}
+	}
+}

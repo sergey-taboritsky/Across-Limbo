@@ -1,0 +1,94 @@
+characters = {
+	SPR_joaquin_maurin = {
+		name = SPR_joaquin_maurin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SPR_joaquin_maurin
+				small = GFX_portrait_small_SPR_joaquin_maurin
+			}
+		}
+		country_leader={
+			ideology= Marxism
+			expire="1936.1.1"
+		}
+		
+	}
+	SPR_juan_garcia_oliver = {
+		name = SPR_juan_garcia_oliver
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SPR_juan_garcia_oliver
+			}
+		}
+		country_leader={
+			ideology= Classical_Syndicalism
+			expire="1936.1.1"
+		}
+		
+	}
+	SPR_largo_callabero = {
+		name = SPR_largo_callabero
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SPR_largo_callabero
+			}
+		}
+		country_leader={
+			ideology= Liberalism_socialism
+			expire="1936.1.1"
+		}
+		
+	}
+	SPR_juan_negrin = {
+		name = SPR_juan_negrin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SPR_juan_negrin
+			}
+		}
+		country_leader={
+			ideology= Liberalism_socialism
+			expire="1936.1.1"
+		}
+		
+	}
+	SPR_indalecio_prieto = {
+		name = SPR_indalecio_prieto
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SPR_indalecio_prieto
+			}
+		}
+		country_leader={
+			ideology= progressivism
+			expire="1936.1.1"
+		}
+		
+	}
+	SPR_jose_maria_gilrobles = {
+		name = SPR_jose_maria_gilrobles
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SPR_jose_maria_gilrobles
+			}
+		}
+		country_leader={
+			ideology= oligarchy
+			expire="1936.1.1"
+		}
+		
+	}
+	SPR_juan_saravia = {
+		name = SPR_juan_saravia
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SPR_juan_saravia
+			}
+		}
+		country_leader={
+			ideology= Red_military_government
+			expire="1936.1.1"
+		}
+		
+	}
+}

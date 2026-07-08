@@ -1,0 +1,189 @@
+characters = {
+	#利沃里奥·胡斯托
+	ARG_liborio_justo = {
+		name = ARG_liborio_justo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ARG_liborio_justo
+			}
+		}
+		country_leader = {
+			desc = ARG_liborio_justo_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#佩德罗·基亚兰特(工会主席)
+	ARG_Pedro_Chiarante = {
+		name = ARG_Pedro_Chiarante
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ARG_Pedro_Chiarante
+			}
+		}
+		country_leader = {
+			desc = ARG_Pedro_Chiarante_desc
+			ideology = Centralised_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#马特奥·福萨(开局总理)
+	ARG_Mateo_Fossa = {
+		name = ARG_Mateo_Fossa
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ARG_Mateo_Fossa
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = ARG_Mateo_Fossa_hog
+			allowed = { original_tag = ARG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#雨果·米格尔·布雷萨诺(开局劳工部长)
+	ARG_Hugo_Bressano = {
+		name = ARG_Hugo_Bressano
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ARG_Hugo_Bressano
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = ARG_Hugo_Bressano_hog
+			allowed = { original_tag = ARG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ARG_Hugo_Bressano_advisor
+			allowed = { original_tag = ARG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#豪尔赫·阿贝拉多·拉莫斯(开局内务部长)
+	ARG_Jorge_Abelardo_Ramos = {
+		name = ARG_Jorge_Abelardo_Ramos
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ARG_Jorge_Abelardo_Ramos
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = ARG_Jorge_Abelardo_Ramos_hog
+			allowed = { original_tag = ARG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ARG_Jorge_Abelardo_Ramos_advisor
+			allowed = { original_tag = ARG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#荷马罗·罗慕洛·克里斯塔利(波萨达斯)(开局科技部长)
+	ARG_Homero_Cristali = {
+		name = ARG_Homero_Cristali
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ARG_Homero_Cristali
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = ARG_Homero_Cristali_hog
+			allowed = { original_tag = ARG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ARG_Homero_Cristali_advisor
+			allowed = { original_tag = ARG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#埃米利奥·狄克曼(开局经济部长)
+	ARG_Emilio_Dickmann = {
+		name = ARG_Emilio_Dickmann
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ARG_Emilio_Dickmann
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ARG_Emilio_Dickmann_advisor
+			allowed = { original_tag = ARG }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#何塞·费尔南多·佩内隆(开局国防部长)
+	ARG_Jose_Penelon = {
+		name = ARG_Jose_Penelon
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ARG_Jose_Penelon
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ARG_Jose_Penelon_theorist
+			allowed = { original_tag = ARG }
+			traits = {
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+}

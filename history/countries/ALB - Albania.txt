@@ -1,0 +1,29 @@
+﻿capital = 44
+recruit_character = ALB_Mehdi_Frasheri
+recruit_character = ALB_Milos_Gjergj_Nikolla
+recruit_character = ALB_Mehmet_Ismail_Shehu
+recruit_character = ALB_Ahmed_Myftar
+recruit_character = ALB_Eqrem_Libohova
+recruit_character = ALB_Themistokli_Germenji
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 0
+	syndicalism = 3
+	socialism = 15
+	Social_democracy = 0
+	Liberalism = 44
+	Conservatism = 12
+	Authoritarianism = 6
+	Absolutism = 19
+	Nationalism = 1
+}
+
+set_convoys = 5
+

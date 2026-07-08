@@ -1,0 +1,28 @@
+add_namespace = TAT_event
+
+country_event = {
+	id = TAT_event.1
+	title = TAT_event.1.t
+	desc = TAT_event.1.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TAT_event.1.a
+		add_manpower = -1
+		set_country_flag = FRA_serge_dead_flag
+	}
+}
+country_event = {
+	id = TAT_event.2
+	title = TAT_event.2.t
+	desc = TAT_event.2.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TAT_event.2.a
+		promote_character = FRA_Communard_Central_Committee
+		custom_effect_tooltip = TAT_event_2_a_tt
+	}
+}

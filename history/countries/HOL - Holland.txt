@@ -1,0 +1,28 @@
+﻿capital = 7
+
+#oob = "HOL_1936"
+set_research_slots = 3
+set_stability = 0.75
+set_war_support = 0
+add_command_power = 10
+
+recruit_character = HOL_Hendricus_Sneevliet
+
+set_politics = {
+	ruling_party = communist
+	last_election = "1933.4.26"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	communist = 46
+	syndicalism = 22
+	socialism = 32
+}
+
+set_convoys = 150
+set_stability = 0.75
+
+add_ideas = {
+	phalanstere_aligned_nation
+}

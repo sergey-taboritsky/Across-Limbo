@@ -1,0 +1,70 @@
+characters = {
+	#马里-皮埃尔·柯尼希
+	SAR_Marie_Pierre_Koenig = {
+		name = SAR_Marie_Pierre_Koenig
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SAR_Marie_Pierre_Koenig
+			}
+		}
+		country_leader = {
+			desc = SAR_Marie_Pierre_Koenig_desc
+			ideology = Red_military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#奥托·尼伯格尔
+	SAR_otto_niebergall = {
+		name = SAR_otto_niebergall
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SAR_otto_niebergall
+			}
+		}
+		country_leader = {
+			desc = SAR_otto_niebergall_desc
+			ideology = Marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#贝托尔德·卡恩
+	SAR_Berthold_Cahn = {
+		name = SAR_Berthold_Cahn
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SAR_Berthold_Cahn
+			}
+		}
+		country_leader = {
+			desc = SAR_Berthold_Cahn_desc
+			ideology = Anarchist_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#凯特·弗兰肯塔尔
+	SAR_kate_frankenthal = {
+		name = SAR_kate_frankenthal
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SAR_kate_frankenthal
+			}
+		}
+		country_leader = {
+			desc = SAR_kate_frankenthal_desc
+			ideology = Liberalism_socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

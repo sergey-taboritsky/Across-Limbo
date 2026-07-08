@@ -1,0 +1,70 @@
+## Nation Selection Screen Backdrops
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_welcome_gui_bg"
+		texturefile = "gfx/TNW_scripted_guis/TNW_wlecome/welcome_gui_bg.png"
+		size = { x=334 y=118 }
+		borderSize = { x=142 y=122 }
+		tilingCenter = yes
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_TNW_welcome_change_button"
+		texturefile = "gfx/TNW_scripted_guis/TNW_wlecome/change_button.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_intro_screen_continue_button"
+		texturefile = "gfx/interface/play_button_ready.dds"
+		animation = {
+			animationmaskfile = "gfx/interface/play_button_mask.dds"
+			animationtexturefile = "gfx/interface/unitcontrol/execute_btn_texture3.dds"
+			animationrotation = -90			# -90 clockwise 90 counterclockwise (by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 2				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"		# add, multiply, overlay
+			animationtype = "scrolling"		# scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0 y = 0 }
+			animationtexturescale = { x = 1 y = 1 }
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_TNW_welcome_DDR_intro_picture"
+		texturefile = "gfx/TNW_scripted_guis/TNW_wlecome/coutry_intro_picture/DDR_intro_picture.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_TNW_welcome_SOV_intro_picture"
+		texturefile = "gfx/TNW_scripted_guis/TNW_wlecome/coutry_intro_picture/SOV_intro_picture.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_TNW_welcome_WGR_intro_picture"
+		texturefile = "gfx/TNW_scripted_guis/TNW_wlecome/coutry_intro_picture/WGR_intro_picture.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_TNW_welcome_FRA_intro_picture"
+		texturefile = "gfx/TNW_scripted_guis/TNW_wlecome/coutry_intro_picture/FRA_intro_picture.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_TNW_welcome_JAP_intro_picture"
+		texturefile = "gfx/TNW_scripted_guis/TNW_wlecome/coutry_intro_picture/JAP_intro_picture.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_TNW_welcome_GRE_intro_picture"
+		texturefile = "gfx/TNW_scripted_guis/TNW_wlecome/coutry_intro_picture/GRE_intro_picture.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_TNW_welcome_TAT_intro_picture"
+		texturefile = "gfx/TNW_scripted_guis/TNW_wlecome/coutry_intro_picture/TAT_intro_picture.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+}

@@ -1,0 +1,18 @@
+TOS_Six_Red_Balls = {
+	icon = GFX_idea_ANG_zuozhanzhunbei
+	enable = { always = yes }
+    stability_factor = TOS_stability_factor #稳定度
+	war_support_factor = TOS_war_support_factor  #战争支持度
+	consumer_goods_factor = TOS_consumer_goods_factor #生活消费品
+	industrial_capacity_factory = TOS_industrial_capacity_factory #工厂产出
+	conscription_factor = TOS_conscription_factor #适役人口修正
+	opinion_gain_monthly_factor = TOS_opinion_gain_monthly_factor #改善关系
+	army_attack_factor = TOS_army_attack_factor #陆军进攻
+	army_defence_factor = TOS_army_defence_factor #陆军防御
+	training_time_army_factor = TOS_training_time_army_factor #训练时间
+	political_advisor_cost_factor = TOS_political_advisor_cost_factor #政治顾问花费
+	mobilization_laws_cost_factor = TOS_mobilization_laws_cost_factor #征兵法案花费
+	trade_laws_cost_factor  = TOS_trade_laws_cost_factor #贸易法案花费
+	economy_cost_factor = TOS_economy_cost_factor #经济法案花费
+	drift_defence_factor = TOS_drift_defence_factor #意识形态抵制力度
+}

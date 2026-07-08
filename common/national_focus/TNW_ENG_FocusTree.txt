@@ -1,0 +1,468 @@
+focus_tree = {
+	id = ENG_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 55 y = 1600 }
+	###平平淡淡又一年
+	focus = {
+		id = ENG_Another_year_of_blandness
+		icon = GFX_ENG_Another_year_of_blandness
+		x = 8
+		y = 1
+		cost = 7
+		completion_reward = {
+		}
+	}
+	#重申竞选诺言
+	focus = {
+		id = ENG_New_Years_address
+		icon = GFX_ENG_New_Years_address
+		prerequisite = { focus = ENG_Another_year_of_blandness }
+		relative_position_id = ENG_Another_year_of_blandness
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			country_event = { id = ENG_event.4  }
+			add_political_power = 25
+		}
+	}
+	#巩固协约国
+	focus = {
+		id = ENG_Consolidate_the_Allies
+		icon = GFX_ENG_Consolidate_the_Allies
+		prerequisite = { focus = ENG_Construction_of_the_King_GeorgeV 
+		 				 focus = ENG_Porton_Down 
+						 focus = ENG_Expand_military_industry }
+		relative_position_id = ENG_Construction_of_the_King_GeorgeV
+		x = 1
+		y = 1
+		cost = 10
+		cost = 10
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	#公开重整军备
+	focus = {
+		id = ENG_Open_rearmament
+		icon = GFX_ENG_Open_rearmament
+		prerequisite = { focus = ENG_New_Years_address }
+		relative_position_id = ENG_New_Years_address
+		x = 4
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#强化帝国空军
+	focus = {
+		id = ENG_Strengthen_the_air_force
+		icon = GFX_ENG_Strengthen_the_air_force
+		prerequisite = { focus = ENG_Open_rearmament }
+		relative_position_id = ENG_Open_rearmament
+		x = 3
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#扩大战斗机编队
+	focus = {
+		id = ENG_Expand_fighter_formation
+		icon = GFX_Expand_fighter_formation
+		prerequisite = { focus = ENG_Strengthen_the_air_force }
+		mutually_exclusive = { focus = ENG_Focus_on_developing_bombers }
+		relative_position_id = ENG_Strengthen_the_air_force
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#重点发展轰炸机
+	focus = {
+		id = ENG_Focus_on_developing_bombers
+		icon = GFX_ENG_Focus_on_developing_bombers
+		prerequisite = { focus = ENG_Strengthen_the_air_force }
+		mutually_exclusive = { focus = ENG_Expand_fighter_formation }
+		relative_position_id = ENG_Strengthen_the_air_force
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#强化帝国陆军
+	focus = {
+		id = ENG_Strengthening_the_Imperial_Army
+		icon = GFX_ENG_Strengthening_the_Imperial_Army
+		prerequisite = { focus = ENG_Open_rearmament }
+		relative_position_id = ENG_Open_rearmament
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#扩大陆军规模
+	focus = {
+		id = ENG_Increase_army_size
+		icon = GFX_ENG_ENG_Increase_army_size
+		prerequisite = { focus = ENG_Strengthening_the_Imperial_Army }
+		relative_position_id = ENG_Strengthening_the_Imperial_Army
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#骑兵装甲化
+	focus = {
+		id = ENG_Cavalry_armor
+		icon = GFX_ENG_Cavalry_armor
+		prerequisite = { focus = ENG_Strengthening_the_Imperial_Army }
+		relative_position_id = ENG_Strengthening_the_Imperial_Army
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#扩大海军优势
+	focus = {
+		id = ENG_Extend_naval_superiority
+		icon = GFX_ENG_Extend_naval_superiority
+		prerequisite = { focus = ENG_Open_rearmament }
+		relative_position_id = ENG_Open_rearmament
+		x = -3
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#开发新式装备
+	focus = {
+		id = ENG_Develop_new_equipment
+		icon = GFX_ENG_Develop_new_equipment
+		prerequisite = { focus = ENG_Extend_naval_superiority }
+		relative_position_id = ENG_Extend_naval_superiority
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#配装新型装备
+	focus = {
+		id = ENG_Develop_new_equipment
+		icon = GFX_ENG_Develop_new_equipment
+		prerequisite = { focus = ENG_Extend_naval_superiority }
+		relative_position_id = ENG_Extend_naval_superiority
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#乔治五世国王号
+	focus = {
+		id = ENG_Construction_of_the_King_GeorgeV
+		icon = GFX_ENG_Construction_of_the_King_GeorgeV
+		prerequisite = { focus = ENG_Cavalry_armor
+						 focus = ENG_Increase_army_size
+						 focus = ENG_Focus_on_developing_bombers
+						 focus = ENG_Expand_fighter_formation
+						 focus = ENG_Develop_new_equipment
+			 			}
+		relative_position_id = ENG_Develop_new_equipment
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#扩大"波顿唐"
+	focus = {
+		id = ENG_Porton_Down
+		icon = GFX_ENG_Porton_Down
+		prerequisite = { focus = ENG_Cavalry_armor
+						 focus = ENG_Increase_army_size
+						 focus = ENG_Focus_on_developing_bombers
+						 focus = ENG_Expand_fighter_formation
+						 focus = ENG_Develop_new_equipment
+			 			}
+		relative_position_id = ENG_Construction_of_the_King_GeorgeV
+		x = 2
+		y = 0
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#影子工厂
+	focus = {
+		id = ENG_Expand_military_industry
+		icon = GFX_ENG_Expand_military_industry
+		prerequisite = { focus = ENG_Cavalry_armor
+						 focus = ENG_Increase_army_size
+						 focus = ENG_Focus_on_developing_bombers
+						 focus = ENG_Expand_fighter_formation
+						 focus = ENG_Develop_new_equipment
+			 			}
+		relative_position_id = ENG_Construction_of_the_King_GeorgeV
+		x = 4
+		y = 0
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#重新审视《英爱条约》
+	focus = {
+		id = ENG_Irish_issue
+		icon = GFX_ENG_Irish_issue
+		prerequisite = { focus = ENG_Construction_of_the_King_GeorgeV 
+		 				 focus = ENG_Porton_Down 
+						 focus = ENG_Expand_military_industry }
+		relative_position_id = ENG_Construction_of_the_King_GeorgeV
+		x = 3
+		y = 1
+		cost = 10
+		completion_reward = {
+			country_event = { id = ENG_event.3  }
+		}
+	}	
+	#寻求变革
+	focus = {
+		id = ENG_call_transformation
+		icon = GFX_ENG_call_transformation
+		prerequisite = { focus = ENG_New_Years_address }
+		mutually_exclusive = { focus = ENG_maintain_the_status }
+		relative_position_id = ENG_maintain_the_status
+		x = 3
+		y = 0
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#清理平民窟
+	focus = {
+		id = ENG_Slum_clearance
+		icon = GFX_ENG_Slum_clearance
+		prerequisite = { focus = ENG_call_transformation }
+		mutually_exclusive = { focus = ENG_Establish_pension_system }
+		relative_position_id = ENG_call_transformation
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#供给住房
+	focus = {
+		id = ENG_Provide_housing
+		icon = GFX_ENG_Provide_housing
+		prerequisite = { focus = ENG_Slum_clearance }
+		relative_position_id = ENG_Slum_clearance
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#建立养老金系统
+	focus = {
+		id = ENG_Establish_pension_system
+		icon = GFX_ENG_Establish_pension_system
+		prerequisite = { focus = ENG_call_transformation }
+		relative_position_id = ENG_call_transformation
+		mutually_exclusive = { focus = ENG_Slum_clearance }
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#国家医疗服务
+	focus = {
+		id = ENG_National_health_service
+		icon = GFX_ENG_National_health_service
+		prerequisite = { focus = ENG_Establish_pension_system }
+		relative_position_id = ENG_Establish_pension_system
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#推行累进税
+	focus = {
+		id = ENG_Progressive_taxation
+		icon = GFX_ENG_Progressive_taxation
+		prerequisite = { focus = ENG_National_health_service
+						 focus = ENG_Provide_housing		
+				}
+		relative_position_id = ENG_Provide_housing
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#维持现状
+	focus = {
+		id = ENG_maintain_the_status
+		icon = GFX_ENG_maintain_the_status
+		prerequisite = { focus = ENG_New_Years_address}
+		relative_position_id = ENG_New_Years_address
+		mutually_exclusive = { focus = ENG_call_transformation }
+		x = -5
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#削减政府开支
+	focus = {
+		id = ENG_Cut_government_spending
+		icon = GFX_ENG_Cut_government_spending
+		prerequisite = { focus = ENG_maintain_the_status}
+		relative_position_id = ENG_maintain_the_status
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#加固贸易壁垒
+	focus = {
+		id = ENG_Reinforce_trade_barriers
+		icon = GFX_ENG_Reinforce_trade_barriers
+		prerequisite = { focus = ENG_Cut_government_spending}
+		relative_position_id = ENG_Cut_government_spending
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#提高议员待遇
+	focus = {
+		id = ENG_Increase_government_pay
+		icon = GFX_ENG_Increase_government_pay
+		prerequisite = { focus = ENG_Reinforce_trade_barriers}
+		relative_position_id = ENG_Reinforce_trade_barriers
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#“帝国特许制”谈判
+	focus = {
+		id = ENG_Imperial_Charter_negotiations
+		icon = GFX_ENG_Imperial_Charter_negotiations
+		prerequisite = { focus = ENG_Increase_government_pay
+						 focus = ENG_Progressive_taxation		
+				}
+		relative_position_id = ENG_Increase_government_pay
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			set_country_flag = ENG_Imperial_Charter
+		}
+	}
+	#发展爱尔兰
+	focus = {
+		id = ENG_Grow_Ireland
+		icon = GFX_ENG_Grow_Ireland
+		prerequisite = { focus = ENG_Imperial_Charter_negotiations}
+		relative_position_id = ENG_Imperial_Charter_negotiations
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#发展加拿大
+	focus = {
+		id = ENG_Grow_Canada
+		icon = GFX_ENG_Grow_Canada
+		prerequisite = { focus = ENG_Imperial_Charter_negotiations}
+		relative_position_id = ENG_Imperial_Charter_negotiations
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#发展澳洲
+	focus = {
+		id = ENG_Grow_Oceania
+		icon = GFX_ENG_Grow_Oceania
+		prerequisite = { focus = ENG_Imperial_Charter_negotiations}
+		relative_position_id = ENG_Imperial_Charter_negotiations
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#发展非洲
+	focus = {
+		id = ENG_Grow_AFrica
+		icon = GFX_ENG_Grow_AFrica
+		prerequisite = { focus = ENG_Imperial_Charter_negotiations}
+		relative_position_id = ENG_Imperial_Charter_negotiations
+		x = 1
+		y = 2
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#发展印度
+	focus = {
+		id = ENG_Grow_India
+		icon = GFX_ENG_Grow_India
+		prerequisite = { focus = ENG_Imperial_Charter_negotiations}
+		relative_position_id = ENG_Imperial_Charter_negotiations
+		x = -1
+		y = 2
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#国内经济建设
+	focus = {
+		id = ENG_Develop_domestic_economy
+		icon = GFX_ENG_Develop_domestic_economy
+		prerequisite = { focus = ENG_Increase_government_pay
+						 focus = ENG_Progressive_taxation		
+				}
+		relative_position_id = ENG_Imperial_Charter_negotiations
+		x = 3
+		y = 0
+		cost = 10
+		completion_reward = {
+		}
+	}
+	#发展偏远地区
+	focus = {
+		id = ENG_Build_remote_areas
+		icon = GFX_ENG_Build_remote_areas
+		prerequisite = { focus = ENG_Develop_domestic_economy }
+		relative_position_id = ENG_Develop_domestic_economy
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+}

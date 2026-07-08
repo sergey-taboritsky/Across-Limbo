@@ -1,0 +1,24 @@
+TOS_Socialist_activities_decision = {
+	#社会主义危机
+	TOS_decision_01= {
+		activation = {
+			original_tag = TOS
+			communist > 0.05 
+		}
+		available = {
+			original_tag = TOS
+			NOT = { communist > 0.05 }
+		}
+		is_good = no
+		days_mission_timeout = 365
+		midifier = {
+			cummunism_drift = 0.01
+		}
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			country_event = 还没写
+		}
+	}
+}

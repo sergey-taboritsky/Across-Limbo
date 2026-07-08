@@ -1,0 +1,53 @@
+scripted_gui = {
+	faction_grid_button_window = {
+		window_name = "faction_grid_button_window"
+		context_type = player_context
+		#parent_window_token = politics_tab
+		visible = {
+			OR = {
+				has_idea = DDR_Member_States_of_the_USSR_the_German_Soviet
+				has_idea = RUS_jia_meng_guo
+			}
+		}
+		effects = {
+			SOV_faction_grid_button_click = {
+				Get_grid_Faction = yes
+			}
+		}
+	}
+	faction_gui = {
+		context_type = player_context
+		window_name = "faction_gui_window"
+		visible = {
+			ROOT = {
+				has_country_flag = faction_gui_open
+			}
+		}
+		dynamic_lists = {
+			faction_grid = {
+				array = grid_faction_array
+				index = idx
+				value = v
+				change_scope = yes
+				entry_container = faction_entry
+			}
+		}
+		effects = {
+			button_close_click = {
+				clr_country_flag = faction_gui_open
+			}
+		}
+		triggers = {
+			major_country_overlay_visible = {
+				THIS = {
+					is_major = yes
+				}
+			}
+		}
+		properties = {
+			country_flag = {
+				image = [THIS.GetFlag]
+			}
+		}
+	}
+}

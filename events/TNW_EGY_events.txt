@@ -1,0 +1,72 @@
+add_namespace = EGY_event
+add_namespace = EGY_news
+
+country_event = {
+	id = EGY_event.1
+	title = EGY_event.1.t
+	desc = EGY_event.1.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.1.a
+		set_cosmetic_tag = EGY_socialist_republic
+		set_party_name = {
+			ideology = communist
+			long_name = EGY_united_CPE_party_long
+			name = EGY_united_CPE_party
+		}
+		set_party_name = {
+			ideology = syndicalism
+			long_name = EGY_united_CPE_party_long
+			name = EGY_united_CPE_party
+		}
+		set_party_name = {
+			ideology = socialism
+			long_name = EGY_united_CPE_party_long
+			name = EGY_united_CPE_party
+		}
+		promote_character = EGY_Kamal_Abd_al_Halim
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.25
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = EGY_news.1
+			}
+		}
+	}
+}
+
+news_event = {
+	id = EGY_news.1
+	title = EGY_news.1.t
+	desc = EGY_news.1.d
+	picture = GFX_news_event_generic_funeral
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = EGY_news.1.a
+	}
+}
+news_event = {
+	id = EGY_news.2
+	title = EGY_news.2.t
+	desc = EGY_news.2.d
+	picture = GFX_news_event_generic_funeral
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = EGY_news.2.a
+	}
+}

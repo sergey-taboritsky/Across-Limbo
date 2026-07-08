@@ -1,0 +1,34 @@
+characters = {
+	#吴巴瑞
+	BRM_U_Ba_Swe = {
+		name = BRM_U_Ba_Swe
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BRM_U_Ba_Swe
+			}
+		}
+		country_leader={
+			ideology= Social_nationalism
+			expire="1936.1.1"
+		}
+		
+	}
+	#哥都迈
+	BRM_Maung_Lun_Maung = {
+		name = BRM_Maung_Lun_Maung
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BRM_Maung_Lun_Maung
+			}
+		}
+		country_leader={
+			ideology= Left_wing_corporatism
+			expire="1936.1.1"
+		}
+		country_leader={
+			ideology= Left_wing_nationalism
+			expire="1936.1.1"
+		}
+		
+	}
+}

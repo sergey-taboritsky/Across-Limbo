@@ -1,0 +1,131 @@
+scripted_gui = {
+	TNW_ENG_Return_to_Ireland_GUI = {
+		context_type = decision_category
+		window_name = "TNW_ENG_Return_to_Ireland_Scripted_GUI"
+
+		properties = {
+			parliament_icon = {
+				frame = current_house_icon_frame
+			}
+		}
+
+		effects = {
+			ENG_Northern_Ireland_Button_click  = {
+                set_country_flag = clicked_on_Northern_Ireland
+
+				clr_country_flag = clicked_on_Connaught
+				clr_country_flag = clicked_on_Leinster
+				clr_country_flag = clicked_on_Munster
+				clr_country_flag = clicked_on_County_Tyrone_and_Fermanagh
+			}
+			ENG_County_Tyrone_and_Fermanagh_Button_click  = {
+                set_country_flag = clicked_on_County_Tyrone_and_Fermanagh
+
+				clr_country_flag = clicked_on_Northern_Ireland
+				clr_country_flag = clicked_on_Connaught
+				clr_country_flag = clicked_on_Leinster
+				clr_country_flag = clicked_on_Munster
+			}	
+			ENG_Leinste_Button_click  = {
+                set_country_flag = clicked_on_Leinste
+
+				clr_country_flag = clicked_on_Northern_Ireland
+				clr_country_flag = clicked_on_Connaught
+				clr_country_flag = clicked_on_County_Tyrone_and_Fermanagh
+				clr_country_flag = clicked_on_Munster
+			}
+			ENG_Connaught_Button_click  = {
+                set_country_flag = clicked_on_Connaught
+
+				clr_country_flag = clicked_on_Northern_Ireland
+				clr_country_flag = clicked_on_County_Tyrone_and_Fermanagh
+				clr_country_flag = clicked_on_Leinster
+				clr_country_flag = clicked_on_Munster
+			}
+			ENG_Munster_Button_click  = {
+                set_country_flag = clicked_on_Munster
+
+				clr_country_flag = clicked_on_Northern_Ireland
+				clr_country_flag = clicked_on_County_Tyrone_and_Fermanagh
+				clr_country_flag = clicked_on_Leinster
+				clr_country_flag = clicked_on_Connaught
+			}
+		}
+		triggers = {
+			ENG_North_Ireland_Button_IRE_visible = {
+				check_variable = { ENG_Northern_Ireland_status = 3 }
+			    }
+			}
+		triggers = {
+			ENG_North_Ireland_Button_Conflict_visible = {
+				check_variable = { ENG_Northern_Ireland_status = 2 }
+				}
+			}
+		triggers = {
+			ENG_North_Ireland_Button_ENG_visible = {
+				check_variable = { ENG_Northern_Ireland_status = 1 }
+			    }
+			}
+		triggers = {
+			ENG_Munster_Button_IRE_visible = {
+				check_variable = { ENG_Munster_status = 3 }
+			    }
+			}
+		triggers = {
+			ENG_Munster_Button_Conflict_visible = {
+				check_variable = { ENG_Munster_status = 2 }
+			    }
+			}	
+		triggers = {
+			ENG_Munster_Button_ENG_visible = {
+				check_variable = { ENG_Munster_status = 1 }
+				}
+			}
+		
+		triggers = {
+			ENG_Leinster_Button_IRE_visible = {
+				check_variable = { ENG_Leinster_status = 3 }
+			    }
+			}
+		triggers = {
+			ENG_Leinster_Button_Conflict_visible = {
+				check_variable = { ENG_Leinster_status = 2 }
+			    }
+			}
+		triggers = {
+			ENG_Leinster_Button_ENG_visible = {
+				check_variable = { ENG_Leinster_status = 1 }
+				}
+			}
+		triggers = {
+			ENG_County_Tyrone_and_Fermanagh_Button_IRE_visible = {
+				check_variable = { ENG_County_Tyrone_and_Fermanagh_status = 3 }
+			    }
+			}
+		triggers = {
+			ENG_County_Tyrone_and_Fermanagh_Button_Conflict_visible = {
+				check_variable = { ENG_County_Tyrone_and_Fermanagh_status = 2 }
+			    }
+			}
+		triggers = {
+			ENG_County_Tyrone_and_Fermanagh_Button_ENG_visible = {
+				check_variable = { ENG_County_Tyrone_and_Fermanagh_status = 1 }
+				}
+			}
+		triggers = {
+			ENG_Connaught_Button_IRE_visible = {
+				check_variable = { ENG_Connaught_status = 3 }
+			    }
+			}
+		triggers = {
+			ENG_Connaught_Button_Conflict_visible = {
+				check_variable = { ENG_Connaught_status = 2 }
+			    }
+			}
+		triggers = {
+			ENG_Connaught_Button_ENG_visible = {
+				check_variable = { ENG_Connaught_status	 = 1 }
+				}
+			}
+		}
+	}

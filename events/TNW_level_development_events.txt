@@ -1,0 +1,30 @@
+add_namespace = TNW_level_development_event
+
+country_event = {
+	id = TNW_level_development_event.1
+	title = TNW_level_development_event.1.t
+	desc = TNW_level_development_event.1.d
+	#picture = TTT_event1
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = TNW_level_development_event.1.a
+		effect_tooltip = {
+			TNW_level_development_literacy_upgrade_effect = yes
+		}
+	}
+}
+country_event = {
+	id = TNW_level_development_event.2
+	title = TNW_level_development_event.2.t
+	desc = TNW_level_development_event.2.d
+	#picture = TTT_event1
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = TNW_level_development_event.2.a
+		effect_tooltip = {
+			TNW_level_development_literacy_downgrade_effect = yes
+		}
+	}
+}

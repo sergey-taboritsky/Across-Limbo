@@ -1,0 +1,38 @@
+characters = {
+	####皮埃尔·特雷索
+	ITA_Pierre_Tresso = {
+		name = ITA_Pierre_Tresso
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ITA_Pierre_Tresso
+			}
+		}
+		country_leader = {
+			desc = ITA_Pierre_Tresso_desc
+			ideology = Marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			    
+			}
+		}
+	}
+	####维克托·伊曼纽尔三世
+	ITA_Vittorio_Emanuele_III = {
+		name = ITA_Vittorio_Emanuele_III
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ITA_Vittorio_Emanuele_III
+			}
+		}
+		country_leader = {
+			desc = ITA_Vittorio_Emanuele_III_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			    
+			}
+		}
+	}
+}

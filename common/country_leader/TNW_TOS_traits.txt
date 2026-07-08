@@ -1,0 +1,14 @@
+leader_traits = {
+	#伟大、自由与公正的君主
+    TOS_Great_free_and_just_prince = {
+		random = no
+		stability_factor = 0.05
+		research_speed_factor = 0.05
+		Social_democracy_acceptance = 20
+		Liberalism_acceptance = 20
+		Conservatism_acceptance = 20
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

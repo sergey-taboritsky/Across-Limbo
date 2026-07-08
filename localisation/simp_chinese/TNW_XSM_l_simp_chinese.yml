@@ -1,0 +1,24 @@
+﻿l_simp_chinese:
+ #顾问
+ CHI_Wang_Hongshao: "王鸿韶"
+ CHI_Ma_Hongkui: "马鸿逵"
+ CHI_Shi_Kexuan: "史可轩"
+ 
+ #政党名字
+ XSM_communist_party: "中国共产党"
+ XSM_socialism_party: "中国共产党"
+ XSM_socialism_party_long: "中国共产党"
+ XSM_Social_democracy_party: "国民党"
+ XSM_Liberalism_party: "国民党"
+ XSM_Conservatism_party: "国民党"
+ XSM_Authoritarianism_party: "西北行辕政治委员会"
+ XSM_Absolutism_party: "中华民国国军 - 西北军"
+ XSM_Nationalism_party: "-"
+
+#事件
+ XSM_news_event.1.t: "南京政府夺取新疆"
+ XSM_news_event.1.d: "自从第二次世界大战结束以来，占据中国大部分地区的国民党政权便被大半个世界视为中国的合法政府。不过，中国的部分边疆地区仍在接受奉天的“安国军政府”所控制。\n\n如今，情况似乎已经彻底改变。随着西北军政委员会不断进军，西部边疆已经彻底归于南京统治。国民党的忠诚干部邓宝珊接替先前效忠奉天的马氏集团担任新疆省主席，这标志着奉天已经失去东北地区以外的全部领土。"
+ XSM_news_event.1.a: "有趣。"
+ XSM_news_event.2.t: "国民党西征受挫"
+ XSM_news_event.2.d: "\n\n如今，情况似乎已经彻底改变。随着西北军政委员会不断进军，西部边疆已经彻底归于南京统治。国民党的忠诚干部邓宝珊接替先前效忠奉天的马氏集团担任新疆省主席，这标志着奉天已经失去东北地区以外的全部领土。"
+ XSM_news_event.2.a: "有趣。"

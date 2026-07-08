@@ -1,0 +1,191 @@
+characters = {
+	#大不列颠共产党委员会
+	BLF_CPGB_committee = {
+		name = BLF_CPGB_committee
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_CPGB_committee
+			}
+
+		}
+		country_leader = {
+			desc = BLF_CPGB_committee_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+				
+			}
+			
+		}
+	}
+	#左翼联合政府
+	BLF_Left_wing_coalition_government = {
+		name = BLF_Left_wing_coalition_government
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_Left_wing_coalition_government
+			}
+
+		}
+		country_leader = {
+			desc = BLF_Left_wing_coalition_government_desc
+			ideology = Popular_Front
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+				BLF_Coalition_government
+			}
+			
+		}
+	}
+	#克莱门特·艾德礼
+	BLF_Clement_Attlee = {
+		name = ENG_Clement_Attlee
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ENG_Clement_Attlee
+			}
+		}
+		corps_commander = {
+			traits={ politically_connected media_personality }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	#亚瑟·霍纳
+	BLF_Arthur_Horner = {
+		name = BLF_Arthur_Horner
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_Arthur_Horner
+			}
+		}
+		corps_commander = {
+			traits={ politically_connected organisational_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	#哈里·波立特
+	BLF_Harry_Pollitt = {
+		name = BLF_Harry_Pollitt
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_Harry_Pollitt
+			}
+		}
+	}
+	#威利·加拉赫尔
+	BLF_Willie_Gallacher  = {
+		name = BLF_Willie_Gallacher
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_Willie_Gallacher
+			}
+		}
+	}
+	#西尔维亚·潘克赫特
+	BLF_Sylvia_Pankhurst = {
+		name = BLF_Sylvia_Pankhurst
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_Sylvia_Pankhurst
+			}
+		}
+	}
+	#大卫·柯克伍德
+	BLF_David_Kirkwood = {
+		name = BLF_David_Kirkwood
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_David_Kirkwood
+			}
+		}
+	}
+	#芬纳·布罗克韦
+	BLF_Fenner_Brockway	= {
+		name = BLF_Fenner_Brockway
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_Fenner_Brockway
+			}
+		}
+	}
+	#塞西尔·马龙
+	BLF_Cecil_Malone = {
+		name = BLF_Cecil_Malone
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_Cecil_Malone
+			}
+		}
+		corps_commander = {
+			traits={ politically_connected career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	#曼尼·辛威尔
+	BLF_Manny_Shinwell = {
+		name = BLF_Manny_Shinwell
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_Manny_Shinwell
+			}
+		}
+	}
+	#沃尔顿·纽博尔德
+	BLF_Walton_Newbold = {
+		name = BLF_Walton_Newbold
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_Walton_Newbold
+			}
+		}
+	}
+	#杰西·斯蒂芬
+	BLF_Jessie_Stephen = {
+		name = BLF_Jessie_Stephen
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_Jessie_Stephen
+			}
+		}
+	}
+	#约翰·贝克特
+	BLF_John_Beckett = {
+		name = BLF_John_Beckett
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_John_Beckett
+			}
+		}
+		corps_commander = {
+			traits={ politically_connected  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#杰弗里·哈姆
+	BLF_Jeffrey_Hamm = {
+		name = BLF_Jeffrey_Hamm
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BLF_Jeffrey_Hamm
+			}
+		}
+	}
+}

@@ -1,0 +1,234 @@
+add_namespace = BUL_event
+add_namespace = BUL_news_event
+add_namespace = BUL_test_event
+news_event = {
+	id = BUL_news_event.1
+	title = BUL_news_event.1.t
+	desc = BUL_news_event.1.d
+	picture = GFX_news_event_Vienna_Spring
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = BUL_news_event.1.a
+	}
+}
+
+country_event = {
+	id = BUL_event.1
+	title = BUL_event.1.t
+	desc = BUL_event.1.d
+	picture = GFX_PUM_game_2
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BUL_event.1.a
+	}
+}
+
+country_event = { #red BUL test
+	id = BUL_test_event.1
+	title = BUL_test_event.1.t
+	desc = BUL_test_event.1.d
+	picture = GFX_PUM_game_2
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #dimitrov
+		name = BUL_test_event.1.a
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+		}
+		add_popularities = {
+			ideology = communist
+			popularity = 0.4
+		}
+		set_cosmetic_tag = BUL_socialist_republic
+	}
+	option = { #chervenkov
+		name = BUL_test_event.1.b
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = communist
+			name = BUL_BKP_party_chervenkov
+		}
+		promote_character = BUL_Valko_Chervenkov
+		set_cosmetic_tag = BUL_socialist_republic
+	}
+	option = { #yugov
+		name = BUL_test_event.1.b
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = communist
+			name = BUL_BKP_party_yugov
+		}
+		promote_character = BUL_Anton_Yugov
+		set_cosmetic_tag = BUL_socialist_republic
+	}
+	option = { #gorunia
+		name = BUL_test_event.1.b
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = communist
+			name = BUL_BKP_party_gorunia
+		}
+		promote_character = BUL_Ivan_Gorunia
+		set_cosmetic_tag = BUL_socialist_republic
+	}
+	option = { #kozovsky
+		name = BUL_test_event.1.b
+		set_politics = {
+			ruling_party = Absolutism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = Absolutism
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = Absolutism
+			name = BUL_BKP_party_kozovsky
+		}
+		promote_character = BUL_Ferdinand_Kozovsky
+		set_cosmetic_tag = BUL_socialist_republic
+	}
+	option = { #kostov
+		name = BUL_test_event.1.b
+		set_politics = {
+			ruling_party = syndicalism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = syndicalism
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = syndicalism
+			name = BUL_BKP_party_kostov
+		}
+		promote_character = BUL_Traycho_Kostov
+		set_cosmetic_tag = BUL_federation
+	}
+	option = { #zhivkov
+		name = BUL_test_event.1.b
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = socialism
+			name = BUL_BKP_party_zhivkov
+		}
+		promote_character = BUL_Todor_Zhivkov
+		set_cosmetic_tag = BUL_peoples_republic
+	}
+	option = { #vaptsarov
+		name = BUL_test_event.1.b
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = socialism
+			name = BUL_BKP_party_vaptsarov
+		}
+		promote_character = BUL_Nikolai_Vaptsarov
+		set_cosmetic_tag = BUL_peoples_republic
+	}
+	option = { #glavinchev
+		name = BUL_test_event.1.b
+		set_politics = {
+			ruling_party = syndicalism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = syndicalism
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = syndicalism
+			name = BUL_BKP_party_glavinchev
+		}
+		promote_character = BUL_Lev_Glavinchev
+		set_cosmetic_tag = BUL_mladrossi
+	}
+	option = { #mikhailov popov
+		name = BUL_test_event.1.b
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = communist
+			name = BUL_BKP_party_mikhailov
+		}
+		promote_character = BUL_Ivan_Mihailov_Popov
+		set_cosmetic_tag = BUL_yugoslavia_red
+	}
+	option = { #vasev
+		name = BUL_test_event.1.b
+		set_politics = {
+			ruling_party = syndicalism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = syndicalism
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = syndicalism
+			name = BUL_syndicalism_party
+		}
+		promote_character = BUL_Manol_Vasev
+		set_cosmetic_tag = BUL_commune
+	}
+	option = { #socdem
+		name = BUL_test_event.1.b
+		set_politics = {
+			ruling_party = Social_democracy
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = Social_democracy
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = Social_democracy
+			name = BUL_BKP_party_socdem
+		}
+		promote_character = BUL_Dimitar_Kazasov
+		set_cosmetic_tag = BUL_peoples_republic
+	}
+}

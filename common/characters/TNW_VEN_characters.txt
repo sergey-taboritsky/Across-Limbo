@@ -1,0 +1,16 @@
+characters = {
+	VEN_Isaias_Angarita = {
+		name = VEN_Isaias_Angarita
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_VEN_Isaias_Angarita
+			}
+		}
+		country_leader = {
+			desc = VEN_Isaias_Angarita_desc
+			ideology = oligarchy
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+}

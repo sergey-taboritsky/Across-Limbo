@@ -1,0 +1,175 @@
+add_namespace = RUS_event
+add_namespace = RUS_worldnews
+
+country_event = {
+	id = RUS_event.1
+	title = RUS_event.1.t
+	desc = RUS_event.1.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = RUS_event.1.a
+		kill_ideology_leader = Nationalism
+		promote_character = RUS_Tirumvirate
+		hidden_effect = {
+			country_event = { id = RUS_event.2 days = 105 }
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = RUS_worldnews.1
+			}
+		}
+	}
+}
+country_event = {
+	id = RUS_event.2
+	title = RUS_event.2.t
+	desc = RUS_event.2.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = RUS_event.2.a
+		promote_character = RUS_Pyotr_Savitsky
+		remove_ideas = RUS_Aleksandr_Dikgof_Derental_hog
+		add_ideas = RUS_Yury_Shirinsky_Shikhmatov_hog
+		set_party_name = {
+			ideology = Nationalism
+			name = RUS_SZRS_party_thoughtrule
+			long_name = RUS_SZRS_party_thoughtrule_long
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = RUS_worldnews.2
+			}
+		}
+	}
+	option = {
+		name = RUS_event.2.b
+		promote_character = RUS_Karol_Vendzyagolsky
+		remove_ideas = RUS_Aleksandr_Dikgof_Derental_hog
+		add_ideas = RUS_Maksimilian_Filonenko_hog
+		set_party_name = {
+			ideology = Nationalism
+			name = RUS_SZRS_party_centrist
+			long_name = RUS_SZRS_party_centrist_long
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = RUS_worldnews.3
+			}
+		}
+	}
+	option = {
+		name = RUS_event.2.c
+		promote_character = RUS_Viktor_Larionov
+		remove_ideas = RUS_Aleksandr_Dikgof_Derental_hog
+		add_ideas = RUS_Vladimir_Manstein_hog
+		set_party_name = {
+			ideology = Nationalism
+			name = RUS_SZRS_party_hardliner
+			long_name = RUS_SZRS_party_hardliner_long
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = RUS_worldnews.4
+			}
+		}
+	}
+}
+
+news_event = {
+	id = RUS_worldnews.1
+	title = RUS_worldnews.1.t
+	desc = RUS_worldnews.1.d
+	#picture = GFX_news_event_generic_panzer_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = RUS_worldnews.1.a
+		trigger = {
+			tag = RUS
+		}
+	}
+	option = {
+		name = RUS_worldnews.1.b
+		trigger = {
+			NOT = { tag = RUS }
+		}
+	}
+}
+news_event = {
+	id = RUS_worldnews.2
+	title = RUS_worldnews.2.t
+	desc = RUS_worldnews.2.d
+	#picture = GFX_news_event_generic_panzer_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = RUS_worldnews.2.a
+		trigger = {
+			tag = RUS
+		}
+	}
+	option = {
+		name = RUS_worldnews.2.b
+		trigger = {
+			NOT = { tag = RUS }
+		}
+	}
+}
+news_event = {
+	id = RUS_worldnews.3
+	title = RUS_worldnews.3.t
+	desc = RUS_worldnews.3.d
+	#picture = GFX_news_event_generic_panzer_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = RUS_worldnews.3.a
+		trigger = {
+			tag = RUS
+		}
+	}
+	option = {
+		name = RUS_worldnews.3.b
+		trigger = {
+			NOT = { tag = RUS }
+		}
+	}
+}
+news_event = {
+	id = RUS_worldnews.4
+	title = RUS_worldnews.4.t
+	desc = RUS_worldnews.4.d
+	#picture = GFX_news_event_generic_panzer_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = RUS_worldnews.4.a
+		trigger = {
+			tag = RUS
+		}
+	}
+	option = {
+		name = RUS_worldnews.4.b
+		trigger = {
+			NOT = { tag = RUS }
+		}
+	}
+}

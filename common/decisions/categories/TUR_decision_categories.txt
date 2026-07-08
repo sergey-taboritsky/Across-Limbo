@@ -1,0 +1,11 @@
+TUR_debug_decision = {
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_decision_pic_Bavaria
+	allowed = {
+		original_tag = TUR
+	}
+	visible = {
+		always = yes
+	}
+	priority = 100
+}

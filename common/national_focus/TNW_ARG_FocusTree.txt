@@ -1,0 +1,89 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+### search_filters = {FOCUS_FILTER_ARMY_XP}
+### search_filters = {FOCUS_FILTER_NAVY_XP}
+### search_filters = {FOCUS_FILTER_AIR_XP}
+### search_filters = {FOCUS_FILTER_BALANCE_OF_POWERS}
+### search_filters = {FOCUS_FILTER_POLITICAL_CHARACTER}
+### search_filters = {FOCUS_FILTER_MILITARY_CHARACTER}
+### search_filters = {FOCUS_FILTER_INTERNATIONAL_TRADE}
+focus_tree = {
+	id = ARG_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARG
+		}
+	}
+	default = no
+	###普拉塔河行动
+	focus = {
+		id = ARG_operation_la_plata
+		icon = GFX_ARG_operation_la_plata
+		x = 6
+		y = 0
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###处理政治犯
+	focus = {
+		id = ARG_fate_of_political_prisoners
+		icon = GFX_ARG_fate_of_political_prisoners
+		prerequisite = {
+			focus = ARG_operation_la_plata
+		}
+		relative_position_id = ARG_operation_la_plata
+		x = -2
+		y = 1
+	}
+	###解除紧急状态
+	focus = {
+		id = ARG_lift_national_emergency
+		icon = GFX_ARG_lift_national_emergency
+		prerequisite = {
+			focus = ARG_operation_la_plata
+		}
+		relative_position_id = ARG_operation_la_plata
+		x = 2
+		y = 1
+	}
+	###交由人民审判
+	focus = {
+		id = ARG_trial_of_people
+		icon = ARG_trial_of_people
+		prerequisite = {
+			focus = ARG_fate_of_political_prisoners
+		}
+		prerequisite = {
+			focus = ARG_lift_national_emergency
+		}
+		relative_position_id = ARG_operation_la_plata
+		x = 0
+		y = 2
+	}
+	###委员会紧急选举
+	focus = {
+		id = ARG_emergency_chairman_elections
+		icon = ARG_emergency_chairman_elections
+		prerequisite = {
+			focus = ARG_trial_of_people
+		}
+		allow_branch = {
+			has_country_flag = ARG_initial_flag
+		}
+		relative_position_id = ARG_trial_of_people
+		x = 0
+		y = 1
+	}
+}

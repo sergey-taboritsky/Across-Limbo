@@ -1,0 +1,2 @@
+#这是一个用来做剧本界面的妙妙工具
+ZZZ	= "countries/ZZZ.txt"

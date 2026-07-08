@@ -1,0 +1,34 @@
+﻿capital = 907
+
+set_convoys = 20
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 21
+	syndicalism = 14
+	socialism = 17
+	Social_democracy = 5
+	Liberalism = 0
+	conservatism = 0
+	Authoritarianism = 0
+	Absolutism = 33
+	Nationalism = 10
+}
+
+recruit_character = EGY_Kamal_Abd_al_Halim
+recruit_character = EGY_Henri_Curiel
+recruit_character = EGY_Hillel_Schwartz
+recruit_character = EGY_Youssef_Darwish
+recruit_character = EGY_Mohammed_Naguib
+recruit_character = EGY_Ibrahim_Shoukri
+
+add_ideas = {
+	EGY_namely_socialism
+	EGY_across_the_canals
+	EGY_left_unity_1
+}

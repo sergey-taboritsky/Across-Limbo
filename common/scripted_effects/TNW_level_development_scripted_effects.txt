@@ -1,0 +1,94 @@
+TNW_level_development_literacy_upgrade_effect = {
+	if = {
+		limit = {
+			has_idea = War_machines
+		}
+		swap_ideas = {
+			remove_idea = War_machines
+			add_idea = Professional_army
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = Professional_army
+		}
+		swap_ideas = {
+			remove_idea = Professional_army
+			add_idea = Conscription_militia
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = Conscription_militia
+		}
+		swap_ideas = {
+			remove_idea = Conscription_militia
+			add_idea = Mercenary_army
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = Mercenary_army
+		}
+		swap_ideas = {
+			remove_idea = Mercenary_army
+			add_idea = Armed_police
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = Armed_police
+		}
+		add_political_power = 50
+		add_stability = 0.025
+		add_war_support = 0.025
+		custom_effect_tooltip = TNW_development_at_top_tt
+	}
+}
+TNW_level_development_literacy_downgrade_effect = {
+    if = {
+		limit = {
+			has_idea = War_machines
+		}
+		add_political_power = -50
+		add_stability = -0.025
+		add_war_support = -0.025
+		custom_effect_tooltip = TNW_development_at_bottom_tt
+	}
+	else_if = {
+		limit = {
+			has_idea = Professional_army
+		}
+		swap_ideas = {
+			remove_idea = Professional_army
+			add_idea = War_machines
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = Conscription_militia
+		}
+		swap_ideas = {
+			remove_idea = Conscription_militia
+			add_idea = Professional_army
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = Mercenary_army
+		}
+		swap_ideas = {
+			remove_idea = Mercenary_army
+			add_idea = Conscription_militia
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = Armed_police
+		}
+		swap_ideas = {
+			remove_idea = Armed_police
+			add_idea = Mercenary_army
+		}
+	}
+}

@@ -1,0 +1,29 @@
+﻿l_simp_chinese:
+ #政党
+ TOS_communist_party:0 "托斯卡纳真正人民党"
+ TOS_socialism_party:0 "-"
+ TOS_Social_democracy_party:0 "托斯卡纳改革党"
+ TOS_Liberalism_party:0 "托斯卡纳人民党-基督教人民联盟联合政府"
+ TOS_Conservatism_party:0 "基督教人民联盟——托斯卡纳分部"
+ TOS_Authoritarianism_party:0 "保守阵线"
+ TOS_Absolutism_party:0 "-"
+ TOS_Nationalism_party:0 "-"
+
+#顾问
+ TOS_Ferdinand_VI:0 "费迪南六世" 
+ TOS_Ferdinand_VI_desc:0 "斐迪南六世，托斯卡纳无可置疑的唯一大公，自他的前任斐迪南五世在一九三零年去世后，这位年轻的学者就承担起了整个大公国的责任，在过去的六年里，他用自己的努力弥合着自由派、保守派与普罗大众间的矛盾。在自由派运动声势浩大之时，他高坐台上，应允了自由派的改革请愿，这不仅使托斯卡纳成为了整个意大利邦联中最为民主与自由的邦国，也使自己获得了一个“伟大、自由与公正的君主”的美称。\n而现在，世界局势逐渐升温，经济衰退使昔日耀眼的自由派内阁逐渐失去了光彩，保守派与激进派都在蠢蠢欲动，这位君主是还能像以往一样带领整个国家走向更加进步的道路，还是就此止步，甚至回首转身？" 
+ TOS_Great_free_and_just_prince:0 "伟大、自由与公正的君主"
+
+#idea
+ TOS_Thoughts_of_Tuscany:0 "托斯卡纳之思"
+ TOS_Thoughts_of_Tuscany_desc:0 "托斯卡纳地区曾经孕育了伟大而辉煌的城邦文明：比萨，锡耶纳，以及半岛历史上最璀璨的百合花之城佛罗伦萨，这使得托斯卡纳人对自由与民主有着独特的思考。\n然而，在文艺复兴后就开始落后的经济与长期的君主制度影响中，这样独特的思考逐渐被埋没于百花大教堂的穹顶之下，被时光纹刻上古朴的锈痕。\n§C如果我们能够唤醒托斯卡纳人民心中对于自由民主的独特思考，并将对君主制度的热爱注射入内，我们就能将托斯卡纳打造成一枚开明而繁荣的立宪明珠！§!"
+ TOS_Great_Italian_depression:0 "意大利大萧条"
+ TOS_Great_Italian_depression_desc:0 "由于意大利各国在过去十六年来在邦联的架构里进行了广泛的经济合作（没有人能够和钱过不去，哪怕是信仰），在大萧条后，经济危机的危害也波及了整个意大利地区，因此，哪怕我们国内的经济危机已经被解决，在所有意大利邦国的经济危机都被解决前，意大利的大萧条将不会被终结。"
+ TOS_Six_Red_Balls:0 "六颗红球"
+ TOS_Six_Red_Balls_desc:0 "托斯卡纳大公国的徽标由六颗红球组成，这是大公国的创建者，也是亚平宁半岛上最伟大的银行家家族美第奇的徽标，但现在，社会主义者将六颗红球的含义重新诠释，他们用社会的不同阶级为红球所命名，并开展了广泛的社会运动与自由派政府所争夺其归属权。\n§R我们所控制的每一颗红球都将为自由派政府带来合法性，而若是被社会主义者所掌控，则会带来不同的危害。\n\n每颗红球会带来2%的$MODIFIER_STABILITY_FACTOR$与$MODIFIER_WAR_SUPPORT_FACTOR$，而每颗不受掌控的红球会带来$MODIFIER_DRIFT_DEFENCE_FACTOR$：-15%\n\n农民不受掌控：$MODIFIER_CONSUMER_GOODS_FACTOR$：+20%\n工人不受掌控：$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$：-10%\n教会不受掌控：$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$：-25%，$MODIFIER_OPINION_GAIN_MONTHLY_FACTOR$：-25%\n军队不受掌控：$MODIFIERS_ARMY_ATTACK_FACTOR$：-10%，$MODIFIERS_ARMY_DEFENCE_FACTOR$：-10%，$MODIFIER_TRAINING_TIME_FACTOR$：+10%\n地主不受掌控：$MODIFIER_WAR_SUPPORT_FACTOR$：-10%，$MODIFIER_STABILITY_FACTOR$：-10%\n自由派不受掌控：征兵，贸易，经济，政治顾问+50%花费§!"
+
+#决议
+ TOS_Socialist_activities_decision:0 "社会主义者的活动"
+ TOS_Socialist_activities_decision_desc:0 "\n\n\n\n\n\n\n我们在托斯卡纳建立的自由派宽松政策使得社会主义者在托斯卡纳地区的活动得以通过各种各样的伪装延续下去，而为了避免损害伟大自由君主斐迪南六世与他所委任之政府的权威，在掌握切实的证据之前，我们也不得不保持对这些伪装活动的正常态度，但如果这些活动愈演愈烈而我们却无能为力，那么社会主义的毒汁必然在托斯卡纳境内掀起轩然大波……\n\n§R不过，如果真的到了切要关头，我们也可以撕下自由的面具，强行通过武力力挽狂澜……§!\n"
+ TOS_decision_01:0 "社会主义危机"
+ 

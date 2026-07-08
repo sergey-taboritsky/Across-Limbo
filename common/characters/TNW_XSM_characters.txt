@@ -1,0 +1,41 @@
+characters = {
+	CHI_Wang_Hongshao = {
+		name = CHI_Wang_Hongshao
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Wang_Hongshao
+			}
+		}
+		country_leader={
+			ideology= Junshen_government
+			expire="1936.1.1"
+		}
+		
+	}
+	CHI_Shi_Kexuan = {
+		name = CHI_Shi_Kexuan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Shi_Kexuan
+			}
+		}
+		country_leader={
+			ideology= tridemism_revolutionary
+			expire="1936.1.1"
+		}
+		
+	}
+	CHI_Ma_Hongkui = {
+		name = CHI_Ma_Hongkui
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Ma_Hongkui
+			}
+		}
+		country_leader={
+			ideology= Junshen_government
+			expire="1936.1.1"
+		}
+		
+	}
+}

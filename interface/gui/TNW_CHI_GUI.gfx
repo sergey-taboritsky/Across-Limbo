@@ -1,0 +1,64 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_CHI_army_factionicon_1"
+		texturefile = "gfx/TNW_scripted_guis/TNW_CHI/TNWCHI_army_factionicon_1.png"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_CHI_army_factionicon_2"
+		texturefile = "gfx/TNW_scripted_guis/TNW_CHI/TNWCHI_army_factionicon_2.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_CHI_army_factionicon_3"
+		texturefile = "gfx/TNW_scripted_guis/TNW_CHI/TNWCHI_army_factionicon_3.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_CHI_army_factionicon_4"
+		texturefile = "gfx/TNW_scripted_guis/TNW_CHI/TNWCHI_army_factionicon_4.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_CHI_army_positionicon_1"
+		texturefile = "gfx/TNW_scripted_guis/TNW_CHI/TNWCHI_army_positionicon_1.png"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_CHI_army_positionicon_2"
+		texturefile = "gfx/TNW_scripted_guis/TNW_CHI/TNWCHI_army_positionicon_2.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_CHI_army_positionicon_3"
+		texturefile = "gfx/TNW_scripted_guis/TNW_CHI/TNWCHI_army_positionicon_3.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_CHI_army_reformbuttonicon_1"
+		texturefile = "gfx/TNW_scripted_guis/TNW_CHI/TNWCHI_army_reformbutton_1.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_CHI_army_reformbuttonicon_2"
+		texturefile = "gfx/TNW_scripted_guis/TNW_CHI/TNWCHI_army_reformbutton_2.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_CHI_army_reformbuttonicon_3"
+		texturefile = "gfx/TNW_scripted_guis/TNW_CHI/TNWCHI_army_reformbutton_3.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_CHI_army_reformbuttonicon_4"
+		texturefile = "gfx/TNW_scripted_guis/TNW_CHI/TNWCHI_army_reformbutton_4.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_CHI_army_reformbuttonicon_5"
+		texturefile = "gfx/TNW_scripted_guis/TNW_CHI/TNWCHI_army_reformbutton_5.png"
+		transparencecheck = yes
+	}
+}

@@ -1,0 +1,16 @@
+characters = {
+	COL_Jorge_Gaitan = {
+		name = COL_Jorge_Gaitan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_COL_Jorge_Gaitan
+			}
+		}
+		country_leader = {
+			desc = COL_Jorge_Gaitan_desc
+			ideology = Left_wing_populism
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+}

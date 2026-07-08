@@ -1,0 +1,28 @@
+﻿capital = 525 #South Korea - Seoul or Busan
+
+#oob = "KOR_1936"
+
+recruit_character = KOR_Ji_Cheong_Cheon
+recruit_character = KOR_Kim_Koo
+recruit_character = KOR_Lyuh_Woon_Hyung
+recruit_character = KOR_Kim_Won_Bong
+recruit_character = KOR_Kim_Du_Han
+recruit_character = KOR_Park_Han_Yong
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1947.5.12"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	communist = 13
+	socialism = 16
+	Social_democracy = 18
+	Liberalism = 41
+	Conservatism = 12
+	Authoritarianism = 0
+	Nationalism = 0
+}

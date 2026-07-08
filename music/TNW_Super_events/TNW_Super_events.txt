@@ -1,0 +1,51 @@
+music_station = "TNW_super_events_BGM"
+
+music = {
+	song = "TNW_King_George_V_death"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNW_World_War_II"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNW_Bolsheviks_marched_westward"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNW_Third_Balkan_War"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNW_Operation_Thunderstorm"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNW_Nuke_Bomb"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "TNW_Turkish_Civil_War"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNW_Central_Plains_War"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}

@@ -1,0 +1,18 @@
+﻿capital = 274
+
+set_convoys = 15
+
+recruit_character = GHA_Thomas_Hutton_Mills
+
+set_politics = {
+	ruling_party = Social_democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Liberalism = 25
+	Nationalism = 20
+	communist = 5
+	Social_democracy = 50
+}

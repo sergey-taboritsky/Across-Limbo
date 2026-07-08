@@ -1,0 +1,317 @@
+add_namespace = AUS_event
+add_namespace = AUS_news_event
+#维也纳之春
+news_event = {
+	id = AUS_news_event.1
+	title = AUS_news_event.1.t
+	desc = AUS_news_event.1.d
+	picture = GFX_news_event_Vienna_Spring
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = AUS_news_event.1.a
+	}
+}
+
+#维也纳之冬
+news_event = {
+	id = AUS_news_event.2
+	title = AUS_news_event.2.t
+	desc = AUS_news_event.2.d
+	picture = GFX_news_event_generic_funeral
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = AUS_news_event.2.a
+	}
+}
+
+#第三次巴尔干战争，奥地利胜利
+country_event = {
+	id = AUS_event.1	#事件的id
+	title = {
+		text = AUS_event.1.t		#事件标题文本
+		trigger = {
+			OR = {
+				tag = AUS
+				tag = YUG
+				tag = ROM
+			}
+		}
+	}
+	desc = {
+		text = AUS_event.1.d
+		trigger = {
+			OR = {
+				tag = AUS
+				tag = YUG
+				tag = ROM
+			}
+		}
+	}
+	picture = GFX_PUM_game_2	#事件图片，注册非常简单，无序严苛遵循某种格式
+	immediate = {
+		hidden_effect = {
+			HUN = {
+				white_peace = AUS
+				white_peace = YUG
+				white_peace = ROM
+			}
+			AUS = {
+				annex_country = {
+					target = HUN
+				}
+			}
+			YUG = {
+				transfer_state = 45
+				transfer_state = 764
+			}
+			ROM = {
+				transfer_state = 83
+				transfer_state = 76
+			}
+			set_global_flag = TNW_warpeace_show_gui
+			AUS = {
+				save_global_event_target_as = winning_country
+			}
+			HUN = {
+				save_global_event_target_as = losing_country
+			}
+			add_to_variable = {
+				global.TNW_warpeace_dirty = 1
+			}
+		}
+	}
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			HUN = {
+				has_war_with = YUG
+				has_war_with = AUS
+				has_war_with = ROM
+				OR = {
+					has_capitulated = yes
+					surrender_progress > 0.5
+				}
+			}
+		}
+	}
+	#激活事件，使之自动触发的条件，满足此条件事件将可以触发
+	mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	option = {
+		name = AUS_event.1.a
+	}
+}
+
+#第三次巴尔干战争，匈牙利胜利
+country_event = {
+	id = AUS_event.2	#事件的id
+	title = {
+		text = AUS_event.2.t		#事件标题文本
+		trigger = {
+			OR = {
+				tag = AUS
+				tag = YUG
+				tag = ROM
+			}
+		}
+	}
+	desc = {
+		text = AUS_event.2.d
+		trigger = {
+			OR = {
+				tag = AUS
+				tag = YUG
+				tag = ROM
+			}
+		}
+	}
+	picture = GFX_PUM_game_2	#事件图片，注册非常简单，无序严苛遵循某种格式
+	immediate = {
+		hidden_effect = {
+			HUN = {
+				white_peace = AUS
+				white_peace = YUG
+				white_peace = ROM
+			}
+			HUN = {
+				annex_country = {
+					target = SLO
+				}
+				annex_country = {
+					target = AUS
+				}
+				white_peace = AUS
+				white_peace = YUG
+				white_peace = ROM
+				transfer_state = 82
+				transfer_state = 43
+				transfer_state = 84
+				transfer_state = 109
+				transfer_state = 958
+				transfer_state = 163
+			}
+			set_global_flag = TNW_warpeace_show_gui
+			HUN = {
+				save_global_event_target_as = winning_country
+			}
+			AUS = {
+				save_global_event_target_as = losing_country
+			}
+			add_to_variable = {
+				global.TNW_warpeace_dirty = 1
+			}
+		}
+	}
+	fire_only_once = yes
+	trigger = {
+		HUN = {
+			has_war_with = YUG
+			has_war_with = AUS
+			has_war_with = ROM
+			has_country_flag = HUN_Red_Balkans
+		}
+		AND = {
+			AUS = {
+				OR = {
+					has_capitulated = yes
+					surrender_progress > 0.5
+				}
+			}
+			YUG = {
+				OR = {
+					has_capitulated = yes
+					surrender_progress > 0.5
+				}
+			}
+			ROM = {
+				OR = {
+					has_capitulated = yes
+					surrender_progress > 0.5
+				}
+			}
+		}
+	}
+	#激活事件，使之自动触发的条件，满足此条件事件将可以触发
+	mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	option = {
+		name = AUS_event.1.a
+	}
+}
+
+#第三次巴尔干战争，匈牙利胜利
+country_event = {
+	id = AUS_event.3	#事件的id
+	title = {
+		text = AUS_event.3.t		#事件标题文本
+		trigger = {
+			OR = {
+				tag = AUS
+				tag = YUG
+				tag = ROM
+			}
+		}
+	}
+	desc = {
+		text = AUS_event.3.d
+		trigger = {
+			OR = {
+				tag = AUS
+				tag = YUG
+				tag = ROM
+			}
+		}
+	}
+	picture = GFX_PUM_game_2	#事件图片，注册非常简单，无序严苛遵循某种格式
+	immediate = {
+		hidden_effect = {
+			HUN = {
+				white_peace = AUS
+				white_peace = YUG
+				white_peace = ROM
+			}
+			HUN = {
+				annex_country = {
+					target = SLO
+				}
+				transfer_state = 82
+				transfer_state = 43
+				transfer_state = 84
+				transfer_state = 109
+				transfer_state = 958
+				transfer_state = 163
+				transfer_state = 103
+			}
+			CZE = {
+				transfer_state = 69
+				transfer_state = 9
+				transfer_state = 75
+				transfer_state = 74
+				transfer_state = 72
+				every_owned_state = {
+					add_core_of = CZE
+				}
+			}
+			WGR = {
+				annex_country = {
+					target = AUS
+				}
+			}
+			set_global_flag = TNW_warpeace_show_gui
+			HUN = {
+				save_global_event_target_as = winning_country
+			}
+			AUS = {
+				save_global_event_target_as = losing_country
+			}
+			add_to_variable = {
+				global.TNW_warpeace_dirty = 1
+			}
+		}
+	}
+	fire_only_once = yes
+	trigger = {
+		HUN = {
+			has_war_with = YUG
+			has_war_with = AUS
+			has_war_with = ROM
+			NOT = {
+				has_country_flag = HUN_Red_Balkans
+			}
+		}
+		AND = {
+			AUS = {
+				OR = {
+					has_capitulated = yes
+					surrender_progress > 0.5
+				}
+			}
+			YUG = {
+				OR = {
+					has_capitulated = yes
+					surrender_progress > 0.5
+				}
+			}
+			ROM = {
+				OR = {
+					has_capitulated = yes
+					surrender_progress > 0.5
+				}
+			}
+		}
+	}
+	#激活事件，使之自动触发的条件，满足此条件事件将可以触发
+	mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	option = {
+		name = AUS_event.3.a
+	}
+}

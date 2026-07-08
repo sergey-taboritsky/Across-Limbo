@@ -1,0 +1,71 @@
+﻿l_simp_chinese:
+#领导人
+ BRM_Maung_Lun_Maung: "貌伦貌" #Thakin Koudaw Hmaing
+ BRM_Maung_Lun_Maung_desc: ""
+ BRM_U_Ba_Swe: "吴巴瑞"
+ BRM_U_Ba_Swe_desc: ""
+
+#政党名字
+ BRM_communist_party: "建国联盟 - 缅甸共产党"
+ BRM_communist_party_long: "缅甸共产党(Bamapyi Kunmyunit Pati)"
+ BRM_syndicalism_party: "-"
+ BRM_syndicalism_party_long: "-"
+ BRM_socialism_party: "-"
+ BRM_socialism_party_long: "-"
+ BRM_Social_democracy_party: "建国联盟 - 缅甸人民革命党 - 社会派"
+ BRM_Social_democracy_party_long: "缅甸人民革命党(Pyithu Ayeidawbon Party)"
+ BRM_Liberalism_party: "建国联盟 - 我缅人协会"
+ BRM_Liberalism_party_desc: "我缅人协会"
+ BRM_Conservatism_party: "建国联盟 - 全缅人民联盟"
+ BRM_Conservatism_party_long: "全缅人民联盟"
+ BRM_Authoritarianism_party: "建国联盟 - 缅甸人民革命党 - 国民派"
+ BRM_Authoritarianism_party_long: "缅甸人民革命党(Pyithu Ayeidawbon Party)"
+ BRM_Absolutism_party: "缅甸国防军"
+ BRM_Absolutism_party_long: "缅甸国防军(Bama Amyodha Tatmadaw)"
+ BRM_Nationalism_party: "爱国者党"
+ BRM_Nationalism_party_long: "爱国者党(Myochit Pati)"
+
+#民族精神
+ BRM_Asian_crossroads: "亚细亚的十字路口"
+ BRM_Asian_crossroads_desc: "自从1930年正式取得独立以来，缅甸作为连接中印两个亚洲大国的十字路口便得以利用其区位优势迅速发展起来。从德属东亚与英属南印度的殖民地种植园，到中华民国与自由印度的新兴产业，一切商品都通过缅甸这一完美的中立渠道加以交换，即使第二次世界大战的爆发也未能打断这一发展趋势。"
+ BRM_between_monks_and_generals: "佛门与军营之间"
+ BRM_between_monks_and_generals_desc: "萨耶山运动不计一切代价地寻求社会同盟者，以从英国残余势力手中解放缅甸，但萨耶山本人的短暂统治并未成功处理独立战争时期产生的两大特权机构-国防军与寺庙组织。开国总统本人的僧侣与军人双重属性则进一步强化了这两处机构的特权，如今已明显形成尾大不掉之势。"
+ BRM_volatile_republic: "火药桶共和国"
+ BRM_volatile_republic_desc: "独立初期，各民族均希望缅甸能够实行联邦制，但这一愿景最终在总统萨耶山与军队的铁腕镇压下化作泡影。尽管萨耶山本意大约为希望凝聚国家权力以推动极速现代化，但随着缅族势力逐渐掌控政府和党内各派，如今的集权体制已经成为大缅族主义的遮羞布。\n\n--以及反对派攻击的标靶。各民族、自由主义者乃至社会党、共产党人都通过攻击集权制度拉拢民意，而若此事不能妥善解决，如今的政治体系或许将迅速坍塌。"
+ BRM_1930_treaty_RAJ: "《印缅同盟条约》"
+ BRM_1930_treaty_RAJ_desc: "1930年，就在缅甸独立的当年，曾在独立战争中大量援助起义军的自由印度便抛出橄榄枝，拉拢新生的共和国与其结为同盟。二战期间，缅甸也曾派出远征军参与印度对英属南印的进攻，以延长这一条约的有效性。\n\n如今，这一条约不但巩固着缅甸最长的边境线印缅边境，也在国内政坛中培养出大批亲印派，当前的总统与总理正是其中两人。"
+
+#事件
+
+#新闻
+ BRM_event.3.t: "缅甸援引《印缅同盟条约》"
+ BRM_event.3.d: "随着暹罗军队在缅甸境内的推进不断加速，缅甸方面最终做出了我方早有预料，但也最不希望见到的行动-援引1930年《印缅同盟条约》，要求我方下场援助。我国正处于向东南亚扩张影响力的关键节点，而无论是援助缅甸导致对暹关系破裂，还是拒绝援助导致印缅联盟解体，都会对我战略造成重大打击。\n\n如今，外交部方面提出了一个折中建议：向中华民国派遣特使，组建一个临时的“不干涉委员会”，要求对方暂停对暹罗的军售与援助，以示对缅支持的外交姿态。不过，尽管这足够照顾到印度-暹罗关系，但仍可能引发缅甸方面反弹；当然，我们也可选择启动对缅支持，以巩固我们在该地区仅有的固定盟友。"
+ BRM_event.3.a: "不干涉委员会？听起来像个好主意。"
+ BRM_event.3.b: "我们怎能做出抛弃盟友之事呢？"
+ BRM_event.4.t: "印度遣使"
+ BRM_event.4.d: ""
+ BRM_event.4.a: "那我们便安心置身事外即可。"
+ BRM_event.4.b: "援助等事乃中国内政，不容置喙。"
+ BRM_event.5.t: "印度介入缅暹战争"
+ BRM_event.5.d: ""
+ BRM_event.5.a: "好啊，他干预我也干预！"
+
+ BRM_news_event.1.t: "丹纳沙林战争"
+ BRM_news_event.1.d: "近日，随着暹罗军大量跨过边境，暹缅两国已经正式处于战争状态。据悉，此战源于两国对掸邦东部与德林达依领土的声索纠纷，而爆发的直接原因则是丹纳沙林地区针对暹罗人的民族仇杀。暹罗王国方面声称要求缅甸彻底退出争议领土，而缅甸共和国则称将予以还击。\n\n除了两大交战国，世界的目光同样投向加尔各答-印度与缅甸仍然存在军事同盟义务，而印度同样也在尝试拉拢暹罗成为盟友以遏制中国影响力。由于虚弱的缅军几乎注定无力抵抗暹罗精锐，印度是否干预战局的抉择或将成为战争胜负手。"
+ BRM_news_event.1.a: "东南亚事务不容有失！"
+ BRM_news_event.1.b: "动荡的亚洲再度掀起波澜。"
+ BRM_news_event.2.t: "缅甸总统辞职"
+ BRM_news_event.2.d: "由于印度拒绝干涉缅暹战争导致缅甸惨败后，不但印缅同盟关系走向终结，而且亲印势力在缅甸国内也遭到了沉重打击。作为对战败责任的承担，总统吴巴佩选择辞职，其位由缅甸人民革命党的党内反对派领袖貌伦貌暂时接替。此外，总理吴觉迎的政府也在新总统的政治行动中岌岌可危，随时可能倒台。\n\n与其数位前任相比，貌伦貌作为党内亲近社会主义的左翼派系领袖，更加亲近中华民国与工人国际势力。若其能够掌控缅甸全局，那么印度影响力或许将被彻底挡在东南亚之外。"
+ BRM_news_event.2.a: "那么，我们该如何支援呢？"
+ BRM_news_event.2.b: "必须阻止这狂人的妄想！"
+ BRM_news_event.2.c: "社会主义传播到缅甸？"
+
+#GUI
+
+#BOP
+
+#决议
+
+#国策
+ #: ""
+ #_desc: ""

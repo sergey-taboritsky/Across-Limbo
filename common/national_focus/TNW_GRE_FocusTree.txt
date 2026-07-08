@@ -1,0 +1,143 @@
+focus_tree = {
+	id = GRE_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	default = no
+	###安抚抗议工人
+	focus = {
+		id = GRE_calmdown_workers_onstrike
+		icon = GFX_GRE_calmdown_workers_onstrike
+		x = 4
+		y = 0
+		cost = 3
+		mutually_exclusive = {
+			focus = GRE_rebuild_cooperative_network
+		}
+		completion_reward = {
+		}
+	}
+	###动员基层党组织
+	focus = {
+		id = GRE_mobilize_party_cells
+		icon = GFX_GRE_mobilize_party_cells
+		relative_position_id = GRE_calmdown_workers_onstrike
+		x = -1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = GRE_calmdown_workers_onstrike
+		}
+		completion_reward = {
+		}
+	}
+	###向总工会让步
+	focus = {
+		id = GRE_concessions_to_trade_unions
+		icon = GFX_GRE_concessions_to_trade_unions
+		relative_position_id = GRE_calmdown_workers_onstrike
+		x = 1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = GRE_calmdown_workers_onstrike
+		}
+		completion_reward = {
+		}
+	}
+	###平息工人怒火
+	focus = {
+		id = GRE_calmdown_angry_workers
+		icon = GFX_GRE_calmdown_angry_workers
+		relative_position_id = GRE_calmdown_workers_onstrike
+		x = 0
+		y = 2
+		cost = 4
+		prerequisite = {
+			focus = GRE_mobilize_party_cells
+		}
+		prerequisite = {
+			focus = GRE_concessions_to_trade_unions
+		}
+		completion_reward = {
+		}
+	}
+	###优先重建生产合作社
+	focus = {
+		id = GRE_rebuild_cooperative_network
+		icon = GFX_GRE_rebuild_cooperative_network
+		relative_position_id = GRE_calmdown_workers_onstrike
+		x = 4
+		y = 0
+		cost = 4
+		mutually_exclusive = {
+			focus = GRE_calmdown_workers_onstrike
+		}
+		completion_reward = {
+		}
+	}
+	###扩展职业培训
+	focus = {
+		id = GRE_expand_vocational_training
+		icon = GFX_GRE_expand_vocational_training
+		relative_position_id = GRE_rebuild_cooperative_network
+		x = -1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = GRE_rebuild_cooperative_network
+		}
+		completion_reward = {
+		}
+	}
+	###缩减劳工待遇
+	focus = {
+		id = GRE_cutdown_labour_welfare
+		icon = GFX_GRE_cutdown_labour_welfare
+		relative_position_id = GRE_rebuild_cooperative_network
+		x = 1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = GRE_rebuild_cooperative_network
+		}
+		completion_reward = {
+		}
+	}
+	###稳固产业地位
+	focus = {
+		id = GRE_solidify_industry_base
+		icon = GFX_GRE_solidify_industry_base
+		relative_position_id = GRE_rebuild_cooperative_network
+		x = 0
+		y = 2
+		cost = 4
+		prerequisite = {
+			focus = GRE_expand_vocational_training
+		}
+		prerequisite = {
+			focus = GRE_cutdown_labour_welfare
+		}
+		completion_reward = {
+		}
+	}
+	###社工党十二大
+	focus = {
+		id = GRE_SEKE_twelfth_general_congress
+		icon = GFX_GRE_SEKE_twelfth_general_congress
+		relative_position_id = GRE_rebuild_cooperative_network
+		x = -2
+		y = 3
+		cost = 4
+		prerequisite = {
+			focus = GRE_calmdown_angry_workers
+			focus = GRE_solidify_industry_base
+		}
+		completion_reward = {
+		}
+	}
+}

@@ -1,0 +1,31 @@
+add_namespace = INS_event
+add_namespace = INS_news_event
+#test
+country_event = {
+	id = INS_event.114514
+	title = INS_event.114514.t
+	desc = INS_event.114514.d
+	picture = GFX_PUM_game_2
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = INS_event.114514.a
+	}
+}
+
+#望加锡战争
+news_event = {
+	id = INS_news_event.1
+	title = INS_news_event.1.t
+	desc = INS_news_event.1.d
+	picture = GFX_news_event_Vienna_Spring
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = INS_news_event.1.a
+	}
+}

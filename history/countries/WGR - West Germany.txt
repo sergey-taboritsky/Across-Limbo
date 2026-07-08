@@ -1,0 +1,48 @@
+﻿capital = 268
+#oob = "WGR_1936_nsb"
+# Starting tech
+
+set_research_slots = 4
+set_convoys = 50
+set_stability = 0.7
+#选举变量
+set_variable = {
+	WGR_central_party = 0
+}
+set_variable = {
+	WGR_social_democrats = 0
+}
+set_variable = {
+	WGR_National_People = 0
+}
+set_variable = {
+	WGR_State_Socialist_Workers_Party = 0
+}
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1933.1.1"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+set_popularities = {
+	Social_democracy = 15
+	Liberalism = 25
+	Conservatism = 30
+	Absolutism = 5
+	Authoritarianism = 15
+	Nationalism = 10
+}
+recruit_character = WGR_Gottfried_Reinhold_Treviranus
+recruit_character = WGR_Erwin_Rommel
+recruit_character = WGR_Erich_von_Manstein
+recruit_character = WGR_Gerd_von_Rundstedt
+add_ideas = {
+	moscow_aligned_nation
+	WGR_Fragile_peace
+	WGR_Bavarian_independence_crisis
+	WGR_A_weak_economy
+	WGR_Corrupt_Wehrmacht
+	WGR_Take_advantage_of_the_Freikorps
+	WGR_A_government_that_is_not_trusted
+}

@@ -1,0 +1,16 @@
+characters = {
+	MEX_Vincente_Toledano = {
+		name = MEX_Vincente_Toledano
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MEX_Vincente_Toledano
+			}
+		}
+		country_leader = {
+			desc = MEX_Vincente_Toledano_desc
+			ideology = Centralised_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+}

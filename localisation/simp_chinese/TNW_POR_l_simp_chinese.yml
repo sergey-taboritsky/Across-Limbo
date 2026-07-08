@@ -1,0 +1,28 @@
+﻿l_simp_chinese:
+#人物
+ POR_Jose_Carlos_Rates: "何塞·卡洛斯·拉特斯"
+ POR_Jose_Carlos_Rates_desc: ""
+
+#民族精神
+ 
+#政党名字
+ POR_communist_party: "葡共盟"
+ POR_communist_party_long: "葡萄牙共产主义联盟"
+ POR_syndicalism_party: "-"
+ POR_syndicalism_party_long: "-"
+ POR_socialism_party: "-"
+ POR_socialism_party_long: "-"
+ POR_Social_democracy_party: ""
+ POR_Social_democracy_party_long: "-"
+ POR_Liberalism_party: "-"
+ POR_Liberalism_party_long: "-"
+ POR_Conservatism_party: "-"
+ POR_Conservatism_party_long: "-"
+ POR_Authoritarianism_party: "-"
+ POR_Authoritarianism_party_long: "-"
+ POR_Absolutism_party: "-"
+ POR_Absolutism_party_long: "-"
+ POR_Nationalism_party: "-"
+ POR_Nationalism_party_long: "-"
+
+#事件

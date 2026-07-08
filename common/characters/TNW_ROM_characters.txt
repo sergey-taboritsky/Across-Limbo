@@ -1,0 +1,20 @@
+characters = {
+	####康斯坦丁·阿尔杰托亚努
+	ROM_Constantin_Argetoianu = {
+		name = ROM_Constantin_Argetoianu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ROM_Constantin_Argetoianu
+			}
+		}
+		country_leader = {
+			desc = ROM_Constantin_Argetoianu_desc
+			ideology = one_party_democracy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			    HUN_Sword_wielder
+			}
+		}
+	}
+}

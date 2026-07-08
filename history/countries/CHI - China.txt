@@ -1,0 +1,270 @@
+﻿capital = 613 # Nanjing
+#oob = "CHI_1936"
+
+recruit_character = CHI_Zhang_Zhiben
+recruit_character = CHI_Li_Zongren
+recruit_character = CHI_Chen_Lifu
+recruit_character = CHI_Huang_Shaohong
+recruit_character = CHI_He_Chengjun
+recruit_character = CHI_Xiong_Shihui
+recruit_character = CHI_Gan_Naiguang
+recruit_character = CHI_Rao_Shushi
+recruit_character = CHI_Yan_Yangchu
+
+recruit_character = CHI_Hu_Ziang
+recruit_character = CHI_Huang_Xuchu
+recruit_character = CHI_Gu_Zhenglun
+recruit_character = CHI_Cheng_Qian
+recruit_character = CHI_Huang_Qihan
+recruit_character = CHI_Wu_Tiecheng
+recruit_character = CHI_Chen_Shaokuan
+recruit_character = CHI_Cheng_Tianfang
+recruit_character = CHI_Wu_Guozhen
+recruit_character = CHI_Wu_Zhongxin
+recruit_character = CHI_Pan_Hannian
+
+recruit_character = CHI_Xia_Wei
+recruit_character = CHI_Xu_Qiming
+recruit_character = CHI_Mo_Shujie
+recruit_character = CHI_He_Weizhen
+recruit_character = CHI_Gan_Lichu
+recruit_character = CHI_Kan_Weiyong
+recruit_character = CHI_Wei_Yongcheng
+recruit_character = CHI_Wei_Yunsong
+recruit_character = CHI_Zhang_Gan
+recruit_character = CHI_Zhong_Zupei
+recruit_character = CHI_Wei_Lihuang
+recruit_character = CHI_Li_Pinxian
+recruit_character = CHI_Fan_Hanjie
+recruit_character = CHI_Tan_Lianfang
+recruit_character = CHI_Zhang_Yichun
+recruit_character = CHI_Guan_Linzheng
+recruit_character = CHI_Wang_Jingjiu
+recruit_character = CHI_Tan_Heyi
+recruit_character = CHI_Du_Yuming
+recruit_character = CHI_Zheng_Dongguo
+recruit_character = CHI_Huang_Jie
+recruit_character = CHI_Chen_Mingren
+recruit_character = CHI_Liao_Yaoxiang
+recruit_character = CHI_Liu_Yuzhang
+recruit_character = CHI_Xu_Tingyao
+recruit_character = CHI_Hu_Lian
+recruit_character = CHI_Li_Mi
+recruit_character = CHI_Liu_Fei
+recruit_character = CHI_Zhong_Ji
+recruit_character = CHI_Luo_Qi
+recruit_character = CHI_Shi_Jue
+recruit_character = CHI_Guo_Jiqiao
+recruit_character = CHI_Zhong_Bin
+recruit_character = CHI_Fang_Tian
+recruit_character = CHI_Chen_Daqing
+recruit_character = CHI_Gao_Kuiyuan
+recruit_character = CHI_Li_Xingshu
+recruit_character = CHI_Su_Zuxin
+recruit_character = CHI_Li_Benyi
+recruit_character = CHI_Yin_Chenggang
+recruit_character = CHI_Mo_Dehong
+recruit_character = CHI_Hai_Jingqiang
+recruit_character = CHI_Zhang_Zhen
+recruit_character = CHI_Xu_Zuyi
+recruit_character = CHI_Sun_Liren
+
+recruit_character = CHI_Song_Qingling
+recruit_character = CCHI_Deng_Yanda
+recruit_character = CHI_Chen_Mingshu
+recruit_character = CHI_Dong_Biwu
+recruit_character = CHI_Fang_Zhimin
+recruit_character = CHI_Yan_Xishan_leader
+recruit_character = CHI_Zhang_Fakui
+recruit_character = CHI_Zhang_Guotao
+set_stability = 0.2
+set_war_support = 0.5
+
+set_autonomy = {
+	target = MEN
+	autonomous_state = autonomy_sea_warlord_subject
+}
+
+set_autonomy = {
+	target = SCN
+	autonomous_state = autonomy_sea_warlord_subject
+}
+
+set_autonomy = {
+	target = YUN
+	autonomous_state = autonomy_sea_warlord_subject
+}
+
+set_autonomy = {
+	target = TIB
+	autonomous_state = autonomy_sea_warlord_subject
+}
+
+set_autonomy = {
+	target = XSM
+	autonomous_state = autonomy_sea_warlord_subject
+}
+
+set_autonomy = {
+	target = NHJ
+	autonomous_state = autonomy_sea_warlord_subject
+}
+
+set_autonomy = {
+	target = SIK
+	autonomous_state = autonomy_sea_warlord_subject
+}
+
+set_autonomy = {
+	target = MAN
+	autonomous_state = autonomy_sea_warlord_subject
+}
+
+set_autonomy = {
+	target = PRC
+	autonomous_state = autonomy_sea_warlord_subject
+}
+
+set_autonomy = {
+	target = XKN
+	autonomous_state = autonomy_sea_warlord_subject
+}
+
+add_ideas = {
+	chinese_constitutionalism
+	chinese_bureaucratic_economy
+	chinese_federalism
+
+	CHI_Huang_Shaohong_hog
+	CHI_He_Chengjun_theorist
+	CHI_Xiong_Shihui_advisor
+	CHI_Gan_Naiguang_advisor
+	CHI_Rao_Shushi_advisor
+	CHI_Yan_Yangchu_advisor
+
+	CHI_misclaw_Constitution_ROC
+	CHI_misclaw_Province_Constitution
+	CHI_misclaw_SinoAmerica_Friendship
+	CHI_misclaw_Revolutionary_Diplomacy
+	CHI_misclaw_CrimeLaw_100
+	china_rkmt_aligned
+
+	TNW_CHI_constitutional_transition
+	TNW_CHI_untamed_kuomintang
+	TNW_CHI_april_accords
+	TNW_CHI_leftists_split
+	TNW_CHI_stalled_talks_with_russia
+	TNW_CHI_economic_ruin_countdown
+}
+
+set_country_flag = has_second_leader_flag
+set_country_flag = CHI_Li_Zongren_leading_flag
+
+set_variable = {
+	CHI_army_faction_1_framevar = 2
+}
+set_variable = {
+	CHI_army_position_1_framevar = 2
+}
+set_country_flag = CHI_gendarmie_chief_Liu_Shiyi_flag
+set_country_flag = CHI_supply_chief_Chen_Liangzuo_flag
+
+#set_country_flag = CHI_civil_war_preparation_active_flag
+
+save_global_event_target_as = WTT_current_china_leader
+set_convoys = 40
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1946.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Authoritarianism = 3
+	communist = 9
+	syndicalism = 6
+	Social_democracy = 6
+	socialism = 12
+	Liberalism = 4
+	Conservatism = 43
+	Absolutism = 9
+	Nationalism = 8
+}
+
+add_dynamic_modifier = {
+	modifier = TNW_CHI_national_armed_forces
+}
+add_dynamic_modifier = {
+	modifier = TNW_CHI_state_of_economy
+}
+
+set_variable = {
+	TNW_CHI_army_attack_factor = 0
+}
+set_variable = {
+	TNW_CHI_breakthrough_factor = 0
+}
+set_variable = {
+	TNW_CHI_experience_loss_factor = 0.1
+}
+set_variable = {
+	TNW_CHI_out_of_supply_factor = 0.1
+}
+set_variable = {
+	TNW_CHI_land_reinforce_rate = -0.02
+}
+set_variable = {
+	TNW_CHI_army_org_factor = -0.1
+}
+set_variable = {
+	TNW_CHI_army_speed_factor = -0.1
+}
+set_variable = {
+	TNW_CHI_org_loss_when_moving = 0.1
+}
+set_variable = {
+	TNW_CHI_army_defence_factor = -0.05
+}
+set_variable = {
+	TNW_CHI_special_forces_cap = -0.1
+}
+set_variable = {
+	TNW_CHI_recon_factor = -0.03
+}
+set_variable = {
+	TNW_CHI_dig_in_speed_factor = -0.15
+}
+
+set_variable = {
+	TNWCHI_army_faction_baoding_var = 65
+}
+set_variable = {
+	TNWCHI_army_faction_whampoa_var = 15
+}
+set_variable = {
+	TNWCHI_army_faction_guangxi_var = 10
+}
+set_variable = {
+	TNWCHI_army_faction_designer_var = 5
+}
+set_variable = {
+	TNWCHI_army_faction_armychief_var = 2
+}
+set_variable = {
+	TNWCHI_army_faction_gendarmychief_var = 1
+}
+set_variable = {
+	TNWCHI_army_faction_supplychief_var = 2
+}
+
+give_guarantee = VIN
+
+country_event = { id = CHI_event.1 days = 5 }
+
+set_variable = {
+	TNW_Literacy_level_value = 25
+}
+set_variable = {
+	TNW_Literacy_level_monthly_value = 50
+}

@@ -1,0 +1,10 @@
+spriteTypes = {
+
+	
+	spriteType = {
+		name = "GFX_SOV_faction"
+		textureFile = "/gfx/TNW_scripted_gui/TNW_sov/SOV_faction.dds"
+	}
+
+
+}

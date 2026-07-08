@@ -1,0 +1,28 @@
+characters = {
+	CHI_Wang_Weizhou = {
+		name = CHI_Wang_Weizhou
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Wang_Weizhou
+			}
+		}
+		country_leader={
+			ideology= Popular_Front
+			expire="1936.1.1"
+		}
+		
+	}
+	CHI_Wu_Yuzhang = {
+		name = CHI_Wu_Yuzhang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Wu_Yuzhang
+			}
+		}
+		country_leader={
+			ideology= Marxism
+			expire="1936.1.1"
+		}
+		
+	}
+}

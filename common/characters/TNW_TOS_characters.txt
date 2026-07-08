@@ -1,0 +1,21 @@
+characters = {
+	TOS_Ferdinand_VI = {
+		name = TOS_Ferdinand_VI
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TOS_Ferdinand_VI
+			}
+		}
+		country_leader = {
+			desc = TOS_Ferdinand_VI_desc
+			ideology = Social_Liberalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+				TOS_Great_free_and_just_prince
+			}
+			
+		}
+		
+	}
+}

@@ -1,0 +1,23 @@
+﻿capital = 37
+
+recruit_character = DEN_Frederick_IX
+recruit_character = DEN_Alsing_Andersen
+
+set_convoys = 55
+
+set_research_slots = 3
+set_stability = 0.9
+set_war_support = 0.1
+
+set_politics = {
+	ruling_party = Social_democracy
+	last_election = "1933.1.24"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Social_democracy = 100
+}
+
+add_ideas = {
+}

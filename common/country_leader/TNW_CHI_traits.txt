@@ -1,0 +1,11 @@
+leader_traits = {
+	#进退维谷的大总统
+    CHI_great_president_who_isin_adilemma = {
+		random = no
+		political_advisor_cost_factor = 0.15
+		party_popularity_stability_factor = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

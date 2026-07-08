@@ -1,0 +1,49 @@
+﻿capital = 361
+
+#oob = "USA_1936"
+
+starting_train_buffer = 5
+
+
+set_research_slots = 4
+set_stability = 0.75
+set_war_support = 0
+add_command_power = 20
+
+
+set_convoys = 700
+
+
+set_politics = {
+	ruling_party = syndicalism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 12
+	syndicalism = 37
+	socialism = 25
+	Social_democracy = 18
+	Liberalism = 5
+	Conservatism = 0
+	Authoritarianism = 3
+	Absolutism = 0
+	Nationalism = 0
+}
+
+recruit_character = USA_Elizabeth_Gurley_Flynn
+
+add_ideas = {
+	communal_federation
+	anarchist_economy
+	united_federation
+	socialist_leaning
+	
+	phalanstere_aligned_nation
+	undisturbed_isolation
+	great_depression
+	disarmed_nation
+	free_trade
+	home_of_the_free
+}

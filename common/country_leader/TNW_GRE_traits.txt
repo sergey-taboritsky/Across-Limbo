@@ -1,0 +1,12 @@
+leader_traits = {
+	#希腊的缔造者
+    GRE_Maker_of_Greece = {
+		random = no
+	    stability_factor = 0.1
+		surrender_limit = 0.1
+		political_power_gain = 1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

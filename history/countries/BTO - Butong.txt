@@ -1,0 +1,34 @@
+﻿capital = 271
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.3
+add_ideas = {
+}
+
+set_convoys = 30
+
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	Liberalism = 5
+	Conservatism = 76
+	Absolutism = 8
+	Authoritarianism = 7
+	Nationalism = 4
+}
+
+#recruit_character = INS_Muhammad_Falihi
+create_country_leader = {
+	name = INS_Muhammad_Falihi
+	picture = GFX_portrait_large_INS_Muhammad_Falihi
+	desc = INS_Muhammad_Falihi_desc
+	ideology = Patriarchal_Conservatism
+	expire = "2022.10.20.1"
+	id = -1
+	traits = {}
+}

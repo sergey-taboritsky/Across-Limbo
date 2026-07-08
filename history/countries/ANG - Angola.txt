@@ -1,0 +1,16 @@
+﻿capital = 540
+
+set_convoys = 5
+
+recruit_character = ANG_Duarte_Nuno
+
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Absolutism = 100
+}

@@ -1,0 +1,56 @@
+spriteTypes = {
+	#超事件框
+	spriteType = {
+		name = "GFX_tiled_window_bigevent_border"
+		texturefile = "gfx/interface/super_events/tiles/tiled_window_bigevent_border.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SE_button"
+		texturefile = "gfx/interface/super_events/tiles/SE_button.dds"
+		transparencecheck = yes
+	}
+
+	#超事件图片
+	spriteType = {
+		name = "GFX_King_George_V_death"
+		texturefile = "gfx/interface/super_events/King_George_V_death.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_World_War_II"
+		texturefile = "gfx/interface/super_events/World_War_II.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Bolsheviks_marched_westward"
+		texturefile = "gfx/interface/super_events/Bolsheviks_marched_westward.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Third_Balkan_War"
+		texturefile = "gfx/interface/super_events/Bolsheviks_marched_westward.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Operation_Thunderstorm"
+		texturefile = "gfx/interface/super_events/Operation_Thunderstorm.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Nuke_Bomb"
+		texturefile = "gfx/interface/super_events/Nuke_Bomb.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SE_Turkish_Civil_War"
+		texturefile = "gfx/interface/super_events/Bolsheviks_marched_westward.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SE_Central_Plains_War"
+		texturefile = "gfx/interface/super_events/World_War_II.dds"
+		transparencecheck = yes
+	}
+}

@@ -1,0 +1,173 @@
+ideas = {
+	###杂项法律
+	misc_law_slot_0 = {
+		law = yes
+		use_list_view = yes
+		CHI_misclaw_Constitution_ROC = {
+			#宪法
+			available = {
+				always = no
+			}
+			visible = {
+				has_idea = CHI_misclaw_Constitution_ROC
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+	}
+	misc_law_slot_1 = {
+		law = yes
+		use_list_view = yes
+		CHI_misclaw_Province_Constitution = {
+			#省宪：第121条
+			available = {
+				always = no
+			}
+			visible = {
+				has_idea = CHI_misclaw_Province_Constitution
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+	}
+	misc_law_slot_2 = {
+		law = yes
+		use_list_view = yes
+		CHI_misclaw_SinoAmerica_Friendship = {
+			#中美盟约
+			available = {
+				always = no
+			}
+			visible = {
+				has_idea = CHI_misclaw_SinoAmerica_Friendship
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+	}
+	misc_law_slot_3 = {
+		law = yes
+		use_list_view = yes
+		CHI_misclaw_Revolutionary_Diplomacy = {
+			#革命外交
+			available = {
+				always = no
+			}
+			visible = {
+				has_idea = CHI_misclaw_Revolutionary_Diplomacy
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+	}
+	misc_law_slot_4 = {
+		law = yes
+		use_list_view = yes
+		CHI_misclaw_CrimeLaw_100 = {
+			#内乱罪
+			available = {
+				always = no
+			}
+			visible = {
+				has_idea = CHI_misclaw_CrimeLaw_100
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+	}
+	alignment_system = {
+		#
+		law = yes
+		use_list_view = yes
+		neutral_state = {
+			#中立地位
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		socialist_leaning = {
+			#社会主义阵营
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		syndicalist_aligned = {
+			#工团国际
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		communist_aligned = {
+			#共产国际
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		independent_socialist = {
+			#独立左翼
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		moscow_aligned = {
+			#俄罗斯阵营
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		china_rkmt_aligned = {
+			#国民党中国阵营
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		china_cdpl_aligned = {
+			#劳动党中国阵营
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+	}
+}

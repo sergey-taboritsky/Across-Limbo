@@ -1,0 +1,15 @@
+characters = {
+	TIB_Qoigyi_Gyaincain = {
+		name = TIB_Qoigyi_Gyaincain
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TIB_Qoigyi_Gyaincain
+			}
+		}
+		country_leader={
+			ideology= Tibet_theocracy
+			expire="1936.1.1"
+		}
+		
+	}
+}

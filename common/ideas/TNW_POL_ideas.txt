@@ -1,0 +1,57 @@
+ideas = {
+	country = {
+		#合法性：阴霾笼罩
+		POL_In_a_haze = {
+			picture = GFX_idea_POL_In_a_haze
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.35
+				political_power_cost = 0.5
+				surrender_limit = -0.2
+			}
+		}
+		#四分五裂的资产阶级政敌
+		POL_The_divided_political_enemies_of_the_bourgeoisie = {
+			picture = GFX_idea_POL_The_divided_political_enemies_of_the_bourgeoisie
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			stability_factor = 0.1
+			war_support_factor = 0.1
+			}
+		}
+		#军事高压
+		POL_Military_coercion = {
+			picture = GFX_idea_POL_Military_coercion
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.2
+				army_defence_factor = -0.1
+				stability_weekly = 0.002
+				Nationalism_drift = -0.1
+				custom_modifier_tooltip = POL_Military_coercion_text
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+			}
+		}
+		#苏联加盟国-波兰苏维埃
+		POL_Polish_Soviet = {
+			picture = GFX_idea_POL_Polish_Soviet
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+	}
+}

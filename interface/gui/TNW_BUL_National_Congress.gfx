@@ -1,0 +1,15 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_parliament_party_icon"
+		texturefile = "gfx/interface/gui/parliament_parties.png"
+		noOfFrames = 11
+	}
+	spriteType = {
+		name = "GFX_parliament_empty_button"
+		texturefile = "gfx/interface/gui/parliament_empty_button.png"
+	}
+	spriteType = {
+		name = "GFX_parliament_BUL_coat_of_arms"
+		texturefile = "gfx/interface/ideas/BUL_coat_of_arms.png"
+	}
+}

@@ -1,0 +1,15 @@
+characters = {
+	CHI_Tan_Haoming = {
+		name = CHI_Tan_Haoming
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Tan_Haoming
+			}
+		}
+		country_leader={
+			ideology= Junshen_government
+			expire="1936.1.1"
+		}
+		
+	}
+}

@@ -1,0 +1,10 @@
+SOV_Subvert_Britain = {
+	icon = GFX_decision_category_SOV_permanent_revolution
+	picture = GFX_decision_pic_SOV_Subvert_Britain
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+	}
+	priority = 10000
+}

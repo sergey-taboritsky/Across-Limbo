@@ -1,0 +1,93 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "TNW_CHI_army_Scripted_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 450 height= 670 }
+
+		iconType = {
+		    name ="CHI_army_faction_1"
+			spriteType = "GFX_CHI_army_factionicon_1"
+	    	position = { x= 39 y = 25 }
+	    	pdx_tooltip = "CHI_army_faction_1_tt"
+			pdx_tooltip_delayed = "CHI_army_faction_1_delayed_tt"
+		}
+		iconType = {
+		    name ="CHI_army_faction_2"
+			spriteType = "GFX_CHI_army_factionicon_2"
+	    	position = { x= 142 y = 25 }
+	    	pdx_tooltip = "CHI_army_faction_2_tt"
+			pdx_tooltip_delayed = "CHI_army_faction_2_delayed_tt"
+		}
+		iconType = {
+		    name ="CHI_army_faction_3"
+			spriteType = "GFX_CHI_army_factionicon_3"
+	    	position = { x= 245 y = 25 }
+	    	pdx_tooltip = "CHI_army_faction_3_tt"
+			pdx_tooltip_delayed = "CHI_army_faction_3_delayed_tt"
+		}
+		iconType = {
+		    name ="CHI_army_faction_4"
+			spriteType = "GFX_CHI_army_factionicon_4"
+	    	position = { x= 348 y = 25 }
+	    	pdx_tooltip = "CHI_army_faction_4_tt"
+			pdx_tooltip_delayed = "CHI_army_faction_4_delayed_tt"
+		}
+		iconType = {
+		    name ="CHI_army_position_1"
+			spriteType = "GFX_CHI_army_positionicon_1"
+	    	position = { x= 65 y = 125 }
+	    	pdx_tooltip = "CHI_army_position_1_tt"
+			pdx_tooltip_delayed = "CHI_army_position_1_delayed_tt"
+		}
+		iconType = {
+		    name ="CHI_army_position_2"
+			spriteType = "GFX_CHI_army_positionicon_2"
+	    	position = { x= 194 y = 125 }
+	    	pdx_tooltip = "CHI_army_position_2_tt"
+			pdx_tooltip_delayed = "CHI_army_position_2_delayed_tt"
+		}
+		iconType = {
+		    name ="CHI_army_position_3"
+			spriteType = "GFX_CHI_army_positionicon_3"
+	    	position = { x= 322 y = 125 }
+	    	pdx_tooltip = "CHI_army_position_3_tt"
+			pdx_tooltip_delayed = "CHI_army_position_3_delayed_tt"
+		}
+		buttonType = {
+		    name ="CHI_army_reformbutton_1"
+			spriteType = "GFX_CHI_army_reformbuttonicon_1"
+	    	position = { x= 22 y = 225 }
+	    	pdx_tooltip = "CHI_army_reformbutton_1_tt"
+			pdx_tooltip_delayed = "CHI_army_reformbutton_1_delayed_tt"
+		}
+		buttonType = {
+		    name ="CHI_army_reformbutton_2"
+			spriteType = "GFX_CHI_army_reformbuttonicon_2"
+	    	position = { x= 108 y = 225 }
+	    	pdx_tooltip = "CHI_army_reformbutton_2_tt"
+			pdx_tooltip_delayed = "CHI_army_reformbutton_2_delayed_tt"
+		}
+		buttonType = {
+		    name ="CHI_army_reformbutton_3"
+			spriteType = "GFX_CHI_army_reformbuttonicon_3"
+	    	position = { x= 194 y = 225 }
+	    	pdx_tooltip = "CHI_army_reformbutton_3_tt"
+			pdx_tooltip_delayed = "CHI_army_reformbutton_3_delayed_tt"
+		}
+		buttonType = {
+		    name ="CHI_army_reformbutton_4"
+			spriteType = "GFX_CHI_army_reformbuttonicon_4"
+	    	position = { x= 280 y = 225 }
+	    	pdx_tooltip = "CHI_army_reformbutton_4_tt"
+			pdx_tooltip_delayed = "CHI_army_reformbutton_4_delayed_tt"
+		}
+		buttonType = {
+		    name ="CHI_army_reformbutton_5"
+			spriteType = "GFX_CHI_army_reformbuttonicon_5"
+	    	position = { x= 366 y = 225 }
+	    	pdx_tooltip = "CHI_army_reformbutton_5_tt"
+			pdx_tooltip_delayed = "CHI_army_reformbutton_5_delayed_tt"
+		}
+	}
+}

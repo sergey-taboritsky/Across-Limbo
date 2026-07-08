@@ -1,0 +1,92 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Agean"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Agean.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Albania"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Albania.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Bulgaria"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Bulgaria.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Dobrugea"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Dobrugea.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Greece"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Greece.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Illyria"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Illyria.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Kosovo"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Kosovo.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Macedonia"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Macedonia.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Moldavia"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Moldavia.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Montenegro"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Montenegro.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Nis"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Nis.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Romania"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Romania.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Serbia"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Serbia.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_South_Macedonia"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_South_Macedonia.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_TNW_Balkan_Powderkeg_Button_Thrace"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Balkan_Powderkeg/TNW_Balkan_Mapbutton_Thrace.png"
+		transparencecheck = yes
+		noOfFrames = 6
+	}
+}

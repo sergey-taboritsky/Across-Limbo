@@ -1,0 +1,32 @@
+capital = 271
+
+recruit_character = ETH_haile_selassie
+recruit_character = ETH_haile_selassie_gugsa
+recruit_character = ETH_alemework_beyene
+recruit_character = ETH_ras_imru_haile_selassie
+# Generals 
+recruit_character = ETH_seyoum_mengesha
+recruit_character = ETH_desta_damtew
+recruit_character = ETH_ras_kassa 
+# Political Advisors
+recruit_character = ETH_makonnen_endelkatchew
+# Military Advisors
+recruit_character = ETH_john_robinson
+
+
+set_convoys = 5
+
+
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Authoritarianism = 70
+	Nationalism = 20 
+	Liberalism = 5
+	communist = 5
+}

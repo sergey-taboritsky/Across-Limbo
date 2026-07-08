@@ -1,0 +1,15 @@
+characters = {
+	CHI_Lu_Yongxiang = {
+		name = CHI_Lu_Yongxiang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Lu_Yongxiang
+			}
+		}
+		country_leader={
+			ideology= Patriarchal_Conservatism
+			expire="1936.1.1"
+		}
+		
+	}
+}

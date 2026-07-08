@@ -1,0 +1,667 @@
+SD_build_pie_man = {
+	set_variable = {
+		var = This.SD_man_poor_pie_var #控制显示的变量
+		value = 0 
+	}
+	set_variable = {
+		var = This.SD_man_normal_pie_var #控制显示的变量
+		value = 0
+	}
+	set_variable = {
+		var = This.SD_man_rich_pie_var #控制显示的变量
+		value = 0
+	}
+
+	add_to_variable = {
+		var = This.SD_man_poor_pie_var
+		value = This.SD_man_poor_var #实际的财富等级比例
+	}
+	add_to_variable = {
+		var = This.SD_man_normal_pie_var
+		value = This.SD_man_normal_var #实际的财富等级比例
+	}
+	add_to_variable = {
+		var = This.SD_man_rich_pie_var
+		value = This.SD_man_rich_var #实际的财富等级比例
+	}
+
+	clamp_variable = {
+		var = This.SD_man_rich_pie_var
+		min = 0
+		max = 100
+	}
+
+	add_to_variable = {
+		var = This.SD_man_normal_pie_var
+		value = This.SD_man_rich_pie_var 
+	}
+	clamp_variable = {
+		var = This.SD_man_normal_pie_var
+		min = 0
+		max = 100
+	}
+
+	add_to_variable = {
+		var = This.SD_man_poor_pie_var
+		value = This.SD_man_normal_pie_var 
+	}
+	clamp_variable = {
+		var = This.SD_man_poor_pie_var
+		min = 0
+		max = 100
+	}
+
+}
+
+SD_add_man_from_develop = {
+	set_variable = {
+		var = This.SD_man_from_development_var
+		value = This.SD_state_development_var
+	}
+
+
+	if = {
+        limit = {
+            has_state_category = wasteland
+        }
+		divide_variable = {
+			var = This.SD_man_from_development_var
+			value = 4
+		}
+    }
+    else_if = {
+        limit = {
+            has_state_category = enclave
+        }
+		divide_variable = {
+			var = This.SD_man_from_development_var
+			value = 4
+		}
+    }
+    else_if = {
+        limit = {
+            has_state_category = tiny_island
+        }
+		divide_variable = {
+			var = This.SD_man_from_development_var
+			value = 4
+		}
+    }
+    else_if = {
+        limit = {
+            has_state_category = pastoral
+        }
+		add_to_variable = {
+			var = This.SD_man_from_development_var
+			value = 100
+		}
+		divide_variable = {
+			var = This.SD_man_from_development_var
+			value = 2
+		}
+    }
+    else_if = {
+        limit = {
+            has_state_category = small_island
+        }
+		add_to_variable = {
+			var = This.SD_man_from_development_var
+			value = 50
+		}
+		divide_variable = {
+			var = This.SD_man_from_development_var
+			value = 3
+		}
+    }
+    else_if = {
+        limit = {
+            has_state_category = rural
+        }
+		add_to_variable = {
+			var = This.SD_man_from_development_var
+			value = 200
+		}
+		divide_variable = {
+			var = This.SD_man_from_development_var
+			value = 2
+		}
+    }
+    else_if = {
+        limit = {
+            has_state_category = town
+        }
+		add_to_variable = {
+			var = This.SD_man_from_development_var
+			value = 300
+		}
+    }
+    else_if = {
+        limit = {
+            has_state_category = large_town
+        }
+		
+		multiply_variable = {
+			var = This.SD_man_from_development_var
+			value = 2
+		}
+		add_to_variable = {
+			var = This.SD_man_from_development_var
+			value = 300
+		}
+    }
+    else_if = {
+        limit = {
+            has_state_category = city
+        }
+		multiply_variable = {
+			var = This.SD_man_from_development_var
+			value = 2.5
+		}
+		add_to_variable = {
+			var = This.SD_man_from_development_var
+			value = 400
+		}
+    }
+    else_if = {
+        limit = {
+            has_state_category = large_city
+        }
+		multiply_variable = {
+			var = This.SD_man_from_development_var
+			value = 3
+		}
+		add_to_variable = {
+			var = This.SD_man_from_development_var
+			value = 500
+		}
+    }
+    else_if = {
+        limit = {
+            has_state_category = metropolis
+        }
+		multiply_variable = {
+			var = This.SD_man_from_development_var
+			value = 3.5
+		}
+		add_to_variable = {
+			var = This.SD_man_from_development_var
+			value = 600
+		}
+    }
+	else_if = {
+        limit = {
+            has_state_category = megalopolis
+        }
+		multiply_variable = {
+			var = This.SD_man_from_development_var
+			value = 4
+		}
+		add_to_variable = {
+			var = This.SD_man_from_development_var
+			value = 700
+		}
+    }
+	divide_variable = {
+		var = This.SD_man_from_development_var
+		value = 2000
+	}
+
+
+
+
+
+
+
+
+	if = {
+		limit = {
+			check_variable = {
+				var = This.SD_man_poor_var
+				value = 0
+				compare = greater_than
+			}
+		}
+		add_to_variable = {
+			var = This.SD_man_rich_var
+			value = This.SD_man_from_development_var
+		}
+		multiply_variable = {
+			var = This.SD_man_from_development_var
+			value = 2
+		}
+		subtract_from_variable = {
+			var = This.SD_man_poor_var
+			value = This.SD_man_from_development_var
+		}
+		add_to_variable = {
+			var = This.SD_man_normal_var
+			value = This.SD_man_from_development_var
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = This.SD_man_poor_var
+				value = 0
+				compare = equals
+			}
+		}
+		add_to_variable = {
+			var = This.SD_man_rich_var
+			value = This.SD_man_from_development_var
+		}
+		subtract_from_variable = {
+			var = This.SD_man_normal_var
+			value = This.SD_man_from_development_var
+		}
+	}
+
+
+
+
+}
+
+
+SD_cal_pie_var_man = {
+	#示例 原饼图比例为 50 30 20
+	#将最低层饼图比例加10 此时饼图比例为 60 30 20
+	clamp_variable = { #初始化当前饼图比例 限制变量范围
+		var = This.SD_man_poor_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = This.SD_man_normal_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = This.SD_man_rich_var
+		min = 0
+		max = 100
+	}
+
+	set_variable = { #将当前饼图比例相加
+		var = This.SD_man_pie_var
+		value = 0
+	}
+	add_to_variable = {
+		var = This.SD_man_pie_var
+		value = This.SD_man_poor_var
+	}
+	add_to_variable = {
+		var = This.SD_man_pie_var
+		value = This.SD_man_normal_var
+	}
+	add_to_variable = {
+		var = This.SD_man_pie_var
+		value = This.SD_man_rich_var
+	}
+	#此时用于计算的中间临时变量为 110
+
+	add_to_variable = { #计算出增加的饼图比列量
+		var = This.SD_man_pie_var 
+		value = -100
+	}
+	#此时用于计算的中间临时变量为 10
+	divide_variable = { #均分增加的饼图比列量
+		var = This.SD_man_pie_var 
+		value = 3
+	}
+	subtract_from_variable = { #将饼图比例减去均分后的增加量
+		var = This.SD_man_poor_var
+		value = This.SD_man_pie_var
+	}
+	subtract_from_variable = { 
+		var = This.SD_man_normal_var
+		value = This.SD_man_pie_var
+	}
+	subtract_from_variable = { 
+		var = This.SD_man_rich_var
+		value = This.SD_man_pie_var
+	}
+	#此时饼图比例为 56.6 26.6 16.6
+	#也就是说每次设定饼图单一比例变化只有2/3值会实际上作用于比例
+	clamp_variable = { #限制变量范围
+		var = This.SD_man_poor_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = This.SD_man_normal_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = This.SD_man_rich_var
+		min = 0
+		max = 100
+	}
+}
+
+SD_cal_man_modifier = {
+	set_variable = {
+		var = This.SD_man_modifier_var
+		value = 0
+	}
+	set_variable = {
+		var = This.SD_man_poor_modifier_var
+		value = 0
+	}
+	set_variable = {
+		var = This.SD_man_normal_modifier_var
+		value = This.SD_man_normal_var
+	}
+	set_variable = {
+		var = This.SD_man_rich_modifier_var
+		value = This.SD_man_rich_var
+	}
+	subtract_from_variable = {
+		var = This.SD_man_poor_modifier_var
+		value = This.SD_man_poor_var
+	}
+	
+	multiply_variable = {
+		var = This.SD_man_rich_modifier_var
+		value = 2
+	}
+
+	add_to_variable = {
+		var = This.SD_man_modifier_var
+		value = This.SD_man_poor_modifier_var
+	}
+	add_to_variable = {
+		var = This.SD_man_modifier_var
+		value = This.SD_man_normal_var
+	}
+	add_to_variable = {
+		var = This.SD_man_modifier_var
+		value = This.SD_man_rich_modifier_var
+	}
+
+	divide_variable = {
+		var = This.SD_man_modifier_var
+		value = 400
+	}
+
+}
+
+SD_build_pie_develop = {
+	set_variable = {
+		var = This.SD_state_developing_pie_var
+		value = 0
+	}
+	set_variable = {
+		var = This.SD_state_development_pie_var
+		value = This.SD_state_development_var
+	}
+	add_to_variable = {
+		var = This.SD_state_developing_pie_var
+		value = This.SD_state_development_var
+	}
+	add_to_variable = {
+		var = This.SD_state_developing_pie_var
+		value = This.SD_state_developing_var
+	}
+	subtract_from_variable = {
+		var = This.SD_state_undeveloped_var
+		value = This.SD_state_developing_var
+	}
+	clamp_variable = {
+		var = This.SD_state_developing_pie_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = This.SD_state_development_pie_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = This.SD_state_developing_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = This.SD_state_development_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = This.SD_state_undeveloped_var
+		min = 0
+		max = 100
+	}
+}
+
+SD_state_update = {
+	if = {
+        limit = {
+            has_state_category = wasteland
+        }
+        set_state_category = pastoral
+    }
+    else_if = {
+        limit = {
+            has_state_category = enclave
+        }
+        set_state_category = pastoral
+    }
+    else_if = {
+        limit = {
+            has_state_category = tiny_island
+        }
+        set_state_category = small_island
+    }
+    else_if = {
+        limit = {
+            has_state_category = pastoral
+        }
+        set_state_category = rural
+    }
+    else_if = {
+        limit = {
+            has_state_category = small_island
+        }
+        set_state_category = rural
+    }
+    else_if = {
+        limit = {
+            has_state_category = rural
+        }
+        set_state_category = town  
+    }
+    else_if = {
+        limit = {
+            has_state_category = town
+        }
+        set_state_category = large_town  
+    }
+    else_if = {
+        limit = {
+            has_state_category = large_town
+        }
+        set_state_category = city  
+    }
+    else_if = {
+        limit = {
+            has_state_category = city
+        }
+        set_state_category = large_city  
+    }
+    else_if = {
+        limit = {
+            has_state_category = large_city
+        }
+        set_state_category = metropolis  
+    }
+    else_if = {
+        limit = {
+            has_state_category = metropolis
+        }
+        set_state_category = megalopolis  
+    }
+}
+
+SD_develop_civilian_economy = {
+	if = {
+		limit = {
+			has_state_flag = in_civilian_economy
+		}
+		add_to_variable = {
+			var = This.SD_state_developing_var
+			value = -1
+		} 
+		clr_state_flag = in_civilian_economy
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = civilian_economy
+			}
+			# NOT = {
+			# 	has_state_flag = in_civilian_economy
+			# }
+		}
+		add_to_variable = {
+			var = This.SD_state_developing_var
+			value = 1
+		} 
+		set_state_flag = in_civilian_economy
+	}
+}
+SD_develop_low_economic_mobilisation = {
+	if = {
+		limit = {
+			has_state_flag = in_low_economic_mobilisation
+		}
+		add_to_variable = {
+			var = This.SD_state_developing_var
+			value = -0.5
+		} 
+		clr_state_flag = in_low_economic_mobilisation
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = low_economic_mobilisation
+			}
+			# NOT = {
+			# 	has_state_flag = in_low_economic_mobilisation
+			# }
+		}
+		add_to_variable = {
+			var = This.SD_state_developing_var
+			value = 0.5
+		} 
+		set_state_flag = in_low_economic_mobilisation
+	}
+}
+SD_develop_war_economy = {
+	if = {
+		limit = {
+			has_state_flag = in_war_economy
+		}
+		add_to_variable = {
+			var = This.SD_state_developing_var
+			value = 0.5
+		} 
+		clr_state_flag = in_war_economy
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = war_economy
+			}
+			# NOT = {
+			# 	has_state_flag = in_war_economy
+			# }
+		}
+		add_to_variable = {
+			var = This.SD_state_developing_var
+			value = -0.5
+		} 
+		set_state_flag = in_war_economy
+	}
+}
+SD_develop_tot_economic_mobilisation = {
+	if = {
+		limit = {
+			has_state_flag = in_tot_economic_mobilisation
+		}
+		add_to_variable = {
+			var = This.SD_state_developing_var
+			value = 1
+		} 
+		clr_state_flag = in_tot_economic_mobilisation
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = tot_economic_mobilisation
+			}
+			# NOT = {
+			# 	has_state_flag = in_tot_economic_mobilisation
+			# }
+		}
+		add_to_variable = {
+			var = This.SD_state_developing_var
+			value = -1
+		} 
+		set_state_flag = in_tot_economic_mobilisation
+	}
+}
+SD_develop_economy_modify = {
+	SD_develop_civilian_economy = yes
+	SD_develop_low_economic_mobilisation = yes
+	SD_develop_war_economy = yes
+	SD_develop_tot_economic_mobilisation = yes
+}
+SD_state_monthly_update = {
+	SD_develop_economy_modify = yes
+    add_to_variable = {
+		var = This.SD_state_development_var
+		value = This.SD_state_developing_var
+    } 
+    clamp_variable = {
+		var = This.SD_state_development_var
+		min = 0 
+		max = 100
+    }
+    if = {
+        limit = {
+			NOT = {
+				has_state_category = megalopolis
+			}
+			check_variable = {
+				var = This.SD_state_development_var
+				value = 100
+				compare = greater_than_or_equals
+			}
+        }
+        SD_state_update = yes
+        set_variable = {
+			var = This.SD_state_development_var
+			value = 0
+        }
+        set_variable = {
+			var = This.SD_state_undeveloped_var
+			value = 100
+        }
+    }
+    else_if = {
+        limit = {
+			has_state_category = megalopolis
+			check_variable = {
+				var = This.SD_state_development_var
+				value = 100
+				compare = greater_than_or_equals
+			}
+        }
+        set_variable = {
+			var = This.SD_state_developing_var
+			value = 0
+        }
+    } 
+    SD_build_pie_develop = yes
+}

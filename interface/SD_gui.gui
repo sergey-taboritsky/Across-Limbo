@@ -1,0 +1,252 @@
+guiTypes = {
+	containerWindowType = {
+		name = "State_development_open"
+		position = { x = 400 y = -36 }
+		orientation = upper_left
+
+		buttonType = {
+			name = "State_development_open_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = GFX_buildings_strip
+			pdx_tooltip = "SD_button_tooltip"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			shortcut = "ctrl+s"
+		}
+
+	}
+	containerWindowType = {
+		name = "State_development_gui"
+		orientation = upper_left
+		position = { x= -461 y= 5 }
+		show_position = { x = 461 y = 5 }
+		
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 400
+
+		size = {
+			width = 460
+			height = 540
+		}
+
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+		buttonType = {
+			name = "State_development_close_button"
+			position = { x = -43 y = 10 }
+			orientation = UPPER_RIGHT
+			quadTextureSprite = GFX_closebutton
+			pdx_tooltip = "SD_button_tooltip"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			shortcut = "ctrl+s"
+		}
+
+		instantTextboxType = {
+			name = "SD_state_type"
+			position = { x= 95 y = 20 }
+			font = "hoi_36header"
+			text = "[This.GETNAME] [SD_state_type_text]"
+			format = centre
+			maxWidth = 260
+			maxHeight = 40
+		}
+		containerWindowType = {			#人口财富
+			name = SD_man_info
+			position = { x = 0 y = 0 }
+			instantTextboxType = {
+				name = "SD_manpower_text"
+				position = { x= -10 y = 200 }
+				font = hoi_20bs
+				text = "SD_manpower_text"
+				format = centre
+				maxWidth = 260
+				maxHeight = 400
+			}
+			buttonType = {
+				name = "SD_man_action_level_up_button"
+				position = { x = 80 y = 300 }
+				quadTextureSprite = GFX_button_123x34
+				buttonText = "SD_Distribute_benefits_button_name"
+				buttonFont = "hoi_20b"
+				pdx_tooltip = "SD_man_DB_button_tooltip"
+				clicksound = click_ok
+			}
+			iconType = {
+				name = "SD_man_action_button_colour_bg_0"
+				position = { x = 60 y = 310 }
+				spriteType = GFX_pol_party_colour_bg
+			}
+			iconType = {
+				name = "SD_man_action_button_colour_0"
+				position = { x = 64 y = 314 }
+				spriteType = GFX_SD_action_colour
+			}
+
+
+			buttonType = {
+				name = "SD_man_action_Requisition_factory_button"
+				position = { x = 80 y = 350 }
+				quadTextureSprite = GFX_button_123x34
+				buttonText = "SD_Requisition_factory_button_name"
+				buttonFont = "hoi_20b"
+				pdx_tooltip = "SD_man_RF_button_tooltip"
+				clicksound = click_ok
+			}
+			iconType = {
+				name = "SD_man_action_button_colour_bg_1"
+				position = { x = 60 y = 360 }
+				spriteType = GFX_pol_party_colour_bg
+			}
+			iconType = {
+				name = "SD_man_action_button_colour_1"
+				position = { x = 64 y = 364 }
+				spriteType = GFX_SD_action_colour
+			}
+
+
+
+
+
+			containerWindowType = {
+				name = SD_man_info_pie 
+				position = { x= 120 y = 80 }
+
+
+				iconType = {
+					name = "SD_manpower_poor"
+					position = { x= 0 y = 0 }
+					quadTextureSprite = "GFX_SD_red_progress"
+				}
+				iconType = {
+					name = "SD_manpower_normal"
+					position = { x= 0 y = 0 }
+					quadTextureSprite = "GFX_SD_yellow_progress"
+				}
+				iconType = {
+					name = "SD_manpower_rich"
+					position = { x= 0 y = 0 }
+					quadTextureSprite = "GFX_SD_green_progress"
+				}
+				iconType = {
+					name = "SD_manpower_icon_overlay"
+					position = { x= -50 y = -5 }
+					spriteType = GFX_pol_piechart_overlay
+					scale = 1.45
+				}
+			}
+		}
+
+		containerWindowType = {			#地区发展建设
+			name = SD_state_development_info
+			position = { x = 0 y = 0 }
+			instantTextboxType = {
+				name = "SD_state_development_text"
+				position = { x = 200 y = 200 }
+				font = hoi_20bs
+				text = "SD_state_development_text"
+				format = centre
+				maxWidth = 260
+				maxHeight = 400
+			}
+
+			buttonType = {
+				name = "SD_state_action_level_up_button"
+				position = { x = 280 y = 300 }
+				quadTextureSprite = GFX_button_123x34
+				buttonText = "SD_Invest_Development_button_name"
+				buttonFont = "hoi_20b"
+				pdx_tooltip = "SD_state_ID_button_tooltip"
+				clicksound = click_ok
+			}
+			iconType = {
+				name = "SD_state_action_button_colour_bg_0"
+				position = { x = 260 y = 310 }
+				spriteType = GFX_pol_party_colour_bg
+			}
+			iconType = {
+				name = "SD_state_action_button_colour_0"
+				position = { x = 264 y = 314 }
+				spriteType = GFX_SD_action_colour
+			}
+
+
+			buttonType = {
+				name = "SD_state_action_Invest_Construction_button"
+				position = { x = 280 y = 350 }
+				quadTextureSprite = GFX_button_123x34
+				buttonText = "SD_Invest_Construction_button_name"
+				buttonFont = "hoi_20b"
+				pdx_tooltip = "SD_state_IC_button_tooltip"
+				pdx_disabled_tooltip_delayed = "SD_state_IC_button_tooltip_disabled"
+				clicksound = click_ok
+			}
+			iconType = {
+				name = "SD_state_action_button_colour_bg_1"
+				position = { x = 260 y = 360 }
+				spriteType = GFX_pol_party_colour_bg
+			}
+			iconType = {
+				name = "SD_state_action_button_colour_1"
+				position = { x = 264 y = 364 }
+				spriteType = GFX_SD_action_colour
+			}
+
+			buttonType = {
+				name = "SD_state_action_Exploit_Resources_button"
+				position = { x = 280 y = 400 }
+				quadTextureSprite = GFX_button_123x34
+				buttonText = "SD_Exploit_Resources_button_name"
+				buttonFont = "hoi_20b"
+				pdx_tooltip = "SD_state_ER_button_tooltip"
+				clicksound = click_ok
+			}
+			iconType = {
+				name = "SD_state_action_button_colour_bg_2"
+				position = { x = 260 y = 410 }
+				spriteType = GFX_pol_party_colour_bg
+			}
+			iconType = {
+				name = "SD_state_action_button_colour_2"
+				position = { x = 264 y = 414 }
+				spriteType = GFX_SD_action_colour
+			}
+
+
+
+
+
+			containerWindowType = {
+				name = SD_development_info_pie 
+
+				position = { x= 320 y = 80 }
+				iconType = {
+					name = "SD_state_undeveloped_icon"
+					position = { x= 0 y = 0 }
+					quadTextureSprite = "GFX_SD_red_progress"
+				}
+				iconType = {
+					name = "SD_state_developing_icon"
+					position = { x= 0 y = 0 }
+					quadTextureSprite = "GFX_SD_yellow_progress"
+				}
+				iconType = {
+					name = "SD_state_developed_icon"
+					position = { x= 0 y = 0 }
+					quadTextureSprite = "GFX_SD_green_progress"
+				}
+				iconType = {
+					name = "SD_manpower_icon_overlay"
+					position = { x= -50 y = -5 }
+					spriteType = GFX_pol_piechart_overlay
+					scale = 1.45
+				}
+			}
+		}
+
+	}
+}

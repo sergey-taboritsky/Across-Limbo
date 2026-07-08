@@ -1,0 +1,59 @@
+scripted_gui = {
+	TNW_CHI_army_Scripted_GUI = {
+		context_type = decision_category
+		window_name = "TNW_CHI_army_Scripted_GUI"
+
+		properties = {
+			CHI_army_position_1 = {
+				frame = CHI_army_position_1_framevar
+			}
+			CHI_army_faction_1 = {
+				frame = CHI_army_faction_1_framevar
+			}
+		}
+		effects = {
+			CHI_army_reformbutton_1_click  = {
+                set_country_flag = CHI_army_reformbutton_1_clicked_flag
+
+				clr_country_flag = CHI_army_reformbutton_2_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_3_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_4_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_5_clicked_flag
+			}
+			CHI_army_reformbutton_2_click  = {
+                set_country_flag = CHI_army_reformbutton_2_clicked_flag
+
+				clr_country_flag = CHI_army_reformbutton_1_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_3_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_4_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_5_clicked_flag
+			}
+			CHI_army_reformbutton_3_click  = {
+                set_country_flag = CHI_army_reformbutton_3_clicked_flag
+
+				clr_country_flag = CHI_army_reformbutton_2_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_1_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_4_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_5_clicked_flag
+			}
+			CHI_army_reformbutton_4_click  = {
+                set_country_flag = CHI_army_reformbutton_4_clicked_flag
+
+				clr_country_flag = CHI_army_reformbutton_2_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_3_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_1_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_5_clicked_flag
+			}
+			CHI_army_reformbutton_5_click  = {
+                set_country_flag = CHI_army_reformbutton_5_clicked_flag
+
+				clr_country_flag = CHI_army_reformbutton_2_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_3_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_4_clicked_flag
+				clr_country_flag = CHI_army_reformbutton_1_clicked_flag
+			}
+		}
+		triggers = {
+		}
+	}
+}

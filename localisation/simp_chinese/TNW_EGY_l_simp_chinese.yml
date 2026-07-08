@@ -1,0 +1,70 @@
+﻿l_simp_chinese:
+
+#国名
+ EGY_socialist_republic: "埃及社会主义共和国"
+ EGY_socialist_republic_DEF: "埃及社会主义共和国"
+ EGY_socialist_republic_ADJ: "埃及"
+ EGY_socialist_UAR: "阿拉伯民主共和国联邦"
+ EGY_socialist_UAR_DEF: "阿拉伯民主共和国联邦"
+ EGY_socialist_UAR_ADJ: "阿拉伯"
+
+#政党
+ EGY_communist_party: "民族解放工人委员会"
+ EGY_communist_party_long: "民族解放工人委员会-工人阶级政治机构(Lajnat al-'Ummāl lil-Taḥrīr al-Qawmī - al-Hay'ah as-Siyāsīyah liṭ-Ṭabaqah al-'Āmmilah)"
+ EGY_syndicalism_party: "人民解放先锋队"
+ EGY_syndicalism_party_long: "人民解放先锋队(Aṭ-Ṭalīʿah ash-Shaʿbīyah lil-Taḥrīr)"
+ EGY_socialism_party: "伊斯科拉"
+ EGY_socialism_party_long: "马克思主义研究小组-伊斯科拉(Iskra - ash-Sharara)"
+ EGY_Social_democracy_party: "埃及社会民主党"
+ EGY_Social_democracy_party_long: "埃及社会民主党(Al-Ḥizb ad-Dīmuqrāṭī al-Ijtimāʿī)"
+ EGY_Liberalism_party: "立宪自由党"
+ EGY_Liberalism_party_long: "立宪自由党(Ḥizb al-Aḥrār al-Dustūriyyīn)"
+ EGY_Conservatism_party: "华夫脱党"
+ EGY_Conservatism_party_long: "华夫脱党(Ḥizb al-Wafd)"
+ EGY_Authoritarianism_party: "复兴党 - 埃及支部"
+ EGY_Authoritarianism_party_long: "阿拉伯复兴社会党(Ḥizb al-Ba‘th al-'Arabī al-Ishtirākī)"
+ EGY_Absolutism_party: "埃及人民革命委员会"
+ EGY_Absolutism_party_long: "埃及人民革命委员会(Lajnat Thawrat ash-Sha‘b al-Maṣrī)"
+ EGY_Nationalism_party: "青年埃及党"
+ EGY_Nationalism_party_long: "青年埃及党(Miṣr al-Fatāh)"
+
+ EGY_DemLabour_party: "埃及民主工人党"
+ EGY_DemLabour_party_long: "埃及民主工人党(Ḥizb al-‘Ummāl ad-Dīmuqrāṭī al-Maṣrī)"
+ EGY_united_CPE_party: "埃及联合共产党"
+ EGY_united_CPE_party_desc: "埃及联合共产党(Al-Ḥizb ash-Shuyūʿī al-Maṣrī al-Muwaḥḥad)"
+ 
+#人物
+ EGY_Henri_Curiel: "亨利·库里尔" #民族解放委员会
+ EGY_Henri_Curiel_desc: ""
+ EGY_Kamal_Abd_al_Halim: "卡迈勒·阿卜杜勒-哈利姆" #民族解放委员会
+ EGY_Kamal_Abd_al_Halim_desc: ""
+ EGY_Hillel_Schwartz: "希里尔·施瓦茨" #伊斯科拉
+ EGY_Hillel_Schwartz_desc: ""
+ EGY_Youssef_Darwish: "尤塞夫·达尔维什" #人民解放先锋队 - 工农共
+ EGY_Youssef_Darwish_desc: ""
+ EGY_Mohammed_Naguib: "穆罕默德·纳吉布" #军政府
+ EGY_Mohammed_Naguib_desc: ""
+ EGY_Ibrahim_Shoukri: "易卜拉辛·舒克里" #社会党
+ EGY_Ibrahim_Shoukri_desc: ""
+
+
+#决议
+
+#民族精神
+ EGY_namely_socialism: "名义社会主义"
+ EGY_namely_socialism_desc: "随着沙漠战争以僵持告终，阵亡士兵亲属们的怒火吞没了脆弱的王国，在伦敦与巴黎的支持下，埃及军队联合各左翼发动“革命”，建立了埃及人民共和国。\n\n然而，尽管法国方面持续不断地施压要求军政府交权给左翼政治家，但共和国如今仍是军队独揽大权，承诺中的社会主义也从未带来根本层面的社会进步。"
+ EGY_across_the_canals: "运河对岸"
+ EGY_across_the_canals_desc: "沙漠战争初期，埃及军队曾成功占领西奈半岛，甚至有望巩固对叙利亚的控制。然而，奥斯曼帝国最终动员起来，将埃及军队推回苏伊士运河以西。直到如今，对运河东岸领土的觊觎仍是埃及政界与民间公认的国家要务。"
+ EGY_left_unity_1: "左翼团结：一盘散沙"
+ EGY_left_unity_1_desc: "革命前的埃及，社会主义者从来不少见，但由于其势力分散而相互敌视，埃及社会主义者从未得到内部整合的契机。所幸国际介入后，埃及左翼终于开始组建广泛政党，为政治整合奠基。\n\n如今，埃及左翼几乎与革命前的松散状态完全相同，数个彼此互不统属且互相敌视的组织分散了民间支持，导致左翼力量始终无法承担起国家的领导重任。"
+
+#国策
+ 
+#事件
+ #新闻
+ EGY_news.1.t: "埃及军政府放弃权力"
+ EGY_news.1.d: "自从沙漠战争后，埃及便由一个名义上遵从左翼理论的亲法军政府实行统治。他们宣称，埃及政权将在“合适的时机”移交给埃及社会主义者，但由于埃及左翼力量分散，军政府始终拒绝交权。\n\n近日，随着奥斯曼帝国的崩溃，巴黎对中东方向的影响力大幅上升，埃及左翼进一步整合与法国方面加强施压导致军人总统穆罕默德·纳吉布宣布放弃执政地位，将共和国总统一职交给来自民族解放工委会的卡迈勒·阿卜杜勒-哈利姆。对此，法国方面表示了极大的热情，而其余国家则多数对此反响冷淡。"
+ EGY_news.1.a: "他们能治理好埃及吗？"
+ EGY_news.2.t: "埃及再军事化苏伊士西岸"
+ EGY_news.2.d: "奥斯曼帝国的崩溃已经引发了第一层连锁反应。在沙漠战争中曾经屈辱性地被迫接受停火的埃及军队近期再次踏入苏伊士运河沿岸，在帝国军队不见踪影后重新建立起哨所与防御工事。\n\n伊兹密尔与安卡拉，如今土耳其两个主要政府都对此表示反对，但由于阿拉伯地区同样陷入内战，深陷对峙的两方均无余力重新进驻苏伊士。据预测，埃及方面或许将很快重新踏上西奈半岛，再次尝试夺取苏伊士运河的全部控制权。"
+ EGY_news.2.a: "帝国倒下了，中东的秩序随之而去。"

@@ -1,0 +1,39 @@
+﻿l_simp_chinese:
+#领导人
+ USA_Elizabeth_Gurley_Flynn: "伊丽莎白·格丽·弗林"
+ USA_Elizabeth_Gurley_Flynn_desc: ""
+ 
+#政党名字
+ USA_communist_party: "美工总联 - 工统联/北美共产党"
+ USA_communist_party_long: "全美工会总联合会 - 工会统一联盟/北美共产党(General Congress of American Unions - Trade Union Unity League/Communist Party of North America)"
+ USA_syndicalism_party: "美工总联 - 世界产联"
+ USA_syndicalism_party_long: "全美工会总联合会 - 世界产业工人联合会(General Congress of American Unions - Industrial Workers of the World)"
+ USA_socialism_party: "美工总联 - 产联/美国社会党 - 前进派"
+ USA_socialism_party_long: "全美工会总联合会 - 产业工会联合会/美国社会党(General Congress of American Unions - American Federation of Labor/Socialist Party of America)"
+ USA_Social_democracy_party: "美工总联 - 美劳联/美国社会党 - 农工阵线"
+ USA_Social_democracy_party_long: "全美工会总联合会 - 美国劳工联合会/美国社会党(General Congress of American Unions - Congress of Industrial Organisations/Socialist Party of America)"
+ USA_Liberalism_party: "全美抵抗阵线 - 自由派"
+ USA_Liberalism_party_long: "美利坚全国抵抗阵线(Coalition for American Resistance)"
+ USA_Conservatism_party: "-"
+ USA_Conservatism_party_long: "-"
+ USA_Authoritarianism_party: "全美抵抗阵线 - 朗派"
+ USA_Authoritarianism_party_long: "美利坚全国抵抗阵线(Coalition for American Resistance)"
+ USA_Absolutism_party: "-"
+ USA_Absolutism_party_long: "-"
+ USA_Nationalism_party: "-"
+ USA_Nationalism_party_long: "-"
+#民族精神
+
+#事件
+
+#新闻
+
+#GUI
+
+#BOP
+
+#决议
+
+#国策
+ #: ""
+ #_desc: ""

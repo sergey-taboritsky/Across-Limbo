@@ -1,0 +1,23 @@
+﻿l_simp_chinese:
+ #战争结语gui
+ TNW_wapeace_title:0 "外交通知"
+ TNW_wapeace_description:0"[TNW_Getwapeace_description]"
+ TNW_wapeace_description_2:0"[TNW_Getwarpeacet]"
+ TNW_warpeace_close:0 "确认"
+ ##战争总结
+ #默认
+ TNW_wapeace_description_tonyon:0 "在刚刚结束的冲突中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败"
+ TNW_GER_wapeace_description_tonyon:0 "在刚刚结束的德国内乱中\n§Y[losing_country.GetNameWithFlag]§!的战士倒在了国防军的枪口下"
+ TNW_BLF_win_civil_war_wapeace_description:0 "在刚刚结束的英国内战中\n§Y[winning_country.GetNameWithFlag]§!的战士们冲进了威斯敏斯特市的各个政府建筑内，并在白金汉宫与威斯敏斯特宫上插满红旗"
+ TNW_ENG_win_civil_war_wapeace_description:0 "在刚刚结束的英国内战中\n§Y[winning_country.GetNameWithFlag]§!镇压了§Y[losing_country.GetNameWithFlag]§!的武装叛乱，那些叛乱分子将被处以极刑，他们的行为和结局将成为历史书上一笔浓厚的教训"
+ ##战争结语
+ TNW_zhanbaitonyonjieyu:0 "战争即地狱"
+ TNW_GER_zhanbaitonyonjieyu:0 "只要还有一个德国人活下来，战争就将继续。"
+ TNW_BLF_win_civil_war:0 "我告诉你，我们会连同他的王冠一起砍下他的头。"
+ TNW_ENG_win_civil_war:0 "统治吧，不列颠尼亚！"
+ ####起始点####
+ STP_PEACE_POPUP_FLAG1_TT:0 "§G战胜国：§![winning_country.GetFlag]§Y[winning_country.GetName]§!"
+ STP_PEACE_POPUP_FLAG2_TT:0 "§R战败国：§![losing_country.GetFlag]§Y[losing_country.GetName]§!"
+
+
+

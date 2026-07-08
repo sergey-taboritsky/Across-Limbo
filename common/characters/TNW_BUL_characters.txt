@@ -1,0 +1,561 @@
+characters = {
+	BUL_Georgy_Dimitrov = {
+		name = BUL_Georgy_Dimitrov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Georgy_Dimitrov
+			}
+		}
+		country_leader={
+			ideology= Marxism_Leninism
+			expire="1936.1.1"
+		}
+	}
+	BUL_Manol_Vasev = {
+		name = BUL_Manol_Vasev
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Manol_Vasev
+			}
+		}
+		country_leader={
+			ideology= Anarchist_Syndicalism
+			expire="1936.1.1"
+		}
+	}
+	BUL_Alexander_Stamboliyski = {
+		name = BUL_Alexander_Stamboliyski
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Alexander_Stamboliyski
+			}
+		}
+		country_leader={
+			ideology= agrarian_socialism
+			expire="1936.1.1"
+		}
+	}
+	BUL_Dimitar_Kazasov = {
+		name = BUL_Dimitar_Kazasov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Dimitar_Kazasov
+			}
+		}
+		country_leader={
+			ideology= Social_democratic
+			expire="1936.1.1"
+		}
+	}
+	BUL_Nikola_Mushanov = {
+		name = BUL_Nikola_Mushanov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Nikola_Mushanov
+			}
+		}
+		country_leader={
+			ideology= National_liberalism
+			expire="1936.1.1"
+		}
+	}
+	BUL_Ivan_Valkov = {
+		name = BUL_Ivan_Valkov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Ivan_Valkov
+			}
+		}
+		country_leader={
+			ideology= Social_Conservatism
+			expire="1936.1.1"
+		}
+	}
+	BUL_Kimon_Georgiev = {
+		name = BUL_Kimon_Georgiev
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Kimon_Georgiev
+			}
+		}
+		country_leader={
+			ideology= Social_nationalism
+			expire="1936.1.1"
+		}
+	}
+	BUL_Simeon_II = {
+		name = BUL_Simeon_II
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Simeon_II
+			}
+		}
+		country_leader={
+			ideology= absolute_monarchy
+			expire="1936.1.1"
+		}
+	}
+	BUL_Hristo_Lukov = {
+		name = BUL_Hristo_Lukov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Hristo_Lukov
+				small = GFX_portrait_small_BUL_Hristo_Lukov
+			}
+		}
+		country_leader={
+			ideology= National_Socialism
+			expire="1936.1.1"
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BUL_Hristo_Lukov_army_chief
+			allowed = { original_tag = BUL }
+			traits = {
+				army_artillery_2
+			}
+			#ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BUL_Bogdan_Filov = {
+		name = BUL_Bogdan_Filov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Bogdan_Filov
+				small = GFX_portrait_small_BUL_Bogdan_Filov
+			}
+		}
+		country_leader={
+			ideology= absolute_monarchy
+			expire="1936.1.1"
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = BUL_Bogdan_Filov_hog
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BUL_Kirill_of_Preslav = {
+		name = BUL_Kirill_of_Preslav
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Kirill_of_Preslav
+				small = GFX_portrait_small_BUL_Kirill_of_Preslav
+			}
+		}
+		country_leader={
+			ideology= absolute_monarchy
+			expire="1936.1.1"
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = BUL_Kirill_of_Preslav_hog
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Kirill_of_Preslav_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BUL_Nikola_Mihov = {
+		name = BUL_Nikola_Mihov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Nikola_Mihov
+				small = GFX_portrait_small_BUL_Nikola_Mihov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Nikola_Mihov_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		field_marshal = {
+			desc = BUL_Nikola_Mihov_commander_desc
+			traits = { career_officer offensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Petur_Gabrovsky = {
+		name = BUL_Petur_Gabrovsky
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Petur_Gabrovsky
+				small = GFX_portrait_small_BUL_Petur_Gabrovsky
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Petur_Gabrovsky_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BUL_Teodosi_Daskalov = {
+		name = BUL_Teodosi_Daskalov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Teodosi_Daskalov
+				small = GFX_portrait_small_BUL_Teodosi_Daskalov
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = BUL_Teodosi_Daskalov_theorist
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		field_marshal = {
+			desc = BUL_Teodosi_Daskalov_commander_desc
+			traits = { career_officer offensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Ivan_Variklechkov = {
+		name = BUL_Ivan_Variklechkov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Ivan_Variklechkov
+				small = GFX_portrait_small_BUL_Ivan_Variklechkov
+			}
+		}
+		navy_leader = {
+			desc = BUL_Ivan_Variklechkov_navy_chief_desc
+			traits = { }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = BUL_Ivan_Variklechkov_navy_chief
+			traits = { navy_submarine_2 }
+			cost = 100
+		}
+	}
+	BUL_Dimitar_Spisarevski = {
+		name = BUL_Dimitar_Spisarevski
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Dimitar_Spisarevski
+				small = GFX_portrait_small_BUL_Dimitar_Spisarevski
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = BUL_Dimitar_Spisarevski_air_chief
+			traits = { air_chief_all_weather_2 }
+			cost = 100
+		}
+	}
+	BUL_Asen_Kantardzhiev = {
+		name = BUL_Asen_Kantardzhiev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Asen_Kantardzhiev
+			}
+		}
+	}
+	BUL_Ivan_Dochev = {
+		name = BUL_Ivan_Dochev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Ivan_Dochev
+			}
+		}
+	}
+	BUL_Rayko_Daskalov = {
+		name = BUL_Rayko_Daskalov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Rayko_Daskalov
+			}
+		}
+	}
+	BUL_Alexandar_Tsankov = {
+		name = BUL_Alexandar_Tsankov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Alexandar_Tsankov
+			}
+		}
+	}
+	BUL_Georgi_Mihov_Dimitrov = {
+		name = BUL_Georgi_Mihov_Dimitrov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Georgi_Mihov_Dimitrov
+			}
+		}
+	}
+	BUL_Nikola_Petkov = {
+		name = BUL_Nikola_Petkov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Nikola_Petkov
+			}
+		}
+	}
+	BUL_Dimitar_Peshev = {
+		name = BUL_Dimitar_Peshev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Dimitar_Peshev
+			}
+		}
+	}
+	BUL_Stoyan_Kosturkov = {
+		name = BUL_Stoyan_Kosturkov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Stoyan_Kosturkov
+			}
+		}
+	}
+	BUL_Venelin_Ganev = {
+		name = BUL_Venelin_Ganev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Venelin_Ganev
+			}
+		}
+	}
+	BUL_Zvyatko_Boboshevsky = {
+		name = BUL_Zvyatko_Boboshevsky
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Zvyatko_Boboshevsky
+			}
+		}
+	}
+	BUL_Atanas_Burov = {
+		name = BUL_Atanas_Burov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Atanas_Burov
+			}
+		}
+	}
+	BUL_Hristo_Nestoroff = {
+		name = BUL_Hristo_Nestoroff
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Hristo_Nestoroff
+			}
+		}
+	}
+	BUL_Georg_Tarpana = {
+		name = BUL_Georg_Tarpana
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Georg_Tarpana
+			}
+		}
+	}
+	BUL_Valko_Chervenkov = {
+		name = BUL_Valko_Chervenkov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Valko_Chervenkov
+			}
+		}
+		country_leader={
+			ideology= Marxism
+			expire="1936.1.1"
+		}
+	}
+	BUL_Anton_Yugov = {
+		name = BUL_Anton_Yugov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Anton_Yugov
+			}
+		}
+		country_leader={
+			ideology= Marxism
+			expire="1936.1.1"
+		}
+	}
+	BUL_Ivan_Gorunia = {
+		name = BUL_Ivan_Gorunia
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Ivan_Gorunia
+			}
+		}
+		country_leader={
+			ideology= Left_wing_communism
+			expire="1936.1.1"
+		}
+	}
+	BUL_Ferdinand_Kozovsky = {
+		name = BUL_Ferdinand_Kozovsky
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Ferdinand_Kozovsky
+			}
+		}
+		country_leader={
+			ideology= Red_military_government
+			expire="1936.1.1"
+		}
+	}
+	BUL_Traycho_Kostov = {
+		name = BUL_Traycho_Kostov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Traycho_Kostov
+			}
+		}
+		country_leader={
+			ideology= Centralised_Syndicalism
+			expire="1936.1.1"
+		}
+	}
+	BUL_Todor_Zhivkov = {
+		name = BUL_Todor_Zhivkov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Todor_Zhivkov
+			}
+		}
+		country_leader={
+			ideology= Socialism_Britain
+			expire="1936.1.1"
+		}
+	}
+	BUL_Ivan_Mihailov_Popov = {
+		name = BUL_Ivan_Mihailov_Popov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Ivan_Mihailov_Popov
+			}
+		}
+		country_leader={
+			ideology= Marxism
+			expire="1936.1.1"
+		}
+	}
+	BUL_Nikolai_Vaptsarov = {
+		name = BUL_Nikolai_Vaptsarov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Nikolai_Vaptsarov
+			}
+		}
+		country_leader={
+			ideology= religious_socialism
+			expire="1936.1.1"
+		}
+	}
+	BUL_Lev_Glavinchev = {
+		name = BUL_Lev_Glavinchev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Lev_Glavinchev
+			}
+		}
+		country_leader={
+			ideology= National_Syndicalism
+			expire="1936.1.1"
+		}
+	}
+	
+	ROC_Nikola_Geshev = {
+		name = ROC_Nikola_Geshev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_ROC_Nikola_Geshev
+			}
+		}
+		country_leader={
+			ideology= colonial_government
+			expire="1936.1.1"
+		}
+	}
+
+	MAC_Simeon_II = {
+		name = BUL_Simeon_II
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Simeon_II
+			}
+		}
+		country_leader={
+			ideology= absolute_monarchy
+			expire="1936.1.1"
+		}
+	}
+	MAC_Hristo_Tatarchev = {
+		name = MAC_Hristo_Tatarchev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_MAC_Hristo_Tatarchev
+			}
+		}
+		country_leader={
+			ideology= absolute_monarchy
+			expire="1936.1.1"
+		}
+	}
+	MAC_Ivan_Mikhailov = {
+		name = MAC_Ivan_Mikhailov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_MAC_Ivan_Mikhailov
+			}
+		}
+		country_leader={
+			ideology= absolute_monarchy
+			expire="1936.1.1"
+		}
+	}
+}

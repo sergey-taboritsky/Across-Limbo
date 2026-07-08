@@ -1,0 +1,19 @@
+characters = {
+	#爱德华八世
+	SAF_Edward_VIII = {
+		name = SAF_Edward_VIII
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SAF_Edward_VIII
+			}
+		}
+		country_leader = {
+			desc = SAF_Edward_VIII_desc
+			ideology = Guided_democracy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+characters = {
+	CHI_Yan_xishan = {
+		name = CHI_Yan_xishan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Yan_xishan
+			}
+		}
+		country_leader={
+			ideology= oligarchy
+			expire="1936.1.1"
+		}
+		country_leader={
+			ideology= military_government
+			expire="1936.1.1"
+		}
+		
+	}
+}

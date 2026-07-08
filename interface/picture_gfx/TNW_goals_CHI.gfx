@@ -1,0 +1,10 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_CHI_Stabilize_Nanyang"
+		texturefile = "gfx/interface/goals/CHI/CHI_Stabilize_Nanyang.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Reorganize_Nanyang"
+		texturefile = "gfx/interface/goals/CHI/CHI_Reorganize_Nanyang.png"
+	}
+}

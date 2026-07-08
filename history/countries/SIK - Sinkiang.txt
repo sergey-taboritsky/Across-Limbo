@@ -1,0 +1,31 @@
+﻿capital = 617
+
+#oob = "SIK_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	
+}
+
+recruit_character = CHI_Ji_Hongchang
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 3
+	socialism = 4
+	Conservatism = 22
+	Authoritarianism = 57
+	Absolutism = 9
+	Nationalism = 5
+
+}
+
+add_ideas ={
+	moscow_aligned_nation
+}

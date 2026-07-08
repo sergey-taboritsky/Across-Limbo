@@ -1,0 +1,1737 @@
+#!gfx:interface\picture_gfx\TNW_goals.gfx
+focus_tree = {
+	id = DDR_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DDR
+		}
+	}
+	default = no
+
+	focus = { #准备工业重组
+		id = DDR_reorganize_industry
+		#icon = 
+		cost = 6
+
+		x = 3
+		y = 0
+
+		available_if_capitulated = yes
+
+		allow_branch = {
+			has_socialist_government = yes
+		}
+
+		ai_will_do = { base = 100 }
+
+		completion_reward = {
+		}
+	}
+
+	focus = { #整合莱茵行政机构
+		id = DDR_integrate_administration
+		icon = GFX_goal_generic_syndicalist_council
+		cost = 6
+
+		relative_position_id = DDR_reorganize_industry
+		x = 0
+		y = 1
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = DDR_reorganize_industry }
+
+		ai_will_do = { base = 100 }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRU_rehab_unions
+		icon = GFX_goal_generic_union_agreement
+		cost = 6
+
+		relative_position_id = DDR_integrate_administration
+		x = -2
+		y = 1
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = DDR_integrate_administration }
+
+		ai_will_do = { base = 35 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_revolutionary_unions
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_rehab_unions"
+			add_ideas = GRU_revolutionary_unions
+		}
+	}
+
+	focus = {
+		id = GRU_purge_reactionaries
+		icon = GFX_goal_crush_monarchy
+		cost = 6
+
+		relative_position_id = DDR_integrate_administration
+		x = 0
+		y = 1
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = DDR_integrate_administration }
+
+		ai_will_do = { base = 25 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_lingering_reactionary_influence_2
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_purge_reactionaries"
+			swap_ideas = {
+				remove_idea = GRU_lingering_reactionary_influence_1
+				add_idea = GRU_lingering_reactionary_influence_2
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.05
+			}
+		}
+	}
+
+	focus = {
+		id = GRU_redraw_volksstaats
+		icon = GFX_goal_commune_politics
+		cost = 6
+
+		relative_position_id = DDR_integrate_administration
+		x = 2
+		y = 1
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = DDR_integrate_administration }
+
+		ai_will_do = { base = 40 }
+
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_redraw_volksstaats"
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.10
+			}
+		}
+	}
+
+	focus = {
+		id = GRU_KAPD_election
+		icon = GFX_goal_Communist_Discourse
+		cost = 6
+
+		relative_position_id = DDR_integrate_administration
+		x = 0
+		y = 2
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_rehab_unions }
+		prerequisite = { focus = GRU_purge_reactionaries }
+		prerequisite = { focus = GRU_redraw_volksstaats }
+
+		ai_will_do = { base = 100 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_burgeoning_government
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_KAPD_election"
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_country_leader = { character = GER_willi_munzenberg } } }
+					GER = {
+						GER_willi_munzenberg = {
+							set_nationality = ROOT
+							promote_character = totalist_subtype
+							promote_character = syndicalist_subtype
+							promote_character = radical_socialist_subtype
+						}
+					}
+				}
+				if = {
+					limit = { has_character = FRA_marie_pierre_koenig }
+					FRA_marie_pierre_koenig = {
+						hidden_effect = { remove_all_country_leader_roles = yes }
+						set_nationality = FRA
+					}
+				}
+				if = {
+					limit = { has_character = ENG_bernard_paget }
+					ENG_bernard_paget = {
+						hidden_effect = { remove_all_country_leader_roles = yes }
+						set_nationality = ENG
+					}
+				}
+				if = {
+					limit = { has_character = RUS_vasily_blyukher }
+					RUS_vasily_blyukher = {
+						hidden_effect = { remove_all_country_leader_roles = yes }
+						set_nationality = RUS
+					}
+				}
+				if = {
+					limit = { is_subject = yes }
+					if = {
+						limit = { overlord = { has_government = totalist } }
+						meta_effect = {
+							text = {
+								set_politics = {
+									ruling_party = totalist
+									last_election = "[CURRENT_DATE]"
+									elections_allowed = no
+								}
+								set_party_name = {
+									ideology = syndicalist
+									name = GRU_syndicalist_FAUD_party
+									long_name = GRU_syndicalist_FAUD_party_long
+								}
+								set_party_name = {
+									ideology = radical_socialist
+									name = GRU_radical_socialist_communist_party
+									long_name = GRU_radical_socialist_communist_party_long
+								}
+							}
+							CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+						}
+					}
+					else_if = {
+						limit = { overlord = { has_government = syndicalist } }
+						meta_effect = {
+							text = {
+								set_politics = {
+									ruling_party = syndicalist
+									last_election = "[CURRENT_DATE]"
+									elections_allowed = yes
+									election_frequency = 48
+								}
+							}
+							CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+						}
+					}
+					else = {
+						meta_effect = {
+							text = {
+								set_politics = {
+									ruling_party = radical_socialist
+									last_election = "[CURRENT_DATE]"
+									elections_allowed = yes
+									election_frequency = 48
+								}
+								set_party_name = {
+									ideology = syndicalist
+									name = GRU_syndicalist_communist_party
+									long_name = GRU_syndicalist_communist_party_long
+								}
+								set_party_name = {
+									ideology = radical_socialist
+									name = GRU_radical_socialist_communist_party
+									long_name = GRU_radical_socialist_communist_party_long
+								}
+								set_party_name = {
+									ideology = social_democrat
+									name = GER_social_democrat_party
+									long_name = GER_social_democrat_party_long
+								}
+							}
+							CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+						}
+					}
+				}
+			}
+			swap_ideas = {
+				remove_idea = GRU_occupation_government
+				add_idea = GRU_burgeoning_government
+			}
+			custom_effect_tooltip = GRU_KAPD_election_tt
+		}
+	}
+
+### Socialist Branch ###
+
+	focus = {
+		id = GRU_socialists
+		icon = GFX_goal_generic_democratic_socialism
+		cost = 6
+
+		relative_position_id = GRU_KAPD_election
+		x = -1
+		y = 1
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_KAPD_election }
+
+		available = { has_government = radical_socialist }
+
+		ai_will_do = { base = 100 }
+
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_socialists"
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = GRU_implement_syndicalism
+		icon = GFX_GBR_fate_of_unions
+		cost = 6
+
+		relative_position_id = GRU_socialists
+		x = -2
+		y = 1
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_socialists }
+
+		ai_will_do = { base = 100 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_local_syndicalism
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_implement_syndicalism"
+			add_ideas = GRU_local_syndicalism
+		}
+	}
+
+	focus = {
+		id = GRU_find_allies
+		icon = GFX_goal_generic_government_deals
+		cost = 6
+
+		relative_position_id = GRU_socialists
+		x = 0
+		y = 1
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_socialists }
+
+		ai_will_do = { base = 100 }
+
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_find_allies"
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.05
+			}
+			add_political_power = 50
+			set_temp_variable = { coalition_partner_var = token:syndicalist }
+			add_to_coalition = yes
+		}
+	}
+
+	focus = {
+		id = GRU_liberal_opposition
+		icon = GFX_goal_GER_Left_SPD
+		cost = 6
+
+		relative_position_id = GRU_socialists
+		x = -1
+		y = 2
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_find_allies }
+
+		ai_will_do = { base = 100 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_socialist_government_1
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_liberal_opposition"
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+			}
+			set_temp_variable = { coalition_partner_var = token:social_democrat }
+			add_to_coalition = yes
+			swap_ideas = {
+				remove_idea = GRU_burgeoning_government
+				add_idea = GRU_socialist_government_1
+			}
+		}
+	}
+
+	focus = {
+		id = GRU_bodenreform
+		icon = GFX_goal_agriculture
+		cost = 6
+
+		relative_position_id = GRU_socialists
+		x = -2
+		y = 3
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_implement_syndicalism }
+		prerequisite = { focus = GRU_liberal_opposition }
+
+		ai_will_do = { base = 100 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_socialist_land_reform
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_bodenreform"
+			add_ideas = GRU_socialist_land_reform
+		}
+	}
+
+### Councilist Branch ###
+
+	focus = {
+		id = GRU_councilists
+		icon = GFX_Socialist_Law
+		cost = 6
+
+		relative_position_id = GRU_KAPD_election
+		x = 1
+		y = 1
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_KAPD_election }
+
+		available = { has_government = syndicalist }
+
+		ai_will_do = { base = 100 }
+
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_councilists"
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.10
+			}
+		}
+	}
+
+	focus = {
+		id = GRU_democratic_centralism
+		icon = GFX_goal_HOL_council_communism
+		cost = 6
+
+		relative_position_id = GRU_councilists
+		x = 0
+		y = 1
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_councilists }
+
+		ai_will_do = { base = 100 }
+
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_democratic_centralism"
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.10
+			}
+			add_stability = 0.10
+		}
+	}
+
+	focus = {
+		id = GRU_enforce_unity
+		icon = GFX_ITA_syndicalist_unite
+		cost = 6
+
+		relative_position_id = GRU_councilists
+		x = -1
+		y = 2
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_democratic_centralism }
+
+		ai_will_do = { base = 100 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_councilist_government_1
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_enforce_unity"
+			swap_ideas = {
+				remove_idea = GRU_burgeoning_government
+				add_idea = GRU_councilist_government_1
+			}
+		}
+	}
+
+	focus = {
+		id = GRU_destroy_landowners
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 6
+
+		relative_position_id = GRU_councilists
+		x = 1
+		y = 2
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_democratic_centralism }
+
+		ai_will_do = { base = 100 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_councilist_land_reform
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_destroy_landowners"
+			add_ideas = GRU_councilist_land_reform
+		}
+	}
+
+	focus = {
+		id = GRU_farming_coop
+		icon = GFX_goal_agrarian_socialism
+		cost = 6
+
+		relative_position_id = GRU_councilists
+		x = 0
+		y = 3
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_destroy_landowners }
+		mutually_exclusive = { focus = GRU_land_grants }
+
+		ai_will_do = { base = 100 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_farming_cooperatives
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_farming_coop"
+			swap_ideas = {
+				remove_idea = GRU_councilist_land_reform
+				add_idea = GRU_farming_cooperatives
+			}
+		}
+	}
+
+### Comunist Branch ###
+
+	focus = {
+		id = GRU_communists
+		icon = GFX_goal_ideology_totalist
+		cost = 6
+
+		relative_position_id = GRU_KAPD_election
+		x = 4
+		y = 1
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_KAPD_election }
+
+		available = { has_government = totalist }
+
+		ai_will_do = { base = 100 }
+
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_communists"
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.20
+			}
+		}
+	}
+
+	focus = {
+		id = GRU_sorelianism
+		icon = GFX_goal_FRA_sorelians
+		cost = 6
+
+		relative_position_id = GRU_communists
+		x = 1
+		y = 1
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_communists }
+		mutually_exclusive = { focus = GRU_DSP }
+
+		ai_will_do = { base = 100 }
+
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_sorelianism"
+			add_stability = 0.10
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+			}
+			if = {
+				limit = {
+					has_global_flag = sorelian_majority_1936
+				}
+				reverse_add_opinion_modifier = {
+					target = FRA
+					modifier = KR_approves_of_govt
+				}
+			}
+			if = {
+				limit = {
+					POL = { has_government = totalist }
+				}
+				reverse_add_opinion_modifier = {
+					target = POL
+					modifier = KR_approves_of_govt
+				}
+			}
+			if = {
+				limit = {
+					BUL = { has_government = totalist }
+				}
+				reverse_add_opinion_modifier = {
+					target = BUL
+					modifier = KR_approves_of_govt
+				}
+			}
+			## add one for English Sorelians as well
+		}
+	}
+
+	focus = {
+		id = GRU_DSP
+		icon = GFX_goal_ideology_national_populist_eagle
+		cost = 6
+
+		relative_position_id = GRU_communists
+		x = 3
+		y = 1
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_communists }
+		mutually_exclusive = { focus = GRU_sorelianism }
+
+		ai_will_do = { base = 100 }
+
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_DSP"
+			add_political_power = 50
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.05
+			}
+			if = {
+				limit = { is_subject = yes }
+				overlord = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = KR_disapproves_of_govt
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GRU_national_energy
+		icon = GFX_goal_generic_army_mass_assault
+		cost = 6
+
+		relative_position_id = GRU_communists
+		x = 0
+		y = 2
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_communists }
+
+		ai_will_do = { base = 100 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_german_national_energy
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_national_energy"
+			add_ideas = GRU_german_national_energy
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = GRU_purge_opposition
+		icon = GFX_goal_purge_opposition
+		cost = 6
+
+		relative_position_id = GRU_communists
+		x = 2
+		y = 2
+
+		available_if_capitulated = yes
+
+		prerequisite = {
+			focus = GRU_sorelianism
+			focus = GRU_DSP
+		}
+
+		ai_will_do = { base = 100 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_nationalist_government_1
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_purge_opposition"
+			add_popularity = {
+				ideology = syndicalist
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.10
+			}
+			swap_ideas = {
+				remove_idea = GRU_burgeoning_government
+				add_idea = GRU_nationalist_government_1
+			}
+		}
+	}
+
+	focus = {
+		id = GRU_land_redistribution
+		icon = GFX_goal_agricultural_aid
+		cost = 6
+
+		relative_position_id = GRU_communists
+		x = 1
+		y = 3
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = GRU_national_energy }
+		mutually_exclusive = { focus = GRU_land_grants }
+
+		ai_will_do = { base = 100 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_communist_land_reform
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_land_redistribution"
+			add_ideas = GRU_communist_land_reform
+		}
+	}
+
+	focus = {
+		id = GRU_councilism_supreme
+		icon = GFX_socialist_constitution
+		cost = 6
+
+		relative_position_id = GRU_KAPD_election
+		x = -1
+		y = 4
+
+		available_if_capitulated = yes
+
+		prerequisite = {
+			focus = GRU_enforce_unity
+			focus = GRU_find_allies
+		}
+
+		ai_will_do = { base = 100 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_councilist_orthodoxy
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_councilism_supreme"
+			add_ideas = GRU_councilist_orthodoxy
+		}
+	}
+
+	focus = {
+		id = GRU_land_grants
+		icon = GFX_focus_generic_agriculture
+		cost = 6
+
+		relative_position_id = GRU_KAPD_election
+		x = 3
+		y = 4
+
+		available_if_capitulated = yes
+
+		prerequisite = {
+			focus = GRU_destroy_landowners
+			focus = GRU_national_energy
+		}
+		mutually_exclusive = { focus = GRU_farming_coop }
+		mutually_exclusive = { focus = GRU_land_redistribution }
+
+		ai_will_do = { base = 100 }
+
+		on_uncomplete = {
+			remove_ideas = GRU_land_socialization
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed GRU_land_grants"
+			if = {
+				limit = { has_idea = GRU_councilist_land_reform }
+				swap_ideas = {
+					remove_idea = GRU_councilist_land_reform
+					add_idea = GRU_land_socialization
+				}
+			}
+			else = {
+				add_ideas = GRU_land_socialization
+			}
+		}
+	}
+	###李卜克内西任期的最后时间
+	focus = {
+		id = DDR_Liebknecht_final_days
+		icon = GFX_DDR_Liebknecht_final_days
+		x = 15
+		y = 0
+		cost = 21
+		completion_reward = {
+			country_event = DDR_event.1
+		}
+	}
+	###审视政治
+	focus = {
+		id = DDR_review_politics
+		icon = GFX_DDR_review_politics
+		prerequisite = {
+			focus = DDR_Liebknecht_final_days
+		}
+		relative_position_id = DDR_Liebknecht_final_days
+		x = 0
+		y = 2
+	}
+	###提供支持
+	focus = {
+		id = DDR_providing_special_support
+		icon = GFX_DDR_providing_special_support
+		prerequisite = {
+			focus = DDR_review_politics
+		}
+		relative_position_id = DDR_review_politics
+		x = 1
+		y = 1
+	}
+	###发表《告别演说》
+	focus = {
+		id = DDR_Farewell_address
+		icon = GFX_DDR_Farewell_address
+		prerequisite = {
+			focus = DDR_review_politics
+		}
+		relative_position_id = DDR_review_politics
+		x = -1
+		y = 1
+	}
+	###审视工业
+	focus = {
+		id = DDR_review_industry
+		icon = GFX_DDR_review_industry
+		prerequisite = {
+			focus = DDR_Liebknecht_final_days
+		}
+		relative_position_id = DDR_Liebknecht_final_days
+		x = -1
+		y = 1
+	}
+	###银行业改革
+	focus = {
+		id = DDR_banking_reform
+		icon = GFX_DDR_banking_reform
+		prerequisite = {
+			focus = DDR_review_industry
+		}
+		relative_position_id = DDR_review_industry
+		x = -1
+		y = 1
+	}
+	###审视农业
+	focus = {
+		id = DDR_review_agriculture
+		icon = GFX_DDR_review_agriculture
+		prerequisite = {
+			focus = DDR_Liebknecht_final_days
+		}
+		relative_position_id = DDR_Liebknecht_final_days
+		x = 1
+		y = 1
+	}
+	###土改补贴
+	focus = {
+		id = DDR_agricultural_subsidies
+		icon = GFX_DDR_agricultural_subsidies
+		prerequisite = {
+			focus = DDR_review_agriculture
+		}
+		relative_position_id = DDR_review_agriculture
+		x = 1
+		y = 1
+	}
+	###审视红军
+	focus = {
+		id = DDR_review_red_army
+		icon = GFX_DDR_review_red_army
+		prerequisite = {
+			focus = DDR_Liebknecht_final_days
+		}
+		relative_position_id = DDR_Liebknecht_final_days
+		x = -3
+		y = 1
+		cost = 21
+		completion_reward = {
+			country_event = DDR_event.2
+		}
+	}
+	###重视镇压祖国军
+	focus = {
+		id = DDR_anti_Freikorps_effort
+		icon = GFX_DDR_anti_Freikorps_effort
+		prerequisite = {
+			focus = DDR_review_red_army
+		}
+		relative_position_id = DDR_review_red_army
+		x = 0
+		y = 2
+	}
+	###审视外交
+	focus = {
+		id = DDR_review_diplomacy
+		icon = GFX_DDR_review_diplomacy
+		prerequisite = {
+			focus = DDR_Liebknecht_final_days
+		}
+		relative_position_id = DDR_Liebknecht_final_days
+		x = 3
+		y = 1
+	}
+	###波罗的友谊
+	focus = {
+		id = DDR_Nordic_friendship
+		icon = GFX_DDR_Nordic_friendship
+		prerequisite = {
+			focus = DDR_review_diplomacy
+		}
+		relative_position_id = DDR_review_diplomacy
+		x = 0
+		y = 2
+	}
+	###第四届大会
+	focus = {
+		id = DDR_the_fourth_Volkskammer
+		icon = GFX_DDR_the_fourth_Volkskammer
+		prerequisite = {
+			focus = DDR_review_politics
+		}
+		relative_position_id = DDR_review_politics
+		x = 0
+		y = 2
+	}
+	
+	focus = {
+		id = DDR_reorganize_general_staff 
+		icon = GFX_DDR_reorganize_general_staff
+		relative_position_id = DDR_Liebknecht_final_days
+		x = 7
+		y = 0
+	}
+
+	focus = {
+		id = DDR_military_political_departement
+		icon = GFX_DDR_military_political_departement
+		prerequisite = { focus = DDR_reorganize_general_staff}
+		relative_position_id = DDR_reorganize_general_staff
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_soldiers_and_civilians
+		icon = GFX_DDR_soldiers_and_civilians
+		prerequisite = { focus = DDR_reorganize_general_staff}
+		relative_position_id = DDR_reorganize_general_staff
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_discipline_and_style_building
+		icon = GFX_DDR_discipline_and_style_building
+		relative_position_id = DDR_soldiers_and_civilians
+		prerequisite = {  focus = DDR_soldiers_and_civilians }
+		x = 1
+		y = 2
+	}
+
+	focus = {
+		id = DDR_reform_military_organization
+		icon = GFX_DDR_reform_military_organization
+		relative_position_id = DDR_military_political_departement
+		prerequisite = { focus = DDR_military_political_departement }
+		x = -1
+		y = 2
+	}
+
+	focus = {
+		id = DDR_Obey_discipline 
+		icon = GFX_DDR_Obey_discipline
+		relative_position_id = DDR_military_political_departement
+		prerequisite = { focus = DDR_military_political_departement }
+		mutually_exclusive = { focus = DDR_officers_initiative}
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = DDR_officers_initiative
+		icon = GFX_DDR_officers_initiative
+		relative_position_id = DDR_soldiers_and_civilians
+		prerequisite = { focus = DDR_military_political_departement}
+		mutually_exclusive = { focus = DDR_Obey_discipline}
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = DDR_officers_and_soldiers
+		icon = GFX_DDR_officers_and_soldiers
+		relative_position_id = DDR_Obey_discipline
+		prerequisite = { focus = DDR_Obey_discipline focus = DDR_officers_initiative}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_new_military_officer
+		icon = GFX_DDR_new_military_officer
+		relative_position_id = DDR_discipline_and_style_building
+		prerequisite = { focus = DDR_Obey_discipline focus = DDR_officers_initiative}
+		prerequisite = { focus = DDR_discipline_and_style_building }
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_new_generals
+		icon = GFX_DDR_new_generals
+		relative_position_id = DDR_reform_military_organization
+		prerequisite = { focus = DDR_Obey_discipline focus = DDR_officers_initiative}
+		prerequisite = { focus = DDR_reform_military_organization}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_the_next_world_war
+		icon = GFX_DDR_the_next_world_war
+		relative_position_id = DDR_reorganize_general_staff 
+		x = 9
+		y = 0
+	}
+
+	focus = {
+		id = DDR_Verwaltung_Aufklarung
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = DDR_the_next_world_war
+		prerequisite = { focus = DDR_the_next_world_war }
+		x = -4
+		y = 1
+	}
+
+	focus = {
+		id = DDR_penetrating_the_border
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = DDR_Verwaltung_Aufklarung }
+		relative_position_id = DDR_Verwaltung_Aufklarung
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = DDR_Unternehmen_Siegfried
+		icon = GFX_DDR_Unternehmen_Siegfried
+		prerequisite = { focus = DDR_penetrating_the_border }
+		relative_position_id = DDR_penetrating_the_border
+		x = -1
+		y = 1
+	}
+	
+	focus = {
+		id = DDR_Unternehmen_Walpurgisnacht
+		icon = GFX_DDR_Unternehmen_Walpurgisnacht
+		relative_position_id = 	DDR_penetrating_the_border
+		prerequisite = { focus = DDR_penetrating_the_border }
+		x = 0
+		y = 2
+	}
+
+
+	focus = {
+		id = DDR_crypto_bomb_focus
+		icon = GFX_DDR_crypto_bomb_focus
+		relative_position_id = DDR_Verwaltung_Aufklarung
+		prerequisite = { focus = DDR_Verwaltung_Aufklarung }
+		x = 1
+		y = 2
+	}
+
+	focus = {
+		id = DDR_help_world_revolution 
+		icon = GFX_DDR_help_world_revolution
+		prerequisite = { focus = DDR_the_next_world_war }
+		relative_position_id = DDR_the_next_world_war
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = DDR_spain_volunteer
+		icon = GFX_DDR_spain_volunteer
+		prerequisite = { focus = DDR_help_world_revolution }
+		relative_position_id = DDR_help_world_revolution
+		x = 1
+		y = 2
+	}
+
+	focus = {
+		id = DDR_hungary_volunteer
+		icon = GFX_DDR_hungary_volunteer
+		prerequisite = {focus = DDR_help_world_revolution }
+		relative_position_id = DDR_help_world_revolution
+		x = 2
+		y = 1
+	}
+
+	focus = {
+		id = DDR_nordic_volunteer
+		icon = GFX_DDR_nordic_volunteer
+		prerequisite = {focus = DDR_help_world_revolution }
+		relative_position_id = DDR_help_world_revolution
+		x = 0
+		y = 1
+	}
+
+
+	focus = {
+		id = DDR_italy_volunteer
+		icon = GFX_DDR_italy_volunteer
+		prerequisite = {focus = DDR_help_world_revolution }
+		relative_position_id = DDR_help_world_revolution
+		x = -2
+		y = 1
+	}
+
+	focus = {
+		id = DDR_china_volunteer
+		icon = GFX_DDR_china_volunteer
+		prerequisite = {focus = DDR_help_world_revolution }
+		relative_position_id = DDR_help_world_revolution
+		x = -1
+		y = 2
+	}
+
+	focus = {
+		id = DDR_establish_KdoGT
+		icon = GFX_DDR_establish_KdoGT
+		prerequisite = { focus = DDR_the_next_world_war }
+		relative_position_id = DDR_the_next_world_war
+		x = 4
+		y = 1
+	}
+
+	focus = {
+		id = DDR_strengthen_border_army
+		icon = GFX_DDR_strengthen_border_army
+		prerequisite = {  focus = DDR_establish_KdoGT }
+		relative_position_id = DDR_establish_KdoGT
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = DDR_strengthen_border
+		icon = GFX_DDR_strengthen_border
+		prerequisite = { focus = DDR_establish_KdoGT }
+		relative_position_id = DDR_establish_KdoGT
+		x = -1
+		y = 2
+	}
+
+
+	focus = {
+		id = DDR_strengthen_costal
+		icon = GFX_DDR_strengthen_costal
+		prerequisite = { focus = DDR_establish_KdoGT }
+		relative_position_id = DDR_establish_KdoGT
+		x = 1
+		y = 2
+	}
+
+	focus = {
+		id = DDR_expand_research 
+		icon = GFX_focus_research
+		relative_position_id = DDR_reorganize_general_staff
+		x = 18
+		y = 0
+	}
+
+	focus = {
+		id = DDR_new_era_mobile
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = DDR_expand_research }
+		relative_position_id = DDR_expand_research
+		x = -3
+		y = 2
+	}
+
+	focus = {
+		id = DDR_motorized_military
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = DDR_new_era_mobile }
+		prerequisite = { focus = DDR_small_arms }
+		relative_position_id = DDR_new_era_mobile
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_motorized_supply
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = DDR_new_era_mobile }
+		relative_position_id = DDR_new_era_mobile
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = DDR_Woche_der_Waffenbruderschaft
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = DDR_expand_research
+		prerequisite = { focus = DDR_expand_research }
+		x = 0
+		y = 1
+	}
+
+
+	focus = {
+		id = DDR_small_arms
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = DDR_expand_research }
+		relative_position_id = DDR_expand_research
+		x = -2
+		y = 1
+	}
+
+	focus = {
+		id = DDR_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = DDR_Woche_der_Waffenbruderschaft }
+		prerequisite = { focus = DDR_expand_research }
+		relative_position_id = DDR_Woche_der_Waffenbruderschaft
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_Panzerschule_Kama #
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = DDR_artillery }
+		relative_position_id = DDR_artillery 
+		x = 0
+		y = 2
+	}
+	
+	focus = {
+		id = DDR_air_defense
+		icon = GFX_focus_generic_air_defense
+		prerequisite = { focus = DDR_artillery }
+		prerequisite = { focus = DDR_Lipetsk_pilot_school }
+		relative_position_id = DDR_artillery
+		x = 1
+		y = 1
+	}
+	
+	focus = {
+		id = DDR_aviation_effort
+		icon = GFX_goal_generic_build_airforce
+		relative_position_id = DDR_expand_research
+		prerequisite = { focus = DDR_expand_research}
+		x = 2
+		y = 1
+	}
+
+	focus = {
+		id = DDR_foster_flying_clubs
+		icon = GFX_focus_SOV_flying_clubs
+		relative_position_id = DDR_aviation_effort
+		prerequisite= { focus = DDR_aviation_effort}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_women_soldiers
+		icon = GFX_focus_SOV_women_in_aviation
+		prerequisite = { focus = DDR_foster_flying_clubs focus = DDR_risiko_luftwaffe }
+		relative_position_id = DDR_foster_flying_clubs
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = DDR_risiko_luftwaffe
+		icon = GFX_goal_generic_build_airforce
+		relative_position_id = DDR_aviation_effort
+		prerequisite= { focus = DDR_aviation_effort }
+		prerequisite = { focus = DDR_Lipetsk_pilot_school }
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = DDR_Lipetsk_pilot_school
+		icon = GFX_focus_SOV_flying_clubs
+		prerequisite = { focus = DDR_aviation_effort }
+		prerequisite = { focus = DDR_Woche_der_Waffenbruderschaft }
+		relative_position_id = DDR_aviation_effort
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_command_air_focus
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = DDR_risiko_luftwaffe }
+		relative_position_id = DDR_risiko_luftwaffe 
+		x = -1
+		y = 1
+	}
+
+
+	focus = {
+		id = DDR_Unternehmen_Weserubung
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id = DDR_expand_research
+		x = 8
+		y = 0
+	}
+
+	focus = {
+		id = DDR_Danzig_Naval_Academy
+		icon = GFX_focus_generic_naval_discipline
+		relative_position_id = DDR_Unternehmen_Weserubung
+		x = 6
+		y = 0
+	}
+
+	focus = {
+		id = DDR_Legacy_of_the_Hochseeflotte
+		icon = GFX_goal_generic_navy_battleship
+		relative_position_id = DDR_Unternehmen_Weserubung
+		prerequisite = { focus = DDR_Unternehmen_Weserubung}
+		mutually_exclusive = { focus = DDR_New_aircraft_carrier_tactics }
+		x = 2
+		y = 1
+	}
+
+
+	focus = {
+		id = DDR_cruiser_effort
+		icon = GFX_goal_generic_navy_cruiser
+		relative_position_id = DDR_Danzig_Naval_Academy
+		prerequisite = { focus = DDR_Danzig_Naval_Academy }
+		x = -2
+		y = 3
+	}
+
+	focus = {
+		id = DDR_battleship_effort
+		icon = GFX_goal_generic_navy_battleship
+		relative_position_id = DDR_Legacy_of_the_Hochseeflotte
+		prerequisite = { focus = DDR_Legacy_of_the_Hochseeflotte }
+		prerequisite = { focus = DDR_Danzig_Naval_Academy }
+		x = 1
+		y = 1
+	}
+	
+	focus = {
+		id = DDR_Muntzer_class
+		icon = GFX_goal_generic_navy_battleship
+		relative_position_id = DDR_Legacy_of_the_Hochseeflotte
+		prerequisite = { focus = DDR_Legacy_of_the_Hochseeflotte}
+		x = -1
+		y = 1
+	}
+	
+	focus = {
+		id = DDR_prepare_navy_battle
+		icon = GFX_goal_generic_navy_battleship
+		relative_position_id = DDR_Legacy_of_the_Hochseeflotte
+		prerequisite = { focus = DDR_Legacy_of_the_Hochseeflotte }
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = DDR_advantageous_force_effort
+		icon = GFX_focus_generic_navy_battleship2
+		relative_position_id = DDR_prepare_navy_battle
+		prerequisite = { focus = DDR_prepare_navy_battle }
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_New_aircraft_carrier_tactics
+		icon = GFX_goal_generic_navy_carrier
+		relative_position_id = DDR_Unternehmen_Weserubung
+		prerequisite = { focus = DDR_Unternehmen_Weserubung }
+		mutually_exclusive = { focus = DDR_Legacy_of_the_Hochseeflotte }
+		x = -2
+		y = 1
+	}
+
+	focus = {
+		id = DDR_naval_bomber
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = DDR_New_aircraft_carrier_tactics focus = DDR_Legacy_of_the_Hochseeflotte }
+		relative_position_id = DDR_New_aircraft_carrier_tactics
+		x = 2
+		y = 2
+	}
+	
+	focus = {
+		id = DDR_Lilienthal_carrier
+		icon = GFX_goal_generic_navy_carrier
+		relative_position_id = DDR_New_aircraft_carrier_tactics
+		prerequisite = { focus = DDR_New_aircraft_carrier_tactics }
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_new_carrier
+		icon = GFX_goal_generic_navy_carrier
+		relative_position_id = DDR_New_aircraft_carrier_tactics
+		prerequisite = { focus = DDR_New_aircraft_carrier_tactics }
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_avoid_navy_battle
+		icon = GFX_goal_generic_navy_carrier
+		relative_position_id = DDR_New_aircraft_carrier_tactics
+		prerequisite = { focus = DDR_New_aircraft_carrier_tactics }
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = DDR_chase_desparete_enemy
+		icon = GFX_focus_NORDIC_com_navy
+		relative_position_id = DDR_avoid_navy_battle
+		prerequisite = { focus = DDR_avoid_navy_battle }
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_new_destroyer 
+		icon = GFX_focus_generic_destroyer
+		relative_position_id = DDR_Danzig_Naval_Academy
+		prerequisite = { focus = DDR_Danzig_Naval_Academy }
+		x = -2
+		y = 1
+	}
+
+	focus = {
+		id = DDR_educate_naval
+		icon = GFX_focus_generic_naval_discipline
+		relative_position_id = DDR_Danzig_Naval_Academy
+		prerequisite = { focus = DDR_Danzig_Naval_Academy }
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = DDR_amphibious_assault
+		icon = GFX_goal_generic_amphibious_assault
+		relative_position_id = DDR_educate_naval
+		prerequisite = { focus = DDR_educate_naval }
+		x = -1
+		y = 1
+	}
+	
+	focus = {
+		id = DDR_Reichsbund_Volksmarine_Seegeltung
+		icon = GFX_goal_generic_build_navy
+		relative_position_id = DDR_educate_naval
+		prerequisite = { focus = DDR_educate_naval }
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = DDR_new_submarine
+		icon = GFX_goal_generic_navy_submarine
+		relative_position_id = DDR_Danzig_Naval_Academy
+		prerequisite = { focus = DDR_Danzig_Naval_Academy }
+		x = 2
+		y = 1
+	}
+	
+	focus = {
+		id = DDR_improve_wolfpack_tactics
+		icon = GFX_goal_generic_wolf_pack
+		relative_position_id = DDR_educate_naval
+		prerequisite = { focus = DDR_educate_naval }
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_Die_Gluckliche_Zeit
+		icon = GFX_goal_generic_navy_submarine
+		relative_position_id = DDR_new_submarine
+		prerequisite = { focus = DDR_improve_wolfpack_tactics }
+		prerequisite = { focus = DDR_new_submarine }
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = DDR_return_Kiel
+		icon = GFX_focus_generic_baltic_sea_fleet
+		relative_position_id = DDR_expand_research
+		x = 5
+		y = 4
+	}
+
+	focus = {
+		id = DDR_collaborative_operations
+		icon = GFX_focus_NORDIC_com_navy
+		relative_position_id = DDR_return_Kiel
+		prerequisite = { focus = DDR_chase_desparete_enemy }
+		prerequisite = { focus = DDR_return_Kiel }
+		x = 2
+		y = 1
+	}
+
+	focus = {
+		id = DDR_quick_assault
+		icon = GFX_focus_generic_midget_submarines
+		relative_position_id = DDR_return_Kiel
+		prerequisite = { focus = DDR_advantageous_force_effort }
+		prerequisite = { focus = DDR_return_Kiel }
+		x = 6
+		y = 1
+	}
+	
+	focus = {
+		id = DDR_penetrate_armor
+		icon = GFX_focus_generic_midget_submarines
+		relative_position_id = DDR_return_Kiel
+		prerequisite = { focus = DDR_advantageous_force_effort }
+		prerequisite = { focus = DDR_return_Kiel }
+		x = 4
+		y = 1
+	}
+
+	focus = {
+		id = DDR_plan_sealion
+		icon = GFX_goal_generic_amphibious_assault
+		relative_position_id = DDR_collaborative_operations
+		prerequisite = { focus = DDR_collaborative_operations focus = DDR_penetrate_armor }
+		prerequisite = { focus = DDR_collaborative_operations focus = DDR_quick_assault }
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_Atlantikwall
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = DDR_return_Kiel }
+		prerequisite = { focus = DDR_strengthen_costal }
+		relative_position_id = DDR_return_Kiel
+		x = -9
+		y = 2
+	}
+
+	focus = {
+		id = DDR_Wurzburg_radar
+		icon = GFX_goal_generic_radar
+		relative_position_id = DDR_return_Kiel
+		prerequisite = { focus = DDR_return_Kiel }
+		x = -7
+		y = 2
+	}
+
+	focus = {
+		id = DDR_coast_guard
+		icon = GFX_focus_FIN_coastal_defense
+		prerequisite = { focus = DDR_return_Kiel }
+		prerequisite = { focus = DDR_strengthen_border_army }
+		prerequisite = { focus = DDR_strengthen_costal focus = DDR_strengthen_border }
+		relative_position_id = DDR_return_Kiel
+		x = -10
+		y = 1
+	}
+
+	focus = {
+		id = DDR_new_tank
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = DDR_return_Kiel }
+		prerequisite = { focus = DDR_motorized_military }
+		prerequisite = { focus = DDR_Panzerschule_Kama }
+		relative_position_id = DDR_return_Kiel 
+		x = -6
+		y = 1
+	}
+
+	focus = {
+		id = DDR_mechanized_flood
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = DDR_return_Kiel }
+		prerequisite = { focus = DDR_motorized_supply}
+		relative_position_id = DDR_return_Kiel
+		x = -8
+		y = 1
+	}
+
+	focus = {
+		id = DDR_paratroops
+		icon = GFX_focus_generic_paratrooper
+		relative_position_id = DDR_return_Kiel
+		prerequisite = { focus = DDR_return_Kiel }
+		prerequisite = { focus = DDR_women_soldiers }
+		x = -2
+		y = 1
+	}
+
+	focus = {
+		id = DDR_air_production
+		icon = GFX_focus_generic_aircraft_production
+		prerequisite = { focus = DDR_command_air_focus }
+		prerequisite = { focus = DDR_return_Kiel }
+		relative_position_id = DDR_return_Kiel
+		x = -4
+		y = 1
+	}
+
+	focus = {
+		id = DDR_jet_plane
+		icon = GFX_focus_rocketry
+		relative_position_id = DDR_air_production
+		prerequisite = { focus = DDR_air_production }
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_wonderweapons
+		icon = GFX_focus_wonderweapons
+		relative_position_id = DDR_air_production
+		prerequisite = { focus = DDR_air_production }
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_salvage_naval
+		icon = GFX_focus_generic_refit_civilian_ships
+		relative_position_id = DDR_return_Kiel
+		prerequisite = { focus = DDR_return_Kiel }
+		x = 7
+		y = 2
+	}
+
+	focus = {
+		id = DDR_adapt_new_situation
+		icon = GFX_goal_generic_navy_anti_submarine
+		relative_position_id = DDR_return_Kiel
+		prerequisite = { focus = DDR_return_Kiel }
+		x = 9
+		y = 2
+	}
+
+	focus = {
+		id = DDR_reshape_Wilhelmshaven
+		icon = GFX_goal_generic_occupy_states_coastal
+		relative_position_id = DDR_return_Kiel
+		prerequisite = { focus = DDR_return_Kiel }
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = DDR_decisive_battle_north_atlantic
+		icon = GFX_focus_generic_north_atlantic_fleet
+		relative_position_id = DDR_reshape_Wilhelmshaven
+		prerequisite = { focus = DDR_reshape_Wilhelmshaven }
+		mutually_exclusive = { focus = DDR_cross_the_atlantic_ocean}
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_cross_the_atlantic_ocean
+		icon = GFX_focus_generic_north_atlantic_fleet
+		relative_position_id = DDR_reshape_Wilhelmshaven
+		prerequisite = { focus = DDR_reshape_Wilhelmshaven }
+		mutually_exclusive = { focus = DDR_decisive_battle_north_atlantic }
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = DDR_librate_naval_capacity
+		icon = GFX_goal_generic_construct_naval_dockyard
+		relative_position_id = DDR_return_Kiel
+		prerequisite = { focus = DDR_return_Kiel }
+		prerequisite = { focus = DDR_Reichsbund_Volksmarine_Seegeltung }
+		x = 8
+		y = 1
+	}
+
+	focus = {
+		id = DDR_cut_supply_lines
+		icon = GFX_focus_generic_torpedo_production
+		relative_position_id = DDR_return_Kiel
+		prerequisite = { focus = DDR_Die_Gluckliche_Zeit}
+		prerequisite = { focus = DDR_return_Kiel}
+		x = 10
+		y = 1
+	}
+
+}

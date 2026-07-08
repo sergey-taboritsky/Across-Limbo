@@ -1,0 +1,7 @@
+instant_effect = {
+	country_event = { id = FRA_UROE_event.1 days = 2 }
+}
+focus = {
+	current = "FRA_retreat_rhineland"
+	progress = 1
+}

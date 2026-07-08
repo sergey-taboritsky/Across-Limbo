@@ -1,0 +1,306 @@
+characters = {
+###领导人
+	#鲍里斯·萨文科夫
+	RUS_Boris_Savinkhov = {
+		name = RUS_Boris_Savinkhov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Boris_Savinkhov
+			}
+		}
+		country_leader = {
+			desc = RUS_Boris_Savinkhov_desc
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#三驾马车
+	RUS_Tirumvirate = {
+		name = RUS_Tirumvirate
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Tirumvirate
+			}
+		}
+		country_leader = {
+			desc = RUS_Tirumvirate_desc
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#彼得·萨维茨基
+	RUS_Pyotr_Savitsky = {
+		name = RUS_Pyotr_Savitsky
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Pyotr_Savitsky
+			}
+		}
+		country_leader = {
+			desc = RUS_Pyotr_Savitsky_desc
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = RUS_Pyotr_Savitsky_hog
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_Pyotr_Savitsky_advisor
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#卡罗尔·文贾戈利斯基
+	RUS_Karol_Vendzyagolsky = {
+		name = RUS_Karol_Vendzyagolsky
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Karol_Vendzyagolsky
+			}
+		}
+		country_leader = {
+			desc = RUS_Karol_Vendzyagolsky_desc
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = RUS_Karol_Vendzyagolsky_hog
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_Karol_Vendzyagolsky_advisor
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#维克托·拉里奥诺夫
+	RUS_Viktor_Larionov = {
+		name = RUS_Viktor_Larionov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Viktor_Larionov
+			}
+		}
+		country_leader = {
+			desc = RUS_Viktor_Larionov_desc
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = RUS_Viktor_Larionov_hog
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_Viktor_Larionov_advisor
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#亚历山大-季科夫·德伦塔尔
+	RUS_Aleksandr_Dikgof_Derental = {
+		name = RUS_Aleksandr_Dikgof_Derental
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Aleksandr_Dikgof_Derental
+			}
+		}
+		country_leader = {
+			desc = RUS_Aleksandr_Dikgof_Derental_desc
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = RUS_Aleksandr_Dikgof_Derental_hog
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_Aleksandr_Dikgof_Derental_advisor
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+###顾问
+	#亚历山大-尤里·什林斯基-希赫马托夫
+	RUS_Yury_Shirinsky_Shikhmatov = {
+		name = RUS_Yury_Shirinsky_Shikhmatov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Yury_Shirinsky_Shikhmatov
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = RUS_Yury_Shirinsky_Shikhmatov_hog
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_Yury_Shirinsky_Shikhmatov_advisor
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#马克西米利安·菲洛年科
+	RUS_Maksimilian_Filonenko = {
+		name = RUS_Maksimilian_Filonenko
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Maksimilian_Filonenko
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = RUS_Maksimilian_Filonenko_hog
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_Maksimilian_Filonenko_advisor
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#弗拉基米尔·曼斯坦因
+	RUS_Vladimir_Manstein = {
+		name = RUS_Vladimir_Manstein
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Vladimir_Manstein
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = RUS_Vladimir_Manstein_hog
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_Vladimir_Manstein_advisor
+			allowed = { original_tag = RUS }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	#斯维尔德洛夫
+	RUS_Siweier_deluofu = {
+		name = RUS_Siweier_deluofu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Siweier_deluofu
+			}
+		}
+		country_leader = {
+			desc = RUS_Siweier_deluofu_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+				RUS_feifa_zuzhize
+			}
+		}
+	}
+}

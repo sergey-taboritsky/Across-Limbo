@@ -1,0 +1,49 @@
+on_actions = {
+	# ROOT is country, this is ran for every country
+	on_monthly_FIJ = {
+		effect = {
+			every_country = {
+				add_to_variable = {
+					TNW_Literacy_level_value = TNW_Literacy_level_monthly_value
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TNW_Literacy_level_value > 100
+						}
+					}
+					TNW_level_development_literacy_upgrade_effect = yes
+					country_event = { id = TNW_level_development_event.1 }
+					add_to_variable = {
+						TNW_Literacy_level_value = -100
+					}
+					multiply_variable = {
+						var = TNW_Literacy_level_monthly_value
+						value = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							TNW_Literacy_level_value < 0
+						}
+					}
+					TNW_level_development_literacy_downgrade_effect = yes
+					country_event = { id = TNW_level_development_event.2 }
+					add_to_variable = {
+						TNW_Literacy_level_value = 100
+					}
+					multiply_variable = {
+						var = TNW_Literacy_level_monthly_value
+						value = 0.5
+					}
+				}
+				clamp_variable = {
+					var = TNW_Literacy_level_value
+					max = 100
+					min = 0
+				}
+			}
+		}
+	}
+}

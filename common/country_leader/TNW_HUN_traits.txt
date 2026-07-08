@@ -1,0 +1,10 @@
+leader_traits = {
+	#执剑人
+    HUN_Sword_wielder = {
+		random = no
+		war_support_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

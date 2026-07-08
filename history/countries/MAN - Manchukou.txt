@@ -1,0 +1,38 @@
+﻿capital = 1265
+
+#oob = "MAN_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_trucks = 1
+}
+
+set_convoys = 5
+
+recruit_character = CHI_Feng_Yong
+
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+set_popularities = {
+	communist = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 14
+	Conservatism = 6
+	Authoritarianism = 45
+	Absolutism = 27
+	Nationalism = 8
+
+}
+
+add_ideas ={
+	moscow_aligned_nation
+}

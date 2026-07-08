@@ -1,0 +1,609 @@
+######################################################
+### Kaiserreich Custom Country Paths               ###
+######################################################
+### By El Daddy, Igor050301, Amber and many others ###
+######################################################
+
+### North America ###
+CAN_path = {
+	name = CAN_PATH
+	group = RULE_GROUP_TNW_RULES_NORTH_AMERICA
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_CAN_PATH_RANDOM
+		desc = RULE_OPTION_CAN_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CAN_PATH_MARLIB
+		text = RULE_OPTION_CAN_PATH_MARLIB
+		desc = RULE_OPTION_CAN_PATH_MARLIB_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CAN_PATH_SOCCON
+		text = RULE_OPTION_CAN_PATH_SOCCON
+		desc = RULE_OPTION_CAN_PATH_SOCCON_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CAN_PATH_AUTDEM
+		text = RULE_OPTION_CAN_PATH_AUTDEM
+		desc = RULE_OPTION_CAN_PATH_AUTDEM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CAN_PATH_PATAUT
+		text = RULE_OPTION_CAN_PATH_PATAUT
+		desc = RULE_OPTION_CAN_PATH_PATAUT_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CAN_PATH_SOCDEM
+		text = RULE_OPTION_CAN_PATH_SOCDEM
+		desc = RULE_OPTION_CAN_PATH_SOCDEM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CAN_PATH_NATPOP
+		text = RULE_OPTION_CAN_PATH_NATPOP
+		desc = RULE_OPTION_CAN_PATH_NATPOP_DESC
+		allow_achievements = yes
+	}
+}
+
+### Cental America & the Caribbean ###
+CUB_path = {
+	name = CUB_PATH
+	group = RULE_GROUP_TNW_RULES_CENTAL_AMERICA_CARIBBEAN
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_CUB_STRIKE_RANDOM
+		desc = RULE_OPTION_CUB_STRIKE_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_MARLIB
+		text = RULE_OPTION_CUB_PATH_MARLIB
+		desc = RULE_OPTION_CUB_PATH_MARLIB_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_SOCLIB
+		text = RULE_OPTION_CUB_PATH_SOCLIB
+		desc = RULE_OPTION_CUB_PATH_SOCLIB_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_SOCDEM
+		text = RULE_OPTION_CUB_PATH_SOCDEM
+		desc = RULE_OPTION_CUB_PATH_SOCDEM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_PATAUT
+		text = RULE_OPTION_CUB_PATH_PATAUT
+		desc = RULE_OPTION_CUB_PATH_PATAUT_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_AUTDEM
+		text = RULE_OPTION_CUB_PATH_AUTDEM
+		desc = RULE_OPTION_CUB_PATH_AUTDEM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_SOCCON
+		text = RULE_OPTION_CUB_PATH_SOCCON
+		desc = RULE_OPTION_CUB_PATH_SOCCON_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_RADSOC
+		text = RULE_OPTION_CUB_PATH_RADSOC
+		desc = RULE_OPTION_CUB_PATH_RADSOC_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_SYNDIE
+		text = RULE_OPTION_CUB_PATH_SYNDIE
+		desc = RULE_OPTION_CUB_PATH_SYNDIE_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_TOTALIST
+		text = RULE_OPTION_CUB_PATH_TOTALIST
+		desc = RULE_OPTION_CUB_PATH_TOTALIST_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_COUP_PATAUT
+		text = RULE_OPTION_CUB_PATH_COUP_PATAUT
+		desc = RULE_OPTION_CUB_PATH_COUP_PATAUT_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_COUP_AUTDEM
+		text = RULE_OPTION_CUB_PATH_COUP_AUTDEM
+		desc = RULE_OPTION_CUB_PATH_COUP_AUTDEM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_COUP_MARLIB
+		text = RULE_OPTION_CUB_PATH_COUP_MARLIB
+		desc = RULE_OPTION_CUB_PATH_COUP_MARLIB_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CUB_PATH_COUP_SOCLIB
+		text = RULE_OPTION_CUB_PATH_COUP_SOCLIB
+		desc = RULE_OPTION_CUB_PATH_COUP_SOCLIB_DESC
+		allow_achievements = yes
+	}
+}
+
+### Western / Southern Europe ###
+FRA_path = {
+	name = FRA_PATH
+	group = RULE_GROUP_TNW_RULES_WS_EUROPE
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_FRA_PATH_RANDOM
+		desc = RULE_OPTION_FRA_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = FRA_PATH_SOUVARINE
+		text = RULE_OPTION_FRA_PATH_SOUVARINE
+		desc = RULE_OPTION_FRA_PATH_SOUVARINE_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = FRA_PATH_TREINT
+		text = RULE_OPTION_FRA_PATH_TREINT
+		desc = RULE_OPTION_FRA_PATH_TREINT_DESC
+		allow_achievements = yes
+	}
+}
+ENG_path = {
+	name = ENG_PATH
+	group = RULE_GROUP_TNW_RULES_WS_EUROPE
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_ENG_PATH_RANDOM
+		desc = RULE_OPTION_ENG_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = ENG_PATH_STRACHEY
+		text = RULE_OPTION_ENG_PATH_STRACHEY
+		desc = RULE_OPTION_ENG_PATH_STRACHEY_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = ENG_PATH_JOAD
+		text = RULE_OPTION_ENG_PATH_JOAD
+		desc = RULE_OPTION_ENG_PATH_JOAD_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = ENG_PATH_MITFORD
+		text = RULE_OPTION_ENG_PATH_MITFORD
+		desc = RULE_OPTION_ENG_PATH_MITFORD_DESC
+		allow_achievements = yes
+	}
+}
+
+### Central / Northern Europe ###
+RHI_path = {
+	name = RHI_PATH
+	group = RULE_GROUP_TNW_RULES_CN_EUROPE
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_RHI_PATH_RANDOM
+		desc = RULE_OPTION_RHI_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = RHI_PATH_SPD
+		text = RULE_OPTION_RHI_PATH_SPD
+		desc = RULE_OPTION_RHI_PATH_SPD_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = RHI_PATH_FAUD
+		text = RULE_OPTION_RHI_PATH_FAUD
+		desc = RULE_OPTION_RHI_PATH_FAUD_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = RHI_PATH_KPD
+		text = RULE_OPTION_RHI_PATH_KPD
+		desc = RULE_OPTION_RHI_PATH_KPD_DESC
+		allow_achievements = yes
+	}
+}
+
+### Eastern / Southeast Europe & Central Asia ###
+RUS_aftermath = {
+	name = RUS_VOZHD_DEATH
+	group = RULE_GROUP_TNW_RULES_ESE_EUROPE_CENTRAL_ASIA
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_RUS_VOZHD_DEATH_RANDOM
+		desc = RULE_OPTION_RUS_VOZHD_DEATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_VOZHD_DEATH_THOUGHTRULE
+		text = RULE_OPTION_RUS_VOZHD_DEATH_THOUGHTRULE
+		desc = RULE_OPTION_RUS_VOZHD_DEATH_THOUGHTRULE_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_VOZHD_DEATH_CENTER
+		text = RULE_OPTION_RUS_VOZHD_DEATH_CENTER
+		desc = RULE_OPTION_RUS_VOZHD_DEATH_CENTER_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_VOZHD_DEATH_HARDLINER
+		text = RULE_OPTION_RUS_VOZHD_DEATH_HARDLINER
+		desc = RULE_OPTION_RUS_VOZHD_DEATH_HARDLINER_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_VOZHD_DEATH_WWIII
+		text = RULE_OPTION_RUS_VOZHD_DEATH_WWIII
+		desc = RULE_OPTION_RUS_VOZHD_DEATH_WWIII_DESC
+		allow_achievements = no
+	}
+}
+
+### Africa ###
+NFA_path = {
+	name = NFA_PATH
+	group = RULE_GROUP_TNW_RULES_AFRICA
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_NFA_PATH_RANDOM
+		desc = RULE_OPTION_NFA_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = NFA_PATH_SUS_SOCCON
+		text = RULE_OPTION_NFA_PATH_SUS_SOCCON
+		desc = RULE_OPTION_NFA_PATH_SUS_SOCCON_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = NFA_PATH_PSF_SOCCON
+		text = RULE_OPTION_NFA_PATH_PSF_SOCCON
+		desc = RULE_OPTION_NFA_PATH_PSF_SOCCON_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = NFA_PATH_MARLIB
+		text = RULE_OPTION_NFA_PATH_MARLIB
+		desc = RULE_OPTION_NFA_PATH_MARLIB_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = NFA_PATH_AUTDEM
+		text = RULE_OPTION_NFA_PATH_AUTDEM
+		desc = RULE_OPTION_NFA_PATH_AUTDEM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = NFA_PATH_PATAUT
+		text = RULE_OPTION_NFA_PATH_PATAUT
+		desc = RULE_OPTION_NFA_PATH_PATAUT_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = NFA_PATH_NATPOP
+		text = RULE_OPTION_NFA_PATH_NATPOP
+		desc = RULE_OPTION_NFA_PATH_NATPOP_DESC
+		allow_achievements = yes
+	}
+}
+
+### Caucasus & Middle East ###
+OTT_path = {
+	name = OTT_PATH
+	group = RULE_GROUP_TNW_RULES_CAUCASUS_MIDDLE_EAST
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_OTT_PATH_RANDOM
+		desc = RULE_OPTION_OTT_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = OTT_PATH_AUTDEM
+		text = RULE_OPTION_OTT_PATH_AUTDEM
+		desc = RULE_OPTION_OTT_PATH_AUTDEM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = OTT_PATH_MARLIB
+		text = RULE_OPTION_OTT_PATH_MARLIB
+		desc = RULE_OPTION_OTT_PATH_MARLIB_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = OTT_PATH_SOCLIB
+		text = RULE_OPTION_OTT_PATH_SOCLIB
+		desc = RULE_OPTION_OTT_PATH_SOCLIB_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = OTT_PATH_SOCCON
+		text = RULE_OPTION_OTT_PATH_SOCCON
+		desc = RULE_OPTION_OTT_PATH_SOCCON_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = OTT_PATH_PATAUT
+		text = RULE_OPTION_OTT_PATH_PATAUT
+		desc = RULE_OPTION_OTT_PATH_PATAUT_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = OTT_PATH_ENDEAVOUR_AUTDEM
+		text = RULE_OPTION_OTT_PATH_ENDEAVOUR_AUTDEM
+		desc = RULE_OPTION_OTT_PATH_ENDEAVOUR_AUTDEM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = OTT_PATH_ENDEAVOUR_MARLIB
+		text = RULE_OPTION_OTT_PATH_ENDEAVOUR_MARLIB
+		desc = RULE_OPTION_OTT_PATH_ENDEAVOUR_MARLIB_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = OTT_PATH_NATPOP
+		text = RULE_OPTION_OTT_PATH_NATPOP
+		desc = RULE_OPTION_OTT_PATH_NATPOP_DESC
+		allow_achievements = yes
+	}
+}
+
+### East Asia ###
+CHI_path = {
+	name = CHI_PATH
+	group = RULE_GROUP_TNW_RULES_EAST_ASIA
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_CHI_PATH_RANDOM
+		desc = RULE_OPTION_CHI_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CHI_PATH_RCKMT_HOLD_ON
+		text = RULE_OPTION_CHI_PATH_RCKMT_HOLD_ON
+		desc = RULE_OPTION_CHI_PATH_RCKMT_HOLD_ON_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CHI_PATH_BEIPING_VICTORIOUS
+		text = RULE_OPTION_CHI_PATH_BEIPING_VICTORIOUS
+		desc = RULE_OPTION_CHI_PATH_BEIPING_VICTORIOUS_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CHI_PATH_CPC_REVOLUTION
+		text = RULE_OPTION_CHI_PATH_CPC_REVOLUTION
+		desc = RULE_OPTION_CHI_PATH_CPC_REVOLUTION_DESC
+		allow_achievements = yes
+	}
+}
+JAP_border_conflict_path = {
+	name = JAP_BORDER_CONFLICT_PATH
+	group = RULE_GROUP_TNW_RULES_EAST_ASIA
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_JAP_BORDER_CONFLICT_PATH_RANDOM
+		desc = RULE_OPTION_JAP_BORDER_CONFLICT_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_BORDER_CONFLICT_PATH_JAP
+		text = RULE_OPTION_JAP_BORDER_CONFLICT_PATH_JAP
+		desc = RULE_OPTION_JAP_BORDER_CONFLICT_PATH_JAP_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_BORDER_CONFLICT_PATH_IAS
+		text = RULE_OPTION_JAP_BORDER_CONFLICT_PATH_IAS
+		desc = RULE_OPTION_JAP_BORDER_CONFLICT_PATH_IAS_DESC
+		allow_achievements = yes
+	}
+}
+JAP_path = {
+	name = JAP_PATH
+	group = RULE_GROUP_TNW_RULES_EAST_ASIA
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_JAP_PATH_RANDOM
+		desc = RULE_OPTION_JAP_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_PATH_BISSON_SUCCESS
+		text = RULE_OPTION_JAP_PATH_BISSON_SUCCESS
+		desc = RULE_OPTION_JAP_PATH_BISSON_SUCCESS_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_PATH_BISSON_OUSTED
+		text = RULE_OPTION_JAP_PATH_BISSON_OUSTED
+		desc = RULE_OPTION_JAP_PATH_BISSON_OUSTED_DESC
+		allow_achievements = yes
+	}
+}
+JAP_syndicate_future_path = {
+	name = JAP_SYNDICATE_FUTURE_PATH
+	group = RULE_GROUP_TNW_RULES_EAST_ASIA
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_JAP_SYNDICATE_FUTURE_PATH_RANDOM
+		desc = RULE_OPTION_JAP_SYNDICATE_FUTURE_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SYNDICATE_FUTURE_PATH_COMMITTEE
+		text = RULE_OPTION_JAP_SYNDICATE_FUTURE_PATH_COMMITTEE
+		desc = RULE_OPTION_JAP_SYNDICATE_FUTURE_PATH_COMMITTEE_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SYNDICATE_FUTURE_PATH_TAKANO
+		text = RULE_OPTION_JAP_SYNDICATE_FUTURE_PATH_TAKANO
+		desc = RULE_OPTION_JAP_SYNDICATE_FUTURE_PATH_TAKANO_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SYNDICATE_FUTURE_PATH_JSP
+		text = RULE_OPTION_JAP_SYNDICATE_FUTURE_PATH_JSP
+		desc = RULE_OPTION_JAP_SYNDICATE_FUTURE_PATH_JSP_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SYNDICATE_FUTURE_PATH_JCP
+		text = RULE_OPTION_JAP_SYNDICATE_FUTURE_PATH_JCP
+		desc = RULE_OPTION_JAP_SYNDICATE_FUTURE_PATH_JCP_DESC
+		allow_achievements = yes
+	}
+}
+JAP_socialist_future_path = {
+	name = JAP_SOCIALIST_FUTURE_PATH
+	group = RULE_GROUP_TNW_RULES_EAST_ASIA
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_RANDOM
+		desc = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SOCIALIST_FUTURE_PATH_SUCCESS
+		text = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_SUCCESS
+		desc = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_SUCCESS_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SOCIALIST_FUTURE_PATH_DEMSOC
+		text = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_DEMSOC
+		desc = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_DEMSOC_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SOCIALIST_FUTURE_PATH_SOCDEM
+		text = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_SOCDEM
+		desc = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_SOCDEM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SOCIALIST_FUTURE_PATH_SYNDIE
+		text = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_SYNDIE
+		desc = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_SYNDIE_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SOCIALIST_FUTURE_PATH_FAIL
+		text = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_FAIL
+		desc = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_FAIL_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SOCIALIST_FUTURE_PATH_OCCUPY
+		text = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_OCCUPY
+		desc = RULE_OPTION_JAP_SOCIALIST_FUTURE_PATH_OCCUPY_DESC
+		allow_achievements = yes
+	}
+}
+JAP_emergency_government_path = {
+	name = JAP_EMERGENCY_GOVERNMENT_PATH
+	group = RULE_GROUP_TNW_RULES_EAST_ASIA
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_JAP_EMERGENCY_GOVERNMENT_PATH_RANDOM
+		desc = RULE_OPTION_JAP_EMERGENCY_GOVERNMENT_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_EMERGENCY_GOVERNMENT_PATH_JCLP
+		text = RULE_OPTION_JAP_EMERGENCY_GOVERNMENT_PATH_JCLP
+		desc = RULE_OPTION_JAP_EMERGENCY_GOVERNMENT_PATH_JCLP_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_EMERGENCY_GOVERNMENT_PATH_PLANISME
+		text = RULE_OPTION_JAP_EMERGENCY_GOVERNMENT_PATH_PLANISME
+		desc = RULE_OPTION_JAP_EMERGENCY_GOVERNMENT_PATH_PLANISME_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_EMERGENCY_GOVERNMENT_PATH_MAOISM
+		text = RULE_OPTION_JAP_EMERGENCY_GOVERNMENT_PATH_MAOISM
+		desc = RULE_OPTION_JAP_EMERGENCY_GOVERNMENT_PATH_MAOISM_DESC
+		allow_achievements = yes
+	}
+}
+JAP_socialist_econ_path = {
+	name = JAP_SOCIALIST_ECON_PATH
+	group = RULE_GROUP_TNW_RULES_EAST_ASIA
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_JAP_SOCIALIST_ECON_PATH_RANDOM
+		desc = RULE_OPTION_JAP_SOCIALIST_ECON_PATH_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SOCIALIST_ECON_PATH_ORTHODOX
+		text = RULE_OPTION_JAP_SOCIALIST_ECON_PATH_ORTHODOX
+		desc = RULE_OPTION_JAP_SOCIALIST_ECON_PATH_ORTHODOX_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SOCIALIST_ECON_PATH_DIGITAL
+		text = RULE_OPTION_JAP_SOCIALIST_ECON_PATH_DIGITAL
+		desc = RULE_OPTION_JAP_SOCIALIST_ECON_PATH_DIGITAL_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_SOCIALIST_ECON_PATH_MARKET
+		text = RULE_OPTION_JAP_SOCIALIST_ECON_PATH_MARKET
+		desc = RULE_OPTION_JAP_SOCIALIST_ECON_PATH_MARKET_DESC
+		allow_achievements = yes
+	}
+}
+
+### South Asia & Oceania ###
+AFG_war = {
+	name = AFG_WAR
+	group = RULE_GROUP_TNW_RULES_SOUTH_ASIA_OCEANIA
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_AFG_WAR_RANDOM
+		desc = RULE_OPTION_AFG_WAR_RANDOM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = AFG_WAR_AMANULLAH_PATAUT
+		text = RULE_OPTION_AFG_WAR_AMANULLAH_PATAUT
+		desc = RULE_OPTION_AFG_WAR_AMANULLAH_PATAUT_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = AFG_WAR_NADIR_PATAUT
+		text = RULE_OPTION_AFG_WAR_NADIR_PATAUT
+		desc = RULE_OPTION_AFG_WAR_NADIR_PATAUT_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = AFG_WAR_NO
+		text = RULE_OPTION_AFG_WAR_NO
+		desc = RULE_OPTION_AFG_WAR_NO_DESC
+		allow_achievements = yes
+	}
+}

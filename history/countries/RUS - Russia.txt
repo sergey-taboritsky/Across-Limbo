@@ -1,0 +1,53 @@
+﻿capital = 219
+starting_train_buffer = 3.0
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.3
+# Starting tech
+
+recruit_character = RUS_Boris_Savinkhov
+recruit_character = RUS_Tirumvirate
+recruit_character = RUS_Pyotr_Savitsky
+recruit_character = RUS_Karol_Vendzyagolsky
+recruit_character = RUS_Viktor_Larionov
+recruit_character = RUS_Aleksandr_Dikgof_Derental
+recruit_character = RUS_Yury_Shirinsky_Shikhmatov
+recruit_character = RUS_Maksimilian_Filonenko
+recruit_character = RUS_Vladimir_Manstein
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = Nationalism 
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 0
+	socialism = 2
+	Social_democracy = 3
+	Liberalism = 6
+	Conservatism = 13
+	Absolutism = 7
+	Authoritarianism = 25
+	Nationalism = 44
+}
+
+create_faction_from_template = faction_template_SarPact
+add_to_faction = WGR
+add_to_faction = POL
+add_to_faction = FIN
+add_to_faction = BUL
+add_to_faction = FIN
+add_to_faction = PRE
+
+add_ideas = {
+	moscow_aligned_nation
+
+	RUS_Aleksandr_Dikgof_Derental_hog
+	RUS_Pyotr_Savitsky_advisor
+	RUS_Karol_Vendzyagolsky_advisor
+	RUS_Yury_Shirinsky_Shikhmatov_advisor
+	RUS_Maksimilian_Filonenko_advisor
+}

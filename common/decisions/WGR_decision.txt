@@ -1,0 +1,430 @@
+WGR_Bavarian_independence_crisis_decision = {
+	#巴伐利亚极端组织正在增强自己的实力
+	WGR_Bavarian_independence_crisis_decision_1 = {
+		icon = GFX_decision_revolt
+		activation = {
+			NOT = {
+				has_country_flag = WGR_NO_WGR_Bavarian_independence_crisis_decision
+				country_exists = GER
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = WGR_Bavarian_independence_crisis_decision_1_2_custom_trigger
+				check_variable = {
+					WGR_Bavarian_extremist_group_readiness > 99
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = WGR_Bavarian_independence_crisis_decision_1_custom_trigger
+				always = no
+			}
+		}
+		days_mission_timeout = 30
+		is_good = no
+		timeout_effect = {
+			custom_effect_tooltip = WGR_Bavarian_independence_crisis_decision_1_custom
+			add_to_variable = {
+				WGR_Bavarian_extremist_group_readiness = 10
+			}
+			clamp_variable = {
+				var = WGR_Bavarian_extremist_group_readiness
+				min = 0
+				max = 100
+			}
+		}
+		cancel_effect = {
+			country_event = WGR_event.7
+			hidden_effect = {
+				news_event = WGR_newevent.1
+			}
+			GER = {
+				transfer_state = 54
+				transfer_state = 53
+				transfer_state = 52
+				declare_war_on = {
+					target = WGR
+					type = annex_everything
+				}
+				hidden_effect = {
+					load_oob = GER_1936_nsb
+				}
+			}
+		}
+	}
+	#申请英法援助
+	WGR_Bavarian_independence_crisis_decision_2 = {
+		icon = GFX_decision_gre_faction_management
+		days_remove = 30
+		cost = 30
+		available = {
+			has_war_with = GER
+		}
+		fire_only_once = yes
+		remove_effect = {
+			ENG = {
+				declare_war_on = {
+					target = GER
+					type = annex_everything
+				}
+			}
+			FRA = {
+				declare_war_on = {
+					target = GER
+					type = annex_everything
+				}
+			}
+		}
+	}
+	#改善巴伐利亚地区的经济状况
+	WGR_Bavarian_independence_crisis_decision_3 = {
+		icon = GFX_decision_generic_factory
+		cost = 35
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+		fire_only_once = yes
+		days_remove = 15
+		remove_effect = {
+			country_event = WGR_event.5
+		}
+	}
+	#武装巴伐利亚警察
+	WGR_Bavarian_independence_crisis_decision_4 = {
+		icon = GFX_decision_generic_police_action
+		cost = 0
+		days_remove = 7
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+			has_equipment = {
+				infantry_equipment > 499
+			}
+			has_manpower > 500
+			has_completed_focus = WGR_0_1_2
+		}
+		custom_cost_trigger = {
+			tag = WGR
+		}
+		custom_cost_text = WGR_Bavarian_independence_crisis_decision_4_cost
+		remove_effect = {
+			custom_effect_tooltip = WGR_0_1_4_tt
+			add_to_variable = {
+				WGR_Bavarian_extremist_group_readiness = -5
+			}
+			clamp_variable = {
+				var = WGR_Bavarian_extremist_group_readiness
+				min = 0
+				max = 100
+			}
+		}
+	}
+	#逮捕巴伐利亚极端组织成员
+	WGR_Bavarian_independence_crisis_decision_5 = {
+		icon = GFX_decision_generic_arrest
+		cost = 15
+		days_remove = 14
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+			OR = {
+				has_completed_focus = WGR_0_1_4
+				has_completed_focus = WGR_0_1_5
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = WGR_0_1_4_tt
+			add_to_variable = {
+				WGR_Bavarian_extremist_group_readiness = -5
+			}
+			clamp_variable = {
+				var = WGR_Bavarian_extremist_group_readiness
+				min = 0
+				max = 100
+			}
+		}
+	}
+	#取缔巴伐利亚极端组织
+	WGR_Bavarian_independence_crisis_decision_6 = {
+		icon = GFX_decision_oppression
+		cost = 50
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = WGR_Bavarian_independence_crisis_decision_6_custom_trigger
+				check_variable = {
+					WGR_Bavarian_extremist_group_readiness < 1
+				}
+			}
+			NOT = {
+				has_war_with = GER
+			}
+		}
+		days_remove = 35
+		remove_effect = {
+			custom_effect_tooltip = WGR_Bavarian_independence_crisis_decision_6_custom
+			add_political_power = 100
+			add_stability = 0.1
+			add_timed_idea = {
+				idea = WGR_Extremist_groups_that_have_been_successfully_suppressed
+				days = 180
+			}
+			set_country_flag = WGR_NO_WGR_Bavarian_independence_crisis_decision
+			country_event = WGR_event.6
+		}
+	}
+}
+
+WGR_German_1937_elections = {
+	#测试决议
+	WGR_decision_02_test = {
+		icon = GFX_decision_gre_faction_management
+		days_remove = 0
+		cost = 0
+		available = {
+			is_debug = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			set_variable = {
+				WGR_central_party = 0
+			}
+			set_variable = {
+				WGR_social_democrats = 2
+			}
+			set_variable = {
+				WGR_National_People = 5
+			}
+			set_variable = {
+				WGR_State_Socialist_Workers_Party = 6
+			}
+			WGR_result_election_decided = yes
+		}
+	}
+	#中央民主党正在发起竞选活动
+	WGR_decision_02_07 = {
+		fire_only_once = no
+		visible = {
+			NOT = {
+				has_country_flag = WGR_decision_02_03_flag
+			}
+			has_country_flag = WGR_German_1937_elections_flag
+		}
+		activation = {
+			NOT = {
+				has_country_flag = WGR_decision_02_03_flag
+			}
+			has_country_flag = WGR_German_1937_elections_flag
+		}
+		available = {
+			NOT = {
+				has_country_flag = WGR_German_1937_elections_flag
+			}
+		}
+		days_mission_timeout = 15
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = WGR_German_1937_elections_flag
+			}
+		}
+		timeout_effect = {
+			add_to_variable = {
+				WGR_central_party = 1
+			}
+			WGR_result_election_decided = yes
+			custom_effect_tooltip = WGR_decision_02_07_tt
+		}
+	}
+	#国家人民党正在发起竞选活动
+	WGR_decision_02_08 = {
+		fire_only_once = no
+		visible = {
+			NOT = {
+				has_country_flag = WGR_decision_02_04_flag
+			}
+			has_country_flag = WGR_German_1937_elections_flag
+		}
+		activation = {
+			NOT = {
+				has_country_flag = WGR_decision_02_04_flag
+			}
+			has_country_flag = WGR_German_1937_elections_flag
+		}
+		available = {
+			NOT = {
+				has_country_flag = WGR_German_1937_elections_flag
+			}
+		}
+		days_mission_timeout = 15
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = WGR_German_1937_elections_flag
+			}
+		}
+		timeout_effect = {
+			add_to_variable = {
+				WGR_National_People = 1
+			}
+			WGR_result_election_decided = yes
+			custom_effect_tooltip = WGR_decision_02_08_tt
+		}
+	}
+	#国家社会主义工人党正在发起竞选活动
+	WGR_decision_02_09 = {
+		fire_only_once = no
+		visible = {
+			NOT = {
+				has_country_flag = WGR_decision_02_05_flag
+			}
+			has_country_flag = WGR_German_1937_elections_flag
+		}
+		activation = {
+			NOT = {
+				has_country_flag = WGR_decision_02_05_flag
+			}
+			has_country_flag = WGR_German_1937_elections_flag
+		}
+		available = {
+			NOT = {
+				has_country_flag = WGR_German_1937_elections_flag
+			}
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = WGR_German_1937_elections_flag
+			}
+		}
+		days_mission_timeout = 15
+		timeout_effect = {
+			add_to_variable = {
+				WGR_State_Socialist_Workers_Party = 1
+			}
+			WGR_result_election_decided = yes
+			custom_effect_tooltip = WGR_decision_02_09_tt
+		}
+	}
+	#在xxx地方发起社会民主党的竞选活动
+	WGR_decision_02_10 = {
+		icon = GFX_decision_gre_faction_management
+		days_remove = 14
+		cost = 15
+		visible = {
+			has_country_flag = WGR_decision_02_02_flag
+			has_country_flag = WGR_German_1937_elections_flag
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_core_of = WGR
+			}
+		}
+		fire_only_once = no
+		complete_effect = {
+			add_to_variable = {
+				WGR_social_democrats = 1
+			}
+			WGR_result_election_decided = yes
+			custom_effect_tooltip = WGR_decision_02_06_tt
+		}
+	}
+	#在xxx地方发起中央党的竞选活动
+	WGR_decision_02_11 = {
+		icon = GFX_decision_gre_faction_management
+		days_remove = 14
+		cost = 15
+		visible = {
+			has_country_flag = WGR_decision_02_03_flag
+			has_country_flag = WGR_German_1937_elections_flag
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_core_of = WGR
+			}
+		}
+		fire_only_once = no
+		complete_effect = {
+			add_to_variable = {
+				WGR_central_party = 1
+			}
+			WGR_result_election_decided = yes
+			custom_effect_tooltip = WGR_decision_02_07_tt
+		}
+	}
+	#在xxx地方发起国家人民党的竞选活动
+	WGR_decision_02_12 = {
+		icon = GFX_decision_gre_faction_management
+		days_remove = 14
+		cost = 15
+		visible = {
+			has_country_flag = WGR_decision_02_04_flag
+			has_country_flag = WGR_German_1937_elections_flag
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_core_of = WGR
+			}
+		}
+		fire_only_once = no
+		complete_effect = {
+			add_to_variable = {
+				WGR_National_People = 1
+			}
+			WGR_result_election_decided = yes
+			custom_effect_tooltip = WGR_decision_02_08_tt
+		}
+	}
+	#在xxx地方发起国家社会主义工人党的竞选活动
+	WGR_decision_02_13 = {
+		icon = GFX_decision_gre_faction_management
+		days_remove = 14
+		cost = 15
+		visible = {
+			has_country_flag = WGR_decision_02_05_flag
+			has_country_flag = WGR_German_1937_elections_flag
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_core_of = WGR
+			}
+		}
+		fire_only_once = no
+		complete_effect = {
+			add_to_variable = {
+				WGR_State_Socialist_Workers_Party = 1
+			}
+			WGR_result_election_decided = yes
+			custom_effect_tooltip = WGR_decision_02_09_tt
+		}
+	}
+	#选举结果即将揭晓
+	WGR_decision_02_14 = {
+		fire_only_once = no
+		visible = {
+			has_country_flag = WGR_German_1937_elections_flag
+		}
+		activation = {
+			has_country_flag = WGR_German_1937_elections_flag
+		}
+		available = {
+			NOT = {
+				has_country_flag = WGR_German_1937_elections_flag
+			}
+		}
+		days_mission_timeout = 180
+		timeout_effect = {
+			clr_country_flag = WGR_German_1937_elections_flag
+		}
+	}
+}

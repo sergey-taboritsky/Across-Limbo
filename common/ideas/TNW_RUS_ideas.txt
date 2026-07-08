@@ -1,0 +1,85 @@
+ideas = {
+	country = {
+		#革命始源地
+		RUS_birthplace_revolution = {
+			picture = GFX_idea_RUS_birthplace_revolution
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.50
+			}
+		}
+		#农村“阶级战争”的余波
+		RUS_chenxiang_maodun = {
+			picture = GFX_idea_RUS_chenxiang_maodun
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				consumer_goods_factor = -0.20
+			}
+		}
+		#一五计划
+		RUS_one_five_jihua = {
+			picture = GFX_idea_RUS_one_five_jihua
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				consumer_goods_expected_value = -0.20
+				global_building_slots_factor = 0.05
+	            production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+	            production_speed_industrial_complex_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+		#形式上统一的党
+		RUS_zongjiao_wenti = {
+			picture = GFX_idea_RUS_zongjiao_wenti
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+			    political_power_factor = -0.15
+				stability_factor = 0.15
+			}
+		}
+		#共产国际成员国
+		RUS_gong_chang_guo_ji = {
+			picture = gong_chang_guo_ji
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+			    send_volunteer_divisions_required = -1
+				send_volunteer_size = 2
+			}
+		}
+		#苏联加盟国-苏维埃俄国
+		RUS_jia_meng_guo = {
+			picture = RUS_jia_meng_guo_rus
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+			    
+			}
+		}
+	}
+}

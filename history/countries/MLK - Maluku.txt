@@ -1,0 +1,28 @@
+﻿capital = 668
+
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Absolutism = 60
+	Nationalism = 30
+	communist = 10
+	Authoritarianism = 0
+}
+
+#recruit_character = INS_Christiaan_Robbert_Steven_Soumokil
+create_country_leader = {
+	name = INS_Christiaan_Robbert_Steven_Soumokil
+	picture = GFX_portrait_large_INS_Christiaan_Robbert_Steven_Soumokil
+	desc = INS_Christiaan_Robbert_Steven_Soumokil_desc
+	ideology = military_government
+	expire = "2022.10.20.1"
+	id = -1
+	traits = {}
+}

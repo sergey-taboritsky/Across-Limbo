@@ -1,0 +1,28 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TNW_Level_of_development_gui_window"
+		size = { width = 100 height = 700 }
+		position = { x = 0  y = 0 }	
+	    ##识字等级进度条
+	    iconType = {
+		name ="TNW_Level_of_development_gui_window_progress_1"
+		spriteType = "GFX_TNW_Progress_bar"
+		pdx_tooltip = "TNW_Literacy_level_text"
+		position = { x= 50 y = 50 }
+	    }
+		##富裕等级进度条
+	    iconType = {
+		name ="TNW_Level_of_development_gui_window_progress_2"
+		spriteType = "GFX_TNW_Progress_bar"
+		pdx_tooltip = "TNW_Affluence_value_text"
+		position = { x= 50 y = 350 }
+	    }
+		##工业化等级进度条
+	    iconType = {
+		name ="TNW_Level_of_development_gui_window_progress_3"
+		spriteType = "GFX_TNW_Progress_bar"
+		pdx_tooltip = "TNW_Industrial_scale_text"
+		position = { x= 50 y = 650 }
+	    }
+	}
+}

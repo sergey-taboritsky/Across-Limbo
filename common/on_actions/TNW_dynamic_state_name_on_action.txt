@@ -1,0 +1,90 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 339 }
+				}
+				if =  {
+					limit = {
+						original_tag = TUR
+					}
+					FROM.FROM = {
+						set_state_name = STATE_339_TUR
+						set_province_name = {
+							id = 4112
+							name = VICTORY_POINTS_4112_TUR
+						}
+						set_province_name = {
+							id = 928
+							name = VICTORY_POINTS_928_TUR
+						}
+					}
+				}
+				else = { 
+					FROM.FROM = {
+						reset_state_name = yes
+						reset_province_name = 4112
+						reset_province_name = 928
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 340 }
+				}
+				if =  {
+					limit = {
+						original_tag = TUR
+					}
+					FROM.FROM = {
+						set_state_name = STATE_340_TUR
+						set_province_name = {
+							id = 947
+							name = VICTORY_POINTS_947_TUR
+						}
+						set_province_name = {
+							id = 9799
+							name = VICTORY_POINTS_9799_TUR
+						}
+					}
+				}
+				else = { 
+					FROM.FROM = {
+						reset_state_name = yes
+						reset_province_name = 947
+						reset_province_name = 9799
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 797 }
+				}
+				if =  {
+					limit = {
+						original_tag = TUR
+					}
+					FROM.FROM = {
+						set_state_name = STATE_797_TUR
+						set_province_name = {
+							id = 9833
+							name = VICTORY_POINTS_9833_TUR
+						}
+						set_province_name = {
+							id = 11811
+							name = VICTORY_POINTS_11811_TUR
+						}
+					}
+				}
+				else = { 
+					FROM.FROM = {
+						reset_state_name = yes
+						reset_province_name = 9833
+						reset_province_name = 11811
+					}
+				}
+			}
+		}
+	}
+}

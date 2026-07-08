@@ -1,0 +1,19 @@
+﻿l_simp_chinese:
+#顾问
+ CHI_Wang_Weizhou: "王维舟"
+ CHI_Wang_Weizhou_desc: "§Y出生于：§!§L1887年6月10日，大清帝国，川东道绥定府东乡县§!\n\n§Y政治面貌：§!§c中国共产党§!\n\n§Y人物背景：§!§L§!"
+ CHI_Wu_Yuzhang: "吴玉章"
+ 
+#政党名字
+ SCN_communist_party: "中国共产党"
+ SCN_socialism_party: "中国共产党"
+ SCN_Social_democracy_party: "中共四川省委"
+ SCN_Social_democracy_party_long: "中国共产党四川省委"
+ SCN_Liberalism_party: "中国民主联合战线"
+ SCN_Conservatism_party: "中国青年党"
+ SCN_Authoritarianism_party: "国民党"
+ SCN_Absolutism_party: "-"
+ SCN_Nationalism_party: "-"
+
+#精神
+ SCN_Red_Star_Over_Sichuan: "红日出川"

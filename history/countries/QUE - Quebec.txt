@@ -1,0 +1,18 @@
+﻿capital = 468 # Montreal (Saint Lawrence)
+
+
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1935.10.14"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	Liberalism = 70
+	Nationalism = 10
+	communist = 15
+	Authoritarianism = 5
+}

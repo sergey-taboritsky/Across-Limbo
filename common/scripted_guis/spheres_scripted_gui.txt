@@ -1,0 +1,81 @@
+scripted_gui = { 
+	TNW_alignment_gui = {
+		window_name = "TNW_alignment_gui_window"
+		context_type = country_mapicon
+		mapmode = cold_war_map
+		
+		visible = { 
+			always = yes
+		}
+		
+		mapicon_targets = {
+			target_array = global.countries
+			target_trigger = {
+				FROM = {
+					OR = {
+						original_tag = RUS
+						original_tag = FRA
+					}
+				}
+			}
+		}
+		
+		properties = {
+			alignment_icon = {
+				image = "[FROM.GetAlignmentIcon]"
+			}
+		}
+	}
+	
+	TNW_political_window_installment = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = SGUI_POL_SPHERE__WINDOWTYPE
+		
+		visible = { always = yes }
+		
+		triggers = {
+			sphere_sided_with_NON_visible = {
+				NOT = {
+					has_idea = china_aligned_nation
+					has_idea = usa_aligned_nation
+					has_idea = ussr_aligned_nation
+					has_idea = iri_aligned_nation
+				}
+			}
+			
+			sphere_sided_with_PRC_visible = { has_idea = china_aligned_nation NOT = { tag = PRC } }
+			sphere_is_PRC_visible = { has_idea = china_aligned_nation tag = PRC }
+			
+			sphere_sided_with_NATO_visible = { has_idea = usa_aligned_nation NOT = { AND = { is_NATO_member = yes is_faction_leader = yes } } }
+			sphere_is_NATO_visible = { has_idea = usa_aligned_nation is_NATO_member = yes is_faction_leader = yes }
+			
+			sphere_sided_with_USSR_visible = { has_idea = ussr_aligned_nation NOT = { tag = SOV } }
+			sphere_is_USSR_visible = { has_idea = ussr_aligned_nation tag = SOV }
+			
+			sphere_sided_with_IRI_visible = { has_idea = iri_aligned_nation NOT = { tag = PER } }
+			sphere_is_IRI_visible = { has_idea = iri_aligned_nation tag = PER }
+		}
+	}
+	
+	TNW_diplomatic_window_installment = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view
+		window_name = SGUI_POL_SPHERE__WINDOWTYPE_DIP
+		
+		triggers = {
+			POL_SPHERE_ICON_DYN_visible = {
+				OR = {
+					has_idea = usa_aligned_nation
+					has_idea = china_aligned_nation
+					has_idea = ussr_aligned_nation
+					has_idea = iri_aligned_nation
+				}
+			}
+		}
+		
+		properties = {
+			POL_SPHERE_ICON_DYN = { image = "[This.GetAlignmentIcon_Drippy]" }
+		}
+	}
+}

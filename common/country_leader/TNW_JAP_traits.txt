@@ -1,0 +1,11 @@
+leader_traits = {
+	#浊流中的泳者
+    JAP_A_swimmer_in_a_muddy_stream = {
+		random = no
+		production_speed_industrial_complex_factor = -0.05
+		war_support_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

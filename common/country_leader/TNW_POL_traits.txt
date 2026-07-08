@@ -1,0 +1,28 @@
+leader_traits = {
+	#辛辣的宣传家
+    POL_Biting_publicist = {
+		random = no
+		political_power_factor = 0.05
+		war_support_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#出色的辩护人
+	POL_Excellent_defender = {
+		random = no
+		stability_factor = 0.15
+		compliance_gain = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#心态失衡
+	POL_Mental_imbalance = {
+		random = no
+		political_power_factor = -0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

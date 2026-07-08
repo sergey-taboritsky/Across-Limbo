@@ -1,0 +1,30 @@
+﻿capital = 757
+
+#oob = "TIB_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = TIB_Qoigyi_Gyaincain
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+set_popularities = {
+	communist = 0
+	socialism = 0
+	Social_democracy = 2
+	Liberalism = 6
+	Conservatism = 19
+	Authoritarianism = 12
+	Absolutism = 40
+	Nationalism = 21
+
+}

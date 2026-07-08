@@ -1,0 +1,89 @@
+characters={	
+	MARS_Martian={
+		country_leader={
+			expire = "1965.1.1"
+			ideology = Marxism
+			traits = {
+				political_dancer
+			}
+			id=-1
+			desc="我是火星人，如果你看见我，那就是游戏出bug了，请速速联系制作组"
+		}
+		country_leader={
+			expire = "1965.1.1"
+			ideology = Left_wing_populism
+			traits = {
+				armaments_organizer
+				political_dancer
+			}
+			id=-1
+			desc="我是火星人，如果你看见我，那就是游戏出bug了，请速速联系制作组"
+		}
+		country_leader={
+			expire = "1965.1.1"
+			ideology = progressivism
+			traits = {
+				ideological_crusader
+				political_dancer
+			}
+			id=-1
+			desc="我是火星人，如果你看见我，那就是游戏出bug了，请速速联系制作组"
+		}
+		country_leader={
+			expire = "1965.1.1"
+			ideology = National_liberalism
+			traits = {
+				indomitable_perseverance
+				political_dancer
+			}
+			id=-1
+			desc="我是火星人，如果你看见我，那就是游戏出bug了，请速速联系制作组"
+		}
+		country_leader={
+			expire = "1965.1.1"
+			ideology = Social_Conservatism
+			traits = {
+				indomitable_perseverance
+				political_dancer
+			}
+			id=-1
+			desc="我是火星人，如果你看见我，那就是游戏出bug了，请速速联系制作组"
+		}
+		country_leader={
+			expire = "1965.1.1"
+			ideology = Guided_democracy
+			traits = {
+				indomitable_perseverance
+				political_dancer
+			}
+			id=-1
+			desc="我是火星人，如果你看见我，那就是游戏出bug了，请速速联系制作组"
+		}
+		country_leader={
+			expire = "1965.1.1"
+			ideology = military_government
+			traits = {
+				indomitable_perseverance
+				political_dancer
+			}
+			id=-1
+			desc="我是火星人，如果你看见我，那就是游戏出bug了，请速速联系制作组"
+		}
+		country_leader={
+			expire = "1965.1.1"
+			ideology = Fascism
+			traits = {
+				indomitable_perseverance
+				political_dancer
+			}
+			id=-1
+			desc="我是火星人，如果你看见我，那就是游戏出bug了，请速速联系制作组"
+		}
+		name="火星人"
+		portraits={
+			civilian={
+				large="gfx/leaders/r56_generic/r56_portrait_generic_navy_europe_1.dds"
+			}
+		}
+	}
+}

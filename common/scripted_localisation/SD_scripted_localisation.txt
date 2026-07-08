@@ -1,0 +1,79 @@
+
+defined_text = { 
+	name = SD_state_type_text
+    text = {
+        trigger = {
+            has_state_category = megalopolis
+        }
+        localization_key = megalopolis
+    }
+    text = {
+        trigger = {
+            has_state_category = metropolis
+        }
+        localization_key = metropolis
+    }
+    text = {
+        trigger = {
+            has_state_category = large_city
+        }
+        localization_key = large_city
+    }
+    text = {
+        trigger = {
+            has_state_category = city
+        }
+        localization_key = city
+    }
+    text = {
+        trigger = {
+            has_state_category = large_town
+        }
+        localization_key = large_town
+    }
+    text = {
+        trigger = {
+            has_state_category = town
+        }
+        localization_key = town
+    }
+    text = {
+        trigger = {
+            has_state_category = rural
+        }
+        localization_key = rural
+    }
+    text = {
+        trigger = {
+            has_state_category = wasteland
+        }
+        localization_key = wasteland
+    }
+    text = {
+        trigger = {
+            has_state_category = enclave
+        }
+        localization_key = enclave
+    }
+    text = {
+        trigger = {
+            has_state_category = small_island
+        }
+        localization_key = small_island
+    }
+    text = {
+        trigger = {
+            has_state_category = tiny_island
+        }
+        localization_key = tiny_island
+    }
+    text = {
+        trigger = {
+            has_state_category = pastoral
+        }
+        localization_key = pastoral
+    }
+    text = {
+        localization_key = SD_state_type_text
+    }
+}

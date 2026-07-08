@@ -1,0 +1,114 @@
+ideas = {
+	country = {
+		#新国家体制
+		BRA_Estrado_Novo = {
+			picture = GFX_idea_BRA_Estrado_Novo
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#红色恐慌
+		BRA_Red_Terror = {
+			picture = GFX_idea_BRA_Red_Terror
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#拉美反工团国际协定
+		BRA_Latino_Anticomintern_Pact = {
+			picture = GFX_idea_BRA_Latino_Anticomintern_Pact
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#民族解放阵线：微不足道
+		BRA_FLN_threat_1 = {
+			picture = GFX_idea_BRA_FLN_threat
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#民族解放阵线：癣疥之疾
+		BRA_FLN_threat_2 = {
+			picture = GFX_idea_BRA_FLN_threat
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#民族解放阵线：风起云涌
+		BRA_FLN_threat_3 = {
+			picture = GFX_idea_BRA_FLN_threat
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#民族解放阵线：心腹大患
+		BRA_FLN_threat_4 = {
+			picture = GFX_idea_BRA_FLN_threat
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#民族解放阵线：回天乏术
+		BRA_FLN_threat_5 = {
+			picture = GFX_idea_BRA_FLN_threat
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#国家机器瓦解
+		BRA_state_apparatus_collapse = {
+			picture = GFX_idea_BRA_state_apparatus_collapse
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#经济崩溃
+		BRA_economic_ruin = {
+			picture = GFX_idea_BRA_economic_ruin
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#双头体制
+		BRA_two_headed_revolution = {
+			picture = GFX_idea_BRA_two_headed_revolution
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+	}
+}

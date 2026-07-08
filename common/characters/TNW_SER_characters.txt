@@ -1,0 +1,36 @@
+characters = {
+	#迪米特里耶·廖蒂奇
+	SER_Dimitrije_Ljotic = {
+		name = SER_Dimitrije_Ljotic
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SER_Dimitrije_Ljotic
+			}
+		}
+		country_leader = {
+			desc = SER_Dimitrije_Ljotic_desc
+			ideology = Ultra_Nationalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#米海洛一世
+	SER_Michael_Petrovic_Njegos = {
+		name = SER_Michael_Petrovic_Njegos
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SER_Michael_Petrovic_Njegos
+			}
+		}
+		country_leader = {
+			desc = SER_Michael_Petrovic_Njegos_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

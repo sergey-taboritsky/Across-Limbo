@@ -1,0 +1,51 @@
+on_actions = {
+	on_startup = {
+		effect = {
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Agean_frame_var = 6
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Albania_frame_var = 6
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Bulgaria_frame_var = 4
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Dobrugea_frame_var = 4
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Illyria_frame_var = 5
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Greece_frame_var = 3
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Kosovo_frame_var = 6
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Macedonia_frame_var = 4
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Moldavia_frame_var = 5
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Montenegro_frame_var = 5
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Nis_frame_var = 4
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Romania_frame_var = 5
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Serbia_frame_var = 5
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_South_Macedonia_frame_var = 4
+            }
+            set_variable = {
+                global.TNW_Balkan_Powderkeg_Button_Thrace_frame_var = 6
+            }
+		}
+	}
+}

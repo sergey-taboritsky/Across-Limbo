@@ -1,0 +1,28 @@
+﻿capital = 956
+
+#oob = "XSM_1936"
+
+recruit_character = CHI_Wang_Hongshao
+recruit_character = CHI_Ma_Hongkui
+recruit_character = CHI_Shi_Kexuan
+
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+set_popularities = {
+	communist = 3
+	socialism = 28
+	Social_democracy = 12
+	Liberalism = 3
+	Conservatism = 4
+	Authoritarianism = 2
+	Absolutism = 48
+	Nationalism = 0
+
+}

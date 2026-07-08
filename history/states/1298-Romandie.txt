@@ -1,0 +1,43 @@
+state = {
+	id = 1298
+	name = "STATE_1298"
+	manpower = 1129061
+
+	state_category = large_town
+
+	resources = {
+		steel = 4
+	}
+
+
+	history = {
+		owner = SWI
+		victory_points = { 6666 10 }
+		victory_points = { 11590 10 }
+		victory_points = { 9622 3 }
+		buildings = {
+			infrastructure = 5
+			radar_station = 1
+			
+			
+			
+			
+			
+			6683 = {
+				bunker = 5
+			}
+			9622 = {
+				bunker = 5
+			}
+			6666 = {
+				bunker = 5
+			}
+		}
+		add_core_of = SWI
+		set_state_flag = state_renamings
+	}
+
+	provinces = {
+		6666 6683 9622 11590 13124
+	}
+}

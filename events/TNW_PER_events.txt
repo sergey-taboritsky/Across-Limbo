@@ -1,0 +1,45 @@
+add_namespace = PER_event
+add_namespace = PER_news
+#
+country_event = {
+	id = PER_event.1
+	title = PER_event.1.t
+	desc = PER_event.1.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PER_event.1.a
+		kill_ideology_leader = Absolutism
+		add_popularity = { ideology = Absolutism popularity = -0.20 }
+		add_popularity = { ideology = Nationalism popularity = 0.20 }
+		set_politics = {
+			ruling_party = Nationalism
+			elections_allowed = no
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = PER_worldnews.1
+			}
+		}
+	}
+}
+
+#
+news_event = {
+	id = PER_news.1
+	title = PER_news.1.t
+	desc = PER_news.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = PER_news.1.a
+	}
+}
+
+
+

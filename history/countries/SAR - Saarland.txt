@@ -1,0 +1,35 @@
+﻿capital = 1053
+
+starting_train_buffer = 2
+
+set_research_slots = 3
+set_stability = 0.5
+add_command_power = 20
+
+set_cosmetic_tag = SAR_RHI
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 0
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 0
+	Conservatism = 0
+	Absolutism = 100
+	Authoritarianism = 0
+	Nationalism = 0
+}
+
+add_ideas = {
+	phalanstere_aligned_nation
+}
+
+recruit_character = SAR_Marie_Pierre_Koenig
+recruit_character = SAR_otto_niebergall
+recruit_character = SAR_Berthold_Cahn
+recruit_character = SAR_kate_frankenthal

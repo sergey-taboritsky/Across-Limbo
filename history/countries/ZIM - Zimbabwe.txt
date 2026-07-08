@@ -1,0 +1,45 @@
+﻿capital = 545
+
+set_convoys = 5
+
+recruit_character = ZIM_acr
+recruit_character = ZIM_stc
+recruit_character = ZIM_awt
+recruit_character = ZIM_pot
+recruit_character = ZIM_mt
+recruit_character = ZIM_ncm
+recruit_character = ZIM_nt
+recruit_character = ZIM_acd2
+recruit_character = ZIM_fascist_guy
+recruit_character = ZIM_ncs
+recruit_character = ZIM_nccr
+recruit_character = ZIM_aco2
+recruit_character = ZIM_communist_guy
+recruit_character = ZIM_ai2
+recruit_character = ZIM_ar
+recruit_character = ZIM_coi
+recruit_character = ZIM_acas
+recruit_character = ZIM_acgs
+recruit_character = ZIM_aa2
+recruit_character = ZIM_Liberalism_guy
+
+# A colongy of Italy in 1939, however if independent it would have the same politics as in 1936
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Authoritarianism = 100
+}
+
+create_country_leader = {
+	name = " Marcus James Hugins"
+	picture = GFX_portrait__Marcus_James_Hugins
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = { 
+		prince_of_terror
+	}
+}

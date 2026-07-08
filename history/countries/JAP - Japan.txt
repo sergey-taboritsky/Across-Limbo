@@ -1,0 +1,60 @@
+﻿capital = 282
+
+set_cosmetic_tag = JAP_occupation_zone
+
+set_stability = 0.35
+set_war_support = 0.8
+
+set_research_slots = 4
+set_fuel_ratio = 1.0
+add_ideas = {
+	JAP_The_stability_of_an_era
+	JAP_The_first_leftwing_cabinet
+	JAP_Recession
+	JAP_best_comes_from_the_worst
+}
+
+
+
+create_import = {
+	resource = oil
+	factories = 2
+	exporter = USA
+}
+
+
+
+set_convoys = 400
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+    communist = 12
+	syndicalism = 41
+	socialism = 7
+	Social_democracy = 17
+	Liberalism = 12
+	Conservatism = 4
+	Authoritarianism = 6
+	Absolutism = 0
+	Nationalism = 1
+}
+
+recruit_character = CHI_Zhu_De
+recruit_character = JAP_Thomas_Bisson
+recruit_character = JAP_Minoru_Takano
+recruit_character = JAP_Oyama_Ikuo
+recruit_character = JAP_Eda_Saburo
+recruit_character = JAP_Nishio_Suehiro
+recruit_character = JAP_Sakisaka_Itsuro
+recruit_character = JAP_Asanuma_Inejiro
+recruit_character = JAP_Jack_Shirai
+recruit_character = JAP_Fukumoto_Kazuo
+recruit_character = JAP_Kazahaya_Yasoji
+recruit_character = JAP_Kuroda_Hisao
+	
+country_event = { id = jap_event.1 days = 20 }

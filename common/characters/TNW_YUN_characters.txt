@@ -1,0 +1,86 @@
+characters = {
+	CHI_Hu_Ruoyu = {
+		name = CHI_Hu_Ruoyu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Hu_Ruoyu
+			}
+		}
+		country_leader = {
+			desc = CHI_Hu_Ruoyu_desc
+			ideology = tridemism_authdem
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	CHI_Zhu_De = {
+		name = CHI_Zhu_De
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhu_De
+			}
+		}
+		country_leader = {
+			desc = CHI_Zhu_De_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	CHI_Ke_Zhongping = {
+		name = CHI_Ke_Zhongping
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Ke_Zhongping
+			}
+		}
+		country_leader = {
+			desc = CHI_Ke_Zhongping_desc
+			ideology = Centralised_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	CHI_Li_Genyuan = {
+		name = CHI_Li_Genyuan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Li_Genyuan
+			}
+		}
+		country_leader = {
+			desc = CHI_Li_Genyuan_desc
+			ideology = tridemism_left
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	CHI_Ye_Quan = {
+		name = CHI_Ye_Quan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Ye_Quan
+			}
+		}
+	}
+	CHI_Gu_Pinzhen = {
+		name = CHI_Gu_Pinzhen
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Gu_Pinzhen
+			}
+		}
+		country_leader = {
+			ideology = warlord
+			expire = "1936.1.1"
+		}
+	}
+}

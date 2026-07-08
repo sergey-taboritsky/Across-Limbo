@@ -1,0 +1,39 @@
+defined_text = {
+	name = TNWGetSuperEventImage
+	text = {
+		localization_key = "GFX_[?TNW_super_event.GetTokenKey]"
+	}
+}
+
+defined_text = {
+	name = TNWGetSuperEventTitle
+	text = {
+		localization_key = "[?TNW_super_event.GetTokenLocalizedKey]"
+	}
+}
+
+defined_text = {
+	name = TNWGetSuperEventOption
+	text = {
+		trigger = {
+			meta_trigger = {
+				text = { set_temp_variable = { super_a_var = token:[SUPER]_A } }
+				SUPER = "[?TNW_super_event.GetTokenKey]"
+			}
+		}
+		localization_key = "[?super_a_var.GetTokenLocalizedKey]"
+	}
+}
+
+defined_text = {
+	name = TNWGetSuperEventDesc
+	text = {
+		trigger = {
+			meta_trigger = {
+				text = { set_temp_variable = { super_d_var = token:[SUPER]_D } }
+				SUPER = "[?TNW_super_event.GetTokenKey]"
+			}
+		}
+		localization_key = "[?super_d_var.GetTokenLocalizedKey]"
+	}
+}

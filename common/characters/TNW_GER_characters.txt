@@ -1,0 +1,19 @@
+characters = {
+	#阿道夫·希特勒
+	GER_Adolf_hitler = {
+		name = GER_Adolf_hitler
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_GER_Adolf_hitler
+			}
+		}
+		country_leader = {
+			desc = GER_Adolf_hitler_desc
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

@@ -1,0 +1,388 @@
+focus_tree = {
+	id = CHI_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	###走出寒冬
+	focus = {
+		id = CHI_Step_Out_Winter
+		icon = GFX_CHI_Step_Out_Winter
+		x = 10
+		y = 1
+		cost = 7
+		completion_reward = {
+		}
+	}
+	###相信革命阵线
+	focus = {
+		id = CHI_Belief_in_United_Front
+		icon = GFX_CHI_Belief_in_United_Front
+		prerequisite = {
+			focus = CHI_Step_Out_Winter
+		}
+		mutually_exclusive = {
+			focus = CHI_Solve_Party_Problems
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = 5
+		y = 1
+		cost = 3
+		completion_reward = {
+			add_days_mission_timeout = {
+				mission = CHI_civil_war_preparation_mission_decision
+				days = -5
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+		}
+	}
+	###动员西南民兵
+	focus = {
+		id = CHI_Mobilize_Southwest_Red_Guards
+		icon = GFX_CHI_Mobilize_Southwest_Red_Guards
+		prerequisite = {
+			focus = CHI_Belief_in_United_Front
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = 3
+		y = 2
+		cost = 3
+		mutually_exclusive = {
+			focus = CHI_New_Paths_of_Negotiation
+		}
+		completion_reward = {
+		}
+	}
+	###沟通的桥梁
+	focus = {
+		id = CHI_New_Paths_of_Negotiation
+		icon = GFX_CHI_New_Paths_of_Negotiation
+		prerequisite = {
+			focus = CHI_Belief_in_United_Front
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = 5
+		y = 2
+		cost = 3
+		mutually_exclusive = {
+			focus = CHI_Mobilize_Southwest_Red_Guards
+		}
+		completion_reward = {
+		}
+	}
+	###促进沿海经济恢复
+	focus = {
+		id = CHI_Reconstruct_Southeast_Coastlines
+		icon = GFX_CHI_Reconstruct_Southeast_Coastlines
+		prerequisite = {
+			focus = CHI_Belief_in_United_Front
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = 7
+		y = 2
+		cost = 3
+		completion_reward = {
+		}
+	}
+	###协调三民主义国际同盟
+	focus = {
+		id = CHI_Lead_International_Tridemism
+		icon = GFX_CHI_Lead_International_Tridemism
+		prerequisite = {
+			focus = CHI_Reconstruct_Southeast_Coastlines
+		}
+		prerequisite = {
+			focus = CHI_Mobilize_Southwest_Red_Guards
+			focus = CHI_New_Paths_of_Negotiation
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = 3
+		y = 3
+		cost = 3
+		completion_reward = {
+		}
+	}
+	###争取国际盟友
+	focus = {
+		id = CHI_Forge_International_Friendship
+		icon = GFX_CHI_Forge_International_Friendship
+		prerequisite = {
+			focus = CHI_Reconstruct_Southeast_Coastlines
+		}
+		prerequisite = {
+			focus = CHI_Mobilize_Southwest_Red_Guards
+			focus = CHI_New_Paths_of_Negotiation
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = 7
+		y = 3
+		cost = 3
+		completion_reward = {
+		}
+	}
+	###逮捕反对派领袖
+	focus = {
+		id = CHI_Arrest_Opposition_Leaders
+		icon = GFX_CHI_Arrest_Opposition_Leaders
+		prerequisite = {
+			focus = CHI_Forge_International_Friendship
+		}
+		prerequisite = {
+			focus = CHI_Lead_International_Tridemism
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = 5
+		y = 4
+		cost = 3
+		cancellable = no
+		select_effect = {
+			hidden_effect = {
+				add_days_mission_timeout = {
+					mission = CHI_civil_war_preparation_mission_decision
+					days = -9999
+				}
+			}
+		}
+		completion_reward = {
+		}
+	}
+	###党内问题，党内解决
+	focus = {
+		id = CHI_Solve_Party_Problems
+		icon = GFX_CHI_Solve_Party_Problems
+		prerequisite = {
+			focus = CHI_Step_Out_Winter
+		}
+		mutually_exclusive = {
+			focus = CHI_Belief_in_United_Front
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = -5
+		y = 1
+		cost = 3
+		completion_reward = {
+
+		}
+	}
+	###暂缓西北攻势
+	focus = {
+		id = CHI_Pause_Northwest_Offensive
+		icon = GFX_CHI_Pause_Northwest_Offensive
+		prerequisite = {
+			focus = CHI_Solve_Party_Problems
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = -7
+		y = 2
+		cost = 3
+		completion_reward = {
+		}
+	}
+	###巩固川滇
+	focus = {
+		id = CHI_Fortify_Southwest_Provinces
+		icon = GFX_CHI_Fortify_Southwest_Provinces
+		prerequisite = {
+			focus = CHI_Solve_Party_Problems
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = -5
+		y = 2
+		cost = 3
+		completion_reward = {
+		}
+	}
+	###退出东北对峙
+	focus = {
+		id = CHI_Ease_Out_Northeast_Confrontation
+		icon = GFX_CHI_Ease_Out_Northeast_Confrontation
+		prerequisite = {
+			focus = CHI_Solve_Party_Problems
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = -3
+		y = 2
+		cost = 3
+		completion_reward = {
+		}
+	}
+	###孤立广西
+	focus = {
+		id = CHI_Isolate_Guangxi
+		icon = GFX_CHI_Isolate_Guangxi
+		prerequisite = {
+			focus = CHI_Solve_Party_Problems
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = -6
+		y = 3
+		cost = 3
+		completion_reward = {
+		}
+	}
+	###安抚河北
+	focus = {
+		id = CHI_Reassure_Hebei
+		icon = GFX_CHI_Reassure_Hebei
+		prerequisite = {
+			focus = CHI_Solve_Party_Problems
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = -4
+		y = 3
+		cost = 3
+		completion_reward = {
+		}
+	}
+	###第二次全国编遣会议
+	focus = {
+		id = CHI_Military_Reorganisation_Conference
+		icon = GFX_CHI_CHI_Military_Reorganisation_Conference
+		prerequisite = {
+			focus = CHI_Pause_Northwest_Offensive
+		}
+		prerequisite = {
+			focus = CHI_Fortify_Southwest_Provinces
+		}
+		prerequisite = {
+			focus = CHI_Ease_Out_Northeast_Confrontation
+		}
+		prerequisite = {
+			focus = CHI_Isolate_Guangxi
+		}
+		prerequisite = {
+			focus = CHI_Reassure_Hebei
+		}
+		relative_position_id = CHI_Step_Out_Winter
+		x = -5
+		y = 4
+		cost = 3
+		cancellable = no
+		select_effect = {
+			hidden_effect = {
+				add_days_mission_timeout = {
+					mission = CHI_civil_war_preparation_mission_decision
+					days = -9999
+				}
+			}
+		}
+		completion_reward = {
+		}
+	}
+	###转向国内重建
+	focus = {
+		id = CHI_Return_to_Reconstruction
+		icon = GFX_CHI_Return_to_Reconstruction
+		prerequisite = {
+			focus = CHI_Military_Reorganisation_Conference
+			focus = CHI_Arrest_Opposition_Leaders
+		}
+
+		relative_position_id = CHI_Step_Out_Winter
+		x = 0
+		y = 5
+		cost = 3
+		completion_reward = {
+		}
+	}
+}
+focus_tree = {
+	id = CHI_central_plains_war_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	###整军讨逆
+	focus = {
+		id = CHI_Mobilize_Against_Rebels
+		icon = GFX_CHI_Mobilize_Against_Rebels
+		x = 10
+		y = 1
+		cost = 7
+		completion_reward = {
+		}
+	}
+}
+focus_tree = {
+	id = CHI_post_centralplains_diplomacy_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	###重建外交合法性
+	focus = {
+		id = CHI_Restore_Diplomatic_Legitimacy
+		icon = GFX_CHI_Restore_Diplomatic_Legitimacy
+		x = 10
+		y = 1
+		cost = 7
+		completion_reward = {
+		}
+	}
+	###稳定南洋
+	focus = {
+		id = CHI_Stabilize_Nanyang
+		icon = GFX_CHI_Stabilize_Nanyang
+		prerequisite = {
+			focus = CHI_Restore_Diplomatic_Legitimacy
+		}
+		mutually_exclusive = {
+			focus = CHI_Reorganize_Nanyang
+		}
+		relative_position_id = CHI_Restore_Diplomatic_Legitimacy
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = nanjing_won_cpw		
+				has_country_flag = nanjing_won_cpw_tempflag
+			}
+		}
+		x = 5
+		y = 1
+		cost = 3
+		completion_reward = {
+			custom_effect_tooltip = CHI_diplo_big_up_tt
+			custom_effect_tooltip = CHI_diplo_increase_RAJ_tension_tt
+			country_event = { id = CHI_forpol_event.1 }
+		}
+	}
+	###重塑南洋政权
+	focus = {
+		id = CHI_Reorganize_Nanyang
+		icon = GFX_CHI_Reorganize_Nanyang
+		prerequisite = {
+			focus = CHI_Restore_Diplomatic_Legitimacy
+		}
+		mutually_exclusive = {
+			focus = CHI_Stabilize_Nanyang
+		}
+		relative_position_id = CHI_Restore_Diplomatic_Legitimacy
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CDPL_won_cpw		
+				has_country_flag = CDPL_won_cpw_tempflag
+			}
+		}
+		x = -5
+		y = 1
+		cost = 3
+		completion_reward = {
+			custom_effect_tooltip = CHI_diplo_small_up_tt
+			country_event = { id = CHI_forpol_event.2 }
+		}
+	}
+}

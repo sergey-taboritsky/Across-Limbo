@@ -1,0 +1,16 @@
+﻿capital = 109
+
+set_research_slots = 2
+recruit_character = CRO_Andrija_Hebrang
+
+set_politics = {
+	ruling_party = Social_democracy
+	last_election = "1935.6.9"
+	election_frequency = 12
+	elections_allowed = no # none after offset 1
+}
+set_popularities = {
+	syndicalism = 15
+	Social_democracy = 75
+	communist = 10
+}

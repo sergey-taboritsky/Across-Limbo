@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+		#残存的反抗分子
+		GER_The_remnants_of_the_resistance = {
+			picture = GER_The_remnants_of_the_resistance
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.05
+				war_support_weekly = -0.05
+				political_power_factor = -0.5
+			}
+		}
+		#纳粹冲锋队
+		GER_Sturmabteilung = {
+			picture = GER_Sturmabteilung
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				army_core_attack_factor = 0.05
+	            army_core_defence_factor = 0.05
+			}
+		}
+		#闪电战
+		GER_Blitzkrieg = {
+			picture = GER_Blitzkrieg
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+	            army_speed_factor = 0.05
+			}
+		}
+	}
+}

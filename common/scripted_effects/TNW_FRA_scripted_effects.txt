@@ -1,0 +1,144 @@
+FRA_souvarine_treint_balance_initiate_vars = {
+	set_variable = {
+		FRA_Commune_Council_weight_var = 15
+	}
+	set_variable = {
+		FRA_Commune_Council_index_var = 1
+	}
+	set_variable = {
+		FRA_Commune_Council_leaning_var = 54
+	}
+}
+
+FRA_Commune_Council_leaning_change = {
+	set_temp_variable = {
+		FRA_Commune_Council_leaning_tooltip_var = FRA_Commune_Council_leaning_change_var
+	}
+	if = {
+		limit = {
+			check_variable = { FRA_Commune_Council_leaning_tooltip_var < 0 }
+		}
+		multiply_temp_variable = {
+			var = FRA_Commune_Council_leaning_tooltip_var
+			value = -1
+		}
+		if = {
+			limit = {
+				check_variable = { FRA_Commune_Council_leaning_var < 50 }
+			}
+			custom_effect_tooltip = FRA_Commune_Council_leaning_increase_tt
+		}
+		else = {
+			custom_effect_tooltip = FRA_Commune_Council_leaning_decrease_tt
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				check_variable = { FRA_Commune_Council_leaning_var < 50 }
+			}
+			custom_effect_tooltip = FRA_Commune_Council_leaning_decrease_tt
+		}
+		else = {
+			custom_effect_tooltip = FRA_Commune_Council_leaning_increase_tt
+		}
+	}
+	set_temp_variable = {
+		FRA_Commune_Council_leaning_temp_var = FRA_Commune_Council_leaning_var
+	}
+	add_to_variable = {
+		FRA_Commune_Council_leaning_var = FRA_Commune_Council_leaning_change_var
+	}
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					check_variable = { FRA_Commune_Council_leaning_var < 50 }
+					check_variable = { FRA_Commune_Council_leaning_temp_var > 49 }
+				}
+				AND = {
+					check_variable = { FRA_Commune_Council_leaning_var > 50 }
+					check_variable = { FRA_Commune_Council_leaning_temp_var < 51 }
+				}
+			}
+		}
+		set_temp_variable = {
+			FRA_Commune_Council_leaning_transfer_var = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { FRA_Commune_Council_leaning_var < 50 }
+		}
+		set_variable = {
+			FRA_Commune_Council_leaning_showcase_var = 100
+		}
+		subtract_from_variable = {
+			FRA_Commune_Council_leaning_showcase_var = FRA_Commune_Council_leaning_var
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { FRA_Commune_Council_leaning_var = 50 }
+		}
+		set_variable = {
+			FRA_Commune_Council_leaning_showcase_var = 0
+		}
+	}
+	else = {
+		set_variable = {
+			FRA_Commune_Council_leaning_showcase_var = FRA_Commune_Council_leaning_var
+		}
+	}
+	if = {
+		limit = {
+			has_variable = FRA_Commune_Council_leaning_transfer_var
+		}
+		custom_effect_tooltip = FRA_Commune_Council_leaning_shifting_tt
+	}
+	clamp_variable = {
+		var = FRA_Commune_Council_leaning_var
+		min = 0
+		max = 100
+	}
+	FRA_calculate_total_balance_value_effect = yes
+}
+
+FRA_calculate_total_balance_value_effect = {
+	set_variable = {
+		FRA_internal_balance_total_var = 0
+	}
+	set_temp_variable = {
+		FRA_Party_Central_leaning_total_temp_var = FRA_Party_Central_leaning_var
+	}
+	multiply_temp_variable = {
+		FRA_Party_Central_leaning_total_temp_var = FRA_Party_Central_weight_var
+	}
+	set_temp_variable = {
+		FRA_Commune_Council_leaning_total_temp_var = FRA_Commune_Council_leaning_var
+	}
+	multiply_temp_variable = {
+		FRA_Commune_Council_leaning_total_temp_var = FRA_Commune_Council_weight_var
+	}
+	set_temp_variable = {
+		FRA_Department_Conference_leaning_total_temp_var = FRA_Department_Conference_leaning_var
+	}
+	multiply_temp_variable = {
+		FRA_Department_Conference_leaning_total_temp_var = FRA_Department_Conference_weight_var
+	}
+	set_temp_variable = {
+		FRA_Red_Army_High_Command_leaning_total_temp_var = FRA_Red_Army_High_Command_leaning_var
+	}
+	multiply_temp_variable = {
+		FRA_Red_Army_High_Command_leaning_total_temp_var = FRA_Red_Army_High_Command_weight_var
+	}
+	set_temp_variable = {
+		FRA_Third_International_leaning_total_temp_var = FRA_Third_International_leaning_var
+	}
+	multiply_temp_variable = {
+		FRA_Third_International_leaning_total_temp_var = FRA_Third_International_weight_var
+	}
+	divide_variable = {
+		FRA_internal_balance_total_var = 500
+	}
+}

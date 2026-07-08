@@ -1,0 +1,24 @@
+﻿capital = 526
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 0
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 0
+	Conservatism = 0
+	Authoritarianism = 0
+	Absolutism = 100
+	Nationalism = 0
+}
+
+set_convoys = 5
+
+set_cosmetic_tag = RYU_occupation_zone

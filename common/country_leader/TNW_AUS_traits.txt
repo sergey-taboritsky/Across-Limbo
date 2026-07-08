@@ -1,0 +1,10 @@
+leader_traits = {
+	#执矛击盾者
+    AUS_Those_who_hold_contradictions = {
+		random = no
+		stability_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

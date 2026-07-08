@@ -1,0 +1,16 @@
+characters = {
+	AFG_Mohammed_Zahir_Shah = {
+		name = AFG_Mohammed_Zahir_Shah
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AFG_Mohammed_Zahir_Shah
+			}
+		}
+		country_leader = {
+			desc = AFG_Mohammed_Zahir_Shah_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+}

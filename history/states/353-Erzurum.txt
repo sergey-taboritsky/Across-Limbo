@@ -1,0 +1,27 @@
+state = {
+	id = 353
+	name = "STATE_353"
+
+	history = {
+		owner = TUR
+		victory_points = {
+			16228 10
+		}
+		buildings = {
+			infrastructure = 3
+			
+			
+			radar_station = 1
+		}
+		set_state_flag = GDP_category_town
+		add_core_of = TUR
+	}
+
+	provinces = {
+		652 6976 11853 16228 16230
+	}
+	manpower = 823904
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies = 0.000
+}

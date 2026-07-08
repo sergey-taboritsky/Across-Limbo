@@ -1,0 +1,59 @@
+ideas = {
+	country = {
+		#“乃是上帝旨意！”
+		BUL_will_of_god = {
+			picture = GFX_idea_BUL_will_of_god
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.001
+				war_support_weekly = -0.001
+				surrender_limit = -0.25
+				political_power_cost = 0.80
+			}
+		}
+		#世界大战的创伤
+		BUL_scars_of_second_weltkrieg = {
+			picture = GFX_idea_BUL_scars_of_second_weltkrieg
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.005
+				political_power_factor = -0.01
+				industrial_capacity_factory = -0.5
+				communist_drift = 0.01
+				syndicalism_drift = 0.01
+				socialism_drift = 0.01
+			}
+		}
+		#对俄态度问题
+		BUL_russian_diplomacy_problems = {
+			picture = GFX_idea_BUL_russian_diplomacy_problems
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = RUS
+				cic_to_target_factor = 0.05
+				trade_cost_for_target_factor = 0.25
+			}
+		}
+		#沙皇！祖国！保加利亚！
+		BUL_tsar_homeland_bulgaria = {
+			picture = GFX_idea_BUL_tsar_homeland_bulgaria
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				Absolutism_drift = 0.05
+				Nationalism_drift = 0.05
+			}
+		}
+	}
+}

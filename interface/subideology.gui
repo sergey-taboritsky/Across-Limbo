@@ -1,0 +1,42 @@
+guiTypes = {
+	#countrydiplomacyview
+	containerWindowType = {
+		name = "added_ruling_party_info_countrydiplomacyview" 
+		position = { x = 258 y = 135 }
+		size = { width = 255 height = 60 }
+		clipping = no
+		instantTextBoxType = {
+			name = "subideology_name"
+			position = { x = 5 y = 15 }
+			font = "hoi_16mbs"
+			text = "[FROM.GetRulingIdeologySubtype]"
+			maxWidth = 245
+			maxHeight = 20
+		}
+	}
+	#countrypoliticsview
+	containerWindowType = {
+		name = "added_ruling_party_info_countrypoliticsview" 
+		position = { x = 88 y = 305 }
+		size = { width = 255 height = 60 }
+		clipping = no
+		instantTextboxType = {
+			name = "subideology"
+			position = { x = 25 y = 55 }
+			font = "hoi_18mbs"
+			text = "[FROM.GetRulingIdeologySubtype]"
+			maxWidth = 155
+			maxHeight = -10
+			vertical_alignment = center
+		}
+		instantTextboxType = {
+			name = "party_name"
+			position = { x = 25 y = 28 }
+			font = "hoi_18mbs"
+			text = "[FROM.GetRulingParty]"
+			maxWidth = 155
+			maxHeight = -10
+			vertical_alignment = center
+		}
+	}
+}

@@ -1,0 +1,1588 @@
+spriteTypes = {
+#Large大头像
+	#阿富汗
+	#穆罕默德·查希尔沙阿
+	spriteType = {
+		name = "GFX_portrait_large_AFG_Mohammed_Zahir_Shah"
+		texturefile = "gfx/characters/AFG_Mohammed_Zahir_Shah.png"
+	}
+	#阿尔巴尼亚
+	#米德哈特·弗拉舍里
+	spriteType = {
+		name = "GFX_portrait_large_ALB_Mehdi_Frasheri"
+		texturefile = "gfx/characters/ALB_Mehdi_Frasheri.png"
+	}
+	#米吉安尼-米洛什·尼古拉
+	spriteType = {
+		name = "GFX_portrait_large_ALB_Milos_Gjergj_Nikolla"
+		texturefile = "gfx/characters/ALB_Milos_Gjergj_Nikolla.png"
+	}
+	#穆罕默德·伊斯梅尔·谢胡
+	spriteType = {
+		name = "GFX_portrait_large_ALB_Mehmet_Ismail_Shehu"
+		texturefile = "gfx/characters/ALB_Mehmet_Ismail_Shehu.png"
+	}
+	#艾哈迈德·米夫塔尔
+	spriteType = {
+		name = "GFX_portrait_large_ALB_Ahmed_Myftar"
+		texturefile = "gfx/characters/ALB_Ahmed_Myftar.png"
+	}
+	#艾克莱姆·利博霍瓦
+	spriteType = {
+		name = "GFX_portrait_large_ALB_Eqrem_Libohova"
+		texturefile = "gfx/characters/ALB_Eqrem_Libohova.png"
+	}
+	#特米斯托克利·格尔门吉
+	spriteType = {
+		name = "GFX_portrait_large_ALB_Themistokli_Germenji"
+		texturefile = "gfx/characters/ALB_Themistokli_Germenji.png"
+	}
+	#葡萄牙王国（安哥拉）
+	#杜阿尔特·努诺
+	spriteType = {
+		name = "GFX_portrait_large_ANG_Duarte_Nuno"
+		texturefile = "gfx/characters/ANG_Duarte_Nuno.png"
+	}
+	#阿根廷
+	#利沃里奥·胡斯托
+	spriteType = {
+		name = "GFX_portrait_large_ARG_liborio_justo"
+		texturefile = "gfx/characters/ARG_liborio_justo.png"
+	}
+	#澳大利亚
+	#约瑟夫·奇夫利
+	spriteType = {
+		name = "GFX_portrait_large_AST_Joseph_Benedict_Chifley"
+		texturefile = "gfx/characters/AST_Joseph_Benedict_Chifley.png"
+	}
+	#保加利亚
+	#西美昂二世
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Simeon_II"
+		texturefile = "gfx/characters/BUL_Simeon_II.png"
+	}
+	#基里尔亲王
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Kirill_of_Preslav"
+		texturefile = "gfx/characters/BUL_kirill_of_preslav.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Kirill_of_Preslav"
+		texturefile = "gfx/characters/BUL_kirill_of_preslav_small.png"
+	}
+	#博格丹·菲洛夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Bogdan_Filov"
+		texturefile = "gfx/characters/BUL_bogdan_filov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Bogdan_Filov"
+		texturefile = "gfx/characters/BUL_bogdan_filov_small.png"
+	}
+	#尼古拉·米霍夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Nikola_Mihov"
+		texturefile = "gfx/characters/BUL_mikola_mihov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Nikola_Mihov"
+		texturefile = "gfx/characters/BUL_mikola_mihov_small.png"
+	}
+	#特奥多西·达斯卡洛夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Teodosi_Daskalov"
+		texturefile = "gfx/characters/BUL_Teodosi_Daskalov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Teodosi_Daskalov"
+		texturefile = "gfx/characters/BUL_Teodosi_Daskalov_small.png"
+	}
+	#赫里斯托·卢科夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Hristo_Lukov"
+		texturefile = "gfx/characters/BUL_Hristo_Lukov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Hristo_Lukov"
+		texturefile = "gfx/characters/BUL_Hristo_Lukov_small.png"
+	}
+	#伊万·瓦里克列奇科夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Variklechkov"
+		texturefile = "gfx/characters/BUL_Ivan_Variklechkov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Ivan_Variklechkov"
+		texturefile = "gfx/characters/BUL_Ivan_Variklechkov_small.png"
+	}
+	#迪米塔尔·斯皮萨列夫斯基
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dimitar_Spisarevski"
+		texturefile = "gfx/characters/BUL_Dimitar_Spisarevski.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Dimitar_Spisarevski"
+		texturefile = "gfx/characters/BUL_Dimitar_Spisarevski_small.png"
+	}
+	#格奥尔基·季米特洛夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Georgy_Dimitrov"
+		texturefile = "gfx/characters/BUL_Georgy_Dimitrov.png"
+	}
+	#马诺尔·瓦谢夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Manol_Vasev"
+		texturefile = "gfx/characters/BUL_Manol_Vasev.png"
+	}
+	#迪米塔尔·卡扎索夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dimitar_Kazasov"
+		texturefile = "gfx/characters/BUL_Dimitar_Kazasov.png"
+	}
+	#基蒙·格奥尔基耶夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Kimon_Georgiev"
+		texturefile = "gfx/characters/BUL_Kimon_Georgiev.png"
+	}
+	#阿森·坎塔尔基耶夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Asen_Kantardzhiev"
+		texturefile = "gfx/characters/BUL_Asen_Kantardzhiev.png"
+	}
+	#伊万·多切夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Dochev"
+		texturefile = "gfx/characters/BUL_Ivan_Dochev.png"
+	}
+	#伊科·达斯卡洛夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Rayko_Daskalov"
+		texturefile = "gfx/characters/BUL_Rayko_Daskalov.png"
+	}
+	#亚历山大·灿科夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Alexandar_Tsankov"
+		texturefile = "gfx/characters/BUL_Alexandar_Tsankov.png"
+	}
+	#米霍夫·季米特洛夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Georgi_Mihov_Dimitrov"
+		texturefile = "gfx/characters/BUL_Georgi_Mihov_Dimitrov.png"
+	}
+	#尼古拉·佩特科夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Nikola_Petkov"
+		texturefile = "gfx/characters/BUL_Nikola_Petkov.png"
+	}
+	#迪米塔尔·佩舍夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dimitar_Peshev"
+		texturefile = "gfx/characters/BUL_Dimitar_Peshev.png"
+	}
+	#斯托扬·科斯图尔科夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Stoyan_Kosturkov"
+		texturefile = "gfx/characters/BUL_Stoyan_Kosturkov.png"
+	}
+	#茨维亚特科·博博舍夫斯基
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Zvyatko_Boboshevsky"
+		texturefile = "gfx/characters/BUL_Zvyatko_Boboshevsky.png"
+	}
+	#阿塔纳斯·布罗夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Atanas_Burov"
+		texturefile = "gfx/characters/BUL_Atanas_Burov.png"
+	}
+	#尼古拉·穆沙诺夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Nikola_Mushanov"
+		texturefile = "gfx/characters/BUL_Nikola_Mushanov.png"
+	}
+	#赫里斯托·涅斯托罗夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Hristo_Nestoroff"
+		texturefile = "gfx/characters/BUL_Hristo_Nestoroff.png"
+	}
+	#格奥尔基·塔尔帕纳
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Georg_Tarpana"
+		texturefile = "gfx/characters/BUL_Georg_Tarpana.png"
+	}
+	#维尔科·契尔文科夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Valko_Chervenkov"
+		texturefile = "gfx/characters/BUL_Valko_Chervenkov.png"
+	}
+	#安东·于哥夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Anton_Yugov"
+		texturefile = "gfx/characters/BUL_Anton_Yugov.png"
+	}
+	#伊万·托多罗夫·戈鲁尼亚
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Gorunia"
+		texturefile = "gfx/characters/BUL_Ivan_Gorunia.png"
+	}
+	#斐迪南·科佐夫斯基
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ferdinand_Kozovsky"
+		texturefile = "gfx/characters/BUL_Ferdinand_Kozovsky.png"
+	}
+	#特拉乔伊·科斯托夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Traycho_Kostov"
+		texturefile = "gfx/characters/BUL_Traycho_Kostov.png"
+	}
+	#托多尔·日夫科夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Todor_Zhivkov"
+		texturefile = "gfx/characters/BUL_Todor_Zhivkov.png"
+	}
+	#伊万·米哈伊洛夫·波波夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Mihailov_Popov"
+		texturefile = "gfx/characters/BUL_Ivan_Mihailov.png"
+	}
+	#尼古拉·瓦普查洛夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Nikolai_Vaptsarov"
+		texturefile = "gfx/characters/BUL_Nikolai_Vaptsarov.png"
+	}
+	#列夫·格拉文契夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Lev_Glavinchev"
+		texturefile = "gfx/characters/BUL_Lev_Glavinchev.png"
+	}
+	#尼古拉·格舍夫
+	spriteType = {
+		name = "GFX_portrait_large_ROC_Nikola_Geshev"
+		texturefile = "gfx/characters/ROC_Nikola_Geshev.png"
+	}
+	#缅甸
+	#吴巴瑞
+	spriteType = {
+		name = "GFX_portrait_large_BRM_U_Ba_Swe"
+		texturefile = "gfx/characters/BRM_U_Ba_Swe.png"
+	}
+	#巴西
+	#热图利奥·瓦加斯
+	spriteType = {
+		name = "GFX_portrait_large_BRA_Getulio_Vargas"
+		texturefile = "gfx/characters/BRA_Getulio_Vargas.png"
+	}
+	#卡洛斯·拉塞尔达
+	spriteType = {
+		name = "GFX_portrait_large_BRA_Carlos_Lacerda"
+		texturefile = "gfx/characters/BRA_Carlos_Lacerda.png"
+	}
+	#阿德马尔·德·巴罗斯
+	spriteType = {
+		name = "GFX_portrait_large_BRA_Adhemar_Barros"
+		texturefile = "gfx/characters/BRA_Adhemar_Barros.png"
+	}
+	#哥伦比亚
+	#豪尔赫·埃利塞尔·盖坦
+	spriteType = {
+		name = "GFX_portrait_large_COL_Jorge_Gaitan"
+		texturefile = "gfx/characters/COL_Jorge_Gaitan.png"
+	}
+	#丹麦
+	#腓特烈九世
+	spriteType = {
+		name = "GFX_portrait_large_DEN_Frederick_IX"
+		texturefile = "gfx/characters/DEN_Frederick_IX.png"
+	}
+	#阿尔辛·安德生
+	spriteType = {
+		name = "GFX_portrait_large_DEN_Alsing_Andersen"
+		texturefile = "gfx/characters/DEN_Alsing_Andersen.png"
+	}
+	#中美洲
+	#法拉本多·马蒂·罗德里格斯
+	spriteType = {
+		name = "GFX_portrait_large_ELS_Farabundo_Marti"
+		texturefile = "gfx/characters/ELS_Farabundo_Marti.png"
+	}
+	#英国
+	#奥斯瓦尔德·莫斯利
+	spriteType = {
+		name = "GFX_portrait_large_ENG_Oswald_Mosley"
+		texturefile = "gfx/characters/ENG_Oswald_Mosley.png"
+	}
+	#克莱门特·艾德礼
+	spriteType = {
+		name = "GFX_portrait_large_ENG_Clement_Attlee"
+		texturefile = "gfx/characters/ENG_Clement_Attlee.png"
+	}
+	#巴里·多姆维尔
+	spriteType = {
+		name = "GFX_portrait_large_ENG_Barry_Domvile"
+		texturefile = "gfx/characters/ENG_Barry_Domvile.png"
+	}
+	#法国
+	#皮埃尔·赖伐尔
+	spriteType = {
+		name = "GFX_portrait_large_FRA_Pierre_Reival"
+		texturefile = "gfx/characters/FRA_Pierre_Reival.png"
+	}
+	#马塞尔·加香
+	SpriteType = {
+		name = "GFX_portrait_large_FRA_Marcel_Cachin"
+		texturefile = "gfx/characters/FRA_Marcel_Cachin.png"
+	}
+	#让·齐罗姆斯基
+	SpriteType = {
+		name = "GFX_portrait_large_FRA_Jean_Zyromski"
+		texturefile = "gfx/characters/FRA_Jean_Zyromski.png"
+	}
+	#艾伯特·特雷特
+	SpriteType = {
+		name = "GFX_portrait_large_FRA_Albert_Treint"
+		texturefile = "gfx/characters/FRA_Albert_Treint.png"
+	}
+	#鲍里斯·苏瓦林
+	SpriteType = {
+		name = "GFX_portrait_large_FRA_Boris_Souvarine"
+		texturefile = "gfx/characters/FRA_Boris_Souvarine.png"
+	}
+	#德国（法兰克福）
+	#保罗·弗勒里希
+	SpriteType = {
+		name = "GFX_portrait_large_DDR_Paul_Frolich"
+		texturefile = "gfx/characters/DDR_Paul_Frolich.png"
+	}
+	#德国（威斯特伐利亚）
+	#安东·罗辛克
+	SpriteType = {
+		name = "GFX_portrait_large_DDR_Anton_Rosinke"
+		texturefile = "gfx/characters/DDR_Anton_Rosinke.png"
+	}
+	#奥托·格罗提渥
+	SpriteType = {
+		name = "GFX_portrait_large_DDR_Otto_Grotewohl"
+		texturefile = "gfx/characters/DDR_Otto_Grotewohl.png"
+	}
+	#德国（莱茵）
+	#马里·皮埃尔·柯尼希
+	SpriteType = {
+		name = "GFX_portrait_large_SAR_Marie_Pierre_Koenig"
+		texturefile = "gfx/characters/SAR_Marie_Pierre_Koenig.png"
+	}
+	#奥托·尼伯格尔
+	SpriteType = {
+		name = "GFX_portrait_large_SAR_otto_niebergall"
+		texturefile = "gfx/characters/SAR_otto_niebergall.png"
+	}
+	#贝托尔德·卡恩
+	SpriteType = {
+		name = "GFX_portrait_large_SAR_Berthold_Cahn"
+		texturefile = "gfx/characters/SAR_Berthold_Cahn.png"
+	}
+	#凯特·弗兰肯塔尔
+	SpriteType = {
+		name = "GFX_portrait_large_SAR_kate_frankenthal"
+		texturefile = "gfx/characters/SAR_kate_frankenthal.png"
+	}
+	#德国（柏林）
+	#戈特弗里德·特雷维拉努斯
+	SpriteType = {
+		name = "GFX_portrait_large_WGR_Gottfried_Reinhold_Treviranus"
+		texturefile = "gfx/characters/WGR_Gottfried_Reinhold_Treviranus.png"
+	}
+	#德国（符腾堡）
+	#库尔特·舒马赫
+	SpriteType = {
+		name = "GFX_portrait_large_DDR_Kurt_Schumacher"
+		texturefile = "gfx/characters/DDR_Kurt_Schumacher.png"
+	}
+	#阿尔伯特·爱因斯坦
+	SpriteType = {
+		name = "GFX_portrait_large_DDR_Albert_Einstein"
+		texturefile = "gfx/characters/DDR_Albert_Einstein.png"
+	}
+	#维利·布莱赫
+	SpriteType = {
+		name = "GFX_portrait_large_DDR_Willi_Bleicher"
+		texturefile = "gfx/characters/DDR_Willi_Bleicher.png"
+	}
+	#乔治·埃尔塞
+	SpriteType = {
+		name = "GFX_portrait_large_DDR_Georg_Elser"
+		texturefile = "gfx/characters/DDR_Georg_Elser.png"
+	}
+	#希腊
+	#潘德利斯·波利欧普洛斯
+	SpriteType = {
+		name = "GFX_portrait_large_GRE_Pandelis_Pouliopoulos"
+		texturefile = "gfx/characters/GRE_Pandelis_Pouliopoulos.png"
+	}
+	#爱尔兰
+	#皮达尔·奥唐奈尔
+	SpriteType = {
+		name = "GFX_portrait_large_IRE_Peadar_ODonnell"
+		texturefile = "gfx/characters/IRE_Peadar_ODonnell.png"
+	}
+	#意大利
+	#皮埃尔·特雷索
+	SpriteType = {
+		name = "GFX_portrait_large_ITA_Pierre_Tresso"
+		texturefile = "gfx/characters/ITA_Pierre_Tresso.png"
+	}
+	#日本
+	#托马斯·亚瑟·比森
+	SpriteType = {
+		name = "GFX_portrait_large_JAP_Thomas_Arthur_Bisson"
+		texturefile = "gfx/characters/JAP_Thomas_Arthur_Bisson.png"
+	}
+	#高野实
+	SpriteType = {
+		name = "GFX_portrait_large_JAP_Minoru_Takano"
+		texturefile = "gfx/characters/JAP_Minoru_Takano.png"
+	}
+	#大山郁夫
+	SpriteType = {
+		name = "GFX_portrait_large_JAP_Oyama_Ikuo"
+		texturefile = "gfx/characters/JAP_Oyama_Ikuo.png"
+	}
+	#江田三郎
+	SpriteType = {
+		name = "GFX_portrait_large_JAP_Eda_Saburo"
+		texturefile = "gfx/characters/JAP_Eda_Saburo.png"
+	}
+	#西尾末广
+	SpriteType = {
+		name = "GFX_portrait_large_JAP_Nishio_Suehiro"
+		texturefile = "gfx/characters/JAP_Nishio_Suehiro.png"
+	}
+	#向坂逸郎
+	SpriteType = {
+		name = "GFX_portrait_large_JAP_Sakisaka_Itsuro"
+		texturefile = "gfx/characters/JAP_Sakisaka_Itsuro.png"
+	}
+	#浅沼稻次郎
+	#SpriteType = {
+	#	name = "GFX_portrait_large_JAP_Asanuma_Inejiro"
+	#	texturefile = "gfx/characters/JAP_Asanuma_Inejiro.png"
+	#}
+	#杰克·白井
+	SpriteType = {
+		name = "GFX_portrait_large_JAP_Jack_Shirai"
+		texturefile = "gfx/characters/JAP_Jack_Shirai.png"
+	}
+	#福本和夫
+	SpriteType = {
+		name = "GFX_portrait_large_JAP_Fukumoto_Kazuo"
+		texturefile = "gfx/characters/JAP_Fukumoto_Kazuo.png"
+	}
+	#风早八十二
+	SpriteType = {
+		name = "GFX_portrait_large_JAP_Kazahaya_Yasoji"
+		texturefile = "gfx/characters/JAP_Kazahaya_Yasoji.png"
+	}
+	#黑田寿男
+	SpriteType = {
+		name = "GFX_portrait_large_JAP_Kuroda_Hisao"
+		texturefile = "gfx/characters/JAP_Kuroda_Hisao.png"
+	}
+	#朝鲜-韩国
+	#金九
+	SpriteType = {
+		name = "GFX_portrait_large_KOR_Kim_Koo"
+		texturefile = "gfx/characters/KOR_Kim_Koo.png"
+	}
+	#金元凤
+	SpriteType = {
+		name = "GFX_portrait_large_KOR_Kim_Won_Bong"
+		texturefile = "gfx/characters/KOR_Kim_Won_Bong.png"
+	}
+	#利比亚
+	#瓦希卜·加奈姆
+	SpriteType = {
+		name = "GFX_portrait_large_TUN_Wahib_al_Ghanim"
+		texturefile = "gfx/characters/TUN_Wahib_al_Ghanim.png"
+	}
+	#伊德里斯
+	SpriteType = {
+		name = "GFX_portrait_large_LBA_Idris_I"
+		texturefile = "gfx/characters/LBA_Idris_I.png"
+	}
+	#马其顿
+	#伊万·米哈伊洛夫
+	spriteType = {
+		name = "GFX_portrait_large_MAC_Ivan_Mikhailov"
+		texturefile = "gfx/characters/MAC_Ivan_Mikhailov.png"
+	}
+	#马来亚
+	#李振殿
+	spriteType = {
+		name = "GFX_portrait_large_MAL_Li_Zhendian"
+		texturefile = "gfx/characters/MAL_Li_Zhendian.png"
+	}
+	#彭泽民
+	spriteType = {
+		name = "GFX_portrait_large_MAL_Peng_Zemin"
+		texturefile = "gfx/characters/MAL_Peng_Zemin.png"
+	}
+	#刘尧
+	spriteType = {
+		name = "GFX_portrait_large_MAL_Liu_Yao"
+		texturefile = "gfx/characters/MAL_Liu_Yao.png"
+	}
+	#墨西哥
+	#比森特·托莱达诺
+	spriteType = {
+		name = "GFX_portrait_large_MEX_Vincente_Toledano"
+		texturefile = "gfx/characters/MEX_Vincente_Toledano.png"
+	}
+	#马里
+	#马马杜·科纳特
+	spriteType = {
+		name = "GFX_portrait_large_MLI_Mamadou_Konate"
+		texturefile = "gfx/characters/MLI_Mamadou_Konate.png"
+	}
+	#蒙古
+	#乌尼伯英
+	spriteType = {
+		name = "GFX_portrait_large_MON_Unenbayal"
+		texturefile = "gfx/characters/MON_Unenbayal.png"
+	}
+	#荷兰
+	#亨德里克斯·斯内夫利特
+	spriteType = {
+		name = "GFX_portrait_large_HOL_Hendricus_Sneevliet"
+		texturefile = "gfx/characters/HOL_Hendricus_Sneevliet.png"
+	}
+	#印尼
+	#拉登·苏托莫
+	spriteType = {
+		name = "GFX_portrait_large_INS_Raden_Soetomo"
+		texturefile = "gfx/characters/INS_Raden_Soetomo.png"
+	}
+	#马乌兰纳·穆罕默德·贾拉鲁丁二世
+	spriteType = {
+		name = "GFX_portrait_large_INS_Maulana_Muhammad_Djalaluddin_II"
+		texturefile = "gfx/characters/INS_Maulana_Muhammad_Djalaluddin_II.png"
+	}
+	#克里斯蒂安·R·S·苏莫基尔
+	spriteType = {
+		name = "GFX_portrait_large_INS_Christiaan_Robbert_Steven_Soumokil"
+		texturefile = "gfx/characters/INS_Christiaan_Robbert_Steven_Soumokil.png"
+	}
+	#安迪·马潘尤基
+	spriteType = {
+		name = "GFX_portrait_large_INS_Andi_Mappanyukki"
+		texturefile = "gfx/characters/INS_Andi_Mappanyukki.png"
+	}
+	#穆罕默德·塔希尔·穆希卜丁
+	spriteType = {
+		name = "GFX_portrait_large_INS_Muhammad_Tahir_Muhibuddin"
+		texturefile = "gfx/characters/INS_Muhammad_Tahir_Muhibuddin.png"
+	}
+	#安迪·蒂耶马
+	spriteType = {
+		name = "GFX_portrait_large_INS_Andi_Djemma"
+		texturefile = "gfx/characters/INS_Andi_Djemma.png"
+	}
+	#穆罕默德·法利希
+	spriteType = {
+		name = "GFX_portrait_large_INS_Muhammad_Falihi"
+		texturefile = "gfx/characters/INS_Muhammad_Falihi.png"
+	}
+	#乔克达·德·拉卡·苏卡瓦蒂
+	spriteType = {
+		name = "GFX_portrait_large_INS_Tjokorda_Gde_Raka_Soekawati"
+		texturefile = "gfx/characters/INS_Tjokorda_Gde_Raka_Soekawati.png"
+	}
+	#端古·拉贾·伊布拉辛
+	spriteType = {
+		name = "GFX_portrait_large_INS_Tuanku_Raja_Ibrahim"
+		texturefile = "gfx/characters/INS_Tuanku_Raja_Ibrahim.png"
+	}
+	#挪威
+	#马丁·特兰梅尔
+	spriteType = {
+		name = "GFX_portrait_large_NOR_Martin_Tramael"
+		texturefile = "gfx/characters/NOR_Martin_Tramael.png"
+	}
+	#挪威
+	#穆罕默德-胡塞因·埃卢姆
+	spriteType = {
+		name = "GFX_portrait_large_PER_Mohammad_Hosayn_Ayrom"
+		texturefile = "gfx/characters/PER_Mohammad_Hosayn_Ayrom.png"
+	}
+	#阿里-阿克巴·达瓦尔
+	spriteType = {
+		name = "GFX_portrait_large_PER_Ali_Akbar_Davar"
+		texturefile = "gfx/characters/PER_Ali_Akbar_Davar.png"
+	}
+	#波兰
+	#爱德华·雷兹-希米格维
+	spriteType = {
+		name = "GFX_portrait_large_POL_Edward_Rydz_Smigly"
+		texturefile = "gfx/characters/POL_Edward_Rydz_Smigly.png"
+	}
+	#葡萄牙
+	#何塞·卡洛斯·拉特斯
+	spriteType = {
+		name = "GFX_portrait_large_POR_Jose_Carlos_Rates"
+		texturefile = "gfx/characters/POR_Jose_Carlos_Rates.png"
+	}
+	#印度
+	#萨达尔·帕特尔
+	spriteType = {
+		name = "GFX_portrait_large_RAJ_Sardar_Patel"
+		texturefile = "gfx/characters/RAJ_Sardar_Patel.png"
+	}
+	#罗马尼亚
+	#康斯坦丁·阿尔杰托亚努
+	spriteType = {
+		name = "GFX_portrait_large_ROM_Constantin_Argetoianu"
+		texturefile = "gfx/characters/ROM_Constantin_Argetoianu.png"
+	}
+	#俄罗斯
+	#鲍里斯·萨文科夫
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Boris_Savinkhov"
+		texturefile = "gfx/characters/RUS_Boris_Savinkhov.png"
+	}
+	#三驾马车
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Tirumvirate"
+		texturefile = "gfx/characters/RUS_Tirumvirate.png"
+	}
+	#彼得·萨维茨基
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Pyotr_Savitsky"
+		texturefile = "gfx/characters/RUS_Pyotr_Savitsky.png"
+	}
+	#卡罗尔·文贾戈利斯基
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Karol_Vendzyagolsky"
+		texturefile = "gfx/characters/RUS_Karol_Vendzyagolsky.png"
+	}
+	#维克托·拉里奥诺夫
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Viktor_Larionov"
+		texturefile = "gfx/characters/RUS_Viktor_Larionov.png"
+	}
+	#南非
+	#爱德华八世
+	SpriteType = {
+		name = "GFX_portrait_large_SAF_Edward_VIII"
+		texturefile = "gfx/characters/SAF_Edward_VIII.png"
+	}
+	#西班牙
+	#胡安·内格林
+	SpriteType = {
+		name = "GFX_portrait_large_SPR_juan_negrin"
+		texturefile = "gfx/characters/SPR_juan_negrin.png"
+	}
+	#华金·毛林
+	SpriteType = {
+		name = "GFX_portrait_large_SPR_joaquin_maurin"
+		texturefile = "gfx/characters/SPR_joaquin_maurin.png"
+	}
+	#多洛雷斯·伊巴露丽
+	SpriteType = {
+		name = "GFX_portrait_large_SPR_dolores_ibarruri"
+		texturefile = "gfx/characters/SPR_dolores_ibarruri.png"
+	}
+	#朱利安·戈尔津
+	SpriteType = {
+		name = "GFX_portrait_large_SPR_julian_gorkin"
+		texturefile = "gfx/characters/SPR_julian_gorkin.png"
+	}
+	#弗朗西斯科·拉尔戈·卡瓦列罗
+	SpriteType = {
+		name = "GFX_portrait_large_SPR_largo_callabero"
+		texturefile = "gfx/characters/SPR_largo_callabero.png"
+	}
+	#瑞典
+	#弗朗斯·塞韦林
+	SpriteType = {
+		name = "GFX_portrait_large_SWE_Frans_Severin"
+		texturefile = "gfx/characters/SWE_Frans_Severin.png"
+	}
+	#塞尔维亚
+	#迪米特里耶·廖蒂奇
+	SpriteType = {
+		name = "GFX_portrait_large_SER_Dimitrije_Ljotic"
+		texturefile = "gfx/characters/SER_Dimitrije_Ljotic.png"
+	}
+	#米海洛一世
+	SpriteType = {
+		name = "GFX_portrait_large_SER_Michael_Petrovic_Njegos"
+		texturefile = "gfx/characters/SER_Michael_Petrovic_Njegos.png"
+	}
+	#土耳其
+	#萨德雷丁·杰拉勒·安特尔
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Sadrettin_Celal_Andel"
+		texturefile = "gfx/characters/TUR_Sadrettin_Celal_Andel.png"
+	}
+	#穆罕默德七世
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Mehmed_VII"
+		texturefile = "gfx/characters/TUR_Mehmed_VII.png"
+	}
+	#艾哈迈德五世·尼哈德
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Ahmed_V_Nihad"
+		texturefile = "gfx/characters/TUR_Ahmed_V_Nihad.png"
+	}
+	#伊斯麦特·雷希特
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Ismet_Inonu"
+		texturefile = "gfx/characters/TUR_Ismet_Inonu.png"
+	}
+	#侯赛因·卡希特·叶尔钦
+	SpriteType = {
+		name = "GFX_portrait_large_KAL_Huseyn_Cahit_Yalcin"
+		texturefile = "gfx/characters/KAL_Huseyn_Cahit_Yalcin.png"
+	}
+	#易卜拉欣·苏克鲁·索克曼苏尔
+	SpriteType = {
+		name = "GFX_portrait_large_DAG_Ibrahim_Sukru_Sokmensuer"
+		texturefile = "gfx/characters/DAG_Ibrahim_Sukru_Sokmensuer.png"
+	}
+	#美利坚
+	#伊丽莎白·弗林
+	SpriteType = {
+		name = "GFX_portrait_large_USA_Elizabeth_Gurley_Flynn"
+		texturefile = "gfx/characters/USA_Elizabeth_Gurley_Flynn.png"
+	}
+	#委内瑞拉
+	#伊萨亚斯·安加里塔
+	SpriteType = {
+		name = "GFX_portrait_large_VEN_Isaias_Angarita"
+		texturefile = "gfx/characters/VEN_Isaias_Angarita.png"
+	}
+	#越南
+	#武鸿卿
+	SpriteType = {
+		name = "GFX_portrait_large_VIN_Vu_Hong_Khanh"
+		texturefile = "gfx/characters/VIN_Vu_Hong_Khanh.png"
+	}
+	#西藏
+	#确吉坚赞
+	SpriteType = {
+		name = "GFX_portrait_large_TIB_Qoigyi_Gyaincain"
+		texturefile = "gfx/characters/TIB_Qoigyi_Gyaincain.png"
+	}
+	#中国
+	#白崇禧
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Bai_Chongxi"
+		texturefile = "gfx/characters/CHI_Bai_Chongxi.png"
+	}
+	#白海风
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Bai_Haifeng"
+		texturefile = "gfx/characters/CHI_Bai_Haifeng.png"
+	}
+	#陈大庆
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Chen_Daqing"
+		texturefile = "gfx/characters/CHI_Chen_Daqing.png"
+	}
+	#陈明仁
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Chen_Mingren"
+		texturefile = "gfx/characters/CHI_Chen_Mingren.png"
+	}
+	#陈铭枢
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Chen_Mingshu"
+		texturefile = "gfx/characters/CHI_Chen_Mingshu.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_small_CHI_Chen_Mingshu"
+		texturefile = "gfx/characters/CHI_Chen_Mingshu_small.png"
+	}
+	#陈其瑗
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Chen_Qiyuan"
+		texturefile = "gfx/characters/CHI_Chen_Qiyuan.png"
+		legacy_lazy_load = no
+	}
+	#陈绍宽
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Chen_Shaokuan"
+		texturefile = "gfx/characters/CHI_Chen_Shaokuan.png"
+		legacy_lazy_load = no
+	}
+	#陈仪
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Chen_Yi"
+		texturefile = "gfx/characters/CHI_Chen_Yi.png"
+	}
+	#程潜
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Cheng_Qian"
+		texturefile = "gfx/characters/CHI_Cheng_Qian.png"
+		legacy_lazy_load = no
+	}
+	#程天放
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Cheng_Tianfang"
+		texturefile = "gfx/characters/CHI_Cheng_Tianfang.png"
+		legacy_lazy_load = no
+	}
+	#邓演达
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Deng_Yanda"
+		texturefile = "gfx/characters/CHI_Deng_Yanda.png"
+	}
+	#董必武
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Dong_Biwu"
+		texturefile = "gfx/characters/CHI_Dong_Biwu.png"
+	}
+	#杜聿明
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Du_Yuming"
+		texturefile = "gfx/characters/CHI_Du_Yuming.png"
+	}
+	#范汉杰
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Fan_Hanjie"
+		texturefile = "gfx/characters/CHI_Fan_Hanjie.png"
+	}
+	#方天
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Fang_Tian"
+		texturefile = "gfx/characters/CHI_Fang_Tian.png"
+	}
+	#方志敏
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Fang_Zhimin"
+		texturefile = "gfx/characters/CHI_Fang_Zhimin.png"
+	}
+	#冯庸
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Feng_Yong"
+		texturefile = "gfx/characters/CHI_Feng_Yong.png"
+	}
+	#傅作义
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Fu_Zuoyi"
+		texturefile = "gfx/characters/CHI_Fu_Zuoyi.png"
+	}
+	#甘丽初
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Gan_Lichu"
+		texturefile = "gfx/characters/CHI_Gan_Lichu.png"
+		legacy_lazy_load = no
+	}
+	#高魁元
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Gao_Kuiyuan"
+		texturefile = "gfx/characters/CHI_Gao_Kuiyuan.png"
+		legacy_lazy_load = no
+	}
+	#谷正伦
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Gu_Zhenglun"
+		texturefile = "gfx/characters/CHI_Gu_Zhenglun.png"
+		legacy_lazy_load = no
+	}
+	#关麟征
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Guan_Linzheng"
+		texturefile = "gfx/characters/CHI_Guan_Linzheng.png"
+		legacy_lazy_load = no
+	}
+	#郭寄峤
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Guo_Jiqiao"
+		texturefile = "gfx/characters/CHI_Guo_Jiqiao.png"
+		legacy_lazy_load = no
+	}
+	#黄杰
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Huang_Jie"
+		texturefile = "gfx/characters/CHI_Huang_Jie.png"
+		legacy_lazy_load = no
+	}
+	#贺维珍
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_He_Weizhen"
+		texturefile = "gfx/characters/CHI_He_Weizhen.png"
+	}
+	#胡琏
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Hu_Lian"
+		texturefile = "gfx/characters/CHI_Hu_Lian.png"
+	}
+	#胡若愚
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Hu_Ruoyu"
+		texturefile = "gfx/characters/CHI_Hu_Ruoyu.png"
+	}
+	#胡子昂
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Hu_Ziang"
+		texturefile = "gfx/characters/CHI_Hu_Ziang.png"
+		legacy_lazy_load = no
+	}
+	#黄启汉
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Huang_Qihan"
+		texturefile = "gfx/characters/CHI_Huang_Qihan.png"
+		legacy_lazy_load = no
+	}
+	#黄绍竑
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Huang_Shaohong"
+		texturefile = "gfx/characters/CHI_Huang_Shaohong.png"
+	}
+	#黄旭初
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Huang_Xuchu"
+		texturefile = "gfx/characters/CHI_Huang_Xuchu.png"
+		legacy_lazy_load = no
+	}
+	#吉鸿昌
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Ji_Hongchang"
+		texturefile = "gfx/characters/CHI_Ji_Hongchang.png"
+	}
+	#阚维雍
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Kan_Weiyong"
+		texturefile = "gfx/characters/CHI_Kan_Weiyong.png"
+		legacy_lazy_load = no
+	}
+	#李根源
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Li_Genyuan"
+		texturefile = "gfx/characters/CHI_Li_Genyuan.png"
+	}
+	#李弥
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Li_Mi"
+		texturefile = "gfx/characters/CHI_Li_Mi.png"
+	}
+	#李品仙
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Li_Pinxian"
+		texturefile = "gfx/characters/CHI_Li_Pinxian.png"
+	}
+	#黎行恕
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Li_Xingshu"
+		texturefile = "gfx/characters/CHI_Li_Xingshu.png"
+	}
+	#李宗仁
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Li_Zongren"
+		texturefile = "gfx/characters/CHI_Li_Zongren.png"
+	}
+	#廖耀湘
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Liao_Yaoxiang"
+		texturefile = "gfx/characters/CHI_Liao_Yaoxiang.png"
+	}
+	#林彪
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Lin_Biao"
+		texturefile = "gfx/characters/CHI_Lin_Biao.png"
+	}
+	#刘斐
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Liu_Fei"
+		texturefile = "gfx/characters/CHI_Liu_Fei.png"
+	}
+	#刘文辉
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Liu_Wenhui"
+		texturefile = "gfx/characters/CHI_Liu_Wenhui.png"
+	}
+	#刘玉章
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Liu_Yuzhang"
+		texturefile = "gfx/characters/CHI_Liu_Yuzhang.png"
+	}
+	#罗奇
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Luo_Qi"
+		texturefile = "gfx/characters/CHI_Luo_Qi.png"
+	}
+	#马步芳
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Ma_Bufang"
+		texturefile = "gfx/characters/CHI_Ma_Bufang.png"
+	}
+	#马步青
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Ma_Buqing"
+		texturefile = "gfx/characters/CHI_Ma_Buqing.png"
+	}
+	#马仲英
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Ma_Zhongying"
+		texturefile = "gfx/characters/CHI_Ma_Zhongying.png"
+	}
+	#莫树杰
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Mo_Shujie"
+		texturefile = "gfx/characters/CHI_Mo_Shujie.png"
+	}
+	#潘汉年
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Pan_Hannian"
+		texturefile = "gfx/characters/CHI_Pan_Hannian.png"
+		legacy_lazy_load = no
+	}
+	#饶漱石
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Rao_Shushi"
+		texturefile = "gfx/characters/CHI_Rao_Shushi.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_small_CHI_Rao_Shushi"
+		texturefile = "gfx/characters/CHI_Rao_Shushi_small.png"
+	}
+	#宋庆龄
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Song_Qingling"
+		texturefile = "gfx/characters/CHI_Song_Qingling.png"
+	}
+	#石觉
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Shi_Jue"
+		texturefile = "gfx/characters/CHI_Shi_Jue.png"
+	}
+	#史可轩
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Shi_Kexuan"
+		texturefile = "gfx/characters/CHI_Shi_Kexuan.png"
+	}
+	#孙科
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Sun_Ke"
+		texturefile = "gfx/characters/CHI_Sun_Ke.png"
+	}
+	#孙立人
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Sun_Liren"
+		texturefile = "gfx/characters/CHI_Sun_Liren.png"
+	}
+	#谭何易
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Tan_Heyi"
+		texturefile = "gfx/characters/CHI_Tan_Heyi.png"
+	}
+	#覃连芳
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Tan_Lianfang"
+		texturefile = "gfx/characters/CHI_Tan_Lianfang.png"
+	}
+	#谭平山
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Tan_Pingshan"
+		texturefile = "gfx/characters/CHI_Tan_Pingshan.png"
+	}
+	#王鸿韶
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Wang_Hongshao"
+		texturefile = "gfx/characters/CHI_Wang_Hongshao.png"
+	}
+	#王敬久
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Wang_Jingjiu"
+		texturefile = "gfx/characters/CHI_Wang_Jingjiu.png"
+	}
+	#王维舟
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Wang_Weizhou"
+		texturefile = "gfx/characters/CHI_Wang_Weizhou.png"
+	}
+	#卫立煌
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Wei_Lihuang"
+		texturefile = "gfx/characters/CHI_Wei_Lihuang.png"
+	}
+	#韦永成
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Wei_Yongcheng"
+		texturefile = "gfx/characters/CHI_Wei_Yongcheng.png"
+	}
+	#韦云凇
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Wei_Yunsong"
+		texturefile = "gfx/characters/CHI_Wei_Yunsong.png"
+	}
+	#吴国桢
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Wu_Guozhen"
+		texturefile = "gfx/characters/CHI_Wu_Guozhen.png"
+		legacy_lazy_load = no
+	}
+	#吴铁城
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Wu_Tiecheng"
+		texturefile = "gfx/characters/CHI_Wu_Tiecheng.png"
+		legacy_lazy_load = no
+	}
+	#吴玉章
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Wu_Yuzhang"
+		texturefile = "gfx/characters/CHI_Wu_Yuzhang.png"
+	}
+	#吴忠信
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Wu_Zhongxin"
+		texturefile = "gfx/characters/CHI_Wu_Zhongxin.png"
+		legacy_lazy_load = no
+	}
+	#夏威
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Xia_Wei"
+		texturefile = "gfx/characters/CHI_Xia_Wei.png"
+	}
+	#熊式辉
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Xiong_Shihui"
+		texturefile = "gfx/characters/CHI_Xiong_Shihui.png"
+	}
+	#徐启明
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Xu_Qiming"
+		texturefile = "gfx/characters/CHI_Xu_Qiming.png"
+	}
+	#徐庭瑶
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Xu_Tingyao"
+		texturefile = "gfx/characters/CHI_Xu_Tingyao.png"
+	}
+	#徐祖诒
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Xu_Zuyi"
+		texturefile = "gfx/characters/CHI_Xu_Zuyi.png"
+	}
+	#阎锡山
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Yan_xishan"
+		texturefile = "gfx/characters/CHI_Yan_xishan.png"
+	}
+	#晏阳初
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Yan_Yangchu"
+		texturefile = "gfx/characters/CHI_Yan_Yangchu.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_small_CHI_Yan_Yangchu"
+		texturefile = "gfx/characters/CHI_Yan_Yangchu_small.png"
+	}
+	#张发奎
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Zhang_Fakui"
+		texturefile = "gfx/characters/CHI_Zhang_Fakui.png"
+	}
+	#张国焘
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Zhang_Guotao"
+		texturefile = "gfx/characters/CHI_Zhang_Guotao.png"
+	}
+	#张学良
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Zhang_Xueliang"
+		texturefile = "gfx/characters/CHI_Zhang_Xueliang.png"
+	}
+	#张义纯
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Zhang_Yichun"
+		texturefile = "gfx/characters/CHI_Zhang_Yichun.png"
+	}
+	#张轸
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Zhang_Zhen"
+		texturefile = "gfx/characters/CHI_Zhang_Zhen.png"
+	}
+	#张知本
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Zhang_Zhiben"
+		texturefile = "gfx/characters/CHI_Zhang_Zhiben.png"
+	}
+	#郑洞国
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Zheng_Dongguo"
+		texturefile = "gfx/characters/CHI_Zheng_Dongguo.png"
+	}
+	#钟彬
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Zhong_Bin"
+		texturefile = "gfx/characters/CHI_Zhong_Bin.png"
+	}
+	#钟纪
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Zhong_Ji"
+		texturefile = "gfx/characters/CHI_Zhong_Ji.png"
+	}
+	#朱德
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Zhu_De"
+		texturefile = "gfx/characters/CHI_Zhu_De.png"
+	}
+
+	#李卜克内西
+	spriteType = {
+		name = "GFX_portrait_large_GSR_libu_ke_neixi"
+		texturefile = "gfx/characters/GSR_libu_ke_neixi.png"
+	}
+	#斯维尔德洛夫
+	spriteType = {
+		name = "GFX_portrait_large_Siweier_deluofu"
+		texturefile = "gfx/characters/RUS_Siweier_deluofu.png"
+	}
+	#布哈林
+	spriteType = {
+		name = "GFX_portrait_large_Bu_ha_lin"
+		texturefile = "gfx/characters/RUS_Bu_ha_lin.png"
+	}
+	#斯大林
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Si_da_lin"
+		texturefile = "gfx/characters/RUS_Si_da_lin.png"
+	}
+	#周恩来
+	spriteType = {
+		name = "GFX_portrait_large_PRC_zhou_en_lai"
+		texturefile = "gfx/characters/PRC_zhou_en_lai.png"
+	}
+	#威廉·柯诺宁
+	spriteType = {
+		name = "GFX_portrait_large_BSR_weilian_kenuona"
+		texturefile = "gfx/characters/BSR_weilian_kenuona.png"
+	}
+	#蒋介石
+	spriteType = {
+		name = "GFX_portrait_large_CHI_Chiang_Kaishek"
+		texturefile = "gfx/characters/CHI_Chiang_Kaishek.png"
+	}
+	#菲利普·沙伊德曼
+	spriteType = {
+		name = "GFX_portrait_large_WGR_Philip_Scheidman"
+		texturefile = "gfx/characters/WGR_Philip_Scheidman.png"
+	}
+	#弗朗茨·冯·帕彭
+	spriteType = {
+		name = "GFX_portrait_large_WGR_Franz_von_Papen"
+		texturefile = "gfx/characters/WGR_Franz_von_Papen.png"
+	}
+	#格尔德·冯·伦德施泰特
+	spriteType = {
+		name = "GFX_portrait_large_WGR_Gerd_von_Rundstedt"
+		texturefile = "gfx/characters/WGR_Gerd_von_Rundstedt.png"
+	}
+	#埃尔温·隆美尔
+	spriteType = {
+		name = "GFX_portrait_large_WGR_Erwin_Rommel"
+		texturefile = "gfx/characters/WGR_Erwin_Rommel.png"
+	}
+	#埃里希·冯·曼施坦因
+	spriteType = {
+		name = "GFX_portrait_large_WGR_Erich_von_Manstein"
+		texturefile = "gfx/characters/WGR_Erich_von_Manstein.png"
+	}
+	#内维尔·张伯伦
+	spriteType = {
+		name = "GFX_portrait_large_ENG_Neville_Chamberlain"
+		texturefile = "gfx/characters/ENG_Neville_Chamberlain.png"
+	}
+	#富兰克林·罗斯福
+	spriteType = {
+		name = "GFX_portrait_large_USA_Franklin_roosevelt"
+		texturefile = "gfx/characters/USA_Franklin_roosevelt.png"
+	}
+	#贝尼托·墨索里尼
+	spriteType = {
+		name = "GFX_portrait_large_ITA_Benito_Mussolini"
+		texturefile = "gfx/characters/ITA_Benito_Mussolini.png"
+	}
+	#库恩·贝拉
+	spriteType = {
+		name = "GFX_portrait_large_HUN_Kuhn_Bella"
+		texturefile = "gfx/characters/HUN_Kuhn_Bella.png"
+	}
+	#中共政治局
+	spriteType = {
+		name = "GFX_portrait_large_PRC_Politburo_of_the_CCP"
+		texturefile = "gfx/characters/PRC_Politburo_of_the_CCP.png"
+	}
+	#阿道夫·希特勒
+	spriteType = {
+		name = "GFX_portrait_large_GER_Adolf_hitler"
+		texturefile = "gfx/characters/GER_Adolf_hitler.png"
+	}
+	#卡尔一世
+	spriteType = {
+		name = "GFX_portrait_large_AUS_Charles_I_of_Austria"
+		texturefile = "gfx/characters/AUS_Charles_I_of_Austria.png"
+	}
+	#崇仁天皇
+	spriteType = {
+		name = "GFX_portrait_large_JAP_Emperor_Chongren_County"
+		texturefile = "gfx/characters/JAP_Emperor_Chongren_County.png"
+		legacy_lazy_load = no
+	}
+	#麻生久
+	spriteType = {
+		name = "GFX_portrait_large_JAP_Aso"
+		texturefile = "gfx/characters/JAP_Aso.png"
+	}
+	#爱德华八世
+	spriteType = {
+		name = "GFX_portrait_large_ENG_Edward_VIII"
+		texturefile = "gfx/characters/ENG_Edward_VIII.png"
+	}
+	#冯玉祥
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Feng_Yuxiang"
+		texturefile = "gfx/characters/CHI_Feng_Yuxiang.png"
+	}
+	#奥托·冯·哈布斯堡
+	SpriteType = {
+		name = "GFX_portrait_large_AUS_Otto_von_Habsburg"
+		texturefile = "gfx/characters/AUS_Otto_von_Habsburg.png"
+	}
+	#庇护十一世
+	SpriteType = {
+		name = "GFX_portrait_large_ITA_pius_xi"
+		texturefile = "gfx/characters/ITA_pius_xi.png"
+	}
+	#张作霖
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Zhang_Zuolin"
+		texturefile = "gfx/characters/CHI_Zhang_Zuolin.png"
+	}
+	#李纯
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_LiChun"
+		texturefile = "gfx/characters/CHI_LiChun.png"
+	}
+	#毛泽东
+	SpriteType = {
+		name = "GFX_portrait_large_PRC_Mao_Zedong"
+		texturefile = "gfx/characters/PRC_Mao_Zedong.png"
+	}
+	#汪精卫
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Wang_Jingwe"
+		texturefile = "gfx/characters/CHI_Wang_Jingwe.png"
+	}
+	#温斯顿丘吉尔
+	SpriteType = {
+		name = "GFX_portrait_large_ENG_winston_churchill"
+		texturefile = "gfx/characters/ENG_winston_churchill.png"
+	}
+	#约瑟夫戈培尔
+	SpriteType = {
+		name = "GFX_portrait_large_WGR_Joseph_Goebbels"
+		texturefile = "gfx/characters/WGR_Joseph_Goebbels.png"
+	}
+	#维克托·伊曼纽尔三世
+	SpriteType = {
+		name = "GFX_portrait_large_ITA_Victor_Emmanuel_III"
+		texturefile = "gfx/characters/ITA_Victor_Emmanuel_III.png"
+	}
+	#道格拉斯·麦克阿瑟
+	SpriteType = {
+		name = "GFX_portrait_large_USA_Douglas_MacArthur"
+		texturefile = "gfx/characters/USA_Douglas_MacArthur.png"
+	}
+	#龙云
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Long_Yun"
+		texturefile = "gfx/characters/CHI_Long_Yun.png"
+	}
+	#刘湘
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Liu_Xiang"
+		texturefile = "gfx/characters/CHI_Liu_Xiang.png"
+	}
+	#五世热振活佛
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Re_Zhen"
+		texturefile = "gfx/characters/CHI_Re_Zhen.png"
+	}
+	#那旺纳林
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Nawang_Nalin"
+		texturefile = "gfx/characters/CHI_Nawang_Nalin.png"
+	}
+	#王汝贤
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Wang_Ruxian"
+		texturefile = "gfx/characters/CHI_Wang_Ruxian.png"
+	}
+	#马鸿逵
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Ma_Hongkui"
+		texturefile = "gfx/characters/CHI_Ma_Hongkui.png"
+	}
+	#马绍武
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Ma_Shaowu"
+		texturefile = "gfx/characters/CHI_Ma_Shaowu.png"
+	}
+	#卢永祥
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Lu_Yongxiang"
+		texturefile = "gfx/characters/CHI_Lu_Yongxiang.png"
+	}
+	#谭浩明
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Tan_Haoming"
+		texturefile = "gfx/characters/CHI_Tan_Haoming.png"
+	}
+	#叶荃
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Ye_Quan"
+		texturefile = "gfx/characters/CHI_Ye_Quan.png"
+	}
+	#孙岳
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Sun_Yue"
+		texturefile = "gfx/characters/CHI_Sun_Yue.png"
+	}
+	#孔庚
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Kong_Geng"
+		texturefile = "gfx/characters/CHI_Kong_Geng.png"
+	}
+	#海因茨·古德里安
+	SpriteType = {
+		name = "GFX_portrait_large_DDR_Heinz_Guderian"
+		texturefile = "gfx/characters/DDR_Heinz_Guderian.png"
+	}
+	#卡尔·邓尼茨
+	SpriteType = {
+		name = "GFX_portrait_large_DDR_Karl_Donitz"
+		texturefile = "gfx/characters/DDR_Karl_Donitz.png"
+	}
+	#弗里德里希·保卢斯
+	SpriteType = {
+		name = "GFX_portrait_large_DDR_Friedrich_Paulus"
+		texturefile = "gfx/characters/DDR_Friedrich_Paulus.png"
+	}
+	#顾品珍
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Gu_Pinzhen"
+		texturefile = "gfx/characters/CHI_Gu_Pinzhen.png"
+	}
+	#斯坦利·鲍德温
+	SpriteType = {
+		name = "GFX_portrait_large_ENG_Stanley_Baldwin"
+		texturefile = "gfx/characters/ENG_Stanley_Baldwin.png"
+	}
+	#维克托·伊曼纽尔三世
+	SpriteType = {
+		name = "GFX_portrait_large_ITA_Vittorio_Emanuele_III"
+		texturefile = "gfx/characters/ITA_Vittorio_Emanuele_III.png"
+	}
+	#乔治五世
+	SpriteType = {
+		name = "GFX_portrait_large_ENG_George_V"
+		texturefile = "gfx/characters/ENG_George_V.png"
+		legacy_lazy_load = no
+	}
+	#费迪南六世
+	SpriteType = {
+		name = "GFX_portrait_large_TOS_Ferdinand_VI"
+		texturefile = "gfx/characters/TOS_Ferdinand_VI.png"
+	}
+	#阿卜杜勒迈吉德二世
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Abdvlmecid_II"
+		texturefile = "gfx/characters/TUR_Abdvlmecid_II.png"
+	}
+	#大不列颠共产党委员会
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_CPGB_committee"
+		texturefile = "gfx/characters/BLF_CPGB_committee.png"
+	}
+	#左翼联合政府
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_Left_wing_coalition_government"
+		texturefile = "gfx/characters/BLF_Left_wing_coalition_government.png"
+	}
+	#亚瑟·霍纳
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_Arthur_Horner"
+		texturefile = "gfx/characters/BLF_Arthur_Horner.png"
+	}
+	#哈里·波立特
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_Harry_Pollitt"
+		texturefile = "gfx/characters/BLF_Harry_Pollitt.png"
+	}
+	#约翰·贝克特
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_John_Beckett"
+		texturefile = "gfx/characters/BLF_John_Beckett.png"
+	}
+	#杰弗里·哈姆
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_Jeffrey_Hamm"
+		texturefile = "gfx/characters/BLF_Jeffrey_Hamm.png"
+	}
+	#西尔维亚·潘克赫特
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_Sylvia_Pankhurst"
+		texturefile = "gfx/characters/BLF_Sylvia_Pankhurst.png"
+	}
+	#威利·加拉赫尔
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_Willie_Gallacher"
+		texturefile = "gfx/characters/BLF_Willie_Gallacher.png"
+	}
+	#大卫·柯克伍德
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_David_Kirkwood"
+		texturefile = "gfx/characters/BLF_David_Kirkwood.png"
+	}
+	#芬纳·布罗克韦
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_Fenner_Brockway"
+		texturefile = "gfx/characters/BLF_Fenner_Brockway.png"
+	}
+	#曼尼·辛威尔
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_Manny_Shinwell"
+		texturefile = "gfx/characters/BLF_Manny_Shinwell.png"
+	}
+	#沃尔顿·纽博尔德
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_Walton_Newbold"
+		texturefile = "gfx/characters/BLF_Walton_Newbold.png"
+	}
+	#杰西·斯蒂芬
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_Jessie_Stephen"
+		texturefile = "gfx/characters/BLF_Jessie_Stephen.png"
+	}
+	#塞西尔·马龙
+	SpriteType = {
+		name = "GFX_portrait_large_BLF_Cecil_Malone"
+		texturefile = "gfx/characters/BLF_Cecil_Malone.png"
+	}
+	#于贝尔·利奥泰
+	SpriteType = {
+		name = "GFX_portrait_large_FRA_Hubert_Lyautey"
+		texturefile = "gfx/characters/FRA_Hubert_Lyautey.png"
+	}
+	#康斯坦丁·罗科索夫斯基
+	SpriteType = {
+		name = "GFX_portrait_large_POL_Konstantin_Rokossovsky"
+		texturefile = "gfx/characters/POL_Konstantin_Rokossovsky.png"
+	}
+	#叙利亚
+	#康斯坦丁·祖雷克
+	SpriteType = {
+		name = "GFX_portrait_large_TAT_Constantin_Zureik"
+		texturefile = "gfx/characters/TAT_Constantin_Zureik.png"
+	}
+}

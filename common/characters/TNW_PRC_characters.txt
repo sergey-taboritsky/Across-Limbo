@@ -1,0 +1,71 @@
+characters = {
+	###陈其瑗
+	PRC_Chen_Qiyuan = {
+		name = PRC_Chen_Qiyuan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Chen_Qiyuan
+			}
+		}
+		country_leader = {
+			desc = PRC_Chen_Qiyuan_desc
+			ideology = tridemism_left
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###季方
+	PRC_Ji_Fang = {
+		name = PRC_Ji_Fang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Ji_Fang
+			}
+		}
+		country_leader = {
+			desc = PRC_Ji_Fang_desc
+			ideology = Popular_Front
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#林彪
+	PRC_Lin_Biao = {
+		name = PRC_Lin_Biao
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Lin_Biao
+			}
+		}
+		corps_commander = {
+			desc = PRC_Lin_Biao_commander_desc
+			traits = { }
+			skill = 4
+			attack_skill = 7
+			defense_skill = 6
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+	####中华苏维埃共和国临时中央政府
+	PRC_Politburo_of_the_CCP = {
+		name = PRC_Politburo_of_the_CCP
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PRC_Politburo_of_the_CCP
+			}
+		}
+		country_leader = {
+			desc = PRC_Politburo_of_the_CCP
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

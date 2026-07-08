@@ -1,0 +1,74 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "TNW_Super_Events"
+		
+		show_position = { x = -50 y = -100 }
+		show_position = { x = -50 y = -100 }
+		show_position = { x = -50 y = -100 }
+		animation_time = 1
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		size = { width = 588 height = 480 }
+		Orientation = center
+		Origo = center
+		moveable = yes
+		clipping = no
+		background = {
+			name = "Background"
+			spriteType ="GFX_tiled_window_transparent"
+		} 
+		
+		iconType = {
+			name = "SE_image"
+			position = { x= 1 y = 2 }
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "TNW_Super_Events_frame"
+			size = { width = 885 height = 750 }
+			position = { x=0 y=0 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_bigevent_border"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "Title"
+				position = { x = 70 y = 65 }
+				font = "hoi_24header"
+				borderSize = {x = 0 y = 0}
+				text = "[TNWGetSuperEventTitle]"
+				maxWidth = 580
+				maxHeight = 24
+				format = centre
+			}
+
+			buttonType = {
+				name = "SE_option"
+				text = "[TNWGetSuperEventOption]"
+				shortcut = "ESCAPE"
+				position = { x = -330 y = 130 }
+				quadTextureSprite ="GFX_SE_button"
+				buttonFont = "hoi_24header"
+				Orientation = center
+			}
+
+			instantTextBoxType = {
+				name = "text"
+				position = {  x= 180 y = -370 }
+				font = "hoi_24header"
+				text = "[TNWGetSuperEventDesc]"
+				maxWidth = 455
+				maxHeight = 173
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+		}
+	}
+}

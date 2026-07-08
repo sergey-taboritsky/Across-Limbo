@@ -1,0 +1,22 @@
+﻿capital = 271
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.3
+add_ideas = {
+}
+
+set_convoys = 30
+
+set_politics = {
+	ruling_party = Nationalism
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	Liberalism = 15
+	Nationalism = 60
+	communist = 15
+	Authoritarianism = 10
+}

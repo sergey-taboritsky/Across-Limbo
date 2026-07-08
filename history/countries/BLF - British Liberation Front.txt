@@ -1,0 +1,52 @@
+﻿capital = 128
+
+recruit_character = BLF_CPGB_committee
+recruit_character = BLF_Left_wing_coalition_government
+recruit_character = BLF_Clement_Attlee
+recruit_character = BLF_Arthur_Horner
+recruit_character = BLF_Harry_Pollitt
+recruit_character = BLF_Willie_Gallacher
+recruit_character = BLF_Sylvia_Pankhurst
+recruit_character = BLF_David_Kirkwood
+recruit_character = BLF_Fenner_Brockway
+recruit_character = BLF_Cecil_Malone
+recruit_character = BLF_Manny_Shinwell
+recruit_character = BLF_Walton_Newbold
+recruit_character = BLF_Jessie_Stephen
+recruit_character = BLF_John_Beckett
+recruit_character = BLF_Jeffrey_Hamm
+
+set_research_slots = 4
+set_stability = 0.6
+set_war_support = 0.8
+add_command_power = 20
+
+add_ideas =  {
+	#法案
+	extensive_conscription
+	closed_economy
+	war_economy
+	#民精
+	BLF_British_Civil_War
+	BLF_Go_to_the_barricades
+	BLF_Blocked_supply_lines
+	BLF_Rush_to_London
+}
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no ##suspended through duration of war, which is handled via event
+}
+set_popularities = {
+	communist = 32
+	socialism = 28
+	Social_democracy = 23
+	Liberalism = 0
+	Conservatism = 0
+	Absolutism = 12
+	Authoritarianism = 5
+	Nationalism = 0
+}
+country_lock_all_division_template = yes

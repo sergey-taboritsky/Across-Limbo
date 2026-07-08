@@ -1,0 +1,1069 @@
+﻿#!gfx:interface\picture_gfx\TNW_goals.gfx
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+focus_tree = {
+	id = WGR_Focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WGR
+		}
+	}
+	default = no
+	#着手开始处理巴伐利亚问题
+	focus = {
+		id = WGR_0_1_0
+		icon = GFX_WGR_0_1_0
+		x = 6
+		y = 0
+		cost = 35
+		bypass = {
+			has_war_with = GER
+		}
+		completion_reward = {
+			add_political_power = 150
+			country_event = WGR_event.1
+		}
+	}
+	#宣布军事戒严
+	focus = {
+		id = WGR_0_1_1
+		icon = GFX_WGR_0_1_1
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = WGR_0_1_0
+		}
+		bypass = {
+			has_war_with = GER
+		}
+		cost = 35
+		completion_reward = {
+			add_stability = -0.1
+			country_event = WGR_event.2
+			swap_ideas = {
+				remove_idea = WGR_Bavarian_independence_crisis
+				add_idea = WGR_Bavarian_independence_crisis_2
+			}
+		}
+	}
+	#增加警力
+	focus = {
+		id = WGR_0_1_2
+		icon = GFX_WGR_0_1_2
+		x = 8
+		y = 1
+		prerequisite = {
+			focus = WGR_0_1_0
+		}
+		bypass = {
+			has_war_with = GER
+		}
+		cost = 28
+		completion_reward = {
+			add_manpower = 3510
+			add_timed_idea = {
+				idea = WGR_Expand_the_police_force
+				days = 60
+			}
+			country_event = WGR_event.3
+			custom_effect_tooltip = TNW_unlock_decision_tt
+			unlock_decision_tooltip = WGR_Bavarian_independence_crisis_decision_4
+		}
+	}
+	#通缉可疑分子
+	focus = {
+		id = WGR_0_1_3
+		icon = GFX_WGR_0_1_3
+		x = 6
+		y = 2
+		prerequisite = {
+			focus = WGR_0_1_1
+		}
+		prerequisite = {
+			focus = WGR_0_1_2
+		}
+		bypass = {
+			has_war_with = GER
+		}
+		cost = 21
+		completion_reward = {
+			country_event = WGR_event.4
+			swap_ideas = {
+				remove_idea = WGR_Bavarian_independence_crisis_2
+				add_idea = WGR_Bavarian_independence_crisis_3
+			}
+		}
+	}
+	#自由军团，前进！
+	focus = {
+		id = WGR_0_1_4
+		icon = GFX_WGR_0_1_4
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = WGR_0_1_3
+		}
+		mutually_exclusive = {
+			focus = WGR_0_1_5
+		}
+		bypass = {
+			has_war_with = GER
+		}
+		cost = 35
+		completion_reward = {
+			custom_effect_tooltip = TNW_unlock_decision_tt
+			unlock_decision_tooltip = WGR_Bavarian_independence_crisis_decision_5
+			swap_ideas = {
+				remove_idea = WGR_Take_advantage_of_the_Freikorps
+				add_idea = WGR_Take_advantage_of_the_Freikorps_2
+			}
+			custom_effect_tooltip = WGR_0_1_4_tt
+			add_to_variable = {
+				WGR_Bavarian_extremist_group_readiness = -5
+			}
+			clamp_variable = {
+				var = WGR_Bavarian_extremist_group_readiness
+				min = 0
+				max = 100
+			}
+		}
+	}
+	#在燃烧的慕尼黑
+	focus = {
+		id = WGR_0_1_6
+		icon = GFX_WGR_0_1_6
+		x = 5
+		y = 4
+		prerequisite = {
+			focus = WGR_0_1_4
+		}
+		bypass = {
+			has_war_with = GER
+		}
+		cost = 35
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = WGR_Bavarian_independence_crisis_3
+				add_idea = WGR_Bavarian_independence_crisis_4
+			}
+			add_manpower = -500
+		}
+	}
+	#派遣国防军
+	focus = {
+		id = WGR_0_1_5
+		icon = GFX_WGR_0_1_5
+		x = 8
+		y = 3
+		prerequisite = {
+			focus = WGR_0_1_3
+		}
+		mutually_exclusive = {
+			focus = WGR_0_1_4
+		}
+		bypass = {
+			has_war_with = GER
+		}
+		cost = 35
+		completion_reward = {
+			custom_effect_tooltip = WGR_0_1_4_tt
+			add_to_variable = {
+				WGR_Bavarian_extremist_group_readiness = -5
+			}
+			clamp_variable = {
+				var = WGR_Bavarian_extremist_group_readiness
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = TNW_unlock_decision_tt
+			unlock_decision_tooltip = WGR_Bavarian_independence_crisis_decision_5
+		}
+	}
+	#忠诚的骑士精神
+	focus = {
+		id = WGR_0_1_7
+		icon = GFX_WGR_0_1_7
+		x = 7
+		y = 4
+		prerequisite = {
+			focus = WGR_0_1_5
+		}
+		bypass = {
+			has_war_with = GER
+		}
+		cost = 35
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = WGR_Bavarian_independence_crisis_3
+				add_idea = WGR_Bavarian_independence_crisis_4
+			}
+			add_stability = 0.05
+		}
+	}
+	#保卫德意志的领土
+	focus = {
+		id = WGR_0_1_8
+		icon = GFX_WGR_0_1_8
+		x = 6
+		y = 5
+		prerequisite = {
+			focus = WGR_0_1_7
+			focus = WGR_0_1_6
+		}
+		bypass = {
+			has_war_with = GER
+		}
+		cost = 49
+		completion_reward = {
+			add_war_support = 0.1
+			swap_ideas = {
+				remove_idea = WGR_Bavarian_independence_crisis_4
+				add_idea = WGR_Bavarian_independence_crisis_5
+			}
+		}
+	}
+	#叛徒，去死！
+	focus = {
+		id = WGR_0_1_9
+		icon = GFX_WGR_0_1_9
+		x = 6
+		y = 6
+		prerequisite = {
+			focus = WGR_0_1_8
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = WGR_0_1_9_tt				#点完逮捕希特勒的那个决议增加的flag
+				has_country_flag = WGR_Hitler_was_solved
+			}
+		}
+		cost = 70
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = WGR_A_government_that_is_not_trusted
+				add_idea = WGR_A_government_that_is_not_trusted_2
+			}
+			remove_ideas = WGR_Bavarian_independence_crisis_5
+			54 = {
+				set_demilitarized_zone = no
+			}
+			52 = {
+				set_demilitarized_zone = no
+			}
+			53 = {
+				set_demilitarized_zone = no
+			}
+		}
+	}
+	#维护大帐篷的稳定
+	focus = {
+		id = WGR_0_1_10
+		icon = GFX_WGR_0_1_9
+		x = 15
+		y = 0
+		prerequisite = {
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#妥协的艺术
+	focus = {
+		id = WGR_0_1_11
+		icon = GFX_WGR_0_1_11
+		x = 15
+		y = 1
+		prerequisite = {
+			focus = WGR_0_1_10
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#中央党的建议
+	focus = {
+		id = WGR_0_1_12
+		icon = GFX_WGR_0_1_12
+		x = 13
+		y = 2
+		prerequisite = {
+			focus = WGR_0_1_11
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#人民党的建议
+	focus = {
+		id = WGR_0_1_13
+		icon = GFX_WGR_0_1_13
+		x = 15
+		y = 2
+		prerequisite = {
+			focus = WGR_0_1_11
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#民主党的建议
+	focus = {
+		id = WGR_0_1_14
+		icon = GFX_WGR_0_1_14
+		x = 17
+		y = 2
+		prerequisite = {
+			focus = WGR_0_1_11
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+			country_event = WGR_event.9
+		}
+	}
+	#重振德国经济
+	focus = {
+		id = WGR_0_1_15
+		icon = GFX_WGR_0_1_15
+		x = 15
+		y = 3
+		prerequisite = {
+			focus = WGR_0_1_12
+		}
+		prerequisite = {
+			focus = WGR_0_1_13
+		}
+		prerequisite = {
+			focus = WGR_0_1_14
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#勒紧裤腰带
+	focus = {
+		id = WGR_0_1_16
+		icon = GFX_WGR_0_1_16
+		x = 13
+		y = 4
+		prerequisite = {
+			focus = WGR_0_1_15
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#削减福利开支
+	focus = {
+		id = WGR_0_1_17
+		icon = GFX_WGR_0_1_17
+		x = 17
+		y = 4
+		prerequisite = {
+			focus = WGR_0_1_15
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#调控物价
+	focus = {
+		id = WGR_0_1_18
+		icon = GFX_WGR_0_1_18
+		x = 15
+		y = 5
+		prerequisite = {
+			focus = WGR_0_1_16
+		}
+		prerequisite = {
+			focus = WGR_0_1_17
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#从大萧条中恢复过来
+	focus = {
+		id = WGR_0_1_19
+		icon = GFX_WGR_0_1_19
+		x = 15
+		y = 7
+		prerequisite = {
+			focus = WGR_0_1_21
+		}
+		prerequisite = {
+			focus = WGR_0_1_22
+		}
+		prerequisite = {
+			focus = WGR_0_1_25
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#舒伦堡协议
+	focus = {
+		id = WGR_0_1_20
+		icon = GFX_WGR_0_1_20
+		x = 12
+		y = 5
+		prerequisite = {
+			focus = WGR_0_1_16
+		}
+		prerequisite = {
+			focus = WGR_0_1_17
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#黑鹰运动
+	focus = {
+		id = WGR_0_1_21
+		icon = GFX_WGR_0_1_21
+		x = 12
+		y = 6
+		prerequisite = {
+			focus = WGR_0_1_20
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#有形的大手
+	focus = {
+		id = WGR_0_1_22
+		icon = GFX_WGR_0_1_22
+		x = 15
+		y = 6
+		prerequisite = {
+			focus = WGR_0_1_18
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#民用工程署
+	focus = {
+		id = WGR_0_1_23
+		icon = GFX_WGR_0_1_23
+		x = 18
+		y = 5
+		prerequisite = {
+			focus = WGR_0_1_17
+		}
+		prerequisite = {
+			focus = WGR_0_1_16
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#工业复兴运动
+	focus = {
+		id = WGR_0_1_25
+		icon = GFX_WGR_0_1_25
+		x = 18
+		y = 6
+		prerequisite = {
+			focus = WGR_0_1_23
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+}
+
+focus_tree = {
+	#社会民主党第一任期
+	id = WGR_Community_Focus
+	country = {
+		factor = 0
+	}
+	default = no
+	#社会民主党的胜利
+	focus = {
+		id = WGR_The_victory_of_the_Social_Democrats
+		icon = GFX_WGR_The_victory_of_the_Social_Democrats
+		x = 10
+		y = 0
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#当青天吻过大地
+	focus = {
+		id = WGR_When_the_blue_sky_kisses_the_earth
+		icon = GFX_WGR_When_the_blue_sky_kisses_the_earth
+		x = 1
+		y = 1
+		available = {
+		}
+		prerequisite = {
+			focus = WGR_The_victory_of_the_Social_Democrats
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#工会作喉舌
+	focus = {
+		id = WGR_The_trade_union_serves_as_the_mouthpiece
+		icon = GFX_WGR_The_trade_union_serves_as_the_mouthpiece
+		x = 3
+		y = 2
+		available = {
+		}
+		prerequisite = {
+			focus = WGR_When_the_blue_sky_kisses_the_earth
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#媒体皆自由
+	focus = {
+		id = WGR_All_media_are_free
+		icon = GFX_WGR_All_media_are_free
+		x = 4
+		y = 3
+		available = {
+		}
+		prerequisite = {
+			focus = WGR_The_trade_union_serves_as_the_mouthpiece
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#种族间平等
+	focus = {
+		id = WGR_Interracial_equality
+		icon = GFX_WGR_Interracial_equality
+		x = 3
+		y = 4
+		available = {
+		}
+		prerequisite = {
+			focus = WGR_All_media_are_free
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#请贵族退场
+	focus = {
+		id = WGR_Please_exit_the_nobles
+		icon = GFX_WGR_Please_exit_the_nobles
+		x = 1
+		y = 3
+		available = {
+		}
+		prerequisite = {
+			focus = WGR_The_victory_of_the_Social_Democrats
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#允大众选举
+	focus = {
+		id = WGR_Allow_for_public_elections
+		icon = GFX_WGR_Allow_for_public_elections
+		x = 1
+		y = 5
+		available = {
+		}
+		prerequisite = {
+			focus = WGR_The_victory_of_the_Social_Democrats
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#公正，尽职，开明
+	focus = {
+		id = WGR_Fair_diligent_and_openminded
+		icon = GFX_WGR_Fair_diligent_and_openminded
+		x = 1
+		y = 6
+		available = {
+		}
+		prerequisite = {
+			focus = WGR_Interracial_equality
+		}
+		prerequisite = {
+			focus = WGR_Please_exit_the_nobles
+		}
+		prerequisite = {
+			focus = WGR_Medical_reform
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#前进，为了德意志人民
+	focus = {
+		id = WGR_Forward_for_the_German_people
+		icon = GFX_WGR_Forward_for_the_German_people
+		x = 10
+		y = 7
+		available = {
+		}
+		prerequisite = {
+			focus = WGR_Fair_diligent_and_openminded
+		}
+		prerequisite = {
+			focus = WGR_Prosperity_and_stable_development
+		}
+		prerequisite = {
+			focus = WGR_Freedom_equality_fraternity
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#肃清腐败
+	focus = {
+		id = WGR_Clean_up_corruption
+		icon = GFX_WGR_Clean_up_corruption
+		x = -1
+		y = 2
+		available = {
+		}
+		prerequisite = {
+			focus = WGR_When_the_blue_sky_kisses_the_earth
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#肃清官员
+	focus = {
+		id = WGR_Restricting_officials
+		icon = GFX_WGR_Restricting_officials
+		x = -2
+		y = 3
+		available = {
+		}
+		prerequisite = {
+			focus = WGR_Clean_up_corruption
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#医疗改革
+	focus = {
+		id = WGR_Medical_reform
+		icon = GFX_WGR_Medical_reform
+		x = -1
+		y = 4
+		available = {
+		}
+		prerequisite = {
+			focus = WGR_Restricting_officials
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#当微风吹佛田野
+	focus = {
+		id = WGR_When_the_breeze_blows_the_Buddha_Field
+		icon = GFX_WGR_When_the_breeze_blows_the_Buddha_Field
+		x = 10
+		y = 1
+		prerequisite = {
+			focus = WGR_The_victory_of_the_Social_Democrats
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#当心灵展开羽翼
+	focus = {
+		id = WGR_When_the_soul_unfolds_its_wings
+		icon = GFX_WGR_When_the_soul_unfolds_its_wings
+		x = 18
+		y = 1
+		prerequisite = {
+			focus = WGR_The_victory_of_the_Social_Democrats
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#扩大教育拨款
+	focus = {
+		id = WGR_Expand_education_funding
+		icon = GFX_WGR_Expand_education_funding
+		x = 20
+		y = 2
+		prerequisite = {
+			focus = WGR_When_the_soul_unfolds_its_wings
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#专利保护
+	focus = {
+		id = WGR_patent_protection
+		icon = GFX_WGR_patent_protection
+		x = 21
+		y = 3
+		prerequisite = {
+			focus = WGR_Expand_education_funding
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#德意志国家科学院
+	focus = {
+		id = WGR_German_National_Academy_Sciences
+		icon = GFX_WGR_German_National_Academy_Sciences
+		x = 20
+		y = 4
+		prerequisite = {
+			focus = WGR_patent_protection
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#思想的解放
+	focus = {
+		id = WGR_The_liberation_of_thought
+		icon = GFX_WGR_The_liberation_of_thought
+		x = 20
+		y = 5
+		prerequisite = {
+			focus = WGR_patent_protection
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#妇女权益法
+	focus = {
+		id = WGR_Women_Rights_Law
+		icon = GFX_WGR_Women_Rights_Law
+		x = 16
+		y = 2
+		prerequisite = {
+			focus = WGR_When_the_soul_unfolds_its_wings
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#女性选举权
+	focus = {
+		id = WGR_Women_suffrage
+		icon = GFX_WGR_Women_suffrage
+		x = 15
+		y = 3
+		prerequisite = {
+			focus = WGR_Women_Rights_Law
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = WGR_Family_suffrage
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#家庭选举权
+	focus = {
+		id = WGR_Family_suffrage
+		icon = GFX_WGR_Family_suffrage
+		x = 17
+		y = 3
+		prerequisite = {
+			focus = WGR_Women_Rights_Law
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = WGR_Women_suffrage
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#废除第175条
+	focus = {
+		id = WGR_Abolish_Article175
+		icon = GFX_WGR_Abolish_Article175
+		x = 15
+		y = 4
+		prerequisite = {
+			focus = WGR_Women_Rights_Law
+			focus = WGR_Family_suffrage
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = WGR_Silence_then_remain_silent
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#沉默，然后三缄其口
+	focus = {
+		id = WGR_Silence_then_remain_silent
+		icon = GFX_WGR_Silence_then_remain_silent
+		x = 17
+		y = 4
+		prerequisite = {
+			focus = WGR_Women_Rights_Law
+			focus = WGR_Family_suffrage
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = WGR_Abolish_Article175
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#性的解放
+	focus = {
+		id = WGR_Sexual_liberation
+		icon = GFX_WGR_Sexual_liberation
+		x = 16
+		y = 5
+		prerequisite = {
+			focus = WGR_Abolish_Article175
+			focus = WGR_Silence_then_remain_silent
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#自由平等博爱
+	focus = {
+		id = WGR_Freedom_equality_fraternity
+		icon = GFX_WGR_Freedom_equality_fraternity
+		x = 18
+		y = 6
+		prerequisite = {
+			focus = WGR_Sexual_liberation
+		}
+		prerequisite = {
+			focus = WGR_The_liberation_of_thought
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#重工业补贴
+	focus = {
+		id = WGR_Heavy_industry_subsidies
+		icon = GFX_WGR_Heavy_industry_subsidies
+		x = 12
+		y = 2
+		prerequisite = {
+			focus = WGR_When_the_breeze_blows_the_Buddha_Field
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#心脏起搏器
+	focus = {
+		id = WGR_Cardiac_pacemaker
+		icon = GFX_WGR_Cardiac_pacemaker
+		x = 12
+		y = 3
+		prerequisite = {
+			focus = WGR_Heavy_industry_subsidies
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#粮食收购
+	focus = {
+		id = WGR_Grain_procurement
+		icon = GFX_WGR_Grain_procurement
+		x = 12
+		y = 4
+		prerequisite = {
+			focus = WGR_Cardiac_pacemaker
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#繁荣，稳定，发展
+	focus = {
+		id = WGR_Prosperity_and_stable_development
+		icon = GFX_WGR_Prosperity_and_stable_development
+		x = 10
+		y = 6
+		prerequisite = {
+			focus = WGR_New_Road
+		}
+		prerequisite = {
+			focus = WGR_New_water_conservancy
+		}
+		prerequisite = {
+			focus = WGR_Grain_procurement
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#重振经济
+	focus = {
+		id = WGR_Revitalizing_the_economy
+		icon = GFX_WGR_Revitalizing_the_economy
+		x = 8
+		y = 2
+		prerequisite = {
+			focus = WGR_When_the_breeze_blows_the_Buddha_Field
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#制服银行业
+	focus = {
+		id = WGR_Unify_the_banking_industry
+		icon = GFX_WGR_Unify_the_banking_industry
+		x = 7
+		y = 3
+		prerequisite = {
+			focus = WGR_Revitalizing_the_economy
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#以工代赈
+	focus = {
+		id = WGR_Work_as_substitute_for_relief
+		icon = GFX_WGR_Work_as_substitute_for_relief
+		x = 9
+		y = 3
+		prerequisite = {
+			focus = WGR_Revitalizing_the_economy
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#新道路
+	focus = {
+		id = WGR_New_Road
+		icon = GFX_WGR_New_Road
+		x = 7
+		y = 4
+		prerequisite = {
+			focus = WGR_Unify_the_banking_industry
+		}
+		prerequisite = {
+			focus = WGR_Work_as_substitute_for_relief
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+	#新水利
+	focus = {
+		id = WGR_New_water_conservancy
+		icon = GFX_WGR_New_water_conservancy
+		x = 9
+		y = 4
+		prerequisite = {
+			focus = WGR_Unify_the_banking_industry
+		}
+		prerequisite = {
+			focus = WGR_Work_as_substitute_for_relief
+		}
+		available = {
+		}
+		cost = 70
+		completion_reward = {
+		}
+	}
+}

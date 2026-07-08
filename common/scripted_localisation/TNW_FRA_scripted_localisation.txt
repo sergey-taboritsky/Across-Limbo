@@ -1,0 +1,73 @@
+defined_text = { #中央委员会倾向
+	name = Get_FRA_Party_Central_leaning_sploc
+	text = {
+		#苏瓦林
+		trigger = {
+			check_variable = {
+				FRA_Party_Central_leaning_var < 50
+			}
+		}
+		localization_key = FRA_Boris_Souvarine
+	}
+	text = {
+		#特雷特
+		trigger = {
+			check_variable = {
+				FRA_Party_Central_leaning_var > 50
+			}
+		}
+		localization_key = FRA_Albert_Treint
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+defined_text = { #中央理事会倾向
+	name = Get_FRA_Commune_Council_leaning_sploc
+	text = {
+		#苏瓦林
+		trigger = {
+			check_variable = {
+				FRA_Commune_Council_leaning_var < 50
+			}
+		}
+		localization_key = FRA_Boris_Souvarine
+	}
+	text = {
+		#特雷特
+		trigger = {
+			check_variable = {
+				FRA_Commune_Council_leaning_var > 50
+			}
+		}
+		localization_key = FRA_Albert_Treint
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}
+
+defined_text = { #总倾向
+	name = Get_FRA_internal_general_leaning_sploc
+	text = {
+		#苏瓦林
+		trigger = {
+			check_variable = {
+				FRA_internal_balance_total_var < 50
+			}
+		}
+		localization_key = FRA_Boris_Souvarine
+	}
+	text = {
+		#特雷特
+		trigger = {
+			check_variable = {
+				FRA_internal_balance_total_var > 50
+			}
+		}
+		localization_key = FRA_Albert_Treint
+	}
+	text = {
+		localization_key = TNW_FRA_leaning_neutral_tt
+	}
+}

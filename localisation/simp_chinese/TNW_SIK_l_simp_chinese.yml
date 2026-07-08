@@ -1,0 +1,27 @@
+﻿l_simp_chinese:
+
+ #顾问
+ CHI_Ji_Hongchang: "吉鸿昌"
+ CHI_Ji_Hongchang_desc: ""
+
+ #政党名字
+ SIK_communist_party: "中国共产党"
+ SIK_socialism_party: "六城与准噶尔工农组织"
+ SIK_Social_democracy_party: "国民党"
+ SIK_Liberalism_party: "国民党"
+ SIK_Conservatism_party: "国民党"
+ SIK_Authoritarianism_party: "国民党"
+ SIK_Absolutism_party: "国民党"
+ SIK_Nationalism_party: "国民党"
+
+#精神
+ SIK_Tale_of_Twin_Mas: "双马记"
+ SIK_Tale_of_Twin_Mas_desc: "马仲英与其姐夫马虎山曾带领军队进攻新疆，尝试推翻时任新疆督办金树仁。然而，在一次兵败后马仲英逃往俄罗斯，马虎山却依靠残兵与新疆本地势力共同推翻了金树仁的统治，自任督办。\n\n如今，马虎山在新疆的统治已经巩固，但其被认为“行事风格怪异”且不够亲俄，于是马仲英自莫斯科归来，尝试着掌控新疆政权。这一对昔日战友的冲突已经严重破坏了新疆的政治与经济环境。"
+ SIK_Enclave_Province: "飞地行省"
+ SIK_Enclave_Province_desc: "名义上，新疆从属于奉天的安国军政府及其少帅张学良；不过，由于一切陆地联系都被南京政权切断，新疆的政令只能自行其是。此外，远在数千里外的奉天统治者也在新疆民间并无多少合法性。"
+ SIK_Troubles_Eastward: "东境骚动"
+ SIK_Troubles_Eastward_desc: "国民党政权的西北军政委员会从不掩饰他们的目标——向西进军，直至中俄边界。为此，他们已经任命曾在伊犁新军服役的甘肃人邓宝珊为“新疆省主席”，并向新疆各路反对派提供支持。如果我们未能抵御国民革命军的进攻，那么即使俄罗斯提供庇护，恐怕也将于事无补。"
+
+#事件
+ SIK_news_event.1.t: "南京政府夺取新疆"
+ SIK_news_event.1.d: "自从第二次世界大战结束以来，占据中国大部分地区的国民党政权便被大半个世界视为中国的合法政府。不过，中国的部分边疆地区仍在接受奉天的“安国军政府”所控制。\n\n如今，情况似乎已经彻底改变。随着西北军政委员会不断进军，西部边疆已经彻底归于南京统治。国民党的忠诚干部邓宝珊接替先前效忠奉天的马氏集团担任新疆省主席，这标志着奉天已经失去东北地区以外的全部领土。"

@@ -1,0 +1,19 @@
+characters = {
+	#亨德里克斯·斯内夫利特
+	HOL_Hendricus_Sneevliet = {
+		name = HOL_Hendricus_Sneevliet
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_HOL_Hendricus_Sneevliet
+			}
+		}
+		country_leader = {
+			desc = HOL_Hendricus_Sneevliet_desc
+			ideology = Marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

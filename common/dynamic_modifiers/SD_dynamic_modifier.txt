@@ -1,0 +1,15 @@
+SD_manpower_modifier = {
+    icon = "GFX_SD_State_develop_icon"
+
+	remove_trigger = { 
+		always = no
+	}
+	local_factories = This.SD_man_modifier_var
+	state_production_speed_buildings_factor = This.SD_man_modifier_var
+	local_building_slots_factor = This.SD_man_modifier_var
+	local_manpower = This.SD_man_modifier_var
+	local_resources = This.SD_man_modifier_var
+
+
+
+}

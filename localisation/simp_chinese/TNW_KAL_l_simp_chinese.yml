@@ -1,0 +1,40 @@
+﻿l_simp_chinese:
+#领导人
+ KAL_Huseyn_Cahit_Yalcin: "侯赛因·卡希特·叶尔钦" #保皇凯末尔派 外交部长
+ KAL_Huseyn_Cahit_Yalcin_advisor: "侯赛因·卡希特·叶尔钦"
+
+#政党名字
+ KAL_communist_party: "工农社会党"
+ KAL_communist_party_long: "土耳其工农社会党(Türkiye İşçi ve Çiftçi Sosyalist Fırkası)"
+ KAL_syndicalism_party: "工农社会党"
+ KAL_syndicalism_party_long: "土耳其工农社会党(Türkiye İşçi ve Çiftçi Sosyalist Fırkası)"
+ KAL_socialism_party: "工农社会党"
+ KAL_socialism_party_long: "土耳其工农社会党(Türkiye İşçi ve Çiftçi Sosyalist Fırkası)"
+ KAL_Social_democracy_party: "工农社会党"
+ KAL_Social_democracy_party_long: "土耳其工农社会党(Türkiye İşçi ve Çiftçi Sosyalist Fırkası)"
+ KAL_Liberalism_party: "自由协约党"
+ KAL_Liberalism_party_long: "自由协约党"
+ KAL_Conservatism_party: "穆罕默德联盟党"
+ KAL_Conservatism_party_long: "穆罕默德联盟党"
+ KAL_Authoritarianism_party: "土耳其人民党 - 安卡拉派"
+ KAL_Authoritarianism_party_long: "土耳其人民党(Türkiye Halk Fırkası)"
+ KAL_Absolutism_party: "民族纯净委员会"
+ KAL_Absolutism_party_long: "土耳其共和国民族纯净委员会"
+ KAL_Nationalism_party: "土耳其人民党 - 激进派"
+ KAL_Nationalism_party_long: "土耳其人民党(Türkiye Halk Fırkası)"
+
+#民族精神
+
+#事件
+
+#新闻
+
+#GUI
+
+#BOP
+
+#决议
+
+#国策
+ #: ""
+ #_desc: ""

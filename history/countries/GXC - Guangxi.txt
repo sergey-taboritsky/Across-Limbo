@@ -1,0 +1,36 @@
+﻿capital = 599
+
+#oob = "GXC_1936"
+
+set_stability = 0.6
+set_war_support = 0.4
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+
+recruit_character = CHI_Bai_Chongxi
+recruit_character = CHI_Huang_Shaohong
+
+set_convoys = 5
+
+
+set_politics = {
+	ruling_party = Absolutism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 3
+	socialism = 5
+	Social_democracy = 20
+	Liberalism = 4
+	Conservatism = 8
+	Authoritarianism = 26
+	Absolutism = 34
+	Nationalism = 0
+
+}

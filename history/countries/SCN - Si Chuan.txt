@@ -1,0 +1,33 @@
+﻿capital = 605
+
+set_research_slots = 3
+
+recruit_character = CHI_Wang_Weizhou
+recruit_character = CHI_Wu_Yuzhang
+
+set_politics = {
+	ruling_party = Social_democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+set_popularities = {
+	communist = 10
+	socialism = 16
+	Social_democracy = 42
+	Liberalism = 12
+	Conservatism = 7
+	Authoritarianism = 13
+	Absolutism = 0
+	Nationalism = 0
+
+}
+
+set_stability = 0.5
+set_war_support = 0.5
+
+add_ideas = {
+	SCN_Red_Star_Over_Sichuan
+}

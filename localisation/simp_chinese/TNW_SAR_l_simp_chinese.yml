@@ -1,0 +1,21 @@
+﻿l_simp_chinese:
+ #顾问
+ SAR_Marie_Pierre_Koenig:0 "马里-皮埃尔·柯尼希"
+ SAR_otto_niebergall:0 "奥托·尼伯格尔"
+ SAR_Berthold_Cahn:0 "贝托尔德·卡恩"
+ SAR_kate_frankenthal:0 "凯特·弗兰肯塔尔"
+ 
+ #政党名字
+ SAR_communist_party:0 "德共(莱茵)"
+ SAR_communist_party_long:0 "德国共产党(Kommunistische Partei Deutschlands)"
+ SAR_syndicalism_party:0 "自由工联(莱茵)"
+ SAR_syndicalism_party_long:0 "德国自由工人联合会(Freie Arbeiter Union Deutschlands)"
+ SAR_socialism_party:0 "社工党(莱茵)"
+ SAR_socialism_party_long:0 "德国社会主义工人党(Sozialistische Arbeiterpartei Deutschlands)"
+ SAR_Social_democracy_party:0 "-"
+ SAR_Liberalism_party:0 "-"
+ SAR_Conservatism_party:0 "-"
+ SAR_Authoritarianism_party:0 "-"
+ SAR_Absolutism_party:0 "占领机构"
+ SAR_Absolutism_party_long:0 "法兰西公社陆军莱茵占领机构"
+ SAR_Nationalism_party:0 "-"

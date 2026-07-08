@@ -1,0 +1,636 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+### search_filters = {FOCUS_FILTER_ARMY_XP}
+### search_filters = {FOCUS_FILTER_NAVY_XP}
+### search_filters = {FOCUS_FILTER_AIR_XP}
+### search_filters = {FOCUS_FILTER_BALANCE_OF_POWERS}
+### search_filters = {FOCUS_FILTER_POLITICAL_CHARACTER}
+### search_filters = {FOCUS_FILTER_MILITARY_CHARACTER}
+### search_filters = {FOCUS_FILTER_INTERNATIONAL_TRADE}
+focus_tree = {
+	id = FRA_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	###撤出莱茵兰
+	focus = {
+		id = FRA_retreat_rhineland
+		icon = GFX_FRA_retreat_rhineland
+		x = 10
+		y = 0
+		cost = 3
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+			SAR = {
+				every_owned_state = {
+					if = {
+						limit = {
+							is_claimed_by = FRA
+						}
+						transfer_state_to = FRA
+					}
+				}
+			}
+			DDR = {
+				annex_country = {
+					target = SAR
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	###完成战后两年计划
+	focus = {
+		id = FRA_postwar_twoyears
+		icon = GFX_FRA_postwar_twoyears
+		prerequisite = {
+			focus = FRA_retreat_rhineland
+		}
+		relative_position_id = FRA_retreat_rhineland
+		x = 6
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_stabilize_commune_franc
+		icon = GFX_FRA_stabilize_commune_franc
+		prerequisite = {
+			focus = FRA_postwar_twoyears
+		}
+		relative_position_id = FRA_postwar_twoyears
+		x = 0
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_francoaustrian_econ_deal
+		icon = GFX_FRA_francoaustrian_econ_deal
+		prerequisite = {
+			focus = FRA_stabilize_commune_franc
+		}
+		mutually_exclusive = {
+			focus = FRA_deregulate_military_conversion
+		}
+		relative_position_id = FRA_stabilize_commune_franc
+		x = -1
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_deregulate_military_conversion
+		icon = GFX_FRA_deregulate_military_conversion
+		prerequisite = {
+			focus = FRA_stabilize_commune_franc
+		}
+		mutually_exclusive = {
+			focus = FRA_francoaustrian_econ_deal
+		}
+		relative_position_id = FRA_stabilize_commune_franc
+		x = 1
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_finish_econ_plan
+		icon = GFX_FRA_finish_econ_plan
+		prerequisite = {
+			focus = FRA_francoaustrian_econ_deal
+			focus = FRA_deregulate_military_conversion
+		}
+		relative_position_id = FRA_stabilize_commune_franc
+		x = 0
+		y = 2
+	}
+	###
+	focus = {
+		id = FRA_reform_united_reconstructionary
+		icon = GFX_FRA_reform_united_reconstructionary
+		prerequisite = {
+			focus = FRA_finish_econ_plan
+		}
+		relative_position_id = FRA_finish_econ_plan
+		x = 0
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_prepare_succession
+		icon = GFX_FRA_prepare_succession
+		prerequisite = {
+			focus = FRA_retreat_rhineland
+		}
+		relative_position_id = FRA_retreat_rhineland
+		x = 0
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_cutdown_communal_army
+		icon = GFX_FRA_cutdown_communal_army
+		prerequisite = {
+			focus = FRA_prepare_succession
+		}
+		relative_position_id = FRA_prepare_succession
+		x = -1
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_reorganize_wallonia
+		icon = GFX_FRA_reorganize_wallonia
+		prerequisite = {
+			focus = FRA_prepare_succession
+		}
+		relative_position_id = FRA_prepare_succession
+		x = 1
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_pcf_party_expansion
+		icon = GFX_FRA_reorganize_wallonia
+		prerequisite = {
+			focus = FRA_cutdown_communal_army
+		}
+		prerequisite = {
+			focus = FRA_reorganize_wallonia
+		}
+		available = {
+			has_country_flag = FRA_serge_dead_flag
+		}
+		relative_position_id = FRA_prepare_succession
+		x = 0
+		y = 2
+	}
+	###
+	focus = {
+		id = FRA_binding_unions
+		icon = GFX_FRA_reorganize_wallonia
+		prerequisite = {
+			focus = FRA_pcf_party_expansion
+		}
+		relative_position_id = FRA_pcf_party_expansion
+		x = -2
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_mopup_psft_remnants
+		icon = GFX_FRA_reorganize_wallonia
+		prerequisite = {
+			focus = FRA_pcf_party_expansion
+		}
+		relative_position_id = FRA_pcf_party_expansion
+		x = 0
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_final_suppression_nationalists
+		icon = GFX_FRA_reorganize_wallonia
+		prerequisite = {
+			focus = FRA_pcf_party_expansion
+		}
+		relative_position_id = FRA_pcf_party_expansion
+		x = 2
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_expanded_party_congress
+		icon = GFX_FRA_reorganize_wallonia
+		prerequisite = {
+			focus = FRA_binding_unions
+		}
+		prerequisite = {
+			focus = FRA_mopup_psft_remnants
+		}
+		prerequisite = {
+			focus = FRA_final_suppression_nationalists
+		}
+		relative_position_id = FRA_pcf_party_expansion
+		x = 0
+		y = 2
+	}
+	###
+	focus = {
+		id = FRA_middle_east_aflame
+		icon = GFX_FRA_middle_east_aflame
+		prerequisite = {
+			focus = FRA_retreat_rhineland
+		}
+		available = {
+			has_global_flag = TNW_Middle_East_War_begin_global_flag
+		}
+		bypass = {
+			has_global_flag = TNW_Middle_East_War_begin_global_flag
+		}
+		cost = 0
+		relative_position_id = FRA_retreat_rhineland
+		x = -6
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_against_ottoman_empire
+		icon = GFX_FRA_against_ottoman_empire
+		prerequisite = {
+			focus = FRA_middle_east_aflame
+		}
+		mutually_exclusive = {
+			focus = FRA_support_progressive_coalition
+		}
+		cost = 1
+		relative_position_id = FRA_middle_east_aflame
+		x = -2
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_footholds_Syria
+		icon = GFX_FRA_against_ottoman_empire
+		prerequisite = {
+			focus = FRA_against_ottoman_empire
+		}
+		cost = 2
+		relative_position_id = FRA_against_ottoman_empire
+		x = 0
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_support_progressive_coalition
+		icon = GFX_FRA_support_progressive_coalition
+		prerequisite = {
+			focus = FRA_middle_east_aflame
+		}
+		mutually_exclusive = {
+			focus = FRA_against_ottoman_empire
+		}
+		cost = 1
+		relative_position_id = FRA_middle_east_aflame
+		x = 2
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_sideline_THF_rightists
+		icon = GFX_FRA_sideline_THF_rightists
+		prerequisite = {
+			focus = FRA_support_progressive_coalition
+		}
+		cost = 2
+		relative_position_id = FRA_support_progressive_coalition
+		x = 0
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_support_action_legions
+		icon = GFX_FRA_support_action_legions
+		prerequisite = {
+			focus = FRA_middle_east_aflame
+		}
+		cost = 1
+		relative_position_id = FRA_middle_east_aflame
+		x = 0
+		y = 2
+	}
+	###
+	focus = {
+		id = FRA_unite_Syria_Turkish_revolutionaries
+		icon = GFX_FRA_unite_Syria_Turkish_revolutionaries
+		prerequisite = {
+			focus = FRA_support_action_legions
+		}
+		prerequisite = {
+			focus = FRA_footholds_Syria
+		}
+		cost = 2
+		relative_position_id = FRA_support_action_legions
+		x = -1
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_new_bases_in_cyprus
+		icon = GFX_FRA_new_bases_in_cyprus
+		prerequisite = {
+			focus = FRA_support_action_legions
+		}
+		prerequisite = {
+			focus = FRA_sideline_THF_rightists
+		}
+		available = {
+			GRE = {
+				owns_state = 1
+			}
+		}
+		cost = 2
+		relative_position_id = FRA_support_action_legions
+		x = 1
+		y = 1
+	}
+	###
+	focus = {
+		id = FRA_reassess_ME_situation
+		icon = GFX_FRA_reassess_ME_situation
+		prerequisite = {
+			focus = FRA_unite_Syria_Turkish_revolutionaries
+			focus = FRA_new_bases_in_cyprus
+		}
+		cost = 1
+		relative_position_id = FRA_support_action_legions
+		x = 0
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = FRA_reassess_ME_situation_tt
+		}
+	}
+	###
+	focus = {
+		id = FRA_solemn_farewell
+		icon = GFX_FRA_solemn_farewell
+		prerequisite = {
+			focus = FRA_reassess_ME_situation
+		}
+		prerequisite = {
+			focus = FRA_expanded_party_congress
+		}
+		prerequisite = {
+			focus = FRA_reform_united_reconstructionary
+		}
+		relative_position_id = FRA_retreat_rhineland
+		x = 0
+		y = 6
+		cost = 35
+		cancelable = no
+		select_effect = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+}
+focus_tree = {
+	id = FRA_dual_regime
+	country = {
+		factor = 0
+		modifier = {
+			add = 1
+			tag = FRA
+		}
+	}
+	default = no
+	###双重政权
+	focus = {
+		id = FRA_the_dual_regime
+		icon = GFX_FRA_the_dual_regime
+		x = 10
+		y = 0
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###党务革新
+	focus = {
+		id = FRA_renewal_of_party_affairs
+		icon = GFX_FRA_renewal_of_party_affairs
+		relative_position_id = FRA_the_dual_regime
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = FRA_the_dual_regime
+		}
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###筹备第四国际
+	focus = {
+		id = FRA_prepare_fourth_internationale
+		icon = GFX_FRA_prepare_fourth_internationale
+		relative_position_id = FRA_the_dual_regime
+		x = -7
+		y = 2
+		prerequisite = {
+			focus = FRA_renewal_of_party_affairs
+		}
+		mutually_exclusive = {
+			focus = FRA_stricten_internationale_membership
+		}
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###严格审查第三国际资格
+	focus = {
+		id = FRA_stricten_internationale_membership
+		icon = GFX_FRA_stricten_internationale_membership
+		relative_position_id = FRA_the_dual_regime
+		x = -5
+		y = 2
+		prerequisite = {
+			focus = FRA_renewal_of_party_affairs
+		}
+		mutually_exclusive = {
+			focus = FRA_prepare_fourth_internationale
+		}
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###裁撤工厂委员会
+	focus = {
+		id = FRA_cutdown_factory_committees
+		icon = GFX_FRA_cutdown_factory_committees
+		relative_position_id = FRA_the_dual_regime
+		x = -3
+		y = 2
+		prerequisite = {
+			focus = FRA_renewal_of_party_affairs
+		}
+		mutually_exclusive = {
+			focus = FRA_strengthen_committee_integration
+		}
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###加强三委结合
+	focus = {
+		id = FRA_strengthen_committee_integration
+		icon = GFX_FRA_strengthen_committee_integration
+		relative_position_id = FRA_the_dual_regime
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = FRA_renewal_of_party_affairs
+		}
+		mutually_exclusive = {
+			focus = FRA_cutdown_factory_committees
+		}
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###维护公社体制
+	focus = {
+		id = FRA_maintain_commune_system
+		icon = GFX_FRA_maintain_commune_system
+		relative_position_id = FRA_the_dual_regime
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = FRA_the_dual_regime
+		}
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###整顿红军
+	focus = {
+		id = FRA_reorganize_red_army
+		icon = GFX_FRA_reorganize_red_army
+		relative_position_id = FRA_the_dual_regime
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = FRA_maintain_commune_system
+		}
+		mutually_exclusive = {
+			focus = FRA_elite_militia_training
+		}
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###训练精锐民兵
+	focus = {
+		id = FRA_elite_militia_training
+		icon = GFX_FRA_elite_militia_training
+		relative_position_id = FRA_the_dual_regime
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = FRA_maintain_commune_system
+		}
+		mutually_exclusive = {
+			focus = FRA_reorganize_red_army
+		}
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###拆分城市公社
+	focus = {
+		id = FRA_dismantle_urban_communes
+		icon = GFX_FRA_dismantle_urban_communes
+		relative_position_id = FRA_the_dual_regime
+		x = 5
+		y = 2
+		prerequisite = {
+			focus = FRA_maintain_commune_system
+		}
+		mutually_exclusive = {
+			focus = FRA_merge_micro_communes
+		}
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###合并微型公社
+	focus = {
+		id = FRA_merge_micro_communes
+		icon = GFX_FRA_merge_micro_communes
+		relative_position_id = FRA_the_dual_regime
+		x = 7
+		y = 2
+		prerequisite = {
+			focus = FRA_maintain_commune_system
+		}
+		mutually_exclusive = {
+			focus = FRA_dismantle_urban_communes
+		}
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+	###唯一领导权
+	focus = {
+		id = FRA_unique_leadership
+		icon = GFX_FRA_unique_leadership
+		relative_position_id = FRA_the_dual_regime
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = FRA_prepare_fourth_internationale
+			focus = FRA_stricten_internationale_membership
+		}
+		prerequisite = {
+			focus = FRA_cutdown_factory_committees
+			focus = FRA_strengthen_committee_integration
+		}
+		prerequisite = {
+			focus = FRA_organize_red_army
+			focus = FRA_elite_militia_training
+		}
+		prerequisite = {
+			focus = FRA_dismantle_urban_communes
+			focus = FRA_merge_micro_communes
+		}
+		cost = 21
+		cancelable = no
+		select_effect = {
+		}
+		completion_reward = {
+		}
+	}
+}

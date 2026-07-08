@@ -1,0 +1,18 @@
+﻿capital = 306
+
+
+recruit_character = COL_Jorge_Gaitan
+
+set_convoys = 10
+
+set_convoys = 5
+set_politics = {
+	ruling_party = Social_democracy
+	last_election = "1946.2.11"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Social_democracy = 99
+	communist = 1
+}

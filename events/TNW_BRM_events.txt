@@ -1,0 +1,203 @@
+add_namespace = BRM_event
+add_namespace = BRM_news_event
+#test
+country_event = {
+	id = BRM_event.114514
+	title = BRM_event.114514.t
+	desc = BRM_event.114514.d
+	picture = GFX_PUM_game_2
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BRM_event.114514.a
+	}
+}
+#泰国宣战
+country_event = {
+	id = BRM_event.1
+	title = BRM_event.1.t
+	desc = BRM_event.1.d
+	picture = GFX_PUM_game_2
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BRM_event.1.a
+		hidden_effect = {
+			country_event = { id = BRM_event.2 days = 15 }
+			RAJ = {
+				country_event = { id = BRM_event.3 }
+			}
+		}
+	}
+}
+#
+country_event = {
+	id = BRM_event.2
+	title = BRM_event.2.t
+	desc = BRM_event.2.d
+	picture = GFX_PUM_game_2
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BRM_event.2.a
+	}
+}
+#
+country_event = {
+	id = BRM_event.3
+	title = BRM_event.3.t
+	desc = BRM_event.3.d
+	picture = GFX_PUM_game_2
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BRM_event.3.a
+		CHI = {
+			country_event = { id = BRM_event.4 }
+		}
+	}
+	option = {
+		name = BRM_event.3.b
+		CHI = {
+			country_event = { id = BRM_event.5 }
+		}
+	}
+}
+#不干涉委员会
+country_event = {
+	id = BRM_event.4
+	title = BRM_event.4.t
+	desc = BRM_event.4.d
+	picture = GFX_PUM_game_2
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BRM_event.4.a
+	}
+}
+#代理人战争
+country_event = {
+	id = BRM_event.5
+	title = BRM_event.5.t
+	desc = BRM_event.5.d
+	picture = GFX_PUM_game_2
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BRM_event.5.a
+	}
+}
+#
+country_event = {
+	id = BRM_event.6
+	title = BRM_event.6.t
+	desc = BRM_event.6.d
+	picture = GFX_PUM_game_2
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BRM_event.6.a
+	}
+}
+#
+country_event = {
+	id = BRM_event.7
+	title = BRM_event.7.t
+	desc = BRM_event.7.d
+	picture = GFX_PUM_game_2
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BRM_event.7.a
+	}
+}
+
+#丹纳沙林战争
+news_event = {
+	id = BRM_news_event.1
+	title = BRM_news_event.1.t
+	desc = BRM_news_event.1.d
+	picture = GFX_news_event_BRM_War_Outbreak
+	is_triggered_only = yes
+	major = no
+	option = {
+		trigger = {
+			OR = {
+				tag = CHI
+				tag = RAJ
+			}
+		}
+		name = BRM_news_event.1.a
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = CHI
+					tag = RAJ
+				}
+			}
+		}
+		name = BRM_news_event.1.b
+	}
+}
+#吴巴佩总统下台
+news_event = {
+	id = BRM_news_event.2
+	title = BRM_news_event.2.t
+	desc = BRM_news_event.2.d
+	picture = GFX_news_event_BRM_War_Outbreak
+	is_triggered_only = yes
+	major = no
+	option = {
+		trigger = {
+			tag = CHI
+		}
+		name = BRM_news_event.2.a
+	}
+	option = {
+		trigger = {
+			tag = RAJ
+		}
+		name = BRM_news_event.2.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = CHI
+					tag = RAJ
+				}
+			}
+		}
+		name = BRM_news_event.2.c
+	}
+}

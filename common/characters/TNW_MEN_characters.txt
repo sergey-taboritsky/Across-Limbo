@@ -1,0 +1,75 @@
+characters = {
+	CHI_Guo_Daofu = {
+		name = CHI_Guo_Daofu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Guo_Daofu
+			}
+		}
+		country_leader={
+			ideology= Marxism
+			expire="1936.1.1"
+		}
+	}
+	CHI_Bai_Haifeng = {
+		name = CHI_Bai_Haifeng
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Bai_Haifeng
+			}
+		}
+		country_leader={
+			ideology= agrarian_socialism
+			expire="1936.1.1"
+		}
+		country_leader={
+			ideology= Popular_Front
+			expire="1936.1.1"
+		}
+	}
+	CHI_Demchukdonrub = {
+		name = CHI_Demchukdonrub
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Demchukdonrub
+			}
+		}
+		country_leader={
+			ideology= National_Conservatism
+			expire="1936.1.1"
+		}
+		country_leader={
+			ideology= Ultra_Nationalism
+			expire="1936.1.1"
+		}
+	}
+	CHI_Bai_Yunti = {
+		name = CHI_Bai_Yunti
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Bai_Yunti
+			}
+		}
+		country_leader={
+			ideology= Social_nationalism
+			expire="1936.1.1"
+		}
+	}
+	CHI_Fu_Zuoyi = {
+		name = CHI_Fu_Zuoyi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Fu_Zuoyi
+			}
+		}
+		country_leader={
+			ideology= oligarchy
+			expire="1936.1.1"
+		}
+		country_leader={
+			ideology= Junshen_government
+			expire="1936.1.1"
+		}
+		
+	}
+}

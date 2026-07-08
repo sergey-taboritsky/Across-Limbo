@@ -1,0 +1,56 @@
+characters = {
+	#赛义德·穆罕默德·塔代永
+	PER_Mohammad_Tadayyon = {
+		name = PER_Mohammad_Tadayyon
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PER_Mohammad_Tadayyon
+			}
+		}
+		country_leader = {
+			desc = PER_Mohammad_Tadayyon_desc
+			ideology = National_liberalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			    
+			}
+		}
+	}
+	#穆罕默德-胡塞因·埃卢姆
+	PER_Mohammad_Hosayn_Ayrom = {
+		name = PER_Mohammad_Hosayn_Ayrom
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PER_Mohammad_Hosayn_Ayrom
+			}
+		}
+		country_leader = {
+			desc = PER_Mohammad_Hosayn_Ayrom_desc
+			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			    
+			}
+		}
+	}
+	#阿里-阿克巴·达瓦尔
+	PER_Ali_Akbar_Davar = {
+		name = PER_Ali_Akbar_Davar
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PER_Ali_Akbar_Davar
+			}
+		}
+		country_leader = {
+			desc = PER_Ali_Akbar_Davar_desc
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			    
+			}
+		}
+	}
+}

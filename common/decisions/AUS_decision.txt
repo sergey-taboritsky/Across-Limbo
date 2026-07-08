@@ -1,0 +1,157 @@
+AUS_debug_decision = {
+	#框架决议：触发后续路线抉择的
+	AUS_decision_01 = {
+		activation = {
+			#original_tag = AUS
+			always = no
+		}
+		available = {
+			always = no
+		}
+		is_good = no
+		fired_only_once = yes
+		days_mission_timeout = 180
+		timeout_effect = {
+			random_list = {
+				50 = {
+					news_event = {
+						id = AUS_news_event.1
+					}
+				}
+				50 = {
+					news_event = {
+						id = AUS_news_event.2
+					}
+				}
+			}
+			remove_mission = AUS_decision_01
+		}
+		complete_effect = {
+		}
+	}
+	#框架决议：触发第三次巴尔干战争
+	AUS_decision_02 = {
+		activation = {
+			#original_tag = AUS
+			always = no
+		}
+		available = {
+			AUS = {
+				has_war_with = HUN
+			}
+		}
+		is_good = no
+		fired_only_once = yes
+		days_mission_timeout = 2
+		timeout_effect = {
+			random_list = {
+				50 = {
+					HUN = {
+						declare_war_on = {
+							target = AUS
+							type = take_state_focus
+						}
+						declare_war_on = {
+							target = ROM
+							type = take_state_focus
+						}
+						declare_war_on = {
+							target = YUG
+							type = take_state_focus
+						}
+						set_country_flag = HUN_Red_Balkans
+					}
+					SLO = {
+						declare_war_on = {
+							target = HUN
+							type = take_state_focus
+						}
+						transfer_state = 70
+					}
+					AUS = {
+						set_autonomy = {
+							target = SLO
+							autonomy_state = autonomy_dominion
+						}
+					}
+					ROM = {		
+						transfer_state = 83
+						transfer_state = 76					
+					}
+				}
+				50 = {
+					HUN = {
+						declare_war_on = {
+							target = AUS
+							type = take_state_focus
+						}
+						declare_war_on = {
+							target = ROM
+							type = take_state_focus
+						}
+						declare_war_on = {
+							target = YUG
+							type = take_state_focus
+						}
+					}
+					SLO = {
+						declare_war_on = {
+							target = HUN
+							type = take_state_focus
+						}
+						transfer_state = 70
+						transfer_state = 71
+					}
+					AUS = {
+						set_autonomy = {
+							target = SLO
+							autonomy_state = autonomy_dominion
+						}
+					}
+				}
+				50 = {
+					HUN = {
+						declare_war_on = {
+							target = AUS
+							type = take_state_focus
+						}
+						declare_war_on = {
+							target = ROM
+							type = take_state_focus
+						}
+						declare_war_on = {
+							target = YUG
+							type = take_state_focus
+						}
+					}
+					SLO = {
+						declare_war_on = {
+							target = HUN
+							type = take_state_focus
+						}
+						transfer_state = 70
+						transfer_state = 71
+					}
+					ROM = {		
+						transfer_state = 83
+						transfer_state = 76					
+					}
+					AUS = {
+						set_autonomy = {
+							target = SLO
+							autonomy_state = autonomy_dominion
+						}
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = World_news.3
+			}
+		}
+		complete_effect = {
+		}
+	}
+}

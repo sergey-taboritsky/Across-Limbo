@@ -1,0 +1,18 @@
+﻿capital = 267
+
+recruit_character = AFG_Mohammed_Zahir_Shah
+
+
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Nationalism = 15
+	communist = 10
+	Absolutism = 75
+}

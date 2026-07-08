@@ -1,0 +1,38 @@
+﻿capital = 620
+
+
+set_research_slots = 3
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	basic_train = 1
+}
+
+recruit_character = ROC_Nikola_Geshev
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 2
+	socialism = 1
+	Social_democracy = 2
+	Liberalism = 14
+	Conservatism = 15
+	Authoritarianism = 17
+	Absolutism = 49
+	Nationalism = 0
+
+}
+
+set_stability = 0.5
+set_war_support = 0.5

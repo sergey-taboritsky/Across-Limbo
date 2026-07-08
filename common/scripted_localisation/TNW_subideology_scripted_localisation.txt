@@ -1,0 +1,487 @@
+defined_text = {
+	name = GetRulingIdeologySubtype
+	text = { 
+		trigger = { has_country_leader_ideology = Marxism_Leninism }
+		localization_key = Marxism_Leninism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Marxism }
+		localization_key = Marxism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Maoism }
+		localization_key = Maoism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Titoism }
+		localization_key = Titoism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Committee_Communism }
+		localization_key = Committee_Communism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Japanese_Marxism }
+		localization_key = Japanese_Marxism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Fukumotoism }
+		localization_key = Fukumotoism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Left_wing_communism }
+		localization_key = Left_wing_communism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Centralised_Syndicalism }
+		localization_key = Centralised_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Classical_Syndicalism }
+		localization_key = Classical_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Anarchist_Syndicalism }
+		localization_key = Anarchist_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = National_Syndicalism }
+		localization_key = National_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Parallel_Syndicalism }
+		localization_key = Parallel_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = American_Unionism }
+		localization_key = American_Unionism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = Japanese_Syndicalism }
+		localization_key = Japanese_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Left_wing_populism }
+		localization_key = Left_wing_populism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Popular_Front }
+		localization_key = Popular_Front
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Socialism_Britain }
+		localization_key = Socialism_Britain
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = agrarian_socialism }
+		localization_key = agrarian_socialism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Liberalism_socialism }
+		localization_key = Liberalism_socialism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = tridemism_revolutionary }
+		localization_key = tridemism_revolutionary
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = market_socialism }
+		localization_key = market_socialism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = religious_socialism }
+		localization_key = religious_socialism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = Production_Supremacism }
+		localization_key = Production_Supremacism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = progressivism }
+		localization_key = progressivism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Social_democratic }
+		localization_key = Social_democratic
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = reformism }
+		localization_key = reformism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Bernsteinism }
+		localization_key = Bernsteinism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = tridemism_left }
+		localization_key = tridemism_left
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Social_Liberalism }
+		localization_key = Social_Liberalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Authoritarian_Liberalism }
+		localization_key = Authoritarian_Liberalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Liberal_Zionism }
+		localization_key = Liberal_Zionism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = tridemism_liberal }
+		localization_key = tridemism_liberal
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Social_Conservatism }
+		localization_key = Social_Conservatism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = National_Conservatism }
+		localization_key = National_Conservatism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Patriarchal_Conservatism }
+		localization_key = Patriarchal_Conservatism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Zionism }
+		localization_key = Zionism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = tridemism_conservative }
+		localization_key = tridemism_conservative
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Guided_democracy }
+		localization_key = Guided_democracy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Left_wing_corporatism }
+		localization_key = Left_wing_corporatism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Social_nationalism }
+		localization_key = Social_nationalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = oligarchy }
+		localization_key = oligarchy
+	}
+	text = {
+		trigger = {has_country_leader_ideology = Junshen_government }
+		localization_key = Junshen_government
+	}
+	text = {
+		trigger = {has_country_leader_ideology = Tibet_theocracy }
+		localization_key = Tibet_theocracy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = transitional_democracy }
+		localization_key = transitional_democracy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = discipline }
+		localization_key = discipline
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = tridemism_authdem }
+		localization_key = tridemism_authdem
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = interim_government }
+		localization_key = interim_government
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = one_party_democracy }
+		localization_key = one_party_democracy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = absolute_monarchy }
+		localization_key = absolute_monarchy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = military_government }
+		localization_key = military_government
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = colonial_government }
+		localization_key = colonial_government
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = warlord }
+		localization_key = warlord
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = civilian_dictatorship }
+		localization_key = civilian_dictatorship
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Fascism }
+		localization_key = Fascism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = National_Socialism }
+		localization_key = National_Socialism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Strassianism }
+		localization_key = Strassianism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = National_Syndicalism }
+		localization_key = National_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Ultra_Nationalism }
+		localization_key = Ultra_Nationalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Reorganization_of_the_Three_Peoples_Principles }
+		localization_key = Reorganization_of_the_Three_Peoples_Principles
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = theocracy }
+		localization_key = theocracy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = National_liberalism }
+		localization_key = National_liberalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Red_military_government }
+		localization_key = Red_military_government
+	}
+}
+#康米
+defined_text = {
+	name = GetSubIdeologyLocCommunist
+	text = { 
+		trigger = { has_country_leader_ideology = Marxism_Leninism }
+		localization_key = Marxism_Leninism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Marxism }
+		localization_key = Marxism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Maoism }
+		localization_key = Maoism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Titoism }
+		localization_key = Titoism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Committee_Communism }
+		localization_key = Committee_Communism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Left_wing_communism }
+		localization_key = Left_wing_communism
+	}
+}
+#社
+defined_text = {
+	name = GetSubIdeologyLocsocialism
+	text = { 
+		trigger = { has_country_leader_ideology = Left_wing_populism }
+		localization_key = Left_wing_populism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = agrarian_socialism }
+		localization_key = agrarian_socialism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Liberalism_socialism }
+		localization_key = Liberalism_socialism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = market_socialism }
+		localization_key = market_socialism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Popular_Front }
+		localization_key = Popular_Front
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = religious_socialism }
+		localization_key = religious_socialism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Socialism_Britain }
+		localization_key = Socialism_Britain
+	}
+}
+#社民
+defined_text = {
+	name = GetSubIdeologyLocSocial_democracy
+	text = { 
+		trigger = { has_country_leader_ideology = progressivism }
+		localization_key = progressivism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Social_democratic }
+		localization_key = Social_democratic
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = reformism }
+		localization_key = reformism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Bernsteinism }
+		localization_key = Bernsteinism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = tridemism_left }
+		localization_key = tridemism_left
+	}
+}
+#目田
+defined_text = {
+	name = GetSubIdeologyLocliberalism
+	text = { 
+		trigger = { has_country_leader_ideology = National_liberalism }
+		localization_key = National_liberalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Social_Liberalism }
+		localization_key = Social_Liberalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Authoritarian_Liberalism }
+		localization_key = Authoritarian_Liberalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Liberal_Zionism }
+		localization_key = Liberal_Zionism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = tridemism_liberal }
+		localization_key = tridemism_liberal
+	}
+}
+#保保
+defined_text = {
+	name = GetSubIdeologyLocconservatism
+	text = { 
+		trigger = { has_country_leader_ideology = Social_Conservatism }
+		localization_key = Social_Conservatism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = National_Conservatism }
+		localization_key = National_Conservatism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Patriarchal_Conservatism }
+		localization_key = Patriarchal_Conservatism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Zionism }
+		localization_key = Zionism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = tridemism_conservative }
+		localization_key = tridemism_conservative
+	}
+}
+#威权
+defined_text = {
+	name = GetSubIdeologyLocAuthoritarianism
+	text = { 
+		trigger = { has_country_leader_ideology = Guided_democracy }
+		localization_key = Guided_democracy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = oligarchy }
+		localization_key = oligarchy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = transitional_democracy }
+		localization_key = transitional_democracy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = discipline }
+		localization_key = discipline
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = interim_government }
+		localization_key = interim_government
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = one_party_democracy }
+		localization_key = one_party_democracy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Left_wing_corporatism }
+		localization_key = Left_wing_corporatism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Social_nationalism }
+		localization_key = Social_nationalism
+	}
+}
+#专制
+defined_text = {
+	name = GetSubIdeologyLocAbsolutism
+	text = { 
+		trigger = { has_country_leader_ideology = absolute_monarchy }
+		localization_key = absolute_monarchy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = military_government }
+		localization_key = military_government
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = colonial_government }
+		localization_key = colonial_government
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = warlord }
+		localization_key = warlord
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = civilian_dictatorship }
+		localization_key = civilian_dictatorship
+	}
+	text = {
+		trigger = {has_country_leader_ideology = Junshen_government }
+		localization_key = Junshen_government
+	}
+	text = {
+		trigger = {has_country_leader_ideology = Tibet_theocracy }
+		localization_key = Tibet_theocracy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Red_military_government }
+		localization_key = Red_military_government
+	}
+}
+#国家主义
+defined_text = {
+	name = GetSubIdeologyLocNationalism
+	text = { 
+		trigger = { has_country_leader_ideology = Fascism }
+		localization_key = Fascism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = National_Socialism }
+		localization_key = National_Socialism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Strassianism }
+		localization_key = Strassianism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = National_Syndicalism }
+		localization_key = National_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Ultra_Nationalism }
+		localization_key = Ultra_Nationalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Reorganization_of_the_Three_Peoples_Principles }
+		localization_key = Reorganization_of_the_Three_Peoples_Principles
+	}
+}

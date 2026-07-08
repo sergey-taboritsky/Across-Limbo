@@ -1,0 +1,36 @@
+characters = {
+	#腓特烈九世
+	DEN_Frederick_IX = {
+		name = DEN_Frederick_IX
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DEN_Frederick_IX
+			}
+		}
+		country_leader = {
+			desc = DEN_Frederick_IX_desc
+			ideology = Social_democratic
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#阿尔辛·安德生
+	DEN_Alsing_Andersen = {
+		name = DEN_Alsing_Andersen
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DEN_Alsing_Andersen
+			}
+		}
+		country_leader = {
+			desc = DEN_Alsing_Andersen_desc
+			ideology = Social_democratic
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

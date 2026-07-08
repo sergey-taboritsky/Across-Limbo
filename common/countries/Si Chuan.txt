@@ -1,0 +1,6 @@
+
+
+graphical_culture = GXC
+graphical_culture_2d = GXC
+
+color = { 142 68 69 }

@@ -1,0 +1,35 @@
+﻿l_simp_chinese:
+#决议组
+ TNW_Balkan_Powderkeg_decision_category: "巴尔干火药桶"
+ TNW_Balkan_Powderkeg_decision_category_desc: "巴尔干地方，历代大规模征战五十余次，是非曲直，难以论说。但史家无不注意到，正是在这个古半岛，决定了多少代王朝的盛衰兴亡、此兴彼落，所以古来就有问鼎巴尔干之说。\n\n当年，先帝令沙俄军分三路会合索菲亚，兴师南下，光复马其顿的第二天，奥斯曼帝见大势已去，宣告投降。一九一六年四月，也正是在贝尔格莱德城郊，我有幸亲率数十万健儿征讨塞尔维亚国王、首相，大获全胜！\n\n我不明白，为什么大家都在谈论着君十一被困君堡，仿佛这巴尔干古战场，对我们注定了凶多吉少。二十年前，我从索菲亚踏上征途，开始了第二次巴尔干战争，保加利亚矩形，遂归于一统。本王本军所到之处，民众竭诚欢迎，真可谓占尽天时，那种勃勃生机、万物竟发的境界，犹在眼前。短短二十年之后，这里竟至于一变而成为我们的葬身之地了么？\n\n无论怎么样，会战兵力是以八十万对六十万，优势在我！\n\n巴尔干各国国力分数：\n[BUL.GetNameWithFlag]：国土分数[global.TNW_balkan_territory_score_BUL]；博弈分数[global.TNW_balkan_diplomacy_score_BUL]\n[GRE.GetNameWithFlag]：国土分数[global.TNW_balkan_territory_score_GRE]；博弈分数[global.TNW_balkan_diplomacy_score_GRE]\n[ALB.GetNameWithFlag]：国土分数[global.TNW_balkan_territory_score_ALB]；博弈分数[global.TNW_balkan_diplomacy_score_ALB]\n[ROM.GetNameWithFlag]：国土分数[global.TNW_balkan_territory_score_ROM]；博弈分数[global.TNW_balkan_diplomacy_score_ROM]\n[SER.GetNameWithFlag]：国土分数[global.TNW_balkan_territory_score_SER]；博弈分数[global.TNW_balkan_diplomacy_score_SER]\n如今巴尔干霸权属于[Get_TNW_balkan_hegemon]\n\n§Y点选地图上存在冲突（黄色）的地块，以获取冲突现状并加以干涉§!"
+ TNW_balkan_hegemon_BUL: "[BUL.GetNameWithFlag]"
+ TNW_balkan_hegemon_GRE: "[GRE.GetNameWithFlag]"
+ TNW_balkan_hegemon_ALB: "[ALB.GetNameWithFlag]"
+ TNW_balkan_hegemon_ROM: "[ROM.GetNameWithFlag]"
+ TNW_balkan_hegemon_SER: "[SER.GetNameWithFlag]"
+
+#GUI
+ TNW_balkan_regionstat_neutral_tt: "§g中立§!"
+ TNW_balkan_regionstat_conflicting_tt: "§Y处于冲突中§!"
+ TNW_balkan_regionstat_paris_tt: "§R与社会主义阵营结盟§!"
+ TNW_balkan_regionstat_moscow_tt: "§G与俄罗斯结盟§!"
+ TNW_balkan_regionstat_vienna_tt: "§W与多瑙联邦结盟§!"
+ TNW_balkan_regionstat_constantinople_tt: "§P与奥斯曼帝国结盟§!"
+
+ TNW_Balkan_Powderkeg_Button_Agean_tt: "§Y爱琴海§!地区如今属于§Y[187.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Agean]"
+ TNW_Balkan_Powderkeg_Button_Albania_tt: "§Y阿尔巴尼亚§!地区如今属于§Y[44.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Albania]"
+ TNW_Balkan_Powderkeg_Button_Bulgaria_tt: "§Y保加利亚§!地区如今属于§Y[48.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Bulgaria]"
+ TNW_Balkan_Powderkeg_Button_Dobrugea_tt: "§Y多布罗加§!地区如今属于§Y[955.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Dobrugea]"
+ TNW_Balkan_Powderkeg_Button_Illyria_tt: "§Y伊利里亚§!地区如今属于§Y[109.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Illyria]"
+ TNW_Balkan_Powderkeg_Button_Greece_tt: "§Y希腊§!地区如今属于§Y[47.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Greece]"
+ TNW_Balkan_Powderkeg_Button_Kosovo_tt: "§Y科索沃§!地区如今属于§Y[802.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Kosovo]"
+ TNW_Balkan_Powderkeg_Button_Macedonia_tt: "§Y马其顿§!地区如今属于§Y[106.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Macedonia]"
+ TNW_Balkan_Powderkeg_Button_Moldavia_tt: "§Y摩尔达维亚§!地区如今属于§Y[78.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Moldavia]"
+ TNW_Balkan_Powderkeg_Button_Montenegro_tt: "§Y黑山§!地区如今属于§Y[105.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Montenegro]"
+ TNW_Balkan_Powderkeg_Button_Nis_tt: "§Y尼什§!地区如今属于§Y[108.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Nis]"
+ TNW_Balkan_Powderkeg_Button_Romania_tt: "§Y罗马尼亚§!地区如今属于§Y[46.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Romania]"
+ TNW_Balkan_Powderkeg_Button_Serbia_tt: "§Y塞尔维亚§!地区如今属于§Y[107.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Serbia]"
+ TNW_Balkan_Powderkeg_Button_South_Macedonia_tt: "§Y南马其顿§!地区如今属于§Y[184.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_South_Macedonia]"
+ TNW_Balkan_Powderkeg_Button_Thrace_tt: "§Y色雷斯§!地区如今属于§Y[341.owner.GetNameWithFlag]§!，[Get_TNW_balkan_regionstat_Thrace]"
+ 
+#标记

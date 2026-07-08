@@ -1,0 +1,34 @@
+﻿capital = 50
+
+set_research_slots = 3
+set_convoys = 50
+set_stability = 0.75
+
+
+set_politics = {
+	ruling_party = Social_democracy
+	last_election = "1946.8.15"
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+set_popularities = {
+	communist = 27
+	syndicalism = 24
+	socialism = 8
+	Social_democracy = 32
+	Liberalism = 4
+	Conservatism = 0
+	Authoritarianism = 0
+	Absolutism = 0
+	Nationalism = 5
+}
+
+recruit_character = DDR_Kurt_Schumacher
+recruit_character = DDR_Albert_Einstein
+recruit_character = DDR_Willi_Bleicher
+recruit_character = DDR_Georg_Elser
+
+add_ideas = {
+	phalanstere_aligned_nation
+}

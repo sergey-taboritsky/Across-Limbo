@@ -1,0 +1,16 @@
+﻿l_simp_chinese:
+ #顾问
+ CHI_Feng_Yong: "冯庸"
+ CHI_Zhang_Zuolin: "张作霖"
+ CHI_Zhang_Xueliang: "张学良"
+ CHI_Zhang_Xueliang_desc: ""
+ 
+ #政党名字
+ MAN_communist_party:0 "共产国际远东局"
+ MAN_socialism_party:0 "中国共产党"
+ MAN_Social_democracy_party:0 "民主社团"
+ MAN_Liberalism_party:0 "协和会"
+ MAN_Conservatism_party:0 "丰盛俱乐部"
+ MAN_Authoritarianism_party:0 "东北联防司令部"
+ MAN_Absolutism_party:0 "奉天军官团"
+ MAN_Nationalism_party:0 "关东军"

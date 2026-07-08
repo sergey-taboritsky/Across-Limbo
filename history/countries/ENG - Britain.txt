@@ -1,0 +1,97 @@
+﻿capital = 126
+
+starting_train_buffer = 4
+
+
+set_research_slots = 4
+
+set_stability = 0.6
+set_war_support = 0.1
+add_command_power = 20
+
+set_convoys = 1000
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1944.11.14"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	communist = 14
+	syndicalism = 20
+	socialism = 44
+	Social_democracy = 18
+	Liberalism = 2
+	Conservatism = 2
+	Absolutism = 0
+	Authoritarianism = 0
+	Nationalism = 0
+}
+
+add_offsite_building = {
+	type = industrial_complex
+	level = 3
+}
+add_offsite_building = {
+	type = arms_factory
+	level = 5
+}
+
+set_variable = {
+	var = ENG_var_industrial_complex
+	value = 3
+}
+set_variable = {
+	var = ENG_var_arms_factory
+	value = 5
+}
+
+recruit_character = ENG_Oswald_Mosley
+recruit_character = ENG_Clement_Attlee
+recruit_character = ENG_Aneurin_Bevan
+recruit_character = ENG_Walter_Elliot
+recruit_character = ENG_Oliver_Stanley
+recruit_character = ENG_Cyril_Joad
+recruit_character = ENG_Mary_Richardson
+recruit_character = ENG_John_Strachey
+recruit_character = ENG_Jack_Jones
+
+recruit_character = ENG_Barry_Domvile
+
+set_country_flag = has_second_leader_flag
+
+set_country_flag = TNW_ENG_Labour_Chair_Diana_Mitford_flag
+
+add_ideas = {
+	presidental_republic
+	mosleyism_economy
+	unitary_state
+	socialist_leaning
+
+	phalanstere_aligned_nation
+	ENG_Twenty_Years_of_Red_London
+	ENG_Mosleynomics
+	ENG_Unsatisfied_workers
+	ENG_splitting_government
+
+	ENG_Aneurin_Bevan_hog
+	ENG_Jack_Jones_advisor
+	ENG_Oliver_Stanley_advisor
+	ENG_Cyril_Joad_advisor
+	ENG_Mary_Richardson_advisor
+}
+
+set_variable = { var = Militant value = 35 } 
+set_variable = { var = Federalist value = 31 } 
+set_variable = { var = Congregationalist value = 50 }
+set_variable = { var = TUC value = 130 } 
+set_variable = { var = Maximist_Left value = 97 } 
+set_variable = { var = Maximist_Center value = 109 } 
+set_variable = { var = Maximist_Right value = 42 } 
+set_variable = { var = Actionist value = 52 } 
+set_variable = { var = SocDem value = 24 } 
+set_variable = { var = Republican value = 19 } 
+set_variable = { var = NonPartisan value = 11 }
+set_variable = { var = seatNumbers value = 600 }
+ENG_parliament_gui_initial = yes

@@ -1,0 +1,26 @@
+﻿capital = 106
+
+set_research_slots = 3
+
+# Starting tech
+# clone of Yugoslavia
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	Liberalism = 33
+	Authoritarianism = 33
+	communist = 34
+}
+
+recruit_character = MAC_Simeon_II
+recruit_character = MAC_Hristo_Tatarchev
+
+add_ideas = {
+	moscow_aligned_nation
+}

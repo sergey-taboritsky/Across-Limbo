@@ -1,0 +1,30 @@
+characters = {
+	SOK_Muhammaidu_Tambari = {
+		name = SOK_Muhammaidu_Tambari
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SOK_Muhammaidu_Tambari
+			}
+		}
+		country_leader = {
+			desc = SOK_Muhammaidu_Tambari_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	SOK_Muhammaidu_Junaidu = {
+		name = SOK_Muhammaidu_Junaidu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SOK_Muhammaidu_Junaidu
+			}
+		}
+		country_leader = {
+			desc = SOK_Muhammaidu_Junaidu_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+}

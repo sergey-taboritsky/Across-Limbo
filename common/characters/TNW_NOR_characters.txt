@@ -1,0 +1,15 @@
+characters = {
+	NOR_Martin_Tramael = {
+		name = NOR_Martin_Tramael
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NOR_Martin_Tramael
+			}
+		}
+		country_leader={
+			ideology= Classical_Syndicalism
+			expire="1936.1.1"
+		}
+		
+	}
+}

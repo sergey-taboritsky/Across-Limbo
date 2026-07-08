@@ -1,0 +1,26 @@
+﻿capital = 654 #Oyrot/Gorno-Altaysk
+
+set_research_slots = 2
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	Liberalism = 50
+	Nationalism = 10
+	communist = 30
+	Authoritarianism = 10
+}
+
+recruit_character = ALT_grigory_gurkin
+recruit_character = ALT_samuil_yufit
+
+
+
+
+
+

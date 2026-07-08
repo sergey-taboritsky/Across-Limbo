@@ -1,0 +1,31 @@
+﻿l_simp_chinese:
+#政党
+ PRC_communist_party: "中国共产党"
+ PRC_communist_party_long: "中国共产党"
+ PRC_syndicalism_party: "中国工团主义者联盟"
+ PRC_syndicalism_party_long: "中国工团主义者联盟"
+ PRC_socialism_party: "中国民主劳动党"
+ PRC_socialism_party_long: "中国民主劳动党"
+ PRC_Social_democracy_party: "华北行辕军事委员会"
+ PRC_Social_democracy_party_long: "华北行辕军事委员会"
+ PRC_Liberalism_party: "中国民主联合战线"
+ PRC_Liberalism_party_long: "中国民主联合战线"
+ PRC_Conservatism_party: "国民党 - 南京派"
+ PRC_Conservatism_party_long: "中国国民党"
+ PRC_Authoritarianism_party: "国民党 - 新改组派"
+ PRC_Authoritarianism_party_long: "中国国民党"
+ PRC_Absolutism_party: "国民革命军"
+ PRC_Absolutism_party_long: "国民革命军"
+ PRC_Nationalism_party: "国民党 - 力行社"
+ PRC_Nationalism_party_long: "中国国民党"
+
+#人物
+ PRC_Chen_Qiyuan: "陈其瑗"
+ PRC_Chen_Qiyuan_desc: "§Y出生于：§!§L1887年3月10日，大清帝国，广东省广州府番禺县§!\n\n§Y政治面貌：§!§p中国民主劳动党§!\n\n§Y人物背景：§!§L§!"
+ PRC_Ji_Fang: "季方"
+ PRC_Ji_Fang_desc: ""
+ PRC_Lin_Biao: "林彪"
+ PRC_Lin_Biao_desc: ""
+ PRC_Politburo_of_the_CCP: "中华苏维埃共和国临时中央政府"
+ 
+ #民族精神

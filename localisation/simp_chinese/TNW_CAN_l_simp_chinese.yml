@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+ #政党
+ CAN_communist_party:0 "加拿大共产党"
+ CAN_socialism_party:0 "团结、联合进步运动"
+ CAN_Social_democracy_party:0 "英联邦合作社联合会"
+ CAN_Liberalism_party:0 "加拿大自由党"
+ CAN_Conservatism_party:0 "加拿大保守党"
+ CAN_Authoritarianism_party:0 "英国总督府"
+ CAN_Absolutism_party:0 "加拿大武装部队"
+ CAN_Nationalism_party:0 "极右翼群体"

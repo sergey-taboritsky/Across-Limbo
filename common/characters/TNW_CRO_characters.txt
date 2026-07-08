@@ -1,0 +1,16 @@
+characters = {
+	CRO_Andrija_Hebrang = {
+		name = CRO_Andrija_Hebrang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CRO_Andrija_Hebrang
+			}
+		}
+		country_leader = {
+			desc = CRO_Andrija_Hebrang_desc
+			ideology = Popular_front
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+}

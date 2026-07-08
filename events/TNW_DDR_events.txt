@@ -1,0 +1,38 @@
+add_namespace = DDR_event
+#漫步于柏林郊区
+country_event = {
+	id = DDR_event.1
+	title = DDR_event.1.t
+	desc = DDR_event.1.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = DDR_event.1.a
+	}
+}
+#红军未来改革方向
+country_event = {
+	id = DDR_event.2
+	title = DDR_event.2.t
+	desc = DDR_event.2.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = DDR_event.2.a
+		custom_effect_tooltip = DDR_event_2_custom
+	}
+}
+#人民之花
+country_event = {
+	id = DDR_event.3
+	title = DDR_event.3.t
+	desc = DDR_event.3.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = DDR_event.3.a
+	}
+}

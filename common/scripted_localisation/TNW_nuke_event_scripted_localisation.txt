@@ -1,0 +1,35 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+defined_text = { # Country
+	name = GetNukeEventDesc
+	text = {
+		trigger = {
+			original_tag = SOV
+		}
+		localization_key = Nuke_news.1.d_SOV
+	}
+	text = {
+		localization_key = Nuke_news.1.d_generic
+	}
+}
+
+defined_text = { # Country
+	name = GetNukeEventOption
+	text = {
+		trigger = {
+			original_tag = SOV
+		}
+		localization_key = Nuke_news.1.tt_SOV
+	}
+	text = {
+		localization_key = Nuke_news.1.tt_generic_neutrality
+	}
+}

@@ -1,0 +1,55 @@
+FRA_souvarine_treint_balance_decision_category = {
+	FRA_souvarine_treint_balance_momentum_buildup_decision = {
+		available = {
+			OR = {
+				power_balance_value = {
+					id = FRA_souvarine_treint_balance
+					value > 0.9
+				}
+				power_balance_value = {
+					id = FRA_souvarine_treint_balance
+					value < -0.9
+				}
+			}
+		}
+		is_good = no
+		fired_only_once = no
+		days_mission_timeout = 30
+		timeout_effect = {
+			if = {
+				limit = {
+					power_balance_value = {
+						id = FRA_souvarine_treint_balance
+						value > 0
+					}
+				}
+				add_power_balance_value = {
+					id = my_bop
+					value = 0.05
+					tooltip_side = FRA_albert_treint_bop
+				}
+			}
+			else_if = {
+				limit = {
+					power_balance_value = {
+						id = FRA_souvarine_treint_balance
+						value < 0
+					}
+				}
+				add_power_balance_value = {
+					id = my_bop
+					value = -0.05
+					tooltip_side = FRA_boris_souvarine_bop
+				}
+			}
+			else = {
+				add_stability = -0.02
+				add_political_power = -10
+				custom_effect_tooltip = FRA_souvarine_treint_balance_dragging_on_tt
+			}
+			activate_mission = FRA_souvarine_treint_balance_momentum_buildup_decision
+		}
+		complete_effect = {
+		}
+	}
+}

@@ -1,0 +1,42 @@
+characters = {
+	CHI_Feng_Yong = {
+		name = CHI_Feng_Yong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Feng_Yong
+			}
+		}
+		country_leader={
+			ideology= oligarchy
+			expire="1936.1.1"
+		}
+		
+	}
+	CHI_Zhang_Zuolin = {
+		name = CHI_Zhang_Zuolin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhang_Zuolin
+			}
+		}
+		country_leader={
+			ideology= oligarchy
+			expire="1936.1.1"
+		}
+		
+	}
+	#张学良
+	CHI_Zhang_Xueliang = {
+		name = CHI_Zhang_Xueliang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhang_Xueliang
+			}
+		}
+		country_leader={
+			ideology= oligarchy
+			expire="1936.1.1"
+		}
+		
+	}
+}

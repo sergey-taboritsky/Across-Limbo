@@ -1,0 +1,24 @@
+﻿capital = 830 #Bukhara
+
+set_research_slots = 2
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	Liberalism = 70
+	Nationalism = 10
+	communist = 10
+	Authoritarianism = 10
+}
+
+recruit_character = BUK_mohammed_alim_khan
+recruit_character = BUK_polat_usmon
+
+
+
+

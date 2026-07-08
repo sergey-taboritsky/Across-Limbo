@@ -1,0 +1,114 @@
+@SENATE_TEXT_X = 16
+@HOUSE_TEXT_X = 212
+@HEADERS_Y = 67
+@STATUS_Y = 52
+guiTypes = {
+
+	containerWindowType = {
+		name = "TNW_ENG_Return_to_Ireland_Scripted_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 170 }
+
+
+		containerWindowType = {
+			name = "TNW_Ireland_Map"
+			position = { x = -4  y = 20 }
+
+			buttonType = {
+		    	name ="ENG_North_Ireland_Button_IRE"
+		    	spriteType = "GFX_ENG_North_Ireland_IRE"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_North_Ireland_button_tt"
+		    }
+		    buttonType = {
+		    	name ="ENG_Munster_Button_IRE"
+		    	spriteType = "GFX_ENG_Munster_IRE"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_Munster_button_tt"
+		    }
+		    buttonType = {
+		    	name ="ENG_Leinster_Button_IRE"
+		    	spriteType = "GFX_ENG_Leinster_IRE"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_Leinster_button_tt"
+		    }
+		    buttonType = {
+		    	name ="ENG_County_Tyrone_and_Fermanagh_Button_IRE"
+		    	spriteType = "GFX_ENG_County_Tyrone_and_Fermanagh_IRE"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_County_Tyrone_and_Fermanagh_button_tt"
+		    }
+		    buttonType = {
+		    	name ="ENG_Connaught_Button_IRE"
+		    	spriteType = "GFX_ENG_Connaught_IRE"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_Connaught_button_tt"
+		    }
+			buttonType = {
+		    	name ="ENG_North_Ireland_Button_ENG"
+		    	spriteType = "GFX_ENG_North_Ireland_ENG"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_North_Ireland_button_tt"
+		    }
+		    buttonType = {
+		    	name ="ENG_Munster_Button_ENG"
+		    	spriteType = "GFX_ENG_Munster_ENG"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_Munster_button_tt"
+		    }
+		    buttonType = {
+		    	name ="ENG_Leinster_Button_ENG"
+		    	spriteType = "GFX_ENG_Leinster_ENG"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_Leinster_button_tt"
+		    }
+		    buttonType = {
+		    	name ="ENG_County_Tyrone_and_Fermanagh_Button_ENG"
+		    	spriteType = "GFX_ENG_County_Tyrone_and_Fermanagh_ENG"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_County_Tyrone_and_Fermanagh_button_tt"
+		    }
+		    buttonType = {
+		    	name ="ENG_Connaught_Button_ENG"
+		    	spriteType = "GFX_ENG_Connaught_ENG"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_Connaught_button_tt"
+		    }
+			buttonType = {
+		    	name ="ENG_North_Ireland_Button_Conflict"
+		    	spriteType = "GFX_ENG_North_Ireland_Conflict"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_North_Ireland_button_tt"
+		    }
+		    buttonType = {
+		    	name ="ENG_Munster_Button_Conflict"
+		    	spriteType = "GFX_ENG_Munster_Conflict"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_Munster_button_tt"
+		    }
+		    buttonType = {
+		    	name ="ENG_Leinster_Button_Conflict"
+		    	spriteType = "GFX_ENG_Leinster_Conflict"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_Leinster_button_tt"
+		    }
+		    buttonType = {
+		    	name ="ENG_County_Tyrone_and_Fermanagh_Button_Conflict"
+		    	spriteType = "GFX_ENG_County_Tyrone_and_Fermanagh_Conflict"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_County_Tyrone_and_Fermanagh_button_tt"
+		    }
+			buttonType = {
+		    	name ="ENG_Connaught_Button_Conflict"
+		    	spriteType = "GFX_ENG_Connaught_Conflict"
+		    	position = { x= 100 y = -450 }
+		    	pdx_tooltip = "ENG_Connaught_button_tt"
+		    }
+			iconType = {
+		    	name ="ENG_Ireland_State_Outline"
+		    	spriteType = "GFX_ENG_Ireland_State_Outline"
+		    	position = { x= 100 y = -450 }
+		    }
+		}	
+	}
+}

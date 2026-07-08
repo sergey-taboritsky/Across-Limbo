@@ -1,0 +1,19 @@
+﻿capital = 279
+
+
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1932.10.30"
+	election_frequency = 72  #but 4 years after this one in 1938.
+	elections_allowed = yes
+}
+set_popularities = {
+	Liberalism = 80
+	communist = 10
+	Nationalism = 7
+	Authoritarianism = 3
+}
+

@@ -1,0 +1,40 @@
+﻿l_simp_chinese:
+#领导人
+ CRO_Andrija_Hebrang: "安德里亚·赫布兰"
+ CRO_Andrija_Hebrang_desc: ""
+
+#政党名字
+ CRO_communist_party: "南斯拉夫社工联盟"
+ CRO_communist_party_long: "南斯拉夫社会主义工人联盟(Savez Socijalistički Radnički Jugoslavije)"
+ CRO_syndicalism_party: "南斯拉夫社工联盟"
+ CRO_syndicalism_party_long: "南斯拉夫社会主义工人联盟(Savez Socijalistički Radnički Jugoslavije)"
+ CRO_socialism_party: "南斯拉夫社工联盟"
+ CRO_socialism_party_long: "南斯拉夫社会主义工人联盟(Savez Socijalistički Radnički Jugoslavije)"
+ CRO_Social_democracy_party: "南斯拉夫社工联盟"
+ CRO_Social_democracy_party_long: "南斯拉夫社会主义工人联盟(Savez Socijalistički Radnički Jugoslavije)"
+ CRO_Liberalism_party: "-"
+ CRO_Liberalism_party: "-"
+ CRO_Conservatism_party: "-"
+ CRO_Conservatism_party_long: "-"
+ CRO_Authoritarianism_party: "-"
+ CRO_Authoritarianism_party_long: "-"
+ CRO_Absolutism_party: "南斯拉夫人民军"
+ CRO_Absolutism_party_long: "南斯拉夫人民军(Bama Amyodha Tatmadaw)"
+ CRO_Nationalism_party: "-"
+ CRO_Nationalism_party_long: "-"
+
+#民族精神
+
+#事件
+
+#新闻
+
+#GUI
+
+#BOP
+
+#决议
+
+#国策
+ #: ""
+ #_desc: ""

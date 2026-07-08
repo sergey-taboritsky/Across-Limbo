@@ -1,0 +1,50 @@
+﻿capital = 275
+
+#oob = "SAF_1936"
+
+set_stability = 0.6
+set_war_support = 0.1
+
+set_convoys = 25
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1933.5.17"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	Authoritarianism = 75
+	Nationalism = 20
+	communist = 5
+}
+
+recruit_character = SAF_Edward_VIII
+
+set_autonomy = {
+	target = BOT
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = NMB
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = LTH
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = SWZ
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = ZIM
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = ZAM
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = MLW
+	autonomous_state = autonomy_puppet
+}

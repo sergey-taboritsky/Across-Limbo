@@ -1,0 +1,20 @@
+characters = {
+	####马马杜·科纳特
+	MLI_Mamadou_Konate = {
+		name = MLI_Mamadou_Konate
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MLI_Mamadou_Konate
+			}
+		}
+		country_leader = {
+			desc = MLI_Mamadou_Konate_desc
+			ideology = Left_wing_nationalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			    
+			}
+		}
+	}
+}

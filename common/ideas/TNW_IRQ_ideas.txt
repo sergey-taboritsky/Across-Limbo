@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+		TNW_IRQ_tribalism_culture = {
+			allowed = {
+				original_tag = IRQ
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				production_speed_buildings_factor = -0.10
+				production_factory_max_efficiency_factor = -0.05
+				research_speed_factor = -0.05
+			}
+		}
+		TNW_IRQ_strong_ottoman_influence = {
+			allowed = {
+				original_tag = IRQ
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				war_support_factor = 0.05
+				drift_defence_factor = -0.15
+			}
+		}
+	}
+}

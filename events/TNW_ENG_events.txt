@@ -1,0 +1,155 @@
+add_namespace = ENG_event
+add_namespace = ENG_news
+#菜单卡背面
+country_event = {
+	id = ENG_event.1
+	title = ENG_event.1.t
+	desc = ENG_event.1.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ENG_event.1.tt
+	}
+}
+
+country_event = {
+	id = ENG_event.3 
+	title = ENG_event.3.t
+	desc = ENG_event.3.d 
+	is_triggered_only = yes 
+	fire_only_once = yes
+	option = {
+		name = ENG_event.3.a
+		unlock_decision_category_tooltip = ENG_Return_to_Ireland
+		set_country_flag = ENG_beck_to_ireland
+	}
+	option = {
+		name = ENG_event.3.b
+	}
+}
+#重申竞选诺言
+country_event = {
+	id = ENG_event.4 
+	title = ENG_event.4.t
+	desc = ENG_event.4.d 
+	is_triggered_only = yes 
+	fire_only_once = yes
+	option = {
+		name = ENG_event.4.a
+	}
+}
+#无产阶级起义
+country_event = {
+	id = ENG_event.5
+	title = ENG_event.5.t
+	desc = ENG_event.5.d 
+	is_triggered_only = yes 
+	fire_only_once = yes
+	option = {
+		name = ENG_event.5.a
+		custom_effect_tooltip = ENG_event_5_a_custom
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = { id = World_news.5 days = 1 }
+			}
+			BLF = {
+				inherit_technology = ENG
+				transfer_state = 128
+				transfer_state = 132
+				transfer_state = 127
+				transfer_state = 131
+				transfer_state = 133
+				transfer_state = 121
+				declare_war_on = { target = ENG type = annex_everything }
+				load_oob = "BLF_BCW"
+				set_convoys = 50
+			}
+			SOV = {
+				add_to_faction = BLF
+			}
+			every_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_core_of = BLF
+			}
+		}
+	}
+	option = {
+		name = ENG_event.5.b
+		custom_effect_tooltip = ENG_event_5_b_custom
+		hidden_effect = {
+			BLF = {
+				change_tag_from = ENG
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = { id = World_news.5 days = 1 }
+			}
+			BLF = {
+				inherit_technology = ENG
+				transfer_state = 128
+				transfer_state = 132
+				transfer_state = 127
+				transfer_state = 131
+				transfer_state = 133
+				transfer_state = 121
+				declare_war_on = { target = ENG type = annex_everything }
+				load_oob = "BLF_BCW"
+				set_convoys = 50
+			}
+			SOV = {
+				add_to_faction = BLF
+			}
+			every_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_core_of = BLF
+			}
+		}
+	}
+}
+
+
+#乔治五世驾崩
+news_event = {
+	id = ENG_news.1
+	title = ENG_news.1.t
+	desc = ENG_news.1.d
+	picture = GFX_news_event_generic_funeral
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = ENG_news.1.tt
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				set_temp_variable = { TNW_temp_super_event = token:King_George_V_death }
+				TNW_fire_super_event = yes
+			}
+		}
+	}
+}
+
+#工人运动
+news_event = {
+	id = ENG_news.2
+	title = ENG_news.2.t
+	desc = ENG_news.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ENG_news.2.a
+	}
+}
+
+
+

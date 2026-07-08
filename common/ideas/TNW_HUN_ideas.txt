@@ -1,0 +1,94 @@
+ideas = {
+	country = {
+		#巴尔干火药桶
+		HUN_Balkan_powder_keg = {
+			picture = GFX_idea_HUN_Balkan_powder_keg
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+                army_core_defence_factor = 0.02
+				dig_in_speed_factor = 0.02
+	            planning_speed = 0.05
+			}
+		}
+		#一切权力归于苏维埃
+		HUN_All_power_rests_with_the_Soviets = {
+			picture = GFX_idea_HUN_All_power_rests_with_the_Soviets
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				communist_drift = 0.05
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		#红色恐怖
+		HUN_Red_Terror = {
+			picture = GFX_idea_HUN_Red_Terror
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				communist_drift = -0.01
+				stability_factor = -0.10
+				political_power_factor = -0.10
+				operative_slot = 1
+				drift_defence_factor = 0.50
+			}
+		}
+		#猖獗的反动派
+		HUN_Rampant_reactionaries = {
+			picture = GFX_idea_HUN_Rampant_reactionaries
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.025
+				political_power_factor = -0.10
+				compliance_growth = -0.10
+				required_garrison_factor = 0.10
+				resistance_growth = 0.20
+			}
+		}
+		#联邦之梦
+		HUN_The_dream_of_the_Union = {
+			picture = GFX_idea_HUN_The_dream_of_the_Union
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.005
+                army_attack_factor = 0.05
+			}
+		}
+		#多民族军队
+		HUN_Multi_ethnic_army = {
+			picture = GFX_idea_HUN_Multi_ethnic_army
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+                mobilization_speed = -0.50
+				army_org_factor = -0.50
+	            army_morale_factor = -0.50
+				command_power_gain_mult = -0.50
+				war_support_factor = -0.20
+				army_chief_cost_factor = 0.50
+	            navy_chief_cost_factor = 0.50
+	            air_chief_cost_factor = 0.50
+	            high_command_cost_factor = 0.50
+				military_leader_cost_factor = 0.50
+				experience_gain_army_factor = -0.20
+			}
+		}
+	}
+}

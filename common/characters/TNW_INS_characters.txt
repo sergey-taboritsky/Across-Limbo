@@ -1,0 +1,218 @@
+characters = {
+#INS Indonesia
+	#拉登·苏托莫
+	INS_Raden_Soetomo = {
+		name = INS_Raden_Soetomo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Raden_Soetomo
+			}
+		}
+		country_leader = {
+			desc = INS_Raden_Soetomo_desc
+			ideology = Social_nationalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+#MLK Maluku
+	#克里斯蒂安·苏莫基尔
+	INS_Christiaan_Robbert_Steven_Soumokil = {
+		name = INS_Christiaan_Robbert_Steven_Soumokil
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Christiaan_Robbert_Steven_Soumokil
+			}
+		}
+		country_leader = {
+			desc = INS_Christiaan_Robbert_Steven_Soumokil_desc
+			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+#BLG Bulungan
+	#马乌兰纳·穆罕默德·贾拉鲁丁二世
+	INS_Maulana_Muhammad_Djalaluddin_II = {
+		name = INS_Maulana_Muhammad_Djalaluddin_II
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Maulana_Muhammad_Djalaluddin_II
+			}
+		}
+		country_leader = {
+			desc = INS_Maulana_Muhammad_Djalaluddin_II_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+#BON Bone
+	#安迪·马潘尤基
+	INS_Andi_Mappanyukki = {
+		name = INS_Andi_Mappanyukki
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Andi_Mappanyukki
+			}
+		}
+		country_leader = {
+			desc = INS_Andi_Mappanyukki_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+#MKS Makassar
+	#穆罕默德·塔希尔·穆希卜丁
+	INS_Muhammad_Tahir_Muhibuddin = {
+		name = INS_Muhammad_Tahir_Muhibuddin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Muhammad_Tahir_Muhibuddin
+			}
+		}
+		country_leader = {
+			desc = INS_Muhammad_Tahir_Muhibuddin_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+#LUW Luwu
+	#安迪·蒂耶马
+	INS_Andi_Djemma = {
+		name = INS_Andi_Djemma
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Andi_Djemma
+			}
+		}
+		country_leader = {
+			desc = INS_Andi_Djemma_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+#BTO Buton
+	#穆罕默德·法利希
+	INS_Muhammad_Falihi = {
+		name = INS_Muhammad_Falihi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Muhammad_Falihi
+			}
+		}
+		country_leader = {
+			desc = INS_Muhammad_Falihi_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+#BLI Bali
+	#乔克达·德·拉卡·苏卡瓦蒂
+	INS_Tjokorda_Gde_Raka_Soekawati = {
+		name = INS_Tjokorda_Gde_Raka_Soekawati
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Tjokorda_Gde_Raka_Soekawati
+			}
+		}
+		country_leader = {
+			desc = INS_Tjokorda_Gde_Raka_Soekawati_desc
+			ideology = interim_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+#FLO Flores
+	#王族委员会
+	INS_Flores_Federal_Council = {
+		name = INS_Flores_Federal_Council
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Flores_Federal_Council
+			}
+		}
+		country_leader = {
+			desc = INS_Flores_Federal_Council_desc
+			ideology = Patriarchal_Conservatism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+#ACH Aceh
+	#端古·拉贾·伊布拉辛
+	INS_Tuanku_Raja_Ibrahim = {
+		name = INS_Tuanku_Raja_Ibrahim
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Tuanku_Raja_Ibrahim
+			}
+		}
+		country_leader = {
+			desc = INS_Tuanku_Raja_Ibrahim_desc
+			ideology = Guided_democracy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+#GTL Gorontalo
+	#伯纳德·威廉·拉皮安
+	INS_Bernard_Wilhelm_Lapian = {
+		name = INS_Bernard_Wilhelm_Lapian
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Bernard_Wilhelm_Lapian
+			}
+		}
+		country_leader = {
+			desc = INS_Bernard_Wilhelm_Lapian_desc
+			ideology = Patriarchal_Conservatism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+#TIM Timor
+	#索贝·松白四世
+	INS_Nai_Sobe_Sonbai_III = {
+		name = INS_Nai_Sobe_Sonbai_III
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Nai_Sobe_Sonbai_III
+			}
+		}
+		country_leader = {
+			desc = INS_Nai_Sobe_Sonbai_III_desc
+			ideology = Patriarchal_Conservatism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

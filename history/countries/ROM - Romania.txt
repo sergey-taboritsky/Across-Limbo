@@ -1,0 +1,20 @@
+﻿capital = 46
+
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.6
+
+recruit_character = ROM_Constantin_Argetoianu
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1933.12.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Liberalism = 60
+	Nationalism = 18
+	communist = 2
+	Authoritarianism = 20
+}

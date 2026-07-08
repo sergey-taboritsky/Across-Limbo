@@ -1,0 +1,25 @@
+﻿capital = 1020
+
+set_convoys = 5
+
+recruit_character = BRM_U_Ba_Swe
+recruit_character = BRM_Maung_Lun_Maung
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	communist = 14
+	Authoritarianism = 74
+	Nationalism = 12
+}
+
+add_ideas = {
+	BRM_Asian_crossroads
+	BRM_between_monks_and_generals
+	BRM_volatile_republic
+	BRM_1930_treaty_RAJ
+}

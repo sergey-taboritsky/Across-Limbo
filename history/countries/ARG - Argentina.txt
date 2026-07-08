@@ -1,0 +1,41 @@
+﻿capital = 278
+
+recruit_character = ARG_liborio_justo
+recruit_character = ARG_Pedro_Chiarante
+recruit_character = ARG_Mateo_Fossa
+recruit_character = ARG_Hugo_Bressano
+recruit_character = ARG_Jorge_Abelardo_Ramos
+recruit_character = ARG_Homero_Cristali
+recruit_character = ARG_Emilio_Dickmann
+recruit_character = ARG_Jose_Penelon
+
+set_convoys = 120
+
+set_politics = {
+	ruling_party = communist
+	last_election = "1931.11.8"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 72
+	syndicalism = 6
+	socialism = 11
+	Social_democracy = 0
+	Liberalism = 2
+	Conservatism = 0
+	Absolutism = 6
+	Authoritarianism = 0
+	Nationalism = 3
+}
+
+add_ideas = {
+	ARG_Mateo_Fossa_hog
+	ARG_Hugo_Bressano_advisor
+	ARG_Jorge_Abelardo_Ramos_advisor
+	ARG_Homero_Cristali_advisor
+	ARG_Emilio_Dickmann_advisor
+	ARG_Jose_Penelon_theorist
+}
+
+set_country_flag = ARG_initial_flag

@@ -1,0 +1,63 @@
+﻿l_simp_chinese:
+#国名
+ KOR_PRK: "大韩人民共和国"
+ KOR_PRK_DEF: "大韩人民共和国"
+ KOR_PRK_ADJ: "韩国"
+ FER_fascist_state: "大朝鲜国"
+ FER_fascist_state_DEF: "大朝鲜国"
+ FER_ADJ: "朝鲜"
+
+#领导人
+ KOR_Ji_Cheong_Cheon: "池青天"
+ KOR_Ji_Cheong_Cheon_desc: "§Y出生于：§!§L1888年2月15日，朝鲜王国，京畿道京城府三清洞§!"
+ KOR_Kim_Koo: "金九"
+ KOR_Kim_Koo_desc: "§Y出生于：§!§L1888年2月15日，朝鲜王国，黄海道海州白云坊基洞§!"
+ KOR_Lyuh_Woon_Hyung: "吕运亨"
+ KOR_Lyuh_Woon_Hyung_desc: "§Y出生于：§!§L1886年5月25日，朝鲜王国，京畿道杨州§!"
+ KOR_Kim_Won_Bong: "金元凤"
+ KOR_Kim_Won_Bong_desc: "§Y出生于：§!§L1898年8月13日，大韩帝国，庆尚南道密阳郡§!"
+ KOR_Kim_Du_Han: "金斗汉"
+ KOR_Kim_Du_Han_desc: "§Y出生于：§!§L1898年8月13日，大韩帝国，庆尚南道密阳郡§!"
+ KOR_Park_Han_Yong: "朴宪永"
+ KOR_Park_Han_Yong_desc: "§Y出生于：§!§L1900年5月28日，大韩帝国，忠清南道大兴郡§!"
+
+ FER_Shin_Sung_Mo: "申性模"
+ FER_Shin_Sung_Mo_desc: "§Y出生于：§!§L1891年10月20日，朝鲜王国，庆尚道宜宁郡§!"
+ 
+#政党名字
+ KOR_communist_party: "韩国共产党"
+ KOR_communist_party_long: "大韩民国共产党"
+ KOR_syndicalism_party: "“金佐镇之子”"
+ KOR_syndicalism_party_long: "“金佐镇之子”"
+ KOR_socialism_party: "人民共和党"
+ KOR_socialism_party_long: "人民共和党"
+ KOR_Social_democracy_party: "勤劳人民党"
+ KOR_Social_democracy_party_long: "勤劳人民党"
+ KOR_Liberalism_party: "独立党"
+ KOR_Liberalism_party_long: "大韩民国独立党"
+ KOR_Conservatism_party: "民主国民党"
+ KOR_Conservatism_party_long: "民主国民党"
+ KOR_Authoritarianism_party: "-"
+ KOR_Authoritarianism_party_long: "-"
+ KOR_Absolutism_party: "大韩民国武装部队"
+ KOR_Absolutism_party_long: "大韩民国武装部队"
+ KOR_Nationalism_party: "-"
+ KOR_Nationalism_party_long: "-"
+
+ FER_Nationalism_party: "朝鲜民族自由党"
+ FER_Nationalism_party_long: "朝鲜民族自由党"
+#民族精神
+
+#事件
+
+#新闻
+
+#GUI
+
+#BOP
+
+#决议
+
+#国策
+ #: ""
+ #_desc: ""

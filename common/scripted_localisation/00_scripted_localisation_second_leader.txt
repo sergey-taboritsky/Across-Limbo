@@ -1,0 +1,82 @@
+defined_text = { 
+	name = Get_TNW_second_leader_name_sploc
+	text = {
+		trigger = {
+			original_tag = SPR
+		}
+		localization_key = TNW_second_leader_name_SPR_Juan_Negrin
+	}
+	text = {
+		trigger = {
+			original_tag = BUL
+		}
+		localization_key = TNW_second_leader_name_BUL_Bogdan_Filov
+	}
+	text = {
+		trigger = {
+			original_tag = CHI
+			has_country_flag = CHI_Deng_Yanda_leading_flag
+		}
+		localization_key = TNW_second_leader_name_CHI_Deng_Yanda
+	}
+	text = {
+		trigger = {
+			original_tag = CHI
+			has_country_flag = CHI_Li_Zongren_leading_flag
+		}
+		localization_key = TNW_second_leader_name_CHI_Li_Zongren
+	}
+	text = {
+		trigger = {
+			original_tag = CHI
+			has_country_flag = CHI_Fang_Zhimin_leading_flag
+		}
+		localization_key = TNW_second_leader_name_CHI_Fang_Zhimin
+	}
+	text = {
+		trigger = {
+			original_tag = ENG
+		}
+		localization_key = TNW_second_leader_name_ENG_George_Catlin
+	}
+	text = {
+		trigger = {
+			original_tag = FRA
+			has_country_flag = FRA_souvarine_treint_balance_active_flag
+			check_variable = {
+				FRA_internal_balance_total_var < 50
+			}
+		}
+		localization_key = TNW_second_leader_name_FRA_Boris_Souvarine
+	}
+	text = {
+		trigger = {
+			original_tag = FRA
+			has_country_flag = FRA_souvarine_treint_balance_active_flag
+			check_variable = {
+				FRA_internal_balance_total_var > 50
+			}
+		}
+		localization_key = TNW_second_leader_name_FRA_Edward_Treint
+	}
+	text = {
+		trigger = {
+			original_tag = MAC
+		}
+		localization_key = TNW_second_leader_name_MAC_Hristo_Tatarchev
+	}
+	text = {
+		trigger = {
+			original_tag = TUR
+			has_country_flag = TUR_Ismet_Grand_Vizier_flag
+		}
+		localization_key = TNW_second_leader_name_TUR_Ismet_Inonu
+	}
+	#text = {
+	#	trigger = {
+	#		original_tag = TARGET_TAG
+	#		whatever_extra_trigger = {}
+	#	}
+	#	localization_key = TNW_second_leader_name_SOMEBODY
+	#}
+}

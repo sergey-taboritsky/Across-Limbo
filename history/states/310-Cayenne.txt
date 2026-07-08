@@ -1,0 +1,35 @@
+state = {
+	id = 310
+	name = "STATE_310"
+	resources = {
+		aluminium = 104.000
+	}
+
+	history = {
+		owner = CAY
+		add_core_of = CAY
+		
+		
+		buildings = {
+			
+			radar_station = 4
+			air_base = 1
+			
+			infrastructure = 1
+			12885 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			12885 1
+		}
+	}
+
+	provinces = {
+		4934 12885 17379
+	}
+	manpower = 37287
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

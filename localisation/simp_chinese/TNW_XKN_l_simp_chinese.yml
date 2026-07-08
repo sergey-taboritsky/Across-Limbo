@@ -1,0 +1,26 @@
+﻿l_simp_chinese:
+#顾问
+ CHI_Liu_Wenhui: "刘文辉"
+ CHI_Liu_Wenhui_desc: ""
+ 
+#民族精神
+ 
+#政党名字
+ XKN_communist_party:0 "-"
+ XKN_communist_party_long:0 "-"
+ XKN_syndicalism_party:0 "-"
+ XKN_syndicalism_party_long:0 "-"
+ XKN_socialism_party:0 "-"
+ XKN_socialism_party_long:0 "-"
+ XKN_Social_democracy_party:0 "-"
+ XKN_Social_democracy_party_long:0 "-"
+ XKN_Liberalism_party:0 "-"
+ XKN_Liberalism_party_long:0 "-"
+ XKN_Conservatism_party:0 "-"
+ XKN_Conservatism_party_long:0 "-"
+ XKN_Authoritarianism_party:0 "国民党"
+ XKN_Authoritarianism_party_long:0 "中国国民党"
+ XKN_Absolutism_party:0 "国民党"
+ XKN_Absolutism_party_long:0 "中国国民党"
+ XKN_Nationalism_party:0 "-"
+ XKN_Nationalism_party_long:0 "-"

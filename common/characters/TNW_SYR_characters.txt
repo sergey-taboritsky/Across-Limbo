@@ -1,0 +1,197 @@
+characters = {
+	#康斯坦丁·祖雷克
+	TAT_Constantin_Zureik = {
+		name = TAT_Constantin_Zureik
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TAT_Constantin_Zureik
+			}
+		}
+		country_leader = {
+			desc = TAT_Constantin_Zureik_desc
+			ideology = Popular_Front
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { 
+			}
+		}
+	}
+	#法拉贾拉·埃尔赫卢
+	TAT_Farajallah_El_Helou = {
+		name = TAT_Farajallah_El_Helou
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TAT_Farajallah_El_Helou
+			}
+		}
+		country_leader = {
+			desc = TAT_Farajallah_El_Helou_desc
+			ideology = Marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { 
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = TAT_Farajallah_El_Helou_hog
+			allowed = { original_tag = TAT }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#哈立德·巴格达什
+	TAT_Khalid_Bakdash = {
+		name = TAT_Khalid_Bakdash
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TAT_Khalid_Bakdash
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TAT_Khalid_Bakdash_advisor
+			allowed = { original_tag = TAT }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#穆斯塔法·阿里斯
+	TAT_Mustapha_Aris = {
+		name = TAT_Mustapha_Aris
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TAT_Mustapha_Aris
+			}
+		}
+		country_leader = {
+			desc = TAT_Mustapha_Aris_desc
+			ideology = Classical_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TAT_Mustapha_Aris_advisor
+			allowed = { original_tag = TAT }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#尼古拉斯·乔伊
+	TAT_Nicolas_Chaoui = {
+		name = TAT_Nicolas_Chaoui
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TAT_Nicolas_Chaoui
+			}
+		}
+	}
+	#瓦迪·哈达德
+	TAT_Wadie_Haddad = {
+		name = TAT_Wadie_Haddad
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TAT_Wadie_Haddad
+			}
+		}
+		country_leader = {
+			desc = TAT_Wadie_Haddad_desc
+			ideology = Liberalism_socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TAT_Wadie_Haddad_advisor
+			allowed = { original_tag = TAT }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#哈尼·欣迪
+	TAT_Hani_al_Hindi = {
+		name = TAT_Hani_al_Hindi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TAT_Hani_al_Hindi
+			}
+		}
+		country_leader = {
+			desc = TAT_Hani_al_Hindi_desc
+			ideology = Social_nationalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { 
+			}
+		}
+	}
+	#乔治·哈巴什
+	TAT_George_Habash = {
+		name = TAT_George_Habash
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TAT_George_Habash
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TAT_George_Habash_advisor
+			allowed = { original_tag = TAT }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#贾西姆·阿勒万
+	TAT_Jassem_Alwan = {
+		name = TAT_Jassem_Alwan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TAT_Jassem_Alwan
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = TAT_Jassem_Alwan_theorist
+			allowed = { original_tag = TAT }
+			traits = {
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		corps_commander = {
+			traits={ media_personality war_hero }
+			skill=3
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+}

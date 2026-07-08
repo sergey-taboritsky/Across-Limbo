@@ -1,0 +1,24 @@
+scripted_gui = {
+	TNW_Level_of_development_gui = {
+		context_type = decision_category
+		window_name = "TNW_Level_of_development_gui_window"
+		##识字等级进度条
+		properties = {
+			TNW_Level_of_development_gui_window_progress_1 = {
+				frame = TNW_Literacy_level_value
+			}
+		}
+		##富裕等级进度条
+		properties = {
+			TNW_Level_of_development_gui_window_progress_2 = {
+				frame = TNW_Affluence_value
+			}
+		}
+		##工业化等级进度条
+		properties = {
+			TNW_Level_of_development_gui_window_progress_3 = {
+				frame = TNW_Industrial_scale_value
+			}
+		}
+	}
+}

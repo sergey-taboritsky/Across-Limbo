@@ -1,0 +1,91 @@
+ideas = {
+	country = {
+		#战后经济震荡
+		TUR_economic_shock = {
+			picture = GFX_idea_TUR_economic_shock
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.1
+
+			}
+		}
+		#政府崩溃
+		TUR_collapsing_government = {
+			picture = GFX_idea_TUR_collapsing_government
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.2
+				trade_opinion_factor = 0.1
+				political_advisor_cost_factor = 0.1
+				materiel_manufacturer_cost_factor = 0.1
+				theorist_cost_factor = 0.1
+				army_chief_cost_factor = 0.1
+				navy_chief_cost_factor = 0.1
+				air_chief_cost_factor = 0.1
+				high_command_cost_factor = 0.1
+				research_speed_factor = -0.1
+			}
+		}
+		#濒临毁灭的军队
+		TUR_army_near_destruction = {
+			picture = GFX_idea_TUR_army_near_destruction
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.1
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				air_cas_present_factor = -0.1
+				air_attack_factor = -0.1
+				navy_screen_attack_factor = -0.1
+				navy_screen_defence_factor = -0.1
+				navy_capital_ship_attack_factor = -0.15
+				naval_speed_factor = -0.1
+				navy_max_range_factor = -0.05
+			}
+		}
+		#《安卡拉条约》
+		TUR_Treaty_of_Ankara = {
+			picture = GFX_idea_TUR_Treaty_of_Ankara
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				conscription_factor = -0.1
+				tank_manufacturer_cost_factor = 0.2
+				naval_manufacturer_cost_factor = 0.2
+				aircraft_manufacturer_cost_factor = 0.2
+				mobilization_laws_cost_factor = 0.1
+				trade_laws_cost_factor  = 0.1
+				economy_cost_factor = 0.1
+			}
+		}
+		#激进化的骨干运动
+		TUR_raqdicalised_kadro_activities = {
+			picture = GFX_idea_TUR_raqdicalised_kadro_activities
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				communist_drift = 0.01
+				socialism_drift = 0.01
+				Nationalism_drift = 0.01
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+﻿l_simp_chinese:
+#顾问
+ CHI_Fu_Zuoyi: "傅作义"
+ CHI_Yan_xishan: "阎锡山"
+
+#国名
+ SHX_beiping_government: "北平国民政府"
+ SHX_beiping_government_DEF: "中华民国国民政府"
+ SHX_beiping_government_ADJ: "中国"
+ SHX_beiping_government_south: "救国联军南线"
+ SHX_beiping_government_south_DEF: "护党救国联军南方战线"
+ SHX_beiping_government_south_ADJ: "南方"
+ 
+#政党名字
+ SHX_communist_party: "中国共产党"
+ SHX_socialism_party: "中国共产党"
+ SHX_Social_democracy_party: "中国民主联合战线"
+ SHX_Liberalism_party: "中国民主联合战线"
+ SHX_Conservatism_party: "国民党 - 再造派"
+ SHX_Authoritarianism_party: "国民党 - 晋系"
+ SHX_Absolutism_party: "国民党 - 北平中执委"
+ SHX_Nationalism_party: "国民党 - 力行社"

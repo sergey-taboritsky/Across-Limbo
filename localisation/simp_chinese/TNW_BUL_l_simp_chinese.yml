@@ -1,0 +1,167 @@
+﻿l_simp_chinese:
+#国名
+ BUL_mladrossi: "保加利亚人民沙皇国"
+ BUL_mladrossi_DEF: "保加利亚人民沙皇国"
+ BUL_socialist_republic: "保加利亚社会主义共和国"
+ BUL_socialist_republic_DEF: "保加利亚社会主义共和国"
+ BUL_peoples_republic: "保加利亚人民共和国"
+ BUL_peoples_republic_DEF: "保加利亚人民共和国"
+ BUL_yugoslavia_red: "南斯拉夫联邦人民共和国"
+ BUL_yugoslavia_red_DEF: "南斯拉夫联邦人民共和国"
+ BUL_federation: "保加利亚联邦民主共和国"
+ BUL_federation_DEF: "保加利亚联邦民主共和国"
+ BUL_commune: "保加利亚联合公社"
+ BUL_commune_DEF: "保加利亚联合公社"
+
+#顾问
+ BUL_Georgy_Dimitrov: "格奥尔基·季米特洛夫"
+ BUL_Georgy_Dimitrov_desc: ""
+ BUL_Manol_Vasev: "马诺尔·瓦谢夫"
+ BUL_Manol_Vasev_desc: ""
+ BUL_Alexander_Stamboliyski: "亚历山大·斯塔姆博利伊斯基"
+ BUL_Alexander_Stamboliyski_desc: ""
+ BUL_Dimitar_Kazasov: "迪米塔尔·卡扎索夫"
+ BUL_Dimitar_Kazasov_desc: ""
+ BUL_Nikola_Mushanov: "尼古拉·穆沙诺夫" #Dem
+ BUL_Nikola_Mushanov_desc: ""
+ BUL_Ivan_Valkov: "伊万·瓦尔科夫"
+ BUL_Ivan_Valkov_desc: ""
+ BUL_Kimon_Georgiev: "基蒙·格奥尔基耶夫"
+ BUL_Kimon_Georgiev_desc: ""
+ BUL_Simeon_II: "西美昂二世"
+ BUL_Simeon_II_desc: ""
+ BUL_Hristo_Lukov: "赫里斯托·卢科夫"
+ BUL_Hristo_Lukov_desc: ""
+ BUL_Bogdan_Filov: "博格丹·菲洛夫"
+ BUL_Bogdan_Filov_desc: ""
+ BUL_Kirill_of_Preslav: "普雷斯拉夫的基里尔"
+ BUL_Kirill_of_Preslav_desc: ""
+ BUL_Nikola_Mihov: "尼古拉·米霍夫"
+ BUL_Nikola_Mihov_desc: ""
+ BUL_Ivan_Variklechkov: "伊万·瓦里克列奇科夫"
+ BUL_Ivan_Variklechkov_desc: ""
+ BUL_Dimitar_Spisarevski: "迪米塔尔·斯皮萨列夫斯基"
+ BUL_Dimitar_Spisarevski_desc: ""
+ BUL_Asen_Kantardzhiev: "阿森·坎塔尔基耶夫"
+ BUL_Asen_Kantardzhiev_desc: ""
+ BUL_Petur_Gabrovsky: "彼得·加布罗夫斯基" #内政部长
+ BUL_Petur_Gabrovsky_desc: ""
+ BUL_Teodosi_Daskalov: "特奥多西·达斯卡洛夫"
+ BUL_Teodosi_Daskalov_desc: ""
+ BUL_Ivan_Dochev: "伊万·多切夫" #UBNL
+ BUL_Ivan_Dochev_desc: ""
+ BUL_Rayko_Daskalov: "伊科·达斯卡洛夫" #BZNS Orange Guard
+ BUL_Rayko_Daskalov_desc: ""
+ BUL_Alexandar_Tsankov: "亚历山大·灿科夫" #BZNS(FR)-BANU
+ BUL_Alexandar_Tsankov_desc: ""
+ BUL_Georgi_Mihov_Dimitrov: "米霍夫·季米特洛夫" #BZNS Leftist
+ BUL_Georgi_Mihov_Dimitrov_desc: "§Y出生于：§!§L1903年4月15日，崇高奥斯曼帝国，埃迪尔内维拉耶§!"
+ BUL_Nikola_Petkov: "尼古拉·佩特科夫" #BZNS Stamboliyski
+ BUL_Nikola_Petkov_desc: "§Y出生于：§!§L1893年7月8日，保加利亚大公国，索菲亚§!"
+ BUL_Dimitar_Peshev: "迪米塔尔·佩舍夫" #NatLib
+ BUL_Dimitar_Peshev_desc: ""
+ BUL_Stoyan_Kosturkov: "斯托扬·科斯图尔科夫" #Radical
+ BUL_Stoyan_Kosturkov_desc: ""
+ BUL_Venelin_Ganev: "韦内林·加涅夫"
+ BUL_Venelin_Ganev_desc: ""
+ BUL_Zvyatko_Boboshevsky: "茨维亚特科·博博舍夫斯基" #PPP
+ BUL_Zvyatko_Boboshevsky_desc: ""
+ BUL_Atanas_Burov: "阿塔纳斯·布罗夫" #Peoples Party
+ BUL_Atanas_Burov_desc: ""
+ BUL_Hristo_Nestoroff: "赫里斯托·涅斯托罗夫" #Anarchist
+ BUL_Hristo_Nestoroff_desc: ""
+ BUL_Georg_Tarpana: "格奥尔基·塔尔帕纳" #Goryanstvo
+ BUL_Georg_Tarpana_desc: ""
+ BUL_Valko_Chervenkov: "维尔科·契尔文科夫" #BKP Politburo
+ BUL_Valko_Chervenkov_desc: ""
+ BUL_Anton_Yugov: "安东·于哥夫" #BKP Security Council
+ BUL_Anton_Yugov_desc: ""
+ BUL_Ivan_Gorunia: "伊万·托多罗夫·戈鲁尼亚" #BKP Guerilla Party
+ BUL_Ivan_Gorunia_desc: ""
+ BUL_Ferdinand_Kozovsky: "斐迪南·科佐夫斯基" #BKP Guerilla Army
+ BUL_Ferdinand_Kozovsky_desc: ""
+ BUL_Traycho_Kostov: "特拉乔伊·科斯托夫" #BKP Trade Unionist
+ BUL_Traycho_Kostov_desc: ""
+ BUL_Todor_Zhivkov: "托多尔·日夫科夫" #BKP Reformist
+ BUL_Todor_Zhivkov_desc: ""
+ BUL_Ivan_Mihailov_Popov: "伊万·米哈伊洛夫·波波夫" #BKP Panslavic
+ BUL_Ivan_Mihailov_Popov_desc: ""
+ BUL_Nikolai_Vaptsarov: "尼古拉·瓦普查洛夫" #BKP poet-culturalist
+ BUL_Nikolai_Vaptsarov_desc: ""
+ BUL_Lev_Glavinchev: "列夫·格拉文契夫" #monarchist nazbol?
+ BUL_Lev_Glavinchev_desc: ""
+
+ MAC_Hristo_Tatarchev: "赫里斯托·塔塔尔切夫"
+
+#民族精神
+ BUL_will_of_god: "“乃是上帝旨意！”"
+ BUL_will_of_god_desc: "§Y摄政委员会的设立应该是§R在国民议会通过§!，然而这帮§R“反犹的混蛋”§!却是在§R大国民议会选举§!中产生的，这可真叫一部分议员难受§!"
+ BUL_scars_of_second_weltkrieg: "世界大战的创伤"
+ BUL_scars_of_second_weltkrieg_desc: "§Y没有人再称呼他们为将军、议员、警察…首相、沙皇了，甚至也不称呼先生了，剩下的称呼只有§R抢钱夺命的混蛋§!§!"
+ BUL_russian_diplomacy_problems: "对俄态度问题"
+ BUL_russian_diplomacy_problems_desc: "§Y惊叹不已的是，尽管我们彼此之间是盟友，§R但是我们的首相以及一部分民族主义者却并不想与俄罗斯人交好！这不是其他人所认同的！§!§!"
+ BUL_tsar_homeland_bulgaria: "沙皇！祖国！保加利亚！"
+ BUL_tsar_homeland_bulgaria_desc: "§Y保加利亚民族主义者们虽分为两派，但很幸运的，大部分都效忠于沙皇。在大街上，他们对抗祖国阵线的暴徒；在工厂里，他们勤劳工作；在军队里，他们是最勇敢的士兵。有了他们，保加利亚必将恢复往昔荣光！§!"
+ 
+#政党名字
+ BUL_communist_party: "保加利亚共产党"
+ BUL_communist_party_long: "保加利亚共产党(Bŭlgarska Komunisticheska Partiya)"
+ BUL_syndicalism_party: "保加利亚无政府共产主义联合会"
+ BUL_syndicalism_party_long: "保加利亚无政府共产主义联合会(Federatsiya na Anarkho-Komunistite v Bŭlgariya)"
+ BUL_socialism_party: "农业人民联盟"
+ BUL_socialism_party_long: "保加利亚农业人民联盟(Bŭlgarski Zemedelski Naroden Sŭyuz)"
+ BUL_Social_democracy_party: "保加利亚社会民主工党"
+ BUL_Social_democracy_party_long: "保加利亚社会民主工党(Bŭlgarska Rabotnicheska Sotsialdemokraticheska Partiya)"
+ BUL_Liberalism_party: "五人团"
+ BUL_Liberalism_party_long: "五人团(Komitet na Petimata)"
+ BUL_Conservatism_party: "布兰尼克"
+ BUL_Conservatism_party_long: "保加利亚国家青年组织“布兰尼克”(Bŭlgarska Mladezhka Organizatsiya \"Brannik\")"
+ BUL_Authoritarianism_party: "“环节派”"
+ BUL_Authoritarianism_party_long: "政治集团“环节”(Politicheski Krŭg \"Zveno\")"
+ BUL_Absolutism_party: "摄政委员会"
+ BUL_Absolutism_party_long: "摄政委员会"
+ BUL_Nationalism_party: "保加利亚国家军团联盟"
+ BUL_Nationalism_party_long: "保加利亚国家军团联盟(Sŭyuz na Bŭlgarskite Natsionalni Legioni)"
+
+ BUL_Nationalism_Tsankov_party: "全国社会运动"
+ BUL_Nationalism_Tsankov_party_long: "保加利亚全国社会运动(Bŭlgarska Narodno Sotsialno Dvizhenie)"
+
+ BUL_national_liberal_party: "国家自由党"
+ BUL_national_liberal_party_long: "国家自由党(Natsionalna Liberalna Partiya)"
+ BUL_radical_party: "激进民主党"
+ BUL_radical_party_long: "激进民主党(Radikalna Demokraticheska Partiya)"
+ BUL_democrat_party: "民主党"
+ BUL_democrat_party_long: "保加利亚民主党(Balgarska Demokraticheska Partiya)"
+ BUL_progressive_party: "人民进步党"
+ BUL_progressive_party_long: "人民进步党(Narodna Progresivna Partiya)"
+ BUL_peoples_party: "人民党"
+ BUL_peoples_party_long: "人民党(Narodna Partiya)"
+
+ BUL_BKP_party_chervenkov: "保共 - 人民全权委员会"
+ BUL_BKP_party_yugov: "保共 - 内部安全委员会"
+ BUL_BKP_party_gorunia: "保共 - 人民解放起义军(纲领派)"
+ BUL_BKP_party_kozovsky: "保共 - 人民解放起义军(战斗派)"
+ BUL_BKP_party_kostov: "保共 - 工人民主同盟"
+ BUL_BKP_party_zhivkov: "保共 - 现实政治研究会"
+ BUL_BKP_party_mikhailov: "保共 - 民族解放工人委员会"
+ BUL_BKP_party_vaptsarov: "保共 - 社会主义文艺中心"
+ BUL_BKP_party_glavinchev: "保共 - 马其顿革命委员会"
+ BUL_BKP_party_socdem: "祖国阵线 - 保共/保社民工党"
+
+#GUI
+ TNW_BUL_parliament_desc: "第 届大国民议会，下次选举 年 月"
+ TNW_BUL_parliament_desc2: "普通国民议会由人民直接选举的代表组成，每两万人口选举一名代表。代表任期四年。\n所有年满21周岁、享有公民权利和政治权利的保加利亚公民均有选举权。\n所有享有公民权利和政治权利、年满30周岁且识字的保加利亚公民均有被选举为代表的权利。\n将制定专门选举法规范选举事宜。\n\n国民议会负责：\n\n1. 根据第四十四条讨论法律草案。\n2. 讨论关于国家贷款、增加、减少或废除税收及各类规费，以及关于其支出和征收方式的提案。\n3. 豁免认为无法征收的拖欠税款和各类未收规费。\n4. 讨论年度收支预算。\n5. 审核预算所拨款项的支出账目。\n6. 审核最高审计院的账目，该院有义务向议会提交预算执行情况的详细报告。\n7. 提出追究部长责任的质询。"
+ semicircle_parliament_gui_title: "大国民议会"
+ TNW_BUL_parliament_semicircle_main_entry_tt: "[GetParliamentSeatName] - [GetParliamentPartyName]"
+ TNW_BUL_parliament_member_text: "[GetParliamentPartyName] - [?parliament_seat_array^parliament_member_index]议会席位 [GetParliamentPartyAlliance][GetParliamentPartyOpposition]" #£parliament_party_icon|[?v] 
+ party_1_text: "保加利亚共产党"
+ party_2_text: "保加利亚农业人民联盟"
+ party_3_text: "保加利亚社会民主工党"
+ party_4_text: "激进民主党"
+ party_5_text: "国家自由党"
+ party_6_text: "保加利亚民主党"
+ party_7_text: "人民进步党"
+ party_8_text: "人民党"
+ party_9_text: "保加利亚国家军团联盟"
+ party_10_text: "保加利亚全国社会运动"
+ party_11_text: "无党派"

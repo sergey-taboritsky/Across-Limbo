@@ -1,0 +1,4 @@
+opinion_modifiers = {
+	FRA_benevolent_occupier = { value = 25 }
+	FRA_cold_war_opponent = { value = -100 }
+}

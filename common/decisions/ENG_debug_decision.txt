@@ -1,0 +1,600 @@
+ENG_debug = {
+	ENG_debug_1 = {
+		complete_effect = {
+			set_politics = { ruling_party = socialism }
+		}
+	}
+	ENG_debug_2 = {
+		complete_effect = {
+			set_party_name = {
+				ideology = Nationalism
+				long_name = ENG_Nationalism_BPP_party
+				name = ENG_Nationalism_BPP_party
+			}
+			set_politics = { ruling_party = Nationalism }
+			add_country_leader_role = {
+				character = ENG_Barry_Domvile
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_ENG_Barry_Domvile_DESC"
+					ideology = Fascism
+					expire = "2000.1.1.1"
+					traits = { }
+				}
+			}
+		}
+	}
+	ENG_debug_3 = {
+		complete_effect = {
+			news_event = ENG_news.1
+		}
+	}
+	ENG_debug_4 = {
+		complete_effect = {
+			hidden_effect = {
+				set_victory_points = {
+					province = 1821
+					value = 20
+				}
+				set_victory_points = {
+					province = 9292
+					value = 15
+				}
+				set_victory_points = {
+					province = 4824
+					value = 10
+				}
+				SOV = {
+					dismantle_faction = yes
+				}
+				RUS = {
+					inherit_technology = SOV
+					transfer_state = 137
+					transfer_state = 234
+					transfer_state = 233
+					transfer_state = 827
+					transfer_state = 828
+					transfer_state = 821
+					transfer_state = 232
+					transfer_state = 235
+					transfer_state = 237
+					transfer_state = 236
+					transfer_state = 238
+					transfer_state = 218
+					transfer_state = 245
+					transfer_state = 217
+					transfer_state = 829
+					transfer_state = 401
+					transfer_state = 652
+					transfer_state = 651
+					transfer_state = 398
+					transfer_state = 397
+					transfer_state = 262
+					transfer_state = 825
+					transfer_state = 581
+					transfer_state = 573
+					transfer_state = 582
+					transfer_state = 251
+					transfer_state = 249
+					transfer_state = 399
+					transfer_state = 400
+					transfer_state = 880
+					transfer_state = 214
+					transfer_state = 215
+					transfer_state = 213
+					transfer_state = 216
+					transfer_state = 264
+					transfer_state = 351
+					transfer_state = 879
+					transfer_state = 244
+					transfer_state = 195
+					transfer_state = 208
+					transfer_state = 209
+					transfer_state = 263
+					transfer_state = 210
+					transfer_state = 246
+					transfer_state = 242
+					transfer_state = 243
+					transfer_state = 224
+					transfer_state = 220
+					transfer_state = 240
+					transfer_state = 260
+					transfer_state = 265
+					transfer_state = 222
+					transfer_state = 258
+					transfer_state = 257
+					transfer_state = 239
+					transfer_state = 255
+					transfer_state = 250
+					transfer_state = 256
+					transfer_state = 833
+					transfer_state = 252
+					transfer_state = 253
+					transfer_state = 247
+					transfer_state = 248
+					transfer_state = 219
+					transfer_state = 205
+					transfer_state = 223
+					transfer_state = 254
+					every_owned_state = {
+						add_core_of = RUS
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SOV
+					}
+					add_claim_by = RUS
+				}
+				WGR = {
+					annex_country = {
+						target = DDR
+					}
+				}
+				if = {
+					limit = {
+						country_exists = HUN
+						HUN = {
+							has_government = communist
+						}
+						AUS = {
+							is_in_faction_with = ENG
+						}
+					}
+					AUS = {
+						annex_country = {
+							target = HUN
+						}
+					}
+				}
+				LIT = {
+					inherit_technology = LAT
+					transfer_state = 814
+					transfer_state = 784
+					transfer_state = 11
+					transfer_state = 815
+					transfer_state = 189
+				}
+				EST = {
+					inherit_technology = LAT
+					transfer_state = 191
+					transfer_state = 13
+					transfer_state = 811
+					transfer_state = 812
+					transfer_state = 813
+				}
+				LAT = {
+					set_cosmetic_tag = LAT_Defeat
+				}
+				FIN = {
+					set_cosmetic_tag = FIN_Defeat
+					set_politics = {
+						ruling_party = Absolutism 
+						last_election = "1933.7.1"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					set_popularities = {
+						communist = 0
+						socialism = 0
+						Social_democracy = 10
+						Liberalism = 25
+						Conservatism = 20
+						Absolutism = 30
+						Authoritarianism = 10
+						Nationalism = 5
+					}
+				}
+				POL = {
+					set_cosmetic_tag = POL_Defeat
+					set_politics = {
+						ruling_party = Authoritarianism 
+						last_election = "1933.7.1"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					set_popularities = {
+						communist = 0
+						socialism = 0
+						Social_democracy = 0
+						Liberalism = 25
+						Conservatism = 20
+						Absolutism = 20
+						Authoritarianism = 20
+						Nationalism = 15
+					}
+				}
+				BLR = {
+					set_cosmetic_tag = BLR_Defeat
+					set_politics = {
+						ruling_party = Authoritarianism 
+						last_election = "1933.7.1"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					set_popularities = {
+						communist = 0
+						socialism = 0
+						Social_democracy = 0
+						Liberalism = 25
+						Conservatism = 20
+						Absolutism = 20
+						Authoritarianism = 20
+						Nationalism = 15
+					}
+				}
+				UKR = {
+					set_cosmetic_tag = UKR_Defeat
+					set_politics = {
+						ruling_party = Authoritarianism 
+						last_election = "1933.7.1"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					set_popularities = {
+						communist = 0
+						socialism = 0
+						Social_democracy = 0
+						Liberalism = 25
+						Conservatism = 20
+						Absolutism = 20
+						Authoritarianism = 20
+						Nationalism = 15
+					}
+				}
+				if = {
+					limit = {
+						TUR = {
+							is_in_faction_with = ENG
+						}
+					}
+					TUR = {
+						transfer_state = 354
+						transfer_state = 800
+					}
+				}
+				GEO = {
+					set_cosmetic_tag = GEO_Defeat
+					set_politics = {
+						ruling_party = Authoritarianism 
+						last_election = "1933.7.1"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					set_popularities = {
+						communist = 0
+						socialism = 0
+						Social_democracy = 0
+						Liberalism = 25
+						Conservatism = 20
+						Absolutism = 20
+						Authoritarianism = 20
+						Nationalism = 15
+					}
+				}
+				407 = {
+					set_demilitarized_zone = yes
+				}
+				406 = {
+					set_demilitarized_zone = yes
+				}
+				402 = {
+					set_demilitarized_zone = yes
+				}
+				583 = {
+					set_demilitarized_zone = yes
+				}
+				408 = {
+					set_demilitarized_zone = yes
+				}
+				409 = {
+					set_demilitarized_zone = yes
+				}
+				657 = {
+					set_demilitarized_zone = yes
+				}
+				560 = {
+					set_demilitarized_zone = yes
+				}
+				562 = {
+					set_demilitarized_zone = yes
+				}
+				874 = {
+					set_demilitarized_zone = yes
+				}
+				637 = {
+					set_demilitarized_zone = yes
+				}
+				822 = {
+					set_demilitarized_zone = yes
+				}
+				875 = {
+					set_demilitarized_zone = yes
+				}
+				566 = {
+					set_demilitarized_zone = yes
+				}
+				564 = {
+					set_demilitarized_zone = yes
+				}
+				563 = {
+					set_demilitarized_zone = yes
+				}
+				565 = {
+					set_demilitarized_zone = yes
+				}
+				574 = {
+					set_demilitarized_zone = yes
+				}
+				561 = {
+					set_demilitarized_zone = yes
+				}
+				876 = {
+					set_demilitarized_zone = yes
+				}
+				877 = {
+					set_demilitarized_zone = yes
+				}
+				644 = {
+					set_demilitarized_zone = yes
+				}
+			}
+		}
+	}
+	ENG_debug_5 = {
+		complete_effect = {
+			hidden_effect = {
+				BYA = {
+					inherit_technology = SOV
+					transfer_state = 566
+					transfer_state = 564
+					transfer_state = 563
+					transfer_state = 565
+				}
+				YAK = {
+					inherit_technology = SOV
+					transfer_state = 561
+					transfer_state = 574
+					transfer_state = 877
+					transfer_state = 876
+					transfer_state = 644
+				}
+				FER = {
+					inherit_technology = SOV
+					transfer_state = 408
+					transfer_state = 409
+					transfer_state = 560
+					transfer_state = 657
+					transfer_state = 562
+					transfer_state = 874
+					transfer_state = 822
+					transfer_state = 637
+					transfer_state = 875
+					add_to_faction = YAK
+					add_to_faction = BYA
+				}
+				407 = {
+					set_demilitarized_zone = no
+				}
+				406 = {
+					set_demilitarized_zone = no
+				}
+				402 = {
+					set_demilitarized_zone = no
+				}
+				583 = {
+					set_demilitarized_zone = no
+				}
+				408 = {
+					set_demilitarized_zone = no
+				}
+				409 = {
+					set_demilitarized_zone = no
+				}
+				657 = {
+					set_demilitarized_zone = no
+				}
+				560 = {
+					set_demilitarized_zone = no
+				}
+				562 = {
+					set_demilitarized_zone = no
+				}
+				874 = {
+					set_demilitarized_zone = no
+				}
+				637 = {
+					set_demilitarized_zone = no
+				}
+				822 = {
+					set_demilitarized_zone = no
+				}
+				875 = {
+					set_demilitarized_zone = no
+				}
+				566 = {
+					set_demilitarized_zone = no
+				}
+				564 = {
+					set_demilitarized_zone = no
+				}
+				563 = {
+					set_demilitarized_zone = no
+				}
+				565 = {
+					set_demilitarized_zone = no
+				}
+				574 = {
+					set_demilitarized_zone = no
+				}
+				561 = {
+					set_demilitarized_zone = no
+				}
+				876 = {
+					set_demilitarized_zone = no
+				}
+				877 = {
+					set_demilitarized_zone = no
+				}
+				644 = {
+					set_demilitarized_zone = no
+				}
+			}
+		}
+	}
+	ENG_debug_6 = {
+		complete_effect = {
+			news_event = World_news.2
+		}
+	}
+}
+
+ENG_labor_movement = {
+	ENG_lm_debug = {
+		complete_effect = {
+			country_event = ENG_event.2
+			add_ideas = 添加的民族精神
+			remove_ideas = ENG_Unsatisfied_workers
+		}
+	}
+}
+
+ENG_Return_to_Ireland= {
+	ENG_Attack_County_Tyrone_and_Fermanagh = {
+		icon = infiltrate_state
+		available = {
+		}
+		cost = 0
+		fire_only_once = yes
+		highlight_states = { 
+		highlight_state_targets = { state = 1102 }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+		political_power_gain = -0.15
+		}
+		days_remove = 1
+		remove_effect = {
+			custom_effect_tooltip = ENG_fulfillment_of_schedule
+			ENG = {
+				transfer_state = 1102
+			}
+		}
+	}
+	ENG_Attack_Connaught = {
+		icon = infiltrate_state
+		available = {
+		}
+		cost = 0
+		fire_only_once = yes
+		highlight_states = { 
+		highlight_state_targets = { state = 134 }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			political_power_gain = -0.15
+		}
+		days_remove = 1
+		remove_effect = {
+			custom_effect_tooltip = ENG_fulfillment_of_schedule
+			ENG = {
+				transfer_state = 134
+			}
+		}
+	}
+	ENG_Attack_Leinster = {
+		icon = infiltrate_state
+		available = {
+		}
+		cost = 0
+		fire_only_once = yes
+		highlight_states = { 
+		highlight_state_targets = { state = 113 }
+			}
+
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+		political_power_gain = -0.15
+		}
+		days_remove = 1
+		remove_effect = {
+			custom_effect_tooltip = ENG_fulfillment_of_schedule
+			ENG = {
+				transfer_state = 113
+			}
+		}
+	}
+	ENG_Attack_Munster = {
+		icon = infiltrate_state
+		available = {
+		}
+		cost = 0
+		fire_only_once = yes
+		highlight_states = { 
+		highlight_state_targets = { state = 135 }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			political_power_gain = -0.15
+		}
+		days_remove = 1
+		remove_effect = {
+			custom_effect_tooltip = ENG_fulfillment_of_schedule
+			ENG = {
+				transfer_state = 135
+			}
+		}
+	}
+}
+
+ENG_Imperial_Charter_category = {
+	ENG_Imperial_Charter_industrial_complex = {
+		allowed = {
+			original_tag = ENG
+			}
+		fire_only_once = yes 
+		targets = { IRE CAN BAF SAF RAJ MAL AST NZL }
+		available = {
+			}
+		visible = {
+			}
+		cost = 1
+		complete_effect = {
+			add_to_variable = { ENG_var_industrial_complex = 1 }
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+	ENG_Imperial_Charter_arms_factory = {
+		allowed = {
+			original_tag = ENG
+			}
+		fire_only_once = yes 
+		targets = { IRE CAN BAF SAF RAJ MAL AST NZL }
+		available = {
+			}
+		visible = {
+			}
+		cost = 1
+		complete_effect = {
+			add_to_variable = { ENG_var_arms_factory = 1 }
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,216 @@
+bookmarks = {
+	bookmark = {
+		name = "DawnEurope"
+		desc = "DawnEurope_DESC"
+		date = 1948.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "SOV"
+		default = yes
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communist
+			available = { has_dlc = "No Step Back" }
+			ideas = {
+			
+			}
+			focuses = {
+				
+			}	
+		}
+
+		"PRC"={
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = communist
+			ideas = {
+				PRC_the_long_march_1
+				PRC_low_popular_support_3
+				PRC_power_struggles
+			}
+			focuses = {
+				PRC_infiltration
+				PRC_maoism
+				PRC_anti_japanese_expedition
+			}
+		}
+		"DDR"={
+			history = "DDR_GATHERING_STORM_DESC"
+			ideology = communist
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+
+		"ZZZ"={
+			#不要删这个
+			#minor = yes
+			history = "GRE_GATHERING_STORM_DESC"
+			ideology = Authoritarianism
+			ideas = {
+				GRE_debt_to_the_ifc
+				GRE_schachtplan
+				GRE_political_instability_dummy
+			}
+			focuses = {
+				GRE_metaxism_focus
+				GRE_resurrecting_the_megali_idea
+				GRE_stage_an_incident_in_the_bosporus
+			}
+		}
+
+
+
+
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = Nationalism
+			ideas = {
+				state_shintoism
+				JAP_zaibatsus
+				JAP_militarism
+			}	
+			focuses = {
+				JAP_the_zero
+				JAP_warrior_spirit
+				JAP_strike_on_the_southern_resource_area
+			}			
+		}
+        "CHI"={
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = Authoritarianism
+			ideas = {
+				CHI_army_corruption_1
+				CHI_hyper_inflation_1
+				CHI_nine_power_treaty
+			}
+			focuses = {
+				CHI_united_front
+				CHI_army_reform
+				CHI_invite_the_flying_tigers
+			}
+		}
+		"ROC"={
+			history = "ROC_GATHERING_STORM_DESC"
+			ideology = Authoritarianism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+
+		"ZZZ"={
+			#不要删这个
+			#minor = yes
+			history = "TUR_GATHERING_STORM_DESC"
+			ideology = Authoritarianism
+			ideas = {
+				TUR_sectarian_woes
+				TUR_disorganised_armed_forces
+				TUR_debt_council
+			}
+			focuses = {
+				TUR_ratify_the_six_arrows
+				TUR_reaffirm_the_balkan_pact
+				TUR_pivot_to_the_past
+			}
+		}
+
+
+
+
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = Liberalism
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_form_the_popular_front
+				FRA_revive_the_national_bloc
+				FRA_france_leads
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = Conservatism
+			available = { has_dlc = "La Resistance" } 
+			ideas = {
+				ENG_splitting_government
+				ENG_Unsatisfied_workers
+				ENG_Mosleynomics
+			}
+			focuses = {
+
+			}
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = Liberalism
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
+				tizard_mission_focus
+				ENG_war_with_germany
+				ENG_war_with_italy
+			}
+		}
+		"HUN"={
+			minor = yes
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = Authoritarianism
+			ideas = {
+				HUN_treaty_of_triannon
+			}
+			focuses = {
+				HUN_proclaim_the_restoration_of_austria_hungary
+				HUN_secret_rearmament
+				HUN_renounce_the_treaty_of_trianon
+			}
+		}
+		"MAN"={
+			minor = yes
+			history = "MAN_GATHERING_STORM_DESC"
+			ideology = Nationalism
+			ideas = {
+				MAN_banditry
+				MAN_kwantung_veto
+				MAN_low_legitimacy_5
+			}
+			focuses = {
+				MAN_obedience
+				MAN_independence_war
+				MAN_claim_the_mandate_of_heaven
+			}
+		}
+		"WGR"={
+			minor = yes
+			history = "WGR_GATHERING_STORM_DESC"
+			ideology = Authoritarianism
+			ideas = {
+				RAJ_agrarian_society
+				RAJ_princely_states
+			}
+			focuses = {
+				RAJ_all_india_forward_bloc
+				RAJ_indian_gurkhas
+				RAJ_the_smiling_buddha
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

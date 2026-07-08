@@ -1,0 +1,37 @@
+spriteTypes = {
+
+	circularprogressbartype = {
+		name = "GFX_SD_green_progress"
+		textureFile2 = "gfx/interface/State_developmet/Green.png"
+		textureFile1 = "gfx/interface/State_developmet/empty_pie.png"
+		size = 45
+		rotation = 0
+		amount = 100
+	}
+	circularprogressbartype = {
+		name = "GFX_SD_yellow_progress"
+		textureFile2 = "gfx/interface/State_developmet/Yellow.png"
+		textureFile1 = "gfx/interface/State_developmet/empty_pie.png"
+		size = 45
+		rotation = 0
+		amount = 100
+	}
+	circularprogressbartype = {
+		name = "GFX_SD_red_progress"
+		textureFile2 = "gfx/interface/State_developmet/Red.png"
+		textureFile1 = "gfx/interface/State_developmet/empty_pie.png"
+		size = 45
+		rotation = 0
+		amount = 100
+	}
+
+	spriteType = {
+		name = "GFX_SD_action_colour"
+		textureFile = "gfx/interface/State_developmet/action_colour.png"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_SD_State_develop_icon"
+		textureFile = "gfx/interface/State_developmet/State_develop_icon.png"
+	}
+}

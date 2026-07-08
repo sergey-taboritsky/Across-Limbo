@@ -1,0 +1,20 @@
+characters = {
+	#何塞·卡洛斯·拉特斯
+	POR_Jose_Carlos_Rates = {
+		name = POR_Jose_Carlos_Rates
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_POR_Jose_Carlos_Rates
+			}
+		}
+		country_leader = {
+			desc = POR_Jose_Carlos_Rates_desc
+			ideology = Marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+				POL_Mental_imbalance
+			}
+		}
+	}
+}

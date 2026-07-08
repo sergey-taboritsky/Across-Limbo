@@ -1,0 +1,198 @@
+#I'm so sorry that I found no way in making it perfect.
+#If you have better ideas ,please improve it.
+#BUT IF YOU DON'T HAVE BETTER IDEAS, DON'T CHANGE COMMON CODES!!!!!!
+#ROOT = defeated country
+#FROM = victor
+on_actions = {
+	on_capitulation = {
+		effect = {
+			#default
+			if = {
+				limit = {
+					OR = {
+						ROOT = {
+							is_in_faction = no
+						}
+						ROOT = {
+							all_allied_country = {
+								has_capitulated = yes
+							}
+						}
+					}
+					###要是有这个全球flag就会直接进入谈判界面而不会自动白和###
+					NOT = {
+						has_global_flag = special_peace_not_annex
+					}
+				}
+				FROM = {
+					every_enemy_country = {
+						transfer_navy = {
+							target = FROM
+						}
+						limit = {
+							OR = {
+								original_tag = ROOT
+								is_in_faction_with = ROOT
+								is_subject_of = ROOT
+							}
+						}
+						every_owned_state = {
+							every_country = {
+								limit = {
+									NOT = {
+										is_ally_with = ROOT
+									}
+									controls_state = PREV
+								}
+								transfer_state = PREV
+							}
+						}
+						FROM = {
+							annex_country = {
+								target = PREV
+								transfer_troops = no
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = special_peace_not_annex
+				}
+				clr_global_flag = special_peace_not_annex
+			}
+			#开启谈判结语GUI
+			set_global_flag = TNW_warpeace_show_gui
+			FROM = {
+				save_global_event_target_as = winning_country
+			}
+			ROOT = {
+				save_global_event_target_as = losing_country
+			}
+			add_to_variable = {
+				global.TNW_warpeace_dirty = 1
+			}
+			#中原大战 - 北平胜利
+			if = {
+				limit = {
+					event_target:losing_country = {
+						original_tag = CHI
+					}
+					event_target:winning_country = {
+						original_tag = PRC
+					}
+				}
+				CHI = {
+					white_peace = PRC
+					annex_country = {
+						target = PRC
+						transfer_troops = yes
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = CHI_news_event.3
+				}
+				PRC = {
+					every_character = {
+						set_nationality = CHI
+					}
+				}
+				CHI = {
+					set_party_name = {
+						ideology = Social_democracy
+						name = CHI_CDPL_party
+						long_name = CHI_CDPL_party_long
+					}
+					set_politics = {
+						ruling_party = Social_democracy
+						elections_allowed = no
+					}
+					clr_country_flag = CHI_Li_Zongren_leading_flag
+					promote_character = CHI_Chen_Lifu
+					every_state = {
+						limit = {
+							is_core_of = PRC
+						}
+						remove_core_of = PRC
+						add_core_of = CHI
+					}
+				}
+			}
+			#中原大战 - 南京胜利
+			else_if = {
+				limit = {
+					event_target:losing_country = {
+						original_tag = PRC
+					}
+					event_target:winning_country = {
+						original_tag = CHI
+					}
+				}
+				CHI = {
+					white_peace = PRC
+					annex_country = {
+						target = PRC
+						transfer_troops = yes
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = CHI_news_event.4
+				}
+				PRC = {
+					every_character = {
+						set_nationality = CHI
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PRC
+					}
+					remove_core_of = PRC
+					add_core_of = CHI
+				}
+			}
+			#奥斯曼内战 - 安纳托利亚
+			else_if = {
+				limit = {
+					event_target:losing_country = {
+						OR = {
+							original_tag = TUR
+							original_tag = KAL
+							original_tag = CIN
+							original_tag = DAG
+							original_tag = ARM
+						}
+					}
+					event_target:winning_country = {
+						OR = {
+							original_tag = TUR
+							original_tag = KAL
+							original_tag = CIN
+							original_tag = DAG
+							original_tag = ARM
+						}
+					}
+				}
+				event_target:losing_country = {
+					every_core_state = {
+						remove_core_of = event_target:losing_country
+						add_core_of = event_target:winning_country
+					}
+				}
+				every_possible_country = {
+					limit = { NOT = { original_tag = event_target:winning_country } }
+					annex_country = {
+						tag = event_target:losing_country
+					}
+				}
+			}
+		}
+	}
+}

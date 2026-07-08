@@ -1,0 +1,24 @@
+state = {
+	id = 1098
+	name = "STATE_1098"
+
+	history = {
+		owner = ETH
+		add_core_of = ETH
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13995 3
+		}
+		set_state_flag = state_renamings
+	}
+
+	provinces = {
+		13979 13982 13995 14005 15534 17908
+	}
+	manpower = 500000
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

@@ -1,0 +1,16 @@
+characters = {
+	AST_Joseph_Benedict_Chifley = {
+		name = AST_Joseph_Benedict_Chifley
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AST_Joseph_Benedict_Chifley
+			}
+		}
+		country_leader = {
+			desc = AST_Joseph_Benedict_Chifley_desc
+			ideology = progressivism
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+}

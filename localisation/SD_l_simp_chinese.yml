@@ -1,0 +1,50 @@
+﻿l_simp_chinese:
+#决议
+ SD_test_decision_cat: "地区发展测试决议"
+ SD_test_decision_set_var: "地区人口财富比例初始化"
+ SD_test_decision_build_pie: "更新人口财富比例饼图"
+ SD_test_decision_cal_pie: "饼图比例值变化后重新计算饼图比例"
+ SD_test_decision_add_modifier: "地区添加动态修正并计算修正数值"
+
+
+
+#GUI
+ SD_manpower_text: "地区人口生活水平比例\n富裕人口比例：§G[?This.SD_man_rich_var|0..3%%]§!\n温饱人口比例：§Y[?This.SD_man_normal_var|0..3%%]§!\n贫困人口比例：§R[?This.SD_man_poor_var|0..3%%]§!"
+ SD_state_development_text: "地区发展度\n已开发比例：§G[?This.SD_state_development_var|0..2%%]§!\n正在开发比例：§Y[?This.SD_state_developing_var|0..2%%]§!\n未开发比例：§R[?This.SD_state_undeveloped_var|0..2%%]§!"
+
+
+ 
+ SD_Distribute_benefits_button_name: "发放福利"
+ SD_man_DB_button_tooltip: "§Y左键§!：消耗§R10§!£pol_power政治点数进行§Y1§!次投资，少量提升地区人民生活水平\n§Y右键§!：消耗§R100§!£pol_power政治点数进行§Y10§!次投资，提升地区人民生活水平"
+
+
+ SD_Requisition_factory_button_name: "征用工厂"
+ SD_man_RF_button_tooltip: "消耗§R100§!£pol_power政治点数进行§Y1§!次征用工厂，获得§Y1§!座民用工厂，§R减低地区人民生活水平§!"
+
+
+ SD_Invest_Development_button_name: "建设开发"
+ SD_state_ID_button_tooltip: "§Y左键§!：消耗§R30§!£pol_power政治点数进行§Y1§!次投资（最低可贷款至 §Y-480§!£pol_power政治点数），立即获得§Y1§!个月的地区开发进度\n§Y右键§!：消耗§R300§!£pol_power政治点数进行§Y10§!次投资（最低可贷款至 §Y-300§!£pol_power政治点数），立即获得§Y10§!个月的地区开发进度"
+
+ SD_Invest_Construction_button_name: "投资建设"
+ SD_state_IC_button_tooltip: "消耗§R100§!£pol_power政治点数进行一次投资，提升§G1§!点每月开发比例\n目前已投资[?THIS.SD_state_developing_var_added|Y0..0]次，投资上限次数为§Y5§!次"
+ SD_state_IC_button_tooltip_disabled: "§R政治点数不足！§!"
+
+
+ SD_Exploit_Resources_button_name: "开发资源"
+ SD_state_ER_button_tooltip: "消耗§R30§!£pol_power政治点数进行一次投资，在[This.GETNAME]地区开发战略资源，§R减低地区开发比例§!"
+
+ SD_button_tooltip: "OVO"
+
+
+
+
+
+#民族精神和修正
+ SD_manpower_modifier: "地区发展修正"
+
+
+
+
+
+
+

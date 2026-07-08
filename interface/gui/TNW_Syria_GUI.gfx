@@ -1,0 +1,19 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TNW_Syria_TAT_ideology_progressbar"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Syria/TNW_Syria_TAT_ideology_progressbar_arabia.png"
+	}
+	spriteType = {
+		name = "GFX_TAT_decision_GUI_button"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Syria/TAT_decision_GUI_button.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_TNW_Syria_TAT_arab_communism"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Syria/TNW_Syria_TAT_arab_communism.png"
+	}
+	spriteType = {
+		name = "GFX_TNW_Syria_TAT_arab_nationalism"
+		texturefile = "gfx/TNW_scripted_guis/TNW_Syria/TNW_Syria_TAT_arab_nationalism.png"
+	}
+}

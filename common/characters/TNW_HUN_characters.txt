@@ -1,0 +1,20 @@
+characters = {
+	####库恩·贝拉
+	HUN_Kuhn_Bella = {
+		name = HUN_Kuhn_Bella
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_HUN_Kuhn_Bella
+			}
+		}
+		country_leader = {
+			desc = HUN_Kuhn_Bella_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			    HUN_Sword_wielder
+			}
+		}
+	}
+}

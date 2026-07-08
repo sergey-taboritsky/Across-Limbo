@@ -1,0 +1,124 @@
+﻿capital = 48
+
+#TROOPS
+#oob = "BUL_1936" #VANILLA & DLC
+set_convoys = 5 #VANILLA & DLC
+
+set_technology = { #VANILLA & DLC
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	fuel_silos = 1
+	basic_train = 1
+	tech_mountaineers = 1
+}
+
+recruit_character = BUL_Georgy_Dimitrov
+recruit_character = BUL_Manol_Vasev
+recruit_character = BUL_Alexander_Stamboliyski
+recruit_character = BUL_Dimitar_Kazasov
+recruit_character = BUL_Nikola_Mushanov
+recruit_character = BUL_Ivan_Valkov
+recruit_character = BUL_Kimon_Georgiev
+recruit_character = BUL_Simeon_II
+recruit_character = BUL_Hristo_Lukov
+recruit_character = BUL_Bogdan_Filov
+recruit_character = BUL_Kirill_of_Preslav
+recruit_character = BUL_Nikola_Mihov
+recruit_character = BUL_Petur_Gabrovsky
+recruit_character = BUL_Teodosi_Daskalov
+recruit_character = BUL_Ivan_Variklechkov
+recruit_character = BUL_Dimitar_Spisarevski
+recruit_character = BUL_Asen_Kantardzhiev
+recruit_character = BUL_Alexandar_Tsankov
+recruit_character = BUL_Georgi_Mihov_Dimitrov
+recruit_character = BUL_Nikola_Petkov
+recruit_character = BUL_Dimitar_Peshev
+recruit_character = BUL_Stoyan_Kosturkov
+recruit_character = BUL_Venelin_Ganev
+recruit_character = BUL_Zvyatko_Boboshevsky
+recruit_character = BUL_Atanas_Burov
+recruit_character = BUL_Hristo_Nestoroff
+recruit_character = BUL_Georg_Tarpana
+recruit_character = BUL_Valko_Chervenkov
+recruit_character = BUL_Anton_Yugov
+recruit_character = BUL_Ivan_Gorunia
+recruit_character = BUL_Ferdinand_Kozovsky
+recruit_character = BUL_Traycho_Kostov
+recruit_character = BUL_Todor_Zhivkov
+recruit_character = BUL_Ivan_Mihailov_Popov
+recruit_character = BUL_Nikolai_Vaptsarov
+recruit_character = BUL_Lev_Glavinchev
+
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 15
+	syndicalism = 3
+	socialism = 2
+	Social_democracy = 5
+	Liberalism = 5
+	Conservatism = 3
+	Authoritarianism = 2
+	Absolutism = 60
+	Nationalism = 5
+}
+
+set_autonomy = {
+	target = ROC
+	autonomous_state = autonomy_TNW_military_occupation_zone
+}
+set_autonomy = {
+	target = MAC
+	autonomous_state = autonomy_personal_union
+}
+
+set_country_flag = has_second_leader_flag
+set_country_flag = balkan_powderkeg_active_flag
+
+add_ideas ={
+	constitutional_monarchy
+	free_market_economy
+	unitary_state
+	moscow_aligned
+	
+	moscow_aligned_nation
+	BUL_will_of_god
+	BUL_scars_of_second_weltkrieg
+	BUL_russian_diplomacy_problems
+	BUL_tsar_homeland_bulgaria
+
+	BUL_Bogdan_Filov_hog
+	BUL_Kirill_of_Preslav_advisor
+	BUL_Nikola_Mihov_advisor
+	BUL_Petur_Gabrovsky_advisor
+	BUL_Teodosi_Daskalov_theorist
+
+	BUL_Hristo_Lukov_army_chief
+	BUL_Ivan_Variklechkov_navy_chief
+	BUL_Dimitar_Spisarevski_air_chief
+}
+
+set_variable = { var = BKP value = 10 } 
+set_variable = { var = BZNS value = 20 } 
+set_variable = { var = BSDRP value = 30 }
+set_variable = { var = RadDem value = 40 } 
+set_variable = { var = NatLib value = 30 } 
+set_variable = { var = Dem value = 20 } 
+set_variable = { var = PPP value = 10 } 
+set_variable = { var = PeoplesParty value = 0 } 
+set_variable = { var = SBNL value = 0 } 
+set_variable = { var = NonPartisan value = 0 } 
+set_variable = { var = vacant value = 0 }
+set_variable = { var = seatNumbers value = 160 }
+# the unified republican bloc value
+parliament_gui_initial = yes

@@ -1,0 +1,54 @@
+
+scripted_map_modes = {
+  	cold_war_map = {
+		top = {
+			type = country
+			
+				color = {
+					FROM = {
+						set_temp_variable = { alpha = 50.0 }
+						set_temp_variable = { thickness = 8.0 }
+						if = {
+							limit = {
+								has_idea = phalanstere_aligned_nation 
+							}
+							set_temp_variable = { red = 0.42 }
+							set_temp_variable = { green = 0 }
+							set_temp_variable = { blue = 0 }
+						}
+						else_if = {
+							limit = {
+								has_idea = moscow_aligned_nation 
+							}
+							set_temp_variable = { red = 0 }
+							set_temp_variable = { green = 0.35 }
+							set_temp_variable = { blue = 0 }
+						}
+						else = {
+							set_temp_variable = { red = 0.65 }
+							set_temp_variable = { green = 0.65 }
+							set_temp_variable = { blue = 0.65 }
+						}
+					}
+				}
+			thickness = no
+  		}
+  	
+		bottom = {
+			type = country
+			
+				color = {
+					set_temp_variable = { alpha = 0.2 }
+					set_temp_variable = { thickness = 1.0 }
+				}
+				
+				thickness = yes
+		}
+  	
+		far_text = faction
+		near_text = state
+
+		update_daily = yes
+ 
+    }
+}

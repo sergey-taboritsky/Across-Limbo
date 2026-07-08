@@ -1,0 +1,94 @@
+characters = {
+	FER_Shin_Sung_Mo = {
+		name = FER_Shin_Sung_Mo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FER_Shin_Sung_Mo
+			}
+		}
+		country_leader={
+			ideology= Singular_Nationalism
+			expire="1936.1.1"
+		}
+		
+	}
+
+	KOR_Ji_Cheong_Cheon = {
+		name = KOR_Ji_Cheong_Cheon
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KOR_Ji_Cheong_Cheon
+			}
+		}
+		country_leader={
+			ideology= National_Conservatism
+			expire="1936.1.1"
+		}
+		
+	}
+	KOR_Kim_Koo = {
+		name = KOR_Kim_Koo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KOR_Kim_Koo
+			}
+		}
+		country_leader={
+			ideology= triequism_right
+			expire="1936.1.1"
+		}
+		
+	}
+	KOR_Lyuh_Woon_Hyung = {
+		name = KOR_Lyuh_Woon_Hyung
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KOR_Lyuh_Woon_Hyung
+			}
+		}
+		country_leader={
+			ideology= triequism_center
+			expire="1936.1.1"
+		}
+		
+	}
+	KOR_Kim_Won_Bong = {
+		name = KOR_Kim_Won_Bong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KOR_Kim_Won_Bong
+			}
+		}
+		country_leader={
+			ideology= triequism_left
+			expire="1936.1.1"
+		}
+		
+	}
+	KOR_Kim_Du_Han = {
+		name = KOR_Kim_Du_Han
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KOR_Kim_Du_Han
+			}
+		}
+		country_leader={
+			ideology= National_Syndicalism
+			expire="1936.1.1"
+		}
+		
+	}
+	KOR_Park_Han_Yong = {
+		name = KOR_Park_Han_Yong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KOR_Park_Han_Yong
+			}
+		}
+		country_leader={
+			ideology= Marxism
+			expire="1936.1.1"
+		}
+		
+	}
+}

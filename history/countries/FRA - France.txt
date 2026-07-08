@@ -1,0 +1,119 @@
+﻿capital = 16
+
+starting_train_buffer = 2
+
+set_research_slots = 3
+set_stability = 0.5
+add_command_power = 20
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
+}
+
+create_faction_from_template = faction_template_UROE
+add_to_faction = ENG
+add_to_faction = SPR
+add_to_faction = POR
+add_to_faction = HOL
+add_to_faction = DDR
+add_to_faction = ITA
+add_to_faction = IRE
+add_to_faction = NOR
+add_to_faction = SWE
+add_to_faction = GRE
+add_to_faction = HAN
+add_to_faction = WUR
+
+give_guarantee = DEN
+give_guarantee = SWI
+
+set_autonomy = {
+	target = SAR
+	autonomy_state = autonomy_TNW_military_occupation_zone
+}
+set_convoys = 300
+
+set_politics = {
+	ruling_party = communist
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 45
+	syndicalism = 9
+	socialism = 21
+	Social_democracy = 12
+	Liberalism = 0
+	Conservatism = 0
+	Absolutism = 5
+	Authoritarianism = 4
+	Nationalism = 4
+}
+
+recruit_character = FRA_Hubert_Lyautey
+recruit_character = FRA_Marcel_Cachin
+recruit_character = FRA_Albert_Treint
+recruit_character = FRA_Boris_Souvarine
+recruit_character = FRA_Suzanne_Girault
+recruit_character = FRA_Louis_Sellier
+recruit_character = FRA_Lucien_Herard
+recruit_character = FRA_Pierre_Semard
+recruit_character = FRA_Alfred_Rosmer
+recruit_character = FRA_Raymond_Molinier
+recruit_character = FRA_Henri_Molinier
+recruit_character = FRA_Pierre_Frank
+recruit_character = FRA_Rudolphe_Prager
+recruit_character = FRA_Roger_Foirier
+recruit_character = FRA_Victor_Serge
+recruit_character = FRA_Jean_Zyromski
+recruit_character = FRA_Paul_Rassinier
+recruit_character = FRA_Jean_Rous
+recruit_character = FRA_Communard_Central_Committee
+
+recruit_character = FRA_Charles_Delestraint
+recruit_character = FRA_Georges_Catroux
+recruit_character = FRA_Pierre_Billotte
+recruit_character = FRA_Ernest_Petit
+recruit_character = FRA_Roger_Ginsburger
+recruit_character = FRA_Henri_Rol_Tanguy
+recruit_character = FRA_Charles_Tillon
+recruit_character = FRA_Martial_Henri_Valin
+
+add_ideas = {
+	soviet_republic
+	planned_market_economy
+	united_federation
+	socialist_leaning
+
+	phalanstere_aligned_nation
+	FRA_Home_of_the_Revolution
+	FRA_Growing_demographic_problems
+	FRA_Legacy_of_Levose_Cachin
+
+	#cabinet
+	FRA_Albert_Treint_hog
+	FRA_Suzanne_Girault_advisor
+	FRA_Louis_Sellier_advisor
+	FRA_Lucien_Herard_advisor
+	FRA_Pierre_Semard_advisor
+	FRA_Charles_Delestraint_theorist
+	FRA_Georges_Catroux_army_chief
+	FRA_Charles_Tillon_navy_chief
+	FRA_Martial_Henri_Valin_air_chief
+}

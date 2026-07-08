@@ -1,0 +1,10 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			TUR = {
+				give_resource_rights = { receiver = ENG state = 1045 }
+				give_resource_rights = { receiver = ENG state = 1048 }
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+ideas = {
+
+	hidden_ideas = {
+	
+		phalanstere_aligned_nation = {
+				
+			name = phalanstere_aligned_nation_name
+
+			removal_cost = -1
+
+			picture =  bruh_nothing
+
+			allowed = {
+				always = no
+			}
+
+		}
+		
+		moscow_aligned_nation = {
+				
+			name = moscow_aligned_nation_name
+
+			removal_cost = -1
+
+			picture =  bruh_nothing
+
+			allowed = {
+				always = no
+			}
+
+		}
+	}
+}

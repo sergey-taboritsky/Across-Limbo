@@ -1,0 +1,40 @@
+ideas = {
+	country = {
+		BRM_Asian_crossroads = {
+			#picture = GFX_idea_BRM_Asian_crossroads
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		BRM_between_monks_and_generals = {
+			#picture = GFX_idea_BRM_between_monks_and_generals
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		BRM_volatile_republic = {
+			#picture = GFX_idea_BRM_volatile_republic
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		BRM_1930_treaty_RAJ = {
+			#picture = GFX_idea_BRM_1930_treaty_RAJ
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+	}
+}

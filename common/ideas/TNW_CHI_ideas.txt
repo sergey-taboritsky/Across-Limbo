@@ -1,0 +1,162 @@
+ideas = {
+	country = {
+	#南京国民政府
+		#国军
+		TNW_CHI_national_armed_forces_dummy = {
+			picture = TNW_CHI_national_armed_forces
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#宪政过渡期
+		TNW_CHI_constitutional_transition = {
+			picture = TNW_CHI_constitutional_transition
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.3
+				mobilization_speed = -0.25
+				political_power_cost = 0.05
+			}
+		}
+		#不驯服的国民党
+		TNW_CHI_untamed_kuomintang = {
+			picture = TNW_CHI_untamed_kuomintang
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				max_planning = -0.2
+				experience_gain_army_factor = -0.2
+				army_morale_factor = -0.25
+				planning_speed = -0.25
+				training_time_army_factor = 0.5
+				mobilization_laws_cost_factor = 1
+				land_doctrine_cost_factor = 1
+				command_abilities_cost_factor = 0.5
+			}
+		}
+		#国忌日协定
+		TNW_CHI_april_accords = {
+			picture = TNW_CHI_april_accords
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#左翼分裂
+		TNW_CHI_leftists_split = {
+			picture = TNW_CHI_leftists_split
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#搁置的中俄谈判
+		TNW_CHI_stalled_talks_with_russia = {
+			picture = TNW_CHI_stalled_talks_with_russia
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#经济崩溃倒计时
+		TNW_CHI_economic_ruin_countdown = {
+			picture = TNW_CHI_economic_ruin_countdown
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.4
+				industrial_capacity_factory = -0.3
+				global_building_slots_factor = -0.25
+				production_factory_max_efficiency_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.3
+			}
+			research_bonus = {
+				industry = -0.2
+			}
+		}
+		#三民主义国际会议领袖
+		CHI_Tridemist_International_Leader = {
+			picture = CHI_Tridemist_International_Leader
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_cost = 0.1
+				opinion_gain_monthly_factor = 0.25
+				send_volunteer_divisions_required = -0.5
+				send_volunteer_size = 2
+				embargo_threshold_factor = 0.1
+			}
+		}
+	#四川
+		#红日出川
+		SCN_Red_Star_Over_Sichuan = {
+			picture = SCN_Red_Star_Over_Sichuan
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				communist_acceptance = 75
+				army_morale_factor = 0.075
+				drift_defense_factor = 0.25
+				political_power_factor = 0.05
+			}
+		}
+	#新疆
+		#双马记
+		SIK_Tale_of_Twin_Mas = {
+			picture = SIK_Tale_of_Twin_Mas
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = -0.25
+				production_speed_infrastructure_factor = -0.15
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+			}
+		}
+		#飞地行省
+		SIK_Enclave_Province = {
+			picture = SIK_Enclave_Province
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#东境骚动
+		SIK_Troubles_Eastward = {
+			picture = SSIK_Troubles_Eastward
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+	}
+}

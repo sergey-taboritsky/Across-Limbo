@@ -1,0 +1,146 @@
+SD_test_decision_cat = {
+	SD_test_decision_set_var = {
+		cost = 0
+		complete_effect = {
+			every_state = {
+				set_variable = { This.SD_man_poor_var = 55 }
+                set_variable = { This.SD_man_normal_var = 40 }
+                set_variable = { This.SD_man_rich_var = 5 }
+
+				set_variable = { This.SD_state_development_var = 20 }
+				set_variable = { This.SD_state_developing_var = 1 }
+				set_variable = { This.SD_state_undeveloped_var = 79 }
+			}
+		}
+	}
+	SD_test_decision_build_pie = {
+		cost = 0
+		complete_effect = {
+			every_state = {
+				SD_build_pie_man = yes
+			}
+		}
+	}
+	SD_test_decision_cal_pie = {
+		cost = 0
+		complete_effect = {
+			every_state = {
+				SD_add_man_from_develop = yes
+				SD_cal_pie_var_man = yes
+				SD_build_pie_man = yes
+                add_to_variable = {
+                    var = This.SD_state_development_var
+                    value = This.SD_state_developing_var
+                } 
+                clamp_variable = {
+                    var = This.SD_state_development_var
+                    min = 0
+                    max = 100
+                }
+				SD_build_pie_develop = yes
+			}
+		}
+	}
+	SD_test_decision_add_modifier = {
+		cost = 0
+		complete_effect = {
+			every_state = {
+				SD_cal_man_modifier = yes
+				add_dynamic_modifier = {
+					modifier = SD_manpower_modifier
+				}
+			}
+		}
+	}
+	SD_test_decision_monthly_update = {
+		cost = 0
+		complete_effect = {
+            every_owned_state = {
+
+                #人口
+                SD_add_man_from_develop = yes
+                SD_cal_pie_var_man = yes
+                SD_build_pie_man = yes
+                SD_cal_man_modifier = yes
+
+
+
+
+
+
+
+
+                #地区发展
+                SD_develop_civilian_economy = yes
+                add_to_variable = {
+                    var = This.SD_state_development_var
+                    value = This.SD_state_developing_var
+                } 
+                clamp_variable = {
+                    var = This.SD_state_development_var
+                    min = 0 
+                    max = 100
+                }
+                if = {
+                    limit = {
+                        NOT = {
+                            has_state_category = megalopolis
+                        }
+                        check_variable = {
+                            var = This.SD_state_development_var
+                            value = 100
+                            compare = greater_than_or_equals
+                        }
+                    }
+                    SD_state_update = yes
+                    set_variable = {
+                        var = This.SD_state_development_var
+                        value = 0
+                    }
+                    set_variable = {
+                        var = This.SD_state_undeveloped_var
+                        value = 100
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_state_category = megalopolis
+                        check_variable = {
+                            var = This.SD_state_development_var
+                            value = 100
+                            compare = greater_than_or_equals
+                        }
+                    }
+                    set_variable = {
+                        var = This.SD_state_developing_var
+                        value = 0
+                    }
+                } 
+                SD_build_pie_develop = yes
+
+            }
+		}
+	}
+	TEST_decision_1 = {
+		cost = 0
+        available = {
+            capital = {
+                free_building_slots = {
+                    building = industrial_complex
+                    size > 0
+                }
+            }
+        }
+		complete_effect = {
+			every_country = {
+				set_politics = { 
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					neutrality = 100
+				}
+			}
+		}
+	}
+}

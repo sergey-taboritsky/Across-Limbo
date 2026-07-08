@@ -1,0 +1,20 @@
+TNW_fire_super_event = {
+	hidden_effect = {
+		set_variable = {
+			TNW_super_event = TNW_temp_super_event
+		}
+		meta_effect = {
+			text = {
+				scoped_play_song = "TNW_[SUPER]"
+			}
+			SUPER = "[?TNW_super_event.GetTokenKey]"
+		}
+	}
+}
+
+d_fire_super_event = {
+	set_temp_variable = {
+		TNW_temp_super_event = args^0
+	}
+	TNW_fire_super_event = yes
+}

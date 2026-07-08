@@ -1,0 +1,37 @@
+﻿capital = 608
+
+#oob = "PRC_1936"
+
+set_stability = 0.6
+set_war_support = 0.7
+
+recruit_character = PRC_Chen_Qiyuan
+recruit_character = PRC_Ji_Fang
+recruit_character = PRC_Lin_Biao
+recruit_character = PRC_Politburo_of_the_CCP
+
+save_global_event_target_as = WTT_communist_china
+
+set_politics = {
+	ruling_party = Social_democracy 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 20
+	syndicalism = 13
+	Social_democracy = 12
+	socialism = 29
+	Liberalism = 6
+	Conservatism = 6
+	Authoritarianism = 7
+	Absolutism = 3
+	Nationalism = 4
+}
+
+add_ideas = {
+	closed_economy
+	service_by_requirement
+	partial_economic_mobilisation
+}

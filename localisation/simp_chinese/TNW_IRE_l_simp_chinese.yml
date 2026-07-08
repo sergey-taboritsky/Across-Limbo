@@ -1,0 +1,28 @@
+﻿l_simp_chinese:
+#人物
+ IRE_Peadar_ODonnell: "皮达尔·奥唐奈尔"
+ IRE_Peadar_ODonnell_desc: ""
+
+#民族精神
+ 
+#政党名字
+ IRE_communist_party: "-"
+ IRE_communist_party_long: "-"
+ IRE_syndicalism_party: "工团党"
+ IRE_syndicalism_party_long: "爱尔兰工团党(Páirtí Siondacáiteach na hÉireann)"
+ IRE_socialism_party: "自由爱尔兰"
+ IRE_socialism_party_long: "自由爱尔兰(Saor Éire)"
+ IRE_Social_democracy_party: "自由爱尔兰"
+ IRE_Social_democracy_party_long: "自由爱尔兰(Saor Éire)"
+ IRE_Liberalism_party: "-"
+ IRE_Liberalism_party_long: "-"
+ IRE_Conservatism_party: "-"
+ IRE_Conservatism_party_long: "-"
+ IRE_Authoritarianism_party: "自由爱尔兰"
+ IRE_Authoritarianism_party_long: "自由爱尔兰(Saor Éire)"
+ IRE_Absolutism_party: "-"
+ IRE_Absolutism_party_long: "-"
+ IRE_Nationalism_party: "-"
+ IRE_Nationalism_party_long: "-"
+
+#事件

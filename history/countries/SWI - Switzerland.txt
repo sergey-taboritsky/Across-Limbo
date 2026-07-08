@@ -1,0 +1,32 @@
+﻿capital = 3
+
+set_research_slots = 3
+
+##### Characters for both
+recruit_character = SWI_federal_assembly 
+recruit_character = SWI_max_leo_keller
+recruit_character = SWI_fritz_platten
+recruit_character = SWI_henri_guisan
+recruit_character = SWI_hans_oehler
+recruit_character = SWI_etienne_primault
+recruit_character = SWI_hermann_hessel_lorenz
+recruit_character = SWI_carl_jacob_burckhardt
+recruit_character = SWI_johannes_baumann
+recruit_character = SWI_roger_masson
+recruit_character = SWI_giuseppe_motta
+recruit_character = SWI_ernst_wetter
+
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1935.10.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Liberalism = 96
+	Nationalism = 2
+	communist = 2
+}
+
+set_stability = 0.85

@@ -1,0 +1,189 @@
+characters = {
+	#保罗·弗勒里希
+	DDR_Paul_Frolich = {
+		name = DDR_Paul_Frolich
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DDR_Paul_Frolich
+			}
+		}
+		country_leader = {
+			desc = DDR_Paul_Frolich_desc
+			ideology = Marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#安东·罗辛克
+	DDR_Anton_Rosinke = {
+		name = DDR_Anton_Rosinke
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DDR_Anton_Rosinke
+			}
+		}
+		country_leader = {
+			desc = DDR_Anton_Rosinke_desc
+			ideology = Anarchist_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#奥托·格罗提渥
+	DDR_Otto_Grotewohl = {
+		name = DDR_Otto_Grotewohl
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DDR_Otto_Grotewohl
+			}
+		}
+		country_leader = {
+			desc = DDR_Otto_Grotewohl_desc
+			ideology = Liberalism_socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#库尔特·舒马赫
+	DDR_Kurt_Schumacher = {
+		name = DDR_Kurt_Schumacher
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DDR_Kurt_Schumacher
+			}
+		}
+		country_leader = {
+			desc = DDR_Kurt_Schumacher_desc
+			ideology = Popular_Front
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#阿尔伯特·爱因斯坦
+	DDR_Albert_Einstein = {
+		name = DDR_Albert_Einstein
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DDR_Albert_Einstein
+			}
+		}
+		country_leader = {
+			desc = DDR_Albert_Einstein_desc
+			ideology = Left_wing_populism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#维利·布莱赫
+	DDR_Willi_Bleicher = {
+		name = DDR_Willi_Bleicher
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DDR_Willi_Bleicher
+			}
+		}
+		country_leader = {
+			desc = DDR_Willi_Bleicher_desc
+			ideology = Centralised_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#乔治·埃尔塞
+	DDR_Georg_Elser = {
+		name = DDR_Georg_Elser
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DDR_Georg_Elser
+			}
+		}
+		country_leader = {
+			desc = DDR_Georg_Elser_desc
+			ideology = Marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#卡尔·李卜克内西
+	DDR_libu_ke_neixi = {
+		name = DDR_libu_ke_neixi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_GSR_libu_ke_neixi
+			}
+		}
+		country_leader = {
+			desc = DDR_libu_ke_neixi_desc
+			ideology = Committee_Communism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#弗里德里希·保卢斯
+	DDR_Friedrich_Paulus = {
+		name = DDR_Friedrich_Paulus
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DDR_Friedrich_Paulus
+			}
+		}
+		corps_commander = {
+			traits={ trait_cautious armor_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+	#海因茨·古德里安
+	DDR_Heinz_Guderian = {
+		name = DDR_Heinz_Guderian
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DDR_Heinz_Guderian
+			}
+		}
+		corps_commander = {
+			traits={ brilliant_strategist career_officer armor_officer trickster panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+	#卡尔·邓尼茨
+	DDR_Karl_Donitz = {
+		name = DDR_Karl_Donitz
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DDR_Karl_Donitz
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=2
+		}
+	}
+}

@@ -1,0 +1,64 @@
+﻿capital = 500
+
+
+#oob = "BRA_1936"
+
+recruit_character = BRA_Getulio_Vargas
+recruit_character = BRA_Gustavo_Barroso
+recruit_character = BRA_Carlos_Marighella
+recruit_character = BRA_Carlos_Lacerda
+recruit_character = BRA_Adhemar_Barros
+
+recruit_character = BRA_Luis_Carlos_Prestes
+recruit_character = BRA_Jose_Almerico_Almeida
+recruit_character = BRA_Francisco_Campos
+recruit_character = BRA_Filinto_Muller
+recruit_character = BRA_Oswaldo_Aranha
+recruit_character = BRA_Alexandra_Filho
+
+recruit_character = BRA_Joao_Alberto
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1	
+}
+
+set_convoys = 40
+
+add_ideas = {
+	#country
+	BRA_Estrado_Novo
+	BRA_Red_Terror
+	BRA_Latino_Anticomintern_Pact
+	BRA_FLN_threat_2
+	#ministers
+	BRA_Oswaldo_Aranha_hog
+	BRA_Jose_Almerico_Almeida_advisor
+	BRA_Francisco_Campos_advisor
+	BRA_Filinto_Muller_advisor
+	BRA_Alexandra_Filho_advisor
+	BRA_Luis_Carlos_Prestes_theorist
+}
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1946.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 3
+	syndicalism = 6
+	socialism = 7
+	Social_democracy = 6
+	Liberalism = 10
+	Conservatism = 14
+	Authoritarianism = 21
+	Absolutism = 25
+	Nationalism = 8
+}

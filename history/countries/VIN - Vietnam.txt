@@ -1,0 +1,49 @@
+﻿capital = 728 #Hanoi
+
+#oob = "VIN_1936"
+
+set_research_slots = 3
+
+recruit_character = VIN_Ho_Huu_Tong
+recruit_character = VIN_Ta_Thu_Thau
+recruit_character = VIN_Nguyen_Ai_Guoc
+recruit_character = VIN_Le_Hong_Phong
+recruit_character = VIN_Nguyen_An_Ninh
+recruit_character = VIN_Nguyen_Van_Tam
+recruit_character = VIN_Nguyen_Tuong_Tam
+recruit_character = VIN_Vu_Hong_Khanh
+recruit_character = VIN_Truong_Boi_Cong
+recruit_character = VIN_Nguyen_Hai_Than
+# Starting tech
+# clone of France
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+}
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	Authoritarianism = 10
+	communist = 15
+	syndicalism = 2
+	Social_democracy = 8
+	socialism = 34
+	Liberalism = 8
+	Conservatism = 3
+	Absolutism = 9
+	Nationalism = 11
+}

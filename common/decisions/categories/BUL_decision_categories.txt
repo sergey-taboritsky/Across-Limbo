@@ -1,0 +1,12 @@
+BUL_National_Congress_decision_category = {
+	icon = GFX_decision_category_BUL_National_Congress
+	allowed = {
+		original_tag = BUL
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = yes
+	scripted_gui = TNW_BUL_parliament_gui
+	priority = 100
+}

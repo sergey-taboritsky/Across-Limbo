@@ -1,0 +1,16 @@
+﻿#这是一个用于省份改名的假tag
+capital = 1
+
+set_popularities = {
+	Authoritarianism = 12.5
+	communist = 12.5
+	Social_democracy = 12.5
+	socialism = 12.5
+	Liberalism = 12.5
+	Conservatism = 12.5
+	Absolutism = 12.5
+	Nationalism = 12.5
+}
+
+
+recruit_character = MARS_Martian

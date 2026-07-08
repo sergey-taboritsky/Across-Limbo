@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+#政党
+ AST_communist_party:0 "澳大利亚共产党"
+ AST_socialism_party:0 "澳大利亚工党-左派"
+ AST_Social_democracy_party:0 "澳大利亚工党"
+ AST_Liberalism_party:0 "统一澳大利亚党"
+ AST_Conservatism_party:0 "澳大利亚乡村党"
+ AST_Authoritarianism_party:0 "英国总督府"
+ AST_Absolutism_party:0 "澳大利亚武装部队"
+ AST_Nationalism_party:0 "极右翼群体"
+
+#人物
+ AST_Joseph_Benedict_Chifley: "约瑟夫·班纳迪克特·奇夫利"

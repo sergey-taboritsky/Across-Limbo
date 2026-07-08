@@ -1,0 +1,36 @@
+characters = {
+	#瓦希卜·加奈姆
+	TUN_Wahib_al_Ghanim = {
+		name = TUN_Wahib_al_Ghanim
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TUN_Wahib_al_Ghanim
+			}
+		}
+		country_leader = {
+			desc = TUN_Wahib_al_Ghanim_desc
+			ideology = Left_wing_populism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { 
+			}
+		}
+	}
+	#伊德里斯一世
+	LBA_Idris_I = {
+		name = LBA_Idris_I
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_LBA_Idris_I
+			}
+		}
+		country_leader = {
+			desc = LBA_Idris_I_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { 
+			}
+		}
+	}
+}

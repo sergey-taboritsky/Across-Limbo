@@ -1,0 +1,172 @@
+characters = {
+	#胡佑松
+	VIN_Ho_Huu_Tong = {
+		name = VIN_Ho_Huu_Tong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_VIN_Ho_Huu_Tong
+			}
+		}
+		country_leader = {
+			desc = VIN_Ho_Huu_Tong_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#谢秋收
+	VIN_Ta_Thu_Thau = {
+		name = VIN_Ta_Thu_Thau
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_VIN_Ta_Thu_Thau
+			}
+		}
+		country_leader = {
+			desc = VIN_Ta_Thu_Thau_desc
+			ideology = Classical_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#阮爱国
+	VIN_Nguyen_Ai_Guoc = {
+		name = VIN_Nguyen_Ai_Guoc
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_VIN_Nguyen_Ai_Guoc
+			}
+		}
+		country_leader = {
+			desc = VIN_Nguyen_Ai_Guoc_desc
+			ideology = Liberalism_socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#黎鸿峰
+	VIN_Le_Hong_Phong = {
+		name = VIN_Le_Hong_Phong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_VIN_Le_Hong_Phong
+			}
+		}
+		country_leader = {
+			desc = VIN_Le_Hong_Phong_desc
+			ideology = market_socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#阮安宁
+	VIN_Nguyen_An_Ninh = {
+		name = VIN_Nguyen_An_Ninh
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_VIN_Nguyen_An_Ninh
+			}
+		}
+		country_leader = {
+			desc = VIN_Nguyen_An_Ninh_desc
+			ideology = Popular_Front
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#阮文心
+	VIN_Nguyen_Van_Tam = {
+		name = VIN_Nguyen_Van_Tam
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_VIN_Nguyen_Van_Tam
+			}
+		}
+		country_leader = {
+			desc = VIN_Nguyen_Van_Tam_desc
+			ideology = tridemism_liberal
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#阮祥三
+	VIN_Nguyen_Tuong_Tam = {
+		name = VIN_Nguyen_Tuong_Tam
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_VIN_Nguyen_Tuong_Tam
+			}
+		}
+		country_leader = {
+			desc = VIN_Nguyen_Tuong_Tam_desc
+			ideology = tridemism_conservative
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#武鸿卿
+	VIN_Vu_Hong_Khanh = {
+		name = VIN_Vu_Hong_Khanh
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_VIN_Vu_Hong_Khanh
+			}
+		}
+		country_leader = {
+			desc = VIN_Vu_Hong_Khanh_desc
+			ideology = Left_wing_corporatism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#张佩公
+	VIN_Truong_Boi_Cong = {
+		name = VIN_Truong_Boi_Cong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_VIN_Truong_Boi_Cong
+			}
+		}
+		country_leader = {
+			desc = VIN_Truong_Boi_Cong_desc
+			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#阮海臣
+	VIN_Nguyen_Hai_Than = {
+		name = VIN_Nguyen_Hai_Than
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_VIN_Nguyen_Hai_Than
+			}
+		}
+		country_leader = {
+			desc = VIN_Nguyen_Hai_Than_desc
+			ideology = Ultra_Nationalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

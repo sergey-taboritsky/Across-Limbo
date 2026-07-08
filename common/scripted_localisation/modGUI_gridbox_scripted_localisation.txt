@@ -1,0 +1,20 @@
+
+defined_text = { # Country
+	name = GetgridFactionName
+	text = {
+		localization_key = "[THIS.GetFactionName]"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

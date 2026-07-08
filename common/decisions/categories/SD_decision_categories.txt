@@ -1,0 +1,6 @@
+SD_test_decision_cat = {
+	visible = {
+		is_debug = yes
+	}
+	priority = 100
+}

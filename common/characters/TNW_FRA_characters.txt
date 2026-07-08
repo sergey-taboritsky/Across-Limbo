@@ -1,0 +1,570 @@
+characters = {
+	#马塞尔·加香
+	FRA_Marcel_Cachin = {
+		name = FRA_Marcel_Cachin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Marcel_Cachin
+			}
+		}
+		country_leader = {
+			desc = FRA_Marcel_Cachin_desc
+			ideology = Marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#让·齐罗姆斯基
+	FRA_Jean_Zyromski = {
+		name = FRA_Jean_Zyromski
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Jean_Zyromski
+			}
+		}
+		country_leader = {
+			desc = FRA_Jean_Zyromski_desc
+			ideology = Classical_Syndicalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#艾伯特·特雷特
+	FRA_Albert_Treint = {
+		name = FRA_Albert_Treint
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Albert_Treint
+			}
+		}
+		country_leader = {
+			desc = FRA_Albert_Treint_desc
+			ideology = Marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = FRA_Albert_Treint_hog
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#鲍里斯·苏瓦林
+	FRA_Boris_Souvarine = {
+		name = FRA_Boris_Souvarine
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Boris_Souvarine
+			}
+		}
+		country_leader = {
+			desc = FRA_Boris_Souvarine_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = FRA_Boris_Souvarine_hog
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#公社中央理事会
+	FRA_Communard_Central_Committee = {
+		name = FRA_Communard_Central_Committee
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Communard_Central_Committee
+			}
+		}
+		country_leader = {
+			desc = FRA_Communard_Central_Committee_desc
+			ideology = Marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#苏珊娜·吉罗
+	FRA_Suzanne_Girault = {
+		name = FRA_Suzanne_Girault
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Suzanne_Girault
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Suzanne_Girault_advisor
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#路易斯·塞利尔
+	FRA_Louis_Sellier = {
+		name = FRA_Louis_Sellier
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Louis_Sellier
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Louis_Sellier_advisor
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#吕西安·埃拉尔德
+	FRA_Lucien_Herard = {
+		name = FRA_Lucien_Herard
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Lucien_Herard
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Lucien_Herard_advisor
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#皮埃尔·塞马尔
+	FRA_Pierre_Semard = {
+		name = FRA_Pierre_Semard
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Pierre_Semard
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Pierre_Semard_advisor
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#阿尔弗雷德·罗斯默
+	FRA_Alfred_Rosmer = {
+		name = FRA_Alfred_Rosmer
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Alfred_Rosmer
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Alfred_Rosmer_advisor
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = FRA_Alfred_Rosmer_hog
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#雷蒙·莫利尼尔
+	FRA_Raymond_Molinier = {
+		name = FRA_Raymond_Molinier
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Raymond_Molinier
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Raymond_Molinier_advisor
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = FRA_Raymond_Molinier_hog
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#亨利·莫利尼尔
+	FRA_Henri_Molinier = {
+		name = FRA_Henri_Molinier
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Henri_Molinier
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Henri_Molinier_advisor
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#皮埃尔·弗兰克
+	FRA_Pierre_Frank = {
+		name = FRA_Pierre_Frank
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Pierre_Frank
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Pierre_Frank_advisor
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#鲁道夫·普拉格
+	FRA_Rudolphe_Prager = {
+		name = FRA_Rudolphe_Prager
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Rudolphe_Prager
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Rudolphe_Prager_advisor
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#罗杰·福里尔
+	FRA_Roger_Foirier = {
+		name = FRA_Roger_Foirier
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Roger_Foirier
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Roger_Foirier_advisor
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#维克托·塞尔日
+	FRA_Victor_Serge = {
+		name = FRA_Victor_Serge
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Victor_Serge
+			}
+		}
+		country_leader = {
+			desc = FRA_Victor_Serge_desc
+			ideology = Liberalism_socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#保罗·拉西尼尔
+	FRA_Paul_Rassinier = {
+		name = FRA_Paul_Rassinier
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Paul_Rassinier
+			}
+		}
+		country_leader = {
+			desc = FRA_Paul_Rassinier_desc
+			ideology = reformism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#让·鲁
+	FRA_Jean_Rous = {
+		name = FRA_Jean_Rous
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Jean_Rous
+			}
+		}
+	}
+	#夏尔·德勒斯特兰
+	FRA_Charles_Delestraint = {
+		name = FRA_Charles_Delestraint
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Charles_Delestraint
+				small = GFX_portrait_small_FRA_Charles_Delestraint
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = FRA_Charles_Delestraint_theorist
+			allowed = { original_tag = FRA }
+			traits = {
+				mobile_warfare_expert
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		corps_commander = {
+			desc = FRA_Charles_Delestraint_theorist_desc
+			traits = { trait_cautious inflexible_strategist war_hero }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#乔治·卡特鲁
+	FRA_Georges_Catroux = {
+		name = FRA_Georges_Catroux
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Georges_Catroux
+				small = GFX_portrait_small_FRA_Georges_Catroux
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = FRA_Georges_Catroux_army_chief
+			allowed = { original_tag = FRA }
+			traits = {
+			}
+			#ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		field_marshal = {
+			desc = FRA_Georges_Catroux_commander_desc
+			traits = { war_hero armor_officer panzer_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	#皮埃尔·比约特
+	FRA_Pierre_Billotte = {
+		name = FRA_Pierre_Billotte
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_Pierre_Billotte_army_large
+				small = GFX_portrait_FRA_Pierre_Billotte_army_small
+			}
+		}
+		corps_commander = {
+			desc = FRA_Pierre_Billotte_commander_desc
+			traits = { war_hero armor_officer panzer_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	#欧内斯特·佩蒂特
+	FRA_Ernest_Petit = {
+		name = FRA_Ernest_Petit
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_Ernest_Petit_army_large
+				small = GFX_portrait_FRA_Ernest_Petit_army_small
+			}
+		}
+		corps_commander = {
+			desc = FRA_Ernest_Petit_commander_desc
+			traits = { war_hero }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	#罗杰·金斯伯格
+	FRA_Roger_Ginsburger = {
+		name = FRA_Roger_Ginsburger
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_Roger_Ginsburger_army_large
+				small = GFX_portrait_FRA_Roger_Ginsburger_army_small
+			}
+		}
+		corps_commander = {
+			desc = FRA_Roger_Ginsburger_commander_desc
+			traits = { war_hero }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	#亨利·罗尔-丹吉
+	FRA_Henri_Rol_Tanguy = {
+		name = FRA_Henri_Rol_Tanguy
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_Henri_Rol_Tanguy_army_large
+				small = GFX_portrait_FRA_Henri_Rol_Tanguy_army_small
+			}
+		}
+		corps_commander = {
+			desc = FRA_Henri_Rol_Tanguy_commander_desc
+			traits = { war_hero }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	#夏尔·蒂永
+	FRA_Charles_Tillon = {
+		name = FRA_Charles_Tillon
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_Charles_Tillon_army_large
+				small = GFX_portrait_FRA_Charles_Tillon_army_small
+			}
+		}
+		navy_leader = {
+			desc = FRA_Charles_Tillon_navy_chief_desc
+			traits = { gunnery_expert battleship_adherent ironside }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = FRA_Charles_Tillon_navy_chief
+			traits = { navy_chief_decisive_battle_2 }
+			cost = 100
+		}
+	}
+	#马提亚尔·亨利·瓦林
+	FRA_Martial_Henri_Valin = {
+		name = FRA_Martial_Henri_Valin
+		portraits = {
+			army = {
+				small = GFX_portrait_FRA_Martial_Henri_Valin_army_small
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = FRA_Martial_Henri_Valin_air_chief
+			traits = { air_chief_ground_support_3 }
+			cost = 200
+		}
+	}
+	#国民法国
+	#皮埃尔·赖伐尔
+	FRA_Pierre_Laval = {
+		name = FRA_Pierre_Laval
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FRA_Pierre_Reival
+			}
+		}
+		country_leader = {
+			desc = FRA_Pierre_Laval_desc
+			ideology = civilian_dictatorship
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+				FRA_Coriolanus
+			}
+		}
+	}
+}

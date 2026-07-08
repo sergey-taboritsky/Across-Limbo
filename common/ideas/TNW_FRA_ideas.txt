@@ -1,0 +1,55 @@
+ideas = {
+	country = {
+		#革命始源地
+		FRA_Home_of_the_Revolution = {
+			picture = GFX_idea_FRA_Home_of_the_Revolution
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				communist_acceptance = 75
+				syndicalism_acceptance = 75
+				socialism_acceptance = 50
+				Social_democracy_acceptance = 25
+				drift_defence_factor = 0.50
+				production_factory_efficiency_gain_factor = 0.25
+				global_building_slots_factor = 0.1
+			}
+		}
+		#日益严峻的人口问题
+		FRA_Growing_demographic_problems = {
+			picture = GFX_idea_FRA_Growing_demographic_problems
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.25
+				surrender_limit = -0.25
+				monthly_population = -0.5
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		#雪月遗产
+		FRA_Legacy_of_Levose_Cachin = {
+			picture = GFX_idea_FRA_Legacy_of_Levose
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				party_popularity_stability_factor = 0.25
+				resistance_growth = -0.1
+				resistance_damage_to_garrison = -0.1
+				army_morale_factor = 0.05
+				production_factory_start_efficiency_factor = 0.10
+				consumer_goods_factor = -0.05
+				communist_drift = 0.01
+			}
+		}
+	}
+}

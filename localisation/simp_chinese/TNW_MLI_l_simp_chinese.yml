@@ -1,0 +1,40 @@
+﻿l_simp_chinese:
+#领导人
+ MLI_Mamadou_Konate: "马马杜·科纳特"
+ MLI_Mamadou_Konate_desc: "§Y出生于：§!§L1897年5月11日，法属西非苏丹省，卡蒂§!"
+
+#政党名字
+ MLI_communist_party: "苏丹集团"
+ MLI_communist_party_long: "苏丹集团(Union Soudanaise)"
+ MLI_syndicalism_party: "苏丹集团"
+ MLI_syndicalism_party_long: "苏丹集团(Union Soudanaise)"
+ MLI_socialism_party: "苏丹集团"
+ MLI_socialism_party_long: "苏丹集团(Union Soudanaise)"
+ MLI_Social_democracy_party: "苏丹集团"
+ MLI_Social_democracy_party_long: "苏丹集团(Union Soudanaise)"
+ MLI_Liberalism_party: "-"
+ MLI_Liberalism_party_long: "-"
+ MLI_Conservatism_party: "-"
+ MLI_Conservatism_party_long: "-"
+ MLI_Authoritarianism_party: "苏丹集团"
+ MLI_Authoritarianism_party_long: "苏丹集团(Union Soudanaise)"
+ MLI_Absolutism_party: "-"
+ MLI_Absolutism_party_long: "-"
+ MLI_Nationalism_party: "-"
+ MLI_Nationalism_party_long: "-"
+
+#民族精神
+
+#事件
+
+#新闻
+
+#GUI
+
+#BOP
+
+#决议
+
+#国策
+ #: ""
+ #_desc: ""

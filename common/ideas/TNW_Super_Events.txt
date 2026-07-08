@@ -1,0 +1,29 @@
+ideas = {
+	hidden_ideas = {
+		King_George_V_death = {}
+		King_George_V_death_D = {}
+		King_George_V_death_A = {}
+		World_War_II = {}
+		World_War_II_D = {}
+		World_War_II_A = {}
+		Bolsheviks_marched_westward = {}
+		Bolsheviks_marched_westward_D = {}
+		Bolsheviks_marched_westward_A = {}
+		Third_Balkan_War = {}
+        Third_Balkan_War_D = {}
+		Third_Balkan_War_A = {}
+		Operation_Thunderstorm = {}
+        Operation_Thunderstorm_D = {}
+		Operation_Thunderstorm_A = {}
+		Nuke_Bomb = {}
+		Nuke_Bomb_D = {}
+		Nuke_Bomb_A = {}
+
+		SE_Turkish_Civil_War = {}
+		SE_Turkish_Civil_War_D = {}
+		SE_Turkish_Civil_War_A = {}
+		SE_Central_Plains_War = {}
+		SE_Central_Plains_War_D = {}
+		SE_Central_Plains_War_A = {}
+	}
+}

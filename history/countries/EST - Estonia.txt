@@ -1,0 +1,44 @@
+﻿capital = 812
+
+set_research_slots = 3
+
+add_ideas = {
+	limited_conscription
+}
+
+recruit_character = EST_konstantin_pats
+recruit_character = EST_artur_sirk
+recruit_character = EST_johannes_kabin
+recruit_character = EST_jaan_tonisson
+recruit_character = EST_andres_larka
+recruit_character = EST_oskar_eiriksson
+recruit_character = EST_leo_sepp
+recruit_character = EST_richard_veermaa
+recruit_character = EST_alex_nirk
+recruit_character = EST_richard_tomberg
+recruit_character = EST_alfred_vendt
+recruit_character = EST_juhan_tuuling
+recruit_character = EST_nikolay_g_karotamm
+recruit_character = EST_voldemar_mere
+recruit_character = EST_alfons_rebane
+recruit_character = EST_juri_uluots
+recruit_character = EST_boris_kumm
+recruit_character = EST_august_rei
+recruit_character = EST_jaan_anvelt
+recruit_character = EST_johan_laidoner
+
+set_convoys = 5
+
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1932.5.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Liberalism = 20
+	Nationalism = 15
+	communist = 5
+	Authoritarianism = 60
+}

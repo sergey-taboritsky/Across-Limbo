@@ -1,0 +1,19 @@
+characters = {
+	#杜阿尔特·努诺
+	ANG_Duarte_Nuno = {
+		name = ANG_Duarte_Nuno
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ANG_Duarte_Nuno
+			}
+		}
+		country_leader = {
+			desc = ANG_Duarte_Nuno_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

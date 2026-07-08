@@ -1,0 +1,44 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_second_leader_button_icon"
+		texturefile = "gfx/interface/second_leader_button_icon.dds"
+	}
+
+	### Portrait
+
+	spriteType = {
+		name = "GFX_second_leader_portrait_Juan_Negrin"
+		texturefile = "gfx/characters/SPR_juan_negrin.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_second_leader_portrait_Bogdan_Filov"
+		texturefile = "gfx/characters/BUL_bogdan_filov.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_second_leader_portrait_Deng_Yanda"
+		texturefile = "gfx/characters/CHI_Deng_Yanda.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_second_leader_portrait_Li_Zongren"
+		texturefile = "gfx/characters/CHI_Li_Zongren.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_second_leader_portrait_Fang_Zhimin"
+		texturefile = "gfx/characters/CHI_Fang_Zhimin.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_second_leader_portrait_Ismet_Inonu"
+		texturefile = "gfx/characters/TUR_Ismet_Inonu.png"
+		legacy_lazy_load = no
+	}
+	#spriteType = {
+	#	name = "GFX_second_leader_portrait_SOMEBODY_NAME"
+	#	texturefile = "gfx/leaders/ENG/Portrait_TARGET_TAG_SOMEBODY_NAME.dds"
+	#	legacy_lazy_load = no
+	#}
+}

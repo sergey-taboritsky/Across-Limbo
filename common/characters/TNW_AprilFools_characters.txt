@@ -1,0 +1,240 @@
+characters = {
+	###蒋介石
+	TNW_AF_Chian_Kaishek = {
+		name = TNW_AF_Chian_Kaishek
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Chian_Kaishek
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Chian_Kaishek_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###张发奎 中兴省
+	TNW_AF_Zhang_Fakui = {
+		name = TNW_AF_Zhang_Fakui
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Zhang_Fakui
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Zhang_Fakui_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###冯玉祥 太平省
+	TNW_AF_Feng_Yuxiang = {
+		name = TNW_AF_Feng_Yuxiang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Feng_Yuxiang
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Feng_Yuxiang_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###李宗仁 永宁省
+	TNW_AF_Li_Zongren = {
+		name = TNW_AF_Li_Zongren
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Li_Zongren
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Li_Zongren_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###孙科 永安省
+	TNW_AF_Sun_Fo = {
+		name = TNW_AF_Sun_Fo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Sun_Fo
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Sun_Fo_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###莫里斯·科恩
+	TNW_AF_Maurice_Cohen = {
+		name = TNW_AF_Maurice_Cohen
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Maurice_Cohen
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Maurice_Cohen_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###邓泽如
+	TNW_AF_Deng_Zeru = {
+		name = TNW_AF_Deng_Zeru
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Deng_Zeru
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Deng_Zeru
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###金九
+	TNW_AF_Kim_Koo = {
+		name = TNW_AF_Kim_Koo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Kim_Koo
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Kim_Koo_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###李卜克内西
+	TNW_AF_Karl_Leibknecht = {
+		name = TNW_AF_Karl_Leibknecht
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Karl_Leibknecht
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Karl_Leibknecht_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###麦凯撒
+	TNW_AF_Douglass_Macarthur = {
+		name = TNW_AF_Douglass_Macarthur
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Douglass_Macarthur
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Douglass_Macarthur_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###布哈林
+	TNW_AF_Nikolai_Bukharin = {
+		name = TNW_AF_Nikolai_Bukharin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Nikolai_Bukharin
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Nikolai_Bukharin_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###利奥泰
+	TNW_AF_Hubert_Lyautea = {
+		name = TNW_AF_Hubert_Lyautea
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Hubert_Lyautea
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Hubert_Lyautea_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###库恩贝拉
+	TNW_AF_Bela_Kun = {
+		name = TNW_AF_Bela_Kun
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Bela_Kun
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Bela_Kun_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	###哈姆
+	TNW_AF_Jeffery_Hamm = {
+		name = TNW_AF_Jeffery_Hamm
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_AF_Jeffery_Hamm
+			}
+		}
+		country_leader = {
+			desc = TNW_AF_Jeffery_Hamm_desc
+			ideology = tridemism_revolutionary
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

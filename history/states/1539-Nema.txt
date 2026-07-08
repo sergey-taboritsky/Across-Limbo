@@ -1,0 +1,22 @@
+state = {
+	id = 1539
+	name = "STATE_1539"
+
+	history = {
+		owner = MLI
+		add_core_of = MLI
+		add_core_of = TRZ
+		add_core_of = MLI
+		victory_points = { 14249 2 }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		14249 14262 14432
+	}
+	manpower = 34471
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+}

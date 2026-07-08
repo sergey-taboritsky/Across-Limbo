@@ -1,0 +1,74 @@
+ideas = {
+	country = {
+        #二十载红色伦敦
+        ENG_Twenty_Years_of_Red_London = {
+            picture = GFX_idea_ENG_Twenty_Years_of_Red_London
+            allowed = {
+				always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.05
+                army_speed_factor = 0.05
+                breakthrough_factor = 0.05
+                supply_consumption_factor = 0.1
+                max_planning = -0.05
+            }
+        }
+		#莫斯利主义经济
+		ENG_Mosleynomics = {
+			picture = GFX_idea_ENG_Mosleynomics
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_cost = 0.25
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				custom_modifier_tooltip = ENG_Mosleynomics_modifier_text
+			}
+		}
+		#不满的工人
+		ENG_Unsatisfied_workers = {
+			picture = GFX_idea_ENG_Unsatisfied_workers
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.01
+				conscription_factor = -0.15
+				industrial_capacity_factory = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				local_resources_factor = -0.1
+				industrial_capacity_dockyard = -0.1
+				refit_ic_cost = 0.1
+				refit_speed = -0.1
+				repair_speed_factor = -0.1
+			}
+		}
+		#分裂的国家机器
+		ENG_splitting_government = {
+			picture = GFX_idea_ENG_splitting_government
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				mobilization_laws_cost_factor = 0.05
+				trade_laws_cost_factor  = 0.05
+				economy_cost_factor = 0.05
+				political_advisor_cost_factor = 0.1
+				theorist_cost_factor = 0.1
+			}	
+		}
+	}
+}

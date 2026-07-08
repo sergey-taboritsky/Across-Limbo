@@ -1,0 +1,16 @@
+characters = {
+	CHI_Ji_Hongchang = {
+		name = CHI_Ji_Hongchang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Ji_Hongchang
+			}
+		}
+		country_leader={
+			ideology= tridemism_authdem
+			desc = CHI_Ji_Hongchang_desc
+			expire="1936.1.1"
+		}
+		
+	}
+}

@@ -1,0 +1,28 @@
+characters = {
+	CHI_Ma_Bufang = {
+		name = CHI_Ma_Bufang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Ma_Bufang
+			}
+		}
+		country_leader={
+			ideology= Junshen_government
+			expire="1936.1.1"
+		}
+		
+	}
+	CHI_Ma_Buqing = {
+		name = CHI_Ma_Buqing
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Ma_Buqing
+			}
+		}
+		country_leader={
+			ideology= Junshen_government
+			expire="1936.1.1"
+		}
+		
+	}
+}
