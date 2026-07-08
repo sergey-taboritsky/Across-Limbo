@@ -1,0 +1,56 @@
+
+state={
+	id=119
+	name="STATE_119"
+
+	history={
+		owner = ENG
+		victory_points = {
+			3379 5 
+		}
+		victory_points = {
+			276 3
+		}
+		victory_points = {
+			15729 2
+		}
+		victory_points = {
+			11257 1
+		}
+		victory_points = {
+			15731 1
+		}
+		victory_points = {
+			3242 1
+		}
+		victory_points = {
+			3329 1
+		}
+		victory_points = {
+			15733 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+			dockyard = 2
+			3379 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = ENG
+		add_core_of = IRE
+
+	}
+
+	provinces={
+		276 385 3217 3242 3329 3379 11257 15728 15729 15731 15733 15734 
+	}
+	manpower=1288581
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+state={
+	id=1228
+	name="STATE_1228"
+
+	history={
+		owner = YUG
+		victory_points = {
+			11574 1
+		}
+		victory_points = {
+			16782 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YUG
+		add_core_of = BOS
+		add_core_of = CRO
+	}
+
+	provinces={
+		16782 11574
+	}
+	manpower=212181
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

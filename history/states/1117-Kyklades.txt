@@ -1,0 +1,26 @@
+state={
+	id=1117
+	name="STATE_1117"
+	
+	history={
+		owner = GRE
+		victory_points = {
+			13637 1
+		}
+		victory_points = {
+			3401 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = GRE
+	}
+	
+	provinces={
+		3401 13637 
+	}
+	manpower=76234
+	buildings_max_level_factor=1.000
+	state_category=small_island
+}

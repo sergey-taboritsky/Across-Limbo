@@ -1,0 +1,61 @@
+
+state={
+	id=13
+	name="STATE_13"
+	resources={
+		steel=2.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			3152 5 
+		}
+		victory_points = {
+			4640 3 
+		}
+		victory_points = {
+			11127 2 
+		}
+		victory_points = {
+			11443 1
+		}
+		victory_points = {
+			567 1
+		}
+		victory_points = {
+			9079 1
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 2
+			3152 = {
+				naval_base = 3
+				coastal_bunker = 1
+
+			}
+			4640 = {
+				naval_base = 1
+
+			}
+			567 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = EST
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		567 1271 3152 4640 9079 11057 11127 11426 11443 12615 
+	}
+	manpower=692835
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

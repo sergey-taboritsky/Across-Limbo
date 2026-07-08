@@ -1,0 +1,29 @@
+
+state={
+	id=756
+	name="STATE_756"
+
+	history={
+		owner = XSM
+		victory_points = {
+			10257 3 
+		}
+		victory_points = {
+			7418 2 
+		}
+		victory_points = {
+			5092 2
+		}
+		add_core_of = CHI
+		add_core_of = XSM
+
+	}
+
+	provinces={
+		4167 4256 4295 5092 7406 7418 10257 12713 
+	}
+	manpower=2368050
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

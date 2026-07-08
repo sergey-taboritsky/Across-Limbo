@@ -1,0 +1,49 @@
+
+state={
+	id=315
+	name="STATE_315"
+	resources={
+		steel=3.000
+	}
+
+	history={
+		owner = CUB
+		victory_points = {
+			7622 10
+		}
+		victory_points = {
+			4600 2 
+		}
+		victory_points = {
+			13705 1
+		}
+		victory_points = {
+			16227 1
+		}
+		victory_points = {
+			13703 1
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+			7622 = {
+				naval_base = 3
+				coastal_bunker = 2
+
+			}
+
+		}
+		add_core_of = CUB
+
+	}
+
+	provinces={
+		4600 7622 13703 13705 16224 16227 
+	}
+	manpower=1356782
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

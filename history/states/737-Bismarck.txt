@@ -1,0 +1,40 @@
+
+state={
+	id=737
+	name="STATE_737"
+
+	history={
+		owner = AST
+		victory_points = {
+			7251 5
+		}
+		victory_points = {
+			4352 1
+		}
+		victory_points = {
+			1329 1
+		}
+		victory_points = {
+			7339 1
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			7251 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = PNG
+
+	}
+
+	provinces={
+		1286 1301 1329 1361 4304 4352 4421 7251 7324 7339 7352 7412 10166 
+	}
+	manpower=138151
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

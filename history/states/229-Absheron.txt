@@ -1,0 +1,41 @@
+
+state={
+	id=229
+	name="STATE_229"
+	resources={
+		oil=70.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			7661 10
+		}
+		victory_points = {
+			1536 1
+		}
+		victory_points = {
+			4458 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+			7661 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = RUS
+		add_core_of = AZR
+
+	}
+
+	provinces={
+		1536 4458 7495 7661 16770
+	}
+	manpower=882000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

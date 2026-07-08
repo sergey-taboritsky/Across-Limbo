@@ -1,0 +1,61 @@
+
+state={
+	id=1513
+	name="STATE_1513"
+	resources={
+		oil=40.000
+		aluminium=2.000
+		tungsten=20.000
+	}
+
+	history={
+		owner = USA
+		victory_points = {
+			9713 5 
+		}
+		victory_points = {
+			6681 2 
+		}
+		victory_points = {
+			781 3 
+		}
+		victory_points = {
+			610 2
+		}
+		victory_points = {
+			3644 1
+		}
+		victory_points = {
+			15293 1
+		}
+		victory_points = {
+			9730 1
+		}
+		victory_points = {
+			4331 1
+		}
+		victory_points = {
+			13632 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			610 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = USA
+		add_core_of = CAL
+
+	}
+
+	provinces={
+		610 766 768 781 3588 3644 4331 6482 6665 6681 6745 6757 6772 9697 9713 9730 10159 11658 11698 13632 13701 15287 15288 15289 15290 15291 15292 15293 
+	}
+	manpower=729006
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

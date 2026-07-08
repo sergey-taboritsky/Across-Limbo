@@ -1,0 +1,40 @@
+
+state={
+	id=542
+	name="STATE_542"
+
+	history={
+		owner = ENG
+		victory_points = {
+		    13476 2
+		}
+		victory_points = {
+		    13475 1
+		}
+		victory_points = {
+		    13472 1
+		}
+		victory_points = {
+		    13474 1
+		}
+		victory_points = {
+		    8214 1
+		}
+		victory_points = {
+		    13477 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BOT
+
+	}
+
+	provinces={
+		8214 10963 13472 13474 13475 13476 13479 13477 7605 
+	}
+	manpower=192129
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

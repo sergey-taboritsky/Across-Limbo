@@ -1,34 +1,46 @@
-state = {
-	id = 489
-	name = "STATE_489"
-	resources = {
-		oil = 162.000
+
+state={
+	id=489
+	name="STATE_489"
+	resources={
+		oil=75.000
 	}
 
-	history = {
+	history={
 		owner = VEN
-		buildings = {
-			
-			
-			
-			
-			infrastructure = 4
-			1944 = {
-				naval_base = 5
-			}
-		}
-		set_state_flag = GDP_category_large_town
-		add_core_of = VEN
 		victory_points = {
-			1944 20
+			12772 5 
 		}
+		victory_points = {
+			5088 2
+		}
+		victory_points = {
+			14930 1
+		}
+		victory_points = {
+			14945 1
+		}
+		victory_points = {
+			1944 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			12772 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = VEN
+
 	}
 
-	provinces = {
-		1944 1997 7931 8092 12772 17370 17372 17384
+	provinces={
+		1944 5088 12772 13688 13691 14930 14931 14933 14945 
 	}
-	manpower = 1059732
-	buildings_max_level_factor = 1.000
-	state_category = city
-	local_supplies = 0.000
+	manpower=498443
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

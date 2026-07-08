@@ -1,0 +1,39 @@
+
+state={
+	id=1197
+	name="STATE_1197"
+
+	history={
+		owner = AUS
+		victory_points = {
+			9665 5
+		}
+		victory_points = {
+			6708 1 
+		}
+		victory_points = {
+			16821 1
+		}
+		victory_points = {
+			3684 1
+		}
+		victory_points = {
+			3703 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+
+		}
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		3684 3703 6708 9665 16821
+	}
+	manpower=926131
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,30 @@
+state={
+	id=1684
+	name="STATE_1684"
+
+	history={
+		owner = USA
+		victory_points = {
+			13066 3
+		}
+		buildings = {
+			infrastructure = 1
+			13066 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = USA
+		add_core_of = AKA
+
+	}
+
+	provinces={
+		13066 
+	}
+	manpower=2720
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

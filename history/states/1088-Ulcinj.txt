@@ -1,0 +1,25 @@
+state={
+	id=1088
+	name="STATE_1088"
+	
+	history={
+		owner = YUG
+		victory_points = {
+			13644 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = YUG
+		add_core_of = MNT
+		add_core_of = ALB
+	}
+	
+	provinces={
+		13644
+	}
+	manpower=20290
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

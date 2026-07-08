@@ -1,33 +1,40 @@
-state = {
-	id = 291
-	name = "STATE_291"
-	resources = {
-		oil = 42.000
-	}
+state={
+	id=291
+	name="STATE_291"
 
-	history = {
+	history={
 		owner = IRQ
-		add_core_of = IRQ
-		buildings = {
-			infrastructure = 5
-			air_base = 4
-			radar_station = 1
-			anti_air_building = 1
-			
-			
-			
+		victory_points = {
+			2097 10
 		}
 		victory_points = {
-			12046 30
+			1600 2
 		}
-		set_state_flag = state_renamings
-	}
+		victory_points = {
+			16481 2
+		}
+		victory_points = {
+			14669 1
+		}
+		victory_points = {
+			13327 1
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 4
 
-	provinces = {
-		3795 12046 15757
+		}
+		add_core_of = IRQ
+
 	}
-	manpower = 1353998
-	buildings_max_level_factor = 1.000
-	state_category = large_town
-	local_supplies = 0.000
+	
+	provinces={
+		1600 2097 3795 10793 12866 13327 14669 16481 16484 
+	}
+	manpower=816452
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

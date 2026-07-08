@@ -1,0 +1,36 @@
+
+state={
+	id=1032
+	name="STATE_1032"
+
+	history={
+		owner = JOR
+		victory_points = {
+			4017 2
+		}
+		victory_points = {
+			4115 2 
+		}
+		victory_points = {
+			10089 1
+		}
+		buildings = {
+			infrastructure = 1
+			4115 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = JOR
+
+	}
+
+	provinces={
+		4017 4115 10089 14665
+	}
+	manpower=44283
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

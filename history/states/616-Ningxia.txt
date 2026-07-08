@@ -1,0 +1,36 @@
+
+state={
+	id=616
+	name="STATE_616"
+
+	history={
+		owner = XSM
+		victory_points = {
+			14831 5
+		}
+		victory_points = {
+			10724 2
+		}
+		victory_points = {
+			8127 2
+		}
+		victory_points = {
+			8081 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = XSM
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		1985 3742 8081 10724 14831 8127 16684
+	}
+	manpower=1119059
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,43 @@
+
+state={
+	id=103
+	name="STATE_103"
+
+	history={
+		owner = YUG
+		victory_points = {
+			6889 2
+		}
+		victory_points = {
+			11816 1
+		}
+		victory_points = {
+			11901 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			6889 = {
+				naval_base = 1
+
+			}
+			11816 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = YUG
+		add_core_of = CRO
+		
+
+	}
+
+	provinces={
+		984 3868 3974 6889 11816 11901 13601 
+	}
+	manpower=1431700
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

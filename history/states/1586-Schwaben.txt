@@ -1,0 +1,39 @@
+
+state={
+	id=1586
+	name="STATE_1586"
+
+	history={
+		owner = GER
+		victory_points = {
+			708 3 
+		}
+		victory_points = {
+			6540 1
+		}
+		victory_points = {
+			9666 1
+		}
+		victory_points = {
+			12316 1
+		}
+		victory_points = {
+			11638 1
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = GER
+		add_core_of = BAV
+
+	}
+
+	provinces={
+		708 3690 6540 9666 11638 12316 
+	}
+	manpower=1004590
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

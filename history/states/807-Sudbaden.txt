@@ -1,0 +1,40 @@
+
+state={
+	id=807
+	name="STATE_807"
+
+	history={
+		owner = GER
+		set_demilitarized_zone = yes
+		victory_points = {
+			11640 3
+		}
+		victory_points = {
+			6934 2 
+		}
+		victory_points = {
+			6542 2
+		}
+		victory_points = {
+			6712 1
+		}
+		victory_points = {
+			3679 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+
+		}
+		add_core_of = GER
+		add_core_of = BAD
+
+	}
+
+	provinces={
+		3679 3692 6542 6712 6934 11640 
+	}
+	manpower=976400
+	buildings_max_level_factor=1.000
+	state_category=town
+}

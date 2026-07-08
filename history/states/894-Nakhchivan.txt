@@ -1,0 +1,25 @@
+state={
+	id=894
+	name="STATE_894"
+	
+	history={
+		owner = RUS
+		victory_points = {
+			6997 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = RUS
+		add_core_of = AZR
+
+	}
+	
+	provinces={
+		6997 
+	}
+	manpower=170000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

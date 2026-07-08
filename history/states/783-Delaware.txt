@@ -1,0 +1,30 @@
+state={
+	id=783
+	name="STATE_783"
+
+	history={
+		owner = USA
+		victory_points = {
+			13344 2
+		}
+		victory_points = {
+			9786 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			13344 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = USA
+	}
+	
+	provinces={
+		9786 13344 16363 
+	}
+	manpower=248000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

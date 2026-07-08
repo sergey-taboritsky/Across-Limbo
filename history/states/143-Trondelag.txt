@@ -1,0 +1,62 @@
+
+state={
+	id=143
+	name="STATE_143"
+
+	history={
+		owner = NOR
+		victory_points = {
+			3022 10
+		}
+		victory_points = {
+			6038 2
+		}
+		victory_points = {
+			6041 2
+		}
+		victory_points = {
+			9132 2
+		}
+		victory_points = {
+			11113 1 
+		}
+		victory_points = {
+			9139 1 
+		}
+		victory_points = {
+			115 1
+		}
+		victory_points = {
+			16761 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			3022 = {
+				naval_base = 4
+				coastal_bunker = 2
+
+			}
+			16761 = {
+				bunker = 5
+
+			}
+			6041 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = NOR
+
+
+	}
+
+	provinces={
+		21 107 115 3018 3022 3098 6038 6041 6116 6118 6173 9069 9132 9139 11113 11118 11169 11173 16761
+	}
+	manpower=246496
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

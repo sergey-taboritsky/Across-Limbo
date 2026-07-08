@@ -1,0 +1,27 @@
+
+state={
+	id=920
+	name="STATE_920"
+
+	history={
+		owner = XSM
+		set_demilitarized_zone = yes
+		victory_points = {
+			14796 2
+		}
+		victory_points = {
+			4313 1
+		}
+		add_core_of = CHI
+		add_core_of = XSM
+
+	}
+
+	provinces={
+		4313 7397 14795 14796 
+	}
+	manpower=181186
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

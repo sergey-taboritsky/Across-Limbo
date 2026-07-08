@@ -1,0 +1,32 @@
+state={
+	id=1682
+	name="STATE_1682"
+
+	history={
+		owner = CAN
+		victory_points = {
+			12571 2
+		}
+		victory_points = {
+			1799 2
+		}
+		buildings = {
+			infrastructure = 1
+			1799 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = CAN
+
+	}
+
+	provinces={
+		1799 4385 10228 10258 12231 12508 12571 
+	}
+	manpower=80900
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

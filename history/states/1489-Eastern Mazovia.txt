@@ -1,0 +1,42 @@
+
+state={
+	id=1489
+	name="STATE_1489"
+
+	history={
+		owner = POL
+		victory_points = {
+			402 3
+		}
+		victory_points = {
+			524 1
+		}
+		victory_points = {
+			11385 1
+		}
+		victory_points = {
+			4068 1
+		}
+		victory_points = {
+			16792 1
+		}
+		victory_points = {
+			12562 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+
+		}
+		add_core_of = POL
+
+	}
+
+	provinces={
+		402 4068 11385 12562 524 16792
+	}
+	manpower=770000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=874
+	name="STATE_874"
+
+	history={
+		owner = SCN
+		victory_points = {
+			1367 3 
+		}
+		victory_points = {
+			7256 2
+		}
+		victory_points = {
+			15188 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CHI
+		add_core_of = SCN
+
+	}
+
+	provinces={
+		1367 2091 7256 12274 12767 15187 15188 
+	}
+	manpower=4678831
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

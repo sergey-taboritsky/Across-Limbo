@@ -1,0 +1,29 @@
+state={
+	id=1308
+	name="STATE_1308"
+
+	history={
+		owner = ENG
+		set_demilitarized_zone = yes
+		victory_points = {
+			12120 1
+		}
+		buildings = {
+			infrastructure = 1
+			12120 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = VAN
+
+	}
+
+	provinces={
+		1237 4247 12120 
+	}
+	manpower=47697
+	buildings_max_level_factor=1.000
+	state_category=small_island
+}

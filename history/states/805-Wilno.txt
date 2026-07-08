@@ -1,0 +1,36 @@
+
+state={
+	id=805
+	name="STATE_805"
+
+	history={
+		owner = POL
+		victory_points = {
+			3320 10 
+		}
+		victory_points = {
+			15487 1
+		}
+		victory_points = {
+			15480 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 5
+
+		}
+		add_core_of = POL
+		add_core_of = LIT
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		3320 9274 9295 11342 15480 15487 
+	}
+	manpower=487000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

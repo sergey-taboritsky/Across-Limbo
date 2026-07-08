@@ -1,0 +1,20 @@
+state={
+	id=924
+	name="STATE_924"
+	
+	history={
+		owner = RUS
+		victory_points = {
+			10187 3
+		}
+		add_core_of = RUS
+		add_core_of = TAJ
+	}
+	
+	provinces={
+		1216 1919 10187 10488 
+	}
+	manpower=356890
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=1240
+	name="STATE_1240"
+
+	history={
+		owner = PAN
+		victory_points = {
+			4611 2 
+		}
+		victory_points = {
+			16259 2
+		}
+		victory_points = {
+			4624 2 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			4611 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = PAN
+
+	}
+
+	provinces={
+		1633 4611 4624 14044 16259 16260 16261 16262 
+	}
+	manpower=200800
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

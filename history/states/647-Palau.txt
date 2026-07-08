@@ -1,24 +1,46 @@
-state = {
-	id = 647
-	name = "STATE_647"
-	state_category = tiny_island
-	manpower = 12100
-	history = {
-		owner = USA
-		add_core_of = USA
+state={
+	id=647
+	name="STATE_647"
+
+	history={
+		owner = JAP
+		victory_points = {
+			4357 2
+		}
+		victory_points = {
+			12103 1
+		}
+		victory_points = {
+			13027 1
+		}
+		victory_points = {
+			13032 1
+		}
 		buildings = {
-			infrastructure = 2
-			air_base = 2
-			
-			radar_station = 3
+			infrastructure = 1
+			air_base = 1
 			4357 = {
 				naval_base = 1
-			}
-		}
+				coastal_bunker = 2
+				bunker = 2
 
-		victory_points = { 4357 1 }
+			}
+			12103 = {
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+
+		}
+		add_core_of = FSM
+
 	}
-	provinces = {
-		4357 12103
+
+	provinces={
+		4357 12103 13027 13032 
 	}
+	manpower=7700
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
 }

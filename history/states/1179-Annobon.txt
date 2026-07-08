@@ -1,0 +1,27 @@
+state={
+	id=1179
+	name="STATE_1179"
+	
+	history={
+		owner = SPR
+		victory_points = {
+			13750 1
+		}
+		buildings = {
+			13750 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = EQG
+
+	}
+	
+	provinces={
+		13750 
+	}
+	manpower=5232
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+}

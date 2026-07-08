@@ -1,0 +1,30 @@
+
+state={
+	id=954
+	name="STATE_954"
+
+	history={
+		owner = SPR
+		victory_points = {
+			8038 1 
+		}
+		buildings = {
+			8038 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = MOR
+		add_core_of = SAH
+
+	}
+
+	provinces={
+		5012 8038 10875 13229 13230 
+	}
+	manpower=12924
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

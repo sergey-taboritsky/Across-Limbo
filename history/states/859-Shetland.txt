@@ -1,0 +1,30 @@
+
+state={
+	id=859
+	name="STATE_859"
+
+	history={
+		owner = ENG
+		victory_points = {
+			6196 1 
+		}
+		buildings = {
+			infrastructure = 1
+			6196 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = ENG
+		add_core_of = SCO
+
+	}
+
+	provinces={
+		6196
+	}
+	manpower=20695
+	buildings_max_level_factor=1.000
+	state_category=small_island
+}

@@ -1,0 +1,21 @@
+state={
+	id=1652
+	name="STATE_1652"
+
+	history={
+		owner = ENG
+		victory_points = {
+			15395 1
+		}
+		add_core_of = SEY
+
+	}
+
+	provinces={
+		15395 
+	}
+	manpower=20
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+}

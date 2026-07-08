@@ -1,44 +1,54 @@
-state = {
-	id = 359
-	name = "STATE_359"
+state={
+	id=359
+	name="STATE_359"
 
-	history = {
+	history={
 		owner = USA
-		victory_points = { # Newark/Jersey City
-			6882 15
+		victory_points = {
+			6882 5 
 		}
-		victory_points = { # Trenton
-			11782 5
+		victory_points = {
+			16368 5 
 		}
-		victory_points = { # Camden
-			11900 10
+		victory_points = {
+			11782 2
 		}
-		victory_points = { # Long Branch
+		victory_points = {
+			11900 2
+		}
+		victory_points = {
+			16366 1
+		}
+		victory_points = {
 			9801 1
 		}
-		victory_points = { # Atlantic City
-			9864 5
+		victory_points = {
+			9864 1
+		}
+		victory_points = {
+			11740 1
+		}
+		victory_points = {
+			3693 1
 		}
 		buildings = {
-			
-			
-			
-			
-			infrastructure = 7
+			infrastructure = 3
+			industrial_complex = 7
 			air_base = 4
-			dockyard = 1
-			
 			6882 = {
-				naval_base = 2
+				naval_base = 1
 			}
 		}
 		add_core_of = USA
-	}
+		
 
-	provinces = {
-		3693 3863 11782 6882 9801 9864 11740 11900
 	}
-	manpower = 6219957
-	buildings_max_level_factor = 1.000
-	state_category = large_city
+	
+	provinces={
+		3693 3863 6882 9801 9864 11740 11782 11900 16366 16368 
+	}
+	manpower=4107000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

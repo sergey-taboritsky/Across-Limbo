@@ -1,0 +1,25 @@
+state={
+	id=824
+	name="STATE_824"
+
+	history={
+		owner = FRA
+		victory_points = {
+			743 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = FRA
+		add_core_of = BSQ
+
+	}
+
+	provinces={
+		743 13517 
+	}
+	manpower=30290
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

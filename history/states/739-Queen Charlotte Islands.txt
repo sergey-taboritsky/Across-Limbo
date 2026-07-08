@@ -1,0 +1,28 @@
+
+state={
+	id=739
+	name="STATE_739"
+
+	history={
+		owner = CAN
+		victory_points = {
+			1869 1
+		}
+		buildings = {
+			1869 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = CAN
+
+	}
+
+	provinces={
+		1869 
+	}
+	manpower=3015
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+}

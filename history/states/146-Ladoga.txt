@@ -1,0 +1,73 @@
+state={
+	id=146
+	name="STATE_146"
+
+	history={
+		owner = FIN
+		victory_points = {
+			9206 5
+		}
+		victory_points = {
+			3187 2
+		}
+		victory_points = {
+			6153 1
+		}
+		victory_points = {
+			3133 1
+		}
+		victory_points = {
+			6150 1
+		}
+		victory_points = {
+			9100 1
+		}
+		victory_points = {
+			9105 1
+		}
+		victory_points = {
+			11162 1
+		}
+		victory_points = {
+			6052 1
+		}
+		victory_points = {
+			9176 1
+		}
+		victory_points = {
+			3050 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			9100 = {
+				bunker = 1
+
+			}
+			9105 = {
+				bunker = 1
+
+			}
+			9206 = {
+				coastal_bunker = 1
+
+			}
+			6150 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = FIN
+		add_core_of = KRL
+
+	}
+	
+	provinces={
+		3050 3133 3187 6052 6150 6153 9100 9105 9176 9206 11046 11156 11162 13105 16511 16518 
+	}
+	manpower=413799
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

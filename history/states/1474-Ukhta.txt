@@ -1,0 +1,32 @@
+state={
+	id=1474
+	name="STATE_1474"
+
+	history={
+		owner = RUS
+		victory_points = {
+			6175 1 
+		}
+		victory_points = {
+			3067 1
+		}
+		victory_points = {
+			9198 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = RUS
+		add_core_of = KRL
+
+	}
+	
+	provinces={
+		36 134 3067 3071 6096 6098 6175 9074 9119 9198 11054 11096 11181 13130 16528 16530 8962 13112
+	}
+	manpower=19914
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

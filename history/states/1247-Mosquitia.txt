@@ -1,0 +1,33 @@
+
+state={
+	id=1247
+	name="STATE_1247"
+
+	history={
+		owner = NIC
+		victory_points = {
+			1988 1 
+		}
+		victory_points = {
+			2075 1
+		}
+		buildings = {
+			infrastructure = 1
+			1988 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = NIC
+
+	}
+
+	provinces={
+		1988 2075 14069 16274 16277 
+	}
+	manpower=124000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

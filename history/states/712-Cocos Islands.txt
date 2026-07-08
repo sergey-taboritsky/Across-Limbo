@@ -1,24 +1,25 @@
-state = {
-	id = 712
-	name = "STATE_712"
-	manpower = 242
+state={
+	id=712
+	name="STATE_712"
+	manpower=382
 	state_category = tiny_island
-
-	history = {
-		owner = AST
-		add_core_of = AST
+	
+	history=
+	{
+		owner = ENG
+		victory_points = {
+			13002 1
+		}
 		buildings = {
-			infrastructure = 2
-			air_base = 3
-			
-			radar_station = 4
+			infrastructure = 1
 			13002 = {
-				naval_base = 4
+				naval_base = 1
 			}
 		}
+		add_core_of = SGP
 	}
-
-	provinces = {
-		13002
+	
+	provinces={
+		13002 
 	}
 }

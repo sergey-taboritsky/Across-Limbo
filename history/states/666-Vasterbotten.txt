@@ -1,33 +1,43 @@
-state = {
-	id = 666
-	name = "STATE_666" # Lappland 121141, norrbotten 178442, västerbotten 183781
-	manpower = 242489
-	resources = {
-		tungsten = 35
-		chromium = 10
-		aluminium = 15
-	}
 
-	state_category = town
+state={
+	id=666
+	name="STATE_666"
 
-	history = {
-		victory_points = { 6132 3 }
-		victory_points = { 9143 1 }
+	history={
 		owner = SWE
+		victory_points = {
+			6132 3
+		}
+		victory_points = {
+			9143 3
+		}
+		victory_points = {
+			15830 1
+		}
+		victory_points = {
+			6161 1
+		}
 		buildings = {
-			infrastructure = 4
-			radar_station = 2
-			anti_air_building = 2
+			infrastructure = 2
 			6132 = {
-				naval_base = 5
+				naval_base = 1
+
 			}
-			
-			air_base = 3
+			9143 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = SWE
+
 	}
 
-	provinces = {
-		3113 118 6132 11067 9093 3100 9220 11201 9143 6161 11 109 145 184 3044 3138 3173 6067 6152 6200 9095 9134 11026 11069 11120 18372
+	provinces={
+		6132 6161 9143 9220 11067 11201 15830 15832 15836 15837 
 	}
+	manpower=250518
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

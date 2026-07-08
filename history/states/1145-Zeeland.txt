@@ -1,0 +1,29 @@
+
+state={
+	id=1145
+	name="STATE_1145"
+
+	history={
+		owner = HOL
+		victory_points = {
+			9431 1
+		}
+		victory_points = {
+			480 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = HOL
+
+	}
+
+	provinces={
+		480 9431 
+	}
+	manpower=502000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

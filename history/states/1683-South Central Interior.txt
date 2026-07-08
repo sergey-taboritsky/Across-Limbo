@@ -1,0 +1,50 @@
+
+state={
+	id=1683
+	name="STATE_1683"
+	resources={
+		coal=19.000
+	}
+
+	history={
+		owner = CAN
+		victory_points = {
+			7677 3 
+		}
+		victory_points = {
+			7853 3 
+		}
+		victory_points = {
+			1858 1 
+		}
+		victory_points = {
+			4877 1 
+		}
+		victory_points = {
+			15625 1 
+		}
+		victory_points = {
+			7820 1 
+		}
+		victory_points = {
+			7761 1 
+		}
+		victory_points = {
+			15699 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CAN
+
+	}
+
+	provinces={
+		1323 1737 1858 4343 4877 7677 7753 7761 7820 7853 10273 10644 12578 15563 15564 15565 15582 15589 15595 15596 15600 15601 15606 15614 15621 15622 15625 15628 15638 15642 15643 15656 15698 15699 
+	}
+	manpower=81970
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

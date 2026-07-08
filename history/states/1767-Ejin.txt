@@ -1,0 +1,26 @@
+state={
+	id=1767
+	name="STATE_1767"
+
+	history={
+		owner = XSM
+		victory_points = {
+			4783 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = XSM
+		add_core_of = CHI
+		add_core_of = MEN
+	}
+	
+	provinces={
+		4783 5031 7727 10899 
+	}
+	manpower=5552
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

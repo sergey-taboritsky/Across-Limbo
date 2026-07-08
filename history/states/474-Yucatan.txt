@@ -1,33 +1,41 @@
-state = {
-	id = 474
-	name = "STATE_474"
 
-	history = {
+state={
+	id=474
+	name="STATE_474"
+
+	history={
 		owner = MEX
-		add_extra_state_shared_building_slots = 1
+		victory_points = {
+			12715 3
+		}
+		victory_points = {
+			4965 2
+		}
+		victory_points = {
+			4904 2
+		}
 		buildings = {
-			
-			
-			
-			infrastructure = 3
-			
-			radar_station = 1
+			infrastructure = 1
+			arms_factory = 1
 			air_base = 1
+			4904 = {
+				naval_base = 2
+
+			}
+			4965 = {
+				naval_base = 3
+
+			}
+
 		}
 		add_core_of = MEX
-		victory_points = {
-			14511 10
-		}
-		victory_points = {
-			14512 1
-		}
+
 	}
 
-	provinces = {
-		14511 12715 14512 14504
+	provinces={
+		4904 4965 12715 14595 14596 14597 14598 14599 14600 
 	}
-	manpower = 727900
-	buildings_max_level_factor = 1.000
-	state_category = rural
-	local_supplies = 0.000
+	manpower=406912
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

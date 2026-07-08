@@ -1,0 +1,55 @@
+
+state={
+	id=650
+	name="STATE_650"
+
+	history={
+		owner = USA
+		victory_points = {
+			13090 2
+		}
+		victory_points = {
+			15675 2
+		}
+		victory_points = {
+			13067 1
+		}
+		victory_points = {
+			15549 1
+		}
+		victory_points = {
+			1135 1
+		}
+		victory_points = {
+			15604 1
+		}
+		victory_points = {
+			15637 1
+		}
+		victory_points = {
+			15670 1
+		}
+		buildings = {
+			13090 = {
+				naval_base = 3
+
+			}
+			13067 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = USA
+		add_core_of = AKA
+
+	}
+
+	provinces={
+		1135 13067 13090 15549 15604 15637 15670 15675 
+	}
+	manpower=703
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+}

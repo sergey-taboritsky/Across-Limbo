@@ -1,53 +1,48 @@
-state = {
-	id = 169
-	name = "STATE_169"
 
-	history = {
+state={
+	id=169
+	name="STATE_169"
+	resources={
+		coal=19.000
+	}
+
+	history={
 		owner = SPR
 		victory_points = {
-			1048 10
+			7183 10
 		}
 		victory_points = {
-			7183 30
+			875 3 
 		}
 		victory_points = {
-			9815 7
+			4195 2 
 		}
 		victory_points = {
-			4080 1
-		}
-		victory_points = {
-			1178 5
-		}
-		victory_points = {
-			10094 4
-		}
-		victory_points = {
-			4182 3
+			9815 2 
 		}
 		buildings = {
-			
-			
-			
-			
-			
-			dockyard = 2
-			infrastructure = 5
-			air_base = 1
-			1048 = {
-				naval_base = 3
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 3
+			4195 = {
+				naval_base = 5
+
 			}
+			9815 = {
+				naval_base = 1
+
+			}
+
 		}
-		set_state_flag = state_renamings
 		add_core_of = SPR
-		set_state_flag = GDP_category_large_town
+
 	}
 
-	provinces = {
-		1048 1178 3940 4080 4182 7098 7183 9815 9891 10094 11749 12070
+	provinces={
+		875 879 1048 1178 3810 3871 3940 4080 4182 4195 6744 7098 7183 7198 9815 9891 10094 11749 12070 
 	}
-	manpower = 2293676
-	buildings_max_level_factor = 1.000
-	state_category = city
-	local_supplies = 0.000
+	manpower=2331925
+	buildings_max_level_factor=1.000
+	state_category=city
 }

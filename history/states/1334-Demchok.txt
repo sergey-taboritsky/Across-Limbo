@@ -1,0 +1,19 @@
+state={
+	id=1334
+	name="STATE_1334"
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		add_core_of = CHI
+		add_core_of = TIB
+
+	}
+
+	provinces={
+		14326 
+	}
+	manpower=782
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

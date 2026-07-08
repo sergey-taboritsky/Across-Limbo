@@ -1,0 +1,38 @@
+
+state={
+	id=708
+	name="STATE_708"
+
+	history={
+		owner = FRA
+		victory_points = {
+			13506 2
+		}
+		victory_points = {
+			13504 1
+		}
+		victory_points = {
+			13072 1
+		}
+		victory_points = {
+			13505 1
+		}
+		buildings = {
+			infrastructure = 1
+			13506 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = COM
+
+	}
+
+	provinces={
+		13072 13505 13506 13504
+	}
+	manpower=132912
+	buildings_max_level_factor=1.000
+	state_category=small_island
+}

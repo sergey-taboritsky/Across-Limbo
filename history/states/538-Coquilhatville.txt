@@ -1,0 +1,21 @@
+state={
+	id=538
+	name="STATE_538"
+
+	history={
+		owner = COG
+		victory_points = {
+			10071 2
+		}
+		add_core_of = COG
+
+	}
+
+	provinces={
+		10071 
+	}
+	manpower=53978
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}

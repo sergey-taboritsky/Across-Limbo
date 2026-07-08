@@ -1,0 +1,30 @@
+
+state={
+	id=1515
+	name="STATE_1515"
+
+	history={
+		owner = AST
+		victory_points = {
+			12934 1
+		}
+		buildings = {
+			infrastructure = 1
+			12934 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = AST
+
+	}
+
+	provinces={
+		12934 
+	}
+	manpower=99
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

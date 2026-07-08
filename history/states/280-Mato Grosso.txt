@@ -1,25 +1,29 @@
-state = {
-	id = 280
-	name = "STATE_280"
 
-	history = {
+state={
+	id=280
+	name="STATE_280"
+
+	history={
 		owner = BRA
+		victory_points = {
+			2111 2 
+		}
+		victory_points = {
+			12951 2
+		}
 		buildings = {
-			infrastructure = 2
-			air_base = 1
+			infrastructure = 1
+
 		}
 		add_core_of = BRA
-		victory_points = {
-			2111 5
-		}
-		set_state_flag = GDP_regions_mato_grosso
+
 	}
 
-	provinces = {
-		2111 2142 2147 2204 5148 8175 11010 17407 17464 17465 17467 17469 17471 17472 17474
+	provinces={
+		2111 2142 2181 5148 5200 8189 8224 10959 11010 12951 14489 14491 
 	}
-	manpower = 440487
-	buildings_max_level_factor = 1.000
-	state_category = pastoral
-	local_supplies = 0.000
+	manpower=349900
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

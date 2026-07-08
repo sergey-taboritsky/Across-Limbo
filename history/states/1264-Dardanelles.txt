@@ -1,0 +1,31 @@
+state={
+	id=1264
+	name="STATE_1264"
+
+	history={
+		owner = TUR
+		set_demilitarized_zone = yes
+		victory_points = {
+			13249 2
+		}
+		victory_points = {
+			13250 1
+		}
+		buildings = {
+			infrastructure = 1
+			13249 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = TUR
+	}
+
+	provinces={
+		13250 13249
+	}
+	manpower=44315
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

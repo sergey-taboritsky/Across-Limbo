@@ -1,0 +1,36 @@
+state={
+	id=1191
+	name="STATE_1191"
+	
+	history={
+		owner = EGY
+		victory_points = {
+			7188 3
+		}
+		victory_points = {
+			11974 3
+		}
+		victory_points = {
+			7148 2
+		}
+		victory_points = {
+			1068 3 
+		}
+		victory_points = {
+			7030 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = EGY
+
+	}
+	
+	provinces={
+		7030 7144 7188 10031 11974 1068 7148 
+	}
+	manpower=2151913
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

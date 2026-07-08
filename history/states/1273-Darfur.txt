@@ -1,0 +1,37 @@
+state={
+	id=1273
+	name="STATE_1273"
+
+	history={
+		owner = ENG
+		victory_points = {
+			1960 3
+		}
+		victory_points = {
+			10739 3
+		}
+		victory_points = {
+			5060 2
+		}
+		victory_points = {
+			16552 1
+		}
+		victory_points = {
+			8052 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SUD
+
+	}
+	
+	provinces={
+		1960 5060 8052 10739 14152 14154 14158 14163 14169 14170 14171 14174 16547 16551 16552 
+	}
+	manpower=801526
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

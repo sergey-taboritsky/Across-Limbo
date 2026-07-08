@@ -1,0 +1,35 @@
+
+state={
+	id=586
+	name="STATE_586"
+	resources={
+		steel=20.000
+		chromium=12.000
+		tungsten=4.000
+		aluminium=10.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			12583 4
+		}
+		victory_points = {
+			10530 2
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 3
+
+		}
+		add_core_of = RUS
+		add_core_of = KYR
+	}
+
+	provinces={
+		7706 10408 10530 12583 12640 
+	}
+	manpower=732354
+	buildings_max_level_factor=1.000
+	state_category=town
+}

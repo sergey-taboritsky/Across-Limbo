@@ -1,29 +1,30 @@
-state = {
-	id = 699
-	name = "STATE_699"
 
-	history = {
-		owner = MOR
-		add_core_of = MOR
+state={
+	id=699
+	name="STATE_699"
+
+	history={
+		owner = SPR
 		victory_points = {
-			15354 1
+			8111 1 
 		}
 		buildings = {
-			infrastructure = 2
-			radar_station = 1
-			15354 = {
+			8111 = {
 				naval_base = 1
+
 			}
+
 		}
-		set_state_flag = state_renamings
-		set_state_flag = GDP_regions_western_sahara
+		add_core_of = MOR
+		add_core_of = SAH
+
 	}
 
-	provinces = {
-		7979 14378 14380 15352 15353 15354
+	provinces={
+		4920 7943 7979 8111 13231 
 	}
-	manpower = 14716
-	buildings_max_level_factor = 1.000
-	state_category = pastoral
-	local_supplies = 0.000
+	manpower=33250
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }

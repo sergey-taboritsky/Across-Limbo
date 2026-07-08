@@ -1,36 +1,56 @@
-state = {
-	id = 384
-	name = "STATE_384"
+state={
+	id=384
+	name="STATE_384"
 
-	history = {
+	history={
 		owner = USA
+		victory_points = {
+			12586 5
+		}
+		victory_points = {
+			10676 3
+		}
+		victory_points = {
+			7852 1 
+		}
+		victory_points = {
+			3855 1
+		}
+		victory_points = {
+			16372 1
+		}
+		victory_points = {
+			16374 1
+		}
+		victory_points = {
+			16382 1
+		}
+		victory_points = {
+			16384 1
+		}
+		victory_points = {
+			16378 1
+		}
+		victory_points = {
+			16388 1
+		}
+		victory_points = {
+			16383 1
+		}
 		buildings = {
-			infrastructure = 4
-			
-			
+			infrastructure = 2
+			industrial_complex = 1
+
 		}
 		add_core_of = USA
-		victory_points = { # Omaha
-			12586 15
-		}
-		victory_points = { # Lincoln
-			10676 5
-		}
-		victory_points = { # Grand Island
-			7852 3
-		}
-		victory_points = { # North Platte
-			4760 1
-		}
-		victory_points = { # Scottsbluff
-			4749 1
-		}
+
 	}
 
-	provinces = {
-		1683 3613 3855 4749 7840 7852 12516 12586 3708 4760 4830 10606 10676
+	provinces={
+		1683 3613 3708 3855 4749 4760 4830 7840 7852 10606 10676 12516 12586 16369 16370 16371 16372 16373 16374 16375 16376 16377 16378 16379 16380 16381 16382 16383 16384 16385 16386 16387 16388 
 	}
-	manpower = 1527890
-	buildings_max_level_factor = 1.000
-	state_category = town
+	manpower=1377962
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

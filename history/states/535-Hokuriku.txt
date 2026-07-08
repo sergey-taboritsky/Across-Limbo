@@ -1,0 +1,42 @@
+
+state={
+	id=535
+	name="STATE_535"
+	resources={
+		steel=27.000
+		tungsten=8.000
+	}
+
+	history={
+		owner = JAP
+		victory_points = {
+			10032 5 
+		}
+		victory_points = {
+			15319 3
+		}
+		victory_points = {
+			7102 2
+		}
+		victory_points = {
+			1067 1 
+		}
+		buildings = {
+			arms_factory = 2
+			industrial_complex = 2
+			infrastructure = 1
+			dockyard = 1
+
+		}
+		add_core_of = JAP
+
+	}
+
+	provinces={
+		998 1067 7102 10032 15317 15319 
+	}
+	manpower=4147600
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

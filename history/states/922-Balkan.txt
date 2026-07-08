@@ -1,0 +1,27 @@
+state={
+	id=922
+	name="STATE_922"
+	
+	history={
+		owner = RUS
+		victory_points = {
+		    7477 1
+		}
+		buildings = {
+			7477 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = RUS
+		add_core_of = TMS
+	}
+	
+	provinces={
+		1593 4563 7477 7563 10359 10406 12359 13313
+	}
+	manpower=106430
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

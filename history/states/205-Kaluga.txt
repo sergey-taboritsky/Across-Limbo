@@ -1,0 +1,55 @@
+
+state={
+	id=205
+	name="STATE_205"
+
+	history={
+		owner = RUS
+		victory_points = {
+			382 5
+		}
+		victory_points = {
+			3263 3
+		}
+		victory_points = {
+			6365 2
+		}
+		victory_points = {
+			9301 1
+		}
+		victory_points = {
+			352 1
+		}
+		victory_points = {
+			6252 1
+		}
+		victory_points = {
+			11284 1
+		}
+		victory_points = {
+			11235 1
+		}
+		victory_points = {
+			11300 1
+		}
+		victory_points = {
+			3308 1
+		}
+		victory_points = {
+			11369 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		246 274 352 382 3263 3308 3345 3377 6252 6365 9261 9301 11235 11284 11300 11369 
+	}
+	manpower=1238000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

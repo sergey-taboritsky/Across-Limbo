@@ -1,0 +1,29 @@
+
+state={
+	id=1322
+	name="STATE_1322"
+
+	history={
+		owner = TON
+		victory_points = {
+			14304 1 
+		}
+		buildings = {
+			infrastructure = 1
+			14304 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = TON
+
+	}
+
+	provinces={
+		14304 
+	}
+	manpower=32489
+	buildings_max_level_factor=1.000
+	state_category=small_island
+}

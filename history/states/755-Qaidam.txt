@@ -1,0 +1,23 @@
+state={
+	id=755
+	name="STATE_755"
+
+	history={
+		owner = NHJ
+		victory_points = {
+			12846 1
+		}
+		add_core_of = NHJ
+		add_core_of = CHI
+		add_core_of = TIB
+
+	}
+	
+	provinces={
+		2099 7997 10750 10796 10834 10865 12846 12890 16681
+	}
+	manpower=85194
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

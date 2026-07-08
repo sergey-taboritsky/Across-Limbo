@@ -1,0 +1,27 @@
+state={
+	id=1505
+	name="STATE_1505"
+
+	history={
+		owner = GER
+		victory_points = {
+			11360 2
+		}
+		buildings = {
+			infrastructure = 2
+			11360 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = GER
+		add_core_of = HAN
+
+	}
+
+	provinces={
+		11360 11233
+	}
+	manpower=283413
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

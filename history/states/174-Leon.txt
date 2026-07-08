@@ -1,43 +1,33 @@
-state = {
-	id = 174
-	name = "STATE_174"
-	resources = {
-		tungsten = 9.000
+
+state={
+	id=174
+	name="STATE_174"
+	resources={
+		tungsten=11.000
+		aluminium=7.000
 	}
 
-	history = {
+	history={
 		owner = SPR
 		victory_points = {
-			726 7
+			3727 2 
 		}
 		victory_points = {
-			11843 3
-		}
-		victory_points = {
-			918 4
-		}
-		victory_points = {
-			3918 1
+			6867 2 
 		}
 		buildings = {
-			infrastructure = 5
-			
-			
-			
-			
-			
-			
+			infrastructure = 3
+			industrial_complex = 1
+
 		}
-		set_state_flag = state_renamings
 		add_core_of = SPR
-		set_state_flag = GDP_category_large_town
+
 	}
 
-	provinces = {
-		726 918 920 3725 3727 3918 3920 6746 6907 9699 11843 15521
+	provinces={
+		726 794 874 918 920 3725 3727 3874 3918 3920 6746 6867 6907 9699 9770 11843 
 	}
-	manpower = 905217
-	buildings_max_level_factor = 1.000
-	state_category = town
-	local_supplies = 0.000
+	manpower=1091793
+	buildings_max_level_factor=1.000
+	state_category=large_town
 }

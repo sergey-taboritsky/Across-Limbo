@@ -1,45 +1,60 @@
-state = {
-	id = 361
-	name = "STATE_361"
+state={
+	id=361
+	name="STATE_361"
+	resources={
+		coal=15.000
+	}
 
-	history = {
+	history={
 		owner = USA
+		victory_points = {
+			6984 10
+		}
+		victory_points = {
+			13209 3 
+		}
+		victory_points = {
+			3097 1
+		}
+		victory_points = {
+			9158 1
+		}
+		victory_points = {
+			3156 1
+		}
+		victory_points = {
+			6128 1
+		}
+		victory_points = {
+			6892 1
+		}
+		victory_points = {
+			11892 1
+		}
 		buildings = {
-			
-			
-			
-			
+			infrastructure = 3
+			industrial_complex = 3
 			dockyard = 1
-			infrastructure = 6
 			air_base = 6
-			
-			
 			6984 = {
 				naval_base = 2
+
 			}
-			11892 = {
+			13209 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = USA
-		victory_points = { # Baltimore
-			6984 30
-		}
-		victory_points = { # Annapolis
-			11892 3
-		}
-		victory_points = { # Hagerstown
-			6929 3
-		}
-		victory_points = { # Ocean City
-			9786 1
-		}
-	}
 
-	provinces = {
-		6892 9758 9786 6823 6929 6984 11892
 	}
-	manpower = 2065500
-	buildings_max_level_factor = 1.000
-	state_category = large_city
+	
+	provinces={
+		3097 3156 6128 6823 6892 6929 6984 9158 9758 11892 13209 16362 16365 
+	}
+	manpower=1694000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

@@ -1,0 +1,26 @@
+
+state={
+	id=1610
+	name="STATE_1610"
+
+	history={
+		owner = FRA
+		victory_points = {
+			14017 2 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MLI
+
+	}
+
+	provinces={
+		2012 4562 4603 10829 10915 14011 14017 14588 
+	}
+	manpower=491652
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

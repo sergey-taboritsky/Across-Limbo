@@ -1,0 +1,50 @@
+state={
+	id=848
+	name="STATE_848"
+
+	history={
+		owner = FRA
+		victory_points = {
+			14537 3 
+		}
+		victory_points = {
+			14538 2 
+		}
+		victory_points = {
+			14587 1
+		}
+		victory_points = {
+			12733 1
+		}
+		victory_points = {
+			13228 1
+		}
+		victory_points = {
+			1549 1
+		}
+		victory_points = {
+			10882 1
+		}
+		victory_points = {
+			6883 1
+		}
+		victory_points = {
+			13227 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SYR
+		add_core_of = KUR
+
+	}
+	
+	provinces={
+		1549 1578 6883 10882 12733 13227 13228 14537 14538 14586 14587 16496 16497 
+	}
+	manpower=215322
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

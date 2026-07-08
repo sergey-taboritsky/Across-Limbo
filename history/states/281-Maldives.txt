@@ -1,27 +1,29 @@
-state = {
-	id = 281
-	name = "STATE_281"
-	manpower = 100833
-	state_category = small_island
 
-	history = {
-		owner = RAJ
-		add_core_of = RAJ
-		victory_points = { 4967 5 }
+state={
+	id=281
+	name="STATE_281"
+
+	history={
+		owner = ENG
+		victory_points = {
+			13510 2
+		}
 		buildings = {
 			infrastructure = 1
-			radar_station = 2
-			air_base = 2
-			
-			4967 = {
+			13510 = {
 				naval_base = 1
+
 			}
+
 		}
-		
-		set_state_flag = GDP_regions_karnataka
+		add_core_of = MLD
+
 	}
 
-	provinces = {
-		4967
+	provinces={
+		4967 13508 13509 13510 
 	}
+	manpower=79300
+	buildings_max_level_factor=1.000
+	state_category=enclave
 }

@@ -1,0 +1,28 @@
+
+state={
+	id=133
+	name="STATE_133"
+
+	history={
+		owner = ENG
+		victory_points = {
+			6062 1
+		}
+		victory_points = {
+			13733 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ENG
+		add_core_of = SCO
+	}
+
+	provinces={
+		6062 13732 13733 
+	}
+	manpower=40632
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

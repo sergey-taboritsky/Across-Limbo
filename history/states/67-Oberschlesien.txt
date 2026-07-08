@@ -1,0 +1,42 @@
+
+state={
+	id=67
+	name="STATE_67"
+	resources={
+		steel=19.000
+		aluminium=13.000
+		coal=158.000
+	}
+
+	history={
+		owner = GER
+		victory_points = {
+			9511 3
+		}
+		victory_points = {
+			11467 2
+		}
+		victory_points = {
+			9457 1
+		}
+		victory_points = {
+			6485 1
+		}
+		victory_points = {
+			479 1
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = GER
+
+	}
+
+	provinces={
+		479 3583 6485 6512 9457 9511 11467 
+	}
+	manpower=1437030
+	buildings_max_level_factor=1.000
+	state_category=city
+}

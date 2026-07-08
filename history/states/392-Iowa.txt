@@ -1,43 +1,32 @@
-state = {
-	id = 392
-	name = "STATE_392"
 
-	history = {
+state={
+	id=392
+	name="STATE_392"
+	resources={
+		coal=32.000
+	}
+
+	history={
 		owner = USA
+		victory_points = {
+			1678 3 
+		}
+		victory_points = {
+			7306 2 
+		}
 		buildings = {
-			infrastructure = 5
-			
-			
-			air_base = 1
+			infrastructure = 3
+			industrial_complex = 4
+
 		}
 		add_core_of = USA
-		victory_points = { # Des Moines
-			7458 15
-		}
-		victory_points = { # Cedar Rapids
-			9910 3
-		}
-		victory_points = { # Davenport
-			10478 3
-		}
-		victory_points = { # Sioux City
-			12646 3
-		}
-		victory_points = { # Council Bluffs
-			9892 3
-		}
-		victory_points = { # Iowa City
-			7306 1
-		}
-		victory_points = { # Ames
-			12418 1
-		}
+
 	}
 
-	provinces = {
-		1831 4691 7306 7458 7539 9910 10478 11971 12418 1586 1678 1770 9892 10666 11788 12646
+	provinces={
+		1586 1678 1770 1831 4691 7306 7458 7539 9892 9910 10478 10666 11788 11971 12418 12646 
 	}
-	manpower = 2759284
-	buildings_max_level_factor = 1.000
-	state_category = town
+	manpower=2470938
+	buildings_max_level_factor=1.000
+	state_category=city
 }

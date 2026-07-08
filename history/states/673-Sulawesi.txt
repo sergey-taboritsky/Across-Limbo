@@ -1,0 +1,39 @@
+
+state={
+	id=673
+	name="STATE_673"
+	resources={
+		rubber=12.000
+	}
+
+	history={
+		owner = INS
+		victory_points = {
+			10263 5
+		}
+		victory_points = {
+			4564 3
+		}
+		victory_points = {
+			7598 2
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 4
+			10263 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = INS
+
+	}
+
+	provinces={
+		1561 1589 4308 4349 4564 7336 7598 10222 10263 10450 10464 12330 12444 14252 
+	}
+	manpower=3045242
+	buildings_max_level_factor=1.000
+	state_category=town
+}

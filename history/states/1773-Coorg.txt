@@ -1,0 +1,25 @@
+state={
+	id=1773
+	name="STATE_1773"
+
+	history={
+		owner = RAJ
+		victory_points = {
+			10190 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = RAJ
+
+	}
+
+	provinces={
+		10190 
+	}
+	manpower=164405
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

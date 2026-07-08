@@ -1,0 +1,19 @@
+state={
+	id=947
+	name="STATE_947"
+
+	history={
+		owner = TAN
+		add_core_of = TAN
+		add_core_of = MON
+		add_claim_by = CHI
+
+	}
+
+	provinces={
+		15204 
+	}
+	manpower=2700
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

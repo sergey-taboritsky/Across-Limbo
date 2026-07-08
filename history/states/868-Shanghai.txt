@@ -1,0 +1,47 @@
+
+state={
+	id=868
+	name="STATE_868"
+
+	history={
+		owner = CHI
+		set_demilitarized_zone = yes
+		victory_points = {
+			7014 10 
+		}
+		victory_points = {
+			14860 1
+		}
+		victory_points = {
+			12076 1
+		}
+		victory_points = {
+			13897 1
+		}
+		victory_points = {
+			7808 1
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			anti_air_building = 1
+			7014 = {
+				naval_base = 6
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+
+		}
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		7014 7808 12076 13897 14860 
+	}
+	manpower=2868950
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

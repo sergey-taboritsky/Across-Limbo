@@ -1,0 +1,29 @@
+state={
+	id=1473
+	name="STATE_1473"
+
+	history={
+		owner = RUS
+		victory_points = {
+			11150 1
+		}
+		victory_points = {
+			157 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = RUS
+		add_core_of = KRL
+
+	}
+	
+	provinces={
+		40 157 2994 6070 6094 6172 9078 9231 11150 13110 14749 14750 14751 
+	}
+	manpower=24875
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

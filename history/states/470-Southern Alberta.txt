@@ -1,0 +1,39 @@
+
+state={
+	id=470
+	name="STATE_470"
+	resources={
+		coal=52.000
+	}
+
+	history={
+		owner = CAN
+		victory_points = {
+			3706 10
+		}
+		victory_points = {
+			1262 2
+		}
+		victory_points = {
+			14230 2
+		}
+		victory_points = {
+			15607 2
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = CAN
+
+	}
+
+	provinces={
+		1262 1763 2407 3706 4765 7718 10684 12534 14230 15566 15567 15583 15590 15598 15602 15607 15608 15624 15629 15640 
+	}
+	manpower=331518
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

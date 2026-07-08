@@ -1,0 +1,45 @@
+
+state={
+	id=1499
+	name="STATE_1499"
+
+	history={
+		owner = POL
+		victory_points = {
+			6557 3
+		}
+		victory_points = {
+			16833 2
+		}
+		victory_points = {
+			13488 1
+		}
+		victory_points = {
+			3483 2
+		}
+		victory_points = {
+			11543 1
+		}
+		victory_points = {
+			3496 1
+		}
+		victory_points = {
+			6520 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = POL
+		add_core_of = UKR
+
+	}
+
+	provinces={
+		535 3483 3496 6435 6520 6557 11543 13488 16833
+	}
+	manpower=974600
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

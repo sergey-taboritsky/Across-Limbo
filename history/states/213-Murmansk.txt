@@ -1,0 +1,72 @@
+
+state={
+	id=213
+	name="STATE_213"
+	resources={
+		chromium=12.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			3134 10
+		}
+		victory_points = {
+			6181 3
+		}
+		victory_points = {
+			6157 2
+		}
+		victory_points = {
+			74 1
+		}
+		victory_points = {
+			9115 1
+		}
+		victory_points = {
+			198 1
+		}
+		victory_points = {
+			6117 1
+		}
+		victory_points = {
+			11031 1
+		}
+		victory_points = {
+			11183 1
+		}
+		victory_points = {
+			15796 1
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 2
+			3134 = {
+				naval_base = 4
+				bunker = 1
+				coastal_bunker = 2
+			}
+			6181 = {
+				naval_base = 1
+
+			}
+			11183 = {
+				bunker = 1
+			}
+			15796 = {
+				bunker = 1
+			}
+
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		74 178 3121 3134 6117 6157 6181 9115 9123 9162 9203 11031 11117 11183 15796 13915 7863 198
+	}
+	manpower=126728
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

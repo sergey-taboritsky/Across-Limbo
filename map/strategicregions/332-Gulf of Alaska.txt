@@ -1,0 +1,25 @@
+
+strategic_region={
+	id=332
+	name="STRATEGICREGION_332"
+	provinces={
+		2917 2965 2970 3002 3253 3454 3600 3648 3793 3842 4049 4498 4722 8538 8561 
+	}
+	naval_terrain=water_deep_ocean
+	weather={
+		# TODO - WEATHER NOT ADDED - PLACEHOLDER CODE TO AVOID ERRORS
+		period={
+        	between={ 0.0 30.11 }
+        	temperature={ 0.0 0.0 }
+        	no_phenomenon=1.000
+       	 	rain_light=0.000
+        	rain_light=0.000
+        	snow=0.000
+        	rain_light=0.000
+        	arctic_water=0.000
+        	mud=0.000
+        	sandstorm=0.000
+       	 	min_snow_level=0.000
+    	}
+	}
+}

@@ -1,0 +1,26 @@
+state={
+	id=1806
+	name="STATE_1806"
+
+	history={
+		owner = RUS
+		victory_points = {
+			9041 2
+		}
+		victory_points = {
+			180 1
+		}
+		victory_points = {
+			14836 1
+		}
+		add_core_of = RUS
+	}
+
+	provinces={
+		180 3075 9041 12383 14836
+	}
+	manpower=111000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

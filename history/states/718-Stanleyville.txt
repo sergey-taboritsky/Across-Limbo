@@ -1,0 +1,35 @@
+state={
+	id=718
+	name="STATE_718"
+	resources={
+		tungsten=3.000
+		steel=2.000
+	}
+
+	history={
+		owner = COG
+		victory_points = {
+			1950 5
+		}
+		victory_points = {
+			16617 1
+		}
+		victory_points = {
+			14468 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = COG
+
+	}
+
+	provinces={
+		1950 12847 14466 14468 14474 16617 16618 16619 16622 
+	}
+	manpower=1105912
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

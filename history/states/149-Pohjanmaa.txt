@@ -1,0 +1,48 @@
+state={
+	id=149
+	name="STATE_149"
+
+	history={
+		owner = FIN
+		victory_points = {
+			3122 5
+		}
+		victory_points = {
+			66 1
+		}
+		victory_points = {
+			3172 1
+		}
+		victory_points = {
+			16522 1
+		}
+		victory_points = {
+			6013 1
+		}
+		victory_points = {
+			11065 1
+		}
+		victory_points = {
+			63 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			3122 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = FIN
+
+	}
+
+	provinces={
+		63 66 3122 3172 6013 6138 6198 9038 9156 9166 11065 11126 11144 16517 16521 16522 16523 13102
+	}
+	manpower=307697
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

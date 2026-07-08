@@ -1,0 +1,65 @@
+
+state={
+	id=64
+	name="STATE_64"
+	resources={
+		coal=116.000
+	}
+
+	history={
+		owner = GER
+		victory_points = {
+			3499 5 
+		}
+		victory_points = {
+			15771 3
+		}
+		victory_points = {
+			9496 3
+		}
+		victory_points = {
+			3367 2
+		}
+		victory_points = {
+			375 2
+		}
+		victory_points = {
+			11505 1
+		}
+		victory_points = {
+			3207 1
+		}
+		victory_points = {
+			15773 1
+		}
+		victory_points = {
+			11219 1
+		}
+		victory_points = {
+			15776 1
+		}
+		victory_points = {
+			15769 1
+		}
+		victory_points = {
+			3312 1
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 6
+
+		}
+		add_core_of = GER
+
+	}
+
+	provinces={
+		375 3207 3312 3367 3499 9428 9496 11219 11444 11505 15769 15771 15772 15773 15774 15775 15776
+	}
+	manpower=1578690
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

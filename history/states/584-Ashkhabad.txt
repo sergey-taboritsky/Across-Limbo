@@ -1,0 +1,30 @@
+
+state={
+	id=584
+	name="STATE_584"
+
+	history={
+		owner = RUS
+		victory_points = {
+			12333 4 
+		}
+		victory_points = {
+			10510 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = RUS
+		add_core_of = TMS
+
+	}
+
+	provinces={
+		4599 7491 8099 10510 12333 12491 13220 13221 13222 
+	}
+	manpower=336448
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

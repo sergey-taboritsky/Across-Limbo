@@ -1,0 +1,29 @@
+state={
+	id=1728
+	name="STATE_1728"
+
+	history={
+		owner = BRA
+		victory_points = {
+			16116 1
+		}
+		buildings = {
+			infrastructure = 1
+			16116 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = BRA
+
+	}
+
+	provinces={
+		16116 
+	}
+	manpower=3128
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+}

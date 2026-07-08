@@ -1,39 +1,33 @@
-state = {
-	id = 212
-	name = "STATE_212"
-	resources = {
-		chromium = 6.000
+
+state={
+	id=212
+	name="STATE_212"
+	resources={
+		aluminium=4.000
+		coal=1.000
 	}
 
-	history = {
+	history={
 		owner = BUL
 		victory_points = {
-			6923 15
-		}
-		victory_points = {
-			3937 5
-		}
-		victory_points = {
-			9818 2
+			6923 5 
 		}
 		buildings = {
-			infrastructure = 5
-			
+			infrastructure = 2
+			arms_factory = 3
+			industrial_complex = 2
 			air_base = 2
-			radar_station = 1
-			
-			
-			
+
 		}
 		add_core_of = BUL
-		set_state_flag = GDP_category_town
+
 	}
 
-	provinces = {
-		3937 6923 6982 9818 11813 18189 18196
+	provinces={
+		878 893 3937 6923 6982 9862 11813 13607 
 	}
-	manpower = 1103163
-	buildings_max_level_factor = 1.000
-	state_category = large_town
-	local_supplies = 0.000
+	manpower=2111100
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

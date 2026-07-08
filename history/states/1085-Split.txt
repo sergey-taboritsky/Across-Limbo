@@ -1,0 +1,35 @@
+
+state={
+	id=1085
+	name="STATE_1085"
+
+	history={
+		owner = YUG
+		victory_points = {
+			3924 3 
+		}
+		victory_points = {
+			13257 1
+		}
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			industrial_complex = 2
+			3924 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = YUG
+		add_core_of = CRO
+		
+	}
+
+	provinces={
+		3924 13257 13603 
+	}
+	manpower=178102
+	buildings_max_level_factor=1.000
+	state_category=town
+}

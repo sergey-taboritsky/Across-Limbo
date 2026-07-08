@@ -1,0 +1,27 @@
+state={
+	id=1378
+	name="STATE_1378"
+
+	history={
+		owner = COG
+		victory_points = {
+			7931 2
+		}
+		victory_points = {
+			14472 1
+		}
+		victory_points = {
+			10883 1
+		}
+		add_core_of = COG
+
+	}
+
+	provinces={
+		7931 10883 12741 12824 14470 14472 14477 14479 14480 
+	}
+	manpower=887893
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

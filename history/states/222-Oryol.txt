@@ -1,50 +1,49 @@
-state = {
-	id = 222
-	name = "STATE_222"
-	resources = {
-		steel = 28.000
+
+state={
+	id=222
+	name="STATE_222"
+	resources={
+		chromium=8.000
 	}
 
-	history = {
+	history={
 		owner = RUS
 		victory_points = {
-			9384 10
+			9355 5
 		}
 		victory_points = {
-			3335 10
+			328 2
 		}
 		victory_points = {
-			3346 5
+			11368 2
 		}
 		victory_points = {
-			328 3
+			9411 1
 		}
 		victory_points = {
-			11242 1
+			9384 1
 		}
 		victory_points = {
-			18256 1
+			9328 1
 		}
 		victory_points = {
-			3226 1
+			11283 1 
+		}
+		victory_points = {
+			15884 1
 		}
 		buildings = {
-			infrastructure = 4
-			air_base = 2
-			
-			
-			
-			
+			infrastructure = 2
+			air_base = 4
+
 		}
 		add_core_of = RUS
-		set_state_flag = universal_renamings
 	}
 
-	provinces = {
-		288 302 328 356 384 3226 3306 3318 3335 3346 3376 6252 6386 6411 9261 9301 9355 9384 9411 11214 11242 11283 11337 11368 18256 18309 18318 3390 3364
+	provinces={
+		302 328 384 9328 9355 9384 9411 11214 11283 11310 11337 11368 15884 15885 16638
 	}
-	manpower = 2293282
-	buildings_max_level_factor = 1.000
-	state_category = town
-	local_supplies = 0.000
+	manpower=1928700
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

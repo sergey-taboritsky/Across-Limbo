@@ -1,0 +1,34 @@
+
+state={
+	id=442
+	name="STATE_442"
+
+	history={
+		owner = RAJ
+		victory_points = {
+			12717 3
+		}
+		victory_points = {
+			12763 2
+		}
+		victory_points = {
+			1978 1
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 3
+
+		}
+		add_core_of = RAJ
+		add_core_of = PAK
+		add_claim_by = AFG
+
+	}
+
+	provinces={
+		1978 4558 4998 12717 12763 14391 
+	}
+	manpower=2469675
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

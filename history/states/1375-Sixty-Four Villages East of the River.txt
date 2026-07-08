@@ -1,0 +1,20 @@
+state={
+	id=1375
+	name="STATE_1375"
+
+	history={
+		owner = RUS
+		add_core_of = RUS
+		add_claim_by = CHI
+		
+		add_claim_by = MAN
+	}
+
+	provinces={
+		14429 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}

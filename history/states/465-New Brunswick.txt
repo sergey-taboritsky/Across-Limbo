@@ -1,51 +1,55 @@
-state = {
-	id = 465
-	name = "STATE_465"
 
-	history = {
-		owner = USA
-		buildings = {
-			
-			
-			
-			infrastructure = 6
-			
-			
-			air_base = 1
-			4285 = {
-				naval_base = 2
-			}
+state={
+	id=465
+	name="STATE_465"
+	resources={
+		coal=2.000
+	}
+
+	history={
+		owner = CAN
+		victory_points = {
+			4342 3
 		}
-		add_core_of = USA
-		victory_points = { # St. John
-			4285 6
+		victory_points = {
+			1424 2
 		}
-		victory_points = { # Moncton
-			1424 4
+		victory_points = {
+			4285 2
 		}
-		victory_points = { # Fredrickston
-			4342 10 # provincial capital
+		victory_points = {
+			15539 1
 		}
-		victory_points = { # Campbellton
-			7379 1
-		}
-		victory_points = { # Bathurst
-			17265 1
-		}
-		victory_points = { # Chatham (Mirimichi didn't exist until 1995)
+		victory_points = {
 			4432 1
 		}
-		victory_points = { # Edmundston
+		victory_points = {
+			7379 1
+		}
+		victory_points = {
+			15534 1
+		}
+		victory_points = {
 			4362 1
 		}
-		set_state_flag = GDP_regions_large_town
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			4285 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = CAN
+
 	}
 
-	provinces = {
-		634 1424 4285 4342 4362 4432 7379 12289 17265
+	provinces={
+		634 1424 4285 4342 4362 4432 7379 12289 13237 15514 15517 15523 15530 15534 15536 15539 15546 
 	}
-	manpower = 609236
-	buildings_max_level_factor = 1.000
-	state_category = town
-	local_supplies = 0.000
+	manpower=415370
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

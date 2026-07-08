@@ -1,0 +1,51 @@
+
+state={
+	id=190
+	name="STATE_190"
+
+	history={
+		owner = RUS
+		victory_points = {
+			9262 3 
+		}
+		victory_points = {
+			3296 3
+		}
+		victory_points = {
+			3525 2
+		}
+		victory_points = {
+			15473 2
+		}
+		victory_points = {
+			3194 1
+		}
+		victory_points = {
+			15469 1
+		}
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			9262 = {
+				naval_base = 1
+
+			}
+			3296 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = LAT
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		3194 3296 3319 3525 6322 9262 11246 15469 15473 
+	}
+	manpower=268418
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

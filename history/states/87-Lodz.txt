@@ -1,0 +1,53 @@
+
+state={
+	id=87
+	name="STATE_87"
+
+	history={
+		owner = POL
+		victory_points = {
+			9508 10
+		}
+		victory_points = {
+			9439 2
+		}
+		victory_points = {
+			6401 2
+		}
+		victory_points = {
+			11515 2
+		}
+		victory_points = {
+			493 1
+		}
+		victory_points = {
+			9546 1
+		}
+		victory_points = {
+			3723 1
+		}
+		victory_points = {
+			3695 1
+		}
+		victory_points = {
+			548 1
+		}
+		victory_points = {
+			11626 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		add_core_of = POL
+
+	}
+
+	provinces={
+		493 548 584 5095 6401 9439 9508 9546 11515 11626 3695 3723 3739
+	}
+	manpower=2737608
+	buildings_max_level_factor=1.000
+	state_category=town
+}

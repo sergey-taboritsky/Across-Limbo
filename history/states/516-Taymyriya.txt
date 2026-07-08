@@ -1,0 +1,24 @@
+
+state={
+	id=516
+	name="STATE_516"
+	resources={
+		coal=3.000
+	}
+
+	history={
+		owner = RUS
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		1795 2972 3415 11122 11328 16212 
+	}
+	manpower=28372
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+	force_link_ownership_to = 1702
+}

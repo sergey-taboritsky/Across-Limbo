@@ -1,0 +1,28 @@
+
+state={
+	id=898
+	name="STATE_898"
+
+	history={
+		owner = OMA
+		victory_points = {
+			13577 3
+		}
+		victory_points = {
+			12894 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = OMA
+
+	}
+
+	provinces={
+		2018 5049 13573 13574 13577 12894 13562
+	}
+	manpower=120923
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

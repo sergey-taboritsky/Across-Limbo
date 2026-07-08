@@ -1,0 +1,23 @@
+state={
+	id=865
+	name="STATE_865"
+
+	history={
+		owner = SIK
+		victory_points = {
+			14872 3
+		}
+		add_core_of = SIK
+		add_core_of = CHI
+		
+
+	}
+
+	provinces={
+		4714 4788 4823 4849 7693 7737 12590 12737 14870 14872 14873 15199 
+	}
+	manpower=99981
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

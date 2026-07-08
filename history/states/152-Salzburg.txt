@@ -1,0 +1,32 @@
+
+state={
+	id=152
+	name="STATE_152"
+	resources={
+		steel=6.000
+		aluminium=8.000
+		coal=3.000
+	}
+
+	history={
+		owner = AUS
+		victory_points = {
+			688 5
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+
+		}
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		688 3675 13206 
+	}
+	manpower=421355
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

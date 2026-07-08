@@ -1,0 +1,36 @@
+
+state={
+	id=814
+	name="STATE_814"
+
+	history={
+		owner = ITA
+		victory_points = {
+			599 2
+		}
+		victory_points = {
+			16349 1
+		}
+		buildings = {
+			infrastructure = 1
+			16349 = {
+				bunker = 1
+			}
+			11595 = {
+				bunker = 1
+			}
+		}
+		add_core_of = ITA
+		add_core_of = YUG
+		add_core_of = SLV
+
+	}
+
+	provinces={
+		599 11595 16349 
+	}
+	manpower=95000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

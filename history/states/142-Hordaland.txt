@@ -1,55 +1,45 @@
-state = {
-	id = 142
-	name = "STATE_142"
-	resources = {
-		steel = 16
+
+state={
+	id=142
+	name="STATE_142"
+	resources={
+		aluminium=15.000
 	}
 
-	history = {
+	history={
 		owner = NOR
-		buildings = {
-			
-			
-			
-			
-			
-			infrastructure = 5
-			
-			radar_station = 3
-			122 = {
-				naval_base = 8
-				coastal_bunker = 2
-			}
-			18393 = {
-				coastal_bunker = 2
-			}
-			6145 = {
-				coastal_bunker = 2
-			}
-			9170 = {
-				coastal_bunker = 2
-			}
-			65 = {
-				coastal_bunker = 2
-			}
-			18413 = {
-				coastal_bunker = 2
-			}
-			18385 = {
-				coastal_bunker = 2
-			}
-		}
 		victory_points = {
 			122 10
 		}
+		victory_points = {
+			6145 2
+		}
+		victory_points = {
+			11101 1
+		}
+		victory_points = {
+			65 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+			122 = {
+				naval_base = 3
+				coastal_bunker = 2
+
+			}
+
+		}
 		add_core_of = NOR
+
 	}
 
-	provinces = {
-		65 122 6145 9170 18385 18393 18413 18415
+	provinces={
+		65 122 6145 11028 11101 16757 
 	}
-	manpower = 338265
-	buildings_max_level_factor = 1.000
-	state_category = town
-	local_supplies = 0.000
+	manpower=283213
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

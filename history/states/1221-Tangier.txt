@@ -1,0 +1,32 @@
+state={
+	id=1221
+	name="STATE_1221"
+
+	history={
+		owner = TIZ
+		set_demilitarized_zone = yes
+		victory_points = {
+			13235 5 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			13235 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = MOR
+		add_core_of = RIF
+		add_core_of = TIZ
+
+	}
+
+	provinces={
+		13235 
+	}
+	manpower=50927
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

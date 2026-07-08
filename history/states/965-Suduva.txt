@@ -1,0 +1,31 @@
+
+state={
+	id=965
+	name="STATE_965"
+
+	history={
+		owner = RUS
+		victory_points = {
+			3272 3 
+		}
+		victory_points = {
+			11312 2 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = LIT
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		327 3272 6281 6407 11312 15483 
+	}
+	manpower=261465
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

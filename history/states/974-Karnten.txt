@@ -1,0 +1,33 @@
+
+state={
+	id=974
+	name="STATE_974"
+	resources={
+		coal=10.000
+	}
+
+	history={
+		owner = AUS
+		victory_points = {
+			3673 3 
+		}
+		victory_points = {
+			6673 2 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		668 3673 3674 6673 16351 
+	}
+	manpower=339372
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

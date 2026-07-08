@@ -1,24 +1,31 @@
-state = { ###POPS DONE
-	id = 356
-	name = "STATE_356" # Kastamonu
-	manpower = 654629
-	state_category = pastoral
 
-	history = {
+state={
+	id=356
+	name="STATE_356"
+
+	history={
 		owner = TUR
-		buildings = {
-			infrastructure = 3
-			6995 = {
-				naval_base = 3
-			}
+		victory_points = {
+			3982 2
 		}
-		victory_points = { 6938 2 }
-		victory_points = { 6995 1 }
+		victory_points = {
+			11897 2
+		}
+		victory_points = {
+			9844 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
 		add_core_of = TUR
-		set_state_flag = GDP_category_rural
+
 	}
 
-	provinces = {
-		979 3967 3982 6938 6995 16218
+	provinces={
+		979 3982 6920 6938 6978 9844 9871 11839 11897 
 	}
+	manpower=826210
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

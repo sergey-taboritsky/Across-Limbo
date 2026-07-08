@@ -1,0 +1,22 @@
+
+state={
+	id=612
+	name="STATE_612"
+
+	history={
+		owner = MEN
+		victory_points = {
+			11752 1
+		}
+		add_core_of = CHI
+		add_core_of = MEN
+	}
+
+	provinces={
+		828 952 1489 4495 7545 7674 10397 11752 
+	}
+	manpower=124185
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

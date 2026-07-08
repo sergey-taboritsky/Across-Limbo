@@ -1,0 +1,37 @@
+state={
+	id=680
+	name="STATE_680"
+
+	history={
+		owner = FRA
+		victory_points = {
+			2013 3 
+		}
+		victory_points = {
+			1606 3 
+		}
+		victory_points = {
+			3942 1
+		}
+		victory_points = {
+			14580 1
+		}
+		victory_points = {
+			13226 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SYR
+
+	}
+	
+	provinces={
+		901 1606 1634 2013 3942 13226 14580 14583 14585 16491 16495 
+	}
+	manpower=242632
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

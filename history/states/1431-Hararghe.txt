@@ -1,0 +1,33 @@
+
+state={
+	id=1431
+	name="STATE_1431"
+
+	history={
+		owner = ETH
+		victory_points = {
+			12714 3
+		}
+		victory_points = {
+			10955 2 
+		}
+		victory_points = {
+			15424 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ETH
+		add_core_of = SOM
+
+	}
+
+	provinces={
+		10955 11013 12714 15418 15419 15422 15423 15424 
+	}
+	manpower=1057403
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

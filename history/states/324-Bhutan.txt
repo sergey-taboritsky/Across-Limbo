@@ -1,26 +1,25 @@
-state = {
-	id = 324
-	name = "STATE_324"
-	resources = {
-		tungsten = 2.000
-	}
 
-	history = {
+state={
+	id=324
+	name="STATE_324"
+
+	history={
 		owner = BHU
-		buildings = {
-			infrastructure = 1
+		victory_points = {
+			13978 2 
 		}
 		victory_points = {
-			8010 1
+			8010 1 
 		}
 		add_core_of = BHU
+
 	}
 
-	provinces = {
-		8010 12860 16131 16132 16133 18866
+	provinces={
+		8010 12860 13975 13976 13978 
 	}
-	manpower = 220993
-	buildings_max_level_factor = 1.000
-	state_category = pastoral
-	local_supplies = 0.000
+	manpower=122375
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

@@ -1,0 +1,24 @@
+
+state={
+	id=1335
+	name="STATE_1335"
+
+	history={
+		owner = XKN
+		victory_points = {
+			1999 1
+		}
+		add_core_of = CHI
+		add_core_of = XKN
+		add_core_of = TIB
+
+	}
+
+	provinces={
+		1999 
+	}
+	manpower=54096
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

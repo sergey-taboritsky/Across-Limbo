@@ -1,0 +1,34 @@
+state={
+	id=549
+	name="STATE_549"
+
+	history={
+		owner = ENG
+		victory_points = {
+			2016 3
+		}
+		victory_points = {
+			10851 2
+		}
+		victory_points = {
+			16549 1
+		}
+		victory_points = {
+			8084 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SUD
+
+	}
+	
+	provinces={
+		2016 8084 10827 10851 14151 14155 14156 14160 14162 14164 14165 14168 16549 16550 
+	}
+	manpower=698239
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

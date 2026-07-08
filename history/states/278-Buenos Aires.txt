@@ -1,0 +1,108 @@
+
+state={
+	id=278
+	name="STATE_278"
+
+	history={
+		owner = ARG
+		victory_points = {
+			12364 15
+		}
+		victory_points = {
+			12379 5
+		}
+		victory_points = {
+			7621 5 
+		}
+		victory_points = {
+			1639 5
+		}
+		victory_points = {
+			1568 3
+		}
+		victory_points = {
+			12351 3
+		}
+		victory_points = {
+			1624 3
+		}
+		victory_points = {
+			16082 2
+		}
+		victory_points = {
+			16081 2
+		}
+		victory_points = {
+			16083 2
+		}
+		victory_points = {
+			16085 2
+		}
+		victory_points = {
+			16087 2
+		}
+		victory_points = {
+			12394 2
+		}
+		victory_points = {
+			16045 2
+		}
+		victory_points = {
+			16075 2
+		}
+		victory_points = {
+			16055 1
+		}
+		victory_points = {
+			16089 2
+		}
+		victory_points = {
+			16084 2
+		}
+		victory_points = {
+			16073 1
+		}
+		victory_points = {
+			16090 1
+		}
+		victory_points = {
+			16059 1
+		}
+		victory_points = {
+			16079 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 1
+			air_base = 4
+			anti_air_building = 1
+			12364 = {
+				naval_base = 7
+				bunker = 1
+				coastal_bunker = 2
+
+			}
+			7621 = {
+				naval_base = 2
+
+			}
+			1639 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = ARG
+
+	}
+
+	provinces={
+		1555 1568 1596 1624 1639 4573 4602 4643 7621 10375 10390 10402 10418 12321 12351 12364 12379 12394 12409 12494 16042 16043 16045 16046 16047 16048 16049 16050 16051 16052 16055 16057 16059 16061 16062 16063 16064 16066 16068 16069 16071 16072 16073 16074 16075 16076 16078 16079 16080 16081 16082 16083 16084 16085 16086 16087 16088 16089 16090 
+	}
+	manpower=5719847
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,42 @@
+
+state={
+	id=136
+	name="STATE_136"
+	resources={
+		tungsten=4.000
+		aluminium=3.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			11136 5
+		}
+		victory_points = {
+			3150 3
+		}
+		victory_points = {
+			11207 2
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 2
+			11136 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = ENG
+		add_core_of = SCO
+
+	}
+
+	provinces={
+		200 3150 11055 11136 11207 15891 
+	}
+	manpower=763211
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+
+strategic_region={
+	id=366
+	name="STRATEGICREGION_366"
+	provinces={
+		1237 1263 4231 4247 4268 4286 5460 5609 5660 5685 5688 5714 5741 5766 5793 5819 5870 7246 7264 7302 7472 8145 8263 8289 8315 8341 8368 10160 12120 12132 12159 
+	}
+	naval_terrain=water_fjords
+	static_modifiers={
+		water_modifier_shark_infested=always
+	}
+	weather={
+		# TODO - WEATHER NOT ADDED - PLACEHOLDER CODE TO AVOID ERRORS
+		period={
+        	between={ 0.0 30.11 }
+        	temperature={ 0.0 0.0 }
+        	no_phenomenon=1.000
+       	 	rain_light=0.000
+        	rain_light=0.000
+        	snow=0.000
+        	rain_light=0.000
+        	arctic_water=0.000
+        	mud=0.000
+        	sandstorm=0.000
+       	 	min_snow_level=0.000
+    	}
+	}
+}

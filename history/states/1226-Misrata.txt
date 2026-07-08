@@ -1,0 +1,36 @@
+
+state={
+	id=1226
+	name="STATE_1226"
+
+	history={
+		owner = ITA
+		victory_points = {
+			9980 5
+		}
+		victory_points = {
+			7066 2
+		}
+		victory_points = {
+			7209 2 
+		}
+		buildings = {
+			infrastructure = 1
+			9980 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = LBA
+
+	}
+
+	provinces={
+		1118 1174 4176 4194 7066 7154 7209 9980 10037 12009 13996 
+	}
+	manpower=297287
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

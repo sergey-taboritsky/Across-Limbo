@@ -1,0 +1,38 @@
+
+state={
+	id=85
+	name="STATE_85"
+
+	history={
+		owner = DNZ
+		victory_points = {
+			362 10 
+		}
+		victory_points = {
+			13265 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			362 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = DNZ
+		add_core_of = GER
+		add_claim_by = POL
+
+	}
+
+	provinces={
+		362 13265
+	}
+	manpower=412403
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,34 +1,30 @@
-state = {
-	id = 656
-	name = "STATE_656"
-	resources = {
-		oil = 89.000
-	}
 
-	history = {
+state={
+	id=656
+	name="STATE_656"
+
+	history={
 		owner = KUW
-		add_core_of = KUW
 		victory_points = {
-			8085 20
+			8085 3 
 		}
 		buildings = {
-			infrastructure = 3
-			air_base = 1
-			dockyard = 3
-			
+			infrastructure = 2
 			8085 = {
 				naval_base = 4
+
 			}
+
 		}
-		add_extra_state_shared_building_slots = 1
-		set_state_flag = state_renamings
+		add_core_of = KUW
+		add_claim_by = IRQ
+
 	}
 
-	provinces = {
-		8085 16317 16318 18455
+	provinces={
+		8085 13309 15114 10591
 	}
-	manpower = 338296
-	buildings_max_level_factor = 1.000
-	state_category = city
-	local_supplies = 0.000
+	manpower=115000
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

@@ -1,0 +1,36 @@
+
+state={
+	id=1177
+	name="STATE_1177"
+
+	history={
+		owner = YUN
+		victory_points = {
+			1196 3
+		}
+		victory_points = {
+			10413 2
+		}
+		victory_points = {
+			15242 2
+		}
+		victory_points = {
+			1114 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = YUN
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		1114 1172 1196 1383 1522 1653 4501 10413 10776 12262 15241 15242 
+	}
+	manpower=3146499
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

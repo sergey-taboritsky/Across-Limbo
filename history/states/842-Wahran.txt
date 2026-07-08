@@ -1,0 +1,37 @@
+
+state={
+	id=842
+	name="STATE_842"
+
+	history={
+		owner = FRA
+		victory_points = {
+			7132 5 
+		}
+		victory_points = {
+			13875 2 
+		}
+		victory_points = {
+			13872 2 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			anti_air_building = 1
+			7132 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = ALG
+
+	}
+
+	provinces={
+		3991 4116 4150 7008 7132 10045 11923 13872 13874 13875 13879 
+	}
+	manpower=772486
+	buildings_max_level_factor=1.000
+	state_category=town
+}

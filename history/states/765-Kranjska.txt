@@ -1,0 +1,33 @@
+
+state={
+	id=765
+	name="STATE_765"
+	resources={
+		coal=19.000
+	}
+
+	history={
+		owner = YUG
+		victory_points = {
+			9627 5
+		}
+		victory_points = {
+			6650 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+
+	}
+
+	provinces={
+		6650 9627 16348 
+	}
+	manpower=268710
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

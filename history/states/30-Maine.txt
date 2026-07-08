@@ -1,0 +1,36 @@
+
+state={
+	id=30
+	name="STATE_30"
+	resources={
+		coal=60.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			3509 3 
+		}
+		victory_points = {
+			3495 2
+		}
+		victory_points = {
+			3523 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		3495 3509 3523 11463 11521
+	}
+	manpower=853407
+	buildings_max_level_factor=1.000
+	state_category=town
+}

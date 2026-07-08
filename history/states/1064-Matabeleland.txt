@@ -1,0 +1,31 @@
+state={
+	id=1064
+	name="STATE_1064"
+	resources={
+		coal=5.000
+	}
+	
+	history={
+		owner = ZIM
+		victory_points = {
+			4851 3
+		}
+		victory_points = {
+			13535 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ZIM
+		add_core_of = ZIM
+
+	}
+	
+	provinces={
+		1874 4851 13529 13531 13532 13534 13535 
+	}
+	manpower=1200337
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

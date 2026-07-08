@@ -1,0 +1,46 @@
+
+state={
+	id=776
+	name="STATE_776"
+	resources={
+		steel=14.000
+	}
+
+	history={
+		owner = SPR
+		victory_points = {
+			740 5 
+		}
+		victory_points = {
+			3735 3
+		}
+		victory_points = {
+			6756 2 
+		}
+		victory_points = {
+			15365 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+			740 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = SPR
+		add_core_of = BSQ
+
+	}
+
+	provinces={
+		740 3735 6756 13979 15365 
+	}
+	manpower=843274
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

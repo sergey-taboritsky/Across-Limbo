@@ -1,0 +1,36 @@
+
+state={
+	id=35
+	name="STATE_35"
+
+	history={
+		owner = HOL
+		victory_points = {
+			16336 5 
+		}
+		victory_points = {
+			16337 3
+		}
+		victory_points = {
+			11456 2
+		}
+		victory_points = {
+			3262 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		add_core_of = HOL
+
+	}
+
+	provinces={
+		3262 6496 11456 16336 16337 16339
+	}
+	manpower=1180000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

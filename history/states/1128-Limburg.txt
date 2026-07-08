@@ -1,0 +1,31 @@
+state={
+	id=1128
+	name="STATE_1128"
+	resources={
+		coal=126.000
+	}
+	
+	history={
+		owner = HOL
+		victory_points = {
+			11562 3 
+		}
+		victory_points = {
+			6500 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = HOL
+
+	}
+	
+	provinces={
+		6500 11562 
+	}
+	manpower=590000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

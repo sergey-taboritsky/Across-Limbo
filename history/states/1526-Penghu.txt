@@ -1,0 +1,28 @@
+state={
+	id=1526
+	name="STATE_1526"
+
+	history={
+		owner = JAP
+		victory_points = {
+			14791 1
+		}
+		buildings = {
+			infrastructure = 1
+			14791 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		14791 
+	}
+	manpower=47159
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+}

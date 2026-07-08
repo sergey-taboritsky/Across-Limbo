@@ -1,0 +1,26 @@
+state={
+	id=1701
+	name="STATE_1701"
+
+	history={
+		owner = SIK
+		victory_points = {
+			5087 1
+		}
+		victory_points = {
+			1724 1
+		}
+		add_core_of = SIK
+		add_core_of = CHI
+		
+
+	}
+	
+	provinces={
+		1724 5087 
+	}
+	manpower=5973
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

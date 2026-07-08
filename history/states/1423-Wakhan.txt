@@ -1,0 +1,18 @@
+state={
+	id=1423
+	name="STATE_1423"
+
+	history={
+		owner = AFG
+		add_core_of = AFG
+		add_claim_by = CHI
+		
+	}
+
+	provinces={
+		7519 
+	}
+	manpower=12000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

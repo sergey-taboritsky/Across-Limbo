@@ -1,0 +1,39 @@
+
+state={
+	id=1173
+	name="STATE_1173"
+
+	history={
+		owner = NOR
+		set_demilitarized_zone = yes
+		victory_points = {
+			14215 2 
+		}
+		victory_points = {
+			15800 1
+		}
+		victory_points = {
+			15799 1
+		}
+		victory_points = {
+			15798 1
+		}
+		buildings = {
+			14215 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = NOR
+
+	}
+
+	provinces={
+		14215 15798 15799 15800 
+	}
+	manpower=2368
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}

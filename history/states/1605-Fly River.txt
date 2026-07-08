@@ -1,0 +1,25 @@
+
+state={
+	id=1605
+	name="STATE_1605"
+
+	history={
+		owner = AST
+		victory_points = {
+			1283 1 
+		}
+		victory_points = {
+			12135 1 
+		}
+		add_core_of = PNG
+
+	}
+
+	provinces={
+		1222 1242 1283 1310 2129 10147 10954 12107 12123 12135 
+	}
+	manpower=184750
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

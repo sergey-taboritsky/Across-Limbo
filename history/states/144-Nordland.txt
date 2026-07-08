@@ -1,77 +1,59 @@
-state = {
-	id = 144
-	name = "STATE_144"
-	resources = {
-		steel = 6
+
+state={
+	id=144
+	name="STATE_144"
+	resources={
+		tungsten=15.000
 	}
 
-	history = {
+	history={
 		owner = NOR
+		victory_points = {
+			192 3
+		}
+		victory_points = {
+			9126 2
+		}
+		victory_points = {
+			3048 2
+		}
+		victory_points = {
+			16763 1
+		}
+		victory_points = {
+			3088 1
+		}
+		victory_points = {
+			3126 1
+		}
+		victory_points = {
+			16764 1
+		}
 		buildings = {
-			
-			
-			infrastructure = 4
-			
-			radar_station = 3
+			infrastructure = 1
 			air_base = 1
 			192 = {
-				coastal_bunker = 2
-				naval_base = 4
-			}
-			6187 = {
-				coastal_bunker = 2
-			}
-			3126 = {
-				coastal_bunker = 2
-			}
-			3088 = {
-				coastal_bunker = 2
-			}
-			6111 = {
-				coastal_bunker = 2
-			}
-			173 = {
-				coastal_bunker = 2
-			}
-			3048 = {
-				coastal_bunker = 2
-			}
-			6071 = {
-				coastal_bunker = 2
-			}
-			6214 = {
-				coastal_bunker = 2
+				naval_base = 3
+
 			}
 			9126 = {
-				coastal_bunker = 2
+				naval_base = 1
+
 			}
-			38 = {
-				coastal_bunker = 2
+			3048 = {
+				naval_base = 1
+
 			}
-			3132 = {
-				coastal_bunker = 2
-			}
-			3034 = {
-				coastal_bunker = 2
-			}
-			11157 = {
-				coastal_bunker = 2
-			}
-		}
-		victory_points = {
-			192 1
-		}
-		victory_points = {
-			9126 1
 		}
 		add_core_of = NOR
+
 	}
 
-	provinces = {
-		38 173 192 3034 3048 3088 3126 3132 6071 6111 6187 6214 9126 9208 11157
+	provinces={
+		38 173 192 3034 3048 3088 3126 3132 6071 6111 6187 6214 9126 9208 11157 16763 16764
 	}
-	manpower = 237530
-	buildings_max_level_factor = 1.000
-	state_category = rural
-	local_supplies = 0.000
+	manpower=132385
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

@@ -1,0 +1,19 @@
+state={
+	id=1267
+	name="STATE_1267"
+
+	history={
+		owner = RUS
+		add_core_of = CHI
+		add_core_of = MAN
+	}
+
+	provinces={
+		1776 10541 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+	force_link_ownership_to = 761
+}

@@ -1,36 +1,45 @@
-state = { #Population Done
-	id = 214
-	name = "STATE_214"
-	resources = {
-		aluminium = 10
-		steel = 8
-	}
-	history = {
+state={
+	id=214
+	name="STATE_214"
+
+	history={
 		owner = RUS
-		victory_points = { 3338 15 }
-		victory_points = { 3168 7 }
-		victory_points = { 312 3 }
+		victory_points = {
+			3338 10
+		}
+		victory_points = {
+			9248 2
+		}
+		victory_points = {
+			3080 1
+		}
+		victory_points = {
+			16930 1
+		}
+		victory_points = {
+			11038 1
+		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
+			industrial_complex = 1
 			air_base = 3
-			
 			3338 = {
 				naval_base = 3
 			}
-			
-			
-			
-			
+			9248 = {
+				naval_base = 1
+			}
+
 		}
 		add_core_of = RUS
-		add_claim_by = RUS
-		set_state_flag = universal_renamings
-	}
 
-	provinces = {
-		312 3130 3168 3338 6102 11171
 	}
-	manpower = 621000
-	buildings_max_level_factor = 1.000
-	state_category = large_town
+	
+	provinces={
+		312 3080 3092 3168 3338 9248 11038 16926 16927 16930 16928 16925
+	}
+	manpower=241000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

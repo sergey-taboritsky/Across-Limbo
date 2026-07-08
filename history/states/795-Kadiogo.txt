@@ -1,0 +1,35 @@
+
+state={
+	id=795
+	name="STATE_795"
+
+	history={
+		owner = FRA
+		victory_points = {
+			10836 5 
+		}
+		victory_points = {
+			15904 2
+		}
+		victory_points = {
+			14006 1 
+		}
+		victory_points = {
+			14005 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = VOL
+
+	}
+
+	provinces={
+		10836 14005 14006 14007 14008 15898 15904 
+	}
+	manpower=1532333
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

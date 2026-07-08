@@ -1,0 +1,23 @@
+state={
+	id=1035
+	name="STATE_1035"
+
+	history={
+		owner = XKN
+		victory_points = {
+			4999 2 
+		}
+		add_core_of = CHI
+		add_core_of = XKN
+		add_core_of = TIB
+
+	}
+	
+	provinces={
+		1918 4999 5042 7988 8104 10903 12724 12837 
+	}
+	manpower=441815
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

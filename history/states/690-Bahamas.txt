@@ -1,0 +1,42 @@
+
+state={
+	id=690
+	name="STATE_690"
+
+	history={
+		owner = ENG
+		victory_points = {
+			10254 2 
+		}
+		victory_points = {
+			4647 1
+		}
+		victory_points = {
+			16663 1
+		}
+		victory_points = {
+			7245 1
+		}
+		victory_points = {
+			1513 1
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			10254 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = BAH
+
+	}
+
+	provinces={
+		1513 4647 7245 10254 16663
+	}
+	manpower=62000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+}

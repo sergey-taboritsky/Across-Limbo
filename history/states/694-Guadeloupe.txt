@@ -1,0 +1,27 @@
+
+state={
+	id=694
+	name="STATE_694"
+
+	history={
+		owner = FRA
+		victory_points = {
+			9377 1
+		}
+		buildings = {
+			infrastructure = 2
+			9377 = {
+				naval_base = 1
+
+			}
+		}
+		add_core_of = GLP
+	}
+
+	provinces={
+		9377 
+	}
+	manpower=249500
+	buildings_max_level_factor=1.000
+	state_category=small_island
+}

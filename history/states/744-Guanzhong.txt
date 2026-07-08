@@ -1,0 +1,36 @@
+
+state={
+	id=744
+	name="STATE_744"
+
+	history={
+		owner = XSM
+		victory_points = {
+			1976 10 
+		}
+		victory_points = {
+			7301 3 
+		}
+		victory_points = {
+			2006 3 
+		}
+		victory_points = {
+			12156 2 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = XSM
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		1976 2006 5007 7208 7301 10733 12156 
+	}
+	manpower=6606609
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

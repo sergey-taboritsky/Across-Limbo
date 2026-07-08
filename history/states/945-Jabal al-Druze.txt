@@ -1,0 +1,25 @@
+
+state={
+	id=945
+	name="STATE_945"
+
+	history={
+		owner = FRA
+		victory_points = {
+			4486 2 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SYR
+
+	}
+
+	provinces={
+		1901 4486 
+	}
+	manpower=144391
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

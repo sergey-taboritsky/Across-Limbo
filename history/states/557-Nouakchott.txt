@@ -1,0 +1,38 @@
+state={
+	id=557
+	name="STATE_557"
+
+	history={
+		owner = FRA
+		victory_points = {
+			13849 5
+		}
+		victory_points = {
+			13845 2
+		}
+		victory_points = {
+			1962 1
+		}
+		victory_points = {
+			13846 1
+		}
+		buildings = {
+			infrastructure = 1
+			13849 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = MRT
+
+	}
+
+	provinces={
+		1962 5034 5077 13845 13846 13849 16542 16543 
+	}
+	manpower=150389
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

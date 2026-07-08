@@ -1,0 +1,24 @@
+
+state={
+	id=1584
+	name="STATE_1584"
+	resources={
+		coal=3.000
+	}
+
+	history={
+		owner = RUS
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		1714 1722 1819 1852 1878 2853 2877 4006 4229 4821 4878 6085 6211 7765 7817 9224 10589 10608 12549 12565 12623 12634 12694 13060 13061 14806 14807 14808 14809 14810 16210 10667 
+	}
+	manpower=37829
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+	force_link_ownership_to = 574
+}

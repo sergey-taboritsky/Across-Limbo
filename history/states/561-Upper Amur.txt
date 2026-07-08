@@ -1,0 +1,83 @@
+state={
+	id=561
+	name="STATE_561"
+	resources={
+		coal=1.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			7763 5
+		}
+		victory_points = {
+			12543 1
+		}
+		victory_points = {
+			12569 1
+		}
+		victory_points = {
+			14484 1
+		}
+		victory_points = {
+			1842 1
+		}
+		victory_points = {
+			7616 1
+		}
+		victory_points = {
+			7851 1
+		}
+		victory_points = {
+			1730 1
+		}
+		victory_points = {
+			10678 1
+		}
+		victory_points = {
+			7754 1
+		}
+		victory_points = {
+			12657 1
+		}
+		victory_points = {
+			1802 1
+		}
+		victory_points = {
+			12654 1
+		}
+		victory_points = {
+			7748 1
+		}
+		victory_points = {
+			10655 1
+		}
+		victory_points = {
+			10655 1
+		}
+		victory_points = {
+			1267 1
+		}
+		victory_points = {
+			7801 1
+		}
+		victory_points = {
+			4847 1
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		1730 1739 1802 1842 4725 4829 4847 7616 7748 7754 7763 7801 7851 10655 10678 12543 12569 12654 12657 14421 14428 14484 1267
+	}
+	manpower=444215
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

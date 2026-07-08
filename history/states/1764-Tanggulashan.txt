@@ -1,0 +1,22 @@
+state={
+	id=1764
+	name="STATE_1764"
+
+	history={
+		owner = NHJ
+		add_core_of = CHI
+		add_core_of = NHJ
+		add_core_of = TIB
+
+	}
+
+	provinces={
+		8018 14800 
+	}
+	manpower=837
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+	local_supplies=0.000
+	force_link_ownership_to = 604
+}

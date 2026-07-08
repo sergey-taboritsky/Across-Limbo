@@ -1,0 +1,31 @@
+state={
+	id=379
+	name="STATE_379"
+
+	history={
+		owner = USA
+		victory_points = {
+			4799 5
+		}
+		victory_points = {
+			1651 1
+		}
+		victory_points = {
+			7667 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		1651 4799 7667 16724 
+	}
+	manpower=70051
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

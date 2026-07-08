@@ -1,0 +1,25 @@
+state={
+	id=1478
+	name="STATE_1478"
+
+	history={
+		owner = PRU
+		victory_points = {
+			14787 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = PRU
+		add_core_of = ECU
+
+	}
+
+	provinces={
+		14787 
+	}
+	manpower=224863
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

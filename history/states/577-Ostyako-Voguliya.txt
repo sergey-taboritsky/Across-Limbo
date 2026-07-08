@@ -1,0 +1,30 @@
+
+state={
+	id=577
+	name="STATE_577"
+	resources={
+		oil=14.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			1812 2
+		}
+		victory_points = {
+			12574 1
+		}
+		victory_points = {
+			4774 1
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		1659 1768 1812 4710 4774 4846 7685 7733 7768 7796 7867 10604 10620 10663 10677 12542 12574 12602 12630 12639 12672 
+	}
+	manpower=84990
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

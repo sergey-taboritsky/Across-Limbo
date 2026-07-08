@@ -1,0 +1,44 @@
+state={
+	id=34
+	name="STATE_34"
+	resources={
+		steel=18.000
+		coal=149.000
+	}
+
+	history={
+		owner = BEL
+		victory_points = {
+			3516 5
+		}
+		victory_points = {
+			13081 3
+		}
+		victory_points = {
+			9536 2
+		}
+		victory_points = {
+			11519 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
+			11519 = {
+				bunker = 2
+			}
+
+		}
+		add_core_of = BEL
+		add_core_of = WLN
+
+	}
+	
+	provinces={
+		3516 9536 11519 13081 16502 
+	}
+	manpower=1465200
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

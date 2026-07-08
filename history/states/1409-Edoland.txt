@@ -1,0 +1,24 @@
+state={
+	id=1409
+	name="STATE_1409"
+
+	history={
+		owner = ENG
+		victory_points = {
+			4952 3
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NGA
+
+	}
+
+	provinces={
+		4952 14549 
+	}
+	manpower=927970
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

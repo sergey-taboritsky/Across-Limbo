@@ -1,0 +1,25 @@
+state={
+	id=1015
+	name="STATE_1015"
+	
+	history={
+		owner = IRQ
+		victory_points = {
+			13326 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = IRQ
+		add_core_of = KUR
+
+	}
+	
+	provinces={
+		13332 13345 13326
+	}
+	manpower=102056
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

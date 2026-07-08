@@ -1,0 +1,58 @@
+
+state={
+	id=986
+	name="STATE_986"
+	resources={
+		steel=11.000
+		tungsten=12.000
+	}
+
+	history={
+		owner = JAP
+		victory_points = {
+			4056 5
+		}
+		victory_points = {
+			13287 3
+		}
+		victory_points = {
+			4086 3 
+		}
+		victory_points = {
+			12060 2 
+		}
+		victory_points = {
+			7121 2
+		}
+		victory_points = {
+			1081 2
+		}
+		victory_points = {
+			4103 1
+		}
+		victory_points = {
+			10115 1
+		}
+		victory_points = {
+			13282 1
+		}
+		victory_points = {
+			1054 1
+		}
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			4056 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = KOR
+	}
+
+	provinces={
+		1054 1081 4056 4086 4103 7121 10085 10115 11912 12060 12089 13282 13284 13285 13287 
+	}
+	manpower=4486110
+	buildings_max_level_factor=1.000
+	state_category=town
+}

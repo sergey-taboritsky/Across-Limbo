@@ -1,0 +1,26 @@
+state={
+	id=1341
+	name="STATE_1341"
+
+	history={
+		owner = RAJ
+		victory_points = {
+			14336 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = PAK
+		add_core_of = RAJ
+		add_core_of = BAN
+
+	}
+
+	provinces={
+		12010 14335 14336 
+	}
+	manpower=214898
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

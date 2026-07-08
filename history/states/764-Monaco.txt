@@ -1,0 +1,29 @@
+
+state={
+	id=764
+	name="STATE_764"
+
+	history={
+		owner = FRA
+		victory_points = {
+			13490 1
+		}
+		buildings = {
+			infrastructure = 3
+			13490 = {
+				naval_base = 1
+				
+			}
+		}
+		add_core_of = FRA
+		
+
+	}
+
+	provinces={
+		13490
+	}
+	manpower=22278
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

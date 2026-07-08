@@ -1,0 +1,41 @@
+
+state={
+	id=1449
+	name="STATE_1449"
+
+	history={
+		owner = ARG
+		victory_points = {
+			16058 3
+		}
+		victory_points = {
+			14647 1
+		}
+		victory_points = {
+			16053 1
+		}
+		victory_points = {
+			16060 1
+		}
+		victory_points = {
+			16054 1
+		}
+		victory_points = {
+			2149 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ARG
+
+	}
+
+	provinces={
+		2149 10935 12998 14641 14642 14643 14644 14647 16044 16053 16054 16056 16058 16060 16065 16067 16070 16077 
+	}
+	manpower=101194
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

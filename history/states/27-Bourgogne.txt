@@ -1,0 +1,29 @@
+
+state={
+	id=27
+	name="STATE_27"
+
+	history={
+		owner = FRA
+		victory_points = {
+			667 1 
+		}
+		victory_points = {
+			3506 1 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+
+		}
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		648 667 3506 3669 3681 9490 9609 9625 9644 11628 
+	}
+	manpower=1370800
+	buildings_max_level_factor=1.000
+	state_category=city
+}

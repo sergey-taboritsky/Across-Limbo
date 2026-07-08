@@ -1,27 +1,41 @@
-state = {
-	id = 455
-	name = "STATE_455"
 
-	history = {
-		owner = SYR
-		buildings = {
-			infrastructure = 5
-			air_base = 1
-			
+state={
+	id=455
+	name="STATE_455"
+
+	history={
+		owner = JOR
+		victory_points = {
+			13350 5 
 		}
 		victory_points = {
-			7151 10
+			7170 3 
 		}
-		add_core_of = SYR
-		set_state_flag = GDP_category_city
-		set_state_flag = universal_renamings
+		victory_points = {
+			7001 2 
+		}
+		victory_points = {
+			7151 1
+		}
+		victory_points = {
+			1544 1
+		}
+		victory_points = {
+			4440 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = JOR
+
 	}
 
-	provinces = {
-		7151
+	provinces={
+		1544 7001 7151 7170 13350 13352 14667 4440
 	}
-	manpower = 255151
-	buildings_max_level_factor = 1.000
-	state_category = large_town
-	local_supplies = 0.000
+	manpower=250936
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

@@ -1,0 +1,26 @@
+state={
+	id=1060
+	name="STATE_1060"
+	
+	history={
+		owner = ENG
+		victory_points = {
+			13507 1
+		}
+		buildings = {
+			13507 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+	
+	provinces={
+		13507 
+	}
+	manpower=161
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+}

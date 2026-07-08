@@ -1,0 +1,35 @@
+
+state={
+	id=1319
+	name="STATE_1319"
+	resources={
+		rubber=85.000
+		tungsten=65.000
+		steel=4.000
+		aluminium=3.000
+	}
+
+	history={
+		owner = MAL
+		victory_points = {
+			13306 3 
+		}
+		victory_points = {
+			1364 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MAL
+
+	}
+
+	provinces={
+		1364 1376 4310 13306 
+	}
+	manpower=294206
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,58 @@
+state={
+	id=1711
+	name="STATE_1711"
+
+	history={
+		owner = SWE
+		victory_points = {
+			6165 5
+		}
+		victory_points = {
+			9108 2
+		}
+		victory_points = {
+			9147 2
+		}
+		victory_points = {
+			9186 2
+		}
+		victory_points = {
+			15844 1
+		}
+		victory_points = {
+			6125 1
+		}
+		victory_points = {
+			11073 1
+		}
+		victory_points = {
+			201 1
+		}
+		victory_points = {
+			15863 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			6165 = {
+				naval_base = 2
+
+			}
+			9186 = {
+				bunker = 4
+				
+			}
+
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		201 3104 6055 6083 6125 6165 6168 9108 9147 9186 11073 15843 15844 15849 15850 15852 15855 15863 15870 
+	}
+	manpower=115347
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

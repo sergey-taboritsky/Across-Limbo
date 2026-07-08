@@ -1,32 +1,55 @@
-state = { #Population Done
-	id = 61
-	name = "STATE_61"
-	manpower = 1051694
 
+state={
+	id=61
+	name="STATE_61"
 
-	state_category = city
-
-	history = {
-		owner = WGR
-		victory_points = { 321 10 }
-		victory_points = { 9294 9 }
-		victory_points = { 11305 3 }
-		victory_points = { 293 3 }
-		victory_points = { 3258 2 }
-		victory_points = { 15836 3 }
+	history={
+		owner = GER
+		victory_points = {
+			321 5 
+		}
+		victory_points = {
+			15780 3 
+		}
+		victory_points = {
+			11305 2 
+		}
+		victory_points = {
+			3258 2 
+		}
+		victory_points = {
+			15779 2
+		}
+		victory_points = {
+			15778 1
+		}
+		victory_points = {
+			293 1
+		}
+		victory_points = {
+			15777 1
+		}
 		buildings = {
-			
-			
-			infrastructure = 5
-			
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 1
+			dockyard = 1
 			321 = {
 				naval_base = 6
+
 			}
+			air_base = 3
+
 		}
-		add_core_of = WGR
+		add_core_of = GER
+
 	}
 
-	provinces = {
-		268 293 321 3258 9294 11276 11305 15835 15836
+	provinces={
+		268 293 321 3258 9294 11276 11305 15777 15778 15779 15780 
 	}
+	manpower=805966
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

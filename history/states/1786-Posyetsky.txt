@@ -1,0 +1,24 @@
+state={
+	id=1786
+	name="STATE_1786"
+	
+	history={
+		owner = RUS
+		victory_points = {
+			11879 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = RUS
+		add_core_of = KOR
+	}
+	
+	provinces={
+		9641 11879
+	}
+	manpower=9127
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

@@ -1,0 +1,42 @@
+
+state={
+	id=1524
+	name="STATE_1524"
+
+	history={
+		owner = NOR
+		victory_points = {
+			53 5
+		}
+		victory_points = {
+			3105 3
+		}
+		victory_points = {
+			6176 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			53 = {
+				naval_base = 2
+				coastal_bunker = 1
+	
+			}
+			3105 = {
+				naval_base = 1
+	
+			}
+
+		}
+		add_core_of = NOR
+
+	}
+
+	provinces={
+		53 137 3105 3192 6176 
+	}
+	manpower=257662
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

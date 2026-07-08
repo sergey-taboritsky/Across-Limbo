@@ -1,30 +1,28 @@
-state = {
-	id = 720
-	name = "STATE_720"
-	manpower = 30
-	state_category = wasteland
 
-	history = {
-		owner = USA
-		add_core_of = USA
-		add_claim_by = ENG
-		add_claim_by = ARG
+state={
+	id=720
+	name="STATE_720"
+
+	history={
+		owner = ENG
+		victory_points = {
+			10995 1 
+		}
 		buildings = {
-			infrastructure = 1
-			radar_station = 5
-			air_base = 1
 			10995 = {
 				naval_base = 1
+
 			}
+
 		}
-		victory_points = {
-			10995 1
-		}
-		
-		set_state_flag = GDP_regions_south_atlantic
+		add_claim_by = ARG
+
 	}
 
-	provinces = {
-		10995 17778
+	provinces={
+		10995 
 	}
+	manpower=30
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
 }

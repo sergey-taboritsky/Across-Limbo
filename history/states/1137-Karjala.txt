@@ -1,0 +1,51 @@
+state={
+	id=1137
+	name="STATE_1137"
+
+	history={
+		owner = FIN
+		victory_points = {
+			3068 3
+		}
+		victory_points = {
+			6082 2
+		}
+		victory_points = {
+			3061 2
+		}
+		victory_points = {
+			9183 2
+		}
+		victory_points = {
+			9181 1
+		}
+		victory_points = {
+			6146 1
+		}
+		victory_points = {
+			3185 1
+		}
+		victory_points = {
+			16520 1
+		}
+		victory_points = {
+			139 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = FIN
+		add_core_of = KRL
+
+	}
+	
+	provinces={
+		52 139 3030 3061 3068 3185 6082 6146 6156 6186 6210 9061 9169 9181 9183 11056 13113 13115 16520 
+	}
+	manpower=132628
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

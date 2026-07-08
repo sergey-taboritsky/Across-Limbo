@@ -1,0 +1,28 @@
+
+state={
+	id=869
+	name="STATE_869"
+
+	history={
+		owner = TIB
+		set_demilitarized_zone = yes # No de-facto controller
+		buildings = {
+			14327 = {
+				bunker = 1
+
+			}
+
+		}
+		add_core_of = CHI
+		add_core_of = TIB
+
+	}
+
+	provinces={
+		14322 14327 
+	}
+	manpower=997
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

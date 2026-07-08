@@ -1,33 +1,25 @@
-state = {
-	id = 729
-	name = "STATE_729"
-	manpower = 419719
-
-	state_category = large_town
-	history = {
+state={
+	id=729
+	name="STATE_729"
+	manpower = 157805
+	
+	state_category = enclave
+	
+	history={
 		owner = CHI
-		add_core_of = CHI
-		set_variable = { china_state_ref = 32 }
-		set_variable = { china_region_ref = 4 }
-		set_state_flag = state_renamings
-		victory_points = { 4189 20 }
+		victory_points = {
+			4189 2
+		}
 		buildings = {
-			
-			
-			
-			
-			
-			infrastructure = 5
-			air_base = 1
-			air_base = 1
+			infrastructure = 2
 			4189 = {
-				naval_base = 4
+				naval_base = 1
 			}
 		}
+		add_core_of = CHI
 	}
-
-	provinces = {
-		4189
+	
+	provinces={
+		4189 
 	}
-	buildings_max_level_factor = 0.750
 }

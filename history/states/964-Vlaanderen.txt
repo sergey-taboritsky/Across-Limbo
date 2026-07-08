@@ -1,0 +1,42 @@
+state={
+	id=964
+	name="STATE_964"
+
+	history={
+		owner = BEL
+		victory_points = {
+			6560 5 
+		}
+		victory_points = {
+			13266 3 
+		}
+		victory_points = {
+			6446 1
+		}
+		victory_points = {
+			16503 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 4
+			air_base = 3
+			13266 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = BEL
+		add_core_of = FLA
+
+	}
+	
+	provinces={
+		3576 6446 6560 13211 13266 16503 
+	}
+	manpower=2442000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

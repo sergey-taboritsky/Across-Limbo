@@ -1,0 +1,41 @@
+
+state={
+	id=240
+	name="STATE_240" # Belgorod
+	manpower = 1448900
+	
+	state_category = town
+
+	history={
+		owner = RUS
+		victory_points = {
+			3492 5
+		}
+		victory_points = {
+			6577 2
+		}
+		victory_points = {
+			9518 1
+		}
+		victory_points = {
+			6481 1
+		}
+		victory_points = {
+			11439 1
+		}
+		victory_points = {
+			473 1
+		}
+		victory_points = {
+			6517 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = RUS
+	}
+
+	provinces={
+		473 534 3492 6432 6481 6517 6577 9424 9449 9489 9518 11439 11500 
+	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=1417
+	name="STATE_1417"
+
+	history={
+		owner = SCN
+		victory_points = {
+			15185 3
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CHI
+		add_core_of = SCN
+
+	}
+
+	provinces={
+		2030 8026 15185 
+	}
+	manpower=2468161
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=1039
+	name="STATE_1039"
+
+	history={
+		owner = NOR
+		victory_points = {
+			9204 3
+		}
+		victory_points = {
+			144 2
+		}
+		victory_points = {
+			6080 1
+		}
+		buildings = {
+			infrastructure = 1
+			9204 = {
+				naval_base = 1
+				
+			}
+
+		}
+		add_core_of = NOR
+
+	}
+
+	provinces={
+		144 190 3183 6080 9032 9204 11029 
+	}
+	manpower=152125
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

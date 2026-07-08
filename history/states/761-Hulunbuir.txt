@@ -1,0 +1,42 @@
+
+state={
+	id=761
+	name="STATE_761"
+
+	history={
+		owner = MON
+		victory_points = {
+			4745 5
+		}
+		victory_points = {
+			10612 3
+		}
+		victory_points = {
+			7894 1
+		}
+		victory_points = {
+			10567 1
+		}
+		victory_points = {
+			12537 1
+		}
+		victory_points = {
+			4809 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = MON
+
+	}
+
+	provinces={
+		4745 4809 4852 4876 7697 7743 7873 7894 10567 10612 12537 12690 13150 14408 10675
+	}
+	manpower=322173
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

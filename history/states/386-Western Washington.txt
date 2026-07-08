@@ -1,0 +1,77 @@
+
+state={
+	id=386
+	name="STATE_386"
+	resources={
+		coal=14.000
+	}
+
+	history={
+		owner = USA
+		victory_points = {
+			7315 10 
+		}
+		victory_points = {
+			4669 3 
+		}
+		victory_points = {
+			7386 2 
+		}
+		victory_points = {
+			7255 2 
+		}
+		victory_points = {
+			16902 2 
+		}
+		victory_points = {
+			16900 2
+		}
+		victory_points = {
+			10157 1
+		}
+		victory_points = {
+			7414 1 
+		}
+		victory_points = {
+			16899 1
+		}
+		victory_points = {
+			16895 1
+		}
+		victory_points = {
+			16903 1
+		}
+		victory_points = {
+			16897 1
+		}
+		victory_points = {
+			10271 1
+		}
+		victory_points = {
+			16898 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 5
+			7315 = {
+				naval_base = 4
+			}
+			16903 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		4296 4398 4669 7255 7315 7386 7414 7442 10157 10242 10271 16886 16903 16899 16898 16902 16901 16904 16900 16897 16896 16895 16894
+	}
+	manpower=1252108
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

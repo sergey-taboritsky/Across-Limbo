@@ -1,0 +1,30 @@
+
+state={
+	id=815
+	name="STATE_815"
+
+	history={
+		owner = ITA
+		victory_points = {
+			11564 3
+		}
+		buildings = {
+			infrastructure = 2
+			11564 = {
+				bunker = 1
+				naval_base = 2
+			}
+		}
+		add_core_of = ITA
+		add_core_of = YUG
+		add_core_of = CRO
+		add_claim_by = HUN
+	}
+
+	provinces={
+		11564
+	}
+	manpower=105000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

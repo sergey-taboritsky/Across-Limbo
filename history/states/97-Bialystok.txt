@@ -1,0 +1,51 @@
+
+state={
+	id=97
+	name="STATE_97"
+
+	history={
+		owner = POL
+		victory_points = {
+			11301 5
+		}
+		victory_points = {
+			11274 2
+		}
+		victory_points = {
+			3753 1
+		}
+		victory_points = {
+			11357 1
+		}
+		victory_points = {
+			11329 1
+		}
+		victory_points = {
+			400 1
+		}
+		victory_points = {
+			347 1
+		}
+		victory_points = {
+			13594 1
+		}
+		victory_points = {
+			11247 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		add_core_of = POL
+
+	}
+
+	provinces={
+		290 347 400 11247 11301 11357 11329 14591 11274 13594 3753
+	}
+	manpower=1461010
+	buildings_max_level_factor=1.000
+	state_category=town
+}

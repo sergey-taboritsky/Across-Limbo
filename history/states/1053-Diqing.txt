@@ -1,0 +1,27 @@
+
+state={
+	id=1053
+	name="STATE_1053"
+
+	history={
+		owner = YUN
+		victory_points = {
+			8126 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = YUN
+		add_core_of = CHI
+		add_core_of = TIB
+
+	}
+
+	provinces={
+		8126 12425 
+	}
+	manpower=104316
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

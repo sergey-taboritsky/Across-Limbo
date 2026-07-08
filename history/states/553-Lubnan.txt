@@ -1,0 +1,43 @@
+
+state={
+	id=553
+	name="STATE_553"
+
+	history={
+		owner = FRA
+		victory_points = {
+			792 5 
+		}
+		victory_points = {
+			1108 3
+		}
+		victory_points = {
+			13310 2
+		}
+		victory_points = {
+			13311 2
+		}
+		victory_points = {
+			11919 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 5
+			792 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = LEB
+
+	}
+
+	provinces={
+		792 1108 13310 13311 11919
+	}
+	manpower=795659
+	buildings_max_level_factor=1.000
+	state_category=town
+}

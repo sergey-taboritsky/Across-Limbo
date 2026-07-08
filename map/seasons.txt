@@ -3,13 +3,13 @@
 #			end_date=00.02.31
 #			
 #			hsv_north=  		 { 0.2 0.1 0.6 }
-#			colorbalance_north=  { 0.8 0.8 1.1	}
+#			colorbalance_north= { 0.8 0.8 1.1	}
 #			
 #			hsv_center=			 { 0.0 0.85 1.0 }
 #			colorbalance_center= { 1.1 1.0 1.0  }
 #			
 #			hsv_south= 			 { 0.0 0.85 1.0 }	
-#			colorbalance_south=  { 1.1 1.0 1.0  }		
+#			colorbalance_south= { 1.1 1.0 1.0  }		
 #		}
 #		
 #		
@@ -24,7 +24,7 @@
 #			colorbalance_center= { 1.1 1.1 1.0  }
 #			
 #			hsv_south= 			 { 0.0 0.85 1.0 }	
-#			colorbalance_south=  { 1.1 1.0 1.0  }	
+#			colorbalance_south= { 1.1 1.0 1.0  }	
 #		}
 #		
 #		
@@ -33,13 +33,13 @@
 #			end_date=00.09.10
 #			
 #			hsv_north= 			 { 0.2 0.1 0.6  }
-#			colorbalance_north=  { 1.3 1.15 0.9  }
+#			colorbalance_north= { 1.3 1.15 0.9  }
 #			
 #			hsv_center= 		 { 0.0 0.85 1.0 }
 #			colorbalance_center= { 1.0 1.0 1.0  }
 #			
 #			hsv_south= 			 { 0.0 0.85 1.0 }	
-#			colorbalance_south=  { 1.0 1.0 1.0  }		
+#			colorbalance_south= { 1.0 1.0 1.0  }		
 #		}
 #		
 #		
@@ -48,13 +48,13 @@
 #			end_date=00.10.31
 #		
 #			hsv_north=  		 { 0.2 0.1 0.6 }
-#			colorbalance_north=  { 1.3 1.1 0.8   }
+#			colorbalance_north= { 1.3 1.1 0.8   }
 #			
 #			hsv_center= 		 { 0.0 0.85 1.0  }
 #			colorbalance_center= { 1.1 1.0 1.0   }
 #			
 #			hsv_south=  		 { 0.0 0.85 1.0  }	
-#			colorbalance_south=  { 1.1 1.0 1.0   }		
+#			colorbalance_south= { 1.1 1.0 1.0   }		
 #		
 #		}
 
@@ -65,13 +65,13 @@ winter = {
 	end_date=00.02.10
 	
 	hsv_north=  		 { 0 0.1 1 }
-	colorbalance_north=  { 0.9 0.9 1 }	
+	colorbalance_north= { 0.9 0.9 1 }	
 	
 	hsv_center=			 { 0.0 1.0 1.0 }
 	colorbalance_center= { 1.0 1.0 1.0  }
 	
 	hsv_south= 			 { 0.0 1.0 1.0 }	
-	colorbalance_south=  { 1.0 1.0 1.0  }	
+	colorbalance_south= { 1.0 1.0 1.0  }	
 
 	
 }
@@ -82,13 +82,13 @@ spring = {
 	end_date=00.04.22	
 	
 	hsv_north=  		 { 0 0.1 1 }
-	colorbalance_north=  { 0.9 0.9 1 }	
+	colorbalance_north= { 0.9 0.9 1 }	
 	
 	hsv_center=			 { 0.0 1.0 1.0 }
 	colorbalance_center= { 1.0 1.0 1.0  }
 	
 	hsv_south= 			 { 0.0 1.0 1.0 }	
-	colorbalance_south=  { 1.0 1.0 1.0  }			
+	colorbalance_south= { 1.0 1.0 1.0  }			
 }
 
 
@@ -97,13 +97,13 @@ summer = {
 	end_date=00.09.10
 
 	hsv_north=  		 { 0 0.1 1 }
-	colorbalance_north=  { 0.9 0.9 1 }	
+	colorbalance_north= { 0.9 0.9 1 }	
 	
 	hsv_center=			 { 0.0 1.0 1.0 }
 	colorbalance_center= { 1.0 1.0 1.0  }
 	
 	hsv_south= 			 { 0.0 1.0 1.0 }	
-	colorbalance_south=  { 1.0 1.0 1.0  }		
+	colorbalance_south= { 1.0 1.0 1.0  }		
 }
 
 
@@ -112,13 +112,13 @@ autumn = {
 	end_date=00.10.31
 
 	hsv_north=  		 { 0 0.1 1 }
-	colorbalance_north=  { 0.9 0.9 1 }	
+	colorbalance_north= { 0.9 0.9 1 }	
 	
 	hsv_center=			 { 0.0 1.0 1.0 }
 	colorbalance_center= { 1.0 1.0 1.0  }
 	
 	hsv_south= 			 { 0.0 1.0 1.0 }	
-	colorbalance_south=  { 1.0 1.0 1.0  }				
+	colorbalance_south= { 1.0 1.0 1.0  }				
 
 }
 

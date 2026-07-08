@@ -1,41 +1,25 @@
-state = {
-	id = 466
-	name = "STATE_466"
-	resources = {
-		#
+
+state={
+	id=466
+	name="STATE_466"
+	resources={
+		aluminium=4.000
 	}
 
-	history = {
-		owner = QUE
-		buildings = {
-			infrastructure = 1
-			radar_station = 3
-		}
+	history={
+		owner = CAN
+		add_core_of = CAN
 		add_core_of = QUE
-		victory_points = { # Schefferville
-			3208 1
-		}
-		victory_points = { # Puvirnituq
-			12147 1
-		}
-		victory_points = { # Chisasibi
-			490 1
-		}
-		victory_points = { # Ivujivik
-			17261 1
-		}
-		victory_points = { # Kuujjuaq
-			7364 1
-		}
-		set_state_flag = GDP_regions_quebec
-		set_state_flag = GDP_category_city
+
 	}
 
-	provinces = {
-		490 983 3208 3911 4666 6740 7364 10176 11682 11902 12147 13162 13166 13181 13184 13196 17251 17252 17259 17260 17261 17267 17271 17272 17276
+	provinces={
+		3208 3911 7683 10176 10534 12600 13166 13184 14234 
 	}
-	manpower = 21639
-	buildings_max_level_factor = 1.000
-	state_category = pastoral
-	local_supplies = 0.000
+	manpower=5050
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+	force_link_ownership_to = 1288
 }

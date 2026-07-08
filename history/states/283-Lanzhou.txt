@@ -1,0 +1,43 @@
+
+state={
+	id=283
+	name="STATE_283"
+
+	history={
+		owner = XSM
+		victory_points = {
+			6638 5
+		}
+		victory_points = {
+			7911 3
+		}
+		victory_points = {
+			1630 2
+		}
+		victory_points = {
+			2022 2
+		}
+		victory_points = {
+			556 2
+		}
+		victory_points = {
+			531 2
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = CHI
+		add_core_of = XSM
+
+	}
+
+	provinces={
+		116 531 556 1630 1933 2022 3170 6638 7911 9165 12882 
+	}
+	manpower=4245531
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

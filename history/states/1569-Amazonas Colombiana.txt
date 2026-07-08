@@ -1,0 +1,18 @@
+state={
+	id=1569
+	name="STATE_1569"
+
+	history={
+		owner = COL
+		add_core_of = COL
+	}
+
+	provinces={
+		10792 15052 15053 5026
+	}
+	manpower=43839
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+	force_link_ownership_to = 486
+}

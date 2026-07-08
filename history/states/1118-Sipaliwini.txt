@@ -1,0 +1,18 @@
+state={
+	id=1118
+	name="STATE_1118"
+	
+	history={
+		owner = HOL
+		add_core_of = SUR
+	}
+	
+	provinces={
+		13681
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+	force_link_ownership_to = 309
+}

@@ -1,0 +1,91 @@
+
+state={
+	id=115
+	name="STATE_115"
+	resources={
+		aluminium=20.000
+	}
+
+	history={
+		owner = ITA
+		victory_points = {
+			10074 10 
+		}
+		victory_points = {
+			4159 5 
+		}
+		victory_points = {
+			14589 5 
+		}
+		victory_points = {
+			4014 3
+		}
+		victory_points = {
+			15404 2
+		}
+		victory_points = {
+			7059 2
+		}
+		victory_points = {
+			3857 2
+		}
+		victory_points = {
+			15405 1
+		}
+		victory_points = {
+			1009 1
+		}
+		victory_points = {
+			7147 1
+		}
+		victory_points = {
+			1156 1
+		}
+		victory_points = {
+			15403 1
+		}
+		victory_points = {
+			14296 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 10
+			dockyard = 1
+			14296 = {
+				naval_base = 1
+
+			}
+			10074 = {
+				naval_base = 2
+
+			}
+			7059 = {
+				naval_base = 5
+
+			}
+			4159 = {
+				naval_base = 8
+
+			}
+			4014 = {
+				naval_base = 3
+
+			}
+			15404 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = ITA
+	}
+
+	provinces={
+		1009 1156 3857 4014 4159 7059 7147 10074 12047 14589 15098 15099 15402 15403 15404 15405 14296
+	}
+	manpower=3943600
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

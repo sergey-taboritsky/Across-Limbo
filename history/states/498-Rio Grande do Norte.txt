@@ -1,30 +1,49 @@
-state = {
-	id = 498
-	name = "STATE_498"
 
-	history = {
+state={
+	id=498
+	name="STATE_498"
+
+	history={
 		owner = BRA
+		victory_points = {
+			14504 5
+		}
+		victory_points = {
+			2175 2
+		}
+		victory_points = {
+			14500 1
+		}
+		victory_points = {
+			16809 1
+		}
+		victory_points = {
+			10933 1
+		}
+		victory_points = {
+			16811 1
+		}
+		victory_points = {
+			14502 1
+		}
+		victory_points = {
+			16810 1
+		}
 		buildings = {
-			radar_station = 3
-			air_base = 2
-			infrastructure = 3
-			
+			infrastructure = 2
+			industrial_complex = 1
+			14504 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = BRA
-		victory_points = {
-			10933 10
-		}
-		victory_points = {
-			2175 5
-		}
-		set_state_flag = GDP_category_town
+
 	}
 
-	provinces = {
-		2175 10933 14774 17402 17457
+	provinces={
+		2175 10933 14500 14502 14504 16809 16810 16811
 	}
-	manpower = 1313223
-	buildings_max_level_factor = 1.000
-	state_category = pastoral
-	local_supplies = 0.000
+	manpower=847600
+	buildings_max_level_factor=1.000
+	state_category=town
 }

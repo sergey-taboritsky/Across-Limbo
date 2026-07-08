@@ -1,0 +1,34 @@
+
+state={
+	id=833
+	name="STATE_833"
+
+	history={
+		owner = XSM
+		victory_points = {
+			7659 3
+		}
+		buildings = {
+			infrastructure = 1
+			7659 = {
+				bunker = 2
+
+			}
+			10880 = {
+				bunker = 1
+
+			}
+
+		}
+		add_core_of = CHI
+		add_core_of = XSM
+
+	}
+
+	provinces={
+		7659 10880 
+	}
+	manpower=946166
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=860
+	name="STATE_860"
+
+	history={
+		owner = XSM
+		victory_points = {
+			2028 2
+		}
+		victory_points = {
+			12820 1 
+		}
+		add_core_of = NHJ
+		add_core_of = CHI
+		add_core_of = XSM
+
+	}
+
+	provinces={
+		1778 2028 7971 8102 12596 12820 14844 14845 
+	}
+	manpower=276492
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

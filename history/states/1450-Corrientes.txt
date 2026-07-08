@@ -1,0 +1,27 @@
+
+state={
+	id=1450
+	name="STATE_1450"
+
+	history={
+		owner = ARG
+		victory_points = {
+			14663 3 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = ARG
+
+	}
+
+	provinces={
+		8187 8238 12964 14659 14662 14663 
+	}
+	manpower=331088
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

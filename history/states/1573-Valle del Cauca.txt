@@ -1,0 +1,55 @@
+state={
+	id=1573
+	name="STATE_1573"
+	resources={
+		coal=1.000
+	}
+
+	history={
+		owner = COL
+		victory_points = {
+			15077 5
+		}
+		victory_points = {
+			15085 2
+		}
+		victory_points = {
+			12872 2
+		}
+		victory_points = {
+			7936 2
+		}
+		victory_points = {
+			15079 2
+		}
+		victory_points = {
+			7991 1
+		}
+		victory_points = {
+			10846 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			7936 = {
+				naval_base = 2
+
+			}
+			7991 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = COL
+
+	}
+	
+	provinces={
+		7936 7991 10846 12872 15076 15077 15079 15085 16415 
+	}
+	manpower=1171829
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

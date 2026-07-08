@@ -1,0 +1,32 @@
+state={
+	id=1642
+	name="STATE_1642"
+
+	history={
+		owner = JAP
+		victory_points = {
+			10124 1
+		}
+		victory_points = {
+			15355 1
+		}
+		buildings = {
+			infrastructure = 1
+			15355 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = JAP
+
+	}
+
+	provinces={
+		10124 15355 
+	}
+	manpower=68453
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+}

@@ -1,33 +1,47 @@
-state = {
-	id = 93
-	name = "STATE_93"
 
-	manpower = 2759572
-	state_category = town
+state={
+	id=93
+	name="STATE_93"
 
-	history = {
-		owner = RUS
-		add_core_of = RUS
-		set_state_flag = universal_renamings
-
-		victory_points = { 3412 1 }
-		victory_points = { 6435 5 }
-		victory_points = { 422 1 }
-		victory_points = { 11543 1 }
-		victory_points = { 474 3 }
-
-		buildings = {
-			
-			
-			
-			
-			infrastructure = 4
-			
+	history={
+		owner = POL
+		victory_points = {
+			572 3
 		}
-		set_state_flag = GDP_category_rural
+		victory_points = {
+			3412 2
+		}
+		victory_points = {
+			13546 1
+		}
+		victory_points = {
+			422 1
+		}
+		victory_points = {
+			11441 1
+		}
+		victory_points = {
+			9520 1
+		}
+		victory_points = {
+			13547 1
+		}
+		victory_points = {
+			16832 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = POL
+		add_core_of = UKR
+
 	}
 
-	provinces = {
-		422 474 513 572 3412 3496 6435 6520 6557 9520 11441 11503 11543 14537 18221 18242
+	provinces={
+		422 474 513 572 3412 9520 11441 13546 13547 16832
 	}
+	manpower=1011000
+	buildings_max_level_factor=1.000
+	state_category=town
 }

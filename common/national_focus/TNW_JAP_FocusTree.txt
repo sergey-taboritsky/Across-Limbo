@@ -969,11 +969,11 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = JAP_socialist_reform_program
+		id = JAP_fareast_problem_council
 		x = 7
-		y = 1
-		cost = 6
-		icon = GFX_focus_AFG_integrate_tajik_and_uzbek_republics
+		y = -3
+		cost = 4
+		icon = GFX_focus_FIN_socialist_welfare
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -981,11 +981,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = JAP_constitution_council
+		id = JAP_socialist_reform_program
 		x = 7
-		y = -3
-		cost = 4
-		icon = GFX_focus_FIN_socialist_welfare
+		y = 1
+		cost = 6
+		icon = GFX_focus_AFG_integrate_tajik_and_uzbek_republics
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {

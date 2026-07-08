@@ -1,0 +1,40 @@
+
+state={
+	id=43
+	name="STATE_43"
+	resources={
+		coal=6.000
+	}
+
+	history={
+		owner = HUN
+		victory_points = {
+			9660 10 
+		}
+		victory_points = {
+			16856 3
+		}
+		victory_points = {
+			11663 2
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 4
+			air_base = 4
+			9660 = {
+				bunker = 5 # To emulate the Siege of Budapest until Hungary gets content
+			}
+		}
+		add_core_of = HUN
+
+	}
+
+	provinces={
+		9660 11663 16856
+	}
+	manpower=1024000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

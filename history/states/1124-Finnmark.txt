@@ -1,0 +1,67 @@
+
+state={
+	id=1124
+	name="STATE_1124"
+	resources={
+		steel=12.000
+	}
+
+	history={
+		owner = NOR
+		victory_points = {
+			9116 3
+		}
+		victory_points = {
+			64 2
+		}
+		victory_points = {
+			3016 2
+		}
+		victory_points = {
+			11077 2
+		}
+		victory_points = {
+			11063 1
+		}
+		victory_points = {
+			6092 1
+		}
+		victory_points = {
+			9042 1
+		}
+		victory_points = {
+			11104 1
+		}
+		victory_points = {
+			9191 1
+		}
+		victory_points = {
+			22 1
+		}
+		victory_points = {
+			2995 1
+		}
+		buildings = {
+			infrastructure = 1
+			9116 = {
+				naval_base = 3
+
+			}
+			3016 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = NOR
+
+	}
+
+	provinces={
+		22 64 76 128 2995 3016 3040 6015 6092 9042 9064 9089 9116 9128 9191 11034 11063 11077 11104 16768 16765
+	}
+	manpower=41521
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

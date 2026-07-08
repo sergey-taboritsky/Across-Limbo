@@ -1,0 +1,60 @@
+
+state={
+	id=122
+	name="STATE_122"
+	resources={
+		steel=11.000
+		aluminium=3.000
+		coal=353.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			377 10
+		}
+		victory_points = {
+			407 3
+		}
+		victory_points = {
+			4976 2
+		}
+		victory_points = {
+			9364 1
+		}
+		victory_points = {
+			11361 1
+		}
+		victory_points = {
+			3274 1
+		}
+		victory_points = {
+			253 1
+		}
+		victory_points = {
+			6363 1
+		}
+		victory_points = {
+			4681 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			377 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = ENG
+		add_core_of = WAL
+
+	}
+
+	provinces={
+		253 311 377 407 3274 6363 9364 11361 4681 4976
+	}
+	manpower=2543334
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

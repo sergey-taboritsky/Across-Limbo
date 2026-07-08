@@ -1,0 +1,48 @@
+state={
+	id=1477
+	name="STATE_1477"
+
+	history={
+		owner = ECU
+		victory_points = {
+			8252 5 
+		}
+		victory_points = {
+			5120 2 
+		}
+		victory_points = {
+			14345 2
+		}
+		victory_points = {
+			10888 2
+		}
+		victory_points = {
+			16466 2
+		}
+		victory_points = {
+			14341 1
+		}
+		victory_points = {
+			16471 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			8252 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = ECU
+
+	}
+	
+	provinces={
+		5120 8047 8252 10888 14341 14344 14345 16462 16464 16465 16466 16468 16471 
+	}
+	manpower=731972
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

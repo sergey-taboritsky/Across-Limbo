@@ -1,0 +1,24 @@
+
+state={
+	id=1229
+	name="STATE_1229"
+
+	history={
+		owner = FRA
+		victory_points = {
+			5101 1 
+		}
+		victory_points = {
+			14024 1
+		}
+		add_core_of = MLI
+	}
+
+	provinces={
+		5101 14019 14020 14021 14022 14023 14024 14025 
+	}
+	manpower=163872
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

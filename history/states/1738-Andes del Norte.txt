@@ -1,0 +1,40 @@
+state={
+	id=1738
+	name="STATE_1738"
+	resources={
+		oil=18.000
+	}
+
+	history={
+		owner = COL
+		victory_points = {
+			16433 3
+		}
+		victory_points = {
+			16429 3
+		}
+		victory_points = {
+			12845 2
+		}
+		victory_points = {
+			7993 2
+		}
+		victory_points = {
+			16419 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = COL
+
+	}
+
+	provinces={
+		7993 12845 15082 15084 15086 16418 16419 16421 16424 16427 16429 16433 16434 
+	}
+	manpower=1171829
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

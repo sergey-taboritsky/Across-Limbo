@@ -1,0 +1,33 @@
+state={
+	id=1523
+	name="STATE_1523"
+
+	history={
+		owner = GER
+		victory_points = {
+			14964 5 
+		}
+		victory_points = {
+			14965 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			14965 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = GER
+
+	}
+	
+	provinces={
+		14964 14965 
+	}
+	manpower=372937
+	buildings_max_level_factor=1.000
+	state_category=town
+}

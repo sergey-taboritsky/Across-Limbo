@@ -1,0 +1,32 @@
+state={
+	id=1747
+	name="STATE_1747"
+
+	history={
+		owner = ENG
+		victory_points = {
+			12725 3 
+		}
+		victory_points = {
+			2046 1
+		}
+		buildings = {
+			infrastructure = 1
+			12725 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = SUD
+
+	}
+
+	provinces={
+		1977 2003 2046 7989 12725 16569 
+	}
+	manpower=97584
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

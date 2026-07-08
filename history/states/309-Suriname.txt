@@ -1,33 +1,32 @@
-state = {
-	id = 309
-	name = "STATE_309"
-	resources = {
-		aluminium = 23.000
+
+state={
+	id=309
+	name="STATE_309"
+	resources={
+		aluminium=55.000
 	}
 
-	history = {
-		owner = SUR
-		add_core_of = SUR
-		buildings = {
-			
-			
-			infrastructure = 3
-			air_base = 1
-			10906 = {
-				naval_base = 2
-			}
-			
-		}
+	history={
+		owner = HOL
 		victory_points = {
-			10906 15
+			10906 2
 		}
+		buildings = {
+			infrastructure = 1
+			12828 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = SUR
+
 	}
 
-	provinces = {
-		1928 10906 12828 17376 17377 17380
+	provinces={
+		1928 10906 12828 13685 
 	}
-	manpower = 286997
-	buildings_max_level_factor = 1.000
-	state_category = rural
-	local_supplies = 0.000
+	manpower=115000
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

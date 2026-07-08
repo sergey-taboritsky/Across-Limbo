@@ -1,46 +1,70 @@
-state = {
-	id = 464
-	name = "STATE_464"
-	manpower = 750935
 
-	state_category = city
+state={
+	id=464
+	name="STATE_464"
+	resources={
+		coal=48.000
+	}
 
-	history = {
-		owner = USA
-		buildings = {
-			
-			
-			
-			
-			infrastructure = 6
-			air_base = 3
-			radar_station = 3
-			dockyard = 2
-			7361 = {
-				naval_base = 4
-			}
+	history={
+		owner = CAN
+		victory_points = {
+			7361 5
 		}
-		add_core_of = USA
-		victory_points = { # Halifax
-			7361 10
+		victory_points = {
+			1354 2
 		}
-		victory_points = { # Sydney
-			4430 3
+		victory_points = {
+			15526 2
 		}
-		victory_points = { # Truro
-			7644 1
+		victory_points = {
+			10244 2
 		}
-		victory_points = { # New Glasgow
-			7304 1
+		victory_points = {
+			7304 2
 		}
-		victory_points = { # Yarmouth
+		victory_points = {
+			15524 1
+		}
+		victory_points = {
+			15521 1
+		}
+		victory_points = {
+			15512 1
+		}
+		victory_points = {
 			4623 1
 		}
-		set_state_flag = GDP_regions_large_city
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			air_base = 3
+			anti_air_building = 1
+			7361 = {
+				naval_base = 4
+
+			}
+			15526 = {
+				naval_base = 2
+
+			}
+			4623 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = CAN
+
 	}
 
-	provinces = {
-		1354 4430 4623 7304 7361 7644 10244
+	provinces={
+		1354 4430 4623 7304 7361 7644 10244 15503 15508 15509 15512 15513 15516 15521 15524 15526 
 	}
-
+	manpower=521545
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

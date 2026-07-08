@@ -1,0 +1,47 @@
+
+state={
+	id=1122
+	name="STATE_1122"
+	resources={
+		tungsten=1.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			15911 2 
+		}
+		victory_points = {
+			2001 2
+		}
+		victory_points = {
+			15908 2
+		}
+		victory_points = {
+			15901 1
+		}
+		victory_points = {
+			15913 1
+		}
+		victory_points = {
+			15910 1
+		}
+		victory_points = {
+			7950 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = VOL
+
+	}
+
+	provinces={
+		2001 7950 12851 14009 15899 15901 15905 15906 15908 15909 15910 15911 15912 15913 15914 
+	}
+	manpower=994178
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

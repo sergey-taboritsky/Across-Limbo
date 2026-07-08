@@ -1,0 +1,40 @@
+state={
+	id=1019
+	name="STATE_1019"
+
+	history={
+		owner = IRQ
+		victory_points = {
+			2004 2 
+		}
+		victory_points = {
+			7977 2 
+		}
+		victory_points = {
+			13325 2 
+		}
+		victory_points = {
+			13319 2
+		}
+		victory_points = {
+			8001 2 
+		}
+		victory_points = {
+			12879 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = IRQ
+
+	}
+	
+	provinces={
+		78 2004 7977 7994 8001 10876 12726 12879 13315 13319 13322 13324 13325 15111 15112 16478 
+	}
+	manpower=1143033
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,43 @@
+
+state={
+	id=564
+	name="STATE_564"
+	resources={
+		steel=10.000
+		chromium=12.000
+		tungsten=10.000
+		aluminium=4.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			7816 5
+		}
+		victory_points = {
+			4766 2
+		}
+		victory_points = {
+			7736 1
+		}
+		victory_points = {
+			10528 1
+		}
+		victory_points = {
+			4837 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		4766 4837 7736 7816 10528 10658 14483 
+	}
+	manpower=201741
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

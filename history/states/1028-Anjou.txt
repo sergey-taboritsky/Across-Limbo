@@ -1,0 +1,28 @@
+
+state={
+	id=1028
+	name="STATE_1028"
+
+	history={
+		owner = FRA
+		victory_points = {
+			503 2 
+		}
+		victory_points = {
+			9867 1
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		503 9478 9867 11613
+	}
+	manpower=602405
+	buildings_max_level_factor=1.000
+	state_category=town
+}

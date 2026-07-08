@@ -1,0 +1,28 @@
+
+state={
+	id=548
+	name="STATE_548"
+
+	history={
+		owner = ENG
+		victory_points = {
+			12989 5
+		}
+		victory_points = {
+			14027 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = UGA
+
+	}
+
+	provinces={
+		2308 12989 14027 14029 
+	}
+	manpower=1091671
+	buildings_max_level_factor=1.000
+	state_category=town
+}

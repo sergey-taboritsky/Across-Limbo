@@ -1,0 +1,27 @@
+state={
+	id=1131
+	name="STATE_1131"
+	
+	history={
+		owner = FIN
+		victory_points = {
+			13662 1
+		}
+		buildings = {
+			infrastructure = 2
+			13662 = {
+				naval_base = 3
+				bunker = 1
+				coastal_bunker = 1
+			}
+		}
+		add_core_of = FIN
+	}
+	
+	provinces={
+		13662 
+	}
+	manpower=29291
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

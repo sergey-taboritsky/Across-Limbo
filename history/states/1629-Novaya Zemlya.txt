@@ -1,0 +1,19 @@
+state={
+	id=1629
+	name="STATE_1629"
+
+	history={
+		owner = RUS
+		add_core_of = RUS
+	}
+
+	provinces={
+		11047 15023 
+	}
+	manpower=356
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+	local_supplies=0.000
+	force_link_ownership_to = 1715
+}

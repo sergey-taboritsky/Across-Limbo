@@ -1,0 +1,33 @@
+
+state={
+	id=995
+	name="STATE_995"
+	resources={
+		rubber=4.000
+		tungsten=2.000
+	}
+
+	history={
+		owner = VIN
+		victory_points = {
+			4397 3 
+		}
+		victory_points = {
+			11936 2 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = VIN
+
+	}
+
+	provinces={
+		1302 4397 7280 9988 10016 10129 11936 12297 
+	}
+	manpower=2089623
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

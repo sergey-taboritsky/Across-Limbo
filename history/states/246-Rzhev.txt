@@ -1,0 +1,58 @@
+
+state={
+	id=246
+	name="STATE_246"
+
+	history={
+		owner = RUS
+		victory_points = {
+			11349 5
+		}
+		victory_points = {
+			3344 2
+		}
+		victory_points = {
+			6303 1
+		}
+		victory_points = {
+			11326 1
+		}
+		victory_points = {
+			6400 1
+		}
+		victory_points = {
+			287 1
+		}
+		victory_points = {
+			6367 1
+		}
+		victory_points = {
+			9287 1
+		}
+		victory_points = {
+			3235 1
+		}
+		victory_points = {
+			11224 1
+		}
+		victory_points = {
+			9265 1
+		}
+		victory_points = {
+			9343 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		226 248 287 3235 3321 3344 6264 6303 6367 6400 9242 9265 9287 9333 9343 11224 11272 11326 11349 
+	}
+	manpower=1025458
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

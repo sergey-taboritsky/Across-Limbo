@@ -1,0 +1,26 @@
+
+state={
+	id=1029
+	name="STATE_1029"
+
+	history={
+		owner = FRA
+		victory_points = {
+			6613 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		6613 11794 
+	}
+	manpower=1035875
+	buildings_max_level_factor=1.000
+	state_category=city
+}

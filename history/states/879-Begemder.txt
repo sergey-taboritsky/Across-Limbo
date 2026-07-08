@@ -1,0 +1,32 @@
+
+state={
+	id=879
+	name="STATE_879"
+
+	history={
+		owner = ETH
+		victory_points = {
+			1984 3 
+		}
+		victory_points = {
+			15433 1
+		}
+		buildings = {
+			infrastructure = 1
+			15433 = {
+				bunker = 3
+			}
+
+		}
+		add_core_of = ETH
+
+	}
+
+	provinces={
+		1984 2040 13137 13217 13526 15430 15433 
+	}
+	manpower=597252
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

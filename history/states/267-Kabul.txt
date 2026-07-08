@@ -1,28 +1,40 @@
-state = {
-	id = 267
-	name = "STATE_267" # Kabul
-	manpower = 603830
 
-	state_category = large_town
-
-	resources = {
-		chromium = 2
+state={
+	id=267
+	name="STATE_267"
+	resources={
+		tungsten=3.000
 	}
-	history = {
+
+	history={
 		owner = AFG
-		buildings = {
-			infrastructure = 5
-			
-			air_base = 3
-			
-			
-			
+		victory_points = {
+			10737 10 
 		}
-		victory_points = { 10737 20 }
+		victory_points = {
+			12831 2 
+		}
+		victory_points = {
+			14913 1 
+		}
+		victory_points = {
+			14912 1 
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
 		add_core_of = AFG
+
 	}
 
-	provinces = {
-		10737
+	provinces={
+		10737 10826 12831 14912 14913 14915 
 	}
+	manpower=1997653
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

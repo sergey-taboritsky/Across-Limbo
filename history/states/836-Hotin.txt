@@ -1,0 +1,26 @@
+state={
+	id=836
+	name="STATE_836"
+
+	history={
+		owner = ROM
+		victory_points = {
+			3407 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ROM
+		add_core_of = MOL
+		add_core_of = UKR
+		add_claim_by = RUS
+	}
+
+	provinces={
+		3407
+	}
+	manpower=255000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

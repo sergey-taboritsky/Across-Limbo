@@ -1,0 +1,45 @@
+
+state={
+	id=989
+	name="STATE_989"
+
+	history={
+		owner = SIA
+		victory_points = {
+			4433 2
+		}
+		victory_points = {
+			7292 1
+		}
+		victory_points = {
+			16544 1
+		}
+		victory_points = {
+			7358 1
+		}
+		victory_points = {
+			7225 1
+		}
+		victory_points = {
+			12224 1
+		}
+		victory_points = {
+			10293 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = SIA
+
+	}
+
+	provinces={
+		1244 4433 7225 7292 7358 10293 12186 12224 16544
+	}
+	manpower=1000826
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

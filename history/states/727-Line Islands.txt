@@ -1,32 +1,38 @@
-state = {
-	id = 727
-	name = "STATE_727"
-	manpower = 5391
-	state_category = tiny_island
 
-	history = {
-		owner = USA
-		add_core_of = USA
-		add_claim_by = NZL
-		add_claim_by = ENG
+state={
+	id=727
+	name="STATE_727"
+
+	history={
+		owner = ENG
 		buildings = {
-			infrastructure = 2
-			
-			radar_station = 3
-			air_base = 1
+			14286 = {
+				naval_base = 1
+
+			}
+			14287 = {
+				naval_base = 1
+
+			}
 			13049 = {
 				naval_base = 1
+
 			}
 			13053 = {
 				naval_base = 1
+
 			}
+
 		}
-		victory_points = {
-			13053 1
-		}
+		add_core_of = KIR
+		add_claim_by = USA
+
 	}
 
-	provinces = {
-		13049 13053
+	provinces={
+		13049 13053 14286 14287 
 	}
+	manpower=711
+	buildings_max_level_factor=1.000
+	state_category=small_island
 }

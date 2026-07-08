@@ -1,0 +1,45 @@
+state={
+	id=111
+	name="STATE_111"
+
+	history={
+		owner = FIN
+		victory_points = {
+			11105 15 
+		}
+		victory_points = {
+			16507 2
+		}
+		victory_points = {
+			16508 2
+		}
+		victory_points = {
+			6009 1
+		}
+		victory_points = {
+			6144 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 1
+			air_base = 5
+			11105 = {
+				naval_base = 5
+				coastal_bunker = 2
+
+			}
+
+		}
+		add_core_of = FIN
+
+	}
+	
+	provinces={
+		204 3161 6009 6108 6144 9129 13100 16507 16508 11105
+	}
+	manpower=583563
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

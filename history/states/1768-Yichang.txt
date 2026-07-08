@@ -1,0 +1,31 @@
+state={
+	id=1768
+	name="STATE_1768"
+	resources={
+		coal=15.000
+	}
+
+	history={
+		owner = CHI
+		victory_points = {
+			16694 3
+		}
+		victory_points = {
+			5030 3
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		4896 5030 7596 10757 12086 12414 16687 16691 16694 
+	}
+	manpower=3162837
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

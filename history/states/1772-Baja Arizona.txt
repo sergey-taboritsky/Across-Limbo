@@ -1,0 +1,37 @@
+state={
+	id=1772
+	name="STATE_1772"
+
+	history={
+		owner = USA
+		victory_points = {
+			3834 5 
+		}
+		victory_points = {
+			10783 3
+		}
+		victory_points = {
+			7920 1
+		}
+		victory_points = {
+			16708 1
+		}
+		victory_points = {
+			16713 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		3834 7920 10783 16708 16709 16710 16711 16712 16713 
+	}
+	manpower=110760
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

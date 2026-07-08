@@ -1,0 +1,29 @@
+
+state={
+	id=1582
+	name="STATE_1582"
+
+	history={
+		owner = SWE
+		victory_points = {
+			113 1
+		}
+		victory_points = {
+			202 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		113 202 3111 3191 6010 6123 6207 9068 9148 9229 11116 
+	}
+	manpower=5689
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

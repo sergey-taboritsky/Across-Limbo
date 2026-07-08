@@ -1,0 +1,27 @@
+
+state={
+	id=784
+	name="STATE_784"
+
+	history={
+		owner = USA
+		victory_points = {
+			3957 40
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			anti_air_building = 2
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		3957 
+	}
+	manpower=529000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

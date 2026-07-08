@@ -1,0 +1,29 @@
+
+state={
+	id=714
+	name="STATE_714"
+	resources={
+		coal=3.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			7832 5
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = CHI
+		add_core_of = MAN
+
+	}
+
+	provinces={
+		1588 1693 4592 7613 7832 7848 7897 10698 12548 12618 
+	}
+	manpower=2003191
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

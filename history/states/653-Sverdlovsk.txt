@@ -1,37 +1,36 @@
-state = {
-	id = 653
-	name = "STATE_653"
-	resources = {
-		steel = 22.000
-		oil = 18.000
+
+state={
+	id=653
+	name="STATE_653"
+	resources={
+		steel=24.000
+		coal=2.000
 	}
 
-	history = {
+	history={
 		owner = RUS
+		victory_points = {
+			1821 5
+		}
+		victory_points = {
+			7228 2
+		}
+		victory_points = {
+			307 1
+		}
 		buildings = {
-			infrastructure = 4
-			
-			
-			
+			infrastructure = 3
+			arms_factory = 3
 			air_base = 1
-		}
-		victory_points = {
-			1821 30
-		}
-		victory_points = {
-			307 8
-		}
-		victory_points = {
-			10189 3
+
 		}
 		add_core_of = RUS
-		set_state_flag = universal_renamings
 	}
 
-	provinces = {
-		307 1543 1750 1821 4824 7778 9553 10189 12696 13323
+	provinces={
+		307 1543 1704 1750 1771 1808 1821 1841 3280 4758 4813 7228 7320 7778 9553 10133 10189 10216 10648 10716 10720 12102 12567 12659 12696 
 	}
-	manpower = 2278000
-	buildings_max_level_factor = 1.000
-	state_category = city
+	manpower=2161650
+	buildings_max_level_factor=1.000
+	state_category=city
 }

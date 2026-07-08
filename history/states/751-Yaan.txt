@@ -1,0 +1,29 @@
+
+state={
+	id=751
+	name="STATE_751"
+
+	history={
+		owner = XKN
+		victory_points = {
+			10841 3 
+		}
+		victory_points = {
+			2067 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CHI
+		add_core_of = XKN
+
+	}
+
+	provinces={
+		2067 7294 10726 10841 
+	}
+	manpower=3249300
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

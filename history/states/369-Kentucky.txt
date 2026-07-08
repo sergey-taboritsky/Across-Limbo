@@ -1,48 +1,40 @@
-state = {
-	id = 369
-	name = "STATE_369"
 
-	history = {
+state={
+	id=369
+	name="STATE_369"
+	resources={
+		coal=361.000
+	}
+
+	history={
 		owner = USA
-		buildings = {
-			infrastructure = 5
-			radar_station = 2
-			air_base = 4
-			
-			
-			
-			
-			
+		victory_points = {
+			6696 5 
 		}
-		add_core_of = USA
-		victory_points = { # Louisville
-			6696 30
+		victory_points = {
+			1445 3 
 		}
-		victory_points = { # Owensboro
-			10727 1
+		victory_points = {
+			6974 1 
 		}
-		victory_points = { # Lexington
-			9727 5
-		}
-		victory_points = { # Covington
-			1445 5
-		}
-		victory_points = { # Bowling Green
-			6974 3
-		}
-		victory_points = { # Frankfort
-			12709 3
-		}
-		victory_points = { # Paducah
+		victory_points = {
 			10586 1
 		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 4
+
+		}
+		add_core_of = USA
+
 	}
 
-	provinces = {
-		1445 1582 4402 4452 4988 6696 6974 7547 9727 10586 10727 12568 12637 12709 17306
+	provinces={
+		1445 1582 4402 4452 4988 6696 6974 7547 9727 10586 10727 12568 12637 12709 
 	}
-	manpower = 3098908
-	buildings_max_level_factor = 1.000
-	state_category = city
-	local_supplies = 0.000
+	manpower=2698000
+	buildings_max_level_factor=1.000
+	state_category=city
 }

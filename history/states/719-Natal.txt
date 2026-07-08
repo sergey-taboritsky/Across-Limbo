@@ -1,48 +1,39 @@
-state = {
-	id = 719
-	name = "STATE_719"
-	resources = {
-		chromium = 106.000
+
+state={
+	id=719
+	name="STATE_719"
+	resources={
+		chromium=30.000
+		coal=29.000
 	}
 
-	history = {
+	history={
 		owner = SAF
+		victory_points = {
+			1468 3 
+		}
+		victory_points = {
+			13389 2
+		}
 		buildings = {
-			
-			
-			
-			infrastructure = 4
-			
-			13522 = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 1
+			anti_air_building = 1
+			1468 = {
 				naval_base = 2
+
 			}
-		}
-		victory_points = {
-			13521 20
-		}
-		victory_points = {
-			15384 10
-		}
-		victory_points = {
-			13535 2
-		}
-		victory_points = {
-			13537 1
-		}
-		victory_points = {
-			13508 1
-		}
-		victory_points = {
-			15387 1
+
 		}
 		add_core_of = SAF
+
 	}
 
-	provinces = {
-		8178 13508 13513 13516 13521 13522 13526 13528 13531 13532 13535 13537 13540 13541 13547 15384 15385 15386 15387 17833
+	provinces={
+		1468 1494 8178 13389 13394 13396 13415 
 	}
-	manpower = 1914144
-	buildings_max_level_factor = 1.000
-	state_category = large_town
-	local_supplies = 0.000
+	manpower=1843054
+	buildings_max_level_factor=1.000
+	state_category=city
 }

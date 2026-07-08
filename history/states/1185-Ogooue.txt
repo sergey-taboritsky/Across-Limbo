@@ -1,0 +1,20 @@
+
+state={
+	id=1185
+	name="STATE_1185"
+
+	history={
+		owner = FRA
+		add_core_of = GAB
+	}
+
+	provinces={
+		13770
+	}
+	manpower=96250
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+	force_link_ownership_to = 539
+}

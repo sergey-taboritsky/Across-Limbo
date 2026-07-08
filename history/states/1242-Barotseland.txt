@@ -1,0 +1,32 @@
+
+state={
+	id=1242
+	name="STATE_1242"
+
+	history={
+		owner = ENG
+		victory_points = {
+			10538 2
+		}
+		victory_points = {
+			7872 2 
+		}
+		victory_points = {
+			14058 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ZAM
+
+	}
+
+	provinces={
+		697 1511 7872 10538 13712 14048 14049 14054 14058 
+	}
+	manpower=267408
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,23 @@
+state={
+	id=1422
+	name="STATE_1422"
+
+	history={
+		owner = SIK
+		victory_points = {
+			7866 2
+		}
+		add_core_of = SIK
+		add_core_of = CHI
+		
+
+	}
+	
+	provinces={
+		7866 15196 16675 
+	}
+	manpower=73006
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

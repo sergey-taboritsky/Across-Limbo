@@ -1,34 +1,51 @@
-state = {
-	id = 197
-	name = "STATE_197"
 
-	history = {
+state={
+	id=197
+	name="STATE_197"
+
+	history={
 		owner = RUS
-		buildings = {
-			infrastructure = 4
-			
-			dockyard = 1
-			
-			
-			
-			radar_station = 1
-		}
-		victory_points = { 6597 2 }
-		victory_points = { 11546 10 }
-		victory_points = { 3755 10 }
-		victory_points = { 3452 5 }
-		victory_points = { 11683 1 }
 		victory_points = {
-			6478 3
+			11683 5
+		}
+		victory_points = {
+			3755 3
+		}
+		victory_points = {
+			16310 1
+		}
+		victory_points = {
+			6597 1
+		}
+		victory_points = {
+			574 1
+		}
+		victory_points = {
+			16311 1
+		}
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			11683 = {
+				naval_base = 1
+
+			}
+			3755 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = RUS
-		set_state_flag = universal_renamings
+		add_core_of = UKR
+
 	}
 
-	provinces = {
-		409 574 3403 3755 6597 9573 11546 11683 11715 11409 434 458 3452 488 3468 6478 6451
+	provinces={
+		574 3755 6597 9573 11546 11683 11715 14488 16309 16310 16311 
 	}
-	manpower = 2256666
-	buildings_max_level_factor = 1.000
-	state_category = town
+	manpower=1484525
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

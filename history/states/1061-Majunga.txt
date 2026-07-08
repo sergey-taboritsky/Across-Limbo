@@ -1,0 +1,34 @@
+
+state={
+	id=1061
+	name="STATE_1061"
+
+	history={
+		owner = FRA
+		victory_points = {
+			13502 2 
+		}
+		victory_points = {
+			5222 2
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			5222 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = MAD
+
+	}
+
+	provinces={
+		98 5222 8188 9059 9170 9179 13501 13502 13503 
+	}
+	manpower=681584
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

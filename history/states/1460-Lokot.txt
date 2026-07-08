@@ -1,0 +1,24 @@
+state={
+	id=1460
+	name="STATE_1460"
+
+	history={
+		owner = RUS
+		victory_points = {
+			6386 2
+		}
+		buildings = {
+			infrastructure = 1
+			
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		3306 16637 6386 6355 6330 6304 
+	}
+	manpower=235000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

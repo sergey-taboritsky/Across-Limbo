@@ -1,0 +1,48 @@
+
+state={
+	id=451
+	name="STATE_451"
+
+	history={
+		owner = ITA
+		victory_points = {
+			7082 3
+		}
+		victory_points = {
+			4151 2 
+		}
+		victory_points = {
+			12094 2
+		}
+		victory_points = {
+			1186 1
+		}
+		victory_points = {
+			15744 1
+		}
+		victory_points = {
+			10049 1
+		}
+		victory_points = {
+			12025 1
+		}
+		buildings = {
+			infrastructure = 1
+			7082 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = LBA
+
+	}
+
+	provinces={
+		1186 1204 4063 4151 7082 10049 11910 12025 12094 13995 15743 15744 
+	}
+	manpower=25628
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,56 +1,85 @@
-state = {
-	id = 536
-	name = "STATE_536"
-	resources = {
-		steel = 2.000
+
+state={
+	id=536
+	name="STATE_536"
+	resources={
+		coal=69.000
 	}
 
-	history = {
-		owner = NAH
-		add_core_of = NAH
-		add_extra_state_shared_building_slots = 2
-		set_state_flag = has_offshore_island
+	history={
+		owner = JAP
+		victory_points = {
+			10444 10 
+		}
+		victory_points = {
+			12421 5 
+		}
+		victory_points = {
+			3962 3 
+		}
+		victory_points = {
+			15348 2
+		}
+		victory_points = {
+			12493 2
+		}
+		victory_points = {
+			1512 2
+		}
+		victory_points = {
+			4576 1 
+		}
+		victory_points = {
+			15353 1 
+		}
+		victory_points = {
+			15879 1 
+		}
+		victory_points = {
+			15345 1
+		}
 		buildings = {
-			infrastructure = 5
-			air_base = 6
-			1399 = {
-				naval_base = 1
+			infrastructure = 1
+			industrial_complex = 1
+			10444 = {
+				naval_base = 3
+
 			}
 			3962 = {
-				naval_base = 3
+				naval_base = 2
+
 			}
-			anti_air_building = 2
-			radar_station = 4
-			
-			
-			
-			
-			
-			
-			
+			4576 = {
+				naval_base = 1
+
+			}
+			15879 = {
+				naval_base = 1
+
+			}
+			1512 = {
+				naval_base = 1
+
+			}
+			15353 = {
+				naval_base = 1
+
+			}
+			15348 = {
+				naval_base = 1
+
+			}
+
 		}
-		victory_points = {
-			10444 25
-		}
-		victory_points = {
-			12421 10
-		}
-		victory_points = {
-			3962 10
-		}
-		victory_points = {
-			1512 1
-		}
-		victory_points = {
-			12493 1
-		}
+		add_core_of = JAP
+
 	}
 
-	provinces = {
-		1399 1512 1515 1642 3962 4576 4646 7532 7595 10444 10512 12352 12421 12493 13037 19445 19468 19484
+	provinces={
+		1512 1642 3962 4576 4646 7532 7595 10444 10512 12352 12421 12493 15345 15346 15347 15348 15349 15350 15351 15352 15353 15354 15877 15878 15879 15880 
 	}
-	manpower = 5239891
-	buildings_max_level_factor = 1.000
-	state_category = city
-	local_supplies = 0.000
+	manpower=2950449
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

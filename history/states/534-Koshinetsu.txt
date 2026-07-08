@@ -1,0 +1,50 @@
+
+state={
+	id=534
+	name="STATE_534"
+
+	history={
+		owner = JAP
+		victory_points = {
+			1117 5 
+		}
+		victory_points = {
+			10128 3
+		}
+		victory_points = {
+			12072 2
+		}
+		victory_points = {
+			12007 2
+		}
+		victory_points = {
+			15318 2
+		}
+		victory_points = {
+			9952 1
+		}
+		victory_points = {
+			10100 1
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+			1117 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = JAP
+
+	}
+
+	provinces={
+		1117 9952 10015 10100 10128 11930 11989 12007 12072 15318 15320 15321 15322 
+	}
+	manpower=4328100
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

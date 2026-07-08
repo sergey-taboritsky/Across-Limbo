@@ -1,0 +1,58 @@
+
+state={
+	id=92
+	name="STATE_92"
+
+	history={
+		owner = POL
+		victory_points = {
+			11399 5
+		}
+		victory_points = {
+			6580 2
+		}
+		victory_points = {
+			4246 2
+		}
+		victory_points = {
+			13726 1
+		}
+		victory_points = {
+			14379 1
+		}
+		victory_points = {
+			9521 1
+		}
+		victory_points = {
+			9452 1
+		}
+		victory_points = {
+			3559 1
+		}
+		victory_points = {
+			3521 1
+		}
+		victory_points = {
+			9544 1
+		}
+		victory_points = {
+			16858 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 1
+
+		}
+		add_core_of = POL
+
+	}
+
+	provinces={
+		3521 3559 6484 6580 9452 9521 9544 11399 11466 13726 14379 4246 16858
+	}
+	manpower=1964800
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

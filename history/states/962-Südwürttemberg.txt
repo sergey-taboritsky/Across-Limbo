@@ -1,0 +1,35 @@
+
+state={
+	id=962
+	name="STATE_962"
+
+	history={
+		owner = GER
+		victory_points = {
+			11486 2
+		}
+		victory_points = {
+			694 1
+		}
+		victory_points = {
+			9655 1
+		}
+		victory_points = {
+			519 1
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = GER
+		add_core_of = WUR
+
+	}
+
+	provinces={
+		519 694 9655 11486 13261 15097 
+	}
+	manpower=848800
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

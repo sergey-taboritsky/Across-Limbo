@@ -1,0 +1,38 @@
+
+state={
+	id=1510
+	name="STATE_1510"
+
+	history={
+		owner = VEN
+		victory_points = {
+			10855 5 
+		}
+		victory_points = {
+			8024 2 
+		}
+		victory_points = {
+			16242 2
+		}
+		victory_points = {
+			16245 1
+		}
+		victory_points = {
+			4942 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = VEN
+
+	}
+
+	provinces={
+		4942 8024 10855 14939 14943 14946 16233 16239 16242 16244 16245 16248 
+	}
+	manpower=442482
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

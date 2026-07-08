@@ -1,0 +1,41 @@
+
+state={
+	id=126
+	name="STATE_126"
+
+	history={
+		owner = ENG
+		victory_points = {
+			11333 40
+		}
+		victory_points = {
+			13729 2
+		}
+		victory_points = {
+			16794 2
+		}
+		victory_points = {
+			16795 2
+		}
+		victory_points = {
+			16793 2
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 3
+			anti_air_building = 2
+			air_base = 10
+
+		}
+		add_core_of = ENG
+
+	}
+
+	provinces={
+		11333 13729 16793 16794 16795
+	}
+	manpower=6004168
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

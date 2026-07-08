@@ -1,0 +1,42 @@
+
+state={
+	id=1021
+	name="STATE_1021"
+	resources={
+		steel=6.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			6784 2
+		}
+		victory_points = {
+			3589 1
+		}
+		victory_points = {
+			762 1
+		}
+		victory_points = {
+			9736 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			3764 = {
+				bunker = 3
+				
+			}
+
+		}
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		762 780 3589 3768 6784 11713 3762 764 3764 9736 
+	}
+	manpower=797100
+	buildings_max_level_factor=1.000
+	state_category=town
+}

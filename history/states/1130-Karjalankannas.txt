@@ -1,0 +1,27 @@
+state={
+	id=1130
+	name="STATE_1130"
+	
+	history={
+		owner = FIN
+		victory_points = {
+			3060 1
+		}
+		victory_points = {
+			9150 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = FIN
+		add_core_of = KRL
+	}
+	
+	provinces={
+		3060 13663 9150
+	}
+	manpower=58356
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

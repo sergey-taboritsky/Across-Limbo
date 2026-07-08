@@ -1,0 +1,52 @@
+state={
+	id=1637
+	name="STATE_1637"
+
+	history={
+		owner = USA
+		victory_points = {
+			9814 20
+		}
+		victory_points = {
+			15276 5
+		}
+		victory_points = {
+			15277 3
+		}
+		victory_points = {
+			11757 3
+		}
+		victory_points = {
+			11757 3
+		}
+		victory_points = {
+			823 3 
+		}
+		victory_points = {
+			15280 3
+		}
+		victory_points = {
+			15278 2
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+			dockyard = 2
+			15276 = {
+				naval_base = 7
+			}
+
+		}
+		add_core_of = USA
+		add_core_of = CAL
+
+	}
+
+	provinces={
+		823 9814 11757 15271 15276 15277 15278 15280 
+	}
+	manpower=1998099
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

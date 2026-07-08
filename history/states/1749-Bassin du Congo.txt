@@ -1,0 +1,22 @@
+state={
+	id=1749
+	name="STATE_1749"
+	resources={
+		rubber=4.000
+	}
+
+	history={
+		owner = COG
+		add_core_of = COG
+	}
+
+	provinces={
+		988 10951 13485 14455 14456 14469 
+	}
+	manpower=225492
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+	local_supplies=0.000
+	force_link_ownership_to = 538
+}

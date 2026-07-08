@@ -1,0 +1,43 @@
+state={
+	id=216
+	name="STATE_216"
+
+	history={
+		owner = RUS
+		victory_points = {
+			11159 5
+		}
+		victory_points = {
+			3033 2
+		}
+		victory_points = {
+			92 2
+		}
+		victory_points = {
+			6106 1
+		}
+		victory_points = {
+			6057 1
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			11159 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = RUS
+		add_core_of = KRL
+
+	}
+	
+	provinces={
+		90 92 3033 3084 3144 6057 6106 9118 11092 11153 11159 
+	}
+	manpower=229564
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

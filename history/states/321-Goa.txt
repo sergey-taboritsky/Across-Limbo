@@ -1,26 +1,25 @@
-state = { #Population Done
-	id = 321
-	name = "STATE_321"
-	manpower = 589997
 
-	state_category = pastoral
+state={
+	id=321
+	name="STATE_321"
+	manpower = 510979
 
-	history = {
-		owner = RAJ
-		add_core_of = RAJ
-		
-		victory_points = { 1273 1 }
+	state_category = rural
+
+	history={
+		owner = POR
+		victory_points = {
+			1273 1 
+		}
 		buildings = {
-			infrastructure = 4
-			radar_station = 1
-			1273 = {
+			infrastructure = 2
+			1273 ={
 				naval_base = 1
 			}
 		}
-		set_state_flag = state_renamings
 	}
 
-	provinces = {
-		1273
+	provinces={
+		1273 
 	}
 }

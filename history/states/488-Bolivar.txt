@@ -1,27 +1,32 @@
-state = {
-	id = 488
-	name = "STATE_488"
 
-	history = {
+state={
+	id=488
+	name="STATE_488"
+
+	history={
 		owner = VEN
+		victory_points = {
+			14938 3 
+		}
+		victory_points = {
+			10736 1 
+		}
+		victory_points = {
+			14942 1
+		}
 		buildings = {
-			
-			
-			infrastructure = 2
-			
+			infrastructure = 1
+
 		}
 		add_core_of = VEN
-		victory_points = {
-			13619 3
-		}
-		set_state_flag = GDP_regions_bolivar
+
 	}
 
-	provinces = {
-		1981 7915 10736 10849 10879 12940 13226 13240 13246 13247 13374 13392 13418 13619 13620 13621 14439 17381 17393 17398
+	provinces={
+		10736 10849 10879 14932 14938 14942 
 	}
-	manpower = 246013
-	buildings_max_level_factor = 1.000
-	state_category = pastoral
-	local_supplies = 0.000
+	manpower=270695
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

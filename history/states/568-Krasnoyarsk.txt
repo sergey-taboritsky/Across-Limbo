@@ -1,0 +1,56 @@
+
+state={
+	id=568
+	name="STATE_568"
+	resources={
+		aluminium=34.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			4724 10
+		}
+		victory_points = {
+			12691 2
+		}
+		victory_points = {
+			7815 2
+		}
+		victory_points = {
+			12563 2
+		}
+		victory_points = {
+			4853 1
+		}
+		victory_points = {
+			1702 1
+		}
+		victory_points = {
+			12595 1
+		}
+		victory_points = {
+			10576 1
+		}
+		victory_points = {
+			4818 1
+		}
+		victory_points = {
+			10712 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		1777 1780 4690 4724 4818 4853 7701 7815 10576 10639 10712 12563 12595 12621 12666 12691 1702 4785 14422 4687 1837 10705 4842
+	}
+	manpower=1726427
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

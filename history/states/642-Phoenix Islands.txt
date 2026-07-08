@@ -1,0 +1,27 @@
+
+state={
+	id=642
+	name="STATE_642"
+
+	history={
+		owner = ENG
+		buildings = {
+			13050 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = KIR
+		add_claim_by = USA
+
+	}
+
+	provinces={
+		13050 13129 14419 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+}

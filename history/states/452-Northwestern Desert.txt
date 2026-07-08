@@ -1,0 +1,48 @@
+
+state={
+	id=452
+	name="STATE_452"
+
+	history={
+		owner = EGY
+		victory_points = {
+			11967 3
+		}
+		victory_points = {
+			1071 2
+		}
+		victory_points = {
+			9989 2
+		}
+		victory_points = {
+			7079 1
+		}
+		victory_points = {
+			9977 1
+		}
+		victory_points = {
+			12033 1
+		}
+		victory_points = {
+			15742 1
+		}
+		buildings = {
+			infrastructure = 1
+			11967 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = EGY
+
+	}
+
+	provinces={
+		1071 5078 7079 9977 9989 10061 10785 11967 12033 13991 15735 15736 15738 15739 15740 15742 
+	}
+	manpower=26107
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

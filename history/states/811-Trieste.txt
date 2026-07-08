@@ -1,0 +1,29 @@
+
+state={
+	id=811
+	name="STATE_811"
+
+	history={
+		owner = ITA
+		victory_points = {
+			6626 5
+		}
+		buildings = {
+			infrastructure = 3
+			6626 = {
+				naval_base = 3
+
+			}
+			
+		}
+		add_core_of = ITA
+		add_claim_by = YUG
+	}
+
+	provinces={
+		6626
+	}
+	manpower=249425
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

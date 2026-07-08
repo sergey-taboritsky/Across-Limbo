@@ -1,29 +1,25 @@
-state = {
-	id = 509
-	name = "STATE_509" # Santiago del Estero
-	manpower = 390840
 
-	state_category = rural
+state={
+	id=509
+	name="STATE_509"
 
-	resources = {
-		tungsten = 17
-		steel = 3
-	}
-
-	history = {
+	history={
 		owner = ARG
+		victory_points = {
+			5143 3
+		}
 		buildings = {
-			infrastructure = 2
-			
+			infrastructure = 1
+
 		}
 		add_core_of = ARG
-		victory_points = { 14890 10 }
-		victory_points = { 15042 1 }
-		set_state_flag = GDP_category_town
-		set_state_flag = GDP_regions_santiago_del_estero
+
 	}
 
-	provinces = {
-		5143 8255 14890 14977 14980 15042 15051 15078
+	provinces={
+		2208 5143 8169 8255 14723 14729 14731 
 	}
+	manpower=291407
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

@@ -1,0 +1,57 @@
+	state={
+	id=560
+	name="STATE_560"
+	resources={
+		steel=18.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			12263 3
+		}
+		victory_points = {
+			12559 2
+		}
+		victory_points = {
+			4404 2
+		}
+		victory_points = {
+			9749 1
+		}
+		victory_points = {
+			7868 1
+		}
+		victory_points = {
+			739 1
+		}
+		victory_points = {
+			4841 1
+		}
+		victory_points = {
+			10571 1
+		}
+		victory_points = {
+			9733 1
+		}
+		buildings = {
+			infrastructure = 1
+			4404 = {
+				naval_base = 1
+			}
+			9749 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		725 739 753 1343 3664 4290 4404 4841 7249 7309 7868 9589 9604 9733 9749 10571 11719 12136 12263 12559 
+	}
+	manpower=97663
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

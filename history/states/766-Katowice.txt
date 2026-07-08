@@ -1,0 +1,37 @@
+
+state={
+	id=766
+	name="STATE_766"
+	resources={
+		steel=8.000
+		coal=246.000
+	}
+
+	history={
+		owner = POL
+		victory_points = {
+			6464 5
+		}
+		victory_points = {
+			15 2
+		}
+		victory_points = {
+			506 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = POL
+		add_claim_by = GER
+	}
+
+	provinces={
+		506 6464 15
+	}
+	manpower=1056542
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,46 +1,38 @@
-state = {
-	id = 479
-	name = "STATE_479"
-	resources = {
-		oil = 33.000
-	}
 
-	history = {
+state={
+	id=479
+	name="STATE_479"
+
+	history={
 		owner = MEX
+		victory_points = {
+			14999 5
+		}
+		victory_points = {
+			13719 3
+		}
+		victory_points = {
+			5015 3
+		}
+		victory_points = {
+			2083 2
+		}
+		victory_points = {
+			14997 2
+		}
 		buildings = {
-			
-			
-			
-			
-			infrastructure = 3
-			
-			radar_station = 1
-			air_base = 3
+			infrastructure = 1
+			industrial_complex = 1
+
 		}
-		set_state_flag = GDP_category_large_town
 		add_core_of = MEX
-		victory_points = {
-			5021 10
-		}
-		victory_points = {
-			5015 7
-		}
-		victory_points = {
-			2083 5
-		}
-		victory_points = {
-			14527 10
-		}
-		victory_points = {
-			17007 10
-		}
+
 	}
 
-	provinces = {
-		2083 5015 5021 13088 14527 17007 17062 17321
+	provinces={
+		2083 5015 13088 13719 14997 14999 
 	}
-	manpower = 1214075
-	buildings_max_level_factor = 1.000
-	state_category = city
-	local_supplies = 0.000
+	manpower=362588
+	buildings_max_level_factor=1.000
+	state_category=town
 }

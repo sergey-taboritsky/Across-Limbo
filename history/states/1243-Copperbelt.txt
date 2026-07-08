@@ -1,0 +1,27 @@
+state={
+	id=1243
+	name="STATE_1243"
+
+	history={
+		owner = ENG
+		victory_points = {
+			14055 3
+		}
+		victory_points = {
+			12677 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ZAM
+
+	}
+
+	provinces={
+		12677 14055
+	}
+	manpower=192810
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

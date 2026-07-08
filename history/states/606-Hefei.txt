@@ -1,48 +1,40 @@
-state = {
-	id = 606
-	name = "STATE_606"
-	resources = {
 
+state={
+	id=606
+	name="STATE_606"
+	resources={
+		steel=11.000
+		coal=16.000
 	}
 
-	history = {
+	history={
 		owner = CHI
-		add_core_of = CHI
-		buildings = {
-			
-			
-			
-			infrastructure = 4
-			
+		victory_points = {
+			7222 5 
 		}
 		victory_points = {
-			7222 19
-		}
-		victory_points = {
-			19866 5
-		}
-		victory_points = {
-			4203 4
+			12036 3 
 		}
 		victory_points = {
 			10008 2
 		}
 		victory_points = {
-			10064 5
+			10064 2
 		}
-		victory_points = {
-			12036 16
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
 		}
-		set_state_flag = GDP_regions_anhui
-		set_variable = { china_state_ref = 6 }
-		set_variable = { china_region_ref = 0 }
+		add_core_of = CHI
+
 	}
 
-	provinces = {
-		1146 4203 7094 7222 10008 10017 10064 12036 19866
+	provinces={
+		1001 4148 7094 7222 10008 10017 10064 12036 13171 
 	}
-	manpower = 7862042
-	buildings_max_level_factor = 1.000
-	state_category = large_town
-	local_supplies = 0.000
+	manpower=7744441
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

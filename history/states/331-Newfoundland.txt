@@ -1,39 +1,59 @@
-state = {
-	id = 331
-	name = "STATE_331"
-	manpower = 452716
 
-	state_category = small_island
+state={
+	id=331
+	name="STATE_331"
+	resources={
+		steel=4.000
+	}
 
-	history = {
+	history={
 		owner = USA
-		buildings = {
-			infrastructure = 4
-			radar_station = 3
-			air_base = 5
-			12505 = {
-				naval_base = 3
-			}
-			
-			
-			
-			
+		victory_points = {
+			12505 3
 		}
-		add_extra_state_shared_building_slots = 1
-		add_core_of = USA
-		victory_points = { # St. John
-			12505 10 # provincial capital
+		victory_points = {
+			7788 2
 		}
-		victory_points = { # Gander
+		victory_points = {
+			15548 1
+		}
+		victory_points = {
+			15543 1
+		}
+		victory_points = {
+			15556 1
+		}
+		victory_points = {
 			7758 1
 		}
-		victory_points = { # Corner Brook
-			7788 1
+		victory_points = {
+			15616 1
 		}
-		set_state_flag = GDP_regions_newfoundland
+		victory_points = {
+			14209 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			12505 = {
+				naval_base = 2
+
+			}
+			7788 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = USA
+
 	}
 
-	provinces = {
-		7758 7788 12505 12680 12698
+	provinces={
+		7758 7788 12505 12680 12698 14205 14209 15537 15543 15548 15551 15552 15556 15559 15616 
 	}
+	manpower=267655
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

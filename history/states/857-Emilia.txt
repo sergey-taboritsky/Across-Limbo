@@ -1,0 +1,37 @@
+
+state={
+	id=857
+	name="STATE_857"
+	resources={
+		aluminium=6.000
+	}
+
+	history={
+		owner = ITA
+		victory_points = {
+			9752 3
+		}
+		victory_points = {
+			6790 3
+		}
+		victory_points = {
+			16865 2
+		}
+		victory_points = {
+			11734 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		3773 3976 6790 9752 11734 16865
+	}
+	manpower=1442950
+	buildings_max_level_factor=1.000
+	state_category=town
+}

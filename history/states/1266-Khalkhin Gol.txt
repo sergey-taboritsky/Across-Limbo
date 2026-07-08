@@ -1,0 +1,20 @@
+state={
+	id=1266
+	name="STATE_1266"
+
+	history={
+		owner = MON
+		victory_points = {
+			14529 1
+		}
+		add_core_of = MON
+		add_claim_by = MAN
+	}
+
+	provinces={
+		14529
+	}
+	manpower=150
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

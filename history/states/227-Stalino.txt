@@ -1,0 +1,61 @@
+
+state={
+	id=227
+	name="STATE_227"
+	resources={
+		coal=255.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			6474 10 
+		}
+		victory_points = {
+			3421 5
+		}
+		victory_points = {
+			3479 3
+		}
+		victory_points = {
+			11102 2
+		}
+		victory_points = {
+			502 2
+		}
+		victory_points = {
+			6493 1 
+		}
+		victory_points = {
+			3491 1 
+		}
+		victory_points = {
+			3466 1 
+		}
+		victory_points = {
+			6420 1
+		}
+		victory_points = {
+			6776 1
+		}
+		buildings = {
+			infrastructure = 2
+			3421 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = RUS
+		add_core_of = UKR
+
+	}
+
+	provinces={
+		502 3421 3449 3466 3479 3491 6420 6474 6493 6776 11102 16302 16304 
+	}
+	manpower=4181010
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

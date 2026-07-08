@@ -1,0 +1,27 @@
+state={
+	id=1695
+	name="STATE_1695"
+
+	history={
+		owner = DEN
+		victory_points = {
+			15705 1
+		}
+		buildings = {
+			15705 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = GRL
+	}
+
+	provinces={
+		15705 
+	}
+	manpower=1819
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

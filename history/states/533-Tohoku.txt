@@ -1,0 +1,84 @@
+
+state={
+	id=533
+	name="STATE_533"
+	resources={
+		steel=27.000
+		coal=19.000
+	}
+
+	history={
+		owner = JAP
+		victory_points = {
+			7169 10 
+		}
+		victory_points = {
+			6994 5
+		}
+		victory_points = {
+			11847 3
+		}
+		victory_points = {
+			1063 3
+		}
+		victory_points = {
+			9807 3
+		}
+		victory_points = {
+			4118 3
+		}
+		victory_points = {
+			15334 3
+		}
+		victory_points = {
+			1024 3 
+		}
+		victory_points = {
+			15338 2
+		}
+		victory_points = {
+			15336 2
+		}
+		victory_points = {
+			4067 2
+		}
+		victory_points = {
+			15337 2
+		}
+		victory_points = {
+			12056 2
+		}
+		victory_points = {
+			9859 1
+		}
+		victory_points = {
+			6873 1
+		}
+		buildings = {
+			arms_factory = 2
+			dockyard = 1
+			industrial_complex = 3
+			infrastructure = 1
+			air_base = 6
+			9859 = {
+				naval_base = 6
+
+			}
+			7169 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = JAP
+
+	}
+
+	provinces={
+		1024 1063 1165 3848 4067 4118 4122 4153 6870 6873 6994 7169 9807 9859 9865 11847 12056 15334 15335 15336 15337 15338 15339 15340 15341 15342 15343 15344 
+	}
+	manpower=6684929
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

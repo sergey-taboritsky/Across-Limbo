@@ -1,0 +1,32 @@
+
+state={
+	id=1428
+	name="STATE_1428"
+
+	history={
+		owner = POL
+		victory_points = {
+			14594 1
+		}
+		victory_points = {
+			13786 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = POL
+		add_claim_by = CZE
+		add_claim_by = SLO
+		add_claim_by = HUN
+
+	}
+
+	provinces={
+		13786 14594 
+	}
+	manpower=4400
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}

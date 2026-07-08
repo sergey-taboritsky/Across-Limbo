@@ -1,0 +1,37 @@
+
+state={
+	id=1111
+	name="STATE_1111"
+
+	history={
+		owner = USA
+		victory_points = {
+			11654 3 
+		}
+		victory_points = {
+			734 2 
+		}
+		victory_points = {
+			3747 2 
+		}
+		victory_points = {
+			9693 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 2
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		598 706 734 1436 3602 3702 3733 3747 3806 3894 6707 6717 6778 6795 6911 6916 9664 9673 9693 9708 9721 9754 9774 10381 11650 11654 11660 11662 11665 11680 11722 13157 13274 13354 
+	}
+	manpower=3937800
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

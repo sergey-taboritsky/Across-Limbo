@@ -1,0 +1,41 @@
+
+state={
+	id=1294
+	name="STATE_1294"
+	resources={
+		rubber=45.000
+		oil=7.000
+	}
+
+	history={
+		owner = INS
+		victory_points = {
+			4608 10
+		}
+		victory_points = {
+			10479 3
+		}
+		victory_points = {
+			10491 1
+		}
+		buildings = {
+			infrastructure = 1
+			anti_air_building = 1
+			4608 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = INS
+
+	}
+
+	provinces={
+		1209 1230 4390 4608 7654 10479 10491 12472 
+	}
+	manpower=8436650
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

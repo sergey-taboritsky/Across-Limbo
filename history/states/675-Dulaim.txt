@@ -1,0 +1,40 @@
+state={
+	id=675
+	name="STATE_675"
+
+	history={
+		owner = IRQ
+		victory_points = {
+			13328 2 
+		}
+		victory_points = {
+			12046 2 
+		}
+		victory_points = {
+			12413 1 
+		}
+		victory_points = {
+			15144 1
+		}
+		victory_points = {
+			12839 1
+		}
+		buildings = {
+			infrastructure = 1
+			12839 = {
+				bunker = 1
+			}
+
+		}
+		add_core_of = IRQ
+
+	}
+	
+	provinces={
+		12046 12372 12413 12839 13328 13329 13330 15144 10744
+	}
+	manpower=153084
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

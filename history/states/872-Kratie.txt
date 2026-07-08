@@ -1,0 +1,29 @@
+
+state={
+	id=872
+	name="STATE_872"
+
+	history={
+		owner = CAM
+		victory_points = {
+			7645 1 
+		}
+		victory_points = {
+			12150 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CAM
+
+	}
+
+	provinces={
+		1620 4596 7645 10204 12150 12167 13296 
+	}
+	manpower=157210
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

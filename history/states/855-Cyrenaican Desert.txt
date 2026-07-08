@@ -1,0 +1,19 @@
+
+state={
+	id=855
+	name="STATE_855"
+
+	history={
+		owner = ITA
+		add_core_of = LBA
+	}
+
+	provinces={
+		1994 
+	}
+	manpower=16875
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+	force_link_ownership_to = 449 #replace with oasis
+}

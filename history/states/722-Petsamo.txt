@@ -1,0 +1,35 @@
+
+state={
+	id=722
+	name="STATE_722"
+
+	history={
+		owner = FIN
+		victory_points = {
+			9140 2
+		}
+		victory_points = {
+			11142 1
+		}
+		victory_points = {
+			6012 1
+		}
+		buildings = {
+			infrastructure = 1
+			9140 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = FIN
+
+	}
+
+	provinces={
+		6012 6183 9140 11142 10560 1781
+	}
+	manpower=12732
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

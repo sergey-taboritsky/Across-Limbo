@@ -1,0 +1,26 @@
+state={
+	id=1643
+	name="STATE_1643"
+
+	history={
+		owner = SPR
+		victory_points = {
+			3899 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SPR
+		add_core_of = CAT
+
+	}
+
+	provinces={
+		3899 
+	}
+	manpower=5168
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}

@@ -1,0 +1,22 @@
+state={
+	id=1262
+	name="STATE_1262"
+
+	history={
+		owner = ENG
+		set_demilitarized_zone = yes
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = TZN
+
+	}
+
+	provinces={
+		14114 
+	}
+	manpower=202632
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

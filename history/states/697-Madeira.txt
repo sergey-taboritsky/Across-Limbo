@@ -1,28 +1,29 @@
-state = { #Population Done
-	id = 697
-	name = "STATE_697"
-	manpower = 262857
 
-	state_category = small_island
+state={
+	id=697
+	name="STATE_697"
 
-	history = {
+	history={
 		owner = POR
-		victory_points = { 3118 10 }
+		victory_points = {
+			3118 2
+		}
 		buildings = {
-			
-			infrastructure = 2
-			radar_station = 1
-			air_base = 1
+			infrastructure = 1
 			3118 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = POR
-		set_state_flag = GDP_regions_portugal
-		set_state_flag = GDP_category_town
+
 	}
 
-	provinces = {
-		3118
+	provinces={
+		3118 
 	}
+	manpower=205000
+	buildings_max_level_factor=1.000
+	state_category=small_island
 }

@@ -1,0 +1,42 @@
+state={
+	id=395
+	name="STATE_395"
+
+	history={
+		owner = USA
+		victory_points = {
+			9450 30 
+		}
+		victory_points = {
+			16412 3
+		}
+		victory_points = {
+			16407 2
+		}
+		victory_points = {
+			16408 1
+		}
+		victory_points = {
+			16410 1
+		}
+		victory_points = {
+			16413 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 8
+			air_base = 3
+
+		}
+		add_core_of = USA
+
+	}
+	
+	provinces={
+		9450 13200 16407 16408 16410 16412 16413 
+	}
+	manpower=5049200
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

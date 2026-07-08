@@ -1,0 +1,31 @@
+
+state={
+	id=1001
+	name="STATE_1001"
+
+	history={
+		owner = LAO
+		victory_points = {
+			1520 2 
+		}
+		victory_points = {
+			1374 2 
+		}
+		victory_points = {
+			1390 1 
+		}
+		victory_points = {
+			1577 1
+		}
+		add_core_of = LAO
+
+	}
+
+	provinces={
+		1374 1390 1520 1563 1577 4260 4539 4554 7426 10195 10238 10453 12210 
+	}
+	manpower=362014
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

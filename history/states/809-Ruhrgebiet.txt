@@ -1,0 +1,43 @@
+
+state={
+	id=809
+	name="STATE_809"
+	resources={
+		steel=37.000
+		coal=484.000
+	}
+
+	history={
+		owner = GER
+		set_demilitarized_zone = yes
+		victory_points = {
+			6469 5
+		}
+		victory_points = {
+			6570 5
+		}
+		victory_points = {
+			9482 2
+		}
+		victory_points = {
+			3512 1
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 5
+			industrial_complex = 4
+			air_base = 3
+
+		}
+		add_core_of = GER
+		add_core_of = RHI
+
+	}
+
+	provinces={
+		3512 6469 6570 9482 16823
+	}
+	manpower=2229318
+	buildings_max_level_factor=1.000
+	state_category=city
+}

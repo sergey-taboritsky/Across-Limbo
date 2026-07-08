@@ -1,0 +1,63 @@
+
+state={
+	id=63
+	name="STATE_63"
+	resources={
+		aluminium=12.000
+	}
+
+	history={
+		owner = GER
+		victory_points = {
+			6282 10
+		}
+		victory_points = {
+			9361 3 
+		}
+		victory_points = {
+			11372 3
+		}
+		victory_points = {
+			6309 2 
+		}
+		victory_points = {
+			11343 2
+		}
+		victory_points = {
+			15787 2
+		}
+		victory_points = {
+			6334 1
+		}
+		victory_points = {
+			9306 1
+		}
+		victory_points = {
+			15784 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 3
+			15787 = {
+				naval_base = 2
+
+			}
+			6282 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = GER
+
+	}
+
+	provinces={
+		6282 6309 6334 6390 9277 9306 9334 9361 11316 11343 11372 15782 15784 15787 15788 
+	}
+	manpower=1485039
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

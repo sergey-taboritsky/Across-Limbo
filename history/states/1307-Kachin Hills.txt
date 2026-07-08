@@ -1,0 +1,31 @@
+
+state={
+	id=1307
+	name="STATE_1307"
+
+	history={
+		owner = RAJ
+		victory_points = {
+			4318 1
+		}
+		victory_points = {
+			14993 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BRM
+		add_claim_by = CHI
+		
+		add_claim_by = YUN
+
+	}
+
+	provinces={
+		1934 4226 4318 4996 14279 14993 14994 
+	}
+	manpower=53877
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

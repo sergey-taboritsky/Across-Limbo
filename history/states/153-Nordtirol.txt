@@ -1,0 +1,39 @@
+
+state={
+	id=153
+	name="STATE_153"
+
+	history={
+		owner = AUS
+		victory_points = {
+			11618 5 
+		}
+		victory_points = {
+			9633 1
+		}
+		victory_points = {
+			6678 1
+		}
+		victory_points = {
+			9636 1
+		}
+		victory_points = {
+			11634 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		673 6678 9633 9636 11618 11634 
+	}
+	manpower=533743
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,50 @@
+
+state={
+	id=65
+	name="STATE_65"
+	resources={
+		coal=90.000
+	}
+
+	history={
+		owner = GER
+		victory_points = {
+			514 10
+		}
+		victory_points = {
+			3535 10
+		}
+		victory_points = {
+			9471 3
+		}
+		victory_points = {
+			9441 3
+		}
+		victory_points = {
+			6559 2
+		}
+		victory_points = {
+			15761 1
+		}
+		victory_points = {
+			15764 1
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 6
+
+		}
+		add_core_of = GER
+		add_core_of = SAX
+
+	}
+
+	provinces={
+		514 573 3535 6559 9441 9471 11481 14967 15761 15764 15765 
+	}
+	manpower=4499563
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

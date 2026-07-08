@@ -1,0 +1,28 @@
+state={
+	id=1653
+	name="STATE_1653"
+
+	history={
+		owner = ENG
+		victory_points = {
+			15394 1
+		}
+		buildings = {
+			15394 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = MAU
+
+	}
+
+	provinces={
+		15394 
+	}
+	manpower=198
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+}

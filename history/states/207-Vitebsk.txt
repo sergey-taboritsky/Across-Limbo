@@ -1,34 +1,53 @@
-state = {
-	id = 207
-	name = "STATE_207"
+state={
+	id=207
+	name="STATE_207"
 
-	history = {
+	history={
 		owner = RUS
 		victory_points = {
-			11241 10
-		}
-		victory_points = {
-			6326 3
+			11241 5 
 		}
 		victory_points = {
 			11220 3
 		}
+		victory_points = {
+			6326 2
+		}
+		victory_points = {
+			16648 1
+		}
+		victory_points = {
+			16646 1
+		}
+		victory_points = {
+			9241 1
+		}
+		victory_points = {
+			6220 1
+		}
+		victory_points = {
+			9323 1
+		}
+		victory_points = {
+			16650 1
+		}
+		victory_points = {
+			3331 1
+		}
 		buildings = {
-			infrastructure = 3
-			
+			infrastructure = 2
 			air_base = 5
-			
+
 		}
 		add_core_of = RUS
-		set_state_flag = GDP_regions_belarus
-		set_state_flag = universal_renamings
+		add_core_of = BLR
 	}
-
-	provinces = {
-		323 3219 3331 6220 6249 6326 6354 6371 9241 9323 9357 11220 11241 13314 14572 14580
+	
+	provinces={
+		323 3219 3331 6220 6249 6326 6371 9241 9323 11220 11241 16644 16645 16646 16647 16648 16649 16650 
 	}
-	manpower = 978412
-	buildings_max_level_factor = 1.000
-	state_category = town
-	local_supplies = 0.000
+	manpower=1040924
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

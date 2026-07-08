@@ -1,0 +1,46 @@
+
+state={
+	id=963
+	name="STATE_963"
+
+	history={
+		owner = AST
+		victory_points = {
+			12237 3
+		}
+		victory_points = {
+			7614 2
+		}
+		victory_points = {
+			11018 2
+		}
+		victory_points = {
+			12154 1 
+		}
+		victory_points = {
+			10251 1
+		}
+		buildings = {
+			infrastructure = 1
+			12237 = {
+				naval_base = 2
+
+			}
+			12154 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = PNG
+
+	}
+
+	provinces={
+		4393 4418 7365 7614 10251 10974 11018 12154 12193 12237 
+	}
+	manpower=538769
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

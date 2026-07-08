@@ -1,0 +1,67 @@
+
+state={
+	id=529
+	name="STATE_529"
+	resources={
+		coal=21.000
+	}
+
+	history={
+		owner = JAP
+		victory_points = {
+			1092 10 
+		}
+		victory_points = {
+			7212 5 
+		}
+		victory_points = {
+			15331 3
+		}
+		victory_points = {
+			11946 3 
+		}
+		victory_points = {
+			11985 3 
+		}
+		victory_points = {
+			7145 2
+		}
+		victory_points = {
+			10055 2
+		}
+		victory_points = {
+			15330 2
+		}
+		victory_points = {
+			14372 1 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			dockyard = 2
+			arms_factory = 2
+			industrial_complex = 2
+			15331 = {
+				naval_base = 10
+				naval_supply_hub = 1
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
+			}
+
+		}
+		add_core_of = JAP
+
+	}
+
+	provinces={
+		1092 1167 1191 4197 7050 7145 7212 9968 10052 10055 11946 11985 14372 15330 15331 15332 15333 
+	}
+	manpower=5454100
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

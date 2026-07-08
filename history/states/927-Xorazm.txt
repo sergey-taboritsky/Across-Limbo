@@ -1,0 +1,20 @@
+state={
+	id=927
+	name="STATE_927"
+	
+	history={
+		owner = RUS
+		victory_points = {
+			1576 1
+		}
+		add_core_of = RUS
+		add_core_of = UZB
+	}
+	
+	provinces={
+		1576 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

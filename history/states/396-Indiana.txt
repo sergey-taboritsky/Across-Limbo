@@ -1,50 +1,69 @@
-state = {
-	id = 396
-	name = "STATE_396"
 
-	history = {
+state={
+	id=396
+	name="STATE_396"
+	resources={
+		coal=138.000
+	}
+
+	history={
 		owner = USA
+		victory_points = {
+			1595 10
+		}
+		victory_points = {
+			870 3
+		}
+		victory_points = {
+			11635 3
+		}
+		victory_points = {
+			6713 2
+		}
+		victory_points = {
+			9654 2
+		}
+		victory_points = {
+			15918 2
+		}
+		victory_points = {
+			4531 2
+		}
+		victory_points = {
+			1881 2
+		}
+		victory_points = {
+			15919 2
+		}
+		victory_points = {
+			10448 2
+		}
+		victory_points = {
+			11621 1
+		}
+		victory_points = {
+			9810 1
+		}
+		victory_points = {
+			7551 1
+		}
+		victory_points = {
+			9653 1
+		}
 		buildings = {
-			infrastructure = 5
-			
-			
-			
+			infrastructure = 3
+			industrial_complex = 6
+
 		}
 		add_core_of = USA
-		victory_points = { # Gary
-			6713 10
-		}
-		victory_points = { # South Bend
-			9654 5
-		}
-		victory_points = { # Fort Wayne
-			870 10
-		}
-		victory_points = { # Lafayette
-			4531 3
-		}
-		victory_points = { # Muncie
-			9810 3
-		}
-		victory_points = { # Indianapolis
-			1595 20
-		}
-		victory_points = { # Terre Haute
-			12437 3
-		}
-		victory_points = { # Evansville
-			11635 5
-		}
-		victory_points = { # Bloomington
-			10448 1
-		}
+
 	}
 
-	provinces = {
-		870 1595 1881 4437 4527 4531 6713 7551 9653 9654 9796 9810 10448 11621 11635 11637 12437
+	provinces={
+		870 1595 1881 4437 4527 4531 6713 7551 9653 9654 9796 9810 10448 11621 11635 11637 12437 15915 15916 15917 15918 15919 15920 15921 15922 15923 15924 15925 16389
 	}
-	manpower = 4922340
-	buildings_max_level_factor = 1.000
-	state_category = large_city
-	local_supplies = 0.000
+	manpower=3304000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

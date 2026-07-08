@@ -1,0 +1,38 @@
+state={
+	id=551
+	name="STATE_551"
+
+	history={
+		owner = ENG
+		victory_points = {
+			12881 5
+		}
+		victory_points = {
+			14177 3
+		}
+		victory_points = {
+			14178 2
+		}
+		victory_points = {
+			10900 2
+		}
+		victory_points = {
+			14176 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		add_core_of = SUD
+	}
+	
+	provinces={
+		10900 12826 12881 14176 14177 14178 16562 16564 16566 16567 16568 
+	}
+	manpower=403112
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,33 @@
+state={
+	id=1343
+	name="STATE_1343"
+
+	history={
+		owner = RAJ
+		victory_points = {
+			2843 2
+		}
+		victory_points = {
+			10035 2
+		}
+		buildings = {
+			infrastructure = 1
+			7078 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = PAK
+		add_core_of = RAJ
+		add_core_of = BAN
+
+	}
+
+	provinces={
+		2843 7078 7124 9935 10035 11911 
+	}
+	manpower=5921355
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

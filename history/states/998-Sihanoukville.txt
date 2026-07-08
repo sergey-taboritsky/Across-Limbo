@@ -1,0 +1,31 @@
+
+state={
+	id=998
+	name="STATE_998"
+
+	history={
+		owner = CAM
+		victory_points = {
+		    13297 3
+		}
+		victory_points = {
+		    7432 1
+		}
+		buildings = {
+			infrastructure = 1
+			13297 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = CAM
+	}
+
+	provinces={
+		1353 4359 7404 7432 10177 10289 12191 13297 
+	}
+	manpower=438224
+	buildings_max_level_factor=1.000
+	state_category=town
+}

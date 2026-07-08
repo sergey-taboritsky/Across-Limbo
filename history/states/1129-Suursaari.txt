@@ -1,0 +1,28 @@
+state={
+	id=1129
+	name="STATE_1129"
+	
+	history={
+		owner = FIN
+		victory_points = {
+			13661 1 # does not need loc
+		}
+		buildings = {
+			infrastructure = 1
+			13661 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = FIN
+
+	}
+	
+	provinces={
+		13661 
+	}
+	manpower=100
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+}

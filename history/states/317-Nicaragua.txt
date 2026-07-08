@@ -1,35 +1,39 @@
-state = { #Population Done
-	id = 317
-	name = "STATE_317"
-	resources = {
 
-		chromium = 1
-	}
+state={
+	id=317
+	name="STATE_317"
 
-	state_category = rural
-
-	history = {
-		owner = ELS
-		buildings = {
-			infrastructure = 3
-			radar_station = 1
-			air_base = 1
-			
-			
-			
-			
-			12738 = {
-				naval_base = 1
-			}
+	history={
+		owner = NIC
+		victory_points = {
+			12738 5 
 		}
-		add_core_of = ELS
-		victory_points = { 12738 3 }
-		victory_points = { 1988 1 }
+		victory_points = {
+			14068 2 
+		}
+		victory_points = {
+			16273 2
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+			14068 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = NIC
+
 	}
 
-	provinces = {
-		1988 2075 10728 12738 13139 13178
+	provinces={
+		10728 12738 13139 13178 14066 14067 14068 16269 16271 16272 16273 16276 16270
 	}
-	manpower = 1901451
-	buildings_max_level_factor = 1.000
+	manpower=704000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

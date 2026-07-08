@@ -1,30 +1,34 @@
-state = {
-	id = 643
-	name = "STATE_643"
-	manpower = 5340
-	state_category = tiny_island
 
-	history = {
-		owner = USA
-		add_core_of = USA
-		buildings = {
-			infrastructure = 1
-			air_base = 2
-			
-			radar_station = 3
-			13056 = {
-				naval_base = 1
-			}
-			13054 = {
-				naval_base = 1
-			}
+state={
+	id=643
+	name="STATE_643"
+
+	history={
+		owner = ENG
+		victory_points = {
+			13056 2
 		}
 		victory_points = {
-			13056 1
+			13054 1
 		}
+		victory_points = {
+			13055 1
+		}
+		buildings = {
+			13056 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = TUV
+
 	}
 
-	provinces = {
-		13054 13055 13056 13057
+	provinces={
+		13054 13055 13056
 	}
+	manpower=3486
+	buildings_max_level_factor=1.000
+	state_category=small_island
 }

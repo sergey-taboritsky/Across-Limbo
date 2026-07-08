@@ -1,0 +1,29 @@
+
+state={
+	id=1042
+	name="STATE_1042"
+
+	history={
+		owner = ITA
+		victory_points = {
+			12941 2 
+		}
+		buildings = {
+			infrastructure = 1
+			12941 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = SOM
+
+	}
+
+	provinces={
+		11014 12941 13416 13418 13422 
+	}
+	manpower=485008
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

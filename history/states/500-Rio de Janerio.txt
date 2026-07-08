@@ -1,57 +1,58 @@
-state = {
-	id = 500
-	name = "STATE_500"
-	resources = {
-		oil = 6.000
-	}
+state={
+	id=500
+	name="STATE_500"
 
-	history = {
+	history={
 		owner = BRA
-		add_core_of = BRA
 		victory_points = {
-			8190 10
+			10980 15
 		}
 		victory_points = {
-			17479 10
+			16746 3
 		}
 		victory_points = {
-			17482 15
+			16750 3
 		}
 		victory_points = {
-			17420 8
+			16747 2
 		}
 		victory_points = {
-			17424 7
+			16748 2
 		}
 		victory_points = {
-			17428 7
+			16745 2
 		}
 		victory_points = {
-			5172 6
+			8190 2
 		}
 		victory_points = {
-			12996 5
+			16749 2
+		}
+		victory_points = {
+			5172 1
 		}
 		buildings = {
-			infrastructure = 4
-			air_base = 2
-			radar_station = 4
-			
-			
-			
-			
-			
-			
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 2
+			anti_air_building = 1
+			air_base = 7
+			10980 = {
+				naval_base = 7
+
+			}
+
 		}
-		set_state_flag = GDP_regions_rio
-		set_state_flag = GDP_category_large_city
+		add_core_of = BRA
+
 	}
 
-	provinces = {
-		5172 8190 12996 17414 17420 17424 17425 17428 17479 17482
+	provinces={
+		5172 8190 10980 12996 16745 16746 16747 16748 16749 16750 
 	}
-	manpower = 3667500
-	buildings_max_level_factor = 1.000
-	state_category = city
-	local_supplies = 0.000
+	manpower=3298834
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

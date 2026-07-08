@@ -1,0 +1,35 @@
+
+state={
+	id=1158
+	name="STATE_1158"
+	resources={
+		chromium=40.000
+	}
+
+	history={
+		owner = CUB
+		victory_points = {
+			16222 3 
+		}
+		victory_points = {
+			16221 2 
+		}
+		victory_points = {
+			13702 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CUB
+
+	}
+
+	provinces={
+		4476 7546 13702 16221 16222 16223 
+	}
+	manpower=630154
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

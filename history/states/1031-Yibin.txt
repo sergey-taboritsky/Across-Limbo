@@ -1,0 +1,27 @@
+
+state={
+	id=1031
+	name="STATE_1031"
+
+	history={
+		owner = CHI
+		victory_points = {
+			11972 3
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CHI
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		11128 11972 
+	}
+	manpower=3892191
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

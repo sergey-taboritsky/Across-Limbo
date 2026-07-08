@@ -1,0 +1,38 @@
+
+state={
+	id=1101
+	name="STATE_1101"
+
+	history={
+		owner = SWE
+		victory_points = {
+			9154 3
+		}
+		victory_points = {
+			3162 1
+		}
+		victory_points = {
+			9066 1 
+		}
+		victory_points = {
+			15817 1
+		}
+		victory_points = {
+			11148 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		46 168 3039 3108 3162 3173 6126 6129 6185 9066 9154 9171 11049 11052 11148 11187 13117 13611 15817 15820 15821 
+	}
+	manpower=69985
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

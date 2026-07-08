@@ -1,0 +1,42 @@
+state={
+	id=684
+	name="STATE_684"
+
+	history={
+		owner = JAP
+		victory_points = {
+			13036 2
+		}
+		victory_points = {
+			16572 1
+		}
+		victory_points = {
+			13035 1
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 3
+			13036 = {
+				naval_base = 2
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+			16572 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = FSM
+
+	}
+	
+	provinces={
+		13035 13036 16572 
+	}
+	manpower=9800
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

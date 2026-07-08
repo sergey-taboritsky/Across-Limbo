@@ -1,0 +1,23 @@
+
+state={
+	id=1459
+	name="STATE_1459"
+
+	history={
+		owner = RUS
+		victory_points = {
+			12161 3 
+		}
+		add_core_of = RUS
+		add_core_of = TMS
+
+	}
+
+	provinces={
+		756 1632 1649 4549 7924 9605 10742 12161 12465 13318 14692 14693 
+	}
+	manpower=257541
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

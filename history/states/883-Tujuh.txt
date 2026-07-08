@@ -1,0 +1,26 @@
+
+state={
+	id=883
+	name="STATE_883"
+
+	history={
+		owner = INS
+		buildings = {
+			13218 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = INS
+
+	}
+
+	provinces={
+		12243 13218 14258 
+	}
+	manpower=31556
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+}

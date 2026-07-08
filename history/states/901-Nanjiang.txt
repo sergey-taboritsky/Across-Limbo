@@ -1,0 +1,32 @@
+
+state={
+	id=901
+	name="STATE_901"
+	resources={
+		steel=1.000
+	}
+
+	history={
+		owner = SCN
+		victory_points = {
+			10144 1 
+		}
+		buildings = {
+			infrastructure = 2
+			10144 = {
+				bunker = 1
+			}
+
+		}
+		add_core_of = CHI
+		add_core_of = SCN
+
+	}
+
+	provinces={
+		10144 
+	}
+	manpower=1194043
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

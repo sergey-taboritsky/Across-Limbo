@@ -1,0 +1,39 @@
+state={
+	id=657
+	name="STATE_657"
+	resources={
+		steel=18.000
+		coal=15.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			12678 3
+		}
+		victory_points = {
+			12638 1
+		}
+		victory_points = {
+			14420 1
+		}
+		victory_points = {
+			4805 1
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 2
+
+		}
+		add_core_of = RUS
+
+	}
+	
+	provinces={
+		4701 4805 7672 10722 12261 12638 12678 14420 
+	}
+	manpower=75041
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

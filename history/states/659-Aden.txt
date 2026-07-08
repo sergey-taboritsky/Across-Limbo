@@ -1,27 +1,30 @@
-state = {
-	id = 659
-	name = "STATE_659"
 
-	history = {
-		owner = YEM
+state={
+	id=659
+	name="STATE_659"
+
+	history={
+		owner = RAJ
 		victory_points = {
-			13422 5
+			5074 5
 		}
 		buildings = {
-			infrastructure = 3
-			
-			air_base = 3
-			radar_station = 1
+			infrastructure = 1
+			air_base = 4
+			5074 = {
+				naval_base = 3
+
+			}
+
 		}
 		add_core_of = YEM
-		set_state_flag = state_renamings
+
 	}
 
-	provinces = {
-		13422
+	provinces={
+		5074 
 	}
-	manpower = 175501
-	buildings_max_level_factor = 1.000
-	state_category = large_town
-	local_supplies = 0.000
+	manpower=82481
+	buildings_max_level_factor=1.000
+	state_category=town
 }

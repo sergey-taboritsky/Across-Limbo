@@ -1,0 +1,42 @@
+state={
+	id=1799
+	name="STATE_1799"
+
+	history={
+		owner = ENG
+		victory_points = {
+			5154 1
+		}
+		victory_points = {
+			13481 1
+		}
+		victory_points = {
+			1580 1
+		}
+		victory_points = {
+			13470 1
+		}
+		victory_points = {
+			13462 1
+		}
+		victory_points = {
+			13480 1
+		}
+		victory_points = {
+			13473 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BOT
+	}
+
+	provinces={
+		13473 12940 13470 13471 1580 13481 13482 5154 13480 13478 15224 13462 13457 13447 15223
+	}
+	manpower=47000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

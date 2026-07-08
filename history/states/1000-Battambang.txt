@@ -1,0 +1,30 @@
+state={
+	id=1000
+	name="STATE_1000"
+	
+	history={
+		owner = SIA
+		victory_points = {
+		    13299 3
+		}
+		victory_points = {
+		    10134 2
+		}
+		victory_points = {
+			10467 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CAM
+		add_core_of = SIA
+	}
+	
+	provinces={
+		4251 10134 10467 12460 13298 13299 13300 
+	}
+	manpower=455846
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,53 @@
+
+state={
+	id=52
+	name="STATE_52"
+	resources={
+		aluminium=18.000
+	}
+
+	history={
+		owner = GER
+		victory_points = {
+			692 20
+		}
+		victory_points = {
+			3299 3
+		}
+		victory_points = {
+			16825 2
+		}
+		victory_points = {
+			9681 2
+		}
+		victory_points = {
+			9652 1 
+		}
+		victory_points = {
+			6693 1
+		}
+		victory_points = {
+			3705 1
+		}
+		victory_points = {
+			532 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 6
+
+		}
+		add_core_of = GER
+		add_core_of = BAV
+
+	}
+
+	provinces={
+		532 692 3299 3688 3705 6693 6725 9652 9681 11620 11653 16825
+	}
+	manpower=3088120
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

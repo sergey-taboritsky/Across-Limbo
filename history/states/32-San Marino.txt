@@ -1,0 +1,25 @@
+
+state={
+	id=32
+	name="STATE_32"
+
+	history={
+		owner = ITA
+		victory_points = {
+			13725 1
+		}
+		buildings = {
+			infrastructure = 2
+			
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		13725
+	}
+	manpower=12963
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

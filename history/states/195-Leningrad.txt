@@ -1,0 +1,63 @@
+
+state={
+	id=195
+	name="STATE_195"
+
+	history={
+		owner = RUS
+		victory_points = {
+			3151 30
+		}
+		victory_points = {
+			14696 2 
+		}
+		victory_points = {
+			13320 1
+		}
+		victory_points = {
+			149 1 
+		}
+		victory_points = {
+			9178 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 1
+			dockyard = 2
+			air_base = 10
+			anti_air_building = 2
+			14696 = {
+				naval_base = 10
+				coastal_bunker = 5
+				bunker = 4
+				naval_supply_hub = 1
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
+			}
+			3151 = {
+				naval_base = 3
+
+			}
+			9178 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		149 3151 9178 13320 14696 
+	}
+	manpower=2570158
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

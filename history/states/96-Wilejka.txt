@@ -1,0 +1,42 @@
+
+state={
+	id=96
+	name="STATE_96"
+
+	history={
+		owner = POL
+		victory_points = {
+			406 2
+		}
+		victory_points = {
+			6340 1
+		}
+		victory_points = {
+			15479 1
+		}
+		victory_points = {
+			233 1
+		}
+		victory_points = {
+			358 1
+		}
+		victory_points = {
+			4910 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = POL
+		add_core_of = BLR
+
+	}
+
+	provinces={
+		233 277 358 406 4910 6340 9341 11391 15479 15490 
+	}
+	manpower=739000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

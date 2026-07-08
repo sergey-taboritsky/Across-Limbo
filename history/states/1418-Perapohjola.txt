@@ -1,0 +1,41 @@
+state={
+	id=1418
+	name="STATE_1418"
+	resources={
+		steel=7.000
+	}
+
+	history={
+		owner = FIN
+		victory_points = {
+			124 2
+		}
+		victory_points = {
+			11164 1 
+		}
+		victory_points = {
+			203 1
+		}
+		victory_points = {
+			11030 1
+		}
+		buildings = {
+			infrastructure = 1
+			11164 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = FIN
+
+	}
+	
+	provinces={
+		30 124 162 203 6087 6137 6179 9223 11030 11164 13109 16532
+	}
+	manpower=61539
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

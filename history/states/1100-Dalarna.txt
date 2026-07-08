@@ -1,0 +1,50 @@
+
+state={
+	id=1100
+	name="STATE_1100"
+	resources={
+		steel=16.000
+	}
+
+	history={
+		owner = SWE
+		victory_points = {
+			15808 2
+		}
+		victory_points = {
+			11197 2
+		}
+		victory_points = {
+			9182 2
+		}
+		victory_points = {
+			156 1
+		}
+		victory_points = {
+			15807 1
+		}
+		victory_points = {
+			77 1
+		}
+		victory_points = {
+			15803 1
+		}
+		victory_points = {
+			15802 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		77 114 156 3005 3070 3148 6093 6147 9173 9182 9193 11053 11197 13099 15802 15803 15805 15806 15807 15808 15809 15811 
+	}
+	manpower=169445
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

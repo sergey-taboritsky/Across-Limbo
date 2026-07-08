@@ -1,0 +1,28 @@
+state={
+	id=1596
+	name="STATE_1596"
+
+	history={
+		owner = IRQ
+		victory_points = {
+			10804 1
+		}
+		victory_points = {
+			1938 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = IRQ
+		add_core_of = KUR
+	}
+	
+	provinces={
+		1938 10804 13331 
+	}
+	manpower=81645
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

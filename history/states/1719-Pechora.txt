@@ -1,0 +1,21 @@
+state={
+	id=1719
+	name="STATE_1719"
+
+	history={
+		owner = RUS
+		victory_points = {
+			7318 1
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		1295 7318 7712 7898 9225 9230 10579 10723 11182 12587 
+	}
+	manpower=63347
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

@@ -1,28 +1,28 @@
-state = {
-	id = 462
-	name = "STATE_462"
 
-	history = {
+state={
+	id=462
+	name="STATE_462"
+
+	history={
 		owner = MOR
-		victory_points = { 18102 15 }
-		victory_points = { 4139 1 }
-		victory_points = { 18096 2 }
-		victory_points = { 11943 10 }
-		add_core_of = MOR
-		buildings = {
-			infrastructure = 4
-			radar_station = 1
-			
+		victory_points = {
+			13668 5
 		}
-		set_state_flag = universal_renamings
-		set_state_flag = GDP_category_town
-		set_state_flag = GDP_regions_morocco
+		victory_points = {
+			11943 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+	    add_core_of = MOR
+
 	}
 
-	provinces = {
-		1102 18094 18099 18102 18096 11943 4139
+	provinces={
+		1102 4139 11943 13668 
 	}
-	manpower = 1822195
-	buildings_max_level_factor = 1.000
-	state_category = rural
+	manpower=1865552
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

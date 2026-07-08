@@ -1,0 +1,32 @@
+state={
+	id=1712
+	name="STATE_1712"
+
+	history={
+		owner = ENG
+		victory_points = {
+			11218 2
+		}
+		victory_points = {
+			15886 1
+		}
+		victory_points = {
+			11378 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = ENG
+		add_core_of = SCO
+
+	}
+
+	provinces={
+		6350 9314 9350 11218 11378 15886 
+	}
+	manpower=237107
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

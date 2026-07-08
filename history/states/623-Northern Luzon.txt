@@ -1,0 +1,74 @@
+
+state={
+	id=623
+	name="STATE_623"
+	resources={
+		rubber=1.000
+	}
+
+	history={
+		owner = PHI
+		victory_points = {
+			12253 3 
+		}
+		victory_points = {
+			4214 2 
+		}
+		victory_points = {
+			1415 2 
+		}
+		victory_points = {
+			12213 2
+		}
+		victory_points = {
+			7439 2
+		}
+		victory_points = {
+			10241 1 
+		}
+		victory_points = {
+			4368 1
+		}
+		victory_points = {
+			10280 1
+		}
+		victory_points = {
+			10167 1
+		}
+		victory_points = {
+			4423 1
+		}
+		victory_points = {
+			4350 1
+		}
+		victory_points = {
+			16808 1
+		}
+		victory_points = {
+			14282 1
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			1415 = {
+				naval_base = 2
+			}
+			12213 = {
+				naval_base = 1
+			}
+			12253 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = PHI
+
+	}
+
+	provinces={
+		4101 4214 4233 4350 4368 4423 7325 7439 10167 10241 10252 10298 12213 12253 14282 1415 10280 16808
+	}
+	manpower=1962198
+	buildings_max_level_factor=1.000
+	state_category=town
+}

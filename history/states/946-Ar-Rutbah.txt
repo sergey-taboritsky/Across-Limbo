@@ -1,0 +1,21 @@
+state={
+	id=946
+	name="STATE_946"
+
+	history={
+		owner = IRQ
+		victory_points = {
+			13323 1
+		}
+		add_core_of = IRQ
+
+	}
+	
+	provinces={
+		4951 12855 13314 13323 14668 
+	}
+	manpower=20431
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=576
+	name="STATE_576"
+
+	history={
+		owner = RUS
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		4692 4812 4831 7805 10631 12687 13065 14405 
+	}
+	manpower=13784
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+	local_supplies=0.000
+	force_link_ownership_to = 568
+}

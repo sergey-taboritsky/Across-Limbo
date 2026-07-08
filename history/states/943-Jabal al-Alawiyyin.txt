@@ -1,0 +1,32 @@
+state={
+	id=943
+	name="STATE_943"
+
+	history={
+		owner = FRA
+		victory_points = {
+			1088 3
+		}
+		victory_points = {
+			10087 2
+		}
+		buildings = {
+			infrastructure = 1
+			1088 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = SYR
+
+	}
+	
+	provinces={
+		1088 10087 16489 
+	}
+	manpower=372099
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

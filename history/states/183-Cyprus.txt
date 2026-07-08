@@ -1,0 +1,46 @@
+
+state={
+	id=183
+	name="STATE_183"
+	resources={
+		chromium=3.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			13348 3
+		}
+		victory_points = {
+			13347 2
+		}
+		victory_points = {
+			11984 1
+		}
+		victory_points = {
+			7193 1
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			13347 = {
+				naval_base = 2
+
+			}
+			11984 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = CYP
+
+	}
+
+	provinces={
+		7193 11984 13347 13348 13349 
+	}
+	manpower=351439
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

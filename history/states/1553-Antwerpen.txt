@@ -1,0 +1,48 @@
+state={
+	id=1553
+	name="STATE_1553"
+	resources={
+		coal=64.000
+	}
+
+	history={
+		owner = BEL
+		victory_points = {
+			6598 10
+		}
+		victory_points = {
+			13068 2
+		}
+		victory_points = {
+			16504 1
+		}
+		victory_points = {
+			9574 1
+		}
+		victory_points = {
+			11419 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			anti_air_building = 1
+			6598 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = BEL
+		add_core_of = FLA
+
+	}
+	
+	provinces={
+		6598 9574 11419 13068 16504 
+	}
+	manpower=1790800
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

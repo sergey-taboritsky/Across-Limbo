@@ -1,0 +1,51 @@
+state={
+	id=422
+	name="STATE_422"
+	resources={
+		rubber=100.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			7260 5
+		}
+		victory_points = {
+			10287 2
+		}
+		victory_points = {
+			14064 2
+		}
+		victory_points = {
+			10201 1
+		}
+		victory_points = {
+			12258 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 3
+			14064 = {
+				naval_base = 5
+
+			}
+			7260 = {
+				naval_base = 3
+				coastal_bunker = 3
+
+			}
+
+		}
+		add_core_of = SLI
+
+	}
+
+	provinces={
+		1213 4219 7260 7344 10201 10229 10287 12258 14061 14062 14063 14064 
+	}
+	manpower=5466374
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

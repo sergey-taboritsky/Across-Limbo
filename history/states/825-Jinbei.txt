@@ -1,0 +1,36 @@
+
+state={
+	id=825
+	name="STATE_825"
+	resources={
+		steel=14.000
+	}
+
+	history={
+		owner = CHI
+		victory_points = {
+			14794 3
+		}
+		victory_points = {
+			10480 1
+		}
+		buildings = {
+			infrastructure = 1
+			14794 = {
+				bunker = 1
+
+			}
+
+		}
+		add_core_of = CHI
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		10480 12432 14794 
+	}
+	manpower=1074051
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,39 @@
+
+state={
+	id=1027
+	name="STATE_1027"
+
+	history={
+		owner = FRA
+		victory_points = {
+			11506 40
+		}
+		victory_points = {
+			9534 1
+		}
+		victory_points = {
+			11518 1
+		}
+		victory_points = {
+			11491 1
+		}
+		victory_points = {
+			6949 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 3
+			anti_air_building = 3
+		}
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		6949 9534 11491 11506 11518 
+	}
+	manpower=4026020
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

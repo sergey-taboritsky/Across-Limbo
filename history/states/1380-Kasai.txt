@@ -1,0 +1,34 @@
+state={
+	id=1380
+	name="STATE_1380"
+	resources={
+		tungsten=2.000
+	}
+
+	history={
+		owner = COG
+		victory_points = {
+			14443 3
+		}
+		victory_points = {
+			12775 2
+		}
+		victory_points = {
+			7716 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = COG
+
+	}
+
+	provinces={
+		4128 7716 9986 12775 13486 14441 14443 14446 14457 16597 16600 
+	}
+	manpower=1321765
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

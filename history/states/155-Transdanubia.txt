@@ -1,0 +1,64 @@
+
+state={
+	id=155
+	name="STATE_155"
+	resources={
+		coal=15.000
+	}
+
+	history={
+		owner = HUN
+		victory_points = {
+			11610 3
+		}
+		victory_points = {
+			6720 2 
+		}
+		victory_points = {
+			686 2 
+		}
+		victory_points = {
+			6703 2
+		}
+		victory_points = {
+			3670 2
+		}
+		victory_points = {
+			6685 2
+		}
+		victory_points = {
+			9643 1
+		}
+		victory_points = {
+			9676 1
+		}
+		victory_points = {
+			682 1
+		}
+		victory_points = {
+			701 1
+		}
+		victory_points = {
+			16857 1
+		}
+		victory_points = {
+			11627 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 3
+
+		}
+		add_core_of = HUN
+
+	}
+
+	provinces={
+		686 701 3670 3683 6703 6720 9676 11627 13125 682 3680 6685 9624 9643 11610 16857
+	}
+	manpower=2735000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

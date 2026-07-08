@@ -1,32 +1,39 @@
-state = { #Population Done
-	id = 397
-	name = "STATE_397"
-	resources = {
-		steel = 13.000
-		aluminium = 7.000
-		oil = 2.000
+
+state={
+	id=397
+	name="STATE_397"
+	resources={
+		chromium=40.000
+		aluminium=27.000
 	}
 
-	history = {
+	history={
 		owner = RUS
-		buildings = {
-			infrastructure = 4
-			
-			
-			
-			
-			
+		victory_points = {
+			99 5
 		}
 		victory_points = {
-			6121 10
+			11179 1
+		}
+		victory_points = {
+			6 1
+		}
+		victory_points = {
+			11200 1
+		}
+		buildings = {
+			infrastructure = 1
+
 		}
 		add_core_of = RUS
+
 	}
 
-	provinces = {
-		6 88 99 108 1307 3000 6121 7318 9145 10200 11170 11193 11203 13333
+	provinces={
+		6 99 3000 3041 3155 6121 6202 9145 9155 11098 11133 11179 11200 
 	}
-	manpower = 581042
-	buildings_max_level_factor = 1.000
-	state_category = town
+	manpower=144816
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

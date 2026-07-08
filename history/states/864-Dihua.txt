@@ -1,0 +1,29 @@
+state={
+	id=864
+	name="STATE_864"
+	
+	history={
+		owner = SIK
+		victory_points = {
+			12656 10
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			12656 = {
+				bunker = 5
+
+			}
+			
+		}
+		add_core_of = SIK
+		add_core_of = CHI
+	}
+	
+	provinces={
+		12656
+	}
+	manpower=606311
+	buildings_max_level_factor=1.000
+	state_category=town
+}

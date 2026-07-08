@@ -1,0 +1,95 @@
+state={
+	id=393
+	name="STATE_393"
+	resources={
+		steel=60.000
+		coal=4.000
+	}
+
+	history={
+		owner = USA
+		victory_points = {
+			6710 20 
+		}
+		victory_points = {
+			6769 5
+		}
+		victory_points = {
+			11656 3
+		}
+		victory_points = {
+			16838 3
+		}
+		victory_points = {
+			16836 2
+		}
+		victory_points = {
+			16834 3
+		}
+		victory_points = {
+			9724 2
+		}
+		victory_points = {
+			11669 2
+		}
+		victory_points = {
+			16841 2
+		}
+		victory_points = {
+			695 2
+		}
+		victory_points = {
+			11714 2
+		}
+		victory_points = {
+			16835 1
+		}
+		victory_points = {
+			10233 1
+		}
+		victory_points = {
+			7420 1
+		}
+		victory_points = {
+			16837 1
+		}
+		victory_points = {
+			16843 1
+		}
+		victory_points = {
+			9747 1
+		}
+		victory_points = {
+			16844 1
+		}
+		victory_points = {
+			11641 1
+		}
+		victory_points = {
+			11685 1
+		}
+		victory_points = {
+			9746 1
+		}
+		victory_points = {
+			16842 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 6
+			air_base = 4
+
+		}
+		add_core_of = USA
+
+	}
+	
+	provinces={
+		691 695 3766 6710 6769 6782 7420 8068 9684 9724 9746 9747 10233 10303 11641 11656 11669 11685 11714 11731 13155 16834 16835 16836 16837 16838 16839 16840 16841 16842 16843 16844 16845 
+	}
+	manpower=4630142
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

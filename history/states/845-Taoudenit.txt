@@ -1,0 +1,19 @@
+
+state={
+	id=845
+	name="STATE_845"
+
+	history={
+		owner = FRA
+		add_core_of = MLI
+	}
+
+	provinces={
+		1115 
+	}
+	manpower=4475
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+	force_link_ownership_to = 1229
+}

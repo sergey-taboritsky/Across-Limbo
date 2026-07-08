@@ -1,0 +1,45 @@
+
+state={
+	id=95
+	name="STATE_95"
+
+	history={
+		owner = POL
+		victory_points = {
+			9304 3
+		}
+		victory_points = {
+			6413 2 
+		}
+		victory_points = {
+			9359 1
+		}
+		victory_points = {
+			3309 1
+		}
+		victory_points = {
+			16652 1
+		}
+		victory_points = {
+			11341 1
+		}
+		victory_points = {
+			6359 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = POL
+		add_core_of = BLR
+
+	}
+
+	provinces={
+		3309 3366 3556 6280 6306 6359 6413 9236 9304 9359 11341 14592 14593 16652
+	}
+	manpower=400000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

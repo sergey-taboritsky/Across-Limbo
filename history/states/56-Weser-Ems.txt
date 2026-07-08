@@ -1,59 +1,52 @@
-state = {
-	id = 56
-	name = "STATE_56"
+	state={
+	id=56
+	name="STATE_56"
+	manpower = 1324148
+	
+	state_category = town
 
-	history = {
-		owner = DDR
+	history={
+		owner = GER
 		victory_points = {
-			11388 10
+			336 3
 		}
 		victory_points = {
-			11360 4
+			241 2
 		}
 		victory_points = {
-			241 10
+			11388 2
 		}
 		victory_points = {
-			309 20
+			9281 1
 		}
 		victory_points = {
-			18138 10
+			11264 1
 		}
 		victory_points = {
-			336 1
-		}
-		victory_points = {
-			9281 4
-		}
-		victory_points = {
-			11233 2
+			309 1
 		}
 		buildings = {
-			
-			
-			
-			infrastructure = 5
+			infrastructure = 3
+			industrial_complex = 2
 			dockyard = 2
-			air_base = 3
-			radar_station = 2
-			
-			
 			241 = {
 				naval_base = 8
-				coastal_bunker = 2
+				naval_supply_hub = 1
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
 			}
-			11360 = {
-				coastal_bunker = 2
-			}
+			air_base = 3
+
 		}
-		add_core_of = DDR
+		add_core_of = GER
+		add_core_of = HAN	
 	}
 
-	provinces = {
-		241 247 309 336 9281 11233 11264 11360 11388 18134 18138 18142
+	provinces={
+		241 247 309 336 9281 11264 11388 
 	}
-	manpower = 2581541
-	buildings_max_level_factor = 1.000
-	state_category = large_city
-	local_supplies = 0.000
 }

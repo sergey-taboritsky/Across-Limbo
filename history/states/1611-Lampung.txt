@@ -1,0 +1,36 @@
+state={
+	id=1611
+	name="STATE_1611"
+	resources={
+		rubber=20.000
+		oil=1.000
+	}
+
+	history={
+		owner = INS
+		victory_points = {
+			4361 3 
+		}
+		victory_points = {
+			12165 1
+		}
+		buildings = {
+			infrastructure = 1
+			4361 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = INS
+
+	}
+
+	provinces={
+		1342 4320 4361 12165 12209 
+	}
+	manpower=2087565
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

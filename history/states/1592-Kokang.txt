@@ -1,0 +1,22 @@
+state={
+	id=1592
+	name="STATE_1592"
+
+	history={
+		owner = RAJ
+		victory_points = {
+			15123 1
+		}
+		add_core_of = BRM
+		add_claim_by = CHI
+		
+
+	}
+
+	provinces={
+		15123 
+	}
+	manpower=48380
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

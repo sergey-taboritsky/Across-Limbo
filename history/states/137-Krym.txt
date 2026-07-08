@@ -1,0 +1,71 @@
+
+state={
+	id=137
+	name="STATE_137"
+	resources={
+		steel=22.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			3686 20 
+		}
+		victory_points = {
+			13251 5 
+		}
+		victory_points = {
+			9680 2 
+		}
+		victory_points = {
+			6704 1 
+		}
+		victory_points = {
+			3722 1
+		}
+		victory_points = {
+			705 1
+		}
+		victory_points = {
+			9677 1
+		}
+		victory_points = {
+			9718 1
+		}
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			air_base = 3
+			anti_air_building = 1
+			3686 = {
+				naval_base = 10
+				coastal_bunker = 3
+				bunker = 3
+				naval_supply_hub = 1
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
+			}
+			9680 = {
+				naval_base = 1
+				coastal_bunker = 1
+
+			}
+
+		}
+		add_core_of = RUS
+		add_core_of = CRM
+
+	}
+
+	provinces={
+		705 3003 3686 3722 6704 6724 9677 9680 9718 11649 13251 
+	}
+	manpower=911907
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

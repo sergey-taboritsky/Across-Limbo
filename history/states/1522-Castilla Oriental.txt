@@ -1,0 +1,51 @@
+state={
+	id=1522
+	name="STATE_1522"
+
+	history={
+		owner = SPR
+		victory_points = {
+			6993 3
+		}
+		victory_points = {
+			3945 3
+		}
+		victory_points = {
+			6841 1
+		}
+		victory_points = {
+			14963 1
+		}
+		victory_points = {
+			9933 1
+		}
+		victory_points = {
+			3891 1
+		}
+		victory_points = {
+			888 1
+		}
+		victory_points = {
+			9852 1
+		}
+		victory_points = {
+			6879 1
+		}
+		victory_points = {
+			11870 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SPR
+
+	}
+
+	provinces={
+		888 14963 9757 3891 11742 3945 6879 9852 11870 9933 9785 6993 6841
+	}
+	manpower=521553
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

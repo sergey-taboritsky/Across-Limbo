@@ -1,0 +1,56 @@
+
+state={
+	id=129
+	name="STATE_129"
+	resources={
+		steel=52.000
+		coal=249.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			11279 5
+		}
+		victory_points = {
+			11382 3
+		}
+		victory_points = {
+			9268 3
+		}
+		victory_points = {
+			6237 2
+		}
+		victory_points = {
+			13730 2
+		}
+		victory_points = {
+			9322 1
+		}
+		victory_points = {
+			9250 1
+		}
+		victory_points = {
+			3353 1
+		}
+		victory_points = {
+			16812 1
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 5
+
+		}
+		add_core_of = ENG
+
+	}
+
+	provinces={
+		3353 6237 9250 9268 9322 11279 11382 13730 16812
+	}
+	manpower=3225280
+	buildings_max_level_factor=1.000
+	state_category=city
+}

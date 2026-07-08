@@ -1,25 +1,45 @@
-state = {
-	id = 225
-	name = "STATE_225" # Sumy
-	manpower = 1327614
 
-	state_category = rural
+state={
+	id=225
+	name="STATE_225"
 
-	history = {
+	history={
 		owner = RUS
-		buildings = {
-			
-			infrastructure = 4
-			
+		victory_points = {
+			3520 5
 		}
-		victory_points = { 3520 5 }
-		victory_points = { 9566 1 }
-		victory_points = { 9477 2 }
+		victory_points = {
+			9477 2
+		}
+		victory_points = {
+			9566 2
+		}
+		victory_points = {
+			3455 1
+		}
+		victory_points = {
+			16300 1
+		}
+		victory_points = {
+			463 1
+		}
+		victory_points = {
+			11553 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
 		add_core_of = RUS
-		set_state_flag = universal_renamings
+		add_core_of = UKR
+
 	}
 
-	provinces = {
-		463 501 522 3225 3455 3520 6565 9477 9566 11462 11553
+	provinces={
+		463 501 522 3044 3225 3455 3520 6565 9477 9566 11462 11553 16300 16301 
 	}
+	manpower=1100318
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

@@ -1,0 +1,38 @@
+
+state={
+	id=1427
+	name="STATE_1427"
+
+	history={
+		owner = NOR
+		victory_points = {
+			3021 3
+		}
+		victory_points = {
+			3136 2
+		}
+		victory_points = {
+			6204 1
+		}
+		victory_points = {
+			10 1
+		}
+		victory_points = {
+			6160 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NOR
+
+	}
+
+	provinces={
+		10 111 133 179 3021 3136 6042 6160 6184 6204 9227 11206 13660 
+	}
+	manpower=106937
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

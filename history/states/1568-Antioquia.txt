@@ -1,0 +1,39 @@
+state={
+	id=1568
+	name="STATE_1568"
+	resources={
+		tungsten=1.000
+		steel=2.000
+	}
+
+	history={
+		owner = COL
+		victory_points = {
+			2023 5
+		}
+		victory_points = {
+			15062 2
+		}
+		victory_points = {
+			4969 2
+		}
+		victory_points = {
+			16428 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = COL
+
+	}
+
+	provinces={
+		2023 4969 15062 15063 15065 16420 16422 16423 16425 16426 16428 16430 
+	}
+	manpower=1758207
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

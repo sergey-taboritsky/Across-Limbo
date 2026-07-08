@@ -1,0 +1,35 @@
+
+state={
+	id=721
+	name="STATE_721"
+	resources={
+		rubber=1.000
+	}
+
+	history={
+		owner = POR
+		victory_points = {
+			12190 3
+		}
+		victory_points = {
+			12178 1
+		}
+		buildings = {
+			infrastructure = 1
+			12190 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = TLE
+
+	}
+
+	provinces={
+		1326 12178 12190 13001 
+	}
+	manpower=466097
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

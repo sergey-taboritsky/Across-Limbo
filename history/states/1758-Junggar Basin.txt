@@ -1,0 +1,22 @@
+state={
+	id=1758
+	name="STATE_1758"
+
+	history={
+		owner = SIK
+		add_core_of = SIK
+		add_core_of = CHI
+		
+
+	}
+
+	provinces={
+		14868 
+	}
+	manpower=638
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+	force_link_ownership_to = 618
+}

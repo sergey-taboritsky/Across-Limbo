@@ -1,0 +1,45 @@
+state={
+	id=1115
+	name="STATE_1115"
+	resources = {
+		chromium = 9.000
+	}
+	
+	history={
+		owner = GRE
+		victory_points = {
+			7127 2
+		}
+		victory_points = {
+			3864 2
+		}
+		victory_points = {
+			1205 2
+		}
+		victory_points = {
+			976 1
+		}
+		victory_points = {
+			1109 1
+		}
+		victory_points = {
+			11895 1
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 4
+
+		}
+		add_core_of = GRE
+
+	}
+	
+	provinces={
+		976 1109 1205 3864 7127 11895 12001 13639 
+	}
+	manpower=401786
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,34 +1,38 @@
-state = {
-	id = 343
-	name = "STATE_343"
-	manpower = 1393018
-	resources = {
-		chromium = 50
-			}
 
-	state_category = town
+state={
+	id=343
+	name="STATE_343"
+	resources={
+		chromium=25.000
+	}
 
-	history = {
+	history={
 		owner = TUR
-		victory_points = { 3951 15 }
-		victory_points = { 6945 3 }
-		victory_points = { 9878 4 }
-		victory_points = { 11831 4 }
-		victory_points = { 6877 2 }
-		victory_points = { 856 1 }
+		victory_points = {
+			3951 3
+		}
+		victory_points = {
+			11831 2
+		}
+		victory_points = {
+			3983 2
+		}
+		victory_points = {
+			3856 2
+		}
 		buildings = {
-			infrastructure = 4
-			
-			air_base = 1
-			
-			
-			
-			
+			infrastructure = 1
+			industrial_complex = 1
+
 		}
 		add_core_of = TUR
+
 	}
 
-	provinces = {
-		856 981 3856 3983 6877 6945 9878 11796 11831 11907 3951 909 6808 3907
+	provinces={
+		856 909 981 3856 3907 3927 3951 3983 6808 6877 6945 9878 11796 11831 11898 
 	}
+	manpower=950777
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

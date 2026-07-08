@@ -1,43 +1,37 @@
-state = {
-	id = 619
-	name = "STATE_619"
+state={
+	id=619
+	name="STATE_619"
+	resources={
+		aluminium=2.000
+	}
 
-	history = {
+	history={
 		owner = SIK
-		add_core_of = SIK
+		victory_points = {
+			5016 5 
+		}
+		victory_points = {
+			2015 2
+		}
+		victory_points = {
+			15192 1
+		}
 		buildings = {
-			infrastructure = 2
-		}
-		victory_points = {
-			1766 10
-		}
-		victory_points = {
-			19399 3
-		}
-		victory_points = {
-			19412 1
-		}
-		victory_points = {
-			7949 1
-		}
-		victory_points = {
-			2015 5
-		}
-		victory_points = {
-			5087 1
-		}
-		add_extra_state_shared_building_slots = 1
-		set_variable = { china_state_ref = 43 }
-		set_variable = { china_region_ref = 5 }
-		set_state_flag = state_renamings
-		set_state_flag = GDP_category_town
-	}
+			infrastructure = 1
+			industrial_complex = 1
 
-	provinces = {
-		1766 2015 5087 7949 12119 19389 19399 19408 19412 19624 19744 19781 19792
+		}
+		add_core_of = SIK
+		add_core_of = CHI
+		
+
 	}
-	manpower = 1850572
-	buildings_max_level_factor = 1.000
-	state_category = pastoral
-	local_supplies = 0.000
+	
+	provinces={
+		2015 5016 7949 14852 15192 16664 16665 
+	}
+	manpower=666441
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

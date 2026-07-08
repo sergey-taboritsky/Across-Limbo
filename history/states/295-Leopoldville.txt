@@ -1,0 +1,26 @@
+state={
+	id=295
+	name="STATE_295"
+
+	history={
+		owner = COG
+		victory_points = {
+			5117 10
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = COG
+
+	}
+
+	provinces={
+		5117 14453 14460 
+	}
+	manpower=1645327
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

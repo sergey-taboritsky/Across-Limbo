@@ -1,0 +1,26 @@
+state={
+	id=604
+	name="STATE_604"
+
+	history={
+		owner = NHJ
+		victory_points = {
+			4964 2
+		}
+		victory_points = {
+			14798 1
+		}
+		add_core_of = CHI
+		add_core_of = NHJ
+		add_core_of = TIB
+
+	}
+
+	provinces={
+		4964 7940 14798 14799 
+	}
+	manpower=65886
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,26 @@
+state={
+	id=1525
+	name="STATE_1525"
+
+	history={
+		owner = CHI
+		victory_points = {
+			4158 1
+		}
+		buildings = {
+			infrastructure = 2
+			4158 = {
+				bunker = 1
+			}
+
+		}
+		add_core_of = CHI
+	}
+
+	provinces={
+		4203 4158
+	}
+	manpower=1053200
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

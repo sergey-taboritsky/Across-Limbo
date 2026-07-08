@@ -1,35 +1,44 @@
-state = {
-	id = 608
-	name = "STATE_608"
 
-	history = {
+state={
+	id=608
+	name="STATE_608"
+
+	history={
 		owner = CHI
+		victory_points = {
+			9843 25 
+		}
+		victory_points = {
+			11761 3 
+		}
+		victory_points = {
+			4140 2
+		}
+		victory_points = {
+			16704 1
+		}
+		victory_points = {
+			16705 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 3
+			9843 = {
+				bunker = 1
+
+			}
+
+		}
 		add_core_of = CHI
 
-		buildings = {
-			
-			
-			
-			
-			
-			infrastructure = 5
-			air_base = 3
-			
-		}
-		victory_points = { 9843 42 }
-		set_variable = { china_state_ref = 7 }
-		set_variable = { china_region_ref = 1 }
-		set_variable = { china_city_ref = 1 }
 	}
 
-	resources = {
-		steel = 18
+	provinces={
+		4140 9843 11761 16704 16705
 	}
-
-	provinces = {
-		9843 19772
-	}
-	manpower = 3374358
-	buildings_max_level_factor = 1.000
-	state_category = city
+	manpower=7381234
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

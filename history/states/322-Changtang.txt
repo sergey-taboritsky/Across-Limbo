@@ -1,0 +1,21 @@
+
+state={
+	id=322
+	name="STATE_322"
+
+	history={
+		owner = TIB
+		add_core_of = TIB
+		add_core_of = CHI
+		
+	}
+
+	provinces={
+		2010 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+	force_link_ownership_to = 757
+}

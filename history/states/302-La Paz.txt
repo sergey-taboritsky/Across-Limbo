@@ -1,34 +1,32 @@
-state = {
-	id = 302
-	name = "STATE_302"
-	resources = {
-		tungsten = 2.000
-		steel = 1.000
+
+state={
+	id=302
+	name="STATE_302"
+	resources={
+		tungsten=65.000
+		steel=2.000
 	}
 
-	history = {
+	history={
 		owner = BOL
+		victory_points = {
+			5230 10
+		}
 		buildings = {
-			
-			
-			
-			
-			
-			infrastructure = 3
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 3
 			air_base = 2
-			
+
 		}
 		add_core_of = BOL
-		victory_points = {
-			13195 15
-		}
+
 	}
 
-	provinces = {
-		13195 15337 15339 15357 15359 17522
+	provinces={
+		5230 8157 8225 13195 14755 14756 14894 14899 
 	}
-	manpower = 868400
-	buildings_max_level_factor = 1.000
-	state_category = large_town
-	local_supplies = 0.000
+	manpower=2044500
+	buildings_max_level_factor=1.000
+	state_category=city
 }

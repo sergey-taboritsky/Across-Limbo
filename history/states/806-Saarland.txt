@@ -1,0 +1,35 @@
+
+state={
+	id=806
+	name="STATE_806"
+	resources = {
+		steel=18.000
+		coal=106.000
+	}
+	history={
+		owner = SAR
+		set_demilitarized_zone = yes
+		victory_points = {
+			11531 3 
+		}
+		victory_points = {
+			14694 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = GER
+		add_core_of = RHI
+		add_core_of = SAR
+
+	}
+
+	provinces={
+		11531 14694
+	}
+	manpower=812471
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

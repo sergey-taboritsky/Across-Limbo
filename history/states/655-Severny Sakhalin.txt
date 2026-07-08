@@ -1,0 +1,38 @@
+
+state={
+	id=655
+	name="STATE_655"
+	resources={
+		coal=3.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			7871 2
+		}
+		victory_points = {
+			855 1
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			7871 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = RUS
+		add_claim_by = JAP
+
+	}
+
+	provinces={
+		855 1742 1755 1807 7772 7871 10590 12591 14423 
+	}
+	manpower=94759
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

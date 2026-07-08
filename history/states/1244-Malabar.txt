@@ -1,0 +1,48 @@
+state={
+	id=1244
+	name="STATE_1244"
+
+	history={
+		owner = RAJ
+		victory_points = {
+			7391 5
+		}
+		victory_points = {
+			7395 3
+		}
+		victory_points = {
+			16754 2
+		}
+		victory_points = {
+			14804 2
+		}
+		victory_points = {
+			7447 2
+		}
+		victory_points = {
+			12275 1
+		}
+		buildings = {
+			infrastructure = 2
+			7391 = {
+				naval_base = 2
+				
+			}
+			7395 = {
+				naval_base = 1
+				
+			}
+
+		}
+		add_core_of = RAJ
+
+	}
+
+	provinces={
+		7391 7395 7447 12275 14804 16754 
+	}
+	manpower=5057577
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

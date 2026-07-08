@@ -1,0 +1,25 @@
+state={
+	id=1167
+	name="STATE_1167"
+	
+	history={
+		owner = AST
+		buildings = {
+			13720 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = AST
+		add_claim_by = INS
+
+	}
+	
+	provinces={
+		13720 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+}

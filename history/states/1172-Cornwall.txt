@@ -1,0 +1,33 @@
+state={
+	id=1172
+	name="STATE_1172"
+	resources = {
+		tungsten=8.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			13728 2
+		}
+		victory_points = {
+			6526 1
+		}
+		buildings = {
+			infrastructure = 3
+			13728 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = ENG
+		add_core_of = CRN
+
+	}
+
+	provinces={
+		6526 13728 
+	}
+	manpower=378932
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

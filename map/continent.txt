@@ -6,9 +6,4 @@ continents = {
 	africa
 	asia
 	middle_east
-	antarctica
-	eastern_europe
-	pakistan
-	gangetic_plain
-	india
 }

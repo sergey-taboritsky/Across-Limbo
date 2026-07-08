@@ -1,0 +1,27 @@
+state={
+	id=1155
+	name="STATE_1155"
+	
+	history={
+		owner = COL
+		victory_points = {
+			13693 1
+		}
+		buildings = {
+			13693 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = COL
+
+	}
+	
+	provinces={
+		13693 
+	}
+	manpower=12340
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+}

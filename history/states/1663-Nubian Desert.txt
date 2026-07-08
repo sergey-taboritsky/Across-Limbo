@@ -1,0 +1,20 @@
+state={
+	id=1663
+	name="STATE_1663"
+
+	history={
+		owner = ENG
+		add_core_of = SUD
+
+	}
+
+	provinces={
+		10902 
+	}
+	manpower=29417
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+	force_link_ownership_to = 1278
+}

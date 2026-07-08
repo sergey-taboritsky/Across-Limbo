@@ -1,0 +1,21 @@
+state={
+	id=1414
+	name="STATE_1414"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NGA
+
+	}
+
+	provinces={
+		2025 
+	}
+	manpower=915797
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

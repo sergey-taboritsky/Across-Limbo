@@ -1,0 +1,17 @@
+state={
+	id=1495
+	name="STATE_1495"
+
+	history={
+		owner = BOL
+		add_core_of = BOL
+	}
+
+	provinces={
+		12917 12979 14904 5188
+	}
+	manpower=47391
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+}

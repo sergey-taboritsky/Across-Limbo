@@ -1,0 +1,44 @@
+
+state={
+	id=521
+	name="STATE_521"
+	resources={
+		coal=9.000
+	}
+
+	history={
+		owner = AST
+		victory_points = {
+			7564 5 
+		}
+		victory_points = {
+			10445 3 
+		}
+		victory_points = {
+			7535 2
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 1
+			7564 = {
+				naval_base = 2
+				coastal_bunker = 1
+
+			}
+
+		}
+		add_core_of = AST
+
+	}
+
+	provinces={
+		1472 1570 2116 4481 4502 4517 4530 4546 5227 7522 7535 7564 7592 7651 7666 10430 10445 11006 12308 12451 
+	}
+	manpower=1138120
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

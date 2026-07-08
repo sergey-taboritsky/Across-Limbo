@@ -1,0 +1,47 @@
+
+state={
+	id=332
+	name="STATE_332"
+
+	history={
+		owner = USA
+		victory_points = {
+			12503 2 
+		}
+		victory_points = {
+			15635 1
+		}
+		victory_points = {
+			15659 1
+		}
+		victory_points = {
+			15669 1
+		}
+		victory_points = {
+			15679 1
+		}
+		victory_points = {
+			1426 1
+		}
+		victory_points = {
+			15681 1
+		}
+		buildings = {
+			12503 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		1426 4720 12503 15635 15659 15669 15677 15679 15681 
+	}
+	manpower=25250
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

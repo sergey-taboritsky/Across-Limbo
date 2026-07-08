@@ -1,0 +1,26 @@
+
+state={
+	id=912
+	name="STATE_912"
+
+	history={
+		owner = SCN
+		victory_points = {
+			5048 2 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CHI
+		add_core_of = SCN
+
+	}
+
+	provinces={
+		5048 15189 
+	}
+	manpower=3802998
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

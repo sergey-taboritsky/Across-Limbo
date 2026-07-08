@@ -1,0 +1,24 @@
+state={
+	id=1369
+	name="STATE_1369"
+
+	history={
+		owner = FRA
+		victory_points = {
+			14413 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = RAJ
+
+	}
+
+	provinces={
+		14413 
+	}
+	manpower=166867
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

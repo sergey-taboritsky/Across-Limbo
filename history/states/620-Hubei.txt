@@ -1,0 +1,45 @@
+state={
+	id=620
+	name="STATE_620"
+
+	history={
+		owner = CHI
+		victory_points = {
+			4619 10 
+		}
+		victory_points = {
+			7167 3
+		}
+		victory_points = {
+			12467 3
+		}
+		victory_points = {
+			16690 3
+		}
+		victory_points = {
+			16689 2
+		}
+		victory_points = {
+			1036 2 
+		}
+		victory_points = {
+			16685 2
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 3
+			industrial_complex = 2
+
+		}
+		add_core_of = CHI
+
+	}
+	
+	provinces={
+		1036 4619 4631 7167 7637 9959 12467 16685 16689 16690 16693 
+	}
+	manpower=10015087
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

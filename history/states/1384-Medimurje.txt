@@ -1,0 +1,26 @@
+state={
+	id=1384
+	name="STATE_1384"
+
+	history={
+		owner = YUG
+		victory_points = {
+			13414 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YUG
+		add_core_of = CRO
+		add_claim_by = HUN
+
+	}
+
+	provinces={
+		13414 
+	}
+	manpower=31894
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

@@ -1,0 +1,30 @@
+state={
+	id=1017
+	name="STATE_1017"
+	
+	history={
+		owner = IRQ
+		victory_points = {
+			13321 2
+		}
+		victory_points = {
+			13317 2 
+		}
+		victory_points = {
+			15113 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = IRQ
+
+	}
+	
+	provinces={
+		13317 13321 15113
+	}
+	manpower=306169
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

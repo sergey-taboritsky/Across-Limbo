@@ -1,0 +1,44 @@
+state={
+	id=1134
+	name="STATE_1134"
+
+	history={
+		owner = FIN
+		victory_points = {
+			3137 5
+		}
+		victory_points = {
+			169 3
+		}
+		victory_points = {
+			16513 1
+		}
+		victory_points = {
+			16516 1
+		}
+		victory_points = {
+			6047 1
+		}
+		victory_points = {
+			3117 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			169 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = FIN
+
+	}
+	
+	provinces={
+		32 169 3009 3025 3117 3119 3137 6047 13107 16513 16514 16516 
+	}
+	manpower=291781
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,44 @@
+
+state={
+	id=594
+	name="STATE_594"
+	resources={
+		tungsten=205.000
+		steel=8.000
+	}
+
+	history={
+		owner = CHI
+		victory_points = {
+			7137 10 
+		}
+		victory_points = {
+			7044 2
+		}
+		victory_points = {
+			4028 2 
+		}
+		victory_points = {
+			1597 2
+		}
+		victory_points = {
+			4152 2
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 3
+			arms_factory = 1
+
+		}
+		
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		1087 4028 7044 7137 7192 7650 10050 10105 11983 12023 1597 7168 4152
+	}
+	manpower=7290557
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

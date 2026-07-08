@@ -1,0 +1,30 @@
+state={
+	id=1531
+	name="STATE_1531"
+	resources = {
+		tungsten = 180.000
+	}
+
+	history={
+		owner = RAJ
+		victory_points = {
+			12292 2
+		}
+		victory_points = {
+			1315 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BRM
+
+	}
+
+	provinces={
+		1296 1315 1385 4275 7295 10217 12292 
+	}
+	manpower=413001
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=827
+	name="STATE_827"
+	resources={
+		steel=9.000
+	}
+
+	history={
+		victory_points = {
+			10424 3
+		}
+		victory_points = {
+			12403 2
+		}
+		victory_points = {
+			4525 2
+		}
+		owner = MEN
+		add_core_of = CHI
+		add_core_of = MEN
+	}
+
+	provinces={
+		4525 7048 7158 7631 10424 12331 12403 
+	}
+	manpower=1100000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

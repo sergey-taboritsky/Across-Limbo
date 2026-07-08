@@ -1,52 +1,35 @@
-state = {
-	id = 388
-	name = "STATE_388"
-	resources = {
-		tungsten = 12.000
+
+state={
+	id=388
+	name="STATE_388"
+	resources={
+		coal=22.000
 	}
 
-	history = {
+	history={
 		owner = USA
+		victory_points = {
+			12585 2 
+		}
+		victory_points = {
+			4860 1 
+		}
+		victory_points = {
+			12676 1 
+		}
 		buildings = {
-			infrastructure = 3
-			
-			
-			
-			
-			radar_station = 2
-			air_base = 1
+			infrastructure = 2
+			industrial_complex = 1
+
 		}
 		add_core_of = USA
-		victory_points = { # Missoula
-			6742 3
-		}
-		victory_points = { # Helena
-			7779 3
-		}
-		victory_points = { # Butte
-			1736 3
-		}
-		victory_points = { # Billings
-			12585 5
-		}
-		victory_points = { # Great Falls
-			4860 3
-		}
-		victory_points = { # Bozeman
-			4741 1
-		}
-		victory_points = { # Miles City
-			1767 1
-		}
-		victory_points = { # Kalispell
-			4838 1
-		}
+
 	}
 
-	provinces = {
-		1767 1851 1857 4741 4857 4860 4863 7760 7880 7883 10587 10593 10624 10706 11712 12572 12585 1736 1854 4838 6742 7779 12676
+	provinces={
+		1736 1767 1851 1854 1857 4741 4857 4860 4863 6742 7760 7779 7880 7883 10587 10593 10624 10706 11712 12572 12585 4838 12676 
 	}
-	manpower = 510115
-	buildings_max_level_factor = 1.000
-	state_category = town
+	manpower=541000
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

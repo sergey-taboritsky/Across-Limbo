@@ -1,0 +1,30 @@
+
+state={
+	id=754
+	name="STATE_754"
+
+	history={
+		owner = NHJ
+		victory_points = {
+			12732 5 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = NHJ
+		add_core_of = CHI
+		add_core_of = TIB
+
+	}
+
+	provinces={
+		2053 4536 4888 7270 10490 11448 12732 13146 14802 12797
+	}
+	manpower=796914
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

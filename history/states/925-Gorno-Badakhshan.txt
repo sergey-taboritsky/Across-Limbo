@@ -1,0 +1,25 @@
+state={
+	id=925
+	name="STATE_925"
+	
+	history={
+		owner = RUS
+		victory_points = {
+			10417 1
+		}
+		victory_points = {
+			12805 1
+		}
+		add_core_of = RUS
+		add_core_of = TAJ
+		add_claim_by = CHI
+		
+	}
+	
+	provinces={
+		4923 8027 10417 11687 12805 
+	}
+	manpower=39273
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

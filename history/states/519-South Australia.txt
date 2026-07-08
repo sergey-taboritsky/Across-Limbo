@@ -1,49 +1,37 @@
-state = {
-	id = 519
-	name = "STATE_519"
 
-	history = {
-		owner = AFF
-		set_state_flag = has_offshore_island
+state={
+	id=519
+	name="STATE_519"
+
+	history={
+		owner = AST
+		victory_points = {
+			12910 5 
+		}
+		victory_points = {
+			1773 1 
+		}
+		victory_points = {
+			2186 1
+		}
 		buildings = {
-			infrastructure = 4
-			
-			
-			
-			air_base = 1
-			
-			
+			infrastructure = 1
+			industrial_complex = 1
 			12910 = {
 				naval_base = 2
+
 			}
+
 		}
-		victory_points = { # Port Lincoln
-			2219 1
-		}
-		victory_points = { # Whyalla
-			19937 2
-		}
-		victory_points = { # Port Pirie
-			7567 1
-		}
-		victory_points = { # Adelaide
-			12910 20
-		}
-		victory_points = { # Mount Gambier
-			1773 1
-		}
-		victory_points = { # Woomera
-			8186 1
-		}
-		set_state_flag = GDP_category_large_town
-		add_core_of = AFF
+		add_core_of = AST
+
 	}
 
-	provinces = {
-		1773 2219 5183 5197 5211 5225 7567 8186 8220 10925 12910 12918 12924 13169 19930 19937
+	provinces={
+		1773 2186 2219 5170 5183 5197 5211 5225 7567 8220 10925 12910 12918 12924 
 	}
-	manpower = 901487
-	buildings_max_level_factor = 1.000
-	state_category = town
-	local_supplies = 0.000
+	manpower=452120
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

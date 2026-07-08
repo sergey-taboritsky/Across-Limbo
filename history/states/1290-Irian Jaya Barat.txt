@@ -1,0 +1,22 @@
+
+state={
+	id=1290
+	name="STATE_1290"
+
+	history={
+		owner = INS
+		victory_points = {
+			12315 1 
+		}
+		add_core_of = INS
+		add_core_of = WPA
+
+	}
+
+	provinces={
+		4468 4524 7487 7512 7585 10436 12315 12386 
+	}
+	manpower=269140
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

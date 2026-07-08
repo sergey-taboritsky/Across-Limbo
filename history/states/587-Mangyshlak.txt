@@ -1,0 +1,39 @@
+
+state={
+	id=587
+	name="STATE_587"
+
+	history={
+		owner = RUS
+		victory_points = {
+			10348 2
+		}
+		victory_points = {
+			3593 1
+		}
+		victory_points = {
+			12474 1
+		}
+		victory_points = {
+			4523 1
+		}
+		buildings = {
+			10348 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+
+		}
+		add_core_of = RUS
+		add_core_of = KAZ
+
+	}
+
+	provinces={
+		475 1517 3593 4523 4620 10348 11701 12474
+	}
+	manpower=10928
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

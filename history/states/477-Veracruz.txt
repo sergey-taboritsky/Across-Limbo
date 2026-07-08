@@ -1,67 +1,40 @@
-state = {
-	id = 477
-	name = "STATE_477"
-	resources = {
-		oil = 22.000
-		steel = 8.000
-		tungsten = 2.000
-	}
 
-	history = {
+state={
+	id=477
+	name="STATE_477"
+
+	history={
 		owner = MEX
+		victory_points = {
+			15008 5
+		}
+		victory_points = {
+			10889 3
+		}
+		victory_points = {
+			10732 2
+		}
 		buildings = {
-			
-			
-			
-			
-			
-			
-			
-			infrastructure = 4
-			dockyard = 1
-			air_base = 1
-			14496 = {
+			infrastructure = 2
+			arms_factory = 1
+			15008 = {
 				naval_base = 3
+
 			}
 			10889 = {
 				naval_base = 2
+
 			}
+
 		}
 		add_core_of = MEX
-		victory_points = {
-			14496 10
-		}
-		victory_points = {
-			14499 6
-		}
-		victory_points = {
-			16895 6
-		}
-		victory_points = {
-			17311 3
-		}
-		victory_points = {
-			8079 2
-		}
-		victory_points = {
-			10889 2
-		}
-		victory_points = {
-			16961 1
-		}
-		victory_points = {
-			12810 1
-		}
-		victory_points = {
-			10732 1
-		}
+
 	}
 
-	provinces = {
-		443 8079 10732 10889 12810 14496 14499 14513 16895 16961 17311
+	provinces={
+		5021 8079 10732 10889 12810 15007 15008 15009 
 	}
-	manpower = 3233678
-	buildings_max_level_factor = 1.000
-	state_category = large_town
-	local_supplies = 0.000
+	manpower=1451549
+	buildings_max_level_factor=1.000
+	state_category=town
 }

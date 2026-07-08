@@ -1,0 +1,79 @@
+
+state={
+	id=408
+	name="STATE_408"
+	resources={
+		chromium=20.000
+		coal=4.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			957 10 
+		}
+		victory_points = {
+			681 3
+		}
+		victory_points = {
+			3977 3
+		}
+		victory_points = {
+			3787 2
+		}
+		victory_points = {
+			11750 2
+		}
+		victory_points = {
+			664 2
+		}
+		victory_points = {
+			3843 1
+		}
+		victory_points = {
+			810 1
+		}
+		victory_points = {
+			6833 1
+		}
+		victory_points = {
+			6715 1
+		}
+		victory_points = {
+			11745 1
+		}
+		victory_points = {
+			6684 1
+		}
+		victory_points = {
+			6838 1
+		}
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			air_base = 5
+			957 = {
+				naval_base = 8
+				coastal_bunker = 3
+				naval_supply_hub = 1
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
+			}
+
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		664 681 810 957 3787 3811 3843 3977 5427 6684 6686 6715 6833 6838 6961 6989 9639 9762 9895 9926 11745 11750 11765 11777 11904 
+	}
+	manpower=841465
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

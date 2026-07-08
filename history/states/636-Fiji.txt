@@ -1,34 +1,35 @@
-state = {
-	id = 636
-	name = "STATE_636"
 
-	history = {
-		owner = FIJ
-		add_core_of = FIJ
-		buildings = {
-			infrastructure = 3
-			
-			
-			radar_station = 5
-			air_base = 4
-			4286 = {
-				naval_base = 3
-			}
-		}
-		add_extra_state_shared_building_slots = 1
+state={
+	id=636
+	name="STATE_636"
+
+	history={
+		owner = ENG
 		victory_points = {
-			4286 5
+			4286 2
 		}
 		victory_points = {
 			7302 1
 		}
+		victory_points = {
+			12159 1
+		}
+		buildings = {
+			infrastructure = 1
+			4286 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = FIJ
+
 	}
 
-	provinces = {
-		3428 4286 7302 12159
+	provinces={
+		4286 7302 12159 
 	}
-	manpower = 180000
-	buildings_max_level_factor = 1.000
-	state_category = small_island
-	local_supplies = 0.000
+	manpower=180000
+	buildings_max_level_factor=1.000
+	state_category=small_island
 }

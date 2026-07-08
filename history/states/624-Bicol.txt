@@ -1,28 +1,43 @@
-state = { #Population Done
-	id = 624
-	name = "STATE_624"
-	provinces = {
-		1372 4228 4377 7307 12279 14717 14727
-	}
-	state_category = pastoral
-	history = {
+
+state={
+	id=624
+	name="STATE_624"
+
+	history={
 		owner = PHI
-		set_state_flag = has_offshore_island
-		buildings = {
-			infrastructure = 3
-			14717 = {
-				naval_base = 1
-			}
+		victory_points = {
+			4228 3
 		}
-		victory_points = { 14717 5 }
-		victory_points = { 4228 5 }
-		victory_points = { 12279 5 }
-		
+		victory_points = {
+			12279 2 
+		}
+		victory_points = {
+			7307 1 
+		}
+		victory_points = {
+			4377 1 
+		}
+		victory_points = {
+			1372 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 1
+			4228 = {
+				naval_base = 1
+				
+			}
+
+		}
 		add_core_of = PHI
-		
-		set_state_flag = GDP_category_large_town
-		set_state_flag = state_renamings
+
 	}
-	manpower = 2658496
-	buildings_max_level_factor = 1.000
+
+	provinces={
+		1372 4228 4377 7307 12279 
+	}
+	manpower=730948
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

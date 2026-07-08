@@ -1,0 +1,64 @@
+
+state={
+	id=1102
+	name="STATE_1102"
+	resources={
+		steel=42.000
+	}
+
+	history={
+		owner = SWE
+		victory_points = {
+			101 3
+		}
+		victory_points = {
+			15865 1
+		}
+		victory_points = {
+			15838 1 
+		}
+		victory_points = {
+			15853 1
+		}
+		victory_points = {
+			15831 1
+		}
+		victory_points = {
+			15835 1
+		}
+		victory_points = {
+			11120 1
+		}
+		victory_points = {
+			15847 1
+		}
+		victory_points = {
+			11190 1
+		}
+		victory_points = {
+			15872 1
+		}
+		victory_points = {
+			9083 1
+		}
+		victory_points = {
+			61 1
+		}
+		victory_points = {
+			15827 1
+		}
+		victory_points = {
+			15871 1
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		11 58 61 101 145 3095 3138 6024 6074 6152 6200 9083 9093 11026 11069 11120 11155 11190 13119 13612 15826 15827 15828 15829 15831 15833 15834 15835 15838 15839 15840 15841 15842 15845 15846 15847 15848 15851 15853 15854 15856 15857 15858 15859 15860 15861 15862 15864 15865 15866 15867 15868 15869 15871 15872 15873 15874 15875 15876 
+	}
+	manpower=52332
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

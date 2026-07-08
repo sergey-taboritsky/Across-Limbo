@@ -1,0 +1,50 @@
+
+state={
+	id=44
+	name="STATE_44"
+	resources={
+		aluminium=2.000
+	}
+
+	history={
+		owner = ALB
+		victory_points = {
+			9914 5 
+		}
+		victory_points = {
+			11767 3 
+		}
+		victory_points = {
+			16769 2
+		}
+		victory_points = {
+			9780 2 
+		}
+		victory_points = {
+			11762 1
+		}
+		victory_points = {
+			3884 1
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 3
+			16769 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = ALB
+
+	}
+
+	provinces={
+		3884 3896 9780 9875 9914 11762 11767 16769
+	}
+	manpower=798900
+	buildings_max_level_factor=1.000
+	state_category=town
+}

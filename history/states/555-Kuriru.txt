@@ -1,0 +1,33 @@
+
+state={
+	id=555
+	name="STATE_555"
+
+	history={
+		owner = JAP
+		victory_points = {
+			1399 1 
+		}
+		victory_points = {
+			1863 1 
+		}
+		buildings = {
+			infrastructure = 1
+			1399 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = JAP
+
+	}
+
+	provinces={
+		1399 1515 1863 12522 13037 
+	}
+	manpower=15000
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+}

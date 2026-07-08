@@ -1,27 +1,33 @@
-state = {
-	id = 353
-	name = "STATE_353"
 
-	history = {
+state={
+	id=353
+	name="STATE_353"
+
+	resources = {
+		chromium=45.000
+	}
+
+	history={
 		owner = TUR
 		victory_points = {
-			16228 10
+			11853 3
+		}
+		victory_points = {
+			9868 2
 		}
 		buildings = {
-			infrastructure = 3
-			
-			
-			radar_station = 1
+			infrastructure = 1
+
 		}
-		set_state_flag = GDP_category_town
 		add_core_of = TUR
+		add_claim_by = ARM
+
 	}
 
-	provinces = {
-		652 6976 11853 16228 16230
+	provinces={
+		652 6991 9868 11853 14535 
 	}
-	manpower = 823904
-	buildings_max_level_factor = 1.000
-	state_category = rural
-	local_supplies = 0.000
+	manpower=523537
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

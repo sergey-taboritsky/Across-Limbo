@@ -1,0 +1,59 @@
+
+state={
+	id=114
+	name="STATE_114"
+	resources={
+		coal=4.000
+	}
+
+	history={
+		owner = ITA
+		victory_points = {
+			11773 5
+		}
+		victory_points = {
+			9772 3
+		}
+		victory_points = {
+			9863 2
+		}
+		victory_points = {
+			11824 2
+		}
+		victory_points = {
+			11874 1
+		}
+		victory_points = {
+			11755 1
+		}
+		victory_points = {
+			3147 1
+		}
+		victory_points = {
+			6891 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 5
+			11773 = {
+				naval_base = 3
+
+			}
+			9772 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		902 6891 9772 9863 11755 11773 11824 11874 3147 4737
+	}
+	manpower=1004000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

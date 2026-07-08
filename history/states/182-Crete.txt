@@ -1,32 +1,45 @@
-state = { #Population Done
-	id = 182
-	name = "STATE_182"
-	manpower = 673800
 
-	state_category = small_island
-	history = {
+state={
+	id=182
+	name="STATE_182"
+
+	history={
 		owner = GRE
-		victory_points = { 9940 6 }
-		victory_points = { 12058 4 }
-		victory_points = { 1164 1 }
+		victory_points = {
+			9940 3
+		}
+		victory_points = {
+			12058 2
+		}
+		victory_points = {
+			1164 1
+		}
+		victory_points = {
+			4170 1
+		}
 		buildings = {
-			infrastructure = 3
-			air_base = 3
-			
-			
-			
-			radar_station = 2
-			12058 = {
-				naval_base = 1
-			}
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
 			9940 = {
 				naval_base = 3
+
 			}
+			12058 = {
+				naval_base = 1
+
+			}
+
 		}
-		set_state_flag = GDP_category_town
 		add_core_of = GRE
+
 	}
-	provinces = {
-		1164 4170 9940 12058
+
+	provinces={
+		1164 4170 9940 12058 
 	}
+	manpower=381705
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

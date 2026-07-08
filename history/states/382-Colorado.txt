@@ -1,54 +1,42 @@
-state = {
-	id = 382
-	name = "STATE_382"
-	resources = {
-		oil = 50.000
+
+state={
+	id=382
+	name="STATE_382"
+	resources={
+		oil=14.000
+		coal=52.000
 	}
 
-	history = {
+	history={
 		owner = USA
-		buildings = {
-			
-			
-			
-			infrastructure = 5
-			
-			
-			radar_station = 1
-			air_base = 4
+		victory_points = {
+			1827 5 
 		}
-		add_core_of = USA
-		victory_points = { # Denver
-			1827 30
+		victory_points = {
+			10588 3 
 		}
-		victory_points = { # Trinidad
+		victory_points = {
+			3869 2 
+		}
+		victory_points = {
+			6887 1
+		}
+		victory_points = {
 			12627 1
 		}
-		victory_points = { # Pueblo
-			1809 3
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
 		}
-		victory_points = { # Colorado Springs
-			10588 10
-		}
-		victory_points = { # Grand Junction
-			6887 3
-		}
-		victory_points = { # Fort Collins
-			7780 3
-		}
-		victory_points = { # Boulder
-			15348 3
-		}
-		victory_points = { # Aspen
-			1658 1
-		}
+		add_core_of = USA
+
 	}
 
-	provinces = {
-		868 1658 1738 1809 1827 3869 6887 7684 7780 7999 9792 10535 10588 11772 12570 12627 12642 15348 17297
+	provinces={
+		868 1658 1738 1809 1827 3869 6740 6887 7364 7684 7780 7999 9792 10535 10588 11772 12570 12627 12642 
 	}
-	manpower = 2217237
-	buildings_max_level_factor = 1.000
-	state_category = city
-	local_supplies = 0.000
+	manpower=1071000
+	buildings_max_level_factor=1.000
+	state_category=town
 }

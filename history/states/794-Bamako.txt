@@ -1,0 +1,26 @@
+
+state={
+	id=794
+	name="STATE_794"
+
+	history={
+		owner = FRA
+		victory_points = {
+			12751 5 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MLI
+
+	}
+
+	provinces={
+		3123 10812 12751 13748 14012 14013 
+	}
+	manpower=1043785
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

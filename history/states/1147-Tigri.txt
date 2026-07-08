@@ -1,0 +1,19 @@
+state={
+	id=1147
+	name="STATE_1147"
+	
+	history={
+		owner = ENG
+		add_core_of = GUY
+		add_claim_by = HOL
+		add_claim_by = SUR
+	}
+	
+	provinces={
+		12926 
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+}

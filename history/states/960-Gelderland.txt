@@ -1,0 +1,38 @@
+state={
+	id=960
+	name="STATE_960"
+
+	history={
+		owner = HOL
+		victory_points = {
+			9403 3
+		}
+		victory_points = {
+			9363 2
+		}
+		victory_points = {
+			6286 2
+		}
+		victory_points = {
+			9309 2
+		}
+		victory_points = {
+			6241 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		add_core_of = HOL
+
+	}
+	
+	provinces={
+		6241 6286 9309 9363 9403 16340 16341 16343 
+	}
+	manpower=1150000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

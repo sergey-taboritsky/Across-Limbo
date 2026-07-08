@@ -1,0 +1,69 @@
+
+state={
+	id=449
+	name="STATE_449"
+
+	history={
+		owner = ITA
+		victory_points = {
+			1130 5 
+		}
+		victory_points = {
+			10120 1
+		}
+		victory_points = {
+			4136 1
+		}
+		victory_points = {
+			10893 1
+		}
+		victory_points = {
+			4200 1
+		}
+		victory_points = {
+			15741 1
+		}
+		victory_points = {
+			13078 1
+		}
+		victory_points = {
+			7206 1
+		}
+		victory_points = {
+			9992 1
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 4
+			1130 = {
+				naval_base = 2
+				bunker = 3
+				coastal_bunker = 3
+
+			}
+			10893 = {
+				bunker = 2
+
+			}
+			4200 = {
+				bunker = 1
+
+			}
+			10120 = {
+				bunker = 1
+
+			}
+
+		}
+		add_core_of = LBA
+
+	}
+
+	provinces={
+		1130 4060 4136 4200 5136 7206 9992 10120 10893 13078 13999 15737 15741 
+	}
+	manpower=40431
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

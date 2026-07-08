@@ -1,0 +1,35 @@
+
+state={
+	id=545
+	name="STATE_545"
+	resources={
+		chromium=26.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			5199 5 
+		}
+		victory_points = {
+			12504 2 
+		}
+		victory_points = {
+			14050 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ZAM
+
+	}
+
+	provinces={
+		2221 5199 12504 14050 14051 14052 
+	}
+	manpower=456123
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

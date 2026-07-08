@@ -1,25 +1,33 @@
-state = { #Population Done
-	id = 352
-	name = "STATE_352" # Van
-	manpower = 389341
 
-	state_category = pastoral
+state={
+	id=352
+	name="STATE_352"
 
-	history = {
-		owner = KUR
-		victory_points = { 16234 3 }
-		victory_points = { 16224 1 }
-		victory_points = { 12318 1 }
-		buildings = {
-			infrastructure = 3
-			
+	history={
+		owner = TUR
+		victory_points = {
+			6935 3 
 		}
-		add_core_of = KUR
+		victory_points = {
+			12376 1 
+		}
+		victory_points = {
+			9858 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
 		add_core_of = TUR
-		#set_state_flag = universal_renamings
+		add_core_of = KUR
+		add_claim_by = ARM
+
 	}
 
-	provinces = {
-		864 6935 12318 16234 16235 16233 16223 16224 13121
+	provinces={
+		864 4583 6935 7470 9858 11880 12318 12376 13121 14531 14532 
 	}
+	manpower=365490
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

@@ -1,37 +1,36 @@
-state = { #Population Done
-	id = 49
-	name = "STATE_49"
-	manpower = 1703053
-	resources = {
-		chromium = 20
+
+state={
+	id=49
+	name="STATE_49"
+	resources={
+		chromium=11.000
+		steel=7.000
 	}
 
-	state_category = city
-
-	history = {
+	history={
 		owner = TUR
-
-		victory_points = { 11747 35 }
-		victory_points = { 804 5 }
-		victory_points = { 9901 2 }
-		victory_points = { 9844 2 }
-		victory_points = { 11844 2 }
+		victory_points = {
+			11784 10 
+		}
+		victory_points = {
+			9901 1
+		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
 			air_base = 3
-			radar_station = 4
-			
-			
-			
-			
-			
-			
-			
+			anti_air_building = 1
+
 		}
 		add_core_of = TUR
+
 	}
 
-	provinces = {
-		804 6908 6925 9806 9901 11747 11784 6920 9844 16219 11844 16262
+	provinces={
+		6908 6925 9806 9901 11747 11784 
 	}
+	manpower=538669
+	buildings_max_level_factor=1.000
+	state_category=town
 }

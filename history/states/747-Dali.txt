@@ -1,0 +1,42 @@
+
+state={
+	id=747
+	name="STATE_747"
+
+	history={
+		owner = YUN
+		victory_points = {
+			7965 3 
+		}
+		victory_points = {
+			12898 2
+		}
+		victory_points = {
+			10863 2 
+		}
+		victory_points = {
+			15124 2 
+		}
+		victory_points = {
+			15245 2
+		}
+		victory_points = {
+			5009 2
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = YUN
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		4937 5009 7965 7976 10863 12789 12898 15124 15245 
+	}
+	manpower=2393534
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
