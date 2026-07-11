@@ -3,7 +3,7 @@ state={
 	name="STATE_1263"
 
 	history={
-		owner = TUR
+		owner = BUL
 		victory_points = {
 			11842 3
 		}
@@ -27,12 +27,13 @@ state={
 			}
 
 		}
+		add_core_of = GRE
 		add_core_of = TUR
 
 	}
 
 	provinces={
-		922 3893 11842 849 3879 6895 14116 
+		922 3893 11842 849 3879 6895 14116 13250 
 	}
 	manpower=358358
 	buildings_max_level_factor=1.000

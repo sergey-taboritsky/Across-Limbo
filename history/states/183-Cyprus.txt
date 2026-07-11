@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = ENG
+		owner = GRE
 		victory_points = {
 			13348 3
 		}
@@ -33,7 +33,7 @@ state={
 			}
 
 		}
-		add_core_of = CYP
+		add_core_of = GRE
 
 	}
 

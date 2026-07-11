@@ -9,6 +9,7 @@ state={
 
 	history={
 		owner = TUR
+		set_demilitarized_zone = yes
 		victory_points = {
 			11797 2 
 		}

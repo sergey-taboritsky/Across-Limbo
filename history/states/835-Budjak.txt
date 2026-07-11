@@ -28,6 +28,7 @@ state={
 		}
 		add_core_of = ROM
 		add_core_of = MOL
+		add_core_of = RUS
 		add_core_of = UKR
 		add_claim_by = RUS
 	}
