@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = BOL
+		owner = PAR
 		add_core_of = PAR
 		add_core_of = BOL
 
