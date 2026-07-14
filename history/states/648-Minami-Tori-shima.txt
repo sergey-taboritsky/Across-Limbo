@@ -4,7 +4,7 @@ state={
 	name="STATE_648"
 
 	history={
-		owner = JAP
+		owner = USA
 		victory_points = {
 			13026 1 # does not need loc
 		}
@@ -17,7 +17,7 @@ state={
 			}
 
 		}
-		add_core_of = JAP
+		add_core_of = USA
 
 	}
 

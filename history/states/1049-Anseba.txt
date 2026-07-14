@@ -4,7 +4,7 @@ state={
 	name="STATE_1049"
 
 	history={
-		owner = ITA
+		owner = ETH
 		victory_points = {
 			15439 2 
 		}
@@ -22,6 +22,7 @@ state={
 
 		}
 		add_core_of = ERI
+		add_core_of = ETH
 
 	}
 

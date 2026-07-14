@@ -4,7 +4,8 @@ state={
 	name="STATE_1302"
 
 	history={
-		owner = ENG
+		owner = BRN
+		add_core_of = BRN
 		victory_points = {
 			13302 1
 		}

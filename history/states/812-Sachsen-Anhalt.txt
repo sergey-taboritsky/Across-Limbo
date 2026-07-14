@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = GER
+		owner = DDR
 		victory_points = {
 			3522 5 
 		}
@@ -39,7 +39,8 @@ state={
 			synthetic_refinery = 1
 
 		}
-		add_core_of = GER
+		add_core_of = DDR
+		add_core_of = WGR
 
 	}
 

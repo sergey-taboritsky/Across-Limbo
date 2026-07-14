@@ -3,7 +3,7 @@ state={
 	name="STATE_1044"
 
 	history={
-		owner = GER
+		owner = DDR
 		victory_points = {
 			6377 10 
 		}
@@ -27,7 +27,8 @@ state={
 			arms_factory = 2
 
 		}
-		add_core_of = GER
+		add_core_of = DDR
+		add_core_of = WGR
 		add_core_of = HAN
 	}
 	

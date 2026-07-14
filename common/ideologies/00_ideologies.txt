@@ -39,6 +39,8 @@ ideologies = {
 			Production_Supremacism = {can_be_randomly_selected = no}
 			tridemism_revolutionary = {can_be_randomly_selected = no}
 			triequism_left = {can_be_randomly_selected = no}
+			socialist_nationalism = { can_be_randomly_selected = no }
+			military_socialism = { can_be_randomly_selected = no }
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes

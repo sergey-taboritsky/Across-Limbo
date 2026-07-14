@@ -4,7 +4,7 @@ state={
 	name="STATE_1057"
 
 	history={
-		owner = GER
+		owner = WGR
 		victory_points = {
 			6521 50 # Loc not needed, same as state
 		}
@@ -14,7 +14,8 @@ state={
 			anti_air_building = 2
 			air_base = 6
 		}
-		add_core_of = GER
+		add_core_of = DDR
+		add_core_of = WGR
 
 	}
 

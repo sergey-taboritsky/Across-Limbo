@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = JAP
+		owner = NAH
 		victory_points = {
 			10444 10 
 		}
@@ -71,7 +71,8 @@ state={
 			}
 
 		}
-		add_core_of = JAP
+		add_core_of = IAS
+		add_core_of = NAH
 
 	}
 

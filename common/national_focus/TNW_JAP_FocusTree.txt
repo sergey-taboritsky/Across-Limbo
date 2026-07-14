@@ -963,33 +963,839 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 100
+			add = 10
 			tag = JAP
 		}
 	}
 	default = no
 	focus = {
-		id = JAP_fareast_problem_council
-		x = 7
-		y = -3
-		cost = 4
-		icon = GFX_focus_FIN_socialist_welfare
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = JAP_fareast_problem_council
-		}
+		id = JAP_Ripples_of_Fourth_Fukushima
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 13
+		y = 0
+
 	}
 	focus = {
-		id = JAP_socialist_reform_program
+		id = JAP_End_Food_Crisis
+		icon = GFX_goal_unknown
+		cost = 0.00
 		x = 7
-		y = 1
-		cost = 6
-		icon = GFX_focus_AFG_integrate_tajik_and_uzbek_republics
-		continue_if_invalid = no
-		cancel_if_invalid = yes
+		y = 2
+
+	}
+	focus = {
+		id = JAP_General_Congress_Conference
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = JAP_Worker_Alliance_Congress
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = JAP_Three_and_Six_Acres
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = JAP_fareast_problem_council
+			focus = JAP_End_Food_Crisis
 		}
+		mutually_exclusive = {
+			focus = JAP_Land_Reform_Refund_Voucher
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = JAP_Land_Reform_Refund_Voucher
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_End_Food_Crisis
+		}
+		mutually_exclusive = {
+			focus = JAP_Three_and_Six_Acres
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = JAP_Evaluate_Planting_Season
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Three_and_Six_Acres
+			focus = JAP_Land_Reform_Refund_Voucher
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = JAP_Agriculture_Central_Bank
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Evaluate_Planting_Season
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = JAP_Ceasefire_in_Japan
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Ripples_of_Fourth_Fukushima
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = JAP_Far_East_Council
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Ripples_of_Fourth_Fukushima
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = JAP_Constitutional_Creation_Committee
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Ceasefire_in_Japan
+		}
+		prerequisite = {
+			focus = JAP_Far_East_Council
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = JAP_War_Crimes_Special_Court
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Constitutional_Creation_Committee
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = JAP_Sue_Wartime_Murderers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_War_Crimes_Special_Court
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = JAP_Clearup_Wartime_Rubble
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Evaluate_Planting_Season
+		}
+		prerequisite = {
+			focus = JAP_Sue_Wartime_Murderers
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = JAP_Agricoop_Formation_Law
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Agriculture_Central_Bank
+		}
+		prerequisite = {
+			focus = JAP_Clearup_Wartime_Rubble
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = JAP_Women_in_Workforce
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Constitutional_Creation_Committee
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = JAP_Electronics_Labor_Law
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Constitutional_Creation_Committee
+		}
+		prerequisite = {
+			focus = JAP_General_Congress_Conference
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = JAP_Pullback_Opressive_Policies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_War_Crimes_Special_Court
+		}
+		prerequisite = {
+			focus = JAP_Women_in_Workforce
+		}
+		prerequisite = {
+			focus = JAP_Electronics_Labor_Law
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = JAP_Socialist_Education_Law
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Electronics_Labor_Law
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = JAP_Peoples_Republic_Constitution
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Pullback_Opressive_Policies
+		}
+		prerequisite = {
+			focus = JAP_Socialist_Education_Law
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = JAP_Reward_Progressive_Unions
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_General_Congress_Conference
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = JAP_Promote_Union_Autonomy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_General_Congress_Conference
+		}
+		mutually_exclusive = {
+			focus = JAP_Promote_Production_Democracy
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = JAP_Promote_Production_Democracy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Worker_Alliance_Congress
+		}
+		mutually_exclusive = {
+			focus = JAP_Promote_Union_Autonomy
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = JAP_AJTFU_Formation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Promote_Union_Autonomy
+			focus = JAP_Promote_Production_Democracy
+		}
+		prerequisite = {
+			focus = JAP_Reward_Progressive_Unions
+		}
+		prerequisite = {
+			focus = JAP_Socialist_Education_Law
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = JAP_Political_Unions_Congress
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Promote_Union_Autonomy
+			focus = JAP_Promote_Production_Democracy
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = JAP_Northsea_Squadron
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Pullback_Opressive_Policies
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = JAP_Socialist_Reform_Program
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Peoples_Republic_Constitution
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = JAP_Elect_First_President
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Socialist_Reform_Program
+		}
+		prerequisite = {
+			focus = JAP_AJTFU_Formation
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = JAP_Accept_Social_Revolution_Linearity
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Elect_First_President
+		}
+		mutually_exclusive = {
+			focus = JAP_american_absolute_government
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Farmer_Comrade_Organization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Accept_Social_Revolution_Linearity
+		}
+		mutually_exclusive = {
+			focus = JAP_Farmer_Union_Organization
+		}
+		x = 0
+		y = 10
+
+	}
+	focus = {
+		id = JAP_Farmer_Union_Organization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Accept_Social_Revolution_Linearity
+		}
+		mutually_exclusive = {
+			focus = JAP_Farmer_Comrade_Organization
+		}
+		x = 2
+		y = 10
+
+	}
+	focus = {
+		id = JAP_Life_Sustaining_First
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Accept_Social_Revolution_Linearity
+		}
+		x = 4
+		y = 10
+
+	}
+	focus = {
+		id = JAP_Labor_Reliance_System
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Accept_Social_Revolution_Linearity
+		}
+		x = 6
+		y = 10
+
+	}
+	focus = {
+		id = JAP_Combat_Aethiests_Union
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Farmer_Comrade_Organization
+			focus = JAP_Farmer_Union_Organization
+		}
+		prerequisite = {
+			focus = JAP_Labor_Reliance_System
+		}
+		x = 1
+		y = 11
+
+	}
+	focus = {
+		id = JAP_Prepare_Imminently
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Farmer_Comrade_Organization
+			focus = JAP_Farmer_Union_Organization
+		}
+		prerequisite = {
+			focus = JAP_Life_Sustaining_First
+		}
+		x = 3
+		y = 11
+
+	}
+	focus = {
+		id = JAP_Production_Management_Model
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Life_Sustaining_First
+		}
+		prerequisite = {
+			focus = JAP_Labor_Reliance_System
+		}
+		x = 5
+		y = 11
+
+	}
+	focus = {
+		id = JAP_Support_China_Revolution
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Combat_Aethiests_Union
+		}
+		prerequisite = {
+			focus = JAP_Prepare_Imminently
+		}
+		prerequisite = {
+			focus = JAP_Production_Management_Model
+		}
+		x = 4
+		y = 12
+
+	}
+	focus = {
+		id = JAP_postwar_econ_reform
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Elect_First_President
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = JAP_leaned_production
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_postwar_econ_reform
+		}
+		prerequisite = {
+			focus = JAP_Accept_Social_Revolution_Linearity
+		}
+		x = 8
+		y = 10
+
+	}
+	focus = {
+		id = JAP_manufacturing_economy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_leaned_production
+		}
+		x = 7
+		y = 11
+
+	}
+	focus = {
+		id = JAP_evaluate_coalsteel_industry
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_leaned_production
+		}
+		x = 9
+		y = 11
+
+	}
+	focus = {
+		id = JAP_electroproduction_salary_mode
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_manufacturing_economy
+		}
+		prerequisite = {
+			focus = JAP_evaluate_coalsteel_industry
+		}
+		x = 8
+		y = 12
+
+	}
+	focus = {
+		id = JAP_economic_independence
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Support_China_Revolution
+		}
+		prerequisite = {
+			focus = JAP_electroproduction_salary_mode
+		}
+		x = 6
+		y = 13
+
+	}
+	focus = {
+		id = JAP_physics_chemistry_lab
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Support_China_Revolution
+		}
+		x = 2
+		y = 13
+
+	}
+	focus = {
+		id = JAP_metropolitan_renovation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_economic_independence
+		}
+		prerequisite = {
+			focus = JAP_physics_chemistry_lab
+		}
+		x = 4
+		y = 14
+
+	}
+	focus = {
+		id = JAP_american_absolute_government
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Elect_First_President
+		}
+		mutually_exclusive = {
+			focus = JAP_Accept_Social_Revolution_Linearity
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = JAP_combined_manufacturing
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_american_absolute_government
+		}
+		prerequisite = {
+			focus = JAP_postwar_econ_reform
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = JAP_labour_rights_law
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_american_absolute_government
+		}
+		x = 20
+		y = 10
+
+	}
+	focus = {
+		id = JAP_american_economic_assistance
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_american_absolute_government
+		}
+		x = 22
+		y = 10
+
+	}
+	focus = {
+		id = JAP_japanese_deleonism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_american_absolute_government
+		}
+		x = 24
+		y = 10
+
+	}
+	focus = {
+		id = JAP_unite_farmer_association
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_american_absolute_government
+		}
+		x = 26
+		y = 10
+
+	}
+	focus = {
+		id = JAP_american_experts
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_american_economic_assistance
+		}
+		prerequisite = {
+			focus = JAP_japanese_deleonism
+		}
+		x = 23
+		y = 11
+
+	}
+	focus = {
+		id = JAP_force_farmer_membership
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_unite_farmer_association
+		}
+		mutually_exclusive = {
+			focus = JAP_allow_farmer_autonomy
+		}
+		x = 25
+		y = 11
+
+	}
+	focus = {
+		id = JAP_allow_farmer_autonomy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_unite_farmer_association
+		}
+		mutually_exclusive = {
+			focus = JAP_force_farmer_membership
+		}
+		x = 27
+		y = 11
+
+	}
+	focus = {
+		id = JAP_make_every_worker_equal
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_labour_rights_law
+		}
+		x = 20
+		y = 11
+
+	}
+	focus = {
+		id = JAP_consumer_production_command
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_combined_manufacturing
+		}
+		x = 17
+		y = 11
+
+	}
+	focus = {
+		id = JAP_world_best_taxation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_postwar_econ_reform
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = JAP_Tokyo_industry_belt
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_leaned_production
+			focus = JAP_combined_manufacturing
+		}
+		prerequisite = {
+			focus = JAP_world_best_taxation
+		}
+		x = 12
+		y = 11
+
+	}
+	focus = {
+		id = JAP_southern_industry_belt
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_labour_rights_law
+			focus = JAP_leaned_production
+		}
+		prerequisite = {
+			focus = JAP_world_best_taxation
+		}
+		x = 14
+		y = 11
+
+	}
+	focus = {
+		id = JAP_econ_path_left
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Tokyo_industry_belt
+		}
+		prerequisite = {
+			focus = JAP_southern_industry_belt
+		}
+		mutually_exclusive = {
+			focus = JAP_econ_path_centre
+			focus = JAP_econ_path_right
+		}
+		x = 11
+		y = 12
+
+	}
+	focus = {
+		id = JAP_econ_path_centre
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Tokyo_industry_belt
+		}
+		prerequisite = {
+			focus = JAP_southern_industry_belt
+		}
+		mutually_exclusive = {
+			focus = JAP_econ_path_left
+			focus = JAP_econ_path_right
+		}
+		x = 13
+		y = 12
+
+	}
+	focus = {
+		id = JAP_econ_path_right
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_Tokyo_industry_belt
+		}
+		prerequisite = {
+			focus = JAP_southern_industry_belt
+		}
+		mutually_exclusive = {
+			focus = JAP_econ_path_centre
+			focus = JAP_econ_path_left
+		}
+		x = 15
+		y = 12
+
+	}
+	focus = {
+		id = JAP_japan_america_econ_integration
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_force_farmer_membership
+			focus = JAP_allow_farmer_autonomy
+		}
+		prerequisite = {
+			focus = JAP_american_experts
+		}
+		prerequisite = {
+			focus = JAP_make_every_worker_equal
+		}
+		prerequisite = {
+			focus = JAP_consumer_production_command
+		}
+		x = 21
+		y = 13
+
+	}
+	focus = {
+		id = JAP_reconstruction_success
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_economic_independence
+			focus = JAP_japan_america_econ_integration
+		}
+		x = 13
+		y = 14
+
 	}
 }

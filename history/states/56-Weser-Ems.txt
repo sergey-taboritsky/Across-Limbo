@@ -6,7 +6,7 @@
 	state_category = town
 
 	history={
-		owner = GER
+		owner = DDR
 		victory_points = {
 			336 3
 		}
@@ -42,7 +42,8 @@
 			air_base = 3
 
 		}
-		add_core_of = GER
+		add_core_of = DDR
+		add_core_of = WGR
 		add_core_of = HAN	
 	}
 

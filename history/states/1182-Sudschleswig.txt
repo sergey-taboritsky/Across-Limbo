@@ -3,7 +3,7 @@ state={
 	name="STATE_1182"
 	
 	history={
-		owner = GER
+		owner = DDR
 		victory_points = {
 			317 2 
 		}
@@ -12,7 +12,8 @@ state={
 			dockyard = 1
 
 		}
-		add_core_of = GER
+		add_core_of = DDR
+		add_core_of = WGR
 
 	}
 	

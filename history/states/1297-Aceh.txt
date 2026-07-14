@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = INS
+		owner = ACH
 		victory_points = {
 			7658 2
 		}
@@ -18,8 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = INS
-		add_core_of = ACE
+		add_core_of = ACH
 
 	}
 

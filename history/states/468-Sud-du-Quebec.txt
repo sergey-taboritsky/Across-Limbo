@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = CAN
+		owner = USA
 		victory_points = {
 			12149 11
 		}
@@ -53,7 +53,7 @@ state={
 			}
 
 		}
-		add_core_of = CAN
+		add_core_of = USA
 		add_core_of = QUE
 
 	}
