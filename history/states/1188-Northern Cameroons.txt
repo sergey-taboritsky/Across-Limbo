@@ -3,12 +3,12 @@ state={
 	name="STATE_1188"
 	
 	history={
-		owner = ENG
+		owner = CMR
 		set_demilitarized_zone = yes
 		victory_points = {
 			7978 1
 		}
-		add_core_of = NGA
+		add_core_of = CMR
 	}
 	
 	provinces={

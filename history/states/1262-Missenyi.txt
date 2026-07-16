@@ -3,7 +3,7 @@ state={
 	name="STATE_1262"
 
 	history={
-		owner = ENG
+		owner = TZN
 		set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 1

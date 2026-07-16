@@ -3,7 +3,7 @@ state={
 	name="STATE_1798"
 
 	history={
-		owner = ENG
+		owner = BOT
 		add_core_of = BOT
 	}
 

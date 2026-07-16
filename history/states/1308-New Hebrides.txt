@@ -3,7 +3,7 @@ state={
 	name="STATE_1308"
 
 	history={
-		owner = ENG
+		owner = USA
 		set_demilitarized_zone = yes
 		victory_points = {
 			12120 1

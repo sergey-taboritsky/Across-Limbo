@@ -7,8 +7,7 @@ state={
 	}
 
 	history={
-		owner = FRA
-		set_demilitarized_zone = yes
+		owner = DAH
 		victory_points = {
 			1951 2
 		}
@@ -23,7 +22,7 @@ state={
 			}
 
 		}
-		add_core_of = TOG
+		add_core_of = DAH
 
 	}
 

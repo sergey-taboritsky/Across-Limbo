@@ -3,7 +3,7 @@ state={
 	name="STATE_1630"
 
 	history={
-		owner = ENG
+		owner = USA
 		buildings = {
 			13022 = {
 				naval_base = 1
