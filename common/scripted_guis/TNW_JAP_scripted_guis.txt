@@ -1,0 +1,80 @@
+scripted_gui = {
+	TNW_JAP_worker_diet_gui = {
+		context_type = decision_category
+		window_name = "JAP_worker_diet_gui_container"
+
+		dynamic_lists = {
+			parliament_main_grid = {
+				array = JAP_worker_diet_main_array
+				index = parliament_main_index
+				change_scope = no
+				entry_container = JAP_worker_diet_main_entry
+			}
+			JAP_worker_diet_semicircle_main_grid = {
+				array = JAP_worker_diet_main_array
+				index = parliament_main_index
+				change_scope = no
+				entry_container = JAP_worker_diet_semicircle_main_entry
+			}
+			JAP_worker_diet_member_grid = {
+				array = JAP_worker_diet_member_array
+				index = parliament_member_index
+				change_scope = no
+				entry_container = JAP_worker_diet_member_entry
+			}
+		}
+
+		properties = {
+			JAP_worker_diet_main_icon = {
+				frame = v
+			}
+			JAP_worker_diet_semicircle_main_icon = {
+				frame = v
+				x = JAP_worker_diet_x_array^parliament_main_index
+				y = JAP_worker_diet_y_array^parliament_main_index
+			}
+			JAP_worker_diet_member_icon = {
+				frame = v
+			}
+		}
+	}
+	TNW_JAP_trade_union_congress_gui = {
+		context_type = decision_category
+		window_name = "JAP_trade_union_congress_gui_container"
+
+		dynamic_lists = {
+			parliament_main_grid = {
+				array = JAP_trade_union_congress_main_array
+				index = parliament_main_index
+				change_scope = no
+				entry_container = JAP_trade_union_congress_main_entry
+			}
+			JAP_trade_union_congress_semicircle_main_grid = {
+				array = JAP_trade_union_congress_main_array
+				index = parliament_main_index
+				change_scope = no
+				entry_container = JAP_trade_union_congress_semicircle_main_entry
+			}
+			JAP_trade_union_congress_member_grid = {
+				array = JAP_trade_union_congress_member_array
+				index = parliament_member_index
+				change_scope = no
+				entry_container = JAP_trade_union_congress_member_entry
+			}
+		}
+
+		properties = {
+			JAP_trade_union_congress_main_icon = {
+				frame = v
+			}
+			JAP_trade_union_congress_semicircle_main_icon = {
+				frame = v
+				x = JAP_trade_union_congress_x_array^parliament_main_index
+				y = JAP_trade_union_congress_y_array^parliament_main_index
+			}
+			JAP_trade_union_congress_member_icon = {
+				frame = v
+			}
+		}
+	}
+}

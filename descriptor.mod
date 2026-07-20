@@ -3,6 +3,7 @@ tags={
 	"Balance"
 }
 name="Die Wacht Am Rhein守望莱茵"
+replace_path="common/bookmarks"
 replace_path="common/countries"
 replace_path="common/characters"
 replace_path="common/country_tags"

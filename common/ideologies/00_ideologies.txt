@@ -8,6 +8,9 @@ ideologies = {
 			Committee_Communism = {can_be_randomly_selected = no}
 			Left_wing_communism = {can_be_randomly_selected = no}
 		}
+		modifiers = {
+			disabled_ideas = 1
+		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
 		can_be_boosted = no
@@ -22,6 +25,9 @@ ideologies = {
 			Parallel_Syndicalism = {can_be_randomly_selected = no}
 			American_Unionism = {can_be_randomly_selected = no}
 			Japanese_Syndicalism = {can_be_randomly_selected = no}
+		}
+		modifiers = {
+			disabled_ideas = 1
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
@@ -42,6 +48,9 @@ ideologies = {
 			socialist_nationalism = { can_be_randomly_selected = no }
 			military_socialism = { can_be_randomly_selected = no }
 		}
+		modifiers = {
+			disabled_ideas = 1
+		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
 		can_be_boosted = no
@@ -59,6 +68,9 @@ ideologies = {
 			tridemism_left = {can_be_randomly_selected = no}
 			triequism_center = {can_be_randomly_selected = no}
 		}
+		modifiers = {
+			disabled_ideas = 1
+		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
 		can_be_boosted = no
@@ -74,6 +86,9 @@ ideologies = {
 			tridemism_liberal = {can_be_randomly_selected = no}
 			triequism_right = {can_be_randomly_selected = no}
 		}
+		modifiers = {
+			disabled_ideas = 1
+		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
 		can_be_boosted = no
@@ -86,6 +101,9 @@ ideologies = {
 			Patriarchal_Conservatism = {can_be_randomly_selected = no}
 			Zionism = {can_be_randomly_selected = no}
 			tridemism_conservative = {can_be_randomly_selected = no}
+		}
+		modifiers = {
+			disabled_ideas = 1
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
@@ -104,6 +122,9 @@ ideologies = {
 			Social_nationalism = {can_be_randomly_selected = no}
 			tridemism_authdem = {can_be_randomly_selected = no}
 		}
+		modifiers = {
+			disabled_ideas = 1
+		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
 		can_be_boosted = no
@@ -121,6 +142,9 @@ ideologies = {
 			theocracy = {can_be_randomly_selected = no}
 			Red_military_government = {can_be_randomly_selected = no}
 		}
+		modifiers = {
+			disabled_ideas = 1
+		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
 		can_be_boosted = no
@@ -134,6 +158,9 @@ ideologies = {
 			Ultra_Nationalism = {can_be_randomly_selected = no}
 			Renewal_System = {can_be_randomly_selected = no}
 			Singular_Nationalism = {can_be_randomly_selected = no}
+		}
+		modifiers = {
+			disabled_ideas = 1
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes

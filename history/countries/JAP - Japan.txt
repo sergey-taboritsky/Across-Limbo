@@ -58,3 +58,19 @@ recruit_character = JAP_Kazahaya_Yasoji
 recruit_character = JAP_Kuroda_Hisao
 	
 country_event = { id = jap_event.1 days = 20 }
+
+set_variable = { var = JAP_JCLP value = 50 } 
+set_variable = { var = JAP_JCP value = 25 } 
+set_variable = { var = JAP_JSP value = 125 }
+set_variable = { var = JAP_JSDP value = 100 } 
+set_variable = { var = JAP_JRDP value = 80 } 
+set_variable = { var = JAP_Nonpartisan value = 70 } 
+set_variable = { var = JAP_Vacant value = 16 }
+set_variable = { var = seatNumbers value = 466 }
+JAP_worker_diet_gui_initial = yes
+set_variable = { var = JAP_DemLeg value = 4 } 
+set_variable = { var = JAP_GTU value = 52 } 
+set_variable = { var = JAP_GenUn value = 25 }
+set_variable = { var = JAP_IndUn value = 3 } 
+set_variable = { var = unionNumbers value = 84 }
+JAP_trade_union_congress_gui_initial = yes
