@@ -7,6 +7,10 @@ focus_tree = {
 			tag = JAP
 		}
 	}
+	continuous_focus_position = {
+		x = -200
+		y = 2500
+	}
 	default = no
 	focus = {
 		id = JAP_Ripples_of_Fourth_Fukushima
@@ -836,6 +840,462 @@ focus_tree = {
 		}
 		x = 13
 		y = 14
+
+	}
+	focus = {
+		id = JAP_report_on_Matsukawa_incident
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 40
+		y = 0
+
+	}
+	focus = {
+		id = JAP_worse_than_imagined
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_report_on_Matsukawa_incident
+		}
+		x = 40
+		y = 1
+
+	}
+	focus = {
+		id = JAP_republic_security_council
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_worse_than_imagined
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = JAP_council_president_left
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_republic_security_council
+		}
+		mutually_exclusive = {
+			focus = JAP_council_president_right
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = JAP_council_president_right
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_republic_security_council
+		}
+		mutually_exclusive = {
+			focus = JAP_council_president_left
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = JAP_survey_non_union_worker
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_council_president_right
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = JAP_identify_union_members
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_council_president_right
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = JAP_calm_general_unions
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = JAP_farright_violence_deterrence
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_council_president_left
+			focus = JAP_council_president_right
+		}
+		prerequisite = {
+			focus = JAP_calm_general_unions
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = JAP_cite_oppression_abolishment_code
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_survey_non_union_worker
+			focus = JAP_identify_union_members
+		}
+		prerequisite = {
+			focus = JAP_farright_violence_deterrence
+		}
+		mutually_exclusive = {
+			focus = JAP_national_security_act
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = JAP_national_security_act
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_survey_non_union_worker
+			focus = JAP_identify_union_members
+		}
+		prerequisite = {
+			focus = JAP_farright_violence_deterrence
+		}
+		mutually_exclusive = {
+			focus = JAP_cite_oppression_abolishment_code
+		}
+		x = 37
+		y = 5
+
+	}
+	focus = {
+		id = JAP_assess_labour_defense_force
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_worse_than_imagined
+		}
+		x = 47
+		y = 2
+
+	}
+	focus = {
+		id = JAP_resist_pseudo_empire
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_assess_labour_defense_force
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = JAP_defense_negotiation_with_unions
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_calm_general_unions
+		}
+		prerequisite = {
+			focus = JAP_resist_pseudo_empire
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = JAP_worker_soldier_separation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_defense_negotiation_with_unions
+		}
+		mutually_exclusive = {
+			focus = JAP_stick_with_worker_militia
+		}
+		x = 39
+		y = 5
+
+	}
+	focus = {
+		id = JAP_stick_with_worker_militia
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_defense_negotiation_with_unions
+		}
+		mutually_exclusive = {
+			focus = JAP_worker_soldier_separation
+		}
+		x = 41
+		y = 5
+
+	}
+	focus = {
+		id = JAP_fortify_border
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_calm_general_unions
+		}
+		prerequisite = {
+			focus = JAP_resist_pseudo_empire
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = JAP_hundred_thousand_recruitment
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_calm_general_unions
+		}
+		prerequisite = {
+			focus = JAP_resist_pseudo_empire
+		}
+		x = 44
+		y = 4
+
+	}
+	focus = {
+		id = JAP_independent_worker_airforce
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_fortify_border
+		}
+		prerequisite = {
+			focus = JAP_hundred_thousand_recruitment
+		}
+		x = 43
+		y = 5
+
+	}
+	focus = {
+		id = JAP_reorganize_military_bureau
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_assess_labour_defense_force
+		}
+		x = 47
+		y = 3
+
+	}
+	focus = {
+		id = JAP_american_military_direction
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_reorganize_military_bureau
+		}
+		mutually_exclusive = {
+			focus = JAP_chinese_military_direction
+		}
+		x = 46
+		y = 4
+
+	}
+	focus = {
+		id = JAP_mechanized_red_army
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_american_military_direction
+		}
+		x = 46
+		y = 5
+
+	}
+	focus = {
+		id = JAP_chinese_military_direction
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_reorganize_military_bureau
+		}
+		mutually_exclusive = {
+			focus = JAP_american_military_direction
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = JAP_whampoa_experiences
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_chinese_military_direction
+		}
+		x = 48
+		y = 5
+
+	}
+	focus = {
+		id = JAP_assess_frontline_squads
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_assess_labour_defense_force
+		}
+		x = 52
+		y = 3
+
+	}
+	focus = {
+		id = JAP_reinvite_imperial_officers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_assess_frontline_squads
+		}
+		mutually_exclusive = {
+			focus = JAP_trust_military_bureau
+			focus = JAP_military_revolution_fervor
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = JAP_old_training_policy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_reinvite_imperial_officers
+		}
+		x = 50
+		y = 5
+
+	}
+	focus = {
+		id = JAP_trust_military_bureau
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_assess_frontline_squads
+		}
+		mutually_exclusive = {
+			focus = JAP_reinvite_imperial_officers
+			focus = JAP_military_revolution_fervor
+		}
+		x = 52
+		y = 4
+
+	}
+	focus = {
+		id = JAP_military_revolution_fervor
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_assess_frontline_squads
+		}
+		mutually_exclusive = {
+			focus = JAP_reinvite_imperial_officers
+			focus = JAP_trust_military_bureau
+		}
+		x = 54
+		y = 4
+
+	}
+	focus = {
+		id = JAP_soldier_comradeship
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_trust_military_bureau
+			focus = JAP_military_revolution_fervor
+		}
+		x = 53
+		y = 5
+
+	}
+	focus = {
+		id = JAP_reassess_worker_defense_force
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_old_training_policy
+			focus = JAP_soldier_comradeship
+		}
+		prerequisite = {
+			focus = JAP_mechanized_red_army
+			focus = JAP_whampoa_experiences
+		}
+		x = 50
+		y = 6
+
+	}
+	focus = {
+		id = JAP_posthumous_analysis_of_Nigata_battle
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 40
+		y = 8
+
+	}
+	focus = {
+		id = JAP_land_defense_forces
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_posthumous_analysis_of_Nigata_battle
+		}
+		x = 40
+		y = 9
+
+	}
+	focus = {
+		id = JAP_defense_initiative_whitebook
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_land_defense_forces
+		}
+		mutually_exclusive = {
+			focus = JAP_slanted_reform_direction
+		}
+		x = 35
+		y = 10
+
+	}
+	focus = {
+		id = JAP_slanted_reform_direction
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_land_defense_forces
+		}
+		mutually_exclusive = {
+			focus = JAP_defense_initiative_whitebook
+		}
+		x = 45
+		y = 10
+
+	}
+	focus = {
+		id = JAP_naval_polls_high
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 50
+		y = 8
 
 	}
 }
