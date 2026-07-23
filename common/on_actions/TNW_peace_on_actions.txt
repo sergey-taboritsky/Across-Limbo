@@ -1,6 +1,3 @@
-#I'm so sorry that I found no way in making it perfect.
-#If you have better ideas ,please improve it.
-#BUT IF YOU DON'T HAVE BETTER IDEAS, DON'T CHANGE COMMON CODES!!!!!!
 #ROOT = defeated country
 #FROM = victor
 on_actions = {

@@ -74,3 +74,16 @@ set_variable = { var = JAP_GenUn value = 25 }
 set_variable = { var = JAP_IndUn value = 3 } 
 set_variable = { var = unionNumbers value = 84 }
 JAP_trade_union_congress_gui_initial = yes
+
+set_variable = {
+	JAP_socialist_reform_enthusiasm_var = 60
+}
+set_variable = {
+	JAP_socialist_reform_enthusiasm_cap_var = 100
+}
+set_variable = {
+	JAP_food_crisis_convince_america_rate_var = 0
+}
+set_variable = {
+	JAP_food_crisis_convince_france_rate_var = 1
+}

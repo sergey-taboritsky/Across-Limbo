@@ -22,3 +22,25 @@ JAP_Worker_Diet_decision_category = {
 	scripted_gui = TNW_JAP_worker_diet_gui
 	priority = 1000
 }
+JAP_socialist_reform_category = {
+	icon = GFX_decision_category_JAP_socialist_reform
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = yes
+	priority = 900
+}
+JAP_food_crisis_category = {
+	icon = GFX_decision_category_JAP_food_crisis
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = yes
+	priority = 800
+}

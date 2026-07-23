@@ -1,0 +1,99 @@
+JAP_food_crisis_category = {
+	JAP_food_crisis_trade_unions_impatience_mission = {
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = JAP_food_crisis_stash_fulfilled_tt
+				check_variable = {
+					JAP_food_crisis_stash_var > 99
+				}
+			}
+		}
+		is_good = no
+		fired_only_once = yes
+		days_mission_timeout = 40
+		timeout_effect = {
+			add_to_variable = {
+				JAP_socialist_reform_enthusiasm_cap_var = -15
+			}
+			clamp_variable = {
+				var = JAP_socialist_reform_enthusiasm_cap_var
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_large_fall_tt
+			add_to_variable = {
+				JAP_socialist_reform_enthusiasm_var = -25
+			}
+			clamp_variable = {
+				var = JAP_socialist_reform_enthusiasm_var
+				min = 0
+				max = JAP_socialist_reform_enthusiasm_cap_var
+			}
+			#70日 总罢工
+		}
+		complete_effect = {
+		}
+	}
+	JAP_food_crisis_convince_america_decision = {
+		cost = 25
+		days_remove = 15
+		complete_effect = {
+			random_list = {
+				1 = {
+					add_days_mission_timeout = {
+						mission = JAP_food_crisis_trade_unions_impatience_mission
+						days = 7
+					}
+					add_to_variable = {
+						JAP_food_crisis_stash_var = 20
+					}
+				}
+				JAP_food_crisis_convince_america_rate_var = {
+					custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_fall_tt
+					add_to_variable = {
+						JAP_socialist_reform_enthusiasm_var = -0.5
+					}
+					clamp_variable = {
+						var = JAP_socialist_reform_enthusiasm_var
+						min = 0
+						max = JAP_socialist_reform_enthusiasm_cap_var
+					}
+				}
+			}
+			add_to_variable = {
+				JAP_food_crisis_convince_america_rate_var = 1
+			}
+		}
+	}
+	JAP_food_crisis_convince_france_decision = {
+		cost = 25
+		days_remove = 15
+		complete_effect = {
+			random_list = {
+				1 = {
+					add_days_mission_timeout = {
+						mission = JAP_food_crisis_trade_unions_impatience_mission
+						days = 7
+					}
+					add_to_variable = {
+						JAP_food_crisis_stash_var = 20
+					}
+				}
+				JAP_food_crisis_convince_france_rate_var = {
+					custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_fall_tt
+					add_to_variable = {
+						JAP_socialist_reform_enthusiasm_var = -0.5
+					}
+					clamp_variable = {
+						var = JAP_socialist_reform_enthusiasm_var
+						min = 0
+						max = JAP_socialist_reform_enthusiasm_cap_var
+					}
+				}
+			}
+			add_to_variable = {
+				JAP_food_crisis_convince_france_rate_var = 1
+			}
+		}
+	}
+}
