@@ -299,12 +299,93 @@ characters = {
 			}
 		}
 	}
+	#张劲夫
+	CHI_Zhang_Jingfu = {
+		name = CHI_Zhang_Jingfu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Zhang_Jingfu
+			}
+		}
+	}
+	#钱昌照
+	CHI_Qian_Changzhao = {
+		name = CHI_Qian_Changzhao
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Qian_Changzhao
+			}
+		}
+	}
+	#恽代英
+	CHI_Yun_Daiying = {
+		name = CHI_Yun_Daiying
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Yun_Daiying
+			}
+		}
+	}
 	#潘汉年
 	CHI_Pan_Hannian = {
 		name = CHI_Pan_Hannian
 		portraits = {
 			civilian = {
 				large = GFX_portrait_large_CHI_Pan_Hannian
+			}
+		}
+	}
+	#陆京士
+	CHI_Lu_Jingshi = {
+		name = CHI_Lu_Jingshi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Lu_Jingshi
+			}
+		}
+	}
+	#杨杏佛
+	CHI_Yang_Xingfo = {
+		name = CHI_Yang_Xingfo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Yang_Xingfo
+			}
+		}
+	}
+	#蔡培火
+	CHI_Cai_Peihuo = {
+		name = CHI_Cai_Peihuo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Cai_Peihuo
+			}
+		}
+	}
+	#谢雪红
+	CHI_Xie_Xuehong = {
+		name = CHI_Xie_Xuehong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Xie_Xuehong
+			}
+		}
+	}
+	#陈仪
+	CHI_Chen_Yi = {
+		name = CHI_Chen_Yi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Chen_Yi
+			}
+		}
+	}
+	#邵元冲
+	CHI_Shao_Yuanchong = {
+		name = CHI_Shao_Yuanchong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Shao_Yuanchong
 			}
 		}
 	}

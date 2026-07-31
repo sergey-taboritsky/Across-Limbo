@@ -351,8 +351,116 @@ CHI_Anhui_Province_election_undergoing = {
 	local_supplies = 0.05
 	mobilization_speed = 0.03
 }
+CHI_Anhui_Province_Wu_Zhongxin = {
+	icon = GFX_idea_TNW_CHI_national_armed_forces
+	
+	enable = {
+		NOT = {
+			CHI = {
+				has_country_flag = CHI_KMT_collapsed_flag
+			}
+		}
+	}
+	remove_trigger = {
+		CHI = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+		PRC = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_building_slots = 2
+	local_supplies = 0.05
+	mobilization_speed = 0.03
+}
+CHI_Anhui_Province_Zhang_Jingfu = {
+	icon = GFX_idea_TNW_CHI_national_armed_forces
+	
+	enable = {
+		NOT = {
+			CHI = {
+				has_country_flag = CHI_KMT_collapsed_flag
+			}
+		}
+	}
+	remove_trigger = {
+		CHI = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+		PRC = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_building_slots = 2
+	local_supplies = 0.05
+	mobilization_speed = 0.03
+}
 #江苏
 CHI_Jiangsu_Province_election_undergoing = {
+	icon = GFX_idea_TNW_CHI_national_armed_forces
+	
+	enable = {
+		NOT = {
+			CHI = {
+				has_country_flag = CHI_KMT_collapsed_flag
+			}
+		}
+	}
+	remove_trigger = {
+		CHI = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+		PRC = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_building_slots = 2
+	local_supplies = 0.05
+	mobilization_speed = 0.03
+}
+CHI_Jiangsu_Province_Qian_Changzhao = {
+	icon = GFX_idea_TNW_CHI_national_armed_forces
+	
+	enable = {
+		NOT = {
+			CHI = {
+				has_country_flag = CHI_KMT_collapsed_flag
+			}
+		}
+	}
+	remove_trigger = {
+		CHI = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+		PRC = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_building_slots = 2
+	local_supplies = 0.05
+	mobilization_speed = 0.03
+}
+CHI_Jiangsu_Province_Yun_Daiying = {
 	icon = GFX_idea_TNW_CHI_national_armed_forces
 	
 	enable = {
@@ -407,6 +515,87 @@ CHI_Shanghai_Province_election_undergoing = {
 	local_supplies = 0.05
 	mobilization_speed = 0.03
 }
+CHI_Shanghai_Province_Pan_Hannian = {
+	icon = GFX_idea_TNW_CHI_national_armed_forces
+	
+	enable = {
+		NOT = {
+			CHI = {
+				has_country_flag = CHI_KMT_collapsed_flag
+			}
+		}
+	}
+	remove_trigger = {
+		CHI = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+		PRC = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_building_slots = 2
+	local_supplies = 0.05
+	mobilization_speed = 0.03
+}
+CHI_Shanghai_Province_Lu_Jingshi = {
+	icon = GFX_idea_TNW_CHI_national_armed_forces
+	
+	enable = {
+		NOT = {
+			CHI = {
+				has_country_flag = CHI_KMT_collapsed_flag
+			}
+		}
+	}
+	remove_trigger = {
+		CHI = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+		PRC = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_building_slots = 2
+	local_supplies = 0.05
+	mobilization_speed = 0.03
+}
+CHI_Shanghai_Province_Yang_Xingfo = {
+	icon = GFX_idea_TNW_CHI_national_armed_forces
+	
+	enable = {
+		NOT = {
+			CHI = {
+				has_country_flag = CHI_KMT_collapsed_flag
+			}
+		}
+	}
+	remove_trigger = {
+		CHI = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+		PRC = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_building_slots = 2
+	local_supplies = 0.05
+	mobilization_speed = 0.03
+}
 #台湾
 CHI_Taiwan_Province_election_undergoing = {
 	icon = GFX_idea_TNW_CHI_national_armed_forces
@@ -435,8 +624,116 @@ CHI_Taiwan_Province_election_undergoing = {
 	local_supplies = 0.05
 	mobilization_speed = 0.03
 }
+CHI_Taiwan_Province_Cai_Peihuo = {
+	icon = GFX_idea_TNW_CHI_national_armed_forces
+	
+	enable = {
+		NOT = {
+			CHI = {
+				has_country_flag = CHI_KMT_collapsed_flag
+			}
+		}
+	}
+	remove_trigger = {
+		CHI = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+		PRC = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_building_slots = 2
+	local_supplies = 0.05
+	mobilization_speed = 0.03
+}
+CHI_Taiwan_Province_Xie_Xuehong = {
+	icon = GFX_idea_TNW_CHI_national_armed_forces
+	
+	enable = {
+		NOT = {
+			CHI = {
+				has_country_flag = CHI_KMT_collapsed_flag
+			}
+		}
+	}
+	remove_trigger = {
+		CHI = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+		PRC = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_building_slots = 2
+	local_supplies = 0.05
+	mobilization_speed = 0.03
+}
 #浙江
 CHI_Zhejiang_Province_election_undergoing = {
+	icon = GFX_idea_TNW_CHI_national_armed_forces
+	
+	enable = {
+		NOT = {
+			CHI = {
+				has_country_flag = CHI_KMT_collapsed_flag
+			}
+		}
+	}
+	remove_trigger = {
+		CHI = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+		PRC = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_building_slots = 2
+	local_supplies = 0.05
+	mobilization_speed = 0.03
+}
+CHI_Zhejiang_Province_Shao_Yuanchong = {
+	icon = GFX_idea_TNW_CHI_national_armed_forces
+	
+	enable = {
+		NOT = {
+			CHI = {
+				has_country_flag = CHI_KMT_collapsed_flag
+			}
+		}
+	}
+	remove_trigger = {
+		CHI = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+		PRC = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_building_slots = 2
+	local_supplies = 0.05
+	mobilization_speed = 0.03
+}
+CHI_Zhejiang_Province_Chen_Yi = {
 	icon = GFX_idea_TNW_CHI_national_armed_forces
 	
 	enable = {

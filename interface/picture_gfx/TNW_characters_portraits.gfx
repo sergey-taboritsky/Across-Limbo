@@ -781,6 +781,12 @@ spriteTypes = {
 		name = "GFX_portrait_large_CHI_Bai_Haifeng"
 		texturefile = "gfx/characters/CHI_Bai_Haifeng.png"
 	}
+	#蔡培火
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Cai_Peihuo"
+		texturefile = "gfx/characters/CHI_Cai_Peihuo.png"
+		legacy_lazy_load = no
+	}
 	#陈大庆
 	SpriteType = {
 		name = "GFX_portrait_large_CHI_Chen_Daqing"
@@ -1004,6 +1010,12 @@ spriteTypes = {
 		name = "GFX_portrait_large_CHI_Liu_Yuzhang"
 		texturefile = "gfx/characters/CHI_Liu_Yuzhang.png"
 	}
+	#陆京士
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Lu_Jingshi"
+		texturefile = "gfx/characters/CHI_Lu_Jingshi.png"
+		legacy_lazy_load = no
+	}
 	#罗奇
 	SpriteType = {
 		name = "GFX_portrait_large_CHI_Luo_Qi"
@@ -1033,6 +1045,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_portrait_large_CHI_Pan_Hannian"
 		texturefile = "gfx/characters/CHI_Pan_Hannian.png"
+		legacy_lazy_load = no
+	}
+	#钱昌照
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Qian_Changzhao"
+		texturefile = "gfx/characters/CHI_Qian_Changzhao.png"
 		legacy_lazy_load = no
 	}
 	#饶漱石
@@ -1142,6 +1160,12 @@ spriteTypes = {
 		name = "GFX_portrait_large_CHI_Xia_Wei"
 		texturefile = "gfx/characters/CHI_Xia_Wei.png"
 	}
+	#谢雪红
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Xie_Xuehong"
+		texturefile = "gfx/characters/CHI_Xie_Xuehong.png"
+		legacy_lazy_load = no
+	}
 	#熊式辉
 	SpriteType = {
 		name = "GFX_portrait_large_CHI_Xiong_Shihui"
@@ -1176,6 +1200,18 @@ spriteTypes = {
 		name = "GFX_portrait_small_CHI_Yan_Yangchu"
 		texturefile = "gfx/characters/CHI_Yan_Yangchu_small.png"
 	}
+	#杨杏佛
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Yang_Xingfo"
+		texturefile = "gfx/characters/CHI_Yang_Xingfo.png"
+		legacy_lazy_load = no
+	}
+	#恽代英
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Yun_Daiying"
+		texturefile = "gfx/characters/CHI_Yun_Daiying.png"
+		legacy_lazy_load = no
+	}
 	#张发奎
 	SpriteType = {
 		name = "GFX_portrait_large_CHI_Zhang_Fakui"
@@ -1185,6 +1221,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_portrait_large_CHI_Zhang_Guotao"
 		texturefile = "gfx/characters/CHI_Zhang_Guotao.png"
+	}
+	#张劲夫
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Zhang_Jingfu"
+		texturefile = "gfx/characters/CHI_Zhang_Jingfu.png"
 	}
 	#张学良
 	SpriteType = {

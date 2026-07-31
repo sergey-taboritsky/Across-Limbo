@@ -21,7 +21,16 @@ recruit_character = CHI_Chen_Shaokuan
 recruit_character = CHI_Cheng_Tianfang
 recruit_character = CHI_Wu_Guozhen
 recruit_character = CHI_Wu_Zhongxin
+recruit_character = CHI_Zhang_Jingfu
+recruit_character = CHI_Qian_Changzhao
+recruit_character = CHI_Yun_Daiying
 recruit_character = CHI_Pan_Hannian
+recruit_character = CHI_Lu_Jingshi
+recruit_character = CHI_Yang_Xingfo
+recruit_character = CHI_Cai_Peihuo
+recruit_character = CHI_Xie_Xuehong
+recruit_character = CHI_Chen_Yi
+recruit_character = CHI_Shao_Yuanchong
 
 recruit_character = CHI_Xia_Wei
 recruit_character = CHI_Xu_Qiming
