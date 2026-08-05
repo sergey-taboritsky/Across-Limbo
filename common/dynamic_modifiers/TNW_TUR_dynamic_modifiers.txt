@@ -1,0 +1,14 @@
+TUR_peoples_revolutionary_army = {  #土耳其军队
+	icon = GFX_idea_TUR_peoples_revolutionary_army
+	enable = { always = yes }
+	army_org_factor = -0.1
+	army_attack_factor = -0.15
+	army_defence_factor = -0.15
+	air_cas_present_factor = -0.1
+	air_attack_factor = -0.1
+	navy_screen_attack_factor = -0.1
+	navy_screen_defence_factor = -0.1
+	navy_capital_ship_attack_factor = -0.15
+	naval_speed_factor = -0.1
+	navy_max_range_factor = -0.05
+}

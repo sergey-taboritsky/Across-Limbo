@@ -9,13 +9,213 @@ characters = {
 		}
 		country_leader = {
 			desc = TUR_Sadrettin_Celal_Andel_desc
-			ideology = market_socialism
+			ideology = socialist_nationalism
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {
 			}
 		}
 	}
+	#穆斯塔法·苏布希
+	TUR_Mustapha_Subhi = {
+		name = TUR_Mustapha_Subhi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TUR_Mustapha_Subhi
+				small = GFX_portrait_small_TUR_Mustapha_Subhi
+			}
+		}
+		country_leader = {
+			desc = TUR_Mustapha_Subhi_desc
+			ideology = marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = TUR_Mustapha_Subhi_theorist
+			allowed = { original_tag = TUR }
+			traits = {
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#伊斯梅尔·哈基
+	TUR_Ismail_Hakki = {
+		name = TUR_Ismail_Hakki
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TUR_Ismail_Hakki
+				small = GFX_portrait_small_TUR_Ismail_Hakki
+			}
+		}
+		country_leader = {
+			desc = TUR_Ismail_Hakki_desc
+			ideology = marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = TUR_Ismail_Hakki_hog
+			allowed = { original_tag = TUR }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#谢菲克·许斯努
+	TUR_Sevfik_Husnu = {
+		name = TUR_Sevfik_Husnu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TUR_Sevfik_Husnu
+				small = GFX_portrait_small_TUR_Sevfik_Husnu
+			}
+		}
+		country_leader = {
+			desc = TUR_Sevfik_Husnu_desc
+			ideology = socialist_nationalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TUR_Sevfik_Husnu_advisor
+			allowed = { original_tag = TUR }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#侯赛因·代贝尔格
+	TUR_Huseyin_Burhanettin_Daybelge = {
+		name = TUR_Huseyin_Burhanettin_Daybelge
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TUR_Huseyin_Burhanettin_Daybelge
+				small = GFX_portrait_small_TUR_Huseyin_Burhanettin_Daybelge
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TUR_Huseyin_Burhanettin_Daybelge_advisor
+			allowed = { original_tag = TUR }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#伊斯梅尔·比伦
+	TUR_Ismail_Bilen = {
+		name = TUR_Ismail_Bilen
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TUR_Ismail_Bilen
+				small = GFX_portrait_small_TUR_Ismail_Bilen
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TUR_Ismail_Bilen_advisor
+			allowed = { original_tag = TUR }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#雅库普·卡德里·卡拉奥斯曼奥卢
+	TUR_Yakup_Kadri_Karaosmanoglu = {
+		name = TUR_Yakup_Kadri_Karaosmanoglu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TUR_Yakup_Kadri_Karaosmanoglu
+				small = GFX_portrait_small_TUR_Yakup_Kadri_Karaosmanoglu
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TUR_Yakup_Kadri_Karaosmanoglu_advisor
+			allowed = { original_tag = TUR }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#谢夫凯特·叙雷亚·艾德迈尔
+	TUR_Sevket_Surreya_Aydemir = {
+		name = TUR_Sevket_Surreya_Aydemir
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TUR_Sevket_Surreya_Aydemir
+			}
+		}
+	}
+	#伊斯梅尔·托金
+	TUR_Ismail_Husrev_Tokin = {
+		name = TUR_Ismail_Husrev_Tokin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TUR_Ismail_Husrev_Tokin
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TUR_Ismail_Husrev_Tokin_advisor
+			allowed = { original_tag = TUR }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#泽基·巴斯塔马尔
+	TUR_Zeki_Bastamar = {
+		name = TUR_Zeki_Bastamar
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TUR_Zeki_Bastamar
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TUR_Zeki_Bastamar_advisor
+			allowed = { original_tag = TUR }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#Old
 	#穆罕默德七世
 	TUR_Mehmed_VII = {
 		name = TUR_Mehmed_VII
@@ -250,121 +450,6 @@ characters = {
 			slot = political_advisor
 			idea_token = TUR_Emin_Sazak_advisor
 			allowed = { original_tag = TUR }
-			traits = {
-			}
-			ledger = civilian
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
-		}
-	}
-	### CIN ###
-	CIN_Sevket_Surreya_Aydemir = {
-		name = CIN_Sevket_Surreya_Aydemir
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_CIN_Sevket_Surreya_Aydemir
-			}
-		}
-		advisor = {
-			slot = theorist
-			idea_token = CIN_Sevket_Surreya_Aydemir_theorist
-			allowed = { original_tag = CIN }
-			traits = {
-			}
-			ledger = army
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
-		}
-	}
-	CIN_Huseyin_Burhanettin_Daybelge = {
-		name = CIN_Huseyin_Burhanettin_Daybelge
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_CIN_Huseyin_Burhanettin_Daybelge
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = CIN_Huseyin_Burhanettin_Daybelge_advisor
-			allowed = { original_tag = CIN }
-			traits = {
-			}
-			ledger = civilian
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
-		}
-	}
-	CIN_Ismail_Husrev_Tokin = {
-		name = CIN_Ismail_Husrev_Tokin
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_CIN_Ismail_Husrev_Tokin
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = CIN_Ismail_Husrev_Tokin_advisor
-			allowed = { original_tag = CIN }
-			traits = {
-			}
-			ledger = civilian
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
-		}
-	}
-	CIN_Ismail_Bilen = {
-		name = CIN_Ismail_Bilen
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_CIN_Ismail_Bilen
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = CIN_Ismail_Bilen_advisor
-			allowed = { original_tag = CIN }
-			traits = {
-			}
-			ledger = civilian
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
-		}
-	}
-	CIN_Zeki_Bastamar = {
-		name = CIN_Zeki_Bastamar
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_CIN_Zeki_Bastamar
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = CIN_Zeki_Bastamar_advisor
-			allowed = { original_tag = CIN }
-			traits = {
-			}
-			ledger = civilian
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
-		}
-	}
-	CIN_Yakup_Kadri_Karaosmanoglu = {
-		name = CIN_Yakup_Kadri_Karaosmanoglu
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_CIN_Yakup_Kadri_Karaosmanoglu
-			}
-		}
-		advisor = {
-			slot = head_of_government
-			idea_token = CIN_Yakup_Kadri_Karaosmanoglu_hog
-			allowed = { original_tag = CIN }
 			traits = {
 			}
 			ledger = civilian
