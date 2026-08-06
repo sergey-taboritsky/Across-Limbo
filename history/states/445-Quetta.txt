@@ -4,7 +4,7 @@ state={
 	name="STATE_445"
 
 	history={
-		owner = RAJ
+		owner = AFG
 		victory_points = {
 			5105 3
 		}
@@ -13,10 +13,8 @@ state={
 			air_base = 4
 
 		}
-		add_core_of = RAJ
-		add_core_of = PAK
-		add_core_of = BAL
-		add_claim_by = AFG
+		add_core_of = AFG
+		add_claim_by = RAJ
 
 	}
 

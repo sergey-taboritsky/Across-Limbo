@@ -1,26 +1,6 @@
 ﻿l_simp_chinese:
 
 #领导人
- CIN_Sadrettin_Celal_Antel: "萨德雷丁·杰拉勒·安特尔" #工农派
- CIN_Sadrettin_Celal_Antel_desc: ""
- CIN_Sevket_Surreya_Aydemir: "谢夫凯特·叙雷亚·艾德迈尔" #骨干派
- CIN_Sevket_Surreya_Aydemir_theorist: "谢夫凯特·叙雷亚·艾德迈尔"
- CIN_Sevket_Surreya_Aydemir_desc: ""
- CIN_Huseyin_Burhanettin_Daybelge: "布哈雷丁·戴贝尔格" #骨干派
- CIN_Huseyin_Burhanettin_Daybelge_advisor: "布哈雷丁·戴贝尔格"
- CIN_Huseyin_Burhanettin_Daybelge_desc: ""
- CIN_Ismail_Husrev_Tokin: "伊斯梅尔·托金" #骨干派
- CIN_Ismail_Husrev_Tokin_advisor: "伊斯梅尔·托金"
- CIN_Ismail_Husrev_Tokin_desc: ""
- CIN_Ismail_Bilen: "伊斯梅尔·比伦" #工农派
- CIN_Ismail_Bilen_advisor: "伊斯梅尔·比伦"
- CIN_Ismail_Bilen_desc: ""
- CIN_Zeki_Bastamar: "泽基·巴斯塔马尔" #工农派
- CIN_Zeki_Bastamar_advisor: "泽基·巴斯塔马尔"
- CIN_Zeki_Bastamar_desc: ""
- CIN_Yakup_Kadri_Karaosmanoglu: "雅库普·卡德里·卡拉奥斯曼诺卢" #骨干派
- CIN_Yakup_Kadri_Karaosmanoglu_hog: "雅库普·卡德里·卡拉奥斯曼诺卢"
- CIN_Yakup_Kadri_Karaosmanoglu_desc: ""
  
 #政党名字
  CIN_communist_party: "工农社会党 - 雪月派"

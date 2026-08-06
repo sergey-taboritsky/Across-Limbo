@@ -96,4 +96,104 @@ JAP_food_crisis_category = {
 			}
 		}
 	}
+	JAP_food_crisis_Taiwan_negotiation_decision = {
+		cost = 25
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = JAP_food_crisis_trade_unions_impatience_mission
+				days = 7
+			}
+			add_to_variable = {
+				JAP_food_crisis_stash_var = 15
+			}
+			random_list = {
+				1 = {
+					custom_effect_tooltip = JAP_food_crisis_Taiwan_negotiation_decision_tt_a
+					add_political_power = 5
+					add_to_variable = {
+						TNW_CHI_Taiwan_election_note_var = 1
+					}
+				}
+				3 = {
+					custom_effect_tooltip = JAP_food_crisis_Taiwan_negotiation_decision_tt_b
+					add_political_power = -5
+					add_to_variable = {
+						TNW_CHI_Taiwan_election_note_var = -1
+					}
+				}
+			}
+		}
+	}
+	JAP_food_crisis_steal_money_decision = {
+		cost = 25
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = JAP_food_crisis_trade_unions_impatience_mission
+				days = 7
+			}
+			add_to_variable = {
+				JAP_food_crisis_stash_var = 15
+			}
+		}
+	}
+	JAP_food_crisis_harsher_rationing_decision = {
+		cost = 15
+		fire_only_once = yes
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = JAP_food_crisis_trade_unions_impatience_mission
+				days = 14
+			}
+			add_to_variable = {
+				JAP_food_crisis_stash_var = 25
+			}
+			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_fall_tt
+			add_to_variable = {
+				JAP_socialist_reform_enthusiasm_var = -4
+			}
+			clamp_variable = {
+				var = JAP_socialist_reform_enthusiasm_var
+				min = 0
+				max = JAP_socialist_reform_enthusiasm_cap_var
+			}
+		}
+	}
+	JAP_food_crisis_exploit_huludao_decision = {
+		cost = 25
+		days_remove = 15
+		complete_effect = {
+			random_list = {
+				1 = {
+					add_days_mission_timeout = {
+						mission = JAP_food_crisis_trade_unions_impatience_mission
+						days = 14
+					}
+					add_to_variable = {
+						JAP_food_crisis_stash_var = 15
+					}
+				}
+				1 = {
+					custom_effect_tooltip = JAP_food_crisis_exploit_huludao_decision_decision_tt_a
+					add_political_power = -10
+				}
+				3 = {
+					add_days_mission_timeout = {
+						mission = JAP_food_crisis_trade_unions_impatience_mission
+						days = 7
+					}
+					add_to_variable = {
+						JAP_food_crisis_stash_var = 5
+					}
+				}
+				4 = {
+					custom_effect_tooltip = JAP_food_crisis_exploit_huludao_decision_decision_tt_a
+					add_war_support = -0.5
+				}
+			}
+		}
+	}
 }

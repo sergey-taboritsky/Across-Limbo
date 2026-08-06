@@ -1,6 +1,62 @@
 add_namespace = JAP_event
 add_namespace = JAP_news_event
 
+country_event = {
+	id = JAP_event.1
+	title = JAP_event.1.t
+	desc = JAP_event.1.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.1.a
+	}
+}
+country_event = {
+	id = JAP_event.2
+	title = JAP_event.2.t
+	desc = JAP_event.2.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.2.a
+	}
+}
+country_event = {
+	id = JAP_event.3
+	title = JAP_event.3.t
+	desc = JAP_event.3.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.3.a
+		set_politics = {
+			ruling_party = syndicalism
+			elections_allowed = no
+		}
+		promote_character = JAP_Thomas_Bisson
+		set_party_name = {
+			long_name = JAP_GHQ_communist_party_long
+			name = JAP_GHQ_communist_party
+			ideology = communist
+		}
+		set_party_name = {
+			long_name = JAP_GHQ_syndicalism_party_long
+			name = JAP_GHQ_syndicalism_party
+			ideology = syndicalism
+		}
+		set_party_name = {
+			long_name = JAP_GHQ_socialism_party_long
+			name = JAP_GHQ_socialism_party
+			ideology = socialism
+		}
+		set_party_name = {
+			long_name = JAP_GHQ_Social_democracy_party_long
+			name = JAP_GHQ_Social_democracy_party
+			ideology = social_democracy
+		}
+	}
+}
+
 news_event = {
 	id = JAP_news_event.1
 	title = JAP_news_event.1.t

@@ -88,7 +88,27 @@ spriteTypes = {
 		name = "GFX_idea_MAL_Three_Armies"
 		texturefile = "gfx/interface/ideas/TNW_MAL_Three_Armies.png"
 	}
-
+#土耳其
+	#疯诗人的遗产
+	spriteType = {
+		name = "GFX_idea_TUR_dark_legacy_of_Gokalp"
+		texturefile = "gfx/interface/ideas/TNW_TUR_dark_legacy_of_Gokalp.png"
+	}
+	#学者工人与士兵
+	spriteType = {
+		name = "GFX_idea_TUR_scholars_workers_soldiers"
+		texturefile = "gfx/interface/ideas/TNW_TUR_scholars_workers_soldiers.png"
+	}
+	#革命紧急状态
+	spriteType = {
+		name = "GFX_idea_TUR_revolutionary_emergency"
+		texturefile = "gfx/interface/ideas/TNW_TUR_revolutionary_emergency.png"
+	}
+	#仍未熄灭
+	spriteType = {
+		name = "GFX_idea_TUR_undying_flame_of_revanchism"
+		texturefile = "gfx/interface/ideas/TNW_TUR_undying_flame_of_revanchism.png"
+	}
 
 	#民族精神
 	#苏俄红军

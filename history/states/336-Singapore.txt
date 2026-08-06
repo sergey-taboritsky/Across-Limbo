@@ -4,7 +4,7 @@ state={
 	name="STATE_336"
 
 	history={
-		owner = SGP
+		owner = MAL
 		victory_points = {
 			12299 10 
 		}
@@ -25,7 +25,6 @@ state={
 			}
 
 		}
-		add_core_of = SGP
 		add_core_of = MAL
 
 	}

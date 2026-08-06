@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = MAL
+		owner = SIA
 		victory_points = {
 			12199 3
 		}
@@ -22,8 +22,7 @@ state={
 			}
 
 		}
-		add_core_of = MAL
-		add_claim_by = SIA
+		add_core_of = SIA
 
 	}
 

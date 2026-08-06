@@ -721,6 +721,60 @@ spriteTypes = {
 		name = "GFX_portrait_large_TUR_Sadrettin_Celal_Andel"
 		texturefile = "gfx/characters/TUR_Sadrettin_Celal_Andel.png"
 	}
+	#穆斯塔法·苏布希
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Mustapha_Subhi"
+		texturefile = "gfx/characters/TUR_Mustapha_Subhi.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_small_TUR_Mustapha_Subhi"
+		texturefile = "gfx/characters/TUR_Mustapha_Subhi_small.png"
+	}
+	#伊斯梅尔·哈基
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Ismail_Hakki"
+		texturefile = "gfx/characters/TUR_Ismail_Hakki.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_small_TUR_Ismail_Hakki"
+		texturefile = "gfx/characters/TUR_Ismail_Hakki_small.png"
+	}
+	#谢菲克·许斯努
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Sevfik_Husnu"
+		texturefile = "gfx/characters/TUR_Sevfik_Husnu.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_small_TUR_Sevfik_Husnu"
+		texturefile = "gfx/characters/TUR_Sevfik_Husnu_small.png"
+	}
+	#侯赛因·代贝尔格
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Huseyin_Burhanettin_Daybelge"
+		texturefile = "gfx/characters/TUR_Huseyin_Burhanettin_Daybelge.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_small_TUR_Huseyin_Burhanettin_Daybelge"
+		texturefile = "gfx/characters/TUR_Huseyin_Burhanettin_Daybelge_small.png"
+	}
+	#伊斯梅尔·比伦
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Ismail_Bilen"
+		texturefile = "gfx/characters/TUR_Ismail_Bilen.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_small_TUR_Ismail_Bilen"
+		texturefile = "gfx/characters/TUR_Ismail_Bilen_small.png"
+	}
+	#雅库普·卡德里
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Yakup_Kadri_Karaosmanoglu"
+		texturefile = "gfx/characters/TUR_Yakup_Kadri_Karaosmanoglu.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_small_TUR_Yakup_Kadri_Karaosmanoglu"
+		texturefile = "gfx/characters/TUR_Yakup_Kadri_Karaosmanoglu_small.png"
+	}
 	#穆罕默德七世
 	SpriteType = {
 		name = "GFX_portrait_large_TUR_Mehmed_VII"
