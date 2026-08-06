@@ -93,7 +93,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 5
-
+		completion_reward = {
+			country_event = { id = JAP_event.1 }
+		}
 	}
 	focus = {
 		id = JAP_Ceasefire_in_Japan
@@ -104,7 +106,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 1
-
+		completion_reward = {
+			country_event = { id = JAP_event.2 }
+		}
 	}
 	focus = {
 		id = JAP_Far_East_Council
@@ -115,7 +119,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 1
-
+		completion_reward = {
+			country_event = { id = JAP_event.3 }
+		}
 	}
 	focus = {
 		id = JAP_Constitutional_Creation_Committee
