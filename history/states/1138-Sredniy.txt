@@ -3,11 +3,11 @@ state={
 	name="STATE_1138"
 	
 	history={
-		owner = FIN
+		owner = RUS
 		victory_points = {
 			13665 1
 		}
-		add_core_of = FIN
+		add_core_of = RUS
 	}
 	
 	provinces={
