@@ -3,10 +3,9 @@ state={
 	name="STATE_1361"
 
 	history={
-		owner = RAJ
-		add_core_of = RAJ
+		owner = AFG
 		add_core_of = PAK
-		add_claim_by = AFG
+		add_claim_by = RAJ
 
 	}
 
