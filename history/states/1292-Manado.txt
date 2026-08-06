@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = INS
+		owner = GTL
 		victory_points = {
 			10153 3
 		}
@@ -24,7 +24,7 @@ state={
 			}
 
 		}
-		add_core_of = INS
+		add_core_of = GTL
 
 	}
 

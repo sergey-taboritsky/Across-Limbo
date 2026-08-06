@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = INS
+		owner = FLO
 		buildings = {
 			infrastructure = 1
 			10175 = {
@@ -16,7 +16,7 @@ state={
 			}
 
 		}
-		add_core_of = INS
+		add_core_of = FLO
 
 	}
 

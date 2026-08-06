@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = INS
+		owner = MLK
 		victory_points = {
 			1574 3
 		}
@@ -19,8 +19,7 @@ state={
 			}
 
 		}
-		add_core_of = INS
-		add_core_of = SMK
+		add_core_of = MLK
 
 	}
 

@@ -4,7 +4,7 @@ state={
 	name="STATE_738"
 
 	history={
-		owner = INS
+		owner = FLO
 		buildings = {
 			4579 = {
 				naval_base = 1
@@ -12,7 +12,7 @@ state={
 			}
 
 		}
-		add_core_of = INS
+		add_core_of = FLO
 
 	}
 

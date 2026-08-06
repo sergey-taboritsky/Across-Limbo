@@ -35,7 +35,6 @@ add_to_faction = ITA
 add_to_faction = IRE
 add_to_faction = NOR
 add_to_faction = SWE
-add_to_faction = GRE
 add_to_faction = HAN
 add_to_faction = WUR
 

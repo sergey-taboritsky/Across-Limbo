@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = POR
+		owner = TIM
 		victory_points = {
 			12190 3
 		}
@@ -22,7 +22,7 @@ state={
 			}
 
 		}
-		add_core_of = TLE
+		add_core_of = TIM
 
 	}
 

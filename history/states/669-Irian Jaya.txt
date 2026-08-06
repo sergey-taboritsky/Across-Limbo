@@ -4,7 +4,7 @@ state={
 	name="STATE_669"
 
 	history={
-		owner = INS
+		owner = PNG
 		victory_points = {
 			12371 3 
 		}
@@ -15,8 +15,7 @@ state={
 			}
 
 		}
-		add_core_of = INS
-		add_core_of = WPA
+		add_core_of = PNG
 
 	}
 

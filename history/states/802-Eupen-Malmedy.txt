@@ -4,7 +4,7 @@ state={
 	name="STATE_802"
 
 	history={
-		owner = DDR
+		owner = SAR
 		victory_points = {
 			3488 2 
 		}
@@ -13,6 +13,8 @@ state={
 
 		}
 		add_core_of = DDR
+		add_core_of = SAR
+		add_core_of = WGR
 
 	}
 

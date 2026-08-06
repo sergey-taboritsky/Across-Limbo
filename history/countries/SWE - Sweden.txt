@@ -1,6 +1,12 @@
-﻿capital = 141	
+﻿capital = 141
 
-#add_opinion_modifier = { target = GER modifier = GER_SWE_historic_trade_Partners } CUT
+NOR = {
+	set_autonomy = {
+		target = SWE
+		autonomous_state = autonomy_puppet
+	}
+}
+
 #oob = "SWE_1936"
 
 set_research_slots = 3

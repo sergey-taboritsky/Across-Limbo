@@ -3,7 +3,7 @@ state={
 	name="STATE_304"
 
 	history={
-		owner = PAN
+		owner = COL
 		victory_points = {
 			7630 5 
 		}
@@ -18,6 +18,7 @@ state={
 			}
 
 		}
+		add_core_of = COL
 		add_core_of = PAN
 
 	}

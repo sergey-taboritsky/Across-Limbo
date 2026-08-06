@@ -11,11 +11,6 @@ add_ideas = {
 	limited_conscription
 }
 
-set_autonomy = {
-	target = SWE
-	autonomous_state = autonomy_puppet
-}
-
 set_stability = 0.60
 set_war_support = 0.1
 set_technology = {

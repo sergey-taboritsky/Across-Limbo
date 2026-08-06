@@ -3,7 +3,8 @@ state={
 	name="STATE_1734"
 
 	history={
-		owner = PAN
+		owner = COL
+		add_core_of = COL
 		add_core_of = PAN
 	}
 
