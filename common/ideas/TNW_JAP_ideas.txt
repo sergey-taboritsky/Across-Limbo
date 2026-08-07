@@ -70,5 +70,21 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
+		#总罢工
+		JAP_Food_Crisis_Strike_idea = {
+			picture = JAP_Food_Crisis_Strike_idea
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.5
+				drift_defence_factor = -0.5
+				stability_factor =  -0.25
+                consumer_goods_factor = 0.40
+				production_speed_buildings_factor = -0.33
+				production_speed_arms_factory_factor = -0.66
+			}
+		}
 	}
 }

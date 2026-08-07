@@ -18,12 +18,20 @@ focus_tree = {
 		cost = 0.00
 		x = 13
 		y = 0
-
+		completion_reward = {
+			country_event = { id = JAP_event.1 }
+		}
 	}
 	focus = {
 		id = JAP_End_Food_Crisis
 		icon = GFX_goal_unknown
 		cost = 0.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = JAP_End_Food_Crisis_tt
+				has_country_flag = JAP_Food_Crisis_enden_flag
+			}
+		}
 		x = 7
 		y = 2
 
@@ -93,9 +101,6 @@ focus_tree = {
 		}
 		x = 6
 		y = 5
-		completion_reward = {
-			country_event = { id = JAP_event.1 }
-		}
 	}
 	focus = {
 		id = JAP_Ceasefire_in_Japan

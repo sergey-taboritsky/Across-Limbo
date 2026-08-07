@@ -460,11 +460,11 @@ spriteTypes = {
 		name = "GFX_portrait_large_JAP_Sakisaka_Itsuro"
 		texturefile = "gfx/characters/JAP_Sakisaka_Itsuro.png"
 	}
-	#浅沼稻次郎
-	#SpriteType = {
-	#	name = "GFX_portrait_large_JAP_Asanuma_Inejiro"
-	#	texturefile = "gfx/characters/JAP_Asanuma_Inejiro.png"
-	#}
+	浅沼稻次郎
+	SpriteType = {
+		name = "GFX_portrait_large_JAP_Asanuma_Inejiro"
+		texturefile = "gfx/characters/JAP_Asanuma_Inejiro.png"
+	}
 	#杰克·白井
 	SpriteType = {
 		name = "GFX_portrait_large_JAP_Jack_Shirai"
@@ -1120,6 +1120,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_portrait_large_CHI_Song_Qingling"
 		texturefile = "gfx/characters/CHI_Song_Qingling.png"
+	}
+	#邵元冲
+	SpriteType = {
+		name = "GFX_portrait_large_CHI_Shao_Yuanchong"
+		texturefile = "gfx/characters/CHI_Shao_Yuanchong.png"
 	}
 	#石觉
 	SpriteType = {

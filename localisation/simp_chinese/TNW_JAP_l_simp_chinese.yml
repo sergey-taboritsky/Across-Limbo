@@ -41,6 +41,8 @@
  JAP_Kuroda_Hisao_desc: ""
 
 #民族精神
+ JAP_Food_Crisis_Strike_idea: "抗议饥饿的总罢工"
+ JAP_Food_Crisis_Strike_idea_desc: ""
  
 #事件
  JAP_event.1.t: "第四次福岛战役"
@@ -155,6 +157,7 @@
 
  JAP_food_crisis_category: "食粮危机"
  JAP_food_crisis_category_desc: "战后的日本百废待兴，而撤到北方的帝国临走前焚毁了所有粮食储备。如今正值春耕时节，距离今年粮食收获尚要等待至少半年，因此我们必须稳住政府建立后第一年的粮食供给。\n\n以下决议中，抬升供给度到100则粮食危机将会成功解除。注意：§Y如果食粮劳动节事件链没有解决，那么工团主义实验的未来将会蒙上阴影！§!\n\n粮食供给度：[?JAP_food_crisis_stash_var]/100"
+ JAP_End_Food_Crisis_tt: "§Y食粮危机§!已经结束"
  JAP_food_crisis_decision_if_success_tt: "§G若该决议成功：§!"
  JAP_food_crisis_decision_if_fail_tt: "§R若该决议失败：§!"
  JAP_food_crisis_trade_unions_impatience_mission: "产别耐心即将耗尽......"
@@ -179,7 +182,7 @@
 
 #GUI
  JAP_trade_union_congress_desc: "劳连会是由84个单产组成的劳动组合会议，反映日本统治阶级——工人阶级的长期意见，并承担议会上院职责，优于众议院。但是，由于席位组成单位是单产，而大部分单产都是以东京为核心。因此劳连会优越制将不可避免地导致东京的产别有全部话语权，地方产别很难通过劳联会来表达意愿。"
- JAP_trade_union_congress_desc2: "全日本劳动者联合会议"
+ JAP_trade_union_congress_desc2: ""
  semicircle_trade_union_congress_gui_title: "劳连会"
  JAP_trade_union_congress_semicircle_main_entry_tt: "[GetJAPTradeUnionCongressSeatName] - [GetJAPTradeUnionCongressPartyName]"
  JAP_trade_union_congress_member_text: "[GetJAPTradeUnionCongressPartyName] - [?JAP_trade_union_congress_seat_array^parliament_member_index]议会席位" #£worker_diet_party_icon|[?v] 
