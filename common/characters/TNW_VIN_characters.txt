@@ -43,7 +43,7 @@ characters = {
 		}
 		country_leader = {
 			desc = VIN_Nguyen_Ai_Guoc_desc
-			ideology = Liberalism_socialism
+			ideology = socialist_nationalism
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {

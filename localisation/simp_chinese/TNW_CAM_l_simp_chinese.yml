@@ -1,0 +1,64 @@
+﻿l_simp_chinese:
+#领导人
+ #立宪派
+ CAM_Sisowath_Sirik_Matak: "西索瓦·施里玛达"
+ CAM_Sisowath_Sirik_Matak_desc: ""
+ CAM_Son_Ngoc_Thanh: "山玉成"
+ CAM_Son_Ngoc_Thanh_desc: ""
+ CAM_Cheng_Heng: "郑兴"
+ CAM_Cheng_Heng_desc: ""
+ CAM_Lon_Nol: "朗诺"
+ CAM_Lon_Nol_desc: ""
+ #西哈努克派
+ CAM_Norodom_Sihanouk: "诺罗敦·西哈努克"
+ CAM_Norodom_Sihanouk_desc: ""
+ CAM_In_Tam: "英丹"
+ CAM_In_Tam_desc: ""
+ #反泰军阀
+ CAM_Norodom_Chantaraingsey: "诺罗敦·占达朗塞"
+ CAM_Norodom_Chantaraingsey_desc: ""
+ CAM_Dap_Chhuon: "达春"
+ CAM_Dap_Chhuon_desc: ""
+ #左翼
+ CAM_Tou_Samouth: "杜斯木"
+ CAM_Tou_Samouth_desc: ""
+ CAM_Son_Ngoc_Mean: "山玉明"
+ CAM_Son_Ngoc_Mean_desc: ""
+ CAM_Hu_Nim: "符宁"
+ CAM_Hu_Nim_desc: ""
+
+#政党名字
+ CAM_communist_party: "高棉人民革命党"
+ CAM_communist_party_long: "高棉人民革命党"
+ CAM_syndicalism_party: "-"
+ CAM_syndicalism_party_long: "-"
+ CAM_socialism_party: "-"
+ CAM_socialism_party_long: "-"
+ CAM_Social_democracy_party: ""
+ CAM_Social_democracy_party_long: ""
+ CAM_Liberalism_party: ""
+ CAM_Liberalism_party_desc: ""
+ CAM_Conservatism_party: ""
+ CAM_Conservatism_party_long: ""
+ CAM_Authoritarianism_party: "临时政府"
+ CAM_Authoritarianism_party_long: "临时政府"
+ CAM_Absolutism_party: "柬埔寨王室"
+ CAM_Absolutism_party_long: "柬埔寨王室"
+ CAM_Nationalism_party: ""
+ CAM_Nationalism_party_long: ""
+
+#民族精神
+
+#事件
+
+#新闻
+
+#GUI
+
+#BOP
+
+#决议
+
+#国策
+ #: ""
+ #_desc: ""
