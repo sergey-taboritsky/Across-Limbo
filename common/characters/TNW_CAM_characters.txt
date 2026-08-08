@@ -1,0 +1,30 @@
+characters = {
+	CAM_Norodom_Sihanouk = {
+		name = CAM_Norodom_Sihanouk
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CAM_Norodom_Sihanouk
+			}
+		}
+		country_leader = {
+			desc = CAM_Norodom_Sihanouk_desc
+			ideology = Left_wing_populism
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	CAM_Son_Ngoc_Thanh = {
+		name = CAM_Son_Ngoc_Thanh
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CAM_Son_Ngoc_Thanh
+			}
+		}
+		country_leader = {
+			desc = CAM_Son_Ngoc_Thanh_desc
+			ideology = Left_wing_populism
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+}

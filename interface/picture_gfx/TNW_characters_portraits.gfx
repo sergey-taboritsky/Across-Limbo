@@ -281,6 +281,17 @@ spriteTypes = {
 		name = "GFX_portrait_large_BRA_Adhemar_Barros"
 		texturefile = "gfx/characters/BRA_Adhemar_Barros.png"
 	}
+	#柬埔寨
+	#诺罗敦·西哈努克
+	spriteType = {
+		name = "GFX_portrait_large_CAM_Norodom_Sihanouk"
+		texturefile = "gfx/characters/CAM_Norodom_Sihanouk.png"
+	}
+	#山玉成
+	spriteType = {
+		name = "GFX_portrait_large_CAM_Son_Ngoc_Thanh"
+		texturefile = "gfx/characters/CAM_Son_Ngoc_Thanh.png"
+	}
 	#哥伦比亚
 	#豪尔赫·埃利塞尔·盖坦
 	spriteType = {
@@ -813,6 +824,11 @@ spriteTypes = {
 		texturefile = "gfx/characters/VEN_Isaias_Angarita.png"
 	}
 	#越南
+	#阮爱国
+	SpriteType = {
+		name = "GFX_portrait_large_VIN_Nguyen_Ai_Guoc"
+		texturefile = "gfx/characters/VIN_Nguyen_Ai_Guoc.png"
+	}
 	#武鸿卿
 	SpriteType = {
 		name = "GFX_portrait_large_VIN_Vu_Hong_Khanh"
