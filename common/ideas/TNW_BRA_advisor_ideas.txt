@@ -1,0 +1,114 @@
+# Across Limbo — Brazil 顾问 idea 定义
+# 修复：common/characters/TNW_BRA_characters.txt 里 11 个 advisor 的 idea_token
+#       此前全部没有对应的 idea 定义，导致顾问进不了招募池，activate_advisor 全部静默失败。
+# 注意：modifier = {} 目前为空，仅让顾问“可被激活/可招募”，
+#       实际加成（政见、组织、理论等）需要你按设定补进各 modifier 块。
+
+ideas = {
+	advisor = {
+		# ===== 政治顾问 (political_advisor) =====
+		BRA_Carlos_Marighella_advisor = {
+			slot = political_advisor
+			cost = 150
+			picture = GFX_idea_political_advisor
+			available = { always = yes }
+			modifier = {
+				# TODO: 填入卡洛斯·马里盖利亚的实际加成
+			}
+		}
+		BRA_Francisco_Mangabeira_advisor = {
+			slot = political_advisor
+			cost = 150
+			picture = GFX_idea_political_advisor
+			available = { always = yes }
+			modifier = {
+				# TODO: 填入弗朗西斯科·曼加贝拉的实际加成
+			}
+		}
+		BRA_Jose_Macedo_advisor = {
+			slot = political_advisor
+			cost = 150
+			picture = GFX_idea_political_advisor
+			available = { always = yes }
+			modifier = {
+				# TODO: 填入何塞·马塞多的实际加成
+			}
+		}
+		BRA_Lauro_Cortez_Lago_advisor = {
+			slot = political_advisor
+			cost = 150
+			picture = GFX_idea_political_advisor
+			available = { always = yes }
+			modifier = {
+				# TODO: 填入劳罗·科尔特斯·拉格的实际加成
+			}
+		}
+		BRA_Jose_Almerico_Almeida_advisor = {
+			slot = political_advisor
+			cost = 150
+			picture = GFX_idea_political_advisor
+			available = { always = yes }
+			modifier = {
+				# TODO: 填入何塞·阿尔梅里科·阿尔梅达的实际加成
+			}
+		}
+		BRA_Francisco_Campos_advisor = {
+			slot = political_advisor
+			cost = 150
+			picture = GFX_idea_political_advisor
+			available = { always = yes }
+			modifier = {
+				# TODO: 填入弗朗西斯科·坎波斯的实际加成
+			}
+		}
+		BRA_Filinto_Muller_advisor = {
+			slot = political_advisor
+			cost = 150
+			picture = GFX_idea_political_advisor
+			available = { always = yes }
+			modifier = {
+				# TODO: 填入菲林托·穆勒的实际加成
+			}
+		}
+		BRA_Alexandra_Filho_advisor = {
+			slot = political_advisor
+			cost = 150
+			picture = GFX_idea_political_advisor
+			available = { always = yes }
+			modifier = {
+				# TODO: 填入亚历山大·菲略的实际加成
+			}
+		}
+
+		# ===== 政府首脑 (head_of_government) =====
+		BRA_Antonio_Bonfim_hog = {
+			slot = head_of_government
+			cost = 150
+			picture = GFX_idea_head_of_government
+			available = { always = yes }
+			modifier = {
+				# TODO: 填入安东尼奥·邦芬的实际加成
+			}
+		}
+		BRA_Oswaldo_Aranha_hog = {
+			slot = head_of_government
+			cost = 150
+			picture = GFX_idea_head_of_government
+			available = { always = yes }
+			modifier = {
+				# TODO: 填入奥斯瓦尔多·阿拉尼亚的实际加成
+			}
+		}
+
+		# ===== 理论家 (theorist) =====
+		BRA_Getulio_Vargas_theorist = {
+			slot = theorist
+			cost = 150
+			picture = GFX_idea_theorist
+			available = { always = yes }
+			modifier = {
+				# TODO: 填入热图利奥·瓦加斯的理论加成
+			}
+		}
+	}
+}

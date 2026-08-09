@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "TNW_second_leader_container"
-		position = { x = 113 y = 244 }
+		position = { x = 83 y = 240 }
 		size = { width = 40 height = 40 }
 		margin = { top = 1 left = 1 right = 1 bottom = 1 }
 		clipping = yes
@@ -15,7 +15,7 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "TNW_second_leader_player_container"
-		position = { x = 145 y = 275 }
+		position = { x = 120 y = 260 }
 		size = { width = 40 height = 40 }
 		margin = { top = 1 left = 1 right = 1 bottom = 1 }
 		clipping = yes

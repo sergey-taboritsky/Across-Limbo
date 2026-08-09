@@ -471,7 +471,7 @@ spriteTypes = {
 		name = "GFX_portrait_large_JAP_Sakisaka_Itsuro"
 		texturefile = "gfx/characters/JAP_Sakisaka_Itsuro.png"
 	}
-	浅沼稻次郎
+	#浅沼稻次郎
 	SpriteType = {
 		name = "GFX_portrait_large_JAP_Asanuma_Inejiro"
 		texturefile = "gfx/characters/JAP_Asanuma_Inejiro.png"
