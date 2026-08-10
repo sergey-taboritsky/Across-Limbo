@@ -1,0 +1,20 @@
+music = {
+    name = "JAP_green_homeland"
+    file = "JAP_green_homeland.ogg"
+    volume = 1
+}
+music = {
+    name = "JAP_defending_peace"
+    file = "JAP_defending_peace.ogg"
+    volume = 1
+}
+music = {
+    name = "JAP_red_flag_song"
+    file = "JAP_red_flag_song.ogg"
+    volume = 1
+}
+music = {
+    name = "JAP_listen_world_workers"
+    file = "JAP_listen_world_workers.ogg"
+    volume = 1
+}

@@ -1,0 +1,24 @@
+music = {
+    song = "JAP_green_homeland"
+    chance = {
+        modifier = { factor = 1  original_tag = JAP }
+    }
+}
+music = {
+    song = "JAP_defending_peace"
+    chance = {
+        modifier = { factor = 1  original_tag = JAP }
+    }
+}
+music = {
+    song = "JAP_red_flag_song"
+    chance = {
+        modifier = { factor = 1  original_tag = JAP }
+    }
+}
+music = {
+    song = "JAP_listen_world_workers"
+    chance = {
+        modifier = { factor = 1  original_tag = JAP }
+    }
+}

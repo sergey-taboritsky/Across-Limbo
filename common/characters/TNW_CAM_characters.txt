@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			desc = CAM_Norodom_Sihanouk_desc
-			ideology = Left_wing_populism
+			ideology = absolute_monarchy
 			expire = "2022.10.20.1"
 			id = -1
 		}
@@ -22,7 +22,7 @@ characters = {
 		}
 		country_leader = {
 			desc = CAM_Son_Ngoc_Thanh_desc
-			ideology = Left_wing_populism
+			ideology = Guided_democracy
 			expire = "2022.10.20.1"
 			id = -1
 		}

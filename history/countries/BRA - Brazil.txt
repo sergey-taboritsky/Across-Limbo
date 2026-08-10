@@ -2,14 +2,17 @@
 
 
 #oob = "BRA_1936"
-
-recruit_character = BRA_Getulio_Vargas
-recruit_character = BRA_Gustavo_Barroso
+recruit_character = BRA_Luis_Carlos_Prestes
+recruit_character = BRA_Antonio_Bonfim
 recruit_character = BRA_Carlos_Marighella
+recruit_character = BRA_Francisco_Mangabeira
+recruit_character = BRA_Jose_Macedo
+recruit_character = BRA_Lauro_Cortez_Lago
+recruit_character = BRA_Getulio_Vargas
+
+recruit_character = BRA_Gustavo_Barroso
 recruit_character = BRA_Carlos_Lacerda
 recruit_character = BRA_Adhemar_Barros
-
-recruit_character = BRA_Luis_Carlos_Prestes
 recruit_character = BRA_Jose_Almerico_Almeida
 recruit_character = BRA_Francisco_Campos
 recruit_character = BRA_Filinto_Muller
@@ -37,28 +40,31 @@ add_ideas = {
 	BRA_Latino_Anticomintern_Pact
 	BRA_FLN_threat_2
 	#ministers
-	BRA_Oswaldo_Aranha_hog
-	BRA_Jose_Almerico_Almeida_advisor
-	BRA_Francisco_Campos_advisor
-	BRA_Filinto_Muller_advisor
-	BRA_Alexandra_Filho_advisor
-	BRA_Luis_Carlos_Prestes_theorist
+	BRA_Antonio_Bonfim_hog
+	BRA_Carlos_Marighella_advisor
 }
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = communist
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	communist = 3
+	communist = 46
 	syndicalism = 6
 	socialism = 7
 	Social_democracy = 6
 	Liberalism = 10
-	Conservatism = 14
-	Authoritarianism = 21
-	Absolutism = 25
+	Conservatism = 8
+	Authoritarianism = 6
+	Absolutism = 3
 	Nationalism = 8
 }
+
+activate_advisor = BRA_Francisco_Mangabeira_advisor
+activate_advisor = BRA_Jose_Macedo_advisor
+activate_advisor = BRA_Lauro_Cortez_Lago_advisor
+activate_advisor = BRA_Getulio_Vargas_advisor
+
+######################

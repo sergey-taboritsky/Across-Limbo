@@ -31,17 +31,17 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = Authoritarianism
-	last_election = "1933.2.16"
-	election_frequency = 36
+	ruling_party = socialism
+	last_election = "1945.9.2"
+	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
 	Authoritarianism = 10
 	communist = 15
 	syndicalism = 2
-	Social_democracy = 8
 	socialism = 34
+	Social_democracy = 8
 	Liberalism = 8
 	Conservatism = 3
 	Absolutism = 9

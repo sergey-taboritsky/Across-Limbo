@@ -33,4 +33,22 @@ characters = {
 			}
 		}
 	}
+	#刘尧
+	MAL_Liu_Yao = {
+		name = MAL_Liu_Yao
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_Liu_Yao
+			}
+		}
+		corps_commander = {
+			desc = MAL_Liu_Yao_commander_desc
+			traits = { war_hero }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
 }

@@ -1,30 +1,36 @@
 characters = {
-	BRA_Getulio_Vargas = {
-		name = BRA_Getulio_Vargas
+	BRA_Luis_Carlos_Prestes = {
+		name = BRA_Luis_Carlos_Prestes
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_BRA_Getulio_Vargas
+				large = GFX_portrait_large_BRA_Luis_Carlos_Prestes
 			}
 		}
 		country_leader = {
-			desc = BRA_Getulio_Vargas_desc
-			ideology = civilian_dictatorship
+			desc = BRA_Luis_Carlos_Prestes_desc
+			ideology = Marxism_Leninism
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {
 			}
 		}
 	}
-	BRA_Gustavo_Barroso = {
-		name = BRA_Gustavo_Barroso
+	BRA_Antonio_Bonfim = {
+		name = BRA_Antonio_Bonfim
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_BRA_Gustavo_Barroso
+				large = GFX_portrait_large_BRA_Antonio_Bonfim
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = BRA_Antonio_Bonfim_hog
+			traits = {
 			}
 		}
 		country_leader = {
-			desc = BRA_Gustavo_Barroso_desc
-			ideology = National_Socialism
+			desc = BRA_Antonio_Bonfim_desc
+			ideology = Marxism_Leninism
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {
@@ -41,6 +47,92 @@ characters = {
 		country_leader = {
 			desc = BRA_Carlos_Marighella_desc
 			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_Carlos_Marighella_advisor
+			traits = {
+			}
+		}
+	}
+	BRA_Francisco_Mangabeira = {
+		name = BRA_Francisco_Mangabeira
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BRA_Francisco_Mangabeira
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_Francisco_Mangabeira_advisor
+			traits = {
+			}
+		}
+	}
+	BRA_Jose_Macedo = {
+		name = BRA_Jose_Macedo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BRA_Jose_Macedo
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_Jose_Macedo_advisor
+			traits = {
+			}
+		}
+	}
+	BRA_Lauro_Cortez_Lago = {
+		name = BRA_Lauro_Cortez_Lago
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BRA_Lauro_Cortez_Lago
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_Lauro_Cortez_Lago_advisor
+			traits = {
+			}
+		}
+	}
+	BRA_Getulio_Vargas = {
+		name = BRA_Getulio_Vargas
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BRA_Getulio_Vargas
+			}
+		}
+		country_leader = {
+			desc = BRA_Getulio_Vargas_desc
+			ideology = civilian_dictatorship
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = BRA_Getulio_Vargas_theorist
+			traits = {
+			}
+		}
+	}
+	BRA_Gustavo_Barroso = {
+		name = BRA_Gustavo_Barroso
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BRA_Gustavo_Barroso
+			}
+		}
+		country_leader = {
+			desc = BRA_Gustavo_Barroso_desc
+			ideology = National_Socialism
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {
@@ -79,33 +171,6 @@ characters = {
 			}
 		}
 	}
-	BRA_Luis_Carlos_Prestes = {
-		name = BRA_Luis_Carlos_Prestes
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_BRA_Luis_Carlos_Prestes
-			}
-		}
-		country_leader = {
-			desc = BRA_Luis_Carlos_Prestes_desc
-			ideology = Left_wing_populism
-			expire = "2022.10.20.1"
-			id = -1
-			traits = {
-			}
-		}
-		advisor = {
-			slot = theorist
-			idea_token = BRA_Luis_Carlos_Prestes_theorist
-			allowed = { original_tag = BRA }
-			traits = {
-			}
-			ledger = army
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
-		}
-	}
 	BRA_Jose_Almerico_Almeida = {
 		name = BRA_Jose_Almerico_Almeida
 		portraits = {
@@ -124,13 +189,8 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BRA_Jose_Almerico_Almeida_advisor
-			allowed = { original_tag = BRA }
 			traits = {
 			}
-			ledger = civilian
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
 		}
 	}
 	BRA_Francisco_Campos = {
@@ -143,13 +203,8 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BRA_Francisco_Campos_advisor
-			allowed = { original_tag = BRA }
 			traits = {
 			}
-			ledger = civilian
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
 		}
 	}
 	BRA_Filinto_Muller = {
@@ -162,13 +217,8 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BRA_Filinto_Muller_advisor
-			allowed = { original_tag = BRA }
 			traits = {
 			}
-			ledger = civilian
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
 		}
 	}
 	BRA_Alexandra_Filho = {
@@ -181,13 +231,8 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BRA_Alexandra_Filho_advisor
-			allowed = { original_tag = BRA }
 			traits = {
 			}
-			ledger = civilian
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
 		}
 	}
 	BRA_Oswaldo_Aranha = {
@@ -200,13 +245,8 @@ characters = {
 		advisor = {
 			slot = head_of_government
 			idea_token = BRA_Oswaldo_Aranha_hog
-			allowed = { original_tag = BRA }
 			traits = {
 			}
-			ledger = civilian
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
 		}
 	}
 	BRA_Joao_Alberto = {

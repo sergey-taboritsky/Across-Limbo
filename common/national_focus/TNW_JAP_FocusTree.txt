@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		id = JAP_Ripples_of_Fourth_Fukushima
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 1.00
 		x = 13
 		y = 0
 		completion_reward = {
@@ -25,7 +25,7 @@ focus_tree = {
 	focus = {
 		id = JAP_End_Food_Crisis
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 1.00
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = JAP_End_Food_Crisis_tt
@@ -39,7 +39,7 @@ focus_tree = {
 	focus = {
 		id = JAP_General_Congress_Conference
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 1.00
 		x = 18
 		y = 2
 
@@ -47,7 +47,7 @@ focus_tree = {
 	focus = {
 		id = JAP_Worker_Alliance_Congress
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 1.00
 		x = 21
 		y = 2
 
@@ -55,7 +55,7 @@ focus_tree = {
 	focus = {
 		id = JAP_Three_and_Six_Acres
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 1.00
 		prerequisite = {
 			focus = JAP_End_Food_Crisis
 		}
@@ -248,12 +248,18 @@ focus_tree = {
 	focus = {
 		id = JAP_Peoples_Republic_Constitution
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = JAP_Pullback_Opressive_Policies
 		}
 		prerequisite = {
 			focus = JAP_Socialist_Education_Law
+		}
+		cancellable = no
+		select_effect = {
+			hidden_effect = {
+				country_event = { id = JAP_event.4 days = 1 }
+			}
 		}
 		x = 13
 		y = 5

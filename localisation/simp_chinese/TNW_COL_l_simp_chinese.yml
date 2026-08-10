@@ -1,0 +1,40 @@
+﻿l_simp_chinese:
+#领导人
+ COL_Jorge_Elicier_Gaitan: "豪尔赫·埃利塞尔·盖坦"
+ COL_Jorge_Elicier_Gaitan_desc: ""
+
+#政党名字
+ COL_communist_party: "哥伦比亚共产党"
+ COL_communist_party_long: "哥伦比亚共产党(Partido Comunista Colombiano)"
+ COL_syndicalism_party: "哥伦比亚工人联合会"
+ COL_syndicalism_party_long: "哥伦比亚工人联合会(Confederación de Trabajadores de Colombia)"
+ COL_socialism_party: "革命社会党"
+ COL_socialism_party_long: "革命社会党(Partido Socialista Revolucionario)"
+ COL_Social_democracy_party: "哥伦比亚自由党 - 人民民主平台"
+ COL_Social_democracy_party_long: "哥伦比亚自由党(Partido Liberal Colombiano)"
+ COL_Liberalism_party: "哥伦比亚自由党 - 旧体制运动"
+ COL_Liberalism_party_desc: "哥伦比亚自由党(Partido Liberal Colombiano)"
+ COL_Conservatism_party: "哥伦比亚保守党"
+ COL_Conservatism_party_long: "哥伦比亚保守党(Partido Conservador Colombiano)"
+ COL_Authoritarianism_party: "哥伦比亚玻利瓦尔人民运动"
+ COL_Authoritarianism_party_long: "哥伦比亚玻利瓦尔人民运动"
+ COL_Absolutism_party: "哥伦比亚国防军"
+ COL_Absolutism_party_long: "哥伦比亚国防军"
+ COL_Nationalism_party: "哥伦比亚人民革命联盟"
+ COL_Nationalism_party_long: "哥伦比亚人民革命联盟"
+
+#民族精神
+
+#事件
+
+#新闻
+
+#GUI
+
+#BOP
+
+#决议
+
+#国策
+ #: ""
+ #_desc: ""
