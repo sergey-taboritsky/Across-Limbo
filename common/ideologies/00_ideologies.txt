@@ -9,7 +9,7 @@ ideologies = {
 			Left_wing_communism = {can_be_randomly_selected = no}
 		}
 		modifiers = {
-			disabled_ideas = 1
+			
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
@@ -27,7 +27,7 @@ ideologies = {
 			Japanese_Syndicalism = {can_be_randomly_selected = no}
 		}
 		modifiers = {
-			disabled_ideas = 1
+			
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
@@ -49,7 +49,7 @@ ideologies = {
 			military_socialism = { can_be_randomly_selected = no }
 		}
 		modifiers = {
-			disabled_ideas = 1
+			
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
@@ -69,7 +69,7 @@ ideologies = {
 			triequism_center = {can_be_randomly_selected = no}
 		}
 		modifiers = {
-			disabled_ideas = 1
+			
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
@@ -87,7 +87,7 @@ ideologies = {
 			triequism_right = {can_be_randomly_selected = no}
 		}
 		modifiers = {
-			disabled_ideas = 1
+			
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
@@ -103,7 +103,7 @@ ideologies = {
 			tridemism_conservative = {can_be_randomly_selected = no}
 		}
 		modifiers = {
-			disabled_ideas = 1
+			
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
@@ -123,7 +123,7 @@ ideologies = {
 			tridemism_authdem = {can_be_randomly_selected = no}
 		}
 		modifiers = {
-			disabled_ideas = 1
+			
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
@@ -143,7 +143,7 @@ ideologies = {
 			Red_military_government = {can_be_randomly_selected = no}
 		}
 		modifiers = {
-			disabled_ideas = 1
+			
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
@@ -160,7 +160,7 @@ ideologies = {
 			Singular_Nationalism = {can_be_randomly_selected = no}
 		}
 		modifiers = {
-			disabled_ideas = 1
+			
 		}
 		dynamic_faction_names = {}
 		ai_neutral = yes
