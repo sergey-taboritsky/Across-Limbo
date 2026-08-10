@@ -25,8 +25,10 @@ characters = {
 		advisor = {
 			slot = head_of_government
 			idea_token = BRA_Antonio_Bonfim_hog
+			allowed = { original_tag = BRA }
 			traits = {
 			}
+			cost = -1
 		}
 		country_leader = {
 			desc = BRA_Antonio_Bonfim_desc
@@ -55,8 +57,10 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BRA_Carlos_Marighella_advisor
+			allowed = { original_tag = BRA }
 			traits = {
 			}
+			cost = -1
 		}
 	}
 	BRA_Francisco_Mangabeira = {
@@ -69,8 +73,10 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BRA_Francisco_Mangabeira_advisor
+			allowed = { original_tag = BRA }
 			traits = {
 			}
+			cost = -1
 		}
 	}
 	BRA_Jose_Macedo = {
@@ -83,8 +89,10 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BRA_Jose_Macedo_advisor
+			allowed = { original_tag = BRA }
 			traits = {
 			}
+			cost = -1
 		}
 	}
 	BRA_Lauro_Cortez_Lago = {
@@ -97,8 +105,10 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BRA_Lauro_Cortez_Lago_advisor
+			allowed = { original_tag = BRA }
 			traits = {
 			}
+			cost = -1
 		}
 	}
 	BRA_Getulio_Vargas = {
@@ -119,8 +129,11 @@ characters = {
 		advisor = {
 			slot = theorist
 			idea_token = BRA_Getulio_Vargas_theorist
+			allowed = { original_tag = BRA }
+			ledger = civilian
 			traits = {
 			}
+			cost = -1
 		}
 	}
 	BRA_Gustavo_Barroso = {
@@ -189,8 +202,10 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BRA_Jose_Almerico_Almeida_advisor
+			allowed = { original_tag = BRA }
 			traits = {
 			}
+			cost = -1
 		}
 	}
 	BRA_Francisco_Campos = {
@@ -203,8 +218,10 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BRA_Francisco_Campos_advisor
+			allowed = { original_tag = BRA }
 			traits = {
 			}
+			cost = -1
 		}
 	}
 	BRA_Filinto_Muller = {
@@ -217,8 +234,10 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BRA_Filinto_Muller_advisor
+			allowed = { original_tag = BRA }
 			traits = {
 			}
+			cost = -1
 		}
 	}
 	BRA_Alexandra_Filho = {
@@ -231,8 +250,10 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BRA_Alexandra_Filho_advisor
+			allowed = { original_tag = BRA }
 			traits = {
 			}
+			cost = -1
 		}
 	}
 	BRA_Oswaldo_Aranha = {
@@ -245,8 +266,10 @@ characters = {
 		advisor = {
 			slot = head_of_government
 			idea_token = BRA_Oswaldo_Aranha_hog
+			allowed = { original_tag = BRA }
 			traits = {
 			}
+			cost = -1
 		}
 	}
 	BRA_Joao_Alberto = {

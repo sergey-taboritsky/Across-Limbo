@@ -39,9 +39,6 @@ add_ideas = {
 	BRA_Red_Terror
 	BRA_Latino_Anticomintern_Pact
 	BRA_FLN_threat_2
-	#ministers
-	BRA_Antonio_Bonfim_hog
-	BRA_Carlos_Marighella_advisor
 }
 set_politics = {
 	ruling_party = communist
@@ -62,7 +59,7 @@ set_popularities = {
 	Nationalism = 8
 }
 
-activate_advisor = BRA_Francisco_Mangabeira
-activate_advisor = BRA_Jose_Macedo
-activate_advisor = BRA_Lauro_Cortez_Lago
-activate_advisor = BRA_Getulio_Vargas
+activate_advisor = BRA_Francisco_Mangabeira_advisor
+activate_advisor = BRA_Jose_Macedo_advisor
+activate_advisor = BRA_Lauro_Cortez_Lago_advisor
+activate_advisor = BRA_Getulio_Vargas_theorist
