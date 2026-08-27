@@ -16,6 +16,57 @@ characters = {
 			}
 		}
 	}
+	#陈楚楠
+	MAL_Chen_Chunan = {
+		name = MAL_Chen_Chunan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_Chen_Chunan
+			}
+		}
+		country_leader = {
+			desc = MAL_Chen_Chunan_desc
+			ideology = tridemism_authdem
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#林文庆
+	MAL_Lin_Wenqing = {
+		name = MAL_Lin_Wenqing
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_Lin_Wenqing
+			}
+		}
+		country_leader = {
+			desc = MAL_Lin_Wenqing_desc
+			ideology = tridemism_authdem
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#李光前
+	MAL_Li_Guangqian = {
+		name = MAL_Li_Guangqian
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_Li_Guangqian
+			}
+		}
+		country_leader = {
+			desc = MAL_Li_Guangqian_desc
+			ideology = tridemism_authdem
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
 	#彭泽民
 	MAL_Peng_Zemin = {
 		name = MAL_Peng_Zemin
@@ -31,6 +82,58 @@ characters = {
 			id = -1
 			traits = {
 			}
+		}
+	}
+	#傅大庆
+	MAL_Fu_Daqing = {
+		name = MAL_Fu_Daqing
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_Fu_Daqing
+			}
+		}
+		country_leader = {
+			desc = MAL_Fu_Daqing_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#杨果
+	MAL_Yang_Guo = {
+		name = MAL_Yang_Guo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_Yang_Guo
+			}
+		}
+		country_leader = {
+			desc = MAL_Yang_Guo_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#何敬贤
+	MAL_He_Wei = {
+		name = MAL_He_Wei
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_He_Wei
+			}
+		}
+		corps_commander = {
+			desc = MAL_He_Wei_commander_desc
+			traits = { war_hero }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
 		}
 	}
 	#刘尧

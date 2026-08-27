@@ -17,6 +17,23 @@ characters = {
 			}
 		}
 	}
+	#米哈伊尔·列维托夫
+	RUS_Mikhail_Levitov = {
+		name = RUS_Mikhail_Levitov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Mikhail_Levitov
+			}
+		}
+		country_leader = {
+			desc = RUS_Mikhail_Levitov_desc
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
 	#三驾马车
 	RUS_Tirumvirate = {
 		name = RUS_Tirumvirate

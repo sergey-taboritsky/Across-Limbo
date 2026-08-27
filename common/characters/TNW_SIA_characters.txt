@@ -1,0 +1,34 @@
+characters = {
+	SIA_Phumiphon_Adunyadet = {
+		name = SIA_Phumiphon_Adunyadet
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SIA_Phumiphon_Adunyadet
+			}
+		}
+		country_leader = {
+			desc = SIA_Phumiphon_Adunyadet_desc
+			ideology = Guided_democracy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	SIA_Luang_Pibul_Songgram = {
+		name = SIA_Luang_Pibul_Songgram
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SIA_Luang_Pibul_Songgram
+			}
+		}
+		country_leader = {
+			desc = SIA_Luang_Pibul_Songgram_desc
+			ideology = Guided_democracy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

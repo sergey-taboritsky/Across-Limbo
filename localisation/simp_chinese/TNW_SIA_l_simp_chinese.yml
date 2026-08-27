@@ -1,0 +1,42 @@
+﻿l_simp_chinese:
+#领导人
+ SIA_Phumiphon_Adunyadet: "普密蓬·阿杜德"
+ SIA_Phumiphon_Adunyadet_desc: ""
+ SIA_Luang_Pibul_Songgram: "銮披汶·颂堪"
+ SIA_Luang_Pibul_Songgram_desc: ""
+
+#政党名字
+ SIA_communist_party: "泰国共产党"
+ SIA_communist_party_long: "泰国共产党"
+ SIA_syndicalism_party: "工联会"
+ SIA_syndicalism_party_long: "泰国工会联合会"
+ SIA_socialism_party: "自由泰运动 - 社会党联盟"
+ SIA_socialism_party_long: "自由泰运动"
+ SIA_Social_democracy_party: "泰人民党"
+ SIA_Social_democracy_party_long: "泰人民党"
+ SIA_Liberalism_party: "自由泰运动 - 海外集团"
+ SIA_Liberalism_party_long: "自由泰运动"
+ SIA_Conservatism_party: "泰人民党"
+ SIA_Conservatism_party_long: "泰人民党"
+ SIA_Authoritarianism_party: "泰人民党 - 元帅集团"
+ SIA_Authoritarianism_party_long: "泰人民党"
+ SIA_Absolutism_party: "泰国防军"
+ SIA_Absolutism_party_long: "泰国防军"
+ SIA_Nationalism_party: ""
+ SIA_Nationalism_party_long: ""
+
+#民族精神
+
+#事件
+
+#新闻
+
+#GUI
+
+#BOP
+
+#决议
+
+#国策
+ #: ""
+ #_desc: ""

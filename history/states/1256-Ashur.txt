@@ -3,7 +3,7 @@ state={
 	name="STATE_1256"
 
 	history={
-		owner = IRQ
+		owner = KUR
 		victory_points = {
 			10811 2 
 		}
@@ -22,7 +22,6 @@ state={
 		}
 		add_core_of = IRQ
 		add_core_of = KUR
-		add_core_of = ASY
 
 	}
 	
