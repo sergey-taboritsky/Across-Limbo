@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = SAR
+		set_demilitarized_zone = yes
 		victory_points = {
 			3488 2 
 		}

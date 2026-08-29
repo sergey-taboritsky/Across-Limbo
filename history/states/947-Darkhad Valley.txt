@@ -3,7 +3,7 @@ state={
 	name="STATE_947"
 
 	history={
-		owner = RUS
+		owner = MON
 		add_core_of = RUS
 		add_core_of = MON
 		add_claim_by = CHI
