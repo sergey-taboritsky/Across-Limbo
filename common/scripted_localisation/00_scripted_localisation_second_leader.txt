@@ -67,6 +67,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			original_tag = SIA
+			has_country_flag = SIA_Pibul_Songgram_Chancellor_flag
+		}
+		localization_key = TNW_second_leader_name_SIA_Luang_Pibul_Songgram
+	}
+	text = {
+		trigger = {
 			original_tag = TUR
 			has_country_flag = TUR_Ismet_Grand_Vizier_flag
 		}

@@ -43,6 +43,8 @@
 #角色
  RUS_Boris_Savinkhov: "鲍里斯·萨文科夫"
  RUS_Boris_Savinkhov_desc: ""
+ RUS_Mikhail_Levitov: "米哈伊尔·列维托夫"
+ RUS_Mikhail_Levitov_desc: "§Y出生于：§!§L1893年9月30日，俄罗斯帝国，梁赞省§!\n\n§Y人物背景：§!§L“我并非俄罗斯的救世主也并非俄罗斯的人民之父，我只是元首的继任者。”\n\n内战结束后，米哈伊尔·列维托夫参与了科尔尼洛夫的\"百日血洗\"，对布尔什维克怀有刻骨之恨。正是这份恨意，让他日后与萨文科夫结识，并于1924年加入保卫祖国与自由同盟。及至萨文科夫夺得国家大权，列维托夫亦凭军中职务水涨船高。\n\n萨文科夫虽身居高位，却常因政令难以下达而懊恼，总向列维托夫倾吐胸中抱负。久而久之，那些念想便深深烙进列维托夫的脑海，挥之不去——这便是他之所以成为萨文科夫最忠诚追随者的根源。\n\n二战期间，列维托夫以波罗的海战区总指挥之职突破德军防线，战后晋升将军并出任彼得格勒总督；1946年调任莫斯科总督。眼见萨文科夫年迈，列维托夫早已为那个终局悄然布局。1947年末，萨文科夫离世，举国同悲；然而权力更迭只在一瞬。列维托夫联合马尔科夫将军与菲洛年科，尽数争取国家议会支持，终登元首之位。然而反对之声仍未消弭，他必须尽快坐稳这把交椅……§!"
  RUS_Tirumvirate: "三巨头政府"
  RUS_Tirumvirate_desc: ""
  RUS_Pyotr_Savitsky: "彼得·萨维茨基"
@@ -60,7 +62,20 @@
  RUS_Maksimilian_Filonenko_desc: ""
  RUS_Vladimir_Manstein: "弗拉基米尔·曼斯坦因"
  RUS_Vladimir_Manstein_desc: ""
-#民族精神 
+
+#民族精神
+ RUS_incomplete_land_reform: "未竟的土地改革" 
+ RUS_incomplete_land_reform_desc: ""
+ RUS_awkward_industrialization: "偏激的工业化"
+ RUS_awkward_industrialization_desc: ""
+ RUS_svobodists_split: "斯沃博达的分裂"
+ RUS_svobodists_split_desc: ""
+ RUS_mosley_derenthal_treaty_furthering: "莫斯利-德伦塔尔条约：第二款"
+ RUS_mosley_derenthal_treaty_furthering_desc: ""
+ RUS_third_russia: "第三俄罗斯之路"
+ RUS_third_russia_desc: ""
+ RUS_national_cauldron: "民族融合"
+ RUS_national_cauldron_desc: ""
 
 #决议
 

@@ -32,6 +32,9 @@ focus_tree = {
 				has_country_flag = JAP_Food_Crisis_enden_flag
 			}
 		}
+		allow_branch = {
+			has_country_flag = JAP_bisson_age_began_flag
+		}
 		x = 7
 		y = 2
 
@@ -42,6 +45,9 @@ focus_tree = {
 		cost = 1.00
 		x = 18
 		y = 2
+		allow_branch = {
+			has_country_flag = JAP_bisson_age_began_flag
+		}
 
 	}
 	focus = {
@@ -50,6 +56,9 @@ focus_tree = {
 		cost = 1.00
 		x = 21
 		y = 2
+		allow_branch = {
+			has_country_flag = JAP_bisson_age_began_flag
+		}
 
 	}
 	focus = {
@@ -137,6 +146,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = JAP_Far_East_Council
+		}
+		allow_branch = {
+			has_country_flag = JAP_bisson_age_began_flag
 		}
 		x = 13
 		y = 2

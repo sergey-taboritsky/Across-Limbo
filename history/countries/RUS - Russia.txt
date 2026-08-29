@@ -5,7 +5,7 @@ set_stability = 0.5
 set_war_support = 0.3
 # Starting tech
 
-recruit_character = RUS_Boris_Savinkhov
+recruit_character = RUS_Mikhail_Levitov
 recruit_character = RUS_Tirumvirate
 recruit_character = RUS_Pyotr_Savitsky
 recruit_character = RUS_Karol_Vendzyagolsky

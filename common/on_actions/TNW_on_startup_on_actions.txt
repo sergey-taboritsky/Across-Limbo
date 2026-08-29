@@ -208,7 +208,17 @@ on_actions = {
 					modifier = CHI_Guangdong_Province_Wu_Tiecheng
 				}
 			}
+			1250 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
+			}
 			1516 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
+			}
+			1599 = {
 				add_dynamic_modifier = {
 					modifier = CHI_Guangdong_Province_Wu_Tiecheng
 				}
@@ -253,6 +263,82 @@ on_actions = {
 			909 = {
 				add_dynamic_modifier = {
 					modifier = CHI_Jiangxi_Province_Cheng_Tianfang
+				}
+			}
+		#Hubei
+			620 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Hubei_Province_Wu_Guozhen
+				}
+			}
+			861 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Hubei_Province_Wu_Guozhen
+				}
+			}
+			1768 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Hubei_Province_Wu_Guozhen
+				}
+			}
+			1769 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Hubei_Province_Wu_Guozhen
+				}
+			}
+			1770 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Hubei_Province_Wu_Guozhen
+				}
+			}
+		#Anhui
+			606 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Anhui_Province_election_undergoing
+				}
+			}
+			749 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Anhui_Province_election_undergoing
+				}
+			}
+		#Jiangsu
+			1620 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Jiangsu_Province_election_undergoing
+				}
+			}
+			1621 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Jiangsu_Province_election_undergoing
+				}
+			}
+		#Shanghai
+			868 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Shanghai_Province_election_undergoing
+				}
+			}
+		#Taiwan
+			524 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Taiwan_Province_election_undergoing
+				}
+			}
+			1311 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Taiwan_Province_election_undergoing
+				}
+			}
+			1526 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Taiwan_Province_election_undergoing
+				}
+			}
+		#Zhejiang
+			596 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Zhejiang_Province_election_undergoing
 				}
 			}
 		}

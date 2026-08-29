@@ -1,18 +1,18 @@
 ﻿l_simp_chinese:
- #顾问
+#顾问
  TUN_Wahib_al_Ghanim: "瓦希卜·加奈姆"
  
- #政党名字
- TUN_communist_party: "-"
- TUN_communist_party_long: "-"
- TUN_syndicalism_party: "-"
- TUN_syndicalism_party_long: "-"
- TUN_socialism_party: "-"
- TUN_socialism_party_long: "-"
+#政党名字
+ TUN_communist_party: "北非之星 - 突尼斯支部"
+ TUN_communist_party_long: "北非之星"
+ TUN_syndicalism_party: "北非之星 - 突尼斯支部"
+ TUN_syndicalism_party_long: "北非之星"
+ TUN_socialism_party: "新宪政党"
+ TUN_socialism_party_long: "新宪政自由党"
  TUN_Social_democracy_party: "复兴运动"
  TUN_Social_democracy_party_long: "复兴运动"
- TUN_Liberalism_party: "-"
- TUN_Liberalism_party_long: "-"
+ TUN_Liberalism_party: "宪政党"
+ TUN_Liberalism_party_long: "宪政自由党"
  TUN_Conservatism_party: "-"
  TUN_Conservatism_party_long: "-"
  TUN_Authoritarianism_party: "-"
@@ -24,3 +24,15 @@
 
  TUN_HBAI_party: "阿拉伯复兴社会党"
  TUN_HBAI_party_long: "阿拉伯复兴社会党(Hizb al-Ba'th al-Arabi al-Ishtiraki)"
+
+#民族精神
+ TUN_baath_movement: "复兴运动"
+ TUN_baath_movement_desc: ""
+ TUN_revolutionary_newcomers: "革命的外来者"
+ TUN_revolutionary_newcomers_desc: ""
+ TUN_panarabia_torch: "泛阿拉伯火炬"
+ TUN_panarabia_torch_desc: ""
+ TUN_castles_on_sand: "沙上建塔"
+ TUN_castles_on_sand_desc: ""
+ TUN_baath_national_command: "民族指挥部"
+ TUN_baath_national_command_desc: ""

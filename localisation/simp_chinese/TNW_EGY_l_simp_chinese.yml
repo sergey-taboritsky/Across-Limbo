@@ -21,19 +21,30 @@
  EGY_Liberalism_party_long: "立宪自由党(Ḥizb al-Aḥrār al-Dustūriyyīn)"
  EGY_Conservatism_party: "华夫脱党"
  EGY_Conservatism_party_long: "华夫脱党(Ḥizb al-Wafd)"
- EGY_Authoritarianism_party: "复兴党 - 埃及支部"
- EGY_Authoritarianism_party_long: "阿拉伯复兴社会党(Ḥizb al-Ba‘th al-'Arabī al-Ishtirākī)"
- EGY_Absolutism_party: "埃及人民革命委员会"
- EGY_Absolutism_party_long: "埃及人民革命委员会(Lajnat Thawrat ash-Sha‘b al-Maṣrī)"
+ EGY_Authoritarianism_party: "萨阿德主义制度党"
+ EGY_Authoritarianism_party_long: "萨阿德主义制度党(Ḥizb al-Saadiya)"
+ EGY_Absolutism_party: "阿拉维王朝"
+ EGY_Absolutism_party_long: "阿拉维王朝(Alawiyya)"
  EGY_Nationalism_party: "青年埃及党"
  EGY_Nationalism_party_long: "青年埃及党(Miṣr al-Fatāh)"
 
+ EGY_revolution_committee_party: "埃及人民革命委员会"
+ EGY_revolution_committee_party_long: "埃及人民革命委员会(Lajnat Thawrat ash-Sha‘b al-Maṣrī)"
+ EGY_Baath_party: "复兴党 - 埃及支部"
+ EGY_Baath_party_long: "阿拉伯复兴社会党(Ḥizb al-Ba‘th al-'Arabī al-Ishtirākī)"
  EGY_DemLabour_party: "埃及民主工人党"
  EGY_DemLabour_party_long: "埃及民主工人党(Ḥizb al-‘Ummāl ad-Dīmuqrāṭī al-Maṣrī)"
  EGY_united_CPE_party: "埃及联合共产党"
  EGY_united_CPE_party_desc: "埃及联合共产党(Al-Ḥizb ash-Shuyūʿī al-Maṣrī al-Muwaḥḥad)"
  
 #人物
+ EGY_Farouk_I: "法鲁克一世"
+ EGY_Farouk_I_desc: ""
+ EGY_Hussein_Sirri: "侯赛因·西里帕夏"
+ EGY_Hussein_Sirri_desc: ""
+ EGY_Mostafa_Nahas: "穆斯塔法·纳哈斯帕夏"
+ EGY_Mostafa_Nahas_desc: ""
+
  EGY_Henri_Curiel: "亨利·库里尔" #民族解放委员会
  EGY_Henri_Curiel_desc: ""
  EGY_Kamal_Abd_al_Halim: "卡迈勒·阿卜杜勒-哈利姆" #民族解放委员会
@@ -51,6 +62,19 @@
 #决议
 
 #民族精神
+ EGY_chained_constitution: "王冠，锁链与宪政"
+ EGY_chained_constitution_desc: "早在国王与立宪派革命者达成妥协之时，埃及宪政的根基便被君主权威掌控。华夫脱党在议会内外的反对尽管对该体制稍有动摇，但埃及所谓的宪政仍然与其提出者的理想相去甚远。"
+ EGY_Suez_catastrophe: "苏伊士国耻"
+ EGY_Suez_catastrophe_desc: "尽管王室试图以各种方式将其包装为一场胜利，但第一次近东战争的国耻仍在困扰埃及。直到如今，埃及民间、军中乃至宫廷内部对苏伊士运河与西奈半岛的渴求已经逐渐失去控制，只待一个绝佳的机会......"
+ EGY_world_falling_apart: "世界崩毁的危机"
+ EGY_world_falling_apart_desc: "随着德意志帝国在世界大战中的彻底失败，埃及失去了它的宗主国和压迫者，但也失去了外来驻军的保护、欧洲的大部分市场乃至稳定的地缘关系。日渐复杂化的中东局势更是对民意和国家政策日益施加影响。"
+ EGY_army_irritation: "军队离心"
+ EGY_army_irritation_desc: ""
+ EGY_worker_disdain: "工人不满"
+ EGY_worker_disdain_desc: ""
+ EGY_traditionalist_clumping: "传统主义合流"
+ EGY_traditionalist_clumping_desc: "由于马希尔帕夏时期基层治理的衰退以及大动荡期的军民对立，如今的宗教保守派正在穆斯林兄弟会与青年埃及党之间合流，造成两派逐渐靠拢。伊斯兰主义与激进民族主义的低语已经弥漫在城市和乡间。"
+
  EGY_namely_socialism: "名义社会主义"
  EGY_namely_socialism_desc: "随着沙漠战争以僵持告终，阵亡士兵亲属们的怒火吞没了脆弱的王国，在伦敦与巴黎的支持下，埃及军队联合各左翼发动“革命”，建立了埃及人民共和国。\n\n然而，尽管法国方面持续不断地施压要求军政府交权给左翼政治家，但共和国如今仍是军队独揽大权，承诺中的社会主义也从未带来根本层面的社会进步。"
  EGY_across_the_canals: "运河对岸"
@@ -62,9 +86,9 @@
  
 #事件
  #新闻
- EGY_news.1.t: "埃及军政府放弃权力"
- EGY_news.1.d: "自从沙漠战争后，埃及便由一个名义上遵从左翼理论的亲法军政府实行统治。他们宣称，埃及政权将在“合适的时机”移交给埃及社会主义者，但由于埃及左翼力量分散，军政府始终拒绝交权。\n\n近日，随着奥斯曼帝国的崩溃，巴黎对中东方向的影响力大幅上升，埃及左翼进一步整合与法国方面加强施压导致军人总统穆罕默德·纳吉布宣布放弃执政地位，将共和国总统一职交给来自民族解放工委会的卡迈勒·阿卜杜勒-哈利姆。对此，法国方面表示了极大的热情，而其余国家则多数对此反响冷淡。"
- EGY_news.1.a: "他们能治理好埃及吗？"
- EGY_news.2.t: "埃及再军事化苏伊士西岸"
- EGY_news.2.d: "奥斯曼帝国的崩溃已经引发了第一层连锁反应。在沙漠战争中曾经屈辱性地被迫接受停火的埃及军队近期再次踏入苏伊士运河沿岸，在帝国军队不见踪影后重新建立起哨所与防御工事。\n\n伊兹密尔与安卡拉，如今土耳其两个主要政府都对此表示反对，但由于阿拉伯地区同样陷入内战，深陷对峙的两方均无余力重新进驻苏伊士。据预测，埃及方面或许将很快重新踏上西奈半岛，再次尝试夺取苏伊士运河的全部控制权。"
- EGY_news.2.a: "帝国倒下了，中东的秩序随之而去。"
+ EGY_news.1.t: "纳哈斯帕夏再次于埃及组阁"
+ EGY_news.1.d: "自从阿里·马希尔帕夏遇刺以来，埃及政局似乎从未归于稳定。如今，随着华夫脱党在选举中取得大胜，穆斯塔法·纳哈斯帕夏被第四次任命为总理，也许挽救埃及政治与经济危机的机会已经到来。\n\n纳哈斯帕夏在就职时宣布，将“重建埃及的军队与政治机构”，并最终为“埃及的彻底一统”做好准备。此举被巴黎方面解读为对苏伊士运河现状的单边修正企图，英法两国对此呼吁克制。"
+ EGY_news.1.a: "他能治理好埃及吗？"
+ EGY_news.2.t: "埃及暴乱冲击苏伊士运河区"
+ EGY_news.2.d: "托举纳哈斯帕夏上台的民粹主义浪潮如今正造成严重后果：近日，埃及民众不断冲击运河区，"
+ EGY_news.2.a: ""

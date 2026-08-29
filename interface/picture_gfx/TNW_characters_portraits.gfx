@@ -292,6 +292,11 @@ spriteTypes = {
 		name = "GFX_portrait_large_CAM_Son_Ngoc_Thanh"
 		texturefile = "gfx/characters/CAM_Son_Ngoc_Thanh.png"
 	}
+	#山玉明
+	spriteType = {
+		name = "GFX_portrait_large_CAM_Son_Ngoc_Minh"
+		texturefile = "gfx/characters/CAM_Son_Ngoc_Minh.png"
+	}
 	#哥伦比亚
 	#豪尔赫·埃利塞尔·盖坦
 	spriteType = {
@@ -530,10 +535,35 @@ spriteTypes = {
 		name = "GFX_portrait_large_MAL_Li_Zhendian"
 		texturefile = "gfx/characters/MAL_Li_Zhendian.png"
 	}
+	#陈楚楠
+	spriteType = {
+		name = "GFX_portrait_large_MAL_Chen_Chunan"
+		texturefile = "gfx/characters/MAL_Chen_Chunan.png"
+	}
+	#林文庆
+	spriteType = {
+		name = "GFX_portrait_large_MAL_Lin_Wenqing"
+		texturefile = "gfx/characters/MAL_Lin_Wenqing.png"
+	}
+	#李光前
+	spriteType = {
+		name = "GFX_portrait_large_MAL_Li_Guangqian"
+		texturefile = "gfx/characters/MAL_Li_Guangqian.png"
+	}
 	#彭泽民
 	spriteType = {
 		name = "GFX_portrait_large_MAL_Peng_Zemin"
 		texturefile = "gfx/characters/MAL_Peng_Zemin.png"
+	}
+	#杨果
+	spriteType = {
+		name = "GFX_portrait_large_MAL_Yang_Guo"
+		texturefile = "gfx/characters/MAL_Yang_Guo.png"
+	}
+	#傅大庆
+	spriteType = {
+		name = "GFX_portrait_large_MAL_Fu_Daqing"
+		texturefile = "gfx/characters/MAL_Fu_Daqing.png"
 	}
 	#刘尧
 	spriteType = {
@@ -656,6 +686,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_large_RUS_Boris_Savinkhov"
 		texturefile = "gfx/characters/RUS_Boris_Savinkhov.png"
+	}
+	#米哈伊尔·列维托夫
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Mikhail_Levitov"
+		texturefile = "gfx/characters/RUS_Mikhail_Levitov.png"
 	}
 	#三驾马车
 	spriteType = {
@@ -785,6 +820,16 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_portrait_small_TUR_Yakup_Kadri_Karaosmanoglu"
 		texturefile = "gfx/characters/TUR_Yakup_Kadri_Karaosmanoglu_small.png"
+	}
+	#伊斯梅尔·托金
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Ismail_Tokin"
+		texturefile = "gfx/characters/TUR_Ismail_Tokin.png"
+	}
+	#谢夫凯特·叙雷亚·艾德迈尔
+	SpriteType = {
+		name = "GFX_portrait_large_TUR_Sevket_Sureyya_Aydemir"
+		texturefile = "gfx/characters/TUR_Sevket_Sureyya_Aydemir.png"
 	}
 	#穆罕默德七世
 	SpriteType = {
