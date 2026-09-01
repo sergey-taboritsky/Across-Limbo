@@ -1,0 +1,12 @@
+# 临时外壳：货币/国库系统状态面板
+# 仿 TNW_Economy_categories 模式（空分类 + 本地化描述显示变量）
+# 数据见本地化 TNW_econ_dbg_money_desc
+TNW_econ_dbg_money = {
+	allowed = {
+		always = yes
+	}
+	visible = {
+	    
+	}
+	visible_when_empty = yes
+}
