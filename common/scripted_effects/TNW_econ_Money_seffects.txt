@@ -1,0 +1,17 @@
+
+#Gdp月增长0.1%
+money_up0_1_vars = {
+	hidden_effect = {
+		    set_variable = { economy_decison_invest = num_of_civilian_factories}
+			multiply_variable = {var = economy_decison_invest value = 0.001} # 0.05*0.2		
+			add_to_variable = { var = gdpmn value = economy_decison_invest}
+}
+}
+#Gdp月增长0.2%
+money_up0_2_vars = {
+		hidden_effect = {
+		    set_variable = { economy_decison_invest = num_of_civilian_factories}
+			multiply_variable = {var = economy_decison_invest value = 0.02} # 0.05*0.2		
+			add_to_variable = { var = gdpmn value = economy_decison_invest}
+	}
+}

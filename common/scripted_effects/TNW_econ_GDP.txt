@@ -1,0 +1,470 @@
+upd_gdp = {
+                set_variable = { core_population = 0 }
+				set_variable = { not_core_population = 0 }
+				set_variable = { lastgdpmn = gdpmn }
+				set_variable = { gdpmn = 0}
+				set_variable = { factory_produced = 0 }
+				set_variable = { our_resource_produced = 0 }
+				set_variable = { we_controll_factory = 0 }
+				set_variable = { we_have_factory = 0 }
+				set_variable = { subject_factory = 0 }
+				set_variable = { total_production_revenue = 0 }
+				set_variable = { goods_export = 0 }
+				set_variable = { goods_import = 0 }
+
+				
+				set_variable = { chromium_produced = resource_produced@chromium}
+				if = {
+					limit = {
+						check_variable = { chromium_produced > 200 }
+					}
+					set_variable = { chromium_produced = 200 }
+				}
+				multiply_variable = {var = chromium_produced value = 0.015}
+					
+				set_variable = { tungsten_produced = resource_produced@tungsten}
+				if = {
+					limit = {
+						check_variable = { tungsten_produced > 200 }
+					}
+					set_variable = { tungsten_produced = 200 }
+				}
+				multiply_variable = {var = tungsten_produced value = 0.01}
+				
+				set_variable = { rubber_produced = resource_produced@rubber}
+				if = {
+					limit = {
+						check_variable = { rubber_produced > 200 }
+					}
+					set_variable = { rubber_produced = 200 }
+				}
+				multiply_variable = {var = rubber_produced value = 0.01}
+					
+				set_variable = { aluminium_produced = resource_produced@aluminium}
+				if = {
+					limit = {
+						check_variable = { aluminium_produced > 200 }
+					}
+					set_variable = { aluminium_produced = 200 }
+				}
+				multiply_variable = {var = aluminium_produced value = 0.01}
+					
+				set_variable = { oil_produced = resource_produced@oil}
+				if = {
+					limit = {
+						check_variable = { oil_produced > 200 }
+					}
+					set_variable = { oil_produced = 200 }
+				}
+				multiply_variable = {var = oil_produced value = 0.02}
+					
+				set_variable = { steel_produced = resource_produced@steel}
+				if = {
+					limit = {
+						check_variable = { steel_produced > 200 }
+					}
+					set_variable = { steel_produced = 200 }
+				}
+				multiply_variable = {var = steel_produced value = 0.01}	
+
+				set_variable = { coal_produced = resource_produced@coal}
+				if = {
+					limit = {
+						check_variable = { coal_produced > 200 }
+					}
+					set_variable = { coal_produced = 200 }
+				}
+				multiply_variable = {var = coal_produced value = 0.01}
+				
+				set_variable = { food_produced = resource_produced@food}
+				if = {
+					limit = {
+						check_variable = { food_produced > 200 }
+					}
+					set_variable = { food_produced = 200 }
+				}
+				multiply_variable = {var = food_produced value = 0.0025}
+
+				add_to_variable = { var = our_resource_produced value = rubber_produced}
+				add_to_variable = { var = our_resource_produced value = chromium_produced}
+				add_to_variable = { var = our_resource_produced value = tungsten_produced}
+				add_to_variable = { var = our_resource_produced value = steel_produced}
+				add_to_variable = { var = our_resource_produced value = oil_produced}
+				add_to_variable = { var = our_resource_produced value = aluminium_produced}
+				add_to_variable = { var = our_resource_produced value = coal_produced}
+				add_to_variable = { var = our_resource_produced value = food_produced}
+
+				if = {
+					limit = {
+						is_subject = yes
+					}
+					multiply_variable = { var = our_resource_produced value = 0.5 }
+				}
+
+				every_controlled_state = {
+					if = {
+						limit = {
+							is_core_of = PREV
+						}
+						add_to_variable = { var = PREV.core_population value = state_population_k } 
+					}
+					else = {
+						add_to_variable = { var = PREV.not_core_population value = state_population_k } 
+					}
+					add_to_variable = { var = PREV.we_controll_factory value = industrial_complex_level }
+				}
+
+				set_variable = { we_have_factory = num_of_civilian_factories }
+				
+				every_subject_country = {
+					every_controlled_state = {
+						add_to_variable = { var = PREV.PREV.subject_factory value = industrial_complex_level }
+					}
+					# subtract_from_variable = { var = PREV.subject_factory value = num_of_civilian_factories }
+
+					set_variable = { chromium_produced = resource_produced@chromium}
+				if = {
+					limit = {
+						check_variable = { chromium_produced > 200 }
+					}
+					set_variable = { chromium_produced = 200 }
+				}
+				multiply_variable = {var = chromium_produced value = 0.015}
+					
+				set_variable = { tungsten_produced = resource_produced@tungsten}
+				if = {
+					limit = {
+						check_variable = { tungsten_produced > 200 }
+					}
+					set_variable = { tungsten_produced = 200 }
+				}
+				multiply_variable = {var = tungsten_produced value = 0.01}
+				
+				set_variable = { rubber_produced = resource_produced@rubber}
+				if = {
+					limit = {
+						check_variable = { rubber_produced > 200 }
+					}
+					set_variable = { rubber_produced = 200 }
+				}
+				multiply_variable = {var = rubber_produced value = 0.01}
+					
+				set_variable = { aluminium_produced = resource_produced@aluminium}
+				if = {
+					limit = {
+						check_variable = { aluminium_produced > 200 }
+					}
+					set_variable = { aluminium_produced = 200 }
+				}
+				multiply_variable = {var = aluminium_produced value = 0.01}
+					
+				set_variable = { oil_produced = resource_produced@oil}
+				if = {
+					limit = {
+						check_variable = { oil_produced > 200 }
+					}
+					set_variable = { oil_produced = 200 }
+				}
+				multiply_variable = {var = oil_produced value = 0.02}
+					
+				set_variable = { steel_produced = resource_produced@steel}
+				if = {
+					limit = {
+						check_variable = { steel_produced > 200 }
+					}
+					set_variable = { steel_produced = 200 }
+				}
+				multiply_variable = {var = steel_produced value = 0.01}	
+
+				set_variable = { coal_produced = resource_produced@coal}
+				if = {
+					limit = {
+						check_variable = { coal_produced > 200 }
+					}
+					set_variable = { coal_produced = 200 }
+				}
+				multiply_variable = {var = coal_produced value = 0.01}
+				
+				set_variable = { food_produced = resource_produced@food}
+				if = {
+					limit = {
+						check_variable = { food_produced > 200 }
+					}
+					set_variable = { food_produced = 200 }
+				}
+				multiply_variable = {var = food_produced value = 0.0025}
+					
+					multiply_variable = { var = subject_resource_produced value = 0.2 }
+
+					add_to_variable = { var = PREV.our_resource_produced value = subject_resource_produced }
+				}
+
+				# set_variable = { factory_produced = we_have_factory  }
+
+				multiply_variable = { var = subject_factory value = 0.5 }
+				set_variable = { factory_produced = we_controll_factory  }
+				add_to_variable = { factory_produced = subject_factory }
+
+				if = {
+					limit = {
+						is_subject = yes
+					}
+					multiply_variable = { var = our_resource_produced value = 0.9 }
+					multiply_variable = { var = factory_produced value = 0.6 }
+				}
+
+				multiply_variable = {var = factory_produced value = 0.5 }
+				multiply_variable = {var = factory_produced value = factory_revenue_growth_coefficient }
+				set_variable = { var = factory_cost value = factory_produced }
+				multiply_variable = {var = factory_produced value = 1.1 }
+				if = {
+					limit = {
+						check_variable = {
+							all_consumption > 0
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								all_consumption < factory_produced
+							}
+						}
+						set_variable = { realy_factory_produced = all_consumption }
+						set_variable = { goods_export = factory_produced }
+						subtract_from_variable = { goods_export = all_consumption }
+
+						if = {
+							limit = {
+								check_variable = {
+									goods_export > market_available_for_dumping
+								}
+							}
+							set_variable = { goods_export = market_available_for_dumping }
+						}
+
+						add_to_variable = { realy_factory_produced = goods_export }
+						set_variable = { factory_produced = realy_factory_produced }
+					}
+					else = {
+						set_variable = { goods_import = all_consumption }
+						subtract_from_variable = { var = goods_import value = factory_produced }
+					}
+				}
+				else = {
+					set_variable = { goods_import = our_resource_produced }
+				}
+				
+				set_variable = { var = tax_from_consumption value = all_consumption }
+				multiply_variable = { var = tax_from_consumption value = tax_from_consumption_rate }
+
+				add_to_variable = { var = total_production_revenue value = factory_produced}
+				add_to_variable = { var = total_production_revenue value = our_resource_produced}
+				
+				set_variable = { var = national_income value = factory_cost }
+				# multiply_variable = { var = national_income value = 0.9 }
+				add_to_variable = { var = national_income value = our_resource_produced }
+				set_variable = { var = private_capital_growth value = total_production_revenue }
+				subtract_from_variable = { var = private_capital_growth value = factory_cost }
+
+				set_variable = { var = tax_from_company value = private_capital_growth }
+				multiply_variable = { var = tax_from_company value = tax_from_company_rate }
+				subtract_from_variable = { var = private_capital_growth value = tax_from_company }
+
+				set_variable = { var = people_save value = national_income }
+				multiply_variable = { var = people_save value = willingness_to_save }
+
+				set_variable = { tax_from_people = national_income }
+				multiply_variable = { var = tax_from_people value = tax_from_people_rate }
+
+				set_variable = { var = people_consumption value = national_income }
+				subtract_from_variable = { var = people_consumption value = people_save }
+				subtract_from_variable = { var = people_consumption value = tax_from_people }
+
+
+				set_variable = { domestic_investment = 0}
+
+				set_variable = { private_investment = private_capital_growth }
+				multiply_variable = { var = private_investment value = investment_willingness }
+
+				set_variable = { bank_investment = people_save }
+				multiply_variable = { var = bank_investment value = bank_investment_willingness }
+				
+				add_to_variable = { var = domestic_investment value = private_investment }
+				add_to_variable = { var = domestic_investment value = bank_investment }
+				
+
+				set_variable = { capital_reserves_change = 0 }
+				set_variable = { government_spending = 0 }
+				add_to_variable = { var = capital_reserves_change value = tax_from_people }
+				add_to_variable = { var = capital_reserves_change value = tax_from_company }
+				add_to_variable = { var = capital_reserves_change value = tax_from_consumption }
+
+				set_variable = { armf = num_of_military_factories}
+				multiply_variable = {var = armf value = 0.01}
+							
+				set_variable = { navf = num_of_naval_factories}
+				multiply_variable = {var = navf value = 0.01}
+							
+				set_variable = { military_spend = num_battalions}
+				multiply_variable = {var = military_spend value = 0.0002}
+
+				set_variable = { core_government_organs = core_population }
+				multiply_variable = { var = core_government_organs value = 0.0001}
+				multiply_variable = { var = core_government_organs value = 0.0001}
+				set_variable = { not_core_government_organs = not_core_population }
+				multiply_variable = { var = not_core_government_organs value = 0.0001}
+				multiply_variable = { var = not_core_government_organs value = 0.0001}
+				multiply_variable = { var = not_core_government_organs value = 0.1}
+
+				add_to_variable = { var = government_spending value = armf }
+				add_to_variable = { var = government_spending value = navf }
+				add_to_variable = { var = government_spending value = military_spend }
+				add_to_variable = { var = government_spending value = core_government_organs }
+				add_to_variable = { var = government_spending value = not_core_government_organs }
+
+				subtract_from_variable = { var = capital_reserves_change value = government_spending }
+							
+				add_to_variable = { var = capital_reserves value = capital_reserves_change }
+				
+				add_to_variable = { var = gdpmn value = people_consumption }
+				add_to_variable = { var = gdpmn value = private_investment }
+				add_to_variable = { var = gdpmn value = bank_investment }
+				add_to_variable = { var = gdpmn value = government_spending }
+				add_to_variable = { var = gdpmn value = goods_export }
+				subtract_from_variable = { var = gdpmn value = goods_import }
+
+				add_to_variable = { var = global.total_gdp value = gdpmn }
+				subtract_from_variable = { global.total_gdp = lastgdpmn }
+
+				set_variable = { gdp_growth = gdpmn }
+				if = {
+					limit = {
+						check_variable = {
+							lastgdpmn = 0
+						}
+					}
+					set_variable = { gdp_growth = 0 }
+				}
+				else = {
+					divide_variable = { gdp_growth = lastgdpmn }
+					multiply_variable = {var = gdp_growth value = 100 }
+					subtract_from_variable = { gdp_growth = 100 }
+				}
+				
+				# if = {
+				#	limit = {
+				#		check_variable = {
+				#			domestic_investment < 0
+				#		}
+				#	}
+				#	set_variable = { domestic_investment = 0 }
+				# }
+				set_variable = { all_investment = 0 }
+				add_to_variable = { var = all_investment value = government_investment }
+				add_to_variable = { var = all_investment value = domestic_investment }
+				set_variable = { var = new_factory_growth value = factory_cost }
+				add_to_variable = { var = new_factory_growth value = all_investment }
+				divide_variable = { new_factory_growth = factory_cost }
+				multiply_variable = { factory_revenue_growth_coefficient = new_factory_growth }
+
+
+}
+upd_all_consumption = {
+	set_variable = { all_consumption = 0 }
+	add_to_variable = { all_consumption = people_consumption }
+	add_to_variable = { all_consumption = government_spending }
+}
+upd_market = {
+	set_variable = { market_available_for_dumping = 0 }
+	every_subject_country = {
+		# add_to_variable = { 
+		#	var = PREV.market_available_for_dumping value = THIS.all_consumption
+		# }
+		add_to_variable = { 
+			var = PREV.market_available_for_dumping value = THIS.goods_import
+		}
+	}
+}
+upd_gdp_proportion = {
+	set_variable ={ gdp_per_capita = gdpmn }
+	multiply_variable = { var = gdp_per_capita value = 1000 }
+	if = {
+		limit = {
+			check_variable = { max_manpower_k = 0 }					
+		}
+        set_variable ={ gdp_per_capita = 0 }
+	}
+	else = {
+		divide_variable = { var = gdp_per_capita value = max_manpower_k }
+		multiply_variable = { var = gdp_per_capita value = 1000 }				
+	}
+	set_variable ={ gdp_per_capita_core = gdpmn }
+	multiply_variable = { var = gdp_per_capita_core value = 1000 }
+	if = {
+		limit = {
+			check_variable = { core_population = 0 }					
+		}
+        set_variable ={ gdp_per_capita_core = 0 }
+	}
+	else = {
+		divide_variable = { var = gdp_per_capita_core value = core_population }
+		multiply_variable = { var = gdp_per_capita_core value = 1000 }			
+	}
+	
+	set_variable = { gdp_proportion = gdpmn }
+				
+	multiply_variable = { gdp_proportion = 100 }
+				
+	divide_variable = { var = gdp_proportion value = global.total_gdp }
+}
+build_factory_start_growth = {
+    set_variable = {
+        ind_upd = max_manpower_k
+    }
+    divide_variable = {
+        var = ind_upd
+        value = num_of_factories
+    }
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 3100 }
+                check_variable = { num_of_factories < 1 }
+            }
+        }
+        set_variable = { factory_revenue_growth_coefficient = 0.01 }
+    }
+    else = {
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 2300 }
+                check_variable = { num_of_factories < 5 }
+            }
+        }
+        set_variable = { factory_revenue_growth_coefficient = 0.02 }
+    }
+    else = {
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 1300 }
+                check_variable = { num_of_factories < 25 }
+            }
+        }
+        set_variable = { factory_revenue_growth_coefficient = 0.05 }
+    }
+    else = {
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 150 }
+                check_variable = { num_of_factories < 35 }
+            }
+        }
+        set_variable = { factory_revenue_growth_coefficient = 0.6 }
+    }
+    else = {
+        set_variable = { factory_revenue_growth_coefficient = 0.8 }
+    }}}}
+}

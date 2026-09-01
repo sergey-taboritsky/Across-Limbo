@@ -1,0 +1,76 @@
+############### surface ############
+spriteTypes = {	
+
+#	corneredTileSpriteType = {
+#		name = "GFX_tiled_window_1b_border"
+#		size= { x=192 y=192 }
+#		textureFile = "gfx//interface//tiles//tiled_window_1b_border.dds"
+#		borderSize = { x=64 y=64 }
+#		tilingCenter = yes
+#	}
+	
+# [缺图已注释] 	corneredTileSpriteType = {
+# [缺图已注释] 		name = "GFX_trade_1b_border"
+# [缺图已注释] 		size= { x=192 y=192 }
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_1b_border.dds"
+# [缺图已注释] 		borderSize = { x=64 y=64 }
+# [缺图已注释] 		tilingCenter = yes
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_bg_border"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_bg_border.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_econo_trade_icon"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/econo_trade_icon.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_bg_half"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_bg_half.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_text_bg_short"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_text_bg_short.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_add_1"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_add_1.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_sub_1"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_sub_1.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_add_10"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_add_10.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_sub_10"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_sub_10.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_add_100"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_add_100.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_sub_100"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_sub_100.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_add_1000"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_add_1000.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_sub_1000"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_sub_1000.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_add_10000"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_add_10000.dds"
+# [缺图已注释] 	}
+# [缺图已注释] 	SpriteType = { 
+# [缺图已注释] 		name = "GFX_trade_sub_10000"
+# [缺图已注释] 		texturefile = "gfx/weapon_trade_ui/trade_sub_10000.dds"
+# [缺图已注释] 	}
+	
+}

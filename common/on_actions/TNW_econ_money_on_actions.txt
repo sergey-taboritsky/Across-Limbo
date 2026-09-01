@@ -1,0 +1,116 @@
+on_actions = {
+	on_startup= {
+		effect = {
+			every_country={
+			set_variable = {
+				var = TNW_econ_money_all
+				value = num_of_factories
+			}
+###军队
+
+set_variable = {
+	var = TNW_econ_man_num_divisions_all
+	value = num_divisions
+}
+modulo_variable = {
+	var = TNW_econ_man_num_divisions_all
+	value = max_available_manpower_k
+}
+divide_variable= {
+	var = TNW_econ_man_num_divisions_all
+	value = 0.5
+}
+#####社会开支
+###
+set_variable = {
+	var = TNW_econ_Social_spending
+	value = max_manpower_k
+}
+divide_variable= {
+	var = TNW_econ_Social_spending
+	value = 1020
+}		
+			
+#####工厂开支
+###
+set_variable = {
+	var = TNW_econ_num_of_factories_all
+	value = num_of_factories
+}
+modulo_variable = {
+	var = TNW_econ_num_of_factories_all
+	value = num_owned_states
+}
+multiply_variable= {
+	var = TNW_econ_num_of_factories_all
+	value = 1.2
+}
+#####工厂利润
+###
+set_variable = {
+	var = TNW_econ_num_of_factories_up
+	value = num_of_factories
+}
+multiply_variable= {
+	var = TNW_econ_num_of_factories_up
+	value = 1.4
+}
+#####人口
+			set_variable = {
+				var = TNW_econ_man_money_all
+				value = max_manpower_k
+			}
+			divide_variable = {
+				var = TNW_econ_man_money_all
+				value = 100
+			}
+
+
+			add_to_variable = {
+				var = TNW_econ_money_all
+				value = TNW_econ_man_money_all
+			}
+			add_to_variable = {
+				var = TNW_econ_money_all
+				value = TNW_econ_num_of_factories_up
+			}
+			subtract_from_variable = {
+				var = TNW_econ_money_all
+				value = TNW_econ_man_num_divisions_all
+			}
+			subtract_from_variable = {
+				var = TNW_econ_money_all
+				value = TNW_econ_num_of_factories_all
+			}
+			subtract_from_variable = {
+				var = TNW_econ_money_all
+				value = TNW_econ_Social_spending
+			}
+			
+			#set_temp_variable = {  = @num_of_factories }
+}
+			}
+			}
+        on_weekly={
+			effect = {
+				every_country={
+			}
+			add_to_variable = {
+				var = TNW_econ_money_all
+				value = TNW_econ_num_of_factories_up
+			}
+			subtract_from_variable = {
+				var = TNW_econ_money_all
+				value = TNW_econ_man_num_divisions_all
+			}
+			subtract_from_variable = {
+				var = TNW_econ_money_all
+				value = TNW_econ_num_of_factories_all
+			}
+			subtract_from_variable = {
+				var = TNW_econ_money_all
+				value = TNW_econ_Social_spending
+			}
+		}
+	}
+	}

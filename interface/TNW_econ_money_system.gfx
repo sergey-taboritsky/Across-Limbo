@@ -1,0 +1,50 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_moneypolicy_bg"
+		size= { x=200 y=100% }
+		textureFile = "gfx//interface//moneypolicy_bg.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"	
+	}
+	spriteType = {
+		name = "GFX_ECO_A+"
+		texturefile = "gfx/interface/ECO_A+.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ECO_A"
+		texturefile = "gfx/interface/ECO_A.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ECO_B+"
+		texturefile = "gfx/interface/ECO_B+.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ECO_B"
+		texturefile = "gfx/interface/ECO_B.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ECO_C+"
+		texturefile = "gfx/interface/ECO_C+.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ECO_C"
+		texturefile = "gfx/interface/ECO_C.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ECO_D"
+		texturefile = "gfx/interface/ECO_D.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ECO_BUTTON"
+		texturefile = "gfx/interface/ECO_BUTTON.dds"
+		legacy_lazy_load = no
+	}
+}

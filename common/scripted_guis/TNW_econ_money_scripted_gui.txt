@@ -1,0 +1,48 @@
+scripted_gui = {
+
+	TNW_econ_money_system = {
+		window_name = "money_system_ui_window"
+		context_type =player_context
+		parent_window_token = politics_tab
+		
+		
+		visible = {
+			always = yes
+		}
+		effects = {
+			money_system_button_click={ 
+				if={
+					limit={
+						NOT = {
+							has_country_flag = entry_money_system_ui_window
+						}
+					}
+					set_country_flag=entry_money_system_ui_window
+				}
+				else={
+					clr_country_flag=entry_money_system_ui_window
+				}
+			}
+			
+		} 
+	}
+	TNW_econ_money_system_main = {
+		window_name = "money_system_main_window"
+		context_type =player_context
+		parent_window_token = politics_tab
+
+		properties={
+			ECO_icon = {
+                image = "[GetECOICON]"
+		}
+	}
+		visible = {
+			has_country_flag = entry_money_system_ui_window
+		} 
+		effects = {
+			
+			
+		}
+	}
+}
+

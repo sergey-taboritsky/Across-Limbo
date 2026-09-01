@@ -1,0 +1,64 @@
+on_actions = {
+	on_startup= {
+		effect = {
+every_country = {
+set_variable = { Employment = 1 }
+set_variable = { Unemployment = gdpmn}
+multiply_variable = { Unemployment = 0.4 }
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+		on_startup={
+			effect = {
+				every_country={
+					limit = {
+						check_variable = { @Literacy > 0 }		
+					}
+					add_ideas=completely_illiterate
+				}
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+on_monthly={
+	effect = {
+			limit={
+				has_idea=Mixed_economy
+			}
+			set_variable = { economy_decison_invest = num_of_civilian_factories}
+			multiply_variable = {var = economy_decison_invest value = 0.001} # 0.05*0.2		
+			add_to_variable = { var = gdpmn value = economy_decison_invest}
+}
+effect = {
+	limit={
+		has_idea=Planned_economy
+	}
+	set_variable = { economy_decison_invest = num_of_civilian_factories}
+	multiply_variable = {var = economy_decison_invest value = -0.001} # 0.05*0.2		
+	add_to_variable = { var = gdpmn value = economy_decison_invest}
+}
+
+}
+
+}

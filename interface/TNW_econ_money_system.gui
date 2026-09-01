@@ -1,0 +1,91 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "money_system_ui_window"
+		position = { x = 0 y = 0 }
+		
+		buttonType = { 
+			name = "money_system_button"
+			size = {width = 100 height = 20}
+			spriteType = "GFX_ECO_BUTTON"
+			buttonFont = "hoi_18mbs"
+			buttonText = "经济状况"
+			position = { x = 112 y = 385 }
+			pdx_tooltip = "money_system_ui_TT"
+		}
+}
+    containerWindowType = {
+		name = "money_system_main_window"
+		position = { x = 2 y = 5 }
+		size = {width = 550 height = 380}
+
+		background = {
+				name = "money_system_main"
+				spriteType ="GFX_tiled_paper_w_frame_bg"
+		}
+		
+		
+		iconType = {
+			position = {x=340 y=270}
+			name = "money_system_policy_bg"
+			size = {width = 235 height = 35}
+			spriteType = "GFX_moneypolicy_bg"
+		}
+		iconType = {
+			position = {x=455 y=282}
+			name = "money_system_policy"
+			size = {width = 150 height = 5}
+			spriteType = "GFX_add_goal_button"
+		}
+		iconType = {
+			name = "ECO_icon"
+            pdx_tooltip= "ECO_icon_numbers"
+			position = {x = 465 y = 293} 
+		}
+		instantTextBoxType = {
+			name = "money_system_policy_name"
+			position = { x = 360 y = 285 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "信用评级"	
+			maxWidth = 100
+			maxHeight = 32
+			fixedsize = yes
+			format = left			
+		} 
+		instantTextBoxType = {
+			name = "money_policy_name"
+			position = { x = 373 y = 310 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "[GetECOICON_NAME]"	
+			maxWidth = 69
+			maxHeight = 32
+			fixedsize = yes
+			format = left			
+		} 
+		instantTextBoxType = {
+			name = "money_system_main_name"
+			position = { x = 25 y = 15 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "经济"	
+			maxWidth = 300
+			maxHeight = 32
+			fixedsize = yes
+			format = left			
+		} 
+		instantTextBoxType = {
+			name = "money_system_value_name"
+			position = { x = 25 y = 55 }
+			font = "hoi_18mbs"
+			text = "money_system_value_name_TT"	 
+			maxWidth = 500
+			maxHeight = 182
+			fixedsize = yes
+			format = left	
+                                                pdx_tooltip = "GDP_TOOLTIP" 		
+		}
+
+}
+}

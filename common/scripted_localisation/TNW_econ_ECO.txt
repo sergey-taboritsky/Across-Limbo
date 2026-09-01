@@ -1,0 +1,324 @@
+defined_text = { 
+	name = GetECOICON
+	text = {
+		 localization_key = GFX_ECO_A+
+trigger = {
+	AND={
+		check_variable = {
+			gdpmn > 40
+		}
+		has_country_flag= gdp_inflationLessthan25
+	}
+	if={
+		check_variable = {
+			gdp_inflation < 25
+		}
+		set_country_flag= gdp_inflationLessthan25
+	else={
+		set_country_flag= gdp_inflationgreaterthan25
+	}
+	}
+	
+}
+}
+text = {
+	localization_key = GFX_ECO_A
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 40
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn 
+		value = 30
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = GFX_ECO_B+
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 30
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 20
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = GFX_ECO_B
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 20
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 10
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = GFX_ECO_C+
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 10
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 5
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = GFX_ECO_C
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 5
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 0
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = GFX_ECO_D
+trigger = {
+	check_variable = {
+		gdpmn < 0
+	}
+}
+}
+}
+
+
+
+
+
+defined_text = { 
+	name = GetECOICON_NAME
+	text = {
+		 localization_key = GetECOICON_NAME_A_UP
+trigger = {
+	check_variable = {
+		gdpmn> 40
+	}
+	
+}
+}
+text = {
+	localization_key = GetECOICON_NAME_A_DOWN
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 40
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 30
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = GetECOICON_NAME_B_UP
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 30
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 20
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = GetECOICON_NAME_B_DOWN
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 20
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 10
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = GetECOICON_NAME_C_UP
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 10
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 5
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = GetECOICON_NAME_C_DOWN
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 5
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 0
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = GetECOICON_NAME_D
+trigger = {
+	check_variable = {
+		gdpmn < 0
+	}
+}
+}
+}
+
+
+
+
+
+
+
+defined_text = { 
+	name = ECO_icon_TT
+	text = {
+		 localization_key = ECO_iconA_UP_TT
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 40
+		compare = greater_than
+	}
+}
+}
+text = {
+	localization_key = ECO_iconA_DOWN_TT
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 40
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 30
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = ECO_iconB_UP_TT
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 30
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 20
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = ECO_iconB_DOWN_TT
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 20
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 10
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = ECO_iconC_UP_TT
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 10
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 5
+		compare = greater_than
+	}
+	
+}
+}
+text = {
+	localization_key = ECO_iconC_DOWN_TT
+trigger = {
+	check_variable = {
+		var = gdpmn
+		value = 5
+		compare = less_than_or_equals
+	}
+	check_variable = {
+		var = gdpmn
+		value = 0
+		compare = greater_than
+	}
+}
+}
+text = {
+	localization_key = ECO_iconD_TT
+trigger = {
+	check_variable = {
+		gdpmn < 0
+	}
+}
+}
+}

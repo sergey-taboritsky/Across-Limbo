@@ -1,0 +1,39 @@
+############### surface ############
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_money"
+		texturefile = "gfx/money.dds"
+		legacy_lazy_load = no
+	}
+# [缺图已注释] 	spriteType = {
+# [缺图已注释] 		name = "GFX_mark"
+# [缺图已注释] 		texturefile = "gfx/mark.dds"
+# [缺图已注释] 		legacy_lazy_load = no
+# [缺图已注释] 	}
+# [缺图已注释] 	spriteType = {
+# [缺图已注释] 		name = "GFX_gdp_table_icon"
+# [缺图已注释] 		texturefile = "gfx//interface//gdp_table_icon.dds"
+# [缺图已注释] 		legacy_lazy_load = no
+# [缺图已注释] 	}
+
+############### table ############
+
+    spriteType = {
+		name = "GFX_table"
+		texturefile = "gfx//interface//table.dds"
+	}
+    spriteType = {
+		name = "GFX_ggg_overlay_100_20"
+		texturefile = "gfx//interface//ggg_overlay_100_20.dds"
+	}
+    spriteType = {
+		name = "GFX_ggg_overlay_100_40"
+		texturefile = "gfx//interface//ggg_overlay_100_40.dds"
+	}
+    spriteType = {
+		name = "GFX_ggg_overlay_150_20"
+		texturefile = "gfx//interface//ggg_overlay_150_20.dds"
+	}
+	
+}

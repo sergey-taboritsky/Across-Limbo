@@ -1,0 +1,169 @@
+# ============================================================
+# TNW 经济系统 - 国内建设投资决策（移植自 DrapeauRogue）
+# 国库的唯一消费途径：每个决策花费 5 政治点数 + 国库 0.01B
+# ============================================================
+# 移植时相对 DR 原版的改动：
+#   1) icon: SWI_dismiss_council（DR 自定义，TNW 无）-> GFX_decision_generic_factory（TNW 已有）
+#   2) Investment_Civilian_factories 删除 production_speed_grain_farms_factor
+#      （TNW 无 grain_farms 建筑，该 modifier 会导致报错）
+# ============================================================
+
+Domestic_construction = {
+
+	Investment_research = {
+		icon = GFX_decision_generic_factory
+
+		fire_only_once = no
+		days_remove = 45
+		days_re_enable = 35
+		cost = 5
+		modifier = {
+			civilian_factory_use = 1
+			research_speed_factor = 0.05
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = capital_reserves
+				value = -0.01
+				tooltip = add_to_variable_capital_reserves
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+
+	Investment_military_consultant = {
+		icon = GFX_decision_generic_factory
+
+		fire_only_once = no
+		days_remove = 45
+		days_re_enable = 35
+		cost = 5
+		modifier = {
+			experience_gain_army_factor = 0.03
+			experience_gain_army_unit_factor = 0.03
+			experience_gain_air_factor = 0.03
+			experience_gain_navy_factor = 0.03
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = capital_reserves
+				value = -0.01
+				tooltip = add_to_variable_capital_reserves
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+
+	Investment_Arsenals = {
+		icon = GFX_decision_generic_factory
+
+		fire_only_once = no
+		days_remove = 45
+		days_re_enable = 35
+		cost = 5
+		modifier = {
+			production_speed_arms_factory_factor = 0.05
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = capital_reserves
+				value = -0.01
+				tooltip = add_to_variable_capital_reserves
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+
+	Investment_Civilian_factories = {
+		icon = GFX_decision_generic_factory
+
+		fire_only_once = no
+		days_remove = 45
+		days_re_enable = 35
+		cost = 5
+		modifier = {
+			production_speed_industrial_complex_factor = 0.05
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = capital_reserves
+				value = -0.01
+				tooltip = add_to_variable_capital_reserves
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+
+	Infrastructure_investment = {
+		icon = GFX_decision_generic_factory
+
+		fire_only_once = no
+		days_remove = 45
+		days_re_enable = 35
+		cost = 5
+		modifier = {
+			production_speed_supply_node_factor = 0.05
+			production_speed_rail_way_factor = 0.05
+			production_speed_infrastructure_factor = 0.05
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = capital_reserves
+				value = -0.01
+				tooltip = add_to_variable_capital_reserves
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+
+}

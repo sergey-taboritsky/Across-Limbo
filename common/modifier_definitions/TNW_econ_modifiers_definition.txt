@@ -1,0 +1,160 @@
+# ============================================================
+# TNW 经济系统 modifier 定义（移植自 DrapeauRogue）
+# 供 TNW_econ_GDP.txt 通过 modifier@xxx 读取
+# ============================================================
+
+government_investment_modifier = {
+	color_type = good
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+domestic_investment_modifier = {
+	color_type = good
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+goods_export_modifier = {
+	color_type = good
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+factory_produced_modifier = {
+	color_type = good
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+tax_from_consumption_modifier = {
+	color_type = good
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+tax_from_company_modifier= {
+	color_type = good
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+market_available_for_dumping_modifier= {
+	color_type = good
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+government_spending_modifier= {
+	color_type = bad
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+goods_import_modifier= {
+	color_type = bad
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+core_government_organs_modifier= {
+	color_type = bad
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+factory_cost_modifier= {
+	color_type = bad
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+not_core_government_organs_modifier= {
+	color_type = bad
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+military_spend_modifier= {
+	color_type = bad
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+armf_modifier= {
+	color_type = bad
+	value_type = number
+	precision = 3
+	
+	category = country
+	category = state
+
+}
+
+Unemployment_rate_modifier = {
+	color_type = bad
+	value_type = number
+	precision = 3
+	
+	category = country
+}
+
+Literacy_modifier = {
+	color_type = neutral
+	value_type = percentage_in_hundred
+	precision = 1
+	
+	category = country
+}

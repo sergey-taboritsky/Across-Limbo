@@ -1,0 +1,15 @@
+# ============================================================
+# TNW 经济系统 - 决策分类
+# 对应 common/decisions/TNW_econ_decisions.txt 的 Domestic_construction
+# 不指定 icon / picture，避免引用 TNW 中不存在的图形资源
+# ============================================================
+
+Domestic_construction = {
+	allowed = {
+		always = yes
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = yes
+}
