@@ -1,0 +1,44 @@
+﻿l_simp_chinese:
+#领导人
+ SOM_Sheikh_Bashir_Yussuf: "巴希尔·优素福"
+ SOM_Sheikh_Bashir_Yussuf_desc: ""
+ SOM_Osman_Yusuf_Kenadid: "奥斯曼·优素福·肯纳迪德"
+ SOM_Osman_Yusuf_Kenadid_desc: ""
+ SOM_Aden_Abdulle_Osman_Daar: "阿登·阿卜杜勒·达尔"
+ SOM_Aden_Abdulle_Osman_Daar_desc: ""
+
+#政党名字
+ SOM_communist_party: "索马里工人党"
+ SOM_communist_party_long: "索马里工人党"
+ SOM_syndicalism_party: "索马里工人党"
+ SOM_syndicalism_party_long: "索马里工人党"
+ SOM_socialism_party: "索马里工人党"
+ SOM_socialism_party_long: "索马里工人党"
+ SOM_Social_democracy_party: "新索马里运动 - 进步派"
+ SOM_Social_democracy_party_long: "新索马里运动"
+ SOM_Liberalism_party: "新索马里运动 - 进步派"
+ SOM_Liberalism_party_long: "新索马里运动"
+ SOM_Conservatism_party: "新索马里运动 - 瓦尔桑盖利系"
+ SOM_Conservatism_party_long: "新索马里运动"
+ SOM_Authoritarianism_party: "新索马里运动 - 达尔巴汉特系"
+ SOM_Authoritarianism_party_long: "新索马里运动"
+ SOM_Absolutism_party: "新索马里运动 - 摩加迪沙军事委员会"
+ SOM_Absolutism_party_long: "新索马里运动"
+ SOM_Nationalism_party: "新索马里运动 - 民粹派"
+ SOM_Nationalism_party_long: "新索马里运动"
+
+#民族精神
+
+#事件
+
+#新闻
+
+#GUI
+
+#BOP
+
+#决议
+
+#国策
+ #: ""
+ #_desc: ""

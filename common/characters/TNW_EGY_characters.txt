@@ -1,4 +1,22 @@
 characters = {
+	#法鲁克一世
+	EGY_Farouk_I = {
+		name = EGY_Farouk_I
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_EGY_Farouk_I
+			}
+		}
+		country_leader = {
+			desc = EGY_Farouk_I_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+	}
 	#卡迈勒·哈利姆
 	EGY_Kamal_Abd_al_Halim = {
 		name = EGY_Kamal_Abd_al_Halim

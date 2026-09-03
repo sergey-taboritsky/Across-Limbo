@@ -3,23 +3,26 @@
 set_convoys = 20
 
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = Authoritarianism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	communist = 21
-	syndicalism = 14
-	socialism = 17
+	communist = 4
+	syndicalism = 3
+	socialism = 5
 	Social_democracy = 5
-	Liberalism = 0
-	conservatism = 0
-	Authoritarianism = 0
-	Absolutism = 33
+	Liberalism = 22
+	conservatism = 16
+	Authoritarianism = 22
+	Absolutism = 13
 	Nationalism = 10
 }
 
+recruit_character = EGY_Farouk_I
+recruit_character = EGY_Hussein_Sirri
+recruit_character = EGY_Mostafa_Nahas
 recruit_character = EGY_Kamal_Abd_al_Halim
 recruit_character = EGY_Henri_Curiel
 recruit_character = EGY_Hillel_Schwartz
@@ -28,7 +31,10 @@ recruit_character = EGY_Mohammed_Naguib
 recruit_character = EGY_Ibrahim_Shoukri
 
 add_ideas = {
-	EGY_namely_socialism
-	EGY_across_the_canals
-	EGY_left_unity_1
+	EGY_chained_constitution
+	EGY_Suez_catastrophe
+	EGY_world_falling_apart
+	EGY_army_irritation
+	EGY_worker_disdain
+	EGY_traditionalist_clumping
 }

@@ -1,0 +1,44 @@
+characters = {
+	SOM_Sheikh_Bashir_Yussuf = {
+		name = SOM_Sheikh_Bashir_Yussuf
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SOM_Sheikh_Bashir_Yussuf
+			}
+		}
+		country_leader={
+			ideology= military_government
+			desc = SOM_Sheikh_Bashir_Yussuf_desc
+			expire="1936.1.1"
+		}
+		
+	}
+	SOM_Osman_Yusuf_Kenadid = {
+		name = SOM_Osman_Yusuf_Kenadid
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SOM_Osman_Yusuf_Kenadid
+			}
+		}
+		country_leader={
+			ideology= National_Socialism
+			desc = SOM_Osman_Yusuf_Kenadid_desc
+			expire="1936.1.1"
+		}
+		
+	}
+	SOM_Aden_Abdulle_Osman_Daar = {
+		name = SOM_Aden_Abdulle_Osman_Daar
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SOM_Aden_Abdulle_Osman_Daar
+			}
+		}
+		country_leader={
+			ideology= National_Conservatism
+			desc = SOM_Aden_Abdulle_Osman_Daar_desc
+			expire="1936.1.1"
+		}
+		
+	}
+}
