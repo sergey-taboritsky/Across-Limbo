@@ -321,10 +321,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/followup_goal_bg.dds"
 	}
 
-#	spriteType = {
-#		name = "GFX_add_national_goal_button"
-#		textureFile = "gfx/interface/add_national_goal_button.dds"
-#	}
+	spriteType = {
+		name = "GFX_add_national_goal_button"
+		textureFile = "gfx/interface/add_national_goal_button.dds"
+	}
 
 	spriteType = {
 		name = "GFX_close_button_small"
