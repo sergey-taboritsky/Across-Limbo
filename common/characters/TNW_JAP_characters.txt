@@ -1,16 +1,16 @@
 characters = {
-	#托马斯·比森
-	JAP_Thomas_Bisson = {
-		name = JAP_Thomas_Bisson
+	#山川均
+	JAP_Yamakawa_Hitoshi = {
+		name = JAP_Yamakawa_Hitoshi
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_JAP_Thomas_Bisson
+				large = GFX_portrait_large_JAP_Yamakawa_Hitoshi
 			}
 		}
 		country_leader = {
-			desc = JAP_Thomas_Bisson_desc
-			ideology = Classical_Syndicalism
-			traits = { JAP_A_swimmer_in_a_muddy_stream }
+			desc = JAP_Yamakawa_Hitoshi_desc
+			ideology = Japanese_Marxism
+			traits = { }
 			expire = "2022.10.20.1"
 			id = -1
 		}
@@ -27,6 +27,86 @@ characters = {
 			desc = JAP_Minoru_Takano_desc
 			ideology = Japanese_Syndicalism
 			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#铃木茂三郎
+	JAP_Suzuki_Mosaburo = {
+		name = JAP_Suzuki_Mosaburo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Suzuki_Mosaburo
+			}
+		}
+		country_leader = {
+			desc = JAP_Suzuki_Mosaburo_desc
+			ideology = Liberalism_socialism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#松本治一郎
+	JAP_Matsubara_Toshiro = {
+		name = JAP_Matsubara_Toshiro
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Matsubara_Toshiro
+			}
+		}
+		country_leader = {
+			desc = JAP_Matsubara_Toshiro_desc
+			ideology = reformism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#片山哲
+	JAP_Kataoka_Tetsuo = {
+		name = JAP_Kataoka_Tetsuo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Kataoka_Tetsuo
+			}
+		}
+		country_leader = {
+			desc = JAP_Kataoka_Tetsuo_desc
+			ideology = national_liberalism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#尾歧行雄
+	JAP_Okubo_Yukio = {
+		name = JAP_Okubo_Yukio
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Okubo_Yukio
+			}
+		}
+		country_leader = {
+			desc = JAP_Okubo_Yukio_desc
+			ideology = social_conservatism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	#托马斯·比森
+	JAP_Thomas_Bisson = {
+		name = JAP_Thomas_Bisson
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Thomas_Bisson
+			}
+		}
+		country_leader = {
+			desc = JAP_Thomas_Bisson_desc
+			ideology = Classical_Syndicalism
+			traits = { JAP_A_swimmer_in_a_muddy_stream }
 			expire = "2022.10.20.1"
 			id = -1
 		}

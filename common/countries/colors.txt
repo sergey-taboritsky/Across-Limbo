@@ -253,8 +253,8 @@ SAF = {
 	color_ui = rgb { 198 169 248 }
 }
 SAU = {
-	color = rgb { 161 69 69 }
-	color_ui = rgb { 161 69 69 }
+	color = rgb { 103 156 87 }
+	color_ui = rgb { 103 156 87 }
 }
 SIA = {
 	color = rgb { 171 190 152 }
@@ -314,20 +314,20 @@ HAI = {
 	color_ui = rgb { 174 113 113 }
 }
 HEJ = {
-	color = rgb { 161 69 69 }
-	color_ui = rgb { 161 69 69 }
+	color = rgb { 212 188 155 }
+	color_ui = rgb { 212 188 155 }
 }
 UAE = {
-	color = rgb { 161 69 69 }
-	color_ui = rgb { 161 69 69 }
+	color = rgb { 144 169 90 }
+	color_ui = rgb { 144 169 90 }
 }
 YEM = {
-	color = rgb { 161 69 69 }
-	color_ui = rgb { 161 69 69 }
+	color = rgb { 233 155 81 }
+	color_ui = rgb { 233 155 81 }
 }
 OMA = {
-	color = rgb { 155 101 107 }
-	color_ui = rgb { 202 131 139 }
+	color = rgb { 98 134 153 }
+	color_ui = rgb { 98 134 153 }
 }
 SLO = {
 	color = rgb { 158  161  188 }

@@ -5,21 +5,6 @@ guiTypes = {
 		size = { width = 40 height = 40 }
 		margin = { top = 1 left = 1 right = 1 bottom = 1 }
 		clipping = yes
-		scale = 0.5
-		iconType = {
-			name = "TNW_second_leader_button_icon"
-			position = { x = 0 y = 0 }
-			spriteType = "GFX_second_leader_button_icon"
-			pdx_tooltip  = "TNW_second_leader_name_tt"
-		}
-	}
-	containerWindowType = {
-		name = "TNW_second_leader_player_container"
-		position = { x = 120 y = 260 }
-		size = { width = 40 height = 40 }
-		margin = { top = 1 left = 1 right = 1 bottom = 1 }
-		clipping = yes
-		scale = 0.5
 		iconType = {
 			name = "TNW_second_leader_button_icon"
 			position = { x = 0 y = 0 }

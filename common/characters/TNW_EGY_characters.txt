@@ -17,6 +17,42 @@ characters = {
 			
 		}
 	}
+	#纳哈斯
+	EGY_Mostafa_Nahas = {
+		name = EGY_Mostafa_Nahas
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_EGY_Mostafa_Nahas
+			}
+		}
+		country_leader = {
+			desc = EGY_Mostafa_Nahas_desc
+			ideology = Patriarchal_Conservatism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+	}
+	#侯赛因
+	EGY_Hussein_Sirri = {
+		name = EGY_Hussein_Sirri
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_EGY_Hussein_Sirri
+			}
+		}
+		country_leader = {
+			desc = EGY_Hussein_Sirri_desc
+			ideology = oligarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+	}
 	#卡迈勒·哈利姆
 	EGY_Kamal_Abd_al_Halim = {
 		name = EGY_Kamal_Abd_al_Halim

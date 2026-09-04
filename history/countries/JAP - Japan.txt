@@ -45,8 +45,14 @@ set_popularities = {
 }
 
 recruit_character = CHI_Zhu_De
-recruit_character = JAP_Thomas_Bisson
+recruit_character = JAP_Yamakawa_Hitoshi
 recruit_character = JAP_Minoru_Takano
+recruit_character = JAP_Suzuki_Mosaburo
+recruit_character = JAP_Matsubara_Toshiro
+recruit_character = JAP_Kataoka_Tetsuo
+recruit_character = JAP_Okubo_Yukio
+recruit_character = 
+recruit_character = JAP_Thomas_Bisson
 recruit_character = JAP_Oyama_Ikuo
 recruit_character = JAP_Eda_Saburo
 recruit_character = JAP_Nishio_Suehiro
