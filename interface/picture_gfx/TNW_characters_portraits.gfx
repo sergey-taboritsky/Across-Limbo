@@ -1746,4 +1746,41 @@ spriteTypes = {
 		name = "GFX_portrait_large_TAT_Constantin_Zureik"
 		texturefile = "gfx/characters/TAT_Constantin_Zureik.png"
 	}
+	#法鲁克一世
+	SpriteType = {
+		name = "GFX_portrait_large_EGY_Farouk_I"
+		texturefile = "gfx/characters/EGY_Farouk_I.png"
+		legacy_lazy_load = no
+	}
+	#侯赛因·西里帕夏
+	SpriteType = {
+		name = "GFX_portrait_large_EGY_Hussein_Sirri"
+		texturefile = "gfx/characters/EGY_Hussein_Sirri.png"
+		legacy_lazy_load = no
+	}
+	#穆斯塔法·纳哈斯帕夏
+	SpriteType = {
+		name = "GFX_portrait_large_EGY_Mostafa_Nahas"
+		texturefile = "gfx/characters/EGY_Mostafa_Nahas.png"
+		legacy_lazy_load = no
+	}
+	#拿督·翁惹化
+	SpriteType = {
+		name = "GFX_portrait_large_MAL_Dato_Onn_Jaafar"
+		texturefile = "gfx/characters/MAL_Dato_Onn_Jaafar.png"
+		legacy_lazy_load = no
+	}
+	#慕沙阿莫
+	SpriteType = {
+		name = "GFX_portrait_large_MAL_Musa_Ahmad"
+		texturefile = "gfx/characters/MAL_Musa_Ahmad.png"
+		legacy_lazy_load = no
+	}
+	#阿杜拉西迪
+	SpriteType = {
+		name = "GFX_portrait_large_MAL_Abdullah_CD"
+		texturefile = "gfx/characters/MAL_Abdullah_CD.png"
+		legacy_lazy_load = no
+	}
+
 }

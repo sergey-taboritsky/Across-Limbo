@@ -5,6 +5,9 @@
 set_research_slots = 3
 
 recruit_character = MAL_Li_Zhendian
+recruit_character = MAL_Dato_Onn_Jaafar
+recruit_character = MAL_Musa_Ahmad
+recruit_character = MAL_Abdullah_CD
 
 set_convoys = 25
 

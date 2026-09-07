@@ -154,4 +154,56 @@ characters = {
 			logistics_skill = 1
 		}
 	}
+
+	#拿督·翁惹化
+	MAL_Dato_Onn_Jaafar = {
+		name = MAL_Dato_Onn_Jaafar
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_Dato_Onn_Jaafar
+			}
+		}
+		country_leader = {
+			desc = MAL_Dato_Onn_Jaafar_desc
+			ideology = tridemism_authdem
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#慕沙阿莫
+	MAL_Musa_Ahmad = {
+		name = MAL_Musa_Ahmad
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_Musa_Ahmad
+			}
+		}
+		country_leader = {
+			desc = MAL_Musa_Ahmad_desc
+			ideology = tridemism_authdem
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#阿杜拉西迪
+	MAL_Abdullah_CD = {
+		name = MAL_Abdullah_CD
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_Abdullah_CD
+			}
+		}
+		country_leader = {
+			desc = MAL_Abdullah_CD_desc
+			ideology = tridemism_authdem
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
 }
