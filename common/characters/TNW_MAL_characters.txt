@@ -206,4 +206,21 @@ characters = {
 			}
 		}
 	}
+	#伊沙哈芝穆哈默
+	MAL_Ishak_Haj_Muhammad = {
+		name = MAL_Ishak_Haj_Muhammad
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAL_Ishak_Haj_Muhammad
+			}
+		}
+		country_leader = {
+			desc = MAL_Ishak_Haj_Muhammad_desc
+			ideology = tridemism_authdem
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
 }

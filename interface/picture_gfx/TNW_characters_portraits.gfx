@@ -1782,5 +1782,23 @@ spriteTypes = {
 		texturefile = "gfx/characters/MAL_Abdullah_CD.png"
 		legacy_lazy_load = no
 	}
+	#銮披汶·颂堪
+	SpriteType = {
+		name = "GFX_portrait_large_SIA_Luang_Pibul_Songgram"
+		texturefile = "gfx/characters/SIA_Luang_Pibul_Songgram.png"
+		legacy_lazy_load = no
+	}
+	#伊沙哈芝穆哈默
+	SpriteType = {
+		name = "GFX_portrait_large_MAL_Ishak_Haj_Muhammad"
+		texturefile = "gfx/characters/MAL_Ishak_Haj_Muhammad.png"
+		legacy_lazy_load = no
+	}
+	#普密蓬·阿杜德
+	SpriteType = {
+		name = "GFX_portrait_large_SIA_Phumiphon_Adunyadet"
+		texturefile = "gfx/characters/SIA_Phumiphon_Adunyadet.png"
+		legacy_lazy_load = no
+	}
 
 }

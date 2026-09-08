@@ -66,7 +66,7 @@ guiTypes = {
 		iconType ={
 			name ="pol_faction_icon"
 			spriteType = "GFX_pol_factions_strip"
-			position = { x= 166 y = 149 }
+			position = { x= 175 y = 142 }
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}
@@ -471,21 +471,17 @@ guiTypes = {
 			size = { width = 330 height = 50 }
 			clipping = no
 
-			background = {
-				name = "Background"
-				spriteType ="GFX_pol_goal_bg"
-			}
 
 			buttonType = {
 				name = "add_national_goal_button"
-				position = { x = 100 y = 7 }
+				position = { x = 100 y = 9 }
 				spriteType = "GFX_add_national_goal_button"
 				clicksound = click_default
 			}
 
 			iconType = {
 				name = "nat_spirit_glow_overlay"
-				position = { x = 105 y = 10 }
+				position = { x = 106 y = 10 }
 				spriteType = "GFX_nat_spirit_glow_overlay"
 				alwaystransparent = yes
 			}
@@ -509,14 +505,14 @@ guiTypes = {
 
 			iconType = {
 				name = "continuous_glow"
-				position = { x = -16 y = -6 }
+				position = { x = -15 y = -6 }
 				quadTextureSprite = "GFX_ongoing_focus_goal_polview"
 				scale = 0.9
 			}
 
 			iconType = {
 				name = "goal_icon"
-				position = { x = 47 y = 48 }
+				position = { x = 48 y = 48 }
 				centerposition = yes
 				spriteType = "GFX_goal_unknown"
 			}
@@ -559,12 +555,12 @@ guiTypes = {
 			iconType = {
 				name = "progress"
 				spriteType = "GFX_activegoal_progress"
-				position = { x=112 y = 72 }
+				position = { x=112 y = 74 }
 			}
 
 			iconType = {
 				name = "progress_frame"
-				position = { x = 110 y = 72 }
+				position = { x = 110 y = 74 }
 				spriteType = "GFX_pol_goal_progress_frame"
 				alwaystransparent = yes
 			}
@@ -616,14 +612,14 @@ guiTypes = {
 		}
 		iconType = {
 			name = "leader"
-			position = { x = 18 y = 48 }
+			position = { x = 18 y = 54 }
 			spriteType = "GFX_leader_unknown"
 		}
 
 		iconType = {
 			name = "leader_frame2"
 			spriteType = "GFX_pol_leader_frame"
-			position = { x = 10 y = 44 }
+			position = { x = 10 y = 46 }
 			alwaystransparent = yes
 		}
 
