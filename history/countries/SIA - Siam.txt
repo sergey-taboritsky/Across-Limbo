@@ -26,4 +26,4 @@ set_popularities = {
 }
 
 set_country_flag = has_second_leader_flag
-set_country_flag = has_second_leader_flag
+set_country_flag = SIA_Pibul_Songgram_Chancellor_flag

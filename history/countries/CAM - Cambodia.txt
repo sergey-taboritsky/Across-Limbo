@@ -4,8 +4,9 @@
 
 set_research_slots = 3
 
-recruit_character = CAM_Norodom_Sihanouk
+recruit_character = CAM_Sisowath_Sirik_Matak
 recruit_character = CAM_Son_Ngoc_Thanh
+recruit_character = CAM_Norodom_Sihanouk
 
 set_politics = {
 	ruling_party = Authoritarianism
@@ -19,3 +20,6 @@ set_popularities = {
 	Absolutism = 20
 	communist = 25
 }
+
+set_country_flag = has_second_leader_flag
+set_country_flag = CAM_Son_Ngoc_Thanh_PM_flag

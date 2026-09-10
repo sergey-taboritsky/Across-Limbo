@@ -13,6 +13,20 @@ characters = {
 			id = -1
 		}
 	}
+	CAM_Sisowath_Sirik_Matak = {
+		name = CAM_Sisowath_Sirik_Matak
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CAM_Sisowath_Sirik_Matak
+			}
+		}
+		country_leader = {
+			desc = CAM_Sisowath_Sirik_Matak_desc
+			ideology = Guided_democracy
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
 	CAM_Son_Ngoc_Thanh = {
 		name = CAM_Son_Ngoc_Thanh
 		portraits = {

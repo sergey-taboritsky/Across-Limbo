@@ -35,6 +35,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			original_tag = CAM
+			has_country_flag = CAM_Son_Ngoc_Thanh_PM_flag
+		}
+		localization_key = TNW_second_leader_name_CAM_Son_Ngoc_Thanh
+	}
+	text = {
+		trigger = {
 			original_tag = EGY
 			has_country_flag = EGY_Hussein_Sirri_PM_flag
 		}
@@ -85,6 +92,13 @@ defined_text = {
 			has_country_flag = SIA_Pibul_Songgram_Chancellor_flag
 		}
 		localization_key = TNW_second_leader_name_SIA_Luang_Pibul_Songgram
+	}
+	text = {
+		trigger = {
+			original_tag = MAL
+			has_country_flag = MAL_Chen_Chunan_flag
+		}
+		localization_key = TNW_second_leader_name_MAL_Chen_Chunan
 	}
 	text = {
 		trigger = {

@@ -4,6 +4,7 @@
 
 set_research_slots = 3
 
+recruit_character = MAL_Lin_Wenqing
 recruit_character = MAL_Li_Zhendian
 recruit_character = MAL_Dato_Onn_Jaafar
 recruit_character = MAL_Musa_Ahmad
@@ -36,7 +37,12 @@ add_ideas = {
 	free_market_economy
 	united_federation
 
+	MAL_Li_Zhendian_hog
+
 	MAL_Sunrise_State
 	MAL_Party_Factionalism
 	MAL_Three_Armies
 }
+
+set_country_flag = has_second_leader_flag
+set_country_flag = MAL_Chen_Chunan_flag
