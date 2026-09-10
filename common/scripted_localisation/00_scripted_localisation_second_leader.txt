@@ -35,6 +35,20 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			original_tag = EGY
+			has_country_flag = EGY_Hussein_Sirri_PM_flag
+		}
+		localization_key = TNW_second_leader_name_EGY_Hussein_Sirri
+	}
+	text = {
+		trigger = {
+			original_tag = EGY
+			has_country_flag = EGY_Mostafa_Nahas_PM_flag
+		}
+		localization_key = TNW_second_leader_name_EGY_Mostafa_Nahas
+	}
+	text = {
+		trigger = {
 			original_tag = ENG
 		}
 		localization_key = TNW_second_leader_name_ENG_George_Catlin

@@ -38,3 +38,6 @@ add_ideas = {
 	EGY_worker_disdain
 	EGY_traditionalist_clumping
 }
+
+set_country_flag = has_second_leader_flag
+set_country_flag = EGY_Hussein_Sirri_PM_flag

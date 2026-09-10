@@ -16,6 +16,42 @@ characters = {
 			}
 			
 		}
+		country_leader = {
+			desc = EGY_Hussein_Sirri_desc
+			ideology = oligarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+		country_leader = {
+			desc = EGY_Mostafa_Nahas_desc
+			ideology = Patriarchal_Conservatism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+		country_leader = {
+			desc = EGY_Hussein_Sirri_desc
+			ideology = national_liberalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
+		country_leader = {
+			desc = EGY_Hussein_Sirri_desc
+			ideology = reformism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+			
+		}
 	}
 	#纳哈斯
 	EGY_Mostafa_Nahas = {
