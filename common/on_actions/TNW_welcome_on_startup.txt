@@ -50,6 +50,9 @@ on_actions = {
 			MAL = {
 				set_variable = { country_intro_page_max = 4 }
 			}
+			EGY = {
+				set_variable = { country_intro_page_max = 4 }
+			}
 		}
 	}
 }

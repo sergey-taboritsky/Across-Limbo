@@ -67,6 +67,10 @@ defined_text = {
 		trigger = { tag = MAL }
 		localization_key = GFX_TNW_welcome_TAT_intro_picture
 	}
+	text = {
+		trigger = { tag = EGY }
+		localization_key = GFX_TNW_welcome_TAT_intro_picture
+	}
 }
 defined_text = {
 	name = Get_TNW_welcome_country_intro_text
@@ -322,5 +326,33 @@ defined_text = {
 			check_variable = { current_page = 4 }
 		}
 		localization_key = TNW_welcome_MAL_intro_text_4
+	}
+	text = {
+		trigger = { 
+			tag = EGY
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_EGY_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = EGY
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_EGY_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = EGY
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_EGY_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = EGY
+			check_variable = { current_page = 4 }
+		}
+		localization_key = TNW_welcome_EGY_intro_text_4
 	}
 }
