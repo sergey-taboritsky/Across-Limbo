@@ -12,6 +12,7 @@ add_ideas = {
 	JAP_The_first_leftwing_cabinet
 	JAP_Recession
 	JAP_best_comes_from_the_worst
+	free_market_economy
 }
 
 
@@ -90,3 +91,10 @@ set_variable = {
 set_variable = {
 	JAP_food_crisis_convince_france_rate_var = 1
 }
+
+# 国家发展度系统：识字率初始值（参照 CHI 写法；自动升级目前靠 focus 手动触发 TNW_level_development_literacy_upgrade_effect）
+set_variable = { var = TNW_Literacy_level_value = 20 }
+set_variable = { var = TNW_Literacy_level_monthly_value = 30 }
+
+# 工团实验：生产管理模式在工厂中的占比（0-100），由 JAP_consumer_production_command 推高，1951 审查用作判定指标
+set_variable = { var = JAP_production_management_ratio_var = 0 }

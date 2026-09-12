@@ -1,0 +1,122 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_JAP_Reward_Progressive_Unions"
+		texturefile = "gfx/interface/goals/JAP/JAP_Reward_Progressive_Unions.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_End_Food_Crisis"
+		texturefile = "gfx/interface/goals/JAP/JAP_End_Food_Crisis.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Ripples_of_Fourth_Fukushima"
+		texturefile = "gfx/interface/goals/JAP/JAP_Ripples_of_Fourth_Fukushima.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Far_East_Council"
+		texturefile = "gfx/interface/goals/JAP/JAP_Far_East_Council.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Ceasefire_in_Japan"
+		texturefile = "gfx/interface/goals/JAP/JAP_Ceasefire_in_Japan.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Socialist_Education_Law"
+		texturefile = "gfx/interface/goals/JAP/JAP_Socialist_Education_Law.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Three_and_Six_Acres"
+		texturefile = "gfx/interface/goals/JAP/JAP_Three_and_Six_Acres.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_General_Congress_Conference"
+		texturefile = "gfx/interface/goals/JAP/JAP_General_Congress_Conference.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Land_Reform_Refund_Voucher"
+		texturefile = "gfx/interface/goals/JAP/JAP_Land_Reform_Refund_Voucher.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_War_Crimes_Special_Court"
+		texturefile = "gfx/interface/goals/JAP/JAP_War_Crimes_Special_Court.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Women_in_Workforce"
+		texturefile = "gfx/interface/goals/JAP/JAP_Women_in_Workforce.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Political_Unions_Congress"
+		texturefile = "gfx/interface/goals/JAP/JAP_Political_Unions_Congress.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Accept_Social_Revolution_Linearity"
+		texturefile = "gfx/interface/goals/JAP/JAP_Accept_Social_Revolution_Linearity.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Evaluate_Planting_Season"
+		texturefile = "gfx/interface/goals/JAP/JAP_Evaluate_Planting_Season.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Electronics_Labor_Law"
+		texturefile = "gfx/interface/goals/JAP/JAP_Electronics_Labor_Law.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Sue_Wartime_Murderers"
+		texturefile = "gfx/interface/goals/JAP/JAP_Sue_Wartime_Murderers.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Constitutional_Creation_Committee"
+		texturefile = "gfx/interface/goals/JAP/JAP_Constitutional_Creation_Committee.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Promote_Production_Democracy"
+		texturefile = "gfx/interface/goals/JAP/JAP_Promote_Production_Democracy.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Agriculture_Central_Bank"
+		texturefile = "gfx/interface/goals/JAP/JAP_Agriculture_Central_Bank.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Socialist_Reform_Program"
+		texturefile = "gfx/interface/goals/JAP/JAP_Socialist_Reform_Program.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Clearup_Wartime_Rubble"
+		texturefile = "gfx/interface/goals/JAP/JAP_Clearup_Wartime_Rubble.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Pullback_Opressive_Policies"
+		texturefile = "gfx/interface/goals/JAP/JAP_Pullback_Opressive_Policies.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Northsea_Squadron"
+		texturefile = "gfx/interface/goals/JAP/JAP_Northsea_Squadron.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Worker_Alliance_Congress"
+		texturefile = "gfx/interface/goals/JAP/JAP_Worker_Alliance_Congress.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Agricoop_Formation_Law"
+		texturefile = "gfx/interface/goals/JAP/JAP_Agricoop_Formation_Law.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_AJTFU_Formation"
+		texturefile = "gfx/interface/goals/JAP/JAP_AJTFU_Formation.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Peoples_Republic_Constitution"
+		texturefile = "gfx/interface/goals/JAP/JAP_Peoples_Republic_Constitution.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Promote_Union_Autonomy"
+		texturefile = "gfx/interface/goals/JAP/JAP_Promote_Union_Autonomy.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Elect_First_President"
+		texturefile = "gfx/interface/goals/JAP/JAP_Elect_First_President.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_postwar_econ_reform"
+		texturefile = "gfx/interface/goals/JAP/JAP_postwar_econ_reform.dds"
+	}
+}
