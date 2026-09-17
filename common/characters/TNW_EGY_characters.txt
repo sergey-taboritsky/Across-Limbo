@@ -198,4 +198,22 @@ characters = {
 			
 		}
 	}
+
+	#萨达特
+	EGY_Anwar_Sadat = {
+		name = EGY_Anwar_Sadat
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_EGY_Anwar_Sadat
+			}
+		}
+		country_leader = {
+			desc = EGY_Anwar_Sadat_desc
+			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
 }

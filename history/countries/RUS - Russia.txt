@@ -8,12 +8,13 @@ set_war_support = 0.3
 recruit_character = RUS_Mikhail_Levitov
 recruit_character = RUS_Tirumvirate
 recruit_character = RUS_Pyotr_Savitsky
-recruit_character = RUS_Karol_Vendzyagolsky
 recruit_character = RUS_Viktor_Larionov
 recruit_character = RUS_Aleksandr_Dikgof_Derental
 recruit_character = RUS_Yury_Shirinsky_Shikhmatov
 recruit_character = RUS_Maksimilian_Filonenko
-recruit_character = RUS_Vladimir_Manstein
+recruit_character = RUS_Vladimir_Manstein
+recruit_character = RUS_Andrey_Vlasov
+recruit_character = RUS_Anton_Denikin
 
 set_convoys = 50
 
@@ -47,7 +48,6 @@ add_ideas = {
 
 	RUS_Aleksandr_Dikgof_Derental_hog
 	RUS_Pyotr_Savitsky_advisor
-	RUS_Karol_Vendzyagolsky_advisor
 	RUS_Yury_Shirinsky_Shikhmatov_advisor
 	RUS_Maksimilian_Filonenko_advisor
 }

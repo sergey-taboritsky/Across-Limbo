@@ -6,12 +6,12 @@
  BRM_U_Ba_Swe_desc: ""
 
 #政党名字
- BRM_communist_party: "建国联盟 - 缅甸共产党"
+ BRM_communist_party: "建国联盟 - 缅甸共产党 - 中委会系"
  BRM_communist_party_long: "缅甸共产党(Bamapyi Kunmyunit Pati)"
  BRM_syndicalism_party: "-"
  BRM_syndicalism_party_long: "-"
- BRM_socialism_party: "-"
- BRM_socialism_party_long: "-"
+ BRM_socialism_party: "建国联盟 - 缅甸共产党 - 自卫军系"
+ BRM_socialism_party_long: "缅甸共产党(Bamapyi Kunmyunit Pati)"
  BRM_Social_democracy_party: "建国联盟 - 缅甸人民革命党 - 社会派"
  BRM_Social_democracy_party_long: "缅甸人民革命党(Pyithu Ayeidawbon Party)"
  BRM_Liberalism_party: "建国联盟 - 我缅人协会"

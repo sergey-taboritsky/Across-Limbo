@@ -50,25 +50,6 @@ country_event = {
 		}
 	}
 	option = {
-		name = RUS_event.2.b
-		promote_character = RUS_Karol_Vendzyagolsky
-		remove_ideas = RUS_Aleksandr_Dikgof_Derental_hog
-		add_ideas = RUS_Maksimilian_Filonenko_hog
-		set_party_name = {
-			ideology = Nationalism
-			name = RUS_SZRS_party_centrist
-			long_name = RUS_SZRS_party_centrist_long
-		}
-		hidden_effect = {
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				news_event = RUS_worldnews.3
-			}
-		}
-	}
-	option = {
 		name = RUS_event.2.c
 		promote_character = RUS_Viktor_Larionov
 		remove_ideas = RUS_Aleksandr_Dikgof_Derental_hog

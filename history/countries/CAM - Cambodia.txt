@@ -16,9 +16,15 @@ set_politics = {
 }
 
 set_popularities = {
-	Authoritarianism = 55
+	communist = 13
+	syndicalism = 1
+	socialism = 11
+	Social_democracy = 7
+	Liberalism = 12
+	conservatism = 15
+	Authoritarianism = 21
 	Absolutism = 20
-	communist = 25
+	Nationalism = 0
 }
 
 set_country_flag = has_second_leader_flag

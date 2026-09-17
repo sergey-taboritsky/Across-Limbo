@@ -287,6 +287,11 @@ spriteTypes = {
 		name = "GFX_portrait_large_CAM_Norodom_Sihanouk"
 		texturefile = "gfx/characters/CAM_Norodom_Sihanouk.png"
 	}
+	#西索瓦·施里马达
+	spriteType = {
+		name = "GFX_portrait_large_CAM_Sisowath_Sirik_Matak"
+		texturefile = "gfx/characters/CAM_Sisowath_Sirik_Matak.png"
+	}
 	#山玉成
 	spriteType = {
 		name = "GFX_portrait_large_CAM_Son_Ngoc_Thanh"
@@ -701,11 +706,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_large_RUS_Pyotr_Savitsky"
 		texturefile = "gfx/characters/RUS_Pyotr_Savitsky.png"
-	}
-	#卡罗尔·文贾戈利斯基
-	spriteType = {
-		name = "GFX_portrait_large_RUS_Karol_Vendzyagolsky"
-		texturefile = "gfx/characters/RUS_Karol_Vendzyagolsky.png"
 	}
 	#维克托·拉里奥诺夫
 	spriteType = {
@@ -1801,4 +1801,67 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+
+	#卡罗尔·文贾戈利斯基
+	spriteType = {
+		name = "GFX_portrait_large_POL_Karol_Vendzyagolsky"
+		texturefile = "gfx/characters/POL_Karol_Vendzyagolsky.png"
+		legacy_lazy_load = no
+	}
+
+	#穆罕默杜·坦巴里
+	spriteType = {
+		name = "GFX_portrait_large_SOK_Muhammaidu_Tambari"
+		texturefile = "gfx/characters/SOK_Muhammaidu_Tambari.png"
+		legacy_lazy_load = no
+	}
+
+	#穆罕默杜·朱奈杜
+	spriteType = {
+		name = "GFX_portrait_large_SOK_Muhammaidu_Junaidu"
+		texturefile = "gfx/characters/SOK_Muhammaidu_Junaidu.png"
+		legacy_lazy_load = no
+	}
+
+	#小托马斯·赫顿·米尔斯
+	spriteType = {
+		name = "GFX_portrait_large_GHA_Thomas_Hutton_Mills"
+		texturefile = "gfx/characters/GHA_Thomas_Hutton_Mills.png"
+		legacy_lazy_load = no
+	}
+
+	#马克西米利安·菲洛年科
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Maksimilian_Filonenko"
+		texturefile = "gfx/characters/RUS_Maksimilian_Filonenko.png"
+		legacy_lazy_load = no
+	}
+
+	#山川均
+	spriteType = {
+		name = "GFX_portrait_large_JAP_Yamakawa_Hitoshi"
+		texturefile = "gfx/characters/JAP_Yamakawa_Hitoshi.png"
+		legacy_lazy_load = no
+	}
+
+	#安东·邓尼金
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Anton_Denikin"
+		texturefile = "gfx/characters/RUS_Anton_Denikin.png"
+		legacy_lazy_load = no
+	}
+
+	#安德烈·弗拉索夫
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Andrey_Vlasov"
+		texturefile = "gfx/characters/RUS_Andrey_Vlasov.png"
+		legacy_lazy_load = no
+	}
+
+	#萨达特
+	spriteType = {
+		name = "GFX_portrait_large_EGY_Anwar_Sadat"
+		texturefile = "gfx/characters/EGY_Anwar_Sadat.png"
+		legacy_lazy_load = no
+	}
 }

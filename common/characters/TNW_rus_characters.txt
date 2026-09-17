@@ -90,45 +90,6 @@ characters = {
 			ai_will_do = { factor = 0 }
 		}
 	}
-	#卡罗尔·文贾戈利斯基
-	RUS_Karol_Vendzyagolsky = {
-		name = RUS_Karol_Vendzyagolsky
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_RUS_Karol_Vendzyagolsky
-			}
-		}
-		country_leader = {
-			desc = RUS_Karol_Vendzyagolsky_desc
-			ideology = National_Socialism
-			expire = "2022.10.20.1"
-			id = -1
-			traits = {
-			}
-		}
-		advisor = {
-			slot = head_of_government
-			idea_token = RUS_Karol_Vendzyagolsky_hog
-			allowed = { original_tag = RUS }
-			traits = {
-			}
-			ledger = civilian
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = RUS_Karol_Vendzyagolsky_advisor
-			allowed = { original_tag = RUS }
-			traits = {
-			}
-			ledger = civilian
-			cost = -1
-			removal_cost = -1
-			ai_will_do = { factor = 0 }
-		}
-	}
 	#维克托·拉里奥诺夫
 	RUS_Viktor_Larionov = {
 		name = RUS_Viktor_Larionov
@@ -317,6 +278,42 @@ characters = {
 			id = -1
 			traits = {
 				RUS_feifa_zuzhize
+			}
+		}
+	}
+
+	#安东·邓尼金
+	RUS_Anton_Denikin = {
+		name = RUS_Anton_Denikin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Anton_Denikin
+			}
+		}
+		country_leader = {
+			desc = RUS_Anton_Denikin_desc
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+
+	#安德烈·弗拉索夫
+	RUS_Andrey_Vlasov = {
+		name = RUS_Andrey_Vlasov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Andrey_Vlasov
+			}
+		}
+		country_leader = {
+			desc = RUS_Andrey_Vlasov_desc
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
 			}
 		}
 	}

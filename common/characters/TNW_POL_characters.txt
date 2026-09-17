@@ -70,4 +70,22 @@ characters = {
 			}
 		}
 	}
+
+	#卡罗尔·文贾戈利斯基
+	POL_Karol_Vendzyagolsky = {
+		name = POL_Karol_Vendzyagolsky
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_POL_Karol_Vendzyagolsky
+			}
+		}
+		country_leader = {
+			desc = POL_Karol_Vendzyagolsky_desc
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
 }

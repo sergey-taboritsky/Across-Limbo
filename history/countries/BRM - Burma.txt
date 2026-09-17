@@ -7,13 +7,19 @@ recruit_character = BRM_Maung_Lun_Maung
 
 set_politics = {
 	ruling_party = Authoritarianism
-	last_election = "1936.1.1"
+	last_election = "1946.11.10"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	communist = 14
-	Authoritarianism = 74
+	communist = 11
+	syndicalism = 0
+	socialism = 3
+	Social_democracy = 15
+	Liberalism = 6
+	conservatism = 8
+	Authoritarianism = 38
+	Absolutism = 7
 	Nationalism = 12
 }
 

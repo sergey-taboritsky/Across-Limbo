@@ -20,6 +20,7 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = POL_Karol_Vendzyagolsky
 recruit_character = POL_Edward_Rydz_Smigly
 
 add_ideas = {
@@ -30,13 +31,13 @@ add_ideas = {
 	#POL_Polish_Soviet
 }
 
-country_lock_all_division_template = yes
+#country_lock_all_division_template = yes
 
 
 set_convoys = 10
 
 set_politics = {
-	ruling_party = Absolutism 
+	ruling_party = Nationalism
 	last_election = "1935.9.8"
 	election_frequency = 36
 	elections_allowed = no
@@ -45,9 +46,9 @@ set_popularities = {
 	communist = 6
 	socialism = 7
 	Social_democracy = 9
-	Liberalism = 8
-	Conservatism = 9
-	Authoritarianism = 7
-	Absolutism = 44
-	Nationalism = 10
+	Liberalism = 6
+	Conservatism = 7
+	Authoritarianism = 11
+	Absolutism = 10
+	Nationalism = 44
 }
