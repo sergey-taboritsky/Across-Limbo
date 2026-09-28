@@ -1217,6 +1217,23 @@ characters = {
 			}
 		}
 	}
+	#熊向晖
+	CHI_Xiong_Xianghui = {
+		name = CHI_Xiong_Xianghui
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHI_Xiong_Xianghui
+			}
+		}
+		country_leader = {
+			desc = CHI_Xiong_Xianghui_desc
+			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
 	#刘文辉#
 	CHI_Liu_leader_char = {
 		name = CHI_Liu_Wenhui

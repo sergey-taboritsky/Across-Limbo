@@ -46,6 +46,7 @@ set_popularities = {
 }
 
 recruit_character = CHI_Zhu_De
+recruit_character = CHI_Xiong_Xianghui
 recruit_character = JAP_Yamakawa_Hitoshi
 recruit_character = JAP_Minoru_Takano
 recruit_character = JAP_Suzuki_Mosaburo
