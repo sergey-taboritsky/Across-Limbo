@@ -63,3 +63,6 @@ create_country_leader = {
 		#
 	}
 }
+add_ideas = {
+	phalanstere_aligned_nation
+}

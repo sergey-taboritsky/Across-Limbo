@@ -26,6 +26,7 @@ add_ideas = {
 	HUN_The_dream_of_the_Union
 	HUN_Multi_ethnic_army
 	RUS_gong_chang_guo_ji
+	moscow_aligned_nation
 }
 
 set_politics = {

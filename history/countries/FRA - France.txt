@@ -28,7 +28,6 @@ set_technology = {
 create_faction_from_template = faction_template_UROE
 add_to_faction = ENG
 add_to_faction = SPR
-add_to_faction = POR
 add_to_faction = HOL
 add_to_faction = DDR
 add_to_faction = ITA
@@ -37,6 +36,22 @@ add_to_faction = NOR
 add_to_faction = SWE
 add_to_faction = HAN
 add_to_faction = WUR
+	add_to_faction = CRO
+
+	add_to_faction = SLV
+
+	add_to_faction = ALG
+
+	add_to_faction = MEX
+
+	add_to_faction = USA
+
+	add_to_faction = ELS
+
+	add_to_faction = COL
+
+	add_to_faction = BRA
+
 
 give_guarantee = DEN
 give_guarantee = SWI

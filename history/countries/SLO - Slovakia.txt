@@ -33,3 +33,6 @@ set_popularities = {
 	Nationalism = 90
 	communist = 5
 }
+add_ideas = {
+	moscow_aligned_nation
+}

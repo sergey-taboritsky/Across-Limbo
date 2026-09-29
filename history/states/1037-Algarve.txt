@@ -1,9 +1,9 @@
-state={
+﻿state={
 	id=1037
 	name="STATE_1037"
 	
 	history={
-		owner = POR
+		owner = SPR
 		victory_points = {
 			6880 2
 		}
@@ -17,6 +17,8 @@ state={
 
 		}
 		add_core_of = POR
+		add_core_of = SPR
+		add_claim_by = ANG
 	}
 	
 	provinces={

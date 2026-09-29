@@ -63,3 +63,6 @@ set_popularities = {
 	Authoritarianism = 33
 	communist = 34
 }
+add_ideas = {
+	phalanstere_aligned_nation
+}

@@ -42,6 +42,14 @@ add_to_faction = FIN
 add_to_faction = BUL
 add_to_faction = FIN
 add_to_faction = PRE
+	add_to_faction = ROM
+
+	add_to_faction = SER
+
+	add_to_faction = HUN
+
+	add_to_faction = SLO
+
 
 add_ideas = {
 	moscow_aligned_nation

@@ -39,6 +39,7 @@ add_ideas = {
 	BRA_Red_Terror
 	BRA_Latino_Anticomintern_Pact
 	BRA_FLN_threat_2
+	phalanstere_aligned_nation
 }
 set_politics = {
 	ruling_party = communist

@@ -1,9 +1,9 @@
-state={
+﻿state={
 	id=1075
 	name="STATE_1075"
 	
 	history={
-		owner = HEJ
+		owner = YEM
 		victory_points = {
 			10870 2
 		}
@@ -17,7 +17,7 @@ state={
 			infrastructure = 1
 
 		}
-		add_core_of = HEJ
+		add_core_of = YEM
 
 	}
 	

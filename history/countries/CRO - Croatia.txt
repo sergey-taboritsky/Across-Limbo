@@ -14,3 +14,6 @@ set_popularities = {
 	Social_democracy = 75
 	communist = 10
 }
+add_ideas = {
+	phalanstere_aligned_nation
+}

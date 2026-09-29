@@ -8,6 +8,7 @@ recruit_character = SER_Dimitrije_Ljotic
 recruit_character = SER_Michael_Petrovic_Njegos
 
 add_ideas = {
+	moscow_aligned_nation
 }
 
 set_convoys = 0

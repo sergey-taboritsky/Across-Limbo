@@ -1,10 +1,10 @@
-
+﻿
 state={
 	id=112
 	name="STATE_112"
 
 	history={
-		owner = POR
+		owner = SPR
 		victory_points = {
 			11805 30
 		}
@@ -20,6 +20,8 @@ state={
 
 		}
 		add_core_of = POR
+		add_core_of = SPR
+		add_claim_by = ANG
 
 	}
 

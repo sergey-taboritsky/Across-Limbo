@@ -23,3 +23,6 @@ set_popularities = {
 	Absolutism = 0
 	Nationalism = 3
 }
+add_ideas = {
+	phalanstere_aligned_nation
+}

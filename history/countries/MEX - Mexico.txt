@@ -22,3 +22,6 @@ set_popularities = {
 	communist = 9
 	syndicalism = 53
 }
+add_ideas = {
+	phalanstere_aligned_nation
+}
