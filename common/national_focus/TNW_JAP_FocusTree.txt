@@ -74,7 +74,17 @@ focus_tree = {
 			has_country_flag = JAP_bisson_age_began_flag
 		}
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Worker_Alliance_Congress"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_Three_and_Six_Acres
 		icon = GFX_JAP_Three_and_Six_Acres
@@ -195,7 +205,13 @@ focus_tree = {
 		x = 13
 		y = 2
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Constitutional_Creation_Committee"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_War_Crimes_Special_Court
 		icon = GFX_JAP_War_Crimes_Special_Court
@@ -249,7 +265,13 @@ focus_tree = {
 		x = 8
 		y = 5
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Clearup_Wartime_Rubble"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_Agricoop_Formation_Law
 		icon = GFX_JAP_Agricoop_Formation_Law
@@ -263,7 +285,17 @@ focus_tree = {
 		x = 7
 		y = 6
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Agricoop_Formation_Law"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_Women_in_Workforce
 		icon = GFX_JAP_Women_in_Workforce
@@ -323,7 +355,13 @@ focus_tree = {
 		x = 11
 		y = 4
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Pullback_Opressive_Policies"
+			add_political_power = 50
+			add_stability = 0.05
+		}
+}
 	focus = {
 		id = JAP_Socialist_Education_Law
 		icon = GFX_JAP_Socialist_Education_Law
@@ -383,7 +421,17 @@ focus_tree = {
 		x = 17
 		y = 4
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Reward_Progressive_Unions"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_Promote_Union_Autonomy
 		icon = GFX_JAP_Promote_Union_Autonomy
@@ -419,7 +467,17 @@ focus_tree = {
 		x = 21
 		y = 4
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Promote_Production_Democracy"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_AJTFU_Formation
 		icon = GFX_JAP_AJTFU_Formation
@@ -437,7 +495,17 @@ focus_tree = {
 		x = 18
 		y = 6
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_AJTFU_Formation"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.08
+			}
+		}
+}
 	focus = {
 		id = JAP_Political_Unions_Congress
 		icon = GFX_JAP_Political_Unions_Congress
@@ -449,7 +517,13 @@ focus_tree = {
 		x = 20
 		y = 6
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Political_Unions_Congress"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_Northsea_Squadron
 		icon = GFX_JAP_Northsea_Squadron
@@ -539,7 +613,17 @@ focus_tree = {
 		x = 0
 		y = 10
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Farmer_Comrade_Organization"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_Farmer_Union_Organization
 		icon = GFX_goal_unknown
@@ -553,7 +637,17 @@ focus_tree = {
 		x = 2
 		y = 10
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Farmer_Union_Organization"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_Life_Sustaining_First
 		icon = GFX_goal_unknown
@@ -580,7 +674,17 @@ focus_tree = {
 		x = 6
 		y = 10
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Labor_Reliance_System"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_Combat_Aethiests_Union
 		icon = GFX_goal_unknown
@@ -595,7 +699,17 @@ focus_tree = {
 		x = 1
 		y = 11
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Combat_Aethiests_Union"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_Prepare_Imminently
 		icon = GFX_goal_unknown
@@ -610,7 +724,13 @@ focus_tree = {
 		x = 3
 		y = 11
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Prepare_Imminently"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_Production_Management_Model
 		icon = GFX_goal_unknown
@@ -624,7 +744,17 @@ focus_tree = {
 		x = 5
 		y = 11
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Production_Management_Model"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_Support_China_Revolution
 		icon = GFX_goal_unknown
@@ -641,7 +771,17 @@ focus_tree = {
 		x = 4
 		y = 12
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Support_China_Revolution"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_postwar_econ_reform
 		icon = GFX_JAP_postwar_econ_reform
@@ -652,7 +792,13 @@ focus_tree = {
 		x = 13
 		y = 9
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_postwar_econ_reform"
+			add_political_power = 75
+			add_stability = 0.05
+		}
+}
 	focus = {
 		id = JAP_leaned_production
 		icon = GFX_goal_unknown
@@ -666,7 +812,17 @@ focus_tree = {
 		x = 8
 		y = 10
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_leaned_production"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_manufacturing_economy
 		icon = GFX_goal_unknown
@@ -677,7 +833,13 @@ focus_tree = {
 		x = 7
 		y = 11
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_manufacturing_economy"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_evaluate_coalsteel_industry
 		icon = GFX_goal_unknown
@@ -688,7 +850,13 @@ focus_tree = {
 		x = 9
 		y = 11
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_evaluate_coalsteel_industry"
+			add_political_power = 25
+			add_stability = 0.02
+		}
+}
 	focus = {
 		id = JAP_electroproduction_salary_mode
 		icon = GFX_goal_unknown
@@ -716,7 +884,17 @@ focus_tree = {
 		x = 6
 		y = 13
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_economic_independence"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_physics_chemistry_lab
 		icon = GFX_goal_unknown
@@ -727,7 +905,13 @@ focus_tree = {
 		x = 2
 		y = 13
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_physics_chemistry_lab"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_metropolitan_renovation
 		icon = GFX_goal_unknown
@@ -741,7 +925,17 @@ focus_tree = {
 		x = 4
 		y = 14
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_metropolitan_renovation"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_american_absolute_government
 		icon = GFX_goal_unknown
@@ -777,7 +971,17 @@ focus_tree = {
 		x = 18
 		y = 10
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_combined_manufacturing"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_labour_rights_law
 		icon = GFX_goal_unknown
@@ -788,7 +992,17 @@ focus_tree = {
 		x = 20
 		y = 10
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_labour_rights_law"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_american_economic_assistance
 		icon = GFX_goal_unknown
@@ -799,7 +1013,17 @@ focus_tree = {
 		x = 22
 		y = 10
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_american_economic_assistance"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_japanese_deleonism
 		icon = GFX_goal_unknown
@@ -810,7 +1034,17 @@ focus_tree = {
 		x = 24
 		y = 10
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_japanese_deleonism"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_unite_farmer_association
 		icon = GFX_goal_unknown
@@ -821,7 +1055,17 @@ focus_tree = {
 		x = 26
 		y = 10
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_unite_farmer_association"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_american_experts
 		icon = GFX_goal_unknown
@@ -835,7 +1079,17 @@ focus_tree = {
 		x = 23
 		y = 11
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_american_experts"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_force_farmer_membership
 		icon = GFX_goal_unknown
@@ -849,7 +1103,17 @@ focus_tree = {
 		x = 25
 		y = 11
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_force_farmer_membership"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_allow_farmer_autonomy
 		icon = GFX_goal_unknown
@@ -863,7 +1127,17 @@ focus_tree = {
 		x = 27
 		y = 11
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_allow_farmer_autonomy"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_make_every_worker_equal
 		icon = GFX_goal_unknown
@@ -874,7 +1148,17 @@ focus_tree = {
 		x = 20
 		y = 11
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_make_every_worker_equal"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_consumer_production_command
 		icon = GFX_goal_unknown
@@ -885,7 +1169,13 @@ focus_tree = {
 		x = 17
 		y = 11
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_consumer_production_command"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_world_best_taxation
 		icon = GFX_goal_unknown
@@ -896,7 +1186,17 @@ focus_tree = {
 		x = 13
 		y = 10
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_world_best_taxation"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_Tokyo_industry_belt
 		icon = GFX_goal_unknown
@@ -911,7 +1211,13 @@ focus_tree = {
 		x = 12
 		y = 11
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Tokyo_industry_belt"
+			add_political_power = 75
+			add_stability = 0.05
+		}
+}
 	focus = {
 		id = JAP_southern_industry_belt
 		icon = GFX_goal_unknown
@@ -926,7 +1232,13 @@ focus_tree = {
 		x = 14
 		y = 11
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_southern_industry_belt"
+			add_political_power = 75
+			add_stability = 0.05
+		}
+}
 	focus = {
 		id = JAP_econ_path_left
 		icon = GFX_goal_unknown
@@ -944,7 +1256,17 @@ focus_tree = {
 		x = 11
 		y = 12
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_econ_path_left"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.08
+			}
+		}
+}
 	focus = {
 		id = JAP_econ_path_centre
 		icon = GFX_goal_unknown
@@ -962,7 +1284,17 @@ focus_tree = {
 		x = 13
 		y = 12
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_econ_path_centre"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_econ_path_right
 		icon = GFX_goal_unknown
@@ -980,7 +1312,17 @@ focus_tree = {
 		x = 15
 		y = 12
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_econ_path_right"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_japan_america_econ_integration
 		icon = GFX_goal_unknown
@@ -1001,7 +1343,17 @@ focus_tree = {
 		x = 21
 		y = 13
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_japan_america_econ_integration"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_reconstruction_success
 		icon = GFX_goal_unknown
@@ -1013,7 +1365,17 @@ focus_tree = {
 		x = 13
 		y = 14
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_reconstruction_success"
+			add_political_power = 100
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.08
+			}
+		}
+}
 	focus = {
 		id = JAP_report_on_Matsukawa_incident
 		icon = GFX_goal_unknown
@@ -1072,7 +1434,13 @@ focus_tree = {
 		x = 35
 		y = 3
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_council_president_left"
+			add_political_power = 50
+			add_stability = 0.05
+		}
+}
 	focus = {
 		id = JAP_council_president_right
 		icon = GFX_goal_unknown
@@ -1086,7 +1454,13 @@ focus_tree = {
 		x = 37
 		y = 3
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_council_president_right"
+			add_political_power = 50
+			add_stability = 0.05
+		}
+}
 	focus = {
 		id = JAP_survey_non_union_worker
 		icon = GFX_goal_unknown
@@ -1097,7 +1471,13 @@ focus_tree = {
 		x = 34
 		y = 4
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_survey_non_union_worker"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_identify_union_members
 		icon = GFX_goal_unknown
@@ -1108,7 +1488,17 @@ focus_tree = {
 		x = 38
 		y = 4
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_identify_union_members"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_calm_general_unions
 		icon = GFX_goal_unknown
@@ -1116,7 +1506,17 @@ focus_tree = {
 		x = 39
 		y = 3
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_calm_general_unions"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_farright_violence_deterrence
 		icon = GFX_goal_unknown
@@ -1131,7 +1531,13 @@ focus_tree = {
 		x = 36
 		y = 4
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_farright_violence_deterrence"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_cite_oppression_abolishment_code
 		icon = GFX_goal_unknown
@@ -1149,7 +1555,13 @@ focus_tree = {
 		x = 35
 		y = 5
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_cite_oppression_abolishment_code"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_national_security_act
 		icon = GFX_goal_unknown
@@ -1167,7 +1579,13 @@ focus_tree = {
 		x = 37
 		y = 5
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_national_security_act"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_assess_labour_defense_force
 		icon = GFX_goal_unknown
@@ -1271,7 +1689,13 @@ focus_tree = {
 		x = 42
 		y = 4
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_fortify_border"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_hundred_thousand_recruitment
 		icon = GFX_goal_unknown
@@ -1285,7 +1709,13 @@ focus_tree = {
 		x = 44
 		y = 4
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_hundred_thousand_recruitment"
+			add_political_power = 75
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_independent_worker_airforce
 		icon = GFX_goal_unknown
@@ -1299,7 +1729,13 @@ focus_tree = {
 		x = 43
 		y = 5
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_independent_worker_airforce"
+			add_political_power = 75
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_reorganize_military_bureau
 		icon = GFX_goal_unknown
@@ -1396,7 +1832,13 @@ focus_tree = {
 		x = 52
 		y = 3
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_assess_frontline_squads"
+			add_political_power = 25
+			add_stability = 0.02
+		}
+}
 	focus = {
 		id = JAP_reinvite_imperial_officers
 		icon = GFX_goal_unknown
@@ -1411,7 +1853,13 @@ focus_tree = {
 		x = 50
 		y = 4
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_reinvite_imperial_officers"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_old_training_policy
 		icon = GFX_goal_unknown
@@ -1422,7 +1870,13 @@ focus_tree = {
 		x = 50
 		y = 5
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_old_training_policy"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_trust_military_bureau
 		icon = GFX_goal_unknown
@@ -1437,7 +1891,13 @@ focus_tree = {
 		x = 52
 		y = 4
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_trust_military_bureau"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_military_revolution_fervor
 		icon = GFX_goal_unknown
@@ -1452,7 +1912,17 @@ focus_tree = {
 		x = 54
 		y = 4
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_military_revolution_fervor"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+		}
+}
 	focus = {
 		id = JAP_soldier_comradeship
 		icon = GFX_goal_unknown
@@ -1464,7 +1934,13 @@ focus_tree = {
 		x = 53
 		y = 5
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_soldier_comradeship"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_reassess_worker_defense_force
 		icon = GFX_goal_unknown
@@ -1480,7 +1956,13 @@ focus_tree = {
 		x = 50
 		y = 6
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_reassess_worker_defense_force"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_posthumous_analysis_of_Nigata_battle
 		icon = GFX_goal_unknown
@@ -1488,7 +1970,13 @@ focus_tree = {
 		x = 40
 		y = 8
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_posthumous_analysis_of_Nigata_battle"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_land_defense_forces
 		icon = GFX_goal_unknown
@@ -1499,7 +1987,13 @@ focus_tree = {
 		x = 40
 		y = 9
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_land_defense_forces"
+			add_political_power = 75
+			add_stability = 0.05
+		}
+}
 	focus = {
 		id = JAP_defense_initiative_whitebook
 		icon = GFX_goal_unknown
@@ -1513,7 +2007,13 @@ focus_tree = {
 		x = 35
 		y = 10
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_defense_initiative_whitebook"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_slanted_reform_direction
 		icon = GFX_goal_unknown
@@ -1527,7 +2027,13 @@ focus_tree = {
 		x = 45
 		y = 10
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_slanted_reform_direction"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+}
 	focus = {
 		id = JAP_naval_polls_high
 		icon = GFX_goal_unknown
@@ -1535,5 +2041,11 @@ focus_tree = {
 		x = 50
 		y = 8
 
-	}
+	
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_naval_polls_high"
+			add_political_power = 75
+			add_stability = 0.05
+		}
+}
 }
