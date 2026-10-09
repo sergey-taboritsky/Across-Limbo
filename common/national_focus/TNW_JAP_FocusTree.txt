@@ -1412,6 +1412,9 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_worse_than_imagined
 		}
+		prerequisite = {
+			focus = JAP_Separate_Police_Duties
+		}
 		x = 36
 		y = 2
 
@@ -1419,6 +1422,22 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed JAP_republic_security_council"
 			add_political_power = 50
 			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = JAP_Separate_Police_Duties
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_worse_than_imagined
+		}
+		x = 38
+		y = 2
+
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Separate_Police_Duties"
+			add_political_power = 50
+			army_experience = 25
 		}
 	}
 	focus = {

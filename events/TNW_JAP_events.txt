@@ -166,12 +166,42 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = JAP_event.8.a
+		country_event = { id = JAP_event.14 days = 2 }
 	}
 	option = {
 		name = JAP_event.8.b
+		country_event = { id = JAP_event.14 days = 2 }
 	}
 	option = {
 		name = JAP_event.8.c
+		country_event = { id = JAP_event.14 days = 2 }
+	}
+}
+country_event = {
+	id = JAP_event.14
+	title = JAP_event.14.t
+	desc = JAP_event.14.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.14.a
+		set_country_flag = JAP_flag_gear_wreath_selected
+		country_event = { id = JAP_event.9 days = 2 }
+	}
+	option = {
+		name = JAP_event.14.b
+		set_country_flag = JAP_flag_white_star_selected
+		country_event = { id = JAP_event.9 days = 2 }
+	}
+	option = {
+		name = JAP_event.14.c
+		set_country_flag = JAP_flag_red_flag_selected
+		country_event = { id = JAP_event.9 days = 2 }
+	}
+	option = {
+		name = JAP_event.14.e
+		set_country_flag = JAP_flag_gear_wreath_star_selected
+		country_event = { id = JAP_event.9 days = 2 }
 	}
 }
 country_event = {
