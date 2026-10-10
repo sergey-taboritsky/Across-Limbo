@@ -1,4 +1,4 @@
-﻿capital = 612
+﻿capital = 611
 
 recruit_character = CHI_Guo_Daofu
 recruit_character = CHI_Bai_Haifeng

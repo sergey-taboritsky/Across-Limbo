@@ -1,8 +1,11 @@
 on_actions = {
-	# ROOT is country, this is ran for every country
+	# 发展度月度结算：教育/工业化/富裕三条阶梯（借 on_monthly_FIJ 钩子 every_country）
+	# 未初始化 monthly_value 的国家加 0，进度条不动，行为安全
+	# 结算规则与重构前完全一致：>100 升一层+事件+进度-100+月增速×0.5；<0 降一层+事件+进度+100+月增速×0.5
 	on_monthly_FIJ = {
 		effect = {
 			every_country = {
+				# ---------- 一、教育等级（识字率） ----------
 				add_to_variable = {
 					TNW_Literacy_level_value = TNW_Literacy_level_monthly_value
 				}
@@ -40,6 +43,88 @@ on_actions = {
 				}
 				clamp_variable = {
 					var = TNW_Literacy_level_value
+					max = 100
+					min = 0
+				}
+				# ---------- 二、工业化等级 ----------
+				add_to_variable = {
+					TNW_Industrial_scale_value = TNW_Industrial_scale_monthly_value
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TNW_Industrial_scale_value > 100
+						}
+					}
+					TNW_level_development_industry_upgrade_effect = yes
+					country_event = { id = TNW_level_development_event.3 }
+					add_to_variable = {
+						TNW_Industrial_scale_value = -100
+					}
+					multiply_variable = {
+						var = TNW_Industrial_scale_monthly_value
+						value = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							TNW_Industrial_scale_value < 0
+						}
+					}
+					TNW_level_development_industry_downgrade_effect = yes
+					country_event = { id = TNW_level_development_event.4 }
+					add_to_variable = {
+						TNW_Industrial_scale_value = 100
+					}
+					multiply_variable = {
+						var = TNW_Industrial_scale_monthly_value
+						value = 0.5
+					}
+				}
+				clamp_variable = {
+					var = TNW_Industrial_scale_value
+					max = 100
+					min = 0
+				}
+				# ---------- 三、富裕等级 ----------
+				add_to_variable = {
+					TNW_Affluence_value = TNW_Affluence_monthly_value
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TNW_Affluence_value > 100
+						}
+					}
+					TNW_level_development_welfare_upgrade_effect = yes
+					country_event = { id = TNW_level_development_event.5 }
+					add_to_variable = {
+						TNW_Affluence_value = -100
+					}
+					multiply_variable = {
+						var = TNW_Affluence_monthly_value
+						value = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							TNW_Affluence_value < 0
+						}
+					}
+					TNW_level_development_welfare_downgrade_effect = yes
+					country_event = { id = TNW_level_development_event.6 }
+					add_to_variable = {
+						TNW_Affluence_value = 100
+					}
+					multiply_variable = {
+						var = TNW_Affluence_monthly_value
+						value = 0.5
+					}
+				}
+				clamp_variable = {
+					var = TNW_Affluence_value
 					max = 100
 					min = 0
 				}

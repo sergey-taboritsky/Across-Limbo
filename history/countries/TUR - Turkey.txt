@@ -24,6 +24,8 @@ set_convoys = 20
 set_stability = 0.5
 set_war_support = 0.3
 
+set_cosmetic_tag = TUR_SWR
+
 recruit_character = TUR_Sadrettin_Celal_Andel
 recruit_character = TUR_Mustapha_Subhi
 recruit_character = TUR_Ismail_Hakki

@@ -63,11 +63,11 @@ idea_categories = {
 		removal_cost = 0
 	}
 	development_statuses = {
-		slot = armed_forces
-		slot = Industrial_development
-		slot = Research_and_Education
-		slot = Agriculture_development
-		slot = Bureaucratic_efficiency
+		slot = TNW_dev_education
+		slot = TNW_dev_industry
+		slot = TNW_dev_welfare
+		slot = TNW_dev_agriculture
+		slot = TNW_dev_bureaucracy
 		
 		ledger = civilian
 		

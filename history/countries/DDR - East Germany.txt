@@ -1,4 +1,4 @@
-capital = 519
+capital = 808
 #oob = "DDR_1936"
 # Starting tech
 

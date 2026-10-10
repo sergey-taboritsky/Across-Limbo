@@ -1,4 +1,8 @@
 ﻿l_simp_chinese:
+#国名
+ GRE_PDG: "希腊临时民主政府"
+ GRE_PDG_DEF: "希腊临时民主政府"
+ GRE_PDG_ADJ: "希腊"
 
 #顾问
  GRE_Pandelis_Pouliopoulos: "潘德利斯·波利欧普洛斯"

@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = SAR
+		owner = FRA
 		set_demilitarized_zone = yes
 		victory_points = {
 			6583 5 
@@ -24,8 +24,6 @@ state={
 		add_core_of = LUX
 		add_core_of = FRA
 		add_core_of = SAR
-		add_core_of = DDR
-		add_core_of = WGR
 	}
 
 	provinces={

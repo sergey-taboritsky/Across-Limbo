@@ -1,4 +1,4 @@
-﻿capital = 797
+﻿capital = 47
 
 set_research_slots = 3
 
@@ -16,6 +16,8 @@ set_technology = {
 }
 
 set_convoys = 10
+
+set_cosmetic_tag = GRE_PDG
 
 set_politics = {
 	ruling_party = communist

@@ -1,4 +1,4 @@
-﻿capital = 913
+﻿capital = 43
 #oob = "HUN_1936"
 #Start Horty as neutral if DOD
 recruit_character = HUN_Kuhn_Bella

@@ -1,5 +1,6 @@
 add_namespace = TNW_level_development_event
 
+# ---------- 一、教育等级 升/降层 ----------
 country_event = {
 	id = TNW_level_development_event.1
 	title = TNW_level_development_event.1.t
@@ -25,6 +26,66 @@ country_event = {
 		name = TNW_level_development_event.2.a
 		effect_tooltip = {
 			TNW_level_development_literacy_downgrade_effect = yes
+		}
+	}
+}
+
+# ---------- 二、工业化等级 升/降层 ----------
+country_event = {
+	id = TNW_level_development_event.3
+	title = TNW_level_development_event.3.t
+	desc = TNW_level_development_event.3.d
+	#picture = TTT_event1
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = TNW_level_development_event.3.a
+		effect_tooltip = {
+			TNW_level_development_industry_upgrade_effect = yes
+		}
+	}
+}
+country_event = {
+	id = TNW_level_development_event.4
+	title = TNW_level_development_event.4.t
+	desc = TNW_level_development_event.4.d
+	#picture = TTT_event1
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = TNW_level_development_event.4.a
+		effect_tooltip = {
+			TNW_level_development_industry_downgrade_effect = yes
+		}
+	}
+}
+
+# ---------- 三、富裕等级 升/降层 ----------
+country_event = {
+	id = TNW_level_development_event.5
+	title = TNW_level_development_event.5.t
+	desc = TNW_level_development_event.5.d
+	#picture = TTT_event1
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = TNW_level_development_event.5.a
+		effect_tooltip = {
+			TNW_level_development_welfare_upgrade_effect = yes
+		}
+	}
+}
+country_event = {
+	id = TNW_level_development_event.6
+	title = TNW_level_development_event.6.t
+	desc = TNW_level_development_event.6.d
+	#picture = TTT_event1
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = TNW_level_development_event.6.a
+		effect_tooltip = {
+			TNW_level_development_welfare_downgrade_effect = yes
 		}
 	}
 }
