@@ -1,5 +1,8 @@
 on_actions = {
 	# ROOT is country, this is ran for every country
+	# 注意：本系统的税收（私企/国企/人头/军厂维护）已并入主国库 capital_reserves
+	#（2026-10 货币统一）。税率在 TNW_on_startup_on_actions.txt 中重标定。
+	# 遗留：挂在 on_monthly_FIJ（借斐济月度钩子驱动 every_country），FIJ tag 必须存在
 	on_monthly_FIJ = {
 		effect = {
 			every_country = {
@@ -77,7 +80,7 @@ on_actions = {
 					TNW_ecom_mech_tag_income_from_private_temp = TNW_econ_mech_tag_private_tax_rate
 				}
 				add_to_variable = {
-					TNW_ecom_mech_tag_treasury = TNW_ecom_mech_tag_income_from_private_temp
+					capital_reserves = TNW_ecom_mech_tag_income_from_private_temp
 				}
                 #Stateowned Sector Money
                 set_temp_variable = {
@@ -105,10 +108,10 @@ on_actions = {
                     TNW_ecom_mech_tag_cost_arms_factory_temp = TNW_econ_mech_tag_unit_factory_maintenance_cost
                 }
                 add_to_variable = {
-                    TNW_ecom_mech_tag_treasury = TNW_ecom_mech_tag_income_from_stateowned_temp
+                    capital_reserves = TNW_ecom_mech_tag_income_from_stateowned_temp
                 }
                 subtract_from_variable = {
-                    TNW_ecom_mech_tag_treasury = TNW_ecom_mech_tag_cost_arms_factory_temp
+                    capital_reserves = TNW_ecom_mech_tag_cost_arms_factory_temp
                 }
                 #Poll Tax
                 every_owned_state = {
@@ -126,7 +129,7 @@ on_actions = {
                             TNW_ecom_mech_state_taxfund = 0.1
                         }
                         add_to_variable = {
-                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                            capital_reserves = TNW_ecom_mech_state_taxfund
                         }
                     }
                     else_if = {
@@ -137,7 +140,7 @@ on_actions = {
                             TNW_ecom_mech_state_taxfund = 0.1
                         }
                         add_to_variable = {
-                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                            capital_reserves = TNW_ecom_mech_state_taxfund
                         }
                     }
                     else_if = {
@@ -148,7 +151,7 @@ on_actions = {
                             TNW_ecom_mech_state_taxfund = 0.1
                         }
                         add_to_variable = {
-                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                            capital_reserves = TNW_ecom_mech_state_taxfund
                         }
                     }
                     else_if = {
@@ -159,7 +162,7 @@ on_actions = {
                             TNW_ecom_mech_state_taxfund = 0.25
                         }
                         add_to_variable = {
-                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                            capital_reserves = TNW_ecom_mech_state_taxfund
                         }
                     }
                     else_if = {
@@ -170,7 +173,7 @@ on_actions = {
                             TNW_ecom_mech_state_taxfund = 0.25
                         }
                         add_to_variable = {
-                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                            capital_reserves = TNW_ecom_mech_state_taxfund
                         }
                     }
                     else_if = {
@@ -181,7 +184,7 @@ on_actions = {
                             TNW_ecom_mech_state_taxfund = 0.4
                         }
                         add_to_variable = {
-                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                            capital_reserves = TNW_ecom_mech_state_taxfund
                         }
                     }
                     else_if = {
@@ -192,7 +195,7 @@ on_actions = {
                             TNW_ecom_mech_state_taxfund = 0.4
                         }
                         add_to_variable = {
-                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                            capital_reserves = TNW_ecom_mech_state_taxfund
                         }
                     }
                     else_if = {
@@ -203,7 +206,7 @@ on_actions = {
                             TNW_ecom_mech_state_taxfund = 0.7
                         }
                         add_to_variable = {
-                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                            capital_reserves = TNW_ecom_mech_state_taxfund
                         }
                     }
                     else_if = {
@@ -211,7 +214,7 @@ on_actions = {
                             has_state_category = city
                         }
                         add_to_variable = {
-                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                            capital_reserves = TNW_ecom_mech_state_taxfund
                         }
                     }
                     else_if = {
@@ -222,7 +225,7 @@ on_actions = {
                             TNW_ecom_mech_state_taxfund = 1.4
                         }
                         add_to_variable = {
-                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                            capital_reserves = TNW_ecom_mech_state_taxfund
                         }
                     }
                     else_if = {
@@ -233,7 +236,7 @@ on_actions = {
                             TNW_ecom_mech_state_taxfund = 2
                         }
                         add_to_variable = {
-                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                            capital_reserves = TNW_ecom_mech_state_taxfund
                         }
                     }
                     else_if = {
@@ -244,7 +247,7 @@ on_actions = {
                             TNW_ecom_mech_state_taxfund = 3
                         }
                         add_to_variable = {
-                            TNW_ecom_mech_tag_treasury = TNW_ecom_mech_state_taxfund
+                            capital_reserves = TNW_ecom_mech_state_taxfund
                         }
                     }
                 }

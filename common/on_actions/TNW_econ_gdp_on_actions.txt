@@ -2,11 +2,12 @@
 on_actions = {
     #################### initialition ##################
 	on_startup = {
-		
+
 		effect = {
 			set_variable = { global.total_gdp = 0 }
 			every_country = {
-				set_variable = { capital_reserves = 0 }
+				set_variable = { capital_reserves = 25 }
+				set_variable = { gdp_inflation = 0 }
 				set_variable = { tax_from_people_rate = 0.05 }
 				set_variable = { tax_from_company_rate = 0.3 }
 				set_variable = { tax_from_consumption_rate = 0.1 }
@@ -50,55 +51,11 @@ on_actions = {
 			upd_gdp_proportion = yes
 		}
 	}
-	####modifier_define
-	on_startup = {
-		
+	####通胀与 GDP 效果（modifier 导入已移入 upd_gdp 内部，每月读取）
+	on_monthly = {
 		effect = {
-			every_country = {
-
-                set_variable = { government_investment = modifier@government_investment_modifier }
-
-				add_to_variable = { domestic_investment= modifier@domestic_investment_modifier}
-
-			    add_to_variable = { core_government_organs = modifier@core_government_organs_modifier}
-
-
-
-				set_temp_variable = { Unemployment = modifier@Unemployment_rate_modifier}
-			    set_temp_variable = { Literacy = modifier@Literacy_modifier}
-
-				add_to_variable = { factory_cost = modifier@factory_cost_modifier}
-
-
-				add_to_variable = { not_core_government_organs = modifier@not_core_government_organs_modifier}
-
-
-				add_to_variable = { armf = modifier@armf_modifier}
-
-
-				add_to_variable = { military_spend = modifier@military_spend_modifier}
-
-				add_to_variable = { tax_from_company = modifier@tax_from_company_modifier}
-
-				add_to_variable = { tax_from_consumption = modifier@tax_from_consumption_modifier}
-
-				add_to_variable = { factory_produced = modifier@factory_produced_modifier}
-				
-		
-				add_to_variable = { goods_export = modifier@goods_export_modifier}
-				
-				add_to_variable = { goods_import = modifier@goods_import_modifier}
-				
-				
-
-				add_to_variable = { government_spending = modifier@government_spending_modifier}
-
-				add_to_variable = { market_available_for_dumping = modifier@market_available_for_dumping_modifier}
-
-
-				
-
-			}
+			upd_inflation = yes
+			upd_gdp_effects = yes
 		}
 	}
 

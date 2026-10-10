@@ -253,7 +253,19 @@ upd_gdp = {
 				else = {
 					set_variable = { goods_import = our_resource_produced }
 				}
-				
+
+				# ===== 经济 modifier 导入（每月读取；来自 ideas/国策/决议的 modifier_definitions 加成）=====
+				# 放在税基与 GDP 汇总之前，保证当月税收、支出、净出口都吃到 modifier
+				set_variable = { government_investment = modifier@government_investment_modifier }
+				add_to_variable = { domestic_investment = modifier@domestic_investment_modifier }
+				add_to_variable = { factory_produced = modifier@factory_produced_modifier }
+				add_to_variable = { factory_cost = modifier@factory_cost_modifier }
+				add_to_variable = { goods_export = modifier@goods_export_modifier }
+				add_to_variable = { goods_import = modifier@goods_import_modifier }
+				add_to_variable = { market_available_for_dumping = modifier@market_available_for_dumping_modifier }
+				add_to_variable = { tax_from_consumption = modifier@tax_from_consumption_modifier }
+				add_to_variable = { tax_from_company = modifier@tax_from_company_modifier }
+
 				set_variable = { var = tax_from_consumption value = all_consumption }
 				multiply_variable = { var = tax_from_consumption value = tax_from_consumption_rate }
 
@@ -316,11 +328,18 @@ upd_gdp = {
 				multiply_variable = { var = not_core_government_organs value = 0.0001}
 				multiply_variable = { var = not_core_government_organs value = 0.1}
 
+				# 支出侧 modifier 导入（各支出分量已计算完毕，汇总前修正）
+				add_to_variable = { core_government_organs = modifier@core_government_organs_modifier}
+				add_to_variable = { not_core_government_organs = modifier@not_core_government_organs_modifier}
+				add_to_variable = { armf = modifier@armf_modifier}
+				add_to_variable = { military_spend = modifier@military_spend_modifier}
+
 				add_to_variable = { var = government_spending value = armf }
 				add_to_variable = { var = government_spending value = navf }
 				add_to_variable = { var = government_spending value = military_spend }
 				add_to_variable = { var = government_spending value = core_government_organs }
 				add_to_variable = { var = government_spending value = not_core_government_organs }
+				add_to_variable = { government_spending = modifier@government_spending_modifier}
 
 				subtract_from_variable = { var = capital_reserves_change value = government_spending }
 							
@@ -467,4 +486,109 @@ build_factory_start_growth = {
     else = {
         set_variable = { factory_revenue_growth_coefficient = 0.8 }
     }}}}
+}
+
+# ============================================================
+# 通胀（保守模型）：财政透支/赤字推升通胀，盈余或平衡时缓慢回落
+# gdp_inflation 单位：百分点（0~60），供排名表/决议 desc 显示
+# 效果经 TNW_econ_inflation_modifiers 动态修正生效，系数刻意压低：
+#   60% 恶性通胀 ≈ -6% 民工/军厂建速、-3% 基建、-2.4% 稳定
+# ============================================================
+upd_inflation = {
+	if = {
+		limit = {
+			check_variable = { capital_reserves < 0 }
+		}
+		add_to_variable = { var = gdp_inflation value = 0.5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { capital_reserves_change < 0 }
+		}
+		add_to_variable = { var = gdp_inflation value = 0.25 }
+	}
+	else = {
+		subtract_from_variable = { var = gdp_inflation value = 0.2 }
+	}
+	clamp_variable = {
+		var = gdp_inflation
+		min = 0
+		max = 60
+	}
+	# 通胀 -> 建造/稳定惩罚（线性映射，封顶）
+	set_variable = { tnw_econ_inflation_civ_factor = gdp_inflation }
+	multiply_variable = { var = tnw_econ_inflation_civ_factor value = 0.001 }
+	if = {
+		limit = { check_variable = { tnw_econ_inflation_civ_factor > 0.06 } }
+		set_variable = { tnw_econ_inflation_civ_factor = 0.06 }
+	}
+	set_variable = { tnw_econ_inflation_infra_factor = gdp_inflation }
+	multiply_variable = { var = tnw_econ_inflation_infra_factor value = 0.0005 }
+	if = {
+		limit = { check_variable = { tnw_econ_inflation_infra_factor > 0.03 } }
+		set_variable = { tnw_econ_inflation_infra_factor = 0.03 }
+	}
+	set_variable = { tnw_econ_inflation_stability_factor = gdp_inflation }
+	multiply_variable = { var = tnw_econ_inflation_stability_factor value = 0.0004 }
+	if = {
+		limit = { check_variable = { tnw_econ_inflation_stability_factor > 0.024 } }
+		set_variable = { tnw_econ_inflation_stability_factor = 0.024 }
+	}
+}
+
+# ============================================================
+# GDP 规模加成（保守）：经济体量 -> 科研/PP/建造/稳定 的小额加成
+# 挂载 GDP_core_modifiers 与 TNW_econ_inflation_modifiers 动态修正
+# ============================================================
+upd_gdp_effects = {
+	if = {
+		limit = { check_variable = { gdpmn > 100 } }
+		set_variable = { gdp_research_factor = 0.03 }
+		set_variable = { gdp_political_power_factor = 0.015 }
+		set_variable = { gdp_per_production_speed_civ_factor = 0.03 }
+		set_variable = { gdp_per_stability_factor = 0.015 }
+	}
+	else_if = {
+		limit = { check_variable = { gdpmn > 60 } }
+		set_variable = { gdp_research_factor = 0.02 }
+		set_variable = { gdp_political_power_factor = 0.01 }
+		set_variable = { gdp_per_production_speed_civ_factor = 0.02 }
+		set_variable = { gdp_per_stability_factor = 0.01 }
+	}
+	else_if = {
+		limit = { check_variable = { gdpmn > 30 } }
+		set_variable = { gdp_research_factor = 0.01 }
+		set_variable = { gdp_political_power_factor = 0.005 }
+		set_variable = { gdp_per_production_speed_civ_factor = 0.01 }
+		set_variable = { gdp_per_stability_factor = 0.005 }
+	}
+	else_if = {
+		limit = { check_variable = { gdpmn > 10 } }
+		set_variable = { gdp_research_factor = 0.005 }
+		set_variable = { gdp_political_power_factor = 0 }
+		set_variable = { gdp_per_production_speed_civ_factor = 0.005 }
+		set_variable = { gdp_per_stability_factor = 0 }
+	}
+	else = {
+		set_variable = { gdp_research_factor = 0 }
+		set_variable = { gdp_political_power_factor = 0 }
+		set_variable = { gdp_per_production_speed_civ_factor = 0 }
+		set_variable = { gdp_per_stability_factor = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = { modifier = GDP_core_modifiers }
+			}
+		}
+		add_dynamic_modifier = { modifier = GDP_core_modifiers }
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = { modifier = TNW_econ_inflation_modifiers }
+			}
+		}
+		add_dynamic_modifier = { modifier = TNW_econ_inflation_modifiers }
+	}
 }

@@ -1,6 +1,7 @@
 # ============================================================
 # TNW 经济系统 - 国内建设投资决策（移植自 DrapeauRogue）
-# 国库的唯一消费途径：每个决策花费 5 政治点数 + 国库 0.01B
+# 国库的唯一消费途径：每个决策花费 5 政治点数 + 国库 1（单位 B）
+# 注：国库统一为 capital_reserves（mech 系统税收已并入）
 # ============================================================
 # 移植时相对 DR 原版的改动：
 #   1) icon: SWI_dismiss_council（DR 自定义，TNW 无）-> GFX_decision_generic_factory（TNW 已有）
@@ -24,7 +25,7 @@ Domestic_construction = {
 		complete_effect = {
 			add_to_variable = {
 				var = capital_reserves
-				value = -0.01
+				value = -1
 				tooltip = add_to_variable_capital_reserves
 			}
 		}
@@ -57,7 +58,7 @@ Domestic_construction = {
 		complete_effect = {
 			add_to_variable = {
 				var = capital_reserves
-				value = -0.01
+				value = -1
 				tooltip = add_to_variable_capital_reserves
 			}
 		}
@@ -87,7 +88,7 @@ Domestic_construction = {
 		complete_effect = {
 			add_to_variable = {
 				var = capital_reserves
-				value = -0.01
+				value = -1
 				tooltip = add_to_variable_capital_reserves
 			}
 		}
@@ -117,7 +118,7 @@ Domestic_construction = {
 		complete_effect = {
 			add_to_variable = {
 				var = capital_reserves
-				value = -0.01
+				value = -1
 				tooltip = add_to_variable_capital_reserves
 			}
 		}
@@ -149,7 +150,7 @@ Domestic_construction = {
 		complete_effect = {
 			add_to_variable = {
 				var = capital_reserves
-				value = -0.01
+				value = -1
 				tooltip = add_to_variable_capital_reserves
 			}
 		}

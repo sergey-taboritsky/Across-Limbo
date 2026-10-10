@@ -5,23 +5,29 @@ on_actions = {
 #Econ Init
 			every_country = {
 				add_offsite_building = { type = industrial_complex level = 2 }
-				set_variable = {
-					TNW_ecom_mech_tag_treasury = 10000
-				}
+				# 国库已统一为 capital_reserves（初始 25 在 TNW_econ_gdp_on_actions 设置）
 				set_variable = {
 					TNW_econ_mech_tag_private_firms_num = 2
 				}
 				set_variable = {
 					TNW_econ_mech_tag_growth_rate = 10
 				}
+				# 税率重标定：并入 capital_reserves 量级（GDP 单位=B）
+				# 私企税：每家私企 1/月
 				set_variable = {
-					TNW_econ_mech_tag_private_tax_rate = 10000
+					TNW_econ_mech_tag_private_tax_rate = 1
 				}
+				# 国企税：每座国营工厂 0.4/月
 				set_variable = {
-					TNW_econ_mech_tag_state_tax_rate = 7500
+					TNW_econ_mech_tag_state_tax_rate = 0.4
 				}
+				# 人头税：state_population(人) × 5e-7，8000 万人口 ≈ 40/月
 				set_variable = {
-					TNW_econ_mech_tag_personal_taxrate = 10
+					TNW_econ_mech_tag_personal_taxrate = 0.0000005
+				}
+				# 军厂维护：每座被任务占用的军工厂 0.1/月（原系统从未初始化=0）
+				set_variable = {
+					TNW_econ_mech_tag_unit_factory_maintenance_cost = 0.1
 				}
 			}
 #CHI

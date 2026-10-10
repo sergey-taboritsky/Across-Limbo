@@ -1,24 +1,16 @@
-defined_text = { 
+defined_text = {
 	name = GetECOICON
-	text = {
+text = {
 		 localization_key = GFX_ECO_A+
 trigger = {
 	AND={
 		check_variable = {
 			gdpmn > 40
 		}
-		has_country_flag= gdp_inflationLessthan25
-	}
-	if={
 		check_variable = {
 			gdp_inflation < 25
 		}
-		set_country_flag= gdp_inflationLessthan25
-	else={
-		set_country_flag= gdp_inflationgreaterthan25
 	}
-	}
-	
 }
 }
 text = {
