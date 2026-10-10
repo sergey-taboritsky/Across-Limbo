@@ -149,6 +149,18 @@
  TNW_level_development_event.6.t:0 "富裕水平滑坡"
  TNW_level_development_event.6.d:0 "物价飞涨、生计艰难，我国富裕水平不进反退。"
  TNW_level_development_event.6.a:0 "必须改善民生"
+ TNW_level_development_event.7.t:0 "农业水平提升"
+ TNW_level_development_event.7.d:0 "良种推广、灌溉整修，田间地头有了新的生机，我国农业水平迈上了新的台阶。"
+ TNW_level_development_event.7.a:0 "五谷丰登"
+ TNW_level_development_event.8.t:0 "农业水平滑坡"
+ TNW_level_development_event.8.d:0 "土地荒芜、农资匮乏，村里的壮劳力越来越少，我国农业水平不进反退。"
+ TNW_level_development_event.8.a:0 "田地不能就这么荒下去"
+ TNW_level_development_event.9.t:0 "行政水平提升"
+ TNW_level_development_event.9.d:0 "公文往来井然有序，政令传达畅达四方，我国行政水平迈上了新的台阶。"
+ TNW_level_development_event.9.a:0 "政通人和"
+ TNW_level_development_event.10.t:0 "行政水平滑坡"
+ TNW_level_development_event.10.d:0 "衙门积案如山、政令朝令夕改，我国行政水平不进反退。"
+ TNW_level_development_event.10.a:0 "必须整肃吏治"
  
 #经济系统
  TNW_Economy_categories: "经济调试面板"

@@ -216,16 +216,7 @@ country_event = {
 		country_event = { id = JAP_event.12 days = 5 }
 	}
 }
-country_event = {
-	id = JAP_event.10
-	title = JAP_event.10.t
-	desc = JAP_event.10.d
-	picture = GFX_event_JAP_taiwannanbowan
-	is_triggered_only = yes
-	option = {
-		name = JAP_event.10.a
-	}
-}
+# （原此处有一个无 trigger 的重复 JAP_event.10 空壳定义，与 1951 审查事件冲突，2026-10-10 删除）
 country_event = {
 	id = JAP_event.11
 	title = JAP_event.11.t

@@ -128,6 +128,88 @@ on_actions = {
 					max = 100
 					min = 0
 				}
+				# ---------- 四、农业等级 ----------
+				add_to_variable = {
+					TNW_Agriculture_value = TNW_Agriculture_monthly_value
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TNW_Agriculture_value > 100
+						}
+					}
+					TNW_level_development_agriculture_upgrade_effect = yes
+					country_event = { id = TNW_level_development_event.7 }
+					add_to_variable = {
+						TNW_Agriculture_value = -100
+					}
+					multiply_variable = {
+						var = TNW_Agriculture_monthly_value
+						value = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							TNW_Agriculture_value < 0
+						}
+					}
+					TNW_level_development_agriculture_downgrade_effect = yes
+					country_event = { id = TNW_level_development_event.8 }
+					add_to_variable = {
+						TNW_Agriculture_value = 100
+					}
+					multiply_variable = {
+						var = TNW_Agriculture_monthly_value
+						value = 0.5
+					}
+				}
+				clamp_variable = {
+					var = TNW_Agriculture_value
+					max = 100
+					min = 0
+				}
+				# ---------- 五、行政等级 ----------
+				add_to_variable = {
+					TNW_Bureaucracy_value = TNW_Bureaucracy_monthly_value
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TNW_Bureaucracy_value > 100
+						}
+					}
+					TNW_level_development_bureaucracy_upgrade_effect = yes
+					country_event = { id = TNW_level_development_event.9 }
+					add_to_variable = {
+						TNW_Bureaucracy_value = -100
+					}
+					multiply_variable = {
+						var = TNW_Bureaucracy_monthly_value
+						value = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							TNW_Bureaucracy_value < 0
+						}
+					}
+					TNW_level_development_bureaucracy_downgrade_effect = yes
+					country_event = { id = TNW_level_development_event.10 }
+					add_to_variable = {
+						TNW_Bureaucracy_value = 100
+					}
+					multiply_variable = {
+						var = TNW_Bureaucracy_monthly_value
+						value = 0.5
+					}
+				}
+				clamp_variable = {
+					var = TNW_Bureaucracy_value
+					max = 100
+					min = 0
+				}
 			}
 		}
 	}

@@ -1,0 +1,622 @@
+﻿# ============================================================
+# JAP 国策效果理念（2026-10-10 实装）
+# 图片全部复用本模组 interface 已定义的 GFX_idea_* 资源，无新增贴图
+# 永久理念（add_ideas）与时限理念（add_timed_idea）分列
+# ============================================================
+
+ideas = {
+	country = {
+
+		# ================= 永久理念 =================
+
+		JAP_women_suffrage = {
+			picture = JAP_The_first_leftwing_cabinet
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				non_core_manpower = 0.03
+				political_power_factor = 0.05
+			}
+		}
+		JAP_electronics_labor_law = {
+			picture = gong_chang_guo_ji
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.03
+			}
+		}
+		JAP_public_security_repeal = {
+			picture = ENG_Twenty_Years_of_Red_London
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = -0.05
+			}
+		}
+		JAP_socialist_education = {
+			picture = TUR_scholars_workers_soldiers
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.02
+			}
+		}
+		JAP_land_reform_radical = {
+			picture = RUS_chenxiang_maodun
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		JAP_land_reform_compensated = {
+			picture = RUS_chenxiang_maodun
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		JAP_replanting_review = {
+			picture = BLF_Blocked_supply_lines
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		JAP_agricultural_bank = {
+			picture = FRA_Prosperity_Plan
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		JAP_agricoop_law = {
+			picture = BLF_Blocked_supply_lines
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				stability_factor = 0.03
+			}
+		}
+		JAP_labor_management_coop = {
+			picture = gong_chang_guo_ji
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.03
+			}
+		}
+		JAP_union_autonomy = {
+			picture = MAL_Party_Factionalism
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.02
+			}
+		}
+		JAP_production_democracy = {
+			picture = RUS_weiwancheng_gongyehua
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		JAP_ajtfu = {
+			picture = POL_Polish_Soviet
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.05
+			}
+		}
+		JAP_yamakawa_linearity = {
+			picture = HUN_All_power_rests_with_the_Soviets
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				communist_drift = 0.01
+			}
+		}
+		JAP_farmer_comrade = {
+			picture = RUS_chenxiang_maodun
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		JAP_life_security = {
+			picture = ENG_Unsatisfied_workers
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.03
+			}
+		}
+		JAP_union_state = {
+			picture = POL_Polish_Soviet
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		JAP_militant_atheism = {
+			picture = RUS_zongjiao_wenti
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		JAP_riken_lab = {
+			picture = MAL_Sunrise_State
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.02
+			}
+		}
+		JAP_econ_independence = {
+			picture = JAP_best_comes_from_the_worst
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		JAP_yoshida_cooperation = {
+			picture = TUR_Puppet_government
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = -0.05
+			}
+		}
+		JAP_combined_production = {
+			picture = RUS_weiwancheng_gongyehua
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.06
+			}
+		}
+		JAP_labour_rights = {
+			picture = ENG_Unsatisfied_workers
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+		JAP_deleonism_japan = {
+			picture = BLF_Go_to_the_barricades
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		JAP_unified_agricoop = {
+			picture = BLF_Blocked_supply_lines
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		JAP_forced_membership = {
+			picture = AUS_The_hangover_from_Budapest
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.04
+				stability_factor = -0.05
+			}
+		}
+		JAP_agricoop_autonomy = {
+			picture = BLF_Blocked_supply_lines
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.01
+				stability_factor = 0.03
+			}
+		}
+		JAP_equal_distribution = {
+			picture = HUN_All_power_rests_with_the_Soviets
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		JAP_best_taxation = {
+			picture = ENG_Mosleynomics
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.10
+				consumer_goods_factor = -0.02
+			}
+		}
+		JAP_syndicalist_econ = {
+			picture = gong_chang_guo_ji
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		JAP_planned_econ = {
+			picture = RUS_one_five_jihua
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.02
+			}
+		}
+		JAP_market_socialism = {
+			picture = FRA_Prosperity_Plan
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+		JAP_jap_us_communion = {
+			picture = WGR_Fragile_peace
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		JAP_adjustment_period = {
+			picture = WGR_A_weak_economy
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
+		JAP_security_council = {
+			picture = TUR_dark_legacy_of_Gokalp
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.10
+				stability_factor = 0.03
+			}
+		}
+		JAP_hardline_chief = {
+			picture = AUS_Martial_Law_of_1920
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.10
+			}
+		}
+		JAP_surveillance_net = {
+			picture = FRA_Kasik_controls_network
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.10
+			}
+		}
+		JAP_legalism = {
+			picture = POL_In_a_haze
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		JAP_national_security = {
+			picture = AUS_Martial_Law_of_1920
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.15
+				political_power_factor = 0.10
+			}
+		}
+		JAP_professional_army = {
+			picture = POL_Military_coercion
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				training_time_army_factor = -0.10
+				conscription_factor = -0.01
+			}
+		}
+		JAP_militia_tradition = {
+			picture = HUN_Multi_ethnic_army
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.02
+				training_time_army_factor = 0.10
+			}
+		}
+		JAP_expansion_plan = {
+			picture = POL_Military_coercion
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.01
+			}
+		}
+		JAP_old_officers = {
+			picture = FRA_Methuselah_style_officer_corps
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+		JAP_old_training = {
+			picture = WGR_Corrupt_Wehrmacht
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				training_time_army_factor = -0.10
+				max_organization = 5
+			}
+		}
+		JAP_military_bureau_route = {
+			picture = MAL_Three_Armies
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.10
+				stability_factor = 0.03
+			}
+		}
+		JAP_revolution_fervor = {
+			picture = TUR_revolutionary_emergency
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = -0.05
+			}
+		}
+		JAP_comradeship = {
+			picture = RUS_hongjun
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				max_organization = 5
+				stability_factor = 0.03
+			}
+		}
+		JAP_land_defense = {
+			picture = RUS_hongjun
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				training_time_army_factor = -0.10
+			}
+		}
+		JAP_defense_whitebook = {
+			picture = GER_The_remnants_of_the_resistance
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.10
+			}
+		}
+		JAP_kashima_slant = {
+			picture = GER_Blitzkrieg
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.10
+				war_support_factor = 0.05
+			}
+		}
+		JAP_naval_construction = {
+			picture = DDR_Crimson_Ship
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+		JAP_leaned_production_idea = {
+			picture = RUS_weiwancheng_gongyehua
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = -0.10
+			}
+		}
+		JAP_manufacturing_econ = {
+			picture = gong_chang_guo_ji
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		JAP_electroproduction_salary = {
+			picture = gong_chang_guo_ji
+			allowed = { original_tag = JAP }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.03
+			}
+		}
+
+		# ================= 时限理念（add_timed_idea） =================
+
+		JAP_constitution_drafting = {
+			picture = POL_In_a_haze
+			allowed = { original_tag = JAP }
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = -0.05
+			}
+		}
+		JAP_war_crimes_court = {
+			picture = GER_The_remnants_of_the_resistance
+			allowed = { original_tag = JAP }
+			modifier = {
+				stability_factor = -0.03
+			}
+		}
+		JAP_historical_settlement = {
+			picture = DDR_The_red_flag_is_already_standing
+			allowed = { original_tag = JAP }
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		JAP_reconstruction_fervor = {
+			picture = DDR_Above_the_ruins
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		JAP_land_pain = {
+			picture = AUS_The_hangover_from_Budapest
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = 0.08
+				stability_factor = -0.05
+			}
+		}
+		JAP_border_readiness = {
+			picture = HUN_Balkan_powder_keg
+			allowed = { original_tag = JAP }
+			modifier = {
+				war_support_factor = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		JAP_construction_boom = {
+			picture = RUS_weiwancheng_gongyehua
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		JAP_american_aid = {
+			picture = FRA_Prosperity_Plan
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		JAP_american_experts_idea = {
+			picture = MAL_Sunrise_State
+			allowed = { original_tag = JAP }
+			modifier = {
+				research_speed_factor = 0.03
+				land_doctrine_cost_factor = -0.10
+			}
+		}
+		JAP_consumer_command = {
+			picture = gong_chang_guo_ji
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		JAP_us_doctrine_idea = {
+			picture = GER_Blitzkrieg
+			allowed = { original_tag = JAP }
+			research_bonus = {
+				armor = 0.5
+			}
+			modifier = {}
+		}
+		JAP_armor_bonus = {
+			picture = GER_Blitzkrieg
+			allowed = { original_tag = JAP }
+			research_bonus = {
+				armor = 0.5
+			}
+			modifier = {}
+		}
+		JAP_inf_doctrine_idea = {
+			picture = RUS_hongjun
+			allowed = { original_tag = JAP }
+			research_bonus = {
+				infantry = 0.5
+			}
+			modifier = {}
+		}
+		JAP_land_warfare = {
+			picture = POL_Military_coercion
+			allowed = { original_tag = JAP }
+			research_bonus = {
+				land_doctrine = 0.2
+			}
+			modifier = {}
+		}
+		JAP_air_doctrine_push = {
+			picture = MAL_Three_Armies
+			allowed = { original_tag = JAP }
+			research_bonus = {
+				air_doctrine = 0.1
+			}
+			modifier = {}
+		}
+		JAP_naval_doctrine_push = {
+			picture = DDR_Crimson_Ship
+			allowed = { original_tag = JAP }
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+			modifier = {}
+		}
+		JAP_doctrine_analysis = {
+			picture = POL_Military_coercion
+			allowed = { original_tag = JAP }
+			modifier = {
+				land_doctrine_cost_factor = -0.10
+			}
+		}
+		JAP_armor_doctrine_capstone = {
+			picture = GER_Blitzkrieg
+			allowed = { original_tag = JAP }
+			research_bonus = {
+				armor = 0.5
+			}
+			modifier = {}
+		}
+		JAP_infantry_doctrine_capstone = {
+			picture = RUS_hongjun
+			allowed = { original_tag = JAP }
+			research_bonus = {
+				infantry = 0.5
+			}
+			modifier = {}
+		}
+	}
+}
