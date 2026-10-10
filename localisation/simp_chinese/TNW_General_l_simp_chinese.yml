@@ -193,3 +193,5 @@
  RUS_special_cold_war_description:0 "§G莫斯科经济委员会§!\n\n\n\n\n\n\n£RUS_Cold_War_Entry_embed \n\n\n\n\n\n\n§W莫斯科经济委员会成立于1937年，用于帮助俄罗斯在鲍里斯·萨文科夫领导下摆脱德意志阴影。在委员会领导下，俄罗斯不但摆脱了德意志强加于身的经济束缚，而且撬动了印度、保加利亚等一系列重量级盟友，为俄罗斯战争经济汲取足够的养分，最终帮助坦克格勒与察里津产出海量的军备，淹没帝国东墙。\n\n随着世界大战结束，莫斯科经济委员会致力于根除治下的帝国残余，并吸纳第三世界新生的反殖民主义政权，以从非洲与南美洲方向包围西欧，借此与无神论社会主义势力抗衡。俄罗斯产品与政治影响力正随着经委会使者们扩散到世界的每一个角落，只要给予他足够时间，绿潮将足够席卷全球。\n\n“它是一个坚定的、爱国的、理论上自由的专制国家，它帮助人民分配自己真正的最佳的力量，教育人们清醒、自由、忠诚，自由地和有机地参与国家建设。只有这样的专制政权才能将俄罗斯从无政府状态和旷日持久的内战中拯救出来。”§!"
  CHI_special_cold_war_description:0 "§Y第三世界国际合作§!\n\n\n\n\n\n\n£AUS_Cold_War_Entry_embed \n\n\n\n\n\n\n§W§!"
  USA_special_cold_war_description:0 "§p全球集体联合会§!\n\n\n\n\n\n\n£USA_Cold_War_Entry_embed \n\n\n\n\n\n\n§W§!"
+ TNW_Agriculture_value_text:0 "目前农业等级的进度为：§Y[?TNW_Agriculture_value|.0]/100§!"
+ TNW_Bureaucracy_value_text:0 "目前行政等级的进度为：§Y[?TNW_Bureaucracy_value|.0]/100§!"
