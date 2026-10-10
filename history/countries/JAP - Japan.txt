@@ -97,18 +97,18 @@ set_variable = {
 # 初始态势（灏 10-10 定）：行政稳定不波动；其余四类都在衰退
 #   教育 -5/月、工业化 -5/月、富裕 -10/月、农业 -20/月
 #   农业重衰：不解决"食粮危机"，日本农业无法恢复（农业国策在危机解决后才解锁）
-set_variable = { var = TNW_Literacy_level_value = 20 }
-set_variable = { var = TNW_Literacy_level_monthly_value = -5 }
-set_variable = { var = TNW_Industrial_scale_value = 40 }
-set_variable = { var = TNW_Industrial_scale_monthly_value = -5 }
-set_variable = { var = TNW_Affluence_value = 40 }
-set_variable = { var = TNW_Affluence_monthly_value = -10 }
-set_variable = { var = TNW_Agriculture_value = 60 }
-set_variable = { var = TNW_Agriculture_monthly_value = -20 }
-set_variable = { var = TNW_Bureaucracy_value = 50 }
-set_variable = { var = TNW_Bureaucracy_monthly_value = 0 }
+set_variable = { TNW_Literacy_level_value = 20 }
+set_variable = { TNW_Literacy_level_monthly_value = -5 }
+set_variable = { TNW_Industrial_scale_value = 40 }
+set_variable = { TNW_Industrial_scale_monthly_value = -5 }
+set_variable = { TNW_Affluence_value = 40 }
+set_variable = { TNW_Affluence_monthly_value = -10 }
+set_variable = { TNW_Agriculture_value = 60 }
+set_variable = { TNW_Agriculture_monthly_value = -20 }
+set_variable = { TNW_Bureaucracy_value = 50 }
+set_variable = { TNW_Bureaucracy_monthly_value = 0 }
 # 食粮危机：粮储变量（决议组使用）
-set_variable = { var = JAP_food_crisis_stash_var = 0 }
+set_variable = { JAP_food_crisis_stash_var = 0 }
 
 # 工团实验：生产管理模式在工厂中的占比（0-100），由 JAP_consumer_production_command 推高，1951 审查用作判定指标
-set_variable = { var = JAP_production_management_ratio_var = 0 }
+set_variable = { JAP_production_management_ratio_var = 0 }

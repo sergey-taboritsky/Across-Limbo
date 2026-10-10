@@ -1,14 +1,3 @@
-# ============================================================
-# JAP 南日本国策树（效果实装版 2026-10-10）
-# 效果设计依据《日本国策效果设计.md》+ 灏裁决：
-#  - 教育接识字率阶梯 / 富裕接富裕阶梯 / 工业接工业化阶梯 / 农业接农业阶梯
-#  - 热情度全程增减（JAP_gain/lose_enthusiasm）
-#  - 议会席位零和转移（JAP_diet/congress_seat_transfer）
-#  - 经济线动 capital_reserves（国库）与资源
-#  - 1951 审查四 flag：reconstruction_success / yamakawa_econ /
-#    metropolitan_renovation_done / karl_dependence
-# cost 归位：常规 5 / 大会与支线尾 7 / capstone 10
-# ============================================================
 focus_tree = {
 	id = JAP_initial
 	country = {
@@ -24,7 +13,6 @@ focus_tree = {
 	}
 	default = no
 
-	# ================= 开局主干 =================
 	focus = {
 		id = JAP_Ripples_of_Fourth_Fukushima
 		icon = GFX_JAP_Ripples_of_Fourth_Fukushima
@@ -56,13 +44,13 @@ focus_tree = {
 			remove_ideas = JAP_Food_Crisis_Strike_idea
 			add_stability = 0.05
 			add_political_power = 50
-			# 危机解决：止住农业自由落体，此后农业才能恢复
 			if = {
 				limit = {
 					check_variable = { TNW_Agriculture_monthly_value < 0 }
 				}
 				set_variable = { TNW_Agriculture_monthly_value = 0 }
-				JAP_dev_progress_push = { which = TNW_Agriculture_value amount = 30 }
+				add_to_variable = { var = TNW_Agriculture_value value = 30 }
+				clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 			}
 		}
 	}
@@ -82,9 +70,14 @@ focus_tree = {
 				ideology = syndicalism
 				popularity = 0.05
 			}
-			JAP_gain_enthusiasm = { gain = 2 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			# 产别大会：产别（GTU）扩张，从总同盟（GenUn）转 5 席
-			JAP_congress_seat_transfer = { from_party = JAP_GenUn to_party = JAP_GTU seat_amount = 5 }
+			add_to_variable = { var = JAP_GenUn value = -5 }
+			add_to_variable = { var = JAP_GTU value = 5 }
+			clamp_variable = { var = JAP_GenUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
 		}
 	}
 	focus = {
@@ -105,7 +98,11 @@ focus_tree = {
 				popularity = 0.05
 			}
 			# 总同盟大会：总同盟反击，从产别转 5 席
-			JAP_congress_seat_transfer = { from_party = JAP_GTU to_party = JAP_GenUn seat_amount = 5 }
+			add_to_variable = { var = JAP_GTU value = -5 }
+			add_to_variable = { var = JAP_GenUn value = 5 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			clamp_variable = { var = JAP_GenUn min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
 		}
 	}
 	focus = {
@@ -133,10 +130,15 @@ focus_tree = {
 			add_ideas = JAP_land_reform_radical
 			set_country_flag = JAP_radical_land_reform_flag
 			# 农村地主票流失
-			JAP_diet_seat_transfer = { from_party = JAP_Nonpartisan to_party = JAP_Vacant seat_amount = 3 }
+			add_to_variable = { var = JAP_Nonpartisan value = -3 }
+			add_to_variable = { var = JAP_Vacant value = 3 }
+			clamp_variable = { var = JAP_Nonpartisan min = 0 }
+			clamp_variable = { var = JAP_Vacant min = 0 }
+			JAP_reload_worker_diet_gui = yes
 			# 农业等级恢复
-			JAP_dev_monthly_shift = { which = TNW_Agriculture_monthly_value amount = 10 }
-			JAP_dev_progress_push = { which = TNW_Agriculture_value amount = 40 }
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 10 }
+			add_to_variable = { var = TNW_Agriculture_value value = 40 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 	focus = {
@@ -163,8 +165,9 @@ focus_tree = {
 			add_to_variable = { var = capital_reserves value = -15 }
 			add_ideas = JAP_land_reform_compensated
 			set_country_flag = JAP_moderate_land_reform_flag
-			JAP_dev_monthly_shift = { which = TNW_Agriculture_monthly_value amount = 10 }
-			JAP_dev_progress_push = { which = TNW_Agriculture_value amount = 30 }
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 10 }
+			add_to_variable = { var = TNW_Agriculture_value value = 30 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 	focus = {
@@ -181,9 +184,11 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed JAP_Evaluate_Planting_Season"
 			add_political_power = 25
 			add_stability = 0.02
-			JAP_gain_enthusiasm = { gain = 2 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			add_ideas = JAP_replanting_review
-			JAP_dev_progress_push = { which = TNW_Agriculture_value amount = 30 }
+			add_to_variable = { var = TNW_Agriculture_value value = 30 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 	focus = {
@@ -201,7 +206,7 @@ focus_tree = {
 			add_stability = 0.02
 			add_to_variable = { var = capital_reserves value = 10 }
 			add_ideas = JAP_agricultural_bank
-			JAP_dev_monthly_shift = { which = TNW_Agriculture_monthly_value amount = 5 }
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
 		}
 	}
 	focus = {
@@ -295,7 +300,8 @@ focus_tree = {
 				ideology = communist
 				popularity = 0.05
 			}
-			JAP_gain_enthusiasm = { gain = 3 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			# 历史清算完成的和解红利
 			add_timed_idea = { idea = JAP_historical_settlement days = 90 }
 		}
@@ -349,8 +355,9 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_ideas = JAP_agricoop_law
-			JAP_dev_monthly_shift = { which = TNW_Agriculture_monthly_value amount = 5 }
-			JAP_gain_enthusiasm = { gain = 2 }
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 		}
 	}
 	focus = {
@@ -372,8 +379,12 @@ focus_tree = {
 			}
 			add_ideas = JAP_women_suffrage
 			# 性别平等票仓
-			JAP_diet_seat_transfer = { from_party = JAP_Vacant to_party = JAP_JSP seat_amount = 2 }
-			JAP_dev_monthly_shift = { which = TNW_Literacy_level_monthly_value amount = 3 }
+			add_to_variable = { var = JAP_Vacant value = -2 }
+			add_to_variable = { var = JAP_JSP value = 2 }
+			clamp_variable = { var = JAP_Vacant min = 0 }
+			clamp_variable = { var = JAP_JSP min = 0 }
+			JAP_reload_worker_diet_gui = yes
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 3 }
 		}
 	}
 	focus = {
@@ -398,7 +409,11 @@ focus_tree = {
 			}
 			add_ideas = JAP_electronics_labor_law
 			# 电产=产别王票
-			JAP_congress_seat_transfer = { from_party = JAP_GenUn to_party = JAP_GTU seat_amount = 4 }
+			add_to_variable = { var = JAP_GenUn value = -4 }
+			add_to_variable = { var = JAP_GTU value = 4 }
+			clamp_variable = { var = JAP_GenUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
 		}
 	}
 	focus = {
@@ -421,7 +436,8 @@ focus_tree = {
 			add_political_power = 50
 			add_stability = 0.05
 			add_ideas = JAP_public_security_repeal
-			JAP_gain_enthusiasm = { gain = 4 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 4 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 		}
 	}
 	focus = {
@@ -443,7 +459,7 @@ focus_tree = {
 			}
 			# 教育等级：识字率条接入
 			add_ideas = JAP_socialist_education
-			JAP_dev_monthly_shift = { which = TNW_Literacy_level_monthly_value amount = 5 }
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 5 }
 		}
 	}
 	focus = {
@@ -502,7 +518,8 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_ideas = JAP_labor_management_coop
-			JAP_gain_enthusiasm = { gain = 2 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 		}
 	}
 	focus = {
@@ -550,7 +567,8 @@ focus_tree = {
 			}
 			add_ideas = JAP_production_democracy
 			set_country_flag = JAP_production_democracy_route_flag
-			JAP_production_ratio_gain = { ratio_gain = 5 }
+			add_to_variable = { var = JAP_production_management_ratio_var value = 5 }
+			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
 		}
 	}
 	focus = {
@@ -578,10 +596,19 @@ focus_tree = {
 				popularity = 0.08
 			}
 			add_ideas = JAP_ajtfu
-			JAP_gain_enthusiasm = { gain = 5 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			# 席位整合：总同盟与独立单产并入全国劳连会（GTU）
-			JAP_congress_seat_transfer = { from_party = JAP_GenUn to_party = JAP_GTU seat_amount = 25 }
-			JAP_congress_seat_transfer = { from_party = JAP_IndUn to_party = JAP_GTU seat_amount = 3 }
+			add_to_variable = { var = JAP_GenUn value = -25 }
+			add_to_variable = { var = JAP_GTU value = 25 }
+			clamp_variable = { var = JAP_GenUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
+			add_to_variable = { var = JAP_IndUn value = -3 }
+			add_to_variable = { var = JAP_GTU value = 3 }
+			clamp_variable = { var = JAP_IndUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
 		}
 	}
 	focus = {
@@ -598,10 +625,15 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed JAP_Political_Unions_Congress"
 			add_political_power = 50
 			add_stability = 0.03
-			JAP_gain_enthusiasm = { gain = 3 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			set_country_flag = JAP_ruling_coalition_flag
 			# 民同入共斗
-			JAP_congress_seat_transfer = { from_party = JAP_GTU to_party = JAP_DemLeg seat_amount = 2 }
+			add_to_variable = { var = JAP_GTU value = -2 }
+			add_to_variable = { var = JAP_DemLeg value = 2 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			clamp_variable = { var = JAP_DemLeg min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
 		}
 	}
 	focus = {
@@ -642,7 +674,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = JAP_Socialist_Reform_Program_avail_tt
-				check_variable = { JAP_socialist_reform_enthusiasm_var >= 30 }
+				check_variable = { var = JAP_socialist_reform_enthusiasm_var value = 30 compare = greater_than_or_equals }
 			}
 		}
 		x = 13
@@ -651,7 +683,8 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed JAP_Socialist_Reform_Program"
 			add_political_power = 100
 			add_stability = 0.05
-			JAP_gain_enthusiasm = { gain = 5 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 		}
 	}
 	focus = {
@@ -695,7 +728,8 @@ focus_tree = {
 			}
 			add_ideas = JAP_yamakawa_linearity
 			set_country_flag = JAP_yamakawa_econ_flag
-			JAP_gain_enthusiasm = { gain = 3 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 		}
 	}
 	focus = {
@@ -743,7 +777,11 @@ focus_tree = {
 				popularity = 0.05
 			}
 			set_country_flag = JAP_farmer_union_route_flag
-			JAP_diet_seat_transfer = { from_party = JAP_Vacant to_party = JAP_JSP seat_amount = 3 }
+			add_to_variable = { var = JAP_Vacant value = -3 }
+			add_to_variable = { var = JAP_JSP value = 3 }
+			clamp_variable = { var = JAP_Vacant min = 0 }
+			clamp_variable = { var = JAP_JSP min = 0 }
+			JAP_reload_worker_diet_gui = yes
 		}
 	}
 	focus = {
@@ -761,7 +799,7 @@ focus_tree = {
 			add_political_power = 50
 			add_ideas = JAP_life_security
 			# 富裕等级推升
-			JAP_dev_monthly_shift = { which = TNW_Affluence_monthly_value amount = 10 }
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 10 }
 		}
 	}
 	focus = {
@@ -782,7 +820,11 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_ideas = JAP_union_state
-			JAP_congress_seat_transfer = { from_party = JAP_IndUn to_party = JAP_GTU seat_amount = 3 }
+			add_to_variable = { var = JAP_IndUn value = -3 }
+			add_to_variable = { var = JAP_GTU value = 3 }
+			clamp_variable = { var = JAP_IndUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
 		}
 	}
 	focus = {
@@ -855,10 +897,12 @@ focus_tree = {
 			# 民主生产路线全额 +15；自治劳路线不搞工厂民主，减半 +7
 			if = {
 				limit = { has_country_flag = JAP_production_democracy_route_flag }
-				JAP_production_ratio_gain = { ratio_gain = 15 }
+				add_to_variable = { var = JAP_production_management_ratio_var value = 15 }
+				clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
 			}
 			else = {
-				JAP_production_ratio_gain = { ratio_gain = 7 }
+				add_to_variable = { var = JAP_production_management_ratio_var value = 7 }
+				clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
 			}
 		}
 	}
@@ -886,7 +930,8 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_war_support = 0.03
-			JAP_gain_enthusiasm = { gain = 2 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			set_country_flag = JAP_support_china_flag
 		}
 	}
@@ -906,7 +951,7 @@ focus_tree = {
 			add_ideas = JAP_riken_lab
 			army_experience = 10
 			set_country_flag = JAP_nuclear_research_flag
-			JAP_dev_monthly_shift = { which = TNW_Literacy_level_monthly_value amount = 2 }
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 2 }
 		}
 	}
 	focus = {
@@ -970,7 +1015,7 @@ focus_tree = {
 					level = 2
 				}
 			}
-			JAP_dev_monthly_shift = { which = TNW_Affluence_monthly_value amount = 5 }
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 5 }
 		}
 	}
 
@@ -1024,7 +1069,7 @@ focus_tree = {
 					level = 1
 				}
 			}
-			JAP_dev_monthly_shift = { which = TNW_Industrial_scale_monthly_value amount = 5 }
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
 		}
 	}
 	focus = {
@@ -1049,7 +1094,7 @@ focus_tree = {
 					level = 2
 				}
 			}
-			JAP_dev_monthly_shift = { which = TNW_Industrial_scale_monthly_value amount = 5 }
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
 		}
 	}
 	focus = {
@@ -1067,7 +1112,8 @@ focus_tree = {
 			add_stability = 0.02
 			# 北陆铁山扩产
 			add_resource = { resource = steel amount = 20 state = 535 }
-			JAP_dev_progress_push = { which = TNW_Industrial_scale_value amount = 30 }
+			add_to_variable = { var = TNW_Industrial_scale_value value = 30 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 	focus = {
@@ -1085,8 +1131,13 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_electroproduction_salary_mode"
 			add_ideas = JAP_electroproduction_salary
-			JAP_production_ratio_gain = { ratio_gain = 10 }
-			JAP_congress_seat_transfer = { from_party = JAP_GenUn to_party = JAP_GTU seat_amount = 5 }
+			add_to_variable = { var = JAP_production_management_ratio_var value = 10 }
+			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
+			add_to_variable = { var = JAP_GenUn value = -5 }
+			add_to_variable = { var = JAP_GTU value = 5 }
+			clamp_variable = { var = JAP_GenUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
 		}
 	}
 	focus = {
@@ -1109,7 +1160,8 @@ focus_tree = {
 			add_to_variable = { var = capital_reserves value = 15 }
 			add_ideas = JAP_best_taxation
 			# 税制建设也是行政工程
-			JAP_dev_progress_push = { which = TNW_Bureaucracy_value amount = 30 }
+			add_to_variable = { var = TNW_Bureaucracy_value value = 30 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 	focus = {
@@ -1145,7 +1197,7 @@ focus_tree = {
 					level = 1
 				}
 			}
-			JAP_dev_monthly_shift = { which = TNW_Industrial_scale_monthly_value amount = 5 }
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
 		}
 	}
 	focus = {
@@ -1181,7 +1233,7 @@ focus_tree = {
 					level = 1
 				}
 			}
-			JAP_dev_monthly_shift = { which = TNW_Industrial_scale_monthly_value amount = 5 }
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
 		}
 	}
 	focus = {
@@ -1210,8 +1262,10 @@ focus_tree = {
 			}
 			set_country_flag = JAP_econ_route_left_flag
 			add_ideas = JAP_syndicalist_econ
-			JAP_production_ratio_gain = { ratio_gain = 10 }
-			JAP_gain_enthusiasm = { gain = 5 }
+			add_to_variable = { var = JAP_production_management_ratio_var value = 10 }
+			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 		}
 	}
 	focus = {
@@ -1330,7 +1384,8 @@ focus_tree = {
 			}
 			set_country_flag = JAP_reconstruction_success_flag
 			remove_ideas = JAP_adjustment_period
-			JAP_gain_enthusiasm = { gain = 10 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 10 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			# 1951 工团实验审查（JAP_event.10 按 flag 组合结算成败）
 			country_event = { id = JAP_event.10 days = 365 }
 		}
@@ -1360,7 +1415,8 @@ focus_tree = {
 			# 对美依赖：1951 审查的"自主线"反 flag
 			set_country_flag = JAP_karl_dependence_flag
 			# 左翼反弹
-			JAP_lose_enthusiasm = { loss = 5 }
+			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 		}
 	}
 	focus = {
@@ -1404,7 +1460,8 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_ideas = JAP_labour_rights
-			JAP_gain_enthusiasm = { gain = 3 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 		}
 	}
 	focus = {
@@ -1468,7 +1525,7 @@ focus_tree = {
 			}
 			add_ideas = JAP_unified_agricoop
 			set_country_flag = JAP_agricoop_unified_flag
-			JAP_dev_monthly_shift = { which = TNW_Agriculture_monthly_value amount = 5 }
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
 		}
 	}
 	focus = {
@@ -1517,8 +1574,9 @@ focus_tree = {
 			}
 			add_ideas = JAP_forced_membership
 			set_country_flag = JAP_rural_resentment_flag
-			JAP_lose_enthusiasm = { loss = 3 }
-			JAP_dev_monthly_shift = { which = TNW_Agriculture_monthly_value amount = 8 }
+			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 8 }
 		}
 	}
 	focus = {
@@ -1542,8 +1600,9 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_ideas = JAP_agricoop_autonomy
-			JAP_gain_enthusiasm = { gain = 2 }
-			JAP_dev_monthly_shift = { which = TNW_Agriculture_monthly_value amount = 5 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
 		}
 	}
 	focus = {
@@ -1579,7 +1638,8 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed JAP_consumer_production_command"
 			add_political_power = 50
 			add_stability = 0.03
-			JAP_production_ratio_gain = { ratio_gain = 10 }
+			add_to_variable = { var = JAP_production_management_ratio_var value = 10 }
+			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
 			add_timed_idea = { idea = JAP_consumer_command days = 365 }
 		}
 	}
@@ -1595,7 +1655,8 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed JAP_report_on_Matsukawa_incident"
 			add_political_power = 50
 			add_stability = 0.03
-			JAP_gain_enthusiasm = { gain = 1 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 1 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 		}
 	}
 	focus = {
@@ -1646,7 +1707,8 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed JAP_council_president_left"
 			add_political_power = 50
 			add_stability = 0.05
-			JAP_gain_enthusiasm = { gain = 2 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			set_country_flag = JAP_council_chief_left_flag
 		}
 	}
@@ -1685,9 +1747,14 @@ focus_tree = {
 			add_stability = 0.03
 			add_ideas = JAP_surveillance_net
 			# 监控反噬
-			JAP_lose_enthusiasm = { loss = 3 }
+			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			# 不满者流向独立单产
-			JAP_congress_seat_transfer = { from_party = JAP_GTU to_party = JAP_IndUn seat_amount = 2 }
+			add_to_variable = { var = JAP_GTU value = -2 }
+			add_to_variable = { var = JAP_IndUn value = 2 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			clamp_variable = { var = JAP_IndUn min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
 		}
 	}
 	focus = {
@@ -1707,8 +1774,13 @@ focus_tree = {
 				ideology = syndicalism
 				popularity = 0.05
 			}
-			JAP_congress_seat_transfer = { from_party = JAP_IndUn to_party = JAP_GTU seat_amount = 5 }
-			JAP_gain_enthusiasm = { gain = 2 }
+			add_to_variable = { var = JAP_IndUn value = -5 }
+			add_to_variable = { var = JAP_GTU value = 5 }
+			clamp_variable = { var = JAP_IndUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 		}
 	}
 	focus = {
@@ -1725,8 +1797,13 @@ focus_tree = {
 				ideology = syndicalism
 				popularity = 0.05
 			}
-			JAP_gain_enthusiasm = { gain = 3 }
-			JAP_congress_seat_transfer = { from_party = JAP_GenUn to_party = JAP_GTU seat_amount = 3 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			add_to_variable = { var = JAP_GenUn value = -3 }
+			add_to_variable = { var = JAP_GTU value = 3 }
+			clamp_variable = { var = JAP_GenUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
 		}
 	}
 	focus = {
@@ -1769,7 +1846,8 @@ focus_tree = {
 			add_political_power = 50
 			add_stability = 0.03
 			add_ideas = JAP_legalism
-			JAP_gain_enthusiasm = { gain = 2 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 		}
 	}
 	focus = {
@@ -1793,7 +1871,8 @@ focus_tree = {
 			add_political_power = 50
 			add_stability = 0.03
 			add_ideas = JAP_national_security
-			JAP_lose_enthusiasm = { loss = 5 }
+			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			set_country_flag = JAP_hardline_security_flag
 		}
 	}
@@ -1846,7 +1925,8 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed JAP_defense_negotiation_with_unions"
 			add_political_power = 50
 			army_experience = 20
-			JAP_gain_enthusiasm = { gain = 3 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 		}
 	}
 	focus = {

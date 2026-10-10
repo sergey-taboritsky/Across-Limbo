@@ -748,8 +748,8 @@ country_event = {
 			limit = {
 				has_country_flag = JAP_yamakawa_econ_flag
 				has_country_flag = JAP_metropolitan_renovation_done_flag
-				check_variable = { JAP_socialist_reform_enthusiasm_var >= 50 }
-				check_variable = { JAP_production_management_ratio_var >= 50 }
+				check_variable = { var = JAP_socialist_reform_enthusiasm_var value = 50 compare = greater_than_or_equals }
+				check_variable = { var = JAP_production_management_ratio_var value = 50 compare = greater_than_or_equals }
 				NOT = { has_country_flag = JAP_karl_dependence_flag }
 			}
 			set_country_flag = JAP_experiment_success_flag
