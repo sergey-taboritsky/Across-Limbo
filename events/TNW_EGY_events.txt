@@ -71,8 +71,6 @@ news_event = {
 	}
 }
 
-#==== 1948-1949 剧情线 ====
-#开罗大火
 country_event = {
 	id = EGY_event.2
 	title = EGY_event.2.t
@@ -91,7 +89,6 @@ country_event = {
 	}
 }
 
-#七月革命
 country_event = {
 	id = EGY_event.3
 	title = EGY_event.3.t
@@ -124,7 +121,6 @@ country_event = {
 	}
 }
 
-#苏伊士最后通牒
 country_event = {
 	id = EGY_event.4
 	title = EGY_event.4.t

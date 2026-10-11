@@ -1,13 +1,8 @@
 # ============================================================
-# JAP 国策效果理念（2026-10-10 实装）
-# 图片全部复用本模组 interface 已定义的 GFX_idea_* 资源，无新增贴图
-# 永久理念（add_ideas）与时限理念（add_timed_idea）分列
 # ============================================================
 
 ideas = {
 	country = {
-
-		# ================= 永久理念 =================
 
 		JAP_women_suffrage = {
 			picture = JAP_The_first_leftwing_cabinet
@@ -470,8 +465,6 @@ ideas = {
 				stability_factor = 0.03
 			}
 		}
-
-		# ================= 时限理念（add_timed_idea） =================
 
 		JAP_constitution_drafting = {
 			picture = POL_In_a_haze

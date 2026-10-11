@@ -59,6 +59,5 @@ set_variable = { TNW_Agriculture_monthly_value = 10 }
 set_variable = { TNW_Affluence_value = 25 }
 set_variable = { TNW_Affluence_monthly_value = -5 }
 
-#军政府双雄力量对比（隐藏变量，总和恒为100；政变后生效）
 set_variable = { EGY_junta_naguib_var = 50 }
 set_variable = { EGY_junta_nasser_var = 50 }

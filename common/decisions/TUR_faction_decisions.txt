@@ -1,5 +1,3 @@
-#党内派系造势决议（隐藏变量零和转移：本派 +5，其余三派各 -2）
-#效果全部走 hidden_effect + custom_effect_tooltip（灏"隐藏变量"要求），数值显示由分类 desc 的 [?THIS.变量] 承担
 TUR_faction_decisions = {
 
 	TUR_faction_rally_eastern = {

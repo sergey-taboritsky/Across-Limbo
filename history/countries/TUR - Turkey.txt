@@ -81,7 +81,6 @@ set_variable = { TNW_Agriculture_monthly_value = -10 }
 set_variable = { TNW_Bureaucracy_value = 50 }
 set_variable = { TNW_Bureaucracy_monthly_value = 5 }
 
-#党代会派系支持度（隐藏变量，总和恒为100：东方派30/中央派30/民众派25/雪月派15）
 set_variable = { TUR_congress_eastern_var = 30 }
 set_variable = { TUR_congress_central_var = 30 }
 set_variable = { TUR_congress_populist_var = 25 }

@@ -13,7 +13,6 @@ focus_tree = {
 	}
 	default = no
 
-	# ================ 序幕：归国与党代会（1948.1-1948.4） ================
 	focus = {
 		id = TUR_The_Returnees
 		icon = GFX_TUR_The_Returnees
@@ -45,7 +44,6 @@ focus_tree = {
 		}
 	}
 
-	# ---- 党内博弈（大会期间可任选，零和转移派系支持度） ----
 	focus = {
 		id = TUR_Kazan_Legacy
 		icon = GFX_TUR_Kazan_Legacy
@@ -58,7 +56,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Kazan_Legacy"
 			add_political_power = 25
-			# 东方派+8（中央派-4，雪月派-4）
 			custom_effect_tooltip = TUR_congress_shift_tt
 			hidden_effect = {
 				add_to_variable = { var = TUR_congress_eastern_var value = 8 }
@@ -82,7 +79,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Countryside_Surveys"
 			add_political_power = 25
-			# 民众派+8（中央派-4，雪月派-4）
 			custom_effect_tooltip = TUR_congress_shift_tt
 			hidden_effect = {
 				add_to_variable = { var = TUR_congress_populist_var value = 8 }
@@ -109,7 +105,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Party_Audit"
 			add_political_power = 25
-			# 中央派+8（东方派-4，民众派-4）
 			custom_effect_tooltip = TUR_congress_shift_tt
 			hidden_effect = {
 				add_to_variable = { var = TUR_congress_central_var value = 8 }
@@ -133,7 +128,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Paris_Letters"
 			add_political_power = 25
-			# 雪月派（含工联会）+8（东方派-4，民众派-4）
 			custom_effect_tooltip = TUR_congress_shift_tt
 			hidden_effect = {
 				add_to_variable = { var = TUR_congress_snowmoon_var value = 8 }
@@ -176,7 +170,6 @@ focus_tree = {
 		}
 	}
 
-	# ================ 路线抉择（1948 年夏） ================
 	focus = {
 		id = TUR_Route_Eastern
 		icon = GFX_TUR_Route_Eastern
@@ -210,7 +203,6 @@ focus_tree = {
 			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_eastern
 			promote_character = TUR_Mustapha_Subhi
-			# 安德尔转任教育部长
 			custom_effect_tooltip = TUR_route_andel_education_tt
 			add_ideas = TUR_Sadrettin_Celal_Andel_edu
 		}
@@ -244,7 +236,6 @@ focus_tree = {
 			set_country_flag = TUR_route_central_flag
 			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_central
-			# 安德尔留任总统，实权归第一书记许斯努
 			custom_effect_tooltip = TUR_route_central_andel_tt
 		}
 	}
@@ -281,7 +272,6 @@ focus_tree = {
 			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_populist
 			promote_character = TUR_Sevket_Surreya_Aydemir
-			# 安德尔退出政坛
 			custom_effect_tooltip = TUR_route_populist_andel_tt
 			retire_character = TUR_Sadrettin_Celal_Andel
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
@@ -322,7 +312,6 @@ focus_tree = {
 			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_snowmoon
 			promote_character = TUR_Ismail_Bilen
-			# 安德尔转任教育部长
 			custom_effect_tooltip = TUR_route_andel_education_tt
 			add_ideas = TUR_Sadrettin_Celal_Andel_edu
 		}
@@ -359,12 +348,10 @@ focus_tree = {
 			set_country_flag = TUR_route_compromise_flag
 			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_compromise
-			# 安德尔以"众望所归"留任
 			custom_effect_tooltip = TUR_route_central_andel_tt
 		}
 	}
 
-	# ---- 雪月派内部分线 ----
 	focus = {
 		id = TUR_Snowmoon_Dominance
 		icon = GFX_TUR_Snowmoon_Dominance
@@ -403,7 +390,6 @@ focus_tree = {
 		}
 	}
 
-	# ================ 建国（1948 下半年） ================
 	focus = {
 		id = TUR_Party_Constitution
 		icon = GFX_TUR_Party_Constitution
@@ -539,7 +525,6 @@ focus_tree = {
 		}
 	}
 
-	# ================ 海峡危机（1949 年初总爆发） ================
 	focus = {
 		id = TUR_Straits_Crisis
 		icon = GFX_TUR_Straits_Crisis
@@ -558,7 +543,6 @@ focus_tree = {
 		}
 	}
 
-	# ================ 军队整编（危机之后） ================
 	focus = {
 		id = TUR_Reorganize_Revolutionary_Army
 		icon = GFX_TUR_Reorganize_Revolutionary_Army

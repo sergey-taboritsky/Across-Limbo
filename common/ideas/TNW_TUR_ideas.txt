@@ -66,7 +66,6 @@ ideas = {
 				Nationalism_drift = 0.01
 			}
 		}
-		# ==== 1948 党代会路线精神 ====
 		#东方派执政：喀山路线
 		TUR_route_eastern = {
 			picture = GFX_idea_TUR_dark_legacy_of_Gokalp
@@ -143,7 +142,6 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 			}
 		}
-		# ==== 革命军事委员会处置 ====
 		TUR_mwc_disbanded = {
 			picture = GFX_idea_TUR_revolutionary_emergency
 			allowed = {
@@ -178,7 +176,6 @@ ideas = {
 				conscription_factor = 0.02
 			}
 		}
-		# ==== 军队整编（海峡危机后） ====
 		TUR_red_army_reorg = {
 			picture = GFX_idea_TUR_revolutionary_emergency
 			allowed = {
@@ -228,7 +225,6 @@ ideas = {
 				experience_gain_army_factor = 0.1
 			}
 		}
-		# ==== 危机与安全 ====
 		TUR_straits_humiliation = {
 			picture = GFX_idea_TUR_undying_flame_of_revanchism
 			allowed = {

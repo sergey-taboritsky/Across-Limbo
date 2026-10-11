@@ -1,6 +1,5 @@
 add_namespace = TNW_level_development_event
 
-# ---------- 一、教育等级 升/降层 ----------
 country_event = {
 	id = TNW_level_development_event.1
 	title = TNW_level_development_event.1.t
@@ -30,7 +29,6 @@ country_event = {
 	}
 }
 
-# ---------- 二、工业化等级 升/降层 ----------
 country_event = {
 	id = TNW_level_development_event.3
 	title = TNW_level_development_event.3.t
@@ -60,7 +58,6 @@ country_event = {
 	}
 }
 
-# ---------- 三、富裕等级 升/降层 ----------
 country_event = {
 	id = TNW_level_development_event.5
 	title = TNW_level_development_event.5.t
@@ -90,7 +87,6 @@ country_event = {
 	}
 }
 
-# ---------- 四、农业等级 升/降层 ----------
 country_event = {
 	id = TNW_level_development_event.7
 	title = TNW_level_development_event.7.t
@@ -120,7 +116,6 @@ country_event = {
 	}
 }
 
-# ---------- 五、行政等级 升/降层 ----------
 country_event = {
 	id = TNW_level_development_event.9
 	title = TNW_level_development_event.9.t

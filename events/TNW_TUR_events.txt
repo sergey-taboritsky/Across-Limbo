@@ -1,6 +1,5 @@
 add_namespace = TUR_event
 
-# 革命军事委员会问题（国策 TUR_Military_Committee_Question 触发）
 country_event = {
 	id = TUR_event.1
 	title = TUR_event.1.t
@@ -32,7 +31,6 @@ country_event = {
 	}
 }
 
-# 第五次代表大会开幕（国策 TUR_Fifth_Congress_Convenes 触发）
 country_event = {
 	id = TUR_event.2
 	title = TUR_event.2.t
@@ -45,7 +43,6 @@ country_event = {
 	}
 }
 
-# 海峡危机总爆发（国策 TUR_Straits_Crisis 触发）
 country_event = {
 	id = TUR_event.3
 	title = TUR_event.3.t
@@ -83,7 +80,6 @@ country_event = {
 	}
 }
 
-# 君士坦丁堡来信（国策 TUR_Constantinople_Letters 触发）
 country_event = {
 	id = TUR_event.4
 	title = TUR_event.4.t
@@ -106,7 +102,6 @@ country_event = {
 	}
 }
 
-# 代表大会表决通过（国策 TUR_Congress_Vote 触发）
 country_event = {
 	id = TUR_event.5
 	title = TUR_event.5.t

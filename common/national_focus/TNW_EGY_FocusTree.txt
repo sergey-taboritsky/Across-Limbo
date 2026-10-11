@@ -13,7 +13,6 @@ focus_tree = {
 	}
 	default = no
 
-	# ================ 序幕：华夫脱与运河（1948 上半年） ================
 	focus = {
 		id = EGY_Wafd_Victory
 		icon = GFX_EGY_Wafd_Victory
@@ -132,7 +131,6 @@ focus_tree = {
 		}
 	}
 
-	# ================ 军政府时期（1948 下半年） ================
 	focus = {
 		id = EGY_Revolutionary_Tribunal
 		icon = GFX_EGY_Revolutionary_Tribunal
@@ -163,7 +161,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
 			add_to_variable = { var = TNW_Agriculture_value value = 15 }
 			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
-			# 土地改革偏向纳赛尔阵营（纳赛尔+5，纳吉布-5）
 			custom_effect_tooltip = EGY_land_nasser_tt
 			hidden_effect = {
 				add_to_variable = { var = EGY_junta_nasser_var value = 5 }
@@ -200,7 +197,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed EGY_Naguib_Camp"
 			add_political_power = 25
-			# 纳吉布+12，纳赛尔-12
 			custom_effect_tooltip = EGY_naguib_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = EGY_junta_naguib_var value = 12 }
@@ -222,7 +218,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed EGY_Nasser_Camp"
 			add_political_power = 25
-			# 纳赛尔+12，纳吉布-12
 			custom_effect_tooltip = EGY_nasser_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = EGY_junta_nasser_var value = 12 }
@@ -266,7 +261,6 @@ focus_tree = {
 		}
 	}
 
-	# ================ 权力斗争结局（1949 年初） ================
 	focus = {
 		id = EGY_Route_Naguib
 		icon = GFX_EGY_Route_Naguib
@@ -366,7 +360,6 @@ focus_tree = {
 		}
 	}
 
-	# ---- 纳吉布线：国民联盟（威权民主） ----
 	focus = {
 		id = EGY_Integrate_Wafd
 		icon = GFX_EGY_Integrate_Wafd
@@ -422,7 +415,6 @@ focus_tree = {
 		}
 	}
 
-	# ---- 纳赛尔线：人民防卫联盟（民族民粹独裁） ----
 	focus = {
 		id = EGY_Vanguard_State
 		icon = GFX_EGY_Vanguard_State
@@ -505,7 +497,6 @@ focus_tree = {
 		}
 	}
 
-	# ================ 苏伊士（1949 起，三线共用） ================
 	focus = {
 		id = EGY_Suez_Preparations
 		icon = GFX_EGY_Suez_Preparations

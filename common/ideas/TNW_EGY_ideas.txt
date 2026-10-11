@@ -36,7 +36,6 @@ ideas = {
 			}
 		}
 
-		#==== 1948-1949 剧情线（华夫脱-运河-军政府-双雄-苏伊士） ====
 		EGY_nahas_government = {
 			allowed = {
 				original_tag = EGY

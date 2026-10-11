@@ -1,16 +1,6 @@
 # ============================================================
-# 发展度阶梯 升级/降级 swap 效果（重构版 2026-10-10）
-# 五条阶梯：education / industry / welfare / agriculture / bureaucracy
-# 层级 1=最低 5=最高；到顶/到底不 swap，只给资源奖惩（与旧行为一致）
-# 变量约定：
-#   教育   TNW_Literacy_level_value       / TNW_Literacy_level_monthly_value       （GUI 条 1）
-#   工业化 TNW_Industrial_scale_value     / TNW_Industrial_scale_monthly_value     （GUI 条 3）
-#   富裕   TNW_Affluence_value            / TNW_Affluence_monthly_value            （GUI 条 2）
-# 兼容说明：TNW_level_development_literacy_* 两个旧效果名保留，行为不变；
-#          JAP country 文件注释及未来国策可继续按旧名调用教育阶梯。
 # ============================================================
 
-# ---------- 一、教育等级 ----------
 TNW_level_development_literacy_upgrade_effect = {
 	if = {
 		limit = { has_idea = TNW_dev_education_1 }
@@ -79,7 +69,6 @@ TNW_level_development_literacy_downgrade_effect = {
 	}
 }
 
-# ---------- 二、工业化等级 ----------
 TNW_level_development_industry_upgrade_effect = {
 	if = {
 		limit = { has_idea = TNW_dev_industry_1 }
@@ -148,7 +137,6 @@ TNW_level_development_industry_downgrade_effect = {
 	}
 }
 
-# ---------- 三、富裕等级 ----------
 TNW_level_development_welfare_upgrade_effect = {
 	if = {
 		limit = { has_idea = TNW_dev_welfare_1 }
@@ -217,7 +205,6 @@ TNW_level_development_welfare_downgrade_effect = {
 	}
 }
 
-# ---------- 四、农业等级（暂无进度条，供国策/未来系统调用） ----------
 TNW_level_development_agriculture_upgrade_effect = {
 	if = {
 		limit = { has_idea = TNW_dev_agriculture_1 }
@@ -286,7 +273,6 @@ TNW_level_development_agriculture_downgrade_effect = {
 	}
 }
 
-# ---------- 五、行政等级（暂无进度条，供国策/未来系统调用） ----------
 TNW_level_development_bureaucracy_upgrade_effect = {
 	if = {
 		limit = { has_idea = TNW_dev_bureaucracy_1 }

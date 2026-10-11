@@ -1,11 +1,7 @@
 on_actions = {
-	# 发展度月度结算：教育/工业化/富裕三条阶梯（借 on_monthly_FIJ 钩子 every_country）
-	# 未初始化 monthly_value 的国家加 0，进度条不动，行为安全
-	# 结算规则与重构前完全一致：>100 升一层+事件+进度-100+月增速×0.5；<0 降一层+事件+进度+100+月增速×0.5
 	on_monthly_FIJ = {
 		effect = {
 			every_country = {
-				# ---------- 一、教育等级（识字率） ----------
 				add_to_variable = {
 					TNW_Literacy_level_value = TNW_Literacy_level_monthly_value
 				}
@@ -46,7 +42,6 @@ on_actions = {
 					max = 100
 					min = 0
 				}
-				# ---------- 二、工业化等级 ----------
 				add_to_variable = {
 					TNW_Industrial_scale_value = TNW_Industrial_scale_monthly_value
 				}
@@ -87,7 +82,6 @@ on_actions = {
 					max = 100
 					min = 0
 				}
-				# ---------- 三、富裕等级 ----------
 				add_to_variable = {
 					TNW_Affluence_value = TNW_Affluence_monthly_value
 				}
@@ -128,7 +122,6 @@ on_actions = {
 					max = 100
 					min = 0
 				}
-				# ---------- 四、农业等级 ----------
 				add_to_variable = {
 					TNW_Agriculture_value = TNW_Agriculture_monthly_value
 				}
@@ -169,7 +162,6 @@ on_actions = {
 					max = 100
 					min = 0
 				}
-				# ---------- 五、行政等级 ----------
 				add_to_variable = {
 					TNW_Bureaucracy_value = TNW_Bureaucracy_monthly_value
 				}
