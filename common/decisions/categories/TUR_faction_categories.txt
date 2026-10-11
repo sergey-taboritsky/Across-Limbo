@@ -1,0 +1,14 @@
+#党内派系决议分类（文字显示隐藏变量，仿 TNW_Economy_categories 模式，无 GUI）
+TUR_Party_Factions_categories = {
+	icon = GFX_decision_category_border_conflicts
+	allowed = {
+		original_tag = TUR
+	}
+	visible = {
+		OR = {
+			has_country_flag = TUR_congress_open_flag
+			has_country_flag = TUR_congress_concluded_flag
+		}
+	}
+	visible_when_empty = yes
+}

@@ -207,6 +207,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			set_country_flag = TUR_route_eastern_flag
+			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_eastern
 			promote_character = TUR_Mustapha_Subhi
 			# 安德尔转任教育部长
@@ -241,6 +242,7 @@ focus_tree = {
 			add_political_power = 100
 			add_stability = 0.05
 			set_country_flag = TUR_route_central_flag
+			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_central
 			# 安德尔留任总统，实权归第一书记许斯努
 			custom_effect_tooltip = TUR_route_central_andel_tt
@@ -276,6 +278,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			set_country_flag = TUR_route_populist_flag
+			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_populist
 			promote_character = TUR_Sevket_Surreya_Aydemir
 			# 安德尔退出政坛
@@ -316,6 +319,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			set_country_flag = TUR_route_snowmoon_flag
+			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_snowmoon
 			promote_character = TUR_Ismail_Bilen
 			# 安德尔转任教育部长
@@ -353,6 +357,7 @@ focus_tree = {
 			add_political_power = 50
 			add_stability = 0.03
 			set_country_flag = TUR_route_compromise_flag
+			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_compromise
 			# 安德尔以"众望所归"留任
 			custom_effect_tooltip = TUR_route_central_andel_tt

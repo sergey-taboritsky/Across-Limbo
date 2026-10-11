@@ -47,3 +47,18 @@ add_ideas = {
 
 set_country_flag = has_second_leader_flag
 set_country_flag = EGY_Hussein_Sirri_PM_flag
+
+set_variable = { TNW_Literacy_level_value = 35 }
+set_variable = { TNW_Literacy_level_monthly_value = -5 }
+set_variable = { TNW_Bureaucracy_value = 40 }
+set_variable = { TNW_Bureaucracy_monthly_value = -5 }
+set_variable = { TNW_Industrial_scale_value = 25 }
+set_variable = { TNW_Industrial_scale_monthly_value = -5 }
+set_variable = { TNW_Agriculture_value = 45 }
+set_variable = { TNW_Agriculture_monthly_value = 10 }
+set_variable = { TNW_Affluence_value = 25 }
+set_variable = { TNW_Affluence_monthly_value = -5 }
+
+#军政府双雄力量对比（隐藏变量，总和恒为100；政变后生效）
+set_variable = { EGY_junta_naguib_var = 50 }
+set_variable = { EGY_junta_nasser_var = 50 }

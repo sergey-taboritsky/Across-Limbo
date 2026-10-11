@@ -177,7 +177,15 @@ characters = {
 			id = -1
 			traits = {
 			}
-			
+
+		}
+		country_leader = {
+			desc = EGY_Mohammed_Naguib_desc
+			ideology = Guided_democracy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
 		}
 	}
 	#易卜拉辛·舒克里
@@ -210,6 +218,24 @@ characters = {
 		country_leader = {
 			desc = EGY_Anwar_Sadat_desc
 			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+
+	#贾迈勒·阿卜杜勒·纳赛尔
+	EGY_Gamal_Abdel_Nasser = {
+		name = EGY_Gamal_Abdel_Nasser
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_EGY_Gamal_Abdel_Nasser
+			}
+		}
+		country_leader = {
+			desc = EGY_Gamal_Abdel_Nasser_desc
+			ideology = Singular_Nationalism
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {

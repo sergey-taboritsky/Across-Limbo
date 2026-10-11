@@ -1,0 +1,569 @@
+focus_tree = {
+	id = EGY_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EGY
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 1000
+	}
+	default = no
+
+	# ================ 序幕：华夫脱与运河（1948 上半年） ================
+	focus = {
+		id = EGY_Wafd_Victory
+		icon = GFX_EGY_Wafd_Victory
+		cost = 5.00
+		x = 20
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Wafd_Victory"
+			add_political_power = 25
+			add_ideas = EGY_nahas_government
+			clr_country_flag = EGY_Hussein_Sirri_PM_flag
+			set_country_flag = EGY_nahas_pm_flag
+			add_popularity = {
+				ideology = Conservatism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = EGY_Peoples_Policies
+		icon = GFX_EGY_Peoples_Policies
+		cost = 5.00
+		prerequisite = {
+			focus = EGY_Wafd_Victory
+		}
+		x = 20
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Peoples_Policies"
+			add_political_power = 25
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 10 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Free_Officers
+		icon = GFX_EGY_Free_Officers
+		cost = 5.00
+		prerequisite = {
+			focus = EGY_Wafd_Victory
+		}
+		x = 24
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Free_Officers"
+			add_political_power = 25
+			army_experience = 10
+			set_country_flag = EGY_free_officers_flag
+		}
+	}
+	focus = {
+		id = EGY_Canal_Unrest
+		icon = GFX_EGY_Canal_Unrest
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Peoples_Policies
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Canal_Unrest"
+			add_ideas = EGY_canal_guerrilla
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = EGY_British_Reprisals
+		icon = GFX_EGY_British_Reprisals
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Canal_Unrest
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_British_Reprisals"
+			add_ideas = EGY_british_reprisals
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = EGY_Cairo_Fire
+		icon = GFX_EGY_Cairo_Fire
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_British_Reprisals
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Cairo_Fire"
+			add_stability = -0.05
+			add_ideas = EGY_cairo_fire_aftermath
+			country_event = { id = EGY_event.2 }
+		}
+	}
+	focus = {
+		id = EGY_July_Revolution
+		icon = GFX_EGY_July_Revolution
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Cairo_Fire
+		}
+		prerequisite = {
+			focus = EGY_Free_Officers
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_July_Revolution"
+			country_event = { id = EGY_event.3 }
+		}
+	}
+
+	# ================ 军政府时期（1948 下半年） ================
+	focus = {
+		id = EGY_Revolutionary_Tribunal
+		icon = GFX_EGY_Revolutionary_Tribunal
+		cost = 5.00
+		prerequisite = {
+			focus = EGY_July_Revolution
+		}
+		x = 12
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Revolutionary_Tribunal"
+			add_political_power = 50
+			add_stability = 0.05
+			remove_ideas = EGY_traditionalist_clumping
+		}
+	}
+	focus = {
+		id = EGY_Land_Reform
+		icon = GFX_EGY_Land_Reform
+		cost = 5.00
+		prerequisite = {
+			focus = EGY_July_Revolution
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Land_Reform"
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 15 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+			# 土地改革偏向纳赛尔阵营（纳赛尔+5，纳吉布-5）
+			custom_effect_tooltip = EGY_land_nasser_tt
+			hidden_effect = {
+				add_to_variable = { var = EGY_junta_nasser_var value = 5 }
+				add_to_variable = { var = EGY_junta_naguib_var value = -5 }
+				clamp_variable = { var = EGY_junta_nasser_var max = 100 min = 0 }
+				clamp_variable = { var = EGY_junta_naguib_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = EGY_Rebuild_the_Army
+		icon = GFX_EGY_Rebuild_the_Army
+		cost = 5.00
+		prerequisite = {
+			focus = EGY_July_Revolution
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Rebuild_the_Army"
+			army_experience = 25
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = EGY_Naguib_Camp
+		icon = GFX_EGY_Naguib_Camp
+		cost = 5.00
+		prerequisite = {
+			focus = EGY_July_Revolution
+		}
+		x = 24
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Naguib_Camp"
+			add_political_power = 25
+			# 纳吉布+12，纳赛尔-12
+			custom_effect_tooltip = EGY_naguib_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = EGY_junta_naguib_var value = 12 }
+				add_to_variable = { var = EGY_junta_nasser_var value = -12 }
+				clamp_variable = { var = EGY_junta_naguib_var max = 100 min = 0 }
+				clamp_variable = { var = EGY_junta_nasser_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = EGY_Nasser_Camp
+		icon = GFX_EGY_Nasser_Camp
+		cost = 5.00
+		prerequisite = {
+			focus = EGY_July_Revolution
+		}
+		x = 28
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Nasser_Camp"
+			add_political_power = 25
+			# 纳赛尔+12，纳吉布-12
+			custom_effect_tooltip = EGY_nasser_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = EGY_junta_nasser_var value = 12 }
+				add_to_variable = { var = EGY_junta_naguib_var value = -12 }
+				clamp_variable = { var = EGY_junta_nasser_var max = 100 min = 0 }
+				clamp_variable = { var = EGY_junta_naguib_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = EGY_Moscow_Overture
+		icon = GFX_EGY_Moscow_Overture
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_July_Revolution
+		}
+		x = 22
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Moscow_Overture"
+			add_political_power = 25
+			add_ideas = EGY_russian_arms
+		}
+	}
+	focus = {
+		id = EGY_Constitutional_Question
+		icon = GFX_EGY_Constitutional_Question
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_July_Revolution
+		}
+		available = {
+			date > 1948.10.1
+		}
+		x = 18
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Constitutional_Question"
+			add_political_power = 25
+			set_country_flag = EGY_constituent_flag
+		}
+	}
+
+	# ================ 权力斗争结局（1949 年初） ================
+	focus = {
+		id = EGY_Route_Naguib
+		icon = GFX_EGY_Route_Naguib
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Constitutional_Question
+		}
+		mutually_exclusive = {
+			focus = EGY_Route_Nasser
+			focus = EGY_Dual_Consensus
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EGY_route_naguib_avail_tt
+				check_variable = { var = EGY_junta_naguib_var value = 55 compare = greater_than_or_equals }
+			}
+		}
+		cancellable = no
+		x = 14
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Route_Naguib"
+			add_political_power = 100
+			set_country_flag = EGY_route_naguib_flag
+			set_politics = {
+				ruling_party = Authoritarianism
+				elections_allowed = no
+			}
+			promote_character = EGY_Mohammed_Naguib
+			retire_character = EGY_Gamal_Abdel_Nasser
+			add_ideas = EGY_national_alliance
+			remove_ideas = EGY_junta_government
+		}
+	}
+	focus = {
+		id = EGY_Route_Nasser
+		icon = GFX_EGY_Route_Nasser
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Constitutional_Question
+		}
+		mutually_exclusive = {
+			focus = EGY_Route_Naguib
+			focus = EGY_Dual_Consensus
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EGY_route_nasser_avail_tt
+				check_variable = { var = EGY_junta_nasser_var value = 55 compare = greater_than_or_equals }
+			}
+		}
+		cancellable = no
+		x = 26
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Route_Nasser"
+			add_political_power = 100
+			add_war_support = 0.05
+			set_country_flag = EGY_route_nasser_flag
+			set_politics = {
+				ruling_party = Nationalism
+				elections_allowed = no
+			}
+			promote_character = EGY_Gamal_Abdel_Nasser
+			retire_character = EGY_Mohammed_Naguib
+			add_ideas = EGY_epdu
+			remove_ideas = EGY_junta_government
+		}
+	}
+	focus = {
+		id = EGY_Dual_Consensus
+		icon = GFX_EGY_Dual_Consensus
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Constitutional_Question
+		}
+		mutually_exclusive = {
+			focus = EGY_Route_Naguib
+			focus = EGY_Route_Nasser
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EGY_dual_avail_tt
+				check_variable = { var = EGY_junta_naguib_var value = 55 compare = less_than }
+				check_variable = { var = EGY_junta_nasser_var value = 55 compare = less_than }
+			}
+		}
+		cancellable = no
+		x = 20
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Dual_Consensus"
+			add_political_power = 50
+			set_country_flag = EGY_route_dual_flag
+			add_ideas = EGY_dual_power
+			remove_ideas = EGY_junta_government
+		}
+	}
+
+	# ---- 纳吉布线：国民联盟（威权民主） ----
+	focus = {
+		id = EGY_Integrate_Wafd
+		icon = GFX_EGY_Integrate_Wafd
+		cost = 5.00
+		prerequisite = {
+			focus = EGY_Route_Naguib
+		}
+		x = 12
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Integrate_Wafd"
+			add_political_power = 50
+			add_popularity = {
+				ideology = Conservatism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = EGY_Guided_Elections
+		icon = GFX_EGY_Guided_Elections
+		cost = 5.00
+		prerequisite = {
+			focus = EGY_Integrate_Wafd
+		}
+		x = 12
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Guided_Elections"
+			add_stability = 0.05
+			set_politics = {
+				ruling_party = Authoritarianism
+				elections_allowed = yes
+			}
+		}
+	}
+	focus = {
+		id = EGY_Authoritarian_Consolidation
+		icon = GFX_EGY_Authoritarian_Consolidation
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Guided_Elections
+		}
+		x = 12
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Authoritarian_Consolidation"
+			add_political_power = 100
+			add_stability = 0.05
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+
+	# ---- 纳赛尔线：人民防卫联盟（民族民粹独裁） ----
+	focus = {
+		id = EGY_Vanguard_State
+		icon = GFX_EGY_Vanguard_State
+		cost = 5.00
+		prerequisite = {
+			focus = EGY_Route_Nasser
+		}
+		x = 28
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Vanguard_State"
+			add_political_power = 50
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = EGY_Mass_Mobilization
+		icon = GFX_EGY_Mass_Mobilization
+		cost = 5.00
+		prerequisite = {
+			focus = EGY_Vanguard_State
+		}
+		x = 26
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Mass_Mobilization"
+			add_war_support = 0.05
+			army_experience = 20
+			add_manpower = 20000
+		}
+	}
+	focus = {
+		id = EGY_Nationalize_Industry
+		icon = GFX_EGY_Nationalize_Industry
+		cost = 5.00
+		prerequisite = {
+			focus = EGY_Vanguard_State
+		}
+		x = 30
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Nationalize_Industry"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 15 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_New_Egypt
+		icon = GFX_EGY_New_Egypt
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Mass_Mobilization
+		}
+		prerequisite = {
+			focus = EGY_Nationalize_Industry
+		}
+		x = 28
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_New_Egypt"
+			add_political_power = 100
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+
+	# ================ 苏伊士（1949 起，三线共用） ================
+	focus = {
+		id = EGY_Suez_Preparations
+		icon = GFX_EGY_Suez_Preparations
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Route_Naguib
+			focus = EGY_Route_Nasser
+			focus = EGY_Dual_Consensus
+		}
+		available = {
+			date > 1949.1.1
+		}
+		x = 20
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Suez_Preparations"
+			army_experience = 20
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = EGY_Suez_Ultimatum
+		icon = GFX_EGY_Suez_Ultimatum
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Suez_Preparations
+		}
+		available = {
+			date > 1949.4.1
+		}
+		x = 20
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Suez_Ultimatum"
+			country_event = { id = EGY_event.4 }
+		}
+	}
+	focus = {
+		id = EGY_Recover_Suez_By_Force
+		icon = GFX_EGY_Recover_Suez_By_Force
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Suez_Ultimatum
+		}
+		available = {
+			NOT = {
+				has_country_flag = EGY_suez_tolerated_flag
+			}
+		}
+		x = 20
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Recover_Suez_By_Force"
+			add_war_support = 0.05
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+		}
+	}
+}

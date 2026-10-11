@@ -70,3 +70,97 @@ news_event = {
 		name = EGY_news.2.a
 	}
 }
+
+#==== 1948-1949 剧情线 ====
+#开罗大火
+country_event = {
+	id = EGY_event.2
+	title = EGY_event.2.t
+	desc = EGY_event.2.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.2.a
+		add_political_power = 25
+		set_country_flag = EGY_blame_britain_flag
+	}
+	option = {
+		name = EGY_event.2.b
+		add_stability = -0.03
+	}
+}
+
+#七月革命
+country_event = {
+	id = EGY_event.3
+	title = EGY_event.3.t
+	desc = EGY_event.3.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.3.a
+		promote_character = EGY_Mohammed_Naguib
+		set_politics = {
+			ruling_party = Absolutism
+			elections_allowed = no
+		}
+		retire_character = EGY_Farouk_I
+		clr_country_flag = EGY_Hussein_Sirri_PM_flag
+		remove_ideas = {
+			EGY_chained_constitution
+			EGY_cairo_fire_aftermath
+		}
+		add_ideas = EGY_junta_government
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = EGY_news.3
+			}
+		}
+	}
+}
+
+#苏伊士最后通牒
+country_event = {
+	id = EGY_event.4
+	title = EGY_event.4.t
+	desc = EGY_event.4.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.4.a
+		add_war_support = 0.05
+		add_stability = -0.03
+		set_country_flag = EGY_ultimatum_refused_flag
+	}
+	option = {
+		name = EGY_event.4.b
+		add_political_power = 50
+		add_war_support = 0.03
+		set_country_flag = EGY_moscow_mediation_flag
+	}
+	option = {
+		name = EGY_event.4.c
+		add_political_power = 25
+		add_stability = 0.03
+		set_country_flag = EGY_suez_tolerated_flag
+	}
+}
+
+news_event = {
+	id = EGY_news.3
+	title = EGY_news.3.t
+	desc = EGY_news.3.d
+	picture = GFX_news_event_generic_funeral
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = EGY_news.3.a
+	}
+}

@@ -35,5 +35,111 @@ ideas = {
 				army_chief_cost_factor = 0.15
 			}
 		}
+
+		#==== 1948-1949 剧情线（华夫脱-运河-军政府-双雄-苏伊士） ====
+		EGY_nahas_government = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = -0.10
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		EGY_canal_guerrilla = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = 0.10
+				drift_defence_factor = -0.10
+			}
+		}
+		EGY_british_reprisals = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				consumer_goods_factor = 0.10
+				stability_factor = -0.05
+			}
+		}
+		EGY_cairo_fire_aftermath = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = -0.20
+				political_power_factor = -0.15
+			}
+		}
+		EGY_junta_government = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		EGY_national_alliance = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = 0.20
+				stability_factor = 0.10
+			}
+		}
+		EGY_epdu = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = 0.25
+				Nationalism_drift = 0.10
+				war_support_factor = 0.10
+				stability_factor = -0.05
+			}
+		}
+		EGY_dual_power = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = -0.10
+			}
+		}
+		EGY_russian_arms = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				experience_gain_army_factor = 0.15
+				max_planning = 0.10
+			}
+		}
 	}
 }

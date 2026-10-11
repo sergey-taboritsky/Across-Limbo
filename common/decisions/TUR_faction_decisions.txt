@@ -1,0 +1,124 @@
+#党内派系造势决议（隐藏变量零和转移：本派 +5，其余三派各 -2）
+#效果全部走 hidden_effect + custom_effect_tooltip（灏"隐藏变量"要求），数值显示由分类 desc 的 [?THIS.变量] 承担
+TUR_faction_decisions = {
+
+	TUR_faction_rally_eastern = {
+		icon = GFX_decision_generic_factory
+
+		visible = {
+			has_country_flag = TUR_congress_open_flag
+		}
+
+		cost = 25
+		days_re_enable = 30
+		fire_only_once = no
+
+		complete_effect = {
+			custom_effect_tooltip = TUR_faction_eastern_shift_tt
+			hidden_effect = {
+				add_to_variable = { var = TUR_congress_eastern_var value = 5 }
+				add_to_variable = { var = TUR_congress_central_var value = -2 }
+				add_to_variable = { var = TUR_congress_populist_var value = -2 }
+				add_to_variable = { var = TUR_congress_snowmoon_var value = -2 }
+				clamp_variable = { var = TUR_congress_eastern_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_central_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_populist_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_snowmoon_var max = 100 min = 0 }
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	TUR_faction_rally_central = {
+		icon = GFX_decision_generic_factory
+
+		visible = {
+			has_country_flag = TUR_congress_open_flag
+		}
+
+		cost = 25
+		days_re_enable = 30
+		fire_only_once = no
+
+		complete_effect = {
+			custom_effect_tooltip = TUR_faction_central_shift_tt
+			hidden_effect = {
+				add_to_variable = { var = TUR_congress_central_var value = 5 }
+				add_to_variable = { var = TUR_congress_eastern_var value = -2 }
+				add_to_variable = { var = TUR_congress_populist_var value = -2 }
+				add_to_variable = { var = TUR_congress_snowmoon_var value = -2 }
+				clamp_variable = { var = TUR_congress_central_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_eastern_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_populist_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_snowmoon_var max = 100 min = 0 }
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	TUR_faction_rally_populist = {
+		icon = GFX_decision_generic_factory
+
+		visible = {
+			has_country_flag = TUR_congress_open_flag
+		}
+
+		cost = 25
+		days_re_enable = 30
+		fire_only_once = no
+
+		complete_effect = {
+			custom_effect_tooltip = TUR_faction_populist_shift_tt
+			hidden_effect = {
+				add_to_variable = { var = TUR_congress_populist_var value = 5 }
+				add_to_variable = { var = TUR_congress_eastern_var value = -2 }
+				add_to_variable = { var = TUR_congress_central_var value = -2 }
+				add_to_variable = { var = TUR_congress_snowmoon_var value = -2 }
+				clamp_variable = { var = TUR_congress_populist_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_eastern_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_central_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_snowmoon_var max = 100 min = 0 }
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	TUR_faction_rally_snowmoon = {
+		icon = GFX_decision_generic_factory
+
+		visible = {
+			has_country_flag = TUR_congress_open_flag
+		}
+
+		cost = 25
+		days_re_enable = 30
+		fire_only_once = no
+
+		complete_effect = {
+			custom_effect_tooltip = TUR_faction_snowmoon_shift_tt
+			hidden_effect = {
+				add_to_variable = { var = TUR_congress_snowmoon_var value = 5 }
+				add_to_variable = { var = TUR_congress_eastern_var value = -2 }
+				add_to_variable = { var = TUR_congress_central_var value = -2 }
+				add_to_variable = { var = TUR_congress_populist_var value = -2 }
+				clamp_variable = { var = TUR_congress_snowmoon_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_eastern_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_central_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_populist_var max = 100 min = 0 }
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
