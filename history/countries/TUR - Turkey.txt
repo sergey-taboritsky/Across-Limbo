@@ -70,10 +70,24 @@ add_ideas = {
 	TUR_Mustapha_Subhi_theorist
 }
 
-#set_country_flag = TUR_Ismet_Grand_Vizier_flag
-#set_country_flag = has_second_leader_flag
+set_variable = { TNW_Literacy_level_value = 40 }
+set_variable = { TNW_Literacy_level_monthly_value = 10 }
+set_variable = { TNW_Industrial_scale_value = 30 }
+set_variable = { TNW_Industrial_scale_monthly_value = -5 }
+set_variable = { TNW_Affluence_value = 30 }
+set_variable = { TNW_Affluence_monthly_value = -5 }
+set_variable = { TNW_Agriculture_value = 40 }
+set_variable = { TNW_Agriculture_monthly_value = -10 }
+set_variable = { TNW_Bureaucracy_value = 50 }
+set_variable = { TNW_Bureaucracy_monthly_value = 5 }
 
-#country_event = { id = TUR_event.1 days = 12 }
+#党代会派系支持度（隐藏变量，总和恒为100：东方派30/中央派30/民众派25/雪月派15）
+set_variable = { TUR_congress_eastern_var = 30 }
+set_variable = { TUR_congress_central_var = 30 }
+set_variable = { TUR_congress_populist_var = 25 }
+set_variable = { TUR_congress_snowmoon_var = 15 }
+
+
 
 add_dynamic_modifier = {
 	modifier = TUR_peoples_revolutionary_army

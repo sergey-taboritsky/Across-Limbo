@@ -1,0 +1,710 @@
+focus_tree = {
+	id = TUR_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 1000
+	}
+	default = no
+
+	# ================ 序幕：归国与党代会（1948.1-1948.4） ================
+	focus = {
+		id = TUR_The_Returnees
+		icon = GFX_TUR_The_Returnees
+		cost = 5.00
+		x = 20
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_The_Returnees"
+			add_political_power = 50
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = TUR_Fifth_Congress_Convenes
+		icon = GFX_TUR_Fifth_Congress_Convenes
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_The_Returnees
+		}
+		x = 20
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Fifth_Congress_Convenes"
+			set_country_flag = TUR_congress_open_flag
+			country_event = { id = TUR_event.2 }
+		}
+	}
+
+	# ---- 党内博弈（大会期间可任选，零和转移派系支持度） ----
+	focus = {
+		id = TUR_Kazan_Legacy
+		icon = GFX_TUR_Kazan_Legacy
+		cost = 5.00
+		available = {
+			has_country_flag = TUR_congress_open_flag
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Kazan_Legacy"
+			add_political_power = 25
+			# 东方派+8（中央派-4，雪月派-4）
+			custom_effect_tooltip = TUR_congress_shift_tt
+			hidden_effect = {
+				add_to_variable = { var = TUR_congress_eastern_var value = 8 }
+				add_to_variable = { var = TUR_congress_central_var value = -4 }
+				add_to_variable = { var = TUR_congress_snowmoon_var value = -4 }
+				clamp_variable = { var = TUR_congress_eastern_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_central_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_snowmoon_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = TUR_Countryside_Surveys
+		icon = GFX_TUR_Countryside_Surveys
+		cost = 5.00
+		available = {
+			has_country_flag = TUR_congress_open_flag
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Countryside_Surveys"
+			add_political_power = 25
+			# 民众派+8（中央派-4，雪月派-4）
+			custom_effect_tooltip = TUR_congress_shift_tt
+			hidden_effect = {
+				add_to_variable = { var = TUR_congress_populist_var value = 8 }
+				add_to_variable = { var = TUR_congress_central_var value = -4 }
+				add_to_variable = { var = TUR_congress_snowmoon_var value = -4 }
+				clamp_variable = { var = TUR_congress_populist_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_central_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_snowmoon_var max = 100 min = 0 }
+			}
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 10 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = TUR_Party_Audit
+		icon = GFX_TUR_Party_Audit
+		cost = 5.00
+		available = {
+			has_country_flag = TUR_congress_open_flag
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Party_Audit"
+			add_political_power = 25
+			# 中央派+8（东方派-4，民众派-4）
+			custom_effect_tooltip = TUR_congress_shift_tt
+			hidden_effect = {
+				add_to_variable = { var = TUR_congress_central_var value = 8 }
+				add_to_variable = { var = TUR_congress_eastern_var value = -4 }
+				add_to_variable = { var = TUR_congress_populist_var value = -4 }
+				clamp_variable = { var = TUR_congress_central_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_eastern_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_populist_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = TUR_Paris_Letters
+		icon = GFX_TUR_Paris_Letters
+		cost = 5.00
+		available = {
+			has_country_flag = TUR_congress_open_flag
+		}
+		x = 23
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Paris_Letters"
+			add_political_power = 25
+			# 雪月派（含工联会）+8（东方派-4，民众派-4）
+			custom_effect_tooltip = TUR_congress_shift_tt
+			hidden_effect = {
+				add_to_variable = { var = TUR_congress_snowmoon_var value = 8 }
+				add_to_variable = { var = TUR_congress_eastern_var value = -4 }
+				add_to_variable = { var = TUR_congress_populist_var value = -4 }
+				clamp_variable = { var = TUR_congress_snowmoon_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_eastern_var max = 100 min = 0 }
+				clamp_variable = { var = TUR_congress_populist_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = TUR_Military_Committee_Question
+		icon = GFX_TUR_Military_Committee_Question
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_The_Returnees
+		}
+		x = 26
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Military_Committee_Question"
+			country_event = { id = TUR_event.1 }
+		}
+	}
+	focus = {
+		id = TUR_Congress_Vote
+		icon = GFX_TUR_Congress_Vote
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Fifth_Congress_Convenes
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Congress_Vote"
+			clr_country_flag = TUR_congress_open_flag
+			set_country_flag = TUR_congress_concluded_flag
+			country_event = { id = TUR_event.5 }
+		}
+	}
+
+	# ================ 路线抉择（1948 年夏） ================
+	focus = {
+		id = TUR_Route_Eastern
+		icon = GFX_TUR_Route_Eastern
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Congress_Vote
+		}
+		mutually_exclusive = {
+			focus = TUR_Route_Central
+			focus = TUR_Route_Populist
+			focus = TUR_Route_Snowmoon
+			focus = TUR_Congress_Compromise
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TUR_route_eastern_avail_tt
+				check_variable = { var = TUR_congress_eastern_var value = 35 compare = greater_than_or_equals }
+			}
+		}
+		cancellable = no
+		x = 14
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Route_Eastern"
+			add_political_power = 100
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			set_country_flag = TUR_route_eastern_flag
+			add_ideas = TUR_route_eastern
+			promote_character = TUR_Mustapha_Subhi
+			# 安德尔转任教育部长
+			custom_effect_tooltip = TUR_route_andel_education_tt
+			add_ideas = TUR_Sadrettin_Celal_Andel_edu
+		}
+	}
+	focus = {
+		id = TUR_Route_Central
+		icon = GFX_TUR_Route_Central
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Congress_Vote
+		}
+		mutually_exclusive = {
+			focus = TUR_Route_Eastern
+			focus = TUR_Route_Populist
+			focus = TUR_Route_Snowmoon
+			focus = TUR_Congress_Compromise
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TUR_route_central_avail_tt
+				check_variable = { var = TUR_congress_central_var value = 35 compare = greater_than_or_equals }
+			}
+		}
+		cancellable = no
+		x = 17
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Route_Central"
+			add_political_power = 100
+			add_stability = 0.05
+			set_country_flag = TUR_route_central_flag
+			add_ideas = TUR_route_central
+			# 安德尔留任总统，实权归第一书记许斯努
+			custom_effect_tooltip = TUR_route_central_andel_tt
+		}
+	}
+	focus = {
+		id = TUR_Route_Populist
+		icon = GFX_TUR_Route_Populist
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Congress_Vote
+		}
+		mutually_exclusive = {
+			focus = TUR_Route_Eastern
+			focus = TUR_Route_Central
+			focus = TUR_Route_Snowmoon
+			focus = TUR_Congress_Compromise
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TUR_route_populist_avail_tt
+				check_variable = { var = TUR_congress_populist_var value = 35 compare = greater_than_or_equals }
+			}
+		}
+		cancellable = no
+		x = 20
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Route_Populist"
+			add_political_power = 100
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			set_country_flag = TUR_route_populist_flag
+			add_ideas = TUR_route_populist
+			promote_character = TUR_Sevket_Surreya_Aydemir
+			# 安德尔退出政坛
+			custom_effect_tooltip = TUR_route_populist_andel_tt
+			retire_character = TUR_Sadrettin_Celal_Andel
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 15 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = TUR_Route_Snowmoon
+		icon = GFX_TUR_Route_Snowmoon
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Congress_Vote
+		}
+		mutually_exclusive = {
+			focus = TUR_Route_Eastern
+			focus = TUR_Route_Central
+			focus = TUR_Route_Populist
+			focus = TUR_Congress_Compromise
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TUR_route_snowmoon_avail_tt
+				check_variable = { var = TUR_congress_snowmoon_var value = 35 compare = greater_than_or_equals }
+			}
+		}
+		cancellable = no
+		x = 23
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Route_Snowmoon"
+			add_political_power = 100
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+			set_country_flag = TUR_route_snowmoon_flag
+			add_ideas = TUR_route_snowmoon
+			promote_character = TUR_Ismail_Bilen
+			# 安德尔转任教育部长
+			custom_effect_tooltip = TUR_route_andel_education_tt
+			add_ideas = TUR_Sadrettin_Celal_Andel_edu
+		}
+	}
+	focus = {
+		id = TUR_Congress_Compromise
+		icon = GFX_TUR_Congress_Compromise
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Congress_Vote
+		}
+		mutually_exclusive = {
+			focus = TUR_Route_Eastern
+			focus = TUR_Route_Central
+			focus = TUR_Route_Populist
+			focus = TUR_Route_Snowmoon
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TUR_compromise_avail_tt
+				check_variable = { var = TUR_congress_eastern_var value = 35 compare = less_than }
+				check_variable = { var = TUR_congress_central_var value = 35 compare = less_than }
+				check_variable = { var = TUR_congress_populist_var value = 35 compare = less_than }
+				check_variable = { var = TUR_congress_snowmoon_var value = 35 compare = less_than }
+			}
+		}
+		cancellable = no
+		x = 20
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Congress_Compromise"
+			add_political_power = 50
+			add_stability = 0.03
+			set_country_flag = TUR_route_compromise_flag
+			add_ideas = TUR_route_compromise
+			# 安德尔以"众望所归"留任
+			custom_effect_tooltip = TUR_route_central_andel_tt
+		}
+	}
+
+	# ---- 雪月派内部分线 ----
+	focus = {
+		id = TUR_Snowmoon_Dominance
+		icon = GFX_TUR_Snowmoon_Dominance
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Route_Snowmoon
+		}
+		mutually_exclusive = {
+			focus = TUR_Union_Power_Share
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Snowmoon_Dominance"
+			add_political_power = 50
+			add_stability = 0.03
+			set_country_flag = TUR_snowmoon_dominant_flag
+		}
+	}
+	focus = {
+		id = TUR_Union_Power_Share
+		icon = GFX_TUR_Union_Power_Share
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Route_Snowmoon
+		}
+		mutually_exclusive = {
+			focus = TUR_Snowmoon_Dominance
+		}
+		x = 24
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Union_Power_Share"
+			add_stability = 0.02
+			add_ideas = TUR_union_participation
+		}
+	}
+
+	# ================ 建国（1948 下半年） ================
+	focus = {
+		id = TUR_Party_Constitution
+		icon = GFX_TUR_Party_Constitution
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Route_Eastern
+			focus = TUR_Route_Central
+			focus = TUR_Route_Populist
+			focus = TUR_Route_Snowmoon
+			focus = TUR_Congress_Compromise
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Party_Constitution"
+			add_political_power = 50
+			add_stability = 0.05
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 15 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = TUR_State_Apparatus
+		icon = GFX_TUR_State_Apparatus
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Route_Eastern
+			focus = TUR_Route_Central
+			focus = TUR_Route_Populist
+			focus = TUR_Route_Snowmoon
+			focus = TUR_Congress_Compromise
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_State_Apparatus"
+			add_political_power = 50
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = TUR_Literacy_Campaign
+		icon = GFX_TUR_Literacy_Campaign
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Party_Constitution
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Literacy_Campaign"
+			add_political_power = 50
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 15 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = TUR_Spring_Sowing
+		icon = GFX_TUR_Spring_Sowing
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Party_Constitution
+		}
+		x = 14
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Spring_Sowing"
+			add_political_power = 25
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 15 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = TUR_Rebuild_Anatolia
+		icon = GFX_TUR_Rebuild_Anatolia
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Party_Constitution
+		}
+		prerequisite = {
+			focus = TUR_State_Apparatus
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Rebuild_Anatolia"
+			add_political_power = 50
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 15 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = TUR_Constantinople_Letters
+		icon = GFX_TUR_Constantinople_Letters
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Route_Eastern
+			focus = TUR_Route_Central
+			focus = TUR_Route_Populist
+			focus = TUR_Route_Snowmoon
+			focus = TUR_Congress_Compromise
+		}
+		available = {
+			date > 1948.7.1
+		}
+		x = 26
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Constantinople_Letters"
+			country_event = { id = TUR_event.4 }
+		}
+	}
+
+	# ================ 海峡危机（1949 年初总爆发） ================
+	focus = {
+		id = TUR_Straits_Crisis
+		icon = GFX_TUR_Straits_Crisis
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Constantinople_Letters
+		}
+		available = {
+			date > 1949.1.1
+		}
+		x = 20
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Straits_Crisis"
+			country_event = { id = TUR_event.3 }
+		}
+	}
+
+	# ================ 军队整编（危机之后） ================
+	focus = {
+		id = TUR_Reorganize_Revolutionary_Army
+		icon = GFX_TUR_Reorganize_Revolutionary_Army
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Straits_Crisis
+		}
+		x = 20
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Reorganize_Revolutionary_Army"
+			add_political_power = 25
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = TUR_Red_Army_Reorganization
+		icon = GFX_TUR_Red_Army_Reorganization
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Reorganize_Revolutionary_Army
+		}
+		mutually_exclusive = {
+			focus = TUR_Retain_Old_Officers
+			focus = TUR_Militia_Doctrine
+		}
+		available = {
+			OR = {
+				has_country_flag = TUR_route_eastern_flag
+				has_country_flag = TUR_route_compromise_flag
+			}
+		}
+		cancellable = no
+		x = 16
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Red_Army_Reorganization"
+			add_war_support = 0.05
+			army_experience = 30
+			add_ideas = TUR_red_army_reorg
+		}
+	}
+	focus = {
+		id = TUR_Retain_Old_Officers
+		icon = GFX_TUR_Retain_Old_Officers
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Reorganize_Revolutionary_Army
+		}
+		mutually_exclusive = {
+			focus = TUR_Red_Army_Reorganization
+			focus = TUR_Militia_Doctrine
+		}
+		available = {
+			OR = {
+				has_country_flag = TUR_route_central_flag
+				has_country_flag = TUR_route_populist_flag
+				has_country_flag = TUR_route_compromise_flag
+			}
+		}
+		cancellable = no
+		x = 20
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Retain_Old_Officers"
+			add_political_power = 25
+			army_experience = 40
+			add_ideas = TUR_retained_officers
+		}
+	}
+	focus = {
+		id = TUR_Militia_Doctrine
+		icon = GFX_TUR_Militia_Doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Reorganize_Revolutionary_Army
+		}
+		mutually_exclusive = {
+			focus = TUR_Red_Army_Reorganization
+			focus = TUR_Retain_Old_Officers
+		}
+		available = {
+			OR = {
+				has_country_flag = TUR_route_snowmoon_flag
+				has_country_flag = TUR_route_compromise_flag
+			}
+		}
+		cancellable = no
+		x = 24
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Militia_Doctrine"
+			add_war_support = 0.05
+			army_experience = 20
+			add_ideas = TUR_militia_doctrine
+		}
+	}
+	focus = {
+		id = TUR_Southern_Campaign
+		icon = GFX_TUR_Southern_Campaign
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Reorganize_Revolutionary_Army
+		}
+		x = 12
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Southern_Campaign"
+			add_war_support = 0.03
+			army_experience = 20
+			set_country_flag = TUR_south_pacified_flag
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 10 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = TUR_Straits_Defense_Plans
+		icon = GFX_TUR_Straits_Defense_Plans
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Reorganize_Revolutionary_Army
+		}
+		x = 28
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Straits_Defense_Plans"
+			add_political_power = 25
+			add_war_support = 0.05
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = TUR_Revolutionary_Army_Unified
+		icon = GFX_TUR_Revolutionary_Army_Unified
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Red_Army_Reorganization
+			focus = TUR_Retain_Old_Officers
+			focus = TUR_Militia_Doctrine
+		}
+		x = 20
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Revolutionary_Army_Unified"
+			add_political_power = 50
+			army_experience = 50
+			add_ideas = TUR_new_army
+			remove_dynamic_modifier = {
+				modifier = TUR_peoples_revolutionary_army
+			}
+		}
+	}
+}

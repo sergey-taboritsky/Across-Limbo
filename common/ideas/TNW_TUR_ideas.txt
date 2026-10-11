@@ -66,5 +66,190 @@ ideas = {
 				Nationalism_drift = 0.01
 			}
 		}
+		# ==== 1948 党代会路线精神 ====
+		#东方派执政：喀山路线
+		TUR_route_eastern = {
+			picture = GFX_idea_TUR_dark_legacy_of_Gokalp
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.05
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+			}
+		}
+		#中央派执政：第一书记体制
+		TUR_route_central = {
+			picture = GFX_idea_TUR_scholars_workers_soldiers
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.05
+				research_speed_factor = 0.03
+			}
+		}
+		#民众派执政：凯末尔左翼注释
+		TUR_route_populist = {
+			picture = GFX_idea_TUR_scholars_workers_soldiers
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		#雪月派执政：巴黎正统
+		TUR_route_snowmoon = {
+			picture = GFX_idea_TUR_scholars_workers_soldiers
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.15
+				factory_output = 0.03
+				stability_factor = 0.03
+			}
+		}
+		#僵局妥协：无人过半
+		TUR_route_compromise = {
+			picture = GFX_idea_TUR_scholars_workers_soldiers
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		#工联会参与执政
+		TUR_union_participation = {
+			picture = GFX_idea_TUR_scholars_workers_soldiers
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		# ==== 革命军事委员会处置 ====
+		TUR_mwc_disbanded = {
+			picture = GFX_idea_TUR_revolutionary_emergency
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				conscription_factor = -0.02
+			}
+		}
+		TUR_mwc_integrated = {
+			picture = GFX_idea_TUR_revolutionary_emergency
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				max_planning = 0.1
+				planning_speed = 0.1
+			}
+		}
+		TUR_mwc_left_alone = {
+			picture = GFX_idea_TUR_revolutionary_emergency
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = 0.02
+			}
+		}
+		# ==== 军队整编（海峡危机后） ====
+		TUR_red_army_reorg = {
+			picture = GFX_idea_TUR_revolutionary_emergency
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				experience_gain_army_factor = 0.1
+				land_reinforce_rate = 0.05
+			}
+		}
+		TUR_retained_officers = {
+			picture = GFX_idea_TUR_revolutionary_emergency
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.03
+				planning_speed = 0.05
+				max_command_power = 10
+				stability_factor = -0.03
+			}
+		}
+		TUR_militia_doctrine = {
+			picture = GFX_idea_TUR_revolutionary_emergency
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				supply_consumption_factor = -0.1
+				conscription_factor = 0.02
+			}
+		}
+		TUR_new_army = {
+			picture = GFX_idea_TUR_revolutionary_emergency
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				experience_gain_army_factor = 0.1
+			}
+		}
+		# ==== 危机与安全 ====
+		TUR_straits_humiliation = {
+			picture = GFX_idea_TUR_undying_flame_of_revanchism
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+			}
+		}
+		TUR_security_crackdown = {
+			picture = GFX_idea_TUR_undying_flame_of_revanchism
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.1
+			}
+		}
 	}
 }

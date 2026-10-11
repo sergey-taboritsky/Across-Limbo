@@ -15,6 +15,17 @@ characters = {
 			traits = {
 			}
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TUR_Sadrettin_Celal_Andel_edu
+			allowed = { original_tag = TUR }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
 	}
 	#穆斯塔法·苏布希
 	TUR_Mustapha_Subhi = {
@@ -133,6 +144,14 @@ characters = {
 				small = GFX_portrait_small_TUR_Ismail_Bilen
 			}
 		}
+		country_leader = {
+			desc = TUR_Ismail_Bilen_desc
+			ideology = Anarchist_Communism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_token = TUR_Ismail_Bilen_advisor
@@ -172,6 +191,14 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portrait_large_TUR_Sevket_Surreya_Aydemir
+			}
+		}
+		country_leader = {
+			desc = TUR_Sevket_Surreya_Aydemir_desc
+			ideology = agrarian_socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
 			}
 		}
 	}
