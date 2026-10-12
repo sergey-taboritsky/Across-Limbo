@@ -13,6 +13,11 @@ set_technology = {
 recruit_character = PER_Mohammad_Tadayyon
 recruit_character = PER_Mohammad_Hosayn_Ayrom
 recruit_character = PER_Ali_Akbar_Davar
+recruit_character = PER_Ali_Razmara
+recruit_character = PER_Mohammad_Ali_Foroughi
+recruit_character = PER_Iraj_Eskandari
+recruit_character = PER_Mohammad_Mosaddeq
+recruit_character = PER_Hamid_Mirza
 
 set_convoys = 10
 set_politics = {
@@ -38,3 +43,19 @@ add_ideas = {
 }
 
 country_event = { id = PER_event.1 days = 755 }
+
+set_variable = { TNW_Literacy_level_value = 30 }
+set_variable = { TNW_Literacy_level_monthly_value = 5 }
+set_variable = { TNW_Industrial_scale_value = 25 }
+set_variable = { TNW_Industrial_scale_monthly_value = -5 }
+set_variable = { TNW_Affluence_value = 25 }
+set_variable = { TNW_Affluence_monthly_value = -5 }
+set_variable = { TNW_Agriculture_value = 40 }
+set_variable = { TNW_Agriculture_monthly_value = -10 }
+set_variable = { TNW_Bureaucracy_value = 45 }
+set_variable = { TNW_Bureaucracy_monthly_value = 5 }
+
+set_variable = { PER_suc_progress_var = 35 }
+set_variable = { PER_suc_military_var = 30 }
+set_variable = { PER_suc_radical_var = 20 }
+set_variable = { PER_suc_association_var = 15 }

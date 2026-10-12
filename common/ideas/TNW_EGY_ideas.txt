@@ -36,6 +36,73 @@ ideas = {
 			}
 		}
 
+		EGY_chained_constitution = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.05
+			}
+		}
+		EGY_Suez_catastrophe = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+			}
+		}
+		EGY_world_falling_apart = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		EGY_army_irritation = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = -0.05
+				max_planning = -0.10
+			}
+		}
+		EGY_worker_disdain = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.05
+			}
+		}
+		EGY_traditionalist_clumping = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = -0.05
+				political_advisor_cost_factor = 0.10
+			}
+		}
+
 		EGY_nahas_government = {
 			allowed = {
 				original_tag = EGY
@@ -118,17 +185,6 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
-		EGY_dual_power = {
-			allowed = {
-				original_tag = EGY
-			}
-			removal_cost = -1
-			#picture =
-			modifier = {
-				political_power_factor = 0.10
-				stability_factor = -0.10
-			}
-		}
 		EGY_russian_arms = {
 			allowed = {
 				original_tag = EGY
@@ -138,6 +194,209 @@ ideas = {
 			modifier = {
 				experience_gain_army_factor = 0.15
 				max_planning = 0.10
+			}
+		}
+		EGY_state_steel_econ = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		EGY_aswan_dam = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_infrastructure_factor = 0.15
+				stability_factor = 0.05
+			}
+		}
+		EGY_arab_socialism_cap = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.10
+				factory_output = 0.05
+			}
+		}
+		EGY_open_door_econ = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				consumer_goods_factor = -0.05
+				trade_law_cost_factor = -0.25
+			}
+		}
+		EGY_foreign_capital_idea = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		EGY_nile_tourism = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				consumer_goods_factor = -0.03
+				stability_factor = 0.03
+			}
+		}
+		EGY_financial_hub_cap = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.10
+				stability_factor = 0.05
+			}
+		}
+		EGY_professional_army = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				experience_gain_army_factor = 0.10
+				max_planning = 0.05
+			}
+		}
+		EGY_standard_arms_system = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				experience_gain_army_factor = 0.05
+				production_speed_arms_workshop_factor = 0.10
+			}
+		}
+		EGY_border_guard_cmd = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = 0.05
+				resistance_damage_to_us = -0.05
+			}
+		}
+		EGY_desert_mobile_force = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				planning_speed = 0.10
+				supply_consumption_factor = -0.05
+			}
+		}
+		EGY_defense_treaty_idea = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				experience_gain_army_factor = 0.05
+				training_time_army_factor = -0.05
+			}
+		}
+		EGY_shield_of_republic = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		EGY_new_doctrine_army = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				army_attack_factor = 0.05
+				experience_gain_army_factor = 0.10
+			}
+		}
+		EGY_soviet_arms_system = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				experience_gain_army_factor = 0.10
+				land_reinforce_rate = 0.05
+			}
+		}
+		EGY_commissar_corps = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.03
+			}
+		}
+		EGY_fedayeen_network = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		EGY_shield_of_nile = {
+			allowed = {
+				original_tag = EGY
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				army_defence_factor = 0.10
+				war_support_factor = 0.05
+				stability_factor = 0.05
 			}
 		}
 	}

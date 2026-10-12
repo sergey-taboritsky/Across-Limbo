@@ -28,6 +28,7 @@ recruit_character = EGY_Henri_Curiel
 recruit_character = EGY_Hillel_Schwartz
 recruit_character = EGY_Youssef_Darwish
 recruit_character = EGY_Mohammed_Naguib
+recruit_character = EGY_Gamal_Abdel_Nasser
 recruit_character = EGY_Ibrahim_Shoukri
 recruit_character = EGY_Anwar_Sadat
 

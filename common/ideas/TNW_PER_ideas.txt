@@ -1,0 +1,288 @@
+ideas = {
+
+	hidden_ideas = {
+	}
+
+	country = {
+		PER_oil_for_machines = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		PER_tabriz_unrest = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+		PER_gulf_ambition = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				war_support_factor = 0.10
+			}
+		}
+		PER_route_progress = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				factory_output = 0.10
+				research_speed_factor = 0.03
+				stability_factor = -0.05
+			}
+		}
+		PER_route_gendarme = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = 0.10
+				Absolutism_drift = 0.01
+			}
+		}
+		PER_route_constitution = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.05
+				Liberalism_drift = 0.01
+			}
+		}
+		PER_route_republic = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.05
+				Conservatism_drift = 0.01
+			}
+		}
+		PER_route_caretaker = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.10
+			}
+		}
+		PER_Fazlollah_Zahedi_army_chief = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				army_attack_factor = 0.05
+				army_defense_factor = 0.05
+			}
+		}
+		PER_Mahmud_Jam_political_advisor = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.02
+			}
+		}
+		PER_state_monopoly = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+		PER_plan_board = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		PER_regulated_bazaar = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		PER_fever_of_progress = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				research_speed_factor = 0.05
+				factory_output = 0.05
+			}
+		}
+		PER_iron_order = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		PER_open_banks = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		PER_free_trade = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.05
+			}
+		}
+		PER_gate_of_merchants = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		PER_civil_bank = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		PER_offices_republic = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.05
+			}
+		}
+		PER_oil_sovereignty = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.05
+			}
+		}
+		PER_active_neutrality = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.10
+			}
+		}
+		PER_majlis_soul = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = 0.10
+			}
+		}
+		PER_qajar_restoration = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = 0.05
+			}
+		}
+		PER_restored_crown = {
+			allowed = {
+				original_tag = PER
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+				political_power_factor = 0.10
+			}
+		}
+	}
+}

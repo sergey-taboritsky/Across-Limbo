@@ -1,0 +1,1273 @@
+focus_tree = {
+	id = PER_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PER
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 1000
+	}
+	default = no
+
+	focus = {
+		id = PER_Stability_and_Order
+		icon = GFX_PER_Stability_and_Order
+		cost = 5.00
+		x = 20
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Stability_and_Order"
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = PER_Oil_For_Machinery
+		icon = GFX_PER_Oil_For_Machinery
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Stability_and_Order
+		}
+		x = 17
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Oil_For_Machinery"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Party_of_the_State
+		icon = GFX_PER_Party_of_the_State
+		cost = 5.00
+		prerequisite = {
+			focus = PER_Stability_and_Order
+		}
+		x = 23
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Party_of_the_State"
+			add_political_power = 25
+			add_popularity = {
+				ideology = Absolutism
+				popularity = 0.02
+			}
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Tehran_Modernises
+		icon = GFX_PER_Tehran_Modernises
+		cost = 5.00
+		prerequisite = {
+			focus = PER_Stability_and_Order
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Tehran_Modernises"
+			add_political_power = 25
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Gendarme_of_the_South
+		icon = GFX_PER_Gendarme_of_the_South
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Oil_For_Machinery
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Gendarme_of_the_South"
+			army_experience = 20
+			set_country_flag = PER_south_secure_flag
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Northern_Garrisons
+		icon = GFX_PER_Northern_Garrisons
+		cost = 5.00
+		prerequisite = {
+			focus = PER_Party_of_the_State
+		}
+		x = 26
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Northern_Garrisons"
+			add_political_power = 25
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = PER_Tabriz_Question
+		icon = GFX_PER_Tabriz_Question
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Northern_Garrisons
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Tabriz_Question"
+			country_event = { id = PER_event.4 }
+		}
+	}
+	focus = {
+		id = PER_Kurdish_Highlands
+		icon = GFX_PER_Kurdish_Highlands
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Northern_Garrisons
+		}
+		x = 28
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Kurdish_Highlands"
+			army_experience = 20
+			add_war_support = 0.03
+			set_country_flag = PER_kurd_pacified_flag
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 10 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PER_The_Acting_President
+		icon = GFX_PER_The_Acting_President
+		cost = 7.00
+		available = {
+			has_country_flag = PER_ayrom_dead_flag
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_The_Acting_President"
+			set_country_flag = PER_suc_open_flag
+			country_event = { id = PER_event.2 }
+		}
+	}
+	focus = {
+		id = PER_Teymourtash_Legacy
+		icon = GFX_PER_Teymourtash_Legacy
+		cost = 5.00
+		available = {
+			has_country_flag = PER_suc_open_flag
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Teymourtash_Legacy"
+			add_political_power = 25
+			custom_effect_tooltip = PER_suc_shift_tt
+			hidden_effect = {
+				add_to_variable = { var = PER_suc_progress_var value = 8 }
+				add_to_variable = { var = PER_suc_military_var value = -4 }
+				add_to_variable = { var = PER_suc_radical_var value = -4 }
+				clamp_variable = { var = PER_suc_progress_var max = 100 min = 0 }
+				clamp_variable = { var = PER_suc_military_var max = 100 min = 0 }
+				clamp_variable = { var = PER_suc_radical_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = PER_Barracks_Meeting
+		icon = GFX_PER_Barracks_Meeting
+		cost = 5.00
+		available = {
+			has_country_flag = PER_suc_open_flag
+		}
+		x = 17
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Barracks_Meeting"
+			add_political_power = 25
+			custom_effect_tooltip = PER_suc_shift_tt
+			hidden_effect = {
+				add_to_variable = { var = PER_suc_military_var value = 8 }
+				add_to_variable = { var = PER_suc_progress_var value = -4 }
+				add_to_variable = { var = PER_suc_radical_var value = -4 }
+				clamp_variable = { var = PER_suc_military_var max = 100 min = 0 }
+				clamp_variable = { var = PER_suc_progress_var max = 100 min = 0 }
+				clamp_variable = { var = PER_suc_radical_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = PER_Radical_Spring
+		icon = GFX_PER_Radical_Spring
+		cost = 5.00
+		available = {
+			has_country_flag = PER_suc_open_flag
+		}
+		x = 23
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Radical_Spring"
+			add_political_power = 25
+			custom_effect_tooltip = PER_suc_shift_tt
+			hidden_effect = {
+				add_to_variable = { var = PER_suc_radical_var value = 8 }
+				add_to_variable = { var = PER_suc_military_var value = -4 }
+				add_to_variable = { var = PER_suc_association_var value = -4 }
+				clamp_variable = { var = PER_suc_radical_var max = 100 min = 0 }
+				clamp_variable = { var = PER_suc_military_var max = 100 min = 0 }
+				clamp_variable = { var = PER_suc_association_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = PER_Association_Gentlemen
+		icon = GFX_PER_Association_Gentlemen
+		cost = 5.00
+		available = {
+			has_country_flag = PER_suc_open_flag
+		}
+		x = 26
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Association_Gentlemen"
+			add_political_power = 25
+			custom_effect_tooltip = PER_suc_shift_tt
+			hidden_effect = {
+				add_to_variable = { var = PER_suc_association_var value = 8 }
+				add_to_variable = { var = PER_suc_military_var value = -4 }
+				add_to_variable = { var = PER_suc_radical_var value = -4 }
+				clamp_variable = { var = PER_suc_association_var max = 100 min = 0 }
+				clamp_variable = { var = PER_suc_military_var max = 100 min = 0 }
+				clamp_variable = { var = PER_suc_radical_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = PER_Tudeh_Wave
+		icon = GFX_PER_Tudeh_Wave
+		cost = 7.00
+		prerequisite = {
+			focus = PER_The_Acting_President
+		}
+		x = 20
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Tudeh_Wave"
+			country_event = { id = PER_event.3 }
+		}
+	}
+	focus = {
+		id = PER_Party_Supreme_Council
+		icon = GFX_PER_Party_Supreme_Council
+		cost = 10.00
+		prerequisite = {
+			focus = PER_The_Acting_President
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Party_Supreme_Council"
+			clr_country_flag = PER_suc_open_flag
+			set_country_flag = PER_suc_concluded_flag
+		}
+	}
+
+	focus = {
+		id = PER_Route_Progress
+		icon = GFX_PER_Route_Progress
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Party_Supreme_Council
+		}
+		mutually_exclusive = {
+			focus = PER_Route_Gendarme
+			focus = PER_Route_Constitution
+			focus = PER_Route_Republic
+			focus = PER_Caretaker_Government
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PER_route_progress_avail_tt
+				check_variable = { var = PER_suc_progress_var value = 35 compare = greater_than_or_equals }
+			}
+		}
+		cancellable = no
+		x = 10
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Route_Progress"
+			add_political_power = 100
+			set_country_flag = PER_route_progress_flag
+			clr_country_flag = PER_suc_concluded_flag
+			add_ideas = PER_route_progress
+			promote_character = PER_Ali_Akbar_Davar
+			retire_character = PER_Ali_Razmara
+			set_politics = {
+				ruling_party = National_Socialism
+				elections_allowed = no
+			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Route_Gendarme
+		icon = GFX_PER_Route_Gendarme
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Party_Supreme_Council
+		}
+		mutually_exclusive = {
+			focus = PER_Route_Progress
+			focus = PER_Route_Constitution
+			focus = PER_Route_Republic
+			focus = PER_Caretaker_Government
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PER_route_gendarme_avail_tt
+				check_variable = { var = PER_suc_military_var value = 35 compare = greater_than_or_equals }
+			}
+		}
+		cancellable = no
+		x = 15
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Route_Gendarme"
+			add_political_power = 100
+			add_war_support = 0.05
+			set_country_flag = PER_route_gendarme_flag
+			clr_country_flag = PER_suc_concluded_flag
+			add_ideas = PER_route_gendarme
+			promote_character = PER_Ali_Razmara
+			retire_character = PER_Ali_Akbar_Davar
+			set_politics = {
+				ruling_party = military_government
+				elections_allowed = no
+			}
+			add_ideas = PER_Fazlollah_Zahedi_army_chief
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = PER_Route_Constitution
+		icon = GFX_PER_Route_Constitution
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Party_Supreme_Council
+		}
+		mutually_exclusive = {
+			focus = PER_Route_Progress
+			focus = PER_Route_Gendarme
+			focus = PER_Route_Republic
+			focus = PER_Caretaker_Government
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PER_route_constitution_avail_tt
+				check_variable = { var = PER_suc_radical_var value = 35 compare = greater_than_or_equals }
+			}
+		}
+		cancellable = no
+		x = 20
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Route_Constitution"
+			add_political_power = 100
+			set_country_flag = PER_route_constitution_flag
+			clr_country_flag = PER_suc_concluded_flag
+			add_ideas = PER_route_constitution
+			promote_character = PER_Mohammad_Tadayyon
+			retire_character = PER_Ali_Akbar_Davar
+			set_politics = {
+				ruling_party = National_liberalism
+				elections_allowed = yes
+			}
+		}
+	}
+	focus = {
+		id = PER_Route_Republic
+		icon = GFX_PER_Route_Republic
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Party_Supreme_Council
+		}
+		mutually_exclusive = {
+			focus = PER_Route_Progress
+			focus = PER_Route_Gendarme
+			focus = PER_Route_Constitution
+			focus = PER_Caretaker_Government
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PER_route_republic_avail_tt
+				check_variable = { var = PER_suc_association_var value = 35 compare = greater_than_or_equals }
+			}
+		}
+		cancellable = no
+		x = 25
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Route_Republic"
+			add_political_power = 100
+			set_country_flag = PER_route_republic_flag
+			clr_country_flag = PER_suc_concluded_flag
+			add_ideas = PER_route_republic
+			promote_character = PER_Mohammad_Ali_Foroughi
+			retire_character = PER_Ali_Akbar_Davar
+			set_politics = {
+				ruling_party = one_party_democracy
+				elections_allowed = no
+			}
+			add_ideas = PER_Mahmud_Jam_political_advisor
+		}
+	}
+	focus = {
+		id = PER_Caretaker_Government
+		icon = GFX_PER_Caretaker_Government
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Party_Supreme_Council
+		}
+		mutually_exclusive = {
+			focus = PER_Route_Progress
+			focus = PER_Route_Gendarme
+			focus = PER_Route_Constitution
+			focus = PER_Route_Republic
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PER_caretaker_avail_tt
+				check_variable = { var = PER_suc_progress_var value = 35 compare = less_than }
+				check_variable = { var = PER_suc_military_var value = 35 compare = less_than }
+				check_variable = { var = PER_suc_radical_var value = 35 compare = less_than }
+				check_variable = { var = PER_suc_association_var value = 35 compare = less_than }
+			}
+		}
+		cancellable = no
+		x = 30
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Caretaker_Government"
+			add_political_power = 50
+			add_stability = 0.03
+			set_country_flag = PER_route_caretaker_flag
+			clr_country_flag = PER_suc_concluded_flag
+			add_ideas = PER_route_caretaker
+			promote_character = PER_Mohammad_Mosaddeq
+			set_politics = {
+				ruling_party = interim_government
+				elections_allowed = no
+			}
+		}
+	}
+
+	focus = {
+		id = PER_State_Oil_Monopoly
+		icon = GFX_PER_State_Oil_Monopoly
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Route_Progress
+		}
+		x = 10
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_State_Oil_Monopoly"
+			add_resource = {
+				resource = oil
+				amount = 10
+			}
+			add_ideas = PER_state_monopoly
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Supreme_Plan_Board
+		icon = GFX_PER_Supreme_Plan_Board
+		cost = 7.00
+		prerequisite = {
+			focus = PER_State_Oil_Monopoly
+		}
+		x = 10
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Supreme_Plan_Board"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = PER_plan_board
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Regulate_the_Bazaar
+		icon = GFX_PER_Regulate_the_Bazaar
+		cost = 5.00
+		prerequisite = {
+			focus = PER_Supreme_Plan_Board
+		}
+		x = 10
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Regulate_the_Bazaar"
+			add_ideas = PER_regulated_bazaar
+			add_political_power = 50
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Fever_of_Progress
+		icon = GFX_PER_Fever_of_Progress
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Regulate_the_Bazaar
+		}
+		x = 10
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Fever_of_Progress"
+			add_ideas = PER_fever_of_progress
+			add_political_power = 100
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PER_Trans_Iranian_Railway
+		icon = GFX_PER_Trans_Iranian_Railway
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Route_Gendarme
+		}
+		x = 15
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Trans_Iranian_Railway"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Steel_of_Isfahan
+		icon = GFX_PER_Steel_of_Isfahan
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Trans_Iranian_Railway
+		}
+		x = 15
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Steel_of_Isfahan"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Arms_of_the_Nation
+		icon = GFX_PER_Arms_of_the_Nation
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Steel_of_Isfahan
+		}
+		x = 15
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Arms_of_the_Nation"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			army_experience = 25
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = PER_Order_of_Iron
+		icon = GFX_PER_Order_of_Iron
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Arms_of_the_Nation
+		}
+		x = 15
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Order_of_Iron"
+			add_ideas = PER_iron_order
+			add_stability = 0.03
+			army_experience = 20
+		}
+	}
+
+	focus = {
+		id = PER_Open_the_Banks
+		icon = GFX_PER_Open_the_Banks
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Route_Constitution
+		}
+		x = 20
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Open_the_Banks"
+			add_ideas = PER_open_banks
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Free_Trade_Charter
+		icon = GFX_PER_Free_Trade_Charter
+		cost = 5.00
+		prerequisite = {
+			focus = PER_Open_the_Banks
+		}
+		x = 20
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Free_Trade_Charter"
+			add_ideas = PER_free_trade
+			add_political_power = 50
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Invite_Foreign_Capital
+		icon = GFX_PER_Invite_Foreign_Capital
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Free_Trade_Charter
+		}
+		x = 20
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Invite_Foreign_Capital"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Market_of_Empires
+		icon = GFX_PER_Market_of_Empires
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Invite_Foreign_Capital
+		}
+		x = 20
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Market_of_Empires"
+			add_ideas = PER_gate_of_merchants
+			add_political_power = 100
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PER_Civil_Investment_Bank
+		icon = GFX_PER_Civil_Investment_Bank
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Route_Republic
+		}
+		x = 25
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Civil_Investment_Bank"
+			add_ideas = PER_civil_bank
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Textiles_of_the_Caspian
+		icon = GFX_PER_Textiles_of_the_Caspian
+		cost = 5.00
+		prerequisite = {
+			focus = PER_Civil_Investment_Bank
+		}
+		x = 25
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Textiles_of_the_Caspian"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Roads_and_Posts
+		icon = GFX_PER_Roads_and_Posts
+		cost = 5.00
+		prerequisite = {
+			focus = PER_Textiles_of_the_Caspian
+		}
+		x = 25
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Roads_and_Posts"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 10 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Republic_of_Offices
+		icon = GFX_PER_Republic_of_Offices
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Roads_and_Posts
+		}
+		x = 25
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Republic_of_Offices"
+			add_ideas = PER_offices_republic
+			add_political_power = 50
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PER_Republic_Endures
+		icon = GFX_PER_Republic_Endures
+		cost = 5.00
+		prerequisite = {
+			focus = PER_Caretaker_Government
+		}
+		mutually_exclusive = {
+			focus = PER_Restoration_Council
+		}
+		x = 29
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Republic_Endures"
+			add_political_power = 50
+			set_country_flag = PER_republic_endures_flag
+		}
+	}
+	focus = {
+		id = PER_Oil_Sovereignty
+		icon = GFX_PER_Oil_Sovereignty
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Republic_Endures
+		}
+		x = 29
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Oil_Sovereignty"
+			country_event = { id = PER_event.6 }
+		}
+	}
+	focus = {
+		id = PER_Active_Neutrality
+		icon = GFX_PER_Active_Neutrality
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Oil_Sovereignty
+		}
+		x = 29
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Active_Neutrality"
+			add_ideas = PER_active_neutrality
+			add_political_power = 50
+			add_stability = 0.02
+			set_country_flag = PER_active_neutrality_flag
+		}
+	}
+	focus = {
+		id = PER_Legacy_of_the_Majlis
+		icon = GFX_PER_Legacy_of_the_Majlis
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Active_Neutrality
+		}
+		x = 29
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Legacy_of_the_Majlis"
+			add_ideas = PER_majlis_soul
+			add_stability = 0.03
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PER_Restoration_Council
+		icon = GFX_PER_Restoration_Council
+		cost = 5.00
+		prerequisite = {
+			focus = PER_Caretaker_Government
+		}
+		mutually_exclusive = {
+			focus = PER_Republic_Endures
+		}
+		x = 31
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Restoration_Council"
+			add_political_power = 50
+			set_country_flag = PER_restoration_council_flag
+		}
+	}
+	focus = {
+		id = PER_Invite_Hamid_Mirza
+		icon = GFX_PER_Invite_Hamid_Mirza
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Restoration_Council
+		}
+		x = 31
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Invite_Hamid_Mirza"
+			country_event = { id = PER_event.7 }
+		}
+	}
+	focus = {
+		id = PER_Crown_and_Constitution
+		icon = GFX_PER_Crown_and_Constitution
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Invite_Hamid_Mirza
+		}
+		x = 31
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Crown_and_Constitution"
+			add_political_power = 50
+			add_stability = 0.03
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Restored_Crown
+		icon = GFX_PER_Restored_Crown
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Crown_and_Constitution
+		}
+		x = 31
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Restored_Crown"
+			add_ideas = PER_restored_crown
+			add_stability = 0.05
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PER_Moscow_Partnership
+		icon = GFX_PER_Moscow_Partnership
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Fever_of_Progress
+			focus = PER_Order_of_Iron
+			focus = PER_Market_of_Empires
+			focus = PER_Republic_of_Offices
+			focus = PER_Legacy_of_the_Majlis
+			focus = PER_Restored_Crown
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PER_moscow_neutral_tt
+				NOT = {
+					has_country_flag = PER_active_neutrality_flag
+				}
+			}
+		}
+		x = 10
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Moscow_Partnership"
+			add_political_power = 25
+			add_to_faction = RUS
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PER_Independent_Course
+		icon = GFX_PER_Independent_Course
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Fever_of_Progress
+			focus = PER_Order_of_Iron
+			focus = PER_Market_of_Empires
+			focus = PER_Republic_of_Offices
+			focus = PER_Legacy_of_the_Majlis
+			focus = PER_Restored_Crown
+		}
+		mutually_exclusive = {
+			focus = PER_Moscow_Partnership
+		}
+		x = 15
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Independent_Course"
+			add_political_power = 50
+			add_stability = 0.03
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Schools_of_the_Nation
+		icon = GFX_PER_Schools_of_the_Nation
+		cost = 5.00
+		prerequisite = {
+			focus = PER_Fever_of_Progress
+			focus = PER_Order_of_Iron
+			focus = PER_Market_of_Empires
+			focus = PER_Republic_of_Offices
+			focus = PER_Legacy_of_the_Majlis
+			focus = PER_Restored_Crown
+		}
+		x = 20
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Schools_of_the_Nation"
+			add_political_power = 25
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 15 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Gulf_Legacy
+		icon = GFX_PER_Gulf_Legacy
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Fever_of_Progress
+			focus = PER_Order_of_Iron
+			focus = PER_Market_of_Empires
+			focus = PER_Republic_of_Offices
+			focus = PER_Legacy_of_the_Majlis
+			focus = PER_Restored_Crown
+		}
+		x = 25
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Gulf_Legacy"
+			country_event = { id = PER_event.5 }
+		}
+	}
+	focus = {
+		id = PER_Wells_of_Khuzestan
+		icon = GFX_PER_Wells_of_Khuzestan
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Gendarme_of_the_South
+		}
+		prerequisite = {
+			focus = PER_Fever_of_Progress
+			focus = PER_Order_of_Iron
+			focus = PER_Market_of_Empires
+			focus = PER_Republic_of_Offices
+			focus = PER_Legacy_of_the_Majlis
+			focus = PER_Restored_Crown
+		}
+		x = 14
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Wells_of_Khuzestan"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 15 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = PER_Irrigation_of_the_Plains
+		icon = GFX_PER_Irrigation_of_the_Plains
+		cost = 5.00
+		prerequisite = {
+			focus = PER_Fever_of_Progress
+			focus = PER_Order_of_Iron
+			focus = PER_Market_of_Empires
+			focus = PER_Republic_of_Offices
+			focus = PER_Legacy_of_the_Majlis
+			focus = PER_Restored_Crown
+		}
+		x = 17
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Irrigation_of_the_Plains"
+			add_political_power = 25
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 15 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
+		}
+	}
+	focus = {
+		id = PER_Navy_of_the_Gulf
+		icon = GFX_PER_Navy_of_the_Gulf
+		cost = 7.00
+		prerequisite = {
+			focus = PER_Gulf_Legacy
+		}
+		x = 25
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_Navy_of_the_Gulf"
+			navy_experience = 25
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = PER_The_New_Iran
+		icon = GFX_PER_The_New_Iran
+		cost = 10.00
+		prerequisite = {
+			focus = PER_Schools_of_the_Nation
+		}
+		prerequisite = {
+			focus = PER_Wells_of_Khuzestan
+			focus = PER_Irrigation_of_the_Plains
+		}
+		x = 20
+		y = 15
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PER_The_New_Iran"
+			add_political_power = 100
+			add_stability = 0.05
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 10 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+		}
+	}
+}

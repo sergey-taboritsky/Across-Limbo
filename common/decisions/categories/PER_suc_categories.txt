@@ -1,0 +1,13 @@
+PER_suc_decisions = {
+	icon = GFX_decision_category_border_conflicts
+	allowed = {
+		original_tag = PER
+	}
+	visible = {
+		OR = {
+			has_country_flag = PER_suc_open_flag
+			has_country_flag = PER_suc_concluded_flag
+		}
+	}
+	visible_when_empty = yes
+}

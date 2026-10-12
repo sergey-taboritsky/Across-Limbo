@@ -49,7 +49,140 @@ characters = {
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {
-			    
+
+			}
+		}
+	}
+	#阿里·拉兹马拉
+	PER_Ali_Razmara = {
+		name = PER_Ali_Razmara
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PER_Ali_Razmara
+			}
+		}
+		country_leader = {
+			desc = PER_Ali_Razmara_desc
+			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+
+			}
+		}
+	}
+	#法兹卢拉·扎赫迪
+	PER_Fazlollah_Zahedi = {
+		name = PER_Fazlollah_Zahedi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PER_Fazlollah_Zahedi
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = PER_Fazlollah_Zahedi_army_chief
+			allowed = {
+				original_tag = PER
+			}
+			traits = {
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#马哈茂德·贾姆
+	PER_Mahmud_Jam = {
+		name = PER_Mahmud_Jam
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PER_Mahmud_Jam
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PER_Mahmud_Jam_political_advisor
+			allowed = {
+				original_tag = PER
+			}
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#穆罕默德-阿里·佛咯衣
+	PER_Mohammad_Ali_Foroughi = {
+		name = PER_Mohammad_Ali_Foroughi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PER_Mohammad_Ali_Foroughi
+			}
+		}
+		country_leader = {
+			desc = PER_Mohammad_Ali_Foroughi_desc
+			ideology = one_party_democracy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+
+			}
+		}
+	}
+	#伊拉杰·埃斯坎达里
+	PER_Iraj_Eskandari = {
+		name = PER_Iraj_Eskandari
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PER_Iraj_Eskandari
+			}
+		}
+		country_leader = {
+			desc = PER_Iraj_Eskandari_desc
+			ideology = marxism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+
+			}
+		}
+	}
+	#穆罕默德·摩萨台
+	PER_Mohammad_Mosaddeq = {
+		name = PER_Mohammad_Mosaddeq
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PER_Mohammad_Mosaddeq
+			}
+		}
+		country_leader = {
+			desc = PER_Mohammad_Mosaddeq_desc
+			ideology = interim_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+
+			}
+		}
+	}
+	#哈米德·米尔扎·凯加
+	PER_Hamid_Mirza = {
+		name = PER_Hamid_Mirza
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PER_Hamid_Mirza
+			}
+		}
+		country_leader = {
+			desc = PER_Hamid_Mirza_desc
+			ideology = Patriarchal_Conservatism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
 			}
 		}
 	}

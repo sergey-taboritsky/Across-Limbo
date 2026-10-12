@@ -14,21 +14,14 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = EGY_Wafd_Victory
+		id = EGY_Election_of_1948
 		icon = GFX_EGY_Wafd_Victory
 		cost = 5.00
 		x = 20
 		y = 0
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed EGY_Wafd_Victory"
-			add_political_power = 25
-			add_ideas = EGY_nahas_government
-			clr_country_flag = EGY_Hussein_Sirri_PM_flag
-			set_country_flag = EGY_nahas_pm_flag
-			add_popularity = {
-				ideology = Conservatism
-				popularity = 0.05
-			}
+			log = "[GetLogRoot]: Focus Completed EGY_Election_of_1948"
+			country_event = { id = EGY_event.5 }
 		}
 	}
 	focus = {
@@ -36,7 +29,7 @@ focus_tree = {
 		icon = GFX_EGY_Peoples_Policies
 		cost = 5.00
 		prerequisite = {
-			focus = EGY_Wafd_Victory
+			focus = EGY_Election_of_1948
 		}
 		x = 20
 		y = 1
@@ -56,7 +49,7 @@ focus_tree = {
 		icon = GFX_EGY_Free_Officers
 		cost = 5.00
 		prerequisite = {
-			focus = EGY_Wafd_Victory
+			focus = EGY_Election_of_1948
 		}
 		x = 24
 		y = 1
@@ -114,7 +107,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = EGY_July_Revolution
+		id = EGY_Officers_Revolution
 		icon = GFX_EGY_July_Revolution
 		cost = 10.00
 		prerequisite = {
@@ -126,7 +119,7 @@ focus_tree = {
 		x = 22
 		y = 5
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed EGY_July_Revolution"
+			log = "[GetLogRoot]: Focus Completed EGY_Officers_Revolution"
 			country_event = { id = EGY_event.3 }
 		}
 	}
@@ -136,7 +129,7 @@ focus_tree = {
 		icon = GFX_EGY_Revolutionary_Tribunal
 		cost = 5.00
 		prerequisite = {
-			focus = EGY_July_Revolution
+			focus = EGY_Officers_Revolution
 		}
 		x = 12
 		y = 6
@@ -152,7 +145,7 @@ focus_tree = {
 		icon = GFX_EGY_Land_Reform
 		cost = 5.00
 		prerequisite = {
-			focus = EGY_July_Revolution
+			focus = EGY_Officers_Revolution
 		}
 		x = 16
 		y = 6
@@ -175,7 +168,7 @@ focus_tree = {
 		icon = GFX_EGY_Rebuild_the_Army
 		cost = 5.00
 		prerequisite = {
-			focus = EGY_July_Revolution
+			focus = EGY_Officers_Revolution
 		}
 		x = 20
 		y = 6
@@ -190,7 +183,7 @@ focus_tree = {
 		icon = GFX_EGY_Naguib_Camp
 		cost = 5.00
 		prerequisite = {
-			focus = EGY_July_Revolution
+			focus = EGY_Officers_Revolution
 		}
 		x = 24
 		y = 6
@@ -211,7 +204,7 @@ focus_tree = {
 		icon = GFX_EGY_Nasser_Camp
 		cost = 5.00
 		prerequisite = {
-			focus = EGY_July_Revolution
+			focus = EGY_Officers_Revolution
 		}
 		x = 28
 		y = 6
@@ -232,7 +225,7 @@ focus_tree = {
 		icon = GFX_EGY_Moscow_Overture
 		cost = 7.00
 		prerequisite = {
-			focus = EGY_July_Revolution
+			focus = EGY_Officers_Revolution
 		}
 		x = 22
 		y = 7
@@ -247,7 +240,7 @@ focus_tree = {
 		icon = GFX_EGY_Constitutional_Question
 		cost = 7.00
 		prerequisite = {
-			focus = EGY_July_Revolution
+			focus = EGY_Officers_Revolution
 		}
 		available = {
 			date > 1948.10.1
@@ -270,7 +263,6 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = EGY_Route_Nasser
-			focus = EGY_Dual_Consensus
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -285,12 +277,17 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed EGY_Route_Naguib"
 			add_political_power = 100
 			set_country_flag = EGY_route_naguib_flag
+			set_party_name = {
+				ideology = Authoritarianism
+				name = EGY_national_alliance_party
+				long_name = EGY_national_alliance_party_long
+			}
 			set_politics = {
-				ruling_party = Authoritarianism
+				ruling_party = Guided_democracy
 				elections_allowed = no
 			}
-			promote_character = EGY_Mohammed_Naguib
 			retire_character = EGY_Gamal_Abdel_Nasser
+			promote_character = EGY_Mohammed_Naguib
 			add_ideas = EGY_national_alliance
 			remove_ideas = EGY_junta_government
 		}
@@ -304,12 +301,11 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = EGY_Route_Naguib
-			focus = EGY_Dual_Consensus
 		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = EGY_route_nasser_avail_tt
-				check_variable = { var = EGY_junta_nasser_var value = 55 compare = greater_than_or_equals }
+				check_variable = { var = EGY_junta_naguib_var value = 55 compare = less_than }
 			}
 		}
 		cancellable = no
@@ -320,42 +316,18 @@ focus_tree = {
 			add_political_power = 100
 			add_war_support = 0.05
 			set_country_flag = EGY_route_nasser_flag
+			set_party_name = {
+				ideology = Nationalism
+				name = EGY_peoples_union_party
+				long_name = EGY_peoples_union_party_long
+			}
 			set_politics = {
-				ruling_party = Nationalism
+				ruling_party = Singular_Nationalism
 				elections_allowed = no
 			}
-			promote_character = EGY_Gamal_Abdel_Nasser
 			retire_character = EGY_Mohammed_Naguib
+			promote_character = EGY_Gamal_Abdel_Nasser
 			add_ideas = EGY_epdu
-			remove_ideas = EGY_junta_government
-		}
-	}
-	focus = {
-		id = EGY_Dual_Consensus
-		icon = GFX_EGY_Dual_Consensus
-		cost = 10.00
-		prerequisite = {
-			focus = EGY_Constitutional_Question
-		}
-		mutually_exclusive = {
-			focus = EGY_Route_Naguib
-			focus = EGY_Route_Nasser
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = EGY_dual_avail_tt
-				check_variable = { var = EGY_junta_naguib_var value = 55 compare = less_than }
-				check_variable = { var = EGY_junta_nasser_var value = 55 compare = less_than }
-			}
-		}
-		cancellable = no
-		x = 20
-		y = 8
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed EGY_Dual_Consensus"
-			add_political_power = 50
-			set_country_flag = EGY_route_dual_flag
-			add_ideas = EGY_dual_power
 			remove_ideas = EGY_junta_government
 		}
 	}
@@ -504,7 +476,6 @@ focus_tree = {
 		prerequisite = {
 			focus = EGY_Route_Naguib
 			focus = EGY_Route_Nasser
-			focus = EGY_Dual_Consensus
 		}
 		available = {
 			date > 1949.1.1
@@ -535,26 +506,969 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = EGY_Recover_Suez_By_Force
+		id = EGY_Recover_Suez
 		icon = GFX_EGY_Recover_Suez_By_Force
 		cost = 10.00
 		prerequisite = {
 			focus = EGY_Suez_Ultimatum
 		}
-		available = {
-			NOT = {
-				has_country_flag = EGY_suez_tolerated_flag
-			}
-		}
 		x = 20
 		y = 11
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed EGY_Recover_Suez_By_Force"
-			add_war_support = 0.05
-			declare_war_on = {
-				target = ENG
-				type = annex_everything
+			log = "[GetLogRoot]: Focus Completed EGY_Recover_Suez"
+			add_stability = 0.05
+			add_political_power = 50
+			transfer_state = 773
+			remove_ideas = {
+				EGY_Suez_catastrophe
+				EGY_canal_guerrilla
+				EGY_british_reprisals
 			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = EGY_news.4
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_Econ_State_Steel
+		icon = GFX_EGY_Econ_State_Steel
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Route_Nasser
+		}
+		available = {
+			has_country_flag = EGY_route_nasser_flag
+		}
+		cancellable = no
+		x = 40
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Econ_State_Steel"
+			add_political_power = 50
+			add_ideas = EGY_state_steel_econ
+		}
+	}
+	focus = {
+		id = EGY_Deep_Land_Reform
+		icon = GFX_EGY_Deep_Land_Reform
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Econ_State_Steel
+		}
+		x = 38
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Deep_Land_Reform"
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 15 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = EGY_Nationalize_Banks
+		icon = GFX_EGY_Nationalize_Banks
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Econ_State_Steel
+		}
+		x = 40
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Nationalize_Banks"
+			add_political_power = 50
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Cooperatives
+		icon = GFX_EGY_Cooperatives
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Deep_Land_Reform
+		}
+		x = 36
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Cooperatives"
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 10 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Import_Substitution
+		icon = GFX_EGY_Import_Substitution
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Nationalize_Banks
+		}
+		x = 38
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Import_Substitution"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 15 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_Helwan_Steel
+		icon = GFX_EGY_Helwan_Steel
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Nationalize_Banks
+		}
+		x = 40
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Helwan_Steel"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_workshop
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_workshop
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_Canal_Nationalization
+		icon = GFX_EGY_Canal_Nationalization
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Nationalize_Banks
+		}
+		available = {
+			focus = EGY_Recover_Suez
+		}
+		x = 42
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Canal_Nationalization"
+			add_political_power = 100
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Free_Education
+		icon = GFX_EGY_Free_Education
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Cooperatives
+		}
+		x = 36
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Free_Education"
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 15 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Public_Sector
+		icon = GFX_EGY_Public_Sector
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Import_Substitution
+		}
+		x = 38
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Public_Sector"
+			add_political_power = 50
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 15 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Five_Year_Plan
+		icon = GFX_EGY_Five_Year_Plan
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Helwan_Steel
+		}
+		x = 40
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Five_Year_Plan"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 15 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_Aswan_Dam
+		icon = GFX_EGY_Aswan_Dam
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Five_Year_Plan
+		}
+		x = 42
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Aswan_Dam"
+			add_ideas = EGY_aswan_dam
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 15 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Arab_Socialism
+		icon = GFX_EGY_Arab_Socialism
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Free_Education
+		}
+		prerequisite = {
+			focus = EGY_Aswan_Dam
+		}
+		x = 40
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Arab_Socialism"
+			add_political_power = 100
+			add_stability = 0.05
+			add_ideas = EGY_arab_socialism_cap
+		}
+	}
+
+	focus = {
+		id = EGY_Econ_Open_Door
+		icon = GFX_EGY_Econ_Open_Door
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Route_Naguib
+		}
+		available = {
+			has_country_flag = EGY_route_naguib_flag
+		}
+		cancellable = no
+		x = 52
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Econ_Open_Door"
+			add_political_power = 50
+			add_ideas = EGY_open_door_econ
+		}
+	}
+	focus = {
+		id = EGY_National_Bank
+		icon = GFX_EGY_National_Bank
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Econ_Open_Door
+		}
+		x = 50
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_National_Bank"
+			add_political_power = 50
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = EGY_Cotton_Export
+		icon = GFX_EGY_Cotton_Export
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Econ_Open_Door
+		}
+		x = 52
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Cotton_Export"
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 15 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Foreign_Capital
+		icon = GFX_EGY_Foreign_Capital
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_National_Bank
+		}
+		x = 50
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Foreign_Capital"
+			add_ideas = EGY_foreign_capital_idea
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Land_Market
+		icon = GFX_EGY_Land_Market
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Cotton_Export
+		}
+		x = 54
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Land_Market"
+			add_political_power = 50
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 10 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+			add_popularity = {
+				ideology = Conservatism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = EGY_Canal_Tolls
+		icon = GFX_EGY_Canal_Tolls
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Cotton_Export
+		}
+		available = {
+			focus = EGY_Recover_Suez
+		}
+		x = 56
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Canal_Tolls"
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 15 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Private_Industry
+		icon = GFX_EGY_Private_Industry
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Foreign_Capital
+		}
+		x = 48
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Private_Industry"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 15 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_Tourism_Nile
+		icon = GFX_EGY_Tourism_Nile
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Foreign_Capital
+		}
+		x = 50
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Tourism_Nile"
+			add_ideas = EGY_nile_tourism
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Agri_Modernization
+		icon = GFX_EGY_Agri_Modernization
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Land_Market
+		}
+		x = 54
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Agri_Modernization"
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 15 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Trade_Accords
+		icon = GFX_EGY_Trade_Accords
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Canal_Tolls
+		}
+		x = 56
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Trade_Accords"
+			add_political_power = 50
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Open_Stock_Exchange
+		icon = GFX_EGY_Open_Stock_Exchange
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Private_Industry
+		}
+		x = 48
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Open_Stock_Exchange"
+			add_political_power = 50
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_Financial_Hub
+		icon = GFX_EGY_Financial_Hub
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Open_Stock_Exchange
+		}
+		prerequisite = {
+			focus = EGY_Tourism_Nile
+		}
+		prerequisite = {
+			focus = EGY_Agri_Modernization
+		}
+		prerequisite = {
+			focus = EGY_Trade_Accords
+		}
+		x = 52
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Financial_Hub"
+			add_political_power = 100
+			add_stability = 0.05
+			add_ideas = EGY_financial_hub_cap
+		}
+	}
+	focus = {
+		id = EGY_Army_Professional
+		icon = GFX_EGY_Army_Professional
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Route_Naguib
+		}
+		available = {
+			has_country_flag = EGY_route_naguib_flag
+		}
+		cancellable = no
+		x = 3
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Army_Professional"
+			army_experience = 25
+			add_ideas = EGY_professional_army
+		}
+	}
+	focus = {
+		id = EGY_Old_Officer_Corps
+		icon = GFX_EGY_Old_Officer_Corps
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Army_Professional
+		}
+		x = 2
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Old_Officer_Corps"
+			army_experience = 25
+			add_stability = 0.03
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = EGY_Military_Academy
+		icon = GFX_EGY_Military_Academy
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Army_Professional
+		}
+		x = 4
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Military_Academy"
+			army_experience = 25
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = EGY_Veterans_Resettlement
+		icon = GFX_EGY_Veterans_Resettlement
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Old_Officer_Corps
+		}
+		x = 2
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Veterans_Resettlement"
+			add_political_power = 50
+			add_stability = 0.05
+			add_manpower = 5000
+		}
+	}
+	focus = {
+		id = EGY_Equipment_Standardization
+		icon = GFX_EGY_Equipment_Standardization
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Military_Academy
+		}
+		x = 4
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Equipment_Standardization"
+			army_experience = 20
+			add_ideas = EGY_standard_arms_system
+		}
+	}
+	focus = {
+		id = EGY_Border_Guard
+		icon = GFX_EGY_Border_Guard
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Veterans_Resettlement
+		}
+		x = 2
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Border_Guard"
+			add_stability = 0.05
+			add_ideas = EGY_border_guard_cmd
+		}
+	}
+	focus = {
+		id = EGY_Desert_Mobility
+		icon = GFX_EGY_Desert_Mobility
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Equipment_Standardization
+		}
+		x = 4
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Desert_Mobility"
+			army_experience = 20
+			add_ideas = EGY_desert_mobile_force
+		}
+	}
+	focus = {
+		id = EGY_Naval_Modernization
+		icon = GFX_EGY_Naval_Modernization
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Border_Guard
+		}
+		x = 2
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Naval_Modernization"
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_Air_Corps
+		icon = GFX_EGY_Air_Corps
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Desert_Mobility
+		}
+		x = 4
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Air_Corps"
+			air_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_Defense_Treaty
+		icon = GFX_EGY_Defense_Treaty
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Naval_Modernization
+		}
+		prerequisite = {
+			focus = EGY_Air_Corps
+		}
+		x = 3
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Defense_Treaty"
+			add_political_power = 50
+			add_ideas = EGY_defense_treaty_idea
+		}
+	}
+	focus = {
+		id = EGY_Shield_of_Republic
+		icon = GFX_EGY_Shield_of_Republic
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Defense_Treaty
+		}
+		x = 3
+		y = 15
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Shield_of_Republic"
+			add_political_power = 100
+			add_stability = 0.05
+			add_ideas = EGY_shield_of_republic
+		}
+	}
+
+	focus = {
+		id = EGY_Army_New_Doctrine
+		icon = GFX_EGY_Army_New_Doctrine
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Route_Nasser
+		}
+		available = {
+			has_country_flag = EGY_route_nasser_flag
+		}
+		cancellable = no
+		x = 8
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Army_New_Doctrine"
+			army_experience = 25
+			add_ideas = EGY_new_doctrine_army
+		}
+	}
+	focus = {
+		id = EGY_Soviet_Arms
+		icon = GFX_EGY_Soviet_Arms
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Army_New_Doctrine
+		}
+		x = 6
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Soviet_Arms"
+			army_experience = 25
+			add_ideas = EGY_soviet_arms_system
+		}
+	}
+	focus = {
+		id = EGY_Conscript_Army
+		icon = GFX_EGY_Conscript_Army
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Army_New_Doctrine
+		}
+		x = 8
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Conscript_Army"
+			add_manpower = 30000
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = EGY_Political_Commissars
+		icon = GFX_EGY_Political_Commissars
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Army_New_Doctrine
+		}
+		x = 10
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Political_Commissars"
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = EGY_commissar_corps
+		}
+	}
+	focus = {
+		id = EGY_Staff_College
+		icon = GFX_EGY_Staff_College
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Soviet_Arms
+		}
+		x = 6
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Staff_College"
+			army_experience = 35
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = EGY_Helwan_Arsenal
+		icon = GFX_EGY_Helwan_Arsenal
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Conscript_Army
+		}
+		x = 8
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Helwan_Arsenal"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_workshop
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_workshop
+					level = 2
+					instant_build = yes
+				}
+			}
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = EGY_Fedayeen
+		icon = GFX_EGY_Fedayeen
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Political_Commissars
+		}
+		x = 10
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Fedayeen"
+			add_war_support = 0.05
+			add_ideas = EGY_fedayeen_network
+		}
+	}
+	focus = {
+		id = EGY_Air_Force_Rebuild
+		icon = GFX_EGY_Air_Force_Rebuild
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Staff_College
+		}
+		prerequisite = {
+			focus = EGY_Helwan_Arsenal
+		}
+		x = 8
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Air_Force_Rebuild"
+			air_experience = 35
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_Navy_Canal_Defense
+		icon = GFX_EGY_Navy_Canal_Defense
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Staff_College
+		}
+		x = 6
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Navy_Canal_Defense"
+			navy_experience = 25
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = EGY_Sinai_Defense
+		icon = GFX_EGY_Sinai_Defense
+		cost = 7.00
+		prerequisite = {
+			focus = EGY_Fedayeen
+		}
+		x = 10
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Sinai_Defense"
+			army_experience = 25
+			add_war_support = 0.05
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = EGY_Shield_of_Nile
+		icon = GFX_EGY_Shield_of_Nile
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_Air_Force_Rebuild
+		}
+		prerequisite = {
+			focus = EGY_Navy_Canal_Defense
+		}
+		prerequisite = {
+			focus = EGY_Sinai_Defense
+		}
+		x = 8
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed EGY_Shield_of_Nile"
+			add_political_power = 100
+			add_war_support = 0.05
+			add_ideas = EGY_shield_of_nile
 		}
 	}
 }

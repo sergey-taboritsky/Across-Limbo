@@ -13,16 +13,13 @@ country_event = {
 		kill_ideology_leader = Absolutism
 		add_popularity = { ideology = Absolutism popularity = -0.20 }
 		add_popularity = { ideology = Nationalism popularity = 0.20 }
-		set_politics = {
-			ruling_party = Nationalism
-			elections_allowed = no
-		}
+		set_country_flag = PER_ayrom_dead_flag
 		hidden_effect = {
 			every_country = {
 				limit = {
 					is_ai = no
 				}
-				news_event = PER_worldnews.1
+				news_event = PER_news.1
 			}
 		}
 	}
@@ -41,5 +38,162 @@ news_event = {
 	}
 }
 
+#
+country_event = {
+	id = PER_event.2
+	title = PER_event.2.t
+	desc = PER_event.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PER_event.2.a
+		add_political_power = 25
+		custom_effect_tooltip = PER_faction_progress_shift_tt
+		hidden_effect = {
+			add_to_variable = { var = PER_suc_progress_var value = 5 }
+			add_to_variable = { var = PER_suc_military_var value = -5 }
+			clamp_variable = { var = PER_suc_progress_var max = 100 min = 0 }
+			clamp_variable = { var = PER_suc_military_var max = 100 min = 0 }
+		}
+	}
+}
 
+#
+country_event = {
+	id = PER_event.3
+	title = PER_event.3.t
+	desc = PER_event.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PER_event.3.a
+		add_political_power = -25
+		add_stability = 0.02
+		add_popularity = { ideology = communist popularity = -0.03 }
+		custom_effect_tooltip = PER_faction_military_shift_tt
+		hidden_effect = {
+			add_to_variable = { var = PER_suc_military_var value = 6 }
+			add_to_variable = { var = PER_suc_radical_var value = -3 }
+			add_to_variable = { var = PER_suc_association_var value = -3 }
+			clamp_variable = { var = PER_suc_military_var max = 100 min = 0 }
+			clamp_variable = { var = PER_suc_radical_var max = 100 min = 0 }
+			clamp_variable = { var = PER_suc_association_var max = 100 min = 0 }
+		}
+	}
+	option = {
+		name = PER_event.3.b
+		add_stability = -0.02
+		add_popularity = { ideology = communist popularity = 0.03 }
+		custom_effect_tooltip = PER_faction_radical_shift_tt
+		hidden_effect = {
+			add_to_variable = { var = PER_suc_radical_var value = 6 }
+			add_to_variable = { var = PER_suc_military_var value = -3 }
+			add_to_variable = { var = PER_suc_progress_var value = -3 }
+			clamp_variable = { var = PER_suc_radical_var max = 100 min = 0 }
+			clamp_variable = { var = PER_suc_military_var max = 100 min = 0 }
+			clamp_variable = { var = PER_suc_progress_var max = 100 min = 0 }
+		}
+	}
+	option = {
+		name = PER_event.3.c
+		add_political_power = 25
+		custom_effect_tooltip = PER_faction_association_shift_tt
+		hidden_effect = {
+			add_to_variable = { var = PER_suc_association_var value = 5 }
+			add_to_variable = { var = PER_suc_military_var value = -2 }
+			add_to_variable = { var = PER_suc_radical_var value = -2 }
+			clamp_variable = { var = PER_suc_association_var max = 100 min = 0 }
+			clamp_variable = { var = PER_suc_military_var max = 100 min = 0 }
+			clamp_variable = { var = PER_suc_radical_var max = 100 min = 0 }
+		}
+	}
+}
 
+#
+country_event = {
+	id = PER_event.4
+	title = PER_event.4.t
+	desc = PER_event.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PER_event.4.a
+		add_political_power = -50
+		add_stability = 0.02
+		set_country_flag = PER_tabriz_cracked_down_flag
+	}
+	option = {
+		name = PER_event.4.b
+		add_political_power = 25
+		add_ideas = PER_tabriz_unrest
+		set_country_flag = PER_tabriz_soft_flag
+	}
+	option = {
+		name = PER_event.4.c
+		add_stability = -0.03
+		add_ideas = PER_tabriz_unrest
+		set_country_flag = PER_tabriz_ignored_flag
+	}
+}
+
+#
+country_event = {
+	id = PER_event.5
+	title = PER_event.5.t
+	desc = PER_event.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PER_event.5.a
+		add_political_power = -25
+		add_war_support = 0.05
+		add_ideas = PER_gulf_ambition
+		set_country_flag = PER_gulf_claimed_flag
+	}
+	option = {
+		name = PER_event.5.b
+		add_political_power = 25
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = PER_event.6
+	title = PER_event.6.t
+	desc = PER_event.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PER_event.6.a
+		add_ideas = PER_oil_sovereignty
+		add_resource = {
+			resource = oil
+			amount = 10
+		}
+		add_political_power = 50
+		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+		hidden_effect = {
+			add_to_variable = { var = TNW_Industrial_scale_value value = 15 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = PER_event.7
+	title = PER_event.7.t
+	desc = PER_event.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PER_event.7.a
+		promote_character = PER_Hamid_Mirza
+		set_politics = {
+			ruling_party = Patriarchal_Conservatism
+			elections_allowed = yes
+		}
+		add_ideas = PER_qajar_restoration
+		add_stability = 0.05
+		add_political_power = 50
+	}
+}

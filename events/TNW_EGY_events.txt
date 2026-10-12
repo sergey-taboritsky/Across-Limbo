@@ -100,13 +100,17 @@ country_event = {
 		name = EGY_event.3.a
 		promote_character = EGY_Mohammed_Naguib
 		set_politics = {
-			ruling_party = Absolutism
+			ruling_party = military_government
 			elections_allowed = no
 		}
 		retire_character = EGY_Farouk_I
 		clr_country_flag = EGY_Hussein_Sirri_PM_flag
+		clr_country_flag = EGY_nahas_pm_flag
 		remove_ideas = {
 			EGY_chained_constitution
+			EGY_world_falling_apart
+			EGY_army_irritation
+			EGY_worker_disdain
 			EGY_cairo_fire_aftermath
 		}
 		add_ideas = EGY_junta_government
@@ -122,6 +126,35 @@ country_event = {
 }
 
 country_event = {
+	id = EGY_event.5
+	title = EGY_event.5.t
+	desc = EGY_event.5.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.5.a
+		promote_character = EGY_Mostafa_Nahas
+		set_politics = {
+			ruling_party = Patriarchal_Conservatism
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		add_ideas = EGY_nahas_government
+		clr_country_flag = EGY_Hussein_Sirri_PM_flag
+		set_country_flag = EGY_nahas_pm_flag
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = EGY_news.1
+			}
+		}
+	}
+}
+
+country_event = {
 	id = EGY_event.4
 	title = EGY_event.4.t
 	desc = EGY_event.4.d
@@ -130,21 +163,19 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = EGY_event.4.a
-		add_war_support = 0.05
-		add_stability = -0.03
-		set_country_flag = EGY_ultimatum_refused_flag
+		add_war_support = 0.03
+		set_country_flag = EGY_suez_negotiation_flag
 	}
 	option = {
 		name = EGY_event.4.b
 		add_political_power = 50
-		add_war_support = 0.03
-		set_country_flag = EGY_moscow_mediation_flag
+		set_country_flag = EGY_suez_negotiation_flag
 	}
 	option = {
 		name = EGY_event.4.c
 		add_political_power = 25
-		add_stability = 0.03
-		set_country_flag = EGY_suez_tolerated_flag
+		add_stability = 0.02
+		set_country_flag = EGY_suez_negotiation_flag
 	}
 }
 
@@ -158,5 +189,17 @@ news_event = {
 	major = yes
 	option = {
 		name = EGY_news.3.a
+	}
+}
+news_event = {
+	id = EGY_news.4
+	title = EGY_news.4.t
+	desc = EGY_news.4.d
+	picture = GFX_news_event_generic_funeral
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = EGY_news.4.a
 	}
 }

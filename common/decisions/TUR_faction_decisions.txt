@@ -1,4 +1,4 @@
-TUR_faction_decisions = {
+TUR_Party_Factions_categories = {
 
 	TUR_faction_rally_eastern = {
 		icon = GFX_decision_generic_factory
