@@ -1,0 +1,173 @@
+characters = {
+	#加齐·本·费萨尔（叙利亚国王）
+	SYR_Ghazi_bin_Faisal = {
+		name = SYR_Ghazi_bin_Faisal
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SYR_Ghazi_bin_Faisal
+			}
+		}
+		country_leader = {
+			desc = SYR_Ghazi_bin_Faisal_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+		}
+	}
+	#胡斯尼·扎伊姆
+	SYR_Husni_al_Zaim = {
+		name = SYR_Husni_al_Zaim
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SYR_Husni_al_Zaim
+			}
+		}
+		country_leader = {
+			desc = SYR_Husni_al_Zaim_desc
+			ideology = discipline
+			traits = {
+			}
+		}
+	}
+	#哈希姆·阿塔西
+	SYR_Hashim_al_Attasi = {
+		name = SYR_Hashim_al_Attasi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SYR_Hashim_al_Attasi
+			}
+		}
+		country_leader = {
+			desc = SYR_Hashim_al_Attasi_desc
+			ideology = National_liberalism
+			traits = {
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = SYR_Hashim_al_Attasi_hog
+			allowed = {
+				original_tag = SYR
+			}
+		}
+	}
+	#安通·萨阿德
+	SYR_Antun_Saadeh = {
+		name = SYR_Antun_Saadeh
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SYR_Antun_Saadeh
+			}
+		}
+		country_leader = {
+			desc = SYR_Antun_Saadeh_desc
+			ideology = Social_nationalism
+			traits = {
+			}
+		}
+	}
+	#萨米·欣纳维
+	SYR_Sami_al_Hinnawi = {
+		name = SYR_Sami_al_Hinnawi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SYR_Sami_al_Hinnawi
+			}
+		}
+		country_leader = {
+			desc = SYR_Sami_al_Hinnawi_desc
+			ideology = discipline
+			traits = {
+			}
+		}
+	}
+	#阿迪卜·希沙克利
+	SYR_Adib_Shishakli = {
+		name = SYR_Adib_Shishakli
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SYR_Adib_Shishakli
+			}
+		}
+		country_leader = {
+			desc = SYR_Adib_Shishakli_desc
+			ideology = discipline
+			traits = {
+			}
+		}
+	}
+	#加齐·本·费萨尔（外约旦，跨tag独立角色）
+	JOR_Ghazi_bin_Faisal = {
+		name = JOR_Ghazi_bin_Faisal
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JOR_Ghazi_bin_Faisal
+			}
+		}
+		country_leader = {
+			desc = JOR_Ghazi_bin_Faisal_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+		}
+	}
+	#法齐·卡伍吉（贝鲁特临时政府）
+	LEB_Fawzi_al_Qawuqji = {
+		name = LEB_Fawzi_al_Qawuqji
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_LEB_Fawzi_al_Qawuqji
+			}
+		}
+		country_leader = {
+			desc = LEB_Fawzi_al_Qawuqji_desc
+			ideology = discipline
+			traits = {
+			}
+		}
+	}
+	#安通·萨阿德（贝鲁特，党内元老）
+	LEB_Antun_Saadeh = {
+		name = LEB_Antun_Saadeh
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_LEB_Antun_Saadeh
+			}
+		}
+		country_leader = {
+			desc = LEB_Antun_Saadeh_desc
+			ideology = Social_nationalism
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LEB_Antun_Saadeh_advisor
+			allowed = {
+				original_tag = LEB
+			}
+		}
+	}
+	#阿克拉姆·胡拉尼（贝鲁特，少壮派）
+	LEB_Akram_Hourani = {
+		name = LEB_Akram_Hourani
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_LEB_Akram_Hourani
+			}
+		}
+		country_leader = {
+			desc = LEB_Akram_Hourani_desc
+			ideology = agrarian_socialism
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LEB_Akram_Hourani_advisor
+			allowed = {
+				original_tag = LEB
+			}
+		}
+	}
+}

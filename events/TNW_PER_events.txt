@@ -189,7 +189,7 @@ country_event = {
 		name = PER_event.7.a
 		promote_character = PER_Hamid_Mirza
 		set_politics = {
-			ruling_party = Patriarchal_Conservatism
+			ruling_party = Conservatism
 			elections_allowed = yes
 		}
 		add_ideas = PER_qajar_restoration

@@ -63,8 +63,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 	spriteType = {
-		name = "GFX_TNW_welcome_TAT_intro_picture"
-		texturefile = "gfx/TNW_scripted_guis/TNW_wlecome/coutry_intro_picture/TAT_intro_picture.png"
+		name = "GFX_TNW_welcome_ALP_intro_picture"
+		texturefile = "gfx/TNW_scripted_guis/TNW_wlecome/coutry_intro_picture/ALP_intro_picture.png"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 }

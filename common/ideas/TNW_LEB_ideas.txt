@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		#世俗国家纲领
+		LEB_secular_mission = {
+			picture = GFX_idea_LEB_secular_mission
+			allowed = {
+				original_tag = LEB
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		#农民纲领
+		LEB_peasant_program = {
+			picture = GFX_idea_LEB_peasant_program
+			allowed = {
+				original_tag = LEB
+			}
+			removal_cost = -1
+			modifier = {
+				recruitable_population_factor = 0.03
+				stability_factor = 0.03
+			}
+		}
+		#塞浦路斯收复主义
+		LEB_cypress_irredenta = {
+			picture = GFX_idea_LEB_cypress_irredenta
+			allowed = {
+				original_tag = LEB
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+		#民族复兴
+		LEB_national_renaissance_idea = {
+			picture = GFX_idea_LEB_national_renaissance_idea
+			allowed = {
+				original_tag = LEB
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				political_power_factor = 0.05
+			}
+		}
+	}
+}

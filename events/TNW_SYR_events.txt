@@ -1,0 +1,205 @@
+add_namespace = SYR_crisis
+
+#第四次推迟大选（事件链入口：on_startup 定时或 SYR_fourth_delay 国策可提前触发，此后链条自动推进）
+country_event = {
+	id = SYR_crisis.1
+	title = SYR_crisis.1.t
+	desc = SYR_crisis.1.d
+	#picture = SYR_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = SYR_crisis.2 days = 20 } } }
+	option = {
+		name = SYR_crisis.1.a
+		add_stability = -0.05
+		add_political_power = 50
+	}
+	option = {
+		name = SYR_crisis.1.b
+		add_political_power = -50
+		add_stability = 0.02
+	}
+}
+
+#德鲁兹山起义
+country_event = {
+	id = SYR_crisis.2
+	title = SYR_crisis.2.t
+	desc = SYR_crisis.2.d
+	#picture = SYR_event2
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = SYR_crisis.3 days = 25 } } }
+	option = {
+		name = SYR_crisis.2.a
+		add_manpower = -3000
+		add_war_support = 0.05
+	}
+	option = {
+		name = SYR_crisis.2.b
+		add_political_power = -75
+		add_stability = -0.03
+	}
+}
+
+#霍姆斯兵变
+country_event = {
+	id = SYR_crisis.3
+	title = SYR_crisis.3.t
+	desc = SYR_crisis.3.d
+	#picture = SYR_event3
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = SYR_crisis.4 days = 20 } } }
+	option = {
+		name = SYR_crisis.3.a
+		add_war_support = 0.05
+		add_stability = -0.05
+		set_country_flag = SYR_homs_mutiny_crushed
+	}
+	option = {
+		name = SYR_crisis.3.b
+		add_political_power = -75
+		set_country_flag = SYR_homs_mutiny_pardoned
+	}
+}
+
+#霍姆斯惨案（军队分裂已成定局，此后政变随时可能发生）
+country_event = {
+	id = SYR_crisis.4
+	title = SYR_crisis.4.t
+	desc = SYR_crisis.4.d
+	#picture = SYR_event4
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = SYR_crisis.5 days = 25 } } }
+	option = {
+		name = SYR_crisis.4.a
+		add_stability = -0.10
+		add_political_power = 50
+		set_country_flag = SYR_army_split_deep
+	}
+	option = {
+		name = SYR_crisis.4.b
+		add_political_power = -100
+		add_stability = -0.02
+	}
+}
+
+#扎伊姆政变
+country_event = {
+	id = SYR_crisis.5
+	title = SYR_crisis.5.t
+	desc = SYR_crisis.5.d
+	#picture = SYR_event5
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = SYR_crisis.6 days = 7 } } }
+	option = {
+		name = SYR_crisis.5.a
+		complete_national_focus = SYR_zaim_coup
+		set_politics = {
+			ruling_party = Authoritarianism
+			elections_allowed = no
+		}
+		promote_character = SYR_Husni_al_Zaim
+		set_country_flag = SYR_zaim_coup_done_flag
+		mark_focus_tree_layout_dirty = yes
+		remove_ideas = SYR_constitutional_debt
+		add_ideas = SYR_military_junta_idea
+		add_political_power = 100
+		set_power_balance = {
+			id = SYR_junta_balance
+			left_side = SYR_attasi_bloc_bop
+			right_side = SYR_zaim_army_bop
+		}
+		add_power_balance_value = {
+			id = SYR_junta_balance
+			value = 0.10
+		}
+	}
+}
+
+#国王出逃安曼（外约旦携南部三省独立，宣战交由玩家）
+country_event = {
+	id = SYR_crisis.6
+	title = SYR_crisis.6.t
+	desc = SYR_crisis.6.d
+	#picture = SYR_event6
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = SYR_crisis.7 days = 7 } } }
+	option = {
+		name = SYR_crisis.6.a
+		retire_character = SYR_Ghazi_bin_Faisal
+		remove_ideas = SYR_isolated_monarchy
+		add_ideas = SYR_republic_vigor
+		455 = {
+			set_state_owner = JOR
+		}
+		1032 = {
+			set_state_owner = JOR
+		}
+		959 = {
+			set_state_owner = JOR
+		}
+		JOR = {
+			set_capital = 455
+			recruit_character = JOR_Ghazi_bin_Faisal
+			promote_character = JOR_Ghazi_bin_Faisal
+			every_owned_state = {
+				add_core_of = JOR
+			}
+		}
+	}
+}
+
+#军队分裂，黎凡特内战爆发（北方两省自立，宣战交由玩家）
+country_event = {
+	id = SYR_crisis.7
+	title = SYR_crisis.7.t
+	desc = SYR_crisis.7.d
+	#picture = SYR_event7
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SYR_crisis.7.a
+		677 = {
+			set_state_owner = ALP
+		}
+		680 = {
+			set_state_owner = ALP
+		}
+		943 = {
+			set_state_owner = ALP
+		}
+		553 = {
+			set_state_owner = LEB
+		}
+		945 = {
+			set_state_owner = LEB
+		}
+		ALP = {
+			set_capital = 677
+			every_owned_state = {
+				add_core_of = ALP
+			}
+			country_event = { id = ALP_event.1 }
+		}
+		LEB = {
+			set_capital = 553
+			every_owned_state = {
+				add_core_of = LEB
+			}
+			set_power_balance = {
+				id = LEB_front_balance
+				left_side = LEB_hourani_youth_bop
+				right_side = LEB_saadeh_elders_bop
+			}
+			add_power_balance_value = {
+				id = LEB_front_balance
+				value = 0.05
+			}
+		}
+	}
+}

@@ -1,8 +1,8 @@
 ideas = {
 	country = {
 		#混乱的革命
-		TAT_chaotic_revolution_idea = {
-			picture = GFX_idea_TAT_chaotic_revolution_idea
+		ALP_chaotic_revolution_idea = {
+			picture = GFX_idea_ALP_chaotic_revolution_idea
 			allowed = {
 				always = yes
 			}
@@ -14,8 +14,8 @@ ideas = {
 				army_speed_factor = -0.09
 			}
 		}
-		TAT_chaotic_revolution_1_idea = {
-			picture = GFX_idea_TAT_chaotic_revolution_idea
+		ALP_chaotic_revolution_1_idea = {
+			picture = GFX_idea_ALP_chaotic_revolution_idea
 			allowed = {
 				always = yes
 			}
@@ -27,8 +27,8 @@ ideas = {
 				army_speed_factor = -0.06
 			}
 		}
-		TAT_chaotic_revolution_2_idea = {
-			picture = GFX_idea_TAT_chaotic_revolution_idea
+		ALP_chaotic_revolution_2_idea = {
+			picture = GFX_idea_ALP_chaotic_revolution_idea
 			allowed = {
 				always = yes
 			}
@@ -41,8 +41,8 @@ ideas = {
 			}
 		}
 		#阿拉伯革命军
-		TAT_arab_army_idea = {
-			picture = GFX_idea_TAT_arab_army_idea
+		ALP_arab_army_idea = {
+			picture = GFX_idea_ALP_arab_army_idea
 			allowed = {
 				always = yes
 			}
@@ -53,8 +53,8 @@ ideas = {
 				conscription_factor = 0.15
 			}
 		}
-		TAT_arab_army_1_idea = {
-			picture = GFX_idea_TAT_arab_army_idea
+		ALP_arab_army_1_idea = {
+			picture = GFX_idea_ALP_arab_army_idea
 			allowed = {
 				always = yes
 			}
@@ -66,8 +66,8 @@ ideas = {
 				recruitable_population_factor = 0.20
 			}
 		}
-		TAT_arab_army_2_idea = {
-			picture = GFX_idea_TAT_arab_army_idea
+		ALP_arab_army_2_idea = {
+			picture = GFX_idea_ALP_arab_army_idea
 			allowed = {
 				always = yes
 			}
@@ -80,8 +80,8 @@ ideas = {
 			}
 		}
 		#物资短缺
-		TAT_supplies_shortage_idea = {
-			picture = GFX_idea_TAT_supplies_shortage_idea
+		ALP_supplies_shortage_idea = {
+			picture = GFX_idea_ALP_supplies_shortage_idea
 			allowed = {
 				always = yes
 			}
@@ -94,8 +94,8 @@ ideas = {
 			}
 		}
 		#战时社会主义政策
-		TAT_wartime_socialist_policy_idea = {
-			picture = GFX_idea_TAT_wartime_socialist_policy_idea
+		ALP_wartime_socialist_policy_idea = {
+			picture = GFX_idea_ALP_wartime_socialist_policy_idea
 			allowed = {
 				always = yes
 			}

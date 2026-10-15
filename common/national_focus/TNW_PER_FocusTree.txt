@@ -328,7 +328,7 @@ focus_tree = {
 			promote_character = PER_Ali_Akbar_Davar
 			retire_character = PER_Ali_Razmara
 			set_politics = {
-				ruling_party = National_Socialism
+				ruling_party = Nationalism
 				elections_allowed = no
 			}
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
@@ -368,7 +368,7 @@ focus_tree = {
 			promote_character = PER_Ali_Razmara
 			retire_character = PER_Ali_Akbar_Davar
 			set_politics = {
-				ruling_party = military_government
+				ruling_party = Absolutism
 				elections_allowed = no
 			}
 			add_ideas = PER_Fazlollah_Zahedi_army_chief
@@ -406,7 +406,7 @@ focus_tree = {
 			promote_character = PER_Mohammad_Tadayyon
 			retire_character = PER_Ali_Akbar_Davar
 			set_politics = {
-				ruling_party = National_liberalism
+				ruling_party = Liberalism
 				elections_allowed = yes
 			}
 		}
@@ -442,7 +442,7 @@ focus_tree = {
 			promote_character = PER_Mohammad_Ali_Foroughi
 			retire_character = PER_Ali_Akbar_Davar
 			set_politics = {
-				ruling_party = one_party_democracy
+				ruling_party = Authoritarianism
 				elections_allowed = no
 			}
 			add_ideas = PER_Mahmud_Jam_political_advisor
@@ -482,7 +482,7 @@ focus_tree = {
 			add_ideas = PER_route_caretaker
 			promote_character = PER_Mohammad_Mosaddeq
 			set_politics = {
-				ruling_party = interim_government
+				ruling_party = Authoritarianism
 				elections_allowed = no
 			}
 		}

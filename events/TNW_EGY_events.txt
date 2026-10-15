@@ -100,7 +100,7 @@ country_event = {
 		name = EGY_event.3.a
 		promote_character = EGY_Mohammed_Naguib
 		set_politics = {
-			ruling_party = military_government
+			ruling_party = Absolutism
 			elections_allowed = no
 		}
 		retire_character = EGY_Farouk_I
@@ -136,7 +136,7 @@ country_event = {
 		name = EGY_event.5.a
 		promote_character = EGY_Mostafa_Nahas
 		set_politics = {
-			ruling_party = Patriarchal_Conservatism
+			ruling_party = Conservatism
 			election_frequency = 48
 			elections_allowed = yes
 		}

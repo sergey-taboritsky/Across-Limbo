@@ -38,7 +38,7 @@ characters = {
 		}
 		country_leader = {
 			desc = TUR_Mustapha_Subhi_desc
-			ideology = marxism
+			ideology = Marxism
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {
@@ -67,7 +67,7 @@ characters = {
 		}
 		country_leader = {
 			desc = TUR_Ismail_Hakki_desc
-			ideology = marxism
+			ideology = Marxism
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {

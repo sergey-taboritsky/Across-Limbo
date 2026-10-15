@@ -1,15 +1,15 @@
 scripted_gui = {
-	TNW_TAT_indoctrination_gui = {
+	TNW_ALP_indoctrination_gui = {
 		context_type = decision_category
-		window_name = "TNW_TAT_indoctrination_gui"
+		window_name = "TNW_ALP_indoctrination_gui"
 		visible = {
-			tag = TAT
+			tag = ALP
 		}
 		effects = {
-			TNW_TAT_ideology_party_decisions_button_click = {
+			TNW_ALP_ideology_party_decisions_button_click = {
 				add_political_power = 1
 			}
-			TNW_TAT_ideology_masses_decisions_button_click = {
+			TNW_ALP_ideology_masses_decisions_button_click = {
 				add_political_power = 1
 			}
 		}

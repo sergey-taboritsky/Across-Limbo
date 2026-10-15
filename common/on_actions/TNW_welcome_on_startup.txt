@@ -41,7 +41,7 @@ on_actions = {
 			POL = {
 				set_variable = { country_intro_page_max = 3 }
 			}
-			TAT = {
+			ALP = {
 				set_variable = { country_intro_page_max = 2 }
 			}
 			CHI = {

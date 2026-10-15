@@ -1,4 +1,4 @@
-﻿capital = 249 #Aleppo
+﻿capital = 677 #Aleppo
 
 set_research_slots = 3
 
@@ -38,25 +38,25 @@ set_popularities = {
 	Nationalism = 0
 }
 
-recruit_character = TAT_Constantin_Zureik
-recruit_character = TAT_Farajallah_El_Helou
-recruit_character = TAT_Khalid_Bakdash
-recruit_character = TAT_Mustapha_Aris
-recruit_character = TAT_Nicolas_Chaoui
-recruit_character = TAT_Wadie_Haddad
-recruit_character = TAT_Hani_al_Hindi
-recruit_character = TAT_George_Habash
-recruit_character = TAT_Jassem_Alwan
+recruit_character = ALP_Constantin_Zureik
+recruit_character = ALP_Farajallah_El_Helou
+recruit_character = ALP_Khalid_Bakdash
+recruit_character = ALP_Mustapha_Aris
+recruit_character = ALP_Nicolas_Chaoui
+recruit_character = ALP_Wadie_Haddad
+recruit_character = ALP_Hani_al_Hindi
+recruit_character = ALP_George_Habash
+recruit_character = ALP_Jassem_Alwan
 
 add_ideas = {
-	TAT_chaotic_revolution_idea
-	TAT_supplies_shortage_idea
-	TAT_arab_army_idea
+	ALP_chaotic_revolution_idea
+	ALP_supplies_shortage_idea
+	ALP_arab_army_idea
 	#cabinet
-	TAT_Farajallah_El_Helou_hog
-	TAT_George_Habash_advisor
-	TAT_Mustapha_Aris_advisor
-	TAT_George_Habash_advisor
-	TAT_Wadie_Haddad_advisor
-	TAT_Jassem_Alwan_theorist
+	ALP_Farajallah_El_Helou_hog
+	ALP_George_Habash_advisor
+	ALP_Mustapha_Aris_advisor
+	ALP_George_Habash_advisor
+	ALP_Wadie_Haddad_advisor
+	ALP_Jassem_Alwan_theorist
 }

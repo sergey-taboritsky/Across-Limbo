@@ -1,0 +1,10 @@
+ALP_ideology_decision_categories = {
+	allowed = {
+		always = yes
+	}
+	visible = {
+	    tag = ALP
+	}
+    scripted_gui = TNW_ALP_indoctrination_gui
+	visible_when_empty = yes
+}

@@ -1,3 +1,0 @@
-TAT_ideology_decision_categories = {
-
-}

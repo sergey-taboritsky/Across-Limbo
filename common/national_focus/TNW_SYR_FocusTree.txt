@@ -1,0 +1,824 @@
+focus_tree = {
+	id = SYR_crisis
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SYR
+		}
+	}
+	default = no
+	###第四次推迟大选
+	focus = {
+		id = SYR_fourth_delay
+		icon = GFX_SYR_fourth_delay
+		x = 14
+		y = 0
+		cost = 3
+		allow_branch = {
+			NOT = { has_country_flag = SYR_zaim_coup_done_flag }
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	###稳固对军队的控制
+	focus = {
+		id = SYR_army_control
+		icon = GFX_SYR_army_control
+		prerequisite = {
+			focus = SYR_fourth_delay
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -2
+		y = 1
+		cost = 5
+		allow_branch = {
+			NOT = { has_country_flag = SYR_zaim_coup_done_flag }
+		}
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.05
+			add_political_power = 50
+		}
+	}
+	###继续维稳大马士革
+	focus = {
+		id = SYR_damascus_security
+		icon = GFX_SYR_damascus_security
+		prerequisite = {
+			focus = SYR_fourth_delay
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 2
+		y = 1
+		cost = 5
+		allow_branch = {
+			NOT = { has_country_flag = SYR_zaim_coup_done_flag }
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+	###油管特权续约
+	focus = {
+		id = SYR_pipeline_renewal
+		icon = GFX_SYR_pipeline_renewal
+		prerequisite = {
+			focus = SYR_damascus_security
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 2
+		y = 2
+		cost = 5
+		allow_branch = {
+			NOT = { has_country_flag = SYR_zaim_coup_done_flag }
+		}
+		completion_reward = {
+			add_political_power = 75
+			554 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	###镇压阿勒颇革命骚动
+	focus = {
+		id = SYR_aleppo_suppression
+		icon = GFX_SYR_aleppo_suppression
+		prerequisite = {
+			focus = SYR_army_control
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -2
+		y = 2
+		cost = 5
+		allow_branch = {
+			NOT = { has_country_flag = SYR_zaim_coup_done_flag }
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_manpower = 2000
+			army_experience = 15
+		}
+	}
+	###整备王国道路
+	focus = {
+		id = SYR_royal_infrastructure
+		icon = GFX_SYR_royal_infrastructure
+		prerequisite = {
+			focus = SYR_aleppo_suppression
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -2
+		y = 3
+		cost = 5
+		allow_branch = {
+			NOT = { has_country_flag = SYR_zaim_coup_done_flag }
+		}
+		completion_reward = {
+			554 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			940 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	###扎伊姆政变（由事件自动完成，仅政变后显示）
+	focus = {
+		id = SYR_zaim_coup
+		icon = GFX_SYR_zaim_coup
+		allow_branch = {
+			has_country_flag = SYR_zaim_coup_done_flag
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -2
+		y = 6
+		cost = 0
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	###全国军事管制
+	focus = {
+		id = SYR_martial_law_full
+		icon = GFX_SYR_martial_law_full
+		prerequisite = {
+			focus = SYR_zaim_coup
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -4
+		y = 7
+		cost = 5
+		completion_reward = {
+			add_stability = 0.10
+			add_political_power = 50
+		}
+	}
+	###挽留阿塔西
+	focus = {
+		id = SYR_attasi_coalition
+		icon = GFX_SYR_attasi_coalition
+		prerequisite = {
+			focus = SYR_zaim_coup
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 0
+		y = 7
+		cost = 5
+		completion_reward = {
+			add_ideas = SYR_Hashim_al_Attasi_hog
+			add_political_power = 50
+		}
+	}
+	###宣布共和
+	focus = {
+		id = SYR_republic_proclamation
+		icon = GFX_SYR_republic_proclamation
+		prerequisite = {
+			focus = SYR_martial_law_full
+		}
+		prerequisite = {
+			focus = SYR_attasi_coalition
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -2
+		y = 8
+		cost = 7
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	###清洗宫廷党羽
+	focus = {
+		id = SYR_hashemite_purge
+		icon = GFX_SYR_hashemite_purge
+		prerequisite = {
+			focus = SYR_martial_law_full
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -4
+		y = 8
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	###陆军整编
+	focus = {
+		id = SYR_army_reorganization
+		icon = GFX_SYR_army_reorganization
+		prerequisite = {
+			focus = SYR_republic_proclamation
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -2
+		y = 9
+		cost = 5
+		completion_reward = {
+			army_experience = 50
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+		}
+	}
+	###外约旦管道谅解
+	focus = {
+		id = SYR_tapline_agreement
+		icon = GFX_SYR_tapline_agreement
+		prerequisite = {
+			focus = SYR_republic_proclamation
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 0
+		y = 9
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+			554 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = civilian_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	###制宪议会
+	focus = {
+		id = SYR_constituent_assembly
+		icon = GFX_SYR_constituent_assembly
+		prerequisite = {
+			focus = SYR_hashemite_purge
+		}
+		prerequisite = {
+			focus = SYR_army_reorganization
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -3
+		y = 10
+		cost = 7
+		completion_reward = {
+			add_stability = 0.10
+			if = {
+				limit = {
+					has_idea = SYR_Hashim_al_Attasi_hog
+				}
+				set_politics = {
+					ruling_party = Authoritarianism
+					elections_allowed = yes
+				}
+			}
+		}
+	}
+	###黎凡特总动员
+	focus = {
+		id = SYR_levant_mobilization
+		icon = GFX_SYR_levant_mobilization
+		prerequisite = {
+			focus = SYR_constituent_assembly
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -3
+		y = 11
+		cost = 7
+		completion_reward = {
+			add_war_support = 0.10
+			add_political_power = 100
+		}
+	}
+
+	###军事安全总局
+	focus = {
+		id = SYR_security_directorate
+		icon = GFX_SYR_security_directorate
+		prerequisite = {
+			focus = SYR_martial_law_full
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -8
+		y = 8
+		cost = 5
+		completion_reward = {
+			add_power_balance_value = {
+				id = SYR_junta_balance
+				value = 0.10
+			}
+			add_stability = 0.05
+			army_experience = 20
+		}
+	}
+	###革命军事法庭
+	focus = {
+		id = SYR_military_tribunals
+		icon = GFX_SYR_military_tribunals
+		prerequisite = {
+			focus = SYR_security_directorate
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -8
+		y = 9
+		cost = 5
+		completion_reward = {
+			add_power_balance_value = {
+				id = SYR_junta_balance
+				value = 0.10
+			}
+			add_political_power = 100
+		}
+	}
+	###少壮派军官团
+	focus = {
+		id = SYR_young_officers_cadre
+		icon = GFX_SYR_young_officers_cadre
+		prerequisite = {
+			focus = SYR_military_tribunals
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -8
+		y = 10
+		cost = 5
+		completion_reward = {
+			add_power_balance_value = {
+				id = SYR_junta_balance
+				value = 0.10
+			}
+			add_war_support = 0.05
+		}
+	}
+	###扎伊姆个人统治
+	focus = {
+		id = SYR_zaim_personal_rule
+		icon = GFX_SYR_zaim_personal_rule
+		prerequisite = {
+			focus = SYR_young_officers_cadre
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -8
+		y = 11
+		cost = 7
+		completion_reward = {
+			add_power_balance_value = {
+				id = SYR_junta_balance
+				value = 0.15
+			}
+			add_stability = 0.05
+			add_political_power = 150
+		}
+	}
+	###退伍军人垦殖
+	focus = {
+		id = SYR_veterans_settlement
+		icon = GFX_SYR_veterans_settlement
+		prerequisite = {
+			focus = SYR_army_reorganization
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -5
+		y = 10
+		cost = 5
+		completion_reward = {
+			add_manpower = 10000
+			add_war_support = 0.03
+		}
+	}
+	###边境要塞化
+	focus = {
+		id = SYR_border_fortification
+		icon = GFX_SYR_border_fortification
+		prerequisite = {
+			focus = SYR_army_reorganization
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -5
+		y = 11
+		cost = 5
+		completion_reward = {
+			554 = {
+				add_building_construction = {
+					type = bunker
+					province = 7594
+					level = 2
+				}
+			}
+			940 = {
+				add_building_construction = {
+					type = bunker
+					province = 10876
+					level = 2
+				}
+			}
+			army_experience = 15
+		}
+	}
+	###战时征兵法
+	focus = {
+		id = SYR_mass_conscription
+		icon = GFX_SYR_mass_conscription
+		prerequisite = {
+			focus = SYR_zaim_personal_rule
+		}
+		prerequisite = {
+			focus = SYR_veterans_settlement
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -7
+		y = 12
+		cost = 7
+		completion_reward = {
+			add_manpower = 20000
+			add_war_support = 0.05
+		}
+	}
+	###巴拉齐理财
+	focus = {
+		id = SYR_barazi_finance
+		icon = GFX_SYR_barazi_finance
+		prerequisite = {
+			focus = SYR_tapline_agreement
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 0
+		y = 10
+		cost = 5
+		completion_reward = {
+			add_political_power = 150
+			554 = {
+				add_building_construction = {
+					type = civilian_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	###对以秘密渠道
+	focus = {
+		id = SYR_secret_israel_channel
+		icon = GFX_SYR_secret_israel_channel
+		prerequisite = {
+			focus = SYR_barazi_finance
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 0
+		y = 11
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.02
+			add_war_support = -0.03
+		}
+	}
+	###文官联合内阁
+	focus = {
+		id = SYR_civil_cabinet
+		icon = GFX_SYR_civil_cabinet
+		prerequisite = {
+			focus = SYR_attasi_coalition
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 8
+		y = 8
+		cost = 5
+		completion_reward = {
+			add_power_balance_value = {
+				id = SYR_junta_balance
+				value = -0.10
+			}
+			add_political_power = 75
+		}
+	}
+	###民族党元老院
+	focus = {
+		id = SYR_national_party_elders
+		icon = GFX_SYR_national_party_elders
+		prerequisite = {
+			focus = SYR_civil_cabinet
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 7
+		y = 9
+		cost = 5
+		completion_reward = {
+			add_power_balance_value = {
+				id = SYR_junta_balance
+				value = -0.10
+			}
+			add_stability = 0.03
+		}
+	}
+	###人民党少壮系
+	focus = {
+		id = SYR_peoples_party_leaders
+		icon = GFX_SYR_peoples_party_leaders
+		prerequisite = {
+			focus = SYR_civil_cabinet
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 9
+		y = 9
+		cost = 5
+		completion_reward = {
+			add_power_balance_value = {
+				id = SYR_junta_balance
+				value = -0.05
+			}
+			add_political_power = 75
+		}
+	}
+	###全国大赦令
+	focus = {
+		id = SYR_general_amnesty
+		icon = GFX_SYR_general_amnesty
+		prerequisite = {
+			focus = SYR_national_party_elders
+		}
+		prerequisite = {
+			focus = SYR_peoples_party_leaders
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 8
+		y = 10
+		cost = 5
+		completion_reward = {
+			add_power_balance_value = {
+				id = SYR_junta_balance
+				value = -0.10
+			}
+			add_stability = 0.05
+			add_manpower = 5000
+		}
+	}
+	###文官行政重建
+	focus = {
+		id = SYR_civil_administration
+		icon = GFX_SYR_civil_administration
+		prerequisite = {
+			focus = SYR_general_amnesty
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 8
+		y = 11
+		cost = 5
+		completion_reward = {
+			add_power_balance_value = {
+				id = SYR_junta_balance
+				value = -0.10
+			}
+			add_political_power = 100
+		}
+	}
+	###议会回归
+	focus = {
+		id = SYR_parliament_restored
+		icon = GFX_SYR_parliament_restored
+		prerequisite = {
+			focus = SYR_constituent_assembly
+		}
+		prerequisite = {
+			focus = SYR_civil_administration
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 8
+		y = 12
+		cost = 7
+		completion_reward = {
+			add_power_balance_value = {
+				id = SYR_junta_balance
+				value = -0.15
+			}
+			set_politics = {
+				ruling_party = Authoritarianism
+				elections_allowed = yes
+			}
+			add_stability = 0.10
+		}
+	}
+	###大马士革防御圈
+	focus = {
+		id = SYR_damascus_defense_line
+		icon = GFX_SYR_damascus_defense_line
+		prerequisite = {
+			focus = SYR_republic_proclamation
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 11
+		y = 9
+		cost = 5
+		completion_reward = {
+			554 = {
+				add_building_construction = {
+					type = bunker
+					province = 7594
+					level = 3
+				}
+			}
+			add_war_support = 0.03
+		}
+	}
+	###戈兰瞭望线
+	focus = {
+		id = SYR_golan_watchtowers
+		icon = GFX_SYR_golan_watchtowers
+		prerequisite = {
+			focus = SYR_damascus_defense_line
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 12
+		y = 10
+		cost = 5
+		completion_reward = {
+			940 = {
+				add_building_construction = {
+					type = bunker
+					province = 10876
+					level = 2
+				}
+			}
+			army_experience = 15
+		}
+	}
+	###德鲁兹山和约
+	focus = {
+		id = SYR_druze_mountain_pact
+		icon = GFX_SYR_druze_mountain_pact
+		prerequisite = {
+			focus = SYR_damascus_defense_line
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 10
+		y = 10
+		cost = 5
+		completion_reward = {
+			945 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.05
+			add_manpower = 3000
+		}
+	}
+	###难民营整顿
+	focus = {
+		id = SYR_refugee_resettlement
+		icon = GFX_SYR_refugee_resettlement
+		prerequisite = {
+			focus = SYR_republic_proclamation
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 13
+		y = 9
+		cost = 5
+		completion_reward = {
+			add_manpower = 10000
+			add_political_power = 50
+		}
+	}
+	###油管过境税
+	focus = {
+		id = SYR_pipeline_tolls
+		icon = GFX_SYR_pipeline_tolls
+		prerequisite = {
+			focus = SYR_tapline_agreement
+		}
+		prerequisite = {
+			focus = SYR_refugee_resettlement
+		}
+		relative_position_id = SYR_fourth_delay
+		x = 14
+		y = 10
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			554 = {
+				add_building_construction = {
+					type = civilian_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	###收复阿勒颇
+	focus = {
+		id = SYR_reclaim_aleppo
+		icon = GFX_SYR_reclaim_aleppo
+		prerequisite = {
+			focus = SYR_levant_mobilization
+		}
+		bypass = {
+			NOT = {
+				country_exists = ALP
+			}
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -5
+		y = 12
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			army_experience = 25
+			if = {
+				limit = { country_exists = ALP }
+				declare_war_on = { target = ALP type = annex_everything }
+			}
+		}
+	}
+	###收复贝鲁特
+	focus = {
+		id = SYR_reclaim_beirut
+		icon = GFX_SYR_reclaim_beirut
+		prerequisite = {
+			focus = SYR_levant_mobilization
+		}
+		bypass = {
+			NOT = {
+				country_exists = LEB
+			}
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -3
+		y = 12
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			army_experience = 25
+			if = {
+				limit = { country_exists = LEB }
+				declare_war_on = { target = LEB type = annex_everything }
+			}
+		}
+	}
+	###南征安曼
+	focus = {
+		id = SYR_reclaim_amman
+		icon = GFX_SYR_reclaim_amman
+		prerequisite = {
+			focus = SYR_levant_mobilization
+		}
+		bypass = {
+			NOT = {
+				country_exists = JOR
+			}
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -1
+		y = 12
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			army_experience = 25
+			if = {
+				limit = { country_exists = JOR }
+				declare_war_on = { target = JOR type = annex_everything }
+			}
+		}
+	}
+	###黎凡特一统
+	focus = {
+		id = SYR_levant_unified
+		icon = GFX_SYR_levant_unified
+		prerequisite = {
+			focus = SYR_reclaim_aleppo
+		}
+		prerequisite = {
+			focus = SYR_reclaim_beirut
+		}
+		prerequisite = {
+			focus = SYR_reclaim_amman
+		}
+		relative_position_id = SYR_fourth_delay
+		x = -3
+		y = 13
+		cost = 10
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+			add_political_power = 200
+			add_ideas = SYR_levant_unified_idea
+		}
+	}
+}

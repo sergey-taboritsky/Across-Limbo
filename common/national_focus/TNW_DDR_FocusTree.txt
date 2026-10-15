@@ -198,11 +198,11 @@ focus_tree = {
 				if = {
 					limit = { is_subject = yes }
 					if = {
-						limit = { overlord = { has_government = totalist } }
+						limit = { overlord = { has_government = communist } }
 						meta_effect = {
 							text = {
 								set_politics = {
-									ruling_party = totalist
+									ruling_party = communist
 									last_election = "[CURRENT_DATE]"
 									elections_allowed = no
 								}
@@ -221,11 +221,11 @@ focus_tree = {
 						}
 					}
 					else_if = {
-						limit = { overlord = { has_government = syndicalist } }
+						limit = { overlord = { has_government = syndicalism } }
 						meta_effect = {
 							text = {
 								set_politics = {
-									ruling_party = syndicalist
+									ruling_party = syndicalism
 									last_election = "[CURRENT_DATE]"
 									elections_allowed = yes
 									election_frequency = 48
@@ -238,7 +238,7 @@ focus_tree = {
 						meta_effect = {
 							text = {
 								set_politics = {
-									ruling_party = radical_socialist
+									ruling_party = socialism
 									last_election = "[CURRENT_DATE]"
 									elections_allowed = yes
 									election_frequency = 48
@@ -287,7 +287,7 @@ focus_tree = {
 
 		prerequisite = { focus = GRU_KAPD_election }
 
-		available = { has_government = radical_socialist }
+		available = { has_government = socialism }
 
 		ai_will_do = { base = 100 }
 
@@ -424,7 +424,7 @@ focus_tree = {
 
 		prerequisite = { focus = GRU_KAPD_election }
 
-		available = { has_government = syndicalist }
+		available = { has_government = syndicalism }
 
 		ai_will_do = { base = 100 }
 
@@ -556,7 +556,7 @@ focus_tree = {
 
 		prerequisite = { focus = GRU_KAPD_election }
 
-		available = { has_government = totalist }
+		available = { has_government = communist }
 
 		ai_will_do = { base = 100 }
 
@@ -603,7 +603,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					POL = { has_government = totalist }
+					POL = { has_government = communist }
 				}
 				reverse_add_opinion_modifier = {
 					target = POL
@@ -612,7 +612,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					BUL = { has_government = totalist }
+					BUL = { has_government = communist }
 				}
 				reverse_add_opinion_modifier = {
 					target = BUL

@@ -1,0 +1,21 @@
+SYR_junta_bop_categories = {
+	icon = generic_operations
+	picture = generic_air
+	allowed = {
+		original_tag = SYR
+	}
+	visible = {
+		has_power_balance = SYR_junta_balance
+	}
+}
+
+LEB_front_bop_categories = {
+	icon = generic_operations
+	picture = generic_air
+	allowed = {
+		original_tag = LEB
+	}
+	visible = {
+		has_power_balance = LEB_front_balance
+	}
+}

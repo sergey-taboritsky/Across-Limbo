@@ -114,7 +114,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				trade_opinion_factor = 0.15
-				factory_output = 0.03
+				industrial_capacity_factory = 0.03
 				stability_factor = 0.03
 			}
 		}

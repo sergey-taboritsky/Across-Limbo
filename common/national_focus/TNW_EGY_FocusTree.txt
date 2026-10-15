@@ -283,7 +283,7 @@ focus_tree = {
 				long_name = EGY_national_alliance_party_long
 			}
 			set_politics = {
-				ruling_party = Guided_democracy
+				ruling_party = Authoritarianism
 				elections_allowed = no
 			}
 			retire_character = EGY_Gamal_Abdel_Nasser
@@ -322,7 +322,7 @@ focus_tree = {
 				long_name = EGY_peoples_union_party_long
 			}
 			set_politics = {
-				ruling_party = Singular_Nationalism
+				ruling_party = Nationalism
 				elections_allowed = no
 			}
 			retire_character = EGY_Mohammed_Naguib
@@ -685,7 +685,7 @@ focus_tree = {
 			focus = EGY_Nationalize_Banks
 		}
 		available = {
-			focus = EGY_Recover_Suez
+			has_completed_focus = EGY_Recover_Suez
 		}
 		x = 42
 		y = 11
@@ -771,7 +771,7 @@ focus_tree = {
 			focus = EGY_Five_Year_Plan
 		}
 		x = 42
-		y = 12
+		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed EGY_Aswan_Dam"
 			add_ideas = EGY_aswan_dam
@@ -805,7 +805,7 @@ focus_tree = {
 			focus = EGY_Aswan_Dam
 		}
 		x = 40
-		y = 13
+		y = 14
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed EGY_Arab_Socialism"
 			add_political_power = 100
@@ -913,7 +913,7 @@ focus_tree = {
 			focus = EGY_Cotton_Export
 		}
 		available = {
-			focus = EGY_Recover_Suez
+			has_completed_focus = EGY_Recover_Suez
 		}
 		x = 56
 		y = 11

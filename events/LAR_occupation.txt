@@ -148,10 +148,10 @@ country_event = {
 					var:new_occupied_country = {
 						random_list = {
 							100 = {
-								set_popularities = {
-									authoritarianism = 100
+							set_popularities = {
+									Authoritarianism = 100
 								}
-								set_politics = { ruling_party = authoritarianism elections_allowed = no }
+							set_politics = { ruling_party = Authoritarianism elections_allowed = no }
 							}
 						}
 					}

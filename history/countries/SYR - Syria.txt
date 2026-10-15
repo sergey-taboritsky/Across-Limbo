@@ -1,21 +1,19 @@
 ﻿capital = 554
 
+set_research_slots = 3
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-}
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-	}
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	gw_artillery = 1
 }
 
 set_convoys = 5
-
-
 
 set_politics = {
 	ruling_party = Absolutism
@@ -23,53 +21,31 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
+
 set_popularities = {
 	communist = 0
-	socialism = 0
-	Social_democracy = 2
-	Liberalism = 6
+	syndicalism = 0
+	socialism = 2
+	Social_democracy = 5
+	Liberalism = 12
 	Conservatism = 19
 	Authoritarianism = 12
-	Absolutism = 40
-	Nationalism = 21
+	Absolutism = 32
+	Nationalism = 18
 }
 
-create_country_leader = {
-	name = "Hashim al-Atassi"
-	desc = ""
-	picture = GFX_portrait_Hashim_al_Atassi
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
+recruit_character = SYR_Ghazi_bin_Faisal
+recruit_character = SYR_Husni_al_Zaim
+recruit_character = SYR_Hashim_al_Attasi
+recruit_character = SYR_Antun_Saadeh
+recruit_character = SYR_Sami_al_Hinnawi
+recruit_character = SYR_Adib_Shishakli
 
-create_country_leader = {
-	name = "Antun Saadeh"
-	desc = ""
-	picture = GFX_portrait_Antun_Saadeh
-	ideology = Nationalism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ghazi bin Faisal"
-	desc = ""
-	picture = GFX_portrait_Ghazi_bin_Faisal
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Khalid Bakdash"
-	desc = ""
-	picture = GFX_portrait_Khalid_Bakdash
-	ideology = leninism
-	traits = {
-		#
-	}
+add_ideas = {
+	SYR_german_dependence
+	SYR_pipeline_corridor
+	SYR_mountain_autonomy
+	SYR_hashem_unity
+	SYR_isolated_monarchy
+	SYR_constitutional_debt
 }

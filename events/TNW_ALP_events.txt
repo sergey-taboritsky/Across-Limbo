@@ -1,0 +1,32 @@
+add_namespace = ALP_event
+
+#革命政权成立
+country_event = {
+	id = ALP_event.1
+	title = ALP_event.1.t
+	desc = ALP_event.1.d
+	#picture = ALP_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ALP_event.1.a
+		add_stability = -0.05
+		add_war_support = 0.10
+		set_country_flag = ALP_revolution_flag
+	}
+}
+
+#阿里斯入阁
+country_event = {
+	id = ALP_event.2
+	title = ALP_event.2.t
+	desc = ALP_event.2.d
+	#picture = ALP_event2
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ALP_event.2.a
+		add_ideas = ALP_Mustapha_Aris_advisor
+		custom_effect_tooltip = ALP_event_2_a_tt
+	}
+}

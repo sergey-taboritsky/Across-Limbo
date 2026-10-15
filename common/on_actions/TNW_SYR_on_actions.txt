@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			SYR = {
+				country_event = { id = SYR_crisis.1 days = 50 }
+			}
+		}
+	}
+}

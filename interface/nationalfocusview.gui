@@ -188,7 +188,7 @@ guiTypes = {
 				
 				containerWindowType = {
 					name = "continuous_focus_window"
-					position = { x=0 y=0 }
+					position = { x=0 y=-300 }
 					size = { width = 770 height = 380 }
 					margin = { top = 13 left = 0 bottom = 13 right = 13}
 					drag_scroll = { left middle }

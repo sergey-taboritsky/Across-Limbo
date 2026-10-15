@@ -1743,8 +1743,8 @@ spriteTypes = {
 	#叙利亚
 	#康斯坦丁·祖雷克
 	SpriteType = {
-		name = "GFX_portrait_large_TAT_Constantin_Zureik"
-		texturefile = "gfx/characters/TAT_Constantin_Zureik.png"
+		name = "GFX_portrait_large_ALP_Constantin_Zureik"
+		texturefile = "gfx/characters/ALP_Constantin_Zureik.png"
 	}
 	#法鲁克一世
 	SpriteType = {

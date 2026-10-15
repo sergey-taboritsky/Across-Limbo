@@ -1,0 +1,22 @@
+add_namespace = JOR_event
+
+#欣纳维密约
+country_event = {
+	id = JOR_event.1
+	title = JOR_event.1.t
+	desc = JOR_event.1.d
+	#picture = JOR_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = JOR_event.1.a
+		add_political_power = 50
+		add_war_support = 0.03
+		set_country_flag = JOR_hinnawi_crown_promise
+	}
+	option = {
+		name = JOR_event.1.b
+		add_political_power = 25
+		add_stability = 0.02
+	}
+}
