@@ -155,41 +155,38 @@ on_actions = {
 					add_core_of = CHI
 				}
 			}
-			#奥斯曼内战 - 安纳托利亚
-			else_if = {
-				limit = {
-					event_target:losing_country = {
-						OR = {
-							original_tag = TUR
-							original_tag = KAL
-							original_tag = CIN
-							original_tag = DAG
-							original_tag = ARM
-						}
-					}
-					event_target:winning_country = {
-						OR = {
-							original_tag = TUR
-							original_tag = KAL
-							original_tag = CIN
-							original_tag = DAG
-							original_tag = ARM
-						}
-					}
-				}
+		#叙利亚内战 - 黎凡特
+		else_if = {
+			limit = {
 				event_target:losing_country = {
-					every_core_state = {
-						remove_core_of = event_target:losing_country
-						add_core_of = event_target:winning_country
+					OR = {
+						original_tag = SYR
+						original_tag = ALP
+						original_tag = LEB
+						original_tag = JOR
 					}
 				}
-				every_possible_country = {
-					limit = { NOT = { original_tag = event_target:winning_country } }
-					annex_country = {
-						tag = event_target:losing_country
+				event_target:winning_country = {
+					OR = {
+						original_tag = SYR
+						original_tag = ALP
+						original_tag = LEB
+						original_tag = JOR
 					}
 				}
 			}
+			event_target:losing_country = {
+				every_core_state = {
+					add_core_of = event_target:winning_country
+					remove_core_of = event_target:losing_country
+				}
+			}
+			event_target:winning_country = {
+				annex_country = {
+					tag = event_target:losing_country
+				}
+			}
+		}
 		}
 	}
 }

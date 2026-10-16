@@ -554,7 +554,12 @@ focus_tree = {
 		prerequisite = {
 			focus = JOR_reclaim_throne
 		}
-		relative_position_id = JOR_court_in_exile
+				available = {
+		NOT = { country_exists = SYR }
+		NOT = { country_exists = ALP }
+		NOT = { country_exists = LEB }
+		}
+relative_position_id = JOR_court_in_exile
 		x = 0
 		y = 9
 		cost = 10

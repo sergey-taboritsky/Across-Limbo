@@ -55,6 +55,8 @@ recruit_character = DAG_Recep_Peker
 recruit_character = DAG_Falih_Rifki_Atay
 recruit_character = DAG_Ahmet_Ferit_Tek
 recruit_character = DAG_Hamdullah_Suphi_Tarinover
+recruit_character = DAG_Omer_Mumtaz_Okmen
+recruit_character = KAL_Huseyn_Cahit_Yalcin
 
 add_ideas = {
 	TUR_dark_legacy_of_Gokalp

@@ -689,7 +689,12 @@ focus_tree = {
 		prerequisite = {
 			focus = LEB_orthodox_road
 		}
-		relative_position_id = LEB_consolidate_beirut
+				available = {
+		NOT = { country_exists = SYR }
+		NOT = { country_exists = ALP }
+		NOT = { country_exists = JOR }
+		}
+relative_position_id = LEB_consolidate_beirut
 		x = 0
 		y = 8
 		cost = 10

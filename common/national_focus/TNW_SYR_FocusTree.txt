@@ -811,7 +811,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SYR_reclaim_amman
 		}
-		relative_position_id = SYR_fourth_delay
+				available = {
+		NOT = { country_exists = ALP }
+		NOT = { country_exists = LEB }
+		NOT = { country_exists = JOR }
+		}
+relative_position_id = SYR_fourth_delay
 		x = -3
 		y = 13
 		cost = 10
