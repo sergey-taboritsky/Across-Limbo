@@ -534,7 +534,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = PER_plan_board
+			swap_ideas = {
+				remove_idea = PER_state_monopoly
+				add_idea = PER_plan_board
+			}
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -551,7 +554,10 @@ focus_tree = {
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PER_Regulate_the_Bazaar"
-			add_ideas = PER_regulated_bazaar
+			swap_ideas = {
+				remove_idea = PER_plan_board
+				add_idea = PER_regulated_bazaar
+			}
 			add_political_power = 50
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 10 }
@@ -569,7 +575,10 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PER_Fever_of_Progress"
-			add_ideas = PER_fever_of_progress
+			swap_ideas = {
+				remove_idea = PER_regulated_bazaar
+				add_idea = PER_fever_of_progress
+			}
 			add_political_power = 100
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
@@ -739,7 +748,10 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PER_Free_Trade_Charter"
-			add_ideas = PER_free_trade
+			swap_ideas = {
+				remove_idea = PER_open_banks
+				add_idea = PER_free_trade
+			}
 			add_political_power = 50
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 10 }
@@ -801,7 +813,10 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PER_Market_of_Empires"
-			add_ideas = PER_gate_of_merchants
+			swap_ideas = {
+				remove_idea = PER_free_trade
+				add_idea = PER_gate_of_merchants
+			}
 			add_political_power = 100
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 10 }
@@ -911,7 +926,10 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PER_Republic_of_Offices"
-			add_ideas = PER_offices_republic
+			swap_ideas = {
+				remove_idea = PER_civil_bank
+				add_idea = PER_offices_republic
+			}
 			add_political_power = 50
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }

@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	continuous_focus_position = {
 		x = 100
-		y = 1000
+		y = 2400
 	}
 	default = no
 
@@ -556,6 +556,10 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed TUR_Reorganize_Revolutionary_Army"
 			add_political_power = 25
 			army_experience = 20
+			swap_ideas = {
+				remove_idea = TUR_peoples_revolutionary_army
+				add_idea = TUR_peoples_revolutionary_army_2
+			}
 		}
 	}
 	focus = {
@@ -582,7 +586,10 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed TUR_Red_Army_Reorganization"
 			add_war_support = 0.05
 			army_experience = 30
-			add_ideas = TUR_red_army_reorg
+			swap_ideas = {
+				remove_idea = TUR_peoples_revolutionary_army_2
+				add_idea = TUR_peoples_revolutionary_army_3
+			}
 		}
 	}
 	focus = {
@@ -610,7 +617,10 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed TUR_Retain_Old_Officers"
 			add_political_power = 25
 			army_experience = 40
-			add_ideas = TUR_retained_officers
+			swap_ideas = {
+				remove_idea = TUR_peoples_revolutionary_army_2
+				add_idea = TUR_peoples_revolutionary_army_3
+			}
 		}
 	}
 	focus = {
@@ -637,7 +647,10 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed TUR_Militia_Doctrine"
 			add_war_support = 0.05
 			army_experience = 20
-			add_ideas = TUR_militia_doctrine
+			swap_ideas = {
+				remove_idea = TUR_peoples_revolutionary_army_2
+				add_idea = TUR_peoples_revolutionary_army_3
+			}
 		}
 	}
 	focus = {
@@ -647,7 +660,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TUR_Reorganize_Revolutionary_Army
 		}
-		x = 12
+		x = 13
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Southern_Campaign"
@@ -690,10 +703,1111 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed TUR_Revolutionary_Army_Unified"
 			add_political_power = 50
 			army_experience = 50
-			add_ideas = TUR_new_army
-			remove_dynamic_modifier = {
-				modifier = TUR_peoples_revolutionary_army
+			swap_ideas = {
+				remove_idea = TUR_peoples_revolutionary_army_3
+				add_idea = TUR_peoples_revolutionary_army_4
 			}
 		}
 	}
+	focus = {
+		id = TUR_Army_Professionalization
+		icon = GFX_TUR_Army_Professionalization
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Reorganize_Revolutionary_Army
+		}
+		x = 2
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Army_Professionalization"
+			add_political_power = 25
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = TUR_Veteran_NCO_Corps
+		icon = GFX_TUR_Veteran_NCO_Corps
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Army_Professionalization
+		}
+		x = 1
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Veteran_NCO_Corps"
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = TUR_Officer_Academy_Reform
+		icon = GFX_TUR_Officer_Academy_Reform
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Army_Professionalization
+		}
+		x = 3
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Officer_Academy_Reform"
+			add_political_power = 25
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = TUR_Veterans_Resettlement
+		icon = GFX_TUR_Veterans_Resettlement
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Veteran_NCO_Corps
+		}
+		x = 1
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Veterans_Resettlement"
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = TUR_Standardized_Arsenal
+		icon = GFX_TUR_Standardized_Arsenal
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Officer_Academy_Reform
+		}
+		x = 3
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Standardized_Arsenal"
+			army_experience = 10
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1500
+				producer = ROOT
+			}
+		}
+	}
+	focus = {
+		id = TUR_Border_Guard_Forces
+		icon = GFX_TUR_Border_Guard_Forces
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Veterans_Resettlement
+		}
+		x = 1
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Border_Guard_Forces"
+			add_war_support = 0.02
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = TUR_Motorization_Program
+		icon = GFX_TUR_Motorization_Program
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Standardized_Arsenal
+		}
+		x = 3
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Motorization_Program"
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 500
+				producer = ROOT
+			}
+		}
+	}
+	focus = {
+		id = TUR_Fortress_Network
+		icon = GFX_TUR_Fortress_Network
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Border_Guard_Forces
+		}
+		x = 1
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Fortress_Network"
+			add_political_power = 25
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = TUR_Logistics_Command
+		icon = GFX_TUR_Logistics_Command
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Motorization_Program
+		}
+		x = 3
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Logistics_Command"
+			add_political_power = 25
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = TUR_Combined_Arms_Staff
+		icon = GFX_TUR_Combined_Arms_Staff
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Fortress_Network
+		}
+		prerequisite = {
+			focus = TUR_Logistics_Command
+		}
+		x = 2
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Combined_Arms_Staff"
+			add_war_support = 0.03
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = TUR_Shield_of_Revolution
+		icon = GFX_TUR_Shield_of_Revolution
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Combined_Arms_Staff
+		}
+		x = 2
+		y = 15
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Shield_of_Revolution"
+			add_political_power = 50
+			add_war_support = 0.05
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = TUR_Internationalist_Liaison
+		icon = GFX_TUR_Internationalist_Liaison
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Reorganize_Revolutionary_Army
+		}
+		x = 6
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Internationalist_Liaison"
+			add_political_power = 25
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = TUR_Western_Socialist_Mission
+		icon = GFX_TUR_Western_Socialist_Mission
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Internationalist_Liaison
+		}
+		x = 5
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Western_Socialist_Mission"
+			army_experience = 25
+			navy_experience = 15
+			air_experience = 15
+		}
+	}
+	focus = {
+		id = TUR_Aegean_Joint_Exercises
+		icon = GFX_TUR_Aegean_Joint_Exercises
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Internationalist_Liaison
+		}
+		x = 7
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Aegean_Joint_Exercises"
+			navy_experience = 25
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = TUR_Italian_Air_Exchange
+		icon = GFX_TUR_Italian_Air_Exchange
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Western_Socialist_Mission
+		}
+		x = 5
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Italian_Air_Exchange"
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = TUR_Anglo_French_Arms_Deal
+		icon = GFX_TUR_Anglo_French_Arms_Deal
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Aegean_Joint_Exercises
+		}
+		x = 7
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Anglo_French_Arms_Deal"
+			army_experience = 15
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+				producer = ROOT
+			}
+		}
+	}
+	focus = {
+		id = TUR_Joint_Training_Camps
+		icon = GFX_TUR_Joint_Training_Camps
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Italian_Air_Exchange
+		}
+		x = 5
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Joint_Training_Camps"
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = TUR_American_Industrial_Mission
+		icon = GFX_TUR_American_Industrial_Mission
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Anglo_French_Arms_Deal
+		}
+		x = 7
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_American_Industrial_Mission"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_workshop
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_workshop
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Mediterranean_Fleet_Visits
+		icon = GFX_TUR_Mediterranean_Fleet_Visits
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Joint_Training_Camps
+		}
+		x = 5
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Mediterranean_Fleet_Visits"
+			navy_experience = 30
+		}
+	}
+	focus = {
+		id = TUR_Foreign_Instructor_Corps
+		icon = GFX_TUR_Foreign_Instructor_Corps
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_American_Industrial_Mission
+		}
+		x = 7
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Foreign_Instructor_Corps"
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = TUR_Socialist_Defense_Council
+		icon = GFX_TUR_Socialist_Defense_Council
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Mediterranean_Fleet_Visits
+		}
+		prerequisite = {
+			focus = TUR_Foreign_Instructor_Corps
+		}
+		x = 6
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Socialist_Defense_Council"
+			add_political_power = 50
+			army_experience = 25
+			navy_experience = 25
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = TUR_Defense_Industry_Board
+		icon = GFX_TUR_Defense_Industry_Board
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Reorganize_Revolutionary_Army
+		}
+		x = 10
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Defense_Industry_Board"
+			add_political_power = 25
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_workshop
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_workshop
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Rifle_Works_Expansion
+		icon = GFX_TUR_Rifle_Works_Expansion
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Defense_Industry_Board
+		}
+		x = 9
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Rifle_Works_Expansion"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_workshop
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_workshop
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Ammunition_Combines
+		icon = GFX_TUR_Ammunition_Combines
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Defense_Industry_Board
+		}
+		x = 11
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Ammunition_Combines"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_workshop
+						size > 0
+						include_owned = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_workshop
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Artillery_Repair_Works
+		icon = GFX_TUR_Artillery_Repair_Works
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Rifle_Works_Expansion
+		}
+		x = 9
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Artillery_Repair_Works"
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 250
+				producer = ROOT
+			}
+		}
+	}
+	focus = {
+		id = TUR_Military_Truck_Plant
+		icon = GFX_TUR_Military_Truck_Plant
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Ammunition_Combines
+		}
+		x = 11
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Military_Truck_Plant"
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 500
+				producer = ROOT
+			}
+		}
+	}
+	focus = {
+		id = TUR_Field_Radio_Network
+		icon = GFX_TUR_Field_Radio_Network
+		cost = 5.00
+		prerequisite = {
+			focus = TUR_Artillery_Repair_Works
+		}
+		x = 9
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Field_Radio_Network"
+			add_political_power = 25
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = TUR_Aircraft_Repair_Base
+		icon = GFX_TUR_Aircraft_Repair_Base
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Military_Truck_Plant
+		}
+		x = 11
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Aircraft_Repair_Base"
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = TUR_Naval_Shipyard_Section
+		icon = GFX_TUR_Naval_Shipyard_Section
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Field_Radio_Network
+		}
+		x = 9
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Naval_Shipyard_Section"
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = TUR_Military_Research_Institute
+		icon = GFX_TUR_Military_Research_Institute
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Aircraft_Repair_Base
+		}
+		x = 11
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Military_Research_Institute"
+			add_political_power = 25
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = TUR_Arms_Export_Board
+		icon = GFX_TUR_Arms_Export_Board
+		cost = 7.00
+		prerequisite = {
+			focus = TUR_Naval_Shipyard_Section
+		}
+		prerequisite = {
+			focus = TUR_Military_Research_Institute
+		}
+		x = 10
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Arms_Export_Board"
+			add_political_power = 50
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = TUR_Red_Mediterranean_Army
+		icon = GFX_TUR_Red_Mediterranean_Army
+		cost = 10.00
+		prerequisite = {
+			focus = TUR_Shield_of_Revolution
+		}
+		prerequisite = {
+			focus = TUR_Socialist_Defense_Council
+		}
+		prerequisite = {
+			focus = TUR_Arms_Export_Board
+		}
+		available = {
+			has_idea = TUR_peoples_revolutionary_army_4
+		}
+		x = 6
+		y = 16
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_Red_Mediterranean_Army"
+			add_war_support = 0.05
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+			swap_ideas = {
+				remove_idea = TUR_peoples_revolutionary_army_4
+				add_idea = TUR_peoples_revolutionary_army_5
+			}
+		}
+	}
+	focus = {
+	id = TUR_Econ_Reconstruction
+	icon = GFX_TUR_Econ_Reconstruction
+	cost = 5
+	x = 21
+	y = 9
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Econ_Reconstruction"
+		add_ideas = TUR_econ_reconstruction
+		add_political_power = 50
+	}
+}
+	focus = {
+	id = TUR_Central_Bank_Charter
+	icon = GFX_TUR_Central_Bank_Charter
+	cost = 5
+	prerequisite = { focus = TUR_Econ_Reconstruction }
+	x = 21
+	y = 10
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Central_Bank_Charter"
+		add_political_power = 50
+		add_stability = 0.03
+	}
+}
+	focus = {
+	id = TUR_Tax_Unification
+	icon = GFX_TUR_Tax_Unification
+	cost = 5
+	prerequisite = { focus = TUR_Central_Bank_Charter }
+	x = 21
+	y = 11
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Tax_Unification"
+		add_political_power = 25
+		custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+		add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+		clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Railway_Integration
+	icon = GFX_TUR_Railway_Integration
+	cost = 5
+	prerequisite = { focus = TUR_Tax_Unification }
+	x = 21
+	y = 12
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Railway_Integration"
+		random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = infrastructure
+								size > 0
+								include_owned = yes
+							}
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+		add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+		clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Land_and_Water_Works
+	icon = GFX_TUR_Land_and_Water_Works
+	cost = 5
+	prerequisite = { focus = TUR_Railway_Integration }
+	x = 21
+	y = 13
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Land_and_Water_Works"
+		random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = infrastructure
+								size > 0
+								include_owned = yes
+							}
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+		custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+		add_to_variable = { var = TNW_Agriculture_value value = 10 }
+		clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Economic_Roadmap
+	icon = GFX_TUR_Economic_Roadmap
+	cost = 5
+	prerequisite = { focus = TUR_Land_and_Water_Works }
+	x = 21
+	y = 14
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Economic_Roadmap"
+		add_political_power = 100
+	}
+}
+	focus = {
+	id = TUR_Central_Planning
+	icon = GFX_TUR_Central_Planning
+	cost = 5
+	prerequisite = { focus = TUR_Economic_Roadmap }
+	mutually_exclusive = { focus = TUR_State_Market }
+	x = 19
+	y = 15
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Central_Planning"
+		add_stability = 0.02
+		add_political_power = 50
+	}
+}
+	focus = {
+	id = TUR_State_Market
+	icon = GFX_TUR_State_Market
+	cost = 5
+	prerequisite = { focus = TUR_Economic_Roadmap }
+	mutually_exclusive = { focus = TUR_Central_Planning }
+	x = 23
+	y = 15
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_State_Market"
+		add_stability = 0.02
+		add_political_power = 50
+	}
+}
+	focus = {
+	id = TUR_Committee_Participation
+	icon = GFX_TUR_Committee_Participation
+	cost = 4
+	prerequisite = { focus = TUR_Central_Planning }
+	mutually_exclusive = { focus = TUR_State_Ownership }
+	x = 17
+	y = 16
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Committee_Participation"
+		add_political_power = 50
+		add_stability = 0.02
+	}
+}
+	focus = {
+	id = TUR_Factory_Committees
+	icon = GFX_TUR_Factory_Committees
+	cost = 4
+	prerequisite = { focus = TUR_Committee_Participation }
+	x = 16
+	y = 17
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Factory_Committees"
+		add_political_power = 25
+		add_stability = 0.03
+	}
+}
+	focus = {
+	id = TUR_Production_Conferences
+	icon = GFX_TUR_Production_Conferences
+	cost = 4
+	prerequisite = { focus = TUR_Committee_Participation }
+	x = 18
+	y = 17
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Production_Conferences"
+		add_political_power = 25
+		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+		add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+		clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Workers_Audit_Councils
+	icon = GFX_TUR_Workers_Audit_Councils
+	cost = 4
+	prerequisite = { focus = TUR_Factory_Committees }
+	x = 16
+	y = 18
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Workers_Audit_Councils"
+		add_political_power = 50
+		add_stability = 0.03
+	}
+}
+	focus = {
+	id = TUR_Collective_Bonus_System
+	icon = GFX_TUR_Collective_Bonus_System
+	cost = 4
+	prerequisite = { focus = TUR_Production_Conferences }
+	x = 18
+	y = 18
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Collective_Bonus_System"
+		add_political_power = 25
+		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+		add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+		clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+		add_to_variable = { var = TNW_Affluence_value value = 10 }
+		clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Committee_Economy_Final
+	icon = GFX_TUR_Committee_Economy_Final
+	cost = 5
+	prerequisite = { focus = TUR_Workers_Audit_Councils focus = TUR_Collective_Bonus_System }
+	x = 17
+	y = 19
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Committee_Economy_Final"
+		swap_ideas = {
+			remove_idea = TUR_econ_reconstruction
+			add_idea = TUR_econ_committee
+		}
+		add_political_power = 100
+	}
+}
+	focus = {
+	id = TUR_State_Ownership
+	icon = GFX_TUR_State_Ownership
+	cost = 4
+	prerequisite = { focus = TUR_Central_Planning }
+	mutually_exclusive = { focus = TUR_Committee_Participation }
+	x = 21
+	y = 16
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_State_Ownership"
+		add_political_power = 50
+		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+		add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+		clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Full_Nationalization
+	icon = GFX_TUR_Full_Nationalization
+	cost = 4
+	prerequisite = { focus = TUR_State_Ownership }
+	x = 20
+	y = 17
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Full_Nationalization"
+		add_political_power = 25
+		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+		add_to_variable = { var = TNW_Industrial_scale_value value = 15 }
+		clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_State_Farms_System
+	icon = GFX_TUR_State_Farms_System
+	cost = 4
+	prerequisite = { focus = TUR_State_Ownership }
+	x = 22
+	y = 17
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_State_Farms_System"
+		add_political_power = 25
+		custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+		add_to_variable = { var = TNW_Agriculture_value value = 15 }
+		clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Unified_Procurement
+	icon = GFX_TUR_Unified_Procurement
+	cost = 4
+	prerequisite = { focus = TUR_Full_Nationalization }
+	x = 20
+	y = 18
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Unified_Procurement"
+		add_political_power = 50
+		custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+		add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+		clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Command_Investment
+	icon = GFX_TUR_Command_Investment
+	cost = 4
+	prerequisite = { focus = TUR_State_Farms_System }
+	x = 22
+	y = 18
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Command_Investment"
+		random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_owned = yes
+							}
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+		add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+		clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Command_Economy_Final
+	icon = GFX_TUR_Command_Economy_Final
+	cost = 5
+	prerequisite = { focus = TUR_Unified_Procurement focus = TUR_Command_Investment }
+	x = 21
+	y = 19
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Command_Economy_Final"
+		swap_ideas = {
+			remove_idea = TUR_econ_reconstruction
+			add_idea = TUR_econ_statist
+		}
+		add_political_power = 100
+	}
+}
+	focus = {
+	id = TUR_Cooperative_Mode
+	icon = GFX_TUR_Cooperative_Mode
+	cost = 4
+	prerequisite = { focus = TUR_State_Market }
+	mutually_exclusive = { focus = TUR_Keynesian_Mode }
+	x = 25
+	y = 16
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Cooperative_Mode"
+		add_political_power = 50
+		custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+		add_to_variable = { var = TNW_Affluence_value value = 10 }
+		clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Handicraft_Cooperatives
+	icon = GFX_TUR_Handicraft_Cooperatives
+	cost = 4
+	prerequisite = { focus = TUR_Cooperative_Mode }
+	x = 24
+	y = 17
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Handicraft_Cooperatives"
+		add_political_power = 25
+		custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+		add_to_variable = { var = TNW_Affluence_value value = 10 }
+		clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Agricultural_Cooperatives
+	icon = GFX_TUR_Agricultural_Cooperatives
+	cost = 4
+	prerequisite = { focus = TUR_Cooperative_Mode }
+	x = 26
+	y = 17
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Agricultural_Cooperatives"
+		add_political_power = 25
+		custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+		add_to_variable = { var = TNW_Agriculture_value value = 15 }
+		clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Cooperative_Credit_Union
+	icon = GFX_TUR_Cooperative_Credit_Union
+	cost = 4
+	prerequisite = { focus = TUR_Handicraft_Cooperatives }
+	x = 24
+	y = 18
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Cooperative_Credit_Union"
+		add_political_power = 50
+		add_stability = 0.03
+	}
+}
+	focus = {
+	id = TUR_Cooperative_Markets
+	icon = GFX_TUR_Cooperative_Markets
+	cost = 4
+	prerequisite = { focus = TUR_Agricultural_Cooperatives }
+	x = 26
+	y = 18
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Cooperative_Markets"
+		add_political_power = 25
+		custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+		add_to_variable = { var = TNW_Affluence_value value = 15 }
+		clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Cooperative_Economy_Final
+	icon = GFX_TUR_Cooperative_Economy_Final
+	cost = 5
+	prerequisite = { focus = TUR_Cooperative_Credit_Union focus = TUR_Cooperative_Markets }
+	x = 25
+	y = 19
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Cooperative_Economy_Final"
+		swap_ideas = {
+			remove_idea = TUR_econ_reconstruction
+			add_idea = TUR_econ_coop
+		}
+		add_political_power = 100
+	}
+}
+	focus = {
+	id = TUR_Keynesian_Mode
+	icon = GFX_TUR_Keynesian_Mode
+	cost = 4
+	prerequisite = { focus = TUR_State_Market }
+	mutually_exclusive = { focus = TUR_Cooperative_Mode }
+	x = 29
+	y = 16
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Keynesian_Mode"
+		add_political_power = 50
+		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+		add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+		clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_State_Investment_Bank
+	icon = GFX_TUR_State_Investment_Bank
+	cost = 4
+	prerequisite = { focus = TUR_Keynesian_Mode }
+	x = 28
+	y = 17
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_State_Investment_Bank"
+		random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_owned = yes
+							}
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+		add_political_power = 25
+	}
+}
+	focus = {
+	id = TUR_Public_Works_Campaign
+	icon = GFX_TUR_Public_Works_Campaign
+	cost = 4
+	prerequisite = { focus = TUR_Keynesian_Mode }
+	x = 30
+	y = 17
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Public_Works_Campaign"
+		random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = infrastructure
+								size > 0
+								include_owned = yes
+							}
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+		add_political_power = 25
+	}
+}
+	focus = {
+	id = TUR_Tariff_Protection_System
+	icon = GFX_TUR_Tariff_Protection_System
+	cost = 4
+	prerequisite = { focus = TUR_State_Investment_Bank }
+	x = 28
+	y = 18
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Tariff_Protection_System"
+		add_political_power = 50
+		custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+		add_to_variable = { var = TNW_Affluence_value value = 10 }
+		clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Demand_Stimulus_Program
+	icon = GFX_TUR_Demand_Stimulus_Program
+	cost = 4
+	prerequisite = { focus = TUR_Public_Works_Campaign }
+	x = 30
+	y = 18
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Demand_Stimulus_Program"
+		add_political_power = 25
+		custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+		add_to_variable = { var = TNW_Affluence_value value = 15 }
+		clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+	}
+}
+	focus = {
+	id = TUR_Keynesian_Economy_Final
+	icon = GFX_TUR_Keynesian_Economy_Final
+	cost = 5
+	prerequisite = { focus = TUR_Tariff_Protection_System focus = TUR_Demand_Stimulus_Program }
+	x = 29
+	y = 19
+	completion_reward = {
+		log = "[GetLogRoot]: Focus Completed TUR_Keynesian_Economy_Final"
+		swap_ideas = {
+			remove_idea = TUR_econ_reconstruction
+			add_idea = TUR_econ_keynes
+		}
+		add_political_power = 100
+	}
+}
 }

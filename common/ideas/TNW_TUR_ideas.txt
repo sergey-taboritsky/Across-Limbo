@@ -176,53 +176,77 @@ ideas = {
 				conscription_factor = 0.02
 			}
 		}
-		TUR_red_army_reorg = {
-			picture = GFX_idea_TUR_revolutionary_emergency
-			allowed = {
-				always = yes
-			}
+		#工农革命军整训阶梯（swap_ideas 逐级升级）
+		TUR_peoples_revolutionary_army = {
+			picture = GFX_idea_TUR_peoples_revolutionary_army
+			allowed = { original_tag = TUR }
 			removal_cost = -1
 			modifier = {
-				army_attack_factor = 0.05
-				experience_gain_army_factor = 0.1
-				land_reinforce_rate = 0.05
+				army_org_factor = -0.10
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				air_cas_present_factor = -0.10
+				air_attack_factor = -0.10
+				navy_screen_attack_factor = -0.10
+				navy_screen_defence_factor = -0.10
+				navy_capital_ship_attack_factor = -0.15
+				naval_speed_factor = -0.10
+				navy_max_range_factor = -0.05
 			}
 		}
-		TUR_retained_officers = {
-			picture = GFX_idea_TUR_revolutionary_emergency
-			allowed = {
-				always = yes
-			}
+		TUR_peoples_revolutionary_army_2 = {
+			picture = GFX_idea_TUR_peoples_revolutionary_army
+			allowed = { original_tag = TUR }
 			removal_cost = -1
 			modifier = {
-				army_attack_factor = 0.03
+				army_org_factor = -0.05
+				army_attack_factor = -0.08
+				army_defence_factor = -0.08
+				air_cas_present_factor = -0.05
+				air_attack_factor = -0.05
+				navy_screen_attack_factor = -0.05
+				navy_screen_defence_factor = -0.05
+				navy_capital_ship_attack_factor = -0.08
+				naval_speed_factor = -0.05
+				navy_max_range_factor = -0.03
+			}
+		}
+		TUR_peoples_revolutionary_army_3 = {
+			picture = GFX_idea_TUR_peoples_revolutionary_army
+			allowed = { original_tag = TUR }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
+				air_attack_factor = -0.03
+				navy_capital_ship_attack_factor = -0.05
+				experience_gain_army_factor = 0.05
+			}
+		}
+		TUR_peoples_revolutionary_army_4 = {
+			picture = GFX_idea_TUR_peoples_revolutionary_army
+			allowed = { original_tag = TUR }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.02
+				army_defence_factor = 0.02
+				experience_gain_army_factor = 0.05
+				max_planning = 0.05
 				planning_speed = 0.05
-				max_command_power = 10
-				stability_factor = -0.03
 			}
 		}
-		TUR_militia_doctrine = {
-			picture = GFX_idea_TUR_revolutionary_emergency
-			allowed = {
-				always = yes
-			}
+		TUR_peoples_revolutionary_army_5 = {
+			picture = GFX_idea_TUR_peoples_revolutionary_army
+			allowed = { original_tag = TUR }
 			removal_cost = -1
 			modifier = {
-				army_defence_factor = 0.05
-				supply_consumption_factor = -0.1
-				conscription_factor = 0.02
-			}
-		}
-		TUR_new_army = {
-			picture = GFX_idea_TUR_revolutionary_emergency
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-			modifier = {
+				army_org_factor = 0.05
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
-				experience_gain_army_factor = 0.1
+				experience_gain_army_factor = 0.10
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				air_attack_factor = 0.05
 			}
 		}
 		TUR_straits_humiliation = {
@@ -245,6 +269,71 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				political_power_factor = -0.1
+			}
+		}
+		TUR_econ_reconstruction = {
+			picture = GFX_idea_TUR_econ_reconstruction
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+			production_speed_buildings_factor = 0.05
+			stability_factor = 0.02
+			}
+		}
+		TUR_econ_committee = {
+			picture = GFX_idea_TUR_econ_committee
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			stability_factor = 0.05
+			political_power_factor = 0.05
+			production_speed_buildings_factor = 0.05
+			}
+		}
+		TUR_econ_statist = {
+			picture = GFX_idea_TUR_econ_statist
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.10
+			industrial_capacity_factory = 0.10
+			production_speed_buildings_factor = 0.10
+			political_power_factor = 0.10
+			stability_factor = -0.05
+			}
+		}
+		TUR_econ_coop = {
+			picture = GFX_idea_TUR_econ_coop
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			stability_factor = 0.10
+			production_speed_industrial_complex_factor = 0.05
+			political_power_factor = 0.05
+			}
+		}
+		TUR_econ_keynes = {
+			picture = GFX_idea_TUR_econ_keynes
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.07
+			production_speed_buildings_factor = 0.10
+			industrial_capacity_factory = 0.05
+			stability_factor = 0.05
 			}
 		}
 	}

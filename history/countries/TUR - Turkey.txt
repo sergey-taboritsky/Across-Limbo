@@ -63,6 +63,7 @@ add_ideas = {
 	TUR_scholars_workers_soldiers
 	TUR_revolutionary_emergency
 	TUR_undying_flame_of_revanchism
+	TUR_peoples_revolutionary_army
 
 	TUR_Ismail_Hakki_hog
 	TUR_Sevfik_Husnu_advisor
@@ -90,6 +91,3 @@ set_variable = { TUR_congress_snowmoon_var = 15 }
 
 
 
-add_dynamic_modifier = {
-	modifier = TUR_peoples_revolutionary_army
-}

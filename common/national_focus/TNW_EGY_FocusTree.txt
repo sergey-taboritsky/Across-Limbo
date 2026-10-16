@@ -774,7 +774,10 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed EGY_Aswan_Dam"
-			add_ideas = EGY_aswan_dam
+			swap_ideas = {
+				remove_idea = EGY_state_steel_econ
+				add_idea = EGY_aswan_dam
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -810,7 +813,10 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed EGY_Arab_Socialism"
 			add_political_power = 100
 			add_stability = 0.05
-			add_ideas = EGY_arab_socialism_cap
+			swap_ideas = {
+				remove_idea = EGY_aswan_dam
+				add_idea = EGY_arab_socialism_cap
+			}
 		}
 	}
 
@@ -878,7 +884,10 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed EGY_Foreign_Capital"
-			add_ideas = EGY_foreign_capital_idea
+			swap_ideas = {
+				remove_idea = EGY_open_door_econ
+				add_idea = EGY_foreign_capital_idea
+			}
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -1057,7 +1066,10 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed EGY_Financial_Hub"
 			add_political_power = 100
 			add_stability = 0.05
-			add_ideas = EGY_financial_hub_cap
+			swap_ideas = {
+				remove_idea = EGY_foreign_capital_idea
+				add_idea = EGY_financial_hub_cap
+			}
 		}
 	}
 	focus = {
