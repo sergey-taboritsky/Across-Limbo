@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 100 y = 1350 }
 	id = ALP_initial
 	country = {
 		factor = 0
@@ -360,22 +361,6 @@ focus_tree = {
 			}
 		}
 	}
-	###共同欢庆，革命胜利
-	focus = {
-		id = ALP_Syrian_revolution_prevail
-		icon = GFX_ALP_Syrian_revolution_prevail
-		prerequisite = {
-			focus = ALP_form_united_front
-		}
-
-		relative_position_id = ALP_suppress_Aleppo
-		x = 2
-		y = 5
-		cost = 3
-		completion_reward = {
-		}
-	}
-
 	###难民营安置
 	focus = {
 		id = ALP_refugee_camps
@@ -385,7 +370,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 4
-		y = 6
+		y = 5
 		cost = 4
 		completion_reward = {
 			add_manpower = 10000
@@ -401,7 +386,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 6
-		y = 6
+		y = 5
 		cost = 4
 		completion_reward = {
 			677 = {
@@ -423,7 +408,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 8
-		y = 6
+		y = 5
 		cost = 4
 		completion_reward = {
 			add_power_balance_value = {
@@ -443,7 +428,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 2
-		y = 6
+		y = 5
 		cost = 4
 		completion_reward = {
 			army_experience = 20
@@ -460,7 +445,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 10
-		y = 7
+		y = 6
 		cost = 5
 		completion_reward = {
 			add_power_balance_value = {
@@ -479,7 +464,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 4
-		y = 7
+		y = 6
 		cost = 5
 		completion_reward = {
 			add_power_balance_value = {
@@ -498,7 +483,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 6
-		y = 7
+		y = 6
 		cost = 4
 		completion_reward = {
 			add_stability = 0.05
@@ -514,7 +499,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 6
-		y = 8
+		y = 7
 		cost = 4
 		completion_reward = {
 			add_manpower = 5000
@@ -530,7 +515,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 2
-		y = 7
+		y = 6
 		cost = 4
 		completion_reward = {
 			army_experience = 30
@@ -552,7 +537,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 2
-		y = 8
+		y = 7
 		cost = 5
 		completion_reward = {
 			add_equipment_to_stockpile = {
@@ -571,7 +556,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 8
-		y = 7
+		y = 6
 		cost = 4
 		completion_reward = {
 			add_political_power = 100
@@ -587,7 +572,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 8
-		y = 8
+		y = 7
 		cost = 4
 		completion_reward = {
 			add_power_balance_value = {
@@ -610,7 +595,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 4
-		y = 8
+		y = 7
 		cost = 5
 		completion_reward = {
 			add_power_balance_value = {
@@ -636,7 +621,7 @@ focus_tree = {
 		}
 		relative_position_id = ALP_suppress_Aleppo
 		x = 6
-		y = 9
+		y = 8
 		cost = 7
 		completion_reward = {
 			add_manpower = 15000

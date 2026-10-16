@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 100 y = 1750 }
 	id = SYR_crisis
 	country = {
 		factor = 0
@@ -731,17 +732,17 @@ focus_tree = {
 				country_exists = ALP
 			}
 		}
+		available = {
+			has_war = no
+		}
 		relative_position_id = SYR_fourth_delay
 		x = -5
 		y = 12
 		cost = 5
 		completion_reward = {
-			add_war_support = 0.05
-			add_stability = 0.05
-			army_experience = 25
-			if = {
-				limit = { country_exists = ALP }
-				declare_war_on = { target = ALP type = annex_everything }
+			declare_war_on = {
+				target = ALP
+				type = annex_everything
 			}
 		}
 	}
@@ -757,17 +758,17 @@ focus_tree = {
 				country_exists = LEB
 			}
 		}
+		available = {
+			has_war = no
+		}
 		relative_position_id = SYR_fourth_delay
 		x = -3
 		y = 12
 		cost = 5
 		completion_reward = {
-			add_war_support = 0.05
-			add_stability = 0.05
-			army_experience = 25
-			if = {
-				limit = { country_exists = LEB }
-				declare_war_on = { target = LEB type = annex_everything }
+			declare_war_on = {
+				target = LEB
+				type = annex_everything
 			}
 		}
 	}
@@ -783,17 +784,17 @@ focus_tree = {
 				country_exists = JOR
 			}
 		}
+		available = {
+			has_war = no
+		}
 		relative_position_id = SYR_fourth_delay
 		x = -1
 		y = 12
 		cost = 5
 		completion_reward = {
-			add_war_support = 0.05
-			add_stability = 0.05
-			army_experience = 25
-			if = {
-				limit = { country_exists = JOR }
-				declare_war_on = { target = JOR type = annex_everything }
+			declare_war_on = {
+				target = JOR
+				type = annex_everything
 			}
 		}
 	}

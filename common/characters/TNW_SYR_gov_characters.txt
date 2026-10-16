@@ -24,7 +24,7 @@ characters = {
 		}
 		country_leader = {
 			desc = SYR_Husni_al_Zaim_desc
-			ideology = discipline
+			ideology = military_government
 			traits = {
 			}
 		}
@@ -121,7 +121,7 @@ characters = {
 		}
 		country_leader = {
 			desc = LEB_Fawzi_al_Qawuqji_desc
-			ideology = discipline
+			ideology = Social_nationalism
 			traits = {
 			}
 		}

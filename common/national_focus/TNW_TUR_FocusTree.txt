@@ -339,7 +339,7 @@ focus_tree = {
 			}
 		}
 		cancellable = no
-		x = 20
+		x = 26
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Congress_Compromise"
@@ -423,7 +423,7 @@ focus_tree = {
 			focus = TUR_Route_Snowmoon
 			focus = TUR_Congress_Compromise
 		}
-		x = 22
+		x = 20
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_State_Apparatus"

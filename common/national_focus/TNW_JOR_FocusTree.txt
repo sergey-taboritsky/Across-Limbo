@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 100 y = 1350 }
 	id = JOR_exile
 	country = {
 		factor = 0
@@ -20,10 +21,10 @@ focus_tree = {
 			add_stability = 0.05
 		}
 	}
-	###伦敦津贴
+	###巴格达津贴
 	focus = {
-		id = JOR_british_stipend
-		icon = GFX_JOR_british_stipend
+		id = JOR_iraqi_stipend
+		icon = GFX_JOR_iraqi_stipend
 		prerequisite = {
 			focus = JOR_court_in_exile
 		}
@@ -35,7 +36,7 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 1500
-				producer = ENG
+				producer = IRQ
 			}
 			add_political_power = 75
 		}
@@ -72,12 +73,12 @@ focus_tree = {
 			add_war_support = 0.03
 		}
 	}
-	###伦敦贷款
+	###汉志朝觐贷款
 	focus = {
-		id = JOR_british_loan
-		icon = GFX_JOR_british_loan
+		id = JOR_hijaz_loan
+		icon = GFX_JOR_hijaz_loan
 		prerequisite = {
-			focus = JOR_british_stipend
+			focus = JOR_iraqi_stipend
 		}
 		relative_position_id = JOR_court_in_exile
 		x = -4
@@ -214,7 +215,7 @@ focus_tree = {
 		id = JOR_amman_bazaar
 		icon = GFX_JOR_amman_bazaar
 		prerequisite = {
-			focus = JOR_british_loan
+			focus = JOR_hijaz_loan
 		}
 		relative_position_id = JOR_court_in_exile
 		x = -5

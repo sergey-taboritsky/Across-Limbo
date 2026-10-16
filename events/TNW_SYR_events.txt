@@ -99,7 +99,7 @@ country_event = {
 		name = SYR_crisis.5.a
 		complete_national_focus = SYR_zaim_coup
 		set_politics = {
-			ruling_party = Authoritarianism
+			ruling_party = Absolutism
 			elections_allowed = no
 		}
 		promote_character = SYR_Husni_al_Zaim
@@ -135,21 +135,43 @@ country_event = {
 		remove_ideas = SYR_isolated_monarchy
 		add_ideas = SYR_republic_vigor
 		455 = {
-			set_state_owner = JOR
+			transfer_state_to = JOR
+			add_core_of = JOR
 		}
 		1032 = {
-			set_state_owner = JOR
+			transfer_state_to = JOR
+			add_core_of = JOR
 		}
 		959 = {
-			set_state_owner = JOR
+			transfer_state_to = JOR
+			add_core_of = JOR
 		}
 		JOR = {
 			set_capital = 455
-			recruit_character = JOR_Ghazi_bin_Faisal
 			promote_character = JOR_Ghazi_bin_Faisal
-			every_owned_state = {
-				add_core_of = JOR
-			}
+		}
+	}
+	option = {
+		name = SYR_crisis.6.b
+		retire_character = SYR_Ghazi_bin_Faisal
+		remove_ideas = SYR_isolated_monarchy
+		add_ideas = SYR_republic_vigor
+		455 = {
+			transfer_state_to = JOR
+			add_core_of = JOR
+		}
+		1032 = {
+			transfer_state_to = JOR
+			add_core_of = JOR
+		}
+		959 = {
+			transfer_state_to = JOR
+			add_core_of = JOR
+		}
+		JOR = {
+			set_capital = 455
+			promote_character = JOR_Ghazi_bin_Faisal
+			change_tag_from = ROOT
 		}
 	}
 }
@@ -165,32 +187,31 @@ country_event = {
 	option = {
 		name = SYR_crisis.7.a
 		677 = {
-			set_state_owner = ALP
+			transfer_state_to = ALP
+			add_core_of = ALP
 		}
 		680 = {
-			set_state_owner = ALP
+			transfer_state_to = ALP
+			add_core_of = ALP
 		}
 		943 = {
-			set_state_owner = ALP
+			transfer_state_to = ALP
+			add_core_of = ALP
 		}
 		553 = {
-			set_state_owner = LEB
+			transfer_state_to = LEB
+			add_core_of = LEB
 		}
 		945 = {
-			set_state_owner = LEB
+			transfer_state_to = LEB
+			add_core_of = LEB
 		}
 		ALP = {
 			set_capital = 677
-			every_owned_state = {
-				add_core_of = ALP
-			}
 			country_event = { id = ALP_event.1 }
 		}
 		LEB = {
 			set_capital = 553
-			every_owned_state = {
-				add_core_of = LEB
-			}
 			set_power_balance = {
 				id = LEB_front_balance
 				left_side = LEB_hourani_youth_bop
@@ -200,6 +221,74 @@ country_event = {
 				id = LEB_front_balance
 				value = 0.05
 			}
+		}
+	}
+	option = {
+		name = SYR_crisis.7.b
+		677 = {
+			transfer_state_to = ALP
+			add_core_of = ALP
+		}
+		680 = {
+			transfer_state_to = ALP
+			add_core_of = ALP
+		}
+		943 = {
+			transfer_state_to = ALP
+			add_core_of = ALP
+		}
+		553 = {
+			transfer_state_to = LEB
+			add_core_of = LEB
+		}
+		945 = {
+			transfer_state_to = LEB
+			add_core_of = LEB
+		}
+		ALP = {
+			set_capital = 677
+			country_event = { id = ALP_event.1 }
+		}
+		ALP = {
+			change_tag_from = ROOT
+		}
+	}
+	option = {
+		name = SYR_crisis.7.c
+		677 = {
+			transfer_state_to = ALP
+			add_core_of = ALP
+		}
+		680 = {
+			transfer_state_to = ALP
+			add_core_of = ALP
+		}
+		943 = {
+			transfer_state_to = ALP
+			add_core_of = ALP
+		}
+		553 = {
+			transfer_state_to = LEB
+			add_core_of = LEB
+		}
+		945 = {
+			transfer_state_to = LEB
+			add_core_of = LEB
+		}
+		LEB = {
+			set_capital = 553
+			set_power_balance = {
+				id = LEB_front_balance
+				left_side = LEB_hourani_youth_bop
+				right_side = LEB_saadeh_elders_bop
+			}
+			add_power_balance_value = {
+				id = LEB_front_balance
+				value = 0.05
+			}
+		}
+		LEB = {
+			change_tag_from = ROOT
 		}
 	}
 }
