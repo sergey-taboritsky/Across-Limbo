@@ -1249,7 +1249,7 @@ bitmapfonts = {
 			"gfx/fonts/hoi4_typewriter16"
 			"gfx/fonts/hoi_16typewriter"
 		}
-		color = 0xffffffff
+		color = 0xff000000
 
 		textcolors = {
 			G = { 86 172 91 }
@@ -1284,7 +1284,7 @@ bitmapfonts = {
 			"gfx/fonts/hoi4_typewriter16_inverted"
 			"gfx/fonts/hoi_16typewriter_inverted"
 		}
-		color = 0xff000000
+		color = 0xffffffff
 
 		textcolors = {
 			G = { 86 172 91 }
@@ -1320,7 +1320,7 @@ bitmapfonts = {
 			"gfx/fonts/hoi_22typewriter"
 #			"gfx/fonts/hoi_22typewriter_cryllic"
 		}
-		color = 0xffffffff
+		color = 0xff000000
 
 		textcolors = {
 			G = { 86 172 91 }
@@ -1356,7 +1356,7 @@ bitmapfonts = {
 			"gfx/fonts/hoi_22typewriter_inverted"
 #			"gfx/fonts/hoi_22typewriter_cryllic"
 		}
-		color = 0xff000000
+		color = 0xffffffff
 
 		textcolors = {
 			G = { 86 172 91 }
@@ -1420,6 +1420,48 @@ bitmapfonts = {
 			"gfx/fonts/japanese/hoi_24header"
 		}
 		languages = { "l_japanese" }
+	}
+
+	bitmapfont = {
+		name = "hoi_22header"
+#		path = "gfx/fonts/hoi_22header"
+		fontfiles = {
+			"gfx/fonts/hoi_22header"
+#			"gfx/fonts/hoi_20bs"
+#			"gfx/fonts/hoi_20bs_cryllic"
+		}
+		cursor_offset = { 0 4 }
+		color = 0xffffffff
+
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+
+	bitmapfont = {
+		name = "hoi_16header"
+#		path = "gfx/fonts/hoi_16header"
+		fontfiles = {
+			"gfx/fonts/hoi_16header"
+#			"gfx/fonts/hoi_20bs"
+#			"gfx/fonts/hoi_20bs_cryllic"
+		}
+		cursor_offset = { 0 4 }
+		color = 0xffffffff
+
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
 	}
 
 	bitmapfont = {

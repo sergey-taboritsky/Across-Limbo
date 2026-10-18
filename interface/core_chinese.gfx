@@ -235,6 +235,25 @@ bitmapfonts = {
 	}
 	
 	bitmapfont_override = {
+		name = "hoi_22header"
+		fontfiles = { 
+			"gfx/fonts/hoi4_typewriter22"		
+			"gfx/fonts/Arial_16s"	
+		}
+	languages = { "l_simp_chinese" } 
+	}
+	
+	bitmapfont_override = {
+		name = "hoi_16header"
+		fontfiles = { 
+			"gfx/fonts/hoi4_typewriter16"		
+			"gfx/fonts/Arial_14s"	
+		}
+	languages = { "l_simp_chinese" } 
+	}
+	
+	
+	bitmapfont_override = {
 		name = "nsb_hoi_24header"
 		fontfiles = { 
 			"gfx/fonts/hoi_24header"		
