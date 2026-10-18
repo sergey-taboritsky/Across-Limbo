@@ -52,6 +52,14 @@ characters = {
 				large = GFX_portrait_large_ALP_Khalid_Bakdash
 			}
 		}
+		country_leader = {
+			desc = ALP_Khalid_Bakdash_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_token = ALP_Khalid_Bakdash_advisor
@@ -172,6 +180,14 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portrait_large_ALP_Jassem_Alwan
+			}
+		}
+		country_leader = {
+			desc = ALP_Jassem_Alwan_desc
+			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
 			}
 		}
 		advisor = {

@@ -1,7 +1,25 @@
 spriteTypes = {
-	spriteType = {
+	progressbartype = {
 		name = "GFX_TNW_Syria_ALP_ideology_progressbar"
-		texturefile = "gfx/TNW_scripted_guis/TNW_Syria/TNW_Syria_ALP_ideology_progressbar_arabia.png"
+		textureFile1 = "gfx/TNW_scripted_guis/TNW_Syria/TNW_Syria_ALP_ideology_progressbar_arabia.png"
+		textureFile2 = "gfx/TNW_scripted_guis/TNW_Level_of_development/TNW_The_progress_of_development_is_empty.png"
+		size = {
+			x = 236
+			y = 27
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+		color = {
+			1
+			1
+			1
+		}
+		colortwo = {
+			1
+			1
+			1
+		}
+		steps = 100
 	}
 	spriteType = {
 		name = "GFX_ALP_decision_GUI_button"

@@ -6,6 +6,8 @@ bookmarks = {
 		picture = "GFX_select_date_1939"
 		default_country = "GER"
 	
+		sort_unplayed_first = no
+
 		FRA = {
 			history = FRA_BLITZKRIEG_DESC
 			ideology = Liberalism
@@ -53,9 +55,9 @@ bookmarks = {
 			}
 			
 		}
-		GER = {
-			history = GER_BLITZKRIEG_DESC
-			ideology = Nationalism
+		CHI = {
+			history = CHI_BLITZKRIEG_DESC
+			ideology = Conservatism
 			ideas = {
 				sour_loser
 				general_staff
@@ -68,9 +70,9 @@ bookmarks = {
 				GER_ussr_war_goal
 			}
 		}
-		ITA = {
-			history = ITA_BLITZKRIEG_DESC
-			ideology = Nationalism
+		RAJ = {
+			history = RAJ_BLITZKRIEG_DESC
+			ideology = Conservatism
 			ideas={
 				vittorio_emanuele_albania_ethiopia
 				ITA_camicie_nere
@@ -82,8 +84,8 @@ bookmarks = {
 				ITA_ferrea_mole_ferreo_cuore
 			}			
 		}
-		JAP = {
-			history = JAP_BLITZKRIEG_DESC
+		PER = {
+			history = PER_BLITZKRIEG_DESC
 			ideology = Nationalism
 			ideas={
 				state_shintoism
@@ -96,24 +98,15 @@ bookmarks = {
 				JAP_strike_on_the_southern_resource_area
 			}		
 		}
-		SOV = {
-			history = SOV_BLITZKRIEG_DESC
+		RUS = {
+			history = RUS_BLITZKRIEG_DESC
 			ideology = communism
 			ideas = {
-				SOV_anti_soviet_military_thinking_banned_navy
-				SOV_second_five_year_plan_fake_1939_ns
-				SOV_purged_junior_army_officers_2
 			}
 			focuses = {
-				SOV_found_the_comecon
-				SOV_father_of_nations
-				SOV_patriarch_of_all_russia
 			}
 		}
 
-		"---"={
-			history = "OTHER_BLITZKRIEG_DESC"
-		}
 
 		# minors from DLC ####
 		"CAN"={

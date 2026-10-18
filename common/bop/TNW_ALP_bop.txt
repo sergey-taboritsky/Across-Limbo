@@ -27,6 +27,7 @@ ALP_revolution_front_balance = {
 			max = -1
 			modifier = {
 				communist_drift = 0.02
+				war_support_factor = -0.01
 			}
 			on_activate = {
 				
@@ -42,6 +43,7 @@ ALP_revolution_front_balance = {
 			modifier = {
 				communist_drift = 0.01
 				socialism_drift = 0.01
+				war_support_factor = -0.005
 			}
 			on_activate = {
 				
@@ -56,6 +58,7 @@ ALP_revolution_front_balance = {
 			max = -0.55
 			modifier = {
 				socialism_drift = 0.01
+				war_support_factor = -0.0025
 			}
 			on_activate = {
 				
@@ -73,7 +76,8 @@ ALP_revolution_front_balance = {
 			min = 0.20
 			max = 0.55
 			modifier = {
-			
+				Social_democracy_drift = 0.01
+				stability_factor = -0.0025
 			}
 			on_activate = {
 				
@@ -86,7 +90,9 @@ ALP_revolution_front_balance = {
 			min = 0.55
 			max = 0.9
 			modifier = {
-			
+				Authoritarianism_drift = 0.01
+				Social_democracy_drift = 0.01
+				stability_factor = -0.005
 			}
 			on_activate = {
 				
@@ -99,7 +105,8 @@ ALP_revolution_front_balance = {
 			min = 0.9
 			max = 1
 			modifier = {
-			
+				Authoritarianism_drift = 0.02
+				stability_factor = -0.01
 			}
 			on_activate = {
 				

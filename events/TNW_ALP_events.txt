@@ -30,3 +30,80 @@ country_event = {
 		custom_effect_tooltip = ALP_event_2_a_tt
 	}
 }
+
+#【结算】巴格达什掌权（权力左+思潮左）
+country_event = {
+	id = ALP_event.3
+	title = ALP_event.3.t
+	desc = ALP_event.3.d
+	#picture = ALP_event3
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ALP_event.3.a
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+		}
+		promote_character = ALP_Khalid_Bakdash
+		add_stability = 0.05
+		set_country_flag = ALP_bakdash_leadership
+	}
+}
+
+#【结算】哈尼·欣迪掌权（权力右+思潮右）
+country_event = {
+	id = ALP_event.4
+	title = ALP_event.4.t
+	desc = ALP_event.4.d
+	#picture = ALP_event4
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ALP_event.4.a
+		set_politics = {
+			ruling_party = Authoritarianism
+			elections_allowed = no
+		}
+		promote_character = ALP_Hani_al_Hindi
+		add_war_support = 0.05
+		set_country_flag = ALP_hindi_leadership
+	}
+}
+
+#【结算】贾西姆·阿勒万政变（权力右+思潮左）
+country_event = {
+	id = ALP_event.5
+	title = ALP_event.5.t
+	desc = ALP_event.5.d
+	#picture = ALP_event5
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ALP_event.5.a
+		set_politics = {
+			ruling_party = Absolutism
+			elections_allowed = no
+		}
+		promote_character = ALP_Jassem_Alwan
+		add_war_support = 0.10
+		add_stability = -0.05
+		set_country_flag = ALP_alwan_coup
+	}
+}
+
+#【结算】人民阵线延续（权力左+思潮右，或任何均衡态）
+country_event = {
+	id = ALP_event.6
+	title = ALP_event.6.t
+	desc = ALP_event.6.d
+	#picture = ALP_event6
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ALP_event.6.a
+		add_stability = 0.05
+		add_political_power = 50
+		set_country_flag = ALP_popular_front_continues
+	}
+}

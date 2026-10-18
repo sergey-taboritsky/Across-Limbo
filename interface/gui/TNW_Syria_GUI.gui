@@ -2,49 +2,37 @@ guiTypes = {
 	containerWindowType = {
 		name = "TNW_ALP_indoctrination_gui"
 		position = { x = 0 y = 0 }
-		size = { width = 480 height = 482 }
+		size = { width = 480 height = 100 }
 
 		instantTextBoxType = {
-			name = "TNW_ALP_ideology_mech_description_textbox"
-			position = { x = -5 y = 45 }
-			text = TNW_ALP_ideology_mech_description_textbox_tt
+			name = "TNW_ALP_ideology_hint_textbox"
+			position = { x = -5 y = 4 }
+			text = "TNW_ALP_ideology_hint_tt"
 			text_color_code = Y
 			font = "hoi_18mbs"
 			format = centre
-			maxWidth = 410
+			maxWidth = 470
+			pdx_tooltip_delayed = TNW_ALP_ideology_mech_description_textbox_tt
 		}
-        iconType = {
-			name = "TNW_Syria_ALP_arab_communism"
-			quadTextureSprite = "GFX_TNW_Syria_ALP_arab_communism" 
-			position = { x = 410 y = 30 }
-			pdx_tooltip = TNW_Syria_ALP_arab_communism_tt
-		}
-        iconType = {
-			name = "TNW_Syria_ALP_arab_nationalism"
-			quadTextureSprite = "GFX_TNW_Syria_ALP_arab_nationalism" 
-			position = { x = 410 y = 120 }
-			pdx_tooltip = TNW_Syria_ALP_arab_nationalism_tt
-		}
-        iconType = {
+		iconType = {
 			name = "TNW_ALP_ideology_state_progressbar"
-			quadTextureSprite = "GFX_TNW_Syria_ALP_ideology_progressbar" 
-			position = { x = 115 y = 300 }
+			quadTextureSprite = "GFX_TNW_Syria_ALP_ideology_progressbar"
+			position = { x = 10 y = 55 }
 			pdx_tooltip = TNW_ideology_state_progressbar_tt
 		}
 		instantTextBoxType = {
 			name = "TNW_ALP_ideology_dominance_textbox"
-			position = { x = -5 y = 260 }
+			position = { x = 250 y = 64 }
 			text = "TNW_ALP_ideology_dominance_textbox_tt"
 			text_color_code = Y
-			font = "hoi_24b"
-			format = centre
-			maxWidth = 482
+			font = "hoi_18mbs"
+			format = left
+			maxWidth = 225
 		}
 		buttonType = {
 			name = "TNW_ALP_ideology_party_decisions_button"
-			position = { x = 70 y = 380 }
-
-			quadTextureSprite = "GFX_ALP_decision_GUI_button"
+			position = { x = 255 y = 26 }
+			spriteType = "GFX_ALP_decision_GUI_button"
 			buttonText = "ALP_ideology_party_decisions_tt"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -52,9 +40,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TNW_ALP_ideology_masses_decisions_button"
-			position = { x = 300 y = 380 }
-
-			quadTextureSprite = "GFX_ALP_decision_GUI_button"
+			position = { x = 360 y = 26 }
+			spriteType = "GFX_ALP_decision_GUI_button"
 			buttonText = "ALP_ideology_masses_decisions_tt"
 			buttonFont = "hoi_24header"
 			clicksound = click_default

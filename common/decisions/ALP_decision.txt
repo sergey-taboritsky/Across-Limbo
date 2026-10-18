@@ -1,3 +1,158 @@
 ALP_ideology_decision_categories = {
-
+	#---- 政界（党内权斗）----
+	ALP_party_left_moderate = {
+		icon = generic_political_actions
+		visible = {
+			has_country_flag = ALP_gui_party_view
+		}
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			custom_effect_tooltip = ALP_tendency_left_small_tt
+			hidden_effect = {
+				add_to_variable = { var = ALP_ideology_tendency_var value = -8 }
+				clamp_variable = { var = ALP_ideology_tendency_var max = 100 min = -100 }
+				ALP_update_ideology_frame_effect = yes
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	ALP_party_left_hard = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			has_country_flag = ALP_gui_party_view
+		}
+		cost = 75
+		days_re_enable = 120
+		complete_effect = {
+			custom_effect_tooltip = ALP_tendency_left_big_tt
+			add_stability = -0.01
+			hidden_effect = {
+				add_to_variable = { var = ALP_ideology_tendency_var value = -15 }
+				clamp_variable = { var = ALP_ideology_tendency_var max = 100 min = -100 }
+				ALP_update_ideology_frame_effect = yes
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	ALP_party_right_moderate = {
+		icon = generic_political_actions
+		visible = {
+			has_country_flag = ALP_gui_party_view
+		}
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			custom_effect_tooltip = ALP_tendency_right_small_tt
+			hidden_effect = {
+				add_to_variable = { var = ALP_ideology_tendency_var value = 8 }
+				clamp_variable = { var = ALP_ideology_tendency_var max = 100 min = -100 }
+				ALP_update_ideology_frame_effect = yes
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	ALP_party_right_hard = {
+		icon = GFX_decision_generic_police_action
+		visible = {
+			has_country_flag = ALP_gui_party_view
+		}
+		cost = 75
+		days_re_enable = 120
+		complete_effect = {
+			custom_effect_tooltip = ALP_tendency_right_big_tt
+			add_stability = -0.01
+			hidden_effect = {
+				add_to_variable = { var = ALP_ideology_tendency_var value = 15 }
+				clamp_variable = { var = ALP_ideology_tendency_var max = 100 min = -100 }
+				ALP_update_ideology_frame_effect = yes
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	#---- 民间（舆论思潮）----
+	ALP_masses_left_union = {
+		icon = generic_propaganda
+		visible = {
+			has_country_flag = ALP_gui_masses_view
+		}
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			custom_effect_tooltip = ALP_tendency_left_small_tt
+			hidden_effect = {
+				add_to_variable = { var = ALP_ideology_tendency_var value = -6 }
+				clamp_variable = { var = ALP_ideology_tendency_var max = 100 min = -100 }
+				ALP_update_ideology_frame_effect = yes
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	ALP_masses_left_press = {
+		icon = generic_propaganda
+		visible = {
+			has_country_flag = ALP_gui_masses_view
+		}
+		cost = 40
+		days_re_enable = 90
+		complete_effect = {
+			custom_effect_tooltip = ALP_tendency_left_small_tt
+			hidden_effect = {
+				add_to_variable = { var = ALP_ideology_tendency_var value = -8 }
+				clamp_variable = { var = ALP_ideology_tendency_var max = 100 min = -100 }
+				ALP_update_ideology_frame_effect = yes
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	ALP_masses_right_mosque = {
+		icon = generic_political_actions
+		visible = {
+			has_country_flag = ALP_gui_masses_view
+		}
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			custom_effect_tooltip = ALP_tendency_right_small_tt
+			hidden_effect = {
+				add_to_variable = { var = ALP_ideology_tendency_var value = 6 }
+				clamp_variable = { var = ALP_ideology_tendency_var max = 100 min = -100 }
+				ALP_update_ideology_frame_effect = yes
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	ALP_masses_right_youth = {
+		icon = generic_army_support
+		visible = {
+			has_country_flag = ALP_gui_masses_view
+		}
+		cost = 40
+		days_re_enable = 90
+		complete_effect = {
+			custom_effect_tooltip = ALP_tendency_right_small_tt
+			hidden_effect = {
+				add_to_variable = { var = ALP_ideology_tendency_var value = 8 }
+				clamp_variable = { var = ALP_ideology_tendency_var max = 100 min = -100 }
+				ALP_update_ideology_frame_effect = yes
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
 }

@@ -46,6 +46,10 @@ recruit_character = ALP_Hani_al_Hindi
 recruit_character = ALP_George_Habash
 recruit_character = ALP_Jassem_Alwan
 
+set_variable = { ALP_ideology_tendency_var = 0 }
+set_variable = { ALP_ideology_frame_var = 50 }
+set_country_flag = ALP_gui_party_view
+
 add_ideas = {
 	ALP_chaotic_revolution_idea
 	ALP_supplies_shortage_idea

@@ -1249,7 +1249,7 @@ bitmapfonts = {
 			"gfx/fonts/hoi4_typewriter16"
 			"gfx/fonts/hoi_16typewriter"
 		}
-		color = 0xff000000
+		color = 0xffffffff
 
 		textcolors = {
 			G = { 86 172 91 }
@@ -1284,7 +1284,7 @@ bitmapfonts = {
 			"gfx/fonts/hoi4_typewriter16_inverted"
 			"gfx/fonts/hoi_16typewriter_inverted"
 		}
-		color = 0xffffffff
+		color = 0xff000000
 
 		textcolors = {
 			G = { 86 172 91 }
@@ -1320,7 +1320,7 @@ bitmapfonts = {
 			"gfx/fonts/hoi_22typewriter"
 #			"gfx/fonts/hoi_22typewriter_cryllic"
 		}
-		color = 0xff000000
+		color = 0xffffffff
 
 		textcolors = {
 			G = { 86 172 91 }
@@ -1356,7 +1356,7 @@ bitmapfonts = {
 			"gfx/fonts/hoi_22typewriter_inverted"
 #			"gfx/fonts/hoi_22typewriter_cryllic"
 		}
-		color = 0xffffffff
+		color = 0xff000000
 
 		textcolors = {
 			G = { 86 172 91 }

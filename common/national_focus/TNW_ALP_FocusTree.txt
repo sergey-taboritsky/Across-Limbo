@@ -598,6 +598,32 @@ focus_tree = {
 			add_political_power = 150
 			add_manpower = 10000
 			army_experience = 50
+			hidden_effect = {
+				if = {
+					limit = {
+						power_balance_value = { id = ALP_revolution_front_balance value < 0 }
+						check_variable = { var = ALP_ideology_tendency_var value = 0 compare = less_than }
+					}
+					country_event = { id = ALP_event.3 days = 1 }
+				}
+				else_if = {
+					limit = {
+						power_balance_value = { id = ALP_revolution_front_balance value > 0 }
+						check_variable = { var = ALP_ideology_tendency_var value = 0 compare = greater_than }
+					}
+					country_event = { id = ALP_event.4 days = 1 }
+				}
+				else_if = {
+					limit = {
+						power_balance_value = { id = ALP_revolution_front_balance value > 0 }
+						check_variable = { var = ALP_ideology_tendency_var value = 0 compare = less_than }
+					}
+					country_event = { id = ALP_event.5 days = 1 }
+				}
+				else = {
+					country_event = { id = ALP_event.6 days = 1 }
+				}
+			}
 		}
 	}
 }

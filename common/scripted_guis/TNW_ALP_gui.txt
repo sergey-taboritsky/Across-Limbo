@@ -7,18 +7,20 @@ scripted_gui = {
 		}
 		effects = {
 			TNW_ALP_ideology_party_decisions_button_click = {
-				add_political_power = 1
+				set_country_flag = ALP_gui_party_view
+				clr_country_flag = ALP_gui_masses_view
 			}
 			TNW_ALP_ideology_masses_decisions_button_click = {
-				add_political_power = 1
+				set_country_flag = ALP_gui_masses_view
+				clr_country_flag = ALP_gui_party_view
 			}
 		}
 		triggers = {
 		}
 		properties = {
-			#GFX_MLY_revolution_GUI_Progressbar_Blue = {
-			#	frame = TNOIPN_MLY_blue_prog_var
-			#}
+			TNW_ALP_ideology_state_progressbar = {
+				frame = ALP_ideology_frame_var
+			}
 		}
 	}
 }
