@@ -1,0 +1,273 @@
+
+TNW_nile_unification_category = {
+
+	#=== 埃及侧 ===
+
+	EGY_nile_propaganda = {
+		icon = generic_propaganda
+		visible = {
+			tag = EGY
+		}
+		cost = 75
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = TNW_nile_unif_up_tt
+			hidden_effect = {
+				add_to_variable = { var = EGY_nile_unification_var value = 10 }
+				clamp_variable = { var = EGY_nile_unification_var max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	EGY_nile_advisors = {
+		icon = generic_political_actions
+		visible = {
+			tag = EGY
+			SUD = {
+				exists = yes
+			}
+		}
+		cost = 75
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = TNW_nile_inf_up_tt
+			hidden_effect = {
+				add_to_variable = { var = EGY_egypt_influence_var value = 10 }
+				clamp_variable = { var = EGY_egypt_influence_var max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	EGY_nile_water = {
+		icon = generic_industry
+		visible = {
+			tag = EGY
+		}
+		cost = 50
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = TNW_nile_unif_up_small_tt
+			custom_effect_tooltip = TNW_nile_inf_up_small_tt
+			hidden_effect = {
+				add_to_variable = { var = EGY_nile_unification_var value = 5 }
+				clamp_variable = { var = EGY_nile_unification_var max = 100 min = 0 }
+				add_to_variable = { var = EGY_egypt_influence_var value = 5 }
+				clamp_variable = { var = EGY_egypt_influence_var max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	EGY_nile_deescalate = {
+		icon = generic_political_actions
+		visible = {
+			tag = EGY
+		}
+		cost = 50
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = TNW_nile_unif_down_tt
+			hidden_effect = {
+				add_to_variable = { var = EGY_nile_unification_var value = -10 }
+				clamp_variable = { var = EGY_nile_unification_var max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	EGY_nile_pressure = {
+		icon = generic_army_support
+		visible = {
+			tag = EGY
+			check_variable = { var = EGY_egypt_influence_var value = 40 compare = greater_than_or_equals }
+		}
+		cost = 75
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = TNW_nile_eq_down_tt
+			hidden_effect = {
+				add_to_variable = { var = EGY_equatoria_power_var value = -10 }
+				clamp_variable = { var = EGY_equatoria_power_var max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	EGY_nile_bribes = {
+		icon = generic_industry
+		visible = {
+			tag = EGY
+		}
+		cost = 100
+		days_re_enable = 120
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = TNW_nile_eq_down_big_tt
+			hidden_effect = {
+				add_to_variable = { var = EGY_equatoria_power_var value = -15 }
+				clamp_variable = { var = EGY_equatoria_power_var max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	#=== 苏丹侧 ===
+
+	SUD_nile_union_movement = {
+		icon = generic_propaganda
+		visible = {
+			tag = SUD
+		}
+		cost = 75
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = TNW_nile_unif_up_tt
+			hidden_effect = {
+				EGY = {
+					add_to_variable = { var = EGY_nile_unification_var value = 10 }
+					clamp_variable = { var = EGY_nile_unification_var max = 100 min = 0 }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	SUD_nile_loyalty = {
+		icon = generic_political_actions
+		visible = {
+			tag = SUD
+		}
+		cost = 75
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = TNW_nile_inf_up_tt
+			hidden_effect = {
+				EGY = {
+					add_to_variable = { var = EGY_egypt_influence_var value = 10 }
+					clamp_variable = { var = EGY_egypt_influence_var max = 100 min = 0 }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	SUD_nile_autonomy_demand = {
+		icon = generic_political_actions
+		visible = {
+			tag = SUD
+		}
+		cost = 75
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = TNW_nile_unif_down_tt
+			custom_effect_tooltip = TNW_nile_inf_down_tt
+			hidden_effect = {
+				EGY = {
+					add_to_variable = { var = EGY_nile_unification_var value = -10 }
+					clamp_variable = { var = EGY_nile_unification_var max = 100 min = 0 }
+					add_to_variable = { var = EGY_egypt_influence_var value = -10 }
+					clamp_variable = { var = EGY_egypt_influence_var max = 100 min = 0 }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	SUD_nile_ansar_dialogue = {
+		icon = generic_political_actions
+		visible = {
+			tag = SUD
+		}
+		cost = 50
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = TNW_nile_unif_down_small_tt
+			custom_effect_tooltip = TNW_nile_inf_down_small_tt
+			hidden_effect = {
+				EGY = {
+					add_to_variable = { var = EGY_nile_unification_var value = -5 }
+					clamp_variable = { var = EGY_nile_unification_var max = 100 min = 0 }
+					add_to_variable = { var = EGY_egypt_influence_var value = -5 }
+					clamp_variable = { var = EGY_egypt_influence_var max = 100 min = 0 }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	SUD_nile_sudanization = {
+		icon = generic_army_support
+		visible = {
+			tag = SUD
+		}
+		cost = 50
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			army_experience = 5
+			custom_effect_tooltip = TNW_nile_inf_down_small_tt
+			hidden_effect = {
+				EGY = {
+					add_to_variable = { var = EGY_egypt_influence_var value = -5 }
+					clamp_variable = { var = EGY_egypt_influence_var max = 100 min = 0 }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	SUD_nile_pacify = {
+		icon = generic_industry
+		visible = {
+			tag = SUD
+		}
+		cost = 75
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = TNW_nile_eq_down_tt
+			hidden_effect = {
+				EGY = {
+					add_to_variable = { var = EGY_equatoria_power_var value = -10 }
+					clamp_variable = { var = EGY_equatoria_power_var max = 100 min = 0 }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

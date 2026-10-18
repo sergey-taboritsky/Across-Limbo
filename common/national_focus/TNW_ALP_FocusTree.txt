@@ -309,58 +309,6 @@ focus_tree = {
 			}
 		}
 	}
-	###解放圣城
-	focus = {
-		id = ALP_liberate_holy_city
-		icon = GFX_ALP_liberate_holy_city
-		prerequisite = {
-			focus = ALP_liberate_Levant
-		}
-		bypass = {
-			NOT = {
-				country_exists = PAL
-			}
-		}
-		available = {
-			has_war = no
-		}
-		relative_position_id = ALP_suppress_Aleppo
-		x = -3
-		y = 4
-		cost = 3
-		completion_reward = {
-			declare_war_on = {
-				target = PAL
-				type = civil_war
-			}
-		}
-	}
-	###驱逐外来者
-	focus = {
-		id = ALP_cast_out_foreigners
-		icon = GFX_ALP_cast_out_foreigners
-		prerequisite = {
-			focus = ALP_liberate_Levant
-		}
-		bypass = {
-			NOT = {
-				country_exists = ISR
-			}
-		}
-		available = {
-			has_war = no
-		}
-		relative_position_id = ALP_suppress_Aleppo
-		x = -1
-		y = 4
-		cost = 3
-		completion_reward = {
-			declare_war_on = {
-				target = ISR
-				type = civil_war
-			}
-		}
-	}
 	###难民营安置
 	focus = {
 		id = ALP_refugee_camps

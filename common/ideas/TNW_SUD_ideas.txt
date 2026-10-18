@@ -1,0 +1,127 @@
+ideas = {
+	country = {
+		#王冠联合（1925 喀土穆协议：苏丹与埃及共戴一王）
+		#教团对峙（哈特米亚亲埃 vs 安萨尔独立）
+		SUD_sect_divide = {
+			picture = GFX_idea_SUD_sect_divide
+			allowed = { original_tag = SUD }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.05
+				drift_defence_factor = -0.10
+			}
+		}
+		SUD_crown_union = {
+			picture = GFX_idea_SUD_crown_union
+			allowed = { original_tag = SUD }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		#1925 喀土穆协议（自治领法理）
+		SUD_protocol_1925 = {
+			picture = GFX_idea_SUD_protocol_1925
+			allowed = { original_tag = SUD }
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.25
+				stability_factor = 0.02
+			}
+		}
+		#苏丹防卫部队
+		SUD_sdf = {
+			picture = GFX_idea_SUD_sdf
+			allowed = { original_tag = SUD }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.02
+				army_org_factor = 0.02
+				experience_gain_army_factor = 0.05
+			}
+		}
+		#杰济拉棉田体系
+		SUD_gezira = {
+			picture = GFX_idea_SUD_gezira
+			allowed = { original_tag = SUD }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		#南方弃置
+		SUD_south_neglect = {
+			picture = GFX_idea_SUD_south_neglect
+			allowed = { original_tag = SUD }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+		#自治条款：开罗主导
+		SUD_settlement_cairo = {
+			picture = GFX_idea_SUD_settlement_cairo
+			allowed = { original_tag = SUD }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.03
+			}
+		}
+		#自治条款：1925 协议现状
+		SUD_settlement_1925 = {
+			picture = GFX_idea_SUD_settlement_1925
+			allowed = { original_tag = SUD }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.02
+			}
+		}
+		#自治条款：苏丹化自治
+		SUD_settlement_sudanized = {
+			picture = GFX_idea_SUD_settlement_sudanized
+			allowed = { original_tag = SUD }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		#王冠悬置（僵持）
+		SUD_standoff_crisis = {
+			picture = GFX_idea_SUD_standoff_crisis
+			allowed = { original_tag = SUD }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.10
+			}
+		}
+		#南方暴乱
+		SUD_south_uprising = {
+			picture = GFX_idea_SUD_south_uprising
+			allowed = { original_tag = SUD }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				conscription_factor = -0.02
+				consumer_goods_factor = 0.02
+			}
+		}
+		#独立的苏丹
+		SUD_independence_era = {
+			picture = GFX_idea_SUD_independence_era
+			allowed = { original_tag = SUD }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				drift_defence_factor = 0.25
+			}
+		}
+	}
+}

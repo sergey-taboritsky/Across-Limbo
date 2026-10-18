@@ -61,6 +61,16 @@ spriteTypes = {
 		texturefile = "gfx/characters/MAL_Chen_Chunan.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_second_leader_portrait_Abdallah_Khalil"
+		texturefile = "gfx/characters/SUD_Abdallah_Khalil.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_second_leader_portrait_Abdallah_Khalil"
+		texturefile = "gfx/characters/SUD_Abdallah_Khalil.png"
+		legacy_lazy_load = no
+	}
 	#spriteType = {
 	#	name = "GFX_second_leader_portrait_SOMEBODY_NAME"
 	#	texturefile = "gfx/leaders/ENG/Portrait_TARGET_TAG_SOMEBODY_NAME.dds"

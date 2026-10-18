@@ -56,6 +56,27 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			original_tag = SUD
+			has_country_flag = SUD_Abdallah_Khalil_PM_flag
+		}
+		localization_key = TNW_second_leader_name_SUD_Abdallah_Khalil
+	}
+	text = {
+		trigger = {
+			original_tag = SUD
+			has_country_flag = SUD_Abdallah_Khalil_PM_flag
+		}
+		localization_key = TNW_second_leader_name_SUD_Abdallah_Khalil
+	}
+	text = {
+		trigger = {
+			original_tag = SUD
+			has_country_flag = SUD_Abdallah_Khalil_PM_flag
+		}
+		localization_key = TNW_second_leader_name_SUD_Abdallah_Khalil
+	}
+	text = {
+		trigger = {
 			original_tag = ENG
 		}
 		localization_key = TNW_second_leader_name_ENG_George_Catlin

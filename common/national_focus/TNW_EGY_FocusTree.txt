@@ -290,6 +290,14 @@ focus_tree = {
 			promote_character = EGY_Mohammed_Naguib
 			add_ideas = EGY_national_alliance
 			remove_ideas = EGY_junta_government
+			custom_effect_tooltip = EGY_naguib_sudan_tt
+			hidden_effect = {
+				add_to_variable = { var = EGY_egypt_influence_var value = 10 }
+				clamp_variable = { var = EGY_egypt_influence_var max = 100 min = 0 }
+				SUD = {
+					country_event = { id = SUD_event.1 days = 7 }
+				}
+			}
 		}
 	}
 	focus = {
@@ -329,6 +337,16 @@ focus_tree = {
 			promote_character = EGY_Gamal_Abdel_Nasser
 			add_ideas = EGY_epdu
 			remove_ideas = EGY_junta_government
+			custom_effect_tooltip = EGY_nasser_sudan_tt
+			hidden_effect = {
+				add_to_variable = { var = EGY_nile_unification_var value = 15 }
+				clamp_variable = { var = EGY_nile_unification_var max = 100 min = 0 }
+				add_to_variable = { var = EGY_equatoria_power_var value = -5 }
+				clamp_variable = { var = EGY_equatoria_power_var max = 100 min = 0 }
+				SUD = {
+					country_event = { id = SUD_event.1 days = 7 }
+				}
+			}
 		}
 	}
 

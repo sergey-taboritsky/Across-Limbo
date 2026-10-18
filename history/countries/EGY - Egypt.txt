@@ -62,3 +62,6 @@ set_variable = { TNW_Affluence_monthly_value = -5 }
 
 set_variable = { EGY_junta_naguib_var = 50 }
 set_variable = { EGY_junta_nasser_var = 50 }
+set_variable = { EGY_nile_unification_var = 30 }
+set_variable = { EGY_egypt_influence_var = 50 }
+set_variable = { EGY_equatoria_power_var = 30 }

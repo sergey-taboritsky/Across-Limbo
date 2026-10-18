@@ -1,0 +1,16 @@
+TNW_nile_unification_category = {
+	icon = GFX_decision_category_border_conflicts
+	allowed = {
+		OR = {
+			original_tag = EGY
+			original_tag = SUD
+		}
+	}
+	visible = {
+		OR = {
+			tag = EGY
+			tag = SUD
+		}
+	}
+	visible_when_empty = yes
+}

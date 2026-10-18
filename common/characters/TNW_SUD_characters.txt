@@ -1,0 +1,100 @@
+characters = {
+	#法鲁克一世（苏丹国王，共主）
+	SUD_Farouk = {
+		name = SUD_Farouk
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_EGY_Farouk_I
+			}
+		}
+		country_leader = {
+			desc = SUD_Farouk_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+		}
+		country_leader = {
+			desc = SUD_Abdallah_Khalil_desc
+			ideology = oligarchy
+			traits = {
+			}
+		}
+	}
+	#阿卜杜拉·哈利勒（苏丹首相，白旗联盟出身）
+	SUD_Abdallah_Khalil = {
+		name = SUD_Abdallah_Khalil
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SUD_Abdallah_Khalil
+			}
+		}
+		country_leader = {
+			desc = SUD_Abdallah_Khalil_desc
+			ideology = oligarchy
+			traits = {
+			}
+		}
+	}
+	#阿卜杜勒·拉赫曼·马赫迪（安萨尔伊玛目）
+	SUD_Abdel_Rahman_Mahdi = {
+		name = SUD_Abdel_Rahman_Mahdi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SUD_Abdel_Rahman_Mahdi
+			}
+		}
+		country_leader = {
+			desc = SUD_Abdel_Rahman_Mahdi_desc
+			ideology = Ultra_Nationalism
+			traits = {
+			}
+		}
+	}
+	#伊斯梅尔·阿扎里（毕业生大会，统一派）
+	SUD_Ismail_Azhari = {
+		name = SUD_Ismail_Azhari
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SUD_Ismail_Azhari
+			}
+		}
+		country_leader = {
+			desc = SUD_Ismail_Azhari_desc
+			ideology = Social_Liberalism
+			traits = {
+			}
+		}
+	}
+	#侯赛因·法赫米（埃及驻苏丹总督，架空人物）
+	SUD_Hussein_Fahmy = {
+		name = SUD_Hussein_Fahmy
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SUD_Hussein_Fahmy
+			}
+		}
+		country_leader = {
+			desc = SUD_Hussein_Fahmy_desc
+			ideology = oligarchy
+			traits = {
+			}
+		}
+		political_advisor = {
+			ideology = oligarchy
+			cost = 150
+		}
+	}
+	#阿里·米尔加尼（哈特米亚赛义德）
+	SUD_Ali_Mirghani = {
+		name = SUD_Ali_Mirghani
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SUD_Ali_Mirghani
+			}
+		}
+		political_advisor = {
+			ideology = Social_Liberalism
+			cost = 150
+		}
+	}
+}

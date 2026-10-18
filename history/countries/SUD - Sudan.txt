@@ -5,77 +5,55 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-set_convoys = 20
+set_convoys = 10
 
-recruit_character = SUD_coi
-recruit_character = SUD_aa2
-recruit_character = SUD_Liberalism_guy
-recruit_character = SUD_acd2
-recruit_character = SUD_acr
-recruit_character = SUD_fascist_guy
-recruit_character = SUD_stc
-recruit_character = SUD_ncs
-recruit_character = SUD_awt
-recruit_character = SUD_mt
-recruit_character = SUD_communist_guy
-recruit_character = SUD_ai2
-recruit_character = SUD_ar
-recruit_character = SUD_acas
-recruit_character = SUD_acgs
-recruit_character = SUD_ncm
-recruit_character = SUD_nt
-recruit_character = SUD_pot
-recruit_character = SUD_nccr
-recruit_character = SUD_aco2
-
-1939.1.1 = {
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-		tech_support = 1
-		tech_recon = 1
-		support_weapons = 1
-		gw_artillery = 1
-
-		#doctrines
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
+recruit_character = SUD_Farouk
+recruit_character = SUD_Abdallah_Khalil
+recruit_character = SUD_Abdel_Rahman_Mahdi
+recruit_character = SUD_Ismail_Azhari
+recruit_character = SUD_Hussein_Fahmy
+recruit_character = SUD_Ali_Mirghani
 
 set_politics = {
 	ruling_party = Authoritarianism
-	last_election = "1936.1.1"
+	last_election = "1947.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 25
-	Nationalism = 20
+	Authoritarianism = 40
+	Nationalism = 25
+	Liberalism = 20
+	conservatism = 5
 	communist = 5
-	Authoritarianism = 50
+	Absolutism = 5
 }
+
+set_country_flag = has_second_leader_flag
+set_country_flag = SUD_Abdallah_Khalil_PM_flag
+set_country_flag = SUD_Abdallah_Khalil_PM_flag
+set_country_flag = SUD_Abdallah_Khalil_PM_flag
+set_country_flag = SUD_Abdallah_Khalil_PM_flag
+
+add_ideas = {
+	SUD_sect_divide
+	SUD_sect_divide
+	SUD_sect_divide
+	SUD_sect_divide
+	SUD_crown_union
+	SUD_protocol_1925
+	SUD_sdf
+	SUD_gezira
+	SUD_south_neglect
+}
+
+set_variable = { TNW_Literacy_level_value = 20 }
+set_variable = { TNW_Literacy_level_monthly_value = -5 }
+set_variable = { TNW_Bureaucracy_value = 20 }
+set_variable = { TNW_Bureaucracy_monthly_value = -5 }
+set_variable = { TNW_Industrial_scale_value = 10 }
+set_variable = { TNW_Industrial_scale_monthly_value = -5 }
+set_variable = { TNW_Agriculture_value = 40 }
+set_variable = { TNW_Agriculture_monthly_value = 5 }
+set_variable = { TNW_Affluence_value = 15 }
+set_variable = { TNW_Affluence_monthly_value = -5 }

@@ -1,0 +1,330 @@
+add_namespace = SUD_event
+
+country_event = {
+	id = SUD_event.1
+	title = SUD_event.1.t
+	desc = {
+		text = SUD_event.1.d_stay
+		trigger = {
+			has_country_flag = SUD_outcome_stay_flag
+		}
+	}
+	desc = {
+		text = SUD_event.1.d_independence
+		trigger = {
+			has_country_flag = SUD_outcome_independence_flag
+		}
+	}
+	desc = {
+		text = SUD_event.1.d_standoff
+		trigger = {
+			has_country_flag = SUD_outcome_standoff_flag
+		}
+	}
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			#判定一：苏丹是否留在埃及
+			if = {
+				limit = {
+					OR = {
+						EGY = {
+							check_variable = { var = EGY_egypt_influence_var value = 50 compare = greater_than_or_equals }
+						}
+						AND = {
+							EGY = {
+								check_variable = { var = EGY_egypt_influence_var value = 35 compare = greater_than_or_equals }
+							}
+							EGY = {
+								check_variable = { var = EGY_nile_unification_var value = 55 compare = greater_than_or_equals }
+							}
+						}
+					}
+				}
+				set_country_flag = SUD_outcome_stay_flag
+				#判定二：自治条款细则
+				if = {
+					limit = {
+						EGY = {
+							check_variable = { var = EGY_egypt_influence_var value = 65 compare = greater_than_or_equals }
+						}
+					}
+					set_country_flag = SUD_tier_cairo_flag
+					add_ideas = SUD_settlement_cairo
+					EGY = {
+						set_autonomy = {
+							target = SUD
+							autonomous_state = autonomy_integrated_puppet
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						EGY = {
+							check_variable = { var = EGY_egypt_influence_var value = 50 compare = greater_than_or_equals }
+						}
+					}
+					set_country_flag = SUD_tier_1925_flag
+					add_ideas = SUD_settlement_1925
+				}
+				else = {
+					set_country_flag = SUD_tier_sudanized_flag
+					add_ideas = SUD_settlement_sudanized
+					EGY = {
+						set_autonomy = {
+							target = SUD
+							autonomous_state = autonomy_dominion
+						}
+					}
+				}
+				country_event = { id = SUD_event.2 days = 2 }
+			}
+			else_if = {
+				limit = {
+					AND = {
+						EGY = {
+							check_variable = { var = EGY_egypt_influence_var value = 35 compare = less_than }
+						}
+						EGY = {
+							check_variable = { var = EGY_nile_unification_var value = 25 compare = less_than }
+						}
+					}
+				}
+				set_country_flag = SUD_outcome_independence_flag
+				country_event = { id = SUD_event.3 days = 2 }
+			}
+			else = {
+				set_country_flag = SUD_outcome_standoff_flag
+				add_ideas = SUD_standoff_crisis
+				country_event = { id = SUD_event.4 days = 2 }
+			}
+			#判定三：南苏丹是否出现反埃及暴乱
+			if = {
+				limit = {
+					EGY = {
+						check_variable = { var = EGY_equatoria_power_var value = 35 compare = greater_than_or_equals }
+					}
+				}
+				country_event = { id = SUD_event.5 days = 25 }
+			}
+		}
+	}
+	option = {
+		name = SUD_event.1.a
+	}
+}
+
+country_event = {
+	id = SUD_event.2
+	title = SUD_event.2.t
+	desc = {
+		text = SUD_event.2.d_cairo
+		trigger = {
+			has_country_flag = SUD_tier_cairo_flag
+		}
+	}
+	desc = {
+		text = SUD_event.2.d_1925
+		trigger = {
+			has_country_flag = SUD_tier_1925_flag
+		}
+	}
+	desc = {
+		text = SUD_event.2.d_sudanized
+		trigger = {
+			has_country_flag = SUD_tier_sudanized_flag
+		}
+	}
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SUD_event.2.a
+		custom_effect_tooltip = SUD_settlement_effect_tt
+		hidden_effect = {
+			EGY = {
+				country_event = { id = EGY_event.6 days = 1 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SUD_event.3
+	title = SUD_event.3.t
+	desc = SUD_event.3.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SUD_event.3.a
+		remove_ideas = {
+			SUD_crown_union
+			SUD_protocol_1925
+		}
+		add_ideas = SUD_independence_era
+		promote_character = SUD_Abdel_Rahman_Mahdi
+		set_politics = {
+			ruling_party = Nationalism
+			elections_allowed = no
+		}
+		hidden_effect = {
+			EGY = {
+				end_puppet = SUD
+				country_event = { id = EGY_event.6 days = 1 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SUD_event.4
+	title = SUD_event.4.t
+	desc = SUD_event.4.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SUD_event.4.a
+		hidden_effect = {
+			EGY = {
+				country_event = { id = EGY_event.6 days = 1 }
+			}
+			country_event = { id = SUD_event.7 days = 120 }
+		}
+	}
+}
+
+country_event = {
+	id = SUD_event.5
+	title = SUD_event.5.t
+	desc = SUD_event.5.d
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SUD_event.5.a
+		add_ideas = SUD_south_uprising
+		add_stability = -0.03
+		hidden_effect = {
+			EGY = {
+				add_to_variable = { var = EGY_equatoria_power_var value = -20 }
+				clamp_variable = { var = EGY_equatoria_power_var max = 100 min = 0 }
+			}
+		}
+	}
+}
+
+#僵持的二次结算
+country_event = {
+	id = SUD_event.7
+	title = SUD_event.7.t
+	desc = {
+		text = SUD_event.7.d_stay
+		trigger = {
+			has_country_flag = SUD_outcome_stay_flag
+		}
+	}
+	desc = {
+		text = SUD_event.7.d_independence
+		trigger = {
+			has_country_flag = SUD_outcome_independence_flag
+		}
+	}
+	desc = {
+		text = SUD_event.7.d_standoff
+		trigger = {
+			has_country_flag = SUD_outcome_standoff_flag
+		}
+	}
+	#picture = TTT_event1
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					AND = {
+						EGY = {
+							check_variable = { var = EGY_nile_unification_var value = 60 compare = greater_than_or_equals }
+						}
+						EGY = {
+							check_variable = { var = EGY_egypt_influence_var value = 35 compare = greater_than_or_equals }
+						}
+					}
+				}
+				clr_country_flag = SUD_outcome_standoff_flag
+				set_country_flag = SUD_outcome_stay_flag
+				remove_ideas = SUD_standoff_crisis
+				if = {
+					limit = {
+						EGY = {
+							check_variable = { var = EGY_egypt_influence_var value = 65 compare = greater_than_or_equals }
+						}
+					}
+					set_country_flag = SUD_tier_cairo_flag
+					add_ideas = SUD_settlement_cairo
+					EGY = {
+						set_autonomy = {
+							target = SUD
+							autonomous_state = autonomy_integrated_puppet
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						EGY = {
+							check_variable = { var = EGY_egypt_influence_var value = 50 compare = greater_than_or_equals }
+						}
+					}
+					set_country_flag = SUD_tier_1925_flag
+					add_ideas = SUD_settlement_1925
+				}
+				else = {
+					set_country_flag = SUD_tier_sudanized_flag
+					add_ideas = SUD_settlement_sudanized
+					EGY = {
+						set_autonomy = {
+							target = SUD
+							autonomous_state = autonomy_dominion
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					EGY = {
+						check_variable = { var = EGY_nile_unification_var value = 25 compare = less_than }
+					}
+				}
+				clr_country_flag = SUD_outcome_standoff_flag
+				set_country_flag = SUD_outcome_independence_flag
+				remove_ideas = {
+					SUD_standoff_crisis
+					SUD_crown_union
+					SUD_protocol_1925
+				}
+				add_ideas = SUD_independence_era
+				promote_character = SUD_Abdel_Rahman_Mahdi
+				set_politics = {
+					ruling_party = Nationalism
+					elections_allowed = no
+				}
+				EGY = {
+					end_puppet = SUD
+				}
+			}
+			else = {
+				EGY = {
+					add_to_variable = { var = EGY_egypt_influence_var value = -10 }
+					clamp_variable = { var = EGY_egypt_influence_var max = 100 min = 0 }
+				}
+			}
+		}
+	}
+	option = {
+		name = SUD_event.7.a
+	}
+}
