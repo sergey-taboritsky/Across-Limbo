@@ -1864,4 +1864,45 @@ spriteTypes = {
 		texturefile = "gfx/characters/EGY_Anwar_Sadat.png"
 		legacy_lazy_load = no
 	}
+	#加齐·本·费萨尔（叙利亚国王）
+	SpriteType = {
+		name = "GFX_portrait_large_SYR_Ghazi_bin_Faisal"
+		texturefile = "gfx/characters/SYR_Ghazi_bin_Faisal.png"
+		legacy_lazy_load = no
+	}
+
+	#加齐·本·费萨尔（外约旦，共用贴图）
+	SpriteType = {
+		name = "GFX_portrait_large_JOR_Ghazi_bin_Faisal"
+		texturefile = "gfx/characters/SYR_Ghazi_bin_Faisal.png"
+		legacy_lazy_load = no
+	}
+
+	#哈希姆·阿塔西
+	SpriteType = {
+		name = "GFX_portrait_large_SYR_Hashim_al_Attasi"
+		texturefile = "gfx/characters/SYR_Hashim_al_Attasi.png"
+		legacy_lazy_load = no
+	}
+
+	#哈立德·巴格达什
+	SpriteType = {
+		name = "GFX_portrait_large_ALP_Khalid_Bakdash"
+		texturefile = "gfx/characters/ALP_Khalid_Bakdash.png"
+		legacy_lazy_load = no
+	}
+
+	#安通·萨阿德
+	SpriteType = {
+		name = "GFX_portrait_large_LEB_Antun_Saadeh"
+		texturefile = "gfx/characters/LEB_Antun_Saadeh.png"
+		legacy_lazy_load = no
+	}
+
+	#法齐·卡伍吉
+	SpriteType = {
+		name = "GFX_portrait_large_PAL_Fawzi_al_Qawuqji"
+		texturefile = "gfx/characters/PAL_Fawzi_al_Qawuqji.png"
+		legacy_lazy_load = no
+	}
 }

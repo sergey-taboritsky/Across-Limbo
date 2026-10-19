@@ -1,0 +1,17 @@
+characters = {
+	#法齐·卡伍吉（巴勒斯坦军政府）
+	PAL_Fawzi_al_Qawuqji = {
+		name = PAL_Fawzi_al_Qawuqji
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PAL_Fawzi_al_Qawuqji
+			}
+		}
+		country_leader = {
+			desc = PAL_Fawzi_al_Qawuqji_desc
+			ideology = military_government
+			traits = {
+			}
+		}
+	}
+}

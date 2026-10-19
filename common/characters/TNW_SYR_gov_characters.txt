@@ -51,21 +51,6 @@ characters = {
 			}
 		}
 	}
-	#安通·萨阿德
-	SYR_Antun_Saadeh = {
-		name = SYR_Antun_Saadeh
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_SYR_Antun_Saadeh
-			}
-		}
-		country_leader = {
-			desc = SYR_Antun_Saadeh_desc
-			ideology = Social_nationalism
-			traits = {
-			}
-		}
-	}
 	#萨米·欣纳维
 	SYR_Sami_al_Hinnawi = {
 		name = SYR_Sami_al_Hinnawi
@@ -111,22 +96,7 @@ characters = {
 			}
 		}
 	}
-	#法齐·卡伍吉（贝鲁特临时政府）
-	LEB_Fawzi_al_Qawuqji = {
-		name = LEB_Fawzi_al_Qawuqji
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_LEB_Fawzi_al_Qawuqji
-			}
-		}
-		country_leader = {
-			desc = LEB_Fawzi_al_Qawuqji_desc
-			ideology = Social_nationalism
-			traits = {
-			}
-		}
-	}
-	#安通·萨阿德（贝鲁特，党内元老）
+	#安通·萨阿德（贝鲁特，社会民族党领袖）
 	LEB_Antun_Saadeh = {
 		name = LEB_Antun_Saadeh
 		portraits = {

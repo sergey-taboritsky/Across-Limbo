@@ -239,3 +239,129 @@ country_event = {
 		name = EGY_event.6.a
 	}
 }
+
+country_event = {
+	id = EGY_event.7
+	title = EGY_event.7.t
+	desc = EGY_event.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.7.a
+		promote_character = EGY_Mohammed_Naguib
+		set_politics = {
+			ruling_party = Absolutism
+			elections_allowed = no
+		}
+		retire_character = EGY_Farouk_I
+		clr_country_flag = EGY_Hussein_Sirri_PM_flag
+		clr_country_flag = EGY_Mostafa_Nahas_PM_flag
+		clr_country_flag = has_second_leader_flag
+		remove_ideas = {
+			EGY_chained_constitution
+			EGY_world_falling_apart
+			EGY_army_irritation
+			EGY_worker_disdain
+			EGY_cairo_fire_aftermath
+			EGY_nahas_government
+		}
+		add_ideas = EGY_junta_government
+		set_country_flag = EGY_free_officers_revolution_flag
+		complete_national_focus = EGY_Officers_Revolution
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = EGY_news.3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = EGY_event.8
+	title = EGY_event.8.t
+	desc = EGY_event.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.8.a
+		add_political_power = -25
+	}
+}
+
+country_event = {
+	id = EGY_event.9
+	title = EGY_event.9.t
+	desc = EGY_event.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.9.a
+		add_political_power = -25
+	}
+}
+
+country_event = {
+	id = EGY_event.10
+	title = EGY_event.10.t
+	desc = EGY_event.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.10.a
+		add_political_power = -20
+	}
+}
+
+country_event = {
+	id = EGY_event.11
+	title = EGY_event.11.t
+	desc = EGY_event.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.11.a
+		add_stability = -0.01
+		add_political_power = -25
+	}
+}
+
+country_event = {
+	id = EGY_event.12
+	title = EGY_event.12.t
+	desc = EGY_event.12.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.12.a
+		add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = EGY_event.13
+	title = EGY_event.13.t
+	desc = EGY_event.13.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.13.a
+		add_stability = -0.02
+		add_political_power = -25
+	}
+}
+
+country_event = {
+	id = EGY_event.14
+	title = EGY_event.14.t
+	desc = EGY_event.14.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = EGY_event.14.a
+		add_popularity = { ideology = socialism popularity = 0.02 }
+		add_stability = -0.01
+	}
+}

@@ -34,6 +34,5 @@ set_popularities = {
 	Nationalism = 30
 }
 
-recruit_character = LEB_Fawzi_al_Qawuqji
 recruit_character = LEB_Antun_Saadeh
 recruit_character = LEB_Akram_Hourani

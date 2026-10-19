@@ -659,10 +659,10 @@ focus_tree = {
 			add_war_support = 0.05
 		}
 	}
-	###元帅卡伍吉
+	###元帅希沙克利
 	focus = {
-		id = LEB_qawuqji_marshal
-		icon = GFX_LEB_qawuqji_marshal
+		id = LEB_shishakli_marshal
+		icon = GFX_LEB_shishakli_marshal
 		prerequisite = {
 			focus = LEB_beirut_arsenal
 		}

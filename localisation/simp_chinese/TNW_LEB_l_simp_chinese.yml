@@ -4,8 +4,6 @@
  LEB_ADJ: "黎凡特"
 
 #领导人
- LEB_Fawzi_al_Qawuqji: "法齐·卡伍吉"
- LEB_Fawzi_al_Qawuqji_desc: "法齐·卡伍吉，打满半个黎凡特的老兵。从拉塔基亚到巴勒斯坦，他指挥过的旗帜换了一茬又一茬——如今他只效忠他亲手扶起的贝鲁特政权。"
  LEB_Antun_Saadeh: "安通·萨阿德"
  LEB_Antun_Saadeh_desc: "安通·萨阿德，叙利亚社会民族党的缔造者与大叙利亚主义的先知。他坚信民族是高于宗教与阶级的最高实在，而他本人正是这一信念的化身。"
  LEB_Antun_Saadeh_advisor: "政治顾问 安通·萨阿德"
@@ -60,7 +58,7 @@
  LEB_consolidate_beirut: "巩固贝鲁特城区"
  LEB_consolidate_beirut_desc: "贝鲁特是政权的摇篮也是十字路口。军官们清洗了旧市政厅，把海关与港口攥进手里——这座城市的每一张通行证都要盖新政权的钢印。"
  LEB_ala_veterans: "阿拉伯解放军老兵"
- LEB_ala_veterans_desc: "卡伍吉的旧部——阿拉伯解放军的老兵们——成建制投奔贝鲁特。他们打过巴勒斯坦，知道怎么用最少的子弹打最狠的仗。"
+ LEB_ala_veterans_desc: "阿拉伯解放军的老兵们成建制投奔贝鲁特——他们打过巴勒斯坦，知道怎么用最少的子弹打最狠的仗。"
  LEB_beirut_arsenal: "贝鲁特兵工修械所"
  LEB_beirut_arsenal_desc: "港区仓库改成修械所。缴获的英式、法式、德式步枪在车床上一支支复活——贝鲁特的武器库没有派系，只有口径。"
  LEB_sacred_mission: "神圣使命"
@@ -123,7 +121,7 @@
  LEB_left_road_desc: "少壮派主导了党：民族复兴首先意味着铲平封建。党章加上社会革命的序言——胡拉尼的农民军成了政权的心脏。"
  LEB_orthodox_road: "纯正民族主义道路"
  LEB_orthodox_road_desc: "元老派赢回了党。纯洁的、不可分割的民族主义重新成为唯一教义——社会问题可以有，但不能喧宾夺主。"
- LEB_qawuqji_marshal: "元帅卡伍吉"
- LEB_qawuqji_marshal_desc: "卡伍吉终于穿上了元帅服。这位打过整个巴勒斯坦战争的老兵接过全军统帅权——军人政权在贝鲁特完成了加冕。"
+ LEB_shishakli_marshal: "元帅希沙克利"
+ LEB_shishakli_marshal_desc: "希沙克利接过了全军统帅权。这位从汉志战场走出来的铁腕军官向来只信刺刀——如今刺刀整个交到了他的手里，贝鲁特的军人政权就此加冕。"
  LEB_national_renaissance: "民族复兴日"
  LEB_national_renaissance_desc: "独立的黎凡特在贝鲁特敲响了钟声。新国家宣布民族复兴纪年开始——从今天起，叙利亚民族的历史由贝鲁特执笔。"

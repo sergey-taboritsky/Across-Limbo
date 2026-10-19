@@ -37,7 +37,6 @@ set_popularities = {
 recruit_character = SYR_Ghazi_bin_Faisal
 recruit_character = SYR_Husni_al_Zaim
 recruit_character = SYR_Hashim_al_Attasi
-recruit_character = SYR_Antun_Saadeh
 recruit_character = SYR_Sami_al_Hinnawi
 recruit_character = SYR_Adib_Shishakli
 

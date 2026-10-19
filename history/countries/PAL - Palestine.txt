@@ -58,55 +58,18 @@ set_convoys = 5
 	}
 }
 
+recruit_character = PAL_Fawzi_al_Qawuqji
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 40
-	Nationalism = 30
-	communist = 30
+	Liberalism = 15
+	Nationalism = 20
+	communist = 20
+	Absolutism = 45
 }
 
-create_country_leader = {
-	name = "Ahmed Hilmi Pasha"
-	desc = ""
-	picture = GFX_portrait_Ahmed_Hilmi_Pasha
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Amin al-Husseini"
-	desc = ""
-	picture = GFX_portrait_Amin_al_Husseini
-	ideology = Nationalism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Prince Henry"
-	desc = ""
-	picture = GFX_portrait_Prince_Henry
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Bulus Farah"
-	desc = ""
-	picture = GFX_portrait_Bulus_Farah
-	ideology = leninism
-	traits = {
-		#
-	}
-}
