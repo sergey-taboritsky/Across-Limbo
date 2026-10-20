@@ -150,11 +150,11 @@ characters = {
 		corps_commander = {
 			desc = MAL_Liu_Yao_commander_desc
 			traits = { war_hero }
-			skill = 1
+			skill = 2
 			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 1
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
 		}
 	}
 
@@ -168,7 +168,7 @@ characters = {
 		}
 		country_leader = {
 			desc = MAL_Dato_Onn_Jaafar_desc
-			ideology = tridemism_authdem
+			ideology = Singular_Nationalism
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {
@@ -185,7 +185,7 @@ characters = {
 		}
 		country_leader = {
 			desc = MAL_Musa_Ahmad_desc
-			ideology = tridemism_authdem
+			ideology = Marxism_Leninism
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {
@@ -202,7 +202,7 @@ characters = {
 		}
 		country_leader = {
 			desc = MAL_Abdullah_CD_desc
-			ideology = tridemism_authdem
+			ideology = Marxism_Leninism
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {
@@ -219,11 +219,287 @@ characters = {
 		}
 		country_leader = {
 			desc = MAL_Ishak_Haj_Muhammad_desc
-			ideology = tridemism_authdem
+			ideology = Left_wing_nationalism
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {
 			}
+		}
+	}
+	#陈嘉庚
+	MAL_Chen_Jiageng = {
+		name = MAL_Chen_Jiageng
+		country_leader = {
+			desc = MAL_Chen_Jiageng_desc
+			ideology = Popular_Front
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#陈六使
+	MAL_Chen_Liushi = {
+		name = MAL_Chen_Liushi
+		country_leader = {
+			desc = MAL_Chen_Liushi_desc
+			ideology = tridemism_conservative
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#连瀛洲
+	MAL_Lian_Yingzhou = {
+		name = MAL_Lian_Yingzhou
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#张永福
+	MAL_Zhang_Yongfu = {
+		name = MAL_Zhang_Yongfu
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#戴愧生
+	MAL_Dai_Kuisheng = {
+		name = MAL_Dai_Kuisheng
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#陈平
+	MAL_Chen_Ping = {
+		name = MAL_Chen_Ping
+		country_leader = {
+			desc = MAL_Chen_Ping_desc
+			ideology = Marxism_Leninism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#阿焰
+	MAL_A_Yan = {
+		name = MAL_A_Yan
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#刘平（沈岩秀）
+	MAL_Liu_Ping = {
+		name = MAL_Liu_Ping
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#庄惠泉
+	MAL_Zhuang_Huiquan = {
+		name = MAL_Zhuang_Huiquan
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#林谋盛
+	MAL_Lin_Mousheng = {
+		name = MAL_Lin_Mousheng
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#胡愈之
+	MAL_Hu_Yuzhi = {
+		name = MAL_Hu_Yuzhi
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#郁达夫
+	MAL_Yu_Dafu = {
+		name = MAL_Yu_Dafu
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#王任叔（巴人）
+	MAL_Wang_Renshu = {
+		name = MAL_Wang_Renshu
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#韩素音
+	MAL_Han_Suyin = {
+		name = MAL_Han_Suyin
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#林连玉
+	MAL_Lin_Lianyu = {
+		name = MAL_Lin_Lianyu
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#约翰·埃伯
+	MAL_John_Eber = {
+		name = MAL_John_Eber
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#何亚廉
+	MAL_Philip_Hoalim = {
+		name = MAL_Philip_Hoalim
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#布哈鲁丁·阿尔-海米
+	MAL_Burhanuddin = {
+		name = MAL_Burhanuddin
+		country_leader = {
+			desc = MAL_Burhanuddin_desc
+			ideology = Singular_Nationalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#易卜拉欣·雅各布
+	MAL_Ibrahim_Yaacob = {
+		name = MAL_Ibrahim_Yaacob
+		country_leader = {
+			desc = MAL_Ibrahim_Yaacob_desc
+			ideology = Left_wing_nationalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#东姑·阿卜杜勒·拉赫曼
+	MAL_Tunku_Abdul_Rahman = {
+		name = MAL_Tunku_Abdul_Rahman
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#阿卜杜勒·拉扎克
+	MAL_Abdul_Razak = {
+		name = MAL_Abdul_Razak
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#扎巴
+	MAL_Zaba = {
+		name = MAL_Zaba
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#苏丹易卜拉欣（柔佛）
+	MAL_Sultan_Ibrahim_Johor = {
+		name = MAL_Sultan_Ibrahim_Johor
+		country_leader = {
+			desc = MAL_Sultan_Ibrahim_Johor_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#苏丹阿布·巴卡（彭亨）
+	MAL_Sultan_Abu_Bakar_Pahang = {
+		name = MAL_Sultan_Abu_Bakar_Pahang
+		country_leader = {
+			desc = MAL_Sultan_Abu_Bakar_Pahang_desc
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#约翰·蒂维
+	MAL_John_Thivy = {
+		name = MAL_John_Thivy
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#R.G.巴兰
+	MAL_RG_Balan = {
+		name = MAL_RG_Balan
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#P.维拉塞南
+	MAL_Veerasenan = {
+		name = MAL_Veerasenan
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#波努鲁里
+	MAL_Ponnudurai = {
+		name = MAL_Ponnudurai
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#D.A.麦卡
+	MAL_D_A_Mackay = {
+		name = MAL_D_A_Mackay
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#S.拉贾拉特南
+	MAL_Rajaratnam = {
+		name = MAL_Rajaratnam
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#杰拉尔德·德克鲁兹
+	MAL_Gerald_de_Cruz = {
+		name = MAL_Gerald_de_Cruz
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
 		}
 	}
 }

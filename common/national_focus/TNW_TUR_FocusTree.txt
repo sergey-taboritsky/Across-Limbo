@@ -189,7 +189,6 @@ focus_tree = {
 				check_variable = { var = TUR_congress_eastern_var value = 35 compare = greater_than_or_equals }
 			}
 		}
-		cancellable = no
 		x = 14
 		y = 4
 		completion_reward = {
@@ -226,7 +225,6 @@ focus_tree = {
 				check_variable = { var = TUR_congress_central_var value = 35 compare = greater_than_or_equals }
 			}
 		}
-		cancellable = no
 		x = 17
 		y = 4
 		completion_reward = {
@@ -258,7 +256,6 @@ focus_tree = {
 				check_variable = { var = TUR_congress_populist_var value = 35 compare = greater_than_or_equals }
 			}
 		}
-		cancellable = no
 		x = 20
 		y = 4
 		completion_reward = {
@@ -298,7 +295,6 @@ focus_tree = {
 				check_variable = { var = TUR_congress_snowmoon_var value = 35 compare = greater_than_or_equals }
 			}
 		}
-		cancellable = no
 		x = 23
 		y = 4
 		completion_reward = {
@@ -338,7 +334,6 @@ focus_tree = {
 				check_variable = { var = TUR_congress_snowmoon_var value = 35 compare = less_than }
 			}
 		}
-		cancellable = no
 		x = 26
 		y = 4
 		completion_reward = {
@@ -489,7 +484,7 @@ focus_tree = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -579,7 +574,6 @@ focus_tree = {
 				has_country_flag = TUR_route_compromise_flag
 			}
 		}
-		cancellable = no
 		x = 16
 		y = 9
 		completion_reward = {
@@ -610,7 +604,6 @@ focus_tree = {
 				has_country_flag = TUR_route_compromise_flag
 			}
 		}
-		cancellable = no
 		x = 20
 		y = 9
 		completion_reward = {
@@ -640,7 +633,6 @@ focus_tree = {
 				has_country_flag = TUR_route_compromise_flag
 			}
 		}
-		cancellable = no
 		x = 24
 		y = 9
 		completion_reward = {
@@ -993,7 +985,7 @@ focus_tree = {
 					free_building_slots = {
 						building = arms_workshop
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1069,7 +1061,7 @@ focus_tree = {
 					free_building_slots = {
 						building = arms_workshop
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1096,7 +1088,7 @@ focus_tree = {
 					free_building_slots = {
 						building = arms_workshop
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1123,7 +1115,7 @@ focus_tree = {
 					free_building_slots = {
 						building = arms_workshop
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1330,7 +1322,7 @@ focus_tree = {
 							free_building_slots = {
 								building = infrastructure
 								size > 0
-								include_owned = yes
+								include_locked = yes
 							}
 						}
 						add_building_construction = {
@@ -1358,7 +1350,7 @@ focus_tree = {
 							free_building_slots = {
 								building = infrastructure
 								size > 0
-								include_owned = yes
+								include_locked = yes
 							}
 						}
 						add_building_construction = {
@@ -1576,7 +1568,7 @@ focus_tree = {
 							free_building_slots = {
 								building = industrial_complex
 								size > 0
-								include_owned = yes
+								include_locked = yes
 							}
 						}
 						add_building_construction = {
@@ -1726,7 +1718,7 @@ focus_tree = {
 							free_building_slots = {
 								building = industrial_complex
 								size > 0
-								include_owned = yes
+								include_locked = yes
 							}
 						}
 						add_building_construction = {
@@ -1752,7 +1744,7 @@ focus_tree = {
 							free_building_slots = {
 								building = infrastructure
 								size > 0
-								include_owned = yes
+								include_locked = yes
 							}
 						}
 						add_building_construction = {

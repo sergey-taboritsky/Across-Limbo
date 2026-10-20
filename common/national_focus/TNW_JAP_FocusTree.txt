@@ -493,8 +493,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = JAP_Socialist_Education_Law
-		}
-		cancellable = no
+		}
 		select_effect = {
 			hidden_effect = {
 				country_event = { id = JAP_event.4 days = 1 }

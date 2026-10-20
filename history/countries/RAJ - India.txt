@@ -17,6 +17,9 @@ set_technology = {
 }
 
 recruit_character = RAJ_Sardar_Patel
+recruit_character = RAJ_Chandra_Bose
+recruit_character = RAJ_Mohan_Singh
+recruit_character = RAJ_Lakshmi_Sahgal
 
 set_autonomy = {
 	target = KSM

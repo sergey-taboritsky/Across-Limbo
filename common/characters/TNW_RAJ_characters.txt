@@ -16,4 +16,50 @@ characters = {
 			}
 		}
 	}
+	#钱德拉·鲍斯
+	RAJ_Chandra_Bose = {
+		name = RAJ_Chandra_Bose
+		country_leader = {
+			desc = RAJ_Chandra_Bose_desc
+			ideology = military_government
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#莫汉·辛格
+	RAJ_Mohan_Singh = {
+		name = RAJ_Mohan_Singh
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+		corps_commander = {
+			desc = RAJ_Mohan_Singh_commander_desc
+			traits = { war_hero }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	#拉克希米·萨加尔
+	RAJ_Lakshmi_Sahgal = {
+		name = RAJ_Lakshmi_Sahgal
+		corps_commander = {
+			desc = RAJ_Lakshmi_Sahgal_commander_desc
+			traits = { war_hero }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
 }

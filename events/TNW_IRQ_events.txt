@@ -58,8 +58,8 @@ country_event = {
 			ruling_party = Absolutism
 			elections_allowed = no
 		}
-		retire_character = IRQ_ghazi_i
-		retire_character = IRQ_amir_al_illah
+		retire_character = IRQ_abdullah
+		retire_character = IRQ_talal
 		remove_ideas = {
 			TNW_IRQ_strong_ottoman_influence
 		}

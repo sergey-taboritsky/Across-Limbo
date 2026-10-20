@@ -395,7 +395,7 @@ focus_tree = {
 					free_building_slots = {
 						building = infrastructure
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -558,7 +558,7 @@ focus_tree = {
 					free_building_slots = {
 						building = infrastructure
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -612,7 +612,7 @@ focus_tree = {
 					free_building_slots = {
 						building = infrastructure
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -970,7 +970,6 @@ focus_tree = {
 				check_variable = { var = EGY_junta_naguib_var value = 55 compare = greater_than_or_equals }
 			}
 		}
-		cancellable = no
 		x = 14
 		y = 11
 		completion_reward = {
@@ -1032,7 +1031,6 @@ focus_tree = {
 				check_variable = { var = EGY_junta_naguib_var value = 55 compare = less_than }
 			}
 		}
-		cancellable = no
 		x = 26
 		y = 11
 		completion_reward = {
@@ -1184,7 +1182,7 @@ focus_tree = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1293,7 +1291,6 @@ focus_tree = {
 		available = {
 			has_country_flag = EGY_route_nasser_flag
 		}
-		cancellable = no
 		x = 40
 		y = 12
 		completion_reward = {
@@ -1374,7 +1371,7 @@ focus_tree = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1401,7 +1398,7 @@ focus_tree = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1415,7 +1412,7 @@ focus_tree = {
 					free_building_slots = {
 						building = arms_workshop
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1501,7 +1498,7 @@ focus_tree = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1532,7 +1529,7 @@ focus_tree = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 2
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1578,7 +1575,6 @@ focus_tree = {
 		available = {
 			has_country_flag = EGY_route_naguib_flag
 		}
-		cancellable = no
 		x = 52
 		y = 12
 		completion_reward = {
@@ -1700,7 +1696,7 @@ focus_tree = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1781,7 +1777,7 @@ focus_tree = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1830,7 +1826,6 @@ focus_tree = {
 		available = {
 			has_country_flag = EGY_route_naguib_flag
 		}
-		cancellable = no
 		x = 3
 		y = 12
 		completion_reward = {
@@ -1950,7 +1945,7 @@ focus_tree = {
 					free_building_slots = {
 						building = dockyard
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -1978,7 +1973,7 @@ focus_tree = {
 					free_building_slots = {
 						building = air_base
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -2033,7 +2028,6 @@ focus_tree = {
 		available = {
 			has_country_flag = EGY_route_nasser_flag
 		}
-		cancellable = no
 		x = 8
 		y = 12
 		completion_reward = {
@@ -2119,7 +2113,7 @@ focus_tree = {
 					free_building_slots = {
 						building = arms_workshop
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -2166,7 +2160,7 @@ focus_tree = {
 					free_building_slots = {
 						building = air_base
 						size > 0
-						include_owned = yes
+						include_locked = yes
 					}
 				}
 				add_building_construction = {

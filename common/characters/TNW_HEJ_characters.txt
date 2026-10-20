@@ -1,0 +1,20 @@
+characters = {
+	#阿里一世（汉志国王，哈希姆王朝，侯赛因长子）
+	HEJ_ali_bin_hussein = {
+		name = HEJ_ali_bin_hussein
+		country_leader = {
+			desc = HEJ_ali_bin_hussein_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+		}
+	}
+	#阿卜杜勒·伊拉王储（宫廷理财人）
+	HEJ_abd_al_ilah = {
+		name = HEJ_abd_al_ilah
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+}

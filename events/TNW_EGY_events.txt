@@ -101,7 +101,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = EGY_event.5.a
-		promote_character = EGY_Mostafa_Nahas
 		set_politics = {
 			ruling_party = Conservatism
 			election_frequency = 48
