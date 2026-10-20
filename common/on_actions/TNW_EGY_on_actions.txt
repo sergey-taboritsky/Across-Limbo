@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			EGY = {
+				country_event = { id = EGY_event.15 days = 150 }
+			}
+		}
+	}
+}

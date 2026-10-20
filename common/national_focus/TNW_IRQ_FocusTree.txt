@@ -1,0 +1,946 @@
+focus_tree = {
+	id = IRQ_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = IRQ
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 1750
+	}
+	default = no
+
+	focus = {
+		id = IRQ_German_Legacy
+		icon = GFX_IRQ_German_Legacy
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		x = 10
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_German_Legacy"
+			add_political_power = 25
+			country_event = { id = IRQ_event.3 days = 45 }
+		}
+	}
+	focus = {
+		id = IRQ_Seek_New_Patron
+		icon = GFX_IRQ_Seek_New_Patron
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_German_Legacy
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 3
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Seek_New_Patron"
+			add_political_power = 50
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = IRQ_Foreign_Credit
+		icon = GFX_IRQ_Foreign_Credit
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Seek_New_Patron
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 1
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Foreign_Credit"
+			add_political_power = 25
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = IRQ_Arms_Brokers
+		icon = GFX_IRQ_Arms_Brokers
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Seek_New_Patron
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 3
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Arms_Brokers"
+			army_experience = 20
+			custom_effect_tooltip = IRQ_army_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_army_morale_var value = 8 }
+				clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Crown_League
+		icon = GFX_IRQ_Crown_League
+		cost = 35.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Foreign_Credit
+		}
+		prerequisite = {
+			focus = IRQ_Arms_Brokers
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 2
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Crown_League"
+			add_political_power = 50
+			add_war_support = 0.02
+			custom_effect_tooltip = IRQ_army_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_army_morale_var value = 5 }
+				clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Nuri_Strongman
+		icon = GFX_IRQ_Nuri_Strongman
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		mutually_exclusive = {
+			focus = IRQ_Liberal_Cabinet
+		}
+		prerequisite = {
+			focus = IRQ_German_Legacy
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 7
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Nuri_Strongman"
+			add_political_power = 75
+			add_stability = 0.03
+			custom_effect_tooltip = IRQ_army_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_army_morale_var value = 5 }
+				clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+			}
+			custom_effect_tooltip = IRQ_pop_fall_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = -5 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Constitutional_Facade
+		icon = GFX_IRQ_Constitutional_Facade
+		cost = 25.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Nuri_Strongman
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 7
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Constitutional_Facade"
+			add_stability = 0.05
+			custom_effect_tooltip = IRQ_pop_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = 5 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Tribal_Levies
+		icon = GFX_IRQ_Tribal_Levies
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Nuri_Strongman
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 5
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Tribal_Levies"
+			add_manpower = 8000
+			custom_effect_tooltip = IRQ_army_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_army_morale_var value = 5 }
+				clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+			}
+			custom_effect_tooltip = IRQ_pop_fall_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = -5 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Fertile_Crescent
+		icon = GFX_IRQ_Fertile_Crescent
+		cost = 35.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Constitutional_Facade
+		}
+		prerequisite = {
+			focus = IRQ_Tribal_Levies
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 6
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Fertile_Crescent"
+			add_political_power = 100
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = IRQ_Liberal_Cabinet
+		icon = GFX_IRQ_Liberal_Cabinet
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_German_Legacy
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 13
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Liberal_Cabinet"
+			add_political_power = 50
+			custom_effect_tooltip = IRQ_pop_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = 10 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+			custom_effect_tooltip = IRQ_army_fall_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_army_morale_var value = -5 }
+				clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Party_Legislation
+		icon = GFX_IRQ_Party_Legislation
+		cost = 25.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Liberal_Cabinet
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 13
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Party_Legislation"
+			add_political_power = 25
+			custom_effect_tooltip = IRQ_pop_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = 8 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Free_Press
+		icon = GFX_IRQ_Free_Press
+		cost = 25.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Liberal_Cabinet
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 11
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Free_Press"
+			add_stability = -0.02
+			custom_effect_tooltip = IRQ_pop_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = 10 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Union_Tolerance
+		icon = GFX_IRQ_Union_Tolerance
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Party_Legislation
+		}
+		prerequisite = {
+			focus = IRQ_Free_Press
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 12
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Union_Tolerance"
+			add_political_power = 25
+			add_popularity = { ideology = communist popularity = 0.03 }
+			custom_effect_tooltip = IRQ_pop_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = 10 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_IPC_Renegotiation
+		icon = GFX_IRQ_IPC_Renegotiation
+		cost = 35.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_German_Legacy
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 17
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_IPC_Renegotiation"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = IRQ_Kirkuk_Pipeline
+		icon = GFX_IRQ_Kirkuk_Pipeline
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_IPC_Renegotiation
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 16
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Kirkuk_Pipeline"
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+	focus = {
+		id = IRQ_Development_Board
+		icon = GFX_IRQ_Development_Board
+		cost = 35.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_IPC_Renegotiation
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 18
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Development_Board"
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_ideas = TNW_IRQ_development_board
+		}
+	}
+	focus = {
+		id = IRQ_Diyala_Dams
+		icon = GFX_IRQ_Diyala_Dams
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Kirkuk_Pipeline
+		}
+		prerequisite = {
+			focus = IRQ_Development_Board
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 17
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Diyala_Dams"
+			add_offsite_building = { type = industrial_complex level = 1 }
+			custom_effect_tooltip = IRQ_pop_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = 8 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Agri_Mechanization
+		icon = GFX_IRQ_Agri_Mechanization
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Development_Board
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 19
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Agri_Mechanization"
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 10 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+			custom_effect_tooltip = IRQ_pop_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = 5 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Denaturalization_Law
+		icon = GFX_IRQ_Denaturalization_Law
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_German_Legacy
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 21
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Denaturalization_Law"
+			add_political_power = 75
+			custom_effect_tooltip = IRQ_pop_fall_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = -5 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Schools_Expansion
+		icon = GFX_IRQ_Schools_Expansion
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Denaturalization_Law
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 22
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Schools_Expansion"
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Education_value value = 10 }
+			clamp_variable = { var = TNW_Education_value max = 100 min = 0 }
+			custom_effect_tooltip = IRQ_pop_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = 5 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Communists_Crackdown
+		icon = GFX_IRQ_Communists_Crackdown
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Denaturalization_Law
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 20
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Communists_Crackdown"
+			add_stability = 0.03
+			add_popularity = { ideology = communist popularity = -0.05 }
+			custom_effect_tooltip = IRQ_pop_fall_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = -8 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+			custom_effect_tooltip = IRQ_army_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_army_morale_var value = 5 }
+				clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+			}
+			country_event = { id = IRQ_event.5 days = 30 }
+		}
+	}
+	focus = {
+		id = IRQ_Palestine_Expedition
+		icon = GFX_IRQ_Palestine_Expedition
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_German_Legacy
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 25
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Palestine_Expedition"
+			add_war_support = 0.05
+			add_political_power = 50
+			country_event = { id = IRQ_event.4 days = 90 }
+		}
+	}
+	focus = {
+		id = IRQ_Army_Modernization
+		icon = GFX_IRQ_Army_Modernization
+		cost = 35.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Palestine_Expedition
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 24
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Army_Modernization"
+			army_experience = 25
+			custom_effect_tooltip = IRQ_army_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_army_morale_var value = 10 }
+				clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Officer_Academy
+		icon = GFX_IRQ_Officer_Academy
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Palestine_Expedition
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 26
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Officer_Academy"
+			army_experience = 15
+			custom_effect_tooltip = IRQ_army_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_army_morale_var value = 8 }
+				clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Barzan_Campaign
+		icon = GFX_IRQ_Barzan_Campaign
+		cost = 30.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Army_Modernization
+		}
+		prerequisite = {
+			focus = IRQ_Officer_Academy
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 25
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Barzan_Campaign"
+			add_stability = 0.02
+			custom_effect_tooltip = IRQ_army_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_army_morale_var value = 5 }
+				clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+			}
+			custom_effect_tooltip = IRQ_pop_fall_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = -5 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Royal_Guard
+		icon = GFX_IRQ_Royal_Guard
+		cost = 25.00
+		allow_branch = {
+			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+		}
+		prerequisite = {
+			focus = IRQ_Officer_Academy
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 27
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Royal_Guard"
+			add_stability = 0.05
+			custom_effect_tooltip = IRQ_army_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_army_morale_var value = 5 }
+				clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Qasim_Revolution
+		icon = GFX_IRQ_Qasim_Revolution
+		cost = 0.00
+		allow_branch = {
+			has_country_flag = IRQ_qasim_revolution_flag
+		}
+		x = 20
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Qasim_Revolution"
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = IRQ_Peoples_Tribunal
+		icon = GFX_IRQ_Peoples_Tribunal
+		cost = 30.00
+		allow_branch = {
+			has_country_flag = IRQ_qasim_revolution_flag
+		}
+		prerequisite = {
+			focus = IRQ_Qasim_Revolution
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 8
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Peoples_Tribunal"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = IRQ_Republican_Army
+		icon = GFX_IRQ_Republican_Army
+		cost = 30.00
+		allow_branch = {
+			has_country_flag = IRQ_qasim_revolution_flag
+		}
+		prerequisite = {
+			focus = IRQ_Qasim_Revolution
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 12
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Republican_Army"
+			army_experience = 20
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = IRQ_Oil_Sovereignty
+		icon = GFX_IRQ_Oil_Sovereignty
+		cost = 35.00
+		allow_branch = {
+			has_country_flag = IRQ_qasim_revolution_flag
+		}
+		prerequisite = {
+			focus = IRQ_Peoples_Tribunal
+		}
+		prerequisite = {
+			focus = IRQ_Republican_Army
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 10
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Oil_Sovereignty"
+			add_political_power = 100
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+	focus = {
+		id = IRQ_ASU_Founding
+		icon = GFX_IRQ_ASU_Founding
+		cost = 30.00
+		mutually_exclusive = {
+			focus = IRQ_Peoples_Democracy
+			focus = IRQ_Arif_Purge
+			focus = IRQ_Old_Elites_Return
+		}
+		prerequisite = {
+			focus = IRQ_Oil_Sovereignty
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 4
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_ASU_Founding"
+			add_political_power = 75
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = IRQ_Left_Unity
+		icon = GFX_IRQ_Left_Unity
+		cost = 30.00
+		prerequisite = {
+			focus = IRQ_ASU_Founding
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 3
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Left_Unity"
+			add_popularity = { ideology = socialism popularity = 0.10 }
+			custom_effect_tooltip = IRQ_pop_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_pop_morale_var value = 10 }
+				clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Workers_Militia
+		icon = GFX_IRQ_Workers_Militia
+		cost = 30.00
+		prerequisite = {
+			focus = IRQ_ASU_Founding
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 5
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Workers_Militia"
+			add_manpower = 10000
+			add_war_support = 0.03
+			custom_effect_tooltip = IRQ_army_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_army_morale_var value = 10 }
+				clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Internationalist_Course
+		icon = GFX_IRQ_Internationalist_Course
+		cost = 30.00
+		prerequisite = {
+			focus = IRQ_Left_Unity
+		}
+		prerequisite = {
+			focus = IRQ_Workers_Militia
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 4
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Internationalist_Course"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = IRQ_Peoples_Democracy
+		icon = GFX_IRQ_Peoples_Democracy
+		cost = 30.00
+		mutually_exclusive = {
+			focus = IRQ_ASU_Founding
+			focus = IRQ_Arif_Purge
+			focus = IRQ_Old_Elites_Return
+		}
+		prerequisite = {
+			focus = IRQ_Oil_Sovereignty
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 8
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Peoples_Democracy"
+			add_stability = 0.03
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = IRQ_Party_State
+		icon = GFX_IRQ_Party_State
+		cost = 30.00
+		prerequisite = {
+			focus = IRQ_Peoples_Democracy
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 8
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Party_State"
+			add_popularity = { ideology = communist popularity = 0.10 }
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = IRQ_Planned_Economy_Start
+		icon = GFX_IRQ_Planned_Economy_Start
+		cost = 35.00
+		prerequisite = {
+			focus = IRQ_Party_State
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 8
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Planned_Economy_Start"
+			add_offsite_building = { type = industrial_complex level = 1 }
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industry_value value = 10 }
+			clamp_variable = { var = TNW_Industry_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = IRQ_Arif_Purge
+		icon = GFX_IRQ_Arif_Purge
+		cost = 30.00
+		mutually_exclusive = {
+			focus = IRQ_ASU_Founding
+			focus = IRQ_Peoples_Democracy
+			focus = IRQ_Old_Elites_Return
+		}
+		prerequisite = {
+			focus = IRQ_Oil_Sovereignty
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 12
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Arif_Purge"
+			add_political_power = 75
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = IRQ_Army_First
+		icon = GFX_IRQ_Army_First
+		cost = 30.00
+		prerequisite = {
+			focus = IRQ_Arif_Purge
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 12
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Army_First"
+			army_experience = 25
+			custom_effect_tooltip = IRQ_army_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = IRQ_army_morale_var value = 15 }
+				clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_Neutral_Course
+		icon = GFX_IRQ_Neutral_Course
+		cost = 30.00
+		prerequisite = {
+			focus = IRQ_Army_First
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 12
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Neutral_Course"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = IRQ_Old_Elites_Return
+		icon = GFX_IRQ_Old_Elites_Return
+		cost = 30.00
+		mutually_exclusive = {
+			focus = IRQ_ASU_Founding
+			focus = IRQ_Peoples_Democracy
+			focus = IRQ_Arif_Purge
+		}
+		prerequisite = {
+			focus = IRQ_Oil_Sovereignty
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 16
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Old_Elites_Return"
+			add_political_power = 75
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = IRQ_Settle_Old_Treaties
+		icon = GFX_IRQ_Settle_Old_Treaties
+		cost = 30.00
+		prerequisite = {
+			focus = IRQ_Old_Elites_Return
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 16
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Settle_Old_Treaties"
+			add_war_support = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = IRQ_Moscow_Station
+		icon = GFX_IRQ_Moscow_Station
+		cost = 30.00
+		prerequisite = {
+			focus = IRQ_Settle_Old_Treaties
+		}
+		relative_position_id = IRQ_German_Legacy
+		x = 16
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed IRQ_Moscow_Station"
+			add_political_power = 100
+		}
+	}
+}

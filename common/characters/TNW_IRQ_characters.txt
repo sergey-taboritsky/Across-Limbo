@@ -1,0 +1,214 @@
+characters = {
+	#—— 王室与宫廷 ——
+	#加齐一世（伊拉克国王，哈希姆王朝）
+	IRQ_ghazi_i = {
+		name = IRQ_ghazi_i
+		country_leader = {
+			desc = IRQ_ghazi_i_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+		}
+	}
+	#阿卜杜勒·伊拉亲王（宫廷支柱）
+	IRQ_amir_al_illah = {
+		name = IRQ_amir_al_illah
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#—— 政客 ——
+	#努里·赛义德（资深首相，沃土新月计划的设计者）
+	IRQ_nuri_as_said = {
+		name = IRQ_nuri_as_said
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#贾米勒·米德法伊（温和派老政客）
+	IRQ_jamil_al_midfai = {
+		name = IRQ_jamil_al_midfai
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#哈姆迪·帕查奇（泛阿拉伯政客）
+	IRQ_hamdi_al_pachachi = {
+		name = IRQ_hamdi_al_pachachi
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#拉希德·阿里·盖拉尼（1941 年起义领袖，流亡归来）
+	IRQ_rashid_ali_algaylani = {
+		name = IRQ_rashid_ali_algaylani
+		country_leader = {
+			desc = IRQ_rashid_ali_algaylani_desc
+			ideology = Ultra_Nationalism
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#阿卜杜拉·伊本·阿里（王族元老）
+	IRQ_abdullah = {
+		name = IRQ_abdullah
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#阿里·本·侯赛因（王族旁支）
+	IRQ_ali_abn_hussein = {
+		name = IRQ_ali_abn_hussein
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#阿卜杜勒-马利克·伊本·希沙姆（独立派议员）
+	IRQ_abd_almalik_ibn_hisham = {
+		name = IRQ_abd_almalik_ibn_hisham
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#法赫米·赛义德（财政官员）
+	IRQ_fahmi_said = {
+		name = IRQ_fahmi_said
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#—— 军人 ——
+	#塔哈·艾哈迈尼（总参谋部元老）
+	IRQ_taha_al_ahmani = {
+		name = IRQ_taha_al_ahmani
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+	#贝克尔·西德基（1936 年政变的名将）
+	IRQ_bakr_sidqi = {
+		name = IRQ_bakr_sidqi
+		advisor = {
+			slot = army_chief
+			idea_cost = 100
+		}
+	}
+	#阿里·马哈茂德·谢赫（军团司令）
+	IRQ_ali_mahmud_al_shaykh = {
+		name = IRQ_ali_mahmud_al_shaykh
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+	#伊斯坎德尔·沙米（参谋军官）
+	IRQ_iskandar_al_shami = {
+		name = IRQ_iskandar_al_shami
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+	#阿卜杜拉·特尔（前线军官）
+	IRQ_abdullah_al_tell = {
+		name = IRQ_abdullah_al_tell
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+	#穆斯塔法·古德西（边防司令）
+	IRQ_mustafa_al_quidsi = {
+		name = IRQ_mustafa_al_quidsi
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+	#哈立德·达拉比（骑兵军官）
+	IRQ_khaled_al_dalabeeh = {
+		name = IRQ_khaled_al_dalabeeh
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+	#阿里·本·贾瓦德（军械官）
+	IRQ_ali_ben_jawad = {
+		name = IRQ_ali_ben_jawad
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+	#法齐·卡伍吉（客将，阿拉伯解放军旧总司令）
+	IRQ_fawsi_al_kaukji = {
+		name = IRQ_fawsi_al_kaukji
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+	#—— 自由军官与左翼 ——
+	#阿卜杜勒-卡里姆·卡塞姆（自由军官组织首领）
+	IRQ_abd_al_karim_qasim = {
+		name = IRQ_abd_al_karim_qasim
+		country_leader = {
+			desc = IRQ_abd_al_karim_qasim_desc
+			ideology = military_government
+			traits = {
+			}
+		}
+		country_leader = {
+			desc = IRQ_abd_al_karim_qasim_desc2
+			ideology = military_socialism
+			traits = {
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+	#阿卜杜勒·萨拉姆·阿里夫（泛阿拉伯激进军官）
+	IRQ_abd_al_salam_arif = {
+		name = IRQ_abd_al_salam_arif
+		country_leader = {
+			desc = IRQ_abd_al_salam_arif_desc
+			ideology = military_government
+			traits = {
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+	#优素福·萨尔曼·优素福（法赫德，共产党总书记）
+	IRQ_yusuf_salman_yusuf = {
+		name = IRQ_yusuf_salman_yusuf
+		country_leader = {
+			desc = IRQ_yusuf_salman_yusuf_desc
+			ideology = Marxism_Leninism
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+}

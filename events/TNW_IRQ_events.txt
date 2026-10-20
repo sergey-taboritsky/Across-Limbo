@@ -1,0 +1,226 @@
+add_namespace = IRQ_event
+add_namespace = IRQ_news
+
+# 1952.1.1 固定触发：卡塞姆革命（on_startup 定时；触发时判定军心/民心并设结局 flag）
+country_event = {
+	id = IRQ_event.1
+	title = IRQ_event.1.t
+	desc = IRQ_event.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		date > 1952.1.1
+		NOT = { has_country_flag = IRQ_qasim_revolution_flag }
+	}
+	immediate = {
+		hidden_effect = {
+			set_country_flag = IRQ_qasim_revolution_flag
+			if = {
+				limit = {
+					check_variable = { var = IRQ_army_morale_var value = 50 compare = greater_than_or_equals }
+					check_variable = { var = IRQ_pop_morale_var value = 50 compare = greater_than_or_equals }
+				}
+				set_country_flag = IRQ_outcome_asu_flag
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_army_morale_var value = 50 compare = less_than }
+					check_variable = { var = IRQ_pop_morale_var value = 50 compare = greater_than_or_equals }
+				}
+				set_country_flag = IRQ_outcome_communist_flag
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_army_morale_var value = 50 compare = greater_than_or_equals }
+					check_variable = { var = IRQ_pop_morale_var value = 50 compare = less_than }
+				}
+				set_country_flag = IRQ_outcome_arif_flag
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_army_morale_var value = 50 compare = less_than }
+					check_variable = { var = IRQ_pop_morale_var value = 50 compare = less_than }
+				}
+				set_country_flag = IRQ_outcome_ghailani_flag
+			}
+			complete_national_focus = IRQ_Qasim_Revolution
+			country_event = { id = IRQ_event.2 days = 3 }
+			every_country = {
+				limit = { is_ai = no }
+				news_event = IRQ_news.1
+			}
+		}
+	}
+	option = {
+		name = IRQ_event.1.a
+		promote_character = IRQ_abd_al_karim_qasim
+		set_politics = {
+			ruling_party = Absolutism
+			elections_allowed = no
+		}
+		retire_character = IRQ_ghazi_i
+		retire_character = IRQ_amir_al_illah
+		remove_ideas = {
+			TNW_IRQ_strong_ottoman_influence
+		}
+		add_stability = -0.05
+		add_war_support = 0.05
+	}
+}
+
+# 结局结算（四个 desc 按结局 flag 切换；效果同样四分派）
+country_event = {
+	id = IRQ_event.2
+	title = IRQ_event.2.t
+	desc = {
+		text = IRQ_event.2.d_asu
+		trigger = {
+			has_country_flag = IRQ_outcome_asu_flag
+		}
+	}
+	desc = {
+		text = IRQ_event.2.d_communist
+		trigger = {
+			has_country_flag = IRQ_outcome_communist_flag
+		}
+	}
+	desc = {
+		text = IRQ_event.2.d_arif
+		trigger = {
+			has_country_flag = IRQ_outcome_arif_flag
+		}
+	}
+	desc = {
+		text = IRQ_event.2.d_ghailani
+		trigger = {
+			has_country_flag = IRQ_outcome_ghailani_flag
+		}
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = IRQ_event.2.a
+		if = {
+			limit = { has_country_flag = IRQ_outcome_asu_flag }
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = no
+			}
+			promote_character = IRQ_abd_al_karim_qasim
+			add_ideas = phalanstere_aligned_nation
+			add_ideas = IRQ_arab_socialist_union
+			add_political_power = 100
+			add_stability = 0.05
+		}
+		if = {
+			limit = { has_country_flag = IRQ_outcome_communist_flag }
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
+			}
+			promote_character = IRQ_yusuf_salman_yusuf
+			add_ideas = phalanstere_aligned_nation
+			add_political_power = 75
+			add_stability = 0.03
+		}
+		if = {
+			limit = { has_country_flag = IRQ_outcome_arif_flag }
+			set_politics = {
+				ruling_party = Absolutism
+				elections_allowed = no
+			}
+			promote_character = IRQ_abd_al_salam_arif
+			retire_character = IRQ_abd_al_karim_qasim
+			army_experience = 25
+			add_political_power = 50
+		}
+		if = {
+			limit = { has_country_flag = IRQ_outcome_ghailani_flag }
+			set_politics = {
+				ruling_party = Nationalism
+				elections_allowed = no
+			}
+			promote_character = IRQ_rashid_ali_algaylani
+			retire_character = IRQ_abd_al_karim_qasim
+			add_ideas = moscow_aligned_nation
+			add_war_support = 0.05
+		}
+	}
+}
+
+# 1948 瓦特白起义（由 IRQ_German_Legacy 触发）
+country_event = {
+	id = IRQ_event.3
+	title = IRQ_event.3.t
+	desc = IRQ_event.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = IRQ_event.3.a
+		add_stability = 0.02
+		add_political_power = 25
+		add_popularity = { ideology = Authoritarianism popularity = 0.03 }
+		hidden_effect = {
+			add_to_variable = { var = IRQ_pop_morale_var value = -10 }
+			clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+			add_to_variable = { var = IRQ_army_morale_var value = 5 }
+			clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+		}
+	}
+	option = {
+		name = IRQ_event.3.b
+		add_political_power = -50
+		add_popularity = { ideology = Authoritarianism popularity = -0.03 }
+		hidden_effect = {
+			add_to_variable = { var = IRQ_pop_morale_var value = 10 }
+			clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+		}
+	}
+}
+
+# 巴勒斯坦远征受挫（由 IRQ_Palestine_Expedition 触发）
+country_event = {
+	id = IRQ_event.4
+	title = IRQ_event.4.t
+	desc = IRQ_event.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = IRQ_event.4.a
+		add_war_support = -0.02
+		hidden_effect = {
+			add_to_variable = { var = IRQ_army_morale_var value = -10 }
+			clamp_variable = { var = IRQ_army_morale_var max = 100 min = 0 }
+		}
+	}
+}
+
+# 镇压共产党、法赫德入狱（由 IRQ_Communists_Crackdown 触发）
+country_event = {
+	id = IRQ_event.5
+	title = IRQ_event.5.t
+	desc = IRQ_event.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = IRQ_event.5.a
+		add_political_power = 25
+		hidden_effect = {
+			add_to_variable = { var = IRQ_pop_morale_var value = -5 }
+			clamp_variable = { var = IRQ_pop_morale_var max = 100 min = 0 }
+		}
+	}
+}
+
+news_event = {
+	id = IRQ_news.1
+	title = IRQ_news.1.t
+	desc = IRQ_news.1.d
+	picture = GFX_news_event_generic_funeral
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = IRQ_news.1.a
+	}
+}

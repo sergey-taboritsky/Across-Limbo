@@ -77,7 +77,10 @@ country_event = {
 	desc = EGY_event.2.d
 	#picture = TTT_event1
 	fire_only_once = yes
-	is_triggered_only = yes
+		trigger = {
+		NOT = { has_country_flag = EGY_free_officers_revolution_flag }
+	}
+is_triggered_only = yes
 	option = {
 		name = EGY_event.2.a
 		add_political_power = 25
@@ -86,43 +89,6 @@ country_event = {
 	option = {
 		name = EGY_event.2.b
 		add_stability = -0.03
-	}
-}
-
-country_event = {
-	id = EGY_event.3
-	title = EGY_event.3.t
-	desc = EGY_event.3.d
-	#picture = TTT_event1
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = EGY_event.3.a
-		promote_character = EGY_Mohammed_Naguib
-		set_politics = {
-			ruling_party = Absolutism
-			elections_allowed = no
-		}
-		retire_character = EGY_Farouk_I
-		clr_country_flag = EGY_Hussein_Sirri_PM_flag
-		clr_country_flag = EGY_Mostafa_Nahas_PM_flag
-		clr_country_flag = has_second_leader_flag
-		remove_ideas = {
-			EGY_chained_constitution
-			EGY_world_falling_apart
-			EGY_army_irritation
-			EGY_worker_disdain
-			EGY_cairo_fire_aftermath
-		}
-		add_ideas = EGY_junta_government
-		hidden_effect = {
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				news_event = EGY_news.3
-			}
-		}
 	}
 }
 
@@ -266,6 +232,7 @@ country_event = {
 			EGY_nahas_government
 		}
 		add_ideas = EGY_junta_government
+		add_ideas = moscow_aligned_nation
 		set_country_flag = EGY_free_officers_revolution_flag
 		complete_national_focus = EGY_Officers_Revolution
 		hidden_effect = {
@@ -363,5 +330,74 @@ country_event = {
 		name = EGY_event.14.a
 		add_popularity = { ideology = socialism popularity = 0.02 }
 		add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = EGY_event.15
+	title = EGY_event.15.t
+	desc = EGY_event.15.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = EGY_free_officers_revolution_flag }
+	}
+	immediate = {
+		hidden_effect = {
+			set_country_flag = EGY_canal_raid_escalation_flag
+			country_event = { id = EGY_event.16 days = 110 }
+			every_country = {
+				limit = { is_ai = no }
+				news_event = EGY_news.2
+			}
+		}
+	}
+	option = {
+		name = EGY_event.15.a
+		add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = EGY_event.16
+	title = EGY_event.16.t
+	desc = EGY_event.16.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = EGY_free_officers_revolution_flag }
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = { id = EGY_event.17 days = 90 }
+		}
+	}
+	option = {
+		name = EGY_event.16.a
+		add_stability = -0.02
+		add_war_support = 0.02
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = EGY_event.17
+	title = EGY_event.17.t
+	desc = EGY_event.17.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = EGY_free_officers_revolution_flag }
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = { id = EGY_event.2 days = 100 }
+		}
+	}
+	option = {
+		name = EGY_event.17.a
+		army_experience = 10
+		add_political_power = 25
+		set_country_flag = EGY_free_officers_seed_flag
 	}
 }

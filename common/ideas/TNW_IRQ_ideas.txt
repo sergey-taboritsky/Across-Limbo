@@ -23,5 +23,28 @@ ideas = {
 				drift_defence_factor = -0.15
 			}
 		}
+		TNW_IRQ_development_board = {
+			allowed = {
+				original_tag = IRQ
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.02
+			}
+		}
+		IRQ_arab_socialist_union = {
+			allowed = {
+				original_tag = IRQ
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				socialism_drift = 0.02
+			}
+		}
 	}
 }
