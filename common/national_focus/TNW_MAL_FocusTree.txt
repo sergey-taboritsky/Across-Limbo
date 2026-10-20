@@ -1,0 +1,1000 @@
+focus_tree = {
+	id = MAL_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAL
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 1200
+	}
+	default = no
+
+	focus = {
+		id = MAL_Dual_Nationality
+		icon = GFX_MAL_Dual_Nationality
+		cost = 7.00
+		x = 9
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Dual_Nationality"
+			add_political_power = 25
+			add_stability = 0.02
+			add_popularity = {
+				ideology = Authoritarianism
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = MAL_New_Citizenship_Act
+		icon = GFX_MAL_New_Citizenship_Act
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Dual_Nationality
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_New_Citizenship_Act"
+			add_political_power = 25
+			add_stability = 0.02
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = Nationalism
+				popularity = -0.01
+			}
+		}
+	}
+	focus = {
+		id = MAL_Repatriate_Mechanics
+		icon = GFX_MAL_Repatriate_Mechanics
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Dual_Nationality
+		}
+		x = 13
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Repatriate_Mechanics"
+			add_political_power = -50
+			add_stability = 0.03
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Malay_Reserve_Reform
+		icon = GFX_MAL_Malay_Reserve_Reform
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_New_Citizenship_Act
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Malay_Reserve_Reform"
+			add_political_power = 10
+			add_stability = 0.01
+		}
+	}
+	focus = {
+		id = MAL_Abolish_Land_Privilege
+		icon = GFX_MAL_Abolish_Land_Privilege
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Malay_Reserve_Reform
+		}
+		mutually_exclusive = {
+			focus = MAL_Land_Redemption_Exchange
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Abolish_Land_Privilege"
+			add_stability = -0.05
+			add_popularity = {
+				ideology = Nationalism
+				popularity = 0.04
+			}
+			add_popularity = {
+				ideology = Conservatism
+				popularity = -0.02
+			}
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			TNW_level_development_agriculture_upgrade_effect = yes
+		}
+	}
+	focus = {
+		id = MAL_Land_Redemption_Exchange
+		icon = GFX_MAL_Land_Redemption_Exchange
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Malay_Reserve_Reform
+		}
+		mutually_exclusive = {
+			focus = MAL_Abolish_Land_Privilege
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Land_Redemption_Exchange"
+			add_political_power = -75
+			add_stability = 0.03
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			TNW_level_development_agriculture_upgrade_effect = yes
+		}
+	}
+	focus = {
+		id = MAL_Declare_Republic
+		icon = GFX_MAL_Declare_Republic
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Abolish_Land_Privilege
+		}
+		prerequisite = {
+			focus = MAL_Land_Redemption_Exchange
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Declare_Republic"
+			add_political_power = 50
+			add_stability = -0.02
+			add_popularity = {
+				ideology = Authoritarianism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = MAL_Sultan_Representation
+		icon = GFX_MAL_Sultan_Representation
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Declare_Republic
+		}
+		mutually_exclusive = {
+			focus = MAL_Purge_Malacca_Royals
+		}
+		x = 7
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Sultan_Representation"
+			add_stability = 0.03
+			add_popularity = {
+				ideology = Conservatism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = Nationalism
+				popularity = -0.02
+			}
+		}
+	}
+	focus = {
+		id = MAL_Purge_Malacca_Royals
+		icon = GFX_MAL_Purge_Malacca_Royals
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Declare_Republic
+		}
+		mutually_exclusive = {
+			focus = MAL_Sultan_Representation
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Purge_Malacca_Royals"
+			add_stability = -0.04
+			add_popularity = {
+				ideology = Nationalism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 10 }
+		}
+	}
+	focus = {
+		id = MAL_Plantation_Labor
+		icon = GFX_MAL_Plantation_Labor
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_New_Citizenship_Act
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Plantation_Labor"
+			add_political_power = 10
+			add_stability = 0.01
+		}
+	}
+	focus = {
+		id = MAL_Indian_Labor_Rights
+		icon = GFX_MAL_Indian_Labor_Rights
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Plantation_Labor
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Indian_Labor_Rights"
+			add_political_power = 25
+			add_stability = 0.02
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Compromise_KMT_Congress
+		icon = GFX_MAL_Compromise_KMT_Congress
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Indian_Labor_Rights
+		}
+		mutually_exclusive = {
+			focus = MAL_Handle_Veerasenan
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Compromise_KMT_Congress"
+			add_political_power = 25
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = MAL_Handle_Veerasenan
+		icon = GFX_MAL_Handle_Veerasenan
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Indian_Labor_Rights
+		}
+		mutually_exclusive = {
+			focus = MAL_Compromise_KMT_Congress
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Handle_Veerasenan"
+			add_political_power = -25
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = MAL_Chinese_Official_Language
+		icon = GFX_MAL_Chinese_Official_Language
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_New_Citizenship_Act
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Chinese_Official_Language"
+			add_popularity = {
+				ideology = Nationalism
+				popularity = 0.03
+			}
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Second_Language_Referendum
+		icon = GFX_MAL_Second_Language_Referendum
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Chinese_Official_Language
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Second_Language_Referendum"
+			add_stability = -0.02
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.03
+			}
+		}
+	}
+	focus = {
+		id = MAL_Chinese_School_Subsidy
+		icon = GFX_MAL_Chinese_School_Subsidy
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Second_Language_Referendum
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Chinese_School_Subsidy"
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 15 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 1 }
+		}
+	}
+	focus = {
+		id = MAL_Chinese_Secondary_System
+		icon = GFX_MAL_Chinese_Secondary_System
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Chinese_School_Subsidy
+		}
+		x = 0
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Chinese_Secondary_System"
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Tighten_Textbook_Review
+		icon = GFX_MAL_Tighten_Textbook_Review
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Chinese_School_Subsidy
+		}
+		mutually_exclusive = {
+			focus = MAL_Fund_English_Malay_Schools
+		}
+		x = 4
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Tighten_Textbook_Review"
+			add_political_power = 25
+			add_popularity = {
+				ideology = Authoritarianism
+				popularity = 0.02
+			}
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 8 }
+		}
+	}
+	focus = {
+		id = MAL_Fund_English_Malay_Schools
+		icon = GFX_MAL_Fund_English_Malay_Schools
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Chinese_School_Subsidy
+		}
+		mutually_exclusive = {
+			focus = MAL_Tighten_Textbook_Review
+		}
+		x = 2
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Fund_English_Malay_Schools"
+			add_stability = 0.02
+			custom_effect_tooltip = MAL_penang_unrest_fall_tt
+			add_to_variable = { var = TNW_penang_unrest value = -5 }
+		}
+	}
+	focus = {
+		id = MAL_Chinese_Reconciliation
+		icon = GFX_MAL_Chinese_Reconciliation
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Repatriate_Mechanics
+		}
+		mutually_exclusive = {
+			focus = MAL_Prosecute_Huaqiao_Assoc
+		}
+		x = 10
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Chinese_Reconciliation"
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = MAL_Prosecute_Huaqiao_Assoc
+		icon = GFX_MAL_Prosecute_Huaqiao_Assoc
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Repatriate_Mechanics
+		}
+		mutually_exclusive = {
+			focus = MAL_Chinese_Reconciliation
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Prosecute_Huaqiao_Assoc"
+			add_stability = -0.02
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = Authoritarianism
+				popularity = -0.02
+			}
+		}
+	}
+	focus = {
+		id = MAL_End_Rationing
+		icon = GFX_MAL_End_Rationing
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Repatriate_Mechanics
+		}
+		x = 15
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_End_Rationing"
+			add_stability = 0.02
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_War_Crimes_Trials
+		icon = GFX_MAL_War_Crimes_Trials
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Chinese_Reconciliation
+		}
+		prerequisite = {
+			focus = MAL_Prosecute_Huaqiao_Assoc
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_War_Crimes_Trials"
+			add_war_support = 0.03
+			add_stability = 0.02
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = MAL_Patriotic_Sanitation
+		icon = GFX_MAL_Patriotic_Sanitation
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_End_Rationing
+		}
+		x = 15
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Patriotic_Sanitation"
+			add_stability = 0.02
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Recognize_MinLao
+		icon = GFX_MAL_Recognize_MinLao
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_War_Crimes_Trials
+		}
+		prerequisite = {
+			focus = MAL_Patriotic_Sanitation
+		}
+		mutually_exclusive = {
+			focus = MAL_Nurture_New_Left
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Recognize_MinLao"
+			add_political_power = -25
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.04
+			}
+		}
+	}
+	focus = {
+		id = MAL_Nurture_New_Left
+		icon = GFX_MAL_Nurture_New_Left
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_War_Crimes_Trials
+		}
+		mutually_exclusive = {
+			focus = MAL_Recognize_MinLao
+		}
+		x = 14
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Nurture_New_Left"
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = MAL_PanMalaya_Federation
+		icon = GFX_MAL_PanMalaya_Federation
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Nurture_New_Left
+			focus = MAL_Recognize_MinLao
+		}
+		x = 13
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_PanMalaya_Federation"
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.03
+			}
+			add_stability = 0.02
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Mediate_Press_Dispute
+		icon = GFX_MAL_Mediate_Press_Dispute
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_PanMalaya_Federation
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Mediate_Press_Dispute"
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = MAL_Party_Press_Broadcast
+		icon = GFX_MAL_Party_Press_Broadcast
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Mediate_Press_Dispute
+		}
+		mutually_exclusive = {
+			focus = MAL_Nanyang_Daily_Competition
+		}
+		x = 10
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Party_Press_Broadcast"
+			add_political_power = 25
+			add_popularity = {
+				ideology = Authoritarianism
+				popularity = 0.03
+			}
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 5 }
+		}
+	}
+	focus = {
+		id = MAL_Nanyang_Daily_Competition
+		icon = GFX_MAL_Nanyang_Daily_Competition
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Mediate_Press_Dispute
+		}
+		mutually_exclusive = {
+			focus = MAL_Party_Press_Broadcast
+		}
+		x = 12
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Nanyang_Daily_Competition"
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.02
+			}
+			add_stability = 0.01
+			custom_effect_tooltip = MAL_penang_unrest_fall_tt
+			add_to_variable = { var = TNW_penang_unrest value = -5 }
+		}
+	}
+	focus = {
+		id = MAL_Migration_Labor_Control
+		icon = GFX_MAL_Migration_Labor_Control
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_PanMalaya_Federation
+		}
+		x = 13
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Migration_Labor_Control"
+			add_political_power = 25
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 5 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 5 }
+		}
+	}
+	focus = {
+		id = MAL_Secret_Society_Security
+		icon = GFX_MAL_Secret_Society_Security
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_PanMalaya_Federation
+		}
+		x = 15
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Secret_Society_Security"
+			add_political_power = 10
+			add_stability = 0.01
+		}
+	}
+	focus = {
+		id = MAL_Society_Forces_Public_Security
+		icon = GFX_MAL_Society_Forces_Public_Security
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Secret_Society_Security
+		}
+		mutually_exclusive = {
+			focus = MAL_Sweep_Gangs
+		}
+		x = 14
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Society_Forces_Public_Security"
+			add_political_power = -50
+			add_stability = 0.03
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			TNW_level_development_bureaucracy_upgrade_effect = yes
+		}
+	}
+	focus = {
+		id = MAL_Sweep_Gangs
+		icon = GFX_MAL_Sweep_Gangs
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Secret_Society_Security
+		}
+		mutually_exclusive = {
+			focus = MAL_Society_Forces_Public_Security
+		}
+		x = 16
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Sweep_Gangs"
+			add_stability = 0.02
+			add_war_support = 0.02
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 5 }
+		}
+	}
+	focus = {
+		id = MAL_Blood_Debt_Compensation
+		icon = GFX_MAL_Blood_Debt_Compensation
+		cost = 7.00
+		x = 21
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Blood_Debt_Compensation"
+			add_political_power = 50
+			add_stability = 0.02
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = MAL_Military_Scrip_Liquidation
+		icon = GFX_MAL_Military_Scrip_Liquidation
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Blood_Debt_Compensation
+		}
+		x = 19
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Military_Scrip_Liquidation"
+			add_political_power = 25
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Scrip_Victim_Compensation
+		icon = GFX_MAL_Scrip_Victim_Compensation
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Military_Scrip_Liquidation
+		}
+		x = 21
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Scrip_Victim_Compensation"
+			add_political_power = -75
+			add_stability = 0.03
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Colonial_Sin_Taxes
+		icon = GFX_MAL_Colonial_Sin_Taxes
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Military_Scrip_Liquidation
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Colonial_Sin_Taxes"
+			add_political_power = 50
+			add_stability = -0.01
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Banking_Coordination
+		icon = GFX_MAL_Banking_Coordination
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Military_Scrip_Liquidation
+		}
+		x = 19
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Banking_Coordination"
+			add_political_power = 25
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Central_Bank_Unification
+		icon = GFX_MAL_Central_Bank_Unification
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Banking_Coordination
+		}
+		x = 17
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Central_Bank_Unification"
+			add_political_power = 25
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 1 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			TNW_level_development_bureaucracy_upgrade_effect = yes
+		}
+	}
+	focus = {
+		id = MAL_Overseas_Remittance
+		icon = GFX_MAL_Overseas_Remittance
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Banking_Coordination
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Overseas_Remittance"
+			add_political_power = 25
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Underwrite_Nanjing_Bonds
+		icon = GFX_MAL_Underwrite_Nanjing_Bonds
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Overseas_Remittance
+		}
+		mutually_exclusive = {
+			focus = MAL_Donation_Ethics
+		}
+		x = 18
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Underwrite_Nanjing_Bonds"
+			add_political_power = 75
+			add_stability = -0.02
+			add_popularity = {
+				ideology = Conservatism
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = MAL_Donation_Ethics
+		icon = GFX_MAL_Donation_Ethics
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Overseas_Remittance
+		}
+		mutually_exclusive = {
+			focus = MAL_Underwrite_Nanjing_Bonds
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Donation_Ethics"
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = MAL_Rubber_Tin_Boom
+		icon = GFX_MAL_Rubber_Tin_Boom
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Blood_Debt_Compensation
+		}
+		x = 23
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Rubber_Tin_Boom"
+			add_political_power = 50
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Malacca_Chokepoint
+		icon = GFX_MAL_Malacca_Chokepoint
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Rubber_Tin_Boom
+		}
+		x = 23
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Malacca_Chokepoint"
+			add_political_power = 25
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = MAL_Free_Port_Status
+		icon = GFX_MAL_Free_Port_Status
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Malacca_Chokepoint
+		}
+		mutually_exclusive = {
+			focus = MAL_Fiscal_Autonomy
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Free_Port_Status"
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 15 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 1 }
+			custom_effect_tooltip = MAL_penang_unrest_fall_tt
+			add_to_variable = { var = TNW_penang_unrest value = -10 }
+		}
+	}
+	focus = {
+		id = MAL_Fiscal_Autonomy
+		icon = GFX_MAL_Fiscal_Autonomy
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Malacca_Chokepoint
+		}
+		mutually_exclusive = {
+			focus = MAL_Free_Port_Status
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Fiscal_Autonomy"
+			add_political_power = 75
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 5 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 15 }
+		}
+	}
+	focus = {
+		id = MAL_Transit_Trade_Nation
+		icon = GFX_MAL_Transit_Trade_Nation
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Free_Port_Status
+		}
+		prerequisite = {
+			focus = MAL_Fiscal_Autonomy
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Transit_Trade_Nation"
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 20 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 1 }
+		}
+	}
+	focus = {
+		id = MAL_Pioneer_Industries
+		icon = GFX_MAL_Pioneer_Industries
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Fiscal_Autonomy
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Pioneer_Industries"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 20 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 1 }
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 10 }
+		}
+	}
+	focus = {
+		id = MAL_Penang_Autonomy_Crisis
+		icon = GFX_MAL_Penang_Autonomy_Crisis
+		cost = 10.00
+		allow_branch = {
+			check_variable = {
+				var = TNW_penang_unrest
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Penang_Autonomy_Crisis"
+		}
+	}
+}

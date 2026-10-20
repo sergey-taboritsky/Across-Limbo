@@ -81,5 +81,7 @@ add_ideas = {
 	MAL_Three_Armies
 }
 
+set_variable = { var = TNW_penang_unrest value = 0 }
+
 set_country_flag = has_second_leader_flag
 set_country_flag = MAL_Chen_Chunan_flag
