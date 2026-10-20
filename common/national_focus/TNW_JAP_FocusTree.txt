@@ -1,2471 +1,2472 @@
-focus_tree = {
-	id = JAP_initial
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = JAP
-		}
-	}
-	continuous_focus_position = {
-		x = -200
-		y = 2500
-	}
-	default = no
-
-	focus = {
-		id = JAP_Ripples_of_Fourth_Fukushima
-		icon = GFX_JAP_Ripples_of_Fourth_Fukushima
-		cost = 10.00
-		x = 13
-		y = 0
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Ripples_of_Fourth_Fukushima"
-			country_event = { id = JAP_event.1 }
-		}
-	}
-	focus = {
-		id = JAP_End_Food_Crisis
-		icon = GFX_JAP_End_Food_Crisis
-		cost = 15.00
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = JAP_End_Food_Crisis_tt
-				has_country_flag = JAP_Food_Crisis_enden_flag
-			}
-		}
-		allow_branch = {
-			has_country_flag = JAP_bisson_age_began_flag
-		}
-		x = 7
-		y = 2
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_End_Food_Crisis"
-			remove_ideas = JAP_Food_Crisis_Strike_idea
-			add_stability = 0.05
-			add_political_power = 50
-			if = {
-				limit = {
-					check_variable = { TNW_Agriculture_monthly_value < 0 }
-				}
-				set_variable = { TNW_Agriculture_monthly_value = 0 }
+focus_tree = {
+	id = JAP_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	continuous_focus_position = {
+		x = -200
+		y = 2500
+	}
+	default = no
+
+	focus = {
+		id = JAP_Ripples_of_Fourth_Fukushima
+		icon = GFX_JAP_Ripples_of_Fourth_Fukushima
+		cost = 10.00
+		x = 13
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Ripples_of_Fourth_Fukushima"
+			country_event = { id = JAP_event.1 }
+		}
+	}
+	focus = {
+		id = JAP_End_Food_Crisis
+		icon = GFX_JAP_End_Food_Crisis
+		cost = 15.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = JAP_End_Food_Crisis_tt
+				has_country_flag = JAP_Food_Crisis_enden_flag
+			}
+		}
+		allow_branch = {
+			has_country_flag = JAP_bisson_age_began_flag
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_End_Food_Crisis"
+			remove_ideas = JAP_Food_Crisis_Strike_idea
+			add_stability = 0.05
+			add_political_power = 50
+			if = {
+				limit = {
+					check_variable = { TNW_Agriculture_monthly_value < 0 }
+				}
+				set_variable = { TNW_Agriculture_monthly_value = 0 }
 				custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
-				add_to_variable = { var = TNW_Agriculture_value value = 30 }
-				clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
-			}
-		}
-	}
-	focus = {
-		id = JAP_General_Congress_Conference
-		icon = GFX_JAP_General_Congress_Conference
-		cost = 20.00
-		x = 18
-		y = 2
-		allow_branch = {
-			has_country_flag = JAP_bisson_age_began_flag
-		}
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_General_Congress_Conference"
-			add_political_power = 50
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
+				add_to_variable = { var = TNW_Agriculture_value value = 30 }
+				clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = JAP_General_Congress_Conference
+		icon = GFX_JAP_General_Congress_Conference
+		cost = 20.00
+		x = 18
+		y = 2
+		allow_branch = {
+			has_country_flag = JAP_bisson_age_began_flag
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_General_Congress_Conference"
+			add_political_power = 50
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-			# 产别大会：产别（GTU）扩张，从总同盟（GenUn）转 5 席
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			# 产别大会：产别（GTU）扩张，从总同盟（GenUn）转 5 席
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
-			add_to_variable = { var = JAP_GenUn value = -5 }
-			add_to_variable = { var = JAP_GTU value = 5 }
-			clamp_variable = { var = JAP_GenUn min = 0 }
-			clamp_variable = { var = JAP_GTU min = 0 }
-			JAP_reload_trade_union_congress_gui = yes
-		}
-	}
-	focus = {
-		id = JAP_Worker_Alliance_Congress
-		icon = GFX_JAP_Worker_Alliance_Congress
-		cost = 20.00
-		x = 21
-		y = 2
-		allow_branch = {
-			has_country_flag = JAP_bisson_age_began_flag
-		}
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Worker_Alliance_Congress"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
-			# 总同盟大会：总同盟反击，从产别转 5 席
+			add_to_variable = { var = JAP_GenUn value = -5 }
+			add_to_variable = { var = JAP_GTU value = 5 }
+			clamp_variable = { var = JAP_GenUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
+		}
+	}
+	focus = {
+		id = JAP_Worker_Alliance_Congress
+		icon = GFX_JAP_Worker_Alliance_Congress
+		cost = 20.00
+		x = 21
+		y = 2
+		allow_branch = {
+			has_country_flag = JAP_bisson_age_began_flag
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Worker_Alliance_Congress"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+			# 总同盟大会：总同盟反击，从产别转 5 席
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
-			add_to_variable = { var = JAP_GTU value = -5 }
-			add_to_variable = { var = JAP_GenUn value = 5 }
-			clamp_variable = { var = JAP_GTU min = 0 }
-			clamp_variable = { var = JAP_GenUn min = 0 }
-			JAP_reload_trade_union_congress_gui = yes
-		}
-	}
-	focus = {
-		id = JAP_Three_and_Six_Acres
-		icon = GFX_JAP_Three_and_Six_Acres
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_End_Food_Crisis
-		}
-		mutually_exclusive = {
-			focus = JAP_Land_Reform_Refund_Voucher
-		}
-		x = 6
-		y = 3
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Three_and_Six_Acres"
-			add_political_power = 50
-			add_stability = 0.05
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.08
-			}
-			# 激进土改：先痛后甜
-			add_timed_idea = { idea = JAP_land_pain days = 180 }
-			add_ideas = JAP_land_reform_radical
-			set_country_flag = JAP_radical_land_reform_flag
-			# 农村地主票流失
+			add_to_variable = { var = JAP_GTU value = -5 }
+			add_to_variable = { var = JAP_GenUn value = 5 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			clamp_variable = { var = JAP_GenUn min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
+		}
+	}
+	focus = {
+		id = JAP_Three_and_Six_Acres
+		icon = GFX_JAP_Three_and_Six_Acres
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_End_Food_Crisis
+		}
+		mutually_exclusive = {
+			focus = JAP_Land_Reform_Refund_Voucher
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Three_and_Six_Acres"
+			add_political_power = 50
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.08
+			}
+			# 激进土改：先痛后甜
+			add_timed_idea = { idea = JAP_land_pain days = 180 }
+			add_ideas = JAP_land_reform_radical
+			set_country_flag = JAP_radical_land_reform_flag
+			# 农村地主票流失
 			custom_effect_tooltip = JAP_diet_seat_shift_tt
-			add_to_variable = { var = JAP_Nonpartisan value = -3 }
-			add_to_variable = { var = JAP_Vacant value = 3 }
-			clamp_variable = { var = JAP_Nonpartisan min = 0 }
-			clamp_variable = { var = JAP_Vacant min = 0 }
-			JAP_reload_worker_diet_gui = yes
-			# 农业等级恢复
+			add_to_variable = { var = JAP_Nonpartisan value = -3 }
+			add_to_variable = { var = JAP_Vacant value = 3 }
+			clamp_variable = { var = JAP_Nonpartisan min = 0 }
+			clamp_variable = { var = JAP_Vacant min = 0 }
+			JAP_reload_worker_diet_gui = yes
+			# 农业等级恢复
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
-			add_to_variable = { var = TNW_Agriculture_monthly_value value = 10 }
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 10 }
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
-			add_to_variable = { var = TNW_Agriculture_value value = 40 }
-			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_Land_Reform_Refund_Voucher
-		icon = GFX_JAP_Land_Reform_Refund_Voucher
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_End_Food_Crisis
-		}
-		mutually_exclusive = {
-			focus = JAP_Three_and_Six_Acres
-		}
-		x = 8
-		y = 3
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Land_Reform_Refund_Voucher"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			# 赎买要真金白银
+			add_to_variable = { var = TNW_Agriculture_value value = 40 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_Land_Reform_Refund_Voucher
+		icon = GFX_JAP_Land_Reform_Refund_Voucher
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_End_Food_Crisis
+		}
+		mutually_exclusive = {
+			focus = JAP_Three_and_Six_Acres
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Land_Reform_Refund_Voucher"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			# 赎买要真金白银
 			custom_effect_tooltip = JAP_capital_reserves_fall_tt
-			add_to_variable = { var = capital_reserves value = -15 }
-			add_ideas = JAP_land_reform_compensated
-			set_country_flag = JAP_moderate_land_reform_flag
+			add_to_variable = { var = capital_reserves value = -15 }
+			add_ideas = JAP_land_reform_compensated
+			set_country_flag = JAP_moderate_land_reform_flag
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
-			add_to_variable = { var = TNW_Agriculture_monthly_value value = 10 }
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 10 }
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
-			add_to_variable = { var = TNW_Agriculture_value value = 30 }
-			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_Evaluate_Planting_Season
-		icon = GFX_JAP_Evaluate_Planting_Season
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_Three_and_Six_Acres
-			focus = JAP_Land_Reform_Refund_Voucher
-		}
-		x = 7
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Evaluate_Planting_Season"
-			add_political_power = 25
-			add_stability = 0.02
+			add_to_variable = { var = TNW_Agriculture_value value = 30 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_Evaluate_Planting_Season
+		icon = GFX_JAP_Evaluate_Planting_Season
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_Three_and_Six_Acres
+			focus = JAP_Land_Reform_Refund_Voucher
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Evaluate_Planting_Season"
+			add_political_power = 25
+			add_stability = 0.02
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-			add_ideas = JAP_replanting_review
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			add_ideas = JAP_replanting_review
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
-			add_to_variable = { var = TNW_Agriculture_value value = 30 }
-			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_Agriculture_Central_Bank
-		icon = GFX_JAP_Agriculture_Central_Bank
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_Evaluate_Planting_Season
-		}
-		x = 6
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Agriculture_Central_Bank"
-			add_political_power = 25
-			add_stability = 0.02
+			add_to_variable = { var = TNW_Agriculture_value value = 30 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_Agriculture_Central_Bank
+		icon = GFX_JAP_Agriculture_Central_Bank
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_Evaluate_Planting_Season
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Agriculture_Central_Bank"
+			add_political_power = 25
+			add_stability = 0.02
 			custom_effect_tooltip = JAP_capital_reserves_gain_tt
-			add_to_variable = { var = capital_reserves value = 10 }
-			add_ideas = JAP_agricultural_bank
+			add_to_variable = { var = capital_reserves value = 10 }
+			add_ideas = JAP_agricultural_bank
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
-			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
-		}
-	}
-	focus = {
-		id = JAP_Ceasefire_in_Japan
-		icon = GFX_JAP_Ceasefire_in_Japan
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_Ripples_of_Fourth_Fukushima
-		}
-		x = 12
-		y = 1
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Ceasefire_in_Japan"
-			country_event = { id = JAP_event.2 }
-			add_war_support = -0.05
-			add_stability = 0.03
-		}
-	}
-	focus = {
-		id = JAP_Far_East_Council
-		icon = GFX_JAP_Far_East_Council
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_Ripples_of_Fourth_Fukushima
-		}
-		x = 14
-		y = 1
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Far_East_Council"
-			country_event = { id = JAP_event.3 }
-		}
-	}
-	focus = {
-		id = JAP_Constitutional_Creation_Committee
-		icon = GFX_JAP_Constitutional_Creation_Committee
-		cost = 20.00
-		prerequisite = {
-			focus = JAP_Ceasefire_in_Japan
-		}
-		prerequisite = {
-			focus = JAP_Far_East_Council
-		}
-		allow_branch = {
-			has_country_flag = JAP_bisson_age_began_flag
-		}
-		x = 13
-		y = 2
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Constitutional_Creation_Committee"
-			add_political_power = 50
-			add_stability = 0.03
-			# 制宪扯皮期
-			add_timed_idea = { idea = JAP_constitution_drafting days = 180 }
-		}
-	}
-	focus = {
-		id = JAP_War_Crimes_Special_Court
-		icon = GFX_JAP_War_Crimes_Special_Court
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_Constitutional_Creation_Committee
-		}
-		x = 10
-		y = 3
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_War_Crimes_Special_Court"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			# 审判期社会撕裂
-			add_timed_idea = { idea = JAP_war_crimes_court days = 120 }
-		}
-	}
-	focus = {
-		id = JAP_Sue_Wartime_Murderers
-		icon = GFX_JAP_Sue_Wartime_Murderers
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_War_Crimes_Special_Court
-		}
-		x = 9
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Sue_Wartime_Murderers"
-			add_political_power = 75
-			add_stability = 0.05
-			add_popularity = {
-				ideology = communist
-				popularity = 0.05
-			}
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
+		}
+	}
+	focus = {
+		id = JAP_Ceasefire_in_Japan
+		icon = GFX_JAP_Ceasefire_in_Japan
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_Ripples_of_Fourth_Fukushima
+		}
+		x = 12
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Ceasefire_in_Japan"
+			country_event = { id = JAP_event.2 }
+			add_war_support = -0.05
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = JAP_Far_East_Council
+		icon = GFX_JAP_Far_East_Council
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_Ripples_of_Fourth_Fukushima
+		}
+		x = 14
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Far_East_Council"
+			country_event = { id = JAP_event.3 }
+		}
+	}
+	focus = {
+		id = JAP_Constitutional_Creation_Committee
+		icon = GFX_JAP_Constitutional_Creation_Committee
+		cost = 20.00
+		prerequisite = {
+			focus = JAP_Ceasefire_in_Japan
+		}
+		prerequisite = {
+			focus = JAP_Far_East_Council
+		}
+		allow_branch = {
+			has_country_flag = JAP_bisson_age_began_flag
+		}
+		x = 13
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Constitutional_Creation_Committee"
+			add_political_power = 50
+			add_stability = 0.03
+			# 制宪扯皮期
+			add_timed_idea = { idea = JAP_constitution_drafting days = 180 }
+		}
+	}
+	focus = {
+		id = JAP_War_Crimes_Special_Court
+		icon = GFX_JAP_War_Crimes_Special_Court
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_Constitutional_Creation_Committee
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_War_Crimes_Special_Court"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			# 审判期社会撕裂
+			add_timed_idea = { idea = JAP_war_crimes_court days = 120 }
+		}
+	}
+	focus = {
+		id = JAP_Sue_Wartime_Murderers
+		icon = GFX_JAP_Sue_Wartime_Murderers
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_War_Crimes_Special_Court
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Sue_Wartime_Murderers"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-			# 历史清算完成的和解红利
-			add_timed_idea = { idea = JAP_historical_settlement days = 90 }
-		}
-	}
-	focus = {
-		id = JAP_Clearup_Wartime_Rubble
-		icon = GFX_JAP_Clearup_Wartime_Rubble
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_Evaluate_Planting_Season
-		}
-		prerequisite = {
-			focus = JAP_Sue_Wartime_Murderers
-		}
-		x = 8
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Clearup_Wartime_Rubble"
-			add_political_power = 50
-			add_stability = 0.03
-			add_timed_idea = { idea = JAP_reconstruction_fervor days = 180 }
-			# 关东重建
-			random_owned_state = {
-				limit = { state = 282 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = JAP_Agricoop_Formation_Law
-		icon = GFX_JAP_Agricoop_Formation_Law
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_Agriculture_Central_Bank
-		}
-		prerequisite = {
-			focus = JAP_Clearup_Wartime_Rubble
-		}
-		x = 7
-		y = 6
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Agricoop_Formation_Law"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			add_ideas = JAP_agricoop_law
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			# 历史清算完成的和解红利
+			add_timed_idea = { idea = JAP_historical_settlement days = 90 }
+		}
+	}
+	focus = {
+		id = JAP_Clearup_Wartime_Rubble
+		icon = GFX_JAP_Clearup_Wartime_Rubble
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_Evaluate_Planting_Season
+		}
+		prerequisite = {
+			focus = JAP_Sue_Wartime_Murderers
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Clearup_Wartime_Rubble"
+			add_political_power = 50
+			add_stability = 0.03
+			add_timed_idea = { idea = JAP_reconstruction_fervor days = 180 }
+			# 关东重建
+			random_owned_state = {
+				limit = { state = 282 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = JAP_Agricoop_Formation_Law
+		icon = GFX_JAP_Agricoop_Formation_Law
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_Agriculture_Central_Bank
+		}
+		prerequisite = {
+			focus = JAP_Clearup_Wartime_Rubble
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Agricoop_Formation_Law"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			add_ideas = JAP_agricoop_law
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
-			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_Women_in_Workforce
-		icon = GFX_JAP_Women_in_Workforce
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_Constitutional_Creation_Committee
-		}
-		x = 12
-		y = 3
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Women_in_Workforce"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			add_ideas = JAP_women_suffrage
-			# 性别平等票仓
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_Women_in_Workforce
+		icon = GFX_JAP_Women_in_Workforce
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_Constitutional_Creation_Committee
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Women_in_Workforce"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			add_ideas = JAP_women_suffrage
+			# 性别平等票仓
 			custom_effect_tooltip = JAP_diet_seat_shift_tt
-			add_to_variable = { var = JAP_Vacant value = -2 }
-			add_to_variable = { var = JAP_JSP value = 2 }
-			clamp_variable = { var = JAP_Vacant min = 0 }
-			clamp_variable = { var = JAP_JSP min = 0 }
-			JAP_reload_worker_diet_gui = yes
+			add_to_variable = { var = JAP_Vacant value = -2 }
+			add_to_variable = { var = JAP_JSP value = 2 }
+			clamp_variable = { var = JAP_Vacant min = 0 }
+			clamp_variable = { var = JAP_JSP min = 0 }
+			JAP_reload_worker_diet_gui = yes
 			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
-			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 3 }
-		}
-	}
-	focus = {
-		id = JAP_Electronics_Labor_Law
-		icon = GFX_JAP_Electronics_Labor_Law
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_Constitutional_Creation_Committee
-		}
-		prerequisite = {
-			focus = JAP_General_Congress_Conference
-		}
-		x = 14
-		y = 3
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Electronics_Labor_Law"
-			add_political_power = 50
-			add_stability = 0.05
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
-			add_ideas = JAP_electronics_labor_law
-			# 电产=产别王票
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 3 }
+		}
+	}
+	focus = {
+		id = JAP_Electronics_Labor_Law
+		icon = GFX_JAP_Electronics_Labor_Law
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_Constitutional_Creation_Committee
+		}
+		prerequisite = {
+			focus = JAP_General_Congress_Conference
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Electronics_Labor_Law"
+			add_political_power = 50
+			add_stability = 0.05
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+			add_ideas = JAP_electronics_labor_law
+			# 电产=产别王票
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
-			add_to_variable = { var = JAP_GenUn value = -4 }
-			add_to_variable = { var = JAP_GTU value = 4 }
-			clamp_variable = { var = JAP_GenUn min = 0 }
-			clamp_variable = { var = JAP_GTU min = 0 }
-			JAP_reload_trade_union_congress_gui = yes
-		}
-	}
-	focus = {
-		id = JAP_Pullback_Opressive_Policies
-		icon = GFX_JAP_Pullback_Opressive_Policies
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_War_Crimes_Special_Court
-		}
-		prerequisite = {
-			focus = JAP_Women_in_Workforce
-		}
-		prerequisite = {
-			focus = JAP_Electronics_Labor_Law
-		}
-		x = 11
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Pullback_Opressive_Policies"
-			add_political_power = 50
-			add_stability = 0.05
-			add_ideas = JAP_public_security_repeal
+			add_to_variable = { var = JAP_GenUn value = -4 }
+			add_to_variable = { var = JAP_GTU value = 4 }
+			clamp_variable = { var = JAP_GenUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
+		}
+	}
+	focus = {
+		id = JAP_Pullback_Opressive_Policies
+		icon = GFX_JAP_Pullback_Opressive_Policies
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_War_Crimes_Special_Court
+		}
+		prerequisite = {
+			focus = JAP_Women_in_Workforce
+		}
+		prerequisite = {
+			focus = JAP_Electronics_Labor_Law
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Pullback_Opressive_Policies"
+			add_political_power = 50
+			add_stability = 0.05
+			add_ideas = JAP_public_security_repeal
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 4 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_Socialist_Education_Law
-		icon = GFX_JAP_Socialist_Education_Law
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_Electronics_Labor_Law
-		}
-		x = 15
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Socialist_Education_Law"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.03
-			}
-			# 教育等级：识字率条接入
-			add_ideas = JAP_socialist_education
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 4 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_Socialist_Education_Law
+		icon = GFX_JAP_Socialist_Education_Law
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_Electronics_Labor_Law
+		}
+		x = 15
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Socialist_Education_Law"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+			# 教育等级：识字率条接入
+			add_ideas = JAP_socialist_education
 			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
-			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 5 }
-		}
-	}
-	focus = {
-		id = JAP_Peoples_Republic_Constitution
-		icon = GFX_JAP_Peoples_Republic_Constitution
-		cost = 35.00
-		prerequisite = {
-			focus = JAP_Pullback_Opressive_Policies
-		}
-		prerequisite = {
-			focus = JAP_Socialist_Education_Law
-		}
-		select_effect = {
-			hidden_effect = {
-				country_event = { id = JAP_event.4 days = 1 }
-			}
-		}
-		x = 13
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Peoples_Republic_Constitution"
-			add_political_power = 100
-			add_stability = 0.05
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			# 正式定名 + 开放选举
-			set_cosmetic_tag = JAP_peoples_republic
-			set_politics = {
-				ruling_party = Authoritarianism
-				last_election = "1936.1.1"
-				election_frequency = 48
-				elections_allowed = yes
-			}
-			# 立宪后政治参与扩大：热情度上限 +10
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 5 }
+		}
+	}
+	focus = {
+		id = JAP_Peoples_Republic_Constitution
+		icon = GFX_JAP_Peoples_Republic_Constitution
+		cost = 35.00
+		prerequisite = {
+			focus = JAP_Pullback_Opressive_Policies
+		}
+		prerequisite = {
+			focus = JAP_Socialist_Education_Law
+		}
+		cancellable = no
+		select_effect = {
+			hidden_effect = {
+				country_event = { id = JAP_event.4 days = 1 }
+			}
+		}
+		x = 13
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Peoples_Republic_Constitution"
+			add_political_power = 100
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			# 正式定名 + 开放选举
+			set_cosmetic_tag = JAP_peoples_republic
+			set_politics = {
+				ruling_party = Authoritarianism
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			# 立宪后政治参与扩大：热情度上限 +10
 			custom_effect_tooltip = JAP_enthusiasm_cap_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_cap_var value = 10 }
-		}
-	}
-	focus = {
-		id = JAP_Reward_Progressive_Unions
-		icon = GFX_JAP_Reward_Progressive_Unions
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_General_Congress_Conference
-		}
-		x = 17
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Reward_Progressive_Unions"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
-			add_ideas = JAP_labor_management_coop
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_cap_var value = 10 }
+		}
+	}
+	focus = {
+		id = JAP_Reward_Progressive_Unions
+		icon = GFX_JAP_Reward_Progressive_Unions
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_General_Congress_Conference
+		}
+		x = 17
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Reward_Progressive_Unions"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+			add_ideas = JAP_labor_management_coop
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_Promote_Union_Autonomy
-		icon = GFX_JAP_Promote_Union_Autonomy
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_General_Congress_Conference
-		}
-		mutually_exclusive = {
-			focus = JAP_Promote_Production_Democracy
-		}
-		x = 19
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Promote_Union_Autonomy"
-			add_political_power = 50
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
-			add_ideas = JAP_union_autonomy
-			set_country_flag = JAP_union_autonomy_route_flag
-		}
-	}
-	focus = {
-		id = JAP_Promote_Production_Democracy
-		icon = GFX_JAP_Promote_Production_Democracy
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_Worker_Alliance_Congress
-		}
-		mutually_exclusive = {
-			focus = JAP_Promote_Union_Autonomy
-		}
-		x = 21
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Promote_Production_Democracy"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			add_ideas = JAP_production_democracy
-			set_country_flag = JAP_production_democracy_route_flag
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_Promote_Union_Autonomy
+		icon = GFX_JAP_Promote_Union_Autonomy
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_General_Congress_Conference
+		}
+		mutually_exclusive = {
+			focus = JAP_Promote_Production_Democracy
+		}
+		x = 19
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Promote_Union_Autonomy"
+			add_political_power = 50
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+			add_ideas = JAP_union_autonomy
+			set_country_flag = JAP_union_autonomy_route_flag
+		}
+	}
+	focus = {
+		id = JAP_Promote_Production_Democracy
+		icon = GFX_JAP_Promote_Production_Democracy
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_Worker_Alliance_Congress
+		}
+		mutually_exclusive = {
+			focus = JAP_Promote_Union_Autonomy
+		}
+		x = 21
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Promote_Production_Democracy"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			add_ideas = JAP_production_democracy
+			set_country_flag = JAP_production_democracy_route_flag
 			custom_effect_tooltip = JAP_production_ratio_rise_tt
-			add_to_variable = { var = JAP_production_management_ratio_var value = 5 }
-			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_AJTFU_Formation
-		icon = GFX_JAP_AJTFU_Formation
-		cost = 20.00
-		prerequisite = {
-			focus = JAP_Promote_Union_Autonomy
-			focus = JAP_Promote_Production_Democracy
-		}
-		prerequisite = {
-			focus = JAP_Reward_Progressive_Unions
-		}
-		prerequisite = {
-			focus = JAP_Socialist_Education_Law
-		}
-		x = 18
-		y = 6
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_AJTFU_Formation"
-			add_political_power = 75
-			add_stability = 0.05
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.08
-			}
-			add_ideas = JAP_ajtfu
+			add_to_variable = { var = JAP_production_management_ratio_var value = 5 }
+			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_AJTFU_Formation
+		icon = GFX_JAP_AJTFU_Formation
+		cost = 20.00
+		prerequisite = {
+			focus = JAP_Promote_Union_Autonomy
+			focus = JAP_Promote_Production_Democracy
+		}
+		prerequisite = {
+			focus = JAP_Reward_Progressive_Unions
+		}
+		prerequisite = {
+			focus = JAP_Socialist_Education_Law
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_AJTFU_Formation"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.08
+			}
+			add_ideas = JAP_ajtfu
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-			# 席位整合：总同盟与独立单产并入全国劳连会（GTU）
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			# 席位整合：总同盟与独立单产并入全国劳连会（GTU）
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
-			add_to_variable = { var = JAP_GenUn value = -25 }
-			add_to_variable = { var = JAP_GTU value = 25 }
-			clamp_variable = { var = JAP_GenUn min = 0 }
-			clamp_variable = { var = JAP_GTU min = 0 }
-			JAP_reload_trade_union_congress_gui = yes
+			add_to_variable = { var = JAP_GenUn value = -25 }
+			add_to_variable = { var = JAP_GTU value = 25 }
+			clamp_variable = { var = JAP_GenUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
-			add_to_variable = { var = JAP_IndUn value = -3 }
-			add_to_variable = { var = JAP_GTU value = 3 }
-			clamp_variable = { var = JAP_IndUn min = 0 }
-			clamp_variable = { var = JAP_GTU min = 0 }
-			JAP_reload_trade_union_congress_gui = yes
-		}
-	}
-	focus = {
-		id = JAP_Political_Unions_Congress
-		icon = GFX_JAP_Political_Unions_Congress
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_Promote_Union_Autonomy
-			focus = JAP_Promote_Production_Democracy
-		}
-		x = 20
-		y = 6
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Political_Unions_Congress"
-			add_political_power = 50
-			add_stability = 0.03
+			add_to_variable = { var = JAP_IndUn value = -3 }
+			add_to_variable = { var = JAP_GTU value = 3 }
+			clamp_variable = { var = JAP_IndUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
+		}
+	}
+	focus = {
+		id = JAP_Political_Unions_Congress
+		icon = GFX_JAP_Political_Unions_Congress
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_Promote_Union_Autonomy
+			focus = JAP_Promote_Production_Democracy
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Political_Unions_Congress"
+			add_political_power = 50
+			add_stability = 0.03
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-			set_country_flag = JAP_ruling_coalition_flag
-			# 民同入共斗
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			set_country_flag = JAP_ruling_coalition_flag
+			# 民同入共斗
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
-			add_to_variable = { var = JAP_GTU value = -2 }
-			add_to_variable = { var = JAP_DemLeg value = 2 }
-			clamp_variable = { var = JAP_GTU min = 0 }
-			clamp_variable = { var = JAP_DemLeg min = 0 }
-			JAP_reload_trade_union_congress_gui = yes
-		}
-	}
-	focus = {
-		id = JAP_Northsea_Squadron
-		icon = GFX_JAP_Northsea_Squadron
-		cost = 10.00
-		prerequisite = {
-			focus = JAP_Pullback_Opressive_Policies
-		}
-		x = 11
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Northsea_Squadron"
-			add_political_power = 25
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.03
-			}
-			navy_experience = 15
-			set_country_flag = JAP_north_issue_flag
-			random_owned_state = {
-				limit = { state = 532 }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-		}
-	}
-	focus = {
-		id = JAP_Socialist_Reform_Program
-		icon = GFX_JAP_Socialist_Reform_Program
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_Peoples_Republic_Constitution
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = JAP_Socialist_Reform_Program_avail_tt
-				check_variable = { var = JAP_socialist_reform_enthusiasm_var value = 30 compare = greater_than_or_equals }
-			}
-		}
-		x = 13
-		y = 6
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Socialist_Reform_Program"
-			add_political_power = 100
-			add_stability = 0.05
+			add_to_variable = { var = JAP_GTU value = -2 }
+			add_to_variable = { var = JAP_DemLeg value = 2 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			clamp_variable = { var = JAP_DemLeg min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
+		}
+	}
+	focus = {
+		id = JAP_Northsea_Squadron
+		icon = GFX_JAP_Northsea_Squadron
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Pullback_Opressive_Policies
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Northsea_Squadron"
+			add_political_power = 25
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+			navy_experience = 15
+			set_country_flag = JAP_north_issue_flag
+			random_owned_state = {
+				limit = { state = 532 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = JAP_Socialist_Reform_Program
+		icon = GFX_JAP_Socialist_Reform_Program
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_Peoples_Republic_Constitution
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = JAP_Socialist_Reform_Program_avail_tt
+				check_variable = { var = JAP_socialist_reform_enthusiasm_var value = 30 compare = greater_than_or_equals }
+			}
+		}
+		x = 13
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Socialist_Reform_Program"
+			add_political_power = 100
+			add_stability = 0.05
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_Elect_First_President
-		icon = GFX_JAP_Elect_First_President
-		cost = 45.00
-		prerequisite = {
-			focus = JAP_Socialist_Reform_Program
-		}
-		prerequisite = {
-			focus = JAP_AJTFU_Formation
-		}
-		x = 13
-		y = 7
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Elect_First_President"
-			add_political_power = 75
-			add_stability = 0.05
-		}
-	}
-
-	# ================= 左线：接纳社会革命一段论 =================
-	focus = {
-		id = JAP_Accept_Social_Revolution_Linearity
-		icon = GFX_JAP_Accept_Social_Revolution_Linearity
-		cost = 20.00
-		prerequisite = {
-			focus = JAP_Elect_First_President
-		}
-		mutually_exclusive = {
-			focus = JAP_american_absolute_government
-		}
-		x = 4
-		y = 8
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Accept_Social_Revolution_Linearity"
-			add_political_power = 75
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.08
-			}
-			add_ideas = JAP_yamakawa_linearity
-			set_country_flag = JAP_yamakawa_econ_flag
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_Elect_First_President
+		icon = GFX_JAP_Elect_First_President
+		cost = 45.00
+		prerequisite = {
+			focus = JAP_Socialist_Reform_Program
+		}
+		prerequisite = {
+			focus = JAP_AJTFU_Formation
+		}
+		x = 13
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Elect_First_President"
+			add_political_power = 75
+			add_stability = 0.05
+		}
+	}
+
+	# ================= 左线：接纳社会革命一段论 =================
+	focus = {
+		id = JAP_Accept_Social_Revolution_Linearity
+		icon = GFX_JAP_Accept_Social_Revolution_Linearity
+		cost = 20.00
+		prerequisite = {
+			focus = JAP_Elect_First_President
+		}
+		mutually_exclusive = {
+			focus = JAP_american_absolute_government
+		}
+		x = 4
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Accept_Social_Revolution_Linearity"
+			add_political_power = 75
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.08
+			}
+			add_ideas = JAP_yamakawa_linearity
+			set_country_flag = JAP_yamakawa_econ_flag
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_Farmer_Comrade_Organization
-		icon = GFX_goal_unknown
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_Accept_Social_Revolution_Linearity
-		}
-		mutually_exclusive = {
-			focus = JAP_Farmer_Union_Organization
-		}
-		x = 0
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Farmer_Comrade_Organization"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = communist
-				popularity = 0.05
-			}
-			add_ideas = JAP_farmer_comrade
-			set_country_flag = JAP_farmer_comrade_route_flag
-		}
-	}
-	focus = {
-		id = JAP_Farmer_Union_Organization
-		icon = GFX_goal_unknown
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_Accept_Social_Revolution_Linearity
-		}
-		mutually_exclusive = {
-			focus = JAP_Farmer_Comrade_Organization
-		}
-		x = 2
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Farmer_Union_Organization"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			set_country_flag = JAP_farmer_union_route_flag
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_Farmer_Comrade_Organization
+		icon = GFX_goal_unknown
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_Accept_Social_Revolution_Linearity
+		}
+		mutually_exclusive = {
+			focus = JAP_Farmer_Union_Organization
+		}
+		x = 0
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Farmer_Comrade_Organization"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			add_ideas = JAP_farmer_comrade
+			set_country_flag = JAP_farmer_comrade_route_flag
+		}
+	}
+	focus = {
+		id = JAP_Farmer_Union_Organization
+		icon = GFX_goal_unknown
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_Accept_Social_Revolution_Linearity
+		}
+		mutually_exclusive = {
+			focus = JAP_Farmer_Comrade_Organization
+		}
+		x = 2
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Farmer_Union_Organization"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			set_country_flag = JAP_farmer_union_route_flag
 			custom_effect_tooltip = JAP_diet_seat_shift_tt
-			add_to_variable = { var = JAP_Vacant value = -3 }
-			add_to_variable = { var = JAP_JSP value = 3 }
-			clamp_variable = { var = JAP_Vacant min = 0 }
-			clamp_variable = { var = JAP_JSP min = 0 }
-			JAP_reload_worker_diet_gui = yes
-		}
-	}
-	focus = {
-		id = JAP_Life_Sustaining_First
-		icon = GFX_goal_unknown
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_Accept_Social_Revolution_Linearity
-		}
-		x = 4
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Life_Sustaining_First"
-			add_stability = 0.05
-			add_political_power = 50
-			add_ideas = JAP_life_security
-			# 富裕等级推升
+			add_to_variable = { var = JAP_Vacant value = -3 }
+			add_to_variable = { var = JAP_JSP value = 3 }
+			clamp_variable = { var = JAP_Vacant min = 0 }
+			clamp_variable = { var = JAP_JSP min = 0 }
+			JAP_reload_worker_diet_gui = yes
+		}
+	}
+	focus = {
+		id = JAP_Life_Sustaining_First
+		icon = GFX_goal_unknown
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_Accept_Social_Revolution_Linearity
+		}
+		x = 4
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Life_Sustaining_First"
+			add_stability = 0.05
+			add_political_power = 50
+			add_ideas = JAP_life_security
+			# 富裕等级推升
 			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
-			add_to_variable = { var = TNW_Affluence_monthly_value value = 10 }
-		}
-	}
-	focus = {
-		id = JAP_Labor_Reliance_System
-		icon = GFX_goal_unknown
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_Accept_Social_Revolution_Linearity
-		}
-		x = 6
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Labor_Reliance_System"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
-			add_ideas = JAP_union_state
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 10 }
+		}
+	}
+	focus = {
+		id = JAP_Labor_Reliance_System
+		icon = GFX_goal_unknown
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_Accept_Social_Revolution_Linearity
+		}
+		x = 6
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Labor_Reliance_System"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+			add_ideas = JAP_union_state
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
-			add_to_variable = { var = JAP_IndUn value = -3 }
-			add_to_variable = { var = JAP_GTU value = 3 }
-			clamp_variable = { var = JAP_IndUn min = 0 }
-			clamp_variable = { var = JAP_GTU min = 0 }
-			JAP_reload_trade_union_congress_gui = yes
-		}
-	}
-	focus = {
-		id = JAP_Combat_Aethiests_Union
-		icon = GFX_goal_unknown
-		cost = 30.00
-		prerequisite = {
-			focus = JAP_Farmer_Comrade_Organization
-			focus = JAP_Farmer_Union_Organization
-		}
-		prerequisite = {
-			focus = JAP_Labor_Reliance_System
-		}
-		x = 1
-		y = 11
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Combat_Aethiests_Union"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = communist
-				popularity = 0.05
-			}
-			add_ideas = JAP_militant_atheism
-		}
-	}
-	focus = {
-		id = JAP_Prepare_Imminently
-		icon = GFX_goal_unknown
-		cost = 30.00
-		prerequisite = {
-			focus = JAP_Farmer_Comrade_Organization
-			focus = JAP_Farmer_Union_Organization
-		}
-		prerequisite = {
-			focus = JAP_Life_Sustaining_First
-		}
-		x = 3
-		y = 11
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Prepare_Imminently"
-			add_political_power = 50
-			add_stability = 0.03
-			add_war_support = 0.05
-			army_experience = 15
-			navy_experience = 15
-			add_timed_idea = { idea = JAP_border_readiness days = 365 }
-		}
-	}
-	focus = {
-		id = JAP_Production_Management_Model
-		icon = GFX_goal_unknown
-		cost = 30.00
-		prerequisite = {
-			focus = JAP_Life_Sustaining_First
-		}
-		prerequisite = {
-			focus = JAP_Labor_Reliance_System
-		}
-		x = 5
-		y = 11
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Production_Management_Model"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
-			# 民主生产路线全额 +15；自治劳路线不搞工厂民主，减半 +7
-			if = {
-				limit = { has_country_flag = JAP_production_democracy_route_flag }
+			add_to_variable = { var = JAP_IndUn value = -3 }
+			add_to_variable = { var = JAP_GTU value = 3 }
+			clamp_variable = { var = JAP_IndUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
+		}
+	}
+	focus = {
+		id = JAP_Combat_Aethiests_Union
+		icon = GFX_goal_unknown
+		cost = 30.00
+		prerequisite = {
+			focus = JAP_Farmer_Comrade_Organization
+			focus = JAP_Farmer_Union_Organization
+		}
+		prerequisite = {
+			focus = JAP_Labor_Reliance_System
+		}
+		x = 1
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Combat_Aethiests_Union"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			add_ideas = JAP_militant_atheism
+		}
+	}
+	focus = {
+		id = JAP_Prepare_Imminently
+		icon = GFX_goal_unknown
+		cost = 30.00
+		prerequisite = {
+			focus = JAP_Farmer_Comrade_Organization
+			focus = JAP_Farmer_Union_Organization
+		}
+		prerequisite = {
+			focus = JAP_Life_Sustaining_First
+		}
+		x = 3
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Prepare_Imminently"
+			add_political_power = 50
+			add_stability = 0.03
+			add_war_support = 0.05
+			army_experience = 15
+			navy_experience = 15
+			add_timed_idea = { idea = JAP_border_readiness days = 365 }
+		}
+	}
+	focus = {
+		id = JAP_Production_Management_Model
+		icon = GFX_goal_unknown
+		cost = 30.00
+		prerequisite = {
+			focus = JAP_Life_Sustaining_First
+		}
+		prerequisite = {
+			focus = JAP_Labor_Reliance_System
+		}
+		x = 5
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Production_Management_Model"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+			# 民主生产路线全额 +15；自治劳路线不搞工厂民主，减半 +7
+			if = {
+				limit = { has_country_flag = JAP_production_democracy_route_flag }
 				custom_effect_tooltip = JAP_production_ratio_rise_tt
-				add_to_variable = { var = JAP_production_management_ratio_var value = 15 }
-				clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
-			}
-			else = {
+				add_to_variable = { var = JAP_production_management_ratio_var value = 15 }
+				clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
+			}
+			else = {
 				custom_effect_tooltip = JAP_production_ratio_rise_tt
-				add_to_variable = { var = JAP_production_management_ratio_var value = 7 }
-				clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
-			}
-		}
-	}
-	focus = {
-		id = JAP_Support_China_Revolution
-		icon = GFX_goal_unknown
-		cost = 30.00
-		prerequisite = {
-			focus = JAP_Combat_Aethiests_Union
-		}
-		prerequisite = {
-			focus = JAP_Prepare_Imminently
-		}
-		prerequisite = {
-			focus = JAP_Production_Management_Model
-		}
-		x = 4
-		y = 12
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Support_China_Revolution"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = communist
-				popularity = 0.05
-			}
-			add_war_support = 0.03
+				add_to_variable = { var = JAP_production_management_ratio_var value = 7 }
+				clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
+			}
+		}
+	}
+	focus = {
+		id = JAP_Support_China_Revolution
+		icon = GFX_goal_unknown
+		cost = 30.00
+		prerequisite = {
+			focus = JAP_Combat_Aethiests_Union
+		}
+		prerequisite = {
+			focus = JAP_Prepare_Imminently
+		}
+		prerequisite = {
+			focus = JAP_Production_Management_Model
+		}
+		x = 4
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Support_China_Revolution"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			add_war_support = 0.03
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-			set_country_flag = JAP_support_china_flag
-		}
-	}
-	focus = {
-		id = JAP_physics_chemistry_lab
-		icon = GFX_goal_unknown
-		cost = 30.00
-		prerequisite = {
-			focus = JAP_Support_China_Revolution
-		}
-		x = 2
-		y = 13
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_physics_chemistry_lab"
-			add_political_power = 50
-			add_stability = 0.03
-			add_ideas = JAP_riken_lab
-			army_experience = 10
-			set_country_flag = JAP_nuclear_research_flag
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			set_country_flag = JAP_support_china_flag
+		}
+	}
+	focus = {
+		id = JAP_physics_chemistry_lab
+		icon = GFX_goal_unknown
+		cost = 30.00
+		prerequisite = {
+			focus = JAP_Support_China_Revolution
+		}
+		x = 2
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_physics_chemistry_lab"
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = JAP_riken_lab
+			army_experience = 10
+			set_country_flag = JAP_nuclear_research_flag
 			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
-			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 2 }
-		}
-	}
-	focus = {
-		id = JAP_economic_independence
-		icon = GFX_goal_unknown
-		cost = 30.00
-		prerequisite = {
-			focus = JAP_Support_China_Revolution
-		}
-		prerequisite = {
-			focus = JAP_electroproduction_salary_mode
-		}
-		x = 6
-		y = 13
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_economic_independence"
-			add_political_power = 75
-			add_stability = 0.05
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			add_ideas = JAP_econ_independence
-		}
-	}
-	focus = {
-		id = JAP_metropolitan_renovation
-		icon = GFX_goal_unknown
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_economic_independence
-		}
-		prerequisite = {
-			focus = JAP_physics_chemistry_lab
-		}
-		x = 4
-		y = 14
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_metropolitan_renovation"
-			add_political_power = 75
-			add_stability = 0.05
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			set_country_flag = JAP_metropolitan_renovation_done_flag
-			add_timed_idea = { idea = JAP_construction_boom days = 365 }
-			random_owned_state = {
-				limit = { state = 282 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			random_owned_state = {
-				limit = { state = 531 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_economic_independence
+		icon = GFX_goal_unknown
+		cost = 30.00
+		prerequisite = {
+			focus = JAP_Support_China_Revolution
+		}
+		prerequisite = {
+			focus = JAP_electroproduction_salary_mode
+		}
+		x = 6
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_economic_independence"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			add_ideas = JAP_econ_independence
+		}
+	}
+	focus = {
+		id = JAP_metropolitan_renovation
+		icon = GFX_goal_unknown
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_economic_independence
+		}
+		prerequisite = {
+			focus = JAP_physics_chemistry_lab
+		}
+		x = 4
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_metropolitan_renovation"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			set_country_flag = JAP_metropolitan_renovation_done_flag
+			add_timed_idea = { idea = JAP_construction_boom days = 365 }
+			random_owned_state = {
+				limit = { state = 282 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_state = {
+				limit = { state = 531 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
 			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
-			add_to_variable = { var = TNW_Affluence_monthly_value value = 5 }
-		}
-	}
-
-	# ================= 经济共同干道 =================
-	focus = {
-		id = JAP_postwar_econ_reform
-		icon = GFX_JAP_postwar_econ_reform
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_Elect_First_President
-		}
-		x = 13
-		y = 9
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_postwar_econ_reform"
-			add_political_power = 75
-			add_stability = 0.05
-			# 萧条（60% 消费品 debuff）到此翻篇
-			remove_ideas = JAP_Recession
-			add_ideas = JAP_adjustment_period
-		}
-	}
-	focus = {
-		id = JAP_leaned_production
-		icon = GFX_goal_unknown
-		cost = 20.00
-		prerequisite = {
-			focus = JAP_postwar_econ_reform
-		}
-		prerequisite = {
-			focus = JAP_Accept_Social_Revolution_Linearity
-		}
-		x = 8
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_leaned_production"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			add_ideas = JAP_leaned_production_idea
-			# 直接加煤/钢资源（九州煤田）
-			add_resource = { resource = coal amount = 40 state = 528 }
-			random_owned_state = {
-				limit = { state = 528 }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-			}
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 5 }
+		}
+	}
+
+	# ================= 经济共同干道 =================
+	focus = {
+		id = JAP_postwar_econ_reform
+		icon = GFX_JAP_postwar_econ_reform
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_Elect_First_President
+		}
+		x = 13
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_postwar_econ_reform"
+			add_political_power = 75
+			add_stability = 0.05
+			# 萧条（60% 消费品 debuff）到此翻篇
+			remove_ideas = JAP_Recession
+			add_ideas = JAP_adjustment_period
+		}
+	}
+	focus = {
+		id = JAP_leaned_production
+		icon = GFX_goal_unknown
+		cost = 20.00
+		prerequisite = {
+			focus = JAP_postwar_econ_reform
+		}
+		prerequisite = {
+			focus = JAP_Accept_Social_Revolution_Linearity
+		}
+		x = 8
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_leaned_production"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			add_ideas = JAP_leaned_production_idea
+			# 直接加煤/钢资源（九州煤田）
+			add_resource = { resource = coal amount = 40 state = 528 }
+			random_owned_state = {
+				limit = { state = 528 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
-			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
-		}
-	}
-	focus = {
-		id = JAP_manufacturing_economy
-		icon = GFX_goal_unknown
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_leaned_production
-		}
-		x = 7
-		y = 11
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_manufacturing_economy"
-			add_political_power = 50
-			add_stability = 0.03
-			add_ideas = JAP_manufacturing_econ
-			random_owned_state = {
-				limit = { state = 282 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
+		}
+	}
+	focus = {
+		id = JAP_manufacturing_economy
+		icon = GFX_goal_unknown
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_leaned_production
+		}
+		x = 7
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_manufacturing_economy"
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = JAP_manufacturing_econ
+			random_owned_state = {
+				limit = { state = 282 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
-			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
-		}
-	}
-	focus = {
-		id = JAP_evaluate_coalsteel_industry
-		icon = GFX_goal_unknown
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_leaned_production
-		}
-		x = 9
-		y = 11
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_evaluate_coalsteel_industry"
-			add_political_power = 25
-			add_stability = 0.02
-			# 北陆铁山扩产
-			add_resource = { resource = steel amount = 20 state = 535 }
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
+		}
+	}
+	focus = {
+		id = JAP_evaluate_coalsteel_industry
+		icon = GFX_goal_unknown
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_leaned_production
+		}
+		x = 9
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_evaluate_coalsteel_industry"
+			add_political_power = 25
+			add_stability = 0.02
+			# 北陆铁山扩产
+			add_resource = { resource = steel amount = 20 state = 535 }
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
-			add_to_variable = { var = TNW_Industrial_scale_value value = 30 }
-			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_electroproduction_salary_mode
-		icon = GFX_goal_unknown
-		cost = 30.00
-		prerequisite = {
-			focus = JAP_manufacturing_economy
-		}
-		prerequisite = {
-			focus = JAP_evaluate_coalsteel_industry
-		}
-		x = 8
-		y = 12
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_electroproduction_salary_mode"
-			add_ideas = JAP_electroproduction_salary
+			add_to_variable = { var = TNW_Industrial_scale_value value = 30 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_electroproduction_salary_mode
+		icon = GFX_goal_unknown
+		cost = 30.00
+		prerequisite = {
+			focus = JAP_manufacturing_economy
+		}
+		prerequisite = {
+			focus = JAP_evaluate_coalsteel_industry
+		}
+		x = 8
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_electroproduction_salary_mode"
+			add_ideas = JAP_electroproduction_salary
 			custom_effect_tooltip = JAP_production_ratio_rise_tt
-			add_to_variable = { var = JAP_production_management_ratio_var value = 10 }
-			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
+			add_to_variable = { var = JAP_production_management_ratio_var value = 10 }
+			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
-			add_to_variable = { var = JAP_GenUn value = -5 }
-			add_to_variable = { var = JAP_GTU value = 5 }
-			clamp_variable = { var = JAP_GenUn min = 0 }
-			clamp_variable = { var = JAP_GTU min = 0 }
-			JAP_reload_trade_union_congress_gui = yes
-		}
-	}
-	focus = {
-		id = JAP_world_best_taxation
-		icon = GFX_goal_unknown
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_postwar_econ_reform
-		}
-		x = 13
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_world_best_taxation"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
+			add_to_variable = { var = JAP_GenUn value = -5 }
+			add_to_variable = { var = JAP_GTU value = 5 }
+			clamp_variable = { var = JAP_GenUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
+		}
+	}
+	focus = {
+		id = JAP_world_best_taxation
+		icon = GFX_goal_unknown
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_postwar_econ_reform
+		}
+		x = 13
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_world_best_taxation"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
 			custom_effect_tooltip = JAP_capital_reserves_gain_tt
-			add_to_variable = { var = capital_reserves value = 15 }
-			add_ideas = JAP_best_taxation
-			# 税制建设也是行政工程
+			add_to_variable = { var = capital_reserves value = 15 }
+			add_ideas = JAP_best_taxation
+			# 税制建设也是行政工程
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
-			add_to_variable = { var = TNW_Bureaucracy_value value = 30 }
-			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_Tokyo_industry_belt
-		icon = GFX_goal_unknown
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_leaned_production
-			focus = JAP_combined_manufacturing
-		}
-		prerequisite = {
-			focus = JAP_world_best_taxation
-		}
-		x = 12
-		y = 11
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Tokyo_industry_belt"
-			add_political_power = 75
-			add_stability = 0.05
-			random_owned_state = {
-				limit = { state = 282 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-			}
+			add_to_variable = { var = TNW_Bureaucracy_value value = 30 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_Tokyo_industry_belt
+		icon = GFX_goal_unknown
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_leaned_production
+			focus = JAP_combined_manufacturing
+		}
+		prerequisite = {
+			focus = JAP_world_best_taxation
+		}
+		x = 12
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Tokyo_industry_belt"
+			add_political_power = 75
+			add_stability = 0.05
+			random_owned_state = {
+				limit = { state = 282 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
-			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
-		}
-	}
-	focus = {
-		id = JAP_southern_industry_belt
-		icon = GFX_goal_unknown
-		cost = 25.00
-		prerequisite = {
-			focus = JAP_labour_rights_law
-			focus = JAP_leaned_production
-		}
-		prerequisite = {
-			focus = JAP_world_best_taxation
-		}
-		x = 14
-		y = 11
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_southern_industry_belt"
-			add_political_power = 75
-			add_stability = 0.05
-			random_owned_state = {
-				limit = { state = 531 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-			}
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
+		}
+	}
+	focus = {
+		id = JAP_southern_industry_belt
+		icon = GFX_goal_unknown
+		cost = 25.00
+		prerequisite = {
+			focus = JAP_labour_rights_law
+			focus = JAP_leaned_production
+		}
+		prerequisite = {
+			focus = JAP_world_best_taxation
+		}
+		x = 14
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_southern_industry_belt"
+			add_political_power = 75
+			add_stability = 0.05
+			random_owned_state = {
+				limit = { state = 531 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
-			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
-		}
-	}
-	focus = {
-		id = JAP_econ_path_left
-		icon = GFX_goal_unknown
-		cost = 35.00
-		prerequisite = {
-			focus = JAP_Tokyo_industry_belt
-		}
-		prerequisite = {
-			focus = JAP_southern_industry_belt
-		}
-		mutually_exclusive = {
-			focus = JAP_econ_path_centre
-			focus = JAP_econ_path_right
-		}
-		x = 11
-		y = 12
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_econ_path_left"
-			add_political_power = 75
-			add_stability = 0.05
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.08
-			}
-			set_country_flag = JAP_econ_route_left_flag
-			add_ideas = JAP_syndicalist_econ
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
+		}
+	}
+	focus = {
+		id = JAP_econ_path_left
+		icon = GFX_goal_unknown
+		cost = 35.00
+		prerequisite = {
+			focus = JAP_Tokyo_industry_belt
+		}
+		prerequisite = {
+			focus = JAP_southern_industry_belt
+		}
+		mutually_exclusive = {
+			focus = JAP_econ_path_centre
+			focus = JAP_econ_path_right
+		}
+		x = 11
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_econ_path_left"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.08
+			}
+			set_country_flag = JAP_econ_route_left_flag
+			add_ideas = JAP_syndicalist_econ
 			custom_effect_tooltip = JAP_production_ratio_rise_tt
-			add_to_variable = { var = JAP_production_management_ratio_var value = 10 }
-			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
+			add_to_variable = { var = JAP_production_management_ratio_var value = 10 }
+			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_econ_path_centre
-		icon = GFX_goal_unknown
-		cost = 35.00
-		prerequisite = {
-			focus = JAP_Tokyo_industry_belt
-		}
-		prerequisite = {
-			focus = JAP_southern_industry_belt
-		}
-		mutually_exclusive = {
-			focus = JAP_econ_path_left
-			focus = JAP_econ_path_right
-		}
-		x = 13
-		y = 12
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_econ_path_centre"
-			add_political_power = 75
-			add_stability = 0.05
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			set_country_flag = JAP_econ_route_centre_flag
-			# 计经委：1951 紧急状态"计经委线"伏笔
-			set_country_flag = JAP_keikei_committee_flag
-			add_ideas = JAP_planned_econ
-		}
-	}
-	focus = {
-		id = JAP_econ_path_right
-		icon = GFX_goal_unknown
-		cost = 35.00
-		prerequisite = {
-			focus = JAP_Tokyo_industry_belt
-		}
-		prerequisite = {
-			focus = JAP_southern_industry_belt
-		}
-		mutually_exclusive = {
-			focus = JAP_econ_path_centre
-			focus = JAP_econ_path_left
-		}
-		x = 15
-		y = 12
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_econ_path_right"
-			add_political_power = 75
-			add_stability = 0.05
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			set_country_flag = JAP_econ_route_right_flag
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_econ_path_centre
+		icon = GFX_goal_unknown
+		cost = 35.00
+		prerequisite = {
+			focus = JAP_Tokyo_industry_belt
+		}
+		prerequisite = {
+			focus = JAP_southern_industry_belt
+		}
+		mutually_exclusive = {
+			focus = JAP_econ_path_left
+			focus = JAP_econ_path_right
+		}
+		x = 13
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_econ_path_centre"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			set_country_flag = JAP_econ_route_centre_flag
+			# 计经委：1951 紧急状态"计经委线"伏笔
+			set_country_flag = JAP_keikei_committee_flag
+			add_ideas = JAP_planned_econ
+		}
+	}
+	focus = {
+		id = JAP_econ_path_right
+		icon = GFX_goal_unknown
+		cost = 35.00
+		prerequisite = {
+			focus = JAP_Tokyo_industry_belt
+		}
+		prerequisite = {
+			focus = JAP_southern_industry_belt
+		}
+		mutually_exclusive = {
+			focus = JAP_econ_path_centre
+			focus = JAP_econ_path_left
+		}
+		x = 15
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_econ_path_right"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			set_country_flag = JAP_econ_route_right_flag
 			custom_effect_tooltip = JAP_capital_reserves_gain_tt
-			add_to_variable = { var = capital_reserves value = 10 }
-			add_ideas = JAP_market_socialism
-		}
-	}
-	focus = {
-		id = JAP_japan_america_econ_integration
-		icon = GFX_goal_unknown
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_force_farmer_membership
-			focus = JAP_allow_farmer_autonomy
-		}
-		prerequisite = {
-			focus = JAP_american_experts
-		}
-		prerequisite = {
-			focus = JAP_make_every_worker_equal
-		}
-		prerequisite = {
-			focus = JAP_consumer_production_command
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = JAP_japan_america_econ_integration_avail_tt
-				has_country_flag = JAP_karl_dependence_flag
-			}
-		}
-		x = 21
-		y = 13
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_japan_america_econ_integration"
-			add_political_power = 75
-			add_stability = 0.05
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
+			add_to_variable = { var = capital_reserves value = 10 }
+			add_ideas = JAP_market_socialism
+		}
+	}
+	focus = {
+		id = JAP_japan_america_econ_integration
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_force_farmer_membership
+			focus = JAP_allow_farmer_autonomy
+		}
+		prerequisite = {
+			focus = JAP_american_experts
+		}
+		prerequisite = {
+			focus = JAP_make_every_worker_equal
+		}
+		prerequisite = {
+			focus = JAP_consumer_production_command
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = JAP_japan_america_econ_integration_avail_tt
+				has_country_flag = JAP_karl_dependence_flag
+			}
+		}
+		x = 21
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_japan_america_econ_integration"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
 			custom_effect_tooltip = JAP_capital_reserves_gain_tt
-			add_to_variable = { var = capital_reserves value = 20 }
-			add_ideas = JAP_jap_us_communion
-		}
-	}
-	focus = {
-		id = JAP_reconstruction_success
-		icon = GFX_goal_unknown
-		cost = 50.00
-		prerequisite = {
-			focus = JAP_economic_independence
-			focus = JAP_japan_america_econ_integration
-		}
-		x = 13
-		y = 14
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_reconstruction_success"
-			add_political_power = 100
-			add_stability = 0.10
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.08
-			}
-			set_country_flag = JAP_reconstruction_success_flag
-			remove_ideas = JAP_adjustment_period
+			add_to_variable = { var = capital_reserves value = 20 }
+			add_ideas = JAP_jap_us_communion
+		}
+	}
+	focus = {
+		id = JAP_reconstruction_success
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = JAP_economic_independence
+			focus = JAP_japan_america_econ_integration
+		}
+		x = 13
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_reconstruction_success"
+			add_political_power = 100
+			add_stability = 0.10
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.08
+			}
+			set_country_flag = JAP_reconstruction_success_flag
+			remove_ideas = JAP_adjustment_period
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_large_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 10 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-			# 1951 工团实验审查（JAP_event.10 按 flag 组合结算成败）
-			country_event = { id = JAP_event.10 days = 365 }
-		}
-	}
-
-	# ================= 右线：米山提携政府 =================
-	focus = {
-		id = JAP_american_absolute_government
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = JAP_Elect_First_President
-		}
-		mutually_exclusive = {
-			focus = JAP_Accept_Social_Revolution_Linearity
-		}
-		x = 22
-		y = 8
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_american_absolute_government"
-			add_political_power = 75
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.08
-			}
-			add_ideas = JAP_yoshida_cooperation
-			# 对美依赖：1951 审查的"自主线"反 flag
-			set_country_flag = JAP_karl_dependence_flag
-			# 左翼反弹
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 10 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			# 1951 工团实验审查（JAP_event.10 按 flag 组合结算成败）
+			country_event = { id = JAP_event.10 days = 365 }
+		}
+	}
+
+	# ================= 右线：米山提携政府 =================
+	focus = {
+		id = JAP_american_absolute_government
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Elect_First_President
+		}
+		mutually_exclusive = {
+			focus = JAP_Accept_Social_Revolution_Linearity
+		}
+		x = 22
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_american_absolute_government"
+			add_political_power = 75
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.08
+			}
+			add_ideas = JAP_yoshida_cooperation
+			# 对美依赖：1951 审查的"自主线"反 flag
+			set_country_flag = JAP_karl_dependence_flag
+			# 左翼反弹
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_fall_tt
-			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_combined_manufacturing
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_american_absolute_government
-		}
-		prerequisite = {
-			focus = JAP_postwar_econ_reform
-		}
-		x = 18
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_combined_manufacturing"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
-			add_ideas = JAP_combined_production
-		}
-	}
-	focus = {
-		id = JAP_labour_rights_law
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = JAP_american_absolute_government
-		}
-		x = 20
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_labour_rights_law"
-			add_political_power = 75
-			add_stability = 0.05
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			add_ideas = JAP_labour_rights
+			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_combined_manufacturing
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_american_absolute_government
+		}
+		prerequisite = {
+			focus = JAP_postwar_econ_reform
+		}
+		x = 18
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_combined_manufacturing"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+			add_ideas = JAP_combined_production
+		}
+	}
+	focus = {
+		id = JAP_labour_rights_law
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_american_absolute_government
+		}
+		x = 20
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_labour_rights_law"
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			add_ideas = JAP_labour_rights
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_american_economic_assistance
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = JAP_american_absolute_government
-		}
-		x = 22
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_american_economic_assistance"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_american_economic_assistance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_american_absolute_government
+		}
+		x = 22
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_american_economic_assistance"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
 			custom_effect_tooltip = JAP_capital_reserves_gain_tt
-			add_to_variable = { var = capital_reserves value = 25 }
-			add_timed_idea = { idea = JAP_american_aid days = 365 }
-		}
-	}
-	focus = {
-		id = JAP_japanese_deleonism
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = JAP_american_absolute_government
-		}
-		x = 24
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_japanese_deleonism"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.08
-			}
-			add_ideas = JAP_deleonism_japan
-			set_country_flag = JAP_deleonism_flag
-		}
-	}
-	focus = {
-		id = JAP_unite_farmer_association
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_american_absolute_government
-		}
-		x = 26
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_unite_farmer_association"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = communist
-				popularity = 0.05
-			}
-			add_ideas = JAP_unified_agricoop
-			set_country_flag = JAP_agricoop_unified_flag
+			add_to_variable = { var = capital_reserves value = 25 }
+			add_timed_idea = { idea = JAP_american_aid days = 365 }
+		}
+	}
+	focus = {
+		id = JAP_japanese_deleonism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_american_absolute_government
+		}
+		x = 24
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_japanese_deleonism"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.08
+			}
+			add_ideas = JAP_deleonism_japan
+			set_country_flag = JAP_deleonism_flag
+		}
+	}
+	focus = {
+		id = JAP_unite_farmer_association
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_american_absolute_government
+		}
+		x = 26
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_unite_farmer_association"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			add_ideas = JAP_unified_agricoop
+			set_country_flag = JAP_agricoop_unified_flag
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
-			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
-		}
-	}
-	focus = {
-		id = JAP_american_experts
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_american_economic_assistance
-		}
-		prerequisite = {
-			focus = JAP_japanese_deleonism
-		}
-		x = 23
-		y = 11
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_american_experts"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
-			add_timed_idea = { idea = JAP_american_experts_idea days = 365 }
-			army_experience = 10
-		}
-	}
-	focus = {
-		id = JAP_force_farmer_membership
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_unite_farmer_association
-		}
-		mutually_exclusive = {
-			focus = JAP_allow_farmer_autonomy
-		}
-		x = 25
-		y = 11
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_force_farmer_membership"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = communist
-				popularity = 0.05
-			}
-			add_ideas = JAP_forced_membership
-			set_country_flag = JAP_rural_resentment_flag
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
+		}
+	}
+	focus = {
+		id = JAP_american_experts
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_american_economic_assistance
+		}
+		prerequisite = {
+			focus = JAP_japanese_deleonism
+		}
+		x = 23
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_american_experts"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
+			add_timed_idea = { idea = JAP_american_experts_idea days = 365 }
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = JAP_force_farmer_membership
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_unite_farmer_association
+		}
+		mutually_exclusive = {
+			focus = JAP_allow_farmer_autonomy
+		}
+		x = 25
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_force_farmer_membership"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			add_ideas = JAP_forced_membership
+			set_country_flag = JAP_rural_resentment_flag
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_fall_tt
-			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
-			add_to_variable = { var = TNW_Agriculture_monthly_value value = 8 }
-		}
-	}
-	focus = {
-		id = JAP_allow_farmer_autonomy
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_unite_farmer_association
-		}
-		mutually_exclusive = {
-			focus = JAP_force_farmer_membership
-		}
-		x = 27
-		y = 11
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_allow_farmer_autonomy"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			add_ideas = JAP_agricoop_autonomy
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 8 }
+		}
+	}
+	focus = {
+		id = JAP_allow_farmer_autonomy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_unite_farmer_association
+		}
+		mutually_exclusive = {
+			focus = JAP_force_farmer_membership
+		}
+		x = 27
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_allow_farmer_autonomy"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			add_ideas = JAP_agricoop_autonomy
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
-			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
-		}
-	}
-	focus = {
-		id = JAP_make_every_worker_equal
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = JAP_labour_rights_law
-		}
-		x = 20
-		y = 11
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_make_every_worker_equal"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
-			add_ideas = JAP_equal_distribution
-		}
-	}
-	focus = {
-		id = JAP_consumer_production_command
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_combined_manufacturing
-		}
-		x = 17
-		y = 11
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_consumer_production_command"
-			add_political_power = 50
-			add_stability = 0.03
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
+		}
+	}
+	focus = {
+		id = JAP_make_every_worker_equal
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_labour_rights_law
+		}
+		x = 20
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_make_every_worker_equal"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			add_ideas = JAP_equal_distribution
+		}
+	}
+	focus = {
+		id = JAP_consumer_production_command
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_combined_manufacturing
+		}
+		x = 17
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_consumer_production_command"
+			add_political_power = 50
+			add_stability = 0.03
 			custom_effect_tooltip = JAP_production_ratio_rise_tt
-			add_to_variable = { var = JAP_production_management_ratio_var value = 10 }
-			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
-			add_timed_idea = { idea = JAP_consumer_command days = 365 }
-		}
-	}
-
-	# ================= 治安线（松川事件起） =================
-	focus = {
-		id = JAP_report_on_Matsukawa_incident
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 40
-		y = 0
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_report_on_Matsukawa_incident"
-			add_political_power = 50
-			add_stability = 0.03
+			add_to_variable = { var = JAP_production_management_ratio_var value = 10 }
+			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
+			add_timed_idea = { idea = JAP_consumer_command days = 365 }
+		}
+	}
+
+	# ================= 治安线（松川事件起） =================
+	focus = {
+		id = JAP_report_on_Matsukawa_incident
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 40
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_report_on_Matsukawa_incident"
+			add_political_power = 50
+			add_stability = 0.03
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 1 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_worse_than_imagined
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = JAP_report_on_Matsukawa_incident
-		}
-		x = 40
-		y = 1
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_worse_than_imagined"
-			add_political_power = 50
-			army_experience = 25
-		}
-	}
-	focus = {
-		id = JAP_republic_security_council
-		icon = GFX_goal_unknown
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_worse_than_imagined
-		}
-		x = 36
-		y = 2
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_republic_security_council"
-			add_political_power = 50
-			add_stability = 0.05
-			add_ideas = JAP_security_council
-			set_country_flag = JAP_security_council_flag
-		}
-	}
-	focus = {
-		id = JAP_council_president_left
-		icon = GFX_goal_unknown
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_republic_security_council
-		}
-		mutually_exclusive = {
-			focus = JAP_council_president_right
-		}
-		x = 35
-		y = 3
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_council_president_left"
-			add_political_power = 50
-			add_stability = 0.05
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 1 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_worse_than_imagined
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_report_on_Matsukawa_incident
+		}
+		x = 40
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_worse_than_imagined"
+			add_political_power = 50
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = JAP_republic_security_council
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_worse_than_imagined
+		}
+		x = 36
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_republic_security_council"
+			add_political_power = 50
+			add_stability = 0.05
+			add_ideas = JAP_security_council
+			set_country_flag = JAP_security_council_flag
+		}
+	}
+	focus = {
+		id = JAP_council_president_left
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_republic_security_council
+		}
+		mutually_exclusive = {
+			focus = JAP_council_president_right
+		}
+		x = 35
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_council_president_left"
+			add_political_power = 50
+			add_stability = 0.05
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-			set_country_flag = JAP_council_chief_left_flag
-		}
-	}
-	focus = {
-		id = JAP_council_president_right
-		icon = GFX_goal_unknown
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_republic_security_council
-		}
-		mutually_exclusive = {
-			focus = JAP_council_president_left
-		}
-		x = 37
-		y = 3
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_council_president_right"
-			add_political_power = 50
-			add_stability = 0.05
-			add_ideas = JAP_hardline_chief
-			set_country_flag = JAP_council_chief_right_flag
-		}
-	}
-	focus = {
-		id = JAP_survey_non_union_worker
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = JAP_council_president_right
-		}
-		x = 34
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_survey_non_union_worker"
-			add_political_power = 50
-			add_stability = 0.03
-			add_ideas = JAP_surveillance_net
-			# 监控反噬
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			set_country_flag = JAP_council_chief_left_flag
+		}
+	}
+	focus = {
+		id = JAP_council_president_right
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_republic_security_council
+		}
+		mutually_exclusive = {
+			focus = JAP_council_president_left
+		}
+		x = 37
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_council_president_right"
+			add_political_power = 50
+			add_stability = 0.05
+			add_ideas = JAP_hardline_chief
+			set_country_flag = JAP_council_chief_right_flag
+		}
+	}
+	focus = {
+		id = JAP_survey_non_union_worker
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_council_president_right
+		}
+		x = 34
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_survey_non_union_worker"
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = JAP_surveillance_net
+			# 监控反噬
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_fall_tt
-			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-			# 不满者流向独立单产
+			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			# 不满者流向独立单产
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
-			add_to_variable = { var = JAP_GTU value = -2 }
-			add_to_variable = { var = JAP_IndUn value = 2 }
-			clamp_variable = { var = JAP_GTU min = 0 }
-			clamp_variable = { var = JAP_IndUn min = 0 }
-			JAP_reload_trade_union_congress_gui = yes
-		}
-	}
-	focus = {
-		id = JAP_identify_union_members
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = JAP_council_president_right
-		}
-		x = 38
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_identify_union_members"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
+			add_to_variable = { var = JAP_GTU value = -2 }
+			add_to_variable = { var = JAP_IndUn value = 2 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			clamp_variable = { var = JAP_IndUn min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
+		}
+	}
+	focus = {
+		id = JAP_identify_union_members
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_council_president_right
+		}
+		x = 38
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_identify_union_members"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
-			add_to_variable = { var = JAP_IndUn value = -5 }
-			add_to_variable = { var = JAP_GTU value = 5 }
-			clamp_variable = { var = JAP_IndUn min = 0 }
-			clamp_variable = { var = JAP_GTU min = 0 }
-			JAP_reload_trade_union_congress_gui = yes
+			add_to_variable = { var = JAP_IndUn value = -5 }
+			add_to_variable = { var = JAP_GTU value = 5 }
+			clamp_variable = { var = JAP_IndUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_calm_general_unions
-		icon = GFX_goal_unknown
-		cost = 15.00
-		x = 39
-		y = 3
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_calm_general_unions"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_calm_general_unions
+		icon = GFX_goal_unknown
+		cost = 15.00
+		x = 39
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_calm_general_unions"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.05
+			}
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
-			add_to_variable = { var = JAP_GenUn value = -3 }
-			add_to_variable = { var = JAP_GTU value = 3 }
-			clamp_variable = { var = JAP_GenUn min = 0 }
-			clamp_variable = { var = JAP_GTU min = 0 }
-			JAP_reload_trade_union_congress_gui = yes
-		}
-	}
-	focus = {
-		id = JAP_farright_violence_deterrence
-		icon = GFX_goal_unknown
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_council_president_left
-			focus = JAP_council_president_right
-		}
-		prerequisite = {
-			focus = JAP_calm_general_unions
-		}
-		x = 36
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_farright_violence_deterrence"
-			add_political_power = 50
-			add_stability = 0.03
-		}
-	}
-	focus = {
-		id = JAP_cite_oppression_abolishment_code
-		icon = GFX_goal_unknown
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_survey_non_union_worker
-			focus = JAP_identify_union_members
-		}
-		prerequisite = {
-			focus = JAP_farright_violence_deterrence
-		}
-		mutually_exclusive = {
-			focus = JAP_national_security_act
-		}
-		x = 35
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_cite_oppression_abolishment_code"
-			add_political_power = 50
-			add_stability = 0.03
-			add_ideas = JAP_legalism
+			add_to_variable = { var = JAP_GenUn value = -3 }
+			add_to_variable = { var = JAP_GTU value = 3 }
+			clamp_variable = { var = JAP_GenUn min = 0 }
+			clamp_variable = { var = JAP_GTU min = 0 }
+			JAP_reload_trade_union_congress_gui = yes
+		}
+	}
+	focus = {
+		id = JAP_farright_violence_deterrence
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_council_president_left
+			focus = JAP_council_president_right
+		}
+		prerequisite = {
+			focus = JAP_calm_general_unions
+		}
+		x = 36
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_farright_violence_deterrence"
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = JAP_cite_oppression_abolishment_code
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_survey_non_union_worker
+			focus = JAP_identify_union_members
+		}
+		prerequisite = {
+			focus = JAP_farright_violence_deterrence
+		}
+		mutually_exclusive = {
+			focus = JAP_national_security_act
+		}
+		x = 35
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_cite_oppression_abolishment_code"
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = JAP_legalism
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_national_security_act
-		icon = GFX_goal_unknown
-		cost = 15.00
-		prerequisite = {
-			focus = JAP_survey_non_union_worker
-			focus = JAP_identify_union_members
-		}
-		prerequisite = {
-			focus = JAP_farright_violence_deterrence
-		}
-		mutually_exclusive = {
-			focus = JAP_cite_oppression_abolishment_code
-		}
-		x = 37
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_national_security_act"
-			add_political_power = 50
-			add_stability = 0.03
-			add_ideas = JAP_national_security
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_national_security_act
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_survey_non_union_worker
+			focus = JAP_identify_union_members
+		}
+		prerequisite = {
+			focus = JAP_farright_violence_deterrence
+		}
+		mutually_exclusive = {
+			focus = JAP_cite_oppression_abolishment_code
+		}
+		x = 37
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_national_security_act"
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = JAP_national_security
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_fall_tt
-			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-			set_country_flag = JAP_hardline_security_flag
-		}
-	}
-
-	# ================= 军线（劳动自卫队） =================
-	focus = {
-		id = JAP_assess_labour_defense_force
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_worse_than_imagined
-		}
-		x = 47
-		y = 2
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_assess_labour_defense_force"
-			add_political_power = 25
-			army_experience = 15
-		}
-	}
-	focus = {
-		id = JAP_resist_pseudo_empire
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_assess_labour_defense_force
-		}
-		x = 42
-		y = 3
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_resist_pseudo_empire"
-			add_political_power = 50
-			army_experience = 25
-			add_war_support = 0.05
-		}
-	}
-	focus = {
-		id = JAP_defense_negotiation_with_unions
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_calm_general_unions
-		}
-		prerequisite = {
-			focus = JAP_resist_pseudo_empire
-		}
-		x = 40
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_defense_negotiation_with_unions"
-			add_political_power = 50
-			army_experience = 20
+			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			set_country_flag = JAP_hardline_security_flag
+		}
+	}
+
+	# ================= 军线（劳动自卫队） =================
+	focus = {
+		id = JAP_assess_labour_defense_force
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_worse_than_imagined
+		}
+		x = 47
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_assess_labour_defense_force"
+			add_political_power = 25
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = JAP_resist_pseudo_empire
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_assess_labour_defense_force
+		}
+		x = 42
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_resist_pseudo_empire"
+			add_political_power = 50
+			army_experience = 25
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = JAP_defense_negotiation_with_unions
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_calm_general_unions
+		}
+		prerequisite = {
+			focus = JAP_resist_pseudo_empire
+		}
+		x = 40
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_defense_negotiation_with_unions"
+			add_political_power = 50
+			army_experience = 20
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
-			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
-			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-		}
-	}
-	focus = {
-		id = JAP_worker_soldier_separation
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_defense_negotiation_with_unions
-		}
-		mutually_exclusive = {
-			focus = JAP_stick_with_worker_militia
-		}
-		x = 39
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_worker_soldier_separation"
-			army_experience = 50
-			add_stability = 0.03
-			add_ideas = JAP_professional_army
-			set_country_flag = JAP_professional_army_route_flag
-		}
-	}
-	focus = {
-		id = JAP_stick_with_worker_militia
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_defense_negotiation_with_unions
-		}
-		mutually_exclusive = {
-			focus = JAP_worker_soldier_separation
-		}
-		x = 41
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_stick_with_worker_militia"
-			add_manpower = 10000
-			army_experience = 25
-			add_ideas = JAP_militia_tradition
-			set_country_flag = JAP_militia_route_flag
-		}
-	}
-	focus = {
-		id = JAP_fortify_border
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_calm_general_unions
-		}
-		prerequisite = {
-			focus = JAP_resist_pseudo_empire
-		}
-		x = 42
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_fortify_border"
-			add_political_power = 50
-			add_stability = 0.03
-			add_war_support = 0.03
-			# 甲信越/北陆对北正面 2 级陆堡
-			random_owned_state = {
-				limit = { state = 534 }
-				add_building_construction = {
-					type = land_fort
-					level = 2
-					province = 1117
-				}
-			}
-			random_owned_state = {
-				limit = { state = 535 }
-				add_building_construction = {
-					type = land_fort
-					level = 2
-					province = 10032
-				}
-			}
-		}
-	}
-	focus = {
-		id = JAP_hundred_thousand_recruitment
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_calm_general_unions
-		}
-		prerequisite = {
-			focus = JAP_resist_pseudo_empire
-		}
-		x = 44
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_hundred_thousand_recruitment"
-			add_political_power = 75
-			add_stability = 0.03
-			add_manpower = 25000
-			add_ideas = JAP_expansion_plan
-		}
-	}
-	focus = {
-		id = JAP_independent_worker_airforce
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = JAP_fortify_border
-		}
-		prerequisite = {
-			focus = JAP_hundred_thousand_recruitment
-		}
-		x = 43
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_independent_worker_airforce"
-			add_political_power = 75
-			add_stability = 0.03
-			air_experience = 25
-			add_timed_idea = { idea = JAP_air_doctrine_push days = 365 }
-			random_owned_state = {
-				limit = { state = 282 }
-				add_building_construction = {
-					type = air_base
-					level = 1
-					province = 1182
-				}
-			}
-		}
-	}
-	focus = {
-		id = JAP_reorganize_military_bureau
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_assess_labour_defense_force
-		}
-		x = 47
-		y = 3
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_reorganize_military_bureau"
-			add_political_power = 50
-			army_experience = 25
-		}
-	}
-	focus = {
-		id = JAP_american_military_direction
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_reorganize_military_bureau
-		}
-		mutually_exclusive = {
-			focus = JAP_chinese_military_direction
-		}
-		x = 46
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_american_military_direction"
-			army_experience = 35
-			add_political_power = 25
-			add_timed_idea = { idea = JAP_us_doctrine_idea days = 180 }
-			set_country_flag = JAP_us_military_flag
-		}
-	}
-	focus = {
-		id = JAP_mechanized_red_army
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_american_military_direction
-		}
-		x = 46
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_mechanized_red_army"
-			army_experience = 35
-			add_political_power = 25
-			add_timed_idea = { idea = JAP_armor_bonus days = 180 }
-			random_owned_state = {
-				limit = { state = 282 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = JAP_chinese_military_direction
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_reorganize_military_bureau
-		}
-		mutually_exclusive = {
-			focus = JAP_american_military_direction
-		}
-		x = 48
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_chinese_military_direction"
-			army_experience = 35
-			add_political_power = 25
-			add_timed_idea = { idea = JAP_inf_doctrine_idea days = 180 }
-			set_country_flag = JAP_chinese_military_flag
-		}
-	}
-	focus = {
-		id = JAP_whampoa_experiences
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_chinese_military_direction
-		}
-		x = 48
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_whampoa_experiences"
-			army_experience = 35
-			add_stability = 0.03
-			add_timed_idea = { idea = JAP_land_warfare days = 180 }
-		}
-	}
-	focus = {
-		id = JAP_assess_frontline_squads
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_assess_labour_defense_force
-		}
-		x = 52
-		y = 3
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_assess_frontline_squads"
-			add_political_power = 25
-			add_stability = 0.02
-			army_experience = 20
-		}
-	}
-	focus = {
-		id = JAP_reinvite_imperial_officers
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_assess_frontline_squads
-		}
-		mutually_exclusive = {
-			focus = JAP_trust_military_bureau
-			focus = JAP_military_revolution_fervor
-		}
-		x = 50
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_reinvite_imperial_officers"
-			add_political_power = 50
-			add_stability = 0.03
-			army_experience = 25
-			add_ideas = JAP_old_officers
-		}
-	}
-	focus = {
-		id = JAP_old_training_policy
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_reinvite_imperial_officers
-		}
-		x = 50
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_old_training_policy"
-			add_political_power = 50
-			add_stability = 0.03
-			add_ideas = JAP_old_training
-		}
-	}
-	focus = {
-		id = JAP_trust_military_bureau
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_assess_frontline_squads
-		}
-		mutually_exclusive = {
-			focus = JAP_reinvite_imperial_officers
-			focus = JAP_military_revolution_fervor
-		}
-		x = 52
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_trust_military_bureau"
-			add_political_power = 50
-			add_stability = 0.03
-			army_experience = 15
-			add_ideas = JAP_military_bureau_route
-		}
-	}
-	focus = {
-		id = JAP_military_revolution_fervor
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_assess_frontline_squads
-		}
-		mutually_exclusive = {
-			focus = JAP_reinvite_imperial_officers
-			focus = JAP_trust_military_bureau
-		}
-		x = 54
-		y = 4
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_military_revolution_fervor"
-			add_political_power = 50
-			add_stability = 0.03
-			add_popularity = {
-				ideology = communist
-				popularity = 0.05
-			}
-			add_war_support = 0.10
-			add_ideas = JAP_revolution_fervor
-		}
-	}
-	focus = {
-		id = JAP_soldier_comradeship
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_trust_military_bureau
-			focus = JAP_military_revolution_fervor
-		}
-		x = 53
-		y = 5
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_soldier_comradeship"
-			add_political_power = 50
-			add_stability = 0.03
-			add_ideas = JAP_comradeship
-		}
-	}
-	focus = {
-		id = JAP_reassess_worker_defense_force
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = JAP_old_training_policy
-			focus = JAP_soldier_comradeship
-		}
-		prerequisite = {
-			focus = JAP_mechanized_red_army
-			focus = JAP_whampoa_experiences
-		}
-		x = 50
-		y = 6
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_reassess_worker_defense_force"
-			add_political_power = 50
-			add_stability = 0.03
-			army_experience = 50
-			# 路线结算：脱产+美式→装甲学说；民兵+中式→步兵学说
-			if = {
-				limit = {
-					has_country_flag = JAP_professional_army_route_flag
-					has_country_flag = JAP_us_military_flag
-				}
-				add_timed_idea = { idea = JAP_armor_doctrine_capstone days = 365 }
-			}
-			else_if = {
-				limit = {
-					has_country_flag = JAP_militia_route_flag
-					has_country_flag = JAP_chinese_military_flag
-				}
-				add_timed_idea = { idea = JAP_infantry_doctrine_capstone days = 365 }
-			}
-			else = {
-				army_experience = 25
-			}
-		}
-	}
-	focus = {
-		id = JAP_posthumous_analysis_of_Nigata_battle
-		icon = GFX_goal_unknown
-		cost = 5.00
-		x = 40
-		y = 8
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_posthumous_analysis_of_Nigata_battle"
-			add_political_power = 50
-			add_stability = 0.03
-			army_experience = 25
-			add_timed_idea = { idea = JAP_doctrine_analysis days = 180 }
-		}
-	}
-	focus = {
-		id = JAP_land_defense_forces
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_posthumous_analysis_of_Nigata_battle
-		}
-		x = 40
-		y = 9
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_land_defense_forces"
-			add_political_power = 75
-			add_stability = 0.05
-			army_experience = 50
-			add_ideas = JAP_land_defense
-		}
-	}
-	focus = {
-		id = JAP_defense_initiative_whitebook
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = JAP_land_defense_forces
-		}
-		mutually_exclusive = {
-			focus = JAP_slanted_reform_direction
-		}
-		x = 35
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_defense_initiative_whitebook"
-			add_political_power = 50
-			add_stability = 0.03
-			add_ideas = JAP_defense_whitebook
-		}
-	}
-	focus = {
-		id = JAP_slanted_reform_direction
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = JAP_land_defense_forces
-		}
-		mutually_exclusive = {
-			focus = JAP_defense_initiative_whitebook
-		}
-		x = 45
-		y = 10
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_slanted_reform_direction"
-			add_political_power = 50
-			add_stability = 0.03
-			add_ideas = JAP_kashima_slant
-		}
-	}
-	focus = {
-		id = JAP_naval_polls_high
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 50
-		y = 8
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_naval_polls_high"
-			add_political_power = 75
-			add_stability = 0.05
-			navy_experience = 50
-			add_timed_idea = { idea = JAP_naval_doctrine_push days = 365 }
-			add_ideas = JAP_naval_construction
-			random_owned_state = {
-				limit = { state = 528 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-				}
-			}
-		}
-	}
-}
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
+			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+		}
+	}
+	focus = {
+		id = JAP_worker_soldier_separation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_defense_negotiation_with_unions
+		}
+		mutually_exclusive = {
+			focus = JAP_stick_with_worker_militia
+		}
+		x = 39
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_worker_soldier_separation"
+			army_experience = 50
+			add_stability = 0.03
+			add_ideas = JAP_professional_army
+			set_country_flag = JAP_professional_army_route_flag
+		}
+	}
+	focus = {
+		id = JAP_stick_with_worker_militia
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_defense_negotiation_with_unions
+		}
+		mutually_exclusive = {
+			focus = JAP_worker_soldier_separation
+		}
+		x = 41
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_stick_with_worker_militia"
+			add_manpower = 10000
+			army_experience = 25
+			add_ideas = JAP_militia_tradition
+			set_country_flag = JAP_militia_route_flag
+		}
+	}
+	focus = {
+		id = JAP_fortify_border
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_calm_general_unions
+		}
+		prerequisite = {
+			focus = JAP_resist_pseudo_empire
+		}
+		x = 42
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_fortify_border"
+			add_political_power = 50
+			add_stability = 0.03
+			add_war_support = 0.03
+			# 甲信越/北陆对北正面 2 级陆堡
+			random_owned_state = {
+				limit = { state = 534 }
+				add_building_construction = {
+					type = land_fort
+					level = 2
+					province = 1117
+				}
+			}
+			random_owned_state = {
+				limit = { state = 535 }
+				add_building_construction = {
+					type = land_fort
+					level = 2
+					province = 10032
+				}
+			}
+		}
+	}
+	focus = {
+		id = JAP_hundred_thousand_recruitment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_calm_general_unions
+		}
+		prerequisite = {
+			focus = JAP_resist_pseudo_empire
+		}
+		x = 44
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_hundred_thousand_recruitment"
+			add_political_power = 75
+			add_stability = 0.03
+			add_manpower = 25000
+			add_ideas = JAP_expansion_plan
+		}
+	}
+	focus = {
+		id = JAP_independent_worker_airforce
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_fortify_border
+		}
+		prerequisite = {
+			focus = JAP_hundred_thousand_recruitment
+		}
+		x = 43
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_independent_worker_airforce"
+			add_political_power = 75
+			add_stability = 0.03
+			air_experience = 25
+			add_timed_idea = { idea = JAP_air_doctrine_push days = 365 }
+			random_owned_state = {
+				limit = { state = 282 }
+				add_building_construction = {
+					type = air_base
+					level = 1
+					province = 1182
+				}
+			}
+		}
+	}
+	focus = {
+		id = JAP_reorganize_military_bureau
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_assess_labour_defense_force
+		}
+		x = 47
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_reorganize_military_bureau"
+			add_political_power = 50
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = JAP_american_military_direction
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_reorganize_military_bureau
+		}
+		mutually_exclusive = {
+			focus = JAP_chinese_military_direction
+		}
+		x = 46
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_american_military_direction"
+			army_experience = 35
+			add_political_power = 25
+			add_timed_idea = { idea = JAP_us_doctrine_idea days = 180 }
+			set_country_flag = JAP_us_military_flag
+		}
+	}
+	focus = {
+		id = JAP_mechanized_red_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_american_military_direction
+		}
+		x = 46
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_mechanized_red_army"
+			army_experience = 35
+			add_political_power = 25
+			add_timed_idea = { idea = JAP_armor_bonus days = 180 }
+			random_owned_state = {
+				limit = { state = 282 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = JAP_chinese_military_direction
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_reorganize_military_bureau
+		}
+		mutually_exclusive = {
+			focus = JAP_american_military_direction
+		}
+		x = 48
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_chinese_military_direction"
+			army_experience = 35
+			add_political_power = 25
+			add_timed_idea = { idea = JAP_inf_doctrine_idea days = 180 }
+			set_country_flag = JAP_chinese_military_flag
+		}
+	}
+	focus = {
+		id = JAP_whampoa_experiences
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_chinese_military_direction
+		}
+		x = 48
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_whampoa_experiences"
+			army_experience = 35
+			add_stability = 0.03
+			add_timed_idea = { idea = JAP_land_warfare days = 180 }
+		}
+	}
+	focus = {
+		id = JAP_assess_frontline_squads
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_assess_labour_defense_force
+		}
+		x = 52
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_assess_frontline_squads"
+			add_political_power = 25
+			add_stability = 0.02
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = JAP_reinvite_imperial_officers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_assess_frontline_squads
+		}
+		mutually_exclusive = {
+			focus = JAP_trust_military_bureau
+			focus = JAP_military_revolution_fervor
+		}
+		x = 50
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_reinvite_imperial_officers"
+			add_political_power = 50
+			add_stability = 0.03
+			army_experience = 25
+			add_ideas = JAP_old_officers
+		}
+	}
+	focus = {
+		id = JAP_old_training_policy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_reinvite_imperial_officers
+		}
+		x = 50
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_old_training_policy"
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = JAP_old_training
+		}
+	}
+	focus = {
+		id = JAP_trust_military_bureau
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_assess_frontline_squads
+		}
+		mutually_exclusive = {
+			focus = JAP_reinvite_imperial_officers
+			focus = JAP_military_revolution_fervor
+		}
+		x = 52
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_trust_military_bureau"
+			add_political_power = 50
+			add_stability = 0.03
+			army_experience = 15
+			add_ideas = JAP_military_bureau_route
+		}
+	}
+	focus = {
+		id = JAP_military_revolution_fervor
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_assess_frontline_squads
+		}
+		mutually_exclusive = {
+			focus = JAP_reinvite_imperial_officers
+			focus = JAP_trust_military_bureau
+		}
+		x = 54
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_military_revolution_fervor"
+			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			add_war_support = 0.10
+			add_ideas = JAP_revolution_fervor
+		}
+	}
+	focus = {
+		id = JAP_soldier_comradeship
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_trust_military_bureau
+			focus = JAP_military_revolution_fervor
+		}
+		x = 53
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_soldier_comradeship"
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = JAP_comradeship
+		}
+	}
+	focus = {
+		id = JAP_reassess_worker_defense_force
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_old_training_policy
+			focus = JAP_soldier_comradeship
+		}
+		prerequisite = {
+			focus = JAP_mechanized_red_army
+			focus = JAP_whampoa_experiences
+		}
+		x = 50
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_reassess_worker_defense_force"
+			add_political_power = 50
+			add_stability = 0.03
+			army_experience = 50
+			# 路线结算：脱产+美式→装甲学说；民兵+中式→步兵学说
+			if = {
+				limit = {
+					has_country_flag = JAP_professional_army_route_flag
+					has_country_flag = JAP_us_military_flag
+				}
+				add_timed_idea = { idea = JAP_armor_doctrine_capstone days = 365 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = JAP_militia_route_flag
+					has_country_flag = JAP_chinese_military_flag
+				}
+				add_timed_idea = { idea = JAP_infantry_doctrine_capstone days = 365 }
+			}
+			else = {
+				army_experience = 25
+			}
+		}
+	}
+	focus = {
+		id = JAP_posthumous_analysis_of_Nigata_battle
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 40
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_posthumous_analysis_of_Nigata_battle"
+			add_political_power = 50
+			add_stability = 0.03
+			army_experience = 25
+			add_timed_idea = { idea = JAP_doctrine_analysis days = 180 }
+		}
+	}
+	focus = {
+		id = JAP_land_defense_forces
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_posthumous_analysis_of_Nigata_battle
+		}
+		x = 40
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_land_defense_forces"
+			add_political_power = 75
+			add_stability = 0.05
+			army_experience = 50
+			add_ideas = JAP_land_defense
+		}
+	}
+	focus = {
+		id = JAP_defense_initiative_whitebook
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_land_defense_forces
+		}
+		mutually_exclusive = {
+			focus = JAP_slanted_reform_direction
+		}
+		x = 35
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_defense_initiative_whitebook"
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = JAP_defense_whitebook
+		}
+	}
+	focus = {
+		id = JAP_slanted_reform_direction
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_land_defense_forces
+		}
+		mutually_exclusive = {
+			focus = JAP_defense_initiative_whitebook
+		}
+		x = 45
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_slanted_reform_direction"
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = JAP_kashima_slant
+		}
+	}
+	focus = {
+		id = JAP_naval_polls_high
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 50
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_naval_polls_high"
+			add_political_power = 75
+			add_stability = 0.05
+			navy_experience = 50
+			add_timed_idea = { idea = JAP_naval_doctrine_push days = 365 }
+			add_ideas = JAP_naval_construction
+			random_owned_state = {
+				limit = { state = 528 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+}

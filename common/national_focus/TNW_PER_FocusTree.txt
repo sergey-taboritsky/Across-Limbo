@@ -316,6 +316,7 @@ focus_tree = {
 				check_variable = { var = PER_suc_progress_var value = 35 compare = greater_than_or_equals }
 			}
 		}
+		cancellable = no
 		x = 10
 		y = 7
 		completion_reward = {
@@ -354,6 +355,7 @@ focus_tree = {
 				check_variable = { var = PER_suc_military_var value = 35 compare = greater_than_or_equals }
 			}
 		}
+		cancellable = no
 		x = 15
 		y = 7
 		completion_reward = {
@@ -392,6 +394,7 @@ focus_tree = {
 				check_variable = { var = PER_suc_radical_var value = 35 compare = greater_than_or_equals }
 			}
 		}
+		cancellable = no
 		x = 20
 		y = 7
 		completion_reward = {
@@ -427,6 +430,7 @@ focus_tree = {
 				check_variable = { var = PER_suc_association_var value = 35 compare = greater_than_or_equals }
 			}
 		}
+		cancellable = no
 		x = 25
 		y = 7
 		completion_reward = {
@@ -466,6 +470,7 @@ focus_tree = {
 				check_variable = { var = PER_suc_association_var value = 35 compare = less_than }
 			}
 		}
+		cancellable = no
 		x = 30
 		y = 7
 		completion_reward = {
