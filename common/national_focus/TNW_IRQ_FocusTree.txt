@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_German_Legacy
 		icon = GFX_IRQ_German_Legacy
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -31,7 +31,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Seek_New_Patron
 		icon = GFX_IRQ_Seek_New_Patron
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -50,7 +50,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Foreign_Credit
 		icon = GFX_IRQ_Foreign_Credit
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -69,7 +69,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Arms_Brokers
 		icon = GFX_IRQ_Arms_Brokers
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -92,7 +92,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Crown_League
 		icon = GFX_IRQ_Crown_League
-		cost = 35.00
+		cost = 7.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -119,7 +119,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Nuri_Strongman
 		icon = GFX_IRQ_Nuri_Strongman
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -151,7 +151,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Constitutional_Facade
 		icon = GFX_IRQ_Constitutional_Facade
-		cost = 25.00
+		cost = 5.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -174,7 +174,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Tribal_Levies
 		icon = GFX_IRQ_Tribal_Levies
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -202,7 +202,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Fertile_Crescent
 		icon = GFX_IRQ_Fertile_Crescent
-		cost = 35.00
+		cost = 7.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -224,7 +224,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Liberal_Cabinet
 		icon = GFX_IRQ_Liberal_Cabinet
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -252,7 +252,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Party_Legislation
 		icon = GFX_IRQ_Party_Legislation
-		cost = 25.00
+		cost = 5.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -275,7 +275,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Free_Press
 		icon = GFX_IRQ_Free_Press
-		cost = 25.00
+		cost = 5.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -298,7 +298,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Union_Tolerance
 		icon = GFX_IRQ_Union_Tolerance
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -325,7 +325,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_IPC_Renegotiation
 		icon = GFX_IRQ_IPC_Renegotiation
-		cost = 35.00
+		cost = 7.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -343,7 +343,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Kirkuk_Pipeline
 		icon = GFX_IRQ_Kirkuk_Pipeline
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -361,7 +361,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Development_Board
 		icon = GFX_IRQ_Development_Board
-		cost = 35.00
+		cost = 7.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -380,7 +380,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Diyala_Dams
 		icon = GFX_IRQ_Diyala_Dams
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -406,7 +406,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Agri_Mechanization
 		icon = GFX_IRQ_Agri_Mechanization
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -431,7 +431,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Denaturalization_Law
 		icon = GFX_IRQ_Denaturalization_Law
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -454,7 +454,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Schools_Expansion
 		icon = GFX_IRQ_Schools_Expansion
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -479,7 +479,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Communists_Crackdown
 		icon = GFX_IRQ_Communists_Crackdown
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -509,7 +509,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Palestine_Expedition
 		icon = GFX_IRQ_Palestine_Expedition
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -529,7 +529,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Army_Modernization
 		icon = GFX_IRQ_Army_Modernization
-		cost = 35.00
+		cost = 7.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -552,7 +552,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Officer_Academy
 		icon = GFX_IRQ_Officer_Academy
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -575,7 +575,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Barzan_Campaign
 		icon = GFX_IRQ_Barzan_Campaign
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -606,7 +606,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Royal_Guard
 		icon = GFX_IRQ_Royal_Guard
-		cost = 25.00
+		cost = 5.00
 		allow_branch = {
 			NOT = { has_country_flag = IRQ_qasim_revolution_flag }
 		}
@@ -643,7 +643,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Peoples_Tribunal
 		icon = GFX_IRQ_Peoples_Tribunal
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			has_country_flag = IRQ_qasim_revolution_flag
 		}
@@ -662,7 +662,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Republican_Army
 		icon = GFX_IRQ_Republican_Army
-		cost = 30.00
+		cost = 6.00
 		allow_branch = {
 			has_country_flag = IRQ_qasim_revolution_flag
 		}
@@ -681,7 +681,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Oil_Sovereignty
 		icon = GFX_IRQ_Oil_Sovereignty
-		cost = 35.00
+		cost = 7.00
 		allow_branch = {
 			has_country_flag = IRQ_qasim_revolution_flag
 		}
@@ -703,7 +703,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_ASU_Founding
 		icon = GFX_IRQ_ASU_Founding
-		cost = 30.00
+		cost = 6.00
 		mutually_exclusive = {
 			focus = IRQ_Peoples_Democracy
 			focus = IRQ_Arif_Purge
@@ -724,7 +724,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Left_Unity
 		icon = GFX_IRQ_Left_Unity
-		cost = 30.00
+		cost = 6.00
 		prerequisite = {
 			focus = IRQ_ASU_Founding
 		}
@@ -744,7 +744,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Workers_Militia
 		icon = GFX_IRQ_Workers_Militia
-		cost = 30.00
+		cost = 6.00
 		prerequisite = {
 			focus = IRQ_ASU_Founding
 		}
@@ -765,7 +765,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Internationalist_Course
 		icon = GFX_IRQ_Internationalist_Course
-		cost = 30.00
+		cost = 6.00
 		prerequisite = {
 			focus = IRQ_Left_Unity
 		}
@@ -783,7 +783,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Peoples_Democracy
 		icon = GFX_IRQ_Peoples_Democracy
-		cost = 30.00
+		cost = 6.00
 		mutually_exclusive = {
 			focus = IRQ_ASU_Founding
 			focus = IRQ_Arif_Purge
@@ -804,7 +804,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Party_State
 		icon = GFX_IRQ_Party_State
-		cost = 30.00
+		cost = 6.00
 		prerequisite = {
 			focus = IRQ_Peoples_Democracy
 		}
@@ -820,7 +820,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Planned_Economy_Start
 		icon = GFX_IRQ_Planned_Economy_Start
-		cost = 35.00
+		cost = 7.00
 		prerequisite = {
 			focus = IRQ_Party_State
 		}
@@ -838,7 +838,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Arif_Purge
 		icon = GFX_IRQ_Arif_Purge
-		cost = 30.00
+		cost = 6.00
 		mutually_exclusive = {
 			focus = IRQ_ASU_Founding
 			focus = IRQ_Peoples_Democracy
@@ -859,7 +859,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Army_First
 		icon = GFX_IRQ_Army_First
-		cost = 30.00
+		cost = 6.00
 		prerequisite = {
 			focus = IRQ_Arif_Purge
 		}
@@ -879,7 +879,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Neutral_Course
 		icon = GFX_IRQ_Neutral_Course
-		cost = 30.00
+		cost = 6.00
 		prerequisite = {
 			focus = IRQ_Army_First
 		}
@@ -894,7 +894,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Old_Elites_Return
 		icon = GFX_IRQ_Old_Elites_Return
-		cost = 30.00
+		cost = 6.00
 		mutually_exclusive = {
 			focus = IRQ_ASU_Founding
 			focus = IRQ_Peoples_Democracy
@@ -915,7 +915,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Settle_Old_Treaties
 		icon = GFX_IRQ_Settle_Old_Treaties
-		cost = 30.00
+		cost = 6.00
 		prerequisite = {
 			focus = IRQ_Old_Elites_Return
 		}
@@ -931,7 +931,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_Moscow_Station
 		icon = GFX_IRQ_Moscow_Station
-		cost = 30.00
+		cost = 6.00
 		prerequisite = {
 			focus = IRQ_Settle_Old_Treaties
 		}
