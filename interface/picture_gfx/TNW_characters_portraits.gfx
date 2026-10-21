@@ -1905,4 +1905,25 @@ spriteTypes = {
 		texturefile = "gfx/characters/PAL_Fawzi_al_Qawuqji.png"
 		legacy_lazy_load = no
 	}
+
+	#贾西姆·阿勒万
+	SpriteType = {
+		name = "GFX_portrait_large_ALP_Jassem_Alwan"
+		texturefile = "gfx/characters/ALP_Jassem_Alwan.png"
+		legacy_lazy_load = no
+	}
+
+	#法拉贾拉·埃尔赫卢
+	SpriteType = {
+		name = "GFX_portrait_large_ALP_Farajallah_El_Helou"
+		texturefile = "gfx/characters/ALP_Farajallah_El_Helou.png"
+		legacy_lazy_load = no
+	}
+
+	#萨米·欣纳维
+	SpriteType = {
+		name = "GFX_portrait_large_SYR_Sami_al_Hinnawi"
+		texturefile = "gfx/characters/SYR_Sami_al_Hinnawi.png"
+		legacy_lazy_load = no
+	}
 }
