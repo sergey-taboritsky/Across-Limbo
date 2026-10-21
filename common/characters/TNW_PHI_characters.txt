@@ -1,0 +1,127 @@
+characters = {
+	#—— 领袖 ——
+	#西普里亚诺·西德（劳联首任主席，亲美工会派旗手，开局领导人）
+	PHI_cipriano_cid = {
+		name = PHI_cipriano_cid
+		country_leader = {
+			desc = PHI_cipriano_cid_desc
+			ideology = American_Unionism
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#路易斯·塔鲁克（虎克军总司令）
+	PHI_luis_taruc = {
+		name = PHI_luis_taruc
+		country_leader = {
+			desc = PHI_luis_taruc_desc
+			ideology = agrarian_socialism
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#何塞·拉瓦（菲律宾共产党总书记，亲巴黎派）
+	PHI_jose_lava = {
+		name = PHI_jose_lava
+		country_leader = {
+			desc = PHI_jose_lava_desc
+			ideology = Marxism_Leninism
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#—— 政客 ——
+	#佩德罗·阿巴德·桑托斯（社会主义长老，塔鲁克的引路人）
+	PHI_pedro_abad_santos = {
+		name = PHI_pedro_abad_santos
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#阿马多·埃尔南德斯（工会诗人，劳联名誉主席）
+	PHI_amado_hernandez = {
+		name = PHI_amado_hernandez
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#卡洛斯·P·罗慕洛（亲美外交家）
+	PHI_carlos_romulo = {
+		name = PHI_carlos_romulo
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#何塞·劳雷尔（日占时期前总统，受审的合作者）
+	PHI_jose_laurel = {
+		name = PHI_jose_laurel
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#克拉罗·雷克托（民族主义参议员）
+	PHI_claro_recto = {
+		name = PHI_claro_recto
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#维森特·拉瓦（党的元老理论家）
+	PHI_vicente_lava = {
+		name = PHI_vicente_lava
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#—— 军人 ——
+	#卡斯托·阿莱汉德里诺（虎克军宿将）
+	PHI_casto_alejandrino = {
+		name = PHI_casto_alejandrino
+		advisor = {
+			slot = army_chief
+			idea_cost = 100
+		}
+	}
+	#马卡里奥·佩拉尔塔（美菲游击队出身的正规化派将领）
+	PHI_macario_peralta = {
+		name = PHI_macario_peralta
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+	#佩拉希奥·克鲁斯（空军出身的正规军少壮派）
+	PHI_pelagio_cruz = {
+		name = PHI_pelagio_cruz
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+	#赫苏斯·拉瓦（党的军事委员，拉瓦家最年轻的兄弟）
+	PHI_jesus_lava = {
+		name = PHI_jesus_lava
+		advisor = {
+			slot = high_command
+			idea_cost = 100
+		}
+	}
+}

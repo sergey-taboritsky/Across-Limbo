@@ -1,0 +1,16 @@
+MRP_Ishak_Haj_Muhammad = {
+	name = MRP_Ishak_Haj_Muhammad
+	portraits = {
+		civilian = {
+			large = GFX_portrait_large_MAL_Ishak_Haj_Muhammad
+		}
+	}
+	country_leader = {
+		desc = MRP_Ishak_Haj_Muhammad_desc
+		ideology = Left_wing_nationalism
+		expire = "2022.10.20.1"
+		id = -1
+		traits = {
+		}
+	}
+}

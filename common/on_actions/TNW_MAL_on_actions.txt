@@ -1,4 +1,4 @@
-on_weekly_MLY = {
+on_weekly_MAL = {
 	effect = {
 		if = {
 			limit = {

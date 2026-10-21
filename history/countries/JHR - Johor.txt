@@ -1,4 +1,4 @@
-﻿capital = 806
+﻿capital = 1011
 
 set_stability = 0.35
 set_war_support = 0.8
@@ -6,7 +6,7 @@ set_war_support = 0.8
 set_research_slots = 2
 set_fuel_ratio = 1.0
 set_politics = {
-	ruling_party = Authoritarianism
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -18,7 +18,7 @@ set_popularities = {
 	Social_democracy = 17
 	Liberalism = 12
 	Conservatism = 4
-	Authoritarianism = 6
-	Absolutism = 0
+	Authoritarianism = 0
+	Absolutism = 6
 	Nationalism = 1
 }

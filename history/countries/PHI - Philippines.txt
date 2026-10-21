@@ -1,38 +1,44 @@
 ﻿capital = 327
 
+set_convoys = 25
 
-set_convoys = 5
-
-recruit_character = PHI_manuel_luis_quezón
-recruit_character = PHI_pedro_p_baguisa
-recruit_character = PHI_deodato_jacinto
-recruit_character = PHI_hermano_jacinto
+recruit_character = PHI_cipriano_cid
+recruit_character = PHI_luis_taruc
+recruit_character = PHI_jose_lava
+recruit_character = PHI_pedro_abad_santos
+recruit_character = PHI_amado_hernandez
+recruit_character = PHI_carlos_romulo
+recruit_character = PHI_jose_laurel
+recruit_character = PHI_claro_recto
+recruit_character = PHI_vicente_lava
+recruit_character = PHI_casto_alejandrino
+recruit_character = PHI_macario_peralta
 recruit_character = PHI_pelagio_cruz
-recruit_character = PHI_jose_v_andrada
-recruit_character = PHI_leoncio_s_tan
-recruit_character = PHI_benito_n_ebuen
-recruit_character = PHI_basilio_fernando
-recruit_character = PHI_basilio_j_valdez
-recruit_character = PHI_santiago_nuval
-recruit_character = PHI_heraclio_alano
-recruit_character = PHI_ramon_a_alcaraz
-recruit_character = PHI_victor_h_dizon
-recruit_character = PHI_edwin_andrews
-recruit_character = PHI_eustacio_orobia
-recruit_character = PHI_vicente_p_lim
-recruit_character = PHI_emilio_aguinaldo
-recruit_character = PHI_juan_sumulong
-recruit_character = PHI_sergio_osmena
+recruit_character = PHI_jesus_lava
 
+add_ideas = {
+	phalanstere_aligned_nation
+}
 
 set_politics = {
-	ruling_party = Liberalism
-	last_election = "1935.9.15"
-	election_frequency = 72
+	ruling_party = syndicalism
+	last_election = "1946.4.23"
+	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 82
-	Nationalism = 9
-	communist = 9
+	communist = 16
+	syndicalism = 34
+	socialism = 24
+	Social_democracy = 10
+	Liberalism = 10
+	Conservatism = 3
+	Authoritarianism = 3
+	Absolutism = 0
+	Nationalism = 0
 }
+
+#党内三派力量（亲美工会派/虎克军/亲巴黎派）
+set_variable = { var = PHI_union_power value = 20 }
+set_variable = { var = PHI_huk_power value = 15 }
+set_variable = { var = PHI_lava_power value = 10 }

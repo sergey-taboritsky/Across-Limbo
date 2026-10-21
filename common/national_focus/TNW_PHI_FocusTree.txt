@@ -1,0 +1,885 @@
+focus_tree = {
+	id = PHI_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PHI
+		}
+	}
+	continuous_focus_position = { x = 100 y = 1200 }
+
+	focus = {
+		id = PHI_Second_Republic
+		icon = GFX_PHI_Second_Republic
+		cost = 5.00
+		x = 14
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Second_Republic"
+add_political_power = 50
+add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = PHI_Constitutional_Revision
+		icon = GFX_PHI_Constitutional_Revision
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Second_Republic
+		}
+		x = 8
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Constitutional_Revision"
+add_political_power = 25
+add_popularity = {
+	ideology = socialism
+	popularity = 0.02
+}
+custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Collaborator_Trials
+		icon = GFX_PHI_Collaborator_Trials
+		cost = 7.00
+		mutually_exclusive = { focus = PHI_Collaborator_Amnesty }
+		prerequisite = {
+			focus = PHI_Second_Republic
+		}
+		x = 12
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Collaborator_Trials"
+add_stability = 0.02
+add_popularity = {
+	ideology = Nationalism
+	popularity = -0.02
+}
+add_popularity = {
+	ideology = Authoritarianism
+	popularity = -0.01
+}
+custom_effect_tooltip = PHI_huk_up_tt
+add_to_variable = { var = PHI_huk_power value = 5 }
+clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Collaborator_Amnesty
+		icon = GFX_PHI_Collaborator_Amnesty
+		cost = 7.00
+		mutually_exclusive = { focus = PHI_Collaborator_Trials }
+		prerequisite = {
+			focus = PHI_Second_Republic
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Collaborator_Amnesty"
+add_stability = 0.03
+add_political_power = -25
+custom_effect_tooltip = PHI_union_up_tt
+add_to_variable = { var = PHI_union_power value = 5 }
+clamp_variable = { var = PHI_union_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Democratic_Alliance
+		icon = GFX_PHI_Democratic_Alliance
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Second_Republic
+		}
+		prerequisite = {
+			focus = PHI_Collaborator_Trials
+			focus = PHI_Collaborator_Amnesty
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Democratic_Alliance"
+add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = PHI_Civil_Service_Bill
+		icon = GFX_PHI_Civil_Service_Bill
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Constitutional_Revision
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Civil_Service_Bill"
+add_political_power = 25
+custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 5 }
+		}
+	}
+
+	focus = {
+		id = PHI_University_Restoration
+		icon = GFX_PHI_University_Restoration
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Civil_Service_Bill
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_University_Restoration"
+add_political_power = 25
+custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Mass_Literacy
+		icon = GFX_PHI_Mass_Literacy
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_University_Restoration
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Mass_Literacy"
+add_political_power = 25
+custom_effect_tooltip = TNW_dev_edu_month_rise_tt
+add_to_variable = { var = TNW_Literacy_level_monthly_value value = 5 }
+custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+add_to_variable = { var = TNW_Affluence_value value = 5 }
+clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Manila_Reborn
+		icon = GFX_PHI_Manila_Reborn
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Second_Republic
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Manila_Reborn"
+327 = {
+	add_building_construction = {
+		type = infrastructure
+		level = 1
+		instant_allocation = yes
+	}
+}
+custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Sugar_And_Hemp
+		icon = GFX_PHI_Sugar_And_Hemp
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Manila_Reborn
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Sugar_And_Hemp"
+add_political_power = 25
+custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+add_to_variable = { var = TNW_Affluence_value value = 10 }
+clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Development_Bank
+		icon = GFX_PHI_Development_Bank
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_Manila_Reborn
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Development_Bank"
+add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_allocation = yes
+}
+custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
+		}
+	}
+
+	focus = {
+		id = PHI_Roads_And_Rails
+		icon = GFX_PHI_Roads_And_Rails
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Sugar_And_Hemp
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Roads_And_Rails"
+add_political_power = 25
+628 = {
+	add_building_construction = {
+		type = infrastructure
+		level = 1
+		instant_allocation = yes
+	}
+}
+custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+add_to_variable = { var = TNW_Industrial_scale_value value = 5 }
+clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Economic_Council
+		icon = GFX_PHI_Economic_Council
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_Development_Bank
+			focus = PHI_Roads_And_Rails
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Economic_Council"
+add_ideas = PHI_reconstruction_council
+custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+add_to_variable = { var = TNW_Industrial_scale_value value = 15 }
+clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Tenancy_Inquiry
+		icon = GFX_PHI_Tenancy_Inquiry
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Democratic_Alliance
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Tenancy_Inquiry"
+add_political_power = 25
+custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
+		}
+	}
+
+	focus = {
+		id = PHI_Rice_Share_Act
+		icon = GFX_PHI_Rice_Share_Act
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_Tenancy_Inquiry
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Rice_Share_Act"
+add_stability = -0.01
+custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
+custom_effect_tooltip = PHI_huk_up_tt
+add_to_variable = { var = PHI_huk_power value = 10 }
+clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Land_Reform_Corps
+		icon = GFX_PHI_Land_Reform_Corps
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_Rice_Share_Act
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Land_Reform_Corps"
+add_political_power = 25
+custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+add_to_variable = { var = TNW_Agriculture_value value = 15 }
+clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+custom_effect_tooltip = PHI_huk_up_tt
+add_to_variable = { var = PHI_huk_power value = 5 }
+clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_New_Settlements
+		icon = GFX_PHI_New_Settlements
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Land_Reform_Corps
+		}
+		x = 6
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_New_Settlements"
+add_manpower = 15000
+custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+add_to_variable = { var = TNW_Agriculture_value value = 10 }
+clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+add_to_variable = { var = TNW_Affluence_value value = 5 }
+clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Veterans_Pensions
+		icon = GFX_PHI_Veterans_Pensions
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Second_Republic
+		}
+		x = 20
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Veterans_Pensions"
+add_political_power = 25
+army_experience = 25
+		}
+	}
+
+	focus = {
+		id = PHI_Guerrilla_Integration
+		icon = GFX_PHI_Guerrilla_Integration
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_Veterans_Pensions
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Guerrilla_Integration"
+army_experience = 25
+custom_effect_tooltip = PHI_huk_up_tt
+add_to_variable = { var = PHI_huk_power value = 10 }
+clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
+custom_effect_tooltip = PHI_union_down_tt
+add_to_variable = { var = PHI_union_power value = -5 }
+clamp_variable = { var = PHI_union_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_US_Military_Mission
+		icon = GFX_PHI_US_Military_Mission
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Veterans_Pensions
+		}
+		x = 22
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_US_Military_Mission"
+army_experience = 30
+custom_effect_tooltip = PHI_union_up_tt
+add_to_variable = { var = PHI_union_power value = 10 }
+clamp_variable = { var = PHI_union_power max = 100 min = 0 }
+custom_effect_tooltip = PHI_lava_down_tt
+add_to_variable = { var = PHI_lava_power value = -5 }
+clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Barrio_Militia
+		icon = GFX_PHI_Barrio_Militia
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Guerrilla_Integration
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Barrio_Militia"
+add_manpower = 8000
+custom_effect_tooltip = PHI_huk_up_tt
+add_to_variable = { var = PHI_huk_power value = 5 }
+clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
+custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Military_Academy
+		icon = GFX_PHI_Military_Academy
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_US_Military_Mission
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Military_Academy"
+add_political_power = 25
+army_experience = 30
+		}
+	}
+
+	focus = {
+		id = PHI_Offshore_Patrol
+		icon = GFX_PHI_Offshore_Patrol
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_US_Military_Mission
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Offshore_Patrol"
+add_political_power = 25
+navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = PHI_Internationale_Seat
+		icon = GFX_PHI_Internationale_Seat
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Second_Republic
+		}
+		x = 26
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Internationale_Seat"
+add_political_power = 50
+custom_effect_tooltip = PHI_lava_up_tt
+add_to_variable = { var = PHI_lava_power value = 5 }
+clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Japan_Reparations
+		icon = GFX_PHI_Japan_Reparations
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Second_Republic
+		}
+		x = 28
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Japan_Reparations"
+add_political_power = 75
+add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_allocation = yes
+}
+		}
+	}
+
+	focus = {
+		id = PHI_US_Special_Relations
+		icon = GFX_PHI_US_Special_Relations
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Internationale_Seat
+		}
+		x = 26
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_US_Special_Relations"
+add_political_power = 25
+custom_effect_tooltip = PHI_union_up_tt
+add_to_variable = { var = PHI_union_power value = 10 }
+clamp_variable = { var = PHI_union_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Malaya_Goodwill
+		icon = GFX_PHI_Malaya_Goodwill
+		cost = 5.00
+		prerequisite = {
+			focus = PHI_Internationale_Seat
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Malaya_Goodwill"
+add_political_power = 25
+add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = PHI_Party_Congress
+		icon = GFX_PHI_Party_Congress
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_Democratic_Alliance
+		}
+		x = 14
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Party_Congress"
+set_country_flag = PHI_race_begun
+add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = PHI_CLO_Unity
+		icon = GFX_PHI_CLO_Unity
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Party_Congress
+		}
+		x = 10
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_CLO_Unity"
+add_political_power = 25
+custom_effect_tooltip = PHI_union_up_tt
+add_to_variable = { var = PHI_union_power value = 10 }
+clamp_variable = { var = PHI_union_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Minimum_Wage
+		icon = GFX_PHI_Minimum_Wage
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_CLO_Unity
+		}
+		x = 10
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Minimum_Wage"
+add_stability = 0.02
+custom_effect_tooltip = PHI_union_up_tt
+add_to_variable = { var = PHI_union_power value = 8 }
+clamp_variable = { var = PHI_union_power max = 100 min = 0 }
+custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+add_to_variable = { var = TNW_Affluence_value value = 10 }
+clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Profit_Sharing
+		icon = GFX_PHI_Profit_Sharing
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_CLO_Unity
+		}
+		x = 8
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Profit_Sharing"
+add_political_power = 25
+custom_effect_tooltip = PHI_union_up_tt
+add_to_variable = { var = PHI_union_power value = 8 }
+clamp_variable = { var = PHI_union_power max = 100 min = 0 }
+custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+add_to_variable = { var = TNW_Affluence_monthly_value value = 5 }
+		}
+	}
+
+	focus = {
+		id = PHI_Free_Labor_Mandate
+		icon = GFX_PHI_Free_Labor_Mandate
+		cost = 10.00
+		mutually_exclusive = { focus = PHI_Huk_Vanguard }
+		mutually_exclusive = { focus = PHI_Insurrection_Thesis }
+		prerequisite = {
+			focus = PHI_Minimum_Wage
+			focus = PHI_Profit_Sharing
+		}
+		x = 10
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Free_Labor_Mandate"
+add_political_power = 50
+custom_effect_tooltip = PHI_union_up_tt
+add_to_variable = { var = PHI_union_power value = 12 }
+clamp_variable = { var = PHI_union_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Peasant_Leagues
+		icon = GFX_PHI_Peasant_Leagues
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Party_Congress
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Peasant_Leagues"
+add_political_power = 25
+custom_effect_tooltip = PHI_huk_up_tt
+add_to_variable = { var = PHI_huk_power value = 10 }
+clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Arms_Registration
+		icon = GFX_PHI_Arms_Registration
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Peasant_Leagues
+		}
+		x = 12
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Arms_Registration"
+add_stability = -0.01
+custom_effect_tooltip = PHI_huk_up_tt
+add_to_variable = { var = PHI_huk_power value = 8 }
+clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
+custom_effect_tooltip = PHI_union_down_tt
+add_to_variable = { var = PHI_union_power value = -5 }
+clamp_variable = { var = PHI_union_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Barrio_Government
+		icon = GFX_PHI_Barrio_Government
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Peasant_Leagues
+		}
+		x = 14
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Barrio_Government"
+add_political_power = 25
+custom_effect_tooltip = PHI_huk_up_tt
+add_to_variable = { var = PHI_huk_power value = 8 }
+clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
+custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Huk_Vanguard
+		icon = GFX_PHI_Huk_Vanguard
+		cost = 10.00
+		mutually_exclusive = { focus = PHI_Free_Labor_Mandate }
+		mutually_exclusive = { focus = PHI_Insurrection_Thesis }
+		prerequisite = {
+			focus = PHI_Arms_Registration
+			focus = PHI_Barrio_Government
+		}
+		x = 14
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Huk_Vanguard"
+add_political_power = 50
+custom_effect_tooltip = PHI_huk_up_tt
+add_to_variable = { var = PHI_huk_power value = 12 }
+clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_PKP_Reorganization
+		icon = GFX_PHI_PKP_Reorganization
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_Party_Congress
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_PKP_Reorganization"
+add_political_power = 25
+custom_effect_tooltip = PHI_lava_up_tt
+add_to_variable = { var = PHI_lava_power value = 10 }
+clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Paris_Liaison
+		icon = GFX_PHI_Paris_Liaison
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_PKP_Reorganization
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Paris_Liaison"
+add_political_power = 25
+custom_effect_tooltip = PHI_lava_up_tt
+add_to_variable = { var = PHI_lava_power value = 8 }
+clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Cadre_Schools
+		icon = GFX_PHI_Cadre_Schools
+		cost = 7.00
+		prerequisite = {
+			focus = PHI_PKP_Reorganization
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Cadre_Schools"
+add_political_power = 25
+custom_effect_tooltip = PHI_lava_up_tt
+add_to_variable = { var = PHI_lava_power value = 8 }
+clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
+custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Insurrection_Thesis
+		icon = GFX_PHI_Insurrection_Thesis
+		cost = 10.00
+		mutually_exclusive = { focus = PHI_Free_Labor_Mandate }
+		mutually_exclusive = { focus = PHI_Huk_Vanguard }
+		prerequisite = {
+			focus = PHI_Paris_Liaison
+			focus = PHI_Cadre_Schools
+		}
+		x = 18
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Insurrection_Thesis"
+add_war_support = 0.03
+custom_effect_tooltip = PHI_lava_up_tt
+add_to_variable = { var = PHI_lava_power value = 12 }
+clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
+custom_effect_tooltip = PHI_union_down_tt
+add_to_variable = { var = PHI_union_power value = -5 }
+clamp_variable = { var = PHI_union_power max = 100 min = 0 }
+		}
+	}
+
+	focus = {
+		id = PHI_Cid_Mandate
+		icon = GFX_PHI_Cid_Mandate
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_Free_Labor_Mandate
+		}
+		available = {
+			check_variable = { var = PHI_union_power value = 45 compare = greater_than_or_equals }
+		}
+		x = 10
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Cid_Mandate"
+add_political_power = 100
+add_stability = 0.05
+promote_character = PHI_cipriano_cid
+set_politics = {
+	ruling_party = syndicalism
+	elections_allowed = yes
+}
+add_popularity = {
+	ideology = syndicalism
+	popularity = 0.10
+}
+add_ideas = PHI_labor_charter
+set_country_flag = PHI_union_won
+		}
+	}
+
+	focus = {
+		id = PHI_Taruc_Premier
+		icon = GFX_PHI_Taruc_Premier
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_Huk_Vanguard
+		}
+		available = {
+			check_variable = { var = PHI_huk_power value = 45 compare = greater_than_or_equals }
+		}
+		x = 14
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Taruc_Premier"
+add_political_power = 100
+add_stability = 0.03
+promote_character = PHI_luis_taruc
+set_politics = {
+	ruling_party = socialism
+	elections_allowed = yes
+}
+add_popularity = {
+	ideology = socialism
+	popularity = 0.10
+}
+add_ideas = PHI_barrio_autonomy
+set_country_flag = PHI_huk_won
+		}
+	}
+
+	focus = {
+		id = PHI_Lava_General_Secretary
+		icon = GFX_PHI_Lava_General_Secretary
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_Insurrection_Thesis
+		}
+		available = {
+			check_variable = { var = PHI_lava_power value = 45 compare = greater_than_or_equals }
+		}
+		x = 18
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PHI_Lava_General_Secretary"
+add_political_power = 100
+add_war_support = 0.05
+promote_character = PHI_jose_lava
+set_politics = {
+	ruling_party = communist
+	elections_allowed = no
+}
+add_popularity = {
+	ideology = communist
+	popularity = 0.10
+}
+add_ideas = PHI_vanguard_party
+set_country_flag = PHI_lava_won
+		}
+	}
+
+}

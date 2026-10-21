@@ -269,8 +269,6 @@ set_variable = {
 
 give_guarantee = VIN
 
-country_event = { id = CHI_event.1 days = 5 }
-
 set_variable = {
 	TNW_Literacy_level_value = 25
 }

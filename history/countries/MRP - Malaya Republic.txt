@@ -1,0 +1,27 @@
+﻿capital = 1007
+
+set_research_slots = 2
+set_stability = 0.4
+
+recruit_character = MRP_Ishak_Haj_Muhammad
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = Social_democracy
+	last_election = "1946.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 5
+	syndicalism = 8
+	socialism = 10
+	Social_democracy = 40
+	Liberalism = 12
+	Conservatism = 5
+	Authoritarianism = 12
+	Absolutism = 0
+	Nationalism = 8
+}

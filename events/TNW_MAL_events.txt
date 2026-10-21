@@ -1,4 +1,5 @@
 add_namespace = MAL_penang_crisis
+add_namespace = MAL_dissolution
 
 country_event = {
 	id = MAL_penang_crisis.1
@@ -35,5 +36,91 @@ country_event = {
 		name = MAL_penang_crisis.3.a
 		add_stability = -0.02
 		add_war_support = 0.03
+	}
+}
+
+# 星洲解体：柔佛归苏丹国、彭亨建马来亚共和国，星洲改为星洲地方（彭泽民/tridemism_left）
+country_event = {
+	id = MAL_dissolution.1
+	title = MAL_dissolution.1.t
+	desc = MAL_dissolution.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = MAL_dissolution_done }
+	}
+	option = {
+		name = MAL_dissolution.1.a
+		1011 = {
+			transfer_state_to = JHR
+			add_core_of = JHR
+		}
+		1007 = {
+			transfer_state_to = MRP
+			add_core_of = MRP
+		}
+		MRP = {
+			set_capital = 1007
+			promote_character = MRP_Ishak_Haj_Muhammad
+		}
+		JHR = {
+			set_capital = 1011
+			promote_character = JHR_Sultan_Ibrahim_Johor
+		}
+		set_politics = {
+			ruling_party = Social_democracy
+			elections_allowed = no
+		}
+		set_popularities = {
+			communist = 5
+			syndicalism = 4
+			socialism = 10
+			Social_democracy = 45
+			Liberalism = 8
+			Conservatism = 8
+			Authoritarianism = 15
+			Absolutism = 0
+			Nationalism = 5
+		}
+		promote_character = MAL_Peng_Zemin
+		set_cosmetic_tag = MAL_local_government
+		set_country_flag = MAL_dissolution_done
+		load_focus_tree = TNW_dissolved_tree
+		MRP = {
+			load_focus_tree = TNW_dissolved_tree
+		}
+		JHR = {
+			load_focus_tree = TNW_dissolved_tree
+		}
+	}
+}
+
+# 中原大战开打：驻星国军返乡参战
+country_event = {
+	id = MAL_dissolution.2
+	title = MAL_dissolution.2.t
+	desc = MAL_dissolution.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MAL_dissolution.2.a
+		set_country_flag = MAL_NRA_left
+	}
+}
+
+# 南京正面打赢/拖满三个月崩溃：驻星国军归来
+country_event = {
+	id = MAL_dissolution.3
+	title = MAL_dissolution.3.t
+	desc = MAL_dissolution.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = MAL_NRA_left
+		NOT = { has_country_flag = MAL_NRA_returned }
+	}
+	option = {
+		name = MAL_dissolution.3.a
+		set_country_flag = MAL_NRA_returned
 	}
 }
