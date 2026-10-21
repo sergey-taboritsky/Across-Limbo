@@ -53,6 +53,18 @@ on_actions = {
 			EGY = {
 				set_variable = { country_intro_page_max = 4 }
 			}
+			SYR = {
+				set_variable = { country_intro_page_max = 4 }
+			}
+			IRQ = {
+				set_variable = { country_intro_page_max = 4 }
+			}
+			PER = {
+				set_variable = { country_intro_page_max = 4 }
+			}
+			PHI = {
+				set_variable = { country_intro_page_max = 4 }
+			}
 		}
 	}
 }

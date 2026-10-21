@@ -71,6 +71,22 @@ defined_text = {
 		trigger = { tag = EGY }
 		localization_key = GFX_TNW_welcome_ALP_intro_picture
 	}
+	text = {
+		trigger = { tag = SYR }
+		localization_key = GFX_TNW_welcome_ALP_intro_picture
+	}
+	text = {
+		trigger = { tag = IRQ }
+		localization_key = GFX_TNW_welcome_ALP_intro_picture
+	}
+	text = {
+		trigger = { tag = PER }
+		localization_key = GFX_TNW_welcome_ALP_intro_picture
+	}
+	text = {
+		trigger = { tag = PHI }
+		localization_key = GFX_TNW_welcome_ALP_intro_picture
+	}
 }
 defined_text = {
 	name = Get_TNW_welcome_country_intro_text
@@ -354,5 +370,117 @@ defined_text = {
 			check_variable = { current_page = 4 }
 		}
 		localization_key = TNW_welcome_EGY_intro_text_4
+	}
+	text = {
+		trigger = { 
+			tag = SYR
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_SYR_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = SYR
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_SYR_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = SYR
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_SYR_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = SYR
+			check_variable = { current_page = 4 }
+		}
+		localization_key = TNW_welcome_SYR_intro_text_4
+	}
+	text = {
+		trigger = { 
+			tag = IRQ
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_IRQ_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = IRQ
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_IRQ_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = IRQ
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_IRQ_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = IRQ
+			check_variable = { current_page = 4 }
+		}
+		localization_key = TNW_welcome_IRQ_intro_text_4
+	}
+	text = {
+		trigger = { 
+			tag = PER
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_PER_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = PER
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_PER_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = PER
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_PER_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = PER
+			check_variable = { current_page = 4 }
+		}
+		localization_key = TNW_welcome_PER_intro_text_4
+	}
+	text = {
+		trigger = { 
+			tag = PHI
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_PHI_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = PHI
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_PHI_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = PHI
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_PHI_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = PHI
+			check_variable = { current_page = 4 }
+		}
+		localization_key = TNW_welcome_PHI_intro_text_4
 	}
 }

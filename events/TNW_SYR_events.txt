@@ -102,6 +102,11 @@ country_event = {
 			ruling_party = Absolutism
 			elections_allowed = no
 		}
+		set_party_name = {
+			ideology = Absolutism
+			name = SYR_military_junta_party
+			long_name = SYR_military_junta_party_long
+		}
 		promote_character = SYR_Husni_al_Zaim
 		set_country_flag = SYR_zaim_coup_done_flag
 		mark_focus_tree_layout_dirty = yes
