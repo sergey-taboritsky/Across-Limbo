@@ -31,9 +31,7 @@ focus_tree = {
 		id = EGY_Wafd_Palace_Alliance
 		icon = GFX_EGY_Wafd_Palace_Alliance
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Election_of_1948
 		}
@@ -51,9 +49,7 @@ focus_tree = {
 		id = EGY_Tabet_Pact
 		icon = GFX_EGY_Tabet_Pact
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Wafd_Palace_Alliance
 		}
@@ -71,9 +67,7 @@ focus_tree = {
 		id = EGY_Refuse_Haydar
 		icon = GFX_EGY_Refuse_Haydar
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Wafd_Palace_Alliance
 		}
@@ -95,9 +89,7 @@ focus_tree = {
 		id = EGY_Integrate_Brotherhood_Special
 		icon = GFX_EGY_Integrate_Brotherhood_Special
 		cost = 6.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Tabet_Pact
 			focus = EGY_Refuse_Haydar
@@ -115,9 +107,7 @@ focus_tree = {
 		id = EGY_Zaghloul_Camp
 		icon = GFX_EGY_Zaghloul_Camp
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Integrate_Brotherhood_Special
 		}
@@ -134,9 +124,7 @@ focus_tree = {
 		id = EGY_Armed_Auxiliary_Police
 		icon = GFX_EGY_Armed_Auxiliary_Police
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Integrate_Brotherhood_Special
 		}
@@ -154,9 +142,7 @@ focus_tree = {
 		id = EGY_Breach_Army_Walls
 		icon = GFX_EGY_Breach_Army_Walls
 		cost = 6.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Refuse_Haydar
 		}
@@ -177,9 +163,7 @@ focus_tree = {
 		id = EGY_Liberation_Camps_Interior
 		icon = GFX_EGY_Liberation_Camps_Interior
 		cost = 6.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Zaghloul_Camp
 			focus = EGY_Armed_Auxiliary_Police
@@ -197,9 +181,7 @@ focus_tree = {
 		id = EGY_Lift_Gun_Restrictions
 		icon = GFX_EGY_Lift_Gun_Restrictions
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Liberation_Camps_Interior
 		}
@@ -217,9 +199,7 @@ focus_tree = {
 		id = EGY_Weaponize_Political_Scandals
 		icon = GFX_EGY_Weaponize_Political_Scandals
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Breach_Army_Walls
 		}
@@ -238,9 +218,7 @@ focus_tree = {
 		id = EGY_Social_Reform_Agenda
 		icon = GFX_EGY_Social_Reform_Agenda
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Election_of_1948
 		}
@@ -257,9 +235,7 @@ focus_tree = {
 		id = EGY_Talent_Cabinet_Plan
 		icon = GFX_EGY_Talent_Cabinet_Plan
 		cost = 6.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Social_Reform_Agenda
 		}
@@ -276,9 +252,7 @@ focus_tree = {
 		id = EGY_PMs_Promises
 		icon = GFX_EGY_PMs_Promises
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Social_Reform_Agenda
 		}
@@ -295,9 +269,7 @@ focus_tree = {
 		id = EGY_Relaunch_Land_Reform
 		icon = GFX_EGY_Relaunch_Land_Reform
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Social_Reform_Agenda
 		}
@@ -315,9 +287,7 @@ focus_tree = {
 		id = EGY_Municipal_Rural_Affairs
 		icon = GFX_EGY_Municipal_Rural_Affairs
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Talent_Cabinet_Plan
 		}
@@ -335,9 +305,7 @@ focus_tree = {
 		id = EGY_Vocational_Education
 		icon = GFX_EGY_Vocational_Education
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Talent_Cabinet_Plan
 		}
@@ -355,9 +323,7 @@ focus_tree = {
 		id = EGY_National_Economy_Ministry
 		icon = GFX_EGY_National_Economy_Ministry
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Talent_Cabinet_Plan
 		}
@@ -375,9 +341,7 @@ focus_tree = {
 		id = EGY_Welfare_Five_Year_Plan
 		icon = GFX_EGY_Welfare_Five_Year_Plan
 		cost = 6.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_PMs_Promises
 		}
@@ -410,9 +374,7 @@ focus_tree = {
 		id = EGY_Fifty_Feddan_Bill
 		icon = GFX_EGY_Fifty_Feddan_Bill
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Relaunch_Land_Reform
 		}
@@ -439,9 +401,7 @@ focus_tree = {
 		id = EGY_Hundred_Feddan_Compromise
 		icon = GFX_EGY_Hundred_Feddan_Compromise
 		cost = 6.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Relaunch_Land_Reform
 		}
@@ -467,9 +427,7 @@ focus_tree = {
 		id = EGY_No_Retroactivity_Immunity
 		icon = GFX_EGY_No_Retroactivity_Immunity
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Relaunch_Land_Reform
 		}
@@ -496,9 +454,7 @@ focus_tree = {
 		id = EGY_Rural_Social_Centers
 		icon = GFX_EGY_Rural_Social_Centers
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Municipal_Rural_Affairs
 		}
@@ -519,9 +475,7 @@ focus_tree = {
 		id = EGY_Free_Compulsory_Education
 		icon = GFX_EGY_Free_Compulsory_Education
 		cost = 6.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Vocational_Education
 		}
@@ -539,9 +493,7 @@ focus_tree = {
 		id = EGY_Muatale_Development_Projects
 		icon = GFX_EGY_Muatale_Development_Projects
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_National_Economy_Ministry
 		}
@@ -573,9 +525,7 @@ focus_tree = {
 		id = EGY_Universal_Pension_System
 		icon = GFX_EGY_Universal_Pension_System
 		cost = 6.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Welfare_Five_Year_Plan
 		}
@@ -593,9 +543,7 @@ focus_tree = {
 		id = EGY_Renew_Life_Infrastructure
 		icon = GFX_EGY_Renew_Life_Infrastructure
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Welfare_Five_Year_Plan
 		}
@@ -627,9 +575,7 @@ focus_tree = {
 		id = EGY_Agri_Workers_Assembly_Strike
 		icon = GFX_EGY_Agri_Workers_Assembly_Strike
 		cost = 6.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Fifty_Feddan_Bill
 			focus = EGY_Hundred_Feddan_Compromise
@@ -652,9 +598,7 @@ focus_tree = {
 		id = EGY_Agri_Minimum_Wage_Law
 		icon = GFX_EGY_Agri_Minimum_Wage_Law
 		cost = 6.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Rural_Social_Centers
 		}
@@ -675,9 +619,7 @@ focus_tree = {
 		id = EGY_Deficit_Management
 		icon = GFX_EGY_Deficit_Management
 		cost = 6.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Free_Compulsory_Education
 		}
@@ -697,9 +639,7 @@ focus_tree = {
 		id = EGY_Cotton_Floor_Price
 		icon = GFX_EGY_Cotton_Floor_Price
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Agri_Workers_Assembly_Strike
 		}
@@ -718,9 +658,7 @@ focus_tree = {
 		id = EGY_Wheat_Import_Export_Control
 		icon = GFX_EGY_Wheat_Import_Export_Control
 		cost = 5.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Agri_Workers_Assembly_Strike
 		}
@@ -739,9 +677,7 @@ focus_tree = {
 		id = EGY_Regulate_National_Capital
 		icon = GFX_EGY_Regulate_National_Capital
 		cost = 6.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Universal_Pension_System
 		}
@@ -763,9 +699,7 @@ focus_tree = {
 		id = EGY_Trade_Union_Federation_Prep
 		icon = GFX_EGY_Trade_Union_Federation_Prep
 		cost = 7.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Agri_Minimum_Wage_Law
 		}
@@ -796,9 +730,7 @@ focus_tree = {
 		id = EGY_New_Era_Egypt
 		icon = GFX_EGY_New_Era_Egypt
 		cost = 8.00
-		allow_branch = {
-			NOT = { has_country_flag = EGY_free_officers_revolution_flag }
-		}
+
 		prerequisite = {
 			focus = EGY_Trade_Union_Federation_Prep
 		}

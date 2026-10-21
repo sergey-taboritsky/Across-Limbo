@@ -1,0 +1,39 @@
+add_namespace = MAL_penang_crisis
+
+country_event = {
+	id = MAL_penang_crisis.1
+	title = MAL_penang_crisis.1.t
+	desc = MAL_penang_crisis.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MAL_penang_crisis.1.a
+		add_political_power = -25
+	}
+}
+
+country_event = {
+	id = MAL_penang_crisis.2
+	title = MAL_penang_crisis.2.t
+	desc = MAL_penang_crisis.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MAL_penang_crisis.2.a
+		add_stability = -0.02
+		add_ideas = MAL_penang_strike
+	}
+}
+
+country_event = {
+	id = MAL_penang_crisis.3
+	title = MAL_penang_crisis.3.t
+	desc = MAL_penang_crisis.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MAL_penang_crisis.3.a
+		add_stability = -0.02
+		add_war_support = 0.03
+	}
+}

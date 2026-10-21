@@ -34,9 +34,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
-		allow_branch = {
-			NOT = { has_country_flag = SYR_zaim_coup_done_flag }
-		}
+
 		completion_reward = {
 			army_experience = 25
 			add_war_support = 0.05
@@ -54,9 +52,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
-		allow_branch = {
-			NOT = { has_country_flag = SYR_zaim_coup_done_flag }
-		}
+
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 75
@@ -73,9 +69,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		cost = 5
-		allow_branch = {
-			NOT = { has_country_flag = SYR_zaim_coup_done_flag }
-		}
+
 		completion_reward = {
 			add_political_power = 75
 			554 = {
@@ -98,9 +92,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		cost = 5
-		allow_branch = {
-			NOT = { has_country_flag = SYR_zaim_coup_done_flag }
-		}
+
 		completion_reward = {
 			add_stability = 0.05
 			add_manpower = 2000
@@ -118,9 +110,7 @@ focus_tree = {
 		x = -2
 		y = 3
 		cost = 5
-		allow_branch = {
-			NOT = { has_country_flag = SYR_zaim_coup_done_flag }
-		}
+
 		completion_reward = {
 			554 = {
 				add_building_construction = {

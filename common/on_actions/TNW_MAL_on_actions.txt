@@ -1,0 +1,30 @@
+on_weekly_MLY = {
+	effect = {
+		if = {
+			limit = {
+				check_variable = { var = TNW_penang_unrest value = 50 compare = greater_than_or_equals }
+				NOT = { has_country_flag = MAL_penang_crisis_started }
+			}
+			set_country_flag = MAL_penang_crisis_started
+			country_event = { id = MAL_penang_crisis.1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = MAL_penang_crisis_started
+				NOT = { has_country_flag = MAL_penang_strike_fired }
+				check_variable = { var = TNW_penang_unrest value = 70 compare = greater_than_or_equals }
+			}
+			set_country_flag = MAL_penang_strike_fired
+			country_event = { id = MAL_penang_crisis.2 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = MAL_penang_crisis_started
+				NOT = { has_country_flag = MAL_penang_assembly_fired }
+				check_variable = { var = TNW_penang_unrest value = 85 compare = greater_than_or_equals }
+			}
+			set_country_flag = MAL_penang_assembly_fired
+			country_event = { id = MAL_penang_crisis.3 }
+		}
+	}
+}

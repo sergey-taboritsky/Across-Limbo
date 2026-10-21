@@ -65,5 +65,31 @@ ideas = {
 				construction_speed_buildings_factor = -0.10
 			}
 		}
+		#槟城总罢市
+		MAL_penang_strike = {
+			picture = GFX_idea_MAL_penang_strike
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.05
+				political_power_factor = -0.10
+				consumer_goods_factor = 0.03
+			}
+		}
+		#一国一军
+		MAL_One_Army = {
+			picture = GFX_idea_MAL_One_Army
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				army_org_factor = 0.05
+				command_power_gain_mult = 0.10
+			}
+		}
 	}
 }

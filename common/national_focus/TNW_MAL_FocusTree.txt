@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	continuous_focus_position = {
 		x = 100
-		y = 1200
+		y = 2200
 	}
 	default = no
 
@@ -138,8 +138,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MAL_Abolish_Land_Privilege
-		}
-		prerequisite = {
 			focus = MAL_Land_Redemption_Exchange
 		}
 		x = 8
@@ -246,9 +244,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MAL_Indian_Labor_Rights
 		}
-		mutually_exclusive = {
-			focus = MAL_Handle_Veerasenan
-		}
 		x = 4
 		y = 4
 		completion_reward = {
@@ -263,9 +258,6 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = {
 			focus = MAL_Indian_Labor_Rights
-		}
-		mutually_exclusive = {
-			focus = MAL_Compromise_KMT_Congress
 		}
 		x = 6
 		y = 4
@@ -462,8 +454,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MAL_Chinese_Reconciliation
-		}
-		prerequisite = {
 			focus = MAL_Prosecute_Huaqiao_Assoc
 		}
 		x = 11
@@ -945,8 +935,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MAL_Free_Port_Status
-		}
-		prerequisite = {
 			focus = MAL_Fiscal_Autonomy
 		}
 		x = 22
@@ -984,17 +972,960 @@ focus_tree = {
 		id = MAL_Penang_Autonomy_Crisis
 		icon = GFX_MAL_Penang_Autonomy_Crisis
 		cost = 10.00
-		allow_branch = {
-			check_variable = {
-				var = TNW_penang_unrest
-				value = 50
-				compare = greater_than_or_equals
-			}
-		}
+		#allow_branch = {
+		#	has_country_flag = MAL_penang_crisis_started
+		#}
 		x = 4
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Penang_Autonomy_Crisis"
+		}
+	}
+
+	focus = {
+		id = MAL_Criticize_Ponnudurai
+		icon = GFX_MAL_MAL_Criticize_Ponnudurai
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Penang_Autonomy_Crisis
+		}
+		x = 2
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Criticize_Ponnudurai"
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 3 }
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = MAL_Mobilize_Wulu_Club
+		icon = GFX_MAL_MAL_Mobilize_Wulu_Club
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Penang_Autonomy_Crisis
+		}
+		x = 4
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Mobilize_Wulu_Club"
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 5 }
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = MAL_Guard_Malay_Separatism
+		icon = GFX_MAL_MAL_Guard_Malay_Separatism
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Penang_Autonomy_Crisis
+		}
+		x = 6
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Guard_Malay_Separatism"
+			add_political_power = 25
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = MAL_Strangle_Penang_Industry
+		icon = GFX_MAL_MAL_Strangle_Penang_Industry
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Mobilize_Wulu_Club
+		}
+		mutually_exclusive = {
+			focus = MAL_Business_Compromise
+		}
+		x = 3
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Strangle_Penang_Industry"
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 8 }
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = MAL_Business_Compromise
+		icon = GFX_MAL_MAL_Business_Compromise
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Mobilize_Wulu_Club
+		}
+		mutually_exclusive = {
+			focus = MAL_Strangle_Penang_Industry
+		}
+		x = 5
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Business_Compromise"
+			custom_effect_tooltip = MAL_penang_unrest_fall_tt
+			add_to_variable = { var = TNW_penang_unrest value = -5 }
+			add_political_power = -25
+		}
+	}
+
+	focus = {
+		id = MAL_Deny_Peoples_Assembly
+		icon = GFX_MAL_MAL_Deny_Peoples_Assembly
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Strangle_Penang_Industry
+			focus = MAL_Business_Compromise
+		}
+
+		x = 4
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Deny_Peoples_Assembly"
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 5 }
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = MAL_Calm_Strike_Wave
+		icon = GFX_MAL_MAL_Calm_Strike_Wave
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Strangle_Penang_Industry
+		}
+
+		x = 2
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Calm_Strike_Wave"
+			custom_effect_tooltip = MAL_penang_unrest_fall_tt
+			add_to_variable = { var = TNW_penang_unrest value = -5 }
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = MAL_Negotiate_TanChengLock
+		icon = GFX_MAL_MAL_Negotiate_TanChengLock
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Business_Compromise
+		}
+		x = 6
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Negotiate_TanChengLock"
+			custom_effect_tooltip = MAL_penang_unrest_fall_tt
+			add_to_variable = { var = TNW_penang_unrest value = -5 }
+			add_political_power = -25
+		}
+	}
+
+	focus = {
+		id = MAL_Arrest_Mackay
+		icon = GFX_MAL_MAL_Arrest_Mackay
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Calm_Strike_Wave
+		}
+
+		x = 1
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Arrest_Mackay"
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 10 }
+			add_political_power = 25
+			hidden_effect = {
+				set_country_flag = MAL_mackay_arrested
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Martial_Law_Volunteers
+		icon = GFX_MAL_MAL_Martial_Law_Volunteers
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Calm_Strike_Wave
+		}
+
+		x = 3
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Martial_Law_Volunteers"
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			add_to_variable = { var = TNW_penang_unrest value = 5 }
+			add_war_support = 0.02
+			add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = MAL_Free_Port_Legislation
+		icon = GFX_MAL_MAL_Free_Port_Legislation
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Negotiate_TanChengLock
+		}
+
+		x = 5
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Free_Port_Legislation"
+			custom_effect_tooltip = MAL_penang_unrest_fall_tt
+			add_to_variable = { var = TNW_penang_unrest value = -15 }
+			add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = MAL_Pingzhang_KMT_Merger
+		icon = GFX_MAL_MAL_Pingzhang_KMT_Merger
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Negotiate_TanChengLock
+		}
+
+		x = 7
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Pingzhang_KMT_Merger"
+			custom_effect_tooltip = MAL_penang_unrest_fall_tt
+			add_to_variable = { var = TNW_penang_unrest value = -10 }
+			add_popularity = {
+				ideology = Authoritarianism
+				popularity = 0.03
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Penang_Vote
+		icon = GFX_MAL_MAL_Penang_Vote
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Deny_Peoples_Assembly
+		}
+		prerequisite = {
+			focus = MAL_Arrest_Mackay
+		}
+		prerequisite = {
+			focus = MAL_Martial_Law_Volunteers
+		}
+		prerequisite = {
+			focus = MAL_Free_Port_Legislation
+		}
+		prerequisite = {
+			focus = MAL_Pingzhang_KMT_Merger
+		}
+
+		x = 4
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Penang_Vote"
+		}
+	}
+
+	focus = {
+		id = MAL_Separatism_End
+		icon = GFX_MAL_MAL_Separatism_End
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Penang_Vote
+		}
+		mutually_exclusive = {
+			focus = MAL_Bitter_Failure
+		}
+
+		available = {
+			check_variable = {
+				var = TNW_penang_unrest
+				value = 70
+				compare = less_than
+			}
+		}
+		x = 3
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Separatism_End"
+			add_political_power = 50
+			add_stability = 0.02
+			custom_effect_tooltip = MAL_penang_unrest_fall_tt
+			add_to_variable = { var = TNW_penang_unrest value = -10 }
+			set_variable = { var = TNW_penang_unrest value = 10 }
+		}
+	}
+
+	focus = {
+		id = MAL_Bitter_Failure
+		icon = GFX_MAL_MAL_Bitter_Failure
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Penang_Vote
+		}
+		mutually_exclusive = {
+			focus = MAL_Separatism_End
+		}
+
+		available = {
+			check_variable = {
+				var = TNW_penang_unrest
+				value = 70
+				compare = greater_than_or_equals
+			}
+		}
+		x = 5
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Bitter_Failure"
+			add_stability = -0.10
+			add_political_power = -50
+			set_variable = { var = TNW_penang_unrest value = 100 }
+			hidden_effect = {
+				set_country_flag = MAL_penang_separation_won
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Dissolve_Sep_Committee
+		icon = GFX_MAL_MAL_Dissolve_Sep_Committee
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Separatism_End
+		}
+		mutually_exclusive = {
+			focus = MAL_Local_Autonomy_Principle
+		}
+
+		x = 2
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Dissolve_Sep_Committee"
+			add_political_power = 25
+			add_popularity = {
+				ideology = Authoritarianism
+				popularity = 0.03
+			}
+			hidden_effect = {
+				clr_country_flag = MAL_penang_crisis_started
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Local_Autonomy_Principle
+		icon = GFX_MAL_MAL_Local_Autonomy_Principle
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Separatism_End
+		}
+		mutually_exclusive = {
+			focus = MAL_Dissolve_Sep_Committee
+		}
+
+		x = 4
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Local_Autonomy_Principle"
+			add_stability = 0.05
+			add_popularity = {
+				ideology = Authoritarianism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.02
+			}
+			hidden_effect = {
+				clr_country_flag = MAL_penang_crisis_started
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Receive_German_Bases
+		icon = GFX_MAL_MAL_Receive_German_Bases
+		cost = 7.00
+		x = 28
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Receive_German_Bases"
+			navy_experience = 25
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = MAL_Reorganize_German_Intel
+		icon = GFX_MAL_MAL_Reorganize_German_Intel
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Receive_German_Bases
+		}
+		x = 27
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Reorganize_German_Intel"
+			add_political_power = 25
+			hidden_effect = {
+				set_country_flag = MAL_intel_reformed
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Share_Nanjing_Aid
+		icon = GFX_MAL_MAL_Share_Nanjing_Aid
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Receive_German_Bases
+		}
+		x = 30
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Share_Nanjing_Aid"
+			army_experience = 15
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = MAL_Invite_ZhuangHuiquan
+		icon = GFX_MAL_MAL_Invite_ZhuangHuiquan
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Reorganize_German_Intel
+		}
+		mutually_exclusive = {
+			focus = MAL_136_Volunteer_Corps
+		}
+		x = 26
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Invite_ZhuangHuiquan"
+			add_political_power = 25
+			add_popularity = {
+				ideology = Authoritarianism
+				popularity = 0.02
+			}
+			hidden_effect = {
+				set_country_flag = MAL_zhuang_in_party
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_136_Volunteer_Corps
+		icon = GFX_MAL_MAL_136_Volunteer_Corps
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Reorganize_German_Intel
+		}
+		mutually_exclusive = {
+			focus = MAL_Invite_ZhuangHuiquan
+		}
+		x = 28
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_136_Volunteer_Corps"
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = MAL_Model_Division
+		icon = GFX_MAL_MAL_Model_Division
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Share_Nanjing_Aid
+		}
+		x = 30
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Model_Division"
+			army_experience = 25
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = MAL_Statistics_Bureau
+		icon = GFX_MAL_MAL_Statistics_Bureau
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Invite_ZhuangHuiquan
+			focus = MAL_136_Volunteer_Corps
+		}
+		x = 27
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Statistics_Bureau"
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = MAL_Army_Artillery_Doctrine
+		icon = GFX_MAL_MAL_Army_Artillery_Doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Model_Division
+		}
+		x = 31
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Army_Artillery_Doctrine"
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = MAL_Local_Officer_Corps
+		icon = GFX_MAL_MAL_Local_Officer_Corps
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Model_Division
+		}
+		x = 29
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Local_Officer_Corps"
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = MAL_Northern_Defense_Line
+		icon = GFX_MAL_MAL_Northern_Defense_Line
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Army_Artillery_Doctrine
+		}
+		prerequisite = {
+			focus = MAL_Local_Officer_Corps
+		}
+		x = 30
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Northern_Defense_Line"
+			add_political_power = 25
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = MAL_Assess_Left_Generals
+		icon = GFX_MAL_MAL_Assess_Left_Generals
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Statistics_Bureau
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Assess_Left_Generals"
+			add_political_power = 25
+			hidden_effect = {
+				set_country_flag = MAL_officers_assessed
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Reorganize_Volunteers_Ethnic
+		icon = GFX_MAL_MAL_Reorganize_Volunteers_Ethnic
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Assess_Left_Generals
+		}
+		mutually_exclusive = {
+			focus = MAL_Volunteer_Integration
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Reorganize_Volunteers_Ethnic"
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = MAL_Volunteer_Integration
+		icon = GFX_MAL_MAL_Volunteer_Integration
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Assess_Left_Generals
+		}
+		mutually_exclusive = {
+			focus = MAL_Reorganize_Volunteers_Ethnic
+		}
+		x = 27
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Volunteer_Integration"
+			add_political_power = 25
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = MAL_Militia_Reserve
+		icon = GFX_MAL_MAL_Militia_Reserve
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Assess_Left_Generals
+		}
+		x = 29
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Militia_Reserve"
+			add_war_support = 0.02
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = MAL_City_Defense_Plan
+		icon = GFX_MAL_MAL_City_Defense_Plan
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Northern_Defense_Line
+		}
+		x = 31
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_City_Defense_Plan"
+			add_political_power = 25
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = MAL_NRA_Returns
+		icon = GFX_MAL_MAL_NRA_Returns
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Reorganize_Volunteers_Ethnic
+			focus = MAL_Volunteer_Integration
+		}
+		prerequisite = {
+			focus = MAL_Militia_Reserve
+		}
+		prerequisite = {
+			focus = MAL_City_Defense_Plan
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = nanjing_won_cpw
+				CHI = {
+					has_country_flag = nanjing_won_cpw_tempflag
+				}
+			}
+		}
+		x = 28
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_NRA_Returns"
+			army_experience = 50
+			add_war_support = 0.05
+			hidden_effect = {
+				set_country_flag = MAL_nra_returned
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Fight_NRA_Factionalism
+		icon = GFX_MAL_MAL_Fight_NRA_Factionalism
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_NRA_Returns
+		}
+		x = 27
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Fight_NRA_Factionalism"
+			add_political_power = -25
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = MAL_Merge_Chinese_Units
+		icon = GFX_MAL_MAL_Merge_Chinese_Units
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_NRA_Returns
+		}
+		x = 29
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Merge_Chinese_Units"
+			add_political_power = -25
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = MAL_Localize_Garrison
+		icon = GFX_MAL_MAL_Localize_Garrison
+		cost = 7.00
+		prerequisite = {
+			focus = MAL_Fight_NRA_Factionalism
+		}
+		prerequisite = {
+			focus = MAL_Merge_Chinese_Units
+		}
+		x = 28
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Localize_Garrison"
+			add_political_power = 25
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = MAL_One_Nation_One_Army
+		icon = GFX_MAL_MAL_One_Nation_One_Army
+		cost = 10.00
+		prerequisite = {
+			focus = MAL_Localize_Garrison
+		}
+		x = 28
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_One_Nation_One_Army"
+			army_experience = 50
+			add_war_support = 0.05
+			swap_ideas = {
+				remove_idea = MAL_Three_Armies
+				add_idea = MAL_One_Army
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Foreign_Path
+		icon = GFX_MAL_MAL_Foreign_Path
+		cost = 7.00
+		x = 36
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Foreign_Path"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = MAL_Follow_Nanjing
+		icon = GFX_MAL_MAL_Follow_Nanjing
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Foreign_Path
+		}
+		x = 33
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Follow_Nanjing"
+			add_political_power = 25
+			add_war_support = 0.02
+			hidden_effect = {
+				set_country_flag = MAL_follow_nanjing
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_US_Recognition
+		icon = GFX_MAL_MAL_US_Recognition
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Foreign_Path
+		}
+		x = 35
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_US_Recognition"
+			add_political_power = 25
+			hidden_effect = {
+				set_country_flag = MAL_us_recognition
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Cope_Calcutta
+		icon = GFX_MAL_MAL_Cope_Calcutta
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Foreign_Path
+		}
+		x = 37
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Cope_Calcutta"
+			add_political_power = 25
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = MAL_Pan_Indonesia_Shock
+		icon = GFX_MAL_MAL_Pan_Indonesia_Shock
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Foreign_Path
+		}
+		x = 39
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Pan_Indonesia_Shock"
+			add_stability = -0.02
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = MAL_Party_Ties
+		icon = GFX_MAL_MAL_Party_Ties
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Follow_Nanjing
+		}
+		x = 33
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Party_Ties"
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = MAL_Reclaim_War_Debts
+		icon = GFX_MAL_MAL_Reclaim_War_Debts
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Party_Ties
+		}
+		x = 33
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Reclaim_War_Debts"
+			add_political_power = 50
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = MAL_Fu_Daqing_Europe
+		icon = GFX_MAL_MAL_Fu_Daqing_Europe
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_US_Recognition
+		}
+		x = 35
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Fu_Daqing_Europe"
+			add_political_power = -25
+			hidden_effect = {
+				set_country_flag = MAL_envoy_europe
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_He_Military_Mission
+		icon = GFX_MAL_MAL_He_Military_Mission
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Fu_Daqing_Europe
+		}
+		x = 35
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_He_Military_Mission"
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = MAL_Indian_Left_Labor
+		icon = GFX_MAL_MAL_Indian_Left_Labor
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Cope_Calcutta
+		}
+		x = 37
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Indian_Left_Labor"
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.02
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Weaken_Malay_Indian_Congress
+		icon = GFX_MAL_MAL_Weaken_Malay_Indian_Congress
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Indian_Left_Labor
+		}
+		x = 37
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Weaken_Malay_Indian_Congress"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = MAL_Islands_Encirclement
+		icon = GFX_MAL_MAL_Islands_Encirclement
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Pan_Indonesia_Shock
+		}
+		x = 39
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Islands_Encirclement"
+			add_political_power = 25
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = MAL_PH_VN_Partners
+		icon = GFX_MAL_MAL_PH_VN_Partners
+		cost = 5.00
+		prerequisite = {
+			focus = MAL_Islands_Encirclement
+		}
+		x = 39
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_PH_VN_Partners"
+			add_political_power = 25
+			hidden_effect = {
+				set_country_flag = MAL_ph_vn_ties
+			}
 		}
 	}
 }
