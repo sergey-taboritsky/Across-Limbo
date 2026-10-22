@@ -215,4 +215,317 @@ characters = {
 			}
 		}
 	}
+	#穆罕默德·亚明
+	INS_Mohammad_Yamin = {
+		name = INS_Mohammad_Yamin
+		country_leader = {
+			desc = INS_Mohammad_Yamin_desc
+			ideology = oligarchy
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#维尔贾宁格拉特（帕林德拉老卫队）
+	INS_Woerjaningrat = {
+		name = INS_Woerjaningrat
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#苏桑托·蒂尔托普罗佐（帕林德拉老卫队）
+	INS_Susanto_Tirtoprodjo = {
+		name = INS_Susanto_Tirtoprodjo
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#索安格蓬（国民印尼团干事·米南加保）
+	INS_Soangkupon = {
+		name = INS_Soangkupon
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#阿卜杜勒·拉希德（国民印尼团干事·望加锡）
+	INS_Abdul_Rasjid = {
+		name = INS_Abdul_Rasjid
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#塔朱丁·努尔（国民印尼团干事·武吉斯）
+	INS_Tadjuddin_Noor = {
+		name = INS_Tadjuddin_Noor
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#特乌库·穆罕默德·哈山（副总理·苏门答腊行政）
+	INS_Teuku_Mohammad_Hasan = {
+		name = INS_Teuku_Mohammad_Hasan
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#苏加诺
+	INS_Sukarno = {
+		name = INS_Sukarno
+		country_leader = {
+			desc = INS_Sukarno_desc
+			ideology = Social_nationalism
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#西迪克·佐约苏卡尔托（党机器操盘手）
+	INS_Sidik_Djojosukarto = {
+		name = INS_Sidik_Djojosukarto
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#阿里·萨斯特罗阿米佐约（党官僚门面）
+	INS_Ali_Sastroamidjojo = {
+		name = INS_Ali_Sastroamidjojo
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#亚当·马利克（《独立报》操盘手）
+	INS_Adam_Malik = {
+		name = INS_Adam_Malik
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#伊斯卡克·佐克罗哈迪苏尔乔（党内打手）
+	INS_Iskaq_Tjokrohadisurjo = {
+		name = INS_Iskaq_Tjokrohadisurjo
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#苏卡尔尼（穆尔巴党魁）
+	INS_Sukarni = {
+		name = INS_Sukarni
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#查埃鲁尔·萨利赫（青年团总队长）
+	INS_Chaerul_Saleh = {
+		name = INS_Chaerul_Saleh
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#维卡纳（青年领袖·联共线）
+	INS_Wikana = {
+		name = INS_Wikana
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#苏丹·沙里尔（社党领袖）
+	INS_Sutan_Sjahrir = {
+		name = INS_Sutan_Sjahrir
+		country_leader = {
+			desc = INS_Sutan_Sjahrir_desc
+			ideology = Social_democratic
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#D.N.艾地（共产党地下重建者）
+	INS_Dipa_Nusantara_Aidit = {
+		name = INS_Dipa_Nusantara_Aidit
+		country_leader = {
+			desc = INS_Dipa_Nusantara_Aidit_desc
+			ideology = Marxism_Leninism
+			traits = {
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#穆罕默德·纳西尔（马斯友美党团领袖）
+	INS_Mohammad_Natsir = {
+		name = INS_Mohammad_Natsir
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#哈姆卡（宗教舆论领袖）
+	INS_Hamka = {
+		name = INS_Hamka
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#沙弗鲁丁·普拉维拉内加拉（财政部长）
+	INS_Sjafruddin_Prawiranegara = {
+		name = INS_Sjafruddin_Prawiranegara
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#S.M.卡托苏维里约（伊斯兰之家首领）
+	INS_Kartosuwirjo = {
+		name = INS_Kartosuwirjo
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#萧玉灿（华人同化派精英）
+	INS_Siauw_Giok_Tjhan = {
+		name = INS_Siauw_Giok_Tjhan
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#郑添聪（中华会系实业家）
+	INS_Thio_Thiam_Tjong = {
+		name = INS_Thio_Thiam_Tjong
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#阿萨特（排华民粹旗手）
+	INS_Assaat = {
+		name = INS_Assaat
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#苏迪尔曼（人民游击系·元帅）
+	INS_Sudirman = {
+		name = INS_Sudirman
+		field_marshal = {
+			desc = INS_Sudirman_commander_desc
+			traits = { war_hero brilliant_strategist commando }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#阿卜杜勒·哈里斯·纳苏蒂安（西利万吉系·元帅）
+	INS_Abdul_Haris_Nasution = {
+		name = INS_Abdul_Haris_Nasution
+		field_marshal = {
+			desc = INS_Abdul_Haris_Nasution_commander_desc
+			traits = { war_hero infantry_officer offensive_doctrine }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	#T.B.西马图邦（总参谋长·将军）
+	INS_Tahi_Bonar_Simatupang = {
+		name = INS_Tahi_Bonar_Simatupang
+		corps_commander = {
+			desc = INS_Tahi_Bonar_Simatupang_commander_desc
+			traits = { brilliant_strategist infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	#阿赫马德·塔希尔（义勇军残系·将军）
+	INS_Achmad_Tahir = {
+		name = INS_Achmad_Tahir
+		corps_commander = {
+			desc = INS_Achmad_Tahir_commander_desc
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#苏哈托（营头中校·将军）
+	INS_Suharto = {
+		name = INS_Suharto
+		corps_commander = {
+			desc = INS_Suharto_commander_desc
+			traits = { trickster }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	#穆罕默德·哈达（悬浮元老）
+	INS_Mohammad_Hatta = {
+		name = INS_Mohammad_Hatta
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#阿古斯·萨利姆（外长元老）
+	INS_Agus_Salim = {
+		name = INS_Agus_Salim
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#丹马拉卡（第三方暗流）
+	INS_Tan_Malaka = {
+		name = INS_Tan_Malaka
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
+	#萨尔托诺（老自由派·GERINDO残部）
+	INS_Sartono = {
+		name = INS_Sartono
+		advisor = {
+			slot = political_advisor
+			idea_cost = 100
+		}
+	}
 }

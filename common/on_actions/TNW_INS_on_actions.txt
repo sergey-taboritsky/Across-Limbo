@@ -1,0 +1,17 @@
+# INS 继承战开局初始化：六派立场全部从"中立"（50）起步，影响力分数清零
+on_actions = {
+	on_startup = {
+		effect = {
+			INS = {
+				set_variable = { INS_goni_var = 50 }
+				set_variable = { INS_marhaen_var = 50 }
+				set_variable = { INS_hokokai_var = 50 }
+				set_variable = { INS_sartono_var = 50 }
+				set_variable = { INS_sarekat_var = 50 }
+				set_variable = { INS_murba_var = 50 }
+				set_variable = { INS_sukarno_score = 0 }
+				set_variable = { INS_yamin_score = 0 }
+			}
+		}
+	}
+}

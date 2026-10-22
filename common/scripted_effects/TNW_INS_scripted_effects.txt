@@ -1,0 +1,142 @@
+# INS 继承战影响力结算（灏定案：六派五层立场 + 苏托莫三态加成 15%）
+# 分档：<=20 全面支持苏加诺(100%计入) / <=40 部分支持苏加诺(50%) / <=60 中立(0) / <=80 部分支持亚明(50%) / >80 全面支持亚明(100%)
+# 苏托莫态度（旗标，非变量）：中立 / 倾向苏加诺(INS_soetomo_lean_sukarno) / 倾向亚明(INS_soetomo_lean_yamin)
+#   倾向状态使受青睐候选人在最终计算前获得 15% 影响力加成
+INS_calc_scores_effect = {
+	set_variable = { INS_sukarno_score = 0 }
+	set_variable = { INS_yamin_score = 0 }
+	set_variable = { INS_score_tmp_var = INS_goni_var }
+	if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 60 compare = less_than_or_equals } }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+	}
+	else = {
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+	}
+	set_variable = { INS_score_tmp_var = INS_marhaen_var }
+	if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 60 compare = less_than_or_equals } }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+	}
+	else = {
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+	}
+	set_variable = { INS_score_tmp_var = INS_hokokai_var }
+	if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 60 compare = less_than_or_equals } }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+	}
+	else = {
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+	}
+	set_variable = { INS_score_tmp_var = INS_sartono_var }
+	if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 60 compare = less_than_or_equals } }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+	}
+	else = {
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+	}
+	set_variable = { INS_score_tmp_var = INS_sarekat_var }
+	if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 60 compare = less_than_or_equals } }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+	}
+	else = {
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+	}
+	set_variable = { INS_score_tmp_var = INS_murba_var }
+	if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 60 compare = less_than_or_equals } }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+	}
+	else = {
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+	}
+	if = {
+		limit = { has_country_flag = INS_soetomo_lean_sukarno }
+		multiply_variable = { var = INS_sukarno_score value = 1.15 }
+	}
+	else_if = {
+		limit = { has_country_flag = INS_soetomo_lean_yamin }
+		multiply_variable = { var = INS_yamin_score value = 1.15 }
+	}
+}

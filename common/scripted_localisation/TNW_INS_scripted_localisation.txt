@@ -1,0 +1,154 @@
+# INS 继承战：六派立场五层显示 + 苏托莫态度三态显示（ALP defined_text 范式）
+
+defined_text = {
+	name = Get_INS_stance_goni
+	text = {
+		trigger = { check_variable = { var = INS_goni_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_full_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_goni_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_goni_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = INS_goni_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_yamin
+	}
+	text = {
+		localization_key = INS_stance_full_yamin
+	}
+}
+
+defined_text = {
+	name = Get_INS_stance_marhaen
+	text = {
+		trigger = { check_variable = { var = INS_marhaen_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_full_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_marhaen_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_marhaen_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = INS_marhaen_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_yamin
+	}
+	text = {
+		localization_key = INS_stance_full_yamin
+	}
+}
+
+defined_text = {
+	name = Get_INS_stance_hokokai
+	text = {
+		trigger = { check_variable = { var = INS_hokokai_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_full_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_hokokai_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_hokokai_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = INS_hokokai_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_yamin
+	}
+	text = {
+		localization_key = INS_stance_full_yamin
+	}
+}
+
+defined_text = {
+	name = Get_INS_stance_sartono
+	text = {
+		trigger = { check_variable = { var = INS_sartono_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_full_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_sartono_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_sartono_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = INS_sartono_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_yamin
+	}
+	text = {
+		localization_key = INS_stance_full_yamin
+	}
+}
+
+defined_text = {
+	name = Get_INS_stance_sarekat
+	text = {
+		trigger = { check_variable = { var = INS_sarekat_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_full_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_sarekat_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_sarekat_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = INS_sarekat_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_yamin
+	}
+	text = {
+		localization_key = INS_stance_full_yamin
+	}
+}
+
+defined_text = {
+	name = Get_INS_stance_murba
+	text = {
+		trigger = { check_variable = { var = INS_murba_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_full_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_murba_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_murba_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = INS_murba_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_yamin
+	}
+	text = {
+		localization_key = INS_stance_full_yamin
+	}
+}
+
+defined_text = {
+	name = Get_INS_soetomo_stance
+	text = {
+		trigger = { has_country_flag = INS_soetomo_lean_sukarno }
+		localization_key = INS_soetomo_stance_sukarno
+	}
+	text = {
+		trigger = { has_country_flag = INS_soetomo_lean_yamin }
+		localization_key = INS_soetomo_stance_yamin
+	}
+	text = {
+		localization_key = INS_soetomo_stance_neutral
+	}
+}
