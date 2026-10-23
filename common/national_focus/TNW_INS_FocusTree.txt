@@ -1,0 +1,1618 @@
+focus_tree = {
+	id = INS_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = INS
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 1600
+	}
+	default = no
+
+	focus = {
+		id = INS_Continue_Kasimo_Plan
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 5
+		y = 0
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Continue_Kasimo_Plan"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Sumatra_Planting_Expansion
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 4
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Continue_Kasimo_Plan }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Sumatra_Planting_Expansion"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Raise_Procurement_Prices
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 6
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Continue_Kasimo_Plan }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Raise_Procurement_Prices"
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = INS_Pilot_End_Rationing
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 5
+		y = 2
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Sumatra_Planting_Expansion focus = INS_Raise_Procurement_Prices }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Pilot_End_Rationing"
+			add_political_power = 50
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Expand_Cropland
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 3
+		y = 3
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Pilot_End_Rationing }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Expand_Cropland"
+			add_manpower = 5000
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Russia_Grain_Exchange
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 5
+		y = 3
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Pilot_End_Rationing }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Russia_Grain_Exchange"
+			add_political_power = 50
+			add_offsite_building = { building = industrial_complex level = 1 }
+		}
+	}
+
+	focus = {
+		id = INS_Fertilizer_Seeds
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 7
+		y = 3
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Pilot_End_Rationing }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Fertilizer_Seeds"
+			add_stability = 0.02
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = INS_Balance_Cash_Crops
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 4
+		y = 4
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Pilot_End_Rationing }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Balance_Cash_Crops"
+			add_political_power = 50
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Academy_of_Agriculture
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 6
+		y = 4
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Pilot_End_Rationing }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Academy_of_Agriculture"
+			add_offsite_building = { building = industrial_complex level = 1 }
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Support_Djuanda
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 11
+		y = 0
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Support_Djuanda"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Normalize_Planning_Bureau
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 10
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		mutually_exclusive = { focus = INS_National_Economic_Experts }
+		prerequisite = { focus = INS_Support_Djuanda }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Normalize_Planning_Bureau"
+			add_political_power = 50
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_National_Economic_Experts
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 11
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		mutually_exclusive = { focus = INS_Normalize_Planning_Bureau }
+		prerequisite = { focus = INS_Support_Djuanda }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_National_Economic_Experts"
+			add_political_power = 50
+			add_offsite_building = { building = industrial_complex level = 1 }
+		}
+	}
+
+	focus = {
+		id = INS_Far_East_Reconstruction_Boom
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 12
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Support_Djuanda }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Far_East_Reconstruction_Boom"
+			add_offsite_building = { building = industrial_complex level = 1 }
+		}
+	}
+
+	focus = {
+		id = INS_Incubate_Postwar_Plan
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 10
+		y = 2
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Normalize_Planning_Bureau focus = INS_National_Economic_Experts }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Incubate_Postwar_Plan"
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = INS_Resource_Export_Board
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 12
+		y = 2
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Far_East_Reconstruction_Boom }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Resource_Export_Board"
+			add_political_power = 50
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Announce_Benteng
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 11
+		y = 3
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Incubate_Postwar_Plan focus = INS_Resource_Export_Board }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Announce_Benteng"
+			add_political_power = 50
+			add_stability = 0.01
+			set_country_flag = INS_benteng_announced
+		}
+	}
+
+	focus = {
+		id = INS_Import_Licenses
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 10
+		y = 4
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Announce_Benteng }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Import_Licenses"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Squeeze_Alien_Capital
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 12
+		y = 4
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Announce_Benteng }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Squeeze_Alien_Capital"
+			add_political_power = 50
+			add_stability = -0.01
+		}
+	}
+
+	focus = {
+		id = INS_Local_Importers_First
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 11
+		y = 5
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Import_Licenses focus = INS_Squeeze_Alien_Capital }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Local_Importers_First"
+			add_offsite_building = { building = industrial_complex level = 1 }
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Nationalize_Industry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 11
+		y = 6
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Local_Importers_First }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Nationalize_Industry"
+			add_offsite_building = { building = industrial_complex level = 1 }
+			add_stability = -0.01
+		}
+	}
+
+	focus = {
+		id = INS_Sumitro_Plan
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 10
+		y = 7
+		available = {
+			has_country_flag = INS_succession_yamin
+		}
+		mutually_exclusive = { focus = INS_Economic_Sovereignty_Movement }
+		prerequisite = { focus = INS_Nationalize_Industry }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Sumitro_Plan"
+			add_political_power = 75
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Economic_Sovereignty_Movement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 12
+		y = 7
+		available = {
+			has_country_flag = INS_succession_sukarno
+		}
+		mutually_exclusive = { focus = INS_Sumitro_Plan }
+		prerequisite = { focus = INS_Nationalize_Industry }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Economic_Sovereignty_Movement"
+			add_war_support = 0.02
+			add_stability = -0.01
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Import_Substitution
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 9
+		y = 8
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Sumitro_Plan }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Import_Substitution"
+			add_offsite_building = { building = industrial_complex level = 1 }
+		}
+	}
+
+	focus = {
+		id = INS_Accelerate_Industrialization
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 10
+		y = 8
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Sumitro_Plan }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Accelerate_Industrialization"
+			add_offsite_building = { building = industrial_complex level = 1 }
+		}
+	}
+
+	focus = {
+		id = INS_Organize_Five_Year_Plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 9
+		y = 9
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Import_Substitution focus = INS_Accelerate_Industrialization }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Organize_Five_Year_Plan"
+			add_offsite_building = { building = industrial_complex level = 2 }
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Package_Confiscation
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 12
+		y = 8
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Economic_Sovereignty_Movement }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Package_Confiscation"
+			add_offsite_building = { building = industrial_complex level = 1 }
+			add_stability = -0.02
+			add_war_support = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Strengthen_Takeover
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 13
+		y = 8
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Economic_Sovereignty_Movement }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Strengthen_Takeover"
+			add_political_power = 50
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Manage_New_Enterprises
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 12
+		y = 9
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Package_Confiscation focus = INS_Strengthen_Takeover }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Manage_New_Enterprises"
+			add_offsite_building = { building = industrial_complex level = 1 }
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Central_Banking_Law
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 11
+		y = 8
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Sumitro_Plan focus = INS_Economic_Sovereignty_Movement }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Central_Banking_Law"
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = INS_Recoup_Java_Bank
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 10
+		y = 9
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Central_Banking_Law }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Recoup_Java_Bank"
+			add_political_power = 50
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Complete_Monetary_Sovereignty
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 11
+		y = 9
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Central_Banking_Law }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Complete_Monetary_Sovereignty"
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = INS_Army_Rationalization
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 17
+		y = 0
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Army_Rationalization"
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = INS_Demobilize_Militias
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 15
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		mutually_exclusive = { focus = INS_Keep_Guerrillas }
+		prerequisite = { focus = INS_Army_Rationalization }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Demobilize_Militias"
+			add_political_power = 50
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Keep_Guerrillas
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 16
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		mutually_exclusive = { focus = INS_Demobilize_Militias }
+		prerequisite = { focus = INS_Army_Rationalization }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Keep_Guerrillas"
+			add_manpower = 5000
+			add_war_support = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Siliwangi_Model_Division
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 15
+		y = 2
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Demobilize_Militias focus = INS_Keep_Guerrillas }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Siliwangi_Model_Division"
+			army_experience = 10
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2500 }
+		}
+	}
+
+	focus = {
+		id = INS_Positional_Warfare
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 17
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Army_Rationalization }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Positional_Warfare"
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = INS_Total_Peoples_Defense
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 18
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Army_Rationalization }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Total_Peoples_Defense"
+			add_war_support = 0.02
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = INS_Border_Guerrilla_Zones
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 18
+		y = 2
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Positional_Warfare focus = INS_Total_Peoples_Defense }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Border_Guerrilla_Zones"
+			add_war_support = 0.01
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = INS_Reorganize_Military_Districts
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 17
+		y = 3
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Siliwangi_Model_Division focus = INS_Border_Guerrilla_Zones }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Reorganize_Military_Districts"
+			add_political_power = 50
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = INS_Self_Funded_Army
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 15
+		y = 4
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Reorganize_Military_Districts }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Self_Funded_Army"
+			add_political_power = 100
+			add_stability = -0.01
+		}
+	}
+
+	focus = {
+		id = INS_Guardian_Political_Action
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 17
+		y = 4
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Reorganize_Military_Districts }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Guardian_Political_Action"
+			add_political_power = 75
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = INS_Improve_Magelang_Academy
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 19
+		y = 4
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Reorganize_Military_Districts }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Improve_Magelang_Academy"
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = INS_Civilian_Transport_Licenses
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 14
+		y = 5
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Self_Funded_Army }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Civilian_Transport_Licenses"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Army_Plantations
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 15
+		y = 5
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Self_Funded_Army }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Army_Plantations"
+			add_political_power = 50
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Military_Import_Permits
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 15
+		y = 6
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Self_Funded_Army }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Military_Import_Permits"
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 }
+		}
+	}
+
+	focus = {
+		id = INS_Unity_Training
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 18
+		y = 5
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Improve_Magelang_Academy }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Unity_Training"
+			army_experience = 10
+			add_war_support = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Officer_Nationalism
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 19
+		y = 5
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Improve_Magelang_Academy }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Officer_Nationalism"
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = INS_National_Defense_University
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 19
+		y = 6
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		prerequisite = { focus = INS_Improve_Magelang_Academy }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_National_Defense_University"
+			army_experience = 25
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Constitutional_Challenge
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 25
+		y = 0
+		available = {
+			has_country_flag = INS_crisis_constitutional
+		}
+		visible = {
+			has_country_flag = INS_crisis_constitutional
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Constitutional_Challenge"
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = INS_Mobilize_Council_Elders
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 24
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_constitutional
+		}
+		mutually_exclusive = { focus = INS_Sartono_Endorsement }
+		prerequisite = { focus = INS_Constitutional_Challenge }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Mobilize_Council_Elders"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Sartono_Endorsement
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 23
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_constitutional
+		}
+		mutually_exclusive = { focus = INS_Mobilize_Council_Elders }
+		prerequisite = { focus = INS_Constitutional_Challenge }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Sartono_Endorsement"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Prioritize_Socialists
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 26
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_constitutional
+		}
+		mutually_exclusive = { focus = INS_Prioritize_Masyumi }
+		prerequisite = { focus = INS_Constitutional_Challenge }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Prioritize_Socialists"
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Prioritize_Masyumi
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 27
+		y = 1
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_constitutional
+		}
+		mutually_exclusive = { focus = INS_Prioritize_Socialists }
+		prerequisite = { focus = INS_Constitutional_Challenge }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Prioritize_Masyumi"
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Petition_Founding_Father
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 25
+		y = 2
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_constitutional
+		}
+		prerequisite = { focus = INS_Mobilize_Council_Elders focus = INS_Sartono_Endorsement }
+		prerequisite = { focus = INS_Prioritize_Socialists focus = INS_Prioritize_Masyumi }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Petition_Founding_Father"
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = INS_Suppress_Hatta
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 24
+		y = 3
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_constitutional
+		}
+		prerequisite = { focus = INS_Petition_Founding_Father }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Suppress_Hatta"
+			add_political_power = 75
+			clr_country_flag = INS_crisis_constitutional
+			if = {
+				limit = {
+					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
+					NOT = { has_country_flag = INS_soetomo_dying }
+				}
+				clr_country_flag = INS_crisis_ongoing
+			}
+		}
+	}
+
+	focus = {
+		id = INS_Purge_Federalists
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 26
+		y = 3
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_constitutional
+		}
+		prerequisite = { focus = INS_Petition_Founding_Father }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Purge_Federalists"
+			add_political_power = 75
+			clr_country_flag = INS_crisis_constitutional
+			if = {
+				limit = {
+					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
+					NOT = { has_country_flag = INS_soetomo_dying }
+				}
+				clr_country_flag = INS_crisis_ongoing
+			}
+		}
+	}
+
+	focus = {
+		id = INS_Kartosuwirjo_Rebellion
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 25
+		y = 4
+		available = {
+			has_country_flag = INS_crisis_kartosuwirjo
+		}
+		visible = {
+			has_country_flag = INS_crisis_kartosuwirjo
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Kartosuwirjo_Rebellion"
+			add_war_support = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Deploy_Siliwangi
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 24
+		y = 5
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_kartosuwirjo
+		}
+		mutually_exclusive = { focus = INS_Dispatch_Sudirman }
+		prerequisite = { focus = INS_Kartosuwirjo_Rebellion }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Deploy_Siliwangi"
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = INS_Dispatch_Sudirman
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 26
+		y = 5
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_kartosuwirjo
+		}
+		mutually_exclusive = { focus = INS_Deploy_Siliwangi }
+		prerequisite = { focus = INS_Kartosuwirjo_Rebellion }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Dispatch_Sudirman"
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = INS_Contain_West_Java
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 25
+		y = 6
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_kartosuwirjo
+		}
+		prerequisite = { focus = INS_Deploy_Siliwangi focus = INS_Dispatch_Sudirman }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Contain_West_Java"
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = INS_Suppress_Parliamentary_Islam
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 24
+		y = 7
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_kartosuwirjo
+		}
+		mutually_exclusive = { focus = INS_Amnesty_Peripheral_Fighters }
+		prerequisite = { focus = INS_Contain_West_Java }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Suppress_Parliamentary_Islam"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Amnesty_Peripheral_Fighters
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 26
+		y = 7
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_kartosuwirjo
+		}
+		mutually_exclusive = { focus = INS_Suppress_Parliamentary_Islam }
+		prerequisite = { focus = INS_Contain_West_Java }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Amnesty_Peripheral_Fighters"
+			add_manpower = 2500
+		}
+	}
+
+	focus = {
+		id = INS_End_Darul_Islam
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 25
+		y = 8
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_crisis_kartosuwirjo
+		}
+		prerequisite = { focus = INS_Suppress_Parliamentary_Islam focus = INS_Amnesty_Peripheral_Fighters }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_End_Darul_Islam"
+			add_stability = 0.05
+			add_war_support = 0.02
+			clr_country_flag = INS_crisis_kartosuwirjo
+			set_country_flag = INS_di_defeated
+			if = {
+				limit = {
+					NOT = { has_country_flag = INS_crisis_constitutional }
+					NOT = { has_country_flag = INS_soetomo_dying }
+				}
+				clr_country_flag = INS_crisis_ongoing
+			}
+		}
+	}
+
+	focus = {
+		id = INS_Fathers_Deathbed
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 31
+		y = 4
+		available = {
+			has_country_flag = INS_soetomo_dying
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Fathers_Deathbed"
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = INS_Denounce_Sjahrir
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 30
+		y = 5
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		mutually_exclusive = { focus = INS_Sjahrir_Guardian }
+		prerequisite = { focus = INS_Fathers_Deathbed }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Denounce_Sjahrir"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Sjahrir_Guardian
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 32
+		y = 5
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		mutually_exclusive = { focus = INS_Denounce_Sjahrir }
+		prerequisite = { focus = INS_Fathers_Deathbed }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Sjahrir_Guardian"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Unite_the_Party
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 31
+		y = 6
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		prerequisite = { focus = INS_Denounce_Sjahrir focus = INS_Sjahrir_Guardian }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Unite_the_Party"
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = INS_Stabilize_Frontier_Garrisons
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 30
+		y = 7
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		mutually_exclusive = { focus = INS_Preventive_Deterrence }
+		prerequisite = { focus = INS_Unite_the_Party }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Stabilize_Frontier_Garrisons"
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Preventive_Deterrence
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 32
+		y = 7
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		mutually_exclusive = { focus = INS_Stabilize_Frontier_Garrisons }
+		prerequisite = { focus = INS_Unite_the_Party }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Preventive_Deterrence"
+			add_war_support = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_May_Tragedy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 31
+		y = 8
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		prerequisite = { focus = INS_Stabilize_Frontier_Garrisons focus = INS_Preventive_Deterrence }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_May_Tragedy"
+			add_war_support = 0.02
+			add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = INS_Panchasila_Copyright
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 29
+		y = 9
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		prerequisite = { focus = INS_May_Tragedy }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Panchasila_Copyright"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Show_the_Vision
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 31
+		y = 9
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		prerequisite = { focus = INS_May_Tragedy }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Show_the_Vision"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Consolidate_Army_Ties
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 33
+		y = 9
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		prerequisite = { focus = INS_May_Tragedy }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Consolidate_Army_Ties"
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = INS_Deny_Forgery
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 27
+		y = 10
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		mutually_exclusive = { focus = INS_Internal_Council_Vote }
+		prerequisite = { focus = INS_Panchasila_Copyright }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Deny_Forgery"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Internal_Council_Vote
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 29
+		y = 10
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		mutually_exclusive = { focus = INS_Deny_Forgery }
+		prerequisite = { focus = INS_Panchasila_Copyright }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Internal_Council_Vote"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Second_Panchasila_Speech
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 28
+		y = 11
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		prerequisite = { focus = INS_Deny_Forgery focus = INS_Internal_Council_Vote }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Second_Panchasila_Speech"
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = INS_Great_Indonesia_Territory
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 31
+		y = 10
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		mutually_exclusive = { focus = INS_Urgency_of_Unity }
+		prerequisite = { focus = INS_Show_the_Vision }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Great_Indonesia_Territory"
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = INS_Urgency_of_Unity
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 32
+		y = 10
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		mutually_exclusive = { focus = INS_Great_Indonesia_Territory }
+		prerequisite = { focus = INS_Show_the_Vision }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Urgency_of_Unity"
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = INS_Interpret_Sumpah_Palapa
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 31
+		y = 11
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		prerequisite = { focus = INS_Great_Indonesia_Territory focus = INS_Urgency_of_Unity }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Interpret_Sumpah_Palapa"
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = INS_Nasution_Guards_Capital
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 33
+		y = 10
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		mutually_exclusive = { focus = INS_Mobilize_Guerrillas_into_City }
+		prerequisite = { focus = INS_Consolidate_Army_Ties }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Nasution_Guards_Capital"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Mobilize_Guerrillas_into_City
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 34
+		y = 10
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		mutually_exclusive = { focus = INS_Nasution_Guards_Capital }
+		prerequisite = { focus = INS_Consolidate_Army_Ties }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Mobilize_Guerrillas_into_City"
+			add_war_support = 0.01
+		}
+	}
+
+	focus = {
+		id = INS_Secure_Army_Cooperation
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 33
+		y = 11
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		prerequisite = { focus = INS_Nasution_Guards_Capital focus = INS_Mobilize_Guerrillas_into_City }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Secure_Army_Cooperation"
+			army_experience = 10
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Dust_Settles
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 31
+		y = 12
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		visible = {
+			has_country_flag = INS_soetomo_dying
+		}
+		prerequisite = { focus = INS_Second_Panchasila_Speech }
+		prerequisite = { focus = INS_Interpret_Sumpah_Palapa }
+		prerequisite = { focus = INS_Secure_Army_Cooperation }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Dust_Settles"
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = INS_Propaganda_Master
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 30
+		y = 13
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		mutually_exclusive = { focus = INS_Army_Seals_Parliament }
+		mutually_exclusive = { focus = INS_Peoples_Bannerman }
+		prerequisite = { focus = INS_Dust_Settles }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Propaganda_Master"
+			set_country_flag = INS_succession_yamin
+			clr_country_flag = INS_soetomo_dying
+			if = {
+				limit = {
+					NOT = { has_country_flag = INS_crisis_constitutional }
+					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
+				}
+				clr_country_flag = INS_crisis_ongoing
+			}
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = INS_Army_Seals_Parliament
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 31
+		y = 13
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		mutually_exclusive = { focus = INS_Propaganda_Master }
+		mutually_exclusive = { focus = INS_Peoples_Bannerman }
+		prerequisite = { focus = INS_Dust_Settles }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Army_Seals_Parliament"
+			set_country_flag = INS_succession_army
+			army_experience = 10
+			clr_country_flag = INS_soetomo_dying
+			if = {
+				limit = {
+					NOT = { has_country_flag = INS_crisis_constitutional }
+					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
+				}
+				clr_country_flag = INS_crisis_ongoing
+			}
+		}
+	}
+
+	focus = {
+		id = INS_Peoples_Bannerman
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 32
+		y = 13
+		available = {
+			NOT = { has_country_flag = INS_crisis_ongoing }
+		}
+		mutually_exclusive = { focus = INS_Propaganda_Master }
+		mutually_exclusive = { focus = INS_Army_Seals_Parliament }
+		prerequisite = { focus = INS_Dust_Settles }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed INS_Peoples_Bannerman"
+			set_country_flag = INS_succession_sukarno
+			add_war_support = 0.02
+			clr_country_flag = INS_soetomo_dying
+			if = {
+				limit = {
+					NOT = { has_country_flag = INS_crisis_constitutional }
+					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
+				}
+				clr_country_flag = INS_crisis_ongoing
+			}
+		}
+	}
+
+}

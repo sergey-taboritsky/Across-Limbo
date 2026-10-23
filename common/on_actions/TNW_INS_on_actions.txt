@@ -1,4 +1,4 @@
-# INS 继承战开局初始化：六派立场全部从"中立"（50）起步，影响力分数清零
+# INS on_actions：开局变量初始化 + 三次危机定时触发（180/360/415 天）
 on_actions = {
 	on_startup = {
 		effect = {
@@ -11,6 +11,9 @@ on_actions = {
 				set_variable = { INS_murba_var = 50 }
 				set_variable = { INS_sukarno_score = 0 }
 				set_variable = { INS_yamin_score = 0 }
+				country_event = { id = INS_crisis.1 days = 180 }
+				country_event = { id = INS_crisis.2 days = 360 }
+				country_event = { id = INS_crisis.3 days = 415 }
 			}
 		}
 	}

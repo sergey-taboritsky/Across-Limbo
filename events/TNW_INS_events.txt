@@ -1,5 +1,6 @@
 add_namespace = INS_event
 add_namespace = INS_news_event
+add_namespace = INS_crisis
 #test
 country_event = {
 	id = INS_event.114514
@@ -27,5 +28,52 @@ news_event = {
 	major = no
 	option = {
 		name = INS_news_event.1.a
+	}
+}
+
+# 修宪派发难
+country_event = {
+	id = INS_crisis.1
+	title = INS_crisis.1.t
+	desc = INS_crisis.1.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = INS_crisis.1.a
+		set_country_flag = INS_crisis_ongoing
+		set_country_flag = INS_crisis_constitutional
+	}
+}
+
+
+# 西爪哇的绿火
+country_event = {
+	id = INS_crisis.2
+	title = INS_crisis.2.t
+	desc = INS_crisis.2.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = INS_crisis.2.a
+		set_country_flag = INS_crisis_ongoing
+		set_country_flag = INS_crisis_kartosuwirjo
+	}
+}
+
+
+# 国父的病床前
+country_event = {
+	id = INS_crisis.3
+	title = INS_crisis.3.t
+	desc = INS_crisis.3.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = INS_crisis.3.a
+		set_country_flag = INS_crisis_ongoing
+		set_country_flag = INS_soetomo_dying
 	}
 }
