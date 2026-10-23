@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	continuous_focus_position = {
 		x = 100
-		y = 1900
+		y = 2000
 	}
 	default = no
 
@@ -72,7 +72,8 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
 		}
-		prerequisite = { focus = INS_Sumatra_Planting_Expansion focus = INS_Raise_Procurement_Prices }
+		prerequisite = { focus = INS_Sumatra_Planting_Expansion }
+		prerequisite = { focus = INS_Raise_Procurement_Prices }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Pilot_End_Rationing"
 			add_political_power = 50
@@ -274,7 +275,8 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
 		}
-		prerequisite = { focus = INS_Incubate_Postwar_Plan focus = INS_Resource_Export_Board }
+		prerequisite = { focus = INS_Incubate_Postwar_Plan }
+		prerequisite = { focus = INS_Resource_Export_Board }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Announce_Benteng"
 			add_political_power = 50
@@ -665,7 +667,8 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
 		}
-		prerequisite = { focus = INS_Siliwangi_Model_Division focus = INS_Border_Guerrilla_Zones }
+		prerequisite = { focus = INS_Siliwangi_Model_Division }
+		prerequisite = { focus = INS_Border_Guerrilla_Zones }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Reorganize_Military_Districts"
 			add_political_power = 50
@@ -1031,10 +1034,10 @@ focus_tree = {
 			country_event = { id = INS_crisis.8 days = 1 }
 			custom_effect_tooltip = INS_ft_deploy_siliwangi_tt
 			hidden_effect = {
-				add_to_variable = { var = INS_army_siliwangi_var value = 10 }
-				clamp_variable = { var = INS_army_siliwangi_var max = 100 min = 0 }
-				add_to_variable = { var = INS_army_guerrilla_var value = -5 }
-				clamp_variable = { var = INS_army_guerrilla_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+				add_to_variable = { var = INS_army_guerrilla_str value = -5 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
 			}
 			army_experience = 10
 		}
@@ -1056,10 +1059,10 @@ focus_tree = {
 			country_event = { id = INS_crisis.9 days = 1 }
 			custom_effect_tooltip = INS_ft_sudirman_tt
 			hidden_effect = {
-				add_to_variable = { var = INS_army_guerrilla_var value = 10 }
-				clamp_variable = { var = INS_army_guerrilla_var max = 100 min = 0 }
-				add_to_variable = { var = INS_army_siliwangi_var value = -5 }
-				clamp_variable = { var = INS_army_siliwangi_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_guerrilla_str value = 10 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+				add_to_variable = { var = INS_army_siliwangi_str value = -5 }
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
 			}
 			army_experience = 10
 		}
@@ -1099,8 +1102,8 @@ focus_tree = {
 			hidden_effect = {
 				add_to_variable = { var = INS_sarekat_str value = -10 }
 				clamp_variable = { var = INS_sarekat_str max = 100 min = 0 }
-				add_to_variable = { var = INS_army_siliwangi_var value = 5 }
-				clamp_variable = { var = INS_army_siliwangi_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_siliwangi_str value = 5 }
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
 			add_political_power = 50
@@ -1123,8 +1126,8 @@ focus_tree = {
 			country_event = { id = INS_crisis.11 days = 1 }
 			custom_effect_tooltip = INS_ft_amnesty_tt
 			hidden_effect = {
-				add_to_variable = { var = INS_army_guerrilla_var value = 10 }
-				clamp_variable = { var = INS_army_guerrilla_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_guerrilla_str value = 10 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
 				add_to_variable = { var = INS_sarekat_str value = 5 }
 				clamp_variable = { var = INS_sarekat_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
@@ -1258,8 +1261,8 @@ focus_tree = {
 			country_event = { id = INS_crisis.14 days = 1 }
 			custom_effect_tooltip = INS_ft_frontier_tt
 			hidden_effect = {
-				add_to_variable = { var = INS_army_siliwangi_var value = 10 }
-				clamp_variable = { var = INS_army_siliwangi_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
 			}
 			add_stability = 0.01
 		}
@@ -1281,8 +1284,8 @@ focus_tree = {
 			country_event = { id = INS_crisis.15 days = 1 }
 			custom_effect_tooltip = INS_ft_deterrence_tt
 			hidden_effect = {
-				add_to_variable = { var = INS_army_guerrilla_var value = 10 }
-				clamp_variable = { var = INS_army_guerrilla_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_guerrilla_str value = 10 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
 			}
 			add_war_support = 0.01
 		}
@@ -1437,8 +1440,8 @@ focus_tree = {
 			hidden_effect = {
 				add_to_variable = { var = INS_murba_str value = 10 }
 				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
-				add_to_variable = { var = INS_army_guerrilla_var value = 5 }
-				clamp_variable = { var = INS_army_guerrilla_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_guerrilla_str value = 5 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
 			add_war_support = 0.02
@@ -1501,8 +1504,8 @@ focus_tree = {
 			country_event = { id = INS_crisis.20 days = 1 }
 			custom_effect_tooltip = INS_ft_nasution_tt
 			hidden_effect = {
-				add_to_variable = { var = INS_army_siliwangi_var value = 10 }
-				clamp_variable = { var = INS_army_siliwangi_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
 			}
 			add_political_power = 50
 		}
@@ -1524,8 +1527,8 @@ focus_tree = {
 			country_event = { id = INS_crisis.21 days = 1 }
 			custom_effect_tooltip = INS_ft_guerrilla_city_tt
 			hidden_effect = {
-				add_to_variable = { var = INS_army_guerrilla_var value = 10 }
-				clamp_variable = { var = INS_army_guerrilla_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_guerrilla_str value = 10 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
 			}
 			add_war_support = 0.01
 		}
@@ -1620,10 +1623,10 @@ focus_tree = {
 			country_event = { id = INS_crisis.23 days = 1 }
 			custom_effect_tooltip = INS_ft_army_seals_tt
 			hidden_effect = {
-				add_to_variable = { var = INS_army_siliwangi_var value = 10 }
-				clamp_variable = { var = INS_army_siliwangi_var max = 100 min = 0 }
-				add_to_variable = { var = INS_army_guerrilla_var value = 5 }
-				clamp_variable = { var = INS_army_guerrilla_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+				add_to_variable = { var = INS_army_guerrilla_str value = 5 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
 			}
 			set_country_flag = INS_succession_army
 			army_experience = 10

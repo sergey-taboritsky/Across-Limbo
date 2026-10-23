@@ -1,5 +1,12 @@
 ﻿capital = 282
 
+set_oob = "JAP_1948"
+
+country_lock_all_division_template = {
+	is_locked = yes
+	desc = TNW_JAP_military_lock_desc
+}
+
 set_cosmetic_tag = JAP_occupation_zone
 
 set_stability = 0.35

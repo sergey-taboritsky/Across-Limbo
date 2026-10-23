@@ -21,7 +21,7 @@ state={
 	provinces={
 		2182 13086 13174 13175 14758 
 	}
-	manpower=1304039
+	manpower=1311075
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 }

@@ -668,3 +668,5 @@
  TNW_dev_bur_prog_fall_tt: "行政水平§R进度将下降§!"
  TNW_dev_bur_month_rise_tt: "行政水平每月增速将§G提升§!"
  TNW_dev_bur_month_fall_tt: "行政水平每月增速将§R下降§!"
+
+ TNW_JAP_military_lock_desc: "占领区军事管制：全军编制冻结，禁止训练新单位、编辑或解散现有编制。"

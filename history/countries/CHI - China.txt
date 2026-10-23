@@ -6,6 +6,13 @@ country_lock_all_division_template = {
 	desc = TNW_CHI_military_lock_desc
 }
 
+set_technology = {
+	tech_support = 1
+	tech_engineers = 1
+	tech_logistics_company = 1
+	gw_artillery = 1
+}
+
 recruit_character = CHI_Zhang_Zhiben
 recruit_character = CHI_Li_Zongren
 recruit_character = CHI_Chen_Lifu

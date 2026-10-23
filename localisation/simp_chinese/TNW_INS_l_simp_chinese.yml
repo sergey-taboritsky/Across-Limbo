@@ -130,7 +130,7 @@
 
 #决议组与角色（2026-10-22）
  INS_military_reform: "军事改革"
- INS_military_reform_desc: "什锦之军的整编工程。西利万吉系 [?THIS.INS_army_siliwangi_var]｜人民游击系 [?THIS.INS_army_guerrilla_var]｜义勇军系 [?THIS.INS_army_gyugun_var]"
+ INS_military_reform_desc: "什锦之军的整编工程。西利万吉系 [?THIS.INS_army_siliwangi_str]（[Get_INS_stance_army_siliwangi]）｜人民游击系 [?THIS.INS_army_guerrilla_str]（[Get_INS_stance_army_guerrilla]）｜义勇军系 [?THIS.INS_army_gyugun_str]（[Get_INS_stance_army_gyugun]）"
  INS_party_struggle: "党内斗争"
  INS_party_struggle_desc: "执政大帐篷党的派系角力。立场档位决定该派影响力计入哪位候选人（全面=100%、部分=50%、中立=0）。\n国民印尼团 [?THIS.INS_goni_var]（[Get_INS_stance_goni]）｜马尔哈恩之友会 [?THIS.INS_marhaen_var]（[Get_INS_stance_marhaen]）\n奉公会友 [?THIS.INS_hokokai_var]（[Get_INS_stance_hokokai]）｜萨尔托诺圈 [?THIS.INS_sartono_var]（[Get_INS_stance_sartono]）\n萨尔卡派 [?THIS.INS_sarekat_var]（[Get_INS_stance_sarekat]）｜穆尔巴派 [?THIS.INS_murba_var]（[Get_INS_stance_murba]）\n苏托莫的态度：[Get_INS_soetomo_stance]\n苏加诺影响力分数：[?THIS.INS_sukarno_score|0]\n亚明影响力分数：[?THIS.INS_yamin_score|0]"
  INS_army_siliwangi: "拉拢西利万吉系"

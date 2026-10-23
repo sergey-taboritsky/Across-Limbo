@@ -16,8 +16,8 @@ INS_military_reform = {
 			custom_effect_tooltip = INS_army_siliwangi_tt
 			hidden_effect = {
 				army_experience = 10
-				add_to_variable = { var = INS_army_siliwangi_var value = 5 }
-				clamp_variable = { var = INS_army_siliwangi_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_siliwangi_str value = 5 }
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
 			}
 		}
 
@@ -38,8 +38,8 @@ INS_military_reform = {
 			hidden_effect = {
 				add_manpower = 5000
 				add_war_support = 0.02
-				add_to_variable = { var = INS_army_guerrilla_var value = 3 }
-				clamp_variable = { var = INS_army_guerrilla_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_guerrilla_str value = 3 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
 			}
 		}
 
@@ -60,8 +60,8 @@ INS_military_reform = {
 			hidden_effect = {
 				army_experience = 5
 				add_war_support = 0.01
-				add_to_variable = { var = INS_army_gyugun_var value = 5 }
-				clamp_variable = { var = INS_army_gyugun_var max = 100 min = 0 }
+				add_to_variable = { var = INS_army_gyugun_str value = 5 }
+				clamp_variable = { var = INS_army_gyugun_str max = 100 min = 0 }
 			}
 		}
 

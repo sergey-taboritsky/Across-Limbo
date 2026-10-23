@@ -1,0 +1,195 @@
+﻿### 南日本占領区民兵 1948 ###
+### 民兵師：四民兵營（2*2）；AL 無獨立民兵營定義，以步兵營承載 ###
+division_template = {
+	name = "民兵师"
+	division_names_group = JAP_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "第1民兵师"
+		location = 1182	# Kanto
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第2民兵师"
+		location = 9998	# Kanto
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第3民兵师"
+		location = 4188	# Kanto
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第4民兵师"
+		location = 15300	# Kanto
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第5民兵师"
+		location = 1097	# Kanto
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第6民兵师"
+		location = 4000	# Kanto
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第7民兵师"
+		location = 7072	# Kansai
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第8民兵师"
+		location = 11960	# Kansai
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第9民兵师"
+		location = 14370	# Kansai
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第10民兵师"
+		location = 15305	# Kansai
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第11民兵师"
+		location = 15309	# Kansai
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第12民兵师"
+		location = 10125	# Tokai
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第13民兵师"
+		location = 7087	# Tokai
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第14民兵师"
+		location = 15313	# Tokai
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第15民兵师"
+		location = 4172	# Tokai
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第16民兵师"
+		location = 7110	# Kyushu
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第17民兵师"
+		location = 9950	# Kyushu
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第18民兵师"
+		location = 1025	# Kyushu
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第19民兵师"
+		location = 4102	# Kyushu
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第20民兵师"
+		location = 1092	# Chugoku
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第21民兵师"
+		location = 7212	# Chugoku
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第22民兵师"
+		location = 15331	# Chugoku
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第23民兵师"
+		location = 4179	# Shikoku
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第24民兵师"
+		location = 7197	# Shikoku
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第25民兵师"
+		location = 1117	# Koshinetsu
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第26民兵师"
+		location = 10128	# Koshinetsu
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第27民兵师"
+		location = 10032	# Hokuriku
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第28民兵师"
+		location = 15319	# Hokuriku
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第29民兵师"
+		location = 14285	# Izu
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "第30民兵师"
+		location = 15297	# Izu
+		division_template = "民兵师"
+		start_experience_factor = 0.05
+	}
+}

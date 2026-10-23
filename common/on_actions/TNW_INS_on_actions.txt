@@ -15,6 +15,12 @@ on_actions = {
 				set_variable = { INS_sartono_str = 15 }
 				set_variable = { INS_sarekat_str = 10 }
 				set_variable = { INS_murba_str = 10 }
+				set_variable = { INS_army_siliwangi_str = 35 }
+				set_variable = { INS_army_guerrilla_str = 40 }
+				set_variable = { INS_army_gyugun_str = 25 }
+				set_variable = { INS_army_siliwangi_var = 50 }
+				set_variable = { INS_army_guerrilla_var = 50 }
+				set_variable = { INS_army_gyugun_var = 50 }
 				set_variable = { INS_sukarno_score = 0 }
 				set_variable = { INS_yamin_score = 0 }
 				country_event = { id = INS_crisis.1 days = 180 }

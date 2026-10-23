@@ -1,5 +1,12 @@
 ﻿capital = 608
 
+set_technology = {
+	tech_support = 1
+	tech_engineers = 1
+	tech_logistics_company = 1
+	gw_artillery = 1
+}
+
 country_lock_all_division_template = {
 	is_locked = yes
 	desc = TNW_CHI_military_lock_desc

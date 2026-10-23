@@ -152,3 +152,72 @@ defined_text = {
 		localization_key = INS_soetomo_stance_neutral
 	}
 }
+
+defined_text = {
+	name = Get_INS_stance_army_siliwangi
+	text = {
+		trigger = { check_variable = { var = INS_army_siliwangi_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_full_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_army_siliwangi_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_army_siliwangi_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = INS_army_siliwangi_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_yamin
+	}
+	text = {
+		localization_key = INS_stance_full_yamin
+	}
+}
+
+defined_text = {
+	name = Get_INS_stance_army_guerrilla
+	text = {
+		trigger = { check_variable = { var = INS_army_guerrilla_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_full_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_army_guerrilla_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_army_guerrilla_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = INS_army_guerrilla_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_yamin
+	}
+	text = {
+		localization_key = INS_stance_full_yamin
+	}
+}
+
+defined_text = {
+	name = Get_INS_stance_army_gyugun
+	text = {
+		trigger = { check_variable = { var = INS_army_gyugun_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_full_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_army_gyugun_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_sukarno
+	}
+	text = {
+		trigger = { check_variable = { var = INS_army_gyugun_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = INS_army_gyugun_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_part_yamin
+	}
+	text = {
+		localization_key = INS_stance_full_yamin
+	}
+}

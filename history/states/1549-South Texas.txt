@@ -30,7 +30,7 @@ state={
 	provinces={
 		1927 2019 2042 4884 5061 6785 6798 6987 12369 12782 
 	}
-	manpower=2197741
+	manpower=2209600
 	buildings_max_level_factor=1.000
 	state_category=large_town
 }
