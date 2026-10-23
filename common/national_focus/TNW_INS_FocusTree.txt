@@ -24,6 +24,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Continue_Kasimo_Plan"
+			if = {
+				limit = { NOT = { has_dynamic_modifier = { modifier = INS_nat_rev_econ_dm } } }
+				add_dynamic_modifier = { modifier = INS_nat_rev_econ_dm }
+			}
+			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+			add_to_variable = { INS_nre_prod_infra = 0.02 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 25
 			add_stability = 0.01
 		}
@@ -41,6 +48,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Continue_Kasimo_Plan }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Sumatra_Planting_Expansion"
+			add_to_variable = { INS_nre_prod_infra = 0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 25
 			add_stability = 0.01
 		}
@@ -58,6 +67,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Continue_Kasimo_Plan }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Raise_Procurement_Prices"
+			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.02
 		}
@@ -76,6 +87,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Raise_Procurement_Prices }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Pilot_End_Rationing"
+			add_to_variable = { INS_nre_consumer_goods = -0.02 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.01
 		}
@@ -93,6 +106,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Expand_Cropland"
+			add_to_variable = { INS_nre_prod_infra = 0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_manpower = 5000
 			add_stability = 0.01
 		}
@@ -110,8 +125,10 @@ focus_tree = {
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Russia_Grain_Exchange"
+			add_to_variable = { INS_nre_factory_output = 0.02 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
-			add_offsite_building = { building = industrial_complex level = 1 }
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 
@@ -127,6 +144,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Fertilizer_Seeds"
+			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_stability = 0.02
 			add_manpower = 2000
 		}
@@ -144,6 +163,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Balance_Cash_Crops"
+			add_to_variable = { INS_nre_factory_output = 0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.01
 		}
@@ -161,7 +182,10 @@ focus_tree = {
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Academy_of_Agriculture"
-			add_offsite_building = { building = industrial_complex level = 1 }
+			add_to_variable = { INS_nre_prod_buildings = 0.02 }
+			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
+			add_offsite_building = { type = industrial_complex level = 1 }
 			add_political_power = 50
 		}
 	}
@@ -177,6 +201,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Support_Djuanda"
+			if = {
+				limit = { NOT = { has_dynamic_modifier = { modifier = INS_nat_rev_econ_dm } } }
+				add_dynamic_modifier = { modifier = INS_nat_rev_econ_dm }
+			}
+			add_to_variable = { INS_nre_prod_buildings = 0.02 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 		}
 	}
@@ -194,6 +224,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Support_Djuanda }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Normalize_Planning_Bureau"
+			add_to_variable = { INS_nre_prod_buildings = 0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.01
 		}
@@ -212,8 +244,10 @@ focus_tree = {
 		prerequisite = { focus = INS_Support_Djuanda }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_National_Economic_Experts"
+			add_to_variable = { INS_nre_prod_buildings = 0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
-			add_offsite_building = { building = industrial_complex level = 1 }
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 
@@ -229,7 +263,9 @@ focus_tree = {
 		prerequisite = { focus = INS_Support_Djuanda }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Far_East_Reconstruction_Boom"
-			add_offsite_building = { building = industrial_complex level = 1 }
+			add_to_variable = { INS_nre_prod_buildings = 0.02 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 
@@ -245,6 +281,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Normalize_Planning_Bureau focus = INS_National_Economic_Experts }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Incubate_Postwar_Plan"
+			add_to_variable = { INS_nre_factory_output = 0.02 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 75
 		}
 	}
@@ -261,6 +299,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Far_East_Reconstruction_Boom }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Resource_Export_Board"
+			add_to_variable = { INS_nre_dockyard_output = 0.05 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.01
 		}
@@ -279,6 +319,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Resource_Export_Board }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Announce_Benteng"
+			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.01
 			set_country_flag = INS_benteng_announced
@@ -297,6 +339,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Announce_Benteng }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Import_Licenses"
+			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 		}
 	}
@@ -313,6 +357,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Announce_Benteng }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Squeeze_Alien_Capital"
+			add_to_variable = { INS_nre_factory_output = 0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 			add_stability = -0.01
 		}
@@ -330,7 +376,9 @@ focus_tree = {
 		prerequisite = { focus = INS_Import_Licenses focus = INS_Squeeze_Alien_Capital }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Local_Importers_First"
-			add_offsite_building = { building = industrial_complex level = 1 }
+			add_to_variable = { INS_nre_factory_output = 0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
+			add_offsite_building = { type = industrial_complex level = 1 }
 			add_political_power = 50
 		}
 	}
@@ -347,7 +395,10 @@ focus_tree = {
 		prerequisite = { focus = INS_Local_Importers_First }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Nationalize_Industry"
-			add_offsite_building = { building = industrial_complex level = 1 }
+			add_to_variable = { INS_nre_factory_output = 0.02 }
+			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
+			add_offsite_building = { type = industrial_complex level = 1 }
 			add_stability = -0.01
 		}
 	}
@@ -365,6 +416,26 @@ focus_tree = {
 		prerequisite = { focus = INS_Nationalize_Industry }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Sumitro_Plan"
+			if = {
+				limit = { has_idea = INS_five_year_plan_4 }
+				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_3 }
+				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_2 }
+				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_1 }
+				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
+			}
+			else = {
+				add_ideas = INS_five_year_plan_1
+			}
+			custom_effect_tooltip = INS_fyp_upgrade_tt
 			add_political_power = 75
 			add_stability = 0.01
 		}
@@ -383,6 +454,22 @@ focus_tree = {
 		prerequisite = { focus = INS_Nationalize_Industry }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Economic_Sovereignty_Movement"
+			if = {
+				limit = { has_idea = INS_econ_sovereignty_3 }
+				swap_ideas = { remove_idea = INS_econ_sovereignty_3 add_idea = INS_econ_sovereignty_4 }
+			}
+			else_if = {
+				limit = { has_idea = INS_econ_sovereignty_2 }
+				swap_ideas = { remove_idea = INS_econ_sovereignty_2 add_idea = INS_econ_sovereignty_3 }
+			}
+			else_if = {
+				limit = { has_idea = INS_econ_sovereignty_1 }
+				swap_ideas = { remove_idea = INS_econ_sovereignty_1 add_idea = INS_econ_sovereignty_2 }
+			}
+			else = {
+				add_ideas = INS_econ_sovereignty_1
+			}
+			custom_effect_tooltip = INS_econsov_upgrade_tt
 			add_war_support = 0.02
 			add_stability = -0.01
 			add_political_power = 50
@@ -401,7 +488,27 @@ focus_tree = {
 		prerequisite = { focus = INS_Sumitro_Plan }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Import_Substitution"
-			add_offsite_building = { building = industrial_complex level = 1 }
+			if = {
+				limit = { has_idea = INS_five_year_plan_4 }
+				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_3 }
+				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_2 }
+				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_1 }
+				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
+			}
+			else = {
+				add_ideas = INS_five_year_plan_1
+			}
+			custom_effect_tooltip = INS_fyp_upgrade_tt
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 
@@ -417,7 +524,27 @@ focus_tree = {
 		prerequisite = { focus = INS_Sumitro_Plan }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Accelerate_Industrialization"
-			add_offsite_building = { building = industrial_complex level = 1 }
+			if = {
+				limit = { has_idea = INS_five_year_plan_4 }
+				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_3 }
+				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_2 }
+				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_1 }
+				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
+			}
+			else = {
+				add_ideas = INS_five_year_plan_1
+			}
+			custom_effect_tooltip = INS_fyp_upgrade_tt
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 
@@ -433,7 +560,27 @@ focus_tree = {
 		prerequisite = { focus = INS_Import_Substitution focus = INS_Accelerate_Industrialization }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Organize_Five_Year_Plan"
-			add_offsite_building = { building = industrial_complex level = 2 }
+			if = {
+				limit = { has_idea = INS_five_year_plan_4 }
+				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_3 }
+				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_2 }
+				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_1 }
+				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
+			}
+			else = {
+				add_ideas = INS_five_year_plan_1
+			}
+			custom_effect_tooltip = INS_fyp_upgrade_tt
+			add_offsite_building = { type = industrial_complex level = 2 }
 			add_political_power = 50
 		}
 	}
@@ -450,7 +597,23 @@ focus_tree = {
 		prerequisite = { focus = INS_Economic_Sovereignty_Movement }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Package_Confiscation"
-			add_offsite_building = { building = industrial_complex level = 1 }
+			if = {
+				limit = { has_idea = INS_econ_sovereignty_3 }
+				swap_ideas = { remove_idea = INS_econ_sovereignty_3 add_idea = INS_econ_sovereignty_4 }
+			}
+			else_if = {
+				limit = { has_idea = INS_econ_sovereignty_2 }
+				swap_ideas = { remove_idea = INS_econ_sovereignty_2 add_idea = INS_econ_sovereignty_3 }
+			}
+			else_if = {
+				limit = { has_idea = INS_econ_sovereignty_1 }
+				swap_ideas = { remove_idea = INS_econ_sovereignty_1 add_idea = INS_econ_sovereignty_2 }
+			}
+			else = {
+				add_ideas = INS_econ_sovereignty_1
+			}
+			custom_effect_tooltip = INS_econsov_upgrade_tt
+			add_offsite_building = { type = industrial_complex level = 1 }
 			add_stability = -0.02
 			add_war_support = 0.01
 		}
@@ -468,6 +631,22 @@ focus_tree = {
 		prerequisite = { focus = INS_Economic_Sovereignty_Movement }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Strengthen_Takeover"
+			if = {
+				limit = { has_idea = INS_econ_sovereignty_3 }
+				swap_ideas = { remove_idea = INS_econ_sovereignty_3 add_idea = INS_econ_sovereignty_4 }
+			}
+			else_if = {
+				limit = { has_idea = INS_econ_sovereignty_2 }
+				swap_ideas = { remove_idea = INS_econ_sovereignty_2 add_idea = INS_econ_sovereignty_3 }
+			}
+			else_if = {
+				limit = { has_idea = INS_econ_sovereignty_1 }
+				swap_ideas = { remove_idea = INS_econ_sovereignty_1 add_idea = INS_econ_sovereignty_2 }
+			}
+			else = {
+				add_ideas = INS_econ_sovereignty_1
+			}
+			custom_effect_tooltip = INS_econsov_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.01
 		}
@@ -485,7 +664,23 @@ focus_tree = {
 		prerequisite = { focus = INS_Package_Confiscation focus = INS_Strengthen_Takeover }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Manage_New_Enterprises"
-			add_offsite_building = { building = industrial_complex level = 1 }
+			if = {
+				limit = { has_idea = INS_econ_sovereignty_3 }
+				swap_ideas = { remove_idea = INS_econ_sovereignty_3 add_idea = INS_econ_sovereignty_4 }
+			}
+			else_if = {
+				limit = { has_idea = INS_econ_sovereignty_2 }
+				swap_ideas = { remove_idea = INS_econ_sovereignty_2 add_idea = INS_econ_sovereignty_3 }
+			}
+			else_if = {
+				limit = { has_idea = INS_econ_sovereignty_1 }
+				swap_ideas = { remove_idea = INS_econ_sovereignty_1 add_idea = INS_econ_sovereignty_2 }
+			}
+			else = {
+				add_ideas = INS_econ_sovereignty_1
+			}
+			custom_effect_tooltip = INS_econsov_upgrade_tt
+			add_offsite_building = { type = industrial_complex level = 1 }
 			add_political_power = 50
 		}
 	}
@@ -502,6 +697,26 @@ focus_tree = {
 		prerequisite = { focus = INS_Sumitro_Plan focus = INS_Economic_Sovereignty_Movement }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Central_Banking_Law"
+			if = {
+				limit = { has_idea = INS_five_year_plan_4 }
+				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_3 }
+				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_2 }
+				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_1 }
+				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
+			}
+			else = {
+				add_ideas = INS_five_year_plan_1
+			}
+			custom_effect_tooltip = INS_fyp_upgrade_tt
 			add_political_power = 100
 		}
 	}
@@ -518,6 +733,26 @@ focus_tree = {
 		prerequisite = { focus = INS_Central_Banking_Law }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Recoup_Java_Bank"
+			if = {
+				limit = { has_idea = INS_five_year_plan_4 }
+				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_3 }
+				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_2 }
+				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_1 }
+				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
+			}
+			else = {
+				add_ideas = INS_five_year_plan_1
+			}
+			custom_effect_tooltip = INS_fyp_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.01
 		}
@@ -535,6 +770,26 @@ focus_tree = {
 		prerequisite = { focus = INS_Central_Banking_Law }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Complete_Monetary_Sovereignty"
+			if = {
+				limit = { has_idea = INS_five_year_plan_4 }
+				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_3 }
+				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_2 }
+				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
+			}
+			else_if = {
+				limit = { has_idea = INS_five_year_plan_1 }
+				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
+			}
+			else = {
+				add_ideas = INS_five_year_plan_1
+			}
+			custom_effect_tooltip = INS_fyp_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.02
 		}

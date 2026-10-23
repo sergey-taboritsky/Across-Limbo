@@ -45,5 +45,100 @@ ideas = {
 			modifier = {
 			}
 		}
+		# ===== 五年计划（同名替换阶梯：Sumitro 线 7 点封顶 5 级） =====
+		INS_five_year_plan = {
+			allowed = { original_tag = INS }
+			removal_cost = -1
+			picture = GFX_idea_generic_build_infrastructure
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		INS_five_year_plan_2 = {
+			allowed = { original_tag = INS }
+			removal_cost = -1
+			picture = GFX_idea_generic_build_infrastructure
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		INS_five_year_plan_3 = {
+			allowed = { original_tag = INS }
+			removal_cost = -1
+			picture = GFX_idea_generic_build_infrastructure
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		INS_five_year_plan_4 = {
+			allowed = { original_tag = INS }
+			removal_cost = -1
+			picture = GFX_idea_generic_build_infrastructure
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				global_building_slots_factor = 0.05
+			}
+		}
+		INS_five_year_plan_5 = {
+			allowed = { original_tag = INS }
+			removal_cost = -1
+			picture = GFX_idea_generic_build_infrastructure
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.10
+				global_building_slots_factor = 0.10
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		# ===== 经济主权（同名替换阶梯：主权线 4 点 4 级） =====
+		INS_econ_sovereignty = {
+			allowed = { original_tag = INS }
+			removal_cost = -1
+			picture = GFX_idea_generic_captain_of_industry_asian_2d
+			modifier = {
+				consumer_goods_factor = -0.01
+				political_power_gain = 0.10
+			}
+		}
+		INS_econ_sovereignty_2 = {
+			allowed = { original_tag = INS }
+			removal_cost = -1
+			picture = GFX_idea_generic_captain_of_industry_asian_2d
+			modifier = {
+				consumer_goods_factor = -0.02
+				political_power_gain = 0.15
+				industrial_capacity_factory = 0.03
+			}
+		}
+		INS_econ_sovereignty_3 = {
+			allowed = { original_tag = INS }
+			removal_cost = -1
+			picture = GFX_idea_generic_captain_of_industry_asian_2d
+			modifier = {
+				consumer_goods_factor = -0.03
+				political_power_gain = 0.20
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		INS_econ_sovereignty_4 = {
+			allowed = { original_tag = INS }
+			removal_cost = -1
+			picture = GFX_idea_generic_captain_of_industry_asian_2d
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.25
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.10
+			}
+		}
+
 	}
 }

@@ -1,0 +1,11 @@
+# INS 民族革命经济（SOV red army 式动态修正：农业线+经济线国策逐级改变量）
+INS_nat_rev_econ_dm = {
+	icon = GFX_idea_generic_production_bonus
+	enable = { always = yes }
+
+	consumer_goods_factor = INS_nre_consumer_goods
+	production_speed_buildings_factor = INS_nre_prod_buildings
+	production_speed_infrastructure_factor = INS_nre_prod_infra
+	industrial_capacity_factory = INS_nre_factory_output
+	industrial_capacity_dockyard = INS_nre_dockyard_output
+}
