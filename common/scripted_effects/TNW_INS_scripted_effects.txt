@@ -5,7 +5,7 @@
 INS_calc_scores_effect = {
 	set_variable = { INS_sukarno_score = 0 }
 	set_variable = { INS_yamin_score = 0 }
-	set_variable = { INS_score_tmp_var = INS_goni_var }
+	set_variable = { INS_score_tmp_var = INS_goni_str }
 	if = {
 		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
 		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
@@ -26,7 +26,7 @@ INS_calc_scores_effect = {
 	else = {
 		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
 	}
-	set_variable = { INS_score_tmp_var = INS_marhaen_var }
+	set_variable = { INS_score_tmp_var = INS_marhaen_str }
 	if = {
 		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
 		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
@@ -47,7 +47,7 @@ INS_calc_scores_effect = {
 	else = {
 		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
 	}
-	set_variable = { INS_score_tmp_var = INS_hokokai_var }
+	set_variable = { INS_score_tmp_var = INS_hokokai_str }
 	if = {
 		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
 		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
@@ -68,7 +68,7 @@ INS_calc_scores_effect = {
 	else = {
 		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
 	}
-	set_variable = { INS_score_tmp_var = INS_sartono_var }
+	set_variable = { INS_score_tmp_var = INS_sartono_str }
 	if = {
 		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
 		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
@@ -89,7 +89,7 @@ INS_calc_scores_effect = {
 	else = {
 		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
 	}
-	set_variable = { INS_score_tmp_var = INS_sarekat_var }
+	set_variable = { INS_score_tmp_var = INS_sarekat_str }
 	if = {
 		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
 		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
@@ -110,7 +110,7 @@ INS_calc_scores_effect = {
 	else = {
 		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
 	}
-	set_variable = { INS_score_tmp_var = INS_murba_var }
+	set_variable = { INS_score_tmp_var = INS_murba_str }
 	if = {
 		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
 		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }

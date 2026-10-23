@@ -6,6 +6,7 @@ state={
 	history={
 		owner = RUS
 		buildings = {
+			industrial_complex = 4
 			infrastructure = 2
 			arms_factory = 1
 
@@ -20,7 +21,7 @@ state={
 	provinces={
 		1709 1800 1835 4700 7681 7800 10568 10626 10696 12546 12580 12652 13356 
 	}
-	manpower=1317157
+	manpower=1464679
 	buildings_max_level_factor=1.000
 	state_category=town
 }

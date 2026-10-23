@@ -83,6 +83,8 @@ INS_party_struggle = {
 		complete_effect = {
 			custom_effect_tooltip = INS_party_goni_tt
 			hidden_effect = {
+				add_to_variable = { var = INS_goni_str value = 5 }
+				clamp_variable = { var = INS_goni_str max = 100 min = 0 }
 				add_to_variable = { var = INS_goni_var value = 5 }
 				clamp_variable = { var = INS_goni_var max = 100 min = 0 }
 				INS_calc_scores_effect = yes
@@ -104,6 +106,8 @@ INS_party_struggle = {
 		complete_effect = {
 			custom_effect_tooltip = INS_party_marhaen_tt
 			hidden_effect = {
+				add_to_variable = { var = INS_marhaen_str value = 5 }
+				clamp_variable = { var = INS_marhaen_str max = 100 min = 0 }
 				add_to_variable = { var = INS_marhaen_var value = -5 }
 				clamp_variable = { var = INS_marhaen_var max = 100 min = 0 }
 				INS_calc_scores_effect = yes
@@ -125,6 +129,8 @@ INS_party_struggle = {
 		complete_effect = {
 			custom_effect_tooltip = INS_party_hokokai_tt
 			hidden_effect = {
+				add_to_variable = { var = INS_hokokai_str value = 5 }
+				clamp_variable = { var = INS_hokokai_str max = 100 min = 0 }
 				add_to_variable = { var = INS_hokokai_var value = 5 }
 				clamp_variable = { var = INS_hokokai_var max = 100 min = 0 }
 				INS_calc_scores_effect = yes
@@ -146,6 +152,8 @@ INS_party_struggle = {
 		complete_effect = {
 			custom_effect_tooltip = INS_party_sartono_tt
 			hidden_effect = {
+				add_to_variable = { var = INS_sartono_str value = 5 }
+				clamp_variable = { var = INS_sartono_str max = 100 min = 0 }
 				add_to_variable = { var = INS_sartono_var value = -5 }
 				clamp_variable = { var = INS_sartono_var max = 100 min = 0 }
 				INS_calc_scores_effect = yes
@@ -167,6 +175,8 @@ INS_party_struggle = {
 		complete_effect = {
 			custom_effect_tooltip = INS_party_sarekat_tt
 			hidden_effect = {
+				add_to_variable = { var = INS_sarekat_str value = 5 }
+				clamp_variable = { var = INS_sarekat_str max = 100 min = 0 }
 				add_to_variable = { var = INS_sarekat_var value = -5 }
 				clamp_variable = { var = INS_sarekat_var max = 100 min = 0 }
 				INS_calc_scores_effect = yes
@@ -189,6 +199,8 @@ INS_party_struggle = {
 			custom_effect_tooltip = INS_party_murba_tt
 			add_stability = -0.01
 			hidden_effect = {
+				add_to_variable = { var = INS_murba_str value = 5 }
+				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
 				add_to_variable = { var = INS_murba_var value = -5 }
 				clamp_variable = { var = INS_murba_var max = 100 min = 0 }
 				INS_calc_scores_effect = yes

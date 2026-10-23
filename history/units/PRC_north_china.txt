@@ -1,0 +1,287 @@
+﻿### 華北軍 1948（中原大戰爆發時由 PRC 載入：load_oob = "PRC_north_china"）###
+
+division_template = {
+	name = "甲种华北师"
+	division_names_group = CHI_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+}
+
+division_template = {
+	name = "乙种华北师"
+	division_names_group = CHI_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 1 }
+	}
+}
+
+division_template = {
+	name = "重装华北师"
+	division_names_group = CHI_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "第1甲种华北师"
+		location = 9843	# 北平
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第2甲种华北师"
+		location = 9843	# 北平
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第3甲种华北师"
+		location = 9843	# 北平
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第1乙种华北师"
+		location = 9843	# 北平
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第2乙种华北师"
+		location = 9843	# 北平
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第3乙种华北师"
+		location = 9843	# 北平
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第1重装华北师"
+		location = 9843	# 北平
+		division_template = "重装华北师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第2重装华北师"
+		location = 9843	# 北平
+		division_template = "重装华北师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第4甲种华北师"
+		location = 7109	# 河北
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第5甲种华北师"
+		location = 7109	# 河北
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第6甲种华北师"
+		location = 7109	# 河北
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第7甲种华北师"
+		location = 7109	# 河北
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第4乙种华北师"
+		location = 7109	# 河北
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第5乙种华北师"
+		location = 7109	# 河北
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第6乙种华北师"
+		location = 7109	# 河北
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第7乙种华北师"
+		location = 7109	# 河北
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第8甲种华北师"
+		location = 4174	# 太原
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第9甲种华北师"
+		location = 4174	# 太原
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第10甲种华北师"
+		location = 4174	# 太原
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第8乙种华北师"
+		location = 4174	# 太原
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第9乙种华北师"
+		location = 4174	# 太原
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第10乙种华北师"
+		location = 4174	# 太原
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第11甲种华北师"
+		location = 1069	# 济南
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第12甲种华北师"
+		location = 1069	# 济南
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第13甲种华北师"
+		location = 1069	# 济南
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第11乙种华北师"
+		location = 1069	# 济南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第12乙种华北师"
+		location = 1069	# 济南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第13乙种华北师"
+		location = 1069	# 济南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第14乙种华北师"
+		location = 1069	# 济南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第3重装华北师"
+		location = 1069	# 济南
+		division_template = "重装华北师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第14甲种华北师"
+		location = 9958	# 河南
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第15甲种华北师"
+		location = 9958	# 河南
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第15乙种华北师"
+		location = 9958	# 河南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第16乙种华北师"
+		location = 9958	# 河南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第17乙种华北师"
+		location = 9958	# 河南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第18乙种华北师"
+		location = 9958	# 河南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第4重装华北师"
+		location = 9958	# 河南
+		division_template = "重装华北师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第5重装华北师"
+		location = 9958	# 河南
+		division_template = "重装华北师"
+		start_experience_factor = 0.3
+	}
+}

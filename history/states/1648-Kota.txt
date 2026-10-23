@@ -18,7 +18,7 @@ state={
 	provinces={
 		14957 14958 15367 
 	}
-	manpower=677418
+	manpower=753289
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

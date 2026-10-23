@@ -6,7 +6,7 @@ state={
 		steel=24.000
 	}
 
-	manpower = 2941100
+	manpower = 3270503
 	
 	state_category = town
 

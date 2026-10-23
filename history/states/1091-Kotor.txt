@@ -23,7 +23,7 @@ state={
 	provinces={
 		13597 
 	}
-	manpower=12583
+	manpower=13992
 	buildings_max_level_factor=1.000
 	state_category=enclave
 }

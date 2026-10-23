@@ -57,17 +57,17 @@ characters = {
 			idea_cost = 100
 		}
 	}
-	#阿里·本·侯赛因（王族旁支）
-	IRQ_ali_abn_hussein = {
-		name = IRQ_ali_abn_hussein
+	#扎伊德·本·侯赛因（王族旁支）
+	IRQ_zeid_bin_hussein = {
+		name = IRQ_zeid_bin_hussein
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
 		}
 	}
-	#阿卜杜勒-马利克·伊本·希沙姆（独立派议员）
-	IRQ_abd_almalik_ibn_hisham = {
-		name = IRQ_abd_almalik_ibn_hisham
+	#卡米勒·查德里奇（独立派议员）
+	IRQ_kamil_al_chadirchi = {
+		name = IRQ_kamil_al_chadirchi
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100

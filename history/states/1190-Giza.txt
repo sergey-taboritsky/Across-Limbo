@@ -11,7 +11,7 @@ state={
 	provinces={
 		7117 
 	}
-	manpower=9192
+	manpower=10222
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	impassable=yes

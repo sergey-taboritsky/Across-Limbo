@@ -12,7 +12,7 @@ state={
 	provinces={
 		917 2976 4678 4870 7830 14229 14231 15682 15684 15685 15686 
 	}
-	manpower=3015
+	manpower=3353
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000

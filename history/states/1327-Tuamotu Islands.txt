@@ -10,7 +10,7 @@ state={
 	provinces={
 		14301 14308 
 	}
-	manpower=15346
+	manpower=17065
 	buildings_max_level_factor=1.000
 	state_category=tiny_island
 	impassable=yes

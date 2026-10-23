@@ -52,7 +52,23 @@ country_event = {
 			every_owned_state = {
 				add_core_of = PRC
 			}
+			# 华北军整体移交：先给足装备库存，再载入华北序列并冻结编制
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 35000 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 500 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 300 }
+			load_oob = "PRC_north_china"
+			country_lock_all_division_template = {
+				is_locked = yes
+				desc = TNW_CHI_military_lock_desc
+			}
 		}
+		# 南京方面：华北序列自编制中除名（先解锁方可删除）
+		set_division_template_lock = { division_template = "甲种华北师" is_locked = no }
+		set_division_template_lock = { division_template = "乙种华北师" is_locked = no }
+		set_division_template_lock = { division_template = "重装华北师" is_locked = no }
+		delete_unit_template_and_units = { division_template = "甲种华北师" }
+		delete_unit_template_and_units = { division_template = "乙种华北师" }
+		delete_unit_template_and_units = { division_template = "重装华北师" }
 		hidden_effect = {
 			country_event = { id = CHI_event.11 days = 5 }
 		}

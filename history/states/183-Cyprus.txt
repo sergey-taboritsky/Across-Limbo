@@ -33,7 +33,7 @@ state={
 			}
 
 		}
-		add_core_of = GRE
+		add_core_of = GRE
 		add_core_of = TUR
 
 	}
@@ -41,7 +41,7 @@ state={
 	provinces={
 		7193 11984 13347 13348 13349 
 	}
-	manpower=351439
+	manpower=390800
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

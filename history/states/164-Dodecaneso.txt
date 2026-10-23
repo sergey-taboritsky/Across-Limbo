@@ -24,7 +24,7 @@ state={
 			}
 
 		}
-		add_core_of = GRE
+		add_core_of = GRE
 		add_core_of = TUR
 
 	}
@@ -32,7 +32,7 @@ state={
 	provinces={
 		7003 10007 
 	}
-	manpower=123138
+	manpower=136929
 	buildings_max_level_factor=1.000
 	state_category=small_island
 }

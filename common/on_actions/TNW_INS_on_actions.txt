@@ -9,6 +9,12 @@ on_actions = {
 				set_variable = { INS_sartono_var = 50 }
 				set_variable = { INS_sarekat_var = 50 }
 				set_variable = { INS_murba_var = 50 }
+				set_variable = { INS_goni_str = 30 }
+				set_variable = { INS_marhaen_str = 25 }
+				set_variable = { INS_hokokai_str = 20 }
+				set_variable = { INS_sartono_str = 15 }
+				set_variable = { INS_sarekat_str = 10 }
+				set_variable = { INS_murba_str = 10 }
 				set_variable = { INS_sukarno_score = 0 }
 				set_variable = { INS_yamin_score = 0 }
 				country_event = { id = INS_crisis.1 days = 180 }

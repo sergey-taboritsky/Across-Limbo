@@ -12,7 +12,7 @@ state={
 	provinces={
 		3691 14309 15024 
 	}
-	manpower=2020
+	manpower=2246
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000

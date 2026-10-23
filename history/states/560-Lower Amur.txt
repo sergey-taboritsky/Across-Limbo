@@ -50,7 +50,7 @@
 	provinces={
 		725 739 753 1343 3664 4290 4404 4841 7249 7309 7868 9589 9604 9733 9749 10571 11719 12136 12263 12559 
 	}
-	manpower=97663
+	manpower=108601
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

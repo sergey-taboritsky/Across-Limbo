@@ -1,0 +1,626 @@
+﻿### 中華民國陸軍 1948 開局編成 ###
+### 國軍序列（南京政府直轄）###
+
+division_template = {
+	name = "甲种国军师"
+	division_names_group = CHI_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+}
+
+division_template = {
+	name = "乙种国军师"
+	division_names_group = CHI_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 1 }
+	}
+}
+
+division_template = {
+	name = "重装国军师"
+	division_names_group = CHI_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "甲种华北师"
+	division_names_group = CHI_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+}
+
+division_template = {
+	name = "乙种华北师"
+	division_names_group = CHI_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 1 }
+	}
+}
+
+division_template = {
+	name = "重装华北师"
+	division_names_group = CHI_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "第1甲种国军师"
+		location = 11913	# 南京
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第2甲种国军师"
+		location = 11913	# 南京
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第3甲种国军师"
+		location = 11913	# 南京
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第4甲种国军师"
+		location = 11913	# 南京
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第1乙种国军师"
+		location = 11913	# 南京
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第1重装国军师"
+		location = 11913	# 南京
+		division_template = "重装国军师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第2重装国军师"
+		location = 11913	# 南京
+		division_template = "重装国军师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第5甲种国军师"
+		location = 7014	# 上海
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第6甲种国军师"
+		location = 7014	# 上海
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第2乙种国军师"
+		location = 7014	# 上海
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第3重装国军师"
+		location = 7014	# 上海
+		division_template = "重装国军师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第7甲种国军师"
+		location = 6999	# 重庆
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第8甲种国军师"
+		location = 6999	# 重庆
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第3乙种国军师"
+		location = 6999	# 重庆
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第4重装国军师"
+		location = 6999	# 重庆
+		division_template = "重装国军师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第9甲种国军师"
+		location = 4619	# 武汉
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第10甲种国军师"
+		location = 4619	# 武汉
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第5重装国军师"
+		location = 4619	# 武汉
+		division_template = "重装国军师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第4乙种国军师"
+		location = 7097	# 长沙
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第5乙种国军师"
+		location = 7097	# 长沙
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第6乙种国军师"
+		location = 7097	# 长沙
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第7乙种国军师"
+		location = 7097	# 长沙
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第11甲种国军师"
+		location = 1047	# 广州
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第12甲种国军师"
+		location = 1047	# 广州
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第6重装国军师"
+		location = 1047	# 广州
+		division_template = "重装国军师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第13甲种国军师"
+		location = 7191	# 杭州
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第8乙种国军师"
+		location = 7191	# 杭州
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第9乙种国军师"
+		location = 7191	# 杭州
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第10乙种国军师"
+		location = 7222	# 合肥
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第11乙种国军师"
+		location = 7222	# 合肥
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第12乙种国军师"
+		location = 7222	# 合肥
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第13乙种国军师"
+		location = 3992	# 南昌
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第14乙种国军师"
+		location = 3992	# 南昌
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第15乙种国军师"
+		location = 3992	# 南昌
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第14甲种国军师"
+		location = 10034	# 苏南
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第16乙种国军师"
+		location = 10034	# 苏南
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第7重装国军师"
+		location = 10034	# 苏南
+		division_template = "重装国军师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第17乙种国军师"
+		location = 10616	# 贵阳
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第18乙种国军师"
+		location = 7137	# 南宁
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第19乙种国军师"
+		location = 4196	# 福州
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第20乙种国军师"
+		location = 7071	# 厦门
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第21乙种国军师"
+		location = 16698	# 襄阳
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第22乙种国军师"
+		location = 7101	# 常德
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第15甲种国军师"
+		location = 7186	# 台北
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第16甲种国军师"
+		location = 10000	# 青岛
+		division_template = "甲种国军师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第23乙种国军师"
+		location = 1184	# 鲁南
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第24乙种国军师"
+		location = 10068	# 天津
+		division_template = "乙种国军师"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		name = "第17甲种华北师"
+		location = 9843	# 北平
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第18甲种华北师"
+		location = 9843	# 北平
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第19甲种华北师"
+		location = 9843	# 北平
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第25乙种华北师"
+		location = 9843	# 北平
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第26乙种华北师"
+		location = 9843	# 北平
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第27乙种华北师"
+		location = 9843	# 北平
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第8重装华北师"
+		location = 9843	# 北平
+		division_template = "重装华北师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第9重装华北师"
+		location = 9843	# 北平
+		division_template = "重装华北师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第20甲种华北师"
+		location = 7109	# 河北
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第21甲种华北师"
+		location = 7109	# 河北
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第22甲种华北师"
+		location = 7109	# 河北
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第23甲种华北师"
+		location = 7109	# 河北
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第28乙种华北师"
+		location = 7109	# 河北
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第29乙种华北师"
+		location = 7109	# 河北
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第30乙种华北师"
+		location = 7109	# 河北
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第31乙种华北师"
+		location = 7109	# 河北
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第24甲种华北师"
+		location = 4174	# 太原
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第25甲种华北师"
+		location = 4174	# 太原
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第26甲种华北师"
+		location = 4174	# 太原
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第32乙种华北师"
+		location = 4174	# 太原
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第33乙种华北师"
+		location = 4174	# 太原
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第34乙种华北师"
+		location = 4174	# 太原
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第27甲种华北师"
+		location = 1069	# 济南
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第28甲种华北师"
+		location = 1069	# 济南
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第29甲种华北师"
+		location = 1069	# 济南
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第35乙种华北师"
+		location = 1069	# 济南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第36乙种华北师"
+		location = 1069	# 济南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第37乙种华北师"
+		location = 1069	# 济南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第38乙种华北师"
+		location = 1069	# 济南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第10重装华北师"
+		location = 1069	# 济南
+		division_template = "重装华北师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第30甲种华北师"
+		location = 9958	# 河南
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第31甲种华北师"
+		location = 9958	# 河南
+		division_template = "甲种华北师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "第39乙种华北师"
+		location = 9958	# 河南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第40乙种华北师"
+		location = 9958	# 河南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第41乙种华北师"
+		location = 9958	# 河南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第42乙种华北师"
+		location = 9958	# 河南
+		division_template = "乙种华北师"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "第11重装华北师"
+		location = 9958	# 河南
+		division_template = "重装华北师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第12重装华北师"
+		location = 9958	# 河南
+		division_template = "重装华北师"
+		start_experience_factor = 0.3
+	}
+}

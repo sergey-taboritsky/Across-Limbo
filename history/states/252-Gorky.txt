@@ -16,9 +16,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 2
+			arms_factory = 4
 			air_base = 1
-			industrial_complex = 1
+			industrial_complex = 4
 		}
 		add_core_of = RUS
 
@@ -27,7 +27,7 @@ state={
 	provinces={
 		12 112 256 270 297 368 3004 3224 3245 3261 3285 3303 3349 3352 3383 6149 6299 6327 6370 6374 6410 9033 9172 9291 9298 9325 9358 9360 9368 9389 9407 11134 11275 11277 11324 11340 11344 11375 11394 
 	}
-	manpower=3378176
+	manpower=3756532
 	buildings_max_level_factor=1.000
 	state_category=city
 }

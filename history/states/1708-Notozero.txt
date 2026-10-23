@@ -11,7 +11,7 @@ state={
 	provinces={
 		142 9201 
 	}
-	manpower=8075
+	manpower=8979
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000

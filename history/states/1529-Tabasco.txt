@@ -18,7 +18,7 @@ state={
 	provinces={
 		2021 12867 
 	}
-	manpower=236101
+	manpower=262544
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 }

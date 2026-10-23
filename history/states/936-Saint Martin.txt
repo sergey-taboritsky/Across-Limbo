@@ -18,7 +18,7 @@ state={
 	provinces={
 		13084 
 	}
-	manpower=2500
+	manpower=2780
 	buildings_max_level_factor=1.000
 	state_category=tiny_island
 }

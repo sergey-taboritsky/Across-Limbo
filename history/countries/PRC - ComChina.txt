@@ -1,5 +1,10 @@
 ﻿capital = 608
 
+country_lock_all_division_template = {
+	is_locked = yes
+	desc = TNW_CHI_military_lock_desc
+}
+
 #oob = "PRC_1936"
 
 set_stability = 0.6

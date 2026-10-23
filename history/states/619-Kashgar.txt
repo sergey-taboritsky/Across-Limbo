@@ -30,7 +30,7 @@ state={
 	provinces={
 		2015 5016 7949 14852 15192 16664 16665 
 	}
-	manpower=666441
+	manpower=741082
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

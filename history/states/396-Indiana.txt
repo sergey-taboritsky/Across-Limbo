@@ -53,8 +53,8 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 6
-
-		}
+			arms_factory = 3
+}
 		add_core_of = USA
 
 	}
@@ -62,7 +62,7 @@ state={
 	provinces={
 		870 1595 1881 4437 4527 4531 6713 7551 9653 9654 9796 9810 10448 11621 11635 11637 12437 15915 15916 15917 15918 15919 15920 15921 15922 15923 15924 15925 16389
 	}
-	manpower=3304000
+	manpower=3674048
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000
