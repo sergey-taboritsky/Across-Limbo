@@ -3,8 +3,8 @@ on_actions = {
 	on_startup = {
 		effect = {
 			INS = {
-				set_variable = { INS_goni_var = 50 }
-				set_variable = { INS_marhaen_var = 50 }
+				set_variable = { INS_goni_var = 100 }
+				set_variable = { INS_marhaen_var = 0 }
 				set_variable = { INS_hokokai_var = 50 }
 				set_variable = { INS_sartono_var = 50 }
 				set_variable = { INS_sarekat_var = 50 }
