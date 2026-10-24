@@ -1,4 +1,5 @@
 ﻿capital = 853
+recruit_character = TNW_SLV_Boris_Kidric
 
 set_research_slots = 3
 
@@ -52,16 +53,21 @@ if = {
 }
 
 set_politics = {
-	ruling_party = Liberalism
-	last_election = "1936.1.1"
+	ruling_party = communist
+	last_election = "1947.10.12"
 	election_frequency = 48
 	elections_allowed = yes
 }
-
 set_popularities = {
-	Liberalism = 33
-	Authoritarianism = 33
-	communist = 34
+	communist = 35
+	syndicalism = 15
+	socialism = 25
+	Social_democracy = 10
+	Liberalism = 8
+	Conservatism = 4
+	Authoritarianism = 1
+	Absolutism = 0
+	Nationalism = 2
 }
 add_ideas = {
 	phalanstere_aligned_nation

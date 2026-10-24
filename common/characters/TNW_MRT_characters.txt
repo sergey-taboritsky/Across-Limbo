@@ -1,0 +1,15 @@
+characters = {
+	TNW_MRT_Moktar_Daddah = {
+		name = TNW_MRT_Moktar_Daddah
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_MRT_Moktar_Daddah
+			}
+		}
+		country_leader = {
+			desc = TNW_MRT_Moktar_Daddah_desc
+			ideology = Social_democratic
+			traits = { }
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters = {
+	TNW_MOR_Ahmed_Balafrej = {
+		name = TNW_MOR_Ahmed_Balafrej
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_MOR_Ahmed_Balafrej
+			}
+		}
+		country_leader = {
+			desc = TNW_MOR_Ahmed_Balafrej_desc
+			ideology = Social_democratic
+			traits = { }
+		}
+	}
+}

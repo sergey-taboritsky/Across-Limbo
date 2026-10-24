@@ -1,0 +1,15 @@
+characters = {
+	TNW_SEN_Lamine_Gueye = {
+		name = TNW_SEN_Lamine_Gueye
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_SEN_Lamine_Gueye
+			}
+		}
+		country_leader = {
+			desc = TNW_SEN_Lamine_Gueye_desc
+			ideology = Social_democratic
+			traits = { }
+		}
+	}
+}

@@ -47,14 +47,23 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = Liberalism
-	last_election = "1936.1.1"
+	ruling_party = Social_democracy
+	last_election = "1947.6.4"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 55
+	communist = 3
+	syndicalism = 0
+	socialism = 20
+	Social_democracy = 30
+	Liberalism = 18
+	Conservatism = 10
+	Authoritarianism = 4
+	Absolutism = 0
 	Nationalism = 15
-	communist = 5
-	Authoritarianism = 25
 }
+
+recruit_character = TNW_GAM_EF_Small
+
+

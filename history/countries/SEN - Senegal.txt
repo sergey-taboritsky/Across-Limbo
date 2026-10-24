@@ -8,6 +8,7 @@ set_technology = {
 set_convoys = 20
 
 recruit_character = SEN_awt
+recruit_character = TNW_SEN_Lamine_Gueye
 recruit_character = SEN_acd2
 recruit_character = SEN_nt
 recruit_character = SEN_aco2
@@ -68,15 +69,24 @@ recruit_character = SEN_acgs
 }
 
 set_politics = {
-	ruling_party = Liberalism
-	last_election = "1936.1.1"
+	ruling_party = Social_democracy
+	last_election = "1946.11.10"
 	election_frequency = 48
 	elections_allowed = yes
 }
-
 set_popularities = {
-	Liberalism = 55
-	Nationalism = 15
-	communist = 5
-	Authoritarianism = 25
+	communist = 3
+	syndicalism = 0
+	socialism = 18
+	Social_democracy = 35
+	Liberalism = 20
+	Conservatism = 12
+	Authoritarianism = 4
+	Absolutism = 0
+	Nationalism = 8
 }
+
+
+
+
+

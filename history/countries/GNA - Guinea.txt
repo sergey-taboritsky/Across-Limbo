@@ -8,6 +8,7 @@ set_technology = {
 set_convoys = 10
 
 recruit_character = GNA_nccr
+recruit_character = TNW_GNA_Yacine_Diallo
 recruit_character = GNA_aco2
 recruit_character = GNA_ai2
 recruit_character = GNA_Liberalism_guy
@@ -68,14 +69,21 @@ recruit_character = GNA_awt
 }
 
 set_politics = {
-	ruling_party = Authoritarianism
-	last_election = "1936.1.1"
+	ruling_party = Social_democracy
+	last_election = "1946.11.10"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 25
-	Nationalism = 20
-	communist = 5
-	Authoritarianism = 50
+	communist = 3
+	syndicalism = 0
+	socialism = 20
+	Social_democracy = 32
+	Liberalism = 15
+	Conservatism = 10
+	Authoritarianism = 5
+	Absolutism = 0
+	Nationalism = 15
 }
+
+

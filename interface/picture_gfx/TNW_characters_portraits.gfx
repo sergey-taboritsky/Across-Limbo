@@ -1,4 +1,4 @@
-spriteTypes = {
+﻿spriteTypes = {
 #Large大头像
 	#阿富汗
 	#穆罕默德·查希尔沙阿
@@ -1966,6 +1966,85 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_large_IAS_fushimi_hiroyasu"
 		texturefile = "gfx/characters/IAS_fushimi_hiroyasu.png"
+		legacy_lazy_load = no
+	}
+
+	#约瑟夫·蒂索
+	spriteType = {
+		name = "GFX_portrait_large_SLO_jozef_tiso"
+		texturefile = "gfx/characters/SLO_jozef_tiso.png"
+		legacy_lazy_load = no
+	}
+	#安德里亚·赫布兰
+	spriteType = {
+		name = "GFX_portrait_large_CRO_Andrija_Hebrang"
+		texturefile = "gfx/characters/CRO_Andrija_Hebrang.png"
+		legacy_lazy_load = no
+	}
+	#贾米勒·米德法伊
+	spriteType = {
+		name = "GFX_portrait_large_IRQ_jamil_al_midfai"
+		texturefile = "gfx/characters/IRQ_jamil_al_midfai.png"
+		legacy_lazy_load = no
+	}
+	#何塞·拉瓦
+	spriteType = {
+		name = "GFX_portrait_large_PHI_jose_lava"
+		texturefile = "gfx/characters/PHI_jose_lava.png"
+		legacy_lazy_load = no
+	}
+	#安东·瓦西里耶维奇·图尔库
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Turkul"
+		texturefile = "gfx/characters/RUS_Turkul.png"
+		legacy_lazy_load = no
+	}
+	#尼古拉·萨哈罗夫
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Sakharov"
+		texturefile = "gfx/characters/RUS_Sakharov.png"
+		legacy_lazy_load = no
+	}
+	#阿纳托利·伊万诺维奇·罗戈任
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Rogozhin"
+		texturefile = "gfx/characters/RUS_Rogozhin.png"
+		legacy_lazy_load = no
+	}
+	#阿卜杜拉一世
+	spriteType = {
+		name = "GFX_portrait_large_IRQ_abdullah"
+		texturefile = "gfx/characters/IRQ_abdullah.png"
+		legacy_lazy_load = no
+	}
+	#拉希德·阿里·盖拉尼
+	spriteType = {
+		name = "GFX_portrait_large_IRQ_rashid_ali_algaylani"
+		texturefile = "gfx/characters/IRQ_rashid_ali_algaylani.png"
+		legacy_lazy_load = no
+	}
+	#伊万·切尔尼亚霍夫斯基
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Chernyakhovsky"
+		texturefile = "gfx/characters/RUS_Chernyakhovsky.png"
+		legacy_lazy_load = no
+	}
+	#费伦茨·萨拉希
+	spriteType = {
+		name = "GFX_portrait_large_TNW_HUN_Ferenc_Szalasi"
+		texturefile = "gfx/characters/TNW_HUN_Ferenc_Szalasi.png"
+		legacy_lazy_load = no
+	}
+	#鲍里斯·基德里奇
+	spriteType = {
+		name = "GFX_portrait_large_TNW_SLV_Boris_Kidric"
+		texturefile = "gfx/characters/TNW_SLV_Boris_Kidric.png"
+		legacy_lazy_load = no
+	}
+	#马克斯·佩蒂皮埃尔
+	spriteType = {
+		name = "GFX_portrait_large_TNW_SWI_Max_Petitpierre"
+		texturefile = "gfx/characters/TNW_SWI_Max_Petitpierre.png"
 		legacy_lazy_load = no
 	}
 }

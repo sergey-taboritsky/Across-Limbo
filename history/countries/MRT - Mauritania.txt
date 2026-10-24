@@ -8,6 +8,7 @@ set_technology = {
 set_convoys = 20
 
 recruit_character = MRT_pot
+recruit_character = TNW_MRT_Moktar_Daddah
 recruit_character = MRT_awt
 recruit_character = MRT_communist_guy
 recruit_character = MRT_ncm
@@ -68,14 +69,21 @@ recruit_character = MRT_acr
 }
 
 set_politics = {
-	ruling_party = Authoritarianism
-	last_election = "1936.1.1"
+	ruling_party = Social_democracy
+	last_election = "1946.11.10"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 25
+	communist = 4
+	syndicalism = 0
+	socialism = 20
+	Social_democracy = 28
+	Liberalism = 12
+	Conservatism = 10
+	Authoritarianism = 6
+	Absolutism = 0
 	Nationalism = 20
-	communist = 5
-	Authoritarianism = 50
 }
+
+

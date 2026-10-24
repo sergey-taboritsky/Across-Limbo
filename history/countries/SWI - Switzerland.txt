@@ -5,6 +5,7 @@ set_research_slots = 3
 ##### Characters for both
 recruit_character = SWI_federal_assembly 
 recruit_character = SWI_max_leo_keller
+recruit_character = TNW_SWI_Max_Petitpierre
 recruit_character = SWI_fritz_platten
 recruit_character = SWI_henri_guisan
 recruit_character = SWI_hans_oehler
@@ -24,9 +25,15 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 96
-	Nationalism = 2
 	communist = 2
+	syndicalism = 0
+	socialism = 4
+	Social_democracy = 24
+	Liberalism = 38
+	Conservatism = 30
+	Authoritarianism = 0
+	Absolutism = 0
+	Nationalism = 2
 }
 
 set_stability = 0.85

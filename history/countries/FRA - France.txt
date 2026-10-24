@@ -37,6 +37,7 @@ add_to_faction = WUR
 	add_to_faction = CRO
 
 	add_to_faction = SLV
+	add_to_faction = ALB
 
 	add_to_faction = ALG
 

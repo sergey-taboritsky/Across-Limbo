@@ -317,4 +317,68 @@ characters = {
 			}
 		}
 	}
+	RUS_Turkul = {
+		name = RUS_Turkul
+		portraits = {
+			army = {
+				large = GFX_portrait_large_RUS_Turkul
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	RUS_Sakharov = {
+		name = RUS_Sakharov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_RUS_Sakharov
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	RUS_Rogozhin = {
+		name = RUS_Rogozhin
+		portraits = {
+			army = {
+				large = GFX_portrait_large_RUS_Rogozhin
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	RUS_Chernyakhovsky = {
+		name = RUS_Chernyakhovsky
+		portraits = {
+			army = {
+				large = GFX_portrait_large_RUS_Chernyakhovsky
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
 }

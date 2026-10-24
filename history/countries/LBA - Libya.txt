@@ -26,14 +26,15 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	communist = 5
-	socialism = 5
-	Social_democracy = 5
-	Liberalism = 5
-	Conservatism = 20
-	Authoritarianism =20 
-	Absolutism = 30
-	Nationalism = 10
+	communist = 0
+	syndicalism = 0
+	socialism = 2
+	Social_democracy = 3
+	Liberalism = 3
+	Conservatism = 15
+	Authoritarianism = 20
+	Absolutism = 55
+	Nationalism = 2
 }
 
 create_country_leader = {

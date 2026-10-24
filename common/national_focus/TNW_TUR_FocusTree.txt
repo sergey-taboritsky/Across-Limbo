@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = TUR_initial
 	country = {
 		factor = 0
@@ -1767,4 +1767,71 @@ focus_tree = {
 		add_political_power = 100
 	}
 }
+	#—————— 海峡危机（事件 TNW_straits 门控分支，平时隐藏）——————
+	focus = {
+		id = TUR_STR_Root
+		icon = GFX_goal_generic_political_pressure
+		cost = 1.00
+		x = 2
+		y = 0
+		visible = {
+			has_country_flag = TNW_straits_tur_alert_flag
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_STR_Root"
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = TUR_STR_Fortify
+		icon = GFX_goal_generic_fortify_city
+		cost = 2.00
+		prerequisite = {
+			focus = TUR_STR_Root
+		}
+		x = 1
+		y = 1
+		visible = {
+			has_country_flag = TNW_straits_tur_alert_flag
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_STR_Fortify"
+			add_war_support = 0.02
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = TUR_STR_Appeal
+		icon = GFX_goal_generic_military_sphere
+		cost = 2.00
+		prerequisite = {
+			focus = TUR_STR_Root
+		}
+		x = 2
+		y = 1
+		visible = {
+			has_country_flag = TNW_straits_tur_alert_flag
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_STR_Appeal"
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = TUR_STR_Navy
+		icon = GFX_goal_generic_build_navy
+		cost = 2.00
+		prerequisite = {
+			focus = TUR_STR_Root
+		}
+		x = 3
+		y = 1
+		visible = {
+			has_country_flag = TNW_straits_tur_alert_flag
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_STR_Navy"
+			navy_experience = 15
+		}
+	}
 }

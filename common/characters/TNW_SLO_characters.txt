@@ -1,0 +1,15 @@
+characters = {
+	SLO_jozef_tiso = {
+		name = SLO_jozef_tiso
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SLO_jozef_tiso
+			}
+		}
+		country_leader = {
+			desc = SLO_jozef_tiso_desc
+			ideology = Fascism
+			traits = { }
+		}
+	}
+}

@@ -1,0 +1,57 @@
+characters = {
+	TNW_FIN_Vilho_Annala = {
+		name = TNW_FIN_Vilho_Annala
+		country_leader = {
+			desc = TNW_FIN_Vilho_Annala_desc
+			ideology = National_Socialism
+			traits = { }
+		}
+	}
+	TNW_HUN_Ferenc_Szalasi = {
+		name = TNW_HUN_Ferenc_Szalasi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_HUN_Ferenc_Szalasi
+			}
+		}
+		country_leader = {
+			desc = TNW_HUN_Ferenc_Szalasi_desc
+			ideology = National_Socialism
+			traits = { }
+		}
+	}
+	TNW_SWI_Max_Petitpierre = {
+		name = TNW_SWI_Max_Petitpierre
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_SWI_Max_Petitpierre
+			}
+		}
+		country_leader = {
+			desc = TNW_SWI_Max_Petitpierre_desc
+			ideology = Social_Liberalism
+			traits = { }
+		}
+	}
+	TNW_SLV_Boris_Kidric = {
+		name = TNW_SLV_Boris_Kidric
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_SLV_Boris_Kidric
+			}
+		}
+		country_leader = {
+			desc = TNW_SLV_Boris_Kidric_desc
+			ideology = Marxism_Leninism
+			traits = { }
+		}
+	}
+	AUS_Karl_Renner_1948 = {
+		name = AUS_Karl_Renner_1948
+		country_leader = {
+			desc = AUS_Karl_Renner_1948_desc
+			ideology = Social_democratic
+			traits = { }
+		}
+	}
+}

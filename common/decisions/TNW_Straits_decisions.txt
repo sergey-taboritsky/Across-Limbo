@@ -1,4 +1,4 @@
-TNW_straits_crisis_task = {
+﻿TNW_straits_crisis_task = {
 	icon = GFX_decision_generic_police_action
 	visible = {
 		has_global_flag = TNW_straits_crisis_active
@@ -27,7 +27,7 @@ TNW_straits_accept_compromise = {
 			transfer_state_to = GRK
 			add_core_of = GRK
 		}
-		TUR = { load_focus_tree = TUR_initial }
+		TUR = { clr_country_flag = TNW_straits_tur_alert_flag }
 		hidden_effect = {
 			every_country = {
 				limit = { is_ai = no }

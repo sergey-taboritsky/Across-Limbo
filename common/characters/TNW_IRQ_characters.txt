@@ -1,4 +1,4 @@
-characters = {
+﻿characters = {
 	#—— 王室与宫廷 ——
 	#—— 政客 ——
 	#努里·赛义德（资深首相，沃土新月计划的设计者）
@@ -17,6 +17,11 @@ characters = {
 	#贾米勒·米德法伊（温和派老政客）
 	IRQ_jamil_al_midfai = {
 		name = IRQ_jamil_al_midfai
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IRQ_jamil_al_midfai
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
@@ -33,6 +38,11 @@ characters = {
 	#拉希德·阿里·盖拉尼（1941 年起义领袖，流亡归来）
 	IRQ_rashid_ali_algaylani = {
 		name = IRQ_rashid_ali_algaylani
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IRQ_rashid_ali_algaylani
+			}
+		}
 		country_leader = {
 			desc = IRQ_rashid_ali_algaylani_desc
 			ideology = Ultra_Nationalism
@@ -47,6 +57,11 @@ characters = {
 	#阿卜杜拉一世（伊拉克国王，哈希姆王朝，侯赛因次子）
 	IRQ_abdullah = {
 		name = IRQ_abdullah
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IRQ_abdullah
+			}
+		}
 		country_leader = {
 			desc = IRQ_abdullah_desc
 			ideology = absolute_monarchy

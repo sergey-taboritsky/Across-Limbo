@@ -1,4 +1,4 @@
-on_actions = {
+﻿on_actions = {
 	on_startup = {
 		effect = {
             set_variable = {
@@ -66,7 +66,7 @@ on_actions = {
 						check_variable = { var = global.TNW_straits_timer value = 0 compare = less_than_or_equals }
 					}
 					set_global_flag = TNW_straits_war_path
-					TUR = { load_focus_tree = TUR_initial }
+					TUR = { clr_country_flag = TNW_straits_tur_alert_flag }
 					GRE = { country_event = { id = GRE_event.9 days = 1 } }
 				}
 			}

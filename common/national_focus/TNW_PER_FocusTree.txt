@@ -1099,7 +1099,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PER_Moscow_Partnership"
 			add_political_power = 25
-			add_to_faction = RUS
+			RUS = { add_to_faction = PER }
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {

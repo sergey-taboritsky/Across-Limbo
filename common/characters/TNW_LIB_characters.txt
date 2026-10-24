@@ -1,0 +1,15 @@
+characters = {
+	TNW_LIB_William_Tubman = {
+		name = TNW_LIB_William_Tubman
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TNW_LIB_William_Tubman
+			}
+		}
+		country_leader = {
+			desc = TNW_LIB_William_Tubman_desc
+			ideology = National_Conservatism
+			traits = { }
+		}
+	}
+}

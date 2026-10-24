@@ -1,4 +1,4 @@
-characters = {
+﻿characters = {
 	#—— 领袖 ——
 	#西普里亚诺·西德（劳联首任主席，亲美工会派旗手，开局领导人）
 	PHI_cipriano_cid = {
@@ -36,6 +36,11 @@ characters = {
 	#何塞·拉瓦（菲律宾共产党总书记，亲巴黎派）
 	PHI_jose_lava = {
 		name = PHI_jose_lava
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PHI_jose_lava
+			}
+		}
 		country_leader = {
 			desc = PHI_jose_lava_desc
 			ideology = Marxism_Leninism

@@ -1,4 +1,5 @@
 ﻿capital = 461
+recruit_character = TNW_MOR_Ahmed_Balafrej
 
 # Starting tech
 set_technology = {
@@ -49,16 +50,21 @@ set_convoys = 20
 
 
 set_politics = {
-	ruling_party = Authoritarianism
-	last_election = "1936.1.1"
+	ruling_party = Social_democracy
+	last_election = "1947.5.25"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 25
-	Nationalism = 20
-	communist = 5
-	Authoritarianism = 50
+	communist = 2
+	syndicalism = 0
+	socialism = 18
+	Social_democracy = 30
+	Liberalism = 8
+	Conservatism = 12
+	Authoritarianism = 5
+	Absolutism = 0
+	Nationalism = 25
 }
 
 create_country_leader = {
