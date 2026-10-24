@@ -43,8 +43,40 @@ ideas = {
 			removal_cost = -1
 			#picture =
 			modifier = {
+				army_org_factor = -0.05
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				planning_speed = -0.10
+				experience_gain_army_factor = -0.10
+				land_doctrine_cost_factor = 0.10
 			}
 		}
+		INS_Tentara_Gado_Gado_2 = {
+			allowed = { original_tag = INS }
+			removal_cost = -1
+			#picture =
+			modifier = {
+				army_org_factor = -0.025
+				army_attack_factor = -0.025
+				army_defence_factor = -0.025
+				planning_speed = -0.05
+				experience_gain_army_factor = -0.05
+				land_doctrine_cost_factor = 0.05
+			}
+		}
+		INS_Tentara_Gado_Gado_3 = {
+			allowed = { original_tag = INS }
+			removal_cost = -1
+			#picture =
+			modifier = {
+				army_org_factor = -0.01
+				army_attack_factor = -0.01
+				army_defence_factor = -0.01
+				experience_gain_army_factor = -0.02
+				land_doctrine_cost_factor = 0.02
+			}
+		}
+
 		# ===== 五年计划（同名替换阶梯：Sumitro 线 7 点封顶 5 级） =====
 		INS_five_year_plan = {
 			allowed = { original_tag = INS }
