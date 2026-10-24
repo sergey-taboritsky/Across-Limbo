@@ -22,6 +22,18 @@ on_actions = {
 				set_variable = { INS_army_guerrilla_var = 50 }
 				set_variable = { INS_army_gyugun_var = 50 }
 				set_variable = { INS_sukarno_score = 0 }
+				add_dynamic_modifier = { modifier = INS_nat_rev_econ_dm }
+				add_dynamic_modifier = { modifier = INS_defense_forces_dm }
+				set_variable = { INS_nre_consumer_goods = -0.01 }
+				set_variable = { INS_nre_prod_buildings = 0.01 }
+				set_variable = { INS_nre_prod_infra = 0.01 }
+				set_variable = { INS_nre_factory_output = -0.02 }
+				set_variable = { INS_nre_dockyard_output = 0.01 }
+				set_variable = { INS_nre_pe_cap = -0.10 }
+				set_variable = { INS_nre_pe_growth = 0.15 }
+				set_variable = { INS_idf_army_org = -0.05 }
+				set_variable = { INS_idf_xp_gain = 0.10 }
+				set_variable = { INS_idf_planning_speed = -0.05 }
 				set_variable = { INS_yamin_score = 0 }
 				country_event = { id = INS_crisis.1 days = 180 }
 				country_event = { id = INS_crisis.2 days = 360 }

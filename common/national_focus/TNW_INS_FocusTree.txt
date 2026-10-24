@@ -24,12 +24,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Continue_Kasimo_Plan"
-			if = {
-				limit = { NOT = { has_dynamic_modifier = { modifier = INS_nat_rev_econ_dm } } }
-				add_dynamic_modifier = { modifier = INS_nat_rev_econ_dm }
-			}
-			add_to_variable = { INS_nre_consumer_goods = -0.01 }
-			add_to_variable = { INS_nre_prod_infra = 0.02 }
+			add_to_variable = { INS_nre_consumer_goods = -0.02 }
+			add_to_variable = { INS_nre_prod_infra = 0.03 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 25
 			add_stability = 0.01
@@ -48,8 +44,6 @@ focus_tree = {
 		prerequisite = { focus = INS_Continue_Kasimo_Plan }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Sumatra_Planting_Expansion"
-			add_to_variable = { INS_nre_prod_infra = 0.01 }
-			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 25
 			add_stability = 0.01
 		}
@@ -67,8 +61,6 @@ focus_tree = {
 		prerequisite = { focus = INS_Continue_Kasimo_Plan }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Raise_Procurement_Prices"
-			add_to_variable = { INS_nre_consumer_goods = -0.01 }
-			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.02
 		}
@@ -87,7 +79,7 @@ focus_tree = {
 		prerequisite = { focus = INS_Raise_Procurement_Prices }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Pilot_End_Rationing"
-			add_to_variable = { INS_nre_consumer_goods = -0.02 }
+			add_to_variable = { INS_nre_consumer_goods = -0.03 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.01
@@ -125,8 +117,9 @@ focus_tree = {
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Russia_Grain_Exchange"
-			add_to_variable = { INS_nre_factory_output = 0.02 }
+			add_to_variable = { INS_nre_factory_output = 0.03 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
+			add_ideas = INS_Rus_Grain_Trade
 			add_political_power = 50
 			add_offsite_building = { type = industrial_complex level = 1 }
 		}
@@ -144,8 +137,6 @@ focus_tree = {
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Fertilizer_Seeds"
-			add_to_variable = { INS_nre_consumer_goods = -0.01 }
-			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_stability = 0.02
 			add_manpower = 2000
 		}
@@ -163,8 +154,6 @@ focus_tree = {
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Balance_Cash_Crops"
-			add_to_variable = { INS_nre_factory_output = 0.01 }
-			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.01
 		}
@@ -202,10 +191,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Support_Djuanda"
-			if = {
-				limit = { NOT = { has_dynamic_modifier = { modifier = INS_nat_rev_econ_dm } } }
-				add_dynamic_modifier = { modifier = INS_nat_rev_econ_dm }
-			}
 			add_to_variable = { INS_nre_prod_buildings = 0.02 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
@@ -698,26 +683,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Sumitro_Plan focus = INS_Economic_Sovereignty_Movement }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Central_Banking_Law"
-			if = {
-				limit = { has_idea = INS_five_year_plan_4 }
-				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
-			}
-			else_if = {
-				limit = { has_idea = INS_five_year_plan_3 }
-				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
-			}
-			else_if = {
-				limit = { has_idea = INS_five_year_plan_2 }
-				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
-			}
-			else_if = {
-				limit = { has_idea = INS_five_year_plan_1 }
-				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
-			}
-			else = {
-				add_ideas = INS_five_year_plan_1
-			}
-			custom_effect_tooltip = INS_fyp_upgrade_tt
+			add_to_variable = { INS_nre_factory_output = 0.02 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 100
 		}
 	}
@@ -734,26 +701,8 @@ focus_tree = {
 		prerequisite = { focus = INS_Central_Banking_Law }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Recoup_Java_Bank"
-			if = {
-				limit = { has_idea = INS_five_year_plan_4 }
-				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
-			}
-			else_if = {
-				limit = { has_idea = INS_five_year_plan_3 }
-				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
-			}
-			else_if = {
-				limit = { has_idea = INS_five_year_plan_2 }
-				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
-			}
-			else_if = {
-				limit = { has_idea = INS_five_year_plan_1 }
-				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
-			}
-			else = {
-				add_ideas = INS_five_year_plan_1
-			}
-			custom_effect_tooltip = INS_fyp_upgrade_tt
+			add_to_variable = { INS_nre_consumer_goods = -0.02 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.01
 		}
@@ -771,26 +720,9 @@ focus_tree = {
 		prerequisite = { focus = INS_Central_Banking_Law }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Complete_Monetary_Sovereignty"
-			if = {
-				limit = { has_idea = INS_five_year_plan_4 }
-				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
-			}
-			else_if = {
-				limit = { has_idea = INS_five_year_plan_3 }
-				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
-			}
-			else_if = {
-				limit = { has_idea = INS_five_year_plan_2 }
-				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
-			}
-			else_if = {
-				limit = { has_idea = INS_five_year_plan_1 }
-				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
-			}
-			else = {
-				add_ideas = INS_five_year_plan_1
-			}
-			custom_effect_tooltip = INS_fyp_upgrade_tt
+			add_to_variable = { INS_nre_factory_output = 0.02 }
+			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
 			add_stability = 0.02
 		}
@@ -807,11 +739,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Army_Rationalization"
-			if = {
-				limit = { NOT = { has_dynamic_modifier = { modifier = INS_defense_forces_dm } } }
-				add_dynamic_modifier = { modifier = INS_defense_forces_dm }
-			}
 			add_to_variable = { INS_idf_research_speed = 0.05 }
+			custom_effect_tooltip = INS_idf_research_speed_tt
 			add_army_experience = 10
 			if = {
 				limit = { has_idea = INS_Tentara_Gado_Gado }
@@ -836,6 +765,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Demobilize_Militias"
 			add_to_variable = { INS_idf_xp_gain = 0.05 }
+			custom_effect_tooltip = INS_idf_xp_gain_tt
 			add_army_experience = 10
 			add_political_power = 50
 			add_stability = 0.01
@@ -856,6 +786,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Keep_Guerrillas"
 			add_to_variable = { INS_idf_army_org = 0.025 }
+			custom_effect_tooltip = INS_idf_army_org_tt
 			add_army_experience = 10
 			add_manpower = 5000
 			add_war_support = 0.01
@@ -875,7 +806,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Siliwangi_Model_Division"
 			add_to_variable = { INS_idf_army_attack = 0.02 }
+			custom_effect_tooltip = INS_idf_army_attack_tt
 			add_to_variable = { INS_idf_army_defence = 0.02 }
+			custom_effect_tooltip = INS_idf_army_defence_tt
 			add_army_experience = 10
 			army_experience = 10
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 2500 }
@@ -895,6 +828,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Positional_Warfare"
 			add_to_variable = { INS_idf_army_defence = 0.03 }
+			custom_effect_tooltip = INS_idf_army_defence_3_tt
 			add_army_experience = 10
 			army_experience = 15
 		}
@@ -913,6 +847,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Total_Peoples_Defense"
 			add_to_variable = { INS_idf_doctrine_cost = -0.05 }
+			custom_effect_tooltip = INS_idf_doctrine_tt
 			add_army_experience = 10
 			add_war_support = 0.02
 			add_manpower = 2000
@@ -928,10 +863,12 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
 		}
-		prerequisite = { focus = INS_Positional_Warfare focus = INS_Total_Peoples_Defense }
+		prerequisite = { focus = INS_Positional_Warfare }
+		prerequisite = { focus = INS_Total_Peoples_Defense }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Border_Guerrilla_Zones"
 			add_to_variable = { INS_idf_army_org = 0.025 }
+			custom_effect_tooltip = INS_idf_army_org_tt
 			add_army_experience = 10
 			add_war_support = 0.01
 			add_manpower = 2000
@@ -952,6 +889,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Reorganize_Military_Districts"
 			add_to_variable = { INS_idf_doctrine_cost = -0.05 }
+			custom_effect_tooltip = INS_idf_doctrine_tt
 			add_army_experience = 10
 			if = {
 				limit = { has_idea = INS_Tentara_Gado_Gado_2 }
@@ -980,6 +918,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Self_Funded_Army"
 			add_to_variable = { INS_idf_planning_speed = 0.05 }
+			custom_effect_tooltip = INS_idf_planning_tt
 			add_army_experience = 10
 			add_political_power = 100
 			add_stability = -0.01
@@ -999,6 +938,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Guardian_Political_Action"
 			add_to_variable = { INS_idf_army_org = 0.025 }
+			custom_effect_tooltip = INS_idf_army_org_tt
 			add_army_experience = 10
 			add_political_power = 75
 			add_stability = 0.02
@@ -1018,7 +958,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Improve_Magelang_Academy"
 			add_to_variable = { INS_idf_research_speed = 0.05 }
+			custom_effect_tooltip = INS_idf_research_speed_tt
 			add_to_variable = { INS_idf_xp_gain = 0.05 }
+			custom_effect_tooltip = INS_idf_xp_gain_tt
 			add_army_experience = 10
 			army_experience = 15
 		}
@@ -1037,6 +979,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Civilian_Transport_Licenses"
 			add_to_variable = { INS_idf_planning_speed = 0.05 }
+			custom_effect_tooltip = INS_idf_planning_tt
 			add_army_experience = 10
 			add_political_power = 50
 		}
@@ -1055,6 +998,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Army_Plantations"
 			add_to_variable = { INS_idf_max_planning = 0.05 }
+			custom_effect_tooltip = INS_idf_max_planning_tt
 			add_army_experience = 10
 			add_political_power = 50
 			add_stability = 0.01
@@ -1074,6 +1018,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Military_Import_Permits"
 			add_to_variable = { INS_idf_army_attack = 0.02 }
+			custom_effect_tooltip = INS_idf_army_attack_tt
 			add_army_experience = 10
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 }
 		}
@@ -1092,7 +1037,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Unity_Training"
 			add_to_variable = { INS_idf_army_attack = 0.02 }
+			custom_effect_tooltip = INS_idf_army_attack_tt
 			add_to_variable = { INS_idf_army_defence = 0.02 }
+			custom_effect_tooltip = INS_idf_army_defence_tt
 			add_army_experience = 10
 			army_experience = 10
 			add_war_support = 0.01
@@ -1112,7 +1059,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Officer_Nationalism"
 			add_to_variable = { INS_idf_army_org = 0.025 }
+			custom_effect_tooltip = INS_idf_army_org_tt
 			add_to_variable = { INS_idf_planning_speed = 0.05 }
+			custom_effect_tooltip = INS_idf_planning_tt
 			add_army_experience = 10
 			add_war_support = 0.02
 		}
@@ -1131,6 +1080,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_National_Defense_University"
 			add_to_variable = { INS_idf_research_speed = 0.10 }
+			custom_effect_tooltip = INS_idf_research_speed_10_tt
 			add_army_experience = 25
 			if = {
 				limit = { has_idea = INS_Tentara_Gado_Gado_3 }

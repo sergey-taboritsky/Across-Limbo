@@ -8,6 +8,8 @@ INS_nat_rev_econ_dm = {
 	production_speed_infrastructure_factor = INS_nre_prod_infra
 	industrial_capacity_factory = INS_nre_factory_output
 	industrial_capacity_dockyard = INS_nre_dockyard_output
+	production_factory_max_efficiency_factor = INS_nre_pe_cap
+	production_efficiency_growth_factor = INS_nre_pe_growth
 }
 
 # 印度尼西亚国防军（军事线动态修正：国策逐级改变量）

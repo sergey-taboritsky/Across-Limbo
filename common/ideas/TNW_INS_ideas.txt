@@ -7,6 +7,8 @@ ideas = {
 			removal_cost = -1
 			#picture =
 			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.10
 			}
 		}
 		INS_Mata_dari_Seberang = {
@@ -16,6 +18,7 @@ ideas = {
 			removal_cost = -1
 			#picture =
 			modifier = {
+				war_support_factor = 0.05
 			}
 		}
 		INS_Oposisi_Berkepala_Tiga = {
@@ -25,6 +28,7 @@ ideas = {
 			removal_cost = -1
 			#picture =
 			modifier = {
+				political_power_gain = -0.15
 			}
 		}
 		INS_Mesin_Jawa = {
@@ -34,6 +38,8 @@ ideas = {
 			removal_cost = -1
 			#picture =
 			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.10
 			}
 		}
 		INS_Tentara_Gado_Gado = {
@@ -169,6 +175,15 @@ ideas = {
 				political_power_gain = 0.25
 				industrial_capacity_factory = 0.05
 				production_speed_buildings_factor = 0.10
+			}
+		}
+		INS_Rus_Grain_Trade = {
+			allowed = { original_tag = INS }
+			removal_cost = -1
+			picture = GFX_idea_generic_oil_refinery
+			modifier = {
+				consumer_goods_factor = -0.02
+				industrial_capacity_factory = 0.03
 			}
 		}
 
