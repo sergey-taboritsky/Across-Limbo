@@ -280,12 +280,6 @@ characters = {
 	#苏加诺
 	INS_Sukarno = {
 		name = INS_Sukarno
-		country_leader = {
-			desc = INS_Sukarno_desc
-			ideology = Social_nationalism
-			traits = {
-			}
-		}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
@@ -318,6 +312,12 @@ characters = {
 	#伊斯卡克·佐克罗哈迪苏尔乔（党内打手）
 	INS_Iskaq_Tjokrohadisurjo = {
 		name = INS_Iskaq_Tjokrohadisurjo
+		country_leader = {
+			desc = INS_Iskaq_Tjokrohadisurjo_desc
+			ideology = Left_wing_nationalism
+			traits = {
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
@@ -326,6 +326,12 @@ characters = {
 	#苏卡尔尼（穆尔巴党魁）
 	INS_Sukarni = {
 		name = INS_Sukarni
+		country_leader = {
+			desc = INS_Sukarni_desc
+			ideology = Ultra_Nationalism
+			traits = {
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
@@ -342,6 +348,12 @@ characters = {
 	#维卡纳（青年领袖·联共线）
 	INS_Wikana = {
 		name = INS_Wikana
+		country_leader = {
+			desc = INS_Wikana_desc
+			ideology = Classical_Syndicalism
+			traits = {
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
@@ -352,7 +364,7 @@ characters = {
 		name = INS_Sutan_Sjahrir
 		country_leader = {
 			desc = INS_Sutan_Sjahrir_desc
-			ideology = Social_democratic
+			ideology = Liberalism_socialism
 			traits = {
 			}
 		}
@@ -364,12 +376,6 @@ characters = {
 	#D.N.艾地（共产党地下重建者）
 	INS_Dipa_Nusantara_Aidit = {
 		name = INS_Dipa_Nusantara_Aidit
-		country_leader = {
-			desc = INS_Dipa_Nusantara_Aidit_desc
-			ideology = Marxism_Leninism
-			traits = {
-			}
-		}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
@@ -378,6 +384,12 @@ characters = {
 	#穆罕默德·纳西尔（马斯友美党团领袖）
 	INS_Mohammad_Natsir = {
 		name = INS_Mohammad_Natsir
+		country_leader = {
+			desc = INS_Mohammad_Natsir_desc
+			ideology = Social_Conservatism
+			traits = {
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
@@ -447,6 +459,12 @@ characters = {
 	#阿卜杜勒·哈里斯·纳苏蒂安（西利万吉系·元帅）
 	INS_Abdul_Haris_Nasution = {
 		name = INS_Abdul_Haris_Nasution
+		country_leader = {
+			desc = INS_Abdul_Haris_Nasution_desc
+			ideology = military_government
+			traits = {
+			}
+		}
 		field_marshal = {
 			desc = INS_Abdul_Haris_Nasution_commander_desc
 			traits = { war_hero infantry_officer offensive_doctrine }
@@ -515,6 +533,12 @@ characters = {
 	#丹马拉卡（第三方暗流）
 	INS_Tan_Malaka = {
 		name = INS_Tan_Malaka
+		country_leader = {
+			desc = INS_Tan_Malaka_desc
+			ideology = Left_wing_communism
+			traits = {
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
@@ -523,6 +547,12 @@ characters = {
 	#萨尔托诺（老自由派·GERINDO残部）
 	INS_Sartono = {
 		name = INS_Sartono
+		country_leader = {
+			desc = INS_Sartono_desc
+			ideology = National_liberalism
+			traits = {
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100

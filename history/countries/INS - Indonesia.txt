@@ -29,6 +29,15 @@ set_politics = {
 	elections_allowed = no
 }
 recruit_character = INS_Raden_Soetomo
+recruit_character = INS_Mohammad_Natsir
+recruit_character = INS_Sutan_Sjahrir
+recruit_character = INS_Tan_Malaka
+recruit_character = INS_Siauw_Giok_Tjhan
+recruit_character = INS_Sartono
+recruit_character = INS_Iskaq_Tjokrohadisurjo
+recruit_character = INS_Sukarni
+recruit_character = INS_Wikana
+recruit_character = INS_Abdul_Haris_Nasution
 
 add_ideas = {
 	INS_Republik_yang_Belum_Selesai
