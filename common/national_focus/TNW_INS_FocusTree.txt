@@ -182,6 +182,7 @@ focus_tree = {
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Academy_of_Agriculture"
+			add_research_slot = 1
 			add_to_variable = { INS_nre_prod_buildings = 0.02 }
 			add_to_variable = { INS_nre_consumer_goods = -0.01 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
@@ -1075,6 +1076,7 @@ focus_tree = {
 		prerequisite = { focus = INS_Improve_Magelang_Academy }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_National_Defense_University"
+			add_research_slot = 1
 			army_experience = 25
 			add_political_power = 50
 		}

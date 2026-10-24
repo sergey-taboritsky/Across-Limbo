@@ -1926,4 +1926,46 @@ spriteTypes = {
 		texturefile = "gfx/characters/SYR_Sami_al_Hinnawi.png"
 		legacy_lazy_load = no
 	}
+	#努里·赛义德
+	spriteType = {
+		name = "GFX_portrait_large_IRQ_nuri_as_said"
+		texturefile = "gfx/characters/IRQ_nuri_as_said.png"
+		legacy_lazy_load = no
+	}
+	#塔拉勒王子
+	spriteType = {
+		name = "GFX_portrait_large_IRQ_talal"
+		texturefile = "gfx/characters/IRQ_talal.png"
+		legacy_lazy_load = no
+	}
+	#路易斯·塔鲁克
+	spriteType = {
+		name = "GFX_portrait_large_PHI_luis_taruc"
+		texturefile = "gfx/characters/PHI_luis_taruc.png"
+		legacy_lazy_load = no
+	}
+	#穆斯塔法·阿里斯
+	spriteType = {
+		name = "GFX_portrait_large_ALP_Mustapha_Aris"
+		texturefile = "gfx/characters/ALP_Mustapha_Aris.png"
+		legacy_lazy_load = no
+	}
+	#尼古拉·沙维
+	spriteType = {
+		name = "GFX_portrait_large_ALP_Nicolas_Chaoui"
+		texturefile = "gfx/characters/ALP_Nicolas_Chaoui.png"
+		legacy_lazy_load = no
+	}
+	#瓦迪·哈达德
+	spriteType = {
+		name = "GFX_portrait_large_ALP_Wadie_Haddad"
+		texturefile = "gfx/characters/ALP_Wadie_Haddad.png"
+		legacy_lazy_load = no
+	}
+	#伏见宫博恭王
+	spriteType = {
+		name = "GFX_portrait_large_IAS_fushimi_hiroyasu"
+		texturefile = "gfx/characters/IAS_fushimi_hiroyasu.png"
+		legacy_lazy_load = no
+	}
 }

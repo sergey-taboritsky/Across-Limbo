@@ -4,6 +4,11 @@ characters = {
 	#努里·赛义德（资深首相，沃土新月计划的设计者）
 	IRQ_nuri_as_said = {
 		name = IRQ_nuri_as_said
+	portraits = {
+		civilian = {
+			large = GFX_portrait_large_IRQ_nuri_as_said
+		}
+	}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
@@ -52,6 +57,11 @@ characters = {
 	#塔拉勒王储（国王长子）
 	IRQ_talal = {
 		name = IRQ_talal
+	portraits = {
+		civilian = {
+			large = GFX_portrait_large_IRQ_talal
+		}
+	}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100

@@ -17,6 +17,11 @@ characters = {
 	#路易斯·塔鲁克（虎克军总司令）
 	PHI_luis_taruc = {
 		name = PHI_luis_taruc
+	portraits = {
+		civilian = {
+			large = GFX_portrait_large_PHI_luis_taruc
+		}
+	}
 		country_leader = {
 			desc = PHI_luis_taruc_desc
 			ideology = agrarian_socialism

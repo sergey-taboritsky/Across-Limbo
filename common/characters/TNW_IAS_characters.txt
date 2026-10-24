@@ -1,0 +1,18 @@
+# IAS 大日本帝国（北日本）角色
+characters = {
+	#伏见宫博恭王（临时政府元首，海军元帅）
+	IAS_fushimi_hiroyasu = {
+		name = IAS_fushimi_hiroyasu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IAS_fushimi_hiroyasu
+			}
+		}
+		country_leader = {
+			desc = IAS_fushimi_hiroyasu_desc
+			ideology = interim_government
+			traits = {
+			}
+		}
+	}
+}

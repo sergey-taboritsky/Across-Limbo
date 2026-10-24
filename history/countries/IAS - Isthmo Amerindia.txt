@@ -46,7 +46,7 @@ IF = {
 	limit = {
 		has_dlc = "Trial of Allegiance"
 	}
-	recruit_character = IAS_isthmo_amerindian_council
+	recruit_character = IAS_fushimi_hiroyasu
 }
 
 
