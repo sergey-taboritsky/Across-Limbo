@@ -164,7 +164,7 @@
  
 #经济系统
  TNW_Economy_categories: "经济调试面板"
- TNW_Economy_categories_desc: "全局结算：\n国营民工：[?THIS.num_of_civilian_factories]\n国营盈利军工：[?THIS.num_of_available_military_factories]\n私营民工：[?THIS.TNW_econ_mech_tag_private_firms_num]\n私营经济增长率：[?THIS.TNW_econ_mech_tag_growth_rate]\n国库资金：[?THIS.TNW_ecom_mech_tag_treasury]\n民企税率：[?THIS.TNW_econ_mech_tag_private_tax_rate]\n国企税率：[?THIS.TNW_econ_mech_tag_state_tax_rate]\n个人税率：[?THIS.TNW_econ_mech_tag_personal_taxrate]\n\n每月结算：\n民工增长：[?THIS.TNW_econ_mech_tag_monthly_growth]\n民工增长累计：[?THIS.TNW_econ_mech_tag_growth_accumulation]"
+ TNW_Economy_categories_desc: "经济总览（原经济面板已并入本页）：\n国内GDP总值：[?THIS.gdpmn|G3] B\n通货膨胀：[?THIS.gdp_inflation|R2]%\n国库：[?THIS.capital_reserves|G3] B\n每月盈余：[THIS.capital_reserves_change_text] B\n总投资：[?THIS.all_investment|G3] B\n信用评级：[GetECOICON_NAME]\n\n全局结算：\n国营民工：[?THIS.num_of_civilian_factories]\n国营盈利军工：[?THIS.num_of_available_military_factories]\n私营民工：[?THIS.TNW_econ_mech_tag_private_firms_num]\n私营经济增长率：[?THIS.TNW_econ_mech_tag_growth_rate]\n国库资金：[?THIS.TNW_ecom_mech_tag_treasury]\n民企税率：[?THIS.TNW_econ_mech_tag_private_tax_rate]\n国企税率：[?THIS.TNW_econ_mech_tag_state_tax_rate]\n个人税率：[?THIS.TNW_econ_mech_tag_personal_taxrate]\n\n每月结算：\n民工增长：[?THIS.TNW_econ_mech_tag_monthly_growth]\n民工增长累计：[?THIS.TNW_econ_mech_tag_growth_accumulation]"
 
 #发展程度决议
  TNW_Development_resolution_categories:0 "发展程度"

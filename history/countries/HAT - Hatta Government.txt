@@ -1,0 +1,27 @@
+﻿capital = 1613
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = Liberalism
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 0
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 5
+	Liberalism = 25
+	Conservatism = 40
+	Authoritarianism = 30
+	Absolutism = 0
+	Nationalism = 0
+}
+
+recruit_character = HAT_Mohammad_Hatta
+
+set_oob = "HAT_civil_war"

@@ -309,3 +309,431 @@ country_event = {
 		name = INS_crisis.24.a
 	}
 }
+#坦格朗公路的枪声（马拉卡遇刺，艾地接班）
+country_event = {
+	id = INS_event.1
+	title = INS_event.1.t
+	desc = INS_event.1.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			INS_Tan_Malaka = { kill_character = yes }
+			add_country_leader_role = {
+				character = INS_Dipa_Nusantara_Aidit
+				promote_leader = yes
+				country_leader = {
+					desc = INS_Dipa_Nusantara_Aidit_desc
+					ideology = Left_wing_communism
+					traits = { }
+				}
+			}
+			INS_Dipa_Nusantara_Aidit = { promote_character = yes }
+		}
+	}
+	option = {
+		name = INS_event.1.a
+		custom_effect_tooltip = INS_ev1_a_tt
+		hidden_effect = {
+			add_to_variable = { var = INS_murba_str value = -10 }
+			clamp_variable = { var = INS_murba_str max = 100 min = 0 }
+			INS_calc_scores_effect = yes
+		}
+		add_political_power = 25
+		add_stability = -0.01
+	}
+	option = {
+		name = INS_event.1.b
+		custom_effect_tooltip = INS_ev1_b_tt
+		hidden_effect = {
+			add_to_variable = { var = INS_army_siliwangi_str value = -5 }
+			clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+			add_to_variable = { var = INS_murba_str value = -5 }
+			clamp_variable = { var = INS_murba_str max = 100 min = 0 }
+			INS_calc_scores_effect = yes
+		}
+		add_stability = -0.01
+	}
+}
+
+#国防委员会的争吵（军内倾轧）
+country_event = {
+	id = INS_event.2
+	title = INS_event.2.t
+	desc = INS_event.2.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = INS_event.2.a
+		custom_effect_tooltip = INS_ev2_a_tt
+		hidden_effect = {
+			add_to_variable = { var = INS_army_siliwangi_str value = 5 }
+			clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+			add_to_variable = { var = INS_army_guerrilla_str value = -3 }
+			clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+		}
+		add_political_power = -25
+	}
+	option = {
+		name = INS_event.2.b
+		custom_effect_tooltip = INS_ev2_b_tt
+		hidden_effect = {
+			add_to_variable = { var = INS_army_guerrilla_str value = 5 }
+			clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+			add_to_variable = { var = INS_army_siliwangi_str value = -3 }
+			clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+		}
+		add_stability = 0.005
+	}
+	option = {
+		name = INS_event.2.c
+		custom_effect_tooltip = INS_ev2_c_tt
+		hidden_effect = {
+			add_to_variable = { var = INS_army_siliwangi_str value = 2 }
+			clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+			add_to_variable = { var = INS_army_guerrilla_str value = 2 }
+			clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+			add_to_variable = { var = INS_army_gyugun_str value = 2 }
+			clamp_variable = { var = INS_army_gyugun_str max = 100 min = 0 }
+		}
+		add_stability = -0.01
+	}
+}
+
+#《人民之声报》的社论（党内斗争）
+country_event = {
+	id = INS_event.3
+	title = INS_event.3.t
+	desc = INS_event.3.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = INS_event.3.a
+		custom_effect_tooltip = INS_ev3_a_tt
+		hidden_effect = {
+			add_to_variable = { var = INS_goni_str value = 5 }
+			clamp_variable = { var = INS_goni_str max = 100 min = 0 }
+			add_to_variable = { var = INS_marhaen_str value = -5 }
+			clamp_variable = { var = INS_marhaen_str max = 100 min = 0 }
+			INS_calc_scores_effect = yes
+		}
+		add_political_power = 25
+	}
+	option = {
+		name = INS_event.3.b
+		custom_effect_tooltip = INS_ev3_b_tt
+		hidden_effect = {
+			add_to_variable = { var = INS_marhaen_str value = 5 }
+			clamp_variable = { var = INS_marhaen_str max = 100 min = 0 }
+			add_to_variable = { var = INS_goni_str value = -5 }
+			clamp_variable = { var = INS_goni_str max = 100 min = 0 }
+			INS_calc_scores_effect = yes
+		}
+		add_stability = -0.005
+	}
+}
+
+#议席风波（议会问题）
+country_event = {
+	id = INS_event.4
+	title = INS_event.4.t
+	desc = INS_event.4.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = INS_event.4.a
+		custom_effect_tooltip = INS_ev4_a_tt
+		hidden_effect = {
+			add_to_variable = { var = INS_sartono_str value = 5 }
+			clamp_variable = { var = INS_sartono_str max = 100 min = 0 }
+			add_to_variable = { var = INS_hokokai_str value = 3 }
+			clamp_variable = { var = INS_hokokai_str max = 100 min = 0 }
+			add_to_variable = { var = INS_murba_str value = -5 }
+			clamp_variable = { var = INS_murba_str max = 100 min = 0 }
+			INS_calc_scores_effect = yes
+		}
+		add_stability = 0.005
+	}
+	option = {
+		name = INS_event.4.b
+		custom_effect_tooltip = INS_ev4_b_tt
+		hidden_effect = {
+			add_to_variable = { var = INS_murba_str value = 5 }
+			clamp_variable = { var = INS_murba_str max = 100 min = 0 }
+			add_to_variable = { var = INS_sartono_str value = -5 }
+			clamp_variable = { var = INS_sartono_str max = 100 min = 0 }
+			INS_calc_scores_effect = yes
+		}
+		add_political_power = 25
+		add_stability = -0.005
+	}
+}
+
+#国策配套
+country_event = {
+	id = INS_event.5
+	title = INS_event.5.t
+	desc = INS_event.5.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = INS_event.5.a
+		custom_effect_tooltip = INS_ev5_a_tt
+		hidden_effect = {
+			add_to_variable = { INS_nre_prod_infra = 0.01 }
+		}
+	}
+	option = {
+		name = INS_event.5.b
+		custom_effect_tooltip = INS_ev5_b_tt
+		hidden_effect = {
+			add_to_variable = { INS_nre_factory_output = 0.01 }
+		}
+	}
+}
+
+#国策配套
+country_event = {
+	id = INS_event.6
+	title = INS_event.6.t
+	desc = INS_event.6.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = INS_event.6.a
+		custom_effect_tooltip = INS_ev6_a_tt
+		hidden_effect = {
+			add_to_variable = { INS_nre_factory_output = 0.01 }
+		}
+		add_stability = -0.01
+	}
+	option = {
+		name = INS_event.6.b
+		add_political_power = -50
+		add_stability = 0.01
+	}
+}
+
+#国策配套
+country_event = {
+	id = INS_event.7
+	title = INS_event.7.t
+	desc = INS_event.7.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = INS_event.7.a
+		custom_effect_tooltip = INS_ev7_a_tt
+		hidden_effect = {
+			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+		}
+	}
+	option = {
+		name = INS_event.7.b
+		add_war_support = 0.01
+		add_stability = 0.005
+	}
+}
+
+#国策配套
+country_event = {
+	id = INS_event.8
+	title = INS_event.8.t
+	desc = INS_event.8.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = INS_event.8.a
+		add_political_power = 50
+		add_stability = -0.01
+	}
+	option = {
+		name = INS_event.8.b
+		add_political_power = -25
+		add_stability = 0.005
+	}
+}
+
+#国策配套
+country_event = {
+	id = INS_event.9
+	title = INS_event.9.t
+	desc = INS_event.9.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = INS_event.9.a
+		add_political_power = 50
+		add_stability = -0.005
+	}
+	option = {
+		name = INS_event.9.b
+		add_political_power = -25
+		add_stability = 0.005
+		add_army_experience = 5
+	}
+}
+
+#总统府的无声夜（僵局->军队出面）
+country_event = {
+	id = INS_crisis.25
+	title = INS_crisis.25.t
+	desc = INS_crisis.25.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = INS_crisis.25.a
+		add_stability = -0.03
+		add_political_power = -50
+	}
+}
+
+#七个雅加达（内战爆发：分地+互宣+建军）
+country_event = {
+	id = INS_crisis.26
+	title = INS_crisis.26.t
+	desc = INS_crisis.26.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			set_country_flag = INS_civil_war_ongoing
+			set_country_flag = INS_coup_happened
+			add_country_leader_role = {
+				character = INS_Abdul_Haris_Nasution
+				promote_leader = yes
+				country_leader = {
+					desc = INS_Abdul_Haris_Nasution_desc
+					ideology = military_government
+					traits = { }
+				}
+			}
+			INS_Abdul_Haris_Nasution = { promote_character = yes }
+			1613 = { transfer_state_to = HAT add_core_of = HAT }
+			1298 = { transfer_state_to = HAT add_core_of = HAT }
+			1612 = { transfer_state_to = HAT add_core_of = HAT }
+			883 = { transfer_state_to = SJR add_core_of = SJR }
+			1299 = { transfer_state_to = SJR add_core_of = SJR }
+			1295 = { transfer_state_to = JGS add_core_of = JGS }
+			1296 = { transfer_state_to = JGS add_core_of = JGS }
+			1607 = { transfer_state_to = JGS add_core_of = JGS }
+			1294 = { transfer_state_to = MUR add_core_of = MUR }
+			1600 = { transfer_state_to = MUR add_core_of = MUR }
+			1615 = { transfer_state_to = DIJ add_core_of = DIJ }
+			1614 = { transfer_state_to = DIJ add_core_of = DIJ }
+			1300 = { transfer_state_to = PON add_core_of = PON }
+			1301 = { transfer_state_to = PON add_core_of = PON }
+			1616 = { transfer_state_to = PON add_core_of = PON }
+			DIJ = { load_oob = "DIJ_civil_war" }
+			JGS = { load_oob = "JGS_civil_war" }
+			MUR = { load_oob = "MUR_civil_war" }
+			SJR = { load_oob = "SJR_civil_war" }
+			HAT = { load_oob = "HAT_civil_war" }
+			PON = { load_oob = "PON_civil_war" }
+			declare_war_on = { type = annex_everything target = DIJ }
+			declare_war_on = { type = annex_everything target = JGS }
+			declare_war_on = { type = annex_everything target = MUR }
+			declare_war_on = { type = annex_everything target = SJR }
+			declare_war_on = { type = annex_everything target = HAT }
+			DIJ = {
+				declare_war_on = { type = annex_everything target = JGS }
+				declare_war_on = { type = annex_everything target = MUR }
+				declare_war_on = { type = annex_everything target = SJR }
+				declare_war_on = { type = annex_everything target = HAT }
+			}
+			JGS = {
+				declare_war_on = { type = annex_everything target = MUR }
+				declare_war_on = { type = annex_everything target = SJR }
+				declare_war_on = { type = annex_everything target = HAT }
+			}
+			MUR = {
+				declare_war_on = { type = annex_everything target = SJR }
+				declare_war_on = { type = annex_everything target = HAT }
+			}
+			SJR = {
+				declare_war_on = { type = annex_everything target = HAT }
+			}
+			news_event = { id = INS_news_event.5 hours = 6 }
+			add_stability = -0.10
+		}
+	}
+	option = {
+		name = INS_crisis.26.a
+	}
+}
+
+#新闻：苏加诺就任
+news_event = {
+	id = INS_news_event.2
+	title = INS_news_event.2.t
+	desc = INS_news_event.2.d
+	picture = GFX_news_event_political_2
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = INS_news_event.2.a
+	}
+}
+
+#新闻：亚明就任
+news_event = {
+	id = INS_news_event.3
+	title = INS_news_event.3.t
+	desc = INS_news_event.3.d
+	picture = GFX_news_event_political_2
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = INS_news_event.3.a
+	}
+}
+
+#新闻：军事政变
+news_event = {
+	id = INS_news_event.4
+	title = INS_news_event.4.t
+	desc = INS_news_event.4.d
+	picture = GFX_news_event_political_3
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = INS_news_event.4.a
+	}
+}
+
+#新闻：内战爆发
+news_event = {
+	id = INS_news_event.5
+	title = INS_news_event.5.t
+	desc = INS_news_event.5.d
+	picture = GFX_news_event_unity_pack
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = INS_news_event.5.a
+	}
+}
+
+#新闻：内战结束
+news_event = {
+	id = INS_news_event.6
+	title = INS_news_event.6.t
+	desc = INS_news_event.6.d
+	picture = GFX_news_event_unity_pack
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = INS_news_event.6.a
+	}
+}

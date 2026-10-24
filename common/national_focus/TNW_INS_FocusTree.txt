@@ -21,9 +21,15 @@ focus_tree = {
 		y = 1
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Continue_Kasimo_Plan"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = INS_capital_cost_2_tt
 			add_to_variable = { INS_nre_consumer_goods = -0.02 }
 			add_to_variable = { INS_nre_prod_infra = 0.03 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
@@ -40,10 +46,16 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Continue_Kasimo_Plan }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Sumatra_Planting_Expansion"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = INS_capital_cost_2_tt
 			add_political_power = 25
 			add_stability = 0.01
 		}
@@ -57,10 +69,16 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Continue_Kasimo_Plan }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Raise_Procurement_Prices"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = INS_capital_cost_2_tt
 			add_political_power = 50
 			add_stability = 0.02
 		}
@@ -74,11 +92,19 @@ focus_tree = {
 		y = 3
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Sumatra_Planting_Expansion }
 		prerequisite = { focus = INS_Raise_Procurement_Prices }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Pilot_End_Rationing"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 5 }
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
 			add_to_variable = { INS_nre_consumer_goods = -0.03 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
@@ -94,10 +120,16 @@ focus_tree = {
 		y = 4
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Expand_Cropland"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_nre_prod_infra = 0.01 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_manpower = 5000
@@ -113,10 +145,17 @@ focus_tree = {
 		y = 4
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Russia_Grain_Exchange"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = INS_capital_cost_2_tt
+			country_event = { id = INS_event.7 days = 1 }
 			add_to_variable = { INS_nre_factory_output = 0.03 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_ideas = INS_Rus_Grain_Trade
@@ -133,10 +172,16 @@ focus_tree = {
 		y = 4
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Fertilizer_Seeds"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_stability = 0.02
 			add_manpower = 2000
 		}
@@ -150,10 +195,16 @@ focus_tree = {
 		y = 5
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Balance_Cash_Crops"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_political_power = 50
 			add_stability = 0.01
 		}
@@ -167,10 +218,18 @@ focus_tree = {
 		y = 5
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_10_tt
+				check_variable = { var = capital_reserves value = 10 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Pilot_End_Rationing }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Academy_of_Agriculture"
+			add_to_variable = { var = capital_reserves value = -10 }
+			custom_effect_tooltip = INS_capital_cost_10_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
 			add_research_slot = 1
 			add_to_variable = { INS_nre_prod_buildings = 0.02 }
 			add_to_variable = { INS_nre_consumer_goods = -0.01 }
@@ -188,9 +247,15 @@ focus_tree = {
 		y = 1
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Support_Djuanda"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = INS_capital_cost_2_tt
 			add_to_variable = { INS_nre_prod_buildings = 0.02 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
@@ -205,11 +270,19 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		mutually_exclusive = { focus = INS_National_Economic_Experts }
 		prerequisite = { focus = INS_Support_Djuanda }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Normalize_Planning_Bureau"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 5 }
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
 			add_to_variable = { INS_nre_prod_buildings = 0.01 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
@@ -225,11 +298,19 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		mutually_exclusive = { focus = INS_Normalize_Planning_Bureau }
 		prerequisite = { focus = INS_Support_Djuanda }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_National_Economic_Experts"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 5 }
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
 			add_to_variable = { INS_nre_prod_buildings = 0.01 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
@@ -245,10 +326,18 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Support_Djuanda }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Far_East_Reconstruction_Boom"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = INS_capital_cost_2_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 5 }
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
 			add_to_variable = { INS_nre_prod_buildings = 0.02 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_offsite_building = { type = industrial_complex level = 1 }
@@ -263,10 +352,16 @@ focus_tree = {
 		y = 3
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Normalize_Planning_Bureau focus = INS_National_Economic_Experts }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Incubate_Postwar_Plan"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = INS_capital_cost_5_tt
 			add_to_variable = { INS_nre_factory_output = 0.02 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 75
@@ -281,10 +376,16 @@ focus_tree = {
 		y = 3
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Far_East_Reconstruction_Boom }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Resource_Export_Board"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_nre_dockyard_output = 0.05 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
@@ -300,11 +401,19 @@ focus_tree = {
 		y = 4
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Incubate_Postwar_Plan }
 		prerequisite = { focus = INS_Resource_Export_Board }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Announce_Benteng"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = INS_capital_cost_5_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
 			add_to_variable = { INS_nre_consumer_goods = -0.01 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
@@ -321,10 +430,16 @@ focus_tree = {
 		y = 5
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Announce_Benteng }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Import_Licenses"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_nre_consumer_goods = -0.01 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
@@ -339,10 +454,17 @@ focus_tree = {
 		y = 5
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Announce_Benteng }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Squeeze_Alien_Capital"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
+			country_event = { id = INS_event.8 days = 1 }
 			add_to_variable = { INS_nre_factory_output = 0.01 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
@@ -358,10 +480,16 @@ focus_tree = {
 		y = 6
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Import_Licenses focus = INS_Squeeze_Alien_Capital }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Local_Importers_First"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_nre_factory_output = 0.01 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_offsite_building = { type = industrial_complex level = 1 }
@@ -377,10 +505,17 @@ focus_tree = {
 		y = 7
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Local_Importers_First }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Nationalize_Industry"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = INS_capital_cost_5_tt
+			country_event = { id = INS_event.6 days = 1 }
 			add_to_variable = { INS_nre_factory_output = 0.02 }
 			add_to_variable = { INS_nre_consumer_goods = -0.01 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
@@ -397,11 +532,20 @@ focus_tree = {
 		y = 8
 		available = {
 			has_country_flag = INS_succession_yamin
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
 		}
 		mutually_exclusive = { focus = INS_Economic_Sovereignty_Movement }
 		prerequisite = { focus = INS_Nationalize_Industry }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Sumitro_Plan"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = INS_capital_cost_5_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 5 }
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
+			country_event = { id = INS_event.5 days = 1 }
 			if = {
 				limit = { has_idea = INS_five_year_plan_4 }
 				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
@@ -435,11 +579,17 @@ focus_tree = {
 		y = 8
 		available = {
 			has_country_flag = INS_succession_sukarno
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
 		}
 		mutually_exclusive = { focus = INS_Sumitro_Plan }
 		prerequisite = { focus = INS_Nationalize_Industry }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Economic_Sovereignty_Movement"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = INS_capital_cost_5_tt
 			if = {
 				limit = { has_idea = INS_econ_sovereignty_3 }
 				swap_ideas = { remove_idea = INS_econ_sovereignty_3 add_idea = INS_econ_sovereignty_4 }
@@ -470,10 +620,16 @@ focus_tree = {
 		y = 9
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Sumitro_Plan }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Import_Substitution"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			if = {
 				limit = { has_idea = INS_five_year_plan_4 }
 				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
@@ -506,10 +662,18 @@ focus_tree = {
 		y = 9
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Sumitro_Plan }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Accelerate_Industrialization"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
 			if = {
 				limit = { has_idea = INS_five_year_plan_4 }
 				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
@@ -542,10 +706,16 @@ focus_tree = {
 		y = 10
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_10_tt
+				check_variable = { var = capital_reserves value = 10 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Import_Substitution focus = INS_Accelerate_Industrialization }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Organize_Five_Year_Plan"
+			add_to_variable = { var = capital_reserves value = -10 }
+			custom_effect_tooltip = INS_capital_cost_10_tt
 			if = {
 				limit = { has_idea = INS_five_year_plan_4 }
 				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
@@ -579,10 +749,16 @@ focus_tree = {
 		y = 9
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Economic_Sovereignty_Movement }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Package_Confiscation"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			if = {
 				limit = { has_idea = INS_econ_sovereignty_3 }
 				swap_ideas = { remove_idea = INS_econ_sovereignty_3 add_idea = INS_econ_sovereignty_4 }
@@ -613,10 +789,16 @@ focus_tree = {
 		y = 9
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Economic_Sovereignty_Movement }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Strengthen_Takeover"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			if = {
 				limit = { has_idea = INS_econ_sovereignty_3 }
 				swap_ideas = { remove_idea = INS_econ_sovereignty_3 add_idea = INS_econ_sovereignty_4 }
@@ -646,10 +828,16 @@ focus_tree = {
 		y = 10
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Package_Confiscation focus = INS_Strengthen_Takeover }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Manage_New_Enterprises"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			if = {
 				limit = { has_idea = INS_econ_sovereignty_3 }
 				swap_ideas = { remove_idea = INS_econ_sovereignty_3 add_idea = INS_econ_sovereignty_4 }
@@ -679,10 +867,16 @@ focus_tree = {
 		y = 9
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Sumitro_Plan focus = INS_Economic_Sovereignty_Movement }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Central_Banking_Law"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = INS_capital_cost_5_tt
 			add_to_variable = { INS_nre_factory_output = 0.02 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 100
@@ -697,10 +891,16 @@ focus_tree = {
 		y = 10
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Central_Banking_Law }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Recoup_Java_Bank"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_nre_consumer_goods = -0.02 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
 			add_political_power = 50
@@ -716,10 +916,16 @@ focus_tree = {
 		y = 10
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Central_Banking_Law }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Complete_Monetary_Sovereignty"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_nre_factory_output = 0.02 }
 			add_to_variable = { INS_nre_consumer_goods = -0.01 }
 			custom_effect_tooltip = INS_nre_upgrade_tt
@@ -736,9 +942,16 @@ focus_tree = {
 		y = 1
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
 		}
+		unlock_decision_tooltip = INS_army_staff_purge
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Army_Rationalization"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = INS_capital_cost_2_tt
 			add_to_variable = { INS_idf_research_speed = 0.05 }
 			custom_effect_tooltip = INS_idf_research_speed_tt
 			add_army_experience = 10
@@ -759,16 +972,31 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		mutually_exclusive = { focus = INS_Keep_Guerrillas }
 		prerequisite = { focus = INS_Army_Rationalization }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Demobilize_Militias"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_idf_xp_gain = 0.05 }
 			custom_effect_tooltip = INS_idf_xp_gain_tt
 			add_army_experience = 10
 			add_political_power = 50
 			add_stability = 0.01
+			custom_effect_tooltip = INS_ft_demob_forces_tt
+			hidden_effect = {
+				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+				add_to_variable = { var = INS_army_guerrilla_str value = -15 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+				add_to_variable = { var = INS_army_gyugun_str value = -10 }
+				clamp_variable = { var = INS_army_gyugun_str max = 100 min = 0 }
+			}
 		}
 	}
 
@@ -780,16 +1008,32 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		mutually_exclusive = { focus = INS_Demobilize_Militias }
 		prerequisite = { focus = INS_Army_Rationalization }
+		unlock_decision_tooltip = INS_army_village_militia
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Keep_Guerrillas"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_idf_army_org = 0.025 }
 			custom_effect_tooltip = INS_idf_army_org_tt
 			add_army_experience = 10
 			add_manpower = 5000
 			add_war_support = 0.01
+			custom_effect_tooltip = INS_ft_keep_forces_tt
+			hidden_effect = {
+				add_to_variable = { var = INS_army_guerrilla_str value = 15 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+				add_to_variable = { var = INS_army_siliwangi_str value = -10 }
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+				add_to_variable = { var = INS_army_gyugun_str value = 5 }
+				clamp_variable = { var = INS_army_gyugun_str max = 100 min = 0 }
+			}
 		}
 	}
 
@@ -801,10 +1045,16 @@ focus_tree = {
 		y = 3
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Demobilize_Militias focus = INS_Keep_Guerrillas }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Siliwangi_Model_Division"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = INS_capital_cost_5_tt
 			add_to_variable = { INS_idf_army_attack = 0.02 }
 			custom_effect_tooltip = INS_idf_army_attack_tt
 			add_to_variable = { INS_idf_army_defence = 0.02 }
@@ -823,10 +1073,16 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Army_Rationalization }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Positional_Warfare"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_idf_army_defence = 0.03 }
 			custom_effect_tooltip = INS_idf_army_defence_3_tt
 			add_army_experience = 10
@@ -842,10 +1098,16 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Army_Rationalization }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Total_Peoples_Defense"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_idf_doctrine_cost = -0.05 }
 			custom_effect_tooltip = INS_idf_doctrine_tt
 			add_army_experience = 10
@@ -862,11 +1124,17 @@ focus_tree = {
 		y = 3
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Positional_Warfare }
 		prerequisite = { focus = INS_Total_Peoples_Defense }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Border_Guerrilla_Zones"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_idf_army_org = 0.025 }
 			custom_effect_tooltip = INS_idf_army_org_tt
 			add_army_experience = 10
@@ -883,11 +1151,17 @@ focus_tree = {
 		y = 4
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Siliwangi_Model_Division }
 		prerequisite = { focus = INS_Border_Guerrilla_Zones }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Reorganize_Military_Districts"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = INS_capital_cost_5_tt
 			add_to_variable = { INS_idf_doctrine_cost = -0.05 }
 			custom_effect_tooltip = INS_idf_doctrine_tt
 			add_army_experience = 10
@@ -913,10 +1187,16 @@ focus_tree = {
 		y = 5
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Reorganize_Military_Districts }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Self_Funded_Army"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_idf_planning_speed = 0.05 }
 			custom_effect_tooltip = INS_idf_planning_tt
 			add_army_experience = 10
@@ -933,10 +1213,16 @@ focus_tree = {
 		y = 5
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Reorganize_Military_Districts }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Guardian_Political_Action"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_idf_army_org = 0.025 }
 			custom_effect_tooltip = INS_idf_army_org_tt
 			add_army_experience = 10
@@ -953,10 +1239,17 @@ focus_tree = {
 		y = 5
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Reorganize_Military_Districts }
+		unlock_decision_tooltip = INS_army_magelang_course
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Improve_Magelang_Academy"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_idf_research_speed = 0.05 }
 			custom_effect_tooltip = INS_idf_research_speed_tt
 			add_to_variable = { INS_idf_xp_gain = 0.05 }
@@ -974,10 +1267,16 @@ focus_tree = {
 		y = 6
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Self_Funded_Army }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Civilian_Transport_Licenses"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = INS_capital_cost_2_tt
 			add_to_variable = { INS_idf_planning_speed = 0.05 }
 			custom_effect_tooltip = INS_idf_planning_tt
 			add_army_experience = 10
@@ -993,10 +1292,17 @@ focus_tree = {
 		y = 6
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Self_Funded_Army }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Army_Plantations"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
+			country_event = { id = INS_event.9 days = 1 }
 			add_to_variable = { INS_idf_max_planning = 0.05 }
 			custom_effect_tooltip = INS_idf_max_planning_tt
 			add_army_experience = 10
@@ -1013,10 +1319,16 @@ focus_tree = {
 		y = 7
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Self_Funded_Army }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Military_Import_Permits"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = INS_capital_cost_2_tt
 			add_to_variable = { INS_idf_army_attack = 0.02 }
 			custom_effect_tooltip = INS_idf_army_attack_tt
 			add_army_experience = 10
@@ -1032,10 +1344,16 @@ focus_tree = {
 		y = 6
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_4_tt
+				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Improve_Magelang_Academy }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Unity_Training"
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = INS_capital_cost_4_tt
 			add_to_variable = { INS_idf_army_attack = 0.02 }
 			custom_effect_tooltip = INS_idf_army_attack_tt
 			add_to_variable = { INS_idf_army_defence = 0.02 }
@@ -1054,10 +1372,16 @@ focus_tree = {
 		y = 6
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Improve_Magelang_Academy }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Officer_Nationalism"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = INS_capital_cost_2_tt
 			add_to_variable = { INS_idf_army_org = 0.025 }
 			custom_effect_tooltip = INS_idf_army_org_tt
 			add_to_variable = { INS_idf_planning_speed = 0.05 }
@@ -1075,10 +1399,16 @@ focus_tree = {
 		y = 7
 		available = {
 			NOT = { has_country_flag = INS_crisis_ongoing }
+					custom_trigger_tooltip = {
+				tooltip = INS_capital_check_10_tt
+				check_variable = { var = capital_reserves value = 10 compare = greater_than_or_equals }
+			}
 		}
 		prerequisite = { focus = INS_Improve_Magelang_Academy }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_National_Defense_University"
+			add_to_variable = { var = capital_reserves value = -10 }
+			custom_effect_tooltip = INS_capital_cost_10_tt
 			add_to_variable = { INS_idf_research_speed = 0.10 }
 			custom_effect_tooltip = INS_idf_research_speed_10_tt
 			add_army_experience = 25
@@ -1240,6 +1570,7 @@ focus_tree = {
 			has_country_flag = INS_crisis_constitutional
 		}
 		prerequisite = { focus = INS_Petition_Founding_Father }
+		unlock_decision_tooltip = INS_hunt_hatta
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Suppress_Hatta"
 			add_political_power = 75
@@ -1264,6 +1595,7 @@ focus_tree = {
 			has_country_flag = INS_crisis_constitutional
 		}
 		prerequisite = { focus = INS_Petition_Founding_Father }
+		unlock_decision_tooltip = INS_federalist_purge
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Purge_Federalists"
 			add_political_power = 75
@@ -1287,6 +1619,7 @@ focus_tree = {
 		available = {
 			has_country_flag = INS_crisis_kartosuwirjo
 		}
+		unlock_decision_tooltip = INS_hunt_darul_islam
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Kartosuwirjo_Rebellion"
 			add_war_support = 0.01
@@ -1859,7 +2192,7 @@ focus_tree = {
 		prerequisite = { focus = INS_Dust_Settles }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Propaganda_Master"
-			country_event = { id = INS_crisis.22 days = 1 }
+			INS_succession_verdict_effect = yes
 			custom_effect_tooltip = INS_ft_propaganda_tt
 			hidden_effect = {
 				add_to_variable = { var = INS_goni_str value = 15 }
@@ -1868,8 +2201,6 @@ focus_tree = {
 				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			set_country_flag = INS_succession_yamin
-			clr_country_flag = INS_soetomo_dying
 			if = {
 				limit = {
 					NOT = { has_country_flag = INS_crisis_constitutional }
@@ -1887,8 +2218,11 @@ focus_tree = {
 		cost = 5.00
 		x = 6
 		y = 14
+		visible = {
+			has_country_flag = INS_coup_unlocked
+		}
 		available = {
-			has_country_flag = INS_soetomo_dying
+			has_country_flag = INS_coup_unlocked
 		}
 		mutually_exclusive = { focus = INS_Propaganda_Master }
 		mutually_exclusive = { focus = INS_Peoples_Bannerman }
@@ -1904,6 +2238,8 @@ focus_tree = {
 				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
 			}
 			set_country_flag = INS_succession_army
+			news_event = { id = INS_news_event.4 hours = 6 }
+			country_event = { id = INS_crisis.26 days = 60 }
 			army_experience = 10
 			clr_country_flag = INS_soetomo_dying
 			if = {
@@ -1930,7 +2266,7 @@ focus_tree = {
 		prerequisite = { focus = INS_Dust_Settles }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Peoples_Bannerman"
-			country_event = { id = INS_crisis.24 days = 1 }
+			INS_succession_verdict_effect = yes
 			custom_effect_tooltip = INS_ft_bannerman_tt
 			hidden_effect = {
 				add_to_variable = { var = INS_marhaen_str value = 15 }
@@ -1939,9 +2275,7 @@ focus_tree = {
 				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			set_country_flag = INS_succession_sukarno
 			add_war_support = 0.02
-			clr_country_flag = INS_soetomo_dying
 			if = {
 				limit = {
 					NOT = { has_country_flag = INS_crisis_constitutional }

@@ -1,0 +1,27 @@
+﻿capital = 1300
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = Authoritarianism
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 0
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 5
+	Liberalism = 5
+	Conservatism = 5
+	Authoritarianism = 75
+	Absolutism = 0
+	Nationalism = 10
+}
+
+recruit_character = PON_R_Murdiyono
+
+set_oob = "PON_civil_war"

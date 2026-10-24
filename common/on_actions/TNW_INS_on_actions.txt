@@ -38,6 +38,20 @@ on_actions = {
 				country_event = { id = INS_crisis.1 days = 180 }
 				country_event = { id = INS_crisis.2 days = 360 }
 				country_event = { id = INS_crisis.3 days = 415 }
+				country_event = { id = INS_event.2 days = 100 }
+				country_event = { id = INS_event.3 days = 150 }
+				country_event = { id = INS_event.4 days = 210 }
+				country_event = { id = INS_event.1 days = 400 }
+			}
+		}
+	}
+	on_monthly_INS = {
+		effect = {
+			INS = {
+				if = {
+					limit = { has_country_flag = INS_civil_war_ongoing }
+					INS_civil_war_check_effect = yes
+				}
 			}
 		}
 	}

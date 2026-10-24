@@ -1,0 +1,28 @@
+﻿capital = 883
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = socialism
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 15
+	syndicalism = 0
+	socialism = 40
+	Social_democracy = 20
+	Liberalism = 10
+	Conservatism = 0
+	Authoritarianism = 0
+	Absolutism = 0
+	Nationalism = 15
+}
+
+recruit_character = SJR_Sutan_Sjahrir
+recruit_character = SJR_Dipa_Nusantara_Aidit
+
+set_oob = "SJR_civil_war"

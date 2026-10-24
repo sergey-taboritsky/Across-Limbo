@@ -1,0 +1,59 @@
+# 内战六派领导人（各 tag 独立实例；沙里尔/艾地为棉兰双头）
+characters = {
+	DIJ_Kartosuwirjo = {
+		name = DIJ_Kartosuwirjo
+		country_leader = {
+			desc = DIJ_Kartosuwirjo_desc
+			ideology = religious_socialism
+			traits = { }
+		}
+	}
+	JGS_Hamengkubuwono_IX = {
+		name = JGS_Hamengkubuwono_IX
+		country_leader = {
+			desc = JGS_Hamengkubuwono_IX_desc
+			ideology = absolute_monarchy
+			traits = { }
+		}
+	}
+	MUR_Sukarni = {
+		name = MUR_Sukarni
+		country_leader = {
+			desc = MUR_Sukarni_desc
+			ideology = Left_wing_nationalism
+			traits = { }
+		}
+	}
+	SJR_Sutan_Sjahrir = {
+		name = SJR_Sutan_Sjahrir
+		country_leader = {
+			desc = SJR_Sutan_Sjahrir_desc
+			ideology = Liberalism_socialism
+			traits = { }
+		}
+	}
+	SJR_Dipa_Nusantara_Aidit = {
+		name = SJR_Dipa_Nusantara_Aidit
+		country_leader = {
+			desc = SJR_Dipa_Nusantara_Aidit_desc
+			ideology = Left_wing_communism
+			traits = { }
+		}
+	}
+	HAT_Mohammad_Hatta = {
+		name = HAT_Mohammad_Hatta
+		country_leader = {
+			desc = HAT_Mohammad_Hatta_desc
+			ideology = Authoritarian_Liberalism
+			traits = { }
+		}
+	}
+	PON_R_Murdiyono = {
+		name = PON_R_Murdiyono
+		country_leader = {
+			desc = PON_R_Murdiyono_desc
+			ideology = military_government
+			traits = { }
+		}
+	}
+}

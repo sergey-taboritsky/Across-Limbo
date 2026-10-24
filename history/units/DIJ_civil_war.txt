@@ -1,0 +1,36 @@
+﻿division_template = {
+	name = "伊斯兰之家民兵营"
+	division_names_group = INS_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "万隆伊斯兰营"
+		location = 7421
+		division_template = "伊斯兰之家民兵营"
+		start_experience_factor = 0.15
+	}
+	division = {
+		name = "万丹伊斯兰营"
+		location = 10279
+		division_template = "伊斯兰之家民兵营"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "高地圣战支队"
+		location = 1386
+		division_template = "伊斯兰之家民兵营"
+		start_experience_factor = 0.1
+	}
+}

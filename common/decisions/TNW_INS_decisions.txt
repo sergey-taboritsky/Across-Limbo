@@ -69,6 +69,77 @@ INS_military_reform = {
 			base = 0
 		}
 	}
+	INS_army_staff_purge = {
+		icon = GFX_decision_generic_army
+		visible = {
+			has_completed_focus = INS_Army_Rationalization
+		}
+		cost = 75
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = INS_army_staff_purge_tt
+			hidden_effect = {
+				add_political_power = -25
+				add_to_variable = { var = INS_army_siliwangi_str value = 5 }
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+				add_to_variable = { var = INS_army_guerrilla_str value = -3 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+				add_to_variable = { var = INS_army_gyugun_str value = -3 }
+				clamp_variable = { var = INS_army_gyugun_str max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	INS_army_village_militia = {
+		icon = GFX_decision_generic_police_action
+		visible = {
+			has_completed_focus = INS_Keep_Guerrillas
+		}
+		cost = 75
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = INS_army_village_militia_tt
+			hidden_effect = {
+				add_manpower = 2500
+				add_to_variable = { var = INS_army_guerrilla_str value = 5 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	INS_army_magelang_course = {
+		icon = GFX_decision_generic_training
+		visible = {
+			has_completed_focus = INS_Improve_Magelang_Academy
+		}
+		cost = 75
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = INS_army_magelang_course_tt
+			hidden_effect = {
+				army_experience = 15
+				add_to_variable = { var = INS_army_siliwangi_str value = 2 }
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+				add_to_variable = { var = INS_army_guerrilla_str value = 2 }
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+				add_to_variable = { var = INS_army_gyugun_str value = 2 }
+				clamp_variable = { var = INS_army_gyugun_str max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
 }
 
 INS_party_struggle = {
@@ -242,6 +313,80 @@ INS_party_struggle = {
 			}
 		}
 
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
+
+# 危机行动：由政治危机国策解锁（unlock_decision_tooltip）
+INS_crisis_ops = {
+
+	visible_when_empty = no
+
+	INS_hunt_hatta = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			has_completed_focus = INS_Suppress_Hatta
+		}
+		cost = 50
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = INS_hunt_hatta_tt
+			hidden_effect = {
+				add_political_power = 25
+				add_to_variable = { var = INS_sartono_str value = -3 }
+				clamp_variable = { var = INS_sartono_str max = 100 min = 0 }
+				add_stability = -0.005
+				INS_calc_scores_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	INS_federalist_purge = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			has_completed_focus = INS_Purge_Federalists
+		}
+		cost = 50
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = INS_federalist_purge_tt
+			hidden_effect = {
+				add_political_power = 25
+				add_to_variable = { var = INS_goni_str value = -3 }
+				clamp_variable = { var = INS_goni_str max = 100 min = 0 }
+				add_stability = 0.005
+				INS_calc_scores_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	INS_hunt_darul_islam = {
+		icon = GFX_decision_generic_police_action
+		visible = {
+			has_completed_focus = INS_Kartosuwirjo_Rebellion
+			NOT = { has_country_flag = INS_di_defeated }
+		}
+		cost = 75
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = INS_hunt_darul_islam_tt
+			hidden_effect = {
+				army_experience = 5
+				add_manpower = -1000
+				add_war_support = 0.005
+			}
+		}
 		ai_will_do = {
 			base = 0
 		}

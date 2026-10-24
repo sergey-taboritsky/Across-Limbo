@@ -1,1 +1,7 @@
 KOS	= "countries/Kosovo.txt"
+DIJ = "countries/Darul_Islam.txt"
+JGS = "countries/Jogja_Sultanate.txt"
+MUR = "countries/Murba_Regime.txt"
+SJR = "countries/Sjahrir_Government.txt"
+HAT = "countries/Hatta_Government.txt"
+PON = "countries/Pontianak_Command.txt"

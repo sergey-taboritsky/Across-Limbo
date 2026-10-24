@@ -1,0 +1,30 @@
+﻿division_template = {
+	name = "坤甸边防营"
+	division_names_group = INS_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "坤甸第1边防营"
+		location = 4279
+		division_template = "坤甸边防营"
+		start_experience_factor = 0.25
+	}
+	division = {
+		name = "班贾尔边防支队"
+		location = 7296
+		division_template = "坤甸边防营"
+		start_experience_factor = 0.2
+	}
+}

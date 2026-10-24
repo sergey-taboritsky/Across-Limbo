@@ -1,0 +1,56 @@
+﻿division_template = {
+	name = "西利万吉步兵师"
+	division_names_group = INS_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "中苏门答腊民兵旅"
+	division_names_group = INS_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "第1西利万吉步兵师"
+		location = 1428
+		division_template = "西利万吉步兵师"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "第2西利万吉步兵师"
+		location = 1648
+		division_template = "西利万吉步兵师"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "巴东民兵旅"
+		location = 1332
+		division_template = "中苏门答腊民兵旅"
+		start_experience_factor = 0.2
+	}
+}

@@ -1152,3 +1152,27 @@ D50 = {
 	color = rgb { 210 106 47 }
 	color_ui = rgb { 255 138 61 }
 }
+DIJ = {
+	color = rgb { 34 94 52 }
+	color_ui = rgb { 90 170 110 }
+}
+JGS = {
+	color = rgb { 138 84 168 }
+	color_ui = rgb { 190 140 225 }
+}
+MUR = {
+	color = rgb { 170 34 34 }
+	color_ui = rgb { 235 110 110 }
+}
+SJR = {
+	color = rgb { 214 178 58 }
+	color_ui = rgb { 245 220 130 }
+}
+HAT = {
+	color = rgb { 200 120 40 }
+	color_ui = rgb { 240 180 110 }
+}
+PON = {
+	color = rgb { 70 90 120 }
+	color_ui = rgb { 140 165 200 }
+}

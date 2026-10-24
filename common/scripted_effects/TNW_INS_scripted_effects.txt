@@ -140,3 +140,117 @@ INS_calc_scores_effect = {
 		multiply_variable = { var = INS_yamin_score value = 1.15 }
 	}
 }
+
+# 苏托莫身后：双分数裁决（差距<5 = 军队出面，否则高分者就任）
+INS_succession_verdict_effect = {
+	set_temp_variable = { INS_score_gap = INS_sukarno_score }
+	subtract_from_variable = { var = INS_score_gap value = INS_yamin_score }
+	if = {
+		limit = {
+			check_variable = { var = INS_score_gap value = 5 compare = less_than_or_equals }
+			check_variable = { var = INS_score_gap value = -5 compare = greater_than_or_equals }
+		}
+		set_country_flag = INS_coup_unlocked
+		country_event = { id = INS_crisis.25 days = 1 }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_gap value = 5 compare = less_than_or_equals } }
+		set_country_flag = INS_succession_yamin
+		clr_country_flag = INS_soetomo_dying
+		news_event = { id = INS_news_event.3 hours = 6 }
+	}
+	else = {
+		set_country_flag = INS_succession_sukarno
+		clr_country_flag = INS_soetomo_dying
+		news_event = { id = INS_news_event.2 hours = 6 }
+	}
+}
+
+# 印尼内战：脚本和平（每月判定）
+INS_civil_war_check_effect = {
+	# 军政府胜利：雅加达+四大敌营首府全在握
+	if = {
+		limit = {
+			controls_state = 335
+			controls_state = 1615
+			controls_state = 1295
+			controls_state = 1294
+			controls_state = 883
+			controls_state = 1613
+		}
+		clr_country_flag = INS_civil_war_ongoing
+		annex_country = { target = DIJ }
+		annex_country = { target = JGS }
+		annex_country = { target = MUR }
+		annex_country = { target = SJR }
+		annex_country = { target = HAT }
+		annex_country = { target = PON }
+		news_event = { id = INS_news_event.6 hours = 6 }
+		add_stability = 0.05
+	}
+	else_if = {
+		limit = { DIJ = { controls_state = 335 } }
+		clr_country_flag = INS_civil_war_ongoing
+		DIJ = {
+			annex_country = { target = INS }
+			annex_country = { target = JGS }
+			annex_country = { target = MUR }
+			annex_country = { target = SJR }
+			annex_country = { target = HAT }
+			annex_country = { target = PON }
+		}
+		news_event = { id = INS_news_event.6 hours = 6 }
+	}
+	else_if = {
+		limit = { JGS = { controls_state = 335 } }
+		clr_country_flag = INS_civil_war_ongoing
+		JGS = {
+			annex_country = { target = INS }
+			annex_country = { target = DIJ }
+			annex_country = { target = MUR }
+			annex_country = { target = SJR }
+			annex_country = { target = HAT }
+			annex_country = { target = PON }
+		}
+		news_event = { id = INS_news_event.6 hours = 6 }
+	}
+	else_if = {
+		limit = { MUR = { controls_state = 335 } }
+		clr_country_flag = INS_civil_war_ongoing
+		MUR = {
+			annex_country = { target = INS }
+			annex_country = { target = DIJ }
+			annex_country = { target = JGS }
+			annex_country = { target = SJR }
+			annex_country = { target = HAT }
+			annex_country = { target = PON }
+		}
+		news_event = { id = INS_news_event.6 hours = 6 }
+	}
+	else_if = {
+		limit = { SJR = { controls_state = 335 } }
+		clr_country_flag = INS_civil_war_ongoing
+		SJR = {
+			annex_country = { target = INS }
+			annex_country = { target = DIJ }
+			annex_country = { target = JGS }
+			annex_country = { target = MUR }
+			annex_country = { target = HAT }
+			annex_country = { target = PON }
+		}
+		news_event = { id = INS_news_event.6 hours = 6 }
+	}
+	else_if = {
+		limit = { HAT = { controls_state = 335 } }
+		clr_country_flag = INS_civil_war_ongoing
+		HAT = {
+			annex_country = { target = INS }
+			annex_country = { target = DIJ }
+			annex_country = { target = JGS }
+			annex_country = { target = MUR }
+			annex_country = { target = SJR }
+			annex_country = { target = PON }
+		}
+		news_event = { id = INS_news_event.6 hours = 6 }
+	}
+}
