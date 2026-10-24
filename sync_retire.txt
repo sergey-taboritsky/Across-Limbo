@@ -1,0 +1,10 @@
+[OK] TNW_TUR_FocusTree.txt                      cb82a9bb 
+[OK] TNW_TUR_events.txt                         250cbd7b loadtree=1
+[OK] TNW_TUR_ideas.txt                          a0b89992 
+[OK] TNW_TUR_l_simp_chinese.yml                 ada175bd 
+[OK] TNW_TUR_straits_tree.txt                   18216d75 focuses=4
+[OK] TNW_Straits_decisions.txt                  7b3b6f7a TURload=1 news5=1
+[OK] TNW_Balkans_on_actions.txt                 5de06f47 TURload=1
+[OK] TNW_GRE_events.txt                         b12bca91 news4=1 braces=+0
+[OK] TNW_RUS_events.txt                         981d88f3 news4=2 news5=1 braces=+0
+[OK] TNW_RUS_l_simp_chinese.yml                 859cd9e4 w4keys=8 w5keys=4

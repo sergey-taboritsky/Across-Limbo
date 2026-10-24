@@ -1,0 +1,65 @@
+focus_tree = {
+	id = TUR_straits_crisis_tree
+	country = {
+		factor = 0
+	}
+	default = no
+	continuous_focus_position = {
+		x = 100
+		y = 2400
+	}
+	focus = {
+		id = TUR_STR_Root
+		icon = GFX_goal_generic_political_pressure
+		cost = 1.00
+		x = 5
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_STR_Root"
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = TUR_STR_Fortify
+		icon = GFX_goal_generic_fortify_city
+		cost = 2.00
+		prerequisite = {
+			focus = TUR_STR_Root
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_STR_Fortify"
+			add_war_support = 0.02
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = TUR_STR_Appeal
+		icon = GFX_goal_generic_military_sphere
+		cost = 2.00
+		prerequisite = {
+			focus = TUR_STR_Root
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_STR_Appeal"
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = TUR_STR_Navy
+		icon = GFX_goal_generic_build_navy
+		cost = 2.00
+		prerequisite = {
+			focus = TUR_STR_Root
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TUR_STR_Navy"
+			navy_experience = 15
+		}
+	}
+}

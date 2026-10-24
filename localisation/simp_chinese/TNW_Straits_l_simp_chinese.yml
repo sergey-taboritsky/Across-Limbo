@@ -1,0 +1,12 @@
+﻿l_simp_chinese:
+ TNW_Straits_Crisis_decision_category: "君士坦丁堡海峡危机"
+ TNW_Straits_Crisis_decision_category_desc: "1948年爱琴海封锁危机。调停窗口剩余：[?global.TNW_straits_timer|0] 天。\n俄罗斯要求希腊与土耳其两个社会主义政权开放爱琴海海域，并公开支持塞萨洛尼基周边的希腊白军游击队。若窗口关闭前未能达成妥协，红军将亲自下场。"
+ TNW_straits_crisis_task: "50天调停窗口"
+ TNW_straits_crisis_task_desc: "第三国际与欧亚协定的外交管道全速运转：要么莫斯科接受妥协方案，要么战争。窗口剩余 [?global.TNW_straits_timer|0] 天。"
+ TNW_straits_accept_compromise: "接受妥协方案"
+ TNW_straits_accept_compromise_desc: "以承认希腊王国临时政府控制塞萨洛尼基周边为条件，换取俄罗斯对爱琴海通航的保证。这是体面的退路——如果体面还值点钱的话。"
+ GRK: "希腊王国临时政府"
+ GRK_DEF: "希腊王国临时政府"
+ GRK_ADJ: "希腊"
+ GRK_Regency_Council: "希腊王国摄政委员会"
+ GRK_Regency_Council_desc: "将军、主教与旧官僚的联合体。他们说自己是希腊的看护人，直到合法的王室归来——没人知道那一天会不会来。"

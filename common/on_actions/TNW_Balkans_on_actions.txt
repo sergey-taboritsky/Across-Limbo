@@ -46,6 +46,30 @@ on_actions = {
             set_variable = {
                 global.TNW_Balkan_Powderkeg_Button_Thrace_frame_var = 6
             }
+            RUS = {
+                country_event = { id = RUS_event.3 days = 180 }
+            }
+		}
+	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = RUS
+					has_global_flag = TNW_straits_crisis_active
+					NOT = { has_global_flag = TNW_straits_compromise_deal }
+					NOT = { has_global_flag = TNW_straits_war_path }
+				}
+				subtract_from_variable = { var = global.TNW_straits_timer value = 1 }
+				if = {
+					limit = {
+						check_variable = { var = global.TNW_straits_timer value = 0 compare = less_than_or_equals }
+					}
+					set_global_flag = TNW_straits_war_path
+					TUR = { load_focus_tree = TUR_initial }
+					GRE = { country_event = { id = GRE_event.9 days = 1 } }
+				}
+			}
 		}
 	}
 }

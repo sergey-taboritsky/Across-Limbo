@@ -1,0 +1,83 @@
+﻿division_template = {
+	name = "伊拉克步兵师"
+	division_names_group = IRQ_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "伊拉克步兵旅"
+	division_names_group = IRQ_INF_02
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "机械化骑兵旅"
+	division_names_group = IRQ_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "伊拉克第1步兵师"
+		location = 2097
+		division_template = "伊拉克步兵师"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.80
+	}
+	division = {
+		name = "伊拉克第2步兵师"
+		location = 10106
+		division_template = "伊拉克步兵师"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.70
+	}
+	division = {
+		name = "巴士拉独立步兵旅"
+		location = 2089
+		division_template = "伊拉克步兵旅"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "巴格达卫戍旅"
+		location = 2097
+		division_template = "伊拉克步兵旅"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.80
+	}
+	division = {
+		name = "机械化骑兵第1旅"
+		location = 2097
+		division_template = "机械化骑兵旅"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+	}
+}

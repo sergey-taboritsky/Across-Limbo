@@ -172,9 +172,9 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"PER"={
+		"INS"={
 			minor = yes
-			history = "PER_BLITZKRIEG_DESC"
+			history = "INS_BLITZKRIEG_DESC"
 			ideology = Absolutism
 			ideas = {
 			}

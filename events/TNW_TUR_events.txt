@@ -43,64 +43,7 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = TUR_event.3
-	title = TUR_event.3.t
-	desc = TUR_event.3.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	immediate = {
-		set_country_flag = TUR_straits_crisis_flag
-	}
-	option = {
-		name = TUR_event.3.a
-		add_war_support = 0.10
-		add_political_power = 20
-		set_country_flag = TUR_straits_defiance_flag
-	}
-	option = {
-		name = TUR_event.3.b
-		add_political_power = 50
-		add_timed_idea = {
-			idea = TUR_straits_humiliation
-			days = 365
-		}
-		set_country_flag = TUR_straits_accepted_flag
-	}
-	option = {
-		name = TUR_event.3.c
-		add_political_power = 30
-		set_country_flag = TUR_straits_intl_flag
-		if = {
-			limit = {
-				has_country_flag = TUR_route_snowmoon_flag
-			}
-			add_stability = 0.03
-		}
-	}
-}
 
-country_event = {
-	id = TUR_event.4
-	title = TUR_event.4.t
-	desc = TUR_event.4.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = TUR_event.4.a
-		add_political_power = 50
-		add_timed_idea = {
-			idea = TUR_security_crackdown
-			days = 90
-		}
-		set_country_flag = TUR_exiles_exposed_flag
-	}
-	option = {
-		name = TUR_event.4.b
-		add_political_power = 20
-		set_country_flag = TUR_exiles_monitored_flag
-	}
-}
 
 country_event = {
 	id = TUR_event.5
@@ -111,5 +54,20 @@ country_event = {
 	option = {
 		name = TUR_event.5.a
 		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = TUR_event.6
+	title = TUR_event.6.t
+	desc = TUR_event.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TUR_event.6.a
+		add_war_support = 0.05
+		add_political_power = 20
+		set_country_flag = TNW_straits_tur_alert_flag
+		load_focus_tree = TUR_straits_crisis_tree
 	}
 }

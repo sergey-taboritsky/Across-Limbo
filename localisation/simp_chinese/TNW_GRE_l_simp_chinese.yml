@@ -81,3 +81,8 @@
  GRE_solidify_industry_base_desc: ""
  GRE_SEKE_twelfth_general_congress: "希社工党第十二次全国代表大会"
  GRE_SEKE_twelfth_general_congress_desc: ""
+ GRE_event.9.t: "红旗落地"
+ GRE_event.9.d: "没有宣战书，没有越境的坦克——只有一队队开进雅典的'志愿者'和一纸最后通牒。工人纠察队放下了武器，人民军的将领们销毁了文件。黄昏时分，蓝白旗在卫城升起：流亡的王室支持者宣布成立军政府，'恢复被激进分子窃取的希腊'。"
+ GRE_event.9.a: "……红军去哪了？"
+ GRE_Regency_Council: "希腊王国摄政委员会"
+ GRE_Regency_Council_desc: "将军、主教与旧官僚的联合体。他们说自己是希腊的看护人，直到合法的王室归来——没人知道那一天会不会来。"

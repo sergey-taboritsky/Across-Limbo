@@ -1,0 +1,18 @@
+TNW_Straits_Crisis_decision_category = {
+	icon = GFX_decision_category_SOV_permanent_revolution
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = FRA
+			original_tag = GRE
+			original_tag = TUR
+			original_tag = BUL
+			original_tag = RUS
+		}
+	}
+	visible = {
+		has_global_flag = TNW_straits_crisis_active
+	}
+	visible_when_empty = no
+	priority = 90
+}

@@ -1,0 +1,12 @@
+[OK] history\units\EGY_1948.txt  2a230fb0
+[OK] history\units\SUD_1948.txt  d7e3eb4a
+[OK] history\units\IRQ_1948.txt  17534a54
+[OK] history\units\SYR_1948.txt  b8a6c63a
+[OK] history\units\PER_1948.txt  8077479b
+[OK] history\units\PHI_1948.txt  55425669
+[OK] history\countries\EGY - Egypt.txt  d928fab5
+[OK] history\countries\SUD - Sudan.txt  c6bf9df5
+[OK] history\countries\IRQ - Iraq.txt  5e159ed4
+[OK] history\countries\SYR - Syria.txt  43ecda05
+[OK] history\countries\PER - Persia.txt  f96a6c12
+[OK] history\countries\PHI - Philippines.txt  a6a4d200

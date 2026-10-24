@@ -1,0 +1,90 @@
+﻿division_template = {
+	name = "皇家波斯步兵师"
+	division_names_group = PER_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "边防步兵旅"
+	division_names_group = PER_INF_02
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "哥萨克骑兵旅"
+	division_names_group = PER_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "皇家第1步兵师"
+		location = 10837
+		division_template = "皇家波斯步兵师"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.80
+	}
+	division = {
+		name = "皇家第2步兵师"
+		location = 2026
+		division_template = "皇家波斯步兵师"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "皇家第3步兵师"
+		location = 14973
+		division_template = "皇家波斯步兵师"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.70
+	}
+	division = {
+		name = "胡齐斯坦边防旅"
+		location = 12784
+		division_template = "边防步兵旅"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.70
+	}
+	division = {
+		name = "北部边防旅"
+		location = 14973
+		division_template = "边防步兵旅"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "哥萨克骑兵第1旅"
+		location = 10837
+		division_template = "哥萨克骑兵旅"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.70
+	}
+}

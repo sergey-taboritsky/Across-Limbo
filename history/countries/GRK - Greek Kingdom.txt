@@ -1,0 +1,25 @@
+﻿capital = 731
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = Authoritarianism
+	elections_allowed = no
+}
+set_popularities = {
+	communist = 0
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 10
+	Liberalism = 10
+	Conservatism = 20
+	Authoritarianism = 50
+	Absolutism = 10
+	Nationalism = 0
+}
+
+recruit_character = GRK_Regency_Council

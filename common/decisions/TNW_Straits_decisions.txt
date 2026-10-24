@@ -1,0 +1,41 @@
+TNW_straits_crisis_task = {
+	icon = GFX_decision_generic_police_action
+	visible = {
+		has_global_flag = TNW_straits_crisis_active
+		NOT = { has_global_flag = TNW_straits_compromise_deal }
+		NOT = { has_global_flag = TNW_straits_war_path }
+	}
+	available = { always = no }
+	cancelable = no
+}
+TNW_straits_accept_compromise = {
+	icon = GFX_decision_generic_arrest
+	visible = {
+		has_global_flag = TNW_straits_crisis_active
+		original_tag = RUS
+		NOT = { has_global_flag = TNW_straits_compromise_deal }
+		NOT = { has_global_flag = TNW_straits_war_path }
+	}
+	cost = 25
+	complete_effect = {
+		set_global_flag = TNW_straits_compromise_deal
+		731 = {
+			transfer_state_to = GRK
+			add_core_of = GRK
+		}
+		1112 = {
+			transfer_state_to = GRK
+			add_core_of = GRK
+		}
+		TUR = { load_focus_tree = TUR_initial }
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = { id = RUS_worldnews.5 hours = 6 }
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

@@ -504,52 +504,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = TUR_Constantinople_Letters
-		icon = GFX_TUR_Constantinople_Letters
-		cost = 7.00
-		prerequisite = {
-			focus = TUR_Route_Eastern
-			focus = TUR_Route_Central
-			focus = TUR_Route_Populist
-			focus = TUR_Route_Snowmoon
-			focus = TUR_Congress_Compromise
-		}
-		available = {
-			date > 1948.7.1
-		}
-		x = 26
-		y = 6
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed TUR_Constantinople_Letters"
-			country_event = { id = TUR_event.4 }
-		}
-	}
-
-	focus = {
-		id = TUR_Straits_Crisis
-		icon = GFX_TUR_Straits_Crisis
-		cost = 10.00
-		prerequisite = {
-			focus = TUR_Constantinople_Letters
-		}
-		available = {
-			date > 1949.1.1
-		}
-		x = 20
-		y = 7
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed TUR_Straits_Crisis"
-			country_event = { id = TUR_event.3 }
-		}
-	}
-
-	focus = {
 		id = TUR_Reorganize_Revolutionary_Army
 		icon = GFX_TUR_Reorganize_Revolutionary_Army
 		cost = 7.00
-		prerequisite = {
-			focus = TUR_Straits_Crisis
-		}
 		x = 20
 		y = 8
 		completion_reward = {

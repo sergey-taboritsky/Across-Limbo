@@ -1,0 +1,7 @@
+Balkans: RUSentry=3 on_daily=3 war_path=6 braces=0
+RUSev: ev3=1 news3=3 braces=0
+TURev: ev6=1 braces=0
+GREev: ev9=1 braces=0 GRKcosmetic=1
+decisions: braces=0 transfer731=1 transfer1112=1
+GREchars: Regency=3 braces=0
+StraitsLoc: bom=True root=True keys=11

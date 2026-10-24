@@ -1,0 +1,13 @@
+characters = {
+#GRK Greek Kingdom
+	#希腊王国摄政委员会
+	GRK_Regency_Council = {
+		name = GRK_Regency_Council
+		country_leader = {
+			desc = GRK_Regency_Council_desc
+			ideology = interim_government
+			traits = {
+			}
+		}
+	}
+}

@@ -139,9 +139,7 @@
 
 #决议组与角色（2026-10-22）
  INS_military_reform: "军事改革"
- INS_military_reform_desc: "什锦之军的整编工程。西利万吉系 [?THIS.INS_army_siliwangi_str]（[Get_INS_stance_army_siliwangi]）｜人民游击系 [?THIS.INS_army_guerrilla_str]（[Get_INS_stance_army_guerrilla]）｜义勇军系 [?THIS.INS_army_gyugun_str]（[Get_INS_stance_army_gyugun]）"
- INS_party_struggle: "党内斗争"
- INS_party_struggle_desc: "执政大帐篷党的派系角力。立场档位决定该派影响力计入哪位候选人（全面=100%、部分=50%、中立=0）。\n国民印尼团 [?THIS.INS_goni_str]（[Get_INS_stance_goni]）｜马尔哈恩之友会 [?THIS.INS_marhaen_str]（[Get_INS_stance_marhaen]）\n奉公会友 [?THIS.INS_hokokai_str]（[Get_INS_stance_hokokai]）｜萨尔托诺圈 [?THIS.INS_sartono_str]（[Get_INS_stance_sartono]）\n萨尔卡派 [?THIS.INS_sarekat_str]（[Get_INS_stance_sarekat]）｜穆尔巴派 [?THIS.INS_murba_str]（[Get_INS_stance_murba]）\n苏托莫的态度：[Get_INS_soetomo_stance]\n苏加诺影响力分数：[?THIS.INS_sukarno_score|0]\n亚明影响力分数：[?THIS.INS_yamin_score|0]"
+ INS_military_reform_desc: "军队仍然需要整编，而共和国面对过多的敌人，导致这一工作始终不能放松下来。\n\n西利万吉系 [?THIS.INS_army_siliwangi_str]（[Get_INS_stance_army_siliwangi]）｜人民游击系 [?THIS.INS_army_guerrilla_str]（[Get_INS_stance_army_guerrilla]）｜义勇军系 [?THIS.INS_army_gyugun_str]（[Get_INS_stance_army_gyugun]）"
  INS_army_siliwangi: "拉拢西利万吉系"
  INS_army_siliwangi_desc: "向纳苏蒂安与西马图邦的正规军官团让渡军费与人事权，换取总参谋部对整编工程的支持。"
  INS_army_siliwangi_tt: "西利万吉系势力 +5，陆军经验 +10"
@@ -151,6 +149,10 @@
  INS_army_gyugun: "收编义勇军残余"
  INS_army_gyugun_desc: "把日训青年军官团纳入正式军衔体系。塔希尔的军官们要的不过是一纸委任状。"
  INS_army_gyugun_tt: "义勇军系势力 +5，陆军经验 +5，战争支持度 +1%"
+
+ INS_party_struggle: "党内斗争"
+ INS_party_struggle_desc: "自从各党在日本要求下强制解散后，重新组合而成的印尼民族党就从来称不上什么团结或统一。尽管全国上下均对革命元老、无可争议的国父苏托莫医生保持尊重，但行政体系、政党机关和国民议会的厅堂之内无时无刻不在上演着残酷的倾轧。雪上加霜的是，出于维持党的统一的目的，建党前的各个势力很少会被强制解散或打碎，因而直接流传下来成为党内的无数山头。这些山头彼此水火不容，且彼此之间也可能发展出复杂的结盟或仇怨关系。\n\n国民印尼团 [?THIS.INS_goni_str]（[Get_INS_stance_goni]）\n国民印尼团（GONI）成立于三十年代，亚明被印度尼西亚党拒之门外后联络苏门答腊与外岛精英，如米南加保种植园主、民议会外岛集团等形成的印尼民族主义团体，也称为\"文书派\"。他们以《人民之声报》为喉舌，基本盘是外岛精英集团，政治路线是拥立建国文件执笔人亚明，走\"文书立国\"的精英路线。引人瞩目的是，尽管这一集团诞生于外岛，但由于其领袖亚明狂热的单一制理念，该派系对联邦主义相当反感。\n\n｜马尔哈恩之友会 [?THIS.INS_marhaen_str]（[Get_INS_stance_marhaen]）\n玛尔哈恩之友会是苏加诺执掌的党内派系，与亚明的文书派处于对立，可称之为\"街头派\"。其基本盘是各路黄色工会及其成员，以及小生产者和农民，故而遵奉\"玛尔哈恩\"这一爪哇小农寓言。该派自认党内代表穷苦大众的草根派系。\n\n奉公会友 [?THIS.INS_hokokai_str]（[Get_INS_stance_hokokai]）\n奉公会是曾经日本占领期间的技术官僚合作组织，曾协助日本掌握占领区秩序，而后则通过深度参与印度尼西亚的建国进程而控制相当多的政府部门和政治实权。尽管该派系掌握相当一部分行政权，但由于执行政策无法离开这一群体的配合，导致其地位居高不下。\n\n萨尔托诺圈 [?THIS.INS_sartono_str]（[Get_INS_stance_sartono]）\n国民议会的议长萨尔托诺是和国父苏托莫医生同辈的上一代民族主义者，而如今围绕在他周边的党内自由主义集团则多为如今已在茉莉芬清洗中被杀的阿米尔·谢里夫丁所创的印尼人民运动余党中的右翼。这个小圈子多数时候并不掌握很多实权，但在议会内部则拥有重大影响力。此外，其裙带关系也延伸到了某些军事单位中。\n\n萨尔卡派 [?THIS.INS_sarekat_str]（[Get_INS_stance_sarekat]）\n萨尔卡指伊斯兰联盟，是荷属东印度五党联盟时期的上一代印尼伊斯兰民族主义者。随着议会内马斯友美和议会外达鲁伊斯兰对其势力的两面包夹，这些伊斯兰老党的遗老们只好配合日本加入印尼民族党。他们实质上代表已经过时了的老一辈\"商团伊斯兰主义\"，因此也被视为议会和武装两种路线之外的第三种伊斯兰话语。\n\n穆尔巴派 [?THIS.INS_murba_str]（[Get_INS_stance_murba]）\n穆尔巴是玛尔哈恩无产者战斗团的缩写，是名义上隶属于党的革命的极端青年共和主义准军事组织。它由苏卡尔尼、查埃鲁尔·萨利赫、维卡纳等前\"独立宣言串联青年\"创立，意识形态层面包含激进民族主义、平民主义和反封建反帝反殖民理念，，是革命一代青年的政治组织化。他们相比独立政治力量更接近苏加诺街头派的更激进外溢，而非独立第三极。\n\n苏托莫的态度：[Get_INS_soetomo_stance]\n苏加诺影响力分数：[?THIS.INS_sukarno_score|0]\n亚明影响力分数：[?THIS.INS_yamin_score|0]"
+
  INS_party_goni: "国民印尼团集会"
  INS_party_goni_desc: "亚明的文书派在《人民之声报》上大造声势，外岛精英集团表态拥立建国文件的执笔人。"
  INS_party_goni_tt: "国民印尼团立场向亚明移动 +5"

@@ -154,3 +154,73 @@ news_event = {
 		}
 	}
 }
+country_event = {
+	id = RUS_event.3
+	title = RUS_event.3.t
+	desc = RUS_event.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = RUS_event.3.a
+		add_political_power = 10
+		hidden_effect = {
+			set_global_flag = TNW_straits_crisis_active
+			set_variable = { global.TNW_straits_timer = 50 }
+			every_country = {
+				limit = { is_ai = no }
+				news_event = { id = RUS_worldnews.3 hours = 6 }
+			}
+			TUR = {
+				country_event = { id = TUR_event.6 days = 2 }
+			}
+		}
+	}
+}
+news_event = {
+	id = RUS_worldnews.3
+	title = RUS_worldnews.3.t
+	desc = RUS_worldnews.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = RUS_worldnews.3.a
+		trigger = { tag = RUS }
+	}
+	option = {
+		name = RUS_worldnews.3.b
+		trigger = { NOT = { tag = RUS } }
+	}
+}
+news_event = {
+	id = RUS_worldnews.4
+	title = RUS_worldnews.4.t
+	desc = RUS_worldnews.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = RUS_worldnews.4.a
+		trigger = { tag = RUS }
+	}
+	option = {
+		name = RUS_worldnews.4.b
+		trigger = { NOT = { tag = RUS } }
+	}
+}
+news_event = {
+	id = RUS_worldnews.5
+	title = RUS_worldnews.5.t
+	desc = RUS_worldnews.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = RUS_worldnews.5.a
+		trigger = { tag = RUS }
+	}
+	option = {
+		name = RUS_worldnews.5.b
+		trigger = { NOT = { tag = RUS } }
+	}
+}

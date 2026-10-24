@@ -1,0 +1,237 @@
+﻿division_template = {
+	name = "革命步兵师"
+	division_names_group = TUR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "红军老兵师"
+	division_names_group = TUR_INF_02
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		military_police = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "高原山地师"
+	division_names_group = TUR_MTN_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 3 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "骑兵师"
+	division_names_group = TUR_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "海峡要塞旅"
+	division_names_group = TUR_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "第1装甲师"
+	division_names_group = TUR_ARM_01
+	regiments = {
+		light_tank = { x = 0 y = 0 }
+		light_tank = { x = 1 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "革命步兵第1师"
+		location = 4112
+		division_template = "革命步兵师"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "革命步兵第2师"
+		location = 4112
+		division_template = "革命步兵师"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.80
+	}
+	division = {
+		name = "革命步兵第3师"
+		location = 940
+		division_template = "革命步兵师"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "革命步兵第4师"
+		location = 940
+		division_template = "革命步兵师"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.80
+	}
+	division = {
+		name = "革命步兵第5师"
+		location = 3786
+		division_template = "革命步兵师"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.80
+	}
+	division = {
+		name = "革命步兵第6师"
+		location = 3786
+		division_template = "革命步兵师"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.80
+	}
+	division = {
+		name = "革命步兵第7师"
+		location = 11810
+		division_template = "革命步兵师"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "革命步兵第8师"
+		location = 3951
+		division_template = "革命步兵师"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "革命步兵第9师"
+		location = 3903
+		division_template = "革命步兵师"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.70
+	}
+	division = {
+		name = "土耳其红军第1老兵师"
+		location = 940
+		division_template = "红军老兵师"
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.90
+	}
+	division = {
+		name = "土耳其红军第2老兵师"
+		location = 11810
+		division_template = "红军老兵师"
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.90
+	}
+	division = {
+		name = "第1高原山地师"
+		location = 11853
+		division_template = "高原山地师"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "第2高原山地师"
+		location = 6935
+		division_template = "高原山地师"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "第1骑兵师"
+		location = 921
+		division_template = "骑兵师"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "第2骑兵师"
+		location = 3903
+		division_template = "骑兵师"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.70
+	}
+	division = {
+		name = "海峡要塞第1旅"
+		location = 13249
+		division_template = "海峡要塞旅"
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "海峡要塞第2旅"
+		location = 3786
+		division_template = "海峡要塞旅"
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "第1装甲师"
+		location = 4112
+		division_template = "第1装甲师"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.80
+	}
+}

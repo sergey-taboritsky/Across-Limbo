@@ -108,4 +108,14 @@ characters = {
 			ai_will_do = { factor = 0 }
 		}
 	}
+	#希腊王国摄政委员会
+	GRE_Regency_Council = {
+		name = GRE_Regency_Council
+		country_leader = {
+			desc = GRE_Regency_Council_desc
+			ideology = interim_government
+			traits = {
+			}
+		}
+	}
 }

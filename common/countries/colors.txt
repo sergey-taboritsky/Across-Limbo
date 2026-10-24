@@ -88,6 +88,10 @@ GRE = {
 	color = rgb { 8 120 188 }
 	color_ui = rgb { 121 235 255 }
 }
+GRK = {
+	color = rgb { 46 86 166 }
+	color_ui = rgb { 120 160 235 }
+}
 TPS = {
 	color = rgb { 118 183 191 }
 	color_ui = rgb { 121 235 255 }

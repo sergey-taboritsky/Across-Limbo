@@ -195,3 +195,39 @@ news_event = {
 		name = GRE_news_event.9.a
 	}
 }
+country_event = {
+	id = GRE_event.9
+	title = GRE_event.9.t
+	desc = GRE_event.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = GRE_event.9.a
+		add_stability = 0.05
+		set_cosmetic_tag = GRK
+		retire_character = GRE_Pandelis_Pouliopoulos
+		recruit_character = GRE_Regency_Council
+		set_politics = {
+			ruling_party = Authoritarianism
+			elections_allowed = no
+		}
+		set_popularities = {
+			communist = 10
+			syndicalism = 0
+			socialism = 5
+			Social_democracy = 10
+			Liberalism = 10
+			Conservatism = 20
+			Authoritarianism = 35
+			Absolutism = 10
+			Nationalism = 0
+		}
+		RUS = { add_to_faction = GRE }
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = { id = RUS_worldnews.4 hours = 6 }
+			}
+		}
+	}
+}

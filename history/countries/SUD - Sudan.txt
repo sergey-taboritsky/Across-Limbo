@@ -1,4 +1,5 @@
 ﻿capital = 551
+set_oob = "SUD_1948"
 
 # Starting tech
 set_technology = {
