@@ -2047,4 +2047,28 @@ spriteTypes = {
 		texturefile = "gfx/characters/SWI_Max_Petitpierre.png"
 		legacy_lazy_load = no
 	}
+	#阿卜杜拉·拉明·盖耶
+	spriteType = {
+		name = "GFX_portrait_large_SEN_Lamine_Gueye"
+		texturefile = "gfx/characters/SEN_Lamine_Gueye.png"
+		legacy_lazy_load = no
+	}
+	#卡迈勒·阿卜杜勒-哈利姆
+	spriteType = {
+		name = "GFX_portrait_large_EGY_Kamal_Abd_al_Halim"
+		texturefile = "gfx/characters/EGY_Kamal_Abd_al_Halim.png"
+		legacy_lazy_load = no
+	}
+	#穆克塔尔·达达赫
+	spriteType = {
+		name = "GFX_portrait_large_MRT_Moktar_Daddah"
+		texturefile = "gfx/characters/MRT_Moktar_Daddah.png"
+		legacy_lazy_load = no
+	}
+	#维尔霍·安纳拉
+	spriteType = {
+		name = "GFX_portrait_large_FIN_Vilho_Annala"
+		texturefile = "gfx/characters/FIN_Vilho_Annala.png"
+		legacy_lazy_load = no
+	}
 }

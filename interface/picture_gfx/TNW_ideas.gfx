@@ -372,4 +372,24 @@ spriteTypes = {
 		name = "GFX_idea_POL_Polish_Soviet"
 		texturefile = "gfx/interface/ideas/POL_Polish_Soviet.dds"
 	}
+	#第三道路
+	spriteType = {
+		name = "GFX_idea_RUS_disan_daolu"
+		texturefile = "gfx/interface/ideas/RUS_disan_daolu.png"
+	}
+	#派系内斗
+	spriteType = {
+		name = "GFX_idea_RUS_paixi_neidou"
+		texturefile = "gfx/interface/ideas/RUS_paixi_neidou.png"
+	}
+	#黑色卫队
+	spriteType = {
+		name = "GFX_idea_RUS_heise_weidou"
+		texturefile = "gfx/interface/ideas/RUS_heise_weidou.png"
+	}
+	#俄罗斯国家武装力量
+	spriteType = {
+		name = "GFX_idea_RUS_wuzhuang_liliang"
+		texturefile = "gfx/interface/ideas/RUS_wuzhuang_liliang.png"
+	}
 }

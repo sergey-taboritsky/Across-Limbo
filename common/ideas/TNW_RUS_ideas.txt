@@ -82,4 +82,93 @@ ideas = {
 			}
 		}
 	}
+		#第三道路
+		RUS_disan_daolu = {
+			picture = GFX_idea_RUS_disan_daolu
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.20
+				war_support_factor = 0.10
+			}
+		}
+		#派系内斗
+		RUS_paixi_neidou = {
+			picture = GFX_idea_RUS_paixi_neidou
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.40
+				war_support_factor = -0.20
+			}
+		}
+		#黑色卫队
+		RUS_heise_weidui = {
+			picture = GFX_idea_RUS_heise_weidou
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = -0.10
+			}
+		}
+		#最高经济委员会
+		RUS_zuigao_jingji_weiyuanhui = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				line_change_production_efficiency_factor = 0.20
+				consumer_goods_factor = -0.20
+			}
+		}
+		#东欧协定
+		RUS_dongou_xieding = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		#俄罗斯国家武装力量
+		RUS_wuzhuang_liliang = {
+			picture = GFX_idea_RUS_wuzhuang_liliang
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.15
+				army_org_factor = -0.15
+				army_org_regain = -0.05
+				army_morale_factor = 0.10
+				conscription_factor = 0.10
+				training_time_army_factor = 0.10
+				army_armor_attack_factor = 0.10
+				air_attack_factor = -0.10
+				air_defence_factor = 0.05
+				air_cas_efficiency = 0.15
+				air_strategic_bomber_bombing_factor = -0.15
+				navy_capital_ship_attack_factor = -0.15
+				navy_screen_attack_factor = -0.05
+				navy_submarine_attack_factor = 0.20
+				navy_org_factor = -0.10
+				mines_planting_by_fleets_factor = 0.15
+			}
+		}
 }
