@@ -1,4 +1,4 @@
-﻿spriteTypes = {
+spriteTypes = {
 #Large大头像
 	#阿富汗
 	#穆罕默德·查希尔沙阿
@@ -2031,20 +2031,20 @@
 	}
 	#费伦茨·萨拉希
 	spriteType = {
-		name = "GFX_portrait_large_TNW_HUN_Ferenc_Szalasi"
-		texturefile = "gfx/characters/TNW_HUN_Ferenc_Szalasi.png"
+		name = "GFX_portrait_large_HUN_Ferenc_Szalasi"
+		texturefile = "gfx/characters/HUN_Ferenc_Szalasi.png"
 		legacy_lazy_load = no
 	}
 	#鲍里斯·基德里奇
 	spriteType = {
-		name = "GFX_portrait_large_TNW_SLV_Boris_Kidric"
-		texturefile = "gfx/characters/TNW_SLV_Boris_Kidric.png"
+		name = "GFX_portrait_large_SLV_Boris_Kidric"
+		texturefile = "gfx/characters/SLV_Boris_Kidric.png"
 		legacy_lazy_load = no
 	}
 	#马克斯·佩蒂皮埃尔
 	spriteType = {
-		name = "GFX_portrait_large_TNW_SWI_Max_Petitpierre"
-		texturefile = "gfx/characters/TNW_SWI_Max_Petitpierre.png"
+		name = "GFX_portrait_large_SWI_Max_Petitpierre"
+		texturefile = "gfx/characters/SWI_Max_Petitpierre.png"
 		legacy_lazy_load = no
 	}
 }

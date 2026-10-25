@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 20
 
 recruit_character = SEN_awt
-recruit_character = TNW_SEN_Lamine_Gueye
+recruit_character = SEN_Lamine_Gueye
 recruit_character = SEN_acd2
 recruit_character = SEN_nt
 recruit_character = SEN_aco2

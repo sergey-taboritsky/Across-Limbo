@@ -1,5 +1,5 @@
 ﻿capital = 853
-recruit_character = TNW_SLV_Boris_Kidric
+recruit_character = SLV_Boris_Kidric
 
 set_research_slots = 3
 

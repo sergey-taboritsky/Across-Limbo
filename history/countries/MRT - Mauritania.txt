@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 20
 
 recruit_character = MRT_pot
-recruit_character = TNW_MRT_Moktar_Daddah
+recruit_character = MRT_Moktar_Daddah
 recruit_character = MRT_awt
 recruit_character = MRT_communist_guy
 recruit_character = MRT_ncm

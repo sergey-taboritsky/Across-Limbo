@@ -1,5 +1,5 @@
 ﻿capital = 461
-recruit_character = TNW_MOR_Ahmed_Balafrej
+recruit_character = MOR_Ahmed_Balafrej
 
 # Starting tech
 set_technology = {

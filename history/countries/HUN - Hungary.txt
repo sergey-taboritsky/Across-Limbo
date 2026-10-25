@@ -1,5 +1,5 @@
 ﻿capital = 43
-recruit_character = TNW_HUN_Ferenc_Szalasi
+recruit_character = HUN_Ferenc_Szalasi
 #oob = "HUN_1936"
 #Start Horty as neutral if DOD
 

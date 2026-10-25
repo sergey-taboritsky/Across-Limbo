@@ -64,6 +64,6 @@ set_popularities = {
 	Nationalism = 15
 }
 
-recruit_character = TNW_GAM_EF_Small
+recruit_character = GAM_EF_Small
 
 

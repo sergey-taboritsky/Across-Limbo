@@ -1,13 +1,13 @@
 characters = {
-	TNW_GNA_Yacine_Diallo = {
-		name = TNW_GNA_Yacine_Diallo
+	GNA_Yacine_Diallo = {
+		name = GNA_Yacine_Diallo
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_TNW_GNA_Yacine_Diallo
+				large = GFX_portrait_large_GNA_Yacine_Diallo
 			}
 		}
 		country_leader = {
-			desc = TNW_GNA_Yacine_Diallo_desc
+			desc = GNA_Yacine_Diallo_desc
 			ideology = Social_democratic
 			traits = { }
 		}

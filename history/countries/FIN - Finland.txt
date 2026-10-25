@@ -8,7 +8,7 @@ set_research_slots = 3
 ##################
 
 recruit_character = FIN_pehr_evind_svinhufvud
-recruit_character = TNW_FIN_Vilho_Annala
+recruit_character = FIN_Vilho_Annala
 recruit_character = FIN_kyosti_kallio
 recruit_character = FIN_risto_ryti
 recruit_character = FIN_juho_kusti_paasikivi

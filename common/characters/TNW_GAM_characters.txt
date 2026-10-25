@@ -1,13 +1,13 @@
 characters = {
-	TNW_GAM_EF_Small = {
-		name = TNW_GAM_EF_Small
+	GAM_EF_Small = {
+		name = GAM_EF_Small
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_TNW_GAM_EF_Small
+				large = GFX_portrait_large_GAM_EF_Small
 			}
 		}
 		country_leader = {
-			desc = TNW_GAM_EF_Small_desc
+			desc = GAM_EF_Small_desc
 			ideology = Social_democratic
 			traits = { }
 		}

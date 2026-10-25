@@ -2,7 +2,7 @@
 
 
 recruit_character = ALG_ar
-recruit_character = TNW_ALG_Albert_Camus
+recruit_character = ALG_Albert_Camus
 recruit_character = ALG_acr
 recruit_character = ALG_mt
 recruit_character = ALG_stc

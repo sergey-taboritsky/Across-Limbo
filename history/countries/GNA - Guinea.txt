@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 10
 
 recruit_character = GNA_nccr
-recruit_character = TNW_GNA_Yacine_Diallo
+recruit_character = GNA_Yacine_Diallo
 recruit_character = GNA_aco2
 recruit_character = GNA_ai2
 recruit_character = GNA_Liberalism_guy

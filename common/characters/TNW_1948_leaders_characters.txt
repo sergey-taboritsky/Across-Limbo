@@ -1,47 +1,47 @@
 characters = {
-	TNW_FIN_Vilho_Annala = {
-		name = TNW_FIN_Vilho_Annala
+	FIN_Vilho_Annala = {
+		name = FIN_Vilho_Annala
 		country_leader = {
-			desc = TNW_FIN_Vilho_Annala_desc
+			desc = FIN_Vilho_Annala_desc
 			ideology = National_Socialism
 			traits = { }
 		}
 	}
-	TNW_HUN_Ferenc_Szalasi = {
-		name = TNW_HUN_Ferenc_Szalasi
+	HUN_Ferenc_Szalasi = {
+		name = HUN_Ferenc_Szalasi
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_TNW_HUN_Ferenc_Szalasi
+				large = GFX_portrait_large_HUN_Ferenc_Szalasi
 			}
 		}
 		country_leader = {
-			desc = TNW_HUN_Ferenc_Szalasi_desc
+			desc = HUN_Ferenc_Szalasi_desc
 			ideology = National_Socialism
 			traits = { }
 		}
 	}
-	TNW_SWI_Max_Petitpierre = {
-		name = TNW_SWI_Max_Petitpierre
+	SWI_Max_Petitpierre = {
+		name = SWI_Max_Petitpierre
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_TNW_SWI_Max_Petitpierre
+				large = GFX_portrait_large_SWI_Max_Petitpierre
 			}
 		}
 		country_leader = {
-			desc = TNW_SWI_Max_Petitpierre_desc
+			desc = SWI_Max_Petitpierre_desc
 			ideology = Social_Liberalism
 			traits = { }
 		}
 	}
-	TNW_SLV_Boris_Kidric = {
-		name = TNW_SLV_Boris_Kidric
+	SLV_Boris_Kidric = {
+		name = SLV_Boris_Kidric
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_TNW_SLV_Boris_Kidric
+				large = GFX_portrait_large_SLV_Boris_Kidric
 			}
 		}
 		country_leader = {
-			desc = TNW_SLV_Boris_Kidric_desc
+			desc = SLV_Boris_Kidric_desc
 			ideology = Marxism_Leninism
 			traits = { }
 		}

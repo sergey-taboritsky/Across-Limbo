@@ -1,13 +1,13 @@
 characters = {
-	TNW_ALG_Albert_Camus = {
-		name = TNW_ALG_Albert_Camus
+	ALG_Albert_Camus = {
+		name = ALG_Albert_Camus
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_TNW_ALG_Albert_Camus
+				large = GFX_portrait_large_ALG_Albert_Camus
 			}
 		}
 		country_leader = {
-			desc = TNW_ALG_Albert_Camus_desc
+			desc = ALG_Albert_Camus_desc
 			ideology = Social_democratic
 			traits = { }
 		}
