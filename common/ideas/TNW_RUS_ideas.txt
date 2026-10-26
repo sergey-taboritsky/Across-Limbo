@@ -135,6 +135,7 @@ ideas = {
 		}
 		#东欧协定
 		RUS_dongou_xieding = {
+			picture = GFX_idea_dongou_xieding
 			allowed = {
 				always = yes
 			}

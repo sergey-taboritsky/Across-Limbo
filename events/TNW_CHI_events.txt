@@ -103,6 +103,7 @@ country_event = {
 			country_event = { id = CHI_event.13 days = 90 }
 			MAL = {
 				country_event = { id = MAL_dissolution.2 }
+				delete_unit_template_and_units = { division_template = "乙种国军师" }	# 驻星国军应召回国（兵员并入南京序列）
 			}
 		}
 	}

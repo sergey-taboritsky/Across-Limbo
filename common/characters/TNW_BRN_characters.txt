@@ -1,0 +1,12 @@
+characters = {
+	#艾哈迈德·塔吉丁（文莱第27世苏丹，1924年即位）
+	BRN_Ahmad_Tajuddin = {
+		name = BRN_Ahmad_Tajuddin
+		country_leader = {
+			desc = BRN_Ahmad_Tajuddin_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+		}
+	}
+}

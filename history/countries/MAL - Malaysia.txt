@@ -1,6 +1,6 @@
 ﻿capital = 336
 
-#oob = "MAL_1936"
+oob = "MAL_1948"
 
 set_research_slots = 3
 

@@ -1637,6 +1637,7 @@ focus_tree = {
 			add_war_support = 0.05
 			hidden_effect = {
 				set_country_flag = MAL_nra_returned
+				country_event = { id = MAL_nra.1 days = 3 }
 			}
 		}
 	}

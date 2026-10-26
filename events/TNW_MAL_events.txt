@@ -124,3 +124,20 @@ country_event = {
 		set_country_flag = MAL_NRA_returned
 	}
 }
+
+#驻星国军归来（MAL_NRA_Returns 国策触发）
+add_namespace = MAL_nra
+country_event = {
+	id = MAL_nra.1
+	title = MAL_nra.1.t
+	desc = MAL_nra.1.d
+	picture = GFX_news_event_soldiers_marching
+	is_triggered_only = yes
+
+	option = {
+		name = MAL_nra.1.a
+		MAL = {
+			load_oob = MAL_zhuxing_return
+		}
+	}
+}

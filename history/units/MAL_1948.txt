@@ -1,0 +1,140 @@
+﻿### 星洲联邦 OOB（1948） ###
+# 三部分：星洲人民义勇军 / 驻星国军 / 星洲国民革命军
+
+division_template = {
+	name = "义勇军整编师"			# 6步1工兵
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		engineer = { x = 3 y = 0 }
+	}
+}
+
+division_template = {
+	name = "义勇军师"				# 6民兵1工兵
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		engineer = { x = 3 y = 0 }
+	}
+}
+
+division_template = {
+	name = "乙种国军师"				# 驻星国军：8步，特殊编制（南京控制，中原大战开战时召回）
+	division_names_group = CHI_INF_01
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 1 }
+	}
+}
+
+division_template = {
+	name = "国民革命军步兵师"		# 7步1炮1工兵1宪兵
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		artillery_brigade = { x = 3 y = 1 }
+		engineer = { x = 4 y = 0 }
+		military_police = { x = 4 y = 1 }
+	}
+}
+
+units = {
+	########## 星洲人民义勇军 ##########
+	division = { # 义勇军整编师 ×1（新加坡）
+		name = "星洲人民义勇军整编第1师"
+		location = 12299
+		division_template = "义勇军整编师"
+		start_experience_factor = 0.1
+	}
+	division = { # 义勇军师 ×6
+		name = "星洲人民义勇军第1师"
+		location = 4412		# 吉隆坡
+		division_template = "义勇军师"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "星洲人民义勇军第2师"
+		location = 7342		# 槟城
+		division_template = "义勇军师"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "星洲人民义勇军第3师"
+		location = 4424		# 柔佛
+		division_template = "义勇军师"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "星洲人民义勇军第4师"
+		location = 7427		# 马六甲
+		division_template = "义勇军师"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "星洲人民义勇军第5师"
+		location = 13306	# 霹雳
+		division_template = "义勇军师"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "星洲人民义勇军第6师"
+		location = 7399		# 彭亨
+		division_template = "义勇军师"
+		start_experience_factor = 0.0
+	}
+
+	########## 驻星国军 ##########
+	division = { # 乙种师 ×2（新加坡，锁定编制）
+		name = "驻星第1乙种国军师"
+		location = 12299
+		division_template = "乙种国军师"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "驻星第2乙种国军师"
+		location = 12299
+		division_template = "乙种国军师"
+		start_experience_factor = 0.4
+	}
+
+	########## 星洲国民革命军 ##########
+	division = { # 国民革命军步兵师 ×3
+		name = "星洲国民革命军第1师"
+		location = 12299	# 新加坡
+		division_template = "国民革命军步兵师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "星洲国民革命军第2师"
+		location = 4412		# 吉隆坡
+		division_template = "国民革命军步兵师"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "星洲国民革命军第3师"
+		location = 7342		# 槟城
+		division_template = "国民革命军步兵师"
+		start_experience_factor = 0.2
+	}
+}

@@ -1,0 +1,12 @@
+characters = {
+	#阿旺蓝里（砂拉越自治国领袖，十三太保首领，亲印尼激进马来民族主义者）
+	WES_Awang_Rambli = {
+		name = WES_Awang_Rambli
+		country_leader = {
+			desc = WES_Awang_Rambli_desc
+			ideology = Ultra_Nationalism
+			traits = {
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+characters = {
+	#慕斯达法·哈伦（古达抗日游击领袖，巴瑶-苏禄贵族）
+	SAB_Mustapha_Harun = {
+		name = SAB_Mustapha_Harun
+		country_leader = {
+			desc = SAB_Mustapha_Harun_desc
+			ideology = Ultra_Nationalism
+			traits = {
+			}
+		}
+	}
+}

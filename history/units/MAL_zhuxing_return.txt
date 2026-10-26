@@ -1,0 +1,32 @@
+﻿### 驻星国军归来 OOB（中原大战结束后，MAL 重新接收驻星国军） ###
+
+division_template = {
+	name = "乙种国军师"				# 驻星国军：8步，特殊编制（南京控制）
+	division_names_group = CHI_INF_01
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 1 }
+	}
+}
+
+units = {
+	division = { # 乙种师 ×2（新加坡，锁定编制）
+		name = "驻星第1乙种国军师"
+		location = 12299
+		division_template = "乙种国军师"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "驻星第2乙种国军师"
+		location = 12299
+		division_template = "乙种国军师"
+		start_experience_factor = 0.4
+	}
+}

@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		#东欧协定成员
+		SER_dongou_xieding_member = {
+			picture = GFX_idea_dongou_xieding
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.025
+				political_power_factor = 0.10
+			}
+		}
+	}
+}
