@@ -1,0 +1,21 @@
+	set_variable = { INS_score_tmp_6_var = INS_murba_str }
+	if = {
+		limit = { check_variable = { var = INS_score_tmp_6_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_6_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_6_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_6_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_6_var }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_6_var value = 60 compare = less_than_or_equals } }
+	}
+	else_if = {
+		limit = { check_variable = { var = INS_score_tmp_6_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_6_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_6_var }
+	}
+	else = {
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_6_var }
+	}

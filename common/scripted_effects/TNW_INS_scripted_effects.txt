@@ -5,131 +5,131 @@
 INS_calc_scores_effect = {
 	set_variable = { INS_sukarno_score = 0 }
 	set_variable = { INS_yamin_score = 0 }
-	set_variable = { INS_score_tmp_var = INS_goni_str }
+	set_variable = { INS_score_tmp_1_var = INS_goni_str }
 	if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_1_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_1_var }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
-		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_1_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_1_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_1_var }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 60 compare = less_than_or_equals } }
+		limit = { check_variable = { var = INS_score_tmp_1_var value = 60 compare = less_than_or_equals } }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
-		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_1_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_1_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_1_var }
 	}
 	else = {
-		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_1_var }
 	}
-	set_variable = { INS_score_tmp_var = INS_marhaen_str }
+	set_variable = { INS_score_tmp_2_var = INS_marhaen_str }
 	if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_2_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_2_var }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
-		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_2_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_2_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_2_var }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 60 compare = less_than_or_equals } }
+		limit = { check_variable = { var = INS_score_tmp_2_var value = 60 compare = less_than_or_equals } }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
-		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_2_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_2_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_2_var }
 	}
 	else = {
-		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_2_var }
 	}
-	set_variable = { INS_score_tmp_var = INS_hokokai_str }
+	set_variable = { INS_score_tmp_3_var = INS_hokokai_str }
 	if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_3_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_3_var }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
-		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_3_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_3_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_3_var }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 60 compare = less_than_or_equals } }
+		limit = { check_variable = { var = INS_score_tmp_3_var value = 60 compare = less_than_or_equals } }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
-		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_3_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_3_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_3_var }
 	}
 	else = {
-		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_3_var }
 	}
-	set_variable = { INS_score_tmp_var = INS_sartono_str }
+	set_variable = { INS_score_tmp_4_var = INS_sartono_str }
 	if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_4_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_4_var }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
-		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_4_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_4_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_4_var }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 60 compare = less_than_or_equals } }
+		limit = { check_variable = { var = INS_score_tmp_4_var value = 60 compare = less_than_or_equals } }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
-		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_4_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_4_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_4_var }
 	}
 	else = {
-		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_4_var }
 	}
-	set_variable = { INS_score_tmp_var = INS_sarekat_str }
+	set_variable = { INS_score_tmp_5_var = INS_sarekat_str }
 	if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_5_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_5_var }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
-		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_5_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_5_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_5_var }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 60 compare = less_than_or_equals } }
+		limit = { check_variable = { var = INS_score_tmp_5_var value = 60 compare = less_than_or_equals } }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
-		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_5_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_5_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_5_var }
 	}
 	else = {
-		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_5_var }
 	}
-	set_variable = { INS_score_tmp_var = INS_murba_str }
+	set_variable = { INS_score_tmp_6_var = INS_murba_str }
 	if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_6_var value = 20 compare = less_than_or_equals } }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_6_var }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
-		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_6_var value = 40 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_6_var value = 0.5 }
+		add_to_variable = { var = INS_sukarno_score value = INS_score_tmp_6_var }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 60 compare = less_than_or_equals } }
+		limit = { check_variable = { var = INS_score_tmp_6_var value = 60 compare = less_than_or_equals } }
 	}
 	else_if = {
-		limit = { check_variable = { var = INS_score_tmp_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = INS_score_tmp_var value = 0.5 }
-		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+		limit = { check_variable = { var = INS_score_tmp_6_var value = 80 compare = less_than_or_equals } }
+		multiply_variable = { var = INS_score_tmp_6_var value = 0.5 }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_6_var }
 	}
 	else = {
-		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_var }
+		add_to_variable = { var = INS_yamin_score value = INS_score_tmp_6_var }
 	}
 	if = {
 		limit = { has_country_flag = INS_soetomo_lean_sukarno }
