@@ -1,2 +1,0 @@
-./common/country_leader/00_traits.txt : ai_focus_defense_factor = 0.5
-./common/country_leader/00_traits.txt : ai_focus_aggressive_factor = 0.5

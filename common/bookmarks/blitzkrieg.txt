@@ -136,9 +136,9 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"MLY"={
+		"MAL"={
 			minor = yes
-			history = "MLY_BLITZKRIEG_DESC"
+			history = "MAL_BLITZKRIEG_DESC"
 			ideology = Authoritarianism
 			ideas = {
 			}
