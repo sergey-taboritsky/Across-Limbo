@@ -583,6 +583,65 @@ country_event = {
 	}
 }
 
+#国父之死
+country_event = {
+	id = INS_event.10
+	title = INS_event.10.t
+	desc = INS_event.10.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = INS_event.10.a
+		trigger = {
+			check_variable = { var = INS_sukarno_score value = INS_yamin_score compare = less_than }
+		}
+		set_country_flag = INS_soetomo_dead
+		add_country_leader_role = {
+			character = INS_Mohammad_Yamin
+			promote_leader = yes
+			country_leader = {
+				desc = INS_Mohammad_Yamin
+				ideology = interim_government
+				traits = { }
+			}
+		}
+	}
+	option = {
+		name = INS_event.10.b
+		trigger = {
+			check_variable = { var = INS_sukarno_score value = INS_yamin_score compare = less_than }
+		}
+		set_country_flag = INS_soetomo_dead
+		add_country_leader_role = {
+			character = INS_Sukarno
+			promote_leader = yes
+			country_leader = {
+				desc = INS_Sukarno
+				ideology = interim_government
+				traits = { }
+			}
+		}
+	}
+	option = {
+		name = INS_event.10.c
+		trigger = {
+			check_variable = { var = INS_sukarno_score value = INS_yamin_score compare = less_than }
+		}
+		set_country_flag = INS_soetomo_dead
+		add_country_leader_role = {
+			character = INS_Sartono
+			promote_leader = yes
+			country_leader = {
+				desc = INS_Sartono
+				ideology = interim_government
+				traits = { }
+			}
+		}
+	}
+}
+
 #总统府的无声夜（僵局->军队出面）
 country_event = {
 	id = INS_crisis.25
@@ -619,6 +678,7 @@ country_event = {
 					traits = { }
 				}
 			}
+			set_politics = { ruling_party = Absolutism elections_allowed = no }
 			INS_Abdul_Haris_Nasution = { promote_character = yes }
 			1613 = { transfer_state_to = HAT add_core_of = HAT }
 			1298 = { transfer_state_to = HAT add_core_of = HAT }

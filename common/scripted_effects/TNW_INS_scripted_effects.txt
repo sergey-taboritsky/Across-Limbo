@@ -17,6 +17,7 @@ INS_calc_scores_effect = {
 	}
 	else_if = {
 		limit = { check_variable = { var = INS_score_tmp_1_var value = 60 compare = less_than_or_equals } }
+		add_manpower = 1 #no pass effect?
 	}
 	else_if = {
 		limit = { check_variable = { var = INS_score_tmp_1_var value = 80 compare = less_than_or_equals } }
@@ -38,6 +39,7 @@ INS_calc_scores_effect = {
 	}
 	else_if = {
 		limit = { check_variable = { var = INS_score_tmp_2_var value = 60 compare = less_than_or_equals } }
+		add_manpower = 1 #no pass effect?
 	}
 	else_if = {
 		limit = { check_variable = { var = INS_score_tmp_2_var value = 80 compare = less_than_or_equals } }
@@ -59,6 +61,7 @@ INS_calc_scores_effect = {
 	}
 	else_if = {
 		limit = { check_variable = { var = INS_score_tmp_3_var value = 60 compare = less_than_or_equals } }
+		add_manpower = 1 #no pass effect?
 	}
 	else_if = {
 		limit = { check_variable = { var = INS_score_tmp_3_var value = 80 compare = less_than_or_equals } }
@@ -80,6 +83,7 @@ INS_calc_scores_effect = {
 	}
 	else_if = {
 		limit = { check_variable = { var = INS_score_tmp_4_var value = 60 compare = less_than_or_equals } }
+		add_manpower = 1 #no pass effect?
 	}
 	else_if = {
 		limit = { check_variable = { var = INS_score_tmp_4_var value = 80 compare = less_than_or_equals } }
@@ -101,6 +105,7 @@ INS_calc_scores_effect = {
 	}
 	else_if = {
 		limit = { check_variable = { var = INS_score_tmp_5_var value = 60 compare = less_than_or_equals } }
+		add_manpower = 1 #no pass effect?
 	}
 	else_if = {
 		limit = { check_variable = { var = INS_score_tmp_5_var value = 80 compare = less_than_or_equals } }
@@ -122,6 +127,7 @@ INS_calc_scores_effect = {
 	}
 	else_if = {
 		limit = { check_variable = { var = INS_score_tmp_6_var value = 60 compare = less_than_or_equals } }
+		add_manpower = 1 #no pass effect?
 	}
 	else_if = {
 		limit = { check_variable = { var = INS_score_tmp_6_var value = 80 compare = less_than_or_equals } }
