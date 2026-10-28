@@ -81,7 +81,6 @@ ideas = {
 			    
 			}
 		}
-	}
 		#第三道路
 		RUS_disan_daolu = {
 			picture = GFX_idea_RUS_disan_daolu
@@ -172,4 +171,5 @@ ideas = {
 				mines_planting_by_fleets_factor = 0.15
 			}
 		}
+	}
 }

@@ -1,2289 +1,6870 @@
 focus_tree = {
+
+
 	id = INS_initial
+
+
 	country = {
+
+
 		factor = 0
+
+
 		modifier = {
+
+
 			add = 10
+
+
 			tag = INS
+
+
 		}
+
+
 	}
+
+
 	continuous_focus_position = {
+
+
 		x = 100
+
+
 		y = 2000
+
+
 	}
+
+
 	default = no
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Continue_Kasimo_Plan
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 13
+
+
 		y = 1
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_2_tt
+
+
 				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Continue_Kasimo_Plan"
+
+
 			add_to_variable = { var = capital_reserves value = -2 }
+
+
 			custom_effect_tooltip = INS_capital_cost_2_tt
+
+
 			add_to_variable = { INS_nre_consumer_goods = -0.02 }
+
+
 			add_to_variable = { INS_nre_prod_infra = 0.03 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 25
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Sumatra_Planting_Expansion
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 12
+
+
 		y = 2
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_2_tt
+
+
 				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Continue_Kasimo_Plan }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Sumatra_Planting_Expansion"
+
+
 			add_to_variable = { var = capital_reserves value = -2 }
+
+
 			custom_effect_tooltip = INS_capital_cost_2_tt
+
+
 			add_political_power = 25
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Raise_Procurement_Prices
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 14
+
+
 		y = 2
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_2_tt
+
+
 				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Continue_Kasimo_Plan }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Raise_Procurement_Prices"
+
+
 			add_to_variable = { var = capital_reserves value = -2 }
+
+
 			custom_effect_tooltip = INS_capital_cost_2_tt
+
+
 			add_political_power = 50
+
+
 			add_stability = 0.02
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Pilot_End_Rationing
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 13
+
+
 		y = 3
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Sumatra_Planting_Expansion }
+
+
 		prerequisite = { focus = INS_Raise_Procurement_Prices }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Pilot_End_Rationing"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { var = TNW_Affluence_monthly_value value = 5 }
+
+
 			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+
+
 			add_to_variable = { INS_nre_consumer_goods = -0.03 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 50
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Expand_Cropland
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 11
+
+
 		y = 4
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Pilot_End_Rationing }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Expand_Cropland"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_nre_prod_infra = 0.01 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_manpower = 5000
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Russia_Grain_Exchange
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 13
+
+
 		y = 4
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_2_tt
+
+
 				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Pilot_End_Rationing }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Russia_Grain_Exchange"
+
+
 			add_to_variable = { var = capital_reserves value = -2 }
+
+
 			custom_effect_tooltip = INS_capital_cost_2_tt
+
+
 			country_event = { id = INS_event.7 days = 1 }
+
+
 			add_to_variable = { INS_nre_factory_output = 0.03 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_ideas = INS_Rus_Grain_Trade
+
+
 			add_political_power = 50
+
+
 			add_offsite_building = { type = industrial_complex level = 1 }
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Fertilizer_Seeds
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 15
+
+
 		y = 4
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Pilot_End_Rationing }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Fertilizer_Seeds"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_stability = 0.02
+
+
 			add_manpower = 2000
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Balance_Cash_Crops
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 12
+
+
 		y = 5
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Pilot_End_Rationing }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Balance_Cash_Crops"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_political_power = 50
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Academy_of_Agriculture
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 10.00
+
+
 		x = 14
+
+
 		y = 5
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_10_tt
+
+
 				check_variable = { var = capital_reserves value = 10 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Pilot_End_Rationing }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Academy_of_Agriculture"
+
+
 			add_to_variable = { var = capital_reserves value = -10 }
+
+
 			custom_effect_tooltip = INS_capital_cost_10_tt
+
+
 			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
+
+
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+
+
 			add_research_slot = 1
+
+
 			add_to_variable = { INS_nre_prod_buildings = 0.02 }
+
+
 			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_offsite_building = { type = industrial_complex level = 1 }
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Support_Djuanda
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 19
+
+
 		y = 1
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_2_tt
+
+
 				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Support_Djuanda"
+
+
 			add_to_variable = { var = capital_reserves value = -2 }
+
+
 			custom_effect_tooltip = INS_capital_cost_2_tt
+
+
 			add_to_variable = { INS_nre_prod_buildings = 0.02 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Normalize_Planning_Bureau
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 17
+
+
 		y = 2
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_National_Economic_Experts }
+
+
 		prerequisite = { focus = INS_Support_Djuanda }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Normalize_Planning_Bureau"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 5 }
+
+
 			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+
+
 			add_to_variable = { INS_nre_prod_buildings = 0.01 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 50
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_National_Economic_Experts
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 19
+
+
 		y = 2
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Normalize_Planning_Bureau }
+
+
 		prerequisite = { focus = INS_Support_Djuanda }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_National_Economic_Experts"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 5 }
+
+
 			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+
+
 			add_to_variable = { INS_nre_prod_buildings = 0.01 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 50
+
+
 			add_offsite_building = { type = industrial_complex level = 1 }
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Far_East_Reconstruction_Boom
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 21
+
+
 		y = 2
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_2_tt
+
+
 				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Support_Djuanda }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Far_East_Reconstruction_Boom"
+
+
 			add_to_variable = { var = capital_reserves value = -2 }
+
+
 			custom_effect_tooltip = INS_capital_cost_2_tt
+
+
 			add_to_variable = { var = TNW_Affluence_monthly_value value = 5 }
+
+
 			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+
+
 			add_to_variable = { INS_nre_prod_buildings = 0.02 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_offsite_building = { type = industrial_complex level = 1 }
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Incubate_Postwar_Plan
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 5.00
+
+
 		x = 18
+
+
 		y = 3
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_5_tt
+
+
 				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Normalize_Planning_Bureau focus = INS_National_Economic_Experts }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Incubate_Postwar_Plan"
+
+
 			add_to_variable = { var = capital_reserves value = -5 }
+
+
 			custom_effect_tooltip = INS_capital_cost_5_tt
+
+
 			add_to_variable = { INS_nre_factory_output = 0.02 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 75
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Resource_Export_Board
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 21
+
+
 		y = 3
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Far_East_Reconstruction_Boom }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Resource_Export_Board"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_nre_dockyard_output = 0.05 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 50
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Announce_Benteng
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 5.00
+
+
 		x = 19
+
+
 		y = 4
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_5_tt
+
+
 				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Incubate_Postwar_Plan }
+
+
 		prerequisite = { focus = INS_Resource_Export_Board }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Announce_Benteng"
+
+
 			add_to_variable = { var = capital_reserves value = -5 }
+
+
 			custom_effect_tooltip = INS_capital_cost_5_tt
+
+
 			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
+
+
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+
+
 			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 50
+
+
 			add_stability = 0.01
+
+
 			set_country_flag = INS_benteng_announced
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Import_Licenses
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 18
+
+
 		y = 5
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Announce_Benteng }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Import_Licenses"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Squeeze_Alien_Capital
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 20
+
+
 		y = 5
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Announce_Benteng }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Squeeze_Alien_Capital"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			country_event = { id = INS_event.8 days = 1 }
+
+
 			add_to_variable = { INS_nre_factory_output = 0.01 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 50
+
+
 			add_stability = -0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Local_Importers_First
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 19
+
+
 		y = 6
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Import_Licenses focus = INS_Squeeze_Alien_Capital }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Local_Importers_First"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_nre_factory_output = 0.01 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_offsite_building = { type = industrial_complex level = 1 }
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Nationalize_Industry
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 5.00
+
+
 		x = 19
+
+
 		y = 7
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_5_tt
+
+
 				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Local_Importers_First }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Nationalize_Industry"
+
+
 			add_to_variable = { var = capital_reserves value = -5 }
+
+
 			custom_effect_tooltip = INS_capital_cost_5_tt
+
+
 			country_event = { id = INS_event.6 days = 1 }
+
+
 			add_to_variable = { INS_nre_factory_output = 0.02 }
+
+
 			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_offsite_building = { type = industrial_complex level = 1 }
+
+
 			add_stability = -0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Sumitro_Plan
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 5.00
+
+
 		x = 16
+
+
 		y = 8
+
+
 		available = {
+
+
 			has_country_flag = INS_succession_yamin
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_5_tt
+
+
 				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Economic_Sovereignty_Movement }
+
+
 		prerequisite = { focus = INS_Nationalize_Industry }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Sumitro_Plan"
+
+
 			add_to_variable = { var = capital_reserves value = -5 }
+
+
 			custom_effect_tooltip = INS_capital_cost_5_tt
+
+
 			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 5 }
+
+
 			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
+
+
 			country_event = { id = INS_event.5 days = 1 }
+
+
 			if = {
+
+
 				limit = { has_idea = INS_five_year_plan_4 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_five_year_plan_3 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_five_year_plan_2 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_five_year_plan_1 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
+
+
 			}
+
+
 			else = {
+
+
 				add_ideas = INS_five_year_plan_1
+
+
 			}
+
+
 			custom_effect_tooltip = INS_fyp_upgrade_tt
+
+
 			add_political_power = 75
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Economic_Sovereignty_Movement
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 5.00
+
+
 		x = 22
+
+
 		y = 8
+
+
 		available = {
+
+
 			has_country_flag = INS_succession_sukarno
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_5_tt
+
+
 				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Sumitro_Plan }
+
+
 		prerequisite = { focus = INS_Nationalize_Industry }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Economic_Sovereignty_Movement"
+
+
 			add_to_variable = { var = capital_reserves value = -5 }
+
+
 			custom_effect_tooltip = INS_capital_cost_5_tt
+
+
 			if = {
+
+
 				limit = { has_idea = INS_econ_sovereignty_3 }
+
+
 				swap_ideas = { remove_idea = INS_econ_sovereignty_3 add_idea = INS_econ_sovereignty_4 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_econ_sovereignty_2 }
+
+
 				swap_ideas = { remove_idea = INS_econ_sovereignty_2 add_idea = INS_econ_sovereignty_3 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_econ_sovereignty_1 }
+
+
 				swap_ideas = { remove_idea = INS_econ_sovereignty_1 add_idea = INS_econ_sovereignty_2 }
+
+
 			}
+
+
 			else = {
+
+
 				add_ideas = INS_econ_sovereignty_1
+
+
 			}
+
+
 			custom_effect_tooltip = INS_econsov_upgrade_tt
+
+
 			add_war_support = 0.02
+
+
 			add_stability = -0.01
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Import_Substitution
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 15
+
+
 		y = 9
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Sumitro_Plan }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Import_Substitution"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			if = {
+
+
 				limit = { has_idea = INS_five_year_plan_4 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_five_year_plan_3 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_five_year_plan_2 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_five_year_plan_1 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
+
+
 			}
+
+
 			else = {
+
+
 				add_ideas = INS_five_year_plan_1
+
+
 			}
+
+
 			custom_effect_tooltip = INS_fyp_upgrade_tt
+
+
 			add_offsite_building = { type = industrial_complex level = 1 }
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Accelerate_Industrialization
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 17
+
+
 		y = 9
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Sumitro_Plan }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Accelerate_Industrialization"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
+
+
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+
+
 			if = {
+
+
 				limit = { has_idea = INS_five_year_plan_4 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_five_year_plan_3 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_five_year_plan_2 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_five_year_plan_1 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
+
+
 			}
+
+
 			else = {
+
+
 				add_ideas = INS_five_year_plan_1
+
+
 			}
+
+
 			custom_effect_tooltip = INS_fyp_upgrade_tt
+
+
 			add_offsite_building = { type = industrial_complex level = 1 }
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Organize_Five_Year_Plan
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 10.00
+
+
 		x = 16
+
+
 		y = 10
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_10_tt
+
+
 				check_variable = { var = capital_reserves value = 10 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Import_Substitution focus = INS_Accelerate_Industrialization }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Organize_Five_Year_Plan"
+
+
 			add_to_variable = { var = capital_reserves value = -10 }
+
+
 			custom_effect_tooltip = INS_capital_cost_10_tt
+
+
 			if = {
+
+
 				limit = { has_idea = INS_five_year_plan_4 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_4 add_idea = INS_five_year_plan_5 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_five_year_plan_3 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_3 add_idea = INS_five_year_plan_4 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_five_year_plan_2 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_2 add_idea = INS_five_year_plan_3 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_five_year_plan_1 }
+
+
 				swap_ideas = { remove_idea = INS_five_year_plan_1 add_idea = INS_five_year_plan_2 }
+
+
 			}
+
+
 			else = {
+
+
 				add_ideas = INS_five_year_plan_1
+
+
 			}
+
+
 			custom_effect_tooltip = INS_fyp_upgrade_tt
+
+
 			add_offsite_building = { type = industrial_complex level = 2 }
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Package_Confiscation
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 21
+
+
 		y = 9
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Economic_Sovereignty_Movement }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Package_Confiscation"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			if = {
+
+
 				limit = { has_idea = INS_econ_sovereignty_3 }
+
+
 				swap_ideas = { remove_idea = INS_econ_sovereignty_3 add_idea = INS_econ_sovereignty_4 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_econ_sovereignty_2 }
+
+
 				swap_ideas = { remove_idea = INS_econ_sovereignty_2 add_idea = INS_econ_sovereignty_3 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_econ_sovereignty_1 }
+
+
 				swap_ideas = { remove_idea = INS_econ_sovereignty_1 add_idea = INS_econ_sovereignty_2 }
+
+
 			}
+
+
 			else = {
+
+
 				add_ideas = INS_econ_sovereignty_1
+
+
 			}
+
+
 			custom_effect_tooltip = INS_econsov_upgrade_tt
+
+
 			add_offsite_building = { type = industrial_complex level = 1 }
+
+
 			add_stability = -0.02
+
+
 			add_war_support = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Strengthen_Takeover
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 23
+
+
 		y = 9
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Economic_Sovereignty_Movement }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Strengthen_Takeover"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			if = {
+
+
 				limit = { has_idea = INS_econ_sovereignty_3 }
+
+
 				swap_ideas = { remove_idea = INS_econ_sovereignty_3 add_idea = INS_econ_sovereignty_4 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_econ_sovereignty_2 }
+
+
 				swap_ideas = { remove_idea = INS_econ_sovereignty_2 add_idea = INS_econ_sovereignty_3 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_econ_sovereignty_1 }
+
+
 				swap_ideas = { remove_idea = INS_econ_sovereignty_1 add_idea = INS_econ_sovereignty_2 }
+
+
 			}
+
+
 			else = {
+
+
 				add_ideas = INS_econ_sovereignty_1
+
+
 			}
+
+
 			custom_effect_tooltip = INS_econsov_upgrade_tt
+
+
 			add_political_power = 50
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Manage_New_Enterprises
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 22
+
+
 		y = 10
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Package_Confiscation focus = INS_Strengthen_Takeover }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Manage_New_Enterprises"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			if = {
+
+
 				limit = { has_idea = INS_econ_sovereignty_3 }
+
+
 				swap_ideas = { remove_idea = INS_econ_sovereignty_3 add_idea = INS_econ_sovereignty_4 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_econ_sovereignty_2 }
+
+
 				swap_ideas = { remove_idea = INS_econ_sovereignty_2 add_idea = INS_econ_sovereignty_3 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_econ_sovereignty_1 }
+
+
 				swap_ideas = { remove_idea = INS_econ_sovereignty_1 add_idea = INS_econ_sovereignty_2 }
+
+
 			}
+
+
 			else = {
+
+
 				add_ideas = INS_econ_sovereignty_1
+
+
 			}
+
+
 			custom_effect_tooltip = INS_econsov_upgrade_tt
+
+
 			add_offsite_building = { type = industrial_complex level = 1 }
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Central_Banking_Law
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 5.00
+
+
 		x = 19
+
+
 		y = 9
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_5_tt
+
+
 				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Sumitro_Plan focus = INS_Economic_Sovereignty_Movement }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Central_Banking_Law"
+
+
 			add_to_variable = { var = capital_reserves value = -5 }
+
+
 			custom_effect_tooltip = INS_capital_cost_5_tt
+
+
 			add_to_variable = { INS_nre_factory_output = 0.02 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 100
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Recoup_Java_Bank
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 18
+
+
 		y = 10
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Central_Banking_Law }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Recoup_Java_Bank"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_nre_consumer_goods = -0.02 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 50
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Complete_Monetary_Sovereignty
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 20
+
+
 		y = 10
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Central_Banking_Law }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Complete_Monetary_Sovereignty"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_nre_factory_output = 0.02 }
+
+
 			add_to_variable = { INS_nre_consumer_goods = -0.01 }
+
+
 			custom_effect_tooltip = INS_nre_upgrade_tt
+
+
 			add_political_power = 50
+
+
 			add_stability = 0.02
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Army_Rationalization
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 26
+
+
 		y = 1
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_2_tt
+
+
 				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		unlock_decision_tooltip = INS_army_staff_purge
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Army_Rationalization"
+
+
 			add_to_variable = { var = capital_reserves value = -2 }
+
+
 			custom_effect_tooltip = INS_capital_cost_2_tt
+
+
 			add_to_variable = { INS_idf_research_speed = 0.05 }
+
+
 			custom_effect_tooltip = INS_idf_research_speed_tt
+
+
 			add_army_experience = 10
+
+
 			if = {
+
+
 				limit = { has_idea = INS_Tentara_Gado_Gado }
+
+
 				swap_ideas = { remove_idea = INS_Tentara_Gado_Gado add_idea = INS_Tentara_Gado_Gado_2 }
+
+
 			}
+
+
 			custom_effect_tooltip = INS_idf_upgrade_tt
+
+
 			army_experience = 10
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Demobilize_Militias
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 23
+
+
 		y = 2
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Keep_Guerrillas }
+
+
 		prerequisite = { focus = INS_Army_Rationalization }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Demobilize_Militias"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_idf_xp_gain = 0.05 }
+
+
 			custom_effect_tooltip = INS_idf_xp_gain_tt
+
+
 			add_army_experience = 10
+
+
 			add_political_power = 50
+
+
 			add_stability = 0.01
+
+
 			custom_effect_tooltip = INS_ft_demob_forces_tt
+
+
 			hidden_effect = {
+
+
 				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
+
+
 				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+
+
 				add_to_variable = { var = INS_army_guerrilla_str value = -15 }
+
+
 				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+
+
 				add_to_variable = { var = INS_army_gyugun_str value = -10 }
+
+
 				clamp_variable = { var = INS_army_gyugun_str max = 100 min = 0 }
+
+
 			}
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Keep_Guerrillas
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 25
+
+
 		y = 2
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Demobilize_Militias }
+
+
 		prerequisite = { focus = INS_Army_Rationalization }
+
+
 		unlock_decision_tooltip = INS_army_village_militia
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Keep_Guerrillas"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_idf_army_org = 0.025 }
+
+
 			custom_effect_tooltip = INS_idf_army_org_tt
+
+
 			add_army_experience = 10
+
+
 			add_manpower = 5000
+
+
 			add_war_support = 0.01
+
+
 			custom_effect_tooltip = INS_ft_keep_forces_tt
+
+
 			hidden_effect = {
+
+
 				add_to_variable = { var = INS_army_guerrilla_str value = 15 }
+
+
 				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+
+
 				add_to_variable = { var = INS_army_siliwangi_str value = -10 }
+
+
 				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+
+
 				add_to_variable = { var = INS_army_gyugun_str value = 5 }
+
+
 				clamp_variable = { var = INS_army_gyugun_str max = 100 min = 0 }
+
+
 			}
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Siliwangi_Model_Division
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 5.00
+
+
 		x = 24
+
+
 		y = 3
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_5_tt
+
+
 				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Demobilize_Militias focus = INS_Keep_Guerrillas }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Siliwangi_Model_Division"
+
+
 			add_to_variable = { var = capital_reserves value = -5 }
+
+
 			custom_effect_tooltip = INS_capital_cost_5_tt
+
+
 			add_to_variable = { INS_idf_army_attack = 0.02 }
+
+
 			custom_effect_tooltip = INS_idf_army_attack_tt
+
+
 			add_to_variable = { INS_idf_army_defence = 0.02 }
+
+
 			custom_effect_tooltip = INS_idf_army_defence_tt
+
+
 			add_army_experience = 10
+
+
 			army_experience = 10
+
+
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 2500 }
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Positional_Warfare
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 27
+
+
 		y = 2
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Army_Rationalization }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Positional_Warfare"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_idf_army_defence = 0.03 }
+
+
 			custom_effect_tooltip = INS_idf_army_defence_3_tt
+
+
 			add_army_experience = 10
+
+
 			army_experience = 15
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Total_Peoples_Defense
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 29
+
+
 		y = 2
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Army_Rationalization }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Total_Peoples_Defense"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_idf_doctrine_cost = -0.05 }
+
+
 			custom_effect_tooltip = INS_idf_doctrine_tt
+
+
 			add_army_experience = 10
+
+
 			add_war_support = 0.02
+
+
 			add_manpower = 2000
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Border_Guerrilla_Zones
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 28
+
+
 		y = 3
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Positional_Warfare }
+
+
 		prerequisite = { focus = INS_Total_Peoples_Defense }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Border_Guerrilla_Zones"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_idf_army_org = 0.025 }
+
+
 			custom_effect_tooltip = INS_idf_army_org_tt
+
+
 			add_army_experience = 10
+
+
 			add_war_support = 0.01
+
+
 			add_manpower = 2000
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Reorganize_Military_Districts
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 5.00
+
+
 		x = 26
+
+
 		y = 4
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_5_tt
+
+
 				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Siliwangi_Model_Division }
+
+
 		prerequisite = { focus = INS_Border_Guerrilla_Zones }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Reorganize_Military_Districts"
+
+
 			add_to_variable = { var = capital_reserves value = -5 }
+
+
 			custom_effect_tooltip = INS_capital_cost_5_tt
+
+
 			add_to_variable = { INS_idf_doctrine_cost = -0.05 }
+
+
 			custom_effect_tooltip = INS_idf_doctrine_tt
+
+
 			add_army_experience = 10
+
+
 			if = {
+
+
 				limit = { has_idea = INS_Tentara_Gado_Gado_2 }
+
+
 				swap_ideas = { remove_idea = INS_Tentara_Gado_Gado_2 add_idea = INS_Tentara_Gado_Gado_3 }
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_Tentara_Gado_Gado }
+
+
 				swap_ideas = { remove_idea = INS_Tentara_Gado_Gado add_idea = INS_Tentara_Gado_Gado_3 }
+
+
 			}
+
+
 			custom_effect_tooltip = INS_idf_upgrade_tt
+
+
 			add_political_power = 50
+
+
 			army_experience = 10
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Self_Funded_Army
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 24
+
+
 		y = 5
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Reorganize_Military_Districts }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Self_Funded_Army"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_idf_planning_speed = 0.05 }
+
+
 			custom_effect_tooltip = INS_idf_planning_tt
+
+
 			add_army_experience = 10
+
+
 			add_political_power = 100
+
+
 			add_stability = -0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Guardian_Political_Action
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 26
+
+
 		y = 5
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Reorganize_Military_Districts }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Guardian_Political_Action"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_idf_army_org = 0.025 }
+
+
 			custom_effect_tooltip = INS_idf_army_org_tt
+
+
 			add_army_experience = 10
+
+
 			add_political_power = 75
+
+
 			add_stability = 0.02
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Improve_Magelang_Academy
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 28
+
+
 		y = 5
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Reorganize_Military_Districts }
+
+
 		unlock_decision_tooltip = INS_army_magelang_course
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Improve_Magelang_Academy"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_idf_research_speed = 0.05 }
+
+
 			custom_effect_tooltip = INS_idf_research_speed_tt
+
+
 			add_to_variable = { INS_idf_xp_gain = 0.05 }
+
+
 			custom_effect_tooltip = INS_idf_xp_gain_tt
+
+
 			add_army_experience = 10
+
+
 			army_experience = 15
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Civilian_Transport_Licenses
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 23
+
+
 		y = 6
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_2_tt
+
+
 				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Self_Funded_Army }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Civilian_Transport_Licenses"
+
+
 			add_to_variable = { var = capital_reserves value = -2 }
+
+
 			custom_effect_tooltip = INS_capital_cost_2_tt
+
+
 			add_to_variable = { INS_idf_planning_speed = 0.05 }
+
+
 			custom_effect_tooltip = INS_idf_planning_tt
+
+
 			add_army_experience = 10
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Army_Plantations
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 25
+
+
 		y = 6
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Self_Funded_Army }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Army_Plantations"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			country_event = { id = INS_event.9 days = 1 }
+
+
 			add_to_variable = { INS_idf_max_planning = 0.05 }
+
+
 			custom_effect_tooltip = INS_idf_max_planning_tt
+
+
 			add_army_experience = 10
+
+
 			add_political_power = 50
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Military_Import_Permits
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 24
+
+
 		y = 7
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_2_tt
+
+
 				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Self_Funded_Army }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Military_Import_Permits"
+
+
 			add_to_variable = { var = capital_reserves value = -2 }
+
+
 			custom_effect_tooltip = INS_capital_cost_2_tt
+
+
 			add_to_variable = { INS_idf_army_attack = 0.02 }
+
+
 			custom_effect_tooltip = INS_idf_army_attack_tt
+
+
 			add_army_experience = 10
+
+
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 }
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Unity_Training
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 27
+
+
 		y = 6
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_4_tt
+
+
 				check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Improve_Magelang_Academy }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Unity_Training"
+
+
 			add_to_variable = { var = capital_reserves value = -4 }
+
+
 			custom_effect_tooltip = INS_capital_cost_4_tt
+
+
 			add_to_variable = { INS_idf_army_attack = 0.02 }
+
+
 			custom_effect_tooltip = INS_idf_army_attack_tt
+
+
 			add_to_variable = { INS_idf_army_defence = 0.02 }
+
+
 			custom_effect_tooltip = INS_idf_army_defence_tt
+
+
 			add_army_experience = 10
+
+
 			army_experience = 10
+
+
 			add_war_support = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Officer_Nationalism
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 29
+
+
 		y = 6
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_2_tt
+
+
 				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Improve_Magelang_Academy }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Officer_Nationalism"
+
+
 			add_to_variable = { var = capital_reserves value = -2 }
+
+
 			custom_effect_tooltip = INS_capital_cost_2_tt
+
+
 			add_to_variable = { INS_idf_army_org = 0.025 }
+
+
 			custom_effect_tooltip = INS_idf_army_org_tt
+
+
 			add_to_variable = { INS_idf_planning_speed = 0.05 }
+
+
 			custom_effect_tooltip = INS_idf_planning_tt
+
+
 			add_army_experience = 10
+
+
 			add_war_support = 0.02
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_National_Defense_University
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 10.00
+
+
 		x = 28
+
+
 		y = 7
+
+
 		available = {
+
+
 			NOT = { has_country_flag = INS_crisis_ongoing }
+
+
 					custom_trigger_tooltip = {
+
+
 				tooltip = INS_capital_check_10_tt
+
+
 				check_variable = { var = capital_reserves value = 10 compare = greater_than_or_equals }
+
+
 			}
+
+
 		}
+
+
 		prerequisite = { focus = INS_Improve_Magelang_Academy }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_National_Defense_University"
+
+
 			add_to_variable = { var = capital_reserves value = -10 }
+
+
 			custom_effect_tooltip = INS_capital_cost_10_tt
+
+
 			add_to_variable = { INS_idf_research_speed = 0.10 }
+
+
 			custom_effect_tooltip = INS_idf_research_speed_10_tt
+
+
 			add_army_experience = 25
+
+
 			if = {
+
+
 				limit = { has_idea = INS_Tentara_Gado_Gado_3 }
+
+
 				remove_ideas = INS_Tentara_Gado_Gado_3
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_Tentara_Gado_Gado_2 }
+
+
 				remove_ideas = INS_Tentara_Gado_Gado_2
+
+
 			}
+
+
 			else_if = {
+
+
 				limit = { has_idea = INS_Tentara_Gado_Gado }
+
+
 				remove_ideas = INS_Tentara_Gado_Gado
+
+
 			}
+
+
 			add_research_slot = 1
+
+
 			army_experience = 25
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Constitutional_Challenge
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 6
+
+
 		y = 1
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_constitutional
+
+
 		}
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Constitutional_Challenge"
+
+
 			add_political_power = 25
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Mobilize_Council_Elders
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 5
+
+
 		y = 2
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_constitutional
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Sartono_Endorsement }
+
+
 		prerequisite = { focus = INS_Constitutional_Challenge }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Mobilize_Council_Elders"
+
+
 			country_event = { id = INS_crisis.4 days = 1 }
+
+
 			custom_effect_tooltip = INS_ft_elders_tt
+
+
 			hidden_effect = {
-				add_to_variable = { var = INS_marhaen_str value = 10 }
+
+
+				add_to_variable = { var = INS_marhaen_str value = -10 }
+
+
 				clamp_variable = { var = INS_marhaen_str max = 100 min = 0 }
+
+
 				INS_calc_scores_effect = yes
+
+
 			}
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Sartono_Endorsement
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 3
+
+
 		y = 2
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_constitutional
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Mobilize_Council_Elders }
+
+
 		prerequisite = { focus = INS_Constitutional_Challenge }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Sartono_Endorsement"
+
+
 			country_event = { id = INS_crisis.5 days = 1 }
+
+
 			custom_effect_tooltip = INS_ft_sartono_endorse_tt
+
+
 			hidden_effect = {
+
+
 				add_to_variable = { var = INS_sartono_str value = 10 }
+
+
 				clamp_variable = { var = INS_sartono_str max = 100 min = 0 }
+
+
 				add_to_variable = { var = INS_sartono_var value = 10 }
+
+
 				clamp_variable = { var = INS_sartono_var max = 100 min = 0 }
+
+
 				INS_calc_scores_effect = yes
+
+
 			}
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Prioritize_Socialists
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 7
+
+
 		y = 2
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_constitutional
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Prioritize_Masyumi }
+
+
 		prerequisite = { focus = INS_Constitutional_Challenge }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Prioritize_Socialists"
+
+
 			country_event = { id = INS_crisis.6 days = 1 }
+
+
 			custom_effect_tooltip = INS_ft_socialists_tt
+
+
 			hidden_effect = {
-				add_to_variable = { var = INS_marhaen_str value = 10 }
+
+
+				add_to_variable = { var = INS_marhaen_str value = -10 }
+
+
 				clamp_variable = { var = INS_marhaen_str max = 100 min = 0 }
+
+
 				INS_calc_scores_effect = yes
+
+
 			}
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Prioritize_Masyumi
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 9
+
+
 		y = 2
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_constitutional
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Prioritize_Socialists }
+
+
 		prerequisite = { focus = INS_Constitutional_Challenge }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Prioritize_Masyumi"
+
+
 			country_event = { id = INS_crisis.7 days = 1 }
+
+
 			custom_effect_tooltip = INS_ft_masyumi_tt
+
+
 			hidden_effect = {
+
+
 				add_to_variable = { var = INS_hokokai_str value = 10 }
+
+
 				clamp_variable = { var = INS_hokokai_str max = 100 min = 0 }
+
+
 				INS_calc_scores_effect = yes
+
+
 			}
+
+
 			add_stability = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Petition_Founding_Father
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 6
+
+
 		y = 3
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_constitutional
+
+
 		}
+
+
 		prerequisite = { focus = INS_Mobilize_Council_Elders focus = INS_Sartono_Endorsement }
+
+
 		prerequisite = { focus = INS_Prioritize_Socialists focus = INS_Prioritize_Masyumi }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Petition_Founding_Father"
+
+
 			add_stability = 0.03
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Suppress_Hatta
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 5
+
+
 		y = 4
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_constitutional
+
+
 		}
+
+
 		prerequisite = { focus = INS_Petition_Founding_Father }
+
+
 		unlock_decision_tooltip = INS_hunt_hatta
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Suppress_Hatta"
+
+
 			add_political_power = 75
+
+
 			clr_country_flag = INS_crisis_constitutional
+
+
 			if = {
+
+
 				limit = {
+
+
 					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
+
+
 					NOT = { has_country_flag = INS_soetomo_dying }
+
+
 				}
+
+
 				clr_country_flag = INS_crisis_ongoing
+
+
 			}
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Purge_Federalists
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 7
+
+
 		y = 4
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_constitutional
+
+
 		}
+
+
 		prerequisite = { focus = INS_Petition_Founding_Father }
+
+
 		unlock_decision_tooltip = INS_federalist_purge
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Purge_Federalists"
+
+
 			add_political_power = 75
+
+
 			clr_country_flag = INS_crisis_constitutional
+
+
 			if = {
+
+
 				limit = {
+
+
 					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
+
+
 					NOT = { has_country_flag = INS_soetomo_dying }
+
+
 				}
+
+
 				clr_country_flag = INS_crisis_ongoing
+
+
 			}
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Kartosuwirjo_Rebellion
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 10
+
+
 		y = 5
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_kartosuwirjo
+
+
 		}
+
+
 		unlock_decision_tooltip = INS_hunt_darul_islam
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Kartosuwirjo_Rebellion"
+
+
 			add_war_support = 0.01
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Deploy_Siliwangi
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 9
+
+
 		y = 6
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_kartosuwirjo
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Dispatch_Sudirman }
+
+
 		prerequisite = { focus = INS_Kartosuwirjo_Rebellion }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Deploy_Siliwangi"
+
+
 			country_event = { id = INS_crisis.8 days = 1 }
+
+
 			custom_effect_tooltip = INS_ft_deploy_siliwangi_tt
+
+
 			hidden_effect = {
+
+
 				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
+
+
 				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+
+
 				add_to_variable = { var = INS_army_guerrilla_str value = -5 }
+
+
 				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+
+
 			}
+
+
 			army_experience = 10
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Dispatch_Sudirman
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 11
+
+
 		y = 6
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_kartosuwirjo
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Deploy_Siliwangi }
+
+
 		prerequisite = { focus = INS_Kartosuwirjo_Rebellion }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Dispatch_Sudirman"
+
+
 			country_event = { id = INS_crisis.9 days = 1 }
+
+
 			custom_effect_tooltip = INS_ft_sudirman_tt
+
+
 			hidden_effect = {
+
+
 				add_to_variable = { var = INS_army_guerrilla_str value = 10 }
+
+
 				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+
+
 				add_to_variable = { var = INS_army_siliwangi_str value = -5 }
+
+
 				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+
+
 			}
+
+
 			army_experience = 10
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Contain_West_Java
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 10
+
+
 		y = 7
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_kartosuwirjo
+
+
 		}
+
+
 		prerequisite = { focus = INS_Deploy_Siliwangi focus = INS_Dispatch_Sudirman }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Contain_West_Java"
+
+
 			add_stability = 0.02
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Suppress_Parliamentary_Islam
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 9
+
+
 		y = 8
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_kartosuwirjo
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Amnesty_Peripheral_Fighters }
+
+
 		prerequisite = { focus = INS_Contain_West_Java }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Suppress_Parliamentary_Islam"
+
+
 			country_event = { id = INS_crisis.10 days = 1 }
+
+
 			custom_effect_tooltip = INS_ft_suppress_islam_tt
+
+
 			hidden_effect = {
-				add_to_variable = { var = INS_sarekat_str value = -10 }
+
+
+				add_to_variable = { var = INS_sarekat_str value = 10 }
+
+
 				clamp_variable = { var = INS_sarekat_str max = 100 min = 0 }
+
+
 				add_to_variable = { var = INS_army_siliwangi_str value = 5 }
+
+
 				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+
+
 				INS_calc_scores_effect = yes
+
+
 			}
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Amnesty_Peripheral_Fighters
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 4.00
+
+
 		x = 11
+
+
 		y = 8
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_kartosuwirjo
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Suppress_Parliamentary_Islam }
+
+
 		prerequisite = { focus = INS_Contain_West_Java }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Amnesty_Peripheral_Fighters"
+
+
 			country_event = { id = INS_crisis.11 days = 1 }
+
+
 			custom_effect_tooltip = INS_ft_amnesty_tt
+
+
 			hidden_effect = {
+
+
 				add_to_variable = { var = INS_army_guerrilla_str value = 10 }
+
+
 				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
-				add_to_variable = { var = INS_sarekat_str value = 5 }
+
+
+				add_to_variable = { var = INS_sarekat_str value = -5 }
+
+
 				clamp_variable = { var = INS_sarekat_str max = 100 min = 0 }
+
+
 				INS_calc_scores_effect = yes
+
+
 			}
+
+
 			add_manpower = 2500
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_End_Darul_Islam
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 5.00
+
+
 		x = 10
+
+
 		y = 9
+
+
 		available = {
+
+
 			has_country_flag = INS_crisis_kartosuwirjo
+
+
 		}
+
+
 		prerequisite = { focus = INS_Suppress_Parliamentary_Islam focus = INS_Amnesty_Peripheral_Fighters }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_End_Darul_Islam"
+
+
 			add_stability = 0.05
+
+
 			add_war_support = 0.02
+
+
 			clr_country_flag = INS_crisis_kartosuwirjo
+
+
 			set_country_flag = INS_di_defeated
+
+
 			if = {
+
+
 				limit = {
+
+
 					NOT = { has_country_flag = INS_crisis_constitutional }
+
+
 					NOT = { has_country_flag = INS_soetomo_dying }
+
+
 				}
+
+
 				clr_country_flag = INS_crisis_ongoing
+
+
 			}
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Fathers_Deathbed
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 6
+
+
 		y = 5
+
+
 		available = {
+
+
 			has_country_flag = INS_soetomo_dying
+
+
 		}
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Fathers_Deathbed"
+
+
 			add_political_power = 25
+
+
 		}
+
+
 	}
 
+
+
+
+
 	focus = {
+
+
 		id = INS_Denounce_Sjahrir
+
+
 		icon = GFX_goal_unknown
+
+
 		cost = 2.00
+
+
 		x = 5
+
+
 		y = 6
+
+
 		available = {
+
+
 			has_country_flag = INS_soetomo_dying
+
+
 		}
+
+
 		mutually_exclusive = { focus = INS_Sjahrir_Guardian }
+
+
 		prerequisite = { focus = INS_Fathers_Deathbed }
+
+
 		completion_reward = {
+
+
 			log = "[GetLogRoot]: Focus Completed INS_Denounce_Sjahrir"
+
+
 			country_event = { id = INS_crisis.12 days = 1 }
+
+
 			custom_effect_tooltip = INS_ft_denounce_sjahrir_tt
+
+
 			hidden_effect = {
-				add_to_variable = { var = INS_murba_str value = 10 }
-				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
-				add_to_variable = { var = INS_goni_str value = -5 }
-				clamp_variable = { var = INS_goni_str max = 100 min = 0 }
-				INS_calc_scores_effect = yes
-			}
-			add_political_power = 50
-		}
-	}
 
-	focus = {
-		id = INS_Sjahrir_Guardian
-		icon = GFX_goal_unknown
-		cost = 2.00
-		x = 7
-		y = 6
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		mutually_exclusive = { focus = INS_Denounce_Sjahrir }
-		prerequisite = { focus = INS_Fathers_Deathbed }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Sjahrir_Guardian"
-			country_event = { id = INS_crisis.13 days = 1 }
-			custom_effect_tooltip = INS_ft_sjahrir_guard_tt
-			hidden_effect = {
-				add_to_variable = { var = INS_goni_str value = 10 }
-				clamp_variable = { var = INS_goni_str max = 100 min = 0 }
-				add_to_variable = { var = INS_murba_str value = -5 }
-				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
-				INS_calc_scores_effect = yes
-			}
-			add_political_power = 50
-		}
-	}
 
-	focus = {
-		id = INS_Unite_the_Party
-		icon = GFX_goal_unknown
-		cost = 4.00
-		x = 6
-		y = 7
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		prerequisite = { focus = INS_Denounce_Sjahrir focus = INS_Sjahrir_Guardian }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Unite_the_Party"
-			add_stability = 0.02
-		}
-	}
-
-	focus = {
-		id = INS_Stabilize_Frontier_Garrisons
-		icon = GFX_goal_unknown
-		cost = 2.00
-		x = 5
-		y = 8
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		mutually_exclusive = { focus = INS_Preventive_Deterrence }
-		prerequisite = { focus = INS_Unite_the_Party }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Stabilize_Frontier_Garrisons"
-			country_event = { id = INS_crisis.14 days = 1 }
-			custom_effect_tooltip = INS_ft_frontier_tt
-			hidden_effect = {
-				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
-				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
-			}
-			add_stability = 0.01
-		}
-	}
-
-	focus = {
-		id = INS_Preventive_Deterrence
-		icon = GFX_goal_unknown
-		cost = 2.00
-		x = 7
-		y = 8
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		mutually_exclusive = { focus = INS_Stabilize_Frontier_Garrisons }
-		prerequisite = { focus = INS_Unite_the_Party }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Preventive_Deterrence"
-			country_event = { id = INS_crisis.15 days = 1 }
-			custom_effect_tooltip = INS_ft_deterrence_tt
-			hidden_effect = {
-				add_to_variable = { var = INS_army_guerrilla_str value = 10 }
-				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
-			}
-			add_war_support = 0.01
-		}
-	}
-
-	focus = {
-		id = INS_May_Tragedy
-		icon = GFX_goal_unknown
-		cost = 5.00
-		x = 6
-		y = 9
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		prerequisite = { focus = INS_Stabilize_Frontier_Garrisons focus = INS_Preventive_Deterrence }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_May_Tragedy"
-			add_war_support = 0.02
-			add_stability = -0.02
-		}
-	}
-
-	focus = {
-		id = INS_Panchasila_Copyright
-		icon = GFX_goal_unknown
-		cost = 2.00
-		x = 2
-		y = 10
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		prerequisite = { focus = INS_May_Tragedy }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Panchasila_Copyright"
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = INS_Show_the_Vision
-		icon = GFX_goal_unknown
-		cost = 2.00
-		x = 6
-		y = 10
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		prerequisite = { focus = INS_May_Tragedy }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Show_the_Vision"
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = INS_Consolidate_Army_Ties
-		icon = GFX_goal_unknown
-		cost = 2.00
-		x = 10
-		y = 10
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		prerequisite = { focus = INS_May_Tragedy }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Consolidate_Army_Ties"
-			army_experience = 10
-		}
-	}
-
-	focus = {
-		id = INS_Deny_Forgery
-		icon = GFX_goal_unknown
-		cost = 2.00
-		x = 1
-		y = 11
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		mutually_exclusive = { focus = INS_Internal_Council_Vote }
-		prerequisite = { focus = INS_Panchasila_Copyright }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Deny_Forgery"
-			country_event = { id = INS_crisis.16 days = 1 }
-			custom_effect_tooltip = INS_ft_deny_forgery_tt
-			hidden_effect = {
-				add_to_variable = { var = INS_murba_str value = 10 }
-				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
-				INS_calc_scores_effect = yes
-			}
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = INS_Internal_Council_Vote
-		icon = GFX_goal_unknown
-		cost = 2.00
-		x = 3
-		y = 11
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		mutually_exclusive = { focus = INS_Deny_Forgery }
-		prerequisite = { focus = INS_Panchasila_Copyright }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Internal_Council_Vote"
-			country_event = { id = INS_crisis.17 days = 1 }
-			custom_effect_tooltip = INS_ft_council_vote_tt
-			hidden_effect = {
-				add_to_variable = { var = INS_goni_str value = 10 }
-				clamp_variable = { var = INS_goni_str max = 100 min = 0 }
-				add_to_variable = { var = INS_murba_str value = -5 }
-				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
-				INS_calc_scores_effect = yes
-			}
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = INS_Second_Panchasila_Speech
-		icon = GFX_goal_unknown
-		cost = 4.00
-		x = 2
-		y = 12
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		prerequisite = { focus = INS_Deny_Forgery focus = INS_Internal_Council_Vote }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Second_Panchasila_Speech"
-			add_political_power = 75
-		}
-	}
-
-	focus = {
-		id = INS_Great_Indonesia_Territory
-		icon = GFX_goal_unknown
-		cost = 2.00
-		x = 5
-		y = 11
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		mutually_exclusive = { focus = INS_Urgency_of_Unity }
-		prerequisite = { focus = INS_Show_the_Vision }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Great_Indonesia_Territory"
-			country_event = { id = INS_crisis.18 days = 1 }
-			custom_effect_tooltip = INS_ft_greater_indo_tt
-			hidden_effect = {
-				add_to_variable = { var = INS_murba_str value = 10 }
-				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
-				add_to_variable = { var = INS_army_guerrilla_str value = 5 }
-				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
-				INS_calc_scores_effect = yes
-			}
-			add_war_support = 0.02
-		}
-	}
-
-	focus = {
-		id = INS_Urgency_of_Unity
-		icon = GFX_goal_unknown
-		cost = 2.00
-		x = 7
-		y = 11
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		mutually_exclusive = { focus = INS_Great_Indonesia_Territory }
-		prerequisite = { focus = INS_Show_the_Vision }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Urgency_of_Unity"
-			country_event = { id = INS_crisis.19 days = 1 }
-			custom_effect_tooltip = INS_ft_unity_tt
-			hidden_effect = {
-				add_to_variable = { var = INS_marhaen_str value = 10 }
-				clamp_variable = { var = INS_marhaen_str max = 100 min = 0 }
-				INS_calc_scores_effect = yes
-			}
-			add_stability = 0.02
-		}
-	}
-
-	focus = {
-		id = INS_Interpret_Sumpah_Palapa
-		icon = GFX_goal_unknown
-		cost = 4.00
-		x = 6
-		y = 12
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		prerequisite = { focus = INS_Great_Indonesia_Territory focus = INS_Urgency_of_Unity }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Interpret_Sumpah_Palapa"
-			add_political_power = 75
-		}
-	}
-
-	focus = {
-		id = INS_Nasution_Guards_Capital
-		icon = GFX_goal_unknown
-		cost = 2.00
-		x = 9
-		y = 11
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		mutually_exclusive = { focus = INS_Mobilize_Guerrillas_into_City }
-		prerequisite = { focus = INS_Consolidate_Army_Ties }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Nasution_Guards_Capital"
-			country_event = { id = INS_crisis.20 days = 1 }
-			custom_effect_tooltip = INS_ft_nasution_tt
-			hidden_effect = {
-				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
-				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
-			}
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = INS_Mobilize_Guerrillas_into_City
-		icon = GFX_goal_unknown
-		cost = 2.00
-		x = 11
-		y = 11
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		mutually_exclusive = { focus = INS_Nasution_Guards_Capital }
-		prerequisite = { focus = INS_Consolidate_Army_Ties }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Mobilize_Guerrillas_into_City"
-			country_event = { id = INS_crisis.21 days = 1 }
-			custom_effect_tooltip = INS_ft_guerrilla_city_tt
-			hidden_effect = {
-				add_to_variable = { var = INS_army_guerrilla_str value = 10 }
-				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
-			}
-			add_war_support = 0.01
-		}
-	}
-
-	focus = {
-		id = INS_Secure_Army_Cooperation
-		icon = GFX_goal_unknown
-		cost = 4.00
-		x = 10
-		y = 12
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		prerequisite = { focus = INS_Nasution_Guards_Capital focus = INS_Mobilize_Guerrillas_into_City }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Secure_Army_Cooperation"
-			army_experience = 10
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = INS_Dust_Settles
-		icon = GFX_goal_unknown
-		cost = 5.00
-		x = 6
-		y = 13
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		prerequisite = { focus = INS_Second_Panchasila_Speech }
-		prerequisite = { focus = INS_Interpret_Sumpah_Palapa }
-		prerequisite = { focus = INS_Secure_Army_Cooperation }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Dust_Settles"
-			add_stability = 0.05
-			add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = INS_Propaganda_Master
-		icon = GFX_goal_unknown
-		cost = 5.00
-		x = 4
-		y = 14
-		available = {
-			has_country_flag = INS_soetomo_dying
-		}
-		mutually_exclusive = { focus = INS_Army_Seals_Parliament }
-		mutually_exclusive = { focus = INS_Peoples_Bannerman }
-		prerequisite = { focus = INS_Dust_Settles }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Propaganda_Master"
-			INS_succession_verdict_effect = yes
-			custom_effect_tooltip = INS_ft_propaganda_tt
-			hidden_effect = {
-				add_to_variable = { var = INS_goni_str value = 15 }
-				clamp_variable = { var = INS_goni_str max = 100 min = 0 }
 				add_to_variable = { var = INS_murba_str value = -10 }
+
+
 				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
+
+
+				add_to_variable = { var = INS_goni_str value = 5 }
+
+
+				clamp_variable = { var = INS_goni_str max = 100 min = 0 }
+
+
 				INS_calc_scores_effect = yes
+
+
 			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = INS_crisis_constitutional }
-					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
-				}
-				clr_country_flag = INS_crisis_ongoing
-			}
+
+
 			add_political_power = 50
+
+
 		}
+
+
 	}
 
-	focus = {
-		id = INS_Army_Seals_Parliament
-		icon = GFX_goal_unknown
-		cost = 5.00
-		x = 6
-		y = 14
-		visible = {
-			has_country_flag = INS_coup_unlocked
-		}
-		available = {
-			has_country_flag = INS_coup_unlocked
-		}
-		mutually_exclusive = { focus = INS_Propaganda_Master }
-		mutually_exclusive = { focus = INS_Peoples_Bannerman }
-		prerequisite = { focus = INS_Dust_Settles }
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Army_Seals_Parliament"
-			country_event = { id = INS_crisis.23 days = 1 }
-			custom_effect_tooltip = INS_ft_army_seals_tt
-			hidden_effect = {
-				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
-				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
-				add_to_variable = { var = INS_army_guerrilla_str value = 5 }
-				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
-			}
-			set_country_flag = INS_succession_army
-			news_event = { id = INS_news_event.4 hours = 6 }
-			country_event = { id = INS_crisis.26 days = 60 }
-			army_experience = 10
-			clr_country_flag = INS_soetomo_dying
-			if = {
-				limit = {
-					NOT = { has_country_flag = INS_crisis_constitutional }
-					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
-				}
-				clr_country_flag = INS_crisis_ongoing
-			}
-		}
-	}
+
+
+
 
 	focus = {
-		id = INS_Peoples_Bannerman
+
+
+		id = INS_Sjahrir_Guardian
+
+
 		icon = GFX_goal_unknown
-		cost = 5.00
-		x = 8
-		y = 14
+
+
+		cost = 2.00
+
+
+		x = 7
+
+
+		y = 6
+
+
 		available = {
+
+
 			has_country_flag = INS_soetomo_dying
+
+
 		}
-		mutually_exclusive = { focus = INS_Propaganda_Master }
-		mutually_exclusive = { focus = INS_Army_Seals_Parliament }
-		prerequisite = { focus = INS_Dust_Settles }
+
+
+		mutually_exclusive = { focus = INS_Denounce_Sjahrir }
+
+
+		prerequisite = { focus = INS_Fathers_Deathbed }
+
+
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed INS_Peoples_Bannerman"
-			INS_succession_verdict_effect = yes
-			custom_effect_tooltip = INS_ft_bannerman_tt
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Sjahrir_Guardian"
+
+
+			country_event = { id = INS_crisis.13 days = 1 }
+
+
+			custom_effect_tooltip = INS_ft_sjahrir_guard_tt
+
+
 			hidden_effect = {
-				add_to_variable = { var = INS_marhaen_str value = 15 }
-				clamp_variable = { var = INS_marhaen_str max = 100 min = 0 }
-				add_to_variable = { var = INS_murba_str value = 10 }
+
+
+				add_to_variable = { var = INS_goni_str value = 10 }
+
+
+				clamp_variable = { var = INS_goni_str max = 100 min = 0 }
+
+
+				add_to_variable = { var = INS_murba_str value = -5 }
+
+
 				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
+
+
 				INS_calc_scores_effect = yes
+
+
 			}
-			add_war_support = 0.02
-			if = {
-				limit = {
-					NOT = { has_country_flag = INS_crisis_constitutional }
-					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
-				}
-				clr_country_flag = INS_crisis_ongoing
-			}
+
+
+			add_political_power = 50
+
+
 		}
+
+
 	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Unite_the_Party
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 4.00
+
+
+		x = 6
+
+
+		y = 7
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		prerequisite = { focus = INS_Denounce_Sjahrir focus = INS_Sjahrir_Guardian }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Unite_the_Party"
+
+
+			add_stability = 0.02
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Stabilize_Frontier_Garrisons
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 2.00
+
+
+		x = 5
+
+
+		y = 8
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		mutually_exclusive = { focus = INS_Preventive_Deterrence }
+
+
+		prerequisite = { focus = INS_Unite_the_Party }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Stabilize_Frontier_Garrisons"
+
+
+			country_event = { id = INS_crisis.14 days = 1 }
+
+
+			custom_effect_tooltip = INS_ft_frontier_tt
+
+
+			hidden_effect = {
+
+
+				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
+
+
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+
+
+			}
+
+
+			add_stability = 0.01
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Preventive_Deterrence
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 2.00
+
+
+		x = 7
+
+
+		y = 8
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		mutually_exclusive = { focus = INS_Stabilize_Frontier_Garrisons }
+
+
+		prerequisite = { focus = INS_Unite_the_Party }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Preventive_Deterrence"
+
+
+			country_event = { id = INS_crisis.15 days = 1 }
+
+
+			custom_effect_tooltip = INS_ft_deterrence_tt
+
+
+			hidden_effect = {
+
+
+				add_to_variable = { var = INS_army_guerrilla_str value = 10 }
+
+
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+
+
+			}
+
+
+			add_war_support = 0.01
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_May_Tragedy
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 5.00
+
+
+		x = 6
+
+
+		y = 9
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		prerequisite = { focus = INS_Stabilize_Frontier_Garrisons focus = INS_Preventive_Deterrence }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_May_Tragedy"
+
+
+			country_event = { id = INS_event.10 days = 1 }
+
+
+			add_war_support = 0.02
+
+
+			add_stability = -0.02
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Panchasila_Copyright
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 2.00
+
+
+		x = 2
+
+
+		y = 10
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		prerequisite = { focus = INS_May_Tragedy }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Panchasila_Copyright"
+
+
+			add_political_power = 50
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Show_the_Vision
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 2.00
+
+
+		x = 6
+
+
+		y = 10
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		prerequisite = { focus = INS_May_Tragedy }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Show_the_Vision"
+
+
+			add_political_power = 50
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Consolidate_Army_Ties
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 2.00
+
+
+		x = 10
+
+
+		y = 10
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		prerequisite = { focus = INS_May_Tragedy }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Consolidate_Army_Ties"
+
+
+			army_experience = 10
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Deny_Forgery
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 2.00
+
+
+		x = 1
+
+
+		y = 11
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		mutually_exclusive = { focus = INS_Internal_Council_Vote }
+
+
+		prerequisite = { focus = INS_Panchasila_Copyright }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Deny_Forgery"
+
+
+			country_event = { id = INS_crisis.16 days = 1 }
+
+
+			custom_effect_tooltip = INS_ft_deny_forgery_tt
+
+
+			hidden_effect = {
+
+
+				add_to_variable = { var = INS_murba_str value = -10 }
+
+
+				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
+
+
+				INS_calc_scores_effect = yes
+
+
+			}
+
+
+			add_political_power = 50
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Internal_Council_Vote
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 2.00
+
+
+		x = 3
+
+
+		y = 11
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		mutually_exclusive = { focus = INS_Deny_Forgery }
+
+
+		prerequisite = { focus = INS_Panchasila_Copyright }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Internal_Council_Vote"
+
+
+			country_event = { id = INS_crisis.17 days = 1 }
+
+
+			custom_effect_tooltip = INS_ft_council_vote_tt
+
+
+			hidden_effect = {
+
+
+				add_to_variable = { var = INS_goni_str value = 10 }
+
+
+				clamp_variable = { var = INS_goni_str max = 100 min = 0 }
+
+
+				add_to_variable = { var = INS_murba_str value = -5 }
+
+
+				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
+
+
+				INS_calc_scores_effect = yes
+
+
+			}
+
+
+			add_political_power = 50
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Second_Panchasila_Speech
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 4.00
+
+
+		x = 2
+
+
+		y = 12
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		prerequisite = { focus = INS_Deny_Forgery focus = INS_Internal_Council_Vote }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Second_Panchasila_Speech"
+
+
+			add_political_power = 75
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Great_Indonesia_Territory
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 2.00
+
+
+		x = 5
+
+
+		y = 11
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		mutually_exclusive = { focus = INS_Urgency_of_Unity }
+
+
+		prerequisite = { focus = INS_Show_the_Vision }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Great_Indonesia_Territory"
+
+
+			country_event = { id = INS_crisis.18 days = 1 }
+
+
+			custom_effect_tooltip = INS_ft_greater_indo_tt
+
+
+			hidden_effect = {
+
+
+				add_to_variable = { var = INS_murba_str value = -10 }
+
+
+				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
+
+
+				add_to_variable = { var = INS_army_guerrilla_str value = 5 }
+
+
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+
+
+				INS_calc_scores_effect = yes
+
+
+			}
+
+
+			add_war_support = 0.02
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Urgency_of_Unity
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 2.00
+
+
+		x = 7
+
+
+		y = 11
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		mutually_exclusive = { focus = INS_Great_Indonesia_Territory }
+
+
+		prerequisite = { focus = INS_Show_the_Vision }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Urgency_of_Unity"
+
+
+			country_event = { id = INS_crisis.19 days = 1 }
+
+
+			custom_effect_tooltip = INS_ft_unity_tt
+
+
+			hidden_effect = {
+
+
+				add_to_variable = { var = INS_marhaen_str value = -10 }
+
+
+				clamp_variable = { var = INS_marhaen_str max = 100 min = 0 }
+
+
+				INS_calc_scores_effect = yes
+
+
+			}
+
+
+			add_stability = 0.02
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Interpret_Sumpah_Palapa
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 4.00
+
+
+		x = 6
+
+
+		y = 12
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		prerequisite = { focus = INS_Great_Indonesia_Territory focus = INS_Urgency_of_Unity }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Interpret_Sumpah_Palapa"
+
+
+			add_political_power = 75
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Nasution_Guards_Capital
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 2.00
+
+
+		x = 9
+
+
+		y = 11
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		mutually_exclusive = { focus = INS_Mobilize_Guerrillas_into_City }
+
+
+		prerequisite = { focus = INS_Consolidate_Army_Ties }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Nasution_Guards_Capital"
+
+
+			country_event = { id = INS_crisis.20 days = 1 }
+
+
+			custom_effect_tooltip = INS_ft_nasution_tt
+
+
+			hidden_effect = {
+
+
+				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
+
+
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+
+
+			}
+
+
+			add_political_power = 50
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Mobilize_Guerrillas_into_City
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 2.00
+
+
+		x = 11
+
+
+		y = 11
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		mutually_exclusive = { focus = INS_Nasution_Guards_Capital }
+
+
+		prerequisite = { focus = INS_Consolidate_Army_Ties }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Mobilize_Guerrillas_into_City"
+
+
+			country_event = { id = INS_crisis.21 days = 1 }
+
+
+			custom_effect_tooltip = INS_ft_guerrilla_city_tt
+
+
+			hidden_effect = {
+
+
+				add_to_variable = { var = INS_army_guerrilla_str value = 10 }
+
+
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+
+
+			}
+
+
+			add_war_support = 0.01
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Secure_Army_Cooperation
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 4.00
+
+
+		x = 10
+
+
+		y = 12
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		prerequisite = { focus = INS_Nasution_Guards_Capital focus = INS_Mobilize_Guerrillas_into_City }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Secure_Army_Cooperation"
+
+
+			army_experience = 10
+
+
+			add_political_power = 50
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Dust_Settles
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 5.00
+
+
+		x = 6
+
+
+		y = 13
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		prerequisite = { focus = INS_Second_Panchasila_Speech }
+
+
+		prerequisite = { focus = INS_Interpret_Sumpah_Palapa }
+
+
+		prerequisite = { focus = INS_Secure_Army_Cooperation }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Dust_Settles"
+
+
+			add_stability = 0.05
+
+
+			add_political_power = 100
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Propaganda_Master
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 5.00
+
+
+		x = 4
+
+
+		y = 14
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		mutually_exclusive = { focus = INS_Army_Seals_Parliament }
+
+
+		mutually_exclusive = { focus = INS_Peoples_Bannerman }
+
+
+		prerequisite = { focus = INS_Dust_Settles }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Propaganda_Master"
+
+
+			INS_succession_verdict_effect = yes
+
+
+			custom_effect_tooltip = INS_ft_propaganda_tt
+
+
+			hidden_effect = {
+
+
+				add_to_variable = { var = INS_goni_str value = 15 }
+
+
+				clamp_variable = { var = INS_goni_str max = 100 min = 0 }
+
+
+				add_to_variable = { var = INS_murba_str value = -10 }
+
+
+				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
+
+
+				INS_calc_scores_effect = yes
+
+
+			}
+
+
+			if = {
+
+
+				limit = {
+
+
+					NOT = { has_country_flag = INS_crisis_constitutional }
+
+
+					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
+
+
+				}
+
+
+				clr_country_flag = INS_crisis_ongoing
+
+
+			}
+
+
+			add_political_power = 50
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Army_Seals_Parliament
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 5.00
+
+
+		x = 6
+
+
+		y = 14
+
+
+		visible = {
+
+
+			has_country_flag = INS_coup_unlocked
+
+
+		}
+
+
+		available = {
+
+
+			has_country_flag = INS_coup_unlocked
+
+
+		}
+
+
+		mutually_exclusive = { focus = INS_Propaganda_Master }
+
+
+		mutually_exclusive = { focus = INS_Peoples_Bannerman }
+
+
+		prerequisite = { focus = INS_Dust_Settles }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Army_Seals_Parliament"
+
+
+			country_event = { id = INS_crisis.23 days = 1 }
+
+
+			custom_effect_tooltip = INS_ft_army_seals_tt
+
+
+			hidden_effect = {
+
+
+				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
+
+
+				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
+
+
+				add_to_variable = { var = INS_army_guerrilla_str value = 5 }
+
+
+				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
+
+
+			}
+
+
+			set_country_flag = INS_succession_army
+
+
+			news_event = { id = INS_news_event.4 hours = 6 }
+
+
+			country_event = { id = INS_crisis.26 days = 60 }
+
+
+			army_experience = 10
+
+
+			clr_country_flag = INS_soetomo_dying
+
+
+			if = {
+
+
+				limit = {
+
+
+					NOT = { has_country_flag = INS_crisis_constitutional }
+
+
+					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
+
+
+				}
+
+
+				clr_country_flag = INS_crisis_ongoing
+
+
+			}
+
+
+		}
+
+
+	}
+
+
+
+
+
+	focus = {
+
+
+		id = INS_Peoples_Bannerman
+
+
+		icon = GFX_goal_unknown
+
+
+		cost = 5.00
+
+
+		x = 8
+
+
+		y = 14
+
+
+		available = {
+
+
+			has_country_flag = INS_soetomo_dying
+
+
+		}
+
+
+		mutually_exclusive = { focus = INS_Propaganda_Master }
+
+
+		mutually_exclusive = { focus = INS_Army_Seals_Parliament }
+
+
+		prerequisite = { focus = INS_Dust_Settles }
+
+
+		completion_reward = {
+
+
+			log = "[GetLogRoot]: Focus Completed INS_Peoples_Bannerman"
+
+
+			INS_succession_verdict_effect = yes
+
+
+			custom_effect_tooltip = INS_ft_bannerman_tt
+
+
+			hidden_effect = {
+
+
+				add_to_variable = { var = INS_marhaen_str value = -15 }
+
+
+				clamp_variable = { var = INS_marhaen_str max = 100 min = 0 }
+
+
+				add_to_variable = { var = INS_murba_str value = -10 }
+
+
+				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
+
+
+				INS_calc_scores_effect = yes
+
+
+			}
+
+
+			add_war_support = 0.02
+
+
+			if = {
+
+
+				limit = {
+
+
+					NOT = { has_country_flag = INS_crisis_constitutional }
+
+
+					NOT = { has_country_flag = INS_crisis_kartosuwirjo }
+
+
+				}
+
+
+				clr_country_flag = INS_crisis_ongoing
+
+
+			}
+
+
+		}
+
+
+	}
+
+
+
+
 
 }
+
+

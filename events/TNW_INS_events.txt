@@ -602,7 +602,7 @@ country_event = {
 			character = INS_Mohammad_Yamin
 			promote_leader = yes
 			country_leader = {
-				desc = INS_Mohammad_Yamin
+				desc = INS_Mohammad_Yamin_desc
 				ideology = interim_government
 				traits = { }
 			}
@@ -610,16 +610,13 @@ country_event = {
 	}
 	option = {
 		name = INS_event.10.b
-		trigger = {
-			check_variable = { var = INS_sukarno_score value = INS_yamin_score compare = less_than }
-		}
 		set_country_flag = INS_soetomo_dead
 		add_country_leader_role = {
 			character = INS_Sukarno
 			promote_leader = yes
 			country_leader = {
-				desc = INS_Sukarno
-				ideology = interim_government
+			desc = INS_Sukarno_desc
+			ideology = interim_government
 				traits = { }
 			}
 		}
@@ -634,7 +631,7 @@ country_event = {
 			character = INS_Sartono
 			promote_leader = yes
 			country_leader = {
-				desc = INS_Sartono
+				desc = INS_Sartono_desc
 				ideology = interim_government
 				traits = { }
 			}
