@@ -102,4 +102,5 @@ set_popularities = {
 	recruit_character = CUB_federico_laredo_bru
 	promote_character = CUB_federico_laredo_bru
 	retire_character = CUB_josé_agripino_barnet
+	recruit_character = CUB_Carlos_Prio_Socarras
 }

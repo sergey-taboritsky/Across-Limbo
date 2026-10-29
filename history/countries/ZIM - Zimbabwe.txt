@@ -34,11 +34,5 @@ set_popularities = {
 	Authoritarianism = 100
 }
 
-create_country_leader = {
-	name = "Godfrey Huggins"
-	picture = GFX_portrait_Godfrey_Huggins
-	expire = "1965.1.1"
-	ideology = Authoritarianism
-	traits = {
-	}
+recruit_character = ZIM_Godfrey_Huggins
 }

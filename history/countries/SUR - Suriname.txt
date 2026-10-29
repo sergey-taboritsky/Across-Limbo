@@ -71,4 +71,5 @@ set_popularities = {
 #	traits = {
 #		#
 #	}
-#}
+#	recruit_character = SUR_Johan_Pengel
+}

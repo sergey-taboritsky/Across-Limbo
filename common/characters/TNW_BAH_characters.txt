@@ -1,0 +1,19 @@
+characters = {
+	# BAH 领导人
+	BAH_George_Beresford_Stooke = {
+		name = BAH_George_Beresford_Stooke
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BAH_George_Beresford_Stooke
+			}
+		}
+		country_leader = {
+			desc = BAH_George_Beresford_Stooke_desc
+			ideology = Liberalism
+			expire = "1964.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

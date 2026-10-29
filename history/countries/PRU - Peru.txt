@@ -51,11 +51,5 @@ set_popularities = {
 	socialism = 0
 }
 
-create_country_leader = {
-	name = "José Luis Bustamante y Rivero"
-	picture = GFX_portrait_Jose_Luis_Bustamante_y_Rivero
-	expire = "1949.1.1"
-	ideology = Liberalism
-	traits = {
-	}
+recruit_character = PRU_Jose_Luis_Bustamante_y_Rivero
 }

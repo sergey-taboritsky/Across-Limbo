@@ -1,0 +1,19 @@
+characters = {
+	# CAY 领导人
+	CAY_Rene_Jadfard = {
+		name = CAY_Rene_Jadfard
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CAY_Rene_Jadfard
+			}
+		}
+		country_leader = {
+			desc = CAY_Rene_Jadfard_desc
+			ideology = Liberalism
+			expire = "1953.7.4"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

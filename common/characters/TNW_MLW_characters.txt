@@ -1,0 +1,19 @@
+characters = {
+	#杰弗里·科尔比爵士
+	MLW_Sir_Geoffrey_Colby = {
+		name = MLW_Sir_Geoffrey_Colby
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Sir_Geoffrey_Colby
+			}
+		}
+		country_leader = {
+			desc = MLW_Sir_Geoffrey_Colby_desc
+			ideology = Authoritarianism
+			expire = "1957.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

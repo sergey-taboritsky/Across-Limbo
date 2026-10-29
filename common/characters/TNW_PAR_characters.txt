@@ -1,0 +1,19 @@
+characters = {
+	#伊希尼奥·莫里尼戈
+	PAR_Higinio_Morinigo = {
+		name = PAR_Higinio_Morinigo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Higinio_Morinigo
+			}
+		}
+		country_leader = {
+			desc = PAR_Higinio_Morinigo_desc
+			ideology = Authoritarianism
+			expire = "1949.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

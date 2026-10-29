@@ -1,0 +1,19 @@
+characters = {
+	#马尔马杜克·格罗夫
+	CHL_Marmaduque_Grove = {
+		name = CHL_Marmaduque_Grove
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Marmaduque_Grove
+			}
+		}
+		country_leader = {
+			desc = CHL_Marmaduque_Grove_desc
+			ideology = socialism
+			expire = "1960.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

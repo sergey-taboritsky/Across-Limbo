@@ -1,4 +1,4 @@
-﻿capital = 300
+﻿capital = 12440
 
 set_convoys = 15
 
@@ -20,11 +20,5 @@ set_popularities = {
 	Nationalism = 0
 }
 
-create_country_leader = {
-	name = "Emilio Frugoni"
-	picture = GFX_portrait_Emilio_Frugoni
-	expire = "1969.1.1"
-	ideology = socialism
-	traits = {
-	}
+recruit_character = USR_Emilio_Frugoni
 }

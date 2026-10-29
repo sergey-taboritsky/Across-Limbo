@@ -186,4 +186,21 @@ characters = {
 			ai_will_do = { factor = 0 }
 		}
 	}
+	#佩德罗·巴勃罗·拉米雷斯
+	ARG_Pedro_Pablo_Ramirez = {
+		name = ARG_Pedro_Pablo_Ramirez
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Pedro_Pablo_Ramirez
+			}
+		}
+		country_leader = {
+			desc = ARG_Pedro_Pablo_Ramirez_desc
+			ideology = military_government
+			expire = "1955.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
 }

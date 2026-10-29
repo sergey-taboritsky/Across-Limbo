@@ -1,0 +1,19 @@
+characters = {
+	#威廉·福赛斯爵士
+	BOT_Sir_William_Forsyth = {
+		name = BOT_Sir_William_Forsyth
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Sir_William_Forsyth
+			}
+		}
+		country_leader = {
+			desc = BOT_Sir_William_Forsyth_desc
+			ideology = Authoritarianism
+			expire = "1951.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

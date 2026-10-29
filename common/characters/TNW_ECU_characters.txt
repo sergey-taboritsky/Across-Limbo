@@ -1,0 +1,19 @@
+characters = {
+	#加洛·普拉扎
+	ECU_Galo_Plaza = {
+		name = ECU_Galo_Plaza
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Galo_Plaza
+			}
+		}
+		country_leader = {
+			desc = ECU_Galo_Plaza_desc
+			ideology = Liberalism
+			expire = "1952.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

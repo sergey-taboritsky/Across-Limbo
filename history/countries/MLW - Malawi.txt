@@ -85,11 +85,5 @@ set_popularities = {
 	Nationalism = 0
 }
 
-create_country_leader = {
-	name = "Sir Geoffrey Colby"
-	picture = GFX_portrait_Sir_Geoffrey_Colby
-	expire = "1957.1.1"
-	ideology = Authoritarianism
-	traits = {
-	}
+recruit_character = MLW_Sir_Geoffrey_Colby
 }

@@ -1,0 +1,19 @@
+characters = {
+	# GYA 领导人
+	GYA_Cheddi_Jagan = {
+		name = GYA_Cheddi_Jagan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_GYA_Cheddi_Jagan
+			}
+		}
+		country_leader = {
+			desc = GYA_Cheddi_Jagan_desc
+			ideology = Liberalism
+			expire = "1997.3.6"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

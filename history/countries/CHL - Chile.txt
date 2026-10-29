@@ -24,11 +24,5 @@ set_popularities = {
 
 
 
-create_country_leader = {
-	name = "Marmaduque Grove"
-	picture = GFX_portrait_Marmaduque_Grove
-	expire = "1960.1.1"
-	ideology = socialism
-	traits = {
-	}
+recruit_character = CHL_Marmaduque_Grove
 }

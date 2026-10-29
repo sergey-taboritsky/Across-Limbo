@@ -83,4 +83,5 @@ set_politics = {
 }
 set_popularities = {
 	Liberalism = 100
+	recruit_character = HAI_Dumarsais_Estime
 }

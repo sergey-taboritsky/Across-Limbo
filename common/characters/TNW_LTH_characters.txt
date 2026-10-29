@@ -1,0 +1,19 @@
+characters = {
+	#恩苏·莫赫勒
+	LTH_Ntsu_Mokhehle = {
+		name = LTH_Ntsu_Mokhehle
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Ntsu_Mokhehle
+			}
+		}
+		country_leader = {
+			desc = LTH_Ntsu_Mokhehle_desc
+			ideology = socialism
+			expire = "1965.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

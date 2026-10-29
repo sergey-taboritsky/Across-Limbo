@@ -20,11 +20,5 @@ set_popularities = {
 	Authoritarianism = 100
 }
 
-create_country_leader = {
-	name = "Sir William Forsyth"
-	picture = GFX_portrait_Sir_William_Forsyth
-	expire = "1951.1.1"
-	ideology = Authoritarianism
-	traits = {
-	}
+recruit_character = BOT_Sir_William_Forsyth
 }

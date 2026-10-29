@@ -41,11 +41,5 @@ add_ideas = {
 
 set_country_flag = ARG_initial_flag
 
-create_country_leader = {
-	name = "Pedro Pablo Ramírez"
-	picture = GFX_portrait_Pedro_Pablo_Ramirez
-	expire = "1955.1.1"
-	ideology = military_government
-	traits = {
-	}
+recruit_character = ARG_Pedro_Pablo_Ramirez
 }

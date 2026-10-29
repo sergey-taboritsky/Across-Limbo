@@ -81,5 +81,6 @@ set_popularities = {
 		
 		Authoritarianism = 23
 	}
+	recruit_character = GYA_Cheddi_Jagan
 }
 

@@ -1,0 +1,19 @@
+characters = {
+	# DOM 领导人
+	DOM_Rafael_Trujillo = {
+		name = DOM_Rafael_Trujillo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DOM_Rafael_Trujillo
+			}
+		}
+		country_leader = {
+			desc = DOM_Rafael_Trujillo_desc
+			ideology = Nationalism
+			expire = "1961.5.30"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

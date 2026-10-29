@@ -85,11 +85,5 @@ set_popularities = {
 	Nationalism = 0
 }
 
-create_country_leader = {
-	name = "Petrus Imker Hoogenhout"
-	picture = GFX_portrait_Petrus_Imker_Hoogenhout
-	expire = "1952.1.1"
-	ideology = Authoritarianism
-	traits = {
-	}
+recruit_character = NMB_Petrus_Imker_Hoogenhout
 }

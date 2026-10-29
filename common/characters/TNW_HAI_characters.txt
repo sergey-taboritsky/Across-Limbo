@@ -1,0 +1,19 @@
+characters = {
+	# HAI 领导人
+	HAI_Dumarsais_Estime = {
+		name = HAI_Dumarsais_Estime
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_HAI_Dumarsais_Estime
+			}
+		}
+		country_leader = {
+			desc = HAI_Dumarsais_Estime_desc
+			ideology = Liberalism
+			expire = "1953.7.20"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

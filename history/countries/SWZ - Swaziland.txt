@@ -21,11 +21,5 @@ set_popularities = {
 	Nationalism = 0
 }
 
-create_country_leader = {
-	name = "Sobhuza II"
-	picture = GFX_portrait_Sobhuza_II
-	expire = "1982.1.1"
-	ideology = absolute_monarchy
-	traits = {
-	}
+recruit_character = SWZ_Sobhuza_II
 }

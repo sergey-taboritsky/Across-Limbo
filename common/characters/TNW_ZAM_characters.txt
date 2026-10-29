@@ -1,0 +1,19 @@
+characters = {
+	#吉尔伯特·伦尼爵士
+	ZAM_Sir_Gilbert_Rennie = {
+		name = ZAM_Sir_Gilbert_Rennie
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Sir_Gilbert_Rennie
+			}
+		}
+		country_leader = {
+			desc = ZAM_Sir_Gilbert_Rennie_desc
+			ideology = Authoritarianism
+			expire = "1955.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+characters = {
+	#戈弗雷·哈金斯
+	ZIM_Godfrey_Huggins = {
+		name = ZIM_Godfrey_Huggins
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Godfrey_Huggins
+			}
+		}
+		country_leader = {
+			desc = ZIM_Godfrey_Huggins_desc
+			ideology = Authoritarianism
+			expire = "1965.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

@@ -21,11 +21,5 @@ set_popularities = {
 	Nationalism = 10
 }
 
-create_country_leader = {
-	name = "Ntsu Mokhehle"
-	picture = GFX_portrait_Ntsu_Mokhehle
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-	}
+recruit_character = LTH_Ntsu_Mokhehle
 }

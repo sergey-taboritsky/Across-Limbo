@@ -26,11 +26,5 @@ set_popularities = {
 	socialism = 5
 }
 
-create_country_leader = {
-	name = "Higinio Morínigo"
-	picture = GFX_portrait_Higinio_Morinigo
-	expire = "1949.1.1"
-	ideology = Authoritarianism
-	traits = {
-	}
+recruit_character = PAR_Higinio_Morinigo
 }

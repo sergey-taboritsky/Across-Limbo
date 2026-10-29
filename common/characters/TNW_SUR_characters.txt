@@ -1,0 +1,19 @@
+characters = {
+	# SUR 领导人
+	SUR_Johan_Pengel = {
+		name = SUR_Johan_Pengel
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SUR_Johan_Pengel
+			}
+		}
+		country_leader = {
+			desc = SUR_Johan_Pengel_desc
+			ideology = Liberalism
+			expire = "1970.6.5"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

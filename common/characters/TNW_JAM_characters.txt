@@ -1,0 +1,19 @@
+characters = {
+	# JAM 领导人
+	JAM_Norman_Manley = {
+		name = JAM_Norman_Manley
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAM_Norman_Manley
+			}
+		}
+		country_leader = {
+			desc = JAM_Norman_Manley_desc
+			ideology = Liberalism
+			expire = "1997.9.4"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

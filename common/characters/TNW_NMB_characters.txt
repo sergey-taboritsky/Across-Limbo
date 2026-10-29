@@ -1,0 +1,19 @@
+characters = {
+	#彼得鲁斯·伊姆克·胡根豪特
+	NMB_Petrus_Imker_Hoogenhout = {
+		name = NMB_Petrus_Imker_Hoogenhout
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Petrus_Imker_Hoogenhout
+			}
+		}
+		country_leader = {
+			desc = NMB_Petrus_Imker_Hoogenhout_desc
+			ideology = Authoritarianism
+			expire = "1952.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

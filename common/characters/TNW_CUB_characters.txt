@@ -1,0 +1,19 @@
+characters = {
+	# CUB 领导人
+	CUB_Carlos_Prio_Socarras = {
+		name = CUB_Carlos_Prio_Socarras
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CUB_Carlos_Prio_Socarras
+			}
+		}
+		country_leader = {
+			desc = CUB_Carlos_Prio_Socarras_desc
+			ideology = Liberalism
+			expire = "1977.4.5"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

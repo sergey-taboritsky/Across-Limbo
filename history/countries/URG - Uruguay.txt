@@ -20,11 +20,5 @@ set_popularities = {
 	socialism = 2
 }
 
-create_country_leader = {
-	name = "Luis Batlle Berres"
-	picture = GFX_portrait_Luis_Batlle_Berres
-	expire = "1955.1.1"
-	ideology = Social_democracy
-	traits = {
-	}
+recruit_character = URG_Luis_Batlle_Berres
 }

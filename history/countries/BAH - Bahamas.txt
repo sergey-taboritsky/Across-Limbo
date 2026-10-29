@@ -42,4 +42,5 @@ set_popularities = {
 		communist = 1
 		Authoritarianism = 23
 	}
+	recruit_character = BAH_George_Beresford_Stooke
 }

@@ -1,0 +1,19 @@
+characters = {
+	#路易斯·巴特列·贝雷斯
+	URG_Luis_Batlle_Berres = {
+		name = URG_Luis_Batlle_Berres
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Luis_Batlle_Berres
+			}
+		}
+		country_leader = {
+			desc = URG_Luis_Batlle_Berres_desc
+			ideology = Social_democracy
+			expire = "1955.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

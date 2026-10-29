@@ -1,0 +1,19 @@
+characters = {
+	#何塞·路易斯·布斯塔曼特·里韦罗
+	PRU_Jose_Luis_Bustamante_y_Rivero = {
+		name = PRU_Jose_Luis_Bustamante_y_Rivero
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_Jose_Luis_Bustamante_y_Rivero
+			}
+		}
+		country_leader = {
+			desc = PRU_Jose_Luis_Bustamante_y_Rivero_desc
+			ideology = Liberalism
+			expire = "1949.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

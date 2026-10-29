@@ -63,4 +63,5 @@ set_popularities = {
 #	traits = {
 #		#
 #	}
-#}
+#	recruit_character = CAY_Rene_Jadfard
+}
