@@ -6,7 +6,7 @@ state={
 	
 	history=
 	{
-		owner = MAU
+		owner = MAD
 		victory_points = {
 			13019 1
 		}
@@ -16,7 +16,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = MAU
+		add_core_of = MAD
 	}
 	
 	provinces={
