@@ -34,12 +34,28 @@ set_convoys = 5
 
 
 set_politics = {
-	ruling_party = Nationalism
+	ruling_party = Liberalism
 	last_election = "1931.10.11"
 	election_frequency = 96
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 49
-	Nationalism = 51
+	Liberalism = 70
+	Nationalism = 25
+	Social_democracy = 5
+	communist = 0
+	Conservatism = 0
+	Authoritarianism = 0
+	Absolutism = 0
+	syndicalism = 0
+	socialism = 0
+}
+
+create_country_leader = {
+	name = "José Luis Bustamante y Rivero"
+	picture = GFX_portrait_Jose_Luis_Bustamante_y_Rivero
+	expire = "1949.1.1"
+	ideology = Liberalism
+	traits = {
+	}
 }

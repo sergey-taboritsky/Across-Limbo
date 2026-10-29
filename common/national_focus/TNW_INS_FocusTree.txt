@@ -5737,9 +5737,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed INS_May_Tragedy"
 
 
-			country_event = { id = INS_event.10 days = 1 }
-
-
 			add_war_support = 0.02
 
 

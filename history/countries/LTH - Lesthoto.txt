@@ -3,15 +3,29 @@
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = socialism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	Liberalism = 60
-	Nationalism = 30
-	communist = 10
-	Authoritarianism = 0
+	communist = 5
+	syndicalism = 0
+	socialism = 50
+	Social_democracy = 15
+	Liberalism = 15
+	Conservatism = 5
+	Authoritarianism = 5
+	Absolutism = 0
+	Nationalism = 10
+}
+
+create_country_leader = {
+	name = "Ntsu Mokhehle"
+	picture = GFX_portrait_Ntsu_Mokhehle
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+	}
 }

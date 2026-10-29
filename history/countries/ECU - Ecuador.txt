@@ -106,3 +106,12 @@ set_popularities = {
 	promote_character = ECU_aurelio_mosquera
 	retire_character = ECU_federico_páez
 }
+
+create_country_leader = {
+	name = "Galo Plaza"
+	picture = GFX_portrait_Galo_Plaza
+	expire = "1952.1.1"
+	ideology = Liberalism
+	traits = {
+	}
+}

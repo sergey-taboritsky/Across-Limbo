@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			desc = SEN_Lamine_Gueye_desc
-			ideology = Social_democratic
+			ideology = Liberalism_socialism
 			traits = { }
 		}
 	}

@@ -69,7 +69,7 @@ recruit_character = SEN_acgs
 }
 
 set_politics = {
-	ruling_party = Social_democracy
+	ruling_party = socialism
 	last_election = "1946.11.10"
 	election_frequency = 48
 	elections_allowed = yes
@@ -77,8 +77,8 @@ set_politics = {
 set_popularities = {
 	communist = 3
 	syndicalism = 0
-	socialism = 18
-	Social_democracy = 35
+	socialism = 45
+	Social_democracy = 18
 	Liberalism = 20
 	Conservatism = 12
 	Authoritarianism = 4

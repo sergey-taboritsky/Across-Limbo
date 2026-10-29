@@ -74,7 +74,7 @@ country_event = {
 	option = {
 		name = INS_crisis.3.a
 		set_country_flag = INS_crisis_ongoing
-		set_country_flag = INS_soetomo_dying
+		country_event = { id = INS_event.10 days = 30 }
 	}
 }
 
@@ -591,6 +591,12 @@ country_event = {
 	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			# 国父之死 -> 进入双头政权期（五月危机），开启 May_Tragedy 焦点与主席人选面板
+			set_country_flag = INS_soetomo_dying
+		}
+	}
 	
 	option = {
 		name = INS_event.10.a

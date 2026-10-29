@@ -12,21 +12,22 @@ recruit_character = ARG_Jose_Penelon
 set_convoys = 120
 
 set_politics = {
-	ruling_party = communist
+	ruling_party = military_government
 	last_election = "1931.11.8"
 	election_frequency = 72
 	elections_allowed = no
 }
 set_popularities = {
-	communist = 72
-	syndicalism = 6
-	socialism = 11
-	Social_democracy = 0
-	Liberalism = 2
-	Conservatism = 0
-	Absolutism = 6
-	Authoritarianism = 0
-	Nationalism = 3
+	communist = 5
+	syndicalism = 0
+	socialism = 5
+	Social_democracy = 5
+	Liberalism = 5
+	Conservatism = 5
+	Absolutism = 0
+	Authoritarianism = 10
+	Nationalism = 0
+	military_government = 65
 }
 
 add_ideas = {
@@ -39,3 +40,12 @@ add_ideas = {
 }
 
 set_country_flag = ARG_initial_flag
+
+create_country_leader = {
+	name = "Pedro Pablo Ramírez"
+	picture = GFX_portrait_Pedro_Pablo_Ramirez
+	expire = "1955.1.1"
+	ideology = military_government
+	traits = {
+	}
+}

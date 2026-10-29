@@ -85,6 +85,10 @@ defined_text = {
 	}
 	text = {
 		trigger = { tag = PHI }
+	text = {
+		trigger = { tag = INS }
+		localization_key = GFX_TNW_welcome_ALP_intro_picture
+	}
 		localization_key = GFX_TNW_welcome_ALP_intro_picture
 	}
 }
@@ -342,6 +346,34 @@ defined_text = {
 			check_variable = { current_page = 4 }
 		}
 		localization_key = TNW_welcome_MAL_intro_text_4
+	}
+	text = {
+		trigger = { 
+			tag = INS
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_INS_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = INS
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_INS_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = INS
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_INS_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = INS
+			check_variable = { current_page = 4 }
+		}
+		localization_key = TNW_welcome_INS_intro_text_4
 	}
 	text = {
 		trigger = { 

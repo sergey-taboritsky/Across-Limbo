@@ -5,15 +5,30 @@
 set_convoys = 50
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = socialism
 	last_election = "1932.10.30"
 	election_frequency = 72  #but 4 years after this one in 1938.
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 80
-	communist = 10
-	Nationalism = 7
-	Authoritarianism = 3
+	communist = 15
+	syndicalism = 0
+	socialism = 70
+	Social_democracy = 5
+	Liberalism = 10
+	Conservatism = 0
+	Absolutism = 0
+	Authoritarianism = 0
+	Nationalism = 0
 }
 
+
+
+create_country_leader = {
+	name = "Marmaduque Grove"
+	picture = GFX_portrait_Marmaduque_Grove
+	expire = "1960.1.1"
+	ideology = socialism
+	traits = {
+	}
+}

@@ -47,16 +47,16 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = Social_democracy
+	ruling_party = syndicalism
 	last_election = "1947.6.4"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
 	communist = 3
-	syndicalism = 0
+	syndicalism = 45
 	socialism = 20
-	Social_democracy = 30
+	Social_democracy = 15
 	Liberalism = 18
 	Conservatism = 10
 	Authoritarianism = 4

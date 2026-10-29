@@ -74,8 +74,22 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 25
-	Nationalism = 20
 	communist = 5
-	Authoritarianism = 50
+	syndicalism = 0
+	socialism = 5
+	Social_democracy = 5
+	Liberalism = 10
+	Conservatism = 5
+	Authoritarianism = 70
+	Absolutism = 0
+	Nationalism = 0
+}
+
+create_country_leader = {
+	name = "Sir Geoffrey Colby"
+	picture = GFX_portrait_Sir_Geoffrey_Colby
+	expire = "1957.1.1"
+	ideology = Authoritarianism
+	traits = {
+	}
 }

@@ -69,7 +69,7 @@ recruit_character = GNA_awt
 }
 
 set_politics = {
-	ruling_party = Social_democracy
+	ruling_party = socialism
 	last_election = "1946.11.10"
 	election_frequency = 48
 	elections_allowed = yes
@@ -77,8 +77,8 @@ set_politics = {
 set_popularities = {
 	communist = 3
 	syndicalism = 0
-	socialism = 20
-	Social_democracy = 32
+	socialism = 45
+	Social_democracy = 18
 	Liberalism = 15
 	Conservatism = 10
 	Authoritarianism = 5

@@ -1,0 +1,30 @@
+﻿capital = 300
+
+set_convoys = 15
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1948.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	communist = 10
+	syndicalism = 0
+	socialism = 75
+	Social_democracy = 5
+	Liberalism = 5
+	Conservatism = 0
+	Absolutism = 0
+	Authoritarianism = 5
+	Nationalism = 0
+}
+
+create_country_leader = {
+	name = "Emilio Frugoni"
+	picture = GFX_portrait_Emilio_Frugoni
+	expire = "1969.1.1"
+	ideology = socialism
+	traits = {
+	}
+}

@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			desc = GAM_EF_Small_desc
-			ideology = Social_democratic
+			ideology = Centralised_Syndicalism
 			traits = { }
 		}
 	}

@@ -1,14 +1,36 @@
-# INS 继承战：六派立场五层显示 + 苏托莫态度三态显示（ALP defined_text 范式）
+# INS 继承战：六派 + 三军系 立场五层显示（拥护/支持/中立/反对/仇视，按在任总统方向翻转）
+# 苏托莫态度：在世=三态（中立/倾向苏加诺/倾向亚明）；国父之死(event.10)后=总统委员会主席人选；继位后整段隐藏
+# 候选人三段：仅在 双头政权期(soetomo_dead 且未继位) 显示，附实时影响力分数
 
 defined_text = {
 	name = Get_INS_stance_goni
 	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_goni_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_goni_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_goni_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_goni_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin }
+		localization_key = INS_stance_hostile
+	}
+	text = {
 		trigger = { check_variable = { var = INS_goni_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_full_sukarno
+		localization_key = INS_stance_hostile
 	}
 	text = {
 		trigger = { check_variable = { var = INS_goni_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_sukarno
+		localization_key = INS_stance_oppose
 	}
 	text = {
 		trigger = { check_variable = { var = INS_goni_var value = 60 compare = less_than_or_equals } }
@@ -16,22 +38,41 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { var = INS_goni_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_yamin
+		localization_key = INS_stance_support
 	}
 	text = {
-		localization_key = INS_stance_full_yamin
+		localization_key = INS_stance_champion
 	}
 }
-
 defined_text = {
 	name = Get_INS_stance_marhaen
 	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_marhaen_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_marhaen_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_marhaen_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_marhaen_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin }
+		localization_key = INS_stance_hostile
+	}
+	text = {
 		trigger = { check_variable = { var = INS_marhaen_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_full_sukarno
+		localization_key = INS_stance_hostile
 	}
 	text = {
 		trigger = { check_variable = { var = INS_marhaen_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_sukarno
+		localization_key = INS_stance_oppose
 	}
 	text = {
 		trigger = { check_variable = { var = INS_marhaen_var value = 60 compare = less_than_or_equals } }
@@ -39,22 +80,41 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { var = INS_marhaen_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_yamin
+		localization_key = INS_stance_support
 	}
 	text = {
-		localization_key = INS_stance_full_yamin
+		localization_key = INS_stance_champion
 	}
 }
-
 defined_text = {
 	name = Get_INS_stance_hokokai
 	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_hokokai_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_hokokai_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_hokokai_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_hokokai_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin }
+		localization_key = INS_stance_hostile
+	}
+	text = {
 		trigger = { check_variable = { var = INS_hokokai_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_full_sukarno
+		localization_key = INS_stance_hostile
 	}
 	text = {
 		trigger = { check_variable = { var = INS_hokokai_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_sukarno
+		localization_key = INS_stance_oppose
 	}
 	text = {
 		trigger = { check_variable = { var = INS_hokokai_var value = 60 compare = less_than_or_equals } }
@@ -62,22 +122,41 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { var = INS_hokokai_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_yamin
+		localization_key = INS_stance_support
 	}
 	text = {
-		localization_key = INS_stance_full_yamin
+		localization_key = INS_stance_champion
 	}
 }
-
 defined_text = {
 	name = Get_INS_stance_sartono
 	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sartono_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sartono_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sartono_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sartono_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin }
+		localization_key = INS_stance_hostile
+	}
+	text = {
 		trigger = { check_variable = { var = INS_sartono_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_full_sukarno
+		localization_key = INS_stance_hostile
 	}
 	text = {
 		trigger = { check_variable = { var = INS_sartono_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_sukarno
+		localization_key = INS_stance_oppose
 	}
 	text = {
 		trigger = { check_variable = { var = INS_sartono_var value = 60 compare = less_than_or_equals } }
@@ -85,22 +164,41 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { var = INS_sartono_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_yamin
+		localization_key = INS_stance_support
 	}
 	text = {
-		localization_key = INS_stance_full_yamin
+		localization_key = INS_stance_champion
 	}
 }
-
 defined_text = {
 	name = Get_INS_stance_sarekat
 	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sarekat_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sarekat_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sarekat_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sarekat_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin }
+		localization_key = INS_stance_hostile
+	}
+	text = {
 		trigger = { check_variable = { var = INS_sarekat_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_full_sukarno
+		localization_key = INS_stance_hostile
 	}
 	text = {
 		trigger = { check_variable = { var = INS_sarekat_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_sukarno
+		localization_key = INS_stance_oppose
 	}
 	text = {
 		trigger = { check_variable = { var = INS_sarekat_var value = 60 compare = less_than_or_equals } }
@@ -108,22 +206,41 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { var = INS_sarekat_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_yamin
+		localization_key = INS_stance_support
 	}
 	text = {
-		localization_key = INS_stance_full_yamin
+		localization_key = INS_stance_champion
 	}
 }
-
 defined_text = {
 	name = Get_INS_stance_murba
 	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_murba_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_murba_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_murba_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_murba_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin }
+		localization_key = INS_stance_hostile
+	}
+	text = {
 		trigger = { check_variable = { var = INS_murba_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_full_sukarno
+		localization_key = INS_stance_hostile
 	}
 	text = {
 		trigger = { check_variable = { var = INS_murba_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_sukarno
+		localization_key = INS_stance_oppose
 	}
 	text = {
 		trigger = { check_variable = { var = INS_murba_var value = 60 compare = less_than_or_equals } }
@@ -131,37 +248,41 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { var = INS_murba_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_yamin
+		localization_key = INS_stance_support
 	}
 	text = {
-		localization_key = INS_stance_full_yamin
+		localization_key = INS_stance_champion
 	}
 }
-
-defined_text = {
-	name = Get_INS_soetomo_stance
-	text = {
-		trigger = { has_country_flag = INS_soetomo_lean_sukarno }
-		localization_key = INS_soetomo_stance_sukarno
-	}
-	text = {
-		trigger = { has_country_flag = INS_soetomo_lean_yamin }
-		localization_key = INS_soetomo_stance_yamin
-	}
-	text = {
-		localization_key = INS_soetomo_stance_neutral
-	}
-}
-
 defined_text = {
 	name = Get_INS_stance_army_siliwangi
 	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_siliwangi_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_siliwangi_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_siliwangi_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_siliwangi_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin }
+		localization_key = INS_stance_hostile
+	}
+	text = {
 		trigger = { check_variable = { var = INS_army_siliwangi_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_full_sukarno
+		localization_key = INS_stance_hostile
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_siliwangi_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_sukarno
+		localization_key = INS_stance_oppose
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_siliwangi_var value = 60 compare = less_than_or_equals } }
@@ -169,22 +290,41 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_siliwangi_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_yamin
+		localization_key = INS_stance_support
 	}
 	text = {
-		localization_key = INS_stance_full_yamin
+		localization_key = INS_stance_champion
 	}
 }
-
 defined_text = {
 	name = Get_INS_stance_army_guerrilla
 	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_guerrilla_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_guerrilla_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_guerrilla_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_guerrilla_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin }
+		localization_key = INS_stance_hostile
+	}
+	text = {
 		trigger = { check_variable = { var = INS_army_guerrilla_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_full_sukarno
+		localization_key = INS_stance_hostile
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_guerrilla_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_sukarno
+		localization_key = INS_stance_oppose
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_guerrilla_var value = 60 compare = less_than_or_equals } }
@@ -192,22 +332,41 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_guerrilla_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_yamin
+		localization_key = INS_stance_support
 	}
 	text = {
-		localization_key = INS_stance_full_yamin
+		localization_key = INS_stance_champion
 	}
 }
-
 defined_text = {
 	name = Get_INS_stance_army_gyugun
 	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_gyugun_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_stance_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_gyugun_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_stance_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_gyugun_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_stance_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_gyugun_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_stance_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_yamin }
+		localization_key = INS_stance_hostile
+	}
+	text = {
 		trigger = { check_variable = { var = INS_army_gyugun_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_full_sukarno
+		localization_key = INS_stance_hostile
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_gyugun_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_sukarno
+		localization_key = INS_stance_oppose
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_gyugun_var value = 60 compare = less_than_or_equals } }
@@ -215,9 +374,61 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_gyugun_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_part_yamin
+		localization_key = INS_stance_support
 	}
 	text = {
-		localization_key = INS_stance_full_yamin
+		localization_key = INS_stance_champion
+	}
+}
+defined_text = {
+	name = Get_INS_soetomo_stance
+	text = {
+		trigger = { NOT = { has_country_flag = INS_soetomo_dead } has_country_flag = INS_soetomo_lean_sukarno }
+		localization_key = INS_soetomo_alive_sukarno
+	}
+	text = {
+		trigger = { NOT = { has_country_flag = INS_soetomo_dead } has_country_flag = INS_soetomo_lean_yamin }
+		localization_key = INS_soetomo_alive_yamin
+	}
+	text = {
+		trigger = { NOT = { has_country_flag = INS_soetomo_dead } }
+		localization_key = INS_soetomo_alive_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_soetomo_dead NOT = { has_country_flag = INS_succession_yamin } NOT = { has_country_flag = INS_succession_sukarno } }
+		localization_key = INS_soetomo_chairman
+	}
+	text = {
+		localization_key = INS_empty
+	}
+}
+defined_text = {
+	name = Get_INS_candidate_sukarno
+	text = {
+		trigger = { has_country_flag = INS_soetomo_dead NOT = { has_country_flag = INS_succession_yamin } NOT = { has_country_flag = INS_succession_sukarno } }
+		localization_key = INS_candidate_sukarno
+	}
+	text = {
+		localization_key = INS_empty
+	}
+}
+defined_text = {
+	name = Get_INS_candidate_yamin
+	text = {
+		trigger = { has_country_flag = INS_soetomo_dead NOT = { has_country_flag = INS_succession_yamin } NOT = { has_country_flag = INS_succession_sukarno } }
+		localization_key = INS_candidate_yamin
+	}
+	text = {
+		localization_key = INS_empty
+	}
+}
+defined_text = {
+	name = Get_INS_candidate_sartono
+	text = {
+		trigger = { has_country_flag = INS_soetomo_dead NOT = { has_country_flag = INS_succession_yamin } NOT = { has_country_flag = INS_succession_sukarno } }
+		localization_key = INS_candidate_sartono
+	}
+	text = {
+		localization_key = INS_empty
 	}
 }
