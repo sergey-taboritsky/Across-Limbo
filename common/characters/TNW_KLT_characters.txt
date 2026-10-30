@@ -1,0 +1,17 @@
+characters = {
+
+	KLT_Ahmad_Yar_Khan = {
+		name = KLT_Ahmad_Yar_Khan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KLT_Ahmad_Yar_Khan
+			}
+		}
+		country_leader = {
+			desc = KLT_Ahmad_Yar_Khan_desc
+			ideology = Absolutism
+			expire = "1979.9.29"
+			id = -1
+		}
+	}
+}

@@ -4,6 +4,18 @@ set_stability = 0.8
 set_war_support = 0.3
 # Starting tech
 recruit_character = AST_Joseph_Benedict_Chifley
+recruit_character = AST_HV_Evatt
+recruit_character = AST_Albert_Monk
+recruit_character = AST_Lance_Sharkey
+recruit_character = AST_Ernie_Thornton
+recruit_character = AST_Robert_Menzies
+recruit_character = AST_Billy_Hughes
+recruit_character = AST_Arthur_Fadden
+recruit_character = AST_Bob_Santamaria
+recruit_character = AST_Frank_McManus
+recruit_character = AST_Clarrie_Fallon
+recruit_character = AST_Tom_Dougherty
+
 
 set_politics = {
 	ruling_party = Social_democracy
@@ -24,3 +36,9 @@ set_popularities = {
 }
 
 set_convoys = 100
+
+# 西澳（AST）与东澳（AFF）互宣战，澳大利亚内战
+add_to_war = {
+	target = AFF
+	war = 1
+}

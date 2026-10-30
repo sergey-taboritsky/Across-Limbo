@@ -1,0 +1,11 @@
+AST_civil_war_decisions_category = {
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_decision_pic_AST_civil_war
+	allowed = {
+		original_tag = AST
+	}
+	visible = {
+		has_country_flag = AST_civil_war_active
+	}
+	priority = 100
+}

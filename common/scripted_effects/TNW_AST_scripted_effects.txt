@@ -1,0 +1,117 @@
+# AST 澳大利亚内战：七派支持度系统
+# 变量（0-100，合计 100）对应七派在 1947-1949 内战前的相对动员力
+#   AST_fac_alp   澳大利亚工党
+#   AST_fac_actu  澳大利亚工会理事会（ACTU）
+#   AST_fac_cpa   澳大利亚共产党（CPA）
+#   AST_fac_lib   澳大利亚自由党
+#   AST_fac_nat   澳大利亚国家党（Country/National）
+#   AST_fac_dlp   澳大利亚民主工党（DLP）
+#   AST_fac_awu   澳大利亚工人联合会（AWU）
+
+AST_init_factions_effect = {
+	set_variable = { AST_fac_alp = 30 }
+	set_variable = { AST_fac_actu = 15 }
+	set_variable = { AST_fac_cpa = 8 }
+	set_variable = { AST_fac_lib = 22 }
+	set_variable = { AST_fac_nat = 10 }
+	set_variable = { AST_fac_dlp = 8 }
+	set_variable = { AST_fac_awu = 7 }
+}
+
+# 内战进行中：某派取得优势时的此消彼长（供事件/决议调用）
+# 参数：AST_fac_shift_target（目标派），AST_fac_shift_amount（增减量，可负）
+AST_faction_shift_effect = {
+	if = {
+		limit = { check_variable = { var = AST_fac_shift_target value = 1 compare = less_than_or_equals } }
+		# target=1 ALP
+		add_to_variable = { var = AST_fac_alp value = AST_fac_shift_amount }
+		add_to_variable = { var = AST_fac_lib value = -AST_fac_shift_amount }
+	}
+	else_if = {
+		limit = { check_variable = { var = AST_fac_shift_target value = 2 compare = less_than_or_equals } }
+		# target=2 ACTU
+		add_to_variable = { var = AST_fac_actu value = AST_fac_shift_amount }
+		add_to_variable = { var = AST_fac_nat value = -AST_fac_shift_amount }
+	}
+	else_if = {
+		limit = { check_variable = { var = AST_fac_shift_target value = 3 compare = less_than_or_equals } }
+		# target=3 CPA
+		add_to_variable = { var = AST_fac_cpa value = AST_fac_shift_amount }
+		add_to_variable = { var = AST_fac_dlp value = -AST_fac_shift_amount }
+	}
+	else_if = {
+		limit = { check_variable = { var = AST_fac_shift_target value = 4 compare = less_than_or_equals } }
+		# target=4 Liberal
+		add_to_variable = { var = AST_fac_lib value = AST_fac_shift_amount }
+		add_to_variable = { var = AST_fac_alp value = -AST_fac_shift_amount }
+	}
+	else_if = {
+		limit = { check_variable = { var = AST_fac_shift_target value = 5 compare = less_than_or_equals } }
+		# target=5 National
+		add_to_variable = { var = AST_fac_nat value = AST_fac_shift_amount }
+		add_to_variable = { var = AST_fac_actu value = -AST_fac_shift_amount }
+	}
+	else_if = {
+		limit = { check_variable = { var = AST_fac_shift_target value = 6 compare = less_than_or_equals } }
+		# target=6 DLP
+		add_to_variable = { var = AST_fac_dlp value = AST_fac_shift_amount }
+		add_to_variable = { var = AST_fac_cpa value = -AST_fac_shift_amount }
+	}
+	else = {
+		# target=7 AWU
+		add_to_variable = { var = AST_fac_awu value = AST_fac_shift_amount }
+		add_to_variable = { var = AST_fac_nat value = -AST_fac_shift_amount }
+	}
+	clamp_variable = { var = AST_fac_alp max = 100 min = 0 }
+	clamp_variable = { var = AST_fac_actu max = 100 min = 0 }
+	clamp_variable = { var = AST_fac_cpa max = 100 min = 0 }
+	clamp_variable = { var = AST_fac_lib max = 100 min = 0 }
+	clamp_variable = { var = AST_fac_nat max = 100 min = 0 }
+	clamp_variable = { var = AST_fac_dlp max = 100 min = 0 }
+	clamp_variable = { var = AST_fac_awu max = 100 min = 0 }
+}
+
+# 内战结算（骨架）：依结局旗标把胜方集团拉满、败方压缩
+# 旗标：AST_cw_labor_victory / AST_cw_liberal_restored / AST_cw_liberal_overthrown / AST_cw_split
+AST_resolve_civilwar_effect = {
+	if = {
+		limit = { has_country_flag = AST_cw_labor_victory }
+		set_variable = { AST_fac_alp = 45 }
+		set_variable = { AST_fac_actu = 20 }
+		set_variable = { AST_fac_cpa = 12 }
+		set_variable = { AST_fac_awu = 13 }
+		set_variable = { AST_fac_lib = 4 }
+		set_variable = { AST_fac_nat = 3 }
+		set_variable = { AST_fac_dlp = 3 }
+	}
+	else_if = {
+		limit = { has_country_flag = AST_cw_liberal_restored }
+		set_variable = { AST_fac_lib = 42 }
+		set_variable = { AST_fac_nat = 22 }
+		set_variable = { AST_fac_dlp = 18 }
+		set_variable = { AST_fac_alp = 10 }
+		set_variable = { AST_fac_actu = 4 }
+		set_variable = { AST_fac_cpa = 2 }
+		set_variable = { AST_fac_awu = 2 }
+	}
+	else_if = {
+		limit = { has_country_flag = AST_cw_liberal_overthrown }
+		set_variable = { AST_fac_lib = 30 }
+		set_variable = { AST_fac_nat = 18 }
+		set_variable = { AST_fac_dlp = 8 }
+		set_variable = { AST_fac_alp = 14 }
+		set_variable = { AST_fac_actu = 12 }
+		set_variable = { AST_fac_cpa = 10 }
+		set_variable = { AST_fac_awu = 8 }
+	}
+	else_if = {
+		limit = { has_country_flag = AST_cw_split }
+		set_variable = { AST_fac_alp = 28 }
+		set_variable = { AST_fac_actu = 14 }
+		set_variable = { AST_fac_cpa = 8 }
+		set_variable = { AST_fac_awu = 8 }
+		set_variable = { AST_fac_lib = 24 }
+		set_variable = { AST_fac_nat = 11 }
+		set_variable = { AST_fac_dlp = 7 }
+	}
+}

@@ -51,6 +51,8 @@ recruit_character = PAK_pot
 recruit_character = PAK_mt
 recruit_character = PAK_ncm
 recruit_character = PAK_nt
+recruit_character = PAK_Gopi_Chand_Bhargava
+set_country_leader = PAK_Gopi_Chand_Bhargava
 
 1939.1.1 = {#placeholder same tech as ENG
 	#generic focuses
@@ -113,16 +115,15 @@ recruit_character = PAK_nt
 }
 
 set_politics = {
-	ruling_party = Authoritarianism
+	ruling_party = Social_democracy
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 17
-	Nationalism = 2
-	communist = 1
-	Authoritarianism = 80
+	Social_democracy = 70
+	Liberalism = 20
+	communist = 10
 }
 
 

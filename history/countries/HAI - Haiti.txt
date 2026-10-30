@@ -27,6 +27,7 @@ recruit_character = HAI_raymond_gassner
 recruit_character = HAI_luis_dabtes_bellegarde
 recruit_character = HAI_demosthenes_calixte
 recruit_character = HAI_louis_dejoie
+set_country_leader = HAI_jacques_roumain
 
 
 
@@ -76,12 +77,13 @@ set_convoys = 5
 }
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = socialism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 100
-	recruit_character = HAI_Dumarsais_Estime
+	socialism = 90
+	communist = 10
 }
+recruit_character = HAI_Dumarsais_Estime

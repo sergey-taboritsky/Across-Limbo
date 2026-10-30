@@ -1,0 +1,20 @@
+add_namespace = AST_event
+
+# 开局介绍：澳大利亚内战前夜（1948）
+country_event = {
+	id = AST_event.1
+	title = AST_event_1_t
+	desc = AST_event_1_d
+	picture = GFX_AST_intro
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		AST_init_factions_effect = yes
+		set_country_flag = AST_civil_war_active
+		set_country_flag = AST_prelude
+	}
+	option = {
+		name = AST_event_1_opt
+		add_political_power = 50
+	}
+}

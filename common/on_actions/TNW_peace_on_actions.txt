@@ -195,6 +195,26 @@ on_actions = {
 					tag = event_target:losing_country
 				}
 			}
+		#澳大利亚内战 - AST vs AFF（西澳 vs 东澳）
+		else_if = {
+			limit = {
+				OR = {
+					event_target:losing_country = { original_tag = AST }
+					event_target:losing_country = { original_tag = AFF }
+				}
+				OR = {
+					event_target:winning_country = { original_tag = AST }
+					event_target:winning_country = { original_tag = AFF }
+				}
+			}
+			AST = {
+				white_peace = AFF
+				clr_country_flag = AST_civil_war_active
+			}
+			AFF = {
+				white_peace = AST
+			}
+		}
 		}
 		}
 	}

@@ -1,0 +1,409 @@
+characters = {
+
+	NZL_michael_joseph_savage = {
+		name = NZL_michael_joseph_savage
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_michael_joseph_savage
+			}
+		}
+		country_leader = {
+			desc = NZL_michael_joseph_savage_desc
+			ideology = Social_democracy
+			expire = "1940.3.27"
+			id = -1
+		}
+	}
+	NZL_peter_fraser = {
+		name = NZL_peter_fraser
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_peter_fraser
+			}
+		}
+		country_leader = {
+			desc = NZL_peter_fraser_desc
+			ideology = Social_democracy
+			expire = "1950.12.12"
+			id = -1
+		}
+	}
+	NZL_walter_nash = {
+		name = NZL_walter_nash
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_walter_nash
+			}
+		}
+		country_leader = {
+			desc = NZL_walter_nash_desc
+			ideology = Social_democracy
+			expire = "1968.2.12"
+			id = -1
+		}
+	}
+	NZL_sidney_holland = {
+		name = NZL_sidney_holland
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_sidney_holland
+			}
+		}
+		country_leader = {
+			desc = NZL_sidney_holland_desc
+			ideology = Conservatism
+			expire = "1961.8.5"
+			id = -1
+		}
+	}
+	NZL_keith_j_holyoake = {
+		name = NZL_keith_j_holyoake
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_keith_j_holyoake
+			}
+		}
+		country_leader = {
+			desc = NZL_keith_j_holyoake_desc
+			ideology = Conservatism
+			expire = "1983.12.31"
+			id = -1
+		}
+	}
+	NZL_john_ormond = {
+		name = NZL_john_ormond
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_john_ormond
+			}
+		}
+		country_leader = {
+			desc = NZL_john_ormond_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_elsie_farrelly = {
+		name = NZL_elsie_farrelly
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_elsie_farrelly
+			}
+		}
+		country_leader = {
+			desc = NZL_elsie_farrelly_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_bernard_freyberg = {
+		name = NZL_bernard_freyberg
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_bernard_freyberg
+			}
+		}
+		country_leader = {
+			desc = NZL_bernard_freyberg_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_robert_row = {
+		name = NZL_robert_row
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_robert_row
+			}
+		}
+		country_leader = {
+			desc = NZL_robert_row_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_william_stevens = {
+		name = NZL_william_stevens
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_william_stevens
+			}
+		}
+		country_leader = {
+			desc = NZL_william_stevens_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_edmund_rupert_drummond = {
+		name = NZL_edmund_rupert_drummond
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_edmund_rupert_drummond
+			}
+		}
+		country_leader = {
+			desc = NZL_edmund_rupert_drummond_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_peter_phipps = {
+		name = NZL_peter_phipps
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_peter_phipps
+			}
+		}
+		country_leader = {
+			desc = NZL_peter_phipps_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_r_a_cochrane = {
+		name = NZL_r_a_cochrane
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_r_a_cochrane
+			}
+		}
+		country_leader = {
+			desc = NZL_r_a_cochrane_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_l_p_peterson = {
+		name = NZL_l_p_peterson
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_l_p_peterson
+			}
+		}
+		country_leader = {
+			desc = NZL_l_p_peterson_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_j_c_nichols = {
+		name = NZL_j_c_nichols
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_j_c_nichols
+			}
+		}
+		country_leader = {
+			desc = NZL_j_c_nichols_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_n_weir = {
+		name = NZL_n_weir
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_n_weir
+			}
+		}
+		country_leader = {
+			desc = NZL_n_weir_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_j_e_duigan = {
+		name = NZL_j_e_duigan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_j_e_duigan
+			}
+		}
+		country_leader = {
+			desc = NZL_j_e_duigan_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_edward_puttick = {
+		name = NZL_edward_puttick
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_edward_puttick
+			}
+		}
+		country_leader = {
+			desc = NZL_edward_puttick_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_norris_stephen_falla = {
+		name = NZL_norris_stephen_falla
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_norris_stephen_falla
+			}
+		}
+		country_leader = {
+			desc = NZL_norris_stephen_falla_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_trevor_handley = {
+		name = NZL_trevor_handley
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_trevor_handley
+			}
+		}
+		country_leader = {
+			desc = NZL_trevor_handley_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_a_j_stallworthy = {
+		name = NZL_a_j_stallworthy
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_a_j_stallworthy
+			}
+		}
+		country_leader = {
+			desc = NZL_a_j_stallworthy_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_eric_prendergast = {
+		name = NZL_eric_prendergast
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_eric_prendergast
+			}
+		}
+		country_leader = {
+			desc = NZL_eric_prendergast_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_arthur_dawes = {
+		name = NZL_arthur_dawes
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_arthur_dawes
+			}
+		}
+		country_leader = {
+			desc = NZL_arthur_dawes_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_william_sinclair_burgess = {
+		name = NZL_william_sinclair_burgess
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_william_sinclair_burgess
+			}
+		}
+		country_leader = {
+			desc = NZL_william_sinclair_burgess_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_h_e_horan = {
+		name = NZL_h_e_horan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_h_e_horan
+			}
+		}
+		country_leader = {
+			desc = NZL_h_e_horan_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_h_d_mcgregor = {
+		name = NZL_h_d_mcgregor
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_h_d_mcgregor
+			}
+		}
+		country_leader = {
+			desc = NZL_h_d_mcgregor_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_w_h_stratton = {
+		name = NZL_w_h_stratton
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_w_h_stratton
+			}
+		}
+		country_leader = {
+			desc = NZL_w_h_stratton_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_a_e_davy = {
+		name = NZL_a_e_davy
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_a_e_davy
+			}
+		}
+		country_leader = {
+			desc = NZL_a_e_davy_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	NZL_w_a_veitch_milne = {
+		name = NZL_w_a_veitch_milne
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NZL_w_a_veitch_milne
+			}
+		}
+		country_leader = {
+			desc = NZL_w_a_veitch_milne_desc
+			ideology = Liberalism
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

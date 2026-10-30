@@ -39,6 +39,10 @@ recruit_character = CUB_julio_sanguily
 recruit_character = CUB_carlos_prio
 recruit_character = CUB_gerardo_machado
 recruit_character = CUB_eugenio_molinet_castro
+recruit_character = CUB_Ramon_Grau_San_Martin
+set_country_leader = CUB_Ramon_Grau_San_Martin
+set_country_flag = has_second_leader_flag
+set_country_flag = CUB_Fulgencio_Batista_PM_flag
 
 
 
@@ -88,14 +92,14 @@ set_convoys = 20
 }
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = socialism
 	last_election = "1936.1.10"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 98
-	communist = 2
+	socialism = 90
+	communist = 10
 }
 
 1939.1.1 = {

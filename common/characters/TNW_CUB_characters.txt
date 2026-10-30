@@ -16,4 +16,79 @@ characters = {
 			}
 		}
 	}
+	# 拉蒙·格劳·圣马丁（左翼民粹，1944-1948 总统，本模组古巴开局元首）
+	CUB_Ramon_Grau_San_Martin = {
+		name = CUB_Ramon_Grau_San_Martin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CUB_Ramon_Grau_San_Martin
+			}
+		}
+		country_leader = {
+			desc = CUB_Ramon_Grau_San_Martin_desc
+			ideology = socialism
+			expire = "1969.7.6"
+			id = -1
+		}
+	}
+	# 富尔亨西奥·巴蒂斯塔（第二领袖/军方强人，反共右翼）
+	CUB_fulgencio_batista = {
+		name = CUB_fulgencio_batista
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CUB_fulgencio_batista
+			}
+		}
+		country_leader = {
+			desc = CUB_fulgencio_batista_desc
+			ideology = Conservatism
+			expire = "1973.8.6"
+			id = -1
+		}
+	}
+	# 菲德尔·卡斯特罗（青年左翼革命者）
+	CUB_fidel_castro = {
+		name = CUB_fidel_castro
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CUB_fidel_castro
+			}
+		}
+		country_leader = {
+			desc = CUB_fidel_castro_desc
+			ideology = socialism
+			expire = "2016.11.25"
+			id = -1
+		}
+	}
+	# 爱德华多·奇瓦斯（正统党左翼改革派）
+	CUB_eduardo_chibas = {
+		name = CUB_eduardo_chibas
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CUB_eduardo_chibas
+			}
+		}
+		country_leader = {
+			desc = CUB_eduardo_chibas_desc
+			ideology = Social_democracy
+			expire = "1951.8.16"
+			id = -1
+		}
+	}
+	# 赫拉尔多·马查多（前独裁者）
+	CUB_gerardo_machado = {
+		name = CUB_gerardo_machado
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CUB_gerardo_machado
+			}
+		}
+		country_leader = {
+			desc = CUB_gerardo_machado_desc
+			ideology = Authoritarianism
+			expire = "1939.3.29"
+			id = -1
+		}
+	}
 }

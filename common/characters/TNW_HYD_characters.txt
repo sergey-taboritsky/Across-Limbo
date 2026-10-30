@@ -1,0 +1,17 @@
+characters = {
+
+	HYD_Swami_Ramanand_Tirtha = {
+		name = HYD_Swami_Ramanand_Tirtha
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_HYD_Swami_Ramanand_Tirtha
+			}
+		}
+		country_leader = {
+			desc = HYD_Swami_Ramanand_Tirtha_desc
+			ideology = Social_democracy
+			expire = "1962.5.1"
+			id = -1
+		}
+	}
+}

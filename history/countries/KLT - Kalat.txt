@@ -3,15 +3,17 @@
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	Liberalism = 60
+	Absolutism = 60
 	Nationalism = 30
 	communist = 10
 	Authoritarianism = 0
 }
+recruit_character = KLT_Ahmad_Yar_Khan
+set_country_leader = KLT_Ahmad_Yar_Khan

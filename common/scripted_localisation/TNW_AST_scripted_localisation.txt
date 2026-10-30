@@ -1,0 +1,135 @@
+# AST 澳大利亚内战：七派支持度饼图显示
+# 每派按变量档位返回「主导/重要/次要/边缘」标签，由 AST_faction_pie_display 汇总嵌入
+
+defined_text = {
+	name = Get_AST_fac_alp
+	text = {
+		trigger = { check_variable = { var = AST_fac_alp value = 35 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_dominant
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_alp value = 20 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_major
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_alp value = 10 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_minor
+	}
+	text = {
+		localization_key = AST_fac_tier_fringe
+	}
+}
+
+defined_text = {
+	name = Get_AST_fac_actu
+	text = {
+		trigger = { check_variable = { var = AST_fac_actu value = 18 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_dominant
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_actu value = 10 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_major
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_actu value = 5 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_minor
+	}
+	text = {
+		localization_key = AST_fac_tier_fringe
+	}
+}
+
+defined_text = {
+	name = Get_AST_fac_cpa
+	text = {
+		trigger = { check_variable = { var = AST_fac_cpa value = 12 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_dominant
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_cpa value = 7 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_major
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_cpa value = 3 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_minor
+	}
+	text = {
+		localization_key = AST_fac_tier_fringe
+	}
+}
+
+defined_text = {
+	name = Get_AST_fac_lib
+	text = {
+		trigger = { check_variable = { var = AST_fac_lib value = 35 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_dominant
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_lib value = 20 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_major
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_lib value = 10 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_minor
+	}
+	text = {
+		localization_key = AST_fac_tier_fringe
+	}
+}
+
+defined_text = {
+	name = Get_AST_fac_nat
+	text = {
+		trigger = { check_variable = { var = AST_fac_nat value = 18 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_dominant
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_nat value = 10 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_major
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_nat value = 5 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_minor
+	}
+	text = {
+		localization_key = AST_fac_tier_fringe
+	}
+}
+
+defined_text = {
+	name = Get_AST_fac_dlp
+	text = {
+		trigger = { check_variable = { var = AST_fac_dlp value = 15 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_dominant
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_dlp value = 8 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_major
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_dlp value = 4 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_minor
+	}
+	text = {
+		localization_key = AST_fac_tier_fringe
+	}
+}
+
+defined_text = {
+	name = Get_AST_fac_awu
+	text = {
+		trigger = { check_variable = { var = AST_fac_awu value = 12 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_dominant
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_awu value = 7 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_major
+	}
+	text = {
+		trigger = { check_variable = { var = AST_fac_awu value = 3 compare = greater_than_or_equals } }
+		localization_key = AST_fac_tier_minor
+	}
+	text = {
+		localization_key = AST_fac_tier_fringe
+	}
+}

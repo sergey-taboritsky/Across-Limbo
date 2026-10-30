@@ -1,0 +1,8 @@
+on_actions = {
+	# ROOT 为各国；on_startup 对所有国家运行，此处只对 AST 开火开局介绍
+	on_startup = {
+		AST = {
+			country_event = { id = AST_event.1 }
+		}
+	}
+}

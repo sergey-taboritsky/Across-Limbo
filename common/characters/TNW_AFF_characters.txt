@@ -1,0 +1,79 @@
+characters = {
+	AFF_Robert_Menzies = {
+		name = AFF_Robert_Menzies
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AFF_Robert_Menzies
+			}
+		}
+		country_leader = {
+			desc = AFF_Robert_Menzies_desc
+			ideology = Liberalism
+			expire = "1965.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	
+	# 澳大利亚国家党（Country/National）— 党魁（东澳阵营）
+	AFF_Arthur_Fadden = {
+		name = AFF_Arthur_Fadden
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AFF_Arthur_Fadden
+			}
+		}
+		country_leader = {
+			desc = AFF_Arthur_Fadden_desc
+			ideology = Conservatism
+			expire = "1973.4.21"
+			id = -1
+		}
+	}
+	# 澳大利亚民主工党（DLP）— 幕后思想家（东澳阵营）
+	AFF_Bob_Santamaria = {
+		name = AFF_Bob_Santamaria
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AFF_Bob_Santamaria
+			}
+		}
+		country_leader = {
+			desc = AFF_Bob_Santamaria_desc
+			ideology = progressivism
+			expire = "1998.2.25"
+			id = -1
+		}
+	}
+	# 澳大利亚民主工党（DLP）— 议会领袖（东澳阵营）
+	AFF_Frank_McManus = {
+		name = AFF_Frank_McManus
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AFF_Frank_McManus
+			}
+		}
+		country_leader = {
+			desc = AFF_Frank_McManus_desc
+			ideology = progressivism
+			expire = "1984.4.1"
+			id = -1
+		}
+	}
+	# 澳大利亚自由党（Liberal）— 前总理/民粹强人（战斗民粹主义路径）
+	AFF_Billy_Hughes = {
+		name = AFF_Billy_Hughes
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AFF_Billy_Hughes
+			}
+		}
+		country_leader = {
+			desc = AFF_Billy_Hughes_desc
+			ideology = Liberalism
+			expire = "1952.10.28"
+			id = -1
+		}
+	}
+}
+}

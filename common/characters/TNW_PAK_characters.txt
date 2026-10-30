@@ -1,0 +1,17 @@
+characters = {
+	# 旁遮普（PAK）特辖区 — INC 成员领袖
+	PAK_Gopi_Chand_Bhargava = {
+		name = PAK_Gopi_Chand_Bhargava
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PAK_Gopi_Chand_Bhargava
+			}
+		}
+		country_leader = {
+			desc = PAK_Gopi_Chand_Bhargava_desc
+			ideology = Social_democracy
+			expire = "1966.4.26"
+			id = -1
+		}
+	}
+}

@@ -33,16 +33,17 @@ recruit_character = NZL_a_e_davy
 recruit_character = NZL_walter_nash
 recruit_character = NZL_w_a_veitch_milne
 recruit_character = NZL_peter_fraser
+set_country_leader = NZL_peter_fraser
 
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Social_democracy
 	last_election = "1935.11.27"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 100
+	Social_democracy = 100
 }
 
 set_convoys = 70

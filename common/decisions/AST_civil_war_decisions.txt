@@ -1,0 +1,134 @@
+# AST 澳大利亚内战：四种结局骨架
+# 触发：开局介绍事件置 AST_civil_war_active；玩家在决议分类内择一结算
+# 旗标：AST_cw_labor_victory / AST_cw_liberal_restored / AST_cw_liberal_overthrown / AST_cw_split
+
+AST_civil_war_decisions_category = {
+	# 结局一：工党获胜（转向民主社会主义）
+	AST_end_labor_victory = {
+		activation = {
+			always = no
+		}
+		available = {
+			has_country_flag = AST_civil_war_active
+			NOT = { has_country_flag = AST_cw_labor_victory }
+			NOT = { has_country_flag = AST_cw_liberal_restored }
+			NOT = { has_country_flag = AST_cw_liberal_overthrown }
+			NOT = { has_country_flag = AST_cw_split }
+		}
+		fired_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = AST_end_labor_victory_tt
+			hidden_effect = {
+				set_country_flag = AST_cw_labor_victory
+				clr_country_flag = AST_civil_war_active
+				AST_resolve_civilwar_effect = yes
+				white_peace = AFF
+				set_country_leader = AST_HV_Evatt
+				set_ideology = progressivism
+				set_popularities = {
+					communist = 8
+					socialism = 35
+					Social_democracy = 40
+					Liberalism = 8
+					Conservatism = 9
+				}
+				add_stability = 0.05
+			}
+		}
+	}
+
+	# 结局二：自由党获胜，重建民主（自由党/民主工党联盟）
+	AST_end_liberal_restored = {
+		activation = {
+			always = no
+		}
+		available = {
+			has_country_flag = AST_civil_war_active
+			NOT = { has_country_flag = AST_cw_labor_victory }
+			NOT = { has_country_flag = AST_cw_liberal_restored }
+			NOT = { has_country_flag = AST_cw_liberal_overthrown }
+			NOT = { has_country_flag = AST_cw_split }
+		}
+		fired_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = AST_end_liberal_restored_tt
+			hidden_effect = {
+				set_country_flag = AST_cw_liberal_restored
+				clr_country_flag = AST_civil_war_active
+				AST_resolve_civilwar_effect = yes
+				white_peace = AFF
+				set_country_leader = AST_Robert_Menzies
+				set_ideology = Liberalism
+				set_popularities = {
+					communist = 2
+					socialism = 6
+					Social_democracy = 18
+					Liberalism = 44
+					Conservatism = 30
+				}
+				add_stability = 0.05
+			}
+		}
+	}
+
+	# 结局三：自由党获胜，但被颠覆（彻底导向战斗民粹主义）
+	AST_end_liberal_overthrown = {
+		activation = {
+			always = no
+		}
+		available = {
+			has_country_flag = AST_civil_war_active
+			NOT = { has_country_flag = AST_cw_labor_victory }
+			NOT = { has_country_flag = AST_cw_liberal_restored }
+			NOT = { has_country_flag = AST_cw_liberal_overthrown }
+			NOT = { has_country_flag = AST_cw_split }
+		}
+		fired_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = AST_end_liberal_overthrown_tt
+			hidden_effect = {
+				set_country_flag = AST_cw_liberal_overthrown
+				clr_country_flag = AST_civil_war_active
+				AST_resolve_civilwar_effect = yes
+				white_peace = AFF
+				set_country_leader = AST_Billy_Hughes
+				set_ideology = Liberalism
+				set_popularities = {
+					communist = 3
+					socialism = 12
+					Social_democracy = 16
+					Liberalism = 38
+					Conservatism = 31
+				}
+				add_stability = -0.05
+			}
+		}
+	}
+
+	# 结局四：澳大利亚分裂（工党控西澳 / 自由党控东澳）
+	AST_end_split = {
+		activation = {
+			always = no
+		}
+		available = {
+			has_country_flag = AST_civil_war_active
+			NOT = { has_country_flag = AST_cw_labor_victory }
+			NOT = { has_country_flag = AST_cw_liberal_restored }
+			NOT = { has_country_flag = AST_cw_liberal_overthrown }
+			NOT = { has_country_flag = AST_cw_split }
+		}
+		fired_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = AST_end_split_tt
+			hidden_effect = {
+				set_country_flag = AST_cw_split
+				clr_country_flag = AST_civil_war_active
+				AST_resolve_civilwar_effect = yes
+				white_peace = AFF
+				set_country_leader = AST_Joseph_Benedict_Chifley
+				set_country_leader = AST_Robert_Menzies
+				# TODO(骨架): 实际分裂需 release 西澳(WST)/东澳(EST) 两个新 tag 并划转各州归属，此处仅置旗与派系结算
+			}
+		}
+	}
+}

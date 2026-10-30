@@ -11,3 +11,56 @@
 
 #人物
  AST_Joseph_Benedict_Chifley: "约瑟夫·班纳迪克特·奇夫利"
+ AST_Joseph_Benedict_Chifley_desc: "工党元老，1945年接替病逝的科廷出任总理。他笃信工党的社会主义纲领，却在1947年试图强制国有化银行业的立法被高等法院判为违宪，由此引爆宪法危机，被右翼斥为'美国人的狗'。"
+ AST_HV_Evatt: "赫伯特·维尔·伊瓦特"
+ AST_HV_Evatt_desc: "工党外长、联合国初创时期的关键人物，党内左翼的旗手。在奇夫利之后接掌工党，是工党胜出路线下最可能的总理人选。"
+ AST_Albert_Monk: "阿尔伯特·蒙克"
+ AST_Albert_Monk_desc: "澳大利亚工会理事会（ACTU）主席，温和的工会官僚，力主以谈判而非革命维护劳工权益，是工党与工会之间最重要的缓冲阀。"
+ AST_Lance_Sharkey: "兰斯·沙基"
+ AST_Lance_Sharkey_desc: "澳大利亚共产党总书记，亲莫斯科的强硬派。在战后罢工浪潮中影响力骤增，却被孟席斯当作'赤色威胁'的活标本。"
+ AST_Ernie_Thornton: "埃内斯特·索顿"
+ AST_Ernie_Thornton_desc: "澳共工会书记，矿工与钢铁工人运动的组织者，多次领导大规模罢工，是孟席斯红色恐慌叙事中最具威胁的工会人物。"
+ AST_Robert_Menzies: "罗伯特·孟席斯"
+ AST_Robert_Menzies_desc: "自由党党魁、战时反对派领袖。1947年宪法危机后借'共产主义威胁'煽动民意，组织倒阁，是右翼与反共力量的核心。"
+ AST_Billy_Hughes: "比利·休斯"
+ AST_Billy_Hughes_desc: "前总理、自由党元老，以好斗的民粹作风与威权倾向著称。若自由党胜出却被底层民粹运动颠覆，他是最可能的强人化身。"
+ AST_Arthur_Fadden: "阿瑟·法登"
+ AST_Arthur_Fadden_desc: "国家党（乡村党）党魁，代表 rural 保守派与牧场主利益，在反工党联盟中与自由党结盟。"
+ AST_Bob_Santamaria: "鲍勃·桑塔马里亚"
+ AST_Bob_Santamaria_desc: "天主教反共知识分子，民主工党（DLP）的精神教父。他推动工党内的反共派出走，是分裂最关键的幕后推手。"
+ AST_Frank_McManus: "弗兰克·麦克马纳斯"
+ AST_Frank_McManus_desc: "民主工党议会领袖，桑塔马里亚在议会中的代理人，代表出走的工党反共派系。"
+ AST_Clarrie_Fallon: "克拉里·法伦"
+ AST_Clarrie_Fallon_desc: "澳大利亚工人联合会（AWU）主席，掌控最大的单一工会，立场偏工党右翼、反共，是工党机器的重要票仓。"
+ AST_Tom_Dougherty: "汤姆·多尔蒂"
+ AST_Tom_Dougherty_desc: "澳大利亚工人联合会总书记，与法伦共同执掌AWU，对工党组织机器拥有巨大影响力。"
+
+#派系饼图档位
+ AST_fac_tier_dominant: "主导"
+ AST_fac_tier_major: "重要"
+ AST_fac_tier_minor: "次要"
+ AST_fac_tier_fringe: "边缘"
+ AST_faction_pie_display: "澳大利亚内战各派支持度（1947-1949，合计100）：\n§L澳大利亚工党：§! [Get_AST_fac_alp]\n§L澳大利亚工会理事会：§! [Get_AST_fac_actu]\n§L澳大利亚共产党：§! [Get_AST_fac_cpa]\n§L澳大利亚自由党：§! [Get_AST_fac_lib]\n§L澳大利亚国家党：§! [Get_AST_fac_nat]\n§L澳大利亚民主工党：§! [Get_AST_fac_dlp]\n§L澳大利亚工人联合会：§! [Get_AST_fac_awu]"
+
+#内战结局决议分类与决议
+ AST_civil_war_decisions_category: "澳大利亚内战结局"
+ AST_end_labor_victory: "工党获胜（民主社会主义）"
+ AST_end_labor_victory_desc: "工党在内战中取胜，转向民主社会主义路线，与社会主义美国巩固同盟。"
+ AST_end_labor_victory_tt: "工党整合工会与左翼，确立民主社会主义；与社会主义美国的关系进一步紧密。"
+ AST_end_liberal_restored: "自由党获胜（重建民主）"
+ AST_end_liberal_restored_desc: "自由党—民主工党联盟取胜，恢复议会民主，清算工党左翼。"
+ AST_end_liberal_restored_tt: "自由党与民主工党重建保守阵营，恢复选举民主，压制共产党与激进工会。"
+ AST_end_liberal_overthrown: "自由党获胜但被颠覆（战斗民粹主义）"
+ AST_end_liberal_overthrown_desc: "自由党虽胜，却被底层民粹运动颠覆，国家滑向战斗民粹主义。"
+ AST_end_liberal_overthrown_tt: "自由党胜出后政权被民粹强人夺取，走向威权化的战斗民粹主义。"
+ AST_end_split: "澳大利亚分裂（西工党 / 东自由党）"
+ AST_end_split_desc: "内战以分裂收场：工党固守西澳，自由党控制东澳。"
+ AST_end_split_tt: "澳大利亚沿东西裂为两半：西澳归工党，东澳归自由党。（骨架：实际领土拆分待实现）"
+
+#开局介绍事件
+ AST_event_1_t: "内战前夜"
+ AST_event_1_d: "1946年战争结束后，新西兰分治运动在澳大利亚本土引爆政治地震。工党奇夫利政府为维系与社会主义美国的关系，选择承认新西兰的高度自治，右翼据此怒斥工党出卖帝国。1947年，接任病逝的科廷的奇夫利首次尝试落实工党社会主义纲领，宣布将以强制收购国有化银行业；然而相关法律在施行前被澳大利亚高等法院裁定违宪，酿成1947年宪法危机。叠加此前的分治风波，右翼认定工党不过是'美国人的狗'。自由党主席孟席斯趁机炒作共产主义威胁、组织倒阁；工党内的反共派系亦出走另立民主工党。内战，已不可避免。\n\n[AST_faction_pie_display]"
+ AST_event_1_opt: "继续"
+
+#书签介绍
+ AST_BLITZKRIEG_DESC: "战争于1946年落幕，但澳大利亚并未迎来和平。新西兰分治运动迫使工党政府承认其高度自治，右翼怒火中烧；1947年奇夫利政府试图国有化银行业的立法被高等法院判为违宪，酿成宪法危机。自由党主席孟席斯借'赤色威胁'煽动倒阁，工党反共派出走另立民主工党——澳大利亚，正滑向一场决定国运的内战。"

@@ -181,7 +181,25 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		effect = {
+			"AST"={
+			minor = yes
+			history = "AST_BLITZKRIEG_DESC"
+			ideology = progressivism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"AFF"={
+			minor = yes
+			history = "AFF_BLITZKRIEG_DESC"
+			ideology = Liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+	effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}

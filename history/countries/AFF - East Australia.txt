@@ -1,0 +1,36 @@
+﻿capital = 674
+
+set_stability = 0.5
+set_war_support = 0.6
+
+recruit_character = AFF_Robert_Menzies
+recruit_character = AFF_Arthur_Fadden
+recruit_character = AFF_Bob_Santamaria
+recruit_character = AFF_Frank_McManus
+recruit_character = AFF_Billy_Hughes
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1946.9.28"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 2
+	socialism = 5
+	Social_democracy = 10
+	Liberalism = 55
+	Conservatism = 25
+	Absolutism = 1
+	Authoritarianism = 2
+	Nationalism = 0
+}
+
+set_convoys = 50
+
+# 东澳对西澳（AST）宣战，开启澳大利亚内战
+add_to_war = {
+	target = AST
+	war = 1
+}

@@ -48,6 +48,7 @@ recruit_character = GRE_Constantinos_Speras
 recruit_character = GRE_Markos_Vafiadis
 recruit_character = GRE_Avraam_Benaroya
 recruit_character = GRE_Aris_Velouchiotis
+recruit_character = GRE_Regency_Council
 recruit_character = GRE_Georgios_Siantos
 
 add_ideas = {

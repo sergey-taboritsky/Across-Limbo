@@ -10,10 +10,12 @@ set_popularities = {
 	Authoritarianism = 3
 	communist = 2
 	syndicalism = 4
-	Social_democracy = 18
+	Social_democracy = 10
 	socialism = 12
 	Liberalism = 4
-	Conservatism = 38
+	Conservatism = 60
 	Absolutism = 6
 	Nationalism = 13
 }
+recruit_character = MAH_KM_Cariappa
+set_country_leader = MAH_KM_Cariappa

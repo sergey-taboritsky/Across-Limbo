@@ -1,4 +1,5 @@
 characters = {
+	# 澳大利亚工党（ALP）— 现任总理
 	AST_Joseph_Benedict_Chifley = {
 		name = AST_Joseph_Benedict_Chifley
 		portraits = {
@@ -10,6 +11,171 @@ characters = {
 			desc = AST_Joseph_Benedict_Chifley_desc
 			ideology = progressivism
 			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+	# 澳大利亚工党（ALP）— 外长/后任党魁
+	AST_HV_Evatt = {
+		name = AST_HV_Evatt
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AST_HV_Evatt
+			}
+		}
+		country_leader = {
+			desc = AST_HV_Evatt_desc
+			ideology = progressivism
+			expire = "1985.11.2.1"
+			id = -1
+		}
+	}
+	# 澳大利亚工会理事会（ACTU）— 主席
+	AST_Albert_Monk = {
+		name = AST_Albert_Monk
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AST_Albert_Monk
+			}
+		}
+		country_leader = {
+			desc = AST_Albert_Monk_desc
+			ideology = progressivism
+			expire = "1963.1.1.1"
+			id = -1
+		}
+	}
+	# 澳大利亚共产党（CPA）— 总书记
+	AST_Lance_Sharkey = {
+		name = AST_Lance_Sharkey
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AST_Lance_Sharkey
+			}
+		}
+		country_leader = {
+			desc = AST_Lance_Sharkey_desc
+			ideology = communist
+			expire = "1967.1.1.1"
+			id = -1
+		}
+	}
+	# 澳大利亚共产党（CPA）— 工会书记
+	AST_Ernie_Thornton = {
+		name = AST_Ernie_Thornton
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AST_Ernie_Thornton
+			}
+		}
+		country_leader = {
+			desc = AST_Ernie_Thornton_desc
+			ideology = communist
+			expire = "1961.1.1.1"
+			id = -1
+		}
+	}
+	# 澳大利亚自由党（Liberal）— 党魁/反对派领袖
+	AST_Robert_Menzies = {
+		name = AST_Robert_Menzies
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AST_Robert_Menzies
+			}
+		}
+		country_leader = {
+			desc = AST_Robert_Menzies_desc
+			ideology = Liberalism
+			expire = "1978.5.15.1"
+			id = -1
+		}
+	}
+	# 澳大利亚自由党（Liberal）— 前总理/民粹强人（战斗民粹主义路径）
+	AST_Billy_Hughes = {
+		name = AST_Billy_Hughes
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AST_Billy_Hughes
+			}
+		}
+		country_leader = {
+			desc = AST_Billy_Hughes_desc
+			ideology = Liberalism
+			expire = "1952.10.28.1"
+			id = -1
+		}
+	}
+	# 澳大利亚国家党（Country/National）— 党魁
+	AST_Arthur_Fadden = {
+		name = AST_Arthur_Fadden
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AST_Arthur_Fadden
+			}
+		}
+		country_leader = {
+			desc = AST_Arthur_Fadden_desc
+			ideology = Conservatism
+			expire = "1973.4.21.1"
+			id = -1
+		}
+	}
+	# 澳大利亚民主工党（DLP）— 幕后思想家
+	AST_Bob_Santamaria = {
+		name = AST_Bob_Santamaria
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AST_Bob_Santamaria
+			}
+		}
+		country_leader = {
+			desc = AST_Bob_Santamaria_desc
+			ideology = progressivism
+			expire = "1998.2.25.1"
+			id = -1
+		}
+	}
+	# 澳大利亚民主工党（DLP）— 议会领袖
+	AST_Frank_McManus = {
+		name = AST_Frank_McManus
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AST_Frank_McManus
+			}
+		}
+		country_leader = {
+			desc = AST_Frank_McManus_desc
+			ideology = progressivism
+			expire = "1984.4.1.1"
+			id = -1
+		}
+	}
+	# 澳大利亚工人联合会（AWU）— 主席
+	AST_Clarrie_Fallon = {
+		name = AST_Clarrie_Fallon
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AST_Clarrie_Fallon
+			}
+		}
+		country_leader = {
+			desc = AST_Clarrie_Fallon_desc
+			ideology = socialism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	# 澳大利亚工人联合会（AWU）— 总书记
+	AST_Tom_Dougherty = {
+		name = AST_Tom_Dougherty
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_AST_Tom_Dougherty
+			}
+		}
+		country_leader = {
+			desc = AST_Tom_Dougherty_desc
+			ideology = socialism
+			expire = "1972.1.1.1"
 			id = -1
 		}
 	}

@@ -1,0 +1,17 @@
+characters = {
+
+	MAH_KM_Cariappa = {
+		name = MAH_KM_Cariappa
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAH_KM_Cariappa
+			}
+		}
+		country_leader = {
+			desc = MAH_KM_Cariappa_desc
+			ideology = Conservatism
+			expire = "1993.5.15"
+			id = -1
+		}
+	}
+}
