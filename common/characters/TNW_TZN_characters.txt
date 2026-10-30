@@ -1,0 +1,17 @@
+characters = {
+
+	TZN_Edward_Twining = {
+		name = TZN_Edward_Twining
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TZN_Edward_Twining
+			}
+		}
+		country_leader = {
+			desc = TZN_Edward_Twining_desc
+			ideology = Authoritarianism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

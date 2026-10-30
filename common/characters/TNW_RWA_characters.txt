@@ -1,0 +1,17 @@
+characters = {
+
+	RWA_Mutara_III_Rudahigwa = {
+		name = RWA_Mutara_III_Rudahigwa
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RWA_Mutara_III_Rudahigwa
+			}
+		}
+		country_leader = {
+			desc = RWA_Mutara_III_Rudahigwa_desc
+			ideology = absolute_monarchy
+			expire = "2000.1.1"
+			id = -1
+		}
+	}
+}

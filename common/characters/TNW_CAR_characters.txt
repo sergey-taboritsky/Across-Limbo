@@ -1,0 +1,17 @@
+characters = {
+
+	CAR_Barthelemy_Boganda = {
+		name = CAR_Barthelemy_Boganda
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CAR_Barthelemy_Boganda
+			}
+		}
+		country_leader = {
+			desc = CAR_Barthelemy_Boganda_desc
+			ideology = Social_democracy
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,31 @@
+characters = {
+
+	CHA_Pierre_Messmer = {
+		name = CHA_Pierre_Messmer
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHA_Pierre_Messmer
+			}
+		}
+		country_leader = {
+			desc = CHA_Pierre_Messmer_desc
+			ideology = Authoritarianism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+	CHA_Gabriel_Lisette = {
+		name = CHA_Gabriel_Lisette
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CHA_Gabriel_Lisette
+			}
+		}
+		country_leader = {
+			desc = CHA_Gabriel_Lisette_desc
+			ideology = Social_democracy
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

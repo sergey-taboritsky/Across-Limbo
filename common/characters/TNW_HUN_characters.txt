@@ -1,2 +1,16 @@
 characters = {
+	HUN_Ferenc_Szalasi = {
+		name = HUN_Ferenc_Szalasi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_HUN_Ferenc_Szalasi
+			}
+		}
+		country_leader = {
+			desc = HUN_Ferenc_Szalasi_desc
+			ideology = National_Socialism
+			traits = {
+			}
+		}
+	}
 }

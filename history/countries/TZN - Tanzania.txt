@@ -79,3 +79,5 @@ set_popularities = {
 	communist = 5
 	Authoritarianism = 50
 }
+recruit_character = TZN_Edward_Twining
+set_country_leader = TZN_Edward_Twining

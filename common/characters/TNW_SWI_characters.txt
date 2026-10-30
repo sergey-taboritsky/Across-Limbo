@@ -1,0 +1,16 @@
+characters = {
+	SWI_Max_Petitpierre = {
+		name = SWI_Max_Petitpierre
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SWI_Max_Petitpierre
+			}
+		}
+		country_leader = {
+			desc = SWI_Max_Petitpierre_desc
+			ideology = Social_Liberalism
+			traits = {
+			}
+		}
+	}
+}

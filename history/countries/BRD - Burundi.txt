@@ -71,15 +71,14 @@ recruit_character = BRD_stc
 
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = absolute_monarchy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	Liberalism = 55
-	Nationalism = 15
-	communist = 5
-	Authoritarianism = 25
+	absolute_monarchy = 100
 }
+recruit_character = BRD_Mwambutsa_IV
+set_country_leader = BRD_Mwambutsa_IV

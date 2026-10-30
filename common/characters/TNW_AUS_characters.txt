@@ -13,7 +13,16 @@ characters = {
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {
-			    AUS_Those_who_hold_contradictions
+				AUS_Those_who_hold_contradictions
+			}
+		}
+	}
+	AUS_Karl_Renner_1948 = {
+		name = AUS_Karl_Renner_1948
+		country_leader = {
+			desc = AUS_Karl_Renner_1948_desc
+			ideology = Social_democratic
+			traits = {
 			}
 		}
 	}

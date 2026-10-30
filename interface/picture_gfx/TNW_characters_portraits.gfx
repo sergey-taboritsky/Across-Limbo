@@ -2071,4 +2071,55 @@ spriteTypes = {
 		texturefile = "gfx/characters/FIN_Vilho_Annala.png"
 		legacy_lazy_load = no
 	}
+
+	#欧仁·容热
+	spriteType = {
+		name = "GFX_portrait_large_COG_Eugene_Jungers"
+		texturefile = "gfx/characters/COG_Eugene_Jungers.png"
+	}
+	#爱德华·特温宁
+	spriteType = {
+		name = "GFX_portrait_large_TZN_Edward_Twining"
+		texturefile = "gfx/characters/TZN_Edward_Twining.png"
+	}
+	#菲利普·米切尔
+	spriteType = {
+		name = "GFX_portrait_large_KEN_Philip_Mitchell"
+		texturefile = "gfx/characters/KEN_Philip_Mitchell.png"
+	}
+	#诺埃尔·巴卢
+	spriteType = {
+		name = "GFX_portrait_large_CMR_Noel_Ballu"
+		texturefile = "gfx/characters/CMR_Noel_Ballu.png"
+	}
+	#穆塔拉三世·鲁达希格瓦
+	spriteType = {
+		name = "GFX_portrait_large_RWA_Mutara_III_Rudahigwa"
+		texturefile = "gfx/characters/RWA_Mutara_III_Rudahigwa.png"
+	}
+	#姆瓦姆布萨四世
+	spriteType = {
+		name = "GFX_portrait_large_BRD_Mwambutsa_IV"
+		texturefile = "gfx/characters/BRD_Mwambutsa_IV.png"
+	}
+	#穆特萨二世
+	spriteType = {
+		name = "GFX_portrait_large_UGA_Mutesa_II"
+		texturefile = "gfx/characters/UGA_Mutesa_II.png"
+	}
+	#巴泰勒米·博甘达
+	spriteType = {
+		name = "GFX_portrait_large_CAR_Barthelemy_Boganda"
+		texturefile = "gfx/characters/CAR_Barthelemy_Boganda.png"
+	}
+	#皮埃尔·梅斯梅尔
+	spriteType = {
+		name = "GFX_portrait_large_CHA_Pierre_Messmer"
+		texturefile = "gfx/characters/CHA_Pierre_Messmer.png"
+	}
+	#加布里埃尔·利塞特
+	spriteType = {
+		name = "GFX_portrait_large_CHA_Gabriel_Lisette"
+		texturefile = "gfx/characters/CHA_Gabriel_Lisette.png"
+	}
 }

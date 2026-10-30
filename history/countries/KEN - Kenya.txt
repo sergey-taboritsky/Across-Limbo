@@ -87,4 +87,5 @@ create_country_leader = {
 		#
 	}
 }
-
+recruit_character = KEN_Philip_Mitchell
+set_country_leader = KEN_Philip_Mitchell

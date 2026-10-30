@@ -82,3 +82,5 @@ set_popularities = {
 	communist = 5
 	Authoritarianism = 50
 }
+recruit_character = CMR_Noel_Ballu
+set_country_leader = CMR_Noel_Ballu

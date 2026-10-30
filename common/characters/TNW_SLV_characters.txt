@@ -1,0 +1,16 @@
+characters = {
+	SLV_Boris_Kidric = {
+		name = SLV_Boris_Kidric
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SLV_Boris_Kidric
+			}
+		}
+		country_leader = {
+			desc = SLV_Boris_Kidric_desc
+			ideology = Marxism_Leninism
+			traits = {
+			}
+		}
+	}
+}

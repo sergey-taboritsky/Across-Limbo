@@ -1,0 +1,17 @@
+characters = {
+
+	CMR_Noel_Ballu = {
+		name = CMR_Noel_Ballu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CMR_Noel_Ballu
+			}
+		}
+		country_leader = {
+			desc = CMR_Noel_Ballu_desc
+			ideology = Authoritarianism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

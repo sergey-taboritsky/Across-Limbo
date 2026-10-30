@@ -1,0 +1,17 @@
+characters = {
+
+	KEN_Philip_Mitchell = {
+		name = KEN_Philip_Mitchell
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KEN_Philip_Mitchell
+			}
+		}
+		country_leader = {
+			desc = KEN_Philip_Mitchell_desc
+			ideology = Authoritarianism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

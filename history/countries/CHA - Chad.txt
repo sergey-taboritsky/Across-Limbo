@@ -82,3 +82,7 @@ set_popularities = {
 	communist = 5
 	Authoritarianism = 50
 }
+recruit_character = CHA_Pierre_Messmer
+recruit_character = CHA_Gabriel_Lisette
+set_country_leader = CHA_Pierre_Messmer
+set_country_flag = chad_french_rule

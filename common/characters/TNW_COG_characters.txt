@@ -1,0 +1,17 @@
+characters = {
+
+	COG_Eugene_Jungers = {
+		name = COG_Eugene_Jungers
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_COG_Eugene_Jungers
+			}
+		}
+		country_leader = {
+			desc = COG_Eugene_Jungers_desc
+			ideology = Authoritarianism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

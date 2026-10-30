@@ -1,0 +1,16 @@
+characters = {
+	FIN_Vilho_Annala = {
+		name = FIN_Vilho_Annala
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FIN_Vilho_Annala
+			}
+		}
+		country_leader = {
+			desc = FIN_Vilho_Annala_desc
+			ideology = National_Socialism
+			traits = {
+			}
+		}
+	}
+}

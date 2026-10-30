@@ -24,14 +24,13 @@ recruit_character = TNW_AF_Jeffery_Hamm
 
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = absolute_monarchy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 55
-	Nationalism = 15
-	communist = 5
-	Authoritarianism = 25
+	absolute_monarchy = 100
 }
+recruit_character = UGA_Mutesa_II
+set_country_leader = UGA_Mutesa_II

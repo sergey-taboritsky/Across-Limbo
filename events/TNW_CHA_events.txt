@@ -1,0 +1,53 @@
+add_namespace = CHA_event
+
+# 乍得（法属赤道非洲）：殖民总督在开局四年后主动交权给本地人
+country_event = {
+	id = CHA_event.1
+	title = CHA_event.1.t
+	desc = CHA_event.1.d
+	picture = GFX_news_event_generic_panzer_attack
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = CHA
+		has_country_flag = chad_french_rule
+		date = { year = 1952 month = 1 day = 1 }
+	}
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = CHA_event.1.o
+		recruit_character = CHA_Gabriel_Lisette
+		set_country_leader = CHA_Gabriel_Lisette
+		set_ruling_party = social_democracy
+		set_popularities = {
+			social_democracy = 100
+		}
+		remove_country_flag = chad_french_rule
+		add_stability = 0.10
+		add_war_support = -0.05
+		custom_effect_tooltip = CHA_event.1.tt
+		every_country = {
+			limit = {
+				OR = {
+					is_ai = no
+					is_major = yes
+				}
+			}
+			news_event = { id = CHA_event.2 }
+		}
+	}
+}
+
+# 国际新闻：乍得和平移交政权
+news_event = {
+	id = CHA_event.2
+	title = CHA_event.2.t
+	desc = CHA_event.2.d
+	picture = GFX_news_event_generic_panzer_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = CHA_event.2.o
+	}
+}
