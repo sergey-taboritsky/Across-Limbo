@@ -9,7 +9,13 @@ characters = {
 		}
 		country_leader = {
 			desc = PAK_Gopi_Chand_Bhargava_desc
-			ideology = Social_democracy
+			types = {
+				Social_democratic = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1966.4.26"
 			id = -1
 		}

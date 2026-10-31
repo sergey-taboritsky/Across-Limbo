@@ -9,7 +9,13 @@ characters = {
 		}
 		country_leader = {
 			desc = CAR_Barthelemy_Boganda_desc
-			ideology = Social_democracy
+			types = {
+				Social_democratic = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1965.1.1"
 			id = -1
 		}

@@ -67,7 +67,7 @@ recruit_character = KEN_acd2
 
 # A colony of Italy in 1939.  However, if independent it would have the same politics as in 1936
 set_politics = {
-	ruling_party = Authoritarianism
+	ruling_party = oligarchy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -76,16 +76,4 @@ set_popularities = {
 	Authoritarianism = 100
 }
 
-create_country_leader = {
-	
-	
-	name = "Dedan Ngwale"
-	picture = GFX_portrait_Dedan_Ngwale
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
 recruit_character = KEN_Philip_Mitchell
-set_country_leader = KEN_Philip_Mitchell

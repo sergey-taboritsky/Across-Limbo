@@ -9,7 +9,13 @@ characters = {
 		}
 		country_leader = {
 			desc = HAI_Dumarsais_Estime_desc
-			ideology = Liberalism
+			types = {
+				Social_democratic = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1953.7.20"
 			id = -1
 			traits = {
@@ -26,7 +32,13 @@ characters = {
 		}
 		country_leader = {
 			desc = HAI_jacques_roumain_desc
-			ideology = socialism
+			types = {
+				Social_democratic = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1944.8.18"
 			id = -1
 		}

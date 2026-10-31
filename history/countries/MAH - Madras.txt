@@ -1,7 +1,7 @@
 ﻿capital = 441
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = discipline
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
@@ -9,13 +9,12 @@ set_politics = {
 set_popularities = {
 	Authoritarianism = 3
 	communist = 2
-	syndicalism = 4
-	Social_democracy = 10
-	socialism = 12
-	Liberalism = 4
-	Conservatism = 60
-	Absolutism = 6
+	syndicalism = 3
+	Social_democracy = 9
+	socialism = 10
+	Liberalism = 3
+	Conservatism = 52
+	Absolutism = 5
 	Nationalism = 13
 }
 recruit_character = MAH_KM_Cariappa
-set_country_leader = MAH_KM_Cariappa

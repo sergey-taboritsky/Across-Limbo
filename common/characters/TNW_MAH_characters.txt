@@ -9,7 +9,13 @@ characters = {
 		}
 		country_leader = {
 			desc = MAH_KM_Cariappa_desc
-			ideology = Conservatism
+			types = {
+				discipline = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1993.5.15"
 			id = -1
 		}

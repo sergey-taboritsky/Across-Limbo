@@ -78,4 +78,3 @@ set_popularities = {
 	absolute_monarchy = 100
 }
 recruit_character = RWA_Mutara_III_Rudahigwa
-set_country_leader = RWA_Mutara_III_Rudahigwa

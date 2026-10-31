@@ -81,4 +81,3 @@ set_popularities = {
 	absolute_monarchy = 100
 }
 recruit_character = BRD_Mwambutsa_IV
-set_country_leader = BRD_Mwambutsa_IV

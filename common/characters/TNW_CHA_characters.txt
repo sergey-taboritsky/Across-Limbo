@@ -9,7 +9,13 @@ characters = {
 		}
 		country_leader = {
 			desc = CHA_Pierre_Messmer_desc
-			ideology = Authoritarianism
+			types = {
+				oligarchy = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1965.1.1"
 			id = -1
 		}
@@ -23,7 +29,13 @@ characters = {
 		}
 		country_leader = {
 			desc = CHA_Gabriel_Lisette_desc
-			ideology = Social_democracy
+			types = {
+				Social_democratic = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1965.1.1"
 			id = -1
 		}

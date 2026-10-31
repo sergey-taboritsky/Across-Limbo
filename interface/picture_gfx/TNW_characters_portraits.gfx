@@ -2122,4 +2122,28 @@ spriteTypes = {
 		name = "GFX_portrait_large_CHA_Gabriel_Lisette"
 		texturefile = "gfx/characters/CHA_Gabriel_Lisette.png"
 	}
-}
+
+	spriteType = {
+		name = "GFX_portrait_large_AST_Arthur_Fadden"
+		texturefile = "gfx/characters/AST_Arthur_Fadden.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_AFF_Arthur_Fadden"
+		texturefile = "gfx/characters/AFF_Arthur_Fadden.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_AST_Frank_McManus"
+		texturefile = "gfx/characters/AST_Frank_McManus.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_AFF_Frank_McManus"
+		texturefile = "gfx/characters/AFF_Frank_McManus.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_IRQ_fahmi_said"
+		texturefile = "gfx/characters/IRQ_fahmi_said.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_IRQ_abd_al_karim_qasim"
+		texturefile = "gfx/characters/IRQ_abd_al_karim_qasim.png"
+	}}

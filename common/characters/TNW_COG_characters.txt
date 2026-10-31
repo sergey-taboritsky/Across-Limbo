@@ -9,7 +9,13 @@ characters = {
 		}
 		country_leader = {
 			desc = COG_Eugene_Jungers_desc
-			ideology = Authoritarianism
+			types = {
+				oligarchy = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1965.1.1"
 			id = -1
 		}

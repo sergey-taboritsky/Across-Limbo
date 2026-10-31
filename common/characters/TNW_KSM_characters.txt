@@ -9,7 +9,13 @@ characters = {
 		}
 		country_leader = {
 			desc = KSM_Gopalaswami_Ayyangar_desc
-			ideology = Social_democracy
+			types = {
+				Social_democratic = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1953.2.10"
 			id = -1
 		}

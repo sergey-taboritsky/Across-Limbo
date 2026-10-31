@@ -704,6 +704,18 @@ country_event = {
 			SJR = { load_oob = "SJR_civil_war" }
 			HAT = { load_oob = "HAT_civil_war" }
 			PON = { load_oob = "PON_civil_war" }
+			DIJ = { add_country_leader_role = { character = DIJ_Kartosuwirjo promote_leader = yes country_leader = { desc = DIJ_Kartosuwirjo_desc ideology = religious_socialism traits = { } } } }
+			JGS = { add_country_leader_role = { character = JGS_Hamengkubuwono_IX promote_leader = yes country_leader = { desc = JGS_Hamengkubuwono_IX_desc ideology = absolute_monarchy traits = { } } } }
+			MUR = { add_country_leader_role = { character = MUR_Sukarni promote_leader = yes country_leader = { desc = MUR_Sukarni_desc ideology = Left_wing_nationalism traits = { } } } }
+			SJR = { add_country_leader_role = { character = SJR_Sutan_Sjahrir promote_leader = yes country_leader = { desc = SJR_Sutan_Sjahrir_desc ideology = Liberalism_socialism traits = { } } } }
+			PON = { add_country_leader_role = { character = PON_R_Murdiyono promote_leader = yes country_leader = { desc = PON_R_Murdiyono_desc ideology = military_government traits = { } } } }
+			DIJ = { set_country_leader = DIJ_Kartosuwirjo }
+			JGS = { set_country_leader = JGS_Hamengkubuwono_IX }
+			MUR = { set_country_leader = MUR_Sukarni }
+			SJR = { set_country_leader = SJR_Sutan_Sjahrir }
+			PON = { set_country_leader = PON_R_Murdiyono }
+			HAT = { add_country_leader_role = { character = HAT_Mohammad_Hatta promote_leader = yes country_leader = { desc = HAT_Mohammad_Hatta_desc ideology = Authoritarian_Liberalism traits = { } } } }
+			HAT = { set_country_leader = HAT_Mohammad_Hatta }
 			declare_war_on = { type = annex_everything target = DIJ }
 			declare_war_on = { type = annex_everything target = JGS }
 			declare_war_on = { type = annex_everything target = MUR }
@@ -732,7 +744,66 @@ country_event = {
 		}
 	}
 	option = {
-		name = INS_crisis.26.a
+		name = INS_crisis.26_a_back_sjr
+		custom_effect_tooltip = INS_back_sjr_tt
+		hidden_effect = {
+			SJR = { add_army_experience = 25 add_manpower = 60000 add_war_support = 0.1 }
+			INS = { add_manpower = -20000 add_war_support = -0.05 }
+		}
+		set_country_flag = INS_backed_SJR
+	}
+	option = {
+		name = INS_crisis.26_a_back_hat
+		custom_effect_tooltip = INS_back_hat_tt
+		hidden_effect = {
+			HAT = { add_army_experience = 25 add_manpower = 60000 add_war_support = 0.1 }
+			INS = { add_manpower = -20000 add_war_support = -0.05 }
+		}
+		set_country_flag = INS_backed_HAT
+	}
+	option = {
+		name = INS_crisis.26_a_back_mur
+		custom_effect_tooltip = INS_back_mur_tt
+		hidden_effect = {
+			MUR = { add_army_experience = 25 add_manpower = 60000 add_war_support = 0.1 }
+			INS = { add_manpower = -20000 add_war_support = -0.05 }
+		}
+		set_country_flag = INS_backed_MUR
+	}
+	option = {
+		name = INS_crisis.26_a_back_dij
+		custom_effect_tooltip = INS_back_dij_tt
+		hidden_effect = {
+			DIJ = { add_army_experience = 25 add_manpower = 60000 add_war_support = 0.1 }
+			INS = { add_manpower = -20000 add_war_support = -0.05 }
+		}
+		set_country_flag = INS_backed_DIJ
+	}
+	option = {
+		name = INS_crisis.26_a_back_jgs
+		custom_effect_tooltip = INS_back_jgs_tt
+		hidden_effect = {
+			JGS = { add_army_experience = 25 add_manpower = 60000 add_war_support = 0.1 }
+			INS = { add_manpower = -20000 add_war_support = -0.05 }
+		}
+		set_country_flag = INS_backed_JGS
+	}
+	option = {
+		name = INS_crisis.26_a_back_pon
+		custom_effect_tooltip = INS_back_pon_tt
+		hidden_effect = {
+			PON = { add_army_experience = 25 add_manpower = 60000 add_war_support = 0.1 }
+			INS = { add_manpower = -20000 add_war_support = -0.05 }
+		}
+		set_country_flag = INS_backed_PON
+	}
+	option = {
+		name = INS_crisis.26_a_back_ins
+		custom_effect_tooltip = INS_back_ins_tt
+		hidden_effect = {
+			INS = { add_army_experience = 25 add_manpower = 60000 add_war_support = 0.1 }
+		}
+		set_country_flag = INS_backed_INS
 	}
 }
 

@@ -1935,8 +1935,16 @@ focus = {
 		cost = 10.00
 		x = 40
 		y = 6
+		available = {
+			OR = {
+				INS = { has_country_flag = INS_succession_sukarno }
+				INS = { has_country_flag = INS_succession_yamin }
+			}
+		}
 		completion_reward = {
-			add_political_power = 50
+			set_country_flag = MAL_peninsula_crisis_active
+			add_war_support = 0.05
+			add_political_power = 25
 		}
 	}
 
@@ -1950,7 +1958,10 @@ focus = {
 			focus = MAL_Peninsula_Crisis
 		}
 		completion_reward = {
-			add_political_power = 50
+			army_experience = 15
+			add_war_support = 0.02
+			add_stability = 0.02
+			set_country_flag = MAL_archipelago_cordon_built
 		}
 	}
 
@@ -1964,7 +1975,10 @@ focus = {
 			focus = MAL_Peninsula_Crisis
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.03
+			add_political_power = 25
+			set_country_flag = MAL_india_infil_contained
+			add_popularity = { ideology = Nationalism popularity = -0.02 }
 		}
 	}
 
@@ -1978,7 +1992,9 @@ focus = {
 			focus = MAL_Peninsula_Crisis
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_war_support = 0.05
+			army_experience = 20
+			set_country_flag = MAL_indostar_front
 		}
 	}
 
@@ -1992,7 +2008,9 @@ focus = {
 			focus = MAL_Strengthen_Archipelago_Cordon
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
+			set_country_flag = MAL_sulawesi_contact
+			add_stability = 0.02
 		}
 	}
 
@@ -2006,7 +2024,9 @@ focus = {
 			focus = MAL_Contain_Indian_Infiltration
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.05
+			add_political_power = 25
+			add_popularity = { ideology = Authoritarianism popularity = 0.02 }
 		}
 	}
 
@@ -2020,7 +2040,9 @@ focus = {
 			focus = MAL_Contain_Indian_Infiltration
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.02
+			set_country_flag = MAL_sg_indian_watched
+			add_popularity = { ideology = socialism popularity = -0.02 }
 		}
 	}
 
@@ -2037,7 +2059,9 @@ focus = {
 			focus = MAL_Monitor_Singapore_Indian
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.02
+			add_war_support = 0.02
+			set_country_flag = MAL_strait_rights_tight
 		}
 	}
 
@@ -2052,7 +2076,9 @@ focus = {
 		}
 		mutually_exclusive = { focus = MAL_Prioritize_Suppress_Indian_Labor }
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.03
+			add_political_power = 25
+			add_popularity = { ideology = Nationalism popularity = -0.03 }
 		}
 	}
 
@@ -2067,7 +2093,9 @@ focus = {
 		}
 		mutually_exclusive = { focus = MAL_Disassemble_Indian_Nationalism }
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.02
+			add_popularity = { ideology = syndicalism popularity = -0.03 }
+			set_country_flag = MAL_indian_labor_suppressed
 		}
 	}
 
@@ -2081,7 +2109,8 @@ focus = {
 			focus = MAL_Indo_Star_Confrontation_Front
 		}
 		completion_reward = {
-			add_political_power = 50
+			navy_experience = 25
+			add_war_support = 0.02
 		}
 	}
 
@@ -2095,7 +2124,8 @@ focus = {
 			focus = MAL_Indo_Star_Confrontation_Front
 		}
 		completion_reward = {
-			add_political_power = 50
+			army_experience = 25
+			add_war_support = 0.02
 		}
 	}
 
@@ -2109,7 +2139,9 @@ focus = {
 			focus = MAL_Indo_Star_Confrontation_Front
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.02
+			add_war_support = 0.03
+			add_popularity = { ideology = Liberalism popularity = 0.02 }
 		}
 	}
 
@@ -2129,7 +2161,9 @@ focus = {
 			focus = MAL_Mobilize_Chinese_Civilians
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_war_support = 0.04
+			army_experience = 15
+			set_country_flag = MAL_malacca_militarized
 		}
 	}
 
@@ -2144,7 +2178,9 @@ focus = {
 		}
 		mutually_exclusive = { focus = MAL_Support_Gowa_Royalists }
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
+			set_country_flag = MAL_minahasa_fed
+			add_stability = 0.02
 		}
 	}
 
@@ -2159,7 +2195,9 @@ focus = {
 		}
 		mutually_exclusive = { focus = MAL_Support_Minahasa_Federalists }
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
+			set_country_flag = MAL_gowa_royal
+			add_stability = 0.02
 		}
 	}
 
@@ -2173,7 +2211,9 @@ focus = {
 			focus = MAL_Recontact_Sulawesi
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
+			set_country_flag = MAL_nusa_contact
+			add_stability = 0.01
 		}
 	}
 
@@ -2191,7 +2231,9 @@ focus = {
 			focus = MAL_Contact_Nusa_Tenggara
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
+			set_country_flag = MAL_phl_transit
+			add_war_support = 0.02
 		}
 	}
 
@@ -2205,7 +2247,9 @@ focus = {
 			focus = MAL_Philippines_Transit
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
+			set_country_flag = MAL_australia_reach
+			add_stability = 0.02
 		}
 	}
 
@@ -2226,7 +2270,9 @@ focus = {
 			}
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.02
+			add_war_support = 0.02
+			add_popularity = { ideology = socialism popularity = 0.02 }
 		}
 	}
 
@@ -2248,7 +2294,9 @@ focus = {
 			}
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.02
+			add_political_power = 25
+			add_popularity = { ideology = Nationalism popularity = 0.02 }
 		}
 	}
 
@@ -2262,7 +2310,9 @@ focus = {
 			focus = MAL_Disassemble_Indian_Nationalism
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.04
+			add_war_support = 0.02
+			add_popularity = { ideology = Nationalism popularity = -0.03 }
 		}
 	}
 
@@ -2277,7 +2327,9 @@ focus = {
 			focus = MAL_Prioritize_Suppress_Indian_Labor
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = { ideology = socialism popularity = -0.03 }
+			set_country_flag = MAL_mic_pmftu_severed
 		}
 	}
 
@@ -2291,7 +2343,9 @@ focus = {
 			focus = MAL_Prioritize_Suppress_Indian_Labor
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.02
+			add_popularity = { ideology = syndicalism popularity = -0.03 }
+			set_country_flag = MAL_cpc_south_mobilized
 		}
 	}
 
@@ -2311,7 +2365,9 @@ focus = {
 			focus = MAL_Mobilize_CPC_South_Bureau
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_war_support = 0.03
+			set_country_flag = MAL_indo_union_disassembled
+			add_political_power = 25
 		}
 	}
 
@@ -2335,7 +2391,9 @@ focus = {
 			focus = MAL_Strike_Malay_Right
 		}
 		completion_reward = {
-			add_political_power = 50
+			set_country_flag = MAL_confrontation_phase_2
+			add_war_support = 0.03
+			add_political_power = 25
 		}
 	}
 
@@ -2349,7 +2407,9 @@ focus = {
 			focus = MAL_Militarize_Malacca
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.03
+			set_country_flag = MAL_leftist_ties_investigated
+			add_political_power = 25
 		}
 	}
 
@@ -2364,7 +2424,9 @@ focus = {
 		}
 		mutually_exclusive = { focus = MAL_Investigate_Peng_Labor_Congress }
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.02
+			add_popularity = { ideology = syndicalism popularity = -0.02 }
+			set_country_flag = MAL_cpc_mcp_comms_investigated
 		}
 	}
 
@@ -2378,7 +2440,9 @@ focus = {
 			focus = MAL_Militarize_Malacca
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.03
+			add_popularity = { ideology = Authoritarianism popularity = 0.02 }
+			set_country_flag = MAL_collab_swept
 		}
 	}
 
@@ -2393,7 +2457,9 @@ focus = {
 		}
 		mutually_exclusive = { focus = MAL_Investigate_CPC_MCP_Comms }
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.02
+			add_popularity = { ideology = syndicalism popularity = -0.02 }
+			set_country_flag = MAL_peng_congress_investigated
 		}
 	}
 
@@ -2408,7 +2474,9 @@ focus = {
 			focus = MAL_Investigate_Peng_Labor_Congress
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.02
+			add_popularity = { ideology = socialism popularity = -0.04 }
+			set_country_flag = MAL_malay_left_struck
 		}
 	}
 
@@ -2422,7 +2490,10 @@ focus = {
 			focus = MAL_Further_Sweep_Collaborationism
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.02
+			add_popularity = { ideology = Conservatism popularity = -0.03 }
+			add_popularity = { ideology = Nationalism popularity = -0.02 }
+			set_country_flag = MAL_malay_right_struck
 		}
 	}
 
@@ -2440,7 +2511,16 @@ focus = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = {
-				text = MAL_focus_wip_desc
+				text = MAL_Unify_Nation_tt1
+			}
+			custom_effect_tooltip = {
+				text = MAL_Unify_Nation_tt2
+			}
+			custom_effect_tooltip = {
+				text = MAL_Unify_Nation_tt3
+			}
+			custom_effect_tooltip = {
+				text = MAL_Unify_Nation_tt4
 			}
 		}
 	}
@@ -2459,7 +2539,13 @@ focus = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = {
-				text = MAL_focus_wip_desc
+				text = MAL_Counter_Confrontation_Tactics_tt1
+			}
+			custom_effect_tooltip = {
+				text = MAL_Counter_Confrontation_Tactics_tt2
+			}
+			custom_effect_tooltip = {
+				text = MAL_Counter_Confrontation_Tactics_tt3
 			}
 		}
 	}
@@ -2478,7 +2564,13 @@ focus = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = {
-				text = MAL_focus_wip_desc
+				text = MAL_Formalize_Archipelago_Cordon_tt1
+			}
+			custom_effect_tooltip = {
+				text = MAL_Formalize_Archipelago_Cordon_tt2
+			}
+			custom_effect_tooltip = {
+				text = MAL_Formalize_Archipelago_Cordon_tt3
 			}
 		}
 	}

@@ -9,7 +9,13 @@ characters = {
 		}
 		country_leader = {
 			desc = UGA_Mutesa_II_desc
-			ideology = absolute_monarchy
+			types = {
+				absolute_monarchy = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "2000.1.1"
 			id = -1
 		}

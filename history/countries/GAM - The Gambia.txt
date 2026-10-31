@@ -53,15 +53,15 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	communist = 3
-	syndicalism = 45
-	socialism = 20
-	Social_democracy = 15
-	Liberalism = 18
-	Conservatism = 10
-	Authoritarianism = 4
+	communist = 2
+	syndicalism = 40
+	socialism = 16
+	Social_democracy = 12
+	Liberalism = 14
+	Conservatism = 8
+	Authoritarianism = 3
 	Absolutism = 0
-	Nationalism = 15
+	Nationalism = 5
 }
 
 recruit_character = GAM_EF_Small

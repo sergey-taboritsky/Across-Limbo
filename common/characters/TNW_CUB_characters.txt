@@ -9,7 +9,13 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_Carlos_Prio_Socarras_desc
-			ideology = Liberalism
+			types = {
+				Social_democratic = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1977.4.5"
 			id = -1
 			traits = {
@@ -26,7 +32,13 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_Ramon_Grau_San_Martin_desc
-			ideology = socialism
+			types = {
+				Social_democratic = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1969.7.6"
 			id = -1
 		}
@@ -41,7 +53,13 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_fulgencio_batista_desc
-			ideology = Conservatism
+			types = {
+				discipline = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1973.8.6"
 			id = -1
 		}
@@ -56,7 +74,13 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_fidel_castro_desc
-			ideology = socialism
+			types = {
+				Social_democratic = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "2016.11.25"
 			id = -1
 		}
@@ -71,7 +95,13 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_eduardo_chibas_desc
-			ideology = Social_democracy
+			types = {
+				Social_democratic = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1951.8.16"
 			id = -1
 		}
@@ -86,7 +116,13 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_gerardo_machado_desc
-			ideology = Authoritarianism
+			types = {
+				oligarchy = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1939.3.29"
 			id = -1
 		}

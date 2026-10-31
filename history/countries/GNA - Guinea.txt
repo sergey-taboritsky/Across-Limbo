@@ -78,12 +78,12 @@ set_popularities = {
 	communist = 3
 	syndicalism = 0
 	socialism = 45
-	Social_democracy = 18
-	Liberalism = 15
-	Conservatism = 10
-	Authoritarianism = 5
+	Social_democracy = 15
+	Liberalism = 13
+	Conservatism = 9
+	Authoritarianism = 4
 	Absolutism = 0
-	Nationalism = 15
+	Nationalism = 11
 }
 
 

@@ -9,7 +9,13 @@ characters = {
 		}
 		country_leader = {
 			desc = KLT_Ahmad_Yar_Khan_desc
-			ideology = Absolutism
+			types = {
+				absolute_monarchy = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1979.9.29"
 			id = -1
 		}

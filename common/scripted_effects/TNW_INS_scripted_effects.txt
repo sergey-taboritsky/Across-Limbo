@@ -206,7 +206,7 @@ INS_succession_verdict_effect = {
 
 # 印尼内战：脚本和平（每月判定）
 INS_civil_war_check_effect = {
-	# 军政府胜利：雅加达+四大敌营首府全在握
+	# 中央政府（军政府）胜利：雅加达+各派首府全在握 —— 定名「大印尼共和国」
 	if = {
 		limit = {
 			controls_state = 335
@@ -223,6 +223,7 @@ INS_civil_war_check_effect = {
 		annex_country = { target = SJR }
 		annex_country = { target = HAT }
 		annex_country = { target = PON }
+		set_cosmetic_tag = INS_HAT
 		news_event = { id = INS_news_event.6 hours = 6 }
 		add_stability = 0.05
 	}
@@ -236,6 +237,8 @@ INS_civil_war_check_effect = {
 			annex_country = { target = SJR }
 			annex_country = { target = HAT }
 			annex_country = { target = PON }
+			set_cosmetic_tag = INS_DIJ
+			set_country_leader = DIJ_Kartosuwirjo
 		}
 		news_event = { id = INS_news_event.6 hours = 6 }
 	}
@@ -249,6 +252,8 @@ INS_civil_war_check_effect = {
 			annex_country = { target = SJR }
 			annex_country = { target = HAT }
 			annex_country = { target = PON }
+			set_cosmetic_tag = INS_JGS
+			set_country_leader = JGS_Hamengkubuwono_IX
 		}
 		news_event = { id = INS_news_event.6 hours = 6 }
 	}
@@ -262,6 +267,8 @@ INS_civil_war_check_effect = {
 			annex_country = { target = SJR }
 			annex_country = { target = HAT }
 			annex_country = { target = PON }
+			set_cosmetic_tag = INS_HAT
+			set_country_leader = MUR_Sukarni
 		}
 		news_event = { id = INS_news_event.6 hours = 6 }
 	}
@@ -275,6 +282,8 @@ INS_civil_war_check_effect = {
 			annex_country = { target = MUR }
 			annex_country = { target = HAT }
 			annex_country = { target = PON }
+			set_cosmetic_tag = INS_SJR
+			set_country_leader = SJR_Sutan_Sjahrir
 		}
 		news_event = { id = INS_news_event.6 hours = 6 }
 	}
@@ -288,6 +297,23 @@ INS_civil_war_check_effect = {
 			annex_country = { target = MUR }
 			annex_country = { target = SJR }
 			annex_country = { target = PON }
+			set_cosmetic_tag = INS_HAT
+			set_country_leader = HAT_Mohammad_Hatta
+		}
+		news_event = { id = INS_news_event.6 hours = 6 }
+	}
+	else_if = {
+		limit = { PON = { controls_state = 335 } }
+		clr_country_flag = INS_civil_war_ongoing
+		PON = {
+			annex_country = { target = INS }
+			annex_country = { target = DIJ }
+			annex_country = { target = JGS }
+			annex_country = { target = MUR }
+			annex_country = { target = SJR }
+			annex_country = { target = HAT }
+			set_cosmetic_tag = INS_HAT
+			set_country_leader = PON_R_Murdiyono
 		}
 		news_event = { id = INS_news_event.6 hours = 6 }
 	}

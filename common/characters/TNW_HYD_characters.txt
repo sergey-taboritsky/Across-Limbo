@@ -9,7 +9,13 @@ characters = {
 		}
 		country_leader = {
 			desc = HYD_Swami_Ramanand_Tirtha_desc
-			ideology = Social_democracy
+			types = {
+				Social_democratic = {
+					can_be_randomly_selected = no
+				}
+			}
+			traits = {
+			}
 			expire = "1962.5.1"
 			id = -1
 		}
