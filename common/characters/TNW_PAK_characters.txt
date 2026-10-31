@@ -1,5 +1,4 @@
 characters = {
-	# 旁遮普（PAK）特辖区 — INC 成员领袖
 	PAK_Gopi_Chand_Bhargava = {
 		name = PAK_Gopi_Chand_Bhargava
 		portraits = {
@@ -9,13 +8,8 @@ characters = {
 		}
 		country_leader = {
 			desc = PAK_Gopi_Chand_Bhargava_desc
-			types = {
-				Social_democratic = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = Social_democratic
+			traits = { }
 			expire = "1966.4.26"
 			id = -1
 		}

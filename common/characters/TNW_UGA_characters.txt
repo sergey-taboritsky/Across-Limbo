@@ -1,5 +1,4 @@
 characters = {
-
 	UGA_Mutesa_II = {
 		name = UGA_Mutesa_II
 		portraits = {
@@ -9,13 +8,8 @@ characters = {
 		}
 		country_leader = {
 			desc = UGA_Mutesa_II_desc
-			types = {
-				absolute_monarchy = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = absolute_monarchy
+			traits = { }
 			expire = "2000.1.1"
 			id = -1
 		}

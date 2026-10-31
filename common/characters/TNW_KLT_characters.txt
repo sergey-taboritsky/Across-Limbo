@@ -1,5 +1,4 @@
 characters = {
-
 	KLT_Ahmad_Yar_Khan = {
 		name = KLT_Ahmad_Yar_Khan
 		portraits = {
@@ -9,13 +8,8 @@ characters = {
 		}
 		country_leader = {
 			desc = KLT_Ahmad_Yar_Khan_desc
-			types = {
-				absolute_monarchy = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = absolute_monarchy
+			traits = { }
 			expire = "1979.9.29"
 			id = -1
 		}

@@ -1,5 +1,4 @@
 characters = {
-	# HAI 领导人
 	HAI_Dumarsais_Estime = {
 		name = HAI_Dumarsais_Estime
 		portraits = {
@@ -9,20 +8,12 @@ characters = {
 		}
 		country_leader = {
 			desc = HAI_Dumarsais_Estime_desc
-			types = {
-				Social_democratic = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = Social_democratic
+			traits = { }
 			expire = "1953.7.20"
 			id = -1
-			traits = {
-			}
 		}
 	}
-	# 雅克·鲁曼（海地共产党创始人，左翼领袖）
 	HAI_jacques_roumain = {
 		name = HAI_jacques_roumain
 		portraits = {
@@ -32,13 +23,8 @@ characters = {
 		}
 		country_leader = {
 			desc = HAI_jacques_roumain_desc
-			types = {
-				Social_democratic = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = Social_democratic
+			traits = { }
 			expire = "1944.8.18"
 			id = -1
 		}

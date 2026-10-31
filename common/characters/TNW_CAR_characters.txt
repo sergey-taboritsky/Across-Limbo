@@ -1,5 +1,4 @@
 characters = {
-
 	CAR_Barthelemy_Boganda = {
 		name = CAR_Barthelemy_Boganda
 		portraits = {
@@ -9,13 +8,8 @@ characters = {
 		}
 		country_leader = {
 			desc = CAR_Barthelemy_Boganda_desc
-			types = {
-				Social_democratic = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = Social_democratic
+			traits = { }
 			expire = "1965.1.1"
 			id = -1
 		}

@@ -1,5 +1,4 @@
 characters = {
-
 	TZN_Edward_Twining = {
 		name = TZN_Edward_Twining
 		portraits = {
@@ -9,13 +8,8 @@ characters = {
 		}
 		country_leader = {
 			desc = TZN_Edward_Twining_desc
-			types = {
-				oligarchy = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = oligarchy
+			traits = { }
 			expire = "1965.1.1"
 			id = -1
 		}

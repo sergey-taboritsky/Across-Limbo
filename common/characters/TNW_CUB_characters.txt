@@ -1,5 +1,4 @@
 characters = {
-	# CUB 领导人
 	CUB_Carlos_Prio_Socarras = {
 		name = CUB_Carlos_Prio_Socarras
 		portraits = {
@@ -9,20 +8,12 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_Carlos_Prio_Socarras_desc
-			types = {
-				Social_democratic = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = Social_democratic
+			traits = { }
 			expire = "1977.4.5"
 			id = -1
-			traits = {
-			}
 		}
 	}
-	# 拉蒙·格劳·圣马丁（左翼民粹，1944-1948 总统，本模组古巴开局元首）
 	CUB_Ramon_Grau_San_Martin = {
 		name = CUB_Ramon_Grau_San_Martin
 		portraits = {
@@ -32,18 +23,12 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_Ramon_Grau_San_Martin_desc
-			types = {
-				Social_democratic = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = Social_democratic
+			traits = { }
 			expire = "1969.7.6"
 			id = -1
 		}
 	}
-	# 富尔亨西奥·巴蒂斯塔（第二领袖/军方强人，反共右翼）
 	CUB_fulgencio_batista = {
 		name = CUB_fulgencio_batista
 		portraits = {
@@ -53,18 +38,12 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_fulgencio_batista_desc
-			types = {
-				discipline = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = discipline
+			traits = { }
 			expire = "1973.8.6"
 			id = -1
 		}
 	}
-	# 菲德尔·卡斯特罗（青年左翼革命者）
 	CUB_fidel_castro = {
 		name = CUB_fidel_castro
 		portraits = {
@@ -74,18 +53,12 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_fidel_castro_desc
-			types = {
-				Social_democratic = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = Social_democratic
+			traits = { }
 			expire = "2016.11.25"
 			id = -1
 		}
 	}
-	# 爱德华多·奇瓦斯（正统党左翼改革派）
 	CUB_eduardo_chibas = {
 		name = CUB_eduardo_chibas
 		portraits = {
@@ -95,18 +68,12 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_eduardo_chibas_desc
-			types = {
-				Social_democratic = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = Social_democratic
+			traits = { }
 			expire = "1951.8.16"
 			id = -1
 		}
 	}
-	# 赫拉尔多·马查多（前独裁者）
 	CUB_gerardo_machado = {
 		name = CUB_gerardo_machado
 		portraits = {
@@ -116,13 +83,8 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_gerardo_machado_desc
-			types = {
-				oligarchy = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = oligarchy
+			traits = { }
 			expire = "1939.3.29"
 			id = -1
 		}

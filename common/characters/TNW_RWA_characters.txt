@@ -1,5 +1,4 @@
 characters = {
-
 	RWA_Mutara_III_Rudahigwa = {
 		name = RWA_Mutara_III_Rudahigwa
 		portraits = {
@@ -9,13 +8,8 @@ characters = {
 		}
 		country_leader = {
 			desc = RWA_Mutara_III_Rudahigwa_desc
-			types = {
-				absolute_monarchy = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = absolute_monarchy
+			traits = { }
 			expire = "2000.1.1"
 			id = -1
 		}

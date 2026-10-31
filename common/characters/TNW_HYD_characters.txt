@@ -1,5 +1,4 @@
 characters = {
-
 	HYD_Swami_Ramanand_Tirtha = {
 		name = HYD_Swami_Ramanand_Tirtha
 		portraits = {
@@ -9,13 +8,8 @@ characters = {
 		}
 		country_leader = {
 			desc = HYD_Swami_Ramanand_Tirtha_desc
-			types = {
-				Social_democratic = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = Social_democratic
+			traits = { }
 			expire = "1962.5.1"
 			id = -1
 		}

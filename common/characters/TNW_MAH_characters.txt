@@ -1,5 +1,4 @@
 characters = {
-
 	MAH_KM_Cariappa = {
 		name = MAH_KM_Cariappa
 		portraits = {
@@ -9,13 +8,8 @@ characters = {
 		}
 		country_leader = {
 			desc = MAH_KM_Cariappa_desc
-			types = {
-				discipline = {
-					can_be_randomly_selected = no
-				}
-			}
-			traits = {
-			}
+			ideology = discipline
+			traits = { }
 			expire = "1993.5.15"
 			id = -1
 		}
