@@ -38,7 +38,7 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_fulgencio_batista_desc
-			ideology = discipline
+			ideology = Social_democratic
 			traits = { }
 			expire = "1973.8.6"
 			id = -1
@@ -83,7 +83,7 @@ characters = {
 		}
 		country_leader = {
 			desc = CUB_gerardo_machado_desc
-			ideology = oligarchy
+			ideology = Social_democratic
 			traits = { }
 			expire = "1939.3.29"
 			id = -1

@@ -61,7 +61,7 @@ characters = {
 		}
 		country_leader = {
 			desc = SYR_Sami_al_Hinnawi_desc
-			ideology = discipline
+			ideology = military_government
 			traits = {
 			}
 		}
@@ -76,7 +76,7 @@ characters = {
 		}
 		country_leader = {
 			desc = SYR_Adib_Shishakli_desc
-			ideology = discipline
+			ideology = military_government
 			traits = {
 			}
 		}

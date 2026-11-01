@@ -80,3 +80,13 @@ check('history/countries/XYZ - X.txt', True)
 - 当前开发分支 `new-ui`；所有改动先落工作区，**未经用户确认不 commit**（cb_summary 约定）。
 - 排查遵循"诊断→确认→执行→验证"；未定位根因前不要直接改代码；代码结果与预期不符时先验证再改。
 - 文档/档案采用增量构建，修改 `descriptor.mod` 等关键 release 文件前先获得明确确认。
+
+## 7. 开局领袖结算铁律（set_country_leader 禁令 + 正确结算方式，2026-11-01 用户最终确认）
+- ⚠️ **`set_country_leader = X` 禁止用于 `history/countries/*.txt` 钉开局领袖！** 全仓 grep 证实：该写法在 history 里出现即违规；其合法用途**仅限** events / decisions / scripted_effects 内切换"已招募"的现任领袖（例：澳大利亚内战 `AST_civil_war_decisions.txt` 结算、`TNW_INS_scripted_effects.txt` 内战胜局、`TNW_CHA_events.txt` 事件——均用户认可）。
+- ✅ **正确结算方式（钉开局领袖的唯一正确写法）= 纯靠 `recruit_character` 的排列顺序**：
+  - **第一个被招募的 `recruit_character` = 开局领导人（总统）。**
+  - **双领袖制（`has_second_leader_flag`）下，第二个被招募的 `recruit_character` = 第二领袖（总理）。**
+  - 因此要指定元首，只需把对应角色排到 `recruit_character` 列表的**第一行**（双领袖则第一行=元首、第二行=第二领袖），**绝不加 `set_country_leader`**。
+  - 反例（已修）：2026-11-01 我曾给 `CUB - Cuba.txt` / `NZL - New Zealand.txt` 加 `set_country_leader` 钉开局领袖，用户判定为错误写法，已撤除并改为调 `recruit_character` 顺序（古巴：`CUB_Ramon_Grau_San_Martin` 第一、`CUB_fulgencio_batista` 第二；新西兰：`NZL_peter_fraser` 第一）。
+- 本模组 259/323 历史文件仅用 `recruit_character = <id>`（角色须先定义于 `common/characters/TNW_<TAG>_characters.txt`）推出开局领袖；全部 `recruit_character` 引用必须在角色文件真实定义，否则悬空引用（无害但 error.log 报错）。
+- 双领袖（自创体系）：历史置 `has_second_leader_flag` + `<TAG>_<名>_PM_flag`；第二领袖本身也是普通 `country_leader`（须在角色文件定义），仅显示、不抢占元首。

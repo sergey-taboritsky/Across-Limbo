@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			desc = MAH_KM_Cariappa_desc
-			ideology = discipline
+			ideology = oligarchy
 			traits = { }
 			expire = "1993.5.15"
 			id = -1

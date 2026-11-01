@@ -1,5 +1,5 @@
 characters = {
-	#马尔马杜克·格罗夫
+	#马马杜克·格罗维·巴列霍 (Marmaduke Grove Vallejo)
 	CHL_Marmaduque_Grove = {
 		name = CHL_Marmaduque_Grove
 		portraits = {

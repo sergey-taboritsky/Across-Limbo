@@ -1,6 +1,6 @@
 characters = {
 	COL_Jorge_Gaitan = {
-		name = COL_Jorge_Gaitan
+		name = COL_Jorge_Elicier_Gaitan
 		portraits = {
 			civilian = {
 				large = GFX_portrait_large_COL_Jorge_Gaitan
