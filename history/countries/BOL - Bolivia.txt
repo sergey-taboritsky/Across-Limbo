@@ -1,4 +1,5 @@
 ﻿capital = 302
+recruit_character = BOL_Victor_Paz_Estenssoro
 
 set_politics = {
 	ruling_party = Liberalism
@@ -7,8 +8,13 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	Authoritarianism = 32
-	Liberalism = 54
 	communist = 12
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 54
+	Conservatism = 0
+	Authoritarianism = 32
+	Absolutism = 0
 	Nationalism = 2
 }

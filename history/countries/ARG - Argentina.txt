@@ -12,7 +12,7 @@ recruit_character = ARG_Jose_Penelon
 set_convoys = 120
 
 set_politics = {
-	ruling_party = military_government
+	ruling_party = Absolutism
 	last_election = "1931.11.8"
 	election_frequency = 72
 	elections_allowed = no
@@ -24,10 +24,9 @@ set_popularities = {
 	Social_democracy = 5
 	Liberalism = 5
 	Conservatism = 5
-	Absolutism = 0
 	Authoritarianism = 10
+	Absolutism = 65
 	Nationalism = 0
-	military_government = 65
 }
 
 add_ideas = {
@@ -42,4 +41,3 @@ add_ideas = {
 set_country_flag = ARG_initial_flag
 
 recruit_character = ARG_Pedro_Pablo_Ramirez
-}

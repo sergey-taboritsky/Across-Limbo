@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			desc = PRU_Jose_Luis_Bustamante_y_Rivero_desc
-			ideology = Liberalism
+			ideology = Social_Liberalism
 			expire = "1949.1.1"
 			id = -1
 			traits = {

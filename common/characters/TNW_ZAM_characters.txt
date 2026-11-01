@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			desc = ZAM_Sir_Gilbert_Rennie_desc
-			ideology = Authoritarianism
+			ideology = oligarchy
 			expire = "1955.1.1"
 			id = -1
 			traits = {

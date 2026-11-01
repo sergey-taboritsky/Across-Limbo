@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			desc = ZIM_Godfrey_Huggins_desc
-			ideology = Authoritarianism
+			ideology = oligarchy
 			expire = "1965.1.1"
 			id = -1
 			traits = {

@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			desc = LTH_Ntsu_Mokhehle_desc
-			ideology = socialism
+			ideology = market_socialism
 			expire = "1965.1.1"
 			id = -1
 			traits = {

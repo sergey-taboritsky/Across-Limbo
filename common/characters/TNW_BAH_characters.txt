@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			desc = BAH_George_Beresford_Stooke_desc
-			ideology = Liberalism
+			ideology = Social_Liberalism
 			expire = "1964.1.1"
 			id = -1
 			traits = {

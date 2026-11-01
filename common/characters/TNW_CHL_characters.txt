@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			desc = CHL_Marmaduque_Grove_desc
-			ideology = socialism
+			ideology = market_socialism
 			expire = "1960.1.1"
 			id = -1
 			traits = {

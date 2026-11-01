@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			desc = DOM_Rafael_Trujillo_desc
-			ideology = Nationalism
+			ideology = nationalism
 			expire = "1961.5.30"
 			id = -1
 			traits = {

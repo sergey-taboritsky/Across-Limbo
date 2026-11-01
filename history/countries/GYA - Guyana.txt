@@ -48,10 +48,15 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 75
-	Nationalism = 1
 	communist = 1
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 75
+	Conservatism = 0
 	Authoritarianism = 23
+	Absolutism = 0
+	Nationalism = 1
 }
 
 #create_country_leader = {
@@ -73,13 +78,15 @@ set_popularities = {
 		elections_allowed = yes
 	}
 	set_popularities = {
-		Liberalism = 75
-
-		Nationalism = 1
-		
 		communist = 1
-		
+		syndicalism = 0
+		socialism = 0
+		Social_democracy = 0
+		Liberalism = 75
+		Conservatism = 0
 		Authoritarianism = 23
+		Absolutism = 0
+		Nationalism = 1
 	}
 	recruit_character = GYA_Cheddi_Jagan
 }

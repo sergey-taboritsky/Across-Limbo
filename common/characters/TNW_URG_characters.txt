@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			desc = URG_Luis_Batlle_Berres_desc
-			ideology = Social_democracy
+			ideology = Social_democratic
 			expire = "1955.1.1"
 			id = -1
 			traits = {

@@ -1,0 +1,19 @@
+characters = {
+	# 维克托·帕斯·埃斯登索罗（MNR，1960—1964 执政）
+	BOL_Victor_Paz_Estenssoro = {
+		name = BOL_Victor_Paz_Estenssoro
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BOL_Victor_Paz_Estenssoro
+			}
+		}
+		country_leader = {
+			desc = BOL_Victor_Paz_Estenssoro_desc
+			ideology = Social_Liberalism
+			expire = "1971.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}
