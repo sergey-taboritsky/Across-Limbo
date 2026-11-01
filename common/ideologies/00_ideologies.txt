@@ -152,6 +152,7 @@ ideologies = {
 	}
 	Nationalism = {
 		types = {
+			nationalism = {can_be_randomly_selected = no}
 			Fascism = {can_be_randomly_selected = no}
 			National_Socialism = {can_be_randomly_selected = no}
 			Strassianism = {can_be_randomly_selected = no}

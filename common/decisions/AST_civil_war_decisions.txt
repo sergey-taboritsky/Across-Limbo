@@ -91,14 +91,18 @@ AST_civil_war_decisions_category = {
 				clr_country_flag = AST_civil_war_active
 				AST_resolve_civilwar_effect = yes
 				white_peace = AFF
-				set_country_leader = AST_Billy_Hughes
-				set_ideology = Liberalism
+								set_country_leader = AST_Billy_Hughes
+				set_ideology = nationalism
 				set_popularities = {
 					communist = 3
+					syndicalism = 0
 					socialism = 12
 					Social_democracy = 16
-					Liberalism = 38
+					Liberalism = 28
 					Conservatism = 31
+					Authoritarianism = 0
+					Absolutism = 0
+					Nationalism = 10
 				}
 				add_stability = -0.05
 			}

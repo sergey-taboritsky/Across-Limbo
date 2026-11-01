@@ -113,16 +113,22 @@ recruit_character = PAK_Gopi_Chand_Bhargava
 }
 
 set_politics = {
-	ruling_party = Social_democratic
+	ruling_party = Social_democracy
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
 }
-set_popularities = {
-	Social_democracy = 70
-	Liberalism = 20
-	communist = 10
-}
+		set_popularities = {
+			communist = 10
+			syndicalism = 0
+			socialism = 0
+			Social_democracy = 70
+			Liberalism = 20
+			Conservatism = 0
+			Authoritarianism = 0
+			Absolutism = 0
+			Nationalism = 0
+		}
 
 
 

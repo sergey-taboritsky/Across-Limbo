@@ -91,15 +91,22 @@ set_convoys = 20
 }
 
 set_politics = {
-	ruling_party = Social_democratic
+	ruling_party = Social_democracy
 	last_election = "1936.1.10"
 	election_frequency = 48
 	elections_allowed = yes
 }
-set_popularities = {
-	socialism = 90
-	communist = 10
-}
+		set_popularities = {
+			communist = 10
+			syndicalism = 0
+			socialism = 20
+			Social_democracy = 70
+			Liberalism = 0
+			Conservatism = 0
+			Authoritarianism = 0
+			Absolutism = 0
+			Nationalism = 0
+		}
 
 1939.1.1 = {
 	recruit_character = CUB_federico_laredo_bru

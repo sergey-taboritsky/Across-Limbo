@@ -9,8 +9,8 @@ characters = {
 		}
 		country_leader = {
 			desc = NMB_Petrus_Imker_Hoogenhout_desc
-			ideology = Authoritarianism
-			expire = "1952.1.1"
+			ideology = colonial_government
+			expire = "1999.1.1"
 			id = -1
 			traits = {
 			}

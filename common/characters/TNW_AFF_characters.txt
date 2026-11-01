@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			desc = AFF_Robert_Menzies_desc
-			ideology = Liberalism
+			ideology = Social_Liberalism
 			expire = "1965.1.1"
 			id = -1
 			traits = {
@@ -25,7 +25,7 @@ characters = {
 		}
 		country_leader = {
 			desc = AFF_Arthur_Fadden_desc
-			ideology = Conservatism
+			ideology = Social_Conservatism
 			expire = "1973.4.21"
 			id = -1
 		}
@@ -70,7 +70,7 @@ characters = {
 		}
 		country_leader = {
 			desc = AFF_Billy_Hughes_desc
-			ideology = Liberalism
+			ideology = nationalism
 			expire = "1952.10.28"
 			id = -1
 		}

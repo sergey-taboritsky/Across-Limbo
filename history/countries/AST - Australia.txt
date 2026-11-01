@@ -37,8 +37,5 @@ set_popularities = {
 
 set_convoys = 100
 
-# 西澳（AST）与东澳（AFF）互宣战，澳大利亚内战
-add_to_war = {
-	target = AFF
-	war = 1
-}
+# 澳大利亚内战宣战由事件 AST_event.1 (on_startup) 的 declare_war_on = AFF 触发
+

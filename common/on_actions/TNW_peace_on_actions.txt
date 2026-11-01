@@ -164,58 +164,58 @@ on_actions = {
 					news_event = CHI_news_event.2
 				}
 			}
-		#叙利亚内战 - 黎凡特
-		else_if = {
-			limit = {
+			#叙利亚内战 - 黎凡特
+			else_if = {
+				limit = {
+					event_target:losing_country = {
+						OR = {
+							original_tag = SYR
+							original_tag = ALP
+							original_tag = LEB
+							original_tag = JOR
+						}
+					}
+					event_target:winning_country = {
+						OR = {
+							original_tag = SYR
+							original_tag = ALP
+							original_tag = LEB
+							original_tag = JOR
+						}
+					}
+				}
 				event_target:losing_country = {
-					OR = {
-						original_tag = SYR
-						original_tag = ALP
-						original_tag = LEB
-						original_tag = JOR
+					every_core_state = {
+						add_core_of = event_target:winning_country
+						remove_core_of = event_target:losing_country
 					}
 				}
 				event_target:winning_country = {
-					OR = {
-						original_tag = SYR
-						original_tag = ALP
-						original_tag = LEB
-						original_tag = JOR
+					annex_country = {
+						tag = event_target:losing_country
 					}
 				}
 			}
-			event_target:losing_country = {
-				every_core_state = {
-					add_core_of = event_target:winning_country
-					remove_core_of = event_target:losing_country
+			#澳大利亚内战 - AST vs AFF（西澳 vs 东澳）
+			else_if = {
+				limit = {
+					OR = {
+						event_target:losing_country = { original_tag = AST }
+						event_target:losing_country = { original_tag = AFF }
+					}
+					OR = {
+						event_target:winning_country = { original_tag = AST }
+						event_target:winning_country = { original_tag = AFF }
+					}
+				}
+				AST = {
+					white_peace = AFF
+					clr_country_flag = AST_civil_war_active
+				}
+				AFF = {
+					white_peace = AST
 				}
 			}
-			event_target:winning_country = {
-				annex_country = {
-					tag = event_target:losing_country
-				}
-			}
-		#澳大利亚内战 - AST vs AFF（西澳 vs 东澳）
-		else_if = {
-			limit = {
-				OR = {
-					event_target:losing_country = { original_tag = AST }
-					event_target:losing_country = { original_tag = AFF }
-				}
-				OR = {
-					event_target:winning_country = { original_tag = AST }
-					event_target:winning_country = { original_tag = AFF }
-				}
-			}
-			AST = {
-				white_peace = AFF
-				clr_country_flag = AST_civil_war_active
-			}
-			AFF = {
-				white_peace = AST
-			}
-		}
-		}
 		}
 	}
 }

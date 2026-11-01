@@ -54,7 +54,7 @@ characters = {
 		}
 		country_leader = {
 			desc = AST_Lance_Sharkey_desc
-			ideology = communist
+			ideology = Marxism
 			expire = "1967.1.1.1"
 			id = -1
 		}
@@ -69,7 +69,7 @@ characters = {
 		}
 		country_leader = {
 			desc = AST_Ernie_Thornton_desc
-			ideology = communist
+			ideology = Marxism
 			expire = "1961.1.1.1"
 			id = -1
 		}
@@ -84,7 +84,7 @@ characters = {
 		}
 		country_leader = {
 			desc = AST_Robert_Menzies_desc
-			ideology = Liberalism
+			ideology = Social_Liberalism
 			expire = "1978.5.15.1"
 			id = -1
 		}
@@ -99,7 +99,7 @@ characters = {
 		}
 		country_leader = {
 			desc = AST_Billy_Hughes_desc
-			ideology = Liberalism
+			ideology = nationalism
 			expire = "1952.10.28.1"
 			id = -1
 		}
@@ -114,7 +114,7 @@ characters = {
 		}
 		country_leader = {
 			desc = AST_Arthur_Fadden_desc
-			ideology = Conservatism
+			ideology = Social_Conservatism
 			expire = "1973.4.21.1"
 			id = -1
 		}
@@ -159,7 +159,7 @@ characters = {
 		}
 		country_leader = {
 			desc = AST_Clarrie_Fallon_desc
-			ideology = socialism
+			ideology = market_socialism
 			expire = "1950.1.1.1"
 			id = -1
 		}
@@ -174,7 +174,7 @@ characters = {
 		}
 		country_leader = {
 			desc = AST_Tom_Dougherty_desc
-			ideology = socialism
+			ideology = market_socialism
 			expire = "1972.1.1.1"
 			id = -1
 		}
