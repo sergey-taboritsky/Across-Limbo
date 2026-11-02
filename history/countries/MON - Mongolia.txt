@@ -7,7 +7,6 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-recruit_character = MON_Unenbayal
 recruit_character = MON_Tseren_Ochiryn_Dambadorj
 recruit_character = MON_Ajvaagiin_Danzan
 recruit_character = MON_Navaandorjiyn_Jadambaa

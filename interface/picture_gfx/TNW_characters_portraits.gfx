@@ -587,12 +587,6 @@ spriteTypes = {
 		name = "GFX_portrait_large_MLI_Mamadou_Konate"
 		texturefile = "gfx/characters/MLI_Mamadou_Konate.png"
 	}
-	#蒙古
-	#乌尼伯英
-	spriteType = {
-		name = "GFX_portrait_large_MON_Unenbayal"
-		texturefile = "gfx/characters/MON_Unenbayal.png"
-	}
 	#荷兰
 	#亨德里克斯·斯内夫利特
 	spriteType = {
@@ -1800,7 +1794,6 @@ spriteTypes = {
 		texturefile = "gfx/characters/SIA_Phumiphon_Adunyadet.png"
 		legacy_lazy_load = no
 	}
-
 
 	#卡罗尔·文贾戈利斯基
 	spriteType = {

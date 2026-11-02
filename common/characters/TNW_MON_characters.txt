@@ -1,18 +1,4 @@
 characters = {
-	#Ünenbayal乌尼伯英
-	MON_Unenbayal = {
-		name = MON_Unenbayal
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_MON_Unenbayal
-			}
-		}
-		country_leader={
-			ideology= Social_Conservatism
-			expire="1936.1.1"
-		}
-		
-	}
 
 	MON_Tseren_Ochiryn_Dambadorj = {
 		name = MON_Tseren_Ochiryn_Dambadorj

@@ -70,6 +70,11 @@ recruit_character = JAP_Jack_Shirai
 recruit_character = JAP_Fukumoto_Kazuo
 recruit_character = JAP_Kazahaya_Yasoji
 recruit_character = JAP_Kuroda_Hisao
+recruit_character = JAP_Konno_Yojuro
+recruit_character = JAP_Hosoya_Matsuta
+recruit_character = JAP_Ichikawa_Makoto
+recruit_character = JAP_Masuyama_Taisuke
+recruit_character = JAP_Sakaguchi_Kiichiro
 
 set_variable = { var = JAP_JCLP value = 50 } 
 set_variable = { var = JAP_JCP value = 25 } 

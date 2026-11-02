@@ -275,18 +275,42 @@ characters = {
 	#绀野与次郎（军事局派）
 	JAP_Konno_Yojuro = {
 		name = JAP_Konno_Yojuro
+		role = field_marshal
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 1
 	}
 	#细谷松太（产别派）
 	JAP_Hosoya_Matsuta = {
 		name = JAP_Hosoya_Matsuta
+		role = general
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
 	}
 	#市川诚（产别派）
 	JAP_Ichikawa_Makoto = {
 		name = JAP_Ichikawa_Makoto
+		role = general
+		skill = 2
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
 	}
 	#增山太助（产别派）
 	JAP_Masuyama_Taisuke = {
 		name = JAP_Masuyama_Taisuke
+		role = general
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 2
 	}
 	#椎野悦朗（产别派）
 	JAP_Shiino_Etsuro = {
@@ -351,6 +375,12 @@ characters = {
 	#坂口喜一郎（桅杆派）
 	JAP_Sakaguchi_Kiichiro = {
 		name = JAP_Sakaguchi_Kiichiro
+		role = admiral
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		maneuvering_skill = 3
+		coordination_skill = 2
 	}
 	#内山光雄（桅杆派）
 	JAP_Uchiyama_Mitsuo = {
