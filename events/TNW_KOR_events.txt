@@ -136,7 +136,6 @@ country_event = {
 				set_politics = { ruling_party = Nationalism elections_allowed = no }
 				set_popularities = { Nationalism = 100 }
 				set_party_name = { ideology = Nationalism long_name = KNR_Nationalism_party name = KNR_Nationalism_party }
-			}
 				add_ideas = moscow_aligned_nation
 			}
 			country_event = { id = TNW_KOR.6 days = 730 }
@@ -195,5 +194,7 @@ country_event = {
 			set_country_leader = KOR_Park_Han_Yong
 			set_party_name = { ideology = communist long_name = KOR_communist_party name = KOR_communist_party }
 			set_country_flag = KOR_1954_park
+			add_ideas = phalanstere_aligned_nation
+			remove_ideas = moscow_aligned_nation
 		}
 }
