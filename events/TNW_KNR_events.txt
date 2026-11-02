@@ -1,0 +1,43 @@
+add_namespace = TNW_KNR
+
+# 池李相争（朝鲜民族共和国建国后的路线分支）
+country_event = {
+	id = TNW_KNR.1
+	title = TNW_KNR.1.t
+	desc = TNW_KNR.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+		option = {
+			name = TNW_KNR.1.a
+			set_country_leader = KNR_Lee_Beom_Seok
+			set_politics = { ruling_party = Nationalism elections_allowed = no }
+			set_popularities = { Nationalism = 100 }
+			set_party_name = { ideology = Nationalism long_name = KNR_Nationalism_party name = KNR_Nationalism_party }
+			set_country_flag = KNR_strong_lee
+		}
+		option = {
+			name = TNW_KNR.1.b
+			set_country_leader = KNR_Shin_Sung_Mo
+			set_politics = { ruling_party = Nationalism elections_allowed = no }
+			set_popularities = { Nationalism = 100 }
+			set_party_name = { ideology = Nationalism long_name = KNR_Nationalism_party name = KNR_Nationalism_party }
+			set_country_flag = KNR_weak_shin
+		}
+		option = {
+			name = TNW_KNR.1.c
+			KNR = { recruit_character = KOR_Ji_Cheong_Cheon }
+			set_country_leader = KOR_Ji_Cheong_Cheon
+			set_politics = { ruling_party = Conservatism elections_allowed = no }
+			set_popularities = { Conservatism = 100 }
+			set_party_name = { ideology = Conservatism long_name = KNR_Conservatism_party name = KNR_Conservatism_party }
+			set_country_flag = KNR_ji_coup
+		}
+		option = {
+			name = TNW_KNR.1.d
+			set_country_leader = KNR_Baek_Sun_Yup
+			set_politics = { ruling_party = Nationalism elections_allowed = no }
+			set_popularities = { Nationalism = 100 }
+			set_party_name = { ideology = Nationalism long_name = KNR_Nationalism_party name = KNR_Nationalism_party }
+			set_country_flag = KNR_baek_coup
+		}
+}

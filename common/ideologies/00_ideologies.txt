@@ -159,6 +159,7 @@ ideologies = {
 			Ultra_Nationalism = {can_be_randomly_selected = no}
 			Renewal_System = {can_be_randomly_selected = no}
 			Singular_Nationalism = {can_be_randomly_selected = no}
+			Combat_Nationalism = {can_be_randomly_selected = no}
 		}
 		modifiers = {
 			

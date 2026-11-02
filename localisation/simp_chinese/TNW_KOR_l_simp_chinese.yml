@@ -1,63 +1,76 @@
-﻿l_simp_chinese:
-#国名
- KOR_PRK: "大韩人民共和国"
- KOR_PRK_DEF: "大韩人民共和国"
- KOR_PRK_ADJ: "韩国"
- FER_fascist_state: "大朝鲜国"
- FER_fascist_state_DEF: "大朝鲜国"
- FER_ADJ: "朝鲜"
-
-#领导人
- KOR_Ji_Cheong_Cheon: "池青天"
- KOR_Ji_Cheong_Cheon_desc: "§Y出生于：§!§L1888年2月15日，朝鲜王国，京畿道京城府三清洞§!"
+﻿l_simp_chinese:/r/n# 领导人（大韩民国 KOR）
+ KOR_Syngman_Rhee: "李承晚"
  KOR_Kim_Koo: "金九"
- KOR_Kim_Koo_desc: "§Y出生于：§!§L1888年2月15日，朝鲜王国，黄海道海州白云坊基洞§!"
  KOR_Lyuh_Woon_Hyung: "吕运亨"
- KOR_Lyuh_Woon_Hyung_desc: "§Y出生于：§!§L1886年5月25日，朝鲜王国，京畿道杨州§!"
  KOR_Kim_Won_Bong: "金元凤"
- KOR_Kim_Won_Bong_desc: "§Y出生于：§!§L1898年8月13日，大韩帝国，庆尚南道密阳郡§!"
  KOR_Kim_Du_Han: "金斗汉"
- KOR_Kim_Du_Han_desc: "§Y出生于：§!§L1898年8月13日，大韩帝国，庆尚南道密阳郡§!"
  KOR_Park_Han_Yong: "朴宪永"
- KOR_Park_Han_Yong_desc: "§Y出生于：§!§L1900年5月28日，大韩帝国，忠清南道大兴郡§!"
-
- FER_Shin_Sung_Mo: "申性模"
- FER_Shin_Sung_Mo_desc: "§Y出生于：§!§L1891年10月20日，朝鲜王国，庆尚道宜宁郡§!"
- 
-#政党名字
+ KOR_Kim_Kyu_Sik: "金奎植"
+ KOR_Cho_So_Ang: "赵素昂"
+ KOR_Yun_Bo_Seon: "尹潽善"
+ KOR_Ji_Cheong_Cheon: "池青天"
+ KOR_Choi_Jae_Hyung: "崔在亨"
+# 领导人（朝鲜民族共和国 KNR）
+ KNR_Shin_Sung_Mo: "申性模"
+ KNR_Lee_Beom_Seok: "李范奭"
+ KNR_Baek_Sun_Yup: "白善烨"
+# 政党名（大韩民国 KOR）
  KOR_communist_party: "韩国共产党"
- KOR_communist_party_long: "大韩民国共产党"
- KOR_syndicalism_party: "“金佐镇之子”"
- KOR_syndicalism_party_long: "“金佐镇之子”"
+ KOR_syndicalism_party: "朝鲜总工会"
  KOR_socialism_party: "人民共和党"
- KOR_socialism_party_long: "人民共和党"
  KOR_Social_democracy_party: "勤劳人民党"
- KOR_Social_democracy_party_long: "勤劳人民党"
- KOR_Liberalism_party: "独立党"
- KOR_Liberalism_party_long: "大韩民国独立党"
- KOR_Conservatism_party: "民主国民党"
- KOR_Conservatism_party_long: "民主国民党"
- KOR_Authoritarianism_party: "-"
- KOR_Authoritarianism_party_long: "-"
- KOR_Absolutism_party: "大韩民国武装部队"
- KOR_Absolutism_party_long: "大韩民国武装部队"
- KOR_Nationalism_party: "-"
- KOR_Nationalism_party_long: "-"
-
- FER_Nationalism_party: "朝鲜民族自由党"
- FER_Nationalism_party_long: "朝鲜民族自由党"
-#民族精神
-
-#事件
-
-#新闻
-
-#GUI
-
-#BOP
-
-#决议
-
-#国策
- #: ""
- #_desc: ""
+ KOR_Liberalism_party: "韩国独立党"
+ KOR_Conservatism_party: "大韩独立促成国民会"
+ KOR_Authoritarianism_party: "民族革命派"
+ KOR_Absolutism_party: "皇道派"
+ KOR_Nationalism_party: "民族主义派"
+ KOR_KimKoo_party: "韩国独立党"
+ KOR_Dahanshehui_party: "大韩社会党"
+# 政党名（朝鲜民族共和国 KNR）
+ KNR_communist_party: "朝鲜事务监管委员会"
+ KNR_syndicalism_party: "朝鲜总工会"
+ KNR_socialism_party: "人民共和党"
+ KNR_Social_democracy_party: "勤劳人民党"
+ KNR_Liberalism_party: "朝鲜自由主义党"
+ KNR_Conservatism_party: "民族革命军事委员会"
+ KNR_Authoritarianism_party: "民族革命派"
+ KNR_Absolutism_party: "皇道派"
+ KNR_Nationalism_party: "朝鲜民族自由党"
+# 国名补充
+ KNR_fascist_state: "朝鲜民族共和国"
+# 事件文本（大韩民国 KOR 叙事链）
+ TNW_KOR.1.t: "反托管运动与李承晚的转向"
+ TNW_KOR.1.d: "一九四八年，美俄外长会议决定将朝鲜托管期限延长十年。这一完全无视朝鲜人民意愿的决议激起全国抗议。李承晚起初是反托管的坚定支持者，却在年末骤然转向，公开宣称要借俄罗斯之力肃清半岛上的赤色势力，并借「国会间谍案」清洗金九等反李力量。"
+ TNW_KOR.1.a: "沉默地接受这一现实"
+ TNW_KOR.2.t: "李承晚遇刺"
+ TNW_KOR.2.d: "一九四九年六月二十六日，李承晚遭激进青年金炳律刺杀，经抢救无效身亡。李范奭为首的亲李阵营怀疑暗杀系左右联合运动乃至美国人所策划，拒不承认选举结果，率亲李派系全面转向俄罗斯。"
+ TNW_KOR.2.a: "为总统举行国葬"
+ TNW_KOR.3.t: "一九四九年八月大选"
+ TNW_KOR.3.d: "在随后的大选中，左右联合运动推举金九为联合总统候选人并成功当选。大韩民国由此确立议会内阁制与两院制。然而李范奭拒绝承认结果，民族军与光复军在黄海道爆发冲突。"
+ TNW_KOR.3.a: "金九就任大韩民国总统"
+ TNW_KOR.4.t: "一九五〇年补选"
+ TNW_KOR.4.d: "因议会中半数李系议员叛逃，国民议会依宪举行补选。独立党仍希望金九参与；民主主义民族战线亦推出共同提名人选。朝鲜半岛的政治前途，系于此次补选。"
+ TNW_KOR.4.a: "金九参选（韩国独立党·保守主义-三均主义）"
+ TNW_KOR.4.b: "金奎植参选（韩国独立党·自由主义-三均主义）"
+ TNW_KOR.4.c: "赵素昂参选（韩国独立党·进步主义-三均主义）"
+ TNW_KOR.4.d: "吕运亨（勤劳人民党·社会民主主义）"
+ TNW_KOR.4.e: "金元凤（人民共和党·社会主义-三均主义）"
+ TNW_KOR.4.f: "朴宪永（韩国共产党·共产主义-马克思列宁主义）"
+ TNW_KOR.5.t: "祖国的分裂"
+ TNW_KOR.5.d: "李范奭与池青天在罗先、新义州发动起义，民族军接连攻克关北五道。为避免重蹈日占覆辙，俄美协商停火。一九五〇年，双方在三十八度线附近形成对峙，半岛就此分裂。北方五道并入新生的朝鲜民族共和国。"
+ TNW_KOR.5.a: "接受分裂的既成事实"
+ TNW_KOR.6.t: "金九再度遇刺"
+ TNW_KOR.6.d: "一九五二年，金九再度遇刺，这一次他没能躲过死神。大韩民国为其举行国葬。凭借金九的影响力，独立党再度登顶青瓦台，推尹潽善继任。"
+ TNW_KOR.6.a: "为金九举行国葬"
+ TNW_KOR.7.t: "一九五四年独立选举"
+ TNW_KOR.7.d: "尽管南韩政局较北方更为混乱，在第一届政府和国民议会的努力下，大韩民国仍坚持到了一九五四年第二次独立选举。金九退出舞台后，独立党还能否保持优势？"
+ TNW_KOR.7.a: "独立党保持优势（尹潽善·自由主义-三均主义）"
+ TNW_KOR.7.b: "赵素昂另立大韩社会党（社会主义-三均主义）"
+ TNW_KOR.7.c: "韩国共产党胜选（朴宪永·共产主义）"
+# 事件文本（朝鲜民族共和国 KNR 叙事链）
+ TNW_KNR.1.t: "池李相争"
+ TNW_KNR.1.d: "民族军总司令池青天与民族自由党党魁李范奭之间的矛盾已不可调和。若李范奭的民族领袖影响力高，他将塑造个人独裁；若影响力低，朝鲜民族政权内部将生剧变。"
+ TNW_KNR.1.a: "强男李范奭——一民主义，李范奭"
+ TNW_KNR.1.b: "弱男李范奭——海参崴派政变，申性模"
+ TNW_KNR.1.c: "弱男李范奭——池青天雪夜政变，保守主义"
+ TNW_KNR.1.d: "弱男李范奭——白善烨反政变，一民主义"

@@ -70,7 +70,7 @@ China_unified_decision = {
 					autonomous_state = autonomy_puppet
 				}
 				set_autonomy = {
-					target = FER
+					target = KNR
 					autonomous_state = autonomy_puppet
 				}
 			}
@@ -92,7 +92,7 @@ China_unified_decision = {
 					
 				}
 			}
-			FER = {
+			KNR = {
 				transfer_state = 408
 				transfer_state = 409
 				transfer_state = 657

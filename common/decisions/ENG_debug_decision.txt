@@ -359,7 +359,7 @@ ENG_debug = {
 					transfer_state = 876
 					transfer_state = 644
 				}
-				FER = {
+				KNR = {
 					inherit_technology = SOV
 					transfer_state = 408
 					transfer_state = 409

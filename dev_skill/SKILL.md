@@ -243,7 +243,7 @@ if = {
 - 该 exe 为 GUI，由用户在本地机器运行（Agent 环境无法无头驱动）；Agent 的职责是接收其输出的三份文件、按规约落到正确目录并核对。
 
 ### Step 1 — 准备源图 & 运行工具
-- 确认目标 tag（或 cosmetic_tag），例如 `MAL`、`FER_fascist_state`。
+- 确认目标 tag（或 cosmetic_tag），例如 `MAL`、`KNR_fascist_state`。
 - 用 `旗帜处理.exe` 打开源 PNG，导出三份同名图片：`<tag>.tga`（大）、`<tag>.tga`（中）、`<tag>.tga`（小）。**三份文件名完全相同**，仅尺寸不同（工具负责缩放/裁切到 HOI4 规格，不必手动画）。
 
 ### Step 2 — 落位（三处目录，命名必须 = tag）
@@ -251,7 +251,7 @@ if = {
 - 中（**41×26**）→ `gfx/flags/medium/<tag>.tga`
 - 小（**10×7**） → `gfx/flags/small/<tag>.tga`
 - 实测规格（以 ALP / MAL 为例）：大 82×52、中 41×26、小 10×7，均为 **TGA** 格式（`旗帜处理.exe` 即按此输出）。
-- cosmetic flag（如 `MAL_AprilFools`、`MAL_UK`、`FER_fascist_state`）命名用对应 cosmetic_tag，落位同上三处。
+- cosmetic flag（如 `MAL_AprilFools`、`MAL_UK`、`KNR_fascist_state`）命名用对应 cosmetic_tag，落位同上三处。
 - 例：用户给定 MAL 国旗 PNG（红底、左上蓝块含白星），`MAL.tga` 已按此规格存在于三处（gfx/flags / medium / small），即本流程产出形态。
 
 ### Step 3 — 验证

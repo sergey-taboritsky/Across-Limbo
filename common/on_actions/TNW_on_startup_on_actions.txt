@@ -71,6 +71,13 @@ on_actions = {
 					TNW_econ_mech_tag_unit_factory_maintenance_cost = 0.1
 				}
 			}
+#KOR 叙事链启动（事件全部 is_triggered_only，由选项链按时序推进）
+			if = {
+				limit = {
+					tag = KOR
+				}
+				country_event = { id = TNW_KOR.1 days = 0 }
+			}
 #CHI
 	#Province Leader Modifiers
 #Huabei PG

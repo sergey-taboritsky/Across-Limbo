@@ -23,7 +23,7 @@ country_event = {
 				set_nationality = KOR
 			}
 			TNW_AF_Zhang_Fakui = {
-				set_nationality = FER
+				set_nationality = KNR
 			}
 		}
 		promote_character = TNW_AF_Chian_Kaishek
@@ -96,7 +96,7 @@ country_event = {
 			transfer_state = 918
 			set_cosmetic_tag = KOR_AprilFools
 		}
-		FER = {
+		KNR = {
 			promote_character = TNW_AF_Zhang_Fakui
 			set_politics = {
 				ruling_party = socialism
@@ -124,11 +124,11 @@ country_event = {
 			transfer_state = 822
 			transfer_state = 874
 			transfer_state = 877
-			set_cosmetic_tag = FER_AprilFools
+			set_cosmetic_tag = KNR_AprilFools
 		}
 		CHI = {
 			add_to_faction = KOR
-			add_to_faction = FER
+			add_to_faction = KNR
 		}
 	}
 }

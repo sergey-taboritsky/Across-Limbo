@@ -719,7 +719,7 @@ BYA = {
 	color = rgb { 0 64 255 }
 	color_ui = rgb { 0 45 179 }
 }
-FER = {
+KNR = {
 	color = rgb { 179 45 0 }
 	color_ui = rgb { 128 32 0 }
 }

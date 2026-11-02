@@ -1,0 +1,199 @@
+add_namespace = TNW_KOR
+
+# 一九四八年：反托管运动与李承晚转向
+country_event = {
+	id = TNW_KOR.1
+	title = TNW_KOR.1.t
+	desc = TNW_KOR.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+		option = {
+			name = TNW_KOR.1.a
+			add_stability = -0.05
+			add_war_support = 0.05
+			set_country_flag = KOR_anti_trusteeship
+			country_event = { id = TNW_KOR.2 days = 542 }
+		}
+}
+
+# 一九四九年六月二十六日：李承晚遇刺
+country_event = {
+	id = TNW_KOR.2
+	title = TNW_KOR.2.t
+	desc = TNW_KOR.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+		option = {
+			name = TNW_KOR.2.a
+			add_stability = -0.08
+			KOR_Syngman_Rhee = { kill_character = yes }
+			country_event = { id = TNW_KOR.3 days = 38 }
+		}
+}
+
+# 一九四九年八月大选：金九当选
+country_event = {
+	id = TNW_KOR.3
+	title = TNW_KOR.3.t
+	desc = TNW_KOR.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+		option = {
+			name = TNW_KOR.3.a
+			set_country_leader = KOR_Kim_Koo
+			set_politics = { ruling_party = Conservatism elections_allowed = yes }
+			set_popularities = { Conservatism = 100 }
+			set_party_name = { ideology = Conservatism long_name = KOR_KimKoo_party name = KOR_KimKoo_party }
+			set_country_flag = KOR_kimkoo_elected
+			country_event = { id = TNW_KOR.4 days = 180 }
+		}
+}
+
+# 一九五〇年补选（分支）
+country_event = {
+	id = TNW_KOR.4
+	title = TNW_KOR.4.t
+	desc = TNW_KOR.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+		option = {
+			name = TNW_KOR.4.a
+			set_country_leader = KOR_Kim_Koo
+			set_politics = { ruling_party = Conservatism elections_allowed = yes }
+			set_popularities = { Conservatism = 100 }
+			set_party_name = { ideology = Conservatism long_name = KOR_KimKoo_party name = KOR_KimKoo_party }
+			set_country_flag = KOR_path_kimkoo
+			country_event = { id = TNW_KOR.5 days = 150 }
+		}
+		option = {
+			name = TNW_KOR.4.b
+			set_country_leader = KOR_Kim_Kyu_Sik
+			set_politics = { ruling_party = Liberalism elections_allowed = yes }
+			set_popularities = { Liberalism = 100 }
+			set_party_name = { ideology = Liberalism long_name = KOR_Liberalism_party name = KOR_Liberalism_party }
+			set_country_flag = KOR_path_kyusik
+			country_event = { id = TNW_KOR.5 days = 150 }
+		}
+		option = {
+			name = TNW_KOR.4.c
+			set_country_leader = KOR_Cho_So_Ang
+			set_politics = { ruling_party = Social_democracy elections_allowed = yes }
+			set_popularities = { Social_democracy = 100 }
+			set_party_name = { ideology = Social_democracy long_name = KOR_Social_democracy_party name = KOR_Social_democracy_party }
+			set_country_flag = KOR_path_soang
+			country_event = { id = TNW_KOR.5 days = 150 }
+		}
+		option = {
+			name = TNW_KOR.4.d
+			set_country_leader = KOR_Lyuh_Woon_Hyung
+			set_politics = { ruling_party = Social_democracy elections_allowed = yes }
+			set_popularities = { Social_democracy = 100 }
+			set_party_name = { ideology = Social_democracy long_name = KOR_Social_democracy_party name = KOR_Social_democracy_party }
+			set_country_flag = KOR_path_lyuh
+			country_event = { id = TNW_KOR.5 days = 150 }
+		}
+		option = {
+			name = TNW_KOR.4.e
+			set_country_leader = KOR_Kim_Won_Bong
+			set_politics = { ruling_party = socialism elections_allowed = yes }
+			set_popularities = { socialism = 100 }
+			set_party_name = { ideology = socialism long_name = KOR_socialism_party name = KOR_socialism_party }
+			set_country_flag = KOR_path_wonbong
+			add_ideas = phalanstere_aligned_nation
+			remove_ideas = moscow_aligned_nation
+			country_event = { id = TNW_KOR.5 days = 150 }
+		}
+		option = {
+			name = TNW_KOR.4.f
+			set_country_leader = KOR_Park_Han_Yong
+			set_politics = { ruling_party = communist elections_allowed = yes }
+			set_popularities = { communist = 100 }
+			set_party_name = { ideology = communist long_name = KOR_communist_party name = KOR_communist_party }
+			set_country_flag = KOR_path_park
+			add_ideas = phalanstere_aligned_nation
+			remove_ideas = moscow_aligned_nation
+			country_event = { id = TNW_KOR.5 days = 150 }
+		}
+}
+
+# 一九五〇年：祖国的分裂
+country_event = {
+	id = TNW_KOR.5
+	title = TNW_KOR.5.t
+	desc = TNW_KOR.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+		option = {
+			name = TNW_KOR.5.a
+			set_country_flag = KOR_split_done
+			remove_ideas = moscow_aligned_nation
+			527 = { transfer_state_to = KNR add_core_of = KNR }
+			979 = { transfer_state_to = KNR add_core_of = KNR }
+			982 = { transfer_state_to = KNR add_core_of = KNR }
+			983 = { transfer_state_to = KNR add_core_of = KNR }
+			KNR = {
+				set_country_leader = KNR_Lee_Beom_Seok
+				set_politics = { ruling_party = Nationalism elections_allowed = no }
+				set_popularities = { Nationalism = 100 }
+				set_party_name = { ideology = Nationalism long_name = KNR_Nationalism_party name = KNR_Nationalism_party }
+			}
+				add_ideas = moscow_aligned_nation
+			}
+			country_event = { id = TNW_KOR.6 days = 730 }
+			country_event = { id = TNW_KOR.7 days = 1460 }
+			KNR = { country_event = { id = TNW_KNR.1 days = 20 } }
+		}
+}
+
+# 一九五二年：金九再度遇刺
+country_event = {
+	id = TNW_KOR.6
+	title = TNW_KOR.6.t
+	desc = TNW_KOR.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+		option = {
+			name = TNW_KOR.6.a
+			add_stability = -0.05
+			KOR_Kim_Koo = { kill_character = yes }
+			set_country_flag = KOR_kimkoo_dead
+			if = {
+				limit = { NOT = { has_country_flag = KOR_path_park } }
+				set_country_leader = KOR_Yun_Bo_Seon
+				set_party_name = { ideology = Liberalism long_name = KOR_Liberalism_party name = KOR_Liberalism_party }
+			}
+		}
+}
+
+# 一九五四年：第二次独立选举
+country_event = {
+	id = TNW_KOR.7
+	title = TNW_KOR.7.t
+	desc = TNW_KOR.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+		option = {
+			name = TNW_KOR.7.a
+			add_stability = 0.05
+			set_country_leader = KOR_Yun_Bo_Seon
+			set_party_name = { ideology = Liberalism long_name = KOR_Liberalism_party name = KOR_Liberalism_party }
+			set_country_flag = KOR_1954_yun
+		}
+		option = {
+			name = TNW_KOR.7.b
+			set_country_leader = KOR_Cho_So_Ang
+			set_politics = { ruling_party = socialism elections_allowed = yes }
+			set_popularities = { socialism = 100 }
+			set_party_name = { ideology = socialism long_name = KOR_Dahanshehui_party name = KOR_Dahanshehui_party }
+			set_country_flag = KOR_1954_soang
+			add_ideas = phalanstere_aligned_nation
+			remove_ideas = moscow_aligned_nation
+		}
+		option = {
+			name = TNW_KOR.7.c
+			trigger = { has_country_flag = KOR_path_park }
+			set_country_leader = KOR_Park_Han_Yong
+			set_party_name = { ideology = communist long_name = KOR_communist_party name = KOR_communist_party }
+			set_country_flag = KOR_1954_park
+		}
+}

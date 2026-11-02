@@ -2,11 +2,13 @@
 
 set_research_slots = 3
 
-recruit_character = FER_Shin_Sung_Mo
+recruit_character = KNR_Shin_Sung_Mo
+recruit_character = KNR_Lee_Beom_Seok
+recruit_character = KNR_Baek_Sun_Yup
 
 set_politics = {
 	ruling_party = Nationalism
-	last_election = "1936.1.1"
+	last_election = "1948.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -14,7 +16,3 @@ set_politics = {
 set_popularities = {
 	Nationalism = 100
 }
-
-
-
-
