@@ -271,4 +271,100 @@ characters = {
 			id = -1
 		}
 	}
-}
+
+	#绀野与次郎（军事局派）
+	JAP_Konno_Yojuro = {
+		name = JAP_Konno_Yojuro
+	}
+	#细谷松太（产别派）
+	JAP_Hosoya_Matsuta = {
+		name = JAP_Hosoya_Matsuta
+	}
+	#市川诚（产别派）
+	JAP_Ichikawa_Makoto = {
+		name = JAP_Ichikawa_Makoto
+	}
+	#增山太助（产别派）
+	JAP_Masuyama_Taisuke = {
+		name = JAP_Masuyama_Taisuke
+	}
+	#椎野悦朗（产别派）
+	JAP_Shiino_Etsuro = {
+		name = JAP_Shiino_Etsuro
+	}
+	#相泽重明（产别派）
+	JAP_Aizawa_Shigeaki = {
+		name = JAP_Aizawa_Shigeaki
+	}
+	#平泽荣一（产别派）
+	JAP_Hirasawa_Eiichi = {
+		name = JAP_Hirasawa_Eiichi
+	}
+	#鹿岛宗二郎（军事局派）
+	JAP_Kashima_Sojiro = {
+		name = JAP_Kashima_Sojiro
+	}
+	#长谷川浩（军事局派）
+	JAP_Hasegawa_Hiroshi = {
+		name = JAP_Hasegawa_Hiroshi
+	}
+	#大冢有章（军事局派）
+	JAP_Otsuka_Yusho = {
+		name = JAP_Otsuka_Yusho
+	}
+	#今泉善一（军事局派）
+	JAP_Iizumi_Zenichi = {
+		name = JAP_Iizumi_Zenichi
+	}
+	#久善胜一（军事局派）
+	JAP_Kuzen_Shokichi = {
+		name = JAP_Kuzen_Shokichi
+	}
+	#林敬三（起义军官）
+	JAP_Hayashi_Keizo = {
+		name = JAP_Hayashi_Keizo
+	}
+	#山崎小五郎（旧士官）
+	JAP_Yamazaki_Kogoro = {
+		name = JAP_Yamazaki_Kogoro
+	}
+	#衣笠骏雄（旧士官）
+	JAP_Kinugasa_Toshio = {
+		name = JAP_Kinugasa_Toshio
+	}
+	#前田光繁（中式指导）
+	JAP_Maeda_Mitsufusa = {
+		name = JAP_Maeda_Mitsufusa
+	}
+	#小林武夫（中式指导）
+	JAP_Kobayashi_Takeo = {
+		name = JAP_Kobayashi_Takeo
+	}
+	#木元伝一（美式指导）
+	JAP_Kimoto_Denichi = {
+		name = JAP_Kimoto_Denichi
+	}
+	#有吉浩二（美式指导）
+	JAP_Ariyoshi_Koji = {
+		name = JAP_Ariyoshi_Koji
+	}
+	#坂口喜一郎（桅杆派）
+	JAP_Sakaguchi_Kiichiro = {
+		name = JAP_Sakaguchi_Kiichiro
+	}
+	#内山光雄（桅杆派）
+	JAP_Uchiyama_Mitsuo = {
+		name = JAP_Uchiyama_Mitsuo
+	}
+	#木村壮重（桅杆派）
+	JAP_Kimura_Sosei = {
+		name = JAP_Kimura_Sosei
+	}
+	#宮内謙吉（桅杆派）
+	JAP_Miyauchi_Kenkichi = {
+		name = JAP_Miyauchi_Kenkichi
+	}
+	#久保田英一（转向派）
+	JAP_Kubota_Eiichi = {
+		name = JAP_Kubota_Eiichi
+	}}

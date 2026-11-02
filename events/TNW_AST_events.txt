@@ -12,7 +12,12 @@ country_event = {
 		AST_init_factions_effect = yes
 		set_country_flag = AST_civil_war_active
 		set_country_flag = AST_prelude
-		declare_war_on = AFF
+		AFF = {
+			declare_war_on = {
+				target = AST
+				type = civil_war
+			}
+		}
 	}
 	option = {
 		name = AST_event_1_opt

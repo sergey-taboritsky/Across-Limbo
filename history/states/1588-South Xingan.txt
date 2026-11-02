@@ -6,7 +6,7 @@ state={
 		owner = RUS
 		add_core_of = CHI
 		add_core_of = MAN
-		add_core_of = MON
+		add_claim_by = MON
 	}
 
 	provinces={

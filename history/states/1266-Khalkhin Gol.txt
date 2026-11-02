@@ -9,6 +9,7 @@ state={
 		}
 		add_core_of = MON
 		add_claim_by = MAN
+		add_claim_by = CHI
 	}
 
 	provinces={

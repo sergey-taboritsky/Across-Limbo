@@ -1,0 +1,790 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="JAP_FocusTree_Page">
+    <mxGraphModel dx="1731" dy="554" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="6800" pageHeight="1700" math="0" shadow="0">
+      <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="JAP_Ripples_of_Fourth_Fukushima" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="第四次福岛战役的余波" vertex="1">
+      <mxGeometry height="60" width="120" x="1560" y="0" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_End_Food_Crisis" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="食粮危机结束" vertex="1">
+      <mxGeometry height="60" width="120" x="840" y="200" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_General_Congress_Conference" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="产别全国大会" vertex="1">
+      <mxGeometry height="60" width="120" x="2160" y="200" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Worker_Alliance_Congress" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="总同盟大会" vertex="1">
+      <mxGeometry height="60" width="120" x="2520" y="200" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Three_and_Six_Acres" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="“三町步”与“六町步”" vertex="1">
+      <mxGeometry height="60" width="120" x="720" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Land_Reform_Refund_Voucher" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="农地被没收者国库债券" vertex="1">
+      <mxGeometry height="60" width="120" x="960" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Evaluate_Planting_Season" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="评估农地复耕情况" vertex="1">
+      <mxGeometry height="60" width="120" x="840" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Agriculture_Central_Bank" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="农林中央金库" vertex="1">
+      <mxGeometry height="60" width="120" x="720" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Ceasefire_in_Japan" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="日本列岛停火协议" vertex="1">
+      <mxGeometry height="60" width="120" x="1440" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Far_East_Council" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="国际远东问题委员会" vertex="1">
+      <mxGeometry height="60" width="120" x="1680" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Constitutional_Creation_Committee" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="宪法制定委员会" vertex="1">
+      <mxGeometry height="60" width="120" x="1560" y="200" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_War_Crimes_Special_Court" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="战争罪与反人类罪特别法庭" vertex="1">
+      <mxGeometry height="60" width="120" x="1200" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Sue_Wartime_Murderers" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="对反抗暴行案提起诉讼" vertex="1">
+      <mxGeometry height="60" width="120" x="1080" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Clearup_Wartime_Rubble" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="清理废墟" vertex="1">
+      <mxGeometry height="60" width="120" x="960" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Agricoop_Formation_Law" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="农业协同组合法" vertex="1">
+      <mxGeometry height="60" width="120" x="840" y="600" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Women_in_Workforce" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="妇女参政权" vertex="1">
+      <mxGeometry height="60" width="120" x="1440" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Electronics_Labor_Law" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="电产劳动法" vertex="1">
+      <mxGeometry height="60" width="120" x="1680" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Pullback_Opressive_Policies" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="压制的诸制度撤废" vertex="1">
+      <mxGeometry height="60" width="120" x="1320" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Socialist_Education_Law" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="社会主义教育法" vertex="1">
+      <mxGeometry height="60" width="120" x="1800" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Peoples_Republic_Constitution" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="人民共和国宪法" vertex="1">
+      <mxGeometry height="60" width="120" x="1560" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Reward_Progressive_Unions" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="进步劳组奖励法" vertex="1">
+      <mxGeometry height="60" width="120" x="2040" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Promote_Union_Autonomy" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="自治劳方向努力" vertex="1">
+      <mxGeometry height="60" width="120" x="2280" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Promote_Production_Democracy" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="民主生产方向努力" vertex="1">
+      <mxGeometry height="60" width="120" x="2520" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_AJTFU_Formation" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="全国劳连会" vertex="1">
+      <mxGeometry height="60" width="120" x="2160" y="600" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Political_Unions_Congress" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="公劳共斗大会" vertex="1">
+      <mxGeometry height="60" width="120" x="2400" y="600" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Northsea_Squadron" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="北海工作组" vertex="1">
+      <mxGeometry height="60" width="120" x="1320" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Socialist_Reform_Program" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="日本列岛社会主义改造方案" vertex="1">
+      <mxGeometry height="60" width="120" x="1560" y="600" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Elect_First_President" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="首届全国政治委员会选举" vertex="1">
+      <mxGeometry height="60" width="120" x="1560" y="700" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Accept_Social_Revolution_Linearity" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="接纳社会革命一段论" vertex="1">
+      <mxGeometry height="60" width="120" x="480" y="800" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Farmer_Comrade_Organization" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="农民同志会主导" vertex="1">
+      <mxGeometry height="60" width="120" x="0" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Farmer_Union_Organization" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="农民连大会" vertex="1">
+      <mxGeometry height="60" width="120" x="240" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Life_Sustaining_First" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="生活保障权优先" vertex="1">
+      <mxGeometry height="60" width="120" x="480" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Labor_Reliance_System" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="劳组依存体制" vertex="1">
+      <mxGeometry height="60" width="120" x="720" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Combat_Aethiests_Union" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="战斗的无神论者同盟" vertex="1">
+      <mxGeometry height="60" width="120" x="120" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Prepare_Imminently" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="未雨绸缪" vertex="1">
+      <mxGeometry height="60" width="120" x="360" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Production_Management_Model" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="生产管理模式" vertex="1">
+      <mxGeometry height="60" width="120" x="600" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Support_China_Revolution" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="支援中国革命" vertex="1">
+      <mxGeometry height="60" width="120" x="480" y="1200" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_physics_chemistry_lab" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="理化学研究所" vertex="1">
+      <mxGeometry height="60" width="120" x="240" y="1300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_economic_independence" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="经济自主" vertex="1">
+      <mxGeometry height="60" width="120" x="720" y="1300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_metropolitan_renovation" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="革新都市计划" vertex="1">
+      <mxGeometry height="60" width="120" x="480" y="1400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_postwar_econ_reform" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="战后经济改革" vertex="1">
+      <mxGeometry height="60" width="120" x="1560" y="900" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_leaned_production" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="倾斜式生产" vertex="1">
+      <mxGeometry height="60" width="120" x="960" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_manufacturing_economy" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="加工型经济" vertex="1">
+      <mxGeometry height="60" width="120" x="840" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_evaluate_coalsteel_industry" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="煤铁产业需求评估" vertex="1">
+      <mxGeometry height="60" width="120" x="1080" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_electroproduction_salary_mode" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="电产型工资体系" vertex="1">
+      <mxGeometry height="60" width="120" x="960" y="1200" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_world_best_taxation" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="建设世界最佳税制" vertex="1">
+      <mxGeometry height="60" width="120" x="1560" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_Tokyo_industry_belt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="京滨工业带" vertex="1">
+      <mxGeometry height="60" width="120" x="1440" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_southern_industry_belt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="阪神工业带" vertex="1">
+      <mxGeometry height="60" width="120" x="1680" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_econ_path_left" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="伊井-听涛路线" vertex="1">
+      <mxGeometry height="60" width="120" x="1320" y="1200" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_econ_path_centre" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="藤田-高野路线" vertex="1">
+      <mxGeometry height="60" width="120" x="1560" y="1200" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_econ_path_right" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="岩井-太田路线" vertex="1">
+      <mxGeometry height="60" width="120" x="1800" y="1200" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_japan_america_econ_integration" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="日美联合经济" vertex="1">
+      <mxGeometry height="60" width="120" x="2520" y="1300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_reconstruction_success" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="改造计划基本成功" vertex="1">
+      <mxGeometry height="60" width="120" x="1560" y="1400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_american_absolute_government" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="米山提携政府" vertex="1">
+      <mxGeometry height="60" width="120" x="2640" y="800" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_combined_manufacturing" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="联合式生产" vertex="1">
+      <mxGeometry height="60" width="120" x="2160" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_labour_rights_law" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="劳动权益法案" vertex="1">
+      <mxGeometry height="60" width="120" x="2400" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_american_economic_assistance" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="美国经济援助" vertex="1">
+      <mxGeometry height="60" width="120" x="2640" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_japanese_deleonism" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="德莱昂主义日本化" vertex="1">
+      <mxGeometry height="60" width="120" x="2880" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_unite_farmer_association" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="统一农协" vertex="1">
+      <mxGeometry height="60" width="120" x="3120" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_american_experts" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="美国专家" vertex="1">
+      <mxGeometry height="60" width="120" x="2760" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_force_farmer_membership" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="强制农民入社" vertex="1">
+      <mxGeometry height="60" width="120" x="3000" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_allow_farmer_autonomy" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="允许农协自治" vertex="1">
+      <mxGeometry height="60" width="120" x="3240" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_make_every_worker_equal" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="人人平等，多劳多得" vertex="1">
+      <mxGeometry height="60" width="120" x="2400" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_consumer_production_command" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="消费品生产指令" vertex="1">
+      <mxGeometry height="60" width="120" x="2040" y="1100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_report_on_Matsukawa_incident" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="松川事件报告书" vertex="1">
+      <mxGeometry height="60" width="120" x="4800" y="0" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_worse_than_imagined" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="拆分自卫队武装与警察职责" vertex="1">
+      <mxGeometry height="60" width="120" x="4800" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_republic_security_council" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="共和国保卫委员会" vertex="1">
+      <mxGeometry height="60" width="120" x="4320" y="200" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_council_president_left" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="委员长长谷午麿同志" vertex="1">
+      <mxGeometry height="60" width="120" x="4200" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_council_president_right" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="委员长绔田里见同志" vertex="1">
+      <mxGeometry height="60" width="120" x="4440" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_survey_non_union_worker" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="非劳组成员监控法" vertex="1">
+      <mxGeometry height="60" width="120" x="4080" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_identify_union_members" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="劳组成员登记制度" vertex="1">
+      <mxGeometry height="60" width="120" x="4560" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_calm_general_unions" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="安抚产别" vertex="1">
+      <mxGeometry height="60" width="120" x="4680" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_farright_violence_deterrence" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="极右暴力防治法" vertex="1">
+      <mxGeometry height="60" width="120" x="4320" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_cite_oppression_abolishment_code" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="援引压制排除法" vertex="1">
+      <mxGeometry height="60" width="120" x="4200" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_national_security_act" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="国家保安法" vertex="1">
+      <mxGeometry height="60" width="120" x="4440" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_assess_labour_defense_force" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="评估劳动自卫队现状" vertex="1">
+      <mxGeometry height="60" width="120" x="5640" y="200" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_resist_pseudo_empire" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="抵抗伪帝国军队" vertex="1">
+      <mxGeometry height="60" width="120" x="5040" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_defense_negotiation_with_unions" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="同产别谈判" vertex="1">
+      <mxGeometry height="60" width="120" x="4800" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_worker_soldier_separation" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="脱产军队" vertex="1">
+      <mxGeometry height="60" width="120" x="4680" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_stick_with_worker_militia" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="劳动者的自卫队" vertex="1">
+      <mxGeometry height="60" width="120" x="4920" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_fortify_border" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="筑防边境" vertex="1">
+      <mxGeometry height="60" width="120" x="5040" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_hundred_thousand_recruitment" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="三十万扩军计划" vertex="1">
+      <mxGeometry height="60" width="120" x="5280" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_independent_worker_airforce" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="独立空军建设" vertex="1">
+      <mxGeometry height="60" width="120" x="5160" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_reorganize_military_bureau" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="重组军事局" vertex="1">
+      <mxGeometry height="60" width="120" x="5640" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_american_military_direction" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="美式军事指导" vertex="1">
+      <mxGeometry height="60" width="120" x="5520" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_mechanized_red_army" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="机械化红军" vertex="1">
+      <mxGeometry height="60" width="120" x="5520" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_chinese_military_direction" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="中式军事指导" vertex="1">
+      <mxGeometry height="60" width="120" x="5760" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_whampoa_experiences" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="黄埔经验" vertex="1">
+      <mxGeometry height="60" width="120" x="5760" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_assess_frontline_squads" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="一线战斗队评估" vertex="1">
+      <mxGeometry height="60" width="120" x="6240" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_reinvite_imperial_officers" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="启用旧士官" vertex="1">
+      <mxGeometry height="60" width="120" x="6000" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_old_training_policy" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="旧式军队训练" vertex="1">
+      <mxGeometry height="60" width="120" x="6000" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_trust_military_bureau" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="信任军事局" vertex="1">
+      <mxGeometry height="60" width="120" x="6240" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_military_revolution_fervor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="革命热情" vertex="1">
+      <mxGeometry height="60" width="120" x="6480" y="400" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_soldier_comradeship" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="同志情谊" vertex="1">
+      <mxGeometry height="60" width="120" x="6360" y="500" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_reassess_worker_defense_force" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="重新评估劳动自卫队" vertex="1">
+      <mxGeometry height="60" width="120" x="6000" y="600" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_posthumous_analysis_of_Nigata_battle" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="新潟保卫战事后分析" vertex="1">
+      <mxGeometry height="60" width="120" x="4800" y="800" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_land_defense_forces" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="陆上自卫队" vertex="1">
+      <mxGeometry height="60" width="120" x="4800" y="900" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_defense_initiative_whitebook" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="国防重点建白书" vertex="1">
+      <mxGeometry height="60" width="120" x="4200" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_slanted_reform_direction" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="鹿岛倾斜方案" vertex="1">
+      <mxGeometry height="60" width="120" x="5400" y="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="JAP_naval_polls_high" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="耸立的桅杆" vertex="1">
+      <mxGeometry height="60" width="120" x="6000" y="800" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_1_JAP_Three_and_Six_Acres" edge="1" parent="1" source="JAP_End_Food_Crisis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Three_and_Six_Acres">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_2_JAP_Land_Reform_Refund_Voucher" edge="1" parent="1" source="JAP_End_Food_Crisis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Land_Reform_Refund_Voucher">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_3_JAP_Evaluate_Planting_Season" edge="1" parent="1" source="JAP_Three_and_Six_Acres" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Evaluate_Planting_Season">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_4_JAP_Evaluate_Planting_Season" edge="1" parent="1" source="JAP_Land_Reform_Refund_Voucher" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Evaluate_Planting_Season">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_5_JAP_Agriculture_Central_Bank" edge="1" parent="1" source="JAP_Evaluate_Planting_Season" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Agriculture_Central_Bank">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_6_JAP_Ceasefire_in_Japan" edge="1" parent="1" source="JAP_Ripples_of_Fourth_Fukushima" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Ceasefire_in_Japan">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_7_JAP_Far_East_Council" edge="1" parent="1" source="JAP_Ripples_of_Fourth_Fukushima" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Far_East_Council">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_8_JAP_Constitutional_Creation_Committee" edge="1" parent="1" source="JAP_Ceasefire_in_Japan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Constitutional_Creation_Committee">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_9_JAP_Constitutional_Creation_Committee" edge="1" parent="1" source="JAP_Far_East_Council" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Constitutional_Creation_Committee">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_10_JAP_War_Crimes_Special_Court" edge="1" parent="1" source="JAP_Constitutional_Creation_Committee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_War_Crimes_Special_Court">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_11_JAP_Sue_Wartime_Murderers" edge="1" parent="1" source="JAP_War_Crimes_Special_Court" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Sue_Wartime_Murderers">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_12_JAP_Clearup_Wartime_Rubble" edge="1" parent="1" source="JAP_Evaluate_Planting_Season" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Clearup_Wartime_Rubble">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_13_JAP_Clearup_Wartime_Rubble" edge="1" parent="1" source="JAP_Sue_Wartime_Murderers" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Clearup_Wartime_Rubble">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_14_JAP_Agricoop_Formation_Law" edge="1" parent="1" source="JAP_Agriculture_Central_Bank" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Agricoop_Formation_Law">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_15_JAP_Agricoop_Formation_Law" edge="1" parent="1" source="JAP_Clearup_Wartime_Rubble" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Agricoop_Formation_Law">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_16_JAP_Women_in_Workforce" edge="1" parent="1" source="JAP_Constitutional_Creation_Committee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Women_in_Workforce">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_17_JAP_Electronics_Labor_Law" edge="1" parent="1" source="JAP_Constitutional_Creation_Committee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Electronics_Labor_Law">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_18_JAP_Electronics_Labor_Law" edge="1" parent="1" source="JAP_General_Congress_Conference" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Electronics_Labor_Law">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_19_JAP_Pullback_Opressive_Policies" edge="1" parent="1" source="JAP_War_Crimes_Special_Court" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Pullback_Opressive_Policies">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_20_JAP_Pullback_Opressive_Policies" edge="1" parent="1" source="JAP_Women_in_Workforce" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Pullback_Opressive_Policies">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_21_JAP_Pullback_Opressive_Policies" edge="1" parent="1" source="JAP_Electronics_Labor_Law" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Pullback_Opressive_Policies">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_22_JAP_Socialist_Education_Law" edge="1" parent="1" source="JAP_Electronics_Labor_Law" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Socialist_Education_Law">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_23_JAP_Peoples_Republic_Constitution" edge="1" parent="1" source="JAP_Pullback_Opressive_Policies" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Peoples_Republic_Constitution">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_24_JAP_Peoples_Republic_Constitution" edge="1" parent="1" source="JAP_Socialist_Education_Law" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Peoples_Republic_Constitution">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_25_JAP_Reward_Progressive_Unions" edge="1" parent="1" source="JAP_General_Congress_Conference" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Reward_Progressive_Unions">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_26_JAP_Promote_Union_Autonomy" edge="1" parent="1" source="JAP_General_Congress_Conference" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Promote_Union_Autonomy">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_27_JAP_Promote_Production_Democracy" edge="1" parent="1" source="JAP_Worker_Alliance_Congress" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Promote_Production_Democracy">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_28_JAP_AJTFU_Formation" edge="1" parent="1" source="JAP_Promote_Union_Autonomy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_AJTFU_Formation">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_29_JAP_AJTFU_Formation" edge="1" parent="1" source="JAP_Promote_Production_Democracy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_AJTFU_Formation">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_30_JAP_AJTFU_Formation" edge="1" parent="1" source="JAP_Reward_Progressive_Unions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_AJTFU_Formation">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_31_JAP_AJTFU_Formation" edge="1" parent="1" source="JAP_Socialist_Education_Law" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_AJTFU_Formation">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_32_JAP_Political_Unions_Congress" edge="1" parent="1" source="JAP_Promote_Union_Autonomy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Political_Unions_Congress">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_33_JAP_Political_Unions_Congress" edge="1" parent="1" source="JAP_Promote_Production_Democracy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Political_Unions_Congress">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_34_JAP_Northsea_Squadron" edge="1" parent="1" source="JAP_Pullback_Opressive_Policies" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Northsea_Squadron">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_35_JAP_Socialist_Reform_Program" edge="1" parent="1" source="JAP_Peoples_Republic_Constitution" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Socialist_Reform_Program">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_36_JAP_Elect_First_President" edge="1" parent="1" source="JAP_Socialist_Reform_Program" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Elect_First_President">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_37_JAP_Elect_First_President" edge="1" parent="1" source="JAP_AJTFU_Formation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Elect_First_President">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_38_JAP_Accept_Social_Revolution_Linearity" edge="1" parent="1" source="JAP_Elect_First_President" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Accept_Social_Revolution_Linearity">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_39_JAP_Farmer_Comrade_Organization" edge="1" parent="1" source="JAP_Accept_Social_Revolution_Linearity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Farmer_Comrade_Organization">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_40_JAP_Farmer_Union_Organization" edge="1" parent="1" source="JAP_Accept_Social_Revolution_Linearity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Farmer_Union_Organization">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_41_JAP_Life_Sustaining_First" edge="1" parent="1" source="JAP_Accept_Social_Revolution_Linearity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Life_Sustaining_First">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_42_JAP_Labor_Reliance_System" edge="1" parent="1" source="JAP_Accept_Social_Revolution_Linearity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Labor_Reliance_System">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_43_JAP_Combat_Aethiests_Union" edge="1" parent="1" source="JAP_Farmer_Comrade_Organization" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Combat_Aethiests_Union">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_44_JAP_Combat_Aethiests_Union" edge="1" parent="1" source="JAP_Farmer_Union_Organization" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Combat_Aethiests_Union">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_45_JAP_Combat_Aethiests_Union" edge="1" parent="1" source="JAP_Labor_Reliance_System" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Combat_Aethiests_Union">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_46_JAP_Prepare_Imminently" edge="1" parent="1" source="JAP_Farmer_Comrade_Organization" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Prepare_Imminently">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_47_JAP_Prepare_Imminently" edge="1" parent="1" source="JAP_Farmer_Union_Organization" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Prepare_Imminently">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_48_JAP_Prepare_Imminently" edge="1" parent="1" source="JAP_Life_Sustaining_First" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Prepare_Imminently">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_49_JAP_Production_Management_Model" edge="1" parent="1" source="JAP_Life_Sustaining_First" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Production_Management_Model">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_50_JAP_Production_Management_Model" edge="1" parent="1" source="JAP_Labor_Reliance_System" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Production_Management_Model">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_51_JAP_Support_China_Revolution" edge="1" parent="1" source="JAP_Combat_Aethiests_Union" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Support_China_Revolution">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_52_JAP_Support_China_Revolution" edge="1" parent="1" source="JAP_Prepare_Imminently" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Support_China_Revolution">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_53_JAP_Support_China_Revolution" edge="1" parent="1" source="JAP_Production_Management_Model" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Support_China_Revolution">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_54_JAP_physics_chemistry_lab" edge="1" parent="1" source="JAP_Support_China_Revolution" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_physics_chemistry_lab">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_55_JAP_economic_independence" edge="1" parent="1" source="JAP_Support_China_Revolution" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_economic_independence">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_56_JAP_economic_independence" edge="1" parent="1" source="JAP_electroproduction_salary_mode" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_economic_independence">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_57_JAP_metropolitan_renovation" edge="1" parent="1" source="JAP_economic_independence" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_metropolitan_renovation">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_58_JAP_metropolitan_renovation" edge="1" parent="1" source="JAP_physics_chemistry_lab" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_metropolitan_renovation">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_59_JAP_postwar_econ_reform" edge="1" parent="1" source="JAP_Elect_First_President" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_postwar_econ_reform">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_60_JAP_leaned_production" edge="1" parent="1" source="JAP_postwar_econ_reform" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_leaned_production">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_61_JAP_leaned_production" edge="1" parent="1" source="JAP_Accept_Social_Revolution_Linearity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_leaned_production">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_62_JAP_manufacturing_economy" edge="1" parent="1" source="JAP_leaned_production" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_manufacturing_economy">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_63_JAP_evaluate_coalsteel_industry" edge="1" parent="1" source="JAP_leaned_production" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_evaluate_coalsteel_industry">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_64_JAP_electroproduction_salary_mode" edge="1" parent="1" source="JAP_manufacturing_economy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_electroproduction_salary_mode">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_65_JAP_electroproduction_salary_mode" edge="1" parent="1" source="JAP_evaluate_coalsteel_industry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_electroproduction_salary_mode">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_66_JAP_world_best_taxation" edge="1" parent="1" source="JAP_postwar_econ_reform" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_world_best_taxation">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_67_JAP_Tokyo_industry_belt" edge="1" parent="1" source="JAP_leaned_production" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Tokyo_industry_belt">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_68_JAP_Tokyo_industry_belt" edge="1" parent="1" source="JAP_combined_manufacturing" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Tokyo_industry_belt">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_69_JAP_Tokyo_industry_belt" edge="1" parent="1" source="JAP_world_best_taxation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_Tokyo_industry_belt">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_70_JAP_southern_industry_belt" edge="1" parent="1" source="JAP_labour_rights_law" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_southern_industry_belt">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_71_JAP_southern_industry_belt" edge="1" parent="1" source="JAP_leaned_production" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_southern_industry_belt">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_72_JAP_southern_industry_belt" edge="1" parent="1" source="JAP_world_best_taxation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_southern_industry_belt">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_73_JAP_econ_path_left" edge="1" parent="1" source="JAP_Tokyo_industry_belt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_econ_path_left">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_74_JAP_econ_path_left" edge="1" parent="1" source="JAP_southern_industry_belt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_econ_path_left">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_75_JAP_econ_path_centre" edge="1" parent="1" source="JAP_Tokyo_industry_belt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_econ_path_centre">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_76_JAP_econ_path_centre" edge="1" parent="1" source="JAP_southern_industry_belt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_econ_path_centre">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_77_JAP_econ_path_right" edge="1" parent="1" source="JAP_Tokyo_industry_belt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_econ_path_right">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_78_JAP_econ_path_right" edge="1" parent="1" source="JAP_southern_industry_belt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_econ_path_right">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_79_JAP_japan_america_econ_integration" edge="1" parent="1" source="JAP_force_farmer_membership" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_japan_america_econ_integration">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_80_JAP_japan_america_econ_integration" edge="1" parent="1" source="JAP_allow_farmer_autonomy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_japan_america_econ_integration">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_81_JAP_japan_america_econ_integration" edge="1" parent="1" source="JAP_american_experts" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_japan_america_econ_integration">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_82_JAP_japan_america_econ_integration" edge="1" parent="1" source="JAP_make_every_worker_equal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_japan_america_econ_integration">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_83_JAP_japan_america_econ_integration" edge="1" parent="1" source="JAP_consumer_production_command" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_japan_america_econ_integration">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_84_JAP_reconstruction_success" edge="1" parent="1" source="JAP_economic_independence" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_reconstruction_success">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_85_JAP_reconstruction_success" edge="1" parent="1" source="JAP_japan_america_econ_integration" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_reconstruction_success">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_86_JAP_american_absolute_government" edge="1" parent="1" source="JAP_Elect_First_President" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_american_absolute_government">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_87_JAP_combined_manufacturing" edge="1" parent="1" source="JAP_american_absolute_government" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_combined_manufacturing">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_88_JAP_combined_manufacturing" edge="1" parent="1" source="JAP_postwar_econ_reform" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_combined_manufacturing">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_89_JAP_labour_rights_law" edge="1" parent="1" source="JAP_american_absolute_government" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_labour_rights_law">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_90_JAP_american_economic_assistance" edge="1" parent="1" source="JAP_american_absolute_government" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_american_economic_assistance">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_91_JAP_japanese_deleonism" edge="1" parent="1" source="JAP_american_absolute_government" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_japanese_deleonism">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_92_JAP_unite_farmer_association" edge="1" parent="1" source="JAP_american_absolute_government" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_unite_farmer_association">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_93_JAP_american_experts" edge="1" parent="1" source="JAP_american_economic_assistance" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_american_experts">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_94_JAP_american_experts" edge="1" parent="1" source="JAP_japanese_deleonism" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_american_experts">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_95_JAP_force_farmer_membership" edge="1" parent="1" source="JAP_unite_farmer_association" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_force_farmer_membership">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_96_JAP_allow_farmer_autonomy" edge="1" parent="1" source="JAP_unite_farmer_association" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_allow_farmer_autonomy">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_97_JAP_make_every_worker_equal" edge="1" parent="1" source="JAP_labour_rights_law" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_make_every_worker_equal">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_98_JAP_consumer_production_command" edge="1" parent="1" source="JAP_combined_manufacturing" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_consumer_production_command">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_99_JAP_worse_than_imagined" edge="1" parent="1" source="JAP_report_on_Matsukawa_incident" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_worse_than_imagined">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_100_JAP_republic_security_council" edge="1" parent="1" source="JAP_worse_than_imagined" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_republic_security_council">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_101_JAP_council_president_left" edge="1" parent="1" source="JAP_republic_security_council" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_council_president_left">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_102_JAP_council_president_right" edge="1" parent="1" source="JAP_republic_security_council" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_council_president_right">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_103_JAP_survey_non_union_worker" edge="1" parent="1" source="JAP_council_president_right" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_survey_non_union_worker">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_104_JAP_identify_union_members" edge="1" parent="1" source="JAP_council_president_right" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_identify_union_members">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_105_JAP_farright_violence_deterrence" edge="1" parent="1" source="JAP_council_president_left" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_farright_violence_deterrence">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_106_JAP_farright_violence_deterrence" edge="1" parent="1" source="JAP_council_president_right" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_farright_violence_deterrence">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_107_JAP_farright_violence_deterrence" edge="1" parent="1" source="JAP_calm_general_unions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_farright_violence_deterrence">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_108_JAP_cite_oppression_abolishment_code" edge="1" parent="1" source="JAP_survey_non_union_worker" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_cite_oppression_abolishment_code">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_109_JAP_cite_oppression_abolishment_code" edge="1" parent="1" source="JAP_identify_union_members" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_cite_oppression_abolishment_code">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_110_JAP_cite_oppression_abolishment_code" edge="1" parent="1" source="JAP_farright_violence_deterrence" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_cite_oppression_abolishment_code">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_111_JAP_national_security_act" edge="1" parent="1" source="JAP_survey_non_union_worker" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_national_security_act">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_112_JAP_national_security_act" edge="1" parent="1" source="JAP_identify_union_members" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_national_security_act">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_113_JAP_national_security_act" edge="1" parent="1" source="JAP_farright_violence_deterrence" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_national_security_act">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_114_JAP_assess_labour_defense_force" edge="1" parent="1" source="JAP_worse_than_imagined" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_assess_labour_defense_force">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_115_JAP_resist_pseudo_empire" edge="1" parent="1" source="JAP_assess_labour_defense_force" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_resist_pseudo_empire">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_116_JAP_defense_negotiation_with_unions" edge="1" parent="1" source="JAP_calm_general_unions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_defense_negotiation_with_unions">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_117_JAP_defense_negotiation_with_unions" edge="1" parent="1" source="JAP_resist_pseudo_empire" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_defense_negotiation_with_unions">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_118_JAP_worker_soldier_separation" edge="1" parent="1" source="JAP_defense_negotiation_with_unions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_worker_soldier_separation">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_119_JAP_stick_with_worker_militia" edge="1" parent="1" source="JAP_defense_negotiation_with_unions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_stick_with_worker_militia">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_120_JAP_fortify_border" edge="1" parent="1" source="JAP_calm_general_unions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_fortify_border">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_121_JAP_fortify_border" edge="1" parent="1" source="JAP_resist_pseudo_empire" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_fortify_border">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_122_JAP_hundred_thousand_recruitment" edge="1" parent="1" source="JAP_calm_general_unions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_hundred_thousand_recruitment">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_123_JAP_hundred_thousand_recruitment" edge="1" parent="1" source="JAP_resist_pseudo_empire" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_hundred_thousand_recruitment">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_124_JAP_independent_worker_airforce" edge="1" parent="1" source="JAP_fortify_border" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_independent_worker_airforce">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_125_JAP_independent_worker_airforce" edge="1" parent="1" source="JAP_hundred_thousand_recruitment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_independent_worker_airforce">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_126_JAP_reorganize_military_bureau" edge="1" parent="1" source="JAP_assess_labour_defense_force" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_reorganize_military_bureau">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_127_JAP_american_military_direction" edge="1" parent="1" source="JAP_reorganize_military_bureau" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_american_military_direction">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_128_JAP_mechanized_red_army" edge="1" parent="1" source="JAP_american_military_direction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_mechanized_red_army">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_129_JAP_chinese_military_direction" edge="1" parent="1" source="JAP_reorganize_military_bureau" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_chinese_military_direction">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_130_JAP_whampoa_experiences" edge="1" parent="1" source="JAP_chinese_military_direction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_whampoa_experiences">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_131_JAP_assess_frontline_squads" edge="1" parent="1" source="JAP_assess_labour_defense_force" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_assess_frontline_squads">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_132_JAP_reinvite_imperial_officers" edge="1" parent="1" source="JAP_assess_frontline_squads" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_reinvite_imperial_officers">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_133_JAP_old_training_policy" edge="1" parent="1" source="JAP_reinvite_imperial_officers" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_old_training_policy">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_134_JAP_trust_military_bureau" edge="1" parent="1" source="JAP_assess_frontline_squads" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_trust_military_bureau">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_135_JAP_military_revolution_fervor" edge="1" parent="1" source="JAP_assess_frontline_squads" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_military_revolution_fervor">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_136_JAP_soldier_comradeship" edge="1" parent="1" source="JAP_trust_military_bureau" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_soldier_comradeship">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_137_JAP_soldier_comradeship" edge="1" parent="1" source="JAP_military_revolution_fervor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_soldier_comradeship">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_138_JAP_reassess_worker_defense_force" edge="1" parent="1" source="JAP_old_training_policy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_reassess_worker_defense_force">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_139_JAP_reassess_worker_defense_force" edge="1" parent="1" source="JAP_soldier_comradeship" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_reassess_worker_defense_force">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_140_JAP_reassess_worker_defense_force" edge="1" parent="1" source="JAP_mechanized_red_army" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_reassess_worker_defense_force">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_141_JAP_reassess_worker_defense_force" edge="1" parent="1" source="JAP_whampoa_experiences" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_reassess_worker_defense_force">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_142_JAP_land_defense_forces" edge="1" parent="1" source="JAP_posthumous_analysis_of_Nigata_battle" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_land_defense_forces">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_143_JAP_defense_initiative_whitebook" edge="1" parent="1" source="JAP_land_defense_forces" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_defense_initiative_whitebook">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_144_JAP_slanted_reform_direction" edge="1" parent="1" source="JAP_land_defense_forces" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="JAP_slanted_reform_direction">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+          <mxCell id="mex_JAP_Three_and_Six_Acres__JAP_Land_Reform_Refund_Voucher" edge="1" parent="1" source="JAP_Three_and_Six_Acres" target="JAP_Land_Reform_Refund_Voucher" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_Promote_Union_Autonomy__JAP_Promote_Production_Democracy" edge="1" parent="1" source="JAP_Promote_Union_Autonomy" target="JAP_Promote_Production_Democracy" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_Accept_Social_Revolution_Linearity__JAP_american_absolute_government" edge="1" parent="1" source="JAP_Accept_Social_Revolution_Linearity" target="JAP_american_absolute_government" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_Farmer_Comrade_Organization__JAP_Farmer_Union_Organization" edge="1" parent="1" source="JAP_Farmer_Comrade_Organization" target="JAP_Farmer_Union_Organization" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_econ_path_left__JAP_econ_path_centre" edge="1" parent="1" source="JAP_econ_path_left" target="JAP_econ_path_centre" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_econ_path_left__JAP_econ_path_right" edge="1" parent="1" source="JAP_econ_path_left" target="JAP_econ_path_right" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_econ_path_centre__JAP_econ_path_right" edge="1" parent="1" source="JAP_econ_path_centre" target="JAP_econ_path_right" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_force_farmer_membership__JAP_allow_farmer_autonomy" edge="1" parent="1" source="JAP_force_farmer_membership" target="JAP_allow_farmer_autonomy" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_council_president_left__JAP_council_president_right" edge="1" parent="1" source="JAP_council_president_left" target="JAP_council_president_right" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_cite_oppression_abolishment_code__JAP_national_security_act" edge="1" parent="1" source="JAP_cite_oppression_abolishment_code" target="JAP_national_security_act" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_worker_soldier_separation__JAP_stick_with_worker_militia" edge="1" parent="1" source="JAP_worker_soldier_separation" target="JAP_stick_with_worker_militia" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_american_military_direction__JAP_chinese_military_direction" edge="1" parent="1" source="JAP_american_military_direction" target="JAP_chinese_military_direction" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_reinvite_imperial_officers__JAP_trust_military_bureau" edge="1" parent="1" source="JAP_reinvite_imperial_officers" target="JAP_trust_military_bureau" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_reinvite_imperial_officers__JAP_military_revolution_fervor" edge="1" parent="1" source="JAP_reinvite_imperial_officers" target="JAP_military_revolution_fervor" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_trust_military_bureau__JAP_military_revolution_fervor" edge="1" parent="1" source="JAP_trust_military_bureau" target="JAP_military_revolution_fervor" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="mex_JAP_defense_initiative_whitebook__JAP_slanted_reform_direction" edge="1" parent="1" source="JAP_defense_initiative_whitebook" target="JAP_slanted_reform_direction" style="edgeStyle=none;dashed=1;strokeColor=#FF0000;html=1;strokeWidth=2;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+</root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

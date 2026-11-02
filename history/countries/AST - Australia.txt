@@ -37,5 +37,5 @@ set_popularities = {
 
 set_convoys = 100
 
-# 澳大利亚内战宣战由事件 AST_event.1 (on_startup) 的 declare_war_on = AFF 触发
+# 澳大利亚内战：开局由事件 AST_event.1 (on_startup) 触发，AFF 对 AST 宣战（declare_war_on type=civil_war）
 

@@ -1,0 +1,13 @@
+leader_traits = {
+	JAP_decryption = {
+		type = all
+		trait_type = assignable_trait
+		attack_skill = 0
+		defense_skill = 0
+		planning_skill = 1
+		logistics_skill = 0
+		maneuvering_skill = 0
+		coordination_skill = 0
+		custom_effect_tooltip = JAP_decryption_tt
+	}
+}

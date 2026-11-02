@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = JAP_initial
 	country = {
 		factor = 0
@@ -2112,6 +2112,8 @@ focus_tree = {
 		x = 43
 		y = 5
 		completion_reward = {
+			add_unit_leader_role = { character = JAP_Shiino_Etsuro role = general skill = 2 attack_skill = 2 defense_skill = 2 planning_skill = 2 logistics_skill = 2 }
+			add_unit_leader_role = { character = JAP_Kashima_Sojiro role = general skill = 2 attack_skill = 1 defense_skill = 2 planning_skill = 2 logistics_skill = 2 }
 			log = "[GetLogRoot]: Focus Completed JAP_independent_worker_airforce"
 			add_political_power = 75
 			add_stability = 0.03
@@ -2137,6 +2139,7 @@ focus_tree = {
 		x = 47
 		y = 3
 		completion_reward = {
+			add_unit_leader_role = { character = JAP_Hayashi_Keizo role = general skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 2 logistics_skill = 2 }
 			log = "[GetLogRoot]: Focus Completed JAP_reorganize_military_bureau"
 			add_political_power = 50
 			army_experience = 25
@@ -2155,6 +2158,8 @@ focus_tree = {
 		x = 46
 		y = 4
 		completion_reward = {
+			add_unit_leader_role = { character = JAP_Kimoto_Denichi role = general skill = 3 attack_skill = 3 defense_skill = 2 planning_skill = 2 logistics_skill = 3 }
+			add_unit_leader_role = { character = JAP_Ariyoshi_Koji role = general skill = 3 attack_skill = 2 defense_skill = 2 planning_skill = 3 logistics_skill = 2 }
 			log = "[GetLogRoot]: Focus Completed JAP_american_military_direction"
 			army_experience = 35
 			add_political_power = 25
@@ -2199,6 +2204,8 @@ focus_tree = {
 		x = 48
 		y = 4
 		completion_reward = {
+			add_unit_leader_role = { character = JAP_Maeda_Mitsufusa role = general skill = 3 attack_skill = 3 defense_skill = 2 planning_skill = 3 logistics_skill = 2 }
+			add_unit_leader_role = { character = JAP_Kobayashi_Takeo role = general skill = 3 attack_skill = 2 defense_skill = 3 planning_skill = 2 logistics_skill = 2 }
 			log = "[GetLogRoot]: Focus Completed JAP_chinese_military_direction"
 			army_experience = 35
 			add_political_power = 25
@@ -2252,6 +2259,8 @@ focus_tree = {
 		x = 50
 		y = 4
 		completion_reward = {
+			add_unit_leader_role = { character = JAP_Yamazaki_Kogoro role = general skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 2 logistics_skill = 3 }
+			add_unit_leader_role = { character = JAP_Kinugasa_Toshio role = general skill = 3 attack_skill = 2 defense_skill = 4 planning_skill = 3 logistics_skill = 2 }
 			log = "[GetLogRoot]: Focus Completed JAP_reinvite_imperial_officers"
 			add_political_power = 50
 			add_stability = 0.03
@@ -2289,6 +2298,10 @@ focus_tree = {
 		x = 52
 		y = 4
 		completion_reward = {
+			add_unit_leader_role = { character = JAP_Hasegawa_Hiroshi role = general skill = 2 attack_skill = 2 defense_skill = 2 planning_skill = 2 logistics_skill = 1 }
+			add_unit_leader_role = { character = JAP_Otsuka_Yusho role = general skill = 2 attack_skill = 2 defense_skill = 1 planning_skill = 2 logistics_skill = 2 }
+			add_unit_leader_role = { character = JAP_Iizumi_Zenichi role = general skill = 2 attack_skill = 2 defense_skill = 2 planning_skill = 1 logistics_skill = 2 }
+			add_unit_leader_role = { character = JAP_Kuzen_Shokichi role = general skill = 2 attack_skill = 2 defense_skill = 2 planning_skill = 2 logistics_skill = 1 }
 			log = "[GetLogRoot]: Focus Completed JAP_trust_military_bureau"
 			add_political_power = 50
 			add_stability = 0.03
@@ -2310,6 +2323,9 @@ focus_tree = {
 		x = 54
 		y = 4
 		completion_reward = {
+			add_unit_leader_role = { character = JAP_Aizawa_Shigeaki role = general skill = 2 attack_skill = 2 defense_skill = 2 planning_skill = 2 logistics_skill = 1 }
+			add_unit_leader_role = { character = JAP_Hirasawa_Eiichi role = general skill = 2 attack_skill = 1 defense_skill = 1 planning_skill = 2 logistics_skill = 2 }
+			JAP_Hirasawa_Eiichi = { add_unit_leader_trait = JAP_decryption }
 			log = "[GetLogRoot]: Focus Completed JAP_military_revolution_fervor"
 			add_political_power = 50
 			add_stability = 0.03
@@ -2453,6 +2469,9 @@ focus_tree = {
 		x = 50
 		y = 8
 		completion_reward = {
+			add_unit_leader_role = { character = JAP_Uchiyama_Mitsuo role = admiral skill = 3 attack_skill = 2 defense_skill = 3 maneuvering_skill = 2 coordination_skill = 3 }
+			add_unit_leader_role = { character = JAP_Kimura_Sosei role = admiral skill = 3 attack_skill = 2 defense_skill = 3 maneuvering_skill = 3 coordination_skill = 2 }
+			add_unit_leader_role = { character = JAP_Miyauchi_Kenkichi role = admiral skill = 3 attack_skill = 3 defense_skill = 2 maneuvering_skill = 2 coordination_skill = 3 }
 			log = "[GetLogRoot]: Focus Completed JAP_naval_polls_high"
 			add_political_power = 75
 			add_stability = 0.05

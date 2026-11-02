@@ -84,7 +84,7 @@ country_event = {
 			country_event = { id = TNW_KOR.5 days = 150 }
 		}
 		option = {
-			name = TNW_KOR.4.d
+			name = TNW_KOR.4.e
 			set_country_leader = KOR_Lyuh_Woon_Hyung
 			set_politics = { ruling_party = Social_democracy elections_allowed = yes }
 			set_popularities = { Social_democracy = 100 }
@@ -93,7 +93,7 @@ country_event = {
 			country_event = { id = TNW_KOR.5 days = 150 }
 		}
 		option = {
-			name = TNW_KOR.4.e
+			name = TNW_KOR.4.f
 			set_country_leader = KOR_Kim_Won_Bong
 			set_politics = { ruling_party = socialism elections_allowed = yes }
 			set_popularities = { socialism = 100 }
@@ -104,7 +104,7 @@ country_event = {
 			country_event = { id = TNW_KOR.5 days = 150 }
 		}
 		option = {
-			name = TNW_KOR.4.f
+			name = TNW_KOR.4.g
 			set_country_leader = KOR_Park_Han_Yong
 			set_politics = { ruling_party = communist elections_allowed = yes }
 			set_popularities = { communist = 100 }

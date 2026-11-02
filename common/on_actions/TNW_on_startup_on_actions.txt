@@ -1,4 +1,4 @@
-on_actions = {
+﻿on_actions = {
 	# ROOT is country, this is ran for every country
 	on_startup = {
 		effect = {
@@ -77,6 +77,17 @@ on_actions = {
 					tag = KOR
 				}
 				country_event = { id = TNW_KOR.1 days = 0 }
+			}
+#JAP 无启用条件的军官：开局授予将领职责（无职责角色 + add_unit_leader_role）
+			if = {
+				limit = {
+					tag = JAP
+				}
+				add_unit_leader_role = { character = JAP_Konno_Yojuro role = field_marshal skill = 2 attack_skill = 1 defense_skill = 1 planning_skill = 2 logistics_skill = 1 }
+				add_unit_leader_role = { character = JAP_Hosoya_Matsuta role = general skill = 2 attack_skill = 2 defense_skill = 1 planning_skill = 2 logistics_skill = 2 }
+				add_unit_leader_role = { character = JAP_Ichikawa_Makoto role = general skill = 2 attack_skill = 1 defense_skill = 2 planning_skill = 2 logistics_skill = 2 }
+				add_unit_leader_role = { character = JAP_Masuyama_Taisuke role = general skill = 2 attack_skill = 2 defense_skill = 2 planning_skill = 1 logistics_skill = 2 }
+				add_unit_leader_role = { character = JAP_Sakaguchi_Kiichiro role = admiral skill = 3 attack_skill = 3 defense_skill = 2 maneuvering_skill = 3 coordination_skill = 2 }
 			}
 #CHI
 	#Province Leader Modifiers
