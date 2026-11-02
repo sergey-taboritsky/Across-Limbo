@@ -2146,4 +2146,28 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_large_IRQ_abd_al_karim_qasim"
 		texturefile = "gfx/characters/IRQ_abd_al_karim_qasim.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_IRQ_abd_al_salam_arif"
+		texturefile = "gfx/characters/IRQ_abd_al_salam_arif.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_AST_Billy_Hughes"
+		texturefile = "gfx/characters/AST_Billy_Hughes.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_AFF_Billy_Hughes"
+		texturefile = "gfx/characters/AFF_Billy_Hughes.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_EGY_Youssef_Darwish"
+		texturefile = "gfx/characters/EGY_Youssef_Darwish.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_RUS_nikolay_vatutin"
+		texturefile = "gfx/characters/RUS_nikolay_vatutin.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_JAP_Inamura_Junzo"
+		texturefile = "gfx/characters/JAP_Inamura_Junzo.png"
 	}}

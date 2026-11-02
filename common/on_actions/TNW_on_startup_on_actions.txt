@@ -4,6 +4,47 @@ on_actions = {
 		effect = {
 #Econ Init
 			every_country = {
+
+				if = {
+					limit = {
+						tag = MON
+					}
+					set_party_name = {
+						ideology = Authoritarianism
+						long_name = MON_Authoritarianism_party
+						name = MON_Authoritarianism_party
+					}
+					set_party_name = {
+						ideology = Conservatism
+						long_name = MON_Conservatism_party
+						name = MON_Conservatism_party
+					}
+					set_party_name = {
+						ideology = Liberalism
+						long_name = MON_Liberalism_party
+						name = MON_Liberalism_party
+					}
+					set_party_name = {
+						ideology = Social_democracy
+						long_name = MON_Social_democracy_party
+						name = MON_Social_democracy_party
+					}
+					set_party_name = {
+						ideology = socialism
+						long_name = MON_socialism_party
+						name = MON_socialism_party
+					}
+					set_party_name = {
+						ideology = Absolutism
+						long_name = MON_Absolutism_party
+						name = MON_Absolutism_party
+					}
+					set_party_name = {
+						ideology = communist
+						long_name = MON_communist_party
+						name = MON_communist_party
+					}
+				}
 				add_offsite_building = { type = industrial_complex level = 2 }
 				# 国库已统一为 capital_reserves（初始 25 在 TNW_econ_gdp_on_actions 设置）
 				set_variable = {

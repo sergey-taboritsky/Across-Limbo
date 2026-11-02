@@ -381,4 +381,20 @@ characters = {
 			coordination_skill = 1
 		}
 	}
+	RUS_nikolay_vatutin = {
+		name = RUS_nikolay_vatutin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_nikolay_vatutin
+			}
+		}
+		country_leader = {
+			desc = RUS_nikolay_vatutin_desc
+			ideology = Marxism_Leninism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
+
 }

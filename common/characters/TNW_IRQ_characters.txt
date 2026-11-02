@@ -203,6 +203,11 @@
 	#阿卜杜勒·萨拉姆·阿里夫（泛阿拉伯激进军官）
 	IRQ_abd_al_salam_arif = {
 		name = IRQ_abd_al_salam_arif
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IRQ_abd_al_salam_arif
+			}
+		}
 		country_leader = {
 			desc = IRQ_abd_al_salam_arif_desc
 			ideology = military_government

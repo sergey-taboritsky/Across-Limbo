@@ -13,4 +13,106 @@ characters = {
 		}
 		
 	}
-}
+
+	MON_Tseren_Ochiryn_Dambadorj = {
+		name = MON_Tseren_Ochiryn_Dambadorj
+		country_leader = {
+			desc = MON_Tseren_Ochiryn_Dambadorj_desc
+			ideology = National_Conservatism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { }
+		}
+	}
+	MON_Ajvaagiin_Danzan = {
+		name = MON_Ajvaagiin_Danzan
+		advisor = {
+			slot = head_of_government
+			idea_token = MON_Ajvaagiin_Danzan_hog
+			allowed = { original_tag = MON }
+			traits = { }
+			cost = -1
+		}
+		country_leader = {
+			desc = MON_Ajvaagiin_Danzan_desc
+			ideology = Social_democratic
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { }
+		}
+	}
+	MON_Navaandorjiyn_Jadambaa = {
+		name = MON_Navaandorjiyn_Jadambaa
+		advisor = {
+			slot = political_advisor
+			idea_token = MON_Navaandorjiyn_Jadambaa_advisor
+			allowed = { original_tag = MON }
+			traits = { }
+			cost = -1
+		}
+	}
+	MON_Sonombaljiriin_Buyannemeh = {
+		name = MON_Sonombaljiriin_Buyannemeh
+		advisor = {
+			slot = political_advisor
+			idea_token = MON_Sonombaljiriin_Buyannemeh_advisor
+			allowed = { original_tag = MON }
+			traits = { }
+			cost = -1
+		}
+		country_leader = {
+			desc = MON_Sonombaljiriin_Buyannemeh_desc
+			ideology = National_liberalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { }
+		}
+	}
+	MON_Sainbayar = {
+		name = MON_Sainbayar
+		advisor = {
+			slot = political_advisor
+			idea_token = MON_Sainbayar_advisor
+			allowed = { original_tag = MON }
+			traits = { }
+			cost = -1
+		}
+		country_leader = {
+			desc = MON_Sainbayar_desc
+			ideology = oligarchy
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { }
+		}
+	}
+	MON_Mersee = {
+		name = MON_Mersee
+		advisor = {
+			slot = political_advisor
+			idea_token = MON_Mersee_advisor
+			allowed = { original_tag = MON }
+			traits = { }
+			cost = -1
+		}
+	}
+	MON_Damdin_Sukhbaatar = {
+		name = MON_Damdin_Sukhbaatar
+		advisor = {
+			slot = theorist
+			idea_token = MON_Damdin_Sukhbaatar_theorist
+			allowed = { original_tag = MON }
+			ledger = civilian
+			traits = { }
+			cost = -1
+		}
+	}
+	MON_Olziin_Badrakh = {
+		name = MON_Olziin_Badrakh
+		country_leader = {
+			desc = MON_Olziin_Badrakh_desc
+			ideology = socialist_nationalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { }
+		}
+	}}

@@ -8,6 +8,14 @@ set_technology = {
 }
 
 recruit_character = MON_Unenbayal
+recruit_character = MON_Tseren_Ochiryn_Dambadorj
+recruit_character = MON_Ajvaagiin_Danzan
+recruit_character = MON_Navaandorjiyn_Jadambaa
+recruit_character = MON_Sonombaljiriin_Buyannemeh
+recruit_character = MON_Sainbayar
+recruit_character = MON_Mersee
+recruit_character = MON_Damdin_Sukhbaatar
+recruit_character = MON_Olziin_Badrakh
 
 set_politics = {
 	ruling_party = Conservatism
@@ -18,16 +26,22 @@ set_politics = {
 
 
 set_popularities = {
-	communist = 12
-	socialism = 17
-	Social_democracy = 5
-	Liberalism = 1
-	Conservatism = 23
-	Authoritarianism = 22
-	Absolutism = 20
+	communist = 2
+	socialism = 10
+	Social_democracy = 22
+	Liberalism = 18
+	Conservatism = 30
+	Authoritarianism = 15
+	Absolutism = 3
 
 }
 
 add_ideas ={
 	moscow_aligned_nation
 }
+activate_advisor = MON_Ajvaagiin_Danzan_hog
+activate_advisor = MON_Navaandorjiyn_Jadambaa_advisor
+activate_advisor = MON_Sonombaljiriin_Buyannemeh_advisor
+activate_advisor = MON_Sainbayar_advisor
+activate_advisor = MON_Mersee_advisor
+activate_advisor = MON_Damdin_Sukhbaatar_theorist

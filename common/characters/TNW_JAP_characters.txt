@@ -255,4 +255,20 @@ characters = {
 			id = -1
 		}
 	}
+	#稻村顺三（社会党协会派核心）
+	JAP_Inamura_Junzo = {
+		name = JAP_Inamura_Junzo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Inamura_Junzo
+			}
+		}
+		country_leader = {
+			desc = JAP_Inamura_Junzo_desc
+			ideology = Japanese_Marxism
+			traits = { }
+			expire = "2022.10.20.1"
+			id = -1
+		}
+	}
 }

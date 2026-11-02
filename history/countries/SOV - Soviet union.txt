@@ -99,7 +99,6 @@ recruit_character = SOV_mikhail_tukhachevsky
 recruit_character = SOV_nikandr_chibisov
 
 recruit_character = SOV_nikolay_berzarin
-recruit_character = SOV_nikolay_vatutin
 
 recruit_character = SOV_nikolay_kuznetsov
 

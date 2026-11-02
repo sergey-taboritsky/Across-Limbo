@@ -15,6 +15,7 @@ recruit_character = RUS_Maksimilian_Filonenko
 recruit_character = RUS_Vladimir_Manstein
 recruit_character = RUS_Andrey_Vlasov
 recruit_character = RUS_Anton_Denikin
+recruit_character = RUS_nikolay_vatutin
 
 set_convoys = 50
 
