@@ -81,30 +81,32 @@
  #Jean Garchery Paris Mayor
  #将领
  FRA_Charles_Delestraint: "夏尔·德勒斯特兰" #总参谋长
- FRA_Charles_Delestraint_desc: ""
+ FRA_Charles_Delestraint_desc: "§Y出生于：§!§L1879年3月12日，法兰西共和国，比阿舍-圣瓦斯特§!"
  FRA_Charles_Delestraint_theorist_desc: "§Y出生于：§!§L1879年3月12日，法兰西共和国，利摩日§!"
  FRA_Georges_Catroux: "乔治·卡特鲁" #陆军总长
- FRA_Georges_Catroux_desc: ""
+ FRA_Georges_Catroux_commander_desc: "§Y出生于：§!§L1877年1月29日，法兰西共和国，比阿舍-圣瓦斯特§!"
+ FRA_Georges_Catroux_desc: "§Y出生于：§!§L1877年1月29日，法兰西共和国，比阿舍-圣瓦斯特§!"
  FRA_Pierre_Billotte: "皮埃尔·比约特"
- FRA_Pierre_Billotte_desc: ""
+ FRA_Pierre_Billotte_desc: "§Y出生于：§!§L1906年3月8日，法兰西共和国，巴黎§!"
  FRA_Pierre_Billotte_commander_desc: "§Y出生于：§!§L1906年3月8日，法兰西共和国，巴黎§!\n§Y人物背景：§!§L“斯通尼屠夫”皮埃尔·比约特出身军人世家，并自幼便以参军为志。在他仍读初中之时，革命爆发，公社政权建立，而其父母虽未参加革命兵变，但考虑到小比约特过于年轻不宜远行，便全家留在革命后的巴黎。\n\n1924年，比约特报名前往装甲兵学院，并于1927年毕业，同年以装甲兵志愿军的身份前往广州协助国民革命军。次年，他跟随部分国民党军官来到加尔各答，协助印度装甲部队建设。1931年初，法国因古吉拉特危机撤回驻印军事顾问团后，比约特回国担任第41坦克营的营长，并授衔上尉。1937年，由于加香政府重视装甲部队的新政策，升任少校连长。\n\n第二次世界大战初期，随着德军部队向色当进军，比约特率部在其进军路线上的斯通尼小镇驻防。在遭遇德军第八装甲团后，比约特亲自驾驶坦克带队出击，总计摧毁德军坦克33辆、反坦克炮超20门。比约特一战成名，于1940年官至准将，1942年升为少将。在战争结束时，其已因对革命的忠诚以及对装甲作战的精通而闻名，并担任法国装甲部队的总参谋长。§!"
+ FRA_Ernest_Petit_commander_desc: "§Y出生于：§!§L1888年2月20日，法兰西共和国，潘布夫§!"
  FRA_Ernest_Petit: "欧内斯特·佩蒂特"
- FRA_Ernest_Petit_desc: ""
+ FRA_Ernest_Petit_desc: "§Y出生于：§!§L1888年2月20日，法兰西共和国，潘布夫§!"
  FRA_Roger_Ginsburger: "罗杰·金斯伯格"
- FRA_Roger_Ginsburger_desc: ""
+ FRA_Roger_Ginsburger_desc: "§Y出生于：§!§L1901年8月27日，法兰西共和国，苏尔茨-上莱茵§!"
  FRA_Roger_Ginsburger_commander_desc: "§Y出生于：§!§L1901年8月27日，法兰西共和国，苏尔茨-上莱茵§!"
  FRA_Henri_Rol_Tanguy: "亨利·罗尔-丹吉"
- FRA_Henri_Rol_Tanguy_desc: ""
+ FRA_Henri_Rol_Tanguy_desc: "§Y出生于：§!§L1908年7月12日，法兰西共和国，莫尔莱§!"
  FRA_Henri_Rol_Tanguy_commander_desc: "§Y出生于：§!§L1908年7月12日，法兰西共和国，莫尔莱§!"
  FRA_Charles_Tillon: "夏尔·蒂永" #海军总长
- FRA_Charles_Tillon_desc: ""
+ FRA_Charles_Tillon_desc: "§Y出生于：§!§L1897年7月3日，法兰西共和国，雷恩§!"
  FRA_Charles_Tillon_navy_chief_desc: "§Y出生于：§!§L1897年7月3日，法兰西共和国，雷恩§!\n§Y人物背景：§!§L夏尔·蒂永出生于雷恩市的一个工人阶级家庭。1913年，他从职业学校毕业，并以装修工身份参加工作。1916年，他被法国海军征召，服役于吉尚号轻巡洋舰，并在一年内升任军务长。1919年，随着战争即将走向失败，蒂永带领舰上水兵发动起义，并使得该舰成为随后的法国内战中少数参加公社军队的战舰。\n\n革命胜利后，蒂永原本希望回到雷恩继续做装修工，但由于公社海军建设刚刚起步急缺人才，蒂永最终被说服留在海军服役，同时加入了加香组织的工农共产党。1935年的动荡中，蒂永是公社军队中较前开始反对皮韦尔政权的将领之一。随后，他率先表态支持新政府，并因此升任海军总长。\n\n第二次世界大战期间，蒂永指挥公社海军与英国共和海军并肩作战，共同粉碎了德国公海舰队封锁第三国际的尝试。§!"
  FRA_Martial_Henri_Valin: "马提亚尔·亨利·马林"
- FRA_Martial_Henri_Valin_desc: ""
+ FRA_Martial_Henri_Valin_desc: "§Y出生于：§!§L1898年5月14日，法兰西共和国，利摩日§!"
  FRA_Martial_Henri_Valin_air_chief_desc: "§Y出生于：§!§L1898年5月14日，法兰西共和国，利摩日§!"
 
  FRA_Pierre_Laval: "皮埃尔·赖伐尔"
- FRA_Pierre_Laval_desc: ""
+ FRA_Pierre_Laval_desc: "§Y出生于：§!§L1883年6月28日，法兰西共和国，夏特尔东§!"
  
 #民族精神
  FRA_Home_of_the_Revolution: "革命始源地"

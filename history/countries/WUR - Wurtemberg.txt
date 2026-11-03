@@ -24,9 +24,6 @@ set_popularities = {
 	Nationalism = 5
 }
 
-recruit_character = DDR_Kurt_Schumacher
-recruit_character = DDR_Albert_Einstein
-recruit_character = DDR_Willi_Bleicher
 recruit_character = DDR_Georg_Elser
 
 add_ideas = {

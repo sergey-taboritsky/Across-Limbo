@@ -1,6 +1,11 @@
 ﻿l_simp_chinese:
  KOR_Syngman_Rhee: "李承晚"
  KOR_Kim_Koo: "金九"
+ KOR_Kim_Koo_desc: "§Y出生于：§!§L1888年2月15日，朝鲜王国，黄海道海州白云坊基洞§!"
+ KOR_Lyuh_Woon_Hyung_desc: "§Y出生于：§!§L1886年5月25日，朝鲜王国，京畿道杨州§!"
+ KOR_Kim_Won_Bong_desc: "§Y出生于：§!§L1898年8月13日，大韩帝国，庆尚南道密阳郡§!"
+ KOR_Kim_Du_Han_desc: "§Y出生于：§!§L1898年8月13日，大韩帝国，庆尚南道密阳郡§!"
+ KOR_Park_Han_Yong_desc: "§Y出生于：§!§L1900年5月28日，大韩帝国，忠清南道大兴郡§!"
  KOR_Lyuh_Woon_Hyung: "吕运亨"
  KOR_Kim_Won_Bong: "金元凤"
  KOR_Kim_Du_Han: "金斗汉"
@@ -9,6 +14,7 @@
  KOR_Cho_So_Ang: "赵素昂"
  KOR_Yun_Bo_Seon: "尹潽善"
  KOR_Ji_Cheong_Cheon: "池青天"
+ KOR_Ji_Cheong_Cheon_desc: "§Y出生于：§!§L1888年2月15日，朝鲜王国，京畿道京城府三清洞§!"
  KOR_Choi_Jae_Hyung: "崔在亨"
 # 领导人（朝鲜民族共和国 KNR）
  KNR_Shin_Sung_Mo: "申性模"
@@ -74,3 +80,4 @@
  TNW_KNR.1.b: "弱男李范奭——海参崴派政变，申性模"
  TNW_KNR.1.c: "弱男李范奭——池青天雪夜政变，保守主义"
  TNW_KNR.1.d: "弱男李范奭——白善烨反政变，一民主义"
+ FER_Shin_Sung_Mo_desc: "§Y出生于：§!§L1891年10月20日，朝鲜王国，庆尚道宜宁郡§!"
