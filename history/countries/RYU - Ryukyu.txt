@@ -1,21 +1,22 @@
 ﻿capital = 526
 
+recruit_character = RYU_Gus_Hall
 set_politics = {
-	ruling_party = Authoritarianism
+	ruling_party = communist
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	communist = 0
+	communist = 100
 	syndicalism = 0
 	socialism = 0
 	Social_democracy = 0
 	Liberalism = 0
 	Conservatism = 0
 	Authoritarianism = 0
-	Absolutism = 100
+	Absolutism = 0
 	Nationalism = 0
 }
 

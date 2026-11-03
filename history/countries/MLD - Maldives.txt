@@ -45,10 +45,10 @@ set_convoys = 20
 	}
 }
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	communist = 1
@@ -75,15 +75,15 @@ set_popularities = {
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = Authoritarianism
+		ruling_party = Absolutism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}	
 	set_popularities = {
-		Liberalism = 38
+		Liberalism = 10
 		Nationalism = 6
 		communist = 6
-		Authoritarianism = 50
+		Absolutism = 78
 	}
 }

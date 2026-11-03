@@ -4,7 +4,7 @@ state={
 	name="STATE_795"
 
 	history={
-		owner = VOL
+		owner = IVO
 		victory_points = {
 			10836 5 
 		}
@@ -17,6 +17,12 @@ state={
 		victory_points = {
 			14005 1 
 		}
+		victory_points = {
+			15910 1
+		}
+		victory_points = {
+			15908 2
+		}
 		buildings = {
 			infrastructure = 1
 
@@ -25,8 +31,8 @@ state={
 
 	}
 
-	provinces={
-		10836 14005 14006 14007 14008 15898 15904 
+	provinces = {
+		10836 14005 14006 14007 14008 15898 15904 12851 15910 15908 
 	}
 	manpower=1713148
 	buildings_max_level_factor=1.000

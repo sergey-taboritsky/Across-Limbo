@@ -1,0 +1,18 @@
+characters = {
+	NGR_Ahmadu_Bello = {
+		name = NGR_Ahmadu_Bello
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NGR_Ahmadu_Bello
+			}
+		}
+		country_leader = {
+			desc = NGR_Ahmadu_Bello_desc
+			ideology = oligarchy
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

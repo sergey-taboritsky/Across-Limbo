@@ -1,0 +1,18 @@
+characters = {
+	NGA_Nnamdi_Azikiwe = {
+		name = NGA_Nnamdi_Azikiwe
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_NGA_Nnamdi_Azikiwe
+			}
+		}
+		country_leader = {
+			desc = NGA_Nnamdi_Azikiwe_desc
+			ideology = oligarchy
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

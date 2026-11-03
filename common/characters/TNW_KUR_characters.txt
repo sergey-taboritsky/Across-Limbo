@@ -1,0 +1,18 @@
+characters = {
+	KUR_Mustafa_Barzani = {
+		name = KUR_Mustafa_Barzani
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KUR_Mustafa_Barzani
+			}
+		}
+		country_leader = {
+			desc = KUR_Mustafa_Barzani_desc
+			ideology = National_liberalism
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,18 @@
+characters = {
+	TIM_Lewis_Dyke = {
+		name = TIM_Lewis_Dyke
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TIM_Lewis_Dyke
+			}
+		}
+		country_leader = {
+			desc = TIM_Lewis_Dyke_desc
+			ideology = Social_Liberalism
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

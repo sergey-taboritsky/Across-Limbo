@@ -1,5 +1,6 @@
 ﻿capital = 354
 
+recruit_character = TPS_Leonidas_Iasonidis
 set_research_slots = 3
 
 set_politics = {

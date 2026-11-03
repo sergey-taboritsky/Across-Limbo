@@ -785,3 +785,53 @@ country_event = {
 		name = JAP_event.12.a
 	}
 }
+
+# ===== docx 新增事件（2026-11-03）：阿波舞 / 感谢信 / 社会主义风味 =====
+country_event = {
+	id = JAP_event.200
+	title = JAP_event.200.t
+	desc = JAP_event.200.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = no
+	trigger = {
+		tag = JAP
+		date = 1948.4.1
+	}
+	fire_only_once = yes
+	option = {
+		name = JAP_event.200.a
+		add_stability = 0.02
+	}
+}
+country_event = {
+	id = JAP_event.201
+	title = JAP_event.201.t
+	desc = JAP_event.201.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = no
+	trigger = {
+		tag = JAP
+		date = 1948.11.1
+	}
+	fire_only_once = yes
+	option = {
+		name = JAP_event.201.a
+		add_stability = 0.02
+	}
+}
+country_event = {
+	id = JAP_event.202
+	title = JAP_event.202.t
+	desc = JAP_event.202.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = no
+	minor_flavor = yes
+	trigger = {
+		tag = JAP
+		date = 1948.7.1
+	}
+	fire_only_once = yes
+	option = {
+		name = JAP_event.202.a
+	}
+}

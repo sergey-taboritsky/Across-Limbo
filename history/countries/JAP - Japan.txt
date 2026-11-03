@@ -75,6 +75,7 @@ recruit_character = JAP_Hosoya_Matsuta
 recruit_character = JAP_Ichikawa_Makoto
 recruit_character = JAP_Masuyama_Taisuke
 recruit_character = JAP_Sakaguchi_Kiichiro
+recruit_character = JAP_Shiino_Etsuro
 
 set_variable = { var = JAP_JCLP value = 50 } 
 set_variable = { var = JAP_JCP value = 25 } 

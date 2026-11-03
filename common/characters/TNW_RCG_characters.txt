@@ -1,0 +1,18 @@
+characters = {
+	RCG_Jean_Felix_Tchicaya = {
+		name = RCG_Jean_Felix_Tchicaya
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RCG_Jean_Felix_Tchicaya
+			}
+		}
+		country_leader = {
+			desc = RCG_Jean_Felix_Tchicaya_desc
+			ideology = socialist_nationalism
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

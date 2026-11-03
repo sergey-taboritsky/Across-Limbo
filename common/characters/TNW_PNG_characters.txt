@@ -1,0 +1,18 @@
+characters = {
+	PNG_Jack_Keith_Murray = {
+		name = PNG_Jack_Keith_Murray
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_PNG_Jack_Keith_Murray
+			}
+		}
+		country_leader = {
+			desc = PNG_Jack_Keith_Murray_desc
+			ideology = Social_Liberalism
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

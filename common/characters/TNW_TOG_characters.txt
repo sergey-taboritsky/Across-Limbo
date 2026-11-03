@@ -1,0 +1,18 @@
+characters = {
+	TOG_Sylvanus_Olympio = {
+		name = TOG_Sylvanus_Olympio
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TOG_Sylvanus_Olympio
+			}
+		}
+		country_leader = {
+			desc = TOG_Sylvanus_Olympio_desc
+			ideology = nationalism
+			traits = {
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

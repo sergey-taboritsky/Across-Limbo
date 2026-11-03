@@ -77,8 +77,8 @@
 #GUI
  TNW_ideology_state_progressbar_tt: "思潮天平：§Y[?ALP.ALP_ideology_tendency_var]§!\n§4负值§!为社会主义偏盛，§H正值§!为民族主义偏盛（范围 -100 至 +100）"
  ALP_ideology_balance_center: "阵线均势"
- ALP_Khalid_Bakdash_desc: "大叙利亚共产党的书记。他在莫斯科受过完整的训练，坚信叙利亚的出路在工农政权与计划经济——以及同巴黎的同志们站在一起。"
- ALP_Jassem_Alwan_desc: "共和国卫队出身的上校，民族主义军官团的核心。他敬慕铁腕与纪律，认为文人的争吵正在葬送革命——必要时，军队会亲自接管它。"
+ ALP_Khalid_Bakdash_desc: ""
+ ALP_Jassem_Alwan_desc: ""
  ALP_party_left_moderate: "党委扩大会议"
  ALP_party_left_moderate_desc: "把统一战线内的左翼党团召集起来，通过一份倾向社会主义的决议案。程序合法，倾向明显。"
  ALP_party_left_hard: "清洗民族革命派"

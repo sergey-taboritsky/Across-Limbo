@@ -11,19 +11,25 @@ state={
 		victory_points = {
 			7279 2
 		}
+		victory_points = {
+			7201 1
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 			arms_factory = 1
 			air_base = 2
 
-		}
+					7201 = {
+				bunker = 1
+			}
+}
 		add_core_of = CHI
 
 	}
 
-	provinces={
-		7101 7279 7434 10006 14793 
+	provinces = {
+		7101 7279 7434 10006 14793 7201 
 	}
 	manpower=8944000
 	buildings_max_level_factor=1.000

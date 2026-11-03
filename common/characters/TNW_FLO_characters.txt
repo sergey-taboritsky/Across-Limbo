@@ -1,0 +1,18 @@
+characters = {
+	FLO_Don_Thomas_Ximenes_da_Silva = {
+		name = FLO_Don_Thomas_Ximenes_da_Silva
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_FLO_Don_Thomas_Ximenes_da_Silva
+			}
+		}
+		country_leader = {
+			desc = FLO_Don_Thomas_Ximenes_da_Silva_desc
+			ideology = nationalism
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

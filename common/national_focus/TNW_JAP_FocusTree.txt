@@ -2112,7 +2112,6 @@
 		x = 43
 		y = 5
 		completion_reward = {
-			add_unit_leader_role = { character = JAP_Shiino_Etsuro role = general skill = 2 attack_skill = 2 defense_skill = 2 planning_skill = 2 logistics_skill = 2 }
 			add_unit_leader_role = { character = JAP_Kashima_Sojiro role = general skill = 2 attack_skill = 1 defense_skill = 2 planning_skill = 2 logistics_skill = 2 }
 			log = "[GetLogRoot]: Focus Completed JAP_independent_worker_airforce"
 			add_political_power = 75

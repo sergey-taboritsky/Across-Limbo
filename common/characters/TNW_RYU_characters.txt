@@ -1,0 +1,18 @@
+characters = {
+	RYU_Gus_Hall = {
+		name = RYU_Gus_Hall
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RYU_Gus_Hall
+			}
+		}
+		country_leader = {
+			desc = RYU_Gus_Hall_desc
+			ideology = Left_wing_communism
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

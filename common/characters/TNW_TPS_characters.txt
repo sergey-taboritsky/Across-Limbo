@@ -1,0 +1,18 @@
+characters = {
+	TPS_Leonidas_Iasonidis = {
+		name = TPS_Leonidas_Iasonidis
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_TPS_Leonidas_Iasonidis
+			}
+		}
+		country_leader = {
+			desc = TPS_Leonidas_Iasonidis_desc
+			ideology = Social_Liberalism
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,18 @@
+characters = {
+	ICE_Sveinn_Björnsson = {
+		name = ICE_Sveinn_Björnsson
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ICE_Sveinn_Björnsson
+			}
+		}
+		country_leader = {
+			desc = ICE_Sveinn_Björnsson_desc
+			ideology = Social_Liberalism
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

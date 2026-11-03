@@ -315,6 +315,12 @@ characters = {
 	#椎野悦朗（产别派）
 	JAP_Shiino_Etsuro = {
 		name = JAP_Shiino_Etsuro
+		role = general
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
 	}
 	#相泽重明（产别派）
 	JAP_Aizawa_Shigeaki = {

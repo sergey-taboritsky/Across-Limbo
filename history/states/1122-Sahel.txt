@@ -7,15 +7,9 @@ state={
 	}
 
 	history={
-		owner = VOL
-		victory_points = {
-			15911 2 
-		}
+		owner = SOK
 		victory_points = {
 			2001 2
-		}
-		victory_points = {
-			15908 2
 		}
 		victory_points = {
 			15901 1
@@ -24,21 +18,18 @@ state={
 			15913 1
 		}
 		victory_points = {
-			15910 1
-		}
-		victory_points = {
 			7950 1
 		}
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = VOL
+		add_core_of = SOK
 
 	}
 
-	provinces={
-		2001 7950 12851 14009 15899 15901 15905 15906 15908 15909 15910 15911 15912 15913 15914 
+	provinces = {
+		2001 7950 14009 15899 15901 15905 15906 15909 15912 15913 15914 
 	}
 	manpower=1111491
 	buildings_max_level_factor=1.000
