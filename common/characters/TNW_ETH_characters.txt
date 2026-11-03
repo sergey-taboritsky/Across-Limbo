@@ -1,0 +1,18 @@
+characters = {
+	ETH_haile_selassie = {
+		name = ETH_haile_selassie
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ETH_haile_selassie
+			}
+		}
+		country_leader = {
+			desc = ETH_haile_selassie_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

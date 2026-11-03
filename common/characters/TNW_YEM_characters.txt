@@ -1,0 +1,18 @@
+characters = {
+	YEM_Ahmad_bin_Yahya = {
+		name = YEM_Ahmad_bin_Yahya
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_YEM_Ahmad_bin_Yahya
+			}
+		}
+		country_leader = {
+			desc = YEM_Ahmad_bin_Yahya_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

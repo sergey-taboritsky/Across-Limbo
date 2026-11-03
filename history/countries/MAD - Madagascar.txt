@@ -1,4 +1,6 @@
 ﻿capital = 543
+recruit_character = MAD_Philibert_Tsiranana
+ruling_party = Authoritarianism
 
 
 
@@ -48,10 +50,15 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 27
-	Nationalism = 8
-	communist = 15
-	Authoritarianism = 50
+	communist = 1
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 1
+	Conservatism = 0
+	Authoritarianism = 93
+	Absolutism = 0
+	Nationalism = 5
 }
 
 #create_country_leader = {

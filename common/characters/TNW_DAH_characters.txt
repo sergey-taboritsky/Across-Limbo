@@ -1,0 +1,18 @@
+characters = {
+	DAH_Sourou_Migan_Apithy = {
+		name = DAH_Sourou_Migan_Apithy
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_DAH_Sourou_Migan_Apithy
+			}
+		}
+		country_leader = {
+			desc = DAH_Sourou_Migan_Apithy_desc
+			ideology = oligarchy
+			traits = {
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

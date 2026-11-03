@@ -1,0 +1,18 @@
+characters = {
+	GNB_Amilcar_Cabral = {
+		name = GNB_Amilcar_Cabral
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_GNB_Amilcar_Cabral
+			}
+		}
+		country_leader = {
+			desc = GNB_Amilcar_Cabral_desc
+			ideology = Marxism
+			traits = {
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

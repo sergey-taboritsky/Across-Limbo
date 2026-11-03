@@ -1,13 +1,13 @@
 characters = {
-	CMR_Theodor_Seitz = {
-		name = CMR_Theodor_Seitz
+	CMR_Walther_Nehring = {
+		name = CMR_Walther_Nehring
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_CMR_Noel_Ballu
+				large = GFX_portrait_large_CMR_Walther_Nehring
 			}
 		}
 		country_leader = {
-			desc = CMR_Theodor_Seitz_desc
+			desc = CMR_Walther_Nehring_desc
 			ideology = oligarchy
 			traits = { }
 			expire = "1965.1.1"

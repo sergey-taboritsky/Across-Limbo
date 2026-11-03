@@ -1,0 +1,18 @@
+characters = {
+	KUW_Ahmad_Aljaber_Alsabah = {
+		name = KUW_Ahmad_Aljaber_Alsabah
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KUW_Ahmad_Aljaber_Alsabah
+			}
+		}
+		country_leader = {
+			desc = KUW_Ahmad_Aljaber_Alsabah_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

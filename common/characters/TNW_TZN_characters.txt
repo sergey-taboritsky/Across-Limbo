@@ -1,13 +1,13 @@
 characters = {
-	TZN_Paul_von_Lettow_Vorbeck = {
-		name = TZN_Paul_von_Lettow_Vorbeck
+	TZN_Hans_Jurgen_von_Arnim = {
+		name = TZN_Hans_Jurgen_von_Arnim
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_TZN_Edward_Twining
+				large = GFX_portrait_large_TZN_Hans_Jurgen_von_Arnim
 			}
 		}
 		country_leader = {
-			desc = TZN_Paul_von_Lettow_Vorbeck_desc
+			desc = TZN_Hans_Jurgen_von_Arnim_desc
 			ideology = oligarchy
 			traits = { }
 			expire = "1965.1.1"

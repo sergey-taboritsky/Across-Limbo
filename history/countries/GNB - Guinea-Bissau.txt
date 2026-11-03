@@ -1,4 +1,6 @@
 ﻿capital = 296
+recruit_character = GNB_Amilcar_Cabral
+ruling_party = communist
 
 # Starting tech
 set_technology = {
@@ -7,26 +9,6 @@ set_technology = {
 
 set_convoys = 10
 
-recruit_character = GNB_Liberalism_guy
-recruit_character = GNB_mt
-recruit_character = GNB_acgs
-recruit_character = GNB_coi
-recruit_character = GNB_fascist_guy
-recruit_character = GNB_ar
-recruit_character = GNB_acr
-recruit_character = GNB_ncs
-recruit_character = GNB_awt
-recruit_character = GNB_acas
-recruit_character = GNB_acd2
-recruit_character = GNB_ncm
-recruit_character = GNB_nccr
-recruit_character = GNB_ai2
-recruit_character = GNB_stc
-recruit_character = GNB_pot
-recruit_character = GNB_aco2
-recruit_character = GNB_aa2
-recruit_character = GNB_nt
-recruit_character = GNB_communist_guy
 
 1939.1.1 = {
 	
@@ -74,8 +56,14 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 25
-	Nationalism = 20
-	communist = 50
-	Authoritarianism = 5
+	communist = 93
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 1
+	Conservatism = 0
+	Authoritarianism = 1
+	Absolutism = 0
+	Nationalism = 5
 }
+

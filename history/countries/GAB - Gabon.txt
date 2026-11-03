@@ -1,4 +1,6 @@
 ﻿capital = 539
+recruit_character = GAB_Leon_Mba
+ruling_party = Authoritarianism
 
 # Starting tech
 set_technology = {
@@ -7,26 +9,6 @@ set_technology = {
 
 set_convoys = 20
 
-recruit_character = GAB_aa2
-recruit_character = GAB_Liberalism_guy
-recruit_character = GAB_acgs
-recruit_character = GAB_ncm
-recruit_character = GAB_nt
-recruit_character = GAB_acas
-recruit_character = GAB_awt
-recruit_character = GAB_pot
-recruit_character = GAB_stc
-recruit_character = GAB_acd2
-recruit_character = GAB_communist_guy
-recruit_character = GAB_aco2
-recruit_character = GAB_fascist_guy
-recruit_character = GAB_coi
-recruit_character = GAB_ar
-recruit_character = GAB_nccr
-recruit_character = GAB_mt
-recruit_character = GAB_ai2
-recruit_character = GAB_ncs
-recruit_character = GAB_acr
 
 
 1939.1.1 = {
@@ -76,8 +58,13 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 25
-	Nationalism = 20
-	communist = 5
-	Authoritarianism = 50
+	communist = 1
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 1
+	Conservatism = 0
+	Authoritarianism = 93
+	Absolutism = 0
+	Nationalism = 5
 }

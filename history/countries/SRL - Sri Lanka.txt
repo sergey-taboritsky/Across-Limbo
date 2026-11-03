@@ -1,4 +1,5 @@
 ﻿capital = 422
+recruit_character = SRL_Solomon_Bandaranaike
 
 
 

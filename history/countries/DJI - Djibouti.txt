@@ -1,4 +1,6 @@
 ﻿capital = 268
+recruit_character = DJI_Mahamoud_Harbi
+ruling_party = Nationalism
 
 # Starting tech
 set_technology = {
@@ -7,26 +9,6 @@ set_technology = {
 
 set_convoys = 10
 
-recruit_character = DJI_pot
-recruit_character = DJI_awt
-recruit_character = DJI_communist_guy
-recruit_character = DJI_ncm
-recruit_character = DJI_acgs
-recruit_character = DJI_nccr
-recruit_character = DJI_fascist_guy
-recruit_character = DJI_ar
-recruit_character = DJI_stc
-recruit_character = DJI_aco2
-recruit_character = DJI_aa2
-recruit_character = DJI_ncs
-recruit_character = DJI_nt
-recruit_character = DJI_acas
-recruit_character = DJI_acd2
-recruit_character = DJI_Liberalism_guy
-recruit_character = DJI_mt
-recruit_character = DJI_ai2
-recruit_character = DJI_coi
-recruit_character = DJI_acr
 
 
 1939.1.1 = {
@@ -76,8 +58,14 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 25
-	Nationalism = 20
-	communist = 5
-	Authoritarianism = 50
+	communist = 1
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 1
+	Conservatism = 0
+	Authoritarianism = 5
+	Absolutism = 0
+	Nationalism = 93
 }
+

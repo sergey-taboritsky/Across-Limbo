@@ -19,13 +19,6 @@ set_technology = {
 
 
 add_ideas = {
-	HUN_Balkan_powder_keg
-    HUN_All_power_rests_with_the_Soviets
-	HUN_Red_Terror
-	HUN_Rampant_reactionaries
-	HUN_The_dream_of_the_Union
-	HUN_Multi_ethnic_army
-	RUS_gong_chang_guo_ji
 	moscow_aligned_nation
 }
 

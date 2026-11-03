@@ -1,13 +1,13 @@
 characters = {
-	COG_Hermann_Wissmann = {
-		name = COG_Hermann_Wissmann
+	COG_Fritz_Bayerlein = {
+		name = COG_Fritz_Bayerlein
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_COG_Eugene_Jungers
+				large = GFX_portrait_large_COG_Fritz_Bayerlein
 			}
 		}
 		country_leader = {
-			desc = COG_Hermann_Wissmann_desc
+			desc = COG_Fritz_Bayerlein_desc
 			ideology = oligarchy
 			traits = { }
 			expire = "1965.1.1"

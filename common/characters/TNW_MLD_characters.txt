@@ -1,0 +1,18 @@
+characters = {
+	MLD_Abdul_Majeed_Didi = {
+		name = MLD_Abdul_Majeed_Didi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MLD_Abdul_Majeed_Didi
+			}
+		}
+		country_leader = {
+			desc = MLD_Abdul_Majeed_Didi_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

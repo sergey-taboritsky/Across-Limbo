@@ -1,4 +1,6 @@
 ﻿capital = 776
+recruit_character = DAH_Sourou_Migan_Apithy
+ruling_party = Authoritarianism
 
 # Starting tech
 set_technology = {
@@ -7,26 +9,6 @@ set_technology = {
 
 set_convoys = 10
 
-recruit_character = DAH_stc
-recruit_character = DAH_aco2
-recruit_character = DAH_aa2
-recruit_character = DAH_ncs
-recruit_character = DAH_nt
-recruit_character = DAH_acas
-recruit_character = DAH_acd2
-recruit_character = DAH_Liberalism_guy
-recruit_character = DAH_mt
-recruit_character = DAH_ai2
-recruit_character = DAH_coi
-recruit_character = DAH_acr
-recruit_character = DAH_pot
-recruit_character = DAH_awt
-recruit_character = DAH_communist_guy
-recruit_character = DAH_ncm
-recruit_character = DAH_acgs
-recruit_character = DAH_nccr
-recruit_character = DAH_fascist_guy
-recruit_character = DAH_ar
 
 
 1939.1.1 = {
@@ -76,8 +58,13 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 25
-	Nationalism = 20
-	communist = 5
-	Authoritarianism = 50
+	communist = 1
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 1
+	Conservatism = 0
+	Authoritarianism = 93
+	Absolutism = 0
+	Nationalism = 5
 }

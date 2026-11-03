@@ -1,0 +1,18 @@
+characters = {
+	GAB_Leon_Mba = {
+		name = GAB_Leon_Mba
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_GAB_Leon_Mba
+			}
+		}
+		country_leader = {
+			desc = GAB_Leon_Mba_desc
+			ideology = oligarchy
+			traits = {
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

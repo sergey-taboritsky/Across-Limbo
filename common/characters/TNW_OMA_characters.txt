@@ -1,0 +1,18 @@
+characters = {
+	OMA_said_bin_taimur = {
+		name = OMA_said_bin_taimur
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_OMA_said_bin_taimur
+			}
+		}
+		country_leader = {
+			desc = OMA_said_bin_taimur_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

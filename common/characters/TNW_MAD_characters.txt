@@ -1,0 +1,18 @@
+characters = {
+	MAD_Philibert_Tsiranana = {
+		name = MAD_Philibert_Tsiranana
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MAD_Philibert_Tsiranana
+			}
+		}
+		country_leader = {
+			desc = MAD_Philibert_Tsiranana_desc
+			ideology = oligarchy
+			traits = {
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

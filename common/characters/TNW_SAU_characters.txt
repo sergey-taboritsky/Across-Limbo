@@ -1,0 +1,18 @@
+characters = {
+	SAU_abdulaziz_ibn_saud = {
+		name = SAU_abdulaziz_ibn_saud
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SAU_abdulaziz_ibn_saud
+			}
+		}
+		country_leader = {
+			desc = SAU_abdulaziz_ibn_saud_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}

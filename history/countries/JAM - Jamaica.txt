@@ -8,6 +8,7 @@ set_technology = {
 }
 
 set_convoys = 5
+recruit_character = JAM_Norman_Manley
 
 recruit_character = JAM_coi
 recruit_character = JAM_aa2
@@ -78,16 +79,4 @@ set_popularities = {
 	Authoritarianism = 23
 	Absolutism = 0
 	Nationalism = 1
-}
-
-#create_country_leader = {
-#	
-#	name = "Jonas Lote"
-#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-#	expire = "1965.1.1"
-#	ideology = centrism
-#	traits = {
-#		#
-#	}
-#	recruit_character = JAM_Norman_Manley
 }

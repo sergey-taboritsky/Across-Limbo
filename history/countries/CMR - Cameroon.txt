@@ -1,4 +1,5 @@
 ﻿capital = 773
+recruit_character = CMR_Walther_Nehring
 
 # Starting tech
 set_technology = {
@@ -7,26 +8,6 @@ set_technology = {
 
 set_convoys = 20
 
-recruit_character = CMR_aa2
-recruit_character = CMR_Liberalism_guy
-recruit_character = CMR_acgs
-recruit_character = CMR_ncm
-recruit_character = CMR_nt
-recruit_character = CMR_acas
-recruit_character = CMR_awt
-recruit_character = CMR_pot
-recruit_character = CMR_stc
-recruit_character = CMR_acd2
-recruit_character = CMR_communist_guy
-recruit_character = CMR_aco2
-recruit_character = CMR_fascist_guy
-recruit_character = CMR_coi
-recruit_character = CMR_ar
-recruit_character = CMR_nccr
-recruit_character = CMR_mt
-recruit_character = CMR_ai2
-recruit_character = CMR_ncs
-recruit_character = CMR_acr
 
 
 1939.1.1 = {
@@ -87,4 +68,3 @@ set_politics = {
 			Absolutism = 0
 			Nationalism = 20
 		}
-recruit_character = CMR_Theodor_Seitz

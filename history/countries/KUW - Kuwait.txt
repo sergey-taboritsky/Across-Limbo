@@ -1,4 +1,6 @@
 ﻿capital = 656
+recruit_character = KUW_Ahmad_Aljaber_Alsabah
+ruling_party = Absolutism
 
 
 
@@ -10,26 +12,6 @@ set_technology = {
 
 set_convoys = 5
 
-recruit_character = KUW_pot
-recruit_character = KUW_aco2
-recruit_character = KUW_mt
-recruit_character = KUW_ar
-recruit_character = KUW_fascist_guy
-recruit_character = KUW_acd2
-recruit_character = KUW_ncm
-recruit_character = KUW_ai2
-recruit_character = KUW_acas
-recruit_character = KUW_Liberalism_guy
-recruit_character = KUW_aa2
-recruit_character = KUW_awt
-recruit_character = KUW_coi
-recruit_character = KUW_stc
-recruit_character = KUW_acgs
-recruit_character = KUW_nccr
-recruit_character = KUW_ncs
-recruit_character = KUW_nt
-recruit_character = KUW_communist_guy
-recruit_character = KUW_acr
 
 1939.1.1 = {
 	#generic focuses
@@ -70,10 +52,15 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 75
-	Nationalism = 1
 	communist = 1
-	Authoritarianism = 23
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 1
+	Conservatism = 0
+	Authoritarianism = 0
+	Absolutism = 93
+	Nationalism = 5
 }
 
 #create_country_leader = {

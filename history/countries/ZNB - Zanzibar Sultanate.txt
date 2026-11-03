@@ -1,4 +1,6 @@
 ﻿capital = 14104
+recruit_character = ZNB_Khalifa_bin_Harub
+ruling_party = Absolutism
 
 # Starting tech
 set_technology = {
@@ -39,8 +41,13 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 20
-	Nationalism = 10
-	communist = 5
-	Authoritarianism = 65
+	communist = 1
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 1
+	Conservatism = 0
+	Authoritarianism = 0
+	Absolutism = 93
+	Nationalism = 5
 }
