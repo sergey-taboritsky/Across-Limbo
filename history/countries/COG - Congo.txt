@@ -64,4 +64,4 @@ set_popularities = {
 }
 
 
-recruit_character = COG_Eugene_Jungers
+recruit_character = COG_Hermann_Wissmann

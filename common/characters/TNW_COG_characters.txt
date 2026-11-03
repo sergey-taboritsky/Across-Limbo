@@ -1,13 +1,13 @@
 characters = {
-	COG_Eugene_Jungers = {
-		name = COG_Eugene_Jungers
+	COG_Hermann_Wissmann = {
+		name = COG_Hermann_Wissmann
 		portraits = {
 			civilian = {
 				large = GFX_portrait_large_COG_Eugene_Jungers
 			}
 		}
 		country_leader = {
-			desc = COG_Eugene_Jungers_desc
+			desc = COG_Hermann_Wissmann_desc
 			ideology = oligarchy
 			traits = { }
 			expire = "1965.1.1"

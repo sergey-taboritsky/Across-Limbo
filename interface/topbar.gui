@@ -90,7 +90,7 @@ guiTypes = {
 		buttonType = {
 			name = "player_flag"
 			quadTextureSprite ="GFX_shield_medium"
-			position = { x= 10 y = 16 }
+			position = { x= 12 y = 12 }
 			Orientation = "UPPER_LEFT"
 			clicksound = click_close
 			oversound = ui_menu_over
@@ -98,7 +98,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = "player_flag_overlay"
-			position = { x= 18 y = 12 }
+			position = { x= 8 y = 10 }
 			spriteType = "GFX_large_flag_frame_menu"
 			alwaystransparent = yes
 		}

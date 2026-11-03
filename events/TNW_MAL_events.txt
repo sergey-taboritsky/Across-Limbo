@@ -68,14 +68,14 @@ country_event = {
 			promote_character = JHR_Sultan_Ibrahim_Johor
 		}
 		set_politics = {
-			ruling_party = Social_democracy
+			ruling_party = socialism
 			elections_allowed = no
 		}
 		set_popularities = {
 			communist = 5
 			syndicalism = 4
-			socialism = 10
-			Social_democracy = 45
+			socialism = 45
+			Social_democracy = 10
 			Liberalism = 8
 			Conservatism = 8
 			Authoritarianism = 15

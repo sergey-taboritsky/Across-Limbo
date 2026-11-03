@@ -1,5 +1,0 @@
-﻿declare_war = {
-	attacker = AFF
-	defender = AST
-	type = civil_war
-}

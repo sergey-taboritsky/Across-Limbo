@@ -87,4 +87,4 @@ set_politics = {
 			Absolutism = 0
 			Nationalism = 20
 		}
-recruit_character = CMR_Noel_Ballu
+recruit_character = CMR_Theodor_Seitz

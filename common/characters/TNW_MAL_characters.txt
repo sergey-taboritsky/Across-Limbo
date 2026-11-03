@@ -80,7 +80,7 @@ characters = {
 		}
 		country_leader = {
 			desc = MAL_Peng_Zemin_desc
-			ideology = tridemism_left
+			ideology = tridemism_revolutionary
 			expire = "2022.10.20.1"
 			id = -1
 			traits = {

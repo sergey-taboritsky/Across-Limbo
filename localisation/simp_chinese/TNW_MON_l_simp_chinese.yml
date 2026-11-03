@@ -25,11 +25,19 @@
 
 # 政党名字（蒙人党各派系）
  MON_communist_party: "共产国际远东局"
+ MON_communist_party_long: "共产国际远东局(Comintern-yn Dornod Aziin Tovchoo)"
  MON_socialism_party: "蒙人党 - 革命委员会"
+ MON_socialism_party_long: "蒙古人民党 - 革命委员会(Mongol Ardyn Nam - Khuv'sgalyn Komitet)"
  MON_Social_democracy_party: "蒙人党 - 总理府"
+ MON_Social_democracy_party_long: "蒙古人民党 - 总理府(Mongol Ardyn Nam - Zasgiin Gazar)"
  MON_Liberalism_party: "蒙人党 - 布里亚特系"
+ MON_Liberalism_party_long: "蒙古人民党 - 布里亚特派(Mongol Ardyn Nam - Buryaad)"
  MON_Conservatism_party: "蒙人党 - 外喀尔喀独立联盟"
+ MON_Conservatism_party_long: "蒙古人民党 - 外喀尔喀独立联盟(Mongol Ardyn Nam - Gadaad Khalkha)"
  MON_Authoritarianism_party: "蒙人党 - 银行系"
+ MON_Authoritarianism_party_long: "蒙古人民党 - 银行派(Mongol Ardyn Nam - Bankyn)"
  MON_Absolutism_party: "蒙古国民军"
+ MON_Absolutism_party_long: "蒙古国民军(Mongol Ulsyn Tserg)"
  MEN_Nationalism_party: "黑喇嘛残部"
+ MEN_Nationalism_party_long: "黑喇嘛残部(Khar Lamyn Üldegdel)"
 

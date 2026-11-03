@@ -1,13 +1,13 @@
 characters = {
-	CMR_Noel_Ballu = {
-		name = CMR_Noel_Ballu
+	CMR_Theodor_Seitz = {
+		name = CMR_Theodor_Seitz
 		portraits = {
 			civilian = {
 				large = GFX_portrait_large_CMR_Noel_Ballu
 			}
 		}
 		country_leader = {
-			desc = CMR_Noel_Ballu_desc
+			desc = CMR_Theodor_Seitz_desc
 			ideology = oligarchy
 			traits = { }
 			expire = "1965.1.1"

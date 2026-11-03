@@ -84,4 +84,4 @@ set_politics = {
 			Absolutism = 0
 			Nationalism = 20
 		}
-recruit_character = TZN_Edward_Twining
+recruit_character = TZN_Paul_von_Lettow_Vorbeck

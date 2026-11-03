@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "TNW_second_leader_container"
-		position = { x = 125 y = 263 }
+		position = { x = 122 y = 260 }
 		size = { width = 40 height = 40 }
 		margin = { top = 1 left = 1 right = 1 bottom = 1 }
 		clipping = yes

@@ -5,6 +5,8 @@ set_war_support = 0.8
 
 set_research_slots = 2
 set_fuel_ratio = 1.0
+recruit_character = JHR_Sultan_Ibrahim_Johor
+
 set_politics = {
 	ruling_party = Absolutism
 	last_election = "1936.1.1"
