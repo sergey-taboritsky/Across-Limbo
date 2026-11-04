@@ -397,4 +397,21 @@ characters = {
 		}
 	}
 
+
+	#叶夫拉姆皮·帕斯图欣（Yevlampy Pastukhin）— 新建角色，头像由用户实装（2026-11-04）
+	RUS_Yevlampy_Pastukhin = {
+		name = RUS_Yevlampy_Pastukhin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Yevlampy_Pastukhin
+			}
+		}
+		country_leader = {
+			ideology = National_Socialism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = { }
+		}
+	}
+
 }

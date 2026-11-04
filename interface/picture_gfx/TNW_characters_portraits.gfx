@@ -2163,4 +2163,33 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_large_JAP_Inamura_Junzo"
 		texturefile = "gfx/characters/JAP_Inamura_Junzo.png"
-	}}
+	}
+	spriteType = {
+		name = "GFX_portrait_large_IRQ_abdullah_al_tell"
+		texturefile = "gfx/characters/IRQ_abdullah_al_tell.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_IRQ_yusuf_salman_yusuf"
+		texturefile = "gfx/characters/IRQ_yusuf_salman_yusuf.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_AFF_Bob_Santamaria"
+		texturefile = "gfx/characters/AFF_Bob_Santamaria.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_AST_Bob_Santamaria"
+		texturefile = "gfx/characters/AFF_Bob_Santamaria.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_AFF_Robert_Menzies"
+		texturefile = "gfx/characters/AFF_Robert_Menzies.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_AST_Robert_Menzies"
+		texturefile = "gfx/characters/AFF_Robert_Menzies.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Yevlampy_Pastukhin"
+		texturefile = "gfx/characters/RUS_Yevlampy_Pastukhin.png"
+	}
+}

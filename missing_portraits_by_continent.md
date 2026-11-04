@@ -3,7 +3,7 @@
 > 生成依据：扫描 `history/countries/*.txt` 的 `recruit_character` 与 `ruling_party`，
 > 取「意识形态父桶 == ruling_party 且为 country_leader、recruit 位置最靠上」者为开国领导人；
 > 再比对 `interface/picture_gfx/TNW_characters_portraits.gfx` 中已定义的 `GFX_portrait_large_<cid>` 头像键。
-> 统计：164 国含合法开国领导人，其中 77 国缺头像；其余 159 国无合法开国领导人（非领袖 tag，不计入）。
+> 统计：164 国含合法开国领导人，其中 76 国缺头像；其余 159 国无合法开国领导人（非领袖 tag，不计入）。
 >
 > 状态说明：
 > - MISSING_ASSET：角色文件已写 `portrait`/`large` 引用，但 gfx 中无对应 sprite（需补 .gfx 定义 + .dds 贴图）。
@@ -106,6 +106,12 @@
 ## 大洋（3 国）
 | Tag | 国家 | 领导人 cid | 状态 |
 |---|---|---|---|
-| AFF | East Australia | AFF_Robert_Menzies | MISSING_ASSET |
 | NZL | New Zealand | NZL_peter_fraser | MISSING_ASSET |
 | PNG | Papua New Guinea | PNG_Jack_Keith_Murray | MISSING_ASSET |
+
+## 本批补充头像（2026-11-04）
+- AFF 开国领袖 Robert Menzies 头像已补 → AFF 移出缺头像清单（现 76 国）。
+- IRQ：abdullah_al_tell（顾问）、yusuf_salman_yusuf（国家领袖/顾问）已补头像。
+- AFF/AST：Bob Santamaria、Robert Menzies（两 tag 均补）。
+- RUS：新建角色 Yevlampy_Pastukhin 并补头像。
+- JAP 三国策图标（远东委员会 / 宪法委员会 / 产别会议）已替换升级美术。
