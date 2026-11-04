@@ -77,322 +77,322 @@
 				}
 				country_event = { id = TNW_KOR.1 days = 0 }
 			}
-		}
-		#CHI
+#CHI
 	#Province Leader Modifiers
-#Huabei PG
-		597 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+		#Huabei PG
+			597 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		598 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			598 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		607 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			607 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		608 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			608 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		609 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			609 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		614 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			614 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		615 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			615 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		743 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			743 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		825 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			825 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		905 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			905 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		1034 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			1034 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		1036 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			1036 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		1446 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			1446 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		1541 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			1541 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		1559 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			1559 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-		1622 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Huabei_Peoples_Gov_Modifier
+			1622 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Huabei_Peoples_Gov_Modifier
+				}
 			}
-		}
-	#Chongqing
-		605 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Chongqing_City_Hu_Ziang
+		#Chongqing
+			605 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Chongqing_City_Hu_Ziang
+				}
 			}
-		}
-	#Nanjing
-		613 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Nanjing_City_Huang_Xuchu
+		#Nanjing
+			613 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Nanjing_City_Huang_Xuchu
+				}
 			}
-		}
-	#Guizhou
-		603 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guizhou_Province_Gu_Zhenglun
+		#Guizhou
+			603 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guizhou_Province_Gu_Zhenglun
+				}
 			}
-		}
-		748 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guizhou_Province_Gu_Zhenglun
+			748 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guizhou_Province_Gu_Zhenglun
+				}
 			}
-		}
-		1626 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guizhou_Province_Gu_Zhenglun
+			1626 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guizhou_Province_Gu_Zhenglun
+				}
 			}
-		}
-		1627 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guizhou_Province_Gu_Zhenglun
+			1627 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guizhou_Province_Gu_Zhenglun
+				}
 			}
-		}
-	#Hunan
-		602 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Hunan_Province_Cheng_Qian
+		#Hunan
+			602 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Hunan_Province_Cheng_Qian
+				}
 			}
-		}
-		750 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Hunan_Province_Cheng_Qian
+			750 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Hunan_Province_Cheng_Qian
+				}
 			}
-		}
-	#Guangxi
-		594 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangxi_Province_Huang_Qihan
+		#Guangxi
+			594 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangxi_Province_Huang_Qihan
+				}
 			}
-		}
-		599 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangxi_Province_Huang_Qihan
+			599 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangxi_Province_Huang_Qihan
+				}
 			}
-		}
-		1320 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangxi_Province_Huang_Qihan
+			1320 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangxi_Province_Huang_Qihan
+				}
 			}
-		}
-	#Guangdong
-		326 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangdong_Province_Wu_Tiecheng
+		#Guangdong
+			326 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
 			}
-		}
-		591 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangdong_Province_Wu_Tiecheng
+			591 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
 			}
-		}
-		592 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangdong_Province_Wu_Tiecheng
+			592 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
 			}
-		}
-		593 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangdong_Province_Wu_Tiecheng
+			593 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
 			}
-		}
-		728 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangdong_Province_Wu_Tiecheng
+			728 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
 			}
-		}
-		729 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangdong_Province_Wu_Tiecheng
+			729 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
 			}
-		}
-		832 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangdong_Province_Wu_Tiecheng
+			832 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
 			}
-		}
-		1094 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangdong_Province_Wu_Tiecheng
+			1094 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
 			}
-		}
-		1250 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangdong_Province_Wu_Tiecheng
+			1250 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
 			}
-		}
-		1516 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangdong_Province_Wu_Tiecheng
+			1516 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
 			}
-		}
-		1599 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Guangdong_Province_Wu_Tiecheng
+			1599 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Guangdong_Province_Wu_Tiecheng
+				}
 			}
-		}
-	#Fujian
-		595 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Fujian_Province_Chen_Shaokuan
+		#Fujian
+			595 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Fujian_Province_Chen_Shaokuan
+				}
 			}
-		}
-		902 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Fujian_Province_Chen_Shaokuan
+			902 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Fujian_Province_Chen_Shaokuan
+				}
 			}
-		}
-		1002 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Fujian_Province_Chen_Shaokuan
+			1002 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Fujian_Province_Chen_Shaokuan
+				}
 			}
-		}
-		1472 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Fujian_Province_Chen_Shaokuan
+			1472 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Fujian_Province_Chen_Shaokuan
+				}
 			}
-		}
-		1482 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Fujian_Province_Chen_Shaokuan
+			1482 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Fujian_Province_Chen_Shaokuan
+				}
 			}
-		}
-	#Jiangxi
-		600 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Jiangxi_Province_Cheng_Tianfang
+		#Jiangxi
+			600 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Jiangxi_Province_Cheng_Tianfang
+				}
 			}
-		}
-		862 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Jiangxi_Province_Cheng_Tianfang
+			862 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Jiangxi_Province_Cheng_Tianfang
+				}
 			}
-		}
-		909 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Jiangxi_Province_Cheng_Tianfang
+			909 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Jiangxi_Province_Cheng_Tianfang
+				}
 			}
-		}
-	#Hubei
-		620 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Hubei_Province_Wu_Guozhen
+		#Hubei
+			620 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Hubei_Province_Wu_Guozhen
+				}
 			}
-		}
-		861 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Hubei_Province_Wu_Guozhen
+			861 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Hubei_Province_Wu_Guozhen
+				}
 			}
-		}
-		1768 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Hubei_Province_Wu_Guozhen
+			1768 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Hubei_Province_Wu_Guozhen
+				}
 			}
-		}
-		1769 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Hubei_Province_Wu_Guozhen
+			1769 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Hubei_Province_Wu_Guozhen
+				}
 			}
-		}
-		1770 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Hubei_Province_Wu_Guozhen
+			1770 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Hubei_Province_Wu_Guozhen
+				}
 			}
-		}
-	#Anhui
-		606 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Anhui_Province_election_undergoing
+		#Anhui
+			606 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Anhui_Province_election_undergoing
+				}
 			}
-		}
-		749 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Anhui_Province_election_undergoing
+			749 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Anhui_Province_election_undergoing
+				}
 			}
-		}
-	#Jiangsu
-		1620 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Jiangsu_Province_election_undergoing
+		#Jiangsu
+			1620 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Jiangsu_Province_election_undergoing
+				}
 			}
-		}
-		1621 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Jiangsu_Province_election_undergoing
+			1621 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Jiangsu_Province_election_undergoing
+				}
 			}
-		}
-	#Shanghai
-		868 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Shanghai_Province_election_undergoing
+		#Shanghai
+			868 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Shanghai_Province_election_undergoing
+				}
 			}
-		}
-	#Taiwan
-		524 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Taiwan_Province_election_undergoing
+		#Taiwan
+			524 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Taiwan_Province_election_undergoing
+				}
 			}
-		}
-		1311 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Taiwan_Province_election_undergoing
+			1311 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Taiwan_Province_election_undergoing
+				}
 			}
-		}
-		1526 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Taiwan_Province_election_undergoing
+			1526 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Taiwan_Province_election_undergoing
+				}
 			}
-		}
-	#Zhejiang
-		596 = {
-			add_dynamic_modifier = {
-				modifier = CHI_Zhejiang_Province_election_undergoing
+		#Zhejiang
+			596 = {
+				add_dynamic_modifier = {
+					modifier = CHI_Zhejiang_Province_election_undergoing
+				}
 			}
 		}
 	}

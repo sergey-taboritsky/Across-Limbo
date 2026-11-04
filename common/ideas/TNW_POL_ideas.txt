@@ -13,18 +13,6 @@ ideas = {
 				surrender_limit = -0.2
 			}
 		}
-		#四分五裂的资产阶级政敌
-		POL_The_divided_political_enemies_of_the_bourgeoisie = {
-			picture = GFX_idea_POL_The_divided_political_enemies_of_the_bourgeoisie
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-			modifier = {
-			stability_factor = 0.1
-			war_support_factor = 0.1
-			}
-		}
 		#军事高压
 		POL_Military_coercion = {
 			picture = GFX_idea_POL_Military_coercion
@@ -43,17 +31,6 @@ ideas = {
 				country_lock_all_division_template = no
 			}
 		}
-		#苏联加盟国-波兰苏维埃
-		POL_Polish_Soviet = {
-			picture = GFX_idea_POL_Polish_Soviet
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-			modifier = {
-			}
-		}
-	}
 		#东欧协定成员
 		POL_dongou_xieding_member = {
 			picture = GFX_idea_dongou_xieding
@@ -66,4 +43,5 @@ ideas = {
 				political_power_factor = 0.10
 			}
 		}
+	}
 }

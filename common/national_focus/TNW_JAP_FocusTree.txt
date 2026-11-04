@@ -14,14 +14,21 @@
 	default = no
 
 	focus = {
-		id = JAP_Ripples_of_Fourth_Fukushima
-		icon = GFX_JAP_Ripples_of_Fourth_Fukushima
-		cost = 5.00
+		id = JAP_Far_East_Council
+		icon = GFX_JAP_Far_East_Council
+		cost = 6.00
+		cancellable = no
+		select_effect = {
+			hidden_effect = {
+				country_event = { id = JAP_event.1 days = 7 }
+				country_event = { id = JAP_event.2 days = 14 }
+			}
+		}
 		x = 13
-		y = 0
+		y = 1
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Ripples_of_Fourth_Fukushima"
-			country_event = { id = JAP_event.1 }
+			log = "[GetLogRoot]: Focus Completed JAP_Far_East_Council"
+			country_event = { id = JAP_event.3 }
 		}
 	}
 	focus = {
@@ -224,42 +231,9 @@
 		}
 	}
 	focus = {
-		id = JAP_Ceasefire_in_Japan
-		icon = GFX_JAP_Ceasefire_in_Japan
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_Ripples_of_Fourth_Fukushima
-		}
-		x = 12
-		y = 1
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Ceasefire_in_Japan"
-			country_event = { id = JAP_event.2 }
-			add_war_support = -0.05
-			add_stability = 0.03
-		}
-	}
-	focus = {
-		id = JAP_Far_East_Council
-		icon = GFX_JAP_Far_East_Council
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_Ripples_of_Fourth_Fukushima
-		}
-		x = 14
-		y = 1
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed JAP_Far_East_Council"
-			country_event = { id = JAP_event.3 }
-		}
-	}
-	focus = {
 		id = JAP_Constitutional_Creation_Committee
 		icon = GFX_JAP_Constitutional_Creation_Committee
 		cost = 5.00
-		prerequisite = {
-			focus = JAP_Ceasefire_in_Japan
-		}
 		prerequisite = {
 			focus = JAP_Far_East_Council
 		}
