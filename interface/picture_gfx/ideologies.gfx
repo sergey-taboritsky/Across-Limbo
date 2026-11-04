@@ -287,4 +287,13 @@ spriteTypes = {
 		name = "GFX_ideology_Reorganization_of_the_Three_Peoples_Principles"
 		texturefile = "gfx/interface/ideologies/Reorganization_of_the_Three_Peoples_Principles.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_Dengism_red"
+		texturefile = "gfx/interface/ideologies/Dengism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_Dengism_pink"
+		texturefile = "gfx/interface/ideologies/Dengism.png"
+	}
+
 }

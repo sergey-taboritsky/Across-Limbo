@@ -47,6 +47,7 @@ ideologies = {
 			triequism_left = {can_be_randomly_selected = no}
 			socialist_nationalism = { can_be_randomly_selected = no }
 			military_socialism = { can_be_randomly_selected = no }
+			Dengism_pink = {can_be_randomly_selected = no}
 		}
 		modifiers = {
 			
@@ -67,6 +68,7 @@ ideologies = {
 			Bernsteinism = {can_be_randomly_selected = no}
 			tridemism_left = {can_be_randomly_selected = no}
 			triequism_center = {can_be_randomly_selected = no}
+			Dengism_red = {can_be_randomly_selected = no}
 		}
 		modifiers = {
 			

@@ -2,24 +2,12 @@ defined_text = {
 	name = GetRulingIdeologySubtype
 	#communist
 	text = { 
-		trigger = { has_country_leader_ideology = Marxism_Leninism }
-		localization_key = Marxism_Leninism
-	}
-	text = { 
 		trigger = { has_country_leader_ideology = Marxism }
 		localization_key = Marxism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = Maoism }
-		localization_key = Maoism
-	}
-	text = { 
-		trigger = { has_country_leader_ideology = Titoism }
-		localization_key = Titoism
-	}
-	text = { 
-		trigger = { has_country_leader_ideology = Committee_Communism }
-		localization_key = Committee_Communism
+		trigger = { has_country_leader_ideology = Marxism_Leninism }
+		localization_key = Marxism_Leninism
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = Japanese_Marxism }
@@ -30,10 +18,13 @@ defined_text = {
 		localization_key = Fukumotoism
 	}
 	text = { 
+		trigger = { has_country_leader_ideology = Committee_Communism }
+		localization_key = Committee_Communism
+	}
+	text = { 
 		trigger = { has_country_leader_ideology = Left_wing_communism }
 		localization_key = Left_wing_communism
 	}
-
 	#syndicalism
 	text = { 
 		trigger = { has_country_leader_ideology = Centralised_Syndicalism }
@@ -59,15 +50,18 @@ defined_text = {
 		trigger = { has_country_leader_ideology = American_Unionism }
 		localization_key = American_Unionism
 	}
-	text = {
+	text = { 
 		trigger = { has_country_leader_ideology = Japanese_Syndicalism }
 		localization_key = Japanese_Syndicalism
 	}
-
 	#socialism
 	text = { 
 		trigger = { has_country_leader_ideology = agrarian_socialism }
 		localization_key = agrarian_socialism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Anarchist_Communism }
+		localization_key = Anarchist_Communism
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = Liberalism_socialism }
@@ -81,13 +75,21 @@ defined_text = {
 		trigger = { has_country_leader_ideology = religious_socialism }
 		localization_key = religious_socialism
 	}
-	text = {
+	text = { 
+		trigger = { has_country_leader_ideology = Socialism_Britain }
+		localization_key = Socialism_Britain
+	}
+	text = { 
 		trigger = { has_country_leader_ideology = Production_Supremacism }
 		localization_key = Production_Supremacism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = Socialism_Britain }
-		localization_key = Socialism_Britain
+		trigger = { has_country_leader_ideology = tridemism_revolutionary }
+		localization_key = tridemism_revolutionary
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = triequism_left }
+		localization_key = triequism_left
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = socialist_nationalism }
@@ -98,22 +100,21 @@ defined_text = {
 		localization_key = military_socialism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = tridemism_revolutionary }
-		localization_key = tridemism_revolutionary
+		trigger = { has_country_leader_ideology = Dengism_pink }
+		localization_key = Dengism_pink
 	}
-	text = { 
-		trigger = { has_country_leader_ideology = triequism_left }
-		localization_key = triequism_left
-	}
-
 	#Social democracy
+	text = { 
+		trigger = { has_country_leader_ideology = Popular_Front }
+		localization_key = Popular_Front
+	}
 	text = { 
 		trigger = { has_country_leader_ideology = Left_wing_populism }
 		localization_key = Left_wing_populism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = Popular_Front }
-		localization_key = Popular_Front
+		trigger = { has_country_leader_ideology = Left_wing_nationalism }
+		localization_key = Left_wing_nationalism
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = progressivism }
@@ -139,8 +140,19 @@ defined_text = {
 		trigger = { has_country_leader_ideology = triequism_center }
 		localization_key = triequism_center
 	}
-
+	text = { 
+		trigger = { has_country_leader_ideology = Dengism_red }
+		localization_key = Dengism_red
+	}
 	#Liberalism
+	text = { 
+		trigger = { has_country_leader_ideology = National_liberalism }
+		localization_key = National_liberalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Market_liberalism }
+		localization_key = Market_liberalism
+	}
 	text = { 
 		trigger = { has_country_leader_ideology = Social_Liberalism }
 		localization_key = Social_Liberalism
@@ -154,10 +166,6 @@ defined_text = {
 		localization_key = Liberal_Zionism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = National_liberalism }
-		localization_key = National_liberalism
-	}
-	text = { 
 		trigger = { has_country_leader_ideology = tridemism_liberal }
 		localization_key = tridemism_liberal
 	}
@@ -165,7 +173,6 @@ defined_text = {
 		trigger = { has_country_leader_ideology = triequism_right }
 		localization_key = triequism_right
 	}
-
 	#Conservatism
 	text = { 
 		trigger = { has_country_leader_ideology = Social_Conservatism }
@@ -187,19 +194,14 @@ defined_text = {
 		trigger = { has_country_leader_ideology = tridemism_conservative }
 		localization_key = tridemism_conservative
 	}
-
 	#Authoritarianism
 	text = { 
 		trigger = { has_country_leader_ideology = Guided_democracy }
 		localization_key = Guided_democracy
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = Left_wing_corporatism }
-		localization_key = Left_wing_corporatism
-	}
-	text = { 
-		trigger = { has_country_leader_ideology = Social_nationalism }
-		localization_key = Social_nationalism
+		trigger = { has_country_leader_ideology = oligarchy }
+		localization_key = oligarchy
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = transitional_democracy }
@@ -210,10 +212,6 @@ defined_text = {
 		localization_key = discipline
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = tridemism_authdem }
-		localization_key = tridemism_authdem
-	}
-	text = { 
 		trigger = { has_country_leader_ideology = interim_government }
 		localization_key = interim_government
 	}
@@ -222,18 +220,25 @@ defined_text = {
 		localization_key = one_party_democracy
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = oligarchy }
-		localization_key = oligarchy
+		trigger = { has_country_leader_ideology = Left_wing_corporatism }
+		localization_key = Left_wing_corporatism
 	}
-
+	text = { 
+		trigger = { has_country_leader_ideology = Social_nationalism }
+		localization_key = Social_nationalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = tridemism_authdem }
+		localization_key = tridemism_authdem
+	}
 	#Absolutism
-	text = {
-		trigger = {has_country_leader_ideology = Junshen_government }
-		localization_key = Junshen_government
-	}
-	text = {
-		trigger = {has_country_leader_ideology = Tibet_theocracy }
+	text = { 
+		trigger = { has_country_leader_ideology = Tibet_theocracy }
 		localization_key = Tibet_theocracy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Junshen_government }
+		localization_key = Junshen_government
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = absolute_monarchy }
@@ -256,15 +261,18 @@ defined_text = {
 		localization_key = civilian_dictatorship
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = Red_military_government }
-		localization_key = Red_military_government
-	}
-	text = { 
 		trigger = { has_country_leader_ideology = theocracy }
 		localization_key = theocracy
 	}
-
+	text = { 
+		trigger = { has_country_leader_ideology = Red_military_government }
+		localization_key = Red_military_government
+	}
 	#Nationalism
+	text = { 
+		trigger = { has_country_leader_ideology = nationalism }
+		localization_key = nationalism
+	}
 	text = { 
 		trigger = { has_country_leader_ideology = Fascism }
 		localization_key = Fascism
@@ -278,36 +286,40 @@ defined_text = {
 		localization_key = Strassianism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = National_Syndicalism }
-		localization_key = National_Syndicalism
-	}
-	text = { 
 		trigger = { has_country_leader_ideology = Ultra_Nationalism }
 		localization_key = Ultra_Nationalism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = Reorganization_of_the_Three_Peoples_Principles }
-		localization_key = Reorganization_of_the_Three_Peoples_Principles
+		trigger = { has_country_leader_ideology = Renewal_System }
+		localization_key = Renewal_System
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Singular_Nationalism }
+		localization_key = Singular_Nationalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Combat_Nationalism }
+		localization_key = Combat_Nationalism
 	}
 }
 #康米
 defined_text = {
 	name = GetSubIdeologyLocCommunist
 	text = { 
-		trigger = { has_country_leader_ideology = Marxism_Leninism }
-		localization_key = Marxism_Leninism
-	}
-	text = { 
 		trigger = { has_country_leader_ideology = Marxism }
 		localization_key = Marxism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = Maoism }
-		localization_key = Maoism
+		trigger = { has_country_leader_ideology = Marxism_Leninism }
+		localization_key = Marxism_Leninism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = Titoism }
-		localization_key = Titoism
+		trigger = { has_country_leader_ideology = Japanese_Marxism }
+		localization_key = Japanese_Marxism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Fukumotoism }
+		localization_key = Fukumotoism
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = Committee_Communism }
@@ -322,12 +334,12 @@ defined_text = {
 defined_text = {
 	name = GetSubIdeologyLocsocialism
 	text = { 
-		trigger = { has_country_leader_ideology = Left_wing_populism }
-		localization_key = Left_wing_populism
-	}
-	text = { 
 		trigger = { has_country_leader_ideology = agrarian_socialism }
 		localization_key = agrarian_socialism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Anarchist_Communism }
+		localization_key = Anarchist_Communism
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = Liberalism_socialism }
@@ -336,10 +348,6 @@ defined_text = {
 	text = { 
 		trigger = { has_country_leader_ideology = market_socialism }
 		localization_key = market_socialism
-	}
-	text = { 
-		trigger = { has_country_leader_ideology = Popular_Front }
-		localization_key = Popular_Front
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = religious_socialism }
@@ -369,10 +377,26 @@ defined_text = {
 		trigger = { has_country_leader_ideology = military_socialism }
 		localization_key = military_socialism
 	}
+	text = { 
+		trigger = { has_country_leader_ideology = Dengism_pink }
+		localization_key = Dengism_pink
+	}
 }
 #社民
 defined_text = {
 	name = GetSubIdeologyLocSocial_democracy
+	text = { 
+		trigger = { has_country_leader_ideology = Popular_Front }
+		localization_key = Popular_Front
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Left_wing_populism }
+		localization_key = Left_wing_populism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Left_wing_nationalism }
+		localization_key = Left_wing_nationalism
+	}
 	text = { 
 		trigger = { has_country_leader_ideology = progressivism }
 		localization_key = progressivism
@@ -397,6 +421,10 @@ defined_text = {
 		trigger = { has_country_leader_ideology = triequism_center }
 		localization_key = triequism_center
 	}
+	text = { 
+		trigger = { has_country_leader_ideology = Dengism_red }
+		localization_key = Dengism_red
+	}
 }
 #目田
 defined_text = {
@@ -404,6 +432,10 @@ defined_text = {
 	text = { 
 		trigger = { has_country_leader_ideology = National_liberalism }
 		localization_key = National_liberalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Market_liberalism }
+		localization_key = Market_liberalism
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = Social_Liberalism }
@@ -485,10 +517,22 @@ defined_text = {
 		trigger = { has_country_leader_ideology = Social_nationalism }
 		localization_key = Social_nationalism
 	}
+	text = { 
+		trigger = { has_country_leader_ideology = tridemism_authdem }
+		localization_key = tridemism_authdem
+	}
 }
 #专制
 defined_text = {
 	name = GetSubIdeologyLocAbsolutism
+	text = { 
+		trigger = { has_country_leader_ideology = Tibet_theocracy }
+		localization_key = Tibet_theocracy
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Junshen_government }
+		localization_key = Junshen_government
+	}
 	text = { 
 		trigger = { has_country_leader_ideology = absolute_monarchy }
 		localization_key = absolute_monarchy
@@ -509,13 +553,9 @@ defined_text = {
 		trigger = { has_country_leader_ideology = civilian_dictatorship }
 		localization_key = civilian_dictatorship
 	}
-	text = {
-		trigger = {has_country_leader_ideology = Junshen_government }
-		localization_key = Junshen_government
-	}
-	text = {
-		trigger = {has_country_leader_ideology = Tibet_theocracy }
-		localization_key = Tibet_theocracy
+	text = { 
+		trigger = { has_country_leader_ideology = theocracy }
+		localization_key = theocracy
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = Red_military_government }
@@ -525,6 +565,10 @@ defined_text = {
 #国家主义
 defined_text = {
 	name = GetSubIdeologyLocNationalism
+	text = { 
+		trigger = { has_country_leader_ideology = nationalism }
+		localization_key = nationalism
+	}
 	text = { 
 		trigger = { has_country_leader_ideology = Fascism }
 		localization_key = Fascism
@@ -538,15 +582,19 @@ defined_text = {
 		localization_key = Strassianism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = National_Syndicalism }
-		localization_key = National_Syndicalism
-	}
-	text = { 
 		trigger = { has_country_leader_ideology = Ultra_Nationalism }
 		localization_key = Ultra_Nationalism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = Reorganization_of_the_Three_Peoples_Principles }
-		localization_key = Reorganization_of_the_Three_Peoples_Principles
+		trigger = { has_country_leader_ideology = Renewal_System }
+		localization_key = Renewal_System
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Singular_Nationalism }
+		localization_key = Singular_Nationalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Combat_Nationalism }
+		localization_key = Combat_Nationalism
 	}
 }
