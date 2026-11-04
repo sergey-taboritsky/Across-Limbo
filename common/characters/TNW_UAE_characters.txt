@@ -1,11 +1,6 @@
 characters = {
 	UAE_Shakhbut_bin_Sultan_Al_Nahyan = {
 		name = UAE_Shakhbut_bin_Sultan_Al_Nahyan
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_UAE_Shakhbut_bin_Sultan_Al_Nahyan
-			}
-		}
 		country_leader = {
 			desc = UAE_Shakhbut_bin_Sultan_Al_Nahyan_desc
 			ideology = absolute_monarchy

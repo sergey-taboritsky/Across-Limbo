@@ -22,8 +22,8 @@
 			# 1. Jagarflottiljen				
 			ship = { name = "HM Klas Horn" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Klas Class" } } }		
 			ship = { name = "HM Klas Uggla" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Klas Class" } } }		
-			ship = { name = "HM Ehrensköld" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ehrensköld Class" } } }		
-			ship = { name = "HM Nordenskjöld" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ehrensköld Class" } } }
+			ship = { name = "HM Ehrenskold" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ehrenskold Class" } } }		
+			ship = { name = "HM Nordenskjold" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ehrenskold Class" } } }
 			ship = { name = "HM Wale" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Wrangel Class" } } }
 			ship = { name = "HM Wachtmeister" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Wrangel Class" } } }			
 			ship = { name = "HM Ragnar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Wrangel Class" } } }
@@ -45,8 +45,8 @@
 			ship = { name = "HM Ulven" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SWE version_name = "Draken Class" } } }
 		}
 		task_force = { 
-			name = "Göteborgs Eskadern"
-			location = 383 # Göteborg
+			name = "Goteborgs Eskadern"
+			location = 383 # Goteborg
 			ship = { name = "HM Oscar II" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Oscar II Class" } } }				
 			ship = { name = "HM Fylgia" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SWE version_name = "Fylgia Class" } } }				
 			# 2. Ubatsflottiljen				
@@ -66,14 +66,14 @@
 ### Starting Production ###
 instant_effect = {
 	### Under Construction Notes ###
-	# DD: Göteborg class (x1) ("HM Göteborg")
+	# DD: Goteborg class (x1) ("HM Goteborg")
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_light_2
 			creator = "SWE"
-			version_name = "Göteborg Class"
+			version_name = "Goteborg Class"
 		}
-		name = "HM Göteborg" 
+		name = "HM Goteborg" 
 		requested_factories = 1
 		progress = 0.8
 		amount = 1
@@ -82,7 +82,7 @@ instant_effect = {
 		equipment = {
 			type = ship_hull_light_2
 			creator = "SWE"
-			version_name = "Göteborg Class"
+			version_name = "Goteborg Class"
 		}
 		name = "HM Stockholm" 
 		requested_factories = 1
@@ -93,9 +93,9 @@ instant_effect = {
 		equipment = {
 			type = ship_hull_light_2
 			creator = "SWE"
-			version_name = "Göteborg Class"
+			version_name = "Goteborg Class"
 		}
-		name = "HM Malmö" 
+		name = "HM Malmo" 
 		requested_factories = 1
 		progress = 0.2
 		amount = 1

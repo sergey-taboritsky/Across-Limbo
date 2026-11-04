@@ -1,11 +1,6 @@
 characters = {
 	QAT_Abdullah_bin_Jassim_Al_Thani = {
 		name = QAT_Abdullah_bin_Jassim_Al_Thani
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_QAT_Abdullah_bin_Jassim_Al_Thani
-			}
-		}
 		country_leader = {
 			desc = QAT_Abdullah_bin_Jassim_Al_Thani_desc
 			ideology = absolute_monarchy

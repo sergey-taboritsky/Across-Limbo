@@ -1,13 +1,13 @@
 characters = {
-	ICE_Sveinn_Björnsson = {
-		name = ICE_Sveinn_Björnsson
+	ICE_Sveinn_Bjornsson = {
+		name = ICE_Sveinn_Bjornsson
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_ICE_Sveinn_Björnsson
+				large = GFX_portrait_large_ICE_Sveinn_Bjornsson
 			}
 		}
 		country_leader = {
-			desc = ICE_Sveinn_Björnsson_desc
+			desc = ICE_Sveinn_Bjornsson_desc
 			ideology = Social_Liberalism
 			traits = {
 			}

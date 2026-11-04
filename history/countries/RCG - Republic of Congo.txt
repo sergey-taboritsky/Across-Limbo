@@ -1,5 +1,5 @@
 ﻿capital = 772
-recruit_character = RCG_Jean_Felix_Tchicaya
+recruit_character = RCG_Fulbert_Youlou
 
 # Starting tech
 set_technology = {
@@ -49,19 +49,19 @@ set_convoys = 20
 
 
 set_politics = {
-	ruling_party = socialism
+	ruling_party = Conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
 	communist = 5
-	skyndicalism = 0
-	socialism = 70
+	syndicalism = 0
+	socialism = 5
 	Social_democracy = 5
-	Liberalism = 10
-	Conservatism = 0
+	Liberalism = 20
+	Conservatism = 55
 	Authoritarianism = 0
-	Absolutism = 5
-	Nationalism = 5
+	Absolutism = 0
+	Nationalism = 10
 }

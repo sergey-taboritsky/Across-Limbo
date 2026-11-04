@@ -1,18 +1,24 @@
 ﻿capital = 354
 
-recruit_character = TPS_Leonidas_Iasonidis
+recruit_character = TPS_Ioannis_Passalidis
+
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Social_democracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	Liberalism = 60
-	Nationalism = 30
-	communist = 10
+	communist = 5
+	skyndicalism = 0
+	socialism = 5
+	Social_democracy = 55
+	Liberalism = 20
+	Conservatism = 0
 	Authoritarianism = 0
+	Absolutism = 0
+	Nationalism = 15
 }

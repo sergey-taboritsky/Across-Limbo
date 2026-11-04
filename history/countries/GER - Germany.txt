@@ -138,7 +138,7 @@ if = {
 	## 1936 Start ##
 	# Light Cruisers #
 	create_equipment_variant = {
-		name = "Königsberg Class"
+		name = "Konigsberg Class"
 		type = light_cruiser_1
 		parent_version = 0
 		upgrades = {
@@ -280,7 +280,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Zerstörer 1934 Class"
+		name = "Zerstorer 1934 Class"
 		type = ship_hull_light_2
 		name_group = GER_DD_HISTORICAL
 		parent_version = 0
@@ -297,7 +297,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Zerstörer 1934A Class"
+		name = "Zerstorer 1934A Class"
 		type = ship_hull_light_2
 		name_group = GER_DD_HISTORICAL
 		parent_version = 0
@@ -336,7 +336,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Königsberg Class"
+		name = "Konigsberg Class"
 		type = ship_hull_cruiser_2
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
@@ -638,7 +638,7 @@ if = {
 		}
 		# Destroyer #
 		create_equipment_variant = {
-			name = "Zerstörer 1936"
+			name = "Zerstorer 1936"
 			type = destroyer_2
 			parent_version = 0
 			upgrades = {
@@ -654,7 +654,7 @@ if = {
 			has_dlc = "Man the Guns"
 		}
 		create_equipment_variant = {
-			name = "Zerstörer 1936 Class"
+			name = "Zerstorer 1936 Class"
 			type = ship_hull_light_2
 			name_group = GER_DD_HISTORICAL
 			parent_version = 0

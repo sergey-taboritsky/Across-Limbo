@@ -41,16 +41,21 @@ set_convoys = 5
 	}
 }
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 75
-	Nationalism = 1
-	communist = 1
-	Authoritarianism = 23
+	communist = 5
+	skyndicalism = 0
+	socialism = 0
+	Social_democracy = 5
+	Liberalism = 15
+	Conservatism = 0
+	Authoritarianism = 10
+	Absolutism = 60
+	Nationalism = 5
 }
 
 #}

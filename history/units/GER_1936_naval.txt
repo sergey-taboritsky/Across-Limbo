@@ -11,9 +11,9 @@ units= {
 			ship = { name = "Admiral Scheer" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 			ship = { name = "Nürnberg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } } 		
 			ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }		
-			ship = { name = "Königsberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
-			ship = { name = "Karlsruhe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }	
-			ship = { name = "Köln" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
+			ship = { name = "Konigsberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Konigsberg Class" } } }			
+			ship = { name = "Karlsruhe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Konigsberg Class" } } }	
+			ship = { name = "Koln" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Konigsberg Class" } } }			
 			ship = { name = "Emden" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
 			# 1. Torpedobootflottille
 			ship = { name = "Jaguar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "1924 Type" } } }
@@ -27,7 +27,7 @@ units= {
 			ship = { name = "Schleswig-Holstein" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 			ship = { name = "Schlesien" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }		
 			# 2. Torpedobootflottille
-			ship = { name = "Möwe" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Mowe" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 			ship = { name = "Albatros" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 			ship = { name = "Seeadler" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 			ship = { name = "Greif" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
@@ -211,13 +211,13 @@ instant_effect = {
 		progress = 0.41
 		amount = 1
 	}
-	# Zerstörer 1934A (x11)
+	# Zerstorer 1934A (x11)
 	#Z5
 	add_equipment_production = {
 		equipment = {
 			type = destroyer_2
 			creator = "GER"
-			version_name="Zerstörer 1934A"
+			version_name="Zerstorer 1934A"
 		}
 		requested_factories = 1
 		progress = 0.22
@@ -228,7 +228,7 @@ instant_effect = {
 		equipment = {
 			type = destroyer_2
 			creator = "GER"
-			version_name="Zerstörer 1934A"
+			version_name="Zerstorer 1934A"
 		}
 		requested_factories = 1
 		progress = 0.21
@@ -239,7 +239,7 @@ instant_effect = {
 		equipment = {
 			type = destroyer_2
 			creator = "GER"
-			version_name="Zerstörer 1934A"
+			version_name="Zerstorer 1934A"
 		}
 		requested_factories = 1
 		progress = 0.13
@@ -250,7 +250,7 @@ instant_effect = {
 		equipment = {
 			type = destroyer_2
 			creator = "GER"
-			version_name="Zerstörer 1934A"
+			version_name="Zerstorer 1934A"
 		}
 		requested_factories = 1
 		progress = 0.21
@@ -261,7 +261,7 @@ instant_effect = {
 		equipment = {
 			type = destroyer_2
 			creator = "GER"
-			version_name="Zerstörer 1934A"
+			version_name="Zerstorer 1934A"
 		}
 		requested_factories = 1
 		progress = 0.20
@@ -272,7 +272,7 @@ instant_effect = {
 		equipment = {
 			type = destroyer_2
 			creator = "GER"
-			version_name="Zerstörer 1934A"
+			version_name="Zerstorer 1934A"
 		}
 		requested_factories = 1
 		progress = 0.19
@@ -283,7 +283,7 @@ instant_effect = {
 		equipment = {
 			type = destroyer_2
 			creator = "GER"
-			version_name="Zerstörer 1934A"
+			version_name="Zerstorer 1934A"
 		}
 		requested_factories = 1
 		progress = 0.15
@@ -294,7 +294,7 @@ instant_effect = {
 		equipment = {
 			type = destroyer_2
 			creator = "GER"
-			version_name="Zerstörer 1934A"
+			version_name="Zerstorer 1934A"
 		}
 		requested_factories = 1
 		progress = 0.04
@@ -305,7 +305,7 @@ instant_effect = {
 		equipment = {
 			type = destroyer_2
 			creator = "GER"
-			version_name="Zerstörer 1934A"
+			version_name="Zerstorer 1934A"
 		}
 		requested_factories = 1
 		progress = 0.20
@@ -316,7 +316,7 @@ instant_effect = {
 		equipment = {
 			type = destroyer_2
 			creator = "GER"
-			version_name="Zerstörer 1934A"
+			version_name="Zerstorer 1934A"
 		}
 		requested_factories = 1
 		progress = 0.19
@@ -327,7 +327,7 @@ instant_effect = {
 		equipment = {
 			type = destroyer_2
 			creator = "GER"
-			version_name="Zerstörer 1934A"
+			version_name="Zerstorer 1934A"
 		}
 		requested_factories = 1
 		progress = 0.03

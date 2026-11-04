@@ -17,7 +17,7 @@
 air_wings = {
 
 	64 = { 
-		# Fliegergruppe Döberitz - Jagdgeschwader 132 'Richtofen' - Döberitz
+		# Fliegergruppe Doberitz - Jagdgeschwader 132 'Richtofen' - Doberitz
 		fighter_equipment_0 = {
 			owner = "GER"
 			amount = 81
@@ -25,7 +25,7 @@ air_wings = {
 		}
 		name = "Jagdgeschwader 132 'Richtofen'"
 		
-		# Jagdgeschwader 134 'Horst Wessel' - Döberitz
+		# Jagdgeschwader 134 'Horst Wessel' - Doberitz
 		fighter_equipment_0 = {
 			owner = "GER"
 			amount = 81
@@ -159,7 +159,7 @@ air_wings = {
 	}
 	
 	50 = { 
-		# Aufklärungsgruppe 115 - Göppingen
+		# Aufklärungsgruppe 115 - Goppingen
 		CAS_equipment_0 = {
 			owner = "GER" 
 			amount = 100

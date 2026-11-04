@@ -1,14 +1,9 @@
 characters = {
-	TPS_Leonidas_Iasonidis = {
-		name = TPS_Leonidas_Iasonidis
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_TPS_Leonidas_Iasonidis
-			}
-		}
+	TPS_Ioannis_Passalidis = {
+		name = TPS_Ioannis_Passalidis
 		country_leader = {
-			desc = TPS_Leonidas_Iasonidis_desc
-			ideology = Social_Liberalism
+			desc = TPS_Ioannis_Passalidis_desc
+			ideology = Social_democratic
 			traits = {
 			}
 			expire = "1970.1.1"

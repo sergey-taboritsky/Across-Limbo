@@ -4,7 +4,7 @@ characters = {
 		name = SAB_Mustapha_Harun
 		country_leader = {
 			desc = SAB_Mustapha_Harun_desc
-			ideology = Ultra_Nationalism
+			ideology = National_Conservatism
 			traits = {
 			}
 		}

@@ -43,12 +43,12 @@ units = {
 		division_template = "Frivilligregiment"
 	}
 	division = {
-		name = "2. Svenska Frivilligkår 'Göteborg'"
+		name = "2. Svenska Frivilligkår 'Goteborg'"
 		location = 3021  # Swedish pro-democratic volunteers (spawns near Hamar)
 		division_template = "Frivilligregiment"
 	}
 	division = {
-		name = "3. Svenska Frivilligkår 'Malmö'"
+		name = "3. Svenska Frivilligkår 'Malmo'"
 		location = 3021  # Swedish pro-democratic volunteers (spawns near Hamar)
 		division_template = "Frivilligregiment"
 	}

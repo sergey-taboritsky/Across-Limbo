@@ -1,6 +1,6 @@
 ﻿start_equipment_factor = 0.8
 division_template = {
-	name = "Fjölnismenn"	# Freedom fighters
+	name = "Fjolnismenn"	# Freedom fighters
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -22,23 +22,23 @@ division_template = {
 units = {
 
 	division = {
-		name = "1. Fjölnismenn"
+		name = "1. Fjolnismenn"
 		location = 12674
-		division_template = "Fjölnismenn"
+		division_template = "Fjolnismenn"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division = {
-		name = "2. Fjölnismenn"
+		name = "2. Fjolnismenn"
 		location = 12689
-		division_template = "Fjölnismenn"
+		division_template = "Fjolnismenn"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division = {
-		name = "3. Fjölnismenn"
+		name = "3. Fjolnismenn"
 		location = 4861
-		division_template = "Fjölnismenn"
+		division_template = "Fjolnismenn"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}

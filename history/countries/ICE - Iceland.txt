@@ -1,5 +1,5 @@
 ﻿capital = 100 #Iceland
-recruit_character = ICE_Sveinn_Björnsson
+recruit_character = ICE_Sveinn_Bjornsson
 
 set_research_slots = 2
 

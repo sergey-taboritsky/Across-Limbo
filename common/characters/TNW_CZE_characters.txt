@@ -1,0 +1,24 @@
+characters = {
+	CZE_edvard_benesh = {
+		name = CZE_edvard_benesh
+		country_leader = {
+			desc = CZE_edvard_benesh_desc
+			ideology = Social_democratic
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+	CZE_klement_gottwald = {
+		name = CZE_klement_gottwald
+		country_leader = {
+			desc = CZE_klement_gottwald_desc
+			ideology = Marxism_Leninism
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

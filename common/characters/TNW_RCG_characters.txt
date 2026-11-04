@@ -1,14 +1,9 @@
 characters = {
-	RCG_Jean_Felix_Tchicaya = {
-		name = RCG_Jean_Felix_Tchicaya
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_RCG_Jean_Felix_Tchicaya
-			}
-		}
+	RCG_Fulbert_Youlou = {
+		name = RCG_Fulbert_Youlou
 		country_leader = {
-			desc = RCG_Jean_Felix_Tchicaya_desc
-			ideology = socialist_nationalism
+			desc = RCG_Fulbert_Youlou_desc
+			ideology = National_Conservatism
 			traits = {
 			}
 			expire = "1970.1.1"

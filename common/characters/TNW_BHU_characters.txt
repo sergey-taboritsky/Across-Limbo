@@ -1,11 +1,6 @@
 characters = {
 	BHU_Jigme_Wangchuck = {
 		name = BHU_Jigme_Wangchuck
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_BHU_Jigme_Wangchuck
-			}
-		}
 		country_leader = {
 			desc = BHU_Jigme_Wangchuck_desc
 			ideology = absolute_monarchy

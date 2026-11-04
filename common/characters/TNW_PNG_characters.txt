@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			desc = PNG_Jack_Keith_Murray_desc
-			ideology = Social_Liberalism
+			ideology = military_government
 			traits = {
 			}
 			expire = "1970.1.1"

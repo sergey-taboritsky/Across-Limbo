@@ -1,11 +1,6 @@
 characters = {
 	NEP_Tribhuvan = {
 		name = NEP_Tribhuvan
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_NEP_Tribhuvan
-			}
-		}
 		country_leader = {
 			desc = NEP_Tribhuvan_desc
 			ideology = absolute_monarchy

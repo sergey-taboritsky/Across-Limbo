@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			desc = TIM_Lewis_Dyke_desc
-			ideology = Social_Liberalism
+			ideology = colonial_government
 			traits = {
 			}
 			expire = "1970.1.1"

@@ -4,16 +4,21 @@ recruit_character = TIM_Lewis_Dyke
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	Liberalism = 60
-	Nationalism = 30
-	communist = 10
-	Authoritarianism = 0
+	communist = 5
+	skyndicalism = 0
+	socialism = 0
+	Social_democracy = 5
+	Liberalism = 20
+	Conservatism = 0
+	Authoritarianism = 5
+	Absolutism = 55
+	Nationalism = 10
 }
 

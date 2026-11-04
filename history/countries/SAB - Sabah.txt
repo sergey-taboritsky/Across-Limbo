@@ -41,7 +41,7 @@ set_convoys = 20
 recruit_character = SAB_Mustapha_Harun
 
 set_politics = {
-	ruling_party = Nationalism
+	ruling_party = Conservatism
 	last_election = "1946.7.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -51,9 +51,9 @@ set_popularities = {
 	syndicalism = 0
 	socialism = 0
 	Social_democracy = 10
-	Liberalism = 20
-	Conservatism = 15
+	Liberalism = 10
+	Conservatism = 50
 	Authoritarianism = 0
 	Absolutism = 0
-	Nationalism = 50
+	Nationalism = 25
 }

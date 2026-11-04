@@ -1,11 +1,6 @@
 characters = {
 	DJI_Mahamoud_Harbi = {
 		name = DJI_Mahamoud_Harbi
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_DJI_Mahamoud_Harbi
-			}
-		}
 		country_leader = {
 			desc = DJI_Mahamoud_Harbi_desc
 			ideology = nationalism

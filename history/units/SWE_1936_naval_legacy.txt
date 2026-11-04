@@ -21,8 +21,8 @@
 			# 1. Jagarflottiljen				
 			ship = { name = "HMS Klas Horn" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE version_name = "Klas Horn Class" } } }		
 			ship = { name = "HMS Klas Uggla" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE version_name = "Klas Horn Class" } } }		
-			ship = { name = "HMS Ehrensköld" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE } } }		
-			ship = { name = "HMS Nordenskjöld" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE } } }		
+			ship = { name = "HMS Ehrenskold" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE } } }		
+			ship = { name = "HMS Nordenskjold" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE } } }		
 		}
 		task_force = { 
 			name = "Ålandshavseskader"
@@ -41,8 +41,8 @@
 			ship = { name = "HMS Ulven" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SWE version_name = "Draken Class" } } }
 		}
 		task_force = { 
-			name = "Göteborgs Eskadern"
-			location = 383 # Göteborg
+			name = "Goteborgs Eskadern"
+			location = 383 # Goteborg
 			ship = { name = "HMS Oscar II" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE version_name = "Oscar II Class" } } }				
 			ship = { name = "HMS Fylgia" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SWE } } }				
 			# 2. Ubatsflottiljen				
@@ -61,8 +61,8 @@
 ### Starting Production ###
 instant_effect = {
 	### Under Construction Notes ###
-	# DD: Göteborg class (x2) ("HMS Göteborg", "HMS Stockholm")
-	# Göteborg
+	# DD: Goteborg class (x2) ("HMS Goteborg", "HMS Stockholm")
+	# Goteborg
 	add_equipment_production = {
 		equipment = {
 			type = destroyer_2
@@ -116,8 +116,8 @@ instant_effect = {
 		progress = 0.55
 		amount = 1
 	}
-	# Sjölejonet Class (x1)
-	# Sjölejonet
+	# Sjolejonet Class (x1)
+	# Sjolejonet
 	add_equipment_production = {
 		equipment = {
 			type = submarine_2
