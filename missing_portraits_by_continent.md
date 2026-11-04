@@ -108,10 +108,3 @@
 |---|---|---|---|
 | NZL | New Zealand | NZL_peter_fraser | MISSING_ASSET |
 | PNG | Papua New Guinea | PNG_Jack_Keith_Murray | MISSING_ASSET |
-
-## 本批补充头像（2026-11-04）
-- AFF 开国领袖 Robert Menzies 头像已补 → AFF 移出缺头像清单（现 76 国）。
-- IRQ：abdullah_al_tell（顾问）、yusuf_salman_yusuf（国家领袖/顾问）已补头像。
-- AFF/AST：Bob Santamaria、Robert Menzies（两 tag 均补）。
-- RUS：新建角色 Yevlampy_Pastukhin 并补头像。
-- JAP 三国策图标（远东委员会 / 宪法委员会 / 产别会议）已替换升级美术。
