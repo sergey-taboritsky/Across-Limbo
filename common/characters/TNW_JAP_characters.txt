@@ -275,6 +275,7 @@ characters = {
 	#绀野与次郎（军事局派）
 	JAP_Konno_Yojuro = {
 		name = JAP_Konno_Yojuro
+		desc = JAP_Konno_Yojuro_desc
 		role = field_marshal
 		skill = 2
 		attack_skill = 1
@@ -285,6 +286,7 @@ characters = {
 	#细谷松太（产别派）
 	JAP_Hosoya_Matsuta = {
 		name = JAP_Hosoya_Matsuta
+		desc = JAP_Hosoya_Matsuta_desc
 		role = general
 		skill = 2
 		attack_skill = 2
@@ -295,6 +297,7 @@ characters = {
 	#市川诚（产别派）
 	JAP_Ichikawa_Makoto = {
 		name = JAP_Ichikawa_Makoto
+		desc = JAP_Ichikawa_Makoto_desc
 		role = general
 		skill = 2
 		attack_skill = 1
@@ -305,6 +308,7 @@ characters = {
 	#增山太助（产别派）
 	JAP_Masuyama_Taisuke = {
 		name = JAP_Masuyama_Taisuke
+		desc = JAP_Masuyama_Taisuke_desc
 		role = general
 		skill = 2
 		attack_skill = 2
@@ -315,6 +319,7 @@ characters = {
 	#椎野悦朗（产别派）
 	JAP_Shiino_Etsuro = {
 		name = JAP_Shiino_Etsuro
+		desc = JAP_Shiino_Etsuro_desc
 		role = general
 		skill = 2
 		attack_skill = 2
@@ -341,6 +346,7 @@ characters = {
 	#大冢有章（军事局派）
 	JAP_Otsuka_Yusho = {
 		name = JAP_Otsuka_Yusho
+		desc = JAP_Otsuka_Yusho_desc
 	}
 	#今泉善一（军事局派）
 	JAP_Iizumi_Zenichi = {
@@ -365,6 +371,7 @@ characters = {
 	#前田光繁（中式指导）
 	JAP_Maeda_Mitsufusa = {
 		name = JAP_Maeda_Mitsufusa
+		desc = JAP_Maeda_Mitsufusa_desc
 	}
 	#小林武夫（中式指导）
 	JAP_Kobayashi_Takeo = {
@@ -381,6 +388,7 @@ characters = {
 	#坂口喜一郎（桅杆派）
 	JAP_Sakaguchi_Kiichiro = {
 		name = JAP_Sakaguchi_Kiichiro
+		desc = JAP_Sakaguchi_Kiichiro_desc
 		role = admiral
 		skill = 3
 		attack_skill = 3
@@ -395,6 +403,7 @@ characters = {
 	#木村壮重（桅杆派）
 	JAP_Kimura_Sosei = {
 		name = JAP_Kimura_Sosei
+		desc = JAP_Kimura_Sosei_desc
 	}
 	#宮内謙吉（桅杆派）
 	JAP_Miyauchi_Kenkichi = {

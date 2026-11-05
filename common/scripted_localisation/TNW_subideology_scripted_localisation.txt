@@ -330,6 +330,38 @@ defined_text = {
 		localization_key = Left_wing_communism
 	}
 }
+#工团
+defined_text = {
+	name = GetSubIdeologyLocsyndicalism
+	text = { 
+		trigger = { has_country_leader_ideology = Centralised_Syndicalism }
+		localization_key = Centralised_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Classical_Syndicalism }
+		localization_key = Classical_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Anarchist_Syndicalism }
+		localization_key = Anarchist_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = National_Syndicalism }
+		localization_key = National_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Parallel_Syndicalism }
+		localization_key = Parallel_Syndicalism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = American_Unionism }
+		localization_key = American_Unionism
+	}
+	text = { 
+		trigger = { has_country_leader_ideology = Japanese_Syndicalism }
+		localization_key = Japanese_Syndicalism
+	}
+}
 #社
 defined_text = {
 	name = GetSubIdeologyLocsocialism

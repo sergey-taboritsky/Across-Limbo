@@ -195,7 +195,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_tridemism_authdem"
-		texturefile = "gfx/interface/ideologies/tridemism_conservative.png"
+		texturefile = "gfx/interface/ideologies/tridemism_liberal.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_interim_government"

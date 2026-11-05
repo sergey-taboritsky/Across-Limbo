@@ -2,6 +2,11 @@ characters = {
 
 	MON_Tseren_Ochiryn_Dambadorj = {
 		name = MON_Tseren_Ochiryn_Dambadorj
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MON_Tseren_Ochiryn_Dambadorj
+			}
+		}
 		country_leader = {
 			desc = MON_Tseren_Ochiryn_Dambadorj_desc
 			ideology = National_Conservatism
@@ -12,6 +17,11 @@ characters = {
 	}
 	MON_Ajvaagiin_Danzan = {
 		name = MON_Ajvaagiin_Danzan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MON_Ajvaagiin_Danzan
+			}
+		}
 		advisor = {
 			slot = head_of_government
 			idea_token = MON_Ajvaagiin_Danzan_hog
@@ -39,6 +49,11 @@ characters = {
 	}
 	MON_Sonombaljiriin_Buyannemeh = {
 		name = MON_Sonombaljiriin_Buyannemeh
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MON_Sonombaljiriin_Buyannemeh
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_token = MON_Sonombaljiriin_Buyannemeh_advisor
@@ -56,6 +71,11 @@ characters = {
 	}
 	MON_Sainbayar = {
 		name = MON_Sainbayar
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MON_Sainbayar
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_token = MON_Sainbayar_advisor
@@ -73,6 +93,11 @@ characters = {
 	}
 	MON_Mersee = {
 		name = MON_Mersee
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MON_Mersee
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_token = MON_Mersee_advisor

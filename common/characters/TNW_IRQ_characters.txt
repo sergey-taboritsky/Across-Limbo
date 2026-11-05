@@ -93,6 +93,11 @@
 	#卡米勒·查德里奇（独立派议员）
 	IRQ_kamil_al_chadirchi = {
 		name = IRQ_kamil_al_chadirchi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IRQ_kamil_al_chadirchi
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100

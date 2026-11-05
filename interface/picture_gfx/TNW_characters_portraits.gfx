@@ -2191,5 +2191,37 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_large_RUS_Yevlampy_Pastukhin"
 		texturefile = "gfx/characters/RUS_Yevlampy_Pastukhin.png"
+	}	#伊拉克
+	#卡米勒·查德里奇
+	spriteType = {
+		name = "GFX_portrait_large_IRQ_kamil_al_chadirchi"
+		texturefile = "gfx/characters/IRQ_kamil_al_chadirchi.png"
 	}
+	#蒙古
+	#墨尔森泰
+	spriteType = {
+		name = "GFX_portrait_large_MON_Mersee"
+		texturefile = "gfx/characters/MON_Mersee.png"
+	}
+	#包日罕特·赛音巴雅尔
+	spriteType = {
+		name = "GFX_portrait_large_MON_Sainbayar"
+		texturefile = "gfx/characters/MON_Sainbayar.png"
+	}
+	#阿巴吉·丹增
+	spriteType = {
+		name = "GFX_portrait_large_MON_Ajvaagiin_Danzan"
+		texturefile = "gfx/characters/MON_Ajvaagiin_Danzan.png"
+	}
+	#索诺木巴尔济勒·宝音鄂木合
+	spriteType = {
+		name = "GFX_portrait_large_MON_Sonombaljiriin_Buyannemeh"
+		texturefile = "gfx/characters/MON_Sonombaljiriin_Buyannemeh.png"
+	}
+	#策伦奥齐尔·丹巴道尔吉
+	spriteType = {
+		name = "GFX_portrait_large_MON_Tseren_Ochiryn_Dambadorj"
+		texturefile = "gfx/characters/MON_Tseren_Ochiryn_Dambadorj.png"
+	}
+
 }
