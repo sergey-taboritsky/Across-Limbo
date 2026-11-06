@@ -13,4 +13,19 @@ characters = {
 			id = -1
 		}
 	}
+
+	CRO_Vladko_Macek = {
+		name = CRO_Vladko_Macek
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_CRO_Vladko_Macek
+			}
+		}
+		country_leader = {
+			desc = CRO_Vladko_Macek_desc
+			ideology = Social_Conservatism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
 }

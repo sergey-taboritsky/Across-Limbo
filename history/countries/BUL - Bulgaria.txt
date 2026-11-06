@@ -52,6 +52,7 @@ recruit_character = BUL_Todor_Zhivkov
 recruit_character = BUL_Ivan_Mihailov_Popov
 recruit_character = BUL_Nikolai_Vaptsarov
 recruit_character = BUL_Lev_Glavinchev
+recruit_character = BUL_Asen_Hartenau
 
 
 set_politics = {

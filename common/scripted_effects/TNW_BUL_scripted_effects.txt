@@ -437,3 +437,74 @@ add_to_array = { parliament_x_array = 447 }
 add_to_array = { parliament_y_array = 218 }
 
 }
+
+# === Left/Right wing general distinction (user request 2026-11-06) ===
+# Right-wing generals keep their role block + right_wing trait (tagged in character file).
+# Left-wing generals have their role block physically stripped in the character file and are
+# marked with the tnw_left_wing character flag at game start (on_startup -> tnw_init_left_wing_flags).
+
+tnw_init_left_wing_flags = {
+	BUL_Ivan_Gorunia = { add_character_flag = tnw_left_wing }
+	BUL_Ferdinand_Kozovsky = { add_character_flag = tnw_left_wing }
+	BUL_Lev_Glavinchev = { add_character_flag = tnw_left_wing }
+	BUL_Rayko_Daskalov = { add_character_flag = tnw_left_wing }
+	BUL_Manol_Vasev = { add_character_flag = tnw_left_wing }
+	BUL_Hristo_Nestoroff = { add_character_flag = tnw_left_wing }
+	BUL_Dobri_Dzhurov = { add_character_flag = tnw_left_wing }
+	BUL_Petar_Panchevski = { add_character_flag = tnw_left_wing }
+	BUL_Dobri_Terpeshev = { add_character_flag = tnw_left_wing }
+	BUL_Kiril_Kosev = { add_character_flag = tnw_left_wing }
+	BUL_Toma_Dimitrov_Traykov = { add_character_flag = tnw_left_wing }
+	BUL_Ivan_Ganchev_Vulchev = { add_character_flag = tnw_left_wing }
+	BUL_Slavcho_Trlanski = { add_character_flag = tnw_left_wing }
+	BUL_Ivan_Bahvarov = { add_character_flag = tnw_left_wing }
+	BUL_Strashimir_Klinchev = { add_character_flag = tnw_left_wing }
+	BUL_Tsikulov_Vasil_Savov = { add_character_flag = tnw_left_wing }
+	BUL_Zahari_Zahariev = { add_character_flag = tnw_left_wing }
+	BUL_Todor_Delov_Sturfu = { add_character_flag = tnw_left_wing }
+	BUL_Ivan_Hariev_Doktora = { add_character_flag = tnw_left_wing }
+	BUL_Zanev_Minev = { add_character_flag = tnw_left_wing }
+	BUL_Angel_Solakov = { add_character_flag = tnw_left_wing }
+	BUL_Atanas_Shemerdiev = { add_character_flag = tnw_left_wing }
+	BUL_Demir_Borachev = { add_character_flag = tnw_left_wing }
+	BUL_Milcho_Spasov = { add_character_flag = tnw_left_wing }
+	BUL_Grigor_Shopov = { add_character_flag = tnw_left_wing }
+	BUL_Zdravko_Georgiev = { add_character_flag = tnw_left_wing }
+	BUL_Dimitar_Kosev = { add_character_flag = tnw_left_wing }
+	BUL_Stoyan_Savov = { add_character_flag = tnw_left_wing }
+	BUL_Iliya_Kashev = { add_character_flag = tnw_left_wing }
+}
+
+tnw_grant_right_wing_roles = {
+	every_character = {
+		limit = { has_trait = right_wing }
+		add_unit_leader_role = { role = general skill = 2 attack_skill = 2 defense_skill = 2 planning_skill = 2 logistics_skill = 2 }
+	}
+	add_unit_leader_role = { character = BUL_Nikola_Mihov role = field_marshal skill = 2 attack_skill = 2 defense_skill = 1 planning_skill = 2 logistics_skill = 2 }
+	add_unit_leader_role = { character = BUL_Teodosi_Daskalov role = field_marshal skill = 2 attack_skill = 2 defense_skill = 1 planning_skill = 2 logistics_skill = 2 }
+}
+
+tnw_strip_right_wing_roles = {
+	every_character = {
+		limit = { has_trait = right_wing }
+		remove_unit_leader_role = { role = general }
+		remove_unit_leader_role = { role = field_marshal }
+	}
+	remove_unit_leader_role = { character = BUL_Nikola_Mihov role = field_marshal }
+	remove_unit_leader_role = { character = BUL_Teodosi_Daskalov role = field_marshal }
+}
+
+tnw_grant_left_wing_roles = {
+	every_character = {
+		limit = { has_character_flag = tnw_left_wing }
+		add_unit_leader_role = { role = general skill = 2 attack_skill = 2 defense_skill = 2 planning_skill = 2 logistics_skill = 2 }
+	}
+}
+
+tnw_strip_left_wing_roles = {
+	every_character = {
+		limit = { has_character_flag = tnw_left_wing }
+		remove_unit_leader_role = { role = general }
+		remove_unit_leader_role = { role = field_marshal }
+	}
+}

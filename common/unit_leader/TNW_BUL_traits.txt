@@ -1,0 +1,14 @@
+# Left/Right wing political distinction marker traits (user request 2026-11-06)
+leader_traits = {
+	right_wing = {
+		type = all
+		trait_type = basic_trait
+		attack_skill = 0
+		defense_skill = 0
+		logistics_skill = 0
+		planning_skill = 0
+		maneuvering_skill = 0
+		coordination_skill = 0
+		show_in_combat = no
+	}
+}

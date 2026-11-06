@@ -103,4 +103,21 @@ characters = {
 			}
 		}
 	}
+
+	ALB_Fan_Noli = {
+		name = ALB_Fan_Noli
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_ALB_Fan_Noli
+			}
+		}
+		country_leader = {
+			desc = ALB_Fan_Noli_desc
+			ideology = National_liberalism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
 }

@@ -88,4 +88,172 @@ characters = {
 			}
 		}
 	}
+	#安东尼·赫鲁希切尔
+	POL_Antoni_Chrusciel = {
+		name = POL_Antoni_Chrusciel
+		portraits = {
+			army = {
+				large = GFX_portrait_large_POL_Antoni_Chrusciel
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#塔德乌什·博尔-科莫罗夫斯基
+	POL_Tadeusz_Bor_Komorowski = {
+		name = POL_Tadeusz_Bor_Komorowski
+		portraits = {
+			army = {
+				large = GFX_portrait_large_POL_Tadeusz_Bor_Komorowski
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#塔德乌什·佩乌琴斯基
+	POL_Tadeusz_Pelczynski = {
+		name = POL_Tadeusz_Pelczynski
+		portraits = {
+			army = {
+				large = GFX_portrait_large_POL_Tadeusz_Pelczynski
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#利奥波德·奥库利茨基
+	POL_Leopold_Okulicki = {
+		name = POL_Leopold_Okulicki
+		portraits = {
+			army = {
+				large = GFX_portrait_large_POL_Leopold_Okulicki
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#瓦迪斯瓦夫·西科尔斯基
+	POL_Wladyslaw_Sikorski = {
+		name = POL_Wladyslaw_Sikorski
+		portraits = {
+			army = {
+				large = GFX_portrait_large_POL_Wladyslaw_Sikorski
+			}
+			civilian = {
+				large = GFX_portrait_large_POL_Wladyslaw_Sikorski
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		country_leader = {
+			desc = POL_Wladyslaw_Sikorski_desc
+			ideology = National_Conservatism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+	#卡齐米日·索森科夫斯基
+	POL_Kazimierz_Sosnkowski = {
+		name = POL_Kazimierz_Sosnkowski
+		portraits = {
+			army = {
+				large = GFX_portrait_large_POL_Kazimierz_Sosnkowski
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#瓦迪斯瓦夫·安德斯
+	POL_Wladyslaw_Anders = {
+		name = POL_Wladyslaw_Anders
+		portraits = {
+			army = {
+				large = GFX_portrait_large_POL_Wladyslaw_Anders
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#扬·克瓦平斯基
+	POL_Jan_Kwapinski = {
+		name = POL_Jan_Kwapinski
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_POL_Jan_Kwapinski
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = POL_Jan_Kwapinski_advisor
+			allowed = { original_tag = POL }
+			traits = {
+			}
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	#塔德乌什·罗梅尔
+	POL_Tadeusz_Romer = {
+		name = POL_Tadeusz_Romer
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_POL_Tadeusz_Romer
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = POL_Tadeusz_Romer_advisor
+			allowed = { original_tag = POL }
+			traits = {
+			}
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
 }

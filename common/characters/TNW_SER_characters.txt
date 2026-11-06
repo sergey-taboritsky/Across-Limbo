@@ -33,4 +33,21 @@ characters = {
 			}
 		}
 	}
+	#SER_milan_stojadinovic
+	SER_milan_stojadinovic = {
+		name = SER_milan_stojadinovic
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SER_milan_stojadinovic
+			}
+		}
+		country_leader = {
+			desc = SER_milan_stojadinovic_desc
+			ideology = National_Conservatism
+			expire = "2022.10.20.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
 }

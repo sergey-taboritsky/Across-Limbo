@@ -198,7 +198,7 @@ characters = {
 			removal_cost = -1
 			ai_will_do = { factor = 0 }
 		}
-		field_marshal = {
+	}		field_marshal = {
 			desc = BUL_Nikola_Mihov_commander_desc
 			traits = { career_officer offensive_doctrine }
 			skill = 2
@@ -207,7 +207,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 2
 		}
-	}
+
 	BUL_Petur_Gabrovsky = {
 		name = BUL_Petur_Gabrovsky
 		portraits = {
@@ -556,6 +556,1432 @@ characters = {
 		country_leader={
 			ideology= absolute_monarchy
 			expire="1936.1.1"
+		}
+	}
+	BUL_Aleksandar_Kishov = {
+		name = BUL_Aleksandar_Kishov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Aleksandar_Kishov
+			}
+		}
+	}
+	BUL_Aleksandar_Oborov = {
+		name = BUL_Aleksandar_Oborov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Aleksandar_Oborov
+			}
+		}
+	}
+	BUL_Aleksandar_Stanishkiyski = {
+		name = BUL_Aleksandar_Stanishkiyski
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Aleksandar_Stanishkiyski
+				small = GFX_portrait_small_BUL_Aleksandar_Stanishkiyski
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Aleksandar_Stanishkiyski_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BUL_Aleksandar_Stefanov = {
+		name = BUL_Aleksandar_Stefanov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Aleksandar_Stefanov
+			}
+		}
+	}
+	BUL_Ivan_Beshkov = {
+		name = BUL_Ivan_Beshkov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Ivan_Beshkov
+				small = GFX_portrait_small_BUL_Ivan_Beshkov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Ivan_Beshkov_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BUL_Ivan_Hariev_Doktora = {
+		name = BUL_Ivan_Hariev_Doktora
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Ivan_Hariev_Doktora
+			}
+		}
+	}
+	BUL_Ivan_Bagryanov = {
+		name = BUL_Ivan_Bagryanov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Ivan_Bagrianov
+				small = GFX_portrait_small_BUL_Ivan_Bagrianov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Ivan_Bagrianov_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BUL_Ivan_Bagrianov = {
+		name = BUL_Ivan_Bagrianov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Ivan_Bagrianov
+			}
+		}
+	}
+	BUL_Ivan_Bahvarov = {
+		name = BUL_Ivan_Bahvarov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Ivan_Bahvarov
+			}
+		}
+	}
+	BUL_Ivan_Ganchev_Vulchev = {
+		name = BUL_Ivan_Ganchev_Vulchev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Ivan_Ganchev_Vulchev
+			}
+		}
+	}
+	BUL_Ivan_Rogozarov = {
+		name = BUL_Ivan_Rogozarov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Ivan_Rogozarov
+			}
+		}
+	}
+	BUL_Ivan_Hubenov = {
+		name = BUL_Ivan_Hubenov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Ivan_Hubenov
+			}
+		}
+	}
+	BUL_Ivan_Malinov = {
+		name = BUL_Ivan_Malinov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Ivan_Malinov
+			}
+		}
+	}
+	BUL_Iliya_Kashev = {
+		name = BUL_Iliya_Kashev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Iliya_Kashev
+			}
+		}
+	}
+	BUL_Petko_Stainov = {
+		name = BUL_Petko_Stainov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Petko_Stainov
+			}
+		}
+	}
+	BUL_Kristo_Pastuhov = {
+		name = BUL_Kristo_Pastuhov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Kristo_Pastuhov
+			}
+		}
+	}
+	BUL_Krum_Lekarski = {
+		name = BUL_Krum_Lekarski
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Krum_Lekarski
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Zdravko_Georgiev = {
+		name = BUL_Zdravko_Georgiev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Zdravko_Georgiev
+			}
+		}
+	}
+	BUL_Evstati_Lipovanski = {
+		name = BUL_Evstati_Lipovanski
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Evstati_Lipovanski
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Kiril_Parlichev = {
+		name = BUL_Kiril_Parlichev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Kiril_Parlichev
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Kiril_Kosev = {
+		name = BUL_Kiril_Kosev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Kiril_Kosev
+			}
+		}
+	}
+	BUL_Dobri_Dzhurov = {
+		name = BUL_Dobri_Dzhurov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Dobri_Dzhurov
+			}
+		}
+	}
+	BUL_Dobri_Bozhilov = {
+		name = BUL_Dobri_Bozhilov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Dobri_Bozhilov
+				small = GFX_portrait_small_BUL_Dobri_Bozhilov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Dobri_Bozhilov_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BUL_Dobri_Terpeshev = {
+		name = BUL_Dobri_Terpeshev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Dobri_Terpeshev
+			}
+		}
+	}
+	BUL_Anton_Baltakov = {
+		name = BUL_Anton_Baltakov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Anton_Baltakov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Angel_Solakov = {
+		name = BUL_Angel_Solakov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Angel_Solakov
+			}
+		}
+	}
+	BUL_Nikola_Nedev = {
+		name = BUL_Nikola_Nedev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Nikola_Nedev
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Nikola_Hadzhipetkov = {
+		name = BUL_Nikola_Hadzhipetkov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Nikola_Hadzhipetkov
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Nikola_Zhekov = {
+		name = BUL_Nikola_Zhekov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Nikola_Zhekov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Nikola_Batoev = {
+		name = BUL_Nikola_Batoev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Nikola_Batoev
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Nikola_Zahariev = {
+		name = BUL_Nikola_Zahariev
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Nikola_Zahariev
+				small = GFX_portrait_small_BUL_Nikola_Zahariev
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Nikola_Zahariev_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Nikola_Nakov = {
+		name = BUL_Nikola_Nakov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Nikola_Nakov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Blagoje_Ivanov = {
+		name = BUL_Blagoje_Ivanov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Blagoje_Ivanov
+			}
+		}
+	}
+	BUL_Pane_Bichev = {
+		name = BUL_Pane_Bichev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Pane_Bichev
+			}
+		}
+	}
+	BUL_Parvan_Dragnov = {
+		name = BUL_Parvan_Dragnov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Parvan_Dragnov
+				small = GFX_portrait_small_BUL_Parvan_Dragnov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Parvan_Dragnov_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Pavel_Shatov = {
+		name = BUL_Pavel_Shatov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Pavel_Shatov
+			}
+		}
+	}
+	BUL_Konstantin_Chekhmetiev = {
+		name = BUL_Konstantin_Chekhmetiev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Konstantin_Chekhmetiev
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Konstantin_Bekiyarov = {
+		name = BUL_Konstantin_Bekiyarov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Konstantin_Bekiyarov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Konstantin_Lukash = {
+		name = BUL_Konstantin_Lukash
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Konstantin_Lukash
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Konstantin_Stoyanov = {
+		name = BUL_Konstantin_Stoyanov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Konstantin_Stoyanov
+				small = GFX_portrait_small_BUL_Konstantin_Stoyanov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Konstantin_Stoyanov_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Konstantin_Muraviev = {
+		name = BUL_Konstantin_Muraviev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Konstantin_Muraviev
+			}
+		}
+	}
+	BUL_Konstantin_Argetoianu = {
+		name = BUL_Konstantin_Argetoianu
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Konstantin_Argetoianu
+			}
+		}
+	}
+	BUL_Vladimir_Stoychev = {
+		name = BUL_Vladimir_Stoychev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Vladimir_Stoychev
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Pencho_Zlatev = {
+		name = BUL_Pencho_Zlatev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Pencho_Zlatev
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Petar_Dobrev_Petrov = {
+		name = BUL_Petar_Dobrev_Petrov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Petar_Dobrev_Petrov
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Petar_Panchevski = {
+		name = BUL_Petar_Panchevski
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Petar_Panchevski
+			}
+		}
+	}
+	BUL_Demir_Borachev = {
+		name = BUL_Demir_Borachev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Demir_Borachev
+			}
+		}
+	}
+	BUL_Zahari_Zahariev = {
+		name = BUL_Zahari_Zahariev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Zahari_Zahariev
+			}
+		}
+	}
+	BUL_Zanev_Minev = {
+		name = BUL_Zanev_Minev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Zanev_Minev
+			}
+		}
+	}
+	BUL_Todor_Delov_Sturfu = {
+		name = BUL_Todor_Delov_Sturfu
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Todor_Delov_Sturfu
+			}
+		}
+	}
+	BUL_Todor_Zhekov = {
+		name = BUL_Todor_Zhekov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Todor_Zhekov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Todor_Kozuharov = {
+		name = BUL_Todor_Kozuharov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Todor_Kozuharov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Toma_Dimitrov_Traykov = {
+		name = BUL_Toma_Dimitrov_Traykov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Toma_Dimitrov_Traykov
+			}
+		}
+	}
+	BUL_Toma_Velikov = {
+		name = BUL_Toma_Velikov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Toma_Velikov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Lazar_Dragnov = {
+		name = BUL_Lazar_Dragnov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Lazar_Dragnov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Rafael_Zhechev = {
+		name = BUL_Rafael_Zhechev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Rafael_Zhechev
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Stoyan_Savov = {
+		name = BUL_Stoyan_Savov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Stoyan_Savov
+			}
+		}
+	}
+	BUL_Slavcho_Trlanski = {
+		name = BUL_Slavcho_Trlanski
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Slavcho_Trlanski
+			}
+		}
+	}
+	BUL_Slaveyko_Vasilev = {
+		name = BUL_Slaveyko_Vasilev
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Slaveyko_Vasilev
+				small = GFX_portrait_small_BUL_Slaveyko_Vasilev
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Slaveyko_Vasilev_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BUL_Slaveyko_Vasiliev = {
+		name = BUL_Slaveyko_Vasiliev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Slaveyko_Vasiliev
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Stefan_Shopov = {
+		name = BUL_Stefan_Shopov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Stefan_Shopov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Strashimir_Klinchev = {
+		name = BUL_Strashimir_Klinchev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Strashimir_Klinchev
+			}
+		}
+	}
+	BUL_Strashimir_Velchev = {
+		name = BUL_Strashimir_Velchev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Strashimir_Velchev
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Lyubomir_Lulchev = {
+		name = BUL_Lyubomir_Lulchev
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Lyubomir_Lulchev
+				small = GFX_portrait_small_BUL_Lyubomir_Lulchev
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Lyubomir_Lulchev_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Lyuben_Dikov = {
+		name = BUL_Lyuben_Dikov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Lyuben_Dikov
+			}
+		}
+	}
+	BUL_Georgi_Kyosevanov = {
+		name = BUL_Georgi_Kyosevanov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Georgi_Kyosevanov
+			}
+		}
+	}
+	BUL_Georgi_Totov = {
+		name = BUL_Georgi_Totov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Georgi_Totov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Georgi_Radkov = {
+		name = BUL_Georgi_Radkov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Georgi_Radkov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Georgi_Genov = {
+		name = BUL_Georgi_Genov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Georgi_Genov
+			}
+		}
+	}
+	BUL_Georgi_Motikarski = {
+		name = BUL_Georgi_Motikarski
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Georgi_Motikarski
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Georgi_Damyanov = {
+		name = BUL_Georgi_Damyanov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Georgi_Damyanov
+			}
+		}
+	}
+	BUL_Grigor_Cheshmedzhiev = {
+		name = BUL_Grigor_Cheshmedzhiev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Grigor_Cheshmedzhiev
+			}
+		}
+	}
+	BUL_Grigor_Shopov = {
+		name = BUL_Grigor_Shopov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Grigor_Shopov
+			}
+		}
+	}
+	BUL_Vasil_Kolarov = {
+		name = BUL_Vasil_Kolarov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Vasil_Kolarov
+			}
+		}
+	}
+	BUL_Vasil_Mitakov = {
+		name = BUL_Vasil_Mitakov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Vasil_Mitakov
+				small = GFX_portrait_small_BUL_Vasil_Mitakov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Vasil_Mitakov_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BUL_Kojo_Rachin = {
+		name = BUL_Kojo_Rachin
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Kojo_Rachin
+			}
+		}
+	}
+	BUL_Kosta_Lulchev = {
+		name = BUL_Kosta_Lulchev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Kosta_Lulchev
+			}
+		}
+	}
+	BUL_Kosta_Todorov = {
+		name = BUL_Kosta_Todorov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Kosta_Todorov
+			}
+		}
+	}
+	BUL_Mihail_Arnautov = {
+		name = BUL_Mihail_Arnautov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Mihail_Arnautov
+				small = GFX_portrait_small_BUL_Mihail_Arnautov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Mihail_Arnautov_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BUL_Milcho_Spasov = {
+		name = BUL_Milcho_Spasov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Milcho_Spasov
+			}
+		}
+	}
+	BUL_Yordan_Chakatirov = {
+		name = BUL_Yordan_Chakatirov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Yordan_Chakatirov
+			}
+		}
+	}
+	BUL_Virgil_Dimov = {
+		name = BUL_Virgil_Dimov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Virgil_Dimov
+			}
+		}
+	}
+	BUL_Filip_Mahmudiev = {
+		name = BUL_Filip_Mahmudiev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Filip_Mahmudiev
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Sabi_Dimitrov = {
+		name = BUL_Sabi_Dimitrov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Sabi_Dimitrov
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Sava_Ivanov = {
+		name = BUL_Sava_Ivanov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Sava_Ivanov
+			}
+		}
+	}
+	BUL_Simeon_Simov = {
+		name = BUL_Simeon_Simov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Simeon_Simov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Hristo_Kalfov = {
+		name = BUL_Hristo_Kalfov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Hristo_Kalfov
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Hristo_Trayanov = {
+		name = BUL_Hristo_Trayanov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Hristo_Trayanov
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Hristo_Kozarov = {
+		name = BUL_Hristo_Kozarov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Hristo_Kozarov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Hristo_Vidinsky = {
+		name = BUL_Hristo_Vidinsky
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Hristo_Vidinsky
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Damyan_Velchev = {
+		name = BUL_Damyan_Velchev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Damyan_Velchev
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Dimitar_Gichev = {
+		name = BUL_Dimitar_Gichev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Dimitar_Gichev
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Dimitar_Mladenov = {
+		name = BUL_Dimitar_Mladenov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Dimitar_Mladenov
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Dimitar_Stoyanov = {
+		name = BUL_Dimitar_Stoyanov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Dimitar_Stoyanov
+			}
+		}
+	}
+	BUL_Dimitar_Chakatirov = {
+		name = BUL_Dimitar_Chakatirov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Dimitar_Chakatirov
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Dimitar_Kosev = {
+		name = BUL_Dimitar_Kosev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Dimitar_Kosev
+			}
+		}
+	}
+	BUL_Dimitar_Mishaykov = {
+		name = BUL_Dimitar_Mishaykov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Dimitar_Mishaykov
+			}
+		}
+	}
+	BUL_Dimitar_Iliyanov = {
+		name = BUL_Dimitar_Iliyanov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Dimitar_Iliyanov
+				small = GFX_portrait_small_BUL_Dimitar_Iliyanov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Dimitar_Iliyanov_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Dimitar_Saselov = {
+		name = BUL_Dimitar_Saselov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Dimitar_Saselov
+			}
+		}
+	}
+	BUL_Dimo_Kazasov = {
+		name = BUL_Dimo_Kazasov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Dimo_Kazasov
+			}
+		}
+	}
+	BUL_Atanas_Zhirkov = {
+		name = BUL_Atanas_Zhirkov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Atanas_Zhirkov
+			}
+		}
+	}
+	BUL_Atanas_Shemerdiev = {
+		name = BUL_Atanas_Shemerdiev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Atanas_Shemerdiev
+			}
+		}
+	}
+	BUL_Atanas_Atanasov = {
+		name = BUL_Atanas_Atanasov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Atanas_Atanasov
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Asen_Karov = {
+		name = BUL_Asen_Karov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Asen_Karov
+			}
+		}
+	}
+	BUL_Asen_Nikolov = {
+		name = BUL_Asen_Nikolov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Asen_Nikolov
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Asen_Stamboliyski = {
+		name = BUL_Asen_Stamboliyski
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Asen_Stamboliyski
+			}
+		}
+	}
+	BUL_Asen_Sirakov = {
+		name = BUL_Asen_Sirakov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Asen_Sirakov
+			}
+		}
+	}
+	BUL_Asen_Daskalov = {
+		name = BUL_Asen_Daskalov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Asen_Daskalov
+			}
+		}
+		general = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Rusi_Rusev = {
+		name = BUL_Rusi_Rusev
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Rusi_Rusev
+			}
+		}
+		general = {
+			traits = { career_officer right_wing }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	BUL_Boris_Kolchev = {
+		name = BUL_Boris_Kolchev
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Boris_Kolchev
+				small = GFX_portrait_small_BUL_Boris_Kolchev
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_Boris_Kolchev_advisor
+			allowed = { original_tag = BUL }
+			traits = {
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BUL_Tsikulov_Vasil_Savov = {
+		name = BUL_Tsikulov_Vasil_Savov
+		portraits = {
+			army = {
+				large = GFX_portrait_large_BUL_Tsikulov_Vasil_Savov
+			}
+		}
+	}
+
+
+	BUL_Asen_Hartenau = {
+		name = BUL_Asen_Hartenau
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_BUL_Asen_Hartenau
+			}
+		}
+		country_leader = {
+			ideology = absolute_monarchy
+			expire = "2022.10.20.1"
 		}
 	}
 }

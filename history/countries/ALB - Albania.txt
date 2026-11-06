@@ -5,6 +5,7 @@ recruit_character = ALB_Mehmet_Ismail_Shehu
 recruit_character = ALB_Ahmed_Myftar
 recruit_character = ALB_Eqrem_Libohova
 recruit_character = ALB_Themistokli_Germenji
+recruit_character = ALB_Fan_Noli
 
 set_politics = {
 	ruling_party = communist

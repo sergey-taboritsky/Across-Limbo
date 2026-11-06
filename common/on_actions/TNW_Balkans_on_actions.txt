@@ -1,6 +1,7 @@
 ﻿on_actions = {
 	on_startup = {
 		effect = {
+		tnw_init_left_wing_flags = yes
             set_variable = {
                 global.TNW_Balkan_Powderkeg_Button_Agean_frame_var = 6
             }

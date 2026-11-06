@@ -6,6 +6,7 @@ set_research_slots = 3
 
 recruit_character = SER_Dimitrije_Ljotic
 recruit_character = SER_Michael_Petrovic_Njegos
+recruit_character = SER_milan_stojadinovic
 
 add_ideas = {
 	moscow_aligned_nation

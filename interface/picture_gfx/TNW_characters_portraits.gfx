@@ -254,6 +254,11 @@ spriteTypes = {
 		name = "GFX_portrait_large_BUL_Lev_Glavinchev"
 		texturefile = "gfx/characters/BUL_Lev_Glavinchev.png"
 	}
+	#伊万·瓦尔科夫
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Valkov"
+		texturefile = "gfx/characters/BUL_Ivan_Valkov.png"
+	}
 	#尼古拉·格舍夫
 	spriteType = {
 		name = "GFX_portrait_large_ROC_Nikola_Geshev"
@@ -2191,7 +2196,8 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_large_RUS_Yevlampy_Pastukhin"
 		texturefile = "gfx/characters/RUS_Yevlampy_Pastukhin.png"
-	}	#伊拉克
+	}
+	#伊拉克
 	#卡米勒·查德里奇
 	spriteType = {
 		name = "GFX_portrait_large_IRQ_kamil_al_chadirchi"
@@ -2224,4 +2230,636 @@ spriteTypes = {
 		texturefile = "gfx/characters/MON_Tseren_Ochiryn_Dambadorj.png"
 	}
 
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Aleksandar_Kishov"
+		texturefile = "gfx/characters/BUL_Aleksandar_Kishov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Aleksandar_Oborov"
+		texturefile = "gfx/characters/BUL_Aleksandar_Oborov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Aleksandar_Stanishkiyski"
+		texturefile = "gfx/characters/BUL_Aleksandar_Stanishkiyski.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Aleksandar_Stanishkiyski"
+		texturefile = "gfx/characters/BUL_Aleksandar_Stanishkiyski_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Aleksandar_Stefanov"
+		texturefile = "gfx/characters/BUL_Aleksandar_Stefanov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Beshkov"
+		texturefile = "gfx/characters/BUL_Ivan_Beshkov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Ivan_Beshkov"
+		texturefile = "gfx/characters/BUL_Ivan_Beshkov_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Hariev_Doktora"
+		texturefile = "gfx/characters/BUL_Ivan_Hariev_Doktora.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Bagryanov"
+		texturefile = "gfx/characters/BUL_Ivan_Bagryanov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Ivan_Bagryanov"
+		texturefile = "gfx/characters/BUL_Ivan_Bagryanov_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Bagryanov"
+		texturefile = "gfx/characters/BUL_Ivan_Bagryanov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Bahvarov"
+		texturefile = "gfx/characters/BUL_Ivan_Bahvarov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Ganchev_Vulchev"
+		texturefile = "gfx/characters/BUL_Ivan_Ganchev_Vulchev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Rogozarov"
+		texturefile = "gfx/characters/BUL_Ivan_Rogozarov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Hubenov"
+		texturefile = "gfx/characters/BUL_Ivan_Hubenov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Malinov"
+		texturefile = "gfx/characters/BUL_Ivan_Malinov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Iliya_Kashev"
+		texturefile = "gfx/characters/BUL_Iliya_Kashev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Petko_Stainov"
+		texturefile = "gfx/characters/BUL_Petko_Stainov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Kristo_Pastuhov"
+		texturefile = "gfx/characters/BUL_Kristo_Pastuhov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Krum_Lekarski"
+		texturefile = "gfx/characters/BUL_Krum_Lekarski.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Zdravko_Georgiev"
+		texturefile = "gfx/characters/BUL_Zdravko_Georgiev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Evstati_Lipovanski"
+		texturefile = "gfx/characters/BUL_Evstati_Lipovanski.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Kiril_Parlichev"
+		texturefile = "gfx/characters/BUL_Kiril_Parlichev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Kiril_Kosev"
+		texturefile = "gfx/characters/BUL_Kiril_Kosev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dobri_Dzhurov"
+		texturefile = "gfx/characters/BUL_Dobri_Dzhurov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dobri_Bozhilov"
+		texturefile = "gfx/characters/BUL_Dobri_Bozhilov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Dobri_Bozhilov"
+		texturefile = "gfx/characters/BUL_Dobri_Bozhilov_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dobri_Terpeshev"
+		texturefile = "gfx/characters/BUL_Dobri_Terpeshev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Anton_Baltakov"
+		texturefile = "gfx/characters/BUL_Anton_Baltakov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Angel_Solakov"
+		texturefile = "gfx/characters/BUL_Angel_Solakov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Nikola_Nedev"
+		texturefile = "gfx/characters/BUL_Nikola_Nedev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Nikola_Hadzhipetkov"
+		texturefile = "gfx/characters/BUL_Nikola_Hadzhipetkov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Nikola_Zhekov"
+		texturefile = "gfx/characters/BUL_Nikola_Zhekov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Nikola_Batoev"
+		texturefile = "gfx/characters/BUL_Nikola_Batoev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Nikola_Zahariev"
+		texturefile = "gfx/characters/BUL_Nikola_Zahariev.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Nikola_Zahariev"
+		texturefile = "gfx/characters/BUL_Nikola_Zahariev_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Nikola_Nakov"
+		texturefile = "gfx/characters/BUL_Nikola_Nakov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Blagoje_Ivanov"
+		texturefile = "gfx/characters/BUL_Blagoje_Ivanov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Pane_Bichev"
+		texturefile = "gfx/characters/BUL_Pane_Bichev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Parvan_Dragnov"
+		texturefile = "gfx/characters/BUL_Parvan_Dragnov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Parvan_Dragnov"
+		texturefile = "gfx/characters/BUL_Parvan_Dragnov_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Pavel_Shatov"
+		texturefile = "gfx/characters/BUL_Pavel_Shatov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Konstantin_Chekhmetiev"
+		texturefile = "gfx/characters/BUL_Konstantin_Chekhmetiev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Konstantin_Bekiyarov"
+		texturefile = "gfx/characters/BUL_Konstantin_Bekiyarov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Konstantin_Lukash"
+		texturefile = "gfx/characters/BUL_Konstantin_Lukash.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Konstantin_Stoyanov"
+		texturefile = "gfx/characters/BUL_Konstantin_Stoyanov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Konstantin_Stoyanov"
+		texturefile = "gfx/characters/BUL_Konstantin_Stoyanov_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Konstantin_Muraviev"
+		texturefile = "gfx/characters/BUL_Konstantin_Muraviev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Konstantin_Argetoianu"
+		texturefile = "gfx/characters/BUL_Konstantin_Argetoianu.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Vladimir_Stoychev"
+		texturefile = "gfx/characters/BUL_Vladimir_Stoychev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Pencho_Zlatev"
+		texturefile = "gfx/characters/BUL_Pencho_Zlatev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Petar_Dobrev_Petrov"
+		texturefile = "gfx/characters/BUL_Petar_Dobrev_Petrov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Petar_Panchevski"
+		texturefile = "gfx/characters/BUL_Petar_Panchevski.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Demir_Borachev"
+		texturefile = "gfx/characters/BUL_Demir_Borachev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Zahari_Zahariev"
+		texturefile = "gfx/characters/BUL_Zahari_Zahariev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Zanev_Minev"
+		texturefile = "gfx/characters/BUL_Zanev_Minev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Todor_Delov_Sturfu"
+		texturefile = "gfx/characters/BUL_Todor_Delov_Sturfu.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Todor_Zhekov"
+		texturefile = "gfx/characters/BUL_Todor_Zhekov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Todor_Kozuharov"
+		texturefile = "gfx/characters/BUL_Todor_Kozuharov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Toma_Dimitrov_Traykov"
+		texturefile = "gfx/characters/BUL_Toma_Dimitrov_Traykov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Toma_Velikov"
+		texturefile = "gfx/characters/BUL_Toma_Velikov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Lazar_Dragnov"
+		texturefile = "gfx/characters/BUL_Lazar_Dragnov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Rafael_Zhechev"
+		texturefile = "gfx/characters/BUL_Rafael_Zhechev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Stoyan_Savov"
+		texturefile = "gfx/characters/BUL_Stoyan_Savov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Slavcho_Trlanski"
+		texturefile = "gfx/characters/BUL_Slavcho_Trlanski.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Slaveyko_Vasilev"
+		texturefile = "gfx/characters/BUL_Slaveyko_Vasilev.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Slaveyko_Vasilev"
+		texturefile = "gfx/characters/BUL_Slaveyko_Vasilev_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Slaveyko_Vasiliev"
+		texturefile = "gfx/characters/BUL_Slaveyko_Vasiliev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Stefan_Shopov"
+		texturefile = "gfx/characters/BUL_Stefan_Shopov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Strashimir_Klinchev"
+		texturefile = "gfx/characters/BUL_Strashimir_Klinchev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Strashimir_Velchev"
+		texturefile = "gfx/characters/BUL_Strashimir_Velchev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Lyubomir_Lulchev"
+		texturefile = "gfx/characters/BUL_Lyubomir_Lulchev.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Lyubomir_Lulchev"
+		texturefile = "gfx/characters/BUL_Lyubomir_Lulchev_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Lyuben_Dikov"
+		texturefile = "gfx/characters/BUL_Lyuben_Dikov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Georgi_Kyosevanov"
+		texturefile = "gfx/characters/BUL_Georgi_Kyosevanov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Georgi_Totov"
+		texturefile = "gfx/characters/BUL_Georgi_Totov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Georgi_Radkov"
+		texturefile = "gfx/characters/BUL_Georgi_Radkov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Georgi_Genov"
+		texturefile = "gfx/characters/BUL_Georgi_Genov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Georgi_Motikarski"
+		texturefile = "gfx/characters/BUL_Georgi_Motikarski.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Georgi_Damyanov"
+		texturefile = "gfx/characters/BUL_Georgi_Damyanov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Grigor_Cheshmedzhiev"
+		texturefile = "gfx/characters/BUL_Grigor_Cheshmedzhiev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Grigor_Shopov"
+		texturefile = "gfx/characters/BUL_Grigor_Shopov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Vasil_Kolarov"
+		texturefile = "gfx/characters/BUL_Vasil_Kolarov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Vasil_Mitakov"
+		texturefile = "gfx/characters/BUL_Vasil_Mitakov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Vasil_Mitakov"
+		texturefile = "gfx/characters/BUL_Vasil_Mitakov_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Kojo_Rachin"
+		texturefile = "gfx/characters/BUL_Kojo_Rachin.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Kosta_Lulchev"
+		texturefile = "gfx/characters/BUL_Kosta_Lulchev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Kosta_Todorov"
+		texturefile = "gfx/characters/BUL_Kosta_Todorov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Mihail_Arnautov"
+		texturefile = "gfx/characters/BUL_Mihail_Arnautov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Mihail_Arnautov"
+		texturefile = "gfx/characters/BUL_Mihail_Arnautov_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Milcho_Spasov"
+		texturefile = "gfx/characters/BUL_Milcho_Spasov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Yordan_Chakatirov"
+		texturefile = "gfx/characters/BUL_Yordan_Chakatirov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Virgil_Dimov"
+		texturefile = "gfx/characters/BUL_Virgil_Dimov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Filip_Mahmudiev"
+		texturefile = "gfx/characters/BUL_Filip_Mahmudiev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Sabi_Dimitrov"
+		texturefile = "gfx/characters/BUL_Sabi_Dimitrov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Sava_Ivanov"
+		texturefile = "gfx/characters/BUL_Sava_Ivanov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Simeon_Simov"
+		texturefile = "gfx/characters/BUL_Simeon_Simov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Hristo_Kalfov"
+		texturefile = "gfx/characters/BUL_Hristo_Kalfov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Hristo_Trayanov"
+		texturefile = "gfx/characters/BUL_Hristo_Trayanov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Hristo_Kozarov"
+		texturefile = "gfx/characters/BUL_Hristo_Kozarov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Hristo_Vidinsky"
+		texturefile = "gfx/characters/BUL_Hristo_Vidinsky.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Damyan_Velchev"
+		texturefile = "gfx/characters/BUL_Damyan_Velchev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dimitar_Gichev"
+		texturefile = "gfx/characters/BUL_Dimitar_Gichev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dimitar_Mladenov"
+		texturefile = "gfx/characters/BUL_Dimitar_Mladenov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dimitar_Stoyanov"
+		texturefile = "gfx/characters/BUL_Dimitar_Stoyanov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dimitar_Chakatirov"
+		texturefile = "gfx/characters/BUL_Dimitar_Chakatirov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dimitar_Kosev"
+		texturefile = "gfx/characters/BUL_Dimitar_Kosev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dimitar_Mishaykov"
+		texturefile = "gfx/characters/BUL_Dimitar_Mishaykov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dimitar_Iliyanov"
+		texturefile = "gfx/characters/BUL_Dimitar_Iliyanov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Dimitar_Iliyanov"
+		texturefile = "gfx/characters/BUL_Dimitar_Iliyanov_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dimitar_Saselov"
+		texturefile = "gfx/characters/BUL_Dimitar_Saselov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Dimo_Kazasov"
+		texturefile = "gfx/characters/BUL_Dimo_Kazasov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Atanas_Zhirkov"
+		texturefile = "gfx/characters/BUL_Atanas_Zhirkov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Atanas_Shemerdiev"
+		texturefile = "gfx/characters/BUL_Atanas_Shemerdiev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Atanas_Atanasov"
+		texturefile = "gfx/characters/BUL_Atanas_Atanasov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Asen_Karov"
+		texturefile = "gfx/characters/BUL_Asen_Karov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Asen_Nikolov"
+		texturefile = "gfx/characters/BUL_Asen_Nikolov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Asen_Stamboliyski"
+		texturefile = "gfx/characters/BUL_Asen_Stamboliyski.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Asen_Sirakov"
+		texturefile = "gfx/characters/BUL_Asen_Sirakov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Asen_Daskalov"
+		texturefile = "gfx/characters/BUL_Asen_Daskalov.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Rusi_Rusev"
+		texturefile = "gfx/characters/BUL_Rusi_Rusev.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Boris_Kolchev"
+		texturefile = "gfx/characters/BUL_Boris_Kolchev.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_small_BUL_Boris_Kolchev"
+		texturefile = "gfx/characters/BUL_Boris_Kolchev_small.png"
+	}
+	#BUL批量入库
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Tsikulov_Vasil_Savov"
+		texturefile = "gfx/characters/BUL_Tsikulov_Vasil_Savov.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_large_CRO_Vladko_Macek"
+		texturefile = "gfx/characters/CRO_Vladko_Macek.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_large_SER_milan_stojadinovic"
+		texturefile = "gfx/characters/SER_milan_stojadinovic.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Ivan_Bagrianov"
+		texturefile = "gfx/characters/BUL_Ivan_Bagrianov.png"
+	}
+
+	#哈特瑙一世（保加利亚王位宣称者）
+	spriteType = {
+		name = "GFX_portrait_large_BUL_Asen_Hartenau"
+		texturefile = "gfx/characters/BUL_Asen_Hartenau.png"
+	}
+	#范·诺里（阿尔巴尼亚）
+	spriteType = {
+		name = "GFX_portrait_large_ALB_Fan_Noli"
+		texturefile = "gfx/characters/ALB_Fan_Noli.png"
+	}
 }
