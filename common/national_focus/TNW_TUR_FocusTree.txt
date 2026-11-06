@@ -1237,7 +1237,7 @@
 	id = TUR_Econ_Reconstruction
 	icon = GFX_TUR_Econ_Reconstruction
 	cost = 5
-	x = 21
+	x = 22
 	y = 9
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Econ_Reconstruction"
@@ -1250,7 +1250,7 @@
 	icon = GFX_TUR_Central_Bank_Charter
 	cost = 5
 	prerequisite = { focus = TUR_Econ_Reconstruction }
-	x = 21
+	x = 22
 	y = 10
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Central_Bank_Charter"
@@ -1263,7 +1263,7 @@
 	icon = GFX_TUR_Tax_Unification
 	cost = 5
 	prerequisite = { focus = TUR_Central_Bank_Charter }
-	x = 21
+	x = 22
 	y = 11
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Tax_Unification"
@@ -1278,7 +1278,7 @@
 	icon = GFX_TUR_Railway_Integration
 	cost = 5
 	prerequisite = { focus = TUR_Tax_Unification }
-	x = 21
+	x = 22
 	y = 12
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Railway_Integration"
@@ -1306,7 +1306,7 @@
 	icon = GFX_TUR_Land_and_Water_Works
 	cost = 5
 	prerequisite = { focus = TUR_Railway_Integration }
-	x = 21
+	x = 22
 	y = 13
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Land_and_Water_Works"
@@ -1334,7 +1334,7 @@
 	icon = GFX_TUR_Economic_Roadmap
 	cost = 5
 	prerequisite = { focus = TUR_Land_and_Water_Works }
-	x = 21
+	x = 22
 	y = 14
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Economic_Roadmap"
@@ -1807,7 +1807,7 @@
 		prerequisite = {
 			focus = TUR_STR_Root
 		}
-		x = 2
+		x = 3
 		y = 1
 		visible = {
 			has_country_flag = TNW_straits_tur_alert_flag
@@ -1824,7 +1824,7 @@
 		prerequisite = {
 			focus = TUR_STR_Root
 		}
-		x = 3
+		x = 5
 		y = 1
 		visible = {
 			has_country_flag = TNW_straits_tur_alert_flag
