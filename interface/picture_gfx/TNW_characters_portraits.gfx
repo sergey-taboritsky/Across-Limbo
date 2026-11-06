@@ -2862,4 +2862,20 @@ spriteTypes = {
 		name = "GFX_portrait_large_ALB_Fan_Noli"
 		texturefile = "gfx/characters/ALB_Fan_Noli.png"
 	}
+
+	#李承晚（大韩民国）
+	spriteType = {
+		name = "GFX_portrait_large_KOR_Syngman_Rhee"
+		texturefile = "gfx/characters/KOR_Syngman_Rhee.png"
+	}
+	#纳旺道尔吉·贾姆巴（蒙古人民共和国）
+	spriteType = {
+		name = "GFX_portrait_large_MON_Navaandorjiyn_Jadambaa"
+		texturefile = "gfx/characters/MON_Navaandorjiyn_Jadambaa.png"
+	}
+	#达木丁·苏赫巴托尔（蒙古人民共和国）
+	spriteType = {
+		name = "GFX_portrait_large_MON_Damdin_Sukhbaatar"
+		texturefile = "gfx/characters/MON_Damdin_Sukhbaatar.png"
+	}
 }

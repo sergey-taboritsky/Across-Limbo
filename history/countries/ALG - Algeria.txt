@@ -1,42 +1,20 @@
 ﻿capital = 459
 
-
-recruit_character = ALG_ar
-recruit_character = ALG_Albert_Camus
-recruit_character = ALG_acr
-recruit_character = ALG_mt
-recruit_character = ALG_stc
-recruit_character = ALG_aa2
-recruit_character = ALG_acgs
-recruit_character = ALG_ncm
-recruit_character = ALG_nccr
-recruit_character = ALG_coi
-recruit_character = ALG_Liberalism_guy
-recruit_character = ALG_acd2
-recruit_character = ALG_acas
-recruit_character = ALG_communist_guy
-recruit_character = ALG_ncs
-recruit_character = ALG_awt
-recruit_character = ALG_pot
-recruit_character = ALG_fascist_guy
-recruit_character = ALG_ai2
-recruit_character = ALG_nt
-recruit_character = ALG_aco2
-
+recruit_character = ALG_Larbi_Bouhali
 
 set_convoys = 20
 
 set_politics = {
-	ruling_party = Social_democracy
+	ruling_party = communist
 	last_election = "1947.10.19"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	communist = 12
+	communist = 35
 	syndicalism = 0
 	socialism = 20
-	Social_democracy = 35
+	Social_democracy = 12
 	Liberalism = 15
 	Conservatism = 10
 	Authoritarianism = 5
@@ -47,7 +25,6 @@ set_popularities = {
 
 
 
-}
 add_ideas = {
 	phalanstere_aligned_nation
 }

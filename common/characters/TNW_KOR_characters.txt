@@ -1,6 +1,11 @@
 characters = {
 	KOR_Syngman_Rhee = {
 		name = KOR_Syngman_Rhee
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KOR_Syngman_Rhee
+			}
+		}
 		country_leader = {
 			ideology = National_Conservatism
 			expire = "2022.10.20.1"
@@ -8,6 +13,11 @@ characters = {
 	}
 	KOR_Kim_Koo = {
 		name = KOR_Kim_Koo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KOR_Kim_Koo
+			}
+		}
 		country_leader = {
 			ideology = tridemism_conservative
 			expire = "2022.10.20.1"
@@ -22,6 +32,11 @@ characters = {
 	}
 	KOR_Kim_Won_Bong = {
 		name = KOR_Kim_Won_Bong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_KOR_Kim_Won_Bong
+			}
+		}
 		country_leader = {
 			ideology = triequism_left
 			expire = "2022.10.20.1"

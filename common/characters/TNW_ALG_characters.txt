@@ -1,14 +1,14 @@
 characters = {
-	ALG_Albert_Camus = {
-		name = ALG_Albert_Camus
+	ALG_Larbi_Bouhali = {
+		name = ALG_Larbi_Bouhali
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_ALG_Albert_Camus
+				large = GFX_portrait_large_ALG_Larbi_Bouhali
 			}
 		}
 		country_leader = {
-			desc = ALG_Albert_Camus_desc
-			ideology = Social_democratic
+			desc = ALG_Larbi_Bouhali_desc
+			ideology = Marxism_Leninism
 			traits = { }
 		}
 	}

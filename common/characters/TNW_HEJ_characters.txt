@@ -9,12 +9,15 @@ characters = {
 			}
 		}
 	}
-	#阿卜杜勒·伊拉王储（宫廷理财人）
+	#阿卜杜勒·伊拉（哈希姆王朝；1936年汉志实际执政者，阿里一世之子）
 	HEJ_abd_al_ilah = {
 		name = HEJ_abd_al_ilah
-		advisor = {
-			slot = political_advisor
-			idea_cost = 100
+		country_leader = {
+			desc = HEJ_abd_al_ilah_desc
+			ideology = absolute_monarchy
+			id = -1
+			traits = {
+			}
 		}
 	}
 }

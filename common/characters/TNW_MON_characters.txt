@@ -39,6 +39,11 @@ characters = {
 	}
 	MON_Navaandorjiyn_Jadambaa = {
 		name = MON_Navaandorjiyn_Jadambaa
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MON_Navaandorjiyn_Jadambaa
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_token = MON_Navaandorjiyn_Jadambaa_advisor
@@ -108,6 +113,11 @@ characters = {
 	}
 	MON_Damdin_Sukhbaatar = {
 		name = MON_Damdin_Sukhbaatar
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MON_Damdin_Sukhbaatar
+			}
+		}
 		advisor = {
 			slot = theorist
 			idea_token = MON_Damdin_Sukhbaatar_theorist
