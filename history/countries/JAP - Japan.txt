@@ -15,10 +15,11 @@ set_war_support = 0.8
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
-	JAP_The_stability_of_an_era
-	JAP_The_first_leftwing_cabinet
-	JAP_Recession
-	JAP_best_comes_from_the_worst
+	JAP_rising_from_ruins
+	JAP_emperor_terrorism
+	JAP_narrow_gauge
+	JAP_commune_army
+	JAP_burakumin
 	free_market_economy
 }
 

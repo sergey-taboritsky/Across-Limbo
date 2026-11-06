@@ -85,6 +85,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = special_peace_not_annex
+			set_global_flag = TNW_cpw_active
 			load_focus_tree = CHI_central_plains_war_tree
 			PRC = {
 				declare_war_on = {
@@ -119,13 +120,15 @@ country_event = {
 	picture = GFX_PUM_game_2
 	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = {
-		has_war_with = PRC
-	}
+	hidden = yes
 	option = {
 		name = CHI_event.13.a
+		trigger = {
+			has_war_with = PRC
+		}
 		hidden_effect = {
 			clr_global_flag = special_peace_not_annex
+			clr_global_flag = TNW_cpw_active
 		}
 		CHI = {
 			white_peace = PRC
@@ -188,6 +191,12 @@ country_event = {
 				is_ai = no
 			}
 			news_event = CHI_news_event.3
+		}
+	}
+	option = {
+		name = CHI_event.13.b
+		trigger = {
+			NOT = { has_war_with = PRC }
 		}
 	}
 }

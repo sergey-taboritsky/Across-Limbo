@@ -1,0 +1,45 @@
+scripted_effects = {
+	TNW_cpw_prc_victory_effect = {
+		# 中原大战 - 华北胜利：南京（CHI）投降，民劳接管，改为中华民国人民政府
+		clr_global_flag = special_peace_not_annex
+		clr_global_flag = TNW_cpw_active
+		CHI = {
+			white_peace = PRC
+			annex_country = {
+				target = PRC
+				transfer_troops = yes
+			}
+			every_owned_state = {
+				limit = {
+					NOT = { is_controlled_by = CHI }
+				}
+				transfer_state_to = CHI
+			}
+			every_state = {
+				limit = { is_core_of = PRC }
+				remove_core_of = PRC
+				add_core_of = CHI
+			}
+			load_focus_tree = CHI_post_centralplains_diplomacy_tree
+			set_country_flag = CDPL_won_cpw_tempflag
+			set_cosmetic_tag = CHI_PRC_gov
+			set_politics = {
+				ruling_party = Social_democracy
+				elections_allowed = no
+			}
+			promote_character = CHI_Chen_Lifu
+		}
+		MAL = {
+			country_event = { id = MAL_dissolution.1 }
+		}
+		PRC = {
+			every_character = {
+				set_nationality = CHI
+			}
+		}
+		every_country = {
+			limit = { is_ai = no }
+			news_event = CHI_news_event.2
+		}
+	}
+}

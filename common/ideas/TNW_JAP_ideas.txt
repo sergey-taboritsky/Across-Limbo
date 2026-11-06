@@ -1,76 +1,76 @@
 ideas = {
 	country = {
-		#崇仁天皇
-		JAP_Emperor_Chongren_County = {
-			picture = GER_The_remnants_of_the_resistance
+		#在废墟中崛起
+		JAP_rising_from_ruins = {
+			picture = JAP_rising_from_ruins
 			allowed = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.05
+				production_speed_buildings_factor = -0.80
+				production_speed_infrastructure_factor = 0.30
+				consumer_goods_factor = 0.30
+				production_speed_arms_factory_factor = -0.80
+				research_speed_factor = -0.40
+				stability_factor = -0.70
+				war_support_factor = -1.00
+				manpower_factor = -0.90
+				political_power_factor = -0.50
 			}
 		}
-		#一个时代的稳定？
-		JAP_The_stability_of_an_era = {
-			picture = JAP_The_stability_of_an_era
+		#尊皇派恐怖主义
+		JAP_emperor_terrorism = {
+			picture = JAP_emperor_terrorism
 			allowed = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.025
-				political_power_cost = 0.8
-				war_stability_factor = -0.25
-				surrender_limit = -0.5
+				stability_factor = -0.70
+				production_speed_buildings_factor = -0.20
 			}
 		}
-		#首届左翼内阁
-		JAP_The_first_leftwing_cabinet = {
-			picture = JAP_The_first_leftwing_cabinet
+		#窄轨
+		JAP_narrow_gauge = {
+			picture = JAP_narrow_gauge
 			allowed = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_factor = 0.05
-				non_core_manpower = 0.18
-				communist_drift = 0.01
-				Social_democracy_drift = 0.01
-				Authoritarianism_drift = 0.01
-				socialism_drift = 0.01
+				supply_consumption_factor = 0.15
+				production_speed_buildings_factor = -0.10
+				division_speed_factor = -0.10
 			}
 		}
-		#日本经济萧条
-		JAP_Recession  = {
-			picture = JAP_Recession
+		#公社陆军：劳动自卫队现状
+		JAP_commune_army = {
+			picture = JAP_commune_army
 			allowed = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor =  0.06
-                consumer_goods_factor = 0.60
-				production_speed_buildings_factor = -0.66
-				production_speed_arms_factory_factor = 0.36
+				manpower_factor = -0.50
+				army_attack_factor = -0.40
+				army_defence_factor = 0.10
+				army_org_factor = -0.40
 			}
 		}
-		#甘尽苦来
-		JAP_best_comes_from_the_worst = {
-			picture = JAP_best_comes_from_the_worst
+		#部落民问题
+		JAP_burakumin = {
+			picture = JAP_burakumin
 			allowed = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				conscription_factor = -0.5
-				land_doctrine_cost_factor = 0.5
-				naval_doctrine_cost_factor = 0.5
-				air_doctrine_cost_factor = 0.5
-				drift_defence_factor = 0.5
+				stability_factor = -0.05
+				political_power_factor = -0.05
 			}
 		}
-		#总罢工
+		#总罢工（食粮危机功能钩子，由决议授予，勿删）
 		JAP_Food_Crisis_Strike_idea = {
 			picture = JAP_Food_Crisis_Strike_idea
 			allowed = {
@@ -80,8 +80,8 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.5
 				drift_defence_factor = -0.5
-				stability_factor =  -0.25
-                consumer_goods_factor = 0.40
+				stability_factor = -0.25
+				consumer_goods_factor = 0.40
 				production_speed_buildings_factor = -0.33
 				production_speed_arms_factory_factor = -0.66
 			}

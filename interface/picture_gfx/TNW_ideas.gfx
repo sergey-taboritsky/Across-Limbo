@@ -276,30 +276,34 @@ spriteTypes = {
 		name = "GFX_idea_GER_Blitzkrieg"
 		texturefile = "gfx/interface/ideas/GER_Blitzkrieg.dds"
 	}
-	#崇仁天皇
-	spriteType = {
-		name = "GFX_idea_JAP_Emperor_Chongren_County"
-		texturefile = "gfx/interface/ideas/JAP_Emperor_Chongren_County.dds"
-	}
-	#甘尽苦来
-	spriteType = {
-		name = "GFX_idea_JAP_best_comes_from_the_worst"
-		texturefile = "gfx/interface/ideas/JAP_best_comes_from_the_worst.dds"
-	}
-	#日本经济萧条
-	spriteType = {
-		name = "GFX_idea_JAP_Recession"
-		texturefile = "gfx/interface/ideas/JAP_Recession.dds"
-	}
-	#首届左翼内阁
+	#南日本民族精神（重构 2026-11）
 	spriteType = {
 		name = "GFX_idea_JAP_The_first_leftwing_cabinet"
 		texturefile = "gfx/interface/ideas/JAP_The_first_leftwing_cabinet.dds"
 	}
-	#一个时代的稳定？
 	spriteType = {
-		name = "GFX_idea_JAP_The_stability_of_an_era"
-		texturefile = "gfx/interface/ideas/JAP_The_stability_of_an_era.dds"
+		name = "GFX_idea_JAP_best_comes_from_the_worst"
+		texturefile = "gfx/interface/ideas/JAP_best_comes_from_the_worst.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_rising_from_ruins"
+		texturefile = "gfx/interface/ideas/JAP_rising_from_ruins.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_emperor_terrorism"
+		texturefile = "gfx/interface/ideas/JAP_emperor_terrorism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_narrow_gauge"
+		texturefile = "gfx/interface/ideas/JAP_narrow_gauge.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_commune_army"
+		texturefile = "gfx/interface/ideas/JAP_commune_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_burakumin"
+		texturefile = "gfx/interface/ideas/JAP_burakumin.png"
 	}
 
 	#绛红之舰

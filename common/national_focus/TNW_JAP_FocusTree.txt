@@ -1047,8 +1047,6 @@
 			log = "[GetLogRoot]: Focus Completed JAP_postwar_econ_reform"
 			add_political_power = 75
 			add_stability = 0.05
-			# 萧条（60% 消费品 debuff）到此翻篇
-			remove_ideas = JAP_Recession
 			add_ideas = JAP_adjustment_period
 		}
 	}
