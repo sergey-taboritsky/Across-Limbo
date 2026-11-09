@@ -2878,4 +2878,15 @@ spriteTypes = {
 		name = "GFX_portrait_large_MON_Damdin_Sukhbaatar"
 		texturefile = "gfx/characters/MON_Damdin_Sukhbaatar.png"
 	}
+
+	#瓦尔特·内林（CMR）
+	spriteType = {
+		name = "GFX_portrait_large_CMR_Walther_Nehring"
+		texturefile = "gfx/characters/CMR_Walther_Nehring.png"
+	}
+	#易卜拉辛·舒克里（埃及）
+	spriteType = {
+		name = "GFX_portrait_large_EGY_Ibrahim_Shoukri"
+		texturefile = "gfx/characters/EGY_Ibrahim_Shoukri.png"
+	}
 }

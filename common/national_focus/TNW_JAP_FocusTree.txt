@@ -2129,8 +2129,7 @@
 		x = 46
 		y = 4
 		completion_reward = {
-			add_unit_leader_role = { character = JAP_Kimoto_Denichi role = general skill = 3 attack_skill = 3 defense_skill = 2 planning_skill = 2 logistics_skill = 3 }
-			add_unit_leader_role = { character = JAP_Ariyoshi_Koji role = general skill = 3 attack_skill = 2 defense_skill = 2 planning_skill = 3 logistics_skill = 2 }
+			add_unit_leader_role = { character = JAP_Jack_Shirai role = general skill = 3 attack_skill = 3 defense_skill = 2 planning_skill = 3 logistics_skill = 2 }
 			log = "[GetLogRoot]: Focus Completed JAP_american_military_direction"
 			army_experience = 35
 			add_political_power = 25

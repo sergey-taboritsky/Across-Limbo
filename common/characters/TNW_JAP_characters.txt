@@ -377,14 +377,6 @@ characters = {
 	JAP_Kobayashi_Takeo = {
 		name = JAP_Kobayashi_Takeo
 	}
-	#木元伝一（美式指导）
-	JAP_Kimoto_Denichi = {
-		name = JAP_Kimoto_Denichi
-	}
-	#有吉浩二（美式指导）
-	JAP_Ariyoshi_Koji = {
-		name = JAP_Ariyoshi_Koji
-	}
 	#坂口喜一郎（桅杆派）
 	JAP_Sakaguchi_Kiichiro = {
 		name = JAP_Sakaguchi_Kiichiro
