@@ -1,0 +1,33 @@
+on_actions = {
+	# 群岛争霸：每月刷新全局唯一的冷战阵营计数，供分类面板与压倒胜判定读取；用 on_monthly_MAL 而非每国触发的 on_monthly，避免重复清零
+	on_monthly_MAL = {
+		effect = {
+			set_variable = { global.TNW_arch_moscow_count = 0 }
+			set_variable = { global.TNW_arch_phal_count = 0 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = INS
+						tag = MAL
+						tag = PHI
+						tag = MRP
+						tag = MLK
+						tag = BRN
+						tag = SAB
+						tag = TIM
+						tag = MKS
+						tag = BLI
+					}
+				}
+				if = {
+					limit = { has_idea = moscow_aligned_nation }
+					add_to_variable = { var = global.TNW_arch_moscow_count value = 1 }
+				}
+				if = {
+					limit = { has_idea = phalanstere_aligned_nation }
+					add_to_variable = { var = global.TNW_arch_phal_count value = 1 }
+				}
+			}
+		}
+	}
+}

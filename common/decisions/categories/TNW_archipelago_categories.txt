@@ -1,0 +1,17 @@
+# 群岛争霸：南洋群岛冷战博弈（分类定义）
+# 决议定义在 common/decisions/TNW_archipelago_contest.txt 的同名顶层块内。
+TNW_archipelago_contest_category = {
+	icon = GFX_decision_category_border_conflicts
+	allowed = {
+		OR = {
+			original_tag = INS
+			original_tag = MAL
+			original_tag = PHI
+		}
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = yes
+	priority = 90
+}

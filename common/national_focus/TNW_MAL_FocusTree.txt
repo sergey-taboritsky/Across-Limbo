@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Dual_Nationality
 		icon = GFX_MAL_Dual_Nationality
-		cost = 35.00
+		cost = 5
 		x = 9
 		y = 0
 		completion_reward = {
@@ -32,7 +32,7 @@ focus_tree = {
 	focus = {
 		id = MAL_New_Citizenship_Act
 		icon = GFX_MAL_New_Citizenship_Act
-		cost = 50.00
+		cost = 7
 		x = 5
 		y = 1
 		prerequisite = {
@@ -55,7 +55,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Repatriate_Mechanics
 		icon = GFX_MAL_Repatriate_Mechanics
-		cost = 50.00
+		cost = 7
 		x = 13
 		y = 1
 		prerequisite = {
@@ -73,7 +73,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Malay_Reserve_Reform
 		icon = GFX_MAL_Malay_Reserve_Reform
-		cost = 50.00
+		cost = 7
 		x = 8
 		y = 2
 		prerequisite = {
@@ -90,7 +90,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Abolish_Land_Privilege
 		icon = GFX_MAL_Abolish_Land_Privilege
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Land_Redemption_Exchange
 		}
@@ -117,7 +117,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Land_Redemption_Exchange
 		icon = GFX_MAL_Land_Redemption_Exchange
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Abolish_Land_Privilege
 		}
@@ -137,7 +137,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Declare_Republic
 		icon = GFX_MAL_Declare_Republic
-		cost = 50.00
+		cost = 7
 		x = 8
 		y = 4
 		prerequisite = {
@@ -161,7 +161,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Sultan_Representation
 		icon = GFX_MAL_Sultan_Representation
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Purge_Malacca_Royals
 		}
@@ -186,7 +186,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Purge_Malacca_Royals
 		icon = GFX_MAL_Purge_Malacca_Royals
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Sultan_Representation
 		}
@@ -209,7 +209,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Plantation_Labor
 		icon = GFX_MAL_Plantation_Labor
-		cost = 50.00
+		cost = 7
 		x = 5
 		y = 2
 		prerequisite = {
@@ -227,7 +227,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Indian_Labor_Rights
 		icon = GFX_MAL_Indian_Labor_Rights
-		cost = 50.00
+		cost = 7
 		x = 5
 		y = 3
 		prerequisite = {
@@ -245,7 +245,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Compromise_KMT_Congress
 		icon = GFX_MAL_Compromise_KMT_Congress
-		cost = 50.00
+		cost = 7
 		x = 4
 		y = 4
 		prerequisite = {
@@ -261,7 +261,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Handle_Veerasenan
 		icon = GFX_MAL_Handle_Veerasenan
-		cost = 50.00
+		cost = 7
 		x = 6
 		y = 4
 		prerequisite = {
@@ -283,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Chinese_Official_Language
 		icon = GFX_MAL_Chinese_Official_Language
-		cost = 50.00
+		cost = 7
 		x = 2
 		y = 2
 		prerequisite = {
@@ -303,7 +303,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Second_Language_Referendum
 		icon = GFX_MAL_Second_Language_Referendum
-		cost = 50.00
+		cost = 7
 		x = 2
 		y = 3
 		prerequisite = {
@@ -321,7 +321,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Chinese_School_Subsidy
 		icon = GFX_MAL_Chinese_School_Subsidy
-		cost = 50.00
+		cost = 7
 		x = 2
 		y = 4
 		prerequisite = {
@@ -339,7 +339,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Chinese_Secondary_System
 		icon = GFX_MAL_Chinese_Secondary_System
-		cost = 50.00
+		cost = 7
 		x = 0
 		y = 5
 		prerequisite = {
@@ -355,7 +355,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Tighten_Textbook_Review
 		icon = GFX_MAL_Tighten_Textbook_Review
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Fund_English_Malay_Schools
 		}
@@ -378,7 +378,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Fund_English_Malay_Schools
 		icon = GFX_MAL_Fund_English_Malay_Schools
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Tighten_Textbook_Review
 		}
@@ -397,7 +397,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Chinese_Reconciliation
 		icon = GFX_MAL_Chinese_Reconciliation
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Prosecute_Huaqiao_Assoc
 		}
@@ -418,7 +418,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Prosecute_Huaqiao_Assoc
 		icon = GFX_MAL_Prosecute_Huaqiao_Assoc
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Chinese_Reconciliation
 		}
@@ -443,7 +443,7 @@ focus_tree = {
 	focus = {
 		id = MAL_End_Rationing
 		icon = GFX_MAL_End_Rationing
-		cost = 50.00
+		cost = 7
 		x = 15
 		y = 2
 		prerequisite = {
@@ -460,7 +460,7 @@ focus_tree = {
 	focus = {
 		id = MAL_War_Crimes_Trials
 		icon = GFX_MAL_War_Crimes_Trials
-		cost = 50.00
+		cost = 7
 		x = 11
 		y = 3
 		prerequisite = {
@@ -480,7 +480,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Patriotic_Sanitation
 		icon = GFX_MAL_Patriotic_Sanitation
-		cost = 50.00
+		cost = 7
 		x = 15
 		y = 3
 		prerequisite = {
@@ -497,7 +497,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Recognize_MinLao
 		icon = GFX_MAL_Recognize_MinLao
-		cost = 70.00
+		cost = 10
 		mutually_exclusive = {
 			focus = MAL_Nurture_New_Left
 		}
@@ -521,7 +521,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Nurture_New_Left
 		icon = GFX_MAL_Nurture_New_Left
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Recognize_MinLao
 		}
@@ -545,7 +545,7 @@ focus_tree = {
 	focus = {
 		id = MAL_PanMalaya_Federation
 		icon = GFX_MAL_PanMalaya_Federation
-		cost = 50.00
+		cost = 7
 		x = 13
 		y = 5
 		prerequisite = {
@@ -567,7 +567,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Mediate_Press_Dispute
 		icon = GFX_MAL_Mediate_Press_Dispute
-		cost = 50.00
+		cost = 7
 		x = 11
 		y = 6
 		prerequisite = {
@@ -583,7 +583,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Party_Press_Broadcast
 		icon = GFX_MAL_Party_Press_Broadcast
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Nanyang_Daily_Competition
 		}
@@ -606,7 +606,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Nanyang_Daily_Competition
 		icon = GFX_MAL_Nanyang_Daily_Competition
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Party_Press_Broadcast
 		}
@@ -629,7 +629,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Migration_Labor_Control
 		icon = GFX_MAL_Migration_Labor_Control
-		cost = 50.00
+		cost = 7
 		x = 13
 		y = 6
 		prerequisite = {
@@ -648,7 +648,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Secret_Society_Security
 		icon = GFX_MAL_Secret_Society_Security
-		cost = 50.00
+		cost = 7
 		x = 15
 		y = 6
 		prerequisite = {
@@ -667,7 +667,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Society_Forces_Public_Security
 		icon = GFX_MAL_Society_Forces_Public_Security
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Sweep_Gangs
 		}
@@ -687,7 +687,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Sweep_Gangs
 		icon = GFX_MAL_Sweep_Gangs
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Society_Forces_Public_Security
 		}
@@ -707,7 +707,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Blood_Debt_Compensation
 		icon = GFX_MAL_Blood_Debt_Compensation
-		cost = 35.00
+		cost = 5
 		x = 21
 		y = 0
 		completion_reward = {
@@ -721,7 +721,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Military_Scrip_Liquidation
 		icon = GFX_MAL_Military_Scrip_Liquidation
-		cost = 50.00
+		cost = 7
 		x = 19
 		y = 1
 		prerequisite = {
@@ -738,7 +738,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Scrip_Victim_Compensation
 		icon = GFX_MAL_Scrip_Victim_Compensation
-		cost = 50.00
+		cost = 7
 		x = 21
 		y = 2
 		prerequisite = {
@@ -756,7 +756,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Colonial_Sin_Taxes
 		icon = GFX_MAL_Colonial_Sin_Taxes
-		cost = 50.00
+		cost = 7
 		x = 17
 		y = 2
 		prerequisite = {
@@ -774,7 +774,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Banking_Coordination
 		icon = GFX_MAL_Banking_Coordination
-		cost = 50.00
+		cost = 7
 		x = 19
 		y = 2
 		prerequisite = {
@@ -791,7 +791,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Central_Bank_Unification
 		icon = GFX_MAL_Central_Bank_Unification
-		cost = 50.00
+		cost = 7
 		x = 17
 		y = 3
 		prerequisite = {
@@ -812,7 +812,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Overseas_Remittance
 		icon = GFX_MAL_Overseas_Remittance
-		cost = 50.00
+		cost = 7
 		x = 19
 		y = 3
 		prerequisite = {
@@ -829,7 +829,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Underwrite_Nanjing_Bonds
 		icon = GFX_MAL_Underwrite_Nanjing_Bonds
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Donation_Ethics
 		}
@@ -851,7 +851,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Donation_Ethics
 		icon = GFX_MAL_Donation_Ethics
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Underwrite_Nanjing_Bonds
 		}
@@ -872,7 +872,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Rubber_Tin_Boom
 		icon = GFX_MAL_Rubber_Tin_Boom
-		cost = 50.00
+		cost = 7
 		x = 23
 		y = 1
 		prerequisite = {
@@ -889,7 +889,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Malacca_Chokepoint
 		icon = GFX_MAL_Malacca_Chokepoint
-		cost = 50.00
+		cost = 7
 		x = 23
 		y = 2
 		prerequisite = {
@@ -906,7 +906,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Free_Port_Status
 		icon = GFX_MAL_Free_Port_Status
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Fiscal_Autonomy
 		}
@@ -929,7 +929,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Fiscal_Autonomy
 		icon = GFX_MAL_Fiscal_Autonomy
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Free_Port_Status
 		}
@@ -951,7 +951,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Transit_Trade_Nation
 		icon = GFX_MAL_Transit_Trade_Nation
-		cost = 50.00
+		cost = 7
 		x = 22
 		y = 4
 		prerequisite = {
@@ -970,7 +970,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Pioneer_Industries
 		icon = GFX_MAL_Pioneer_Industries
-		cost = 50.00
+		cost = 7
 		x = 24
 		y = 4
 		prerequisite = {
@@ -990,7 +990,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Penang_Autonomy_Crisis
 		icon = GFX_MAL_Penang_Autonomy_Crisis
-		cost = 35.00
+		cost = 5
 		#allow_branch = {
 		#	has_country_flag = MAL_penang_crisis_started
 		#}
@@ -1006,7 +1006,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Criticize_Ponnudurai
 		icon = GFX_MAL_MAL_Criticize_Ponnudurai
-		cost = 50.00
+		cost = 7
 		x = 2
 		y = 8
 		prerequisite = {
@@ -1023,7 +1023,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Mobilize_Wulu_Club
 		icon = GFX_MAL_MAL_Mobilize_Wulu_Club
-		cost = 50.00
+		cost = 7
 		x = 4
 		y = 8
 		prerequisite = {
@@ -1040,7 +1040,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Guard_Malay_Separatism
 		icon = GFX_MAL_MAL_Guard_Malay_Separatism
-		cost = 50.00
+		cost = 7
 		x = 6
 		y = 8
 		prerequisite = {
@@ -1058,7 +1058,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Strangle_Penang_Industry
 		icon = GFX_MAL_MAL_Strangle_Penang_Industry
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Business_Compromise
 		}
@@ -1078,7 +1078,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Business_Compromise
 		icon = GFX_MAL_MAL_Business_Compromise
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Strangle_Penang_Industry
 		}
@@ -1098,7 +1098,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Deny_Peoples_Assembly
 		icon = GFX_MAL_MAL_Deny_Peoples_Assembly
-		cost = 50.00
+		cost = 7
 
 		x = 4
 		y = 10
@@ -1117,7 +1117,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Calm_Strike_Wave
 		icon = GFX_MAL_MAL_Calm_Strike_Wave
-		cost = 50.00
+		cost = 7
 
 		x = 2
 		y = 10
@@ -1135,7 +1135,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Negotiate_TanChengLock
 		icon = GFX_MAL_MAL_Negotiate_TanChengLock
-		cost = 50.00
+		cost = 7
 		x = 6
 		y = 10
 		prerequisite = {
@@ -1152,7 +1152,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Arrest_Mackay
 		icon = GFX_MAL_MAL_Arrest_Mackay
-		cost = 50.00
+		cost = 7
 
 		x = 1
 		y = 11
@@ -1173,7 +1173,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Martial_Law_Volunteers
 		icon = GFX_MAL_MAL_Martial_Law_Volunteers
-		cost = 50.00
+		cost = 7
 
 		x = 3
 		y = 11
@@ -1192,7 +1192,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Free_Port_Legislation
 		icon = GFX_MAL_MAL_Free_Port_Legislation
-		cost = 50.00
+		cost = 7
 
 		x = 5
 		y = 11
@@ -1210,7 +1210,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Pingzhang_KMT_Merger
 		icon = GFX_MAL_MAL_Pingzhang_KMT_Merger
-		cost = 50.00
+		cost = 7
 
 		x = 7
 		y = 11
@@ -1231,7 +1231,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Penang_Vote
 		icon = GFX_MAL_MAL_Penang_Vote
-		cost = 70.00
+		cost = 10
 
 		x = 4
 		y = 12
@@ -1262,7 +1262,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Separatism_End
 		icon = GFX_MAL_MAL_Separatism_End
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Bitter_Failure
 		}
@@ -1292,7 +1292,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Bitter_Failure
 		icon = GFX_MAL_MAL_Bitter_Failure
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Separatism_End
 		}
@@ -1323,7 +1323,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Dissolve_Sep_Committee
 		icon = GFX_MAL_MAL_Dissolve_Sep_Committee
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Local_Autonomy_Principle
 		}
@@ -1349,7 +1349,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Local_Autonomy_Principle
 		icon = GFX_MAL_MAL_Local_Autonomy_Principle
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Dissolve_Sep_Committee
 		}
@@ -1379,7 +1379,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Receive_German_Bases
 		icon = GFX_MAL_MAL_Receive_German_Bases
-		cost = 35.00
+		cost = 5
 		x = 28
 		y = 0
 		completion_reward = {
@@ -1392,7 +1392,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Reorganize_German_Intel
 		icon = GFX_MAL_MAL_Reorganize_German_Intel
-		cost = 50.00
+		cost = 7
 		x = 27
 		y = 1
 		prerequisite = {
@@ -1401,9 +1401,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Reorganize_German_Intel"
 			add_political_power = 25
-			hidden_effect = {
-			set_country_flag = MAL_intel_reformed
-			}
 			army_experience = 10
 			add_war_support = 0.01
 		}
@@ -1412,7 +1409,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Share_Nanjing_Aid
 		icon = GFX_MAL_MAL_Share_Nanjing_Aid
-		cost = 50.00
+		cost = 7
 		x = 30
 		y = 1
 		prerequisite = {
@@ -1428,7 +1425,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Invite_ZhuangHuiquan
 		icon = GFX_MAL_MAL_Invite_ZhuangHuiquan
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_136_Volunteer_Corps
 		}
@@ -1453,7 +1450,7 @@ focus_tree = {
 	focus = {
 		id = MAL_136_Volunteer_Corps
 		icon = GFX_MAL_MAL_136_Volunteer_Corps
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Invite_ZhuangHuiquan
 		}
@@ -1471,7 +1468,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Model_Division
 		icon = GFX_MAL_MAL_Model_Division
-		cost = 50.00
+		cost = 7
 		x = 30
 		y = 2
 		prerequisite = {
@@ -1487,7 +1484,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Statistics_Bureau
 		icon = GFX_MAL_MAL_Statistics_Bureau
-		cost = 50.00
+		cost = 7
 		x = 27
 		y = 3
 		prerequisite = {
@@ -1505,7 +1502,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Army_Artillery_Doctrine
 		icon = GFX_MAL_MAL_Army_Artillery_Doctrine
-		cost = 50.00
+		cost = 7
 		x = 31
 		y = 3
 		prerequisite = {
@@ -1520,7 +1517,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Local_Officer_Corps
 		icon = GFX_MAL_MAL_Local_Officer_Corps
-		cost = 50.00
+		cost = 7
 		x = 29
 		y = 3
 		prerequisite = {
@@ -1535,7 +1532,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Northern_Defense_Line
 		icon = GFX_MAL_MAL_Northern_Defense_Line
-		cost = 70.00
+		cost = 10
 		x = 30
 		y = 4
 		prerequisite = {
@@ -1555,7 +1552,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Assess_Left_Generals
 		icon = GFX_MAL_MAL_Assess_Left_Generals
-		cost = 50.00
+		cost = 7
 		x = 27
 		y = 4
 		prerequisite = {
@@ -1575,7 +1572,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Reorganize_Volunteers_Ethnic
 		icon = GFX_MAL_MAL_Reorganize_Volunteers_Ethnic
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Volunteer_Integration
 		}
@@ -1595,7 +1592,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Volunteer_Integration
 		icon = GFX_MAL_MAL_Volunteer_Integration
-		cost = 50.00
+		cost = 7
 		mutually_exclusive = {
 			focus = MAL_Reorganize_Volunteers_Ethnic
 		}
@@ -1615,7 +1612,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Militia_Reserve
 		icon = GFX_MAL_MAL_Militia_Reserve
-		cost = 50.00
+		cost = 7
 		x = 29
 		y = 5
 		prerequisite = {
@@ -1631,7 +1628,7 @@ focus_tree = {
 	focus = {
 		id = MAL_City_Defense_Plan
 		icon = GFX_MAL_MAL_City_Defense_Plan
-		cost = 50.00
+		cost = 7
 		x = 31
 		y = 5
 		prerequisite = {
@@ -1648,7 +1645,7 @@ focus_tree = {
 	focus = {
 		id = MAL_NRA_Returns
 		icon = GFX_MAL_MAL_NRA_Returns
-		cost = 70.00
+		cost = 10
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = nanjing_won_cpw
@@ -1683,7 +1680,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Fight_NRA_Factionalism
 		icon = GFX_MAL_MAL_Fight_NRA_Factionalism
-		cost = 50.00
+		cost = 7
 		x = 27
 		y = 7
 		prerequisite = {
@@ -1699,7 +1696,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Merge_Chinese_Units
 		icon = GFX_MAL_MAL_Merge_Chinese_Units
-		cost = 50.00
+		cost = 7
 		x = 29
 		y = 7
 		prerequisite = {
@@ -1715,7 +1712,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Localize_Garrison
 		icon = GFX_MAL_MAL_Localize_Garrison
-		cost = 70.00
+		cost = 10
 		x = 28
 		y = 8
 		prerequisite = {
@@ -1735,7 +1732,7 @@ focus_tree = {
 	focus = {
 		id = MAL_One_Nation_One_Army
 		icon = GFX_MAL_MAL_One_Nation_One_Army
-		cost = 50.00
+		cost = 7
 		x = 28
 		y = 9
 		prerequisite = {
@@ -1755,7 +1752,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Foreign_Path
 		icon = GFX_MAL_MAL_Foreign_Path
-		cost = 35.00
+		cost = 5
 		x = 36
 		y = 0
 		completion_reward = {
@@ -1768,7 +1765,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Follow_Nanjing
 		icon = GFX_MAL_MAL_Follow_Nanjing
-		cost = 50.00
+		cost = 7
 		x = 33
 		y = 1
 		prerequisite = {
@@ -1788,7 +1785,7 @@ focus_tree = {
 	focus = {
 		id = MAL_US_Recognition
 		icon = GFX_MAL_MAL_US_Recognition
-		cost = 50.00
+		cost = 7
 		x = 35
 		y = 1
 		prerequisite = {
@@ -1808,7 +1805,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Cope_Calcutta
 		icon = GFX_MAL_MAL_Cope_Calcutta
-		cost = 50.00
+		cost = 7
 		x = 37
 		y = 1
 		prerequisite = {
@@ -1825,7 +1822,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Pan_Indonesia_Shock
 		icon = GFX_MAL_MAL_Pan_Indonesia_Shock
-		cost = 50.00
+		cost = 7
 		x = 39
 		y = 1
 		prerequisite = {
@@ -1833,15 +1830,19 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Pan_Indonesia_Shock"
+			add_popularity = { ideology = Nationalism popularity = 0.04 }
+			add_popularity = { ideology = Authoritarianism popularity = -0.02 }
 			add_stability = -0.02
-			add_war_support = 0.02
+			custom_effect_tooltip = TNW_arch_influence_down_tt
+			add_to_variable = { var = TNW_nanyang_influence value = -5 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Party_Ties
 		icon = GFX_MAL_MAL_Party_Ties
-		cost = 50.00
+		cost = 7
 		x = 33
 		y = 2
 		prerequisite = {
@@ -1857,7 +1858,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Reclaim_War_Debts
 		icon = GFX_MAL_MAL_Reclaim_War_Debts
-		cost = 50.00
+		cost = 7
 		x = 33
 		y = 3
 		prerequisite = {
@@ -1876,7 +1877,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Fu_Daqing_Europe
 		icon = GFX_MAL_MAL_Fu_Daqing_Europe
-		cost = 50.00
+		cost = 7
 		x = 35
 		y = 2
 		prerequisite = {
@@ -1895,7 +1896,7 @@ focus_tree = {
 	focus = {
 		id = MAL_He_Military_Mission
 		icon = GFX_MAL_MAL_He_Military_Mission
-		cost = 50.00
+		cost = 7
 		x = 35
 		y = 3
 		prerequisite = {
@@ -1910,7 +1911,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Indian_Left_Labor
 		icon = GFX_MAL_MAL_Indian_Left_Labor
-		cost = 50.00
+		cost = 7
 		x = 37
 		y = 2
 		prerequisite = {
@@ -1932,7 +1933,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Weaken_Malay_Indian_Congress
 		icon = GFX_MAL_MAL_Weaken_Malay_Indian_Congress
-		cost = 50.00
+		cost = 7
 		x = 37
 		y = 3
 		prerequisite = {
@@ -1949,7 +1950,7 @@ focus_tree = {
 	focus = {
 		id = MAL_Islands_Encirclement
 		icon = GFX_MAL_MAL_Islands_Encirclement
-		cost = 50.00
+		cost = 7
 		x = 39
 		y = 2
 		prerequisite = {
@@ -1957,16 +1958,22 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Islands_Encirclement"
-			add_political_power = 25
-			add_war_support = 0.02
-			add_stability = 0.01
+			navy_experience = 20
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -10 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 5 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_PH_VN_Partners
 		icon = GFX_MAL_MAL_PH_VN_Partners
-		cost = 50.00
+		cost = 7
 		x = 39
 		y = 3
 		prerequisite = {
@@ -1974,18 +1981,27 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_PH_VN_Partners"
-			add_political_power = 25
-			hidden_effect = {
-			set_country_flag = MAL_ph_vn_ties
+			add_opinion_modifier = { target = PHI modifier = econo_trade_success }
+			add_opinion_modifier = { target = VIN modifier = econo_trade_success }
+			army_experience = 10
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 3 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			PHI = {
+				add_to_variable = { var = TNW_nanyang_influence value = 3 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 			}
-			add_stability = 0.01
-			add_war_support = 0.01
 		}
 	}
 focus = {
 		id = MAL_Peninsula_Crisis
 		icon = GFX_MAL_Peninsula_Crisis
-		cost = 35.00
+		cost = 5
 		x = 40
 		y = 6
 		available = {
@@ -1995,117 +2011,156 @@ focus = {
 			}
 		}
 		completion_reward = {
-			set_country_flag = MAL_peninsula_crisis_active
-			add_war_support = 0.05
-			add_political_power = 25
-			add_stability = 0.02
+			log = "[GetLogRoot]: Focus Completed MAL_Peninsula_Crisis"
+			country_event = { id = MAL_confrontasi_event.1 }
+			add_popularity = { ideology = Authoritarianism popularity = 0.02 }
 		}
 	}
 
 	focus = {
 		id = MAL_Strengthen_Archipelago_Cordon
 		icon = GFX_MAL_Strengthen_Archipelago_Cordon
-		cost = 50.00
+		cost = 7
 		x = 40
 		y = 7
 		prerequisite = {
 			focus = MAL_Peninsula_Crisis
 		}
 		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Strengthen_Archipelago_Cordon"
 			army_experience = 15
-			add_war_support = 0.02
-			add_stability = 0.02
-			set_country_flag = MAL_archipelago_cordon_built
+			navy_experience = 15
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -15 }
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 6 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			set_country_flag = TNW_arch_cordon_active
 		}
 	}
 
 	focus = {
 		id = MAL_Contain_Indian_Infiltration
 		icon = GFX_MAL_Contain_Indian_Infiltration
-		cost = 50.00
+		cost = 7
 		x = 36
 		y = 7
 		prerequisite = {
 			focus = MAL_Peninsula_Crisis
 		}
 		completion_reward = {
-			add_stability = 0.03
-			add_political_power = 25
-			set_country_flag = MAL_india_infil_contained
-			add_popularity = { ideology = Nationalism popularity = -0.02 }
+			log = "[GetLogRoot]: Focus Completed MAL_Contain_Indian_Infiltration"
+			add_popularity = { ideology = syndicalism popularity = -0.03 }
+			add_popularity = { ideology = communist popularity = -0.02 }
+			add_popularity = { ideology = Authoritarianism popularity = 0.02 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 4 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Indo_Star_Confrontation_Front
 		icon = GFX_MAL_Indo_Star_Confrontation_Front
-		cost = 50.00
+		cost = 7
 		x = 44
 		y = 7
 		prerequisite = {
 			focus = MAL_Peninsula_Crisis
 		}
 		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Indo_Star_Confrontation_Front"
+			army_experience = 30
 			add_war_support = 0.05
-			army_experience = 20
-			set_country_flag = MAL_indostar_front
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -20 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 8 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Recontact_Sulawesi
 		icon = GFX_MAL_Recontact_Sulawesi
-		cost = 50.00
+		cost = 7
 		x = 40
 		y = 8
 		prerequisite = {
 			focus = MAL_Strengthen_Archipelago_Cordon
 		}
 		completion_reward = {
-			add_political_power = 25
-			set_country_flag = MAL_sulawesi_contact
-			add_stability = 0.02
-			add_war_support = 0.02
-			army_experience = 10
+			log = "[GetLogRoot]: Focus Completed MAL_Recontact_Sulawesi"
+			custom_effect_tooltip = TNW_arch_sulawesi_tt
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 5 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			MKS = {
+				add_to_variable = { var = TNW_nanyang_influence value = 8 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
+			set_country_flag = TNW_arch_sulawesi_contacted
 		}
 	}
 
 	focus = {
 		id = MAL_Secure_KL_Control
 		icon = GFX_MAL_Secure_KL_Control
-		cost = 50.00
+		cost = 7
 		x = 35
 		y = 8
 		prerequisite = {
 			focus = MAL_Contain_Indian_Infiltration
 		}
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 25
+			log = "[GetLogRoot]: Focus Completed MAL_Secure_KL_Control"
+			add_stability = 0.03
 			add_popularity = { ideology = Authoritarianism popularity = 0.02 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 3 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Monitor_Singapore_Indian
 		icon = GFX_MAL_Monitor_Singapore_Indian
-		cost = 50.00
+		cost = 7
 		x = 37
 		y = 8
 		prerequisite = {
 			focus = MAL_Contain_Indian_Infiltration
 		}
 		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Monitor_Singapore_Indian"
 			add_stability = 0.02
-			set_country_flag = MAL_sg_indian_watched
 			add_popularity = { ideology = socialism popularity = -0.02 }
+			custom_effect_tooltip = TNW_arch_surveillance_tt
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 2 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Tighten_Strait_Rights
 		icon = GFX_MAL_Tighten_Strait_Rights
-		cost = 70.00
+		cost = 10
 		x = 36
 		y = 9
 		prerequisite = {
@@ -2115,16 +2170,25 @@ focus = {
 			focus = MAL_Monitor_Singapore_Indian
 		}
 		completion_reward = {
-			add_stability = 0.02
-			add_war_support = 0.02
-			set_country_flag = MAL_strait_rights_tight
+			log = "[GetLogRoot]: Focus Completed MAL_Tighten_Strait_Rights"
+			custom_effect_tooltip = TNW_arch_strait_toll_tt
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 5 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 1 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 6 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Disassemble_Indian_Nationalism
 		icon = GFX_MAL_Disassemble_Indian_Nationalism
-		cost = 50.00
+		cost = 7
 		x = 35
 		y = 10
 		prerequisite = {
@@ -2132,16 +2196,22 @@ focus = {
 		}
 		mutually_exclusive = { focus = MAL_Prioritize_Suppress_Indian_Labor }
 		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Disassemble_Indian_Nationalism"
 			add_stability = 0.03
-			add_political_power = 25
 			add_popularity = { ideology = Nationalism popularity = -0.03 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 3 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Prioritize_Suppress_Indian_Labor
 		icon = GFX_MAL_Prioritize_Suppress_Indian_Labor
-		cost = 50.00
+		cost = 7
 		x = 37
 		y = 10
 		prerequisite = {
@@ -2149,62 +2219,94 @@ focus = {
 		}
 		mutually_exclusive = { focus = MAL_Disassemble_Indian_Nationalism }
 		completion_reward = {
-			add_stability = 0.02
+			log = "[GetLogRoot]: Focus Completed MAL_Prioritize_Suppress_Indian_Labor"
 			add_popularity = { ideology = syndicalism popularity = -0.03 }
-			set_country_flag = MAL_indian_labor_suppressed
+			add_popularity = { ideology = communist popularity = -0.02 }
+			add_popularity = { ideology = Authoritarianism popularity = 0.02 }
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_fall_tt
+			add_to_variable = { var = TNW_Affluence_value value = -4 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 2 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Supplement_Naval_Vessels
 		icon = GFX_MAL_Supplement_Naval_Vessels
-		cost = 50.00
+		cost = 7
 		x = 42
 		y = 8
 		prerequisite = {
 			focus = MAL_Indo_Star_Confrontation_Front
 		}
 		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Supplement_Naval_Vessels"
 			navy_experience = 25
-			add_war_support = 0.02
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 3 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Jungle_Warfare_Training
 		icon = GFX_MAL_Jungle_Warfare_Training
-		cost = 50.00
+		cost = 7
 		x = 44
 		y = 8
 		prerequisite = {
 			focus = MAL_Indo_Star_Confrontation_Front
 		}
 		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Jungle_Warfare_Training"
 			army_experience = 25
-			add_war_support = 0.02
+			custom_effect_tooltip = TNW_arch_jungle_tt
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 5 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 2 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Mobilize_Chinese_Civilians
 		icon = GFX_MAL_Mobilize_Chinese_Civilians
-		cost = 50.00
+		cost = 7
 		x = 46
 		y = 8
 		prerequisite = {
 			focus = MAL_Indo_Star_Confrontation_Front
 		}
 		completion_reward = {
-			add_stability = 0.02
+			log = "[GetLogRoot]: Focus Completed MAL_Mobilize_Chinese_Civilians"
 			add_war_support = 0.03
 			add_popularity = { ideology = Liberalism popularity = 0.02 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 3 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Militarize_Malacca
 		icon = GFX_MAL_Militarize_Malacca
-		cost = 70.00
+		cost = 10
 		x = 44
 		y = 9
 		prerequisite = {
@@ -2217,16 +2319,27 @@ focus = {
 			focus = MAL_Mobilize_Chinese_Civilians
 		}
 		completion_reward = {
-			add_war_support = 0.04
+			log = "[GetLogRoot]: Focus Completed MAL_Militarize_Malacca"
 			army_experience = 15
-			set_country_flag = MAL_malacca_militarized
+			navy_experience = 15
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 6 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Support_Minahasa_Federalists
 		icon = GFX_MAL_Support_Minahasa_Federalists
-		cost = 50.00
+		cost = 7
 		x = 38
 		y = 9
 		prerequisite = {
@@ -2234,18 +2347,43 @@ focus = {
 		}
 		mutually_exclusive = { focus = MAL_Support_Gowa_Royalists }
 		completion_reward = {
-			add_political_power = 25
-			set_country_flag = MAL_minahasa_fed
-			add_stability = 0.02
-			add_war_support = 0.02
+			log = "[GetLogRoot]: Focus Completed MAL_Support_Minahasa_Federalists"
 			add_popularity = { ideology = Nationalism popularity = -0.02 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
+			if = {
+				limit = { has_idea = phalanstere_aligned_nation }
+				MKS = {
+					if = {
+						limit = { NOT = { has_idea = moscow_aligned_nation } }
+						add_ideas = phalanstere_aligned_nation
+					}
+				}
+			}
+			else_if = {
+				limit = { has_idea = moscow_aligned_nation }
+				MKS = {
+					if = {
+						limit = { NOT = { has_idea = phalanstere_aligned_nation } }
+						add_ideas = moscow_aligned_nation
+					}
+				}
+			}
+			custom_effect_tooltip = TNW_arch_align_mks_tt
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 5 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			MKS = {
+				add_to_variable = { var = TNW_nanyang_influence value = 8 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
 		}
 	}
 
 	focus = {
 		id = MAL_Support_Gowa_Royalists
 		icon = GFX_MAL_Support_Gowa_Royalists
-		cost = 50.00
+		cost = 7
 		x = 40
 		y = 9
 		prerequisite = {
@@ -2253,36 +2391,108 @@ focus = {
 		}
 		mutually_exclusive = { focus = MAL_Support_Minahasa_Federalists }
 		completion_reward = {
-			add_political_power = 25
-			set_country_flag = MAL_gowa_royal
-			add_stability = 0.02
-			add_war_support = 0.02
+			log = "[GetLogRoot]: Focus Completed MAL_Support_Gowa_Royalists"
 			add_popularity = { ideology = Conservatism popularity = 0.02 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_align_mks_tt
+			if = {
+				limit = { has_idea = phalanstere_aligned_nation }
+				MKS = {
+					if = {
+						limit = { NOT = { has_idea = moscow_aligned_nation } }
+						add_ideas = phalanstere_aligned_nation
+					}
+				}
+			}
+			else_if = {
+				limit = { has_idea = moscow_aligned_nation }
+				MKS = {
+					if = {
+						limit = { NOT = { has_idea = phalanstere_aligned_nation } }
+						add_ideas = moscow_aligned_nation
+					}
+				}
+			}
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 5 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			MKS = {
+				add_to_variable = { var = TNW_nanyang_influence value = 8 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
 		}
 	}
 
 	focus = {
 		id = MAL_Contact_Nusa_Tenggara
 		icon = GFX_MAL_Contact_Nusa_Tenggara
-		cost = 50.00
+		cost = 7
 		x = 42
 		y = 9
 		prerequisite = {
 			focus = MAL_Recontact_Sulawesi
 		}
 		completion_reward = {
-			add_political_power = 25
-			set_country_flag = MAL_nusa_contact
-			add_stability = 0.01
-			add_war_support = 0.02
+			log = "[GetLogRoot]: Focus Completed MAL_Contact_Nusa_Tenggara"
 			army_experience = 10
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_align_nusa_tt
+			if = {
+				limit = { has_idea = phalanstere_aligned_nation }
+				every_country = {
+					limit = {
+						OR = {
+							tag = TIM
+							tag = BLI
+						}
+						NOT = { has_idea = moscow_aligned_nation }
+						NOT = { has_idea = phalanstere_aligned_nation }
+					}
+					add_ideas = phalanstere_aligned_nation
+				}
+			}
+			else_if = {
+				limit = { has_idea = moscow_aligned_nation }
+				every_country = {
+					limit = {
+						OR = {
+							tag = TIM
+							tag = BLI
+						}
+						NOT = { has_idea = moscow_aligned_nation }
+						NOT = { has_idea = phalanstere_aligned_nation }
+					}
+					add_ideas = moscow_aligned_nation
+				}
+			}
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 4 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = TIM
+						tag = BLI
+					}
+				}
+				add_to_variable = { var = TNW_nanyang_influence value = 5 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
 		}
 	}
 
 	focus = {
 		id = MAL_Philippines_Transit
 		icon = GFX_MAL_Philippines_Transit
-		cost = 70.00
+		cost = 10
 		x = 40
 		y = 10
 		prerequisite = {
@@ -2293,35 +2503,55 @@ focus = {
 			focus = MAL_Contact_Nusa_Tenggara
 		}
 		completion_reward = {
-			add_political_power = 25
-			set_country_flag = MAL_phl_transit
-			add_war_support = 0.02
-			add_stability = 0.01
+			log = "[GetLogRoot]: Focus Completed MAL_Philippines_Transit"
+			add_opinion_modifier = { target = PHI modifier = econo_trade_success }
+			custom_effect_tooltip = TNW_arch_transit_tt
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 5 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 4 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			PHI = {
+				add_to_variable = { var = TNW_nanyang_influence value = 6 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
 		}
 	}
 
 	focus = {
 		id = MAL_Reach_Australia
 		icon = GFX_MAL_Reach_Australia
-		cost = 50.00
+		cost = 7
 		x = 40
 		y = 11
 		prerequisite = {
 			focus = MAL_Philippines_Transit
 		}
 		completion_reward = {
-			add_political_power = 25
-			set_country_flag = MAL_australia_reach
-			add_stability = 0.02
-			add_war_support = 0.02
+			log = "[GetLogRoot]: Focus Completed MAL_Reach_Australia"
+			add_opinion_modifier = { target = AST modifier = econo_trade_success }
 			army_experience = 10
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 5 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 4 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 4 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Use_Australian_Labor_ColdWar
 		icon = GFX_MAL_Use_Australian_Labor_ColdWar
-		cost = 50.00
+		cost = 7
 		x = 39
 		y = 12
 		prerequisite = {
@@ -2335,16 +2565,23 @@ focus = {
 			}
 		}
 		completion_reward = {
-			add_stability = 0.02
-			add_war_support = 0.02
+			log = "[GetLogRoot]: Focus Completed MAL_Use_Australian_Labor_ColdWar"
+			add_opinion_modifier = { target = AST modifier = econo_trade_success }
 			add_popularity = { ideology = socialism popularity = 0.02 }
+			custom_effect_tooltip = TNW_arch_labor_coldwar_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 4 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 5 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Rekindle_White_Australia
 		icon = GFX_MAL_Rekindle_White_Australia
-		cost = 50.00
+		cost = 7
 		x = 41
 		y = 12
 		prerequisite = {
@@ -2359,32 +2596,44 @@ focus = {
 			}
 		}
 		completion_reward = {
-			add_stability = 0.02
-			add_political_power = 25
+			log = "[GetLogRoot]: Focus Completed MAL_Rekindle_White_Australia"
 			add_popularity = { ideology = Nationalism popularity = 0.02 }
+			custom_effect_tooltip = TNW_arch_white_aus_tt
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_down_tt
+			add_to_variable = { var = TNW_nanyang_influence value = -3 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Suppress_Unity_Separatism
 		icon = GFX_MAL_Suppress_Unity_Separatism
-		cost = 50.00
+		cost = 7
 		x = 34
 		y = 11
 		prerequisite = {
 			focus = MAL_Disassemble_Indian_Nationalism
 		}
 		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Suppress_Unity_Separatism"
 			add_stability = 0.04
-			add_war_support = 0.02
 			add_popularity = { ideology = Nationalism popularity = -0.03 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 3 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Sever_MIC_PMFTU_Ties
 		icon = GFX_MAL_Sever_MIC_PMFTU_Ties
-		cost = 50.00
+		cost = 7
 		x = 36
 		y = 11
 		prerequisite = {
@@ -2392,32 +2641,45 @@ focus = {
 			focus = MAL_Prioritize_Suppress_Indian_Labor
 		}
 		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Sever_MIC_PMFTU_Ties"
 			add_stability = 0.03
 			add_popularity = { ideology = socialism popularity = -0.03 }
-			set_country_flag = MAL_mic_pmftu_severed
+			add_popularity = { ideology = syndicalism popularity = -0.03 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 3 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Mobilize_CPC_South_Bureau
 		icon = GFX_MAL_Mobilize_CPC_South_Bureau
-		cost = 50.00
+		cost = 7
 		x = 38
 		y = 11
 		prerequisite = {
 			focus = MAL_Prioritize_Suppress_Indian_Labor
 		}
 		completion_reward = {
-			add_stability = 0.02
-			add_popularity = { ideology = syndicalism popularity = -0.03 }
-			set_country_flag = MAL_cpc_south_mobilized
+			log = "[GetLogRoot]: Focus Completed MAL_Mobilize_CPC_South_Bureau"
+			add_popularity = { ideology = communist popularity = 0.02 }
+			add_popularity = { ideology = syndicalism popularity = 0.02 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 4 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Disassemble_Indo_Indonesian_Union
 		icon = GFX_MAL_Disassemble_Indo_Indonesian_Union
-		cost = 70.00
+		cost = 10
 		x = 36
 		y = 12
 		prerequisite = {
@@ -2430,17 +2692,29 @@ focus = {
 			focus = MAL_Mobilize_CPC_South_Bureau
 		}
 		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Disassemble_Indo_Indonesian_Union"
 			add_war_support = 0.03
-			set_country_flag = MAL_indo_union_disassembled
-			add_political_power = 25
 			army_experience = 15
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 8 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_ins_influence_fall_tt
+			INS = {
+				add_to_variable = { var = TNW_nanyang_influence value = -6 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
 		}
 	}
 
 	focus = {
 		id = MAL_Next_Confrontation_Phase
 		icon = GFX_MAL_Next_Confrontation_Phase
-		cost = 70.00
+		cost = 10
 		x = 40
 		y = 13
 		prerequisite = {
@@ -2457,17 +2731,29 @@ focus = {
 			focus = MAL_Strike_Malay_Right
 		}
 		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Next_Confrontation_Phase"
 			set_country_flag = MAL_confrontation_phase_2
+			unlock_decision_tooltip = TNW_archipelago_proclaim_victory
 			add_war_support = 0.03
-			add_political_power = 25
 			army_experience = 15
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 10 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_influence_up_tt
+			add_to_variable = { var = TNW_nanyang_influence value = 10 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 
 	focus = {
 		id = MAL_Investigate_Leftist_Party_Ties
 		icon = GFX_MAL_Investigate_Leftist_Party_Ties
-		cost = 50.00
+		cost = 7
 		x = 43
 		y = 10
 		prerequisite = {
@@ -2485,7 +2771,7 @@ focus = {
 	focus = {
 		id = MAL_Investigate_CPC_MCP_Comms
 		icon = GFX_MAL_Investigate_CPC_MCP_Comms
-		cost = 50.00
+		cost = 7
 		x = 42
 		y = 11
 		prerequisite = {
@@ -2502,7 +2788,7 @@ focus = {
 	focus = {
 		id = MAL_Further_Sweep_Collaborationism
 		icon = GFX_MAL_Further_Sweep_Collaborationism
-		cost = 50.00
+		cost = 7
 		x = 45
 		y = 10
 		prerequisite = {
@@ -2518,7 +2804,7 @@ focus = {
 	focus = {
 		id = MAL_Investigate_Peng_Labor_Congress
 		icon = GFX_MAL_Investigate_Peng_Labor_Congress
-		cost = 50.00
+		cost = 7
 		x = 44
 		y = 11
 		prerequisite = {
@@ -2535,7 +2821,7 @@ focus = {
 	focus = {
 		id = MAL_Strike_Malay_Left
 		icon = GFX_MAL_Strike_Malay_Left
-		cost = 50.00
+		cost = 7
 		x = 43
 		y = 12
 		prerequisite = {
@@ -2552,7 +2838,7 @@ focus = {
 	focus = {
 		id = MAL_Strike_Malay_Right
 		icon = GFX_MAL_Strike_Malay_Right
-		cost = 50.00
+		cost = 7
 		x = 45
 		y = 12
 		prerequisite = {
@@ -2569,7 +2855,7 @@ focus = {
 	focus = {
 		id = MAL_Unify_Nation
 		icon = GFX_MAL_Unify_Nation
-		cost = 50.00
+		cost = 7
 		x = 38
 		y = 14
 		prerequisite = {
@@ -2597,7 +2883,7 @@ focus = {
 	focus = {
 		id = MAL_Counter_Confrontation_Tactics
 		icon = GFX_MAL_Counter_Confrontation_Tactics
-		cost = 50.00
+		cost = 7
 		x = 42
 		y = 14
 		prerequisite = {
@@ -2622,7 +2908,7 @@ focus = {
 	focus = {
 		id = MAL_Formalize_Archipelago_Cordon
 		icon = GFX_MAL_Formalize_Archipelago_Cordon
-		cost = 50.00
+		cost = 7
 		x = 40
 		y = 14
 		prerequisite = {

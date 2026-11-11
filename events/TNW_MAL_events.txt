@@ -1,3 +1,4 @@
+add_namespace = MAL_confrontasi_event
 add_namespace = MAL_penang_crisis
 add_namespace = MAL_dissolution
 
@@ -138,6 +139,286 @@ country_event = {
 		name = MAL_nra.1.a
 		MAL = {
 			load_oob = MAL_zhuxing_return
+		}
+	}
+}
+
+country_event = {
+	id = MAL_confrontasi_event.1
+	title = MAL_confrontasi_event.1.t
+	desc = MAL_confrontasi_event.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = MAL_confrontation_started
+	}
+	option = {
+		name = MAL_confrontasi_event.1.a
+		unlock_decision_tooltip = TNW_archipelago_assert_influence
+		country_event = { id = MAL_confrontasi_event.2 days = 20 }
+	}
+}
+
+# ===== 对峙事件链（2026-11-11 增补） =====
+# .1 由国策 MAL_Peninsula_Crisis 触发；.2/.3 由前一事件选项延迟触发（TNW_KOR_events.txt 范式）；
+# .4 由群岛争霸决议 TNW_archipelago_sulawesi_corridor 触发；.5~.8 由 on_weekly_MAL 按变量/旗标自动触发（TNW_MAL_on_actions.txt 槟城危机范式）。
+# 选项 id 一律避开 d（.d 已用作 desc 本地化键），沿用 a/b/c；数值改动写在 hidden_effect 内，提示用 custom_effect_tooltip。
+
+# 俄援经两条路线抵达爪哇：海峡查验之争
+country_event = {
+	id = MAL_confrontasi_event.2
+	title = MAL_confrontasi_event.2.t
+	desc = MAL_confrontasi_event.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MAL_confrontasi_event.2.a
+		custom_effect_tooltip = MAL_confrontasi_aid_a_tt
+		hidden_effect = {
+			add_to_variable = { var = capital_reserves value = -5 }
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = 4 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+		}
+		country_event = { id = MAL_confrontasi_event.3 days = 45 }
+	}
+	option = {
+		name = MAL_confrontasi_event.2.b
+		custom_effect_tooltip = MAL_confrontasi_aid_b_tt
+		hidden_effect = {
+			add_to_variable = { var = capital_reserves value = 8 }
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = -2 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+		}
+		country_event = { id = MAL_confrontasi_event.3 days = 45 }
+	}
+	option = {
+		name = MAL_confrontasi_event.2.c
+		trigger = { has_country_flag = TNW_arch_cordon_active }
+		add_war_support = 0.03
+		custom_effect_tooltip = MAL_confrontasi_aid_c_tt
+		custom_effect_tooltip = TNW_arch_ins_influence_fall_tt
+		hidden_effect = {
+			add_to_variable = { var = capital_reserves value = 5 }
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			INS = {
+				add_to_variable = { var = TNW_nanyang_influence value = -5 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
+		}
+		country_event = { id = MAL_confrontasi_event.3 days = 45 }
+	}
+}
+
+# 加尔各答的账本：印度-印尼勾连与印裔社区
+country_event = {
+	id = MAL_confrontasi_event.3
+	title = MAL_confrontasi_event.3.t
+	desc = MAL_confrontasi_event.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MAL_confrontasi_event.3.a
+		add_popularity = { ideology = syndicalism popularity = -0.03 }
+		add_popularity = { ideology = communist popularity = -0.02 }
+		add_popularity = { ideology = Authoritarianism popularity = 0.02 }
+		custom_effect_tooltip = MAL_confrontasi_calcutta_a_tt
+		hidden_effect = {
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = 3 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+		}
+	}
+	option = {
+		name = MAL_confrontasi_event.3.b
+		add_stability = 0.02
+		add_popularity = { ideology = Social_democracy popularity = 0.02 }
+		custom_effect_tooltip = MAL_confrontasi_calcutta_b_tt
+		hidden_effect = {
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = 2 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+		}
+	}
+}
+
+# 望加锡的回信：由「苏拉威西通道」决议触发
+country_event = {
+	id = MAL_confrontasi_event.4
+	title = MAL_confrontasi_event.4.t
+	desc = MAL_confrontasi_event.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MAL_confrontasi_event.4.a
+		custom_effect_tooltip = MAL_confrontasi_nusa_a_tt
+		hidden_effect = {
+			add_to_variable = { var = capital_reserves value = 8 }
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = 6 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = MKS
+						tag = TIM
+						tag = BLI
+					}
+				}
+				add_to_variable = { var = TNW_nanyang_influence value = 6 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
+		}
+	}
+	option = {
+		name = MAL_confrontasi_event.4.b
+		custom_effect_tooltip = MAL_confrontasi_nusa_b_tt
+		hidden_effect = {
+			add_to_variable = { var = capital_reserves value = 12 }
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = 2 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+		}
+	}
+}
+
+# 白澳与红菲之间：影响力达阈值后按周自动触发
+country_event = {
+	id = MAL_confrontasi_event.5
+	title = MAL_confrontasi_event.5.t
+	desc = MAL_confrontasi_event.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MAL_confrontasi_event.5.a
+		add_opinion_modifier = { target = PHI modifier = econo_trade_success }
+		custom_effect_tooltip = MAL_confrontasi_aus_a_tt
+		hidden_effect = {
+			add_to_variable = { var = capital_reserves value = -3 }
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = 5 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+		}
+	}
+	option = {
+		name = MAL_confrontasi_event.5.b
+		add_opinion_modifier = { target = AST modifier = econo_trade_success }
+		add_stability = 0.01
+		custom_effect_tooltip = MAL_confrontasi_aus_b_tt
+		hidden_effect = {
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = -2 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+		}
+	}
+}
+
+# 雅加达的枪声：印尼内战爆发后按周自动触发，通向结算·印尼内战决议
+country_event = {
+	id = MAL_confrontasi_event.6
+	title = MAL_confrontasi_event.6.t
+	desc = MAL_confrontasi_event.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MAL_confrontasi_event.6.a
+		unlock_decision_tooltip = TNW_archipelago_settle_ins_civilwar
+		custom_effect_tooltip = MAL_confrontasi_civilwar_a_tt
+		hidden_effect = {
+			add_to_variable = { var = capital_reserves value = -5 }
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = 8 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+		}
+	}
+	option = {
+		name = MAL_confrontasi_event.6.b
+		add_war_support = 0.05
+		add_stability = -0.02
+		army_experience = 10
+		custom_effect_tooltip = MAL_confrontasi_civilwar_b_tt
+		hidden_effect = {
+			add_to_variable = { var = TNW_nanyang_influence value = 4 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+		}
+	}
+}
+
+# 分水岭之后：星洲分裂后按周自动触发，通向结算·星洲分裂决议
+country_event = {
+	id = MAL_confrontasi_event.7
+	title = MAL_confrontasi_event.7.t
+	desc = MAL_confrontasi_event.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MAL_confrontasi_event.7.a
+		unlock_decision_tooltip = TNW_archipelago_settle_mal_split
+		custom_effect_tooltip = MAL_confrontasi_split_a_tt
+		hidden_effect = {
+			add_to_variable = { var = capital_reserves value = 10 }
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = -10 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+		}
+	}
+	option = {
+		name = MAL_confrontasi_event.7.b
+		add_war_support = 0.03
+		add_stability = -0.03
+		custom_effect_tooltip = MAL_confrontasi_split_b_tt
+		hidden_effect = {
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = 3 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+		}
+	}
+}
+
+# 公告见报：争霸结算后按周自动触发，胜利者分支通向胜利红利决议
+country_event = {
+	id = MAL_confrontasi_event.8
+	title = MAL_confrontasi_event.8.t
+	desc = MAL_confrontasi_event.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MAL_confrontasi_event.8.a
+		trigger = { has_idea = TNW_Archipelago_Contest_Winner }
+		unlock_decision_tooltip = TNW_archipelago_victory_dividend
+		custom_effect_tooltip = MAL_confrontasi_verdict_a_tt
+		hidden_effect = {
+			add_to_variable = { var = capital_reserves value = 20 }
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = 10 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+		}
+	}
+	option = {
+		name = MAL_confrontasi_event.8.b
+		add_stability = -0.03
+		custom_effect_tooltip = MAL_confrontasi_verdict_b_tt
+		hidden_effect = {
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_to_variable = { var = TNW_nanyang_influence value = -5 }
+			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
 	}
 }

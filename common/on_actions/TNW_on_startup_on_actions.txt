@@ -394,6 +394,21 @@
 					modifier = CHI_Zhejiang_Province_election_undergoing
 				}
 			}
+			# 群岛争霸：南洋影响力基线（0-100）与全局阵营计数初始化
+			every_country = {
+				if = { limit = { tag = INS } set_variable = { TNW_nanyang_influence = 90 } }
+				if = { limit = { tag = MAL } set_variable = { TNW_nanyang_influence = 55 } }
+				if = { limit = { tag = PHI } set_variable = { TNW_nanyang_influence = 50 } }
+				if = { limit = { tag = MRP } set_variable = { TNW_nanyang_influence = 20 } }
+				if = { limit = { tag = MLK } set_variable = { TNW_nanyang_influence = 20 } }
+				if = { limit = { tag = BRN } set_variable = { TNW_nanyang_influence = 15 } }
+				if = { limit = { tag = SAB } set_variable = { TNW_nanyang_influence = 15 } }
+				if = { limit = { tag = TIM } set_variable = { TNW_nanyang_influence = 20 } }
+				if = { limit = { tag = MKS } set_variable = { TNW_nanyang_influence = 18 } }
+				if = { limit = { tag = BLI } set_variable = { TNW_nanyang_influence = 18 } }
+			}
+			set_variable = { global.TNW_arch_moscow_count = 0 }
+			set_variable = { global.TNW_arch_phal_count = 0 }
 		}
 	}
 }

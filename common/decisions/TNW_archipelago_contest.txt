@@ -1,0 +1,359 @@
+# 群岛争霸：南洋群岛冷战博弈
+# 分类定义见 common/decisions/categories/TNW_archipelago_categories.txt
+# 本文件只放决议；顶层块名必须与分类同名（本模组既有范式）。
+# 态势面板由分类名 _desc 的本地化变量插值呈现，不再用永远不可点的假决议。
+
+TNW_archipelago_contest_category = {
+
+	# 彰显影响力：以国库储备换取本国在南洋群岛的影响力
+	TNW_archipelago_assert_influence = {
+		icon = generic_political_actions
+		cost = 25
+		days_re_enable = 90
+		fire_only_once = no
+		visible = {
+			always = yes
+		}
+		available = {
+			check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			NOT = { has_global_flag = TNW_arch_contest_decided }
+		}
+		complete_effect = {
+			custom_effect_tooltip = TNW_arch_assert_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -5 }
+				add_to_variable = { var = TNW_nanyang_influence value = 8 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# 商贸攻势：动用国库打开出口，抬升富裕水平与其月度增速
+	TNW_archipelago_trade_offensive = {
+		icon = generic_industry
+		cost = 50
+		days_re_enable = 120
+		fire_only_once = no
+		visible = {
+			always = yes
+		}
+		available = {
+			check_variable = { var = capital_reserves value = 10 compare = greater_than_or_equals }
+			check_variable = { var = TNW_nanyang_influence value = 30 compare = greater_than_or_equals }
+			NOT = { has_global_flag = TNW_arch_contest_decided }
+		}
+		complete_effect = {
+			custom_effect_tooltip = TNW_arch_trade_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -10 }
+				add_to_variable = { var = TNW_Affluence_value value = 10 }
+				clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+				add_to_variable = { var = TNW_Affluence_monthly_value value = 1 }
+				add_to_variable = { var = TNW_nanyang_influence value = 6 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# 工业援助团：以国库换取工业化进度与月度增速
+	TNW_archipelago_industrial_mission = {
+		icon = GFX_decision_generic_factory
+		cost = 50
+		days_re_enable = 120
+		fire_only_once = no
+		visible = {
+			always = yes
+		}
+		available = {
+			check_variable = { var = capital_reserves value = 15 compare = greater_than_or_equals }
+			NOT = { has_global_flag = TNW_arch_contest_decided }
+		}
+		complete_effect = {
+			custom_effect_tooltip = TNW_arch_industry_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -15 }
+				add_to_variable = { var = TNW_Industrial_scale_value value = 12 }
+				clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+				add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 1 }
+				add_to_variable = { var = TNW_nanyang_influence value = 4 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# 争取群岛诸邦：把尚未站队的小国拉进本国所属阵营（改变月度阵营计数）
+	TNW_archipelago_court_small_states = {
+		icon = generic_propaganda
+		cost = 75
+		days_re_enable = 180
+		fire_only_once = no
+		visible = {
+			NOT = { has_global_flag = TNW_arch_contest_decided }
+		}
+		available = {
+			check_variable = { var = TNW_nanyang_influence value = 60 compare = greater_than_or_equals }
+			check_variable = { var = capital_reserves value = 20 compare = greater_than_or_equals }
+		}
+		complete_effect = {
+			custom_effect_tooltip = TNW_arch_court_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -20 }
+				if = {
+					limit = { has_idea = moscow_aligned_nation }
+					every_country = {
+						limit = {
+							OR = {
+								tag = MRP
+								tag = MLK
+								tag = BRN
+								tag = SAB
+								tag = TIM
+								tag = MKS
+								tag = BLI
+							}
+							NOT = { has_idea = moscow_aligned_nation }
+							NOT = { has_idea = phalanstere_aligned_nation }
+						}
+						add_ideas = moscow_aligned_nation
+					}
+				}
+				else_if = {
+					limit = { has_idea = phalanstere_aligned_nation }
+					every_country = {
+						limit = {
+							OR = {
+								tag = MRP
+								tag = MLK
+								tag = BRN
+								tag = SAB
+								tag = TIM
+								tag = MKS
+								tag = BLI
+							}
+							NOT = { has_idea = moscow_aligned_nation }
+							NOT = { has_idea = phalanstere_aligned_nation }
+						}
+						add_ideas = phalanstere_aligned_nation
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# 包围网红利：由国策 MAL_Strengthen_Archipelago_Cordon 的旗标解锁
+	TNW_archipelago_cordon_dividend = {
+		icon = GFX_decision_generic_army
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			has_country_flag = TNW_arch_cordon_active
+		}
+		available = {
+			NOT = { has_country_flag = TNW_arch_cordon_dividend_claimed }
+		}
+		complete_effect = {
+			custom_effect_tooltip = TNW_arch_cordon_tt
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			hidden_effect = {
+				set_country_flag = TNW_arch_cordon_dividend_claimed
+				add_to_variable = { var = capital_reserves value = 15 }
+				add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+				clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+				add_to_variable = { var = TNW_nanyang_influence value = 6 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# 苏拉威西通道：由国策 MAL_Recontact_Sulawesi 的旗标解锁
+	TNW_archipelago_sulawesi_corridor = {
+		icon = generic_army_support
+		cost = 25
+		fire_only_once = yes
+		visible = {
+			has_country_flag = TNW_arch_sulawesi_contacted
+		}
+		available = {
+			NOT = { has_country_flag = TNW_arch_sulawesi_corridor_open }
+		}
+		complete_effect = {
+			custom_effect_tooltip = TNW_arch_corridor_tt
+			hidden_effect = {
+				set_country_flag = TNW_arch_sulawesi_corridor_open
+				country_event = { id = MAL_confrontasi_event.4 days = 10 }
+				add_to_variable = { var = capital_reserves value = 10 }
+				add_to_variable = { var = TNW_nanyang_influence value = 10 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+				MKS = {
+					add_to_variable = { var = TNW_nanyang_influence value = 10 }
+					clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# 结算·印尼内战：印尼陷入内战时，由影响力达标的一方收网
+	TNW_archipelago_settle_ins_civilwar = {
+		icon = GFX_decision_generic_arrest
+		cost = 100
+		fire_only_once = yes
+		visible = {
+			NOT = { has_global_flag = TNW_arch_contest_decided }
+			INS = { has_country_flag = INS_civil_war_ongoing }
+		}
+		available = {
+			NOT = { tag = INS }
+			check_variable = { var = TNW_nanyang_influence value = 60 compare = greater_than_or_equals }
+		}
+		complete_effect = {
+			custom_effect_tooltip = TNW_arch_settle_ins_tt
+			hidden_effect = {
+				set_global_flag = TNW_arch_contest_decided
+				MAL = {
+					add_ideas = TNW_Archipelago_Contest_Winner
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# 结算·星洲分裂：星洲退出争霸后，由菲律宾顶替为对抗极
+	TNW_archipelago_settle_mal_split = {
+		icon = GFX_decision_generic_arrest
+		cost = 100
+		fire_only_once = yes
+		visible = {
+			NOT = { has_global_flag = TNW_arch_contest_decided }
+			MAL = { has_country_flag = MAL_dissolution_done }
+		}
+		available = {
+			tag = PHI
+			check_variable = { var = TNW_nanyang_influence value = 60 compare = greater_than_or_equals }
+		}
+		complete_effect = {
+			custom_effect_tooltip = TNW_arch_settle_mal_tt
+			hidden_effect = {
+				set_global_flag = TNW_arch_contest_decided
+				add_ideas = TNW_Archipelago_Contest_Winner
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# 冷战压倒性胜利：本方阵营在群岛取得压倒多数且本国影响力领先
+	TNW_archipelago_coldwar_dominance = {
+		icon = GFX_decision_generic_police_action
+		cost = 150
+		fire_only_once = yes
+		visible = {
+			NOT = { has_global_flag = TNW_arch_contest_decided }
+		}
+		available = {
+			check_variable = { var = TNW_nanyang_influence value = 70 compare = greater_than_or_equals }
+			OR = {
+				AND = {
+					has_idea = moscow_aligned_nation
+					check_variable = { var = global.TNW_arch_moscow_count value = 6 compare = greater_than_or_equals }
+				}
+				AND = {
+					has_idea = phalanstere_aligned_nation
+					check_variable = { var = global.TNW_arch_phal_count value = 6 compare = greater_than_or_equals }
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = TNW_arch_coldwar_tt
+			hidden_effect = {
+				set_global_flag = TNW_arch_contest_decided
+				add_ideas = TNW_Archipelago_Contest_Winner
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# 宣布胜利：由国策 MAL_Next_Confrontation_Phase 解锁可见
+	# 胜利判定条件暂置「始终为非」，待后续填真实条件；complete_effect 已写好，条件填上即可生效。
+	TNW_archipelago_proclaim_victory = {
+		icon = GFX_decision_generic_police_action
+		cost = 150
+		fire_only_once = yes
+		visible = {
+			has_country_flag = MAL_confrontation_phase_2
+			NOT = { has_global_flag = TNW_arch_contest_decided }
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+			custom_effect_tooltip = TNW_arch_proclaim_tt
+			hidden_effect = {
+				set_global_flag = TNW_arch_contest_decided
+				add_ideas = TNW_Archipelago_Contest_Winner
+				add_to_variable = { var = TNW_nanyang_influence value = 10 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# 胜利红利：读取胜利者精神，兑现经济与发展度收益
+	TNW_archipelago_victory_dividend = {
+		icon = GFX_decision_generic_factory
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			has_idea = TNW_Archipelago_Contest_Winner
+		}
+		available = {
+			NOT = { has_country_flag = TNW_arch_dividend_claimed }
+		}
+		complete_effect = {
+			custom_effect_tooltip = TNW_arch_dividend_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			hidden_effect = {
+				set_country_flag = TNW_arch_dividend_claimed
+				add_to_variable = { var = capital_reserves value = 30 }
+				add_to_variable = { var = TNW_Affluence_value value = 15 }
+				clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+				add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+				clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+				add_to_variable = { var = TNW_nanyang_influence value = 10 }
+				clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

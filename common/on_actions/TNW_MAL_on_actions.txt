@@ -26,5 +26,43 @@ on_weekly_MAL = {
 			set_country_flag = MAL_penang_assembly_fired
 			country_event = { id = MAL_penang_crisis.3 }
 		}
+
+		# ===== 对峙事件链：按周检查变量/旗标自动触发（槟城危机同范式，独立 if 不并入上面的 else_if 链） =====
+		if = {
+			limit = {
+				has_country_flag = MAL_confrontation_started
+				NOT = { has_country_flag = MAL_confrontasi_aus_seen }
+				check_variable = { var = TNW_nanyang_influence value = 65 compare = greater_than_or_equals }
+			}
+			set_country_flag = MAL_confrontasi_aus_seen
+			country_event = { id = MAL_confrontasi_event.5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = MAL_confrontation_started
+				NOT = { has_country_flag = MAL_confrontasi_civilwar_seen }
+				INS = { has_country_flag = INS_civil_war_ongoing }
+			}
+			set_country_flag = MAL_confrontasi_civilwar_seen
+			country_event = { id = MAL_confrontasi_event.6 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = MAL_confrontation_started
+				NOT = { has_country_flag = MAL_confrontasi_split_seen }
+				has_country_flag = MAL_dissolution_done
+			}
+			set_country_flag = MAL_confrontasi_split_seen
+			country_event = { id = MAL_confrontasi_event.7 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = MAL_confrontation_started
+				NOT = { has_country_flag = MAL_confrontasi_verdict_seen }
+				has_global_flag = TNW_arch_contest_decided
+			}
+			set_country_flag = MAL_confrontasi_verdict_seen
+			country_event = { id = MAL_confrontasi_event.8 }
+		}
 	}
 }

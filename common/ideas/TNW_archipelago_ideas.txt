@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		# 南洋争霸的胜利者：经济与行政收益走模组经济系统的数值 modifier
+		TNW_Archipelago_Contest_Winner = {
+			picture = GFX_idea_MAL_Three_Armies
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				division_attack = 0.05
+				division_defense = 0.05
+				goods_export_modifier = 5
+				government_investment_modifier = 5
+			}
+		}
+	}
+}
