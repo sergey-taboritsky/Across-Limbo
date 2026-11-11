@@ -1,383 +1,596 @@
-# INS 继承战：六派 + 三军系 立场五层显示（拥护/支持/中立/反对/仇视，按在任总统方向翻转）
-# 苏托莫态度：在世=三态（中立/倾向苏加诺/倾向亚明）；国父之死(event.10)后=总统委员会主席人选；继位后整段隐藏
-# 候选人三段：仅在 双头政权期(soetomo_dead 且未继位) 显示，附实时影响力分数
-
+# INS 继承战：六派 + 三军系 立场显示三态（2026-11-11 重写）
+# 立场轴 _var 方向以游戏内数值为准：0 = 全面亲苏加诺 / 100 = 全面亲亚明
+#   依据 INS_calc_scores_effect（<=20 全额计入 sukarno_score、>80 全额计入 yamin_score）
+#   以及派系决议 tooltip（+5 向亚明移动、-5 向苏加诺移动）
+# ① INS_succession_sukarno：苏加诺已就任 -> 显示对苏加诺政府的态度，_var 越低越拥护
+# ② INS_succession_yamin：  亚明已就任   -> 显示对亚明政府的态度，  _var 越高越拥护
+# ③ 两人都未就任（苏托莫在世 / 双头政权期 / INS_succession_army 军政府期）
+#   -> 显示派系态度轴：支持苏加诺 / 倾向苏加诺 / 中立 / 倾向亚明 / 支持亚明
+# 注意 defined_text 自上而下取第一个 trigger 成立的 text，带旗标的分支必须在前，
+# 最后一块必须无 trigger 作兜底；苏托莫三态与候选人段沿用原文件，勿动。
 defined_text = {
 	name = Get_INS_stance_goni
+	# ① 苏加诺政府（_var 越低越拥护）
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_goni_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_goni_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_goni_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_goni_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno }
+		localization_key = INS_gov_sukarno_hostile
+	}
+	# ② 亚明政府（_var 越高越拥护）
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_goni_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_champion
+		localization_key = INS_gov_yamin_hostile
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_goni_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_gov_yamin_oppose
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_goni_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_gov_yamin_neutral
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_goni_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_gov_yamin_support
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin }
-		localization_key = INS_stance_hostile
+		localization_key = INS_gov_yamin_champion
 	}
+	# ③ 未产生总统：派系拥戴的继任人选
 	text = {
 		trigger = { check_variable = { var = INS_goni_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_hostile
+		localization_key = INS_stance_pro_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_goni_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_stance_lean_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_goni_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_stance_undecided
 	}
 	text = {
 		trigger = { check_variable = { var = INS_goni_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_stance_lean_yamin
 	}
 	text = {
-		localization_key = INS_stance_champion
+		localization_key = INS_stance_pro_yamin
 	}
 }
 defined_text = {
 	name = Get_INS_stance_marhaen
+	# ① 苏加诺政府（_var 越低越拥护）
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_marhaen_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_marhaen_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_marhaen_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_marhaen_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno }
+		localization_key = INS_gov_sukarno_hostile
+	}
+	# ② 亚明政府（_var 越高越拥护）
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_marhaen_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_champion
+		localization_key = INS_gov_yamin_hostile
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_marhaen_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_gov_yamin_oppose
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_marhaen_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_gov_yamin_neutral
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_marhaen_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_gov_yamin_support
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin }
-		localization_key = INS_stance_hostile
+		localization_key = INS_gov_yamin_champion
 	}
+	# ③ 未产生总统：派系拥戴的继任人选
 	text = {
 		trigger = { check_variable = { var = INS_marhaen_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_hostile
+		localization_key = INS_stance_pro_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_marhaen_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_stance_lean_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_marhaen_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_stance_undecided
 	}
 	text = {
 		trigger = { check_variable = { var = INS_marhaen_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_stance_lean_yamin
 	}
 	text = {
-		localization_key = INS_stance_champion
+		localization_key = INS_stance_pro_yamin
 	}
 }
 defined_text = {
 	name = Get_INS_stance_hokokai
+	# ① 苏加诺政府（_var 越低越拥护）
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_hokokai_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_hokokai_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_hokokai_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_hokokai_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno }
+		localization_key = INS_gov_sukarno_hostile
+	}
+	# ② 亚明政府（_var 越高越拥护）
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_hokokai_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_champion
+		localization_key = INS_gov_yamin_hostile
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_hokokai_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_gov_yamin_oppose
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_hokokai_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_gov_yamin_neutral
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_hokokai_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_gov_yamin_support
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin }
-		localization_key = INS_stance_hostile
+		localization_key = INS_gov_yamin_champion
 	}
+	# ③ 未产生总统：派系拥戴的继任人选
 	text = {
 		trigger = { check_variable = { var = INS_hokokai_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_hostile
+		localization_key = INS_stance_pro_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_hokokai_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_stance_lean_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_hokokai_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_stance_undecided
 	}
 	text = {
 		trigger = { check_variable = { var = INS_hokokai_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_stance_lean_yamin
 	}
 	text = {
-		localization_key = INS_stance_champion
+		localization_key = INS_stance_pro_yamin
 	}
 }
 defined_text = {
 	name = Get_INS_stance_sartono
+	# ① 苏加诺政府（_var 越低越拥护）
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_sartono_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_sartono_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_sartono_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_sartono_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno }
+		localization_key = INS_gov_sukarno_hostile
+	}
+	# ② 亚明政府（_var 越高越拥护）
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sartono_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_champion
+		localization_key = INS_gov_yamin_hostile
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sartono_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_gov_yamin_oppose
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sartono_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_gov_yamin_neutral
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sartono_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_gov_yamin_support
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin }
-		localization_key = INS_stance_hostile
+		localization_key = INS_gov_yamin_champion
 	}
+	# ③ 未产生总统：派系拥戴的继任人选
 	text = {
 		trigger = { check_variable = { var = INS_sartono_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_hostile
+		localization_key = INS_stance_pro_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_sartono_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_stance_lean_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_sartono_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_stance_undecided
 	}
 	text = {
 		trigger = { check_variable = { var = INS_sartono_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_stance_lean_yamin
 	}
 	text = {
-		localization_key = INS_stance_champion
+		localization_key = INS_stance_pro_yamin
 	}
 }
 defined_text = {
 	name = Get_INS_stance_sarekat
+	# ① 苏加诺政府（_var 越低越拥护）
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_sarekat_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_sarekat_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_sarekat_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_sarekat_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno }
+		localization_key = INS_gov_sukarno_hostile
+	}
+	# ② 亚明政府（_var 越高越拥护）
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sarekat_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_champion
+		localization_key = INS_gov_yamin_hostile
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sarekat_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_gov_yamin_oppose
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sarekat_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_gov_yamin_neutral
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_sarekat_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_gov_yamin_support
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin }
-		localization_key = INS_stance_hostile
+		localization_key = INS_gov_yamin_champion
 	}
+	# ③ 未产生总统：派系拥戴的继任人选
 	text = {
 		trigger = { check_variable = { var = INS_sarekat_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_hostile
+		localization_key = INS_stance_pro_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_sarekat_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_stance_lean_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_sarekat_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_stance_undecided
 	}
 	text = {
 		trigger = { check_variable = { var = INS_sarekat_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_stance_lean_yamin
 	}
 	text = {
-		localization_key = INS_stance_champion
+		localization_key = INS_stance_pro_yamin
 	}
 }
 defined_text = {
 	name = Get_INS_stance_murba
+	# ① 苏加诺政府（_var 越低越拥护）
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_murba_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_murba_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_murba_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_murba_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno }
+		localization_key = INS_gov_sukarno_hostile
+	}
+	# ② 亚明政府（_var 越高越拥护）
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_murba_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_champion
+		localization_key = INS_gov_yamin_hostile
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_murba_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_gov_yamin_oppose
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_murba_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_gov_yamin_neutral
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_murba_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_gov_yamin_support
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin }
-		localization_key = INS_stance_hostile
+		localization_key = INS_gov_yamin_champion
 	}
+	# ③ 未产生总统：派系拥戴的继任人选
 	text = {
 		trigger = { check_variable = { var = INS_murba_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_hostile
+		localization_key = INS_stance_pro_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_murba_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_stance_lean_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_murba_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_stance_undecided
 	}
 	text = {
 		trigger = { check_variable = { var = INS_murba_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_stance_lean_yamin
 	}
 	text = {
-		localization_key = INS_stance_champion
+		localization_key = INS_stance_pro_yamin
 	}
 }
 defined_text = {
 	name = Get_INS_stance_army_siliwangi
+	# ① 苏加诺政府（_var 越低越拥护）
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_army_siliwangi_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_army_siliwangi_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_army_siliwangi_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_army_siliwangi_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno }
+		localization_key = INS_gov_sukarno_hostile
+	}
+	# ② 亚明政府（_var 越高越拥护）
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_siliwangi_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_champion
+		localization_key = INS_gov_yamin_hostile
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_siliwangi_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_gov_yamin_oppose
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_siliwangi_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_gov_yamin_neutral
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_siliwangi_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_gov_yamin_support
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin }
-		localization_key = INS_stance_hostile
+		localization_key = INS_gov_yamin_champion
 	}
+	# ③ 未产生总统：派系拥戴的继任人选
 	text = {
 		trigger = { check_variable = { var = INS_army_siliwangi_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_hostile
+		localization_key = INS_stance_pro_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_siliwangi_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_stance_lean_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_siliwangi_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_stance_undecided
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_siliwangi_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_stance_lean_yamin
 	}
 	text = {
-		localization_key = INS_stance_champion
+		localization_key = INS_stance_pro_yamin
 	}
 }
 defined_text = {
 	name = Get_INS_stance_army_guerrilla
+	# ① 苏加诺政府（_var 越低越拥护）
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_army_guerrilla_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_army_guerrilla_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_army_guerrilla_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_army_guerrilla_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno }
+		localization_key = INS_gov_sukarno_hostile
+	}
+	# ② 亚明政府（_var 越高越拥护）
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_guerrilla_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_champion
+		localization_key = INS_gov_yamin_hostile
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_guerrilla_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_gov_yamin_oppose
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_guerrilla_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_gov_yamin_neutral
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_guerrilla_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_gov_yamin_support
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin }
-		localization_key = INS_stance_hostile
+		localization_key = INS_gov_yamin_champion
 	}
+	# ③ 未产生总统：派系拥戴的继任人选
 	text = {
 		trigger = { check_variable = { var = INS_army_guerrilla_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_hostile
+		localization_key = INS_stance_pro_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_guerrilla_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_stance_lean_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_guerrilla_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_stance_undecided
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_guerrilla_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_stance_lean_yamin
 	}
 	text = {
-		localization_key = INS_stance_champion
+		localization_key = INS_stance_pro_yamin
 	}
 }
 defined_text = {
 	name = Get_INS_stance_army_gyugun
+	# ① 苏加诺政府（_var 越低越拥护）
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_army_gyugun_var value = 20 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_champion
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_army_gyugun_var value = 40 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_support
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_army_gyugun_var value = 60 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_neutral
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno check_variable = { var = INS_army_gyugun_var value = 80 compare = less_than_or_equals } }
+		localization_key = INS_gov_sukarno_oppose
+	}
+	text = {
+		trigger = { has_country_flag = INS_succession_sukarno }
+		localization_key = INS_gov_sukarno_hostile
+	}
+	# ② 亚明政府（_var 越高越拥护）
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_gyugun_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_champion
+		localization_key = INS_gov_yamin_hostile
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_gyugun_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_gov_yamin_oppose
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_gyugun_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_gov_yamin_neutral
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin check_variable = { var = INS_army_gyugun_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_gov_yamin_support
 	}
 	text = {
 		trigger = { has_country_flag = INS_succession_yamin }
-		localization_key = INS_stance_hostile
+		localization_key = INS_gov_yamin_champion
 	}
+	# ③ 未产生总统：派系拥戴的继任人选
 	text = {
 		trigger = { check_variable = { var = INS_army_gyugun_var value = 20 compare = less_than_or_equals } }
-		localization_key = INS_stance_hostile
+		localization_key = INS_stance_pro_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_gyugun_var value = 40 compare = less_than_or_equals } }
-		localization_key = INS_stance_oppose
+		localization_key = INS_stance_lean_sukarno
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_gyugun_var value = 60 compare = less_than_or_equals } }
-		localization_key = INS_stance_neutral
+		localization_key = INS_stance_undecided
 	}
 	text = {
 		trigger = { check_variable = { var = INS_army_gyugun_var value = 80 compare = less_than_or_equals } }
-		localization_key = INS_stance_support
+		localization_key = INS_stance_lean_yamin
 	}
 	text = {
-		localization_key = INS_stance_champion
+		localization_key = INS_stance_pro_yamin
 	}
 }
 defined_text = {
