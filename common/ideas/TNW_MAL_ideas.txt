@@ -91,5 +91,237 @@ ideas = {
 				command_power_gain_mult = 0.10
 			}
 		}
+		#星洲联邦防卫军 dummy：仅作 effect_tooltip 的变化幅度载体，绝不可实际添加
+		MAL_sfdf_dummy_0 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		MAL_sfdf_dummy_1 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+			}
+		}
+		MAL_sfdf_dummy_2 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.03
+				planning_speed = 0.05
+			}
+		}
+		MAL_sfdf_dummy_3 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+			}
+		}
+		MAL_sfdf_dummy_4 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				experience_gain_navy_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		MAL_sfdf_dummy_5 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				air_attack_factor = 0.03
+				air_doctrine_cost_factor = -0.05
+			}
+		}
+		MAL_sfdf_dummy_6 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+		MAL_sfdf_dummy_7 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+		MAL_sfdf_dummy_8 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.03
+				max_planning = 0.05
+			}
+		}
+		MAL_sfdf_dummy_9 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				air_untrained_pilots_penalty_factor = -0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		MAL_sfdf_dummy_10 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				air_attack_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		MAL_sfdf_dummy_11 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				naval_speed_factor = 0.03
+			}
+		}
+		MAL_sfdf_dummy_12 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.03
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		MAL_sfdf_dummy_13 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.03
+				supply_consumption_factor = -0.05
+			}
+		}
+		MAL_sfdf_dummy_14 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				experience_gain_army_factor = 0.05
+				research_speed_factor = 0.02
+			}
+		}
+		MAL_sfdf_dummy_15 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				air_attack_factor = 0.05
+				air_untrained_pilots_penalty_factor = -0.05
+			}
+		}
+		MAL_sfdf_dummy_16 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				air_doctrine_cost_factor = -0.05
+				air_untrained_pilots_penalty_factor = -0.05
+			}
+		}
+		MAL_sfdf_dummy_17 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				experience_gain_navy_factor = 0.05
+				production_speed_dockyard_factor = 0.03
+			}
+		}
+		MAL_sfdf_dummy_18 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0.03
+				production_efficiency_growth_factor = 0.05
+			}
+		}
+		MAL_sfdf_dummy_19 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				experience_gain_navy_factor = 0.05
+				naval_speed_factor = 0.03
+			}
+		}
+		MAL_sfdf_dummy_20 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				experience_gain_navy_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+		MAL_sfdf_dummy_21 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.03
+			}
+		}
+		MAL_sfdf_dummy_22 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		MAL_sfdf_dummy_23 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				max_planning = 0.05
+				planning_speed = 0.05
+			}
+		}
+		MAL_sfdf_dummy_24 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.08
+				supply_consumption_factor = -0.05
+			}
+		}
+		MAL_sfdf_dummy_25 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		MAL_sfdf_dummy_26 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.08
+				land_doctrine_cost_factor = -0.05
+			}
+		}
+		MAL_sfdf_dummy_27 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				air_untrained_pilots_penalty_factor = -0.05
+				research_speed_factor = 0.02
+			}
+		}
+		MAL_sfdf_dummy_28 = {
+			name = MAL_sfdf_dummy
+			removal_cost = -1
+			modifier = {
+				air_attack_factor = 0.08
+				air_doctrine_cost_factor = -0.05
+				air_untrained_pilots_penalty_factor = -0.05
+			}
+		}
 	}
 }

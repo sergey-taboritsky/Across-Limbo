@@ -1,0 +1,30 @@
+# 星洲联邦防卫军：MAL 军事线动态修正
+# 变量由 MAL_One_Nation_One_Army 初始化为 0，后续 29 个国策逐级写入；
+# 变化幅度通过 TNW_MAL_ideas.txt 的 dummy 精神在 effect_tooltip 中显示。
+MAL_singapore_federal_defense_dm = {
+	icon = GFX_idea_generic_army_war_college
+	enable = { always = yes }
+
+	production_speed_arms_factory_factor = MAL_sfdf_arms_factory_build
+	industrial_capacity_factory = MAL_sfdf_factory_output
+	industrial_capacity_dockyard = MAL_sfdf_dockyard_output
+	production_speed_dockyard_factor = MAL_sfdf_dockyard_build
+	production_speed_buildings_factor = MAL_sfdf_buildings_build
+	production_speed_infrastructure_factor = MAL_sfdf_infra_build
+	production_factory_max_efficiency_factor = MAL_sfdf_prod_eff_cap
+	production_efficiency_growth_factor = MAL_sfdf_prod_eff_growth
+	research_speed_factor = MAL_sfdf_research
+	army_attack_factor = MAL_sfdf_army_attack
+	army_defence_factor = MAL_sfdf_army_defence
+	army_org_factor = MAL_sfdf_army_org
+	experience_gain_army_factor = MAL_sfdf_army_xp
+	experience_gain_navy_factor = MAL_sfdf_navy_xp
+	air_attack_factor = MAL_sfdf_air_attack
+	air_doctrine_cost_factor = MAL_sfdf_air_doctrine
+	air_untrained_pilots_penalty_factor = MAL_sfdf_air_untrained
+	land_doctrine_cost_factor = MAL_sfdf_land_doctrine
+	planning_speed = MAL_sfdf_planning
+	max_planning = MAL_sfdf_max_planning
+	supply_consumption_factor = MAL_sfdf_supply
+	naval_speed_factor = MAL_sfdf_naval_speed
+}

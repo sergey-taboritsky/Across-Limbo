@@ -27,6 +27,11 @@ focus_tree = {
 				ideology = Authoritarianism
 				popularity = 0.02
 			}
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 	focus = {
@@ -50,6 +55,15 @@ focus_tree = {
 				ideology = Nationalism
 				popularity = -0.01
 			}
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 1 }
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 5 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
 		}
 	}
 	focus = {
@@ -112,6 +126,14 @@ focus_tree = {
 			}
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
 			TNW_level_development_agriculture_upgrade_effect = yes
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_fall_tt
+			add_to_variable = { var = TNW_Affluence_value value = -5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 4 }
 		}
 	}
 	focus = {
@@ -156,6 +178,11 @@ focus_tree = {
 				ideology = Liberalism
 				popularity = 0.02
 			}
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -4 }
 		}
 	}
 	focus = {
@@ -181,6 +208,14 @@ focus_tree = {
 				ideology = Nationalism
 				popularity = -0.02
 			}
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 4 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 	focus = {
@@ -204,6 +239,14 @@ focus_tree = {
 			}
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 10 }
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 8 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_fall_tt
+			add_to_variable = { var = TNW_Affluence_value value = -3 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 	focus = {
@@ -278,6 +321,14 @@ focus_tree = {
 				ideology = syndicalism
 				popularity = 0.02
 			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 3 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 	focus = {
@@ -298,6 +349,13 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
 			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
 			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 1 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 	focus = {
@@ -316,6 +374,13 @@ focus_tree = {
 				ideology = Social_democracy
 				popularity = 0.03
 			}
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 6 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
 		}
 	}
 	focus = {
@@ -373,6 +438,13 @@ focus_tree = {
 			}
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 8 }
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 6 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 	focus = {
@@ -438,6 +510,14 @@ focus_tree = {
 				ideology = Authoritarianism
 				popularity = -0.02
 			}
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 6 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_fall_tt
+			add_to_variable = { var = TNW_Affluence_value value = -3 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 	focus = {
@@ -472,9 +552,15 @@ focus_tree = {
 			add_war_support = 0.03
 			add_stability = 0.02
 			add_political_power = 25
-			add_stability = 0.03
-			add_war_support = 0.02
 			add_popularity = { ideology = Authoritarianism popularity = -0.02 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 3 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
 		}
 	}
 	focus = {
@@ -516,6 +602,14 @@ focus_tree = {
 				ideology = socialism
 				popularity = 0.04
 			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 5 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 	focus = {
@@ -540,6 +634,13 @@ focus_tree = {
 				ideology = syndicalism
 				popularity = 0.02
 			}
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 5 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 	focus = {
@@ -562,6 +663,13 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 10 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 1 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
 		}
 	}
 	focus = {
@@ -578,6 +686,14 @@ focus_tree = {
 			add_political_power = 10
 			add_stability = 0.03
 			add_popularity = { ideology = Liberalism popularity = 0.02 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 	focus = {
@@ -601,6 +717,13 @@ focus_tree = {
 			}
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 5 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 1 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
 		}
 	}
 	focus = {
@@ -624,6 +747,13 @@ focus_tree = {
 			add_stability = 0.01
 			custom_effect_tooltip = MAL_penang_unrest_fall_tt
 			add_to_variable = { var = TNW_penang_unrest value = -5 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 6 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 	focus = {
@@ -658,10 +788,16 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Secret_Society_Security"
 			add_political_power = 10
 			add_stability = 0.01
-			add_stability = 0.02
 			add_war_support = 0.02
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			TNW_level_development_bureaucracy_upgrade_effect = yes
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 1 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 3 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 	focus = {
@@ -702,6 +838,14 @@ focus_tree = {
 			add_war_support = 0.02
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 5 }
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 6 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 3 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 	focus = {
@@ -1386,6 +1530,14 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Receive_German_Bases"
 			navy_experience = 25
 			add_political_power = 25
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 4 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 6 }
 		}
 	}
 
@@ -1403,6 +1555,13 @@ focus_tree = {
 			add_political_power = 25
 			army_experience = 10
 			add_war_support = 0.01
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 4 }
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 3 }
 		}
 	}
 
@@ -1419,6 +1578,11 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Share_Nanjing_Aid"
 			army_experience = 15
 			add_war_support = 0.02
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 8 }
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 5 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1444,6 +1608,14 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = MAL_zhuang_in_party
 			}
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 3 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 
@@ -1462,6 +1634,14 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_136_Volunteer_Corps"
 			army_experience = 15
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 5 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 3 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
 		}
 	}
 
@@ -1478,6 +1658,14 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Model_Division"
 			army_experience = 25
 			add_war_support = 0.03
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -4 }
 		}
 	}
 
@@ -1496,6 +1684,15 @@ focus_tree = {
 			add_political_power = 25
 			army_experience = 10
 			add_war_support = 0.01
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 12 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 6 }
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 1 }
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 3 }
 		}
 	}
 
@@ -1511,6 +1708,13 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Army_Artillery_Doctrine"
 			army_experience = 15
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 4 }
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 3 }
 		}
 	}
 
@@ -1526,6 +1730,13 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Local_Officer_Corps"
 			army_experience = 15
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 8 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
 		}
 	}
 
@@ -1546,6 +1757,14 @@ focus_tree = {
 			add_political_power = 25
 			add_war_support = 0.02
 			army_experience = 15
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -5 }
 		}
 	}
 
@@ -1561,11 +1780,13 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Assess_Left_Generals"
 			add_political_power = 25
-			hidden_effect = {
-			set_country_flag = MAL_officers_assessed
-			}
 			army_experience = 10
 			hidden_effect = { set_country_flag = MAL_officers_assessed }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 2 }
 		}
 	}
 
@@ -1586,6 +1807,14 @@ focus_tree = {
 			add_political_power = 25
 			army_experience = 10
 			add_stability = 0.01
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 3 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 
@@ -1606,6 +1835,14 @@ focus_tree = {
 			add_political_power = 25
 			add_stability = 0.02
 			army_experience = 10
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 3 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 2 }
 		}
 	}
 
@@ -1622,6 +1859,14 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Militia_Reserve"
 			add_war_support = 0.02
 			army_experience = 10
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 6 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 3 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
 		}
 	}
 
@@ -1639,6 +1884,14 @@ focus_tree = {
 			add_political_power = 25
 			add_war_support = 0.02
 			army_experience = 15
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -5 }
 		}
 	}
 
@@ -1690,6 +1943,11 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Fight_NRA_Factionalism"
 			add_political_power = -25
 			army_experience = 15
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 2 }
 		}
 	}
 
@@ -1706,6 +1964,14 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Merge_Chinese_Units"
 			add_political_power = -25
 			army_experience = 15
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 3 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 2 }
 		}
 	}
 
@@ -1726,6 +1992,14 @@ focus_tree = {
 			add_political_power = 25
 			add_stability = 0.02
 			army_experience = 15
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 4 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 3 }
 		}
 	}
 
@@ -1746,6 +2020,40 @@ focus_tree = {
 				remove_idea = MAL_Three_Armies
 				add_idea = MAL_One_Army
 			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 1 }
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -5 }
+			# 星洲联邦防卫军：变量全部归零，动态修正初始不提供任何效果
+			set_variable = { MAL_sfdf_arms_factory_build = 0 }
+			set_variable = { MAL_sfdf_factory_output = 0 }
+			set_variable = { MAL_sfdf_dockyard_output = 0 }
+			set_variable = { MAL_sfdf_dockyard_build = 0 }
+			set_variable = { MAL_sfdf_buildings_build = 0 }
+			set_variable = { MAL_sfdf_infra_build = 0 }
+			set_variable = { MAL_sfdf_prod_eff_cap = 0 }
+			set_variable = { MAL_sfdf_prod_eff_growth = 0 }
+			set_variable = { MAL_sfdf_research = 0 }
+			set_variable = { MAL_sfdf_army_attack = 0 }
+			set_variable = { MAL_sfdf_army_defence = 0 }
+			set_variable = { MAL_sfdf_army_org = 0 }
+			set_variable = { MAL_sfdf_army_xp = 0 }
+			set_variable = { MAL_sfdf_navy_xp = 0 }
+			set_variable = { MAL_sfdf_air_attack = 0 }
+			set_variable = { MAL_sfdf_air_doctrine = 0 }
+			set_variable = { MAL_sfdf_air_untrained = 0 }
+			set_variable = { MAL_sfdf_land_doctrine = 0 }
+			set_variable = { MAL_sfdf_planning = 0 }
+			set_variable = { MAL_sfdf_max_planning = 0 }
+			set_variable = { MAL_sfdf_supply = 0 }
+			set_variable = { MAL_sfdf_naval_speed = 0 }
+			add_dynamic_modifier = { modifier = MAL_singapore_federal_defense_dm }
 		}
 	}
 
@@ -2926,6 +3234,880 @@ focus = {
 			}
 			custom_effect_tooltip = {
 				text = MAL_Formalize_Archipelago_Cordon_tt3
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Tactical_Doctrine_Training
+		icon = GFX_goal_unknown
+		cost = 7
+		x = 27
+		y = 10
+		prerequisite = {
+			focus = MAL_One_Nation_One_Army
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Tactical_Doctrine_Training"
+			army_experience = 25
+			add_political_power = 20
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 4 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_to_variable = { MAL_sfdf_land_doctrine = -0.05 }
+			add_to_variable = { MAL_sfdf_army_xp = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Commission_Young_Officers
+		icon = GFX_goal_generic_army_motorized
+		cost = 7
+		x = 29
+		y = 10
+		prerequisite = {
+			focus = MAL_One_Nation_One_Army
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Commission_Young_Officers"
+			army_experience = 20
+			add_political_power = 25
+			add_stability = 0.01
+			add_to_variable = { MAL_sfdf_army_org = 0.03 }
+			add_to_variable = { MAL_sfdf_planning = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Deploy_Model_Division
+		icon = GFX_goal_generic_army_motorized
+		cost = 7
+		x = 28
+		y = 11
+		prerequisite = {
+			focus = MAL_Tactical_Doctrine_Training
+		}
+		prerequisite = {
+			focus = MAL_Commission_Young_Officers
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Deploy_Model_Division"
+			army_experience = 20
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1500
+			}
+			add_to_variable = { MAL_sfdf_army_attack = 0.03 }
+			add_to_variable = { MAL_sfdf_army_defence = 0.03 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Establish_Singapore_Admiralty
+		icon = GFX_goal_generic_build_navy
+		cost = 7
+		x = 24
+		y = 11
+		prerequisite = {
+			focus = MAL_Tactical_Doctrine_Training
+		}
+		prerequisite = {
+			focus = MAL_Commission_Young_Officers
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Establish_Singapore_Admiralty"
+			navy_experience = 25
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
+			add_to_variable = { MAL_sfdf_dockyard_output = 0.05 }
+			add_to_variable = { MAL_sfdf_navy_xp = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_4
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Homeland_Air_Defense_Conference
+		icon = GFX_goal_generic_build_airforce
+		cost = 7
+		x = 32
+		y = 11
+		prerequisite = {
+			focus = MAL_Tactical_Doctrine_Training
+		}
+		prerequisite = {
+			focus = MAL_Commission_Young_Officers
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Homeland_Air_Defense_Conference"
+			air_experience = 25
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
+			add_to_variable = { MAL_sfdf_air_attack = 0.03 }
+			add_to_variable = { MAL_sfdf_air_doctrine = -0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Claim_Japanese_Warship_Reparations
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5
+		x = 24
+		y = 12
+		prerequisite = {
+			focus = MAL_Establish_Singapore_Admiralty
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Claim_Japanese_Warship_Reparations"
+			navy_experience = 10
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			add_to_variable = { var = capital_reserves value = 6 }
+			add_to_variable = { MAL_sfdf_dockyard_build = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_6
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Restore_German_East_Asia_Arsenal
+		icon = GFX_goal_generic_build_tank
+		cost = 10
+		x = 27
+		y = 12
+		prerequisite = {
+			focus = MAL_Deploy_Model_Division
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Restore_German_East_Asia_Arsenal"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -4 }
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_to_variable = { MAL_sfdf_arms_factory_build = 0.10 }
+			add_to_variable = { MAL_sfdf_factory_output = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_7
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Recruit_Former_Singapore_Generals
+		icon = GFX_goal_unknown
+		cost = 7
+		x = 29
+		y = 12
+		prerequisite = {
+			focus = MAL_Deploy_Model_Division
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Recruit_Former_Singapore_Generals"
+			army_experience = 25
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
+			add_to_variable = { MAL_sfdf_army_org = 0.03 }
+			add_to_variable = { MAL_sfdf_max_planning = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_8
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Build_Hidden_Airfields
+		icon = GFX_goal_generic_build_airforce
+		cost = 7
+		x = 31
+		y = 12
+		prerequisite = {
+			focus = MAL_Homeland_Air_Defense_Conference
+		}
+		mutually_exclusive = { focus = MAL_Consolidate_Radar_And_AA }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Build_Hidden_Airfields"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_to_variable = { MAL_sfdf_air_untrained = -0.05 }
+			add_to_variable = { MAL_sfdf_infra_build = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_9
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Consolidate_Radar_And_AA
+		icon = GFX_goal_unknown
+		cost = 7
+		x = 33
+		y = 12
+		prerequisite = {
+			focus = MAL_Homeland_Air_Defense_Conference
+		}
+		mutually_exclusive = { focus = MAL_Build_Hidden_Airfields }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Consolidate_Radar_And_AA"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 4 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_to_variable = { MAL_sfdf_air_attack = 0.05 }
+			add_to_variable = { MAL_sfdf_buildings_build = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_10
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Purchase_Retired_US_Warships
+		icon = GFX_goal_generic_navy_battleship
+		cost = 7
+		x = 24
+		y = 13
+		prerequisite = {
+			focus = MAL_Claim_Japanese_Warship_Reparations
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Purchase_Retired_US_Warships"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -5 }
+			navy_experience = 20
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 40
+				producer = USA
+			}
+			add_to_variable = { MAL_sfdf_dockyard_output = 0.05 }
+			add_to_variable = { MAL_sfdf_naval_speed = 0.03 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_11
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Domestic_Armored_Cars_And_Artillery
+		icon = GFX_goal_generic_build_tank
+		cost = 10
+		x = 26
+		y = 13
+		prerequisite = {
+			focus = MAL_Restore_German_East_Asia_Arsenal
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Domestic_Armored_Cars_And_Artillery"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 200
+			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_to_variable = { MAL_sfdf_factory_output = 0.03 }
+			add_to_variable = { MAL_sfdf_prod_eff_cap = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_12
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Secure_Troop_Supplies
+		icon = GFX_goal_unknown
+		cost = 7
+		x = 28
+		y = 13
+		prerequisite = {
+			focus = MAL_Restore_German_East_Asia_Arsenal
+		}
+		prerequisite = {
+			focus = MAL_Recruit_Former_Singapore_Generals
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Secure_Troop_Supplies"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
+			add_stability = 0.02
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 4 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 4 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+			add_to_variable = { MAL_sfdf_supply = -0.05 }
+			add_to_variable = { MAL_sfdf_army_org = 0.03 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_13
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Invite_New_Chinese_Cadets
+		icon = GFX_focus_NORDIC_com_navy
+		cost = 7
+		x = 30
+		y = 13
+		prerequisite = {
+			focus = MAL_Recruit_Former_Singapore_Generals
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Invite_New_Chinese_Cadets"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
+			army_experience = 20
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 5 }
+			add_to_variable = { MAL_sfdf_army_xp = 0.05 }
+			add_to_variable = { MAL_sfdf_research = 0.02 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_14
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Purchase_US_Aircraft
+		icon = GFX_goal_generic_build_airforce
+		cost = 10
+		x = 32
+		y = 13
+		# 二选一分支汇合：同一 prerequisite 块内多 focus = OR（虚线连接）
+		prerequisite = {
+			focus = MAL_Build_Hidden_Airfields
+			focus = MAL_Consolidate_Radar_And_AA
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Purchase_US_Aircraft"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -6 }
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_2
+				amount = 120
+				producer = USA
+			}
+			air_experience = 15
+			add_to_variable = { MAL_sfdf_air_attack = 0.05 }
+			add_to_variable = { MAL_sfdf_air_untrained = -0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_15
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Recruit_Civilian_Pilots
+		icon = GFX_focus_SOV_flying_clubs
+		cost = 7
+		x = 32
+		y = 14
+		prerequisite = {
+			focus = MAL_Purchase_US_Aircraft
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Recruit_Civilian_Pilots"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
+			air_experience = 20
+			add_to_variable = { MAL_sfdf_air_untrained = -0.05 }
+			add_to_variable = { MAL_sfdf_air_doctrine = -0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_16
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Pahang_Naval_Training_Base
+		icon = GFX_goal_generic_navy_submarine
+		cost = 7
+		x = 23
+		y = 14
+		prerequisite = {
+			focus = MAL_Purchase_Retired_US_Warships
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Pahang_Naval_Training_Base"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
+			navy_experience = 20
+			add_to_variable = { MAL_sfdf_navy_xp = 0.05 }
+			add_to_variable = { MAL_sfdf_dockyard_build = 0.03 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_17
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Militarize_Penang_Harbor
+		icon = GFX_goal_generic_build_navy
+		cost = 7
+		x = 25
+		y = 14
+		prerequisite = {
+			focus = MAL_Purchase_Retired_US_Warships
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Militarize_Penang_Harbor"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 4 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_to_variable = { MAL_sfdf_dockyard_output = 0.03 }
+			add_to_variable = { MAL_sfdf_prod_eff_growth = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_18
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Philippine_Naval_Exercise
+		icon = GFX_goal_generic_navy_carrier
+		cost = 7
+		x = 24
+		y = 15
+		prerequisite = {
+			focus = MAL_Pahang_Naval_Training_Base
+		}
+		prerequisite = {
+			focus = MAL_Militarize_Penang_Harbor
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Philippine_Naval_Exercise"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
+			navy_experience = 25
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 30
+			}
+			add_to_variable = { MAL_sfdf_naval_speed = 0.03 }
+			add_to_variable = { MAL_sfdf_navy_xp = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_19
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Beginning_Of_Centennial_Navy
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10
+		x = 24
+		y = 16
+		prerequisite = {
+			focus = MAL_Philippine_Naval_Exercise
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Beginning_Of_Centennial_Navy"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -4 }
+			navy_experience = 35
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 1 }
+			add_to_variable = { MAL_sfdf_dockyard_output = 0.05 }
+			add_to_variable = { MAL_sfdf_navy_xp = 0.05 }
+			add_to_variable = { MAL_sfdf_dockyard_build = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_20
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Stabilize_Military_Deployment
+		icon = GFX_goal_unknown
+		cost = 7
+		x = 28
+		y = 14
+		prerequisite = {
+			focus = MAL_Domestic_Armored_Cars_And_Artillery
+		}
+		prerequisite = {
+			focus = MAL_Secure_Troop_Supplies
+		}
+		prerequisite = {
+			focus = MAL_Invite_New_Chinese_Cadets
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Stabilize_Military_Deployment"
+			add_stability = 0.03
+			army_experience = 15
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_to_variable = { MAL_sfdf_army_org = 0.05 }
+			add_to_variable = { MAL_sfdf_supply = -0.03 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_21
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Advanced_Jungle_Warfare_Training
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 7
+		x = 27
+		y = 15
+		prerequisite = {
+			focus = MAL_Stabilize_Military_Deployment
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Advanced_Jungle_Warfare_Training"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
+			army_experience = 25
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 800
+			}
+			add_to_variable = { MAL_sfdf_army_attack = 0.05 }
+			add_to_variable = { MAL_sfdf_army_defence = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_22
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Promote_Allied_Party_Officers
+		icon = GFX_goal_unknown
+		cost = 7
+		x = 29
+		y = 15
+		prerequisite = {
+			focus = MAL_Stabilize_Military_Deployment
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Promote_Allied_Party_Officers"
+			army_experience = 20
+			add_political_power = 25
+			add_to_variable = { MAL_sfdf_planning = 0.05 }
+			add_to_variable = { MAL_sfdf_max_planning = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_23
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Prioritize_Overseas_Intervention_Force
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10
+		x = 26
+		y = 16
+		prerequisite = {
+			focus = MAL_Advanced_Jungle_Warfare_Training
+		}
+		prerequisite = {
+			focus = MAL_Promote_Allied_Party_Officers
+		}
+		mutually_exclusive = { focus = MAL_NRA_Southern_Extension }
+		mutually_exclusive = { focus = MAL_Build_Peninsula_Defense_System }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Prioritize_Overseas_Intervention_Force"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -4 }
+			army_experience = 30
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 300
+			}
+			add_to_variable = { MAL_sfdf_army_attack = 0.08 }
+			add_to_variable = { MAL_sfdf_supply = -0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_24
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Build_Peninsula_Defense_System
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 28
+		y = 16
+		prerequisite = {
+			focus = MAL_Advanced_Jungle_Warfare_Training
+		}
+		prerequisite = {
+			focus = MAL_Promote_Allied_Party_Officers
+		}
+		mutually_exclusive = { focus = MAL_NRA_Southern_Extension }
+		mutually_exclusive = { focus = MAL_Prioritize_Overseas_Intervention_Force }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Build_Peninsula_Defense_System"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -4 }
+			add_stability = 0.02
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_to_variable = { MAL_sfdf_army_defence = 0.10 }
+			add_to_variable = { MAL_sfdf_buildings_build = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_25
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_NRA_Southern_Extension
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 30
+		y = 16
+		prerequisite = {
+			focus = MAL_Advanced_Jungle_Warfare_Training
+		}
+		prerequisite = {
+			focus = MAL_Promote_Allied_Party_Officers
+		}
+		mutually_exclusive = { focus = MAL_Build_Peninsula_Defense_System }
+		mutually_exclusive = { focus = MAL_Prioritize_Overseas_Intervention_Force }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_NRA_Southern_Extension"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
+			army_experience = 25
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1200
+				producer = CHI
+			}
+			add_to_variable = { MAL_sfdf_army_org = 0.08 }
+			add_to_variable = { MAL_sfdf_land_doctrine = -0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_26
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Establish_Civilian_Flying_Clubs
+		icon = GFX_focus_SOV_flying_clubs
+		cost = 7
+		x = 31
+		y = 15
+		prerequisite = {
+			focus = MAL_Recruit_Civilian_Pilots
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Establish_Civilian_Flying_Clubs"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -2 }
+			air_experience = 20
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 4 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_to_variable = { MAL_sfdf_air_untrained = -0.05 }
+			add_to_variable = { MAL_sfdf_research = 0.02 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_27
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Recruit_Flying_Tigers_Instructors
+		icon = GFX_goal_generic_build_airforce
+		cost = 7
+		x = 33
+		y = 15
+		prerequisite = {
+			focus = MAL_Recruit_Civilian_Pilots
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Recruit_Flying_Tigers_Instructors"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
+			air_experience = 30
+			add_to_variable = { MAL_sfdf_air_attack = 0.05 }
+			add_to_variable = { MAL_sfdf_air_untrained = -0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_15
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MAL_Command_Peninsula_Airspace
+		icon = GFX_goal_generic_build_airforce
+		cost = 10
+		x = 32
+		y = 16
+		prerequisite = {
+			focus = MAL_Establish_Civilian_Flying_Clubs
+		}
+		prerequisite = {
+			focus = MAL_Recruit_Flying_Tigers_Instructors
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAL_Command_Peninsula_Airspace"
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			add_to_variable = { var = capital_reserves value = -3 }
+			air_experience = 35
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 1 }
+			add_to_variable = { MAL_sfdf_air_attack = 0.08 }
+			add_to_variable = { MAL_sfdf_air_untrained = -0.05 }
+			add_to_variable = { MAL_sfdf_air_doctrine = -0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = MAL_sfdf_dummy_0
+					add_idea = MAL_sfdf_dummy_28
+				}
 			}
 		}
 	}

@@ -156,12 +156,13 @@ TNW_archipelago_contest_category = {
 		}
 	}
 
-	# 包围网红利：由国策 MAL_Strengthen_Archipelago_Cordon 的旗标解锁
+	# 包围网红利：由国策 MAL_Strengthen_Archipelago_Cordon 完成解锁（has_completed_focus），旗标另供事件读取
 	TNW_archipelago_cordon_dividend = {
 		icon = GFX_decision_generic_army
 		cost = 0
 		fire_only_once = yes
 		visible = {
+			has_completed_focus = MAL_Strengthen_Archipelago_Cordon
 			has_country_flag = TNW_arch_cordon_active
 		}
 		available = {
@@ -184,12 +185,13 @@ TNW_archipelago_contest_category = {
 		}
 	}
 
-	# 苏拉威西通道：由国策 MAL_Recontact_Sulawesi 的旗标解锁
+	# 苏拉威西通道：由国策 MAL_Recontact_Sulawesi 完成解锁（has_completed_focus）
 	TNW_archipelago_sulawesi_corridor = {
 		icon = generic_army_support
 		cost = 25
 		fire_only_once = yes
 		visible = {
+			has_completed_focus = MAL_Recontact_Sulawesi
 			has_country_flag = TNW_arch_sulawesi_contacted
 		}
 		available = {
@@ -299,13 +301,14 @@ TNW_archipelago_contest_category = {
 		}
 	}
 
-	# 宣布胜利：由国策 MAL_Next_Confrontation_Phase 解锁可见
+	# 宣布胜利：由国策 MAL_Next_Confrontation_Phase 完成解锁可见（has_completed_focus）
 	# 胜利判定条件暂置「始终为非」，待后续填真实条件；complete_effect 已写好，条件填上即可生效。
 	TNW_archipelago_proclaim_victory = {
 		icon = GFX_decision_generic_police_action
 		cost = 150
 		fire_only_once = yes
 		visible = {
+			has_completed_focus = MAL_Next_Confrontation_Phase
 			has_country_flag = MAL_confrontation_phase_2
 			NOT = { has_global_flag = TNW_arch_contest_decided }
 		}
