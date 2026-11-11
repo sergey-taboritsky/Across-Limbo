@@ -19,3 +19,12 @@
  TNW_second_leader_name_SPR_Juan_Negrin: "§Y胡安·内格林·洛佩兹§!，伊比利亚联邦总理，§p伊比利亚工人社会党§!主席\n------------\n\n\n\n\n\n\n£GFX_second_leader_portrait_Juan_Negrin \n\n\n\n\n\n\n------------"
  TNW_second_leader_name_TUR_Ismet_Inonu: "§Y穆斯塔法·伊斯麦特·雷希特§!，奥斯曼帝国大维齐尔，§g奥斯曼人民党§!党魁\n------------\n\n\n\n\n\n\n£GFX_second_leader_portrait_Ismet_Inonu \n\n\n\n\n\n\n------------"
  TNW_second_leader_name_CUB_Fulgencio_Batista: "§Y富尔亨西奥·巴蒂斯塔§!，古巴共和国陆军前参谋长，事实上的军事强人\n------------\n\n\n\n\n\n\n£GFX_second_leader_portrait_Fulgencio_Batista \n\n\n\n\n\n\n------------"
+
+ #星洲国民党中执委主席更替（2026-11-11）
+ TNW_second_leader_name_MAL_Li_Zhendian: "§Y李振殿§!，星洲联邦政府首脑，§B星洲国民党§!中央执行委员会主席（南京海外部）\n------------\n\n\n\n\n\n£GFX_second_leader_portrait_Li_Zhendian \n\n\n\n\n\n------------"
+ TNW_second_leader_name_MAL_Li_Guangqian: "§Y李光前§!，§B星洲国民党§!中央执行委员会主席（吾庐俱乐部）\n------------\n\n\n\n\n\n£GFX_second_leader_portrait_Li_Guangqian \n\n\n\n\n\n------------"
+ TNW_second_leader_name_MAL_Peng_Zemin: "§Y彭泽民§!，§B星洲国民党§!中央执行委员会主席（隆市派）\n------------\n\n\n\n\n\n£GFX_second_leader_portrait_Peng_Zemin \n\n\n\n\n\n------------"
+ TNW_second_leader_name_MAL_Chen_Liushi: "§Y陈六使§!，§B星洲国民党§!中央执行委员会主席（同业公会）\n------------\n\n\n\n\n\n§h（本派肖像待补）§! \n\n\n\n\n\n------------"
+ TNW_second_leader_name_MAL_Zhang_Yongfu: "§Y张永福§!，§B星洲国民党§!中央执行委员会主席（南侨同志会）\n------------\n\n\n\n\n\n§h（本派肖像待补）§! \n\n\n\n\n\n------------"
+ TNW_second_leader_name_MAL_Pingzhang: "§Y槟城三社团§!，§B星洲国民党§!中央执行委员会主席团（平章会馆）\n------------\n\n\n\n\n\n§h（本派肖像待补）§! \n\n\n\n\n\n------------"
+ TNW_second_leader_name_MAL_caretaker: "§Y中执委主席空缺§!，星洲国民党临时看守中执委\n------------\n\n\n\n\n\n§h（全会冻结，主席未推举）§! \n\n\n\n\n\n------------"

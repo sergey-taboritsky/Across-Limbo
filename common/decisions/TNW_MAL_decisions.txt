@@ -1,0 +1,1030 @@
+# 星洲国民党（党内机构）与联邦立法院（国家机构）决议组（2026-11-11 第二轮）
+# 立法院院内单位一律为政党党团；星洲国民党拆成「星洲国民党」与「星洲国民党 - 左翼党团」两个独立投票整体。
+# 两套算分各算各的：党内决议只调 MAL_kmt_calc_effect，国家议会决议只调 MAL_leg_calc_effect；
+# 唯一例外是党内主席/实力变化后需单向刷新议会两党团忠诚，由党内脚本负责连带重算。
+# 国策解锁一律写在目标决议的 visible 里（has_completed_focus），不用 unlock_decision_tooltip 代替解锁。
+
+MAL_kmt_party = {
+
+	# ① 七派动员：沿本派路线推移立场、实力 +5
+	MAL_kmt_faction_lodge = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_faction_lodge_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_kmt_lodge_str value = 5 }
+				add_to_variable = { var = MAL_kmt_lodge_seat_change value = 1 }
+				clamp_variable = { var = MAL_kmt_lodge_str max = 100 min = 0 }
+				add_to_variable = { var = MAL_kmt_lodge_var value = -5 }
+				clamp_variable = { var = MAL_kmt_lodge_var max = 100 min = 0 }
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_kmt_faction_overseas = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_faction_overseas_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_kmt_overseas_str value = 5 }
+				add_to_variable = { var = MAL_kmt_overseas_seat_change value = 1 }
+				clamp_variable = { var = MAL_kmt_overseas_str max = 100 min = 0 }
+				add_to_variable = { var = MAL_kmt_overseas_var value = 5 }
+				clamp_variable = { var = MAL_kmt_overseas_var max = 100 min = 0 }
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_kmt_faction_wulu = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_faction_wulu_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_kmt_wulu_str value = 5 }
+				add_to_variable = { var = MAL_kmt_wulu_seat_change value = 1 }
+				clamp_variable = { var = MAL_kmt_wulu_str max = 100 min = 0 }
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_kmt_faction_longshi = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_faction_longshi_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_kmt_longshi_str value = 5 }
+				add_to_variable = { var = MAL_kmt_longshi_seat_change value = 1 }
+				clamp_variable = { var = MAL_kmt_longshi_str max = 100 min = 0 }
+				add_to_variable = { var = MAL_kmt_longshi_var value = -5 }
+				clamp_variable = { var = MAL_kmt_longshi_var max = 100 min = 0 }
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_kmt_faction_guild = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_faction_guild_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_kmt_guild_str value = 5 }
+				add_to_variable = { var = MAL_kmt_guild_seat_change value = 1 }
+				clamp_variable = { var = MAL_kmt_guild_str max = 100 min = 0 }
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_kmt_faction_nanqiao = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_faction_nanqiao_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_kmt_nanqiao_str value = 5 }
+				add_to_variable = { var = MAL_kmt_nanqiao_seat_change value = 1 }
+				clamp_variable = { var = MAL_kmt_nanqiao_str max = 100 min = 0 }
+				add_to_variable = { var = MAL_kmt_nanqiao_var value = -5 }
+				clamp_variable = { var = MAL_kmt_nanqiao_var max = 100 min = 0 }
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_kmt_faction_pingzhang = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_faction_pingzhang_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_kmt_pingzhang_str value = 5 }
+				add_to_variable = { var = MAL_kmt_pingzhang_seat_change value = 1 }
+				clamp_variable = { var = MAL_kmt_pingzhang_str max = 100 min = 0 }
+				add_to_variable = { var = MAL_kmt_pingzhang_var value = -5 }
+				clamp_variable = { var = MAL_kmt_pingzhang_var max = 100 min = 0 }
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# ② 陈嘉庚三态背书（中立 → 背书主席 → 背书反对派 → 中立）
+	MAL_kmt_jiageng_backing = {
+		icon = GFX_decision_generic_arrest
+		cost = 25
+		days_re_enable = 90
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_jiageng_backing_tt
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = MAL_kmt_jiageng_chair }
+					clr_country_flag = MAL_kmt_jiageng_chair
+					set_country_flag = MAL_kmt_jiageng_opposition
+				}
+				else_if = {
+					limit = { has_country_flag = MAL_kmt_jiageng_opposition }
+					clr_country_flag = MAL_kmt_jiageng_opposition
+				}
+				else = {
+					set_country_flag = MAL_kmt_jiageng_chair
+				}
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# ③ 南京党务津贴：国库换亲南京派实力；由 MAL_Party_Ties 真实解锁
+	MAL_kmt_nanjing_subsidy = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			has_completed_focus = MAL_Party_Ties
+		}
+		cost = 50
+		days_re_enable = 120
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_nanjing_subsidy_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -4 }
+				add_to_variable = { var = MAL_kmt_overseas_str value = 5 }
+				add_to_variable = { var = MAL_kmt_overseas_seat_change value = 1 }
+				clamp_variable = { var = MAL_kmt_overseas_str max = 100 min = 0 }
+				add_to_variable = { var = MAL_kmt_overseas_var value = 3 }
+				clamp_variable = { var = MAL_kmt_overseas_var max = 100 min = 0 }
+				add_opinion_modifier = { target = CHI modifier = econo_trade_success }
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# ④ 拉拢中间派背书：仅弱势/悬峙可用，席位计入主席阵营
+	MAL_kmt_court_wulu = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			OR = {
+				has_country_flag = MAL_kmt_weak_chair
+				has_country_flag = MAL_kmt_hung_committee
+			}
+			NOT = { has_country_flag = MAL_kmt_backing_wulu }
+		}
+		cost = 50
+		days_re_enable = 120
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_court_wulu_tt
+			hidden_effect = {
+				set_country_flag = MAL_kmt_backing_wulu
+				add_to_variable = { var = capital_reserves value = -2 }
+				add_to_variable = { var = MAL_kmt_wulu_loyalty value = 8 }
+				clamp_variable = { var = MAL_kmt_wulu_loyalty max = 100 min = 0 }
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_kmt_court_guild = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			OR = {
+				has_country_flag = MAL_kmt_weak_chair
+				has_country_flag = MAL_kmt_hung_committee
+			}
+			NOT = { has_country_flag = MAL_kmt_backing_guild }
+		}
+		cost = 50
+		days_re_enable = 120
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_court_guild_tt
+			hidden_effect = {
+				set_country_flag = MAL_kmt_backing_guild
+				add_to_variable = { var = capital_reserves value = -2 }
+				add_to_variable = { var = MAL_kmt_guild_loyalty value = 8 }
+				clamp_variable = { var = MAL_kmt_guild_loyalty max = 100 min = 0 }
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# ⑤ 整肃隆市派：由 MAL_Investigate_Peng_Labor_Congress 真实解锁
+	MAL_kmt_purge_longshi = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			has_completed_focus = MAL_Investigate_Peng_Labor_Congress
+		}
+		cost = 75
+		days_re_enable = 180
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_purge_longshi_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_kmt_longshi_str value = -6 }
+				add_to_variable = { var = MAL_kmt_longshi_seat_change value = -1 }
+				clamp_variable = { var = MAL_kmt_longshi_str max = 100 min = 0 }
+				add_political_power = 25
+				add_stability = -0.01
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# ⑥ 召集临时中全会：悬峙时可见，触发全会事件链
+	MAL_kmt_convene_congress = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			has_country_flag = MAL_kmt_hung_committee
+		}
+		cost = 100
+		days_re_enable = 180
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_convene_congress_tt
+			hidden_effect = {
+				clr_country_flag = MAL_kmt_frozen
+				country_event = { id = MAL_kmt_congress.3 hours = 6 }
+				set_country_flag = MAL_kmt_congress_fired
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# ⑦ 信任案：公开重算主导权
+	MAL_kmt_vote_of_confidence = {
+		icon = GFX_decision_generic_arrest
+		cost = 25
+		days_re_enable = 150
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_vote_of_confidence_tt
+			hidden_effect = {
+				add_political_power = 15
+				MAL_kmt_calc_effect = yes
+				MAL_leg_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# ⑧ 主席路线：按现任主席派系给不同增益；悬峙期不可用
+	MAL_kmt_chair_program = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			NOT = { has_country_flag = MAL_kmt_hung_committee }
+		}
+		cost = 50
+		days_re_enable = 180
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_kmt_chair_program_tt
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = MAL_kmt_chair_lodge }
+					add_to_variable = { var = MAL_kmt_lodge_str value = 2 }
+					add_to_variable = { var = MAL_kmt_lodge_seat_change value = 1 }
+					clamp_variable = { var = MAL_kmt_lodge_str max = 100 min = 0 }
+				}
+				else_if = {
+					limit = { has_country_flag = MAL_kmt_chair_overseas }
+					add_to_variable = { var = MAL_kmt_overseas_str value = 2 }
+					add_to_variable = { var = MAL_kmt_overseas_seat_change value = 1 }
+					clamp_variable = { var = MAL_kmt_overseas_str max = 100 min = 0 }
+				}
+				else_if = {
+					limit = { has_country_flag = MAL_kmt_chair_wulu }
+					add_to_variable = { var = MAL_kmt_wulu_str value = 2 }
+					add_to_variable = { var = MAL_kmt_wulu_seat_change value = 1 }
+					clamp_variable = { var = MAL_kmt_wulu_str max = 100 min = 0 }
+				}
+				else_if = {
+					limit = { has_country_flag = MAL_kmt_chair_longshi }
+					add_to_variable = { var = MAL_kmt_longshi_str value = 2 }
+					add_to_variable = { var = MAL_kmt_longshi_seat_change value = 1 }
+					clamp_variable = { var = MAL_kmt_longshi_str max = 100 min = 0 }
+				}
+				else_if = {
+					limit = { has_country_flag = MAL_kmt_chair_guild }
+					add_to_variable = { var = MAL_kmt_guild_str value = 2 }
+					add_to_variable = { var = MAL_kmt_guild_seat_change value = 1 }
+					clamp_variable = { var = MAL_kmt_guild_str max = 100 min = 0 }
+				}
+				else_if = {
+					limit = { has_country_flag = MAL_kmt_chair_nanqiao }
+					add_to_variable = { var = MAL_kmt_nanqiao_str value = 2 }
+					add_to_variable = { var = MAL_kmt_nanqiao_seat_change value = 1 }
+					clamp_variable = { var = MAL_kmt_nanqiao_str max = 100 min = 0 }
+				}
+				else_if = {
+					limit = { has_country_flag = MAL_kmt_chair_pingzhang }
+					add_to_variable = { var = MAL_kmt_pingzhang_str value = 2 }
+					add_to_variable = { var = MAL_kmt_pingzhang_seat_change value = 1 }
+					clamp_variable = { var = MAL_kmt_pingzhang_str max = 100 min = 0 }
+				}
+				MAL_kmt_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+}
+
+MAL_legislative_council = {
+
+	# 圆点 GUI 坐标本轮留空；本组只操作统计变量（席位 / 忠诚 / 党鞭 / 席位变化）。
+	MAL_leg_convene_session = {
+		icon = GFX_decision_generic_arrest
+		cost = 25
+		days_re_enable = 60
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_leg_convene_session_tt
+			hidden_effect = {
+				add_political_power = 15
+				MAL_leg_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_leg_register_kmt_voters = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 120
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_leg_register_kmt_voters_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_leg_kmt_seats value = 2 }
+				clamp_variable = { var = MAL_leg_kmt_seats max = 104 min = 0 }
+				add_to_variable = { var = MAL_leg_kmt_seat_change value = 2 }
+				add_to_variable = { var = MAL_leg_vacant_seats value = -2 }
+				clamp_variable = { var = MAL_leg_vacant_seats max = 104 min = 0 }
+				add_to_variable = { var = MAL_leg_vacant_seat_change value = -2 }
+				MAL_leg_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_leg_reconcile_malay_parties = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 120
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_leg_reconcile_malay_parties_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_leg_mu_loyalty value = 8 }
+				clamp_variable = { var = MAL_leg_mu_loyalty max = 100 min = 0 }
+				add_to_variable = { var = MAL_leg_mpp_loyalty value = 8 }
+				clamp_variable = { var = MAL_leg_mpp_loyalty max = 100 min = 0 }
+				clr_country_flag = MAL_leg_malay_parties_walkout
+				add_to_variable = { var = capital_reserves value = -2 }
+				MAL_leg_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_leg_mic_caucus = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 120
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_leg_mic_caucus_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_leg_mic_seats value = 1 }
+				clamp_variable = { var = MAL_leg_mic_seats max = 104 min = 0 }
+				add_to_variable = { var = MAL_leg_mic_seat_change value = 1 }
+				add_to_variable = { var = MAL_leg_mic_loyalty value = 6 }
+				clamp_variable = { var = MAL_leg_mic_loyalty max = 100 min = 0 }
+				add_to_variable = { var = MAL_leg_vacant_seats value = -1 }
+				clamp_variable = { var = MAL_leg_vacant_seats max = 104 min = 0 }
+				add_to_variable = { var = MAL_leg_vacant_seat_change value = -1 }
+				MAL_leg_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_leg_mu_consultation = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 120
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_leg_mu_consultation_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_leg_mu_loyalty value = 6 }
+				clamp_variable = { var = MAL_leg_mu_loyalty max = 100 min = 0 }
+				MAL_leg_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_leg_conciliate_left = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 120
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_leg_conciliate_left_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_leg_kmt_left_whip value = 8 }
+				clamp_variable = { var = MAL_leg_kmt_left_whip max = 30 min = -30 }
+				add_to_variable = { var = capital_reserves value = -1 }
+				MAL_leg_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_leg_fill_vacancies = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 120
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_leg_fill_vacancies_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_leg_vacant_seats value = -4 }
+				clamp_variable = { var = MAL_leg_vacant_seats max = 104 min = 0 }
+				add_to_variable = { var = MAL_leg_vacant_seat_change value = -4 }
+				add_to_variable = { var = MAL_leg_kmt_seats value = 2 }
+				clamp_variable = { var = MAL_leg_kmt_seats max = 104 min = 0 }
+				add_to_variable = { var = MAL_leg_kmt_seat_change value = 2 }
+				add_to_variable = { var = MAL_leg_mic_seats value = 2 }
+				clamp_variable = { var = MAL_leg_mic_seats max = 104 min = 0 }
+				add_to_variable = { var = MAL_leg_mic_seat_change value = 2 }
+				add_to_variable = { var = capital_reserves value = -1 }
+				MAL_leg_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_leg_whip_kmt = {
+		icon = GFX_decision_generic_arrest
+		cost = 50
+		days_re_enable = 120
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_leg_whip_kmt_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_leg_kmt_whip value = 6 }
+				clamp_variable = { var = MAL_leg_kmt_whip max = 30 min = -30 }
+				MAL_leg_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_leg_citizenship_bill = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			has_completed_focus = MAL_New_Citizenship_Act
+			NOT = { has_country_flag = MAL_leg_malay_parties_walkout }
+		}
+		cost = 50
+		days_re_enable = 180
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_leg_citizenship_bill_tt
+			hidden_effect = {
+				set_country_flag = MAL_leg_malay_parties_walkout
+				add_to_variable = { var = MAL_leg_mu_loyalty value = -10 }
+				clamp_variable = { var = MAL_leg_mu_loyalty max = 100 min = 0 }
+				add_to_variable = { var = MAL_leg_mpp_loyalty value = -10 }
+				clamp_variable = { var = MAL_leg_mpp_loyalty max = 100 min = 0 }
+				add_stability = -0.01
+				MAL_leg_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_leg_republic_bill = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			has_completed_focus = MAL_Declare_Republic
+		}
+		cost = 50
+		days_re_enable = 180
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_leg_republic_bill_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_leg_mu_seats value = -2 }
+				clamp_variable = { var = MAL_leg_mu_seats max = 104 min = 0 }
+				add_to_variable = { var = MAL_leg_mu_seat_change value = -2 }
+				add_to_variable = { var = MAL_leg_mu_loyalty value = -8 }
+				clamp_variable = { var = MAL_leg_mu_loyalty max = 100 min = 0 }
+				add_to_variable = { var = MAL_leg_vacant_seats value = 2 }
+				clamp_variable = { var = MAL_leg_vacant_seats max = 104 min = 0 }
+				add_to_variable = { var = MAL_leg_vacant_seat_change value = 2 }
+				MAL_leg_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_leg_quorum_review = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			OR = {
+				has_country_flag = MAL_leg_crisis
+				has_country_flag = MAL_leg_malay_parties_walkout
+				check_variable = { var = MAL_leg_loyal_seats value = MAL_leg_quorum compare = less_than }
+			}
+		}
+		cost = 50
+		days_re_enable = 150
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = MAL_leg_quorum_review_tt
+			hidden_effect = {
+				add_to_variable = { var = MAL_leg_kmt_whip value = 8 }
+				clamp_variable = { var = MAL_leg_kmt_whip max = 30 min = -30 }
+				add_to_variable = { var = MAL_leg_kmt_left_whip value = 6 }
+				clamp_variable = { var = MAL_leg_kmt_left_whip max = 30 min = -30 }
+				add_to_variable = { var = MAL_leg_mic_loyalty value = 6 }
+				clamp_variable = { var = MAL_leg_mic_loyalty max = 100 min = 0 }
+				add_political_power = 20
+				MAL_leg_calc_effect = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+}
+
+MAL_Kuomintang_Governance_category = {
+
+
+	# --------------------------------------------------------
+	# 星洲国民政府 · 经济建设决议组（2026-11-11 第三轮）
+	# 对照 MAL 经济国策线：visible = has_completed_focus 为真解锁；
+	# 国库为正者一次性结算（防刷钱），为负者可重复但须 available 验资。
+	# --------------------------------------------------------
+
+	MAL_econ_treasury_audit = {
+		icon = GFX_decision_generic_factory
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 120
+		visible = {
+			original_tag = MAL
+		}
+		available = {
+			check_variable = { var = capital_reserves value = 1 compare = greater_than_or_equals }
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_treasury_audit_tt
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -1 }
+				add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+				clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+				add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 1 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_penang_relief = {
+		icon = GFX_decision_generic_factory
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 120
+		visible = {
+			original_tag = MAL
+		}
+		available = {
+			check_variable = { var = capital_reserves value = 4 compare = greater_than_or_equals }
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_penang_relief_tt
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			custom_effect_tooltip = MAL_penang_unrest_fall_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -4 }
+				add_to_variable = { var = TNW_Affluence_value value = 4 }
+				clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+				add_to_variable = { var = TNW_penang_unrest value = -8 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_rubber_tin_quota = {
+		icon = GFX_decision_generic_factory
+		cost = 25
+		fire_only_once = yes
+		visible = {
+			original_tag = MAL
+			has_completed_focus = MAL_Rubber_Tin_Boom
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_rubber_tin_quota_tt
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = 6 }
+				add_to_variable = { var = TNW_Affluence_value value = 8 }
+				clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_free_port_dues = {
+		icon = GFX_decision_generic_factory
+		cost = 25
+		fire_only_once = yes
+		visible = {
+			original_tag = MAL
+			has_completed_focus = MAL_Free_Port_Status
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_free_port_dues_tt
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			custom_effect_tooltip = MAL_penang_unrest_fall_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = 5 }
+				add_to_variable = { var = TNW_Affluence_value value = 6 }
+				clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+				add_to_variable = { var = TNW_Affluence_monthly_value value = 1 }
+				add_to_variable = { var = TNW_penang_unrest value = -5 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_transit_levy = {
+		icon = GFX_decision_generic_factory
+		cost = 25
+		fire_only_once = yes
+		visible = {
+			original_tag = MAL
+			has_completed_focus = MAL_Transit_Trade_Nation
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_transit_levy_tt
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = 7 }
+				add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+				clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_sin_tax_rebate = {
+		icon = GFX_decision_generic_factory
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			original_tag = MAL
+			has_completed_focus = MAL_Colonial_Sin_Taxes
+		}
+		available = {
+			check_variable = { var = capital_reserves value = 6 compare = greater_than_or_equals }
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_sin_tax_rebate_tt
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -6 }
+				add_to_variable = { var = TNW_Affluence_value value = 12 }
+				clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+				add_stability = 0.02
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_bank_consortium = {
+		icon = GFX_decision_generic_factory
+		cost = 25
+		fire_only_once = yes
+		visible = {
+			original_tag = MAL
+			has_completed_focus = MAL_Banking_Coordination
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_bank_consortium_tt
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = 5 }
+				add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+				clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_central_bank_reserve = {
+		icon = GFX_decision_generic_factory
+		cost = 25
+		fire_only_once = yes
+		visible = {
+			original_tag = MAL
+			has_completed_focus = MAL_Central_Bank_Unification
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_central_bank_reserve_tt
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = 8 }
+				add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+				clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+				add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 1 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_pioneer_subsidy = {
+		icon = GFX_decision_generic_factory
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 120
+		visible = {
+			original_tag = MAL
+			has_completed_focus = MAL_Pioneer_Industries
+		}
+		available = {
+			check_variable = { var = capital_reserves value = 8 compare = greater_than_or_equals }
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_pioneer_subsidy_tt
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			custom_effect_tooltip = MAL_penang_unrest_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -8 }
+				add_to_variable = { var = TNW_Industrial_scale_value value = 14 }
+				clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+				add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 1 }
+				add_to_variable = { var = TNW_penang_unrest value = 6 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_land_redemption_fund = {
+		icon = GFX_decision_generic_factory
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 120
+		visible = {
+			original_tag = MAL
+			has_completed_focus = MAL_Land_Redemption_Exchange
+		}
+		available = {
+			check_variable = { var = capital_reserves value = 10 compare = greater_than_or_equals }
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_land_redemption_fund_tt
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_fall_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -10 }
+				add_to_variable = { var = TNW_Agriculture_value value = 12 }
+				clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+				add_to_variable = { var = TNW_Affluence_value value = -4 }
+				clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+				add_stability = 0.01
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_plantation_wage_board = {
+		icon = GFX_decision_generic_factory
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 120
+		visible = {
+			original_tag = MAL
+			has_completed_focus = MAL_Plantation_Labor
+		}
+		available = {
+			check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_plantation_wage_board_tt
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -5 }
+				add_to_variable = { var = TNW_Affluence_value value = 8 }
+				clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+				add_stability = 0.01
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_fiscal_autonomy_settlement = {
+		icon = GFX_decision_generic_factory
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			original_tag = MAL
+			has_completed_focus = MAL_Fiscal_Autonomy
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_fiscal_autonomy_settlement_tt
+			custom_effect_tooltip = TNW_arch_treasury_up_tt
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = 10 }
+				add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+				clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_land_privilege_compensation = {
+		icon = GFX_decision_generic_factory
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			original_tag = MAL
+			has_completed_focus = MAL_Abolish_Land_Privilege
+		}
+		available = {
+			check_variable = { var = capital_reserves value = 6 compare = greater_than_or_equals }
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_land_privilege_compensation_tt
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -6 }
+				add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+				clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+				add_stability = 0.01
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	MAL_econ_malay_reserve_survey = {
+		icon = GFX_decision_generic_factory
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 120
+		visible = {
+			original_tag = MAL
+			has_completed_focus = MAL_Malay_Reserve_Reform
+		}
+		available = {
+			check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+		}
+		complete_effect = {
+			custom_effect_tooltip = MAL_econ_malay_reserve_survey_tt
+			custom_effect_tooltip = TNW_arch_treasury_fall_tt
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			hidden_effect = {
+				add_to_variable = { var = capital_reserves value = -3 }
+				add_to_variable = { var = TNW_Agriculture_value value = 6 }
+				clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
+				add_to_variable = { var = TNW_Bureaucracy_value value = 4 }
+				clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

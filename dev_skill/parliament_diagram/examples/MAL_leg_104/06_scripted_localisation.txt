@@ -1,0 +1,53 @@
+# 放进 common/scripted_localisation/<任意文件名>.txt
+# seat_idx 由 dynamic_lists 提供；按 frame 值显示对应党团名
+defined_text = {
+	name = MAL_leg_seat_party
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 1 }
+		}
+		localization_key = MAL_leg_party_kmt
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 2 }
+		}
+		localization_key = MAL_leg_party_kmt_left
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 3 }
+		}
+		localization_key = MAL_leg_party_mu
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 4 }
+		}
+		localization_key = MAL_leg_party_mpp
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 5 }
+		}
+		localization_key = MAL_leg_party_mic
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 6 }
+		}
+		localization_key = MAL_leg_party_pmftu
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 7 }
+		}
+		localization_key = MAL_leg_party_cpc
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 8 }
+		}
+		localization_key = MAL_leg_party_vacant
+	}
+}

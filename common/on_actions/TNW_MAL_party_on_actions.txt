@@ -1,0 +1,18 @@
+# 星洲国民党 / 立法院：开局初始化与月度结算（2026-11-11）
+# on_startup 作用域为 none，须用 every_country 限定 MAL；本仓同名 on_action 合并执行，不覆盖群岛争霸块。
+
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { original_tag = MAL }
+				MAL_kmt_init_effect = yes
+			}
+		}
+	}
+	on_monthly_MAL = {
+		effect = {
+			MAL_kmt_monthly_effect = yes
+		}
+	}
+}

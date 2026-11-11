@@ -1,0 +1,113 @@
+{
+  "total_seats": 104,
+  "rows": 6,
+  "radius_rows": 4.0,
+  "spread": 1.85,
+  "first_row_radius": 5.7,
+  "ordering_factor": 0.0,
+  "icon_size": 9,
+  "out_width": 335.89,
+  "out_height": 172.43,
+  "x_min": 0,
+  "x_max": 327,
+  "y_min": 5,
+  "y_max": 158,
+  "title": "星洲联邦 · 联邦立法院",
+  "tag": "MAL",
+  "arrays": {
+    "x": "MAL_leg_seat_x",
+    "y": "MAL_leg_seat_y",
+    "frame": "MAL_leg_seat_frame"
+  },
+  "effects": {
+    "init_positions": "MAL_leg_init_seat_positions_effect",
+    "reload_frames": "MAL_leg_reload_seat_frames_effect",
+    "init_all": "MAL_leg_init_parliament_effect"
+  },
+  "parties": [
+    {
+      "id": "kmt",
+      "name": "星洲国民党",
+      "seats": 42,
+      "frame": 1,
+      "first_seat_index": 0,
+      "last_seat_index": 41,
+      "color": "#2b5fa8",
+      "var": "MAL_leg_kmt_seats"
+    },
+    {
+      "id": "kmt_left",
+      "name": "星洲国民党-左翼党团（南洋民主劳动党）",
+      "seats": 14,
+      "frame": 2,
+      "first_seat_index": 42,
+      "last_seat_index": 55,
+      "color": "#c0504d",
+      "var": "MAL_leg_kmt_left_seats"
+    },
+    {
+      "id": "mu",
+      "name": "马来人协会",
+      "seats": 12,
+      "frame": 3,
+      "first_seat_index": 56,
+      "last_seat_index": 67,
+      "color": "#2e8b6b",
+      "var": "MAL_leg_mu_seats"
+    },
+    {
+      "id": "mpp",
+      "name": "穆斯林人民党",
+      "seats": 9,
+      "frame": 4,
+      "first_seat_index": 68,
+      "last_seat_index": 76,
+      "color": "#d9a441",
+      "var": "MAL_leg_mpp_seats"
+    },
+    {
+      "id": "mic",
+      "name": "马来印度人国大党",
+      "seats": 9,
+      "frame": 5,
+      "first_seat_index": 77,
+      "last_seat_index": 85,
+      "color": "#8e6bbf",
+      "var": "MAL_leg_mic_seats"
+    },
+    {
+      "id": "pmftu",
+      "name": "泛马工会联合会",
+      "seats": 7,
+      "frame": 6,
+      "first_seat_index": 86,
+      "last_seat_index": 92,
+      "color": "#b05252",
+      "var": "MAL_leg_pmftu_seats"
+    },
+    {
+      "id": "cpc",
+      "name": "中国共产党-南洋委员会",
+      "seats": 5,
+      "frame": 7,
+      "first_seat_index": 93,
+      "last_seat_index": 97,
+      "color": "#8f1d1d",
+      "var": "MAL_leg_cpc_seats"
+    },
+    {
+      "id": "vacant",
+      "name": "空缺议席",
+      "seats": 6,
+      "frame": 8,
+      "first_seat_index": 98,
+      "last_seat_index": 103,
+      "color": "#9aa0a6",
+      "var": "MAL_leg_vacant_seats"
+    }
+  ],
+  "validation": [],
+  "coord_count": 104,
+  "frame_total": 104,
+  "passed": true
+}

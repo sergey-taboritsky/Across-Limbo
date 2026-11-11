@@ -1,6 +1,8 @@
 add_namespace = MAL_confrontasi_event
 add_namespace = MAL_penang_crisis
 add_namespace = MAL_dissolution
+add_namespace = MAL_kmt_congress
+add_namespace = MAL_kmt_news
 
 country_event = {
 	id = MAL_penang_crisis.1
@@ -420,5 +422,92 @@ country_event = {
 			add_to_variable = { var = TNW_nanyang_influence value = -5 }
 			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
 		}
+	}
+}
+
+# ==================== 星洲国民党临时中全会 / 主席更替（2026-11-11） ====================
+
+country_event = {
+	id = MAL_kmt_congress.1
+	title = MAL_kmt_congress.1.t
+	desc = MAL_kmt_congress.1.d
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = MAL_kmt_congress.1.a
+		add_political_power = 25
+		custom_effect_tooltip = MAL_kmt_congress_calm_tt
+		hidden_effect = {
+			add_to_variable = { var = MAL_kmt_lodge_str value = 2 }
+			clamp_variable = { var = MAL_kmt_lodge_str max = 100 min = 0 }
+			MAL_kmt_calc_effect = yes
+		}
+	}
+	option = {
+		name = MAL_kmt_congress.1.b
+		add_stability = -0.02
+		custom_effect_tooltip = MAL_kmt_congress_ignore_tt
+		hidden_effect = {
+			add_to_variable = { var = MAL_kmt_lodge_str value = -3 }
+			clamp_variable = { var = MAL_kmt_lodge_str max = 100 min = 0 }
+			MAL_kmt_calc_effect = yes
+		}
+	}
+}
+
+country_event = {
+	id = MAL_kmt_congress.2
+	title = MAL_kmt_congress.2.t
+	desc = MAL_kmt_congress.2.d
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = MAL_kmt_congress.2.a
+		country_event = { id = MAL_kmt_congress.3 hours = 6 }
+	}
+	option = {
+		name = MAL_kmt_congress.2.b
+		custom_effect_tooltip = MAL_kmt_congress_freeze_tt
+		hidden_effect = {
+			MAL_kmt_caretaker_effect = yes
+			set_country_flag = MAL_kmt_frozen
+			MAL_kmt_calc_effect = yes
+		}
+	}
+}
+
+country_event = {
+	id = MAL_kmt_congress.3
+	title = MAL_kmt_congress.3.t
+	desc = MAL_kmt_congress.3.d
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = MAL_kmt_congress.3.a
+		custom_effect_tooltip = MAL_kmt_congress_verdict_tt
+		hidden_effect = {
+			MAL_kmt_congress_verdict_effect = yes
+		}
+	}
+	option = {
+		name = MAL_kmt_congress.3.b
+		custom_effect_tooltip = MAL_kmt_congress_freeze_tt
+		hidden_effect = {
+			MAL_kmt_caretaker_effect = yes
+			set_country_flag = MAL_kmt_frozen
+			MAL_kmt_calc_effect = yes
+		}
+	}
+}
+
+news_event = {
+	id = MAL_kmt_news.1
+	title = MAL_kmt_news.1.t
+	desc = MAL_kmt_news.1.d
+	picture = GFX_news_event_political_2
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAL_kmt_news.1.a
 	}
 }

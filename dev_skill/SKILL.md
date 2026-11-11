@@ -261,3 +261,19 @@ if = {
 ### 备注
 - 源图是任意比例的设计稿即可，工具负责缩放；不要手动画 82×52。
 - 若某 tag 已有旧旗，运行工具会**覆盖**三处同名文件（更新设计）；动手前先确认是否要保留旧版。
+
+## 11. 议会席位图（半圆 Parliament Diagram）自动化（2026-11-11 固化）
+
+用户提供了 `C:/Users/edwar/Documents/GitHub/hoi4-parliament-diagram-fork`（Flaxbeard 原版 tkinter 工具 + `parliament_sample/` 范例）。本仓已把坐标算法抽成无 GUI 依赖的 headless 生成器，并沉淀完整 SOP：
+
+- **SOP 全文**：`dev_skill/PARLIAMENT_DIAGRAM_SKILL.md`（§0 执行契约 / §2 算法与 5 个坑 / §3 配置 schema / §5 落位 8 步 / §7 MAL 104 席实例 / §8 校验清单）
+- **生成器**：`dev_skill/parliament_diagram/parliament_generator.py`
+- **已验证实例**：`dev_skill/parliament_diagram/examples/MAL_leg_104/`（含 `config.json`、`preview.html`、8 个代码片段、`manifest.json`）
+
+**执行契约**：以后用户说「做议会 / 议会席位图 / 半圆议席」，直接复制配置 → 跑 `python parliament_generator.py --config <config>` → 按 SOP §5 落位 → §9 校验，不要重写算法、不要手排圆点、不要再问坐标怎么处理。
+
+铁律补充：
+- 议会是**国家机构**，院内单位必须是**政党党团**；中执委是**党内机构**，单位是党内派系。两套席位账不得混算，只允许党内力量对比 → 议会党团忠诚度的单向派生。
+- 议席图 = 3 个等长数组（x / y / frame）+ 1 个 `dynamic_lists` + 1 张多帧座位精灵图。原版工具只产出 x/y，frame 与接线由本仓生成器补齐。
+- 坐标数组只在首次打开时生成一次（`initialized_flag` 防重复），之后只重算 frame；不要每月重建 2×N 行 `add_to_array`。
+- 座位 dds 的 `noOfFrames` 必须 = 党团数，fork 自带的 4 帧图不能直接套到 7 党团议会。

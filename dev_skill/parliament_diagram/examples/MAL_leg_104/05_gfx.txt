@@ -1,0 +1,14 @@
+# 把下面 spriteType 并进目标 .gfx 文件的 spriteTypes = { ... } 内
+# 贴图取自 hoi4-parliament-diagram-fork/parliament_sample/gfx/interface/parliament_sample/
+# seat 图是横向 N 帧精灵图，每帧一种党团颜色；noOfFrames 必须 = 党团数 8
+spriteTypes = {
+	spriteType = {
+		name = "GFX_MAL_leg_parliament_background"
+		textureFile = "/gfx/interface/TNW_MAL/parliament_background.dds"
+	}
+	spriteType = {
+		name = "GFX_MAL_leg_parliament_seat"
+		textureFile = "/gfx/interface/TNW_MAL/parliament_seat.dds"
+		noOfFrames = 8
+	}
+}

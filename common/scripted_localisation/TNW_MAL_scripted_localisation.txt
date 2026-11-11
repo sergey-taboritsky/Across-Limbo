@@ -1,0 +1,244 @@
+# 星洲国民党 / 立法院：立场五档、主席、陈嘉庚、主导权与院内状态（2026-11-11）
+
+defined_text = {
+	name = Get_MAL_stance_lodge
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_lodge_var value = 20 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local_hard
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_lodge_var value = 40 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_lodge_var value = 60 compare = less_than_or_equals } }
+		localization_key = MAL_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_lodge_var value = 80 compare = less_than_or_equals } }
+		localization_key = MAL_stance_nanjing
+	}
+	text = {
+		localization_key = MAL_stance_nanjing_hard
+	}
+}
+defined_text = {
+	name = Get_MAL_stance_overseas
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_overseas_var value = 20 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local_hard
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_overseas_var value = 40 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_overseas_var value = 60 compare = less_than_or_equals } }
+		localization_key = MAL_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_overseas_var value = 80 compare = less_than_or_equals } }
+		localization_key = MAL_stance_nanjing
+	}
+	text = {
+		localization_key = MAL_stance_nanjing_hard
+	}
+}
+defined_text = {
+	name = Get_MAL_stance_wulu
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_wulu_var value = 20 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local_hard
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_wulu_var value = 40 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_wulu_var value = 60 compare = less_than_or_equals } }
+		localization_key = MAL_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_wulu_var value = 80 compare = less_than_or_equals } }
+		localization_key = MAL_stance_nanjing
+	}
+	text = {
+		localization_key = MAL_stance_nanjing_hard
+	}
+}
+defined_text = {
+	name = Get_MAL_stance_longshi
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_longshi_var value = 20 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local_hard
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_longshi_var value = 40 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_longshi_var value = 60 compare = less_than_or_equals } }
+		localization_key = MAL_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_longshi_var value = 80 compare = less_than_or_equals } }
+		localization_key = MAL_stance_nanjing
+	}
+	text = {
+		localization_key = MAL_stance_nanjing_hard
+	}
+}
+defined_text = {
+	name = Get_MAL_stance_guild
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_guild_var value = 20 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local_hard
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_guild_var value = 40 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_guild_var value = 60 compare = less_than_or_equals } }
+		localization_key = MAL_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_guild_var value = 80 compare = less_than_or_equals } }
+		localization_key = MAL_stance_nanjing
+	}
+	text = {
+		localization_key = MAL_stance_nanjing_hard
+	}
+}
+defined_text = {
+	name = Get_MAL_stance_nanqiao
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_nanqiao_var value = 20 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local_hard
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_nanqiao_var value = 40 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_nanqiao_var value = 60 compare = less_than_or_equals } }
+		localization_key = MAL_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_nanqiao_var value = 80 compare = less_than_or_equals } }
+		localization_key = MAL_stance_nanjing
+	}
+	text = {
+		localization_key = MAL_stance_nanjing_hard
+	}
+}
+defined_text = {
+	name = Get_MAL_stance_pingzhang
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_pingzhang_var value = 20 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local_hard
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_pingzhang_var value = 40 compare = less_than_or_equals } }
+		localization_key = MAL_stance_local
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_pingzhang_var value = 60 compare = less_than_or_equals } }
+		localization_key = MAL_stance_neutral
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_pingzhang_var value = 80 compare = less_than_or_equals } }
+		localization_key = MAL_stance_nanjing
+	}
+	text = {
+		localization_key = MAL_stance_nanjing_hard
+	}
+}
+defined_text = {
+	name = Get_MAL_kmt_chair
+	text = {
+		trigger = { has_country_flag = MAL_kmt_chair_lodge }
+		localization_key = MAL_kmt_chair_name_lodge
+	}
+	text = {
+		trigger = { has_country_flag = MAL_kmt_chair_overseas }
+		localization_key = MAL_kmt_chair_name_overseas
+	}
+	text = {
+		trigger = { has_country_flag = MAL_kmt_chair_wulu }
+		localization_key = MAL_kmt_chair_name_wulu
+	}
+	text = {
+		trigger = { has_country_flag = MAL_kmt_chair_longshi }
+		localization_key = MAL_kmt_chair_name_longshi
+	}
+	text = {
+		trigger = { has_country_flag = MAL_kmt_chair_guild }
+		localization_key = MAL_kmt_chair_name_guild
+	}
+	text = {
+		trigger = { has_country_flag = MAL_kmt_chair_nanqiao }
+		localization_key = MAL_kmt_chair_name_nanqiao
+	}
+	text = {
+		trigger = { has_country_flag = MAL_kmt_chair_pingzhang }
+		localization_key = MAL_kmt_chair_name_pingzhang
+	}
+	text = {
+		localization_key = MAL_kmt_empty
+	}
+}
+defined_text = {
+	name = Get_MAL_jiageng_stance
+	text = {
+		trigger = { has_country_flag = MAL_kmt_jiageng_chair }
+		localization_key = MAL_kmt_jiageng_chair
+	}
+	text = {
+		trigger = { has_country_flag = MAL_kmt_jiageng_opposition }
+		localization_key = MAL_kmt_jiageng_opposition
+	}
+	text = {
+		localization_key = MAL_kmt_jiageng_neutral
+	}
+}
+defined_text = {
+	name = Get_MAL_kmt_status
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_status value = 0 } }
+		localization_key = MAL_kmt_status_frozen
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_status value = 1 } }
+		localization_key = MAL_kmt_status_hung
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_status value = 2 } }
+		localization_key = MAL_kmt_status_weak
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_kmt_status value = 3 } }
+		localization_key = MAL_kmt_status_stable
+	}
+	text = {
+		localization_key = MAL_kmt_empty
+	}
+}
+defined_text = {
+	name = Get_MAL_leg_status
+	text = {
+		trigger = { check_variable = { var = MAL_leg_status value = 1 } }
+		localization_key = MAL_leg_status_crisis
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_leg_status value = 2 } }
+		localization_key = MAL_leg_status_strained
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_leg_status value = 3 } }
+		localization_key = MAL_leg_status_stable
+	}
+	text = {
+		localization_key = MAL_kmt_empty
+	}
+}

@@ -1,0 +1,49 @@
+# ============================================================
+# 接线片段（不是可直接加载的独立文件，按注释合并到对应文件）
+# ============================================================
+
+# --- A. 追加到 common/decisions/<该分类已有决议文件> 的分类块内部 ---
+# 注意：本仓规范是「分类单独定义在 categories/，决议文件打开同名顶层块」，
+# 因此下面两个决议必须并进已有的 MAL_legislative_council = { ... } 块，
+# 不要在 categories/ 里再写 decision =，也不要在决议里写 category =。
+MAL_legislative_council = {
+	MAL_leg_open_parliament = {
+		icon = GFX_decision_generic_factory
+		fire_only_once = no
+		cost = 0
+		visible = { original_tag = MAL }
+		complete_effect = {
+			if = {
+				limit = { NOT = { has_country_flag = MAL_leg_parliament_initialized } }
+				MAL_leg_init_parliament_effect = yes
+				set_country_flag = MAL_leg_parliament_initialized
+			}
+			MAL_leg_reload_seat_frames_effect = yes
+			set_country_flag = MAL_leg_parliament_open
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	MAL_leg_refresh_parliament = {
+		icon = GFX_decision_generic_arrest
+		fire_only_once = no
+		cost = 0
+		visible = {
+			original_tag = MAL
+			has_country_flag = MAL_leg_parliament_initialized
+		}
+		complete_effect = {
+			MAL_leg_reload_seat_frames_effect = yes
+		}
+		ai_will_do = { base = 0 }
+	}
+}
+
+# --- B. 席位变量变化后刷新颜色（推荐放在算分脚本末尾）---
+# MAL_leg_reload_seat_frames_effect = yes
+# 若走 on_actions，可用 on_monthly_<TAG> 里同样调用一次；
+# 坐标数组只在首次打开时生成，不要每月重建 200+ 行 add_to_array。
+
+# --- C. 贴图落位 ---
+# 从 hoi4-parliament-diagram-fork/parliament_sample/gfx/interface/parliament_sample/
+# 复制两张 dds 到本模组的 /gfx/interface/TNW_MAL 目录（或改成自己的多帧座位图）

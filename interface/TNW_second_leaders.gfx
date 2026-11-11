@@ -7,6 +7,22 @@ spriteTypes = {
 	### Portrait
 
 	spriteType = {
+		name = "GFX_second_leader_portrait_Li_Zhendian"
+		texturefile = "gfx/characters/MAL_Li_Zhendian.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_second_leader_portrait_Li_Guangqian"
+		texturefile = "gfx/characters/MAL_Li_Guangqian.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_second_leader_portrait_Peng_Zemin"
+		texturefile = "gfx/characters/MAL_Peng_Zemin.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_second_leader_portrait_Juan_Negrin"
 		texturefile = "gfx/characters/SPR_juan_negrin.png"
 		legacy_lazy_load = no

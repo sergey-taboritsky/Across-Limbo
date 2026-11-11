@@ -1,0 +1,37 @@
+# 放进 common/scripted_guis/<任意文件名>.txt
+scripted_gui = {
+	MAL_legislative_council_scripted_gui = {
+		window_name = "MAL_legislative_council_gui"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = MAL_leg_parliament_open
+		}
+
+		dynamic_lists = {
+			MAL_leg_parliament_diagram = {
+				array = MAL_leg_seat_x
+				change_scope = no
+				entry_container = MAL_leg_parliament_seat
+				index = seat_idx
+			}
+		}
+
+		properties = {
+			MAL_leg_parliament_dot_icon = {
+				x = MAL_leg_seat_x^seat_idx
+				y = MAL_leg_seat_y^seat_idx
+				frame = MAL_leg_seat_frame^seat_idx
+			}
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = MAL_leg_parliament_open
+			}
+			refresh_button_click = {
+				MAL_leg_reload_seat_frames_effect = yes
+			}
+		}
+	}
+}

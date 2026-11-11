@@ -64,6 +64,16 @@ focus_tree = {
 			add_to_variable = { var = TNW_Literacy_level_value value = 5 }
 			custom_effect_tooltip = TNW_arch_treasury_fall_tt
 			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = MAL_leg_focus_citizenship_tt
+			add_to_variable = { var = MAL_leg_kmt_whip value = 5 }
+			clamp_variable = { var = MAL_leg_kmt_whip max = 30 min = -30 }
+			add_to_variable = { var = MAL_leg_mu_loyalty value = -4 }
+			clamp_variable = { var = MAL_leg_mu_loyalty max = 100 min = 0 }
+			add_to_variable = { var = MAL_leg_mpp_loyalty value = -4 }
+			clamp_variable = { var = MAL_leg_mpp_loyalty max = 100 min = 0 }
+			add_to_variable = { var = MAL_leg_mic_loyalty value = 4 }
+			clamp_variable = { var = MAL_leg_mic_loyalty max = 100 min = 0 }
+			MAL_leg_calc_effect = yes
 		}
 	}
 	focus = {
@@ -183,6 +193,15 @@ focus_tree = {
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 			custom_effect_tooltip = TNW_arch_treasury_fall_tt
 			add_to_variable = { var = capital_reserves value = -4 }
+			custom_effect_tooltip = MAL_leg_focus_republic_tt
+			add_to_variable = { var = MAL_leg_mu_loyalty value = -6 }
+			clamp_variable = { var = MAL_leg_mu_loyalty max = 100 min = 0 }
+			add_to_variable = { var = MAL_leg_mpp_loyalty value = -6 }
+			clamp_variable = { var = MAL_leg_mpp_loyalty max = 100 min = 0 }
+			add_to_variable = { var = MAL_kmt_lodge_var value = -3 }
+			clamp_variable = { var = MAL_kmt_lodge_var max = 100 min = 0 }
+			MAL_kmt_calc_effect = yes
+			MAL_leg_calc_effect = yes
 		}
 	}
 	focus = {
@@ -283,6 +302,10 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 5 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = MAL_leg_focus_indian_tt
+			add_to_variable = { var = MAL_leg_mic_loyalty value = 8 }
+			clamp_variable = { var = MAL_leg_mic_loyalty max = 100 min = 0 }
+			MAL_leg_calc_effect = yes
 		}
 	}
 	focus = {
@@ -299,6 +322,13 @@ focus_tree = {
 			add_political_power = 25
 			add_stability = 0.02
 			add_popularity = { ideology = Social_democracy popularity = 0.03 }
+			custom_effect_tooltip = MAL_kmt_focus_congress_tt
+			add_to_variable = { var = MAL_kmt_wulu_str value = 4 }
+			clamp_variable = { var = MAL_kmt_wulu_str max = 100 min = 0 }
+			add_to_variable = { var = MAL_kmt_guild_str value = 4 }
+			clamp_variable = { var = MAL_kmt_guild_str max = 100 min = 0 }
+			set_country_flag = MAL_kmt_jiageng_chair
+			MAL_kmt_calc_effect = yes
 		}
 	}
 	focus = {
@@ -724,6 +754,11 @@ focus_tree = {
 			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 1 }
 			custom_effect_tooltip = TNW_arch_treasury_fall_tt
 			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = MAL_kmt_focus_press_tt
+			add_to_variable = { var = MAL_kmt_lodge_str value = 5 }
+			add_to_variable = { var = MAL_kmt_lodge_seat_change value = 1 }
+			clamp_variable = { var = MAL_kmt_lodge_str max = 100 min = 0 }
+			MAL_kmt_calc_effect = yes
 		}
 	}
 	focus = {
@@ -1255,6 +1290,13 @@ focus_tree = {
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 5 }
 			add_war_support = 0.02
+			custom_effect_tooltip = MAL_leg_focus_deny_tt
+			set_country_flag = MAL_leg_malay_parties_walkout
+			add_to_variable = { var = MAL_leg_mu_loyalty value = -5 }
+			clamp_variable = { var = MAL_leg_mu_loyalty max = 100 min = 0 }
+			add_to_variable = { var = MAL_leg_mpp_loyalty value = -5 }
+			clamp_variable = { var = MAL_leg_mpp_loyalty max = 100 min = 0 }
+			MAL_leg_calc_effect = yes
 		}
 	}
 
@@ -1400,6 +1442,14 @@ focus_tree = {
 			add_to_variable = { var = TNW_penang_unrest value = -25 }
 			add_stability = 0.03
 			add_political_power = 50
+			custom_effect_tooltip = MAL_kmt_focus_penang_vote_tt
+			add_to_variable = { var = MAL_kmt_pingzhang_str value = 6 }
+			add_to_variable = { var = MAL_kmt_pingzhang_seat_change value = 1 }
+			clamp_variable = { var = MAL_kmt_pingzhang_str max = 100 min = 0 }
+			add_to_variable = { var = MAL_leg_kmt_whip value = 4 }
+			clamp_variable = { var = MAL_leg_kmt_whip max = 30 min = -30 }
+			MAL_kmt_calc_effect = yes
+			MAL_leg_calc_effect = yes
 		}
 	}
 
@@ -2160,6 +2210,13 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Party_Ties"
 			add_political_power = 25
 			add_popularity = { ideology = Social_democracy popularity = 0.02 }
+			custom_effect_tooltip = MAL_kmt_focus_nanjing_tt
+			add_to_variable = { var = MAL_kmt_overseas_str value = 6 }
+			add_to_variable = { var = MAL_kmt_overseas_seat_change value = 1 }
+			clamp_variable = { var = MAL_kmt_overseas_str max = 100 min = 0 }
+			add_to_variable = { var = MAL_kmt_overseas_var value = 5 }
+			clamp_variable = { var = MAL_kmt_overseas_var max = 100 min = 0 }
+			MAL_kmt_calc_effect = yes
 		}
 	}
 
@@ -2252,6 +2309,14 @@ focus_tree = {
 			add_political_power = 25
 			add_stability = 0.01
 			add_popularity = { ideology = Authoritarianism popularity = -0.02 }
+			custom_effect_tooltip = MAL_leg_focus_mic_tt
+			add_to_variable = { var = MAL_leg_mu_loyalty value = -3 }
+			clamp_variable = { var = MAL_leg_mu_loyalty max = 100 min = 0 }
+			add_to_variable = { var = MAL_leg_mpp_loyalty value = -3 }
+			clamp_variable = { var = MAL_leg_mpp_loyalty max = 100 min = 0 }
+			add_to_variable = { var = MAL_leg_mic_loyalty value = -4 }
+			clamp_variable = { var = MAL_leg_mic_loyalty max = 100 min = 0 }
+			MAL_leg_calc_effect = yes
 		}
 	}
 
@@ -3073,6 +3138,12 @@ focus = {
 			add_political_power = 25
 			add_popularity = { ideology = Authoritarianism popularity = -0.02 }
 			add_stability = 0.01
+			log = "[GetLogRoot]: Focus Completed MAL_Investigate_Leftist_Party_Ties"
+			custom_effect_tooltip = MAL_kmt_focus_investigate_tt
+			add_to_variable = { var = MAL_kmt_longshi_str value = -4 }
+			add_to_variable = { var = MAL_kmt_longshi_seat_change value = -1 }
+			clamp_variable = { var = MAL_kmt_longshi_str max = 100 min = 0 }
+			MAL_kmt_calc_effect = yes
 		}
 	}
 
@@ -3123,6 +3194,13 @@ focus = {
 			add_stability = 0.02
 			add_popularity = { ideology = syndicalism popularity = -0.02 }
 			set_country_flag = MAL_peng_congress_investigated
+			log = "[GetLogRoot]: Focus Completed MAL_Investigate_Peng_Labor_Congress"
+			custom_effect_tooltip = MAL_kmt_focus_peng_tt
+			add_to_variable = { var = MAL_kmt_longshi_str value = -6 }
+			clamp_variable = { var = MAL_kmt_longshi_str max = 100 min = 0 }
+			add_to_variable = { var = MAL_kmt_lodge_str value = 3 }
+			clamp_variable = { var = MAL_kmt_lodge_str max = 100 min = 0 }
+			MAL_kmt_calc_effect = yes
 		}
 	}
 
@@ -3915,6 +3993,10 @@ focus = {
 					add_idea = MAL_sfdf_dummy_23
 				}
 			}
+			custom_effect_tooltip = MAL_kmt_focus_officers_tt
+			add_to_variable = { var = MAL_kmt_overseas_str value = 4 }
+			clamp_variable = { var = MAL_kmt_overseas_str max = 100 min = 0 }
+			MAL_kmt_calc_effect = yes
 		}
 	}
 

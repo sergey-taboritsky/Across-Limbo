@@ -1,0 +1,76 @@
+{
+  "title": "星洲联邦 · 联邦立法院",
+  "tag": "MAL",
+  "example_name": "MAL_leg_104",
+  "total_seats": 104,
+  "spread": 1.85,
+  "first_row_radius": 5.7,
+  "ordering_factor": 0.0,
+  "radius_rows": 4,
+  "icon_size": 9,
+  "seat_source": "variables",
+  "total_seats_var": "MAL_leg_total_seats",
+  "prefix": "MAL_leg",
+  "arrays": {
+    "x": "MAL_leg_seat_x",
+    "y": "MAL_leg_seat_y",
+    "frame": "MAL_leg_seat_frame"
+  },
+  "effects": {
+    "init_positions": "MAL_leg_init_seat_positions_effect",
+    "reload_frames": "MAL_leg_reload_seat_frames_effect",
+    "init_all": "MAL_leg_init_parliament_effect"
+  },
+  "scripted_gui": "MAL_legislative_council_scripted_gui",
+  "sploc": "MAL_leg_seat_party",
+  "open_flag": "MAL_leg_parliament_open",
+  "initialized_flag": "MAL_leg_parliament_initialized",
+  "decision_category": "MAL_legislative_council",
+  "decisions": {
+    "open": "MAL_leg_open_parliament",
+    "refresh": "MAL_leg_refresh_parliament"
+  },
+  "icons": {
+    "open": "GFX_decision_generic_factory",
+    "refresh": "GFX_decision_generic_arrest"
+  },
+  "gui": {
+    "window_name": "MAL_legislative_council_gui",
+    "diagram_grid": "MAL_leg_parliament_diagram",
+    "seat_container": "MAL_leg_parliament_seat",
+    "seat_icon": "MAL_leg_parliament_dot_icon",
+    "seat_sprite": "GFX_MAL_leg_parliament_seat",
+    "background_sprite": "GFX_MAL_leg_parliament_background",
+    "width": 450,
+    "height": 250,
+    "grid_x": 28,
+    "grid_y": 52
+  },
+  "textures": {
+    "background": "/gfx/interface/TNW_MAL/parliament_background.dds",
+    "seat": "/gfx/interface/TNW_MAL/parliament_seat.dds"
+  },
+  "loc": {
+    "seat_tooltip": "MAL_leg_seat_tt",
+    "close_tooltip": "MAL_leg_close_tt",
+    "refresh_tooltip": "MAL_leg_refresh_tt",
+    "extra": {
+      "MAL_leg_open_parliament": "召开联邦立法院",
+      "MAL_leg_open_parliament_desc": "展开半圆议席图：104 席按党团着色，空缺议席另行标出。首次召开时生成座位坐标，此后只按实时席位重算颜色。",
+      "MAL_leg_refresh_parliament": "重算议席分布",
+      "MAL_leg_refresh_parliament_desc": "按各党团当前席位重新填充颜色数组；席位变化或补选后可随时刷新，不重建坐标。",
+      "MAL_leg_close_tt": "关闭议席图",
+      "MAL_leg_refresh_tt": "重算议席分布"
+    }
+  },
+  "parties": [
+    {"id": "kmt", "name": "星洲国民党", "seats": 42, "frame": 1, "var": "MAL_leg_kmt_seats", "loc": "MAL_leg_party_kmt", "color": "#2b5fa8"},
+    {"id": "kmt_left", "name": "星洲国民党-左翼党团（南洋民主劳动党）", "seats": 14, "frame": 2, "var": "MAL_leg_kmt_left_seats", "loc": "MAL_leg_party_kmt_left", "color": "#c0504d"},
+    {"id": "mu", "name": "马来人协会", "seats": 12, "frame": 3, "var": "MAL_leg_mu_seats", "loc": "MAL_leg_party_mu", "color": "#2e8b6b"},
+    {"id": "mpp", "name": "穆斯林人民党", "seats": 9, "frame": 4, "var": "MAL_leg_mpp_seats", "loc": "MAL_leg_party_mpp", "color": "#d9a441"},
+    {"id": "mic", "name": "马来印度人国大党", "seats": 9, "frame": 5, "var": "MAL_leg_mic_seats", "loc": "MAL_leg_party_mic", "color": "#8e6bbf"},
+    {"id": "pmftu", "name": "泛马工会联合会", "seats": 7, "frame": 6, "var": "MAL_leg_pmftu_seats", "loc": "MAL_leg_party_pmftu", "color": "#b05252"},
+    {"id": "cpc", "name": "中国共产党-南洋委员会", "seats": 5, "frame": 7, "var": "MAL_leg_cpc_seats", "loc": "MAL_leg_party_cpc", "color": "#8f1d1d"},
+    {"id": "vacant", "name": "空缺议席", "seats": 6, "frame": 8, "var": "MAL_leg_vacant_seats", "loc": "MAL_leg_party_vacant", "color": "#9aa0a6"}
+  ]
+}

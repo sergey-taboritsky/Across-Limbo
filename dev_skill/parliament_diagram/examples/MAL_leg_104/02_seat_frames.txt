@@ -1,0 +1,71 @@
+# ============================================================
+# 议会席位分配 —— frame 数组分段填充（自动生成，勿手改）
+# resize_array 会把数组扩到 size，新增槽位填 value = frame 编号；
+# 因此按「累计席位」依次 resize，就能把每个党团填成一段连续颜色。
+# 最后一段强制拉到「总席位」变量，因此空缺议席 = 总席位 - 在籍党团合计，
+# 自动吸收任何席位差额，且 frame 数组长度恒等于坐标数组长度（不会溢出圆点）。
+# ============================================================
+MAL_leg_reload_seat_frames_effect = {
+	clear_array = MAL_leg_seat_frame
+	# 星洲国民党  frame 1  MAL_leg_kmt_seats
+	set_temp_variable = { cum = MAL_leg_kmt_seats }
+	resize_array = {
+		array = MAL_leg_seat_frame
+		value = 1
+		size = cum
+	}
+	# 星洲国民党-左翼党团（南洋民主劳动党）  frame 2  MAL_leg_kmt_left_seats
+	add_to_temp_variable = { cum = MAL_leg_kmt_left_seats }
+	resize_array = {
+		array = MAL_leg_seat_frame
+		value = 2
+		size = cum
+	}
+	# 马来人协会  frame 3  MAL_leg_mu_seats
+	add_to_temp_variable = { cum = MAL_leg_mu_seats }
+	resize_array = {
+		array = MAL_leg_seat_frame
+		value = 3
+		size = cum
+	}
+	# 穆斯林人民党  frame 4  MAL_leg_mpp_seats
+	add_to_temp_variable = { cum = MAL_leg_mpp_seats }
+	resize_array = {
+		array = MAL_leg_seat_frame
+		value = 4
+		size = cum
+	}
+	# 马来印度人国大党  frame 5  MAL_leg_mic_seats
+	add_to_temp_variable = { cum = MAL_leg_mic_seats }
+	resize_array = {
+		array = MAL_leg_seat_frame
+		value = 5
+		size = cum
+	}
+	# 泛马工会联合会  frame 6  MAL_leg_pmftu_seats
+	add_to_temp_variable = { cum = MAL_leg_pmftu_seats }
+	resize_array = {
+		array = MAL_leg_seat_frame
+		value = 6
+		size = cum
+	}
+	# 中国共产党-南洋委员会  frame 7  MAL_leg_cpc_seats
+	add_to_temp_variable = { cum = MAL_leg_cpc_seats }
+	resize_array = {
+		array = MAL_leg_seat_frame
+		value = 7
+		size = cum
+	}
+	# 空缺议席  frame 8  MAL_leg_vacant_seats
+	set_temp_variable = { cum = MAL_leg_total_seats }
+	resize_array = {
+		array = MAL_leg_seat_frame
+		value = 8
+		size = cum
+	}
+}
+
+MAL_leg_init_parliament_effect = {
+	MAL_leg_init_seat_positions_effect = yes
+	MAL_leg_reload_seat_frames_effect = yes
+}

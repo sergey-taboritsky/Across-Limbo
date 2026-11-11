@@ -1,0 +1,32 @@
+# 星洲国民党（党内机构）/ 联邦立法院（国家机构）决议分类定义（2026-11-11 第二轮）
+# 决议写在 common/decisions/TNW_MAL_decisions.txt 的同名顶层块内；分类文件不列 decision，决议文件不写 category。
+# 立法院院内单位为政党党团，104 席；中执委为党内机构，21 席。
+
+MAL_kmt_party = {
+	icon = GFX_decision_category_border_conflicts
+	allowed = {
+		original_tag = MAL
+	}
+	visible_when_empty = yes
+	priority = 70
+}
+
+MAL_legislative_council = {
+	icon = GFX_decision_category_border_conflicts
+	allowed = {
+		original_tag = MAL
+	}
+	visible_when_empty = yes
+	priority = 60
+}
+
+# 星洲国民政府经济建设决议组（2026-11-11 第三轮）
+# 分类定义与决议文件分离；本文件不列 decision =，决议文件不写 category =。
+MAL_Kuomintang_Governance_category = {
+	icon = GFX_decision_category_border_conflicts
+	allowed = {
+		original_tag = MAL
+	}
+	visible_when_empty = yes
+	priority = 50
+}

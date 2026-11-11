@@ -1,0 +1,17 @@
+﻿l_simp_chinese:
+ # 议会席位图（自动生成 · 总席位 104）
+ MAL_leg_seat_tt: "[MAL_leg_seat_party]"
+ MAL_leg_party_kmt: "星洲国民党"
+ MAL_leg_party_kmt_left: "星洲国民党-左翼党团（南洋民主劳动党）"
+ MAL_leg_party_mu: "马来人协会"
+ MAL_leg_party_mpp: "穆斯林人民党"
+ MAL_leg_party_mic: "马来印度人国大党"
+ MAL_leg_party_pmftu: "泛马工会联合会"
+ MAL_leg_party_cpc: "中国共产党-南洋委员会"
+ MAL_leg_party_vacant: "空缺议席"
+ MAL_leg_open_parliament: "召开联邦立法院"
+ MAL_leg_open_parliament_desc: "展开半圆议席图：104 席按党团着色，空缺议席另行标出。首次召开时生成座位坐标，此后只按实时席位重算颜色。"
+ MAL_leg_refresh_parliament: "重算议席分布"
+ MAL_leg_refresh_parliament_desc: "按各党团当前席位重新填充颜色数组；席位变化或补选后可随时刷新，不重建坐标。"
+ MAL_leg_close_tt: "关闭议席图"
+ MAL_leg_refresh_tt: "重算议席分布"

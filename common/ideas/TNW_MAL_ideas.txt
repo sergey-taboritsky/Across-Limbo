@@ -323,5 +323,73 @@ ideas = {
 				air_untrained_pilots_penalty_factor = -0.05
 			}
 		}
+		# 星洲国民党中执委主导派系 / 看守中执委（2026-11-11）
+		MAL_kmt_dominant_lodge = {
+			name = MAL_kmt_dominant_lodge
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.02
+			}
+		}
+		MAL_kmt_dominant_overseas = {
+			name = MAL_kmt_dominant_overseas
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.03
+				research_speed_factor = 0.03
+				stability_factor = -0.01
+			}
+		}
+		MAL_kmt_dominant_wulu = {
+			name = MAL_kmt_dominant_wulu
+			removal_cost = -1
+			modifier = {
+				construction_speed_buildings_factor = 0.05
+				political_power_factor = 0.02
+			}
+		}
+		MAL_kmt_dominant_longshi = {
+			name = MAL_kmt_dominant_longshi
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				political_power_factor = 0.02
+				stability_factor = -0.03
+			}
+		}
+		MAL_kmt_dominant_guild = {
+			name = MAL_kmt_dominant_guild
+			removal_cost = -1
+			modifier = {
+				construction_speed_buildings_factor = 0.08
+				research_speed_factor = -0.02
+			}
+		}
+		MAL_kmt_dominant_nanqiao = {
+			name = MAL_kmt_dominant_nanqiao
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				political_power_factor = 0.02
+				war_support_factor = -0.01
+			}
+		}
+		MAL_kmt_dominant_pingzhang = {
+			name = MAL_kmt_dominant_pingzhang
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.02
+				construction_speed_buildings_factor = 0.03
+			}
+		}
+		MAL_kmt_caretaker = {
+			name = MAL_kmt_caretaker
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
 	}
 }

@@ -114,6 +114,49 @@ defined_text = {
 		}
 		localization_key = TNW_second_leader_name_SIA_Luang_Pibul_Songgram
 	}
+	# 星洲国民党中执委主席更替（2026-11-11）；陈楚楠 / 星洲交通部沿用下方原有分支
+	text = {
+		trigger = {
+			original_tag = MAL
+			has_country_flag = MAL_kmt_chair_overseas
+		}
+		localization_key = TNW_second_leader_name_MAL_Li_Zhendian
+	}
+	text = {
+		trigger = {
+			original_tag = MAL
+			has_country_flag = MAL_kmt_chair_wulu
+		}
+		localization_key = TNW_second_leader_name_MAL_Li_Guangqian
+	}
+	text = {
+		trigger = {
+			original_tag = MAL
+			has_country_flag = MAL_kmt_chair_longshi
+		}
+		localization_key = TNW_second_leader_name_MAL_Peng_Zemin
+	}
+	text = {
+		trigger = {
+			original_tag = MAL
+			has_country_flag = MAL_kmt_chair_guild
+		}
+		localization_key = TNW_second_leader_name_MAL_Chen_Liushi
+	}
+	text = {
+		trigger = {
+			original_tag = MAL
+			has_country_flag = MAL_kmt_chair_nanqiao
+		}
+		localization_key = TNW_second_leader_name_MAL_Zhang_Yongfu
+	}
+	text = {
+		trigger = {
+			original_tag = MAL
+			has_country_flag = MAL_kmt_chair_pingzhang
+		}
+		localization_key = TNW_second_leader_name_MAL_Pingzhang
+	}
 	text = {
 		trigger = {
 			original_tag = MAL
@@ -135,6 +178,12 @@ defined_text = {
 			has_country_flag = CUB_Fulgencio_Batista_PM_flag
 		}
 		localization_key = TNW_second_leader_name_CUB_Fulgencio_Batista
+	}
+	text = {
+		trigger = {
+			original_tag = MAL
+		}
+		localization_key = TNW_second_leader_name_MAL_caretaker
 	}
 	#text = {
 	#	trigger = {
