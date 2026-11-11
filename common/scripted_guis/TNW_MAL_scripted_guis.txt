@@ -1,0 +1,23 @@
+scripted_gui = {
+	TNW_MAL_parliament_gui = {
+		context_type = decision_category
+		window_name = "TNW_MAL_parliament_gui_container"
+
+		dynamic_lists = {
+			TNW_MAL_parliament_diagram = {
+				array = MAL_leg_seat_x
+				index = seat_idx
+				change_scope = no
+				entry_container = TNW_MAL_parliament_seat
+			}
+		}
+
+		properties = {
+			TNW_MAL_parliament_dot_icon = {
+				frame = MAL_leg_seat_frame^seat_idx
+				x = MAL_leg_seat_x^seat_idx
+				y = MAL_leg_seat_y^seat_idx
+			}
+		}
+	}
+}

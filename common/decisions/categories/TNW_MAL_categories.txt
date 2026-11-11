@@ -16,7 +16,11 @@ MAL_legislative_council = {
 	allowed = {
 		original_tag = MAL
 	}
+	visible = {
+		always = yes
+	}
 	visible_when_empty = yes
+	scripted_gui = TNW_MAL_parliament_gui
 	priority = 60
 }
 

@@ -1,4 +1,4 @@
-# 星洲国民党 / 立法院：立场五档、主席、陈嘉庚、主导权与院内状态（2026-11-11）
+# 星洲国民党 / 立法院：立场五档、主席、主导权与院内状态（2026-11-11）
 
 defined_text = {
 	name = Get_MAL_stance_lodge
@@ -189,25 +189,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = Get_MAL_jiageng_stance
-	text = {
-		trigger = { has_country_flag = MAL_kmt_jiageng_chair }
-		localization_key = MAL_kmt_jiageng_chair
-	}
-	text = {
-		trigger = { has_country_flag = MAL_kmt_jiageng_opposition }
-		localization_key = MAL_kmt_jiageng_opposition
-	}
-	text = {
-		localization_key = MAL_kmt_jiageng_neutral
-	}
-}
-defined_text = {
 	name = Get_MAL_kmt_status
-	text = {
-		trigger = { check_variable = { var = MAL_kmt_status value = 0 } }
-		localization_key = MAL_kmt_status_frozen
-	}
 	text = {
 		trigger = { check_variable = { var = MAL_kmt_status value = 1 } }
 		localization_key = MAL_kmt_status_hung
@@ -240,5 +222,79 @@ defined_text = {
 	}
 	text = {
 		localization_key = MAL_kmt_empty
+	}
+}
+
+defined_text = {
+	name = MAL_leg_seat_party
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 1 }
+		}
+		localization_key = MAL_leg_party_kmt
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 2 }
+		}
+		localization_key = MAL_leg_party_kmt_left
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 3 }
+		}
+		localization_key = MAL_leg_party_mu
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 4 }
+		}
+		localization_key = MAL_leg_party_mpp
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 5 }
+		}
+		localization_key = MAL_leg_party_mic
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 6 }
+		}
+		localization_key = MAL_leg_party_pmftu
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 7 }
+		}
+		localization_key = MAL_leg_party_cpc
+	}
+	text = {
+		trigger = {
+			check_variable = { MAL_leg_seat_frame^seat_idx = 8 }
+		}
+		localization_key = MAL_leg_party_vacant
+	}
+	text = {
+		localization_key = MAL_leg_party_vacant
+	}
+}
+
+defined_text = {
+	name = Get_MAL_leg_bill_result
+	text = {
+		trigger = { check_variable = { var = MAL_leg_bill_result value = 1 } }
+		localization_key = MAL_leg_bill_result_passed
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_leg_bill_result value = 2 } }
+		localization_key = MAL_leg_bill_result_rejected
+	}
+	text = {
+		trigger = { check_variable = { var = MAL_leg_bill_result value = 3 } }
+		localization_key = MAL_leg_bill_result_quorum
+	}
+	text = {
+		localization_key = MAL_leg_bill_result_none
 	}
 }

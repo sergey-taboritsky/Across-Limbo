@@ -323,7 +323,7 @@ ideas = {
 				air_untrained_pilots_penalty_factor = -0.05
 			}
 		}
-		# 星洲国民党中执委主导派系 / 看守中执委（2026-11-11）
+		# 星洲国民党中执委主导派系（2026-11-11）
 		MAL_kmt_dominant_lodge = {
 			name = MAL_kmt_dominant_lodge
 			removal_cost = -1
@@ -383,13 +383,6 @@ ideas = {
 				construction_speed_buildings_factor = 0.03
 			}
 		}
-		MAL_kmt_caretaker = {
-			name = MAL_kmt_caretaker
-			removal_cost = -1
-			modifier = {
-				political_power_factor = -0.05
-				stability_factor = -0.05
-			}
-		}
+
 	}
 }

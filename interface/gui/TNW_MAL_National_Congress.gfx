@@ -1,0 +1,7 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_MAL_leg_parliament_seat"
+		texturefile = "gfx/interface/TNW_MAL/parliament_seat.dds"
+		noOfFrames = 8
+	}
+}

@@ -134,7 +134,7 @@ python parliament_generator.py --config xxx.json --check-only             # 只�
 
 ## 5. 落位步骤（8 步，按顺序）
 
-1. **贴图**：从 fork 的 `parliament_sample/gfx/interface/parliament_sample/` 复制背景 dds；座位 dds 必须是**横向 N 帧精灵图**（N = 党团数，MAL 为 8；fork 自带的是 4 帧，不能直接复用）。每帧一种党团颜色，`noOfFrames` 与 `frame` 最大值一致。
+1. **贴图**：从 fork 的 `parliament_sample/gfx/interface/parliament_sample/` 复制背景 dds；座位 dds 必须是**横向 N 帧精灵图**（N = 党团数，MAL 为 8；fork 自带的是 4 帧，不能直接复用；本仓已自制 8 帧放在 `gfx/interface/TNW_MAL/parliament_seat.dds`）。每帧一种党团颜色，`noOfFrames` 与 `frame` 最大值一致。
 2. **gfx / gui**：把 `05_gfx.txt`、`04_gui.txt` 的块并进目标文件已有的 `spriteTypes = { }` / `guiTypes = { }` 内，**不要新建重复的顶层包裹**。`.gui` 里的 `100%%` 是 HOI4 语法，不要改成 `100%`。
 3. **scripted_gui**：`03_scripted_gui.txt` 可整份放进 `common/scripted_guis/`。`window_name` 必须与 `.gui` 主窗口 `name` 一致；`entry_container` 必须与座位容器 `name` 一致；`index = seat_idx` 不要改。
 4. **scripted_effects**：`01` + `02` 合并进一个 `.txt`。`01` 是常量坐标，`02` 读变量，职责分开。
@@ -178,7 +178,7 @@ python parliament_generator.py --config xxx.json --check-only             # 只�
 
 **与现有变量层的对接**：`MAL_leg_<g>_seats / _loyalty / _seat_change / _whip` 已由 `common/scripted_effects/TNW_MAL_scripted_effects.txt` 的 `MAL_leg_calc_effect` 维护；议会只做表现层。两党团 `_loyalty` 是**党内力量对比的覆盖式派生**（主席阵营 ≥11 席 → 两团 100；隆市派 str ≥50 → 左翼团 0），玩家只能改 `_whip`。生成器读的是 `_seats`，与之完全兼容。
 
-> ⚠️ 本轮用户尚未要求把圆点 GUI **接进游戏运行时**：`examples/MAL_leg_104/` 是即插即用产物，`common/scripted_guis/`、`interface/` 运行时文件与 `MAL_leg_x_array / y_array / reload_gui` 仍按上一轮约定留空。要正式接入时按 §5 复制即可，无需重算。
+> ✅ **2026-11-11 第五轮已正式接进游戏运行时**：MAL 立法院按 BUL 范式挂在分类标签页（`MAL_legislative_council` 写 `scripted_gui = TNW_MAL_parliament_gui`，`context_type = decision_category`）。运行时文件见 `common/scripted_guis/TNW_MAL_scripted_guis.txt`、`interface/gui/TNW_MAL_National_Congress.gui/.gfx`、`common/scripted_effects/TNW_MAL_parliament_effects.txt`、`gfx/interface/TNW_MAL/parliament_seat.dds`（自制 8 帧）。`examples/MAL_leg_104/03_scripted_gui.txt` 是 `player_context` 独立浮窗版，**接入分类时不要整份照抄**。
 
 ---
 

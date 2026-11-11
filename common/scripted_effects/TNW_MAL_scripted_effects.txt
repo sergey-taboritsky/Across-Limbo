@@ -1,9 +1,9 @@
-# 星洲国民党（党内机构）与联邦立法院（国家机构）结算脚本（2026-11-11 第二轮）
+# 星洲国民党（党内机构）与联邦立法院（国家机构）结算脚本（2026-11-11 第五轮）
 # 【机构分离】中执委 = 党内中央执行委员会，党章固定 21 席、过半 11；联邦立法院 = 国家议会，104 席、法定人数 53。
 # 两套算分脚本互不读取对方状态来增减自己的席位；唯一例外是「中执委派系力量对比 -> 国民党两党团忠诚」的单向派生。
-# 中执委：MAL_kmt_<f>_str 实力 0-100 / _var 路线 0=星洲本位 100=南京本位 / _seats 席位（七派总和恒为 21）/ _loyalty 忠诚 / _seat_change 席位变化
-# 立法院：MAL_leg_<g>_seats 席位 / _loyalty 忠诚 / _seat_change 席位变化 / _whip 党鞭修正（仅 kmt 与 kmt_left）
-# 圆点 GUI（半圆议会坐标数组 x_array/y_array、scripted_gui、interface 容器）本轮留空，仅保留统计用变量层，坐标由用户后续自行处理。
+# 中执委：MAL_kmt_<f>_str 实力 0-100 / _var 路线 0=星洲本位 100=南京本位 / _seats 席位（七派总和恒为 21）/ _loyalty 忠诚
+# 立法院：MAL_leg_<g>_seats 席位 / _loyalty 忠诚 / _whip 党鞭修正（仅 kmt 与 kmt_left）
+# 圆点 GUI 已接入运行时：坐标 / frame 数组与刷新脚本见 TNW_MAL_parliament_effects.txt。
 
 MAL_kmt_init_effect = {
 	# 星洲交通部
@@ -11,43 +11,36 @@ MAL_kmt_init_effect = {
 	set_variable = { MAL_kmt_lodge_var = 40 }
 	set_variable = { MAL_kmt_lodge_seats = 1 }
 	set_variable = { MAL_kmt_lodge_loyalty = 80 }
-	set_variable = { MAL_kmt_lodge_seat_change = 0 }
 	# 南京海外部
 	set_variable = { MAL_kmt_overseas_str = 26 }
 	set_variable = { MAL_kmt_overseas_var = 85 }
 	set_variable = { MAL_kmt_overseas_seats = 1 }
 	set_variable = { MAL_kmt_overseas_loyalty = 70 }
-	set_variable = { MAL_kmt_overseas_seat_change = 0 }
 	# 吾庐俱乐部
 	set_variable = { MAL_kmt_wulu_str = 18 }
 	set_variable = { MAL_kmt_wulu_var = 55 }
 	set_variable = { MAL_kmt_wulu_seats = 1 }
 	set_variable = { MAL_kmt_wulu_loyalty = 50 }
-	set_variable = { MAL_kmt_wulu_seat_change = 0 }
 	# 隆市派
 	set_variable = { MAL_kmt_longshi_str = 14 }
 	set_variable = { MAL_kmt_longshi_var = 15 }
 	set_variable = { MAL_kmt_longshi_seats = 1 }
 	set_variable = { MAL_kmt_longshi_loyalty = 35 }
-	set_variable = { MAL_kmt_longshi_seat_change = 0 }
 	# 同业公会
 	set_variable = { MAL_kmt_guild_str = 12 }
 	set_variable = { MAL_kmt_guild_var = 50 }
 	set_variable = { MAL_kmt_guild_seats = 1 }
 	set_variable = { MAL_kmt_guild_loyalty = 55 }
-	set_variable = { MAL_kmt_guild_seat_change = 0 }
 	# 南侨同志会
 	set_variable = { MAL_kmt_nanqiao_str = 10 }
 	set_variable = { MAL_kmt_nanqiao_var = 30 }
 	set_variable = { MAL_kmt_nanqiao_seats = 1 }
 	set_variable = { MAL_kmt_nanqiao_loyalty = 45 }
-	set_variable = { MAL_kmt_nanqiao_seat_change = 0 }
 	# 平章会馆
 	set_variable = { MAL_kmt_pingzhang_str = 8 }
 	set_variable = { MAL_kmt_pingzhang_var = 20 }
 	set_variable = { MAL_kmt_pingzhang_seats = 1 }
 	set_variable = { MAL_kmt_pingzhang_loyalty = 40 }
-	set_variable = { MAL_kmt_pingzhang_seat_change = 0 }
 	# 中执委定额与累加器
 	set_variable = { MAL_kmt_total_seats = 21 }
 	set_variable = { MAL_kmt_quorum = 11 }
@@ -69,63 +62,55 @@ MAL_kmt_init_effect = {
 	set_variable = { MAL_leg_kmt_seats = 42 }
 	set_variable = { MAL_leg_kmt_loyalty = 100 }
 	set_variable = { MAL_leg_kmt_whip = 0 }
-	set_variable = { MAL_leg_kmt_seat_change = 0 }
 	# 星洲国民党 - 左翼党团（南洋民主劳动党）（党内左翼·彭泽民系）
 	set_variable = { MAL_leg_kmt_left_seats = 14 }
 	set_variable = { MAL_leg_kmt_left_loyalty = 100 }
 	set_variable = { MAL_leg_kmt_left_whip = 0 }
-	set_variable = { MAL_leg_kmt_left_seat_change = 0 }
 	# 马来人协会（马来宪政保守派）
 	set_variable = { MAL_leg_mu_seats = 12 }
 	set_variable = { MAL_leg_mu_loyalty = 30 }
-	set_variable = { MAL_leg_mu_seat_change = 0 }
 	# 穆斯林人民党（伊斯兰党合法外皮）
 	set_variable = { MAL_leg_mpp_seats = 9 }
 	set_variable = { MAL_leg_mpp_loyalty = 25 }
-	set_variable = { MAL_leg_mpp_seat_change = 0 }
 	# 马来印度人国大党（印裔宪政派）
 	set_variable = { MAL_leg_mic_seats = 9 }
 	set_variable = { MAL_leg_mic_loyalty = 55 }
-	set_variable = { MAL_leg_mic_seat_change = 0 }
 	# 泛马工会联合会（工运·左翼）
 	set_variable = { MAL_leg_pmftu_seats = 7 }
 	set_variable = { MAL_leg_pmftu_loyalty = 35 }
-	set_variable = { MAL_leg_pmftu_seat_change = 0 }
 	# 中国共产党 - 南洋委员会（中共南委·地下外围）
 	set_variable = { MAL_leg_cpc_seats = 5 }
 	set_variable = { MAL_leg_cpc_loyalty = 15 }
-	set_variable = { MAL_leg_cpc_seat_change = 0 }
 	# 空缺议席（非政党统计项）
 	set_variable = { MAL_leg_vacant_seats = 6 }
-	set_variable = { MAL_leg_vacant_loyalty = 0 }
-	set_variable = { MAL_leg_vacant_seat_change = 0 }
 	set_variable = { MAL_leg_total_seats = 104 }
 	set_variable = { MAL_leg_quorum = 53 }
 	set_variable = { MAL_leg_present_seats = 98 }
 	set_variable = { MAL_leg_loyal_seats = 0 }
 	set_variable = { MAL_leg_status = 3 }
 	set_variable = { MAL_leg_tmp = 0 }
+	set_variable = { MAL_kmt_tmp_raw = 0 }
+	set_variable = { MAL_kmt_outgoing_faction = 0 }
+	set_variable = { MAL_kmt_exclude_faction = 0 }
+	set_variable = { MAL_leg_bill_id = 0 }
+	set_variable = { MAL_leg_bill_result = 0 }
 	set_country_flag = MAL_kmt_chair_lodge
 	set_country_flag = MAL_Chen_Chunan_flag
 	add_ideas = MAL_kmt_dominant_lodge
+	MAL_leg_init_parliament_effect = yes
 	MAL_kmt_calc_effect = yes
 	MAL_leg_calc_effect = yes
 }
 
-MAL_kmt_calc_effect = {
-	# 清零累加量
-	set_variable = { MAL_kmt_nanjing_votes = 0 }
-	set_variable = { MAL_kmt_local_votes = 0 }
-	set_variable = { MAL_kmt_chair_seats = 0 }
-	set_variable = { MAL_kmt_local_seats = 0 }
-	set_variable = { MAL_kmt_nanjing_seats = 0 }
-	set_variable = { MAL_kmt_neutral_seats = 0 }
+MAL_kmt_reapportion_effect = {
+	set_variable = { MAL_kmt_total_seats = 21 }
+	set_variable = { MAL_kmt_quorum = 11 }
+	# 累加器必须在每年重划前清零，否则跨年度重复累加会算错席位
 	set_variable = { MAL_kmt_str_sum = 0 }
 	set_variable = { MAL_kmt_seat_sum = 0 }
 	set_variable = { MAL_kmt_seat_adj = 0 }
-	set_variable = { MAL_kmt_total_seats = 21 }
-	set_variable = { MAL_kmt_quorum = 11 }
-
+	# 年度党会 / 特殊事件专用：按七派实力重划党章固定 21 席，总和恒为 21。
+	# 日常决议只改实力与忠诚，绝不调用本脚本。
 	# ① 七派按实力比例分配党章固定 21 席（比例 -> 舍入 -> 补齐，总和恒为 21）
 	add_to_variable = { var = MAL_kmt_str_sum value = MAL_kmt_lodge_str }
 	add_to_variable = { var = MAL_kmt_str_sum value = MAL_kmt_overseas_str }
@@ -275,352 +260,209 @@ MAL_kmt_calc_effect = {
 		add_to_variable = { var = MAL_kmt_lodge_seats value = -1 }
 		add_to_variable = { var = MAL_kmt_seat_adj value = 1 }
 	}
+	MAL_kmt_calc_effect = yes
+	MAL_leg_calc_effect = yes
+	MAL_leg_reload_seat_frames_effect = yes
+}
 
-	# ② 路线五档 -> 加权票与阵营席位（<=20 全额星洲 / <=40 半额星洲 / <=60 中立对半 / <=80 半额南京 / >80 全额南京）
-	# 星洲交通部
-	set_variable = { MAL_kmt_tmp = MAL_kmt_lodge_str }
+MAL_kmt_calc_effect = {
+	# 【第五轮定稿】本脚本只结算「主席可用委员数」与主导权状态；21 席不在此重划。
+	# 党章固定 21 席，仅年度党会（MAL_kmt_annual_congress.1）或特殊事件通过
+	# MAL_kmt_reapportion_effect 重划。星洲本位（_var）保留为党内路线读数，不参与可用委员数。
+	set_variable = { MAL_kmt_total_seats = 21 }
+	set_variable = { MAL_kmt_quorum = 11 }
+	set_variable = { MAL_kmt_chair_seats = 0 }
+
+	# ① 主席所在派系忠诚锁定 100（覆盖式；换人前旧派系由 MAL_kmt_outgoing_chair_effect 清零）
 	if = {
-		limit = { check_variable = { var = MAL_kmt_lodge_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_lodge_seats }
+		limit = { has_country_flag = MAL_kmt_chair_lodge }
+		set_variable = { MAL_kmt_lodge_loyalty = 100 }
 	}
 	else_if = {
+		limit = { has_country_flag = MAL_kmt_chair_overseas }
+		set_variable = { MAL_kmt_overseas_loyalty = 100 }
+	}
+	else_if = {
+		limit = { has_country_flag = MAL_kmt_chair_wulu }
+		set_variable = { MAL_kmt_wulu_loyalty = 100 }
+	}
+	else_if = {
+		limit = { has_country_flag = MAL_kmt_chair_longshi }
+		set_variable = { MAL_kmt_longshi_loyalty = 100 }
+	}
+	else_if = {
+		limit = { has_country_flag = MAL_kmt_chair_guild }
+		set_variable = { MAL_kmt_guild_loyalty = 100 }
+	}
+	else_if = {
+		limit = { has_country_flag = MAL_kmt_chair_nanqiao }
+		set_variable = { MAL_kmt_nanqiao_loyalty = 100 }
+	}
+	else_if = {
+		limit = { has_country_flag = MAL_kmt_chair_pingzhang }
+		set_variable = { MAL_kmt_pingzhang_loyalty = 100 }
+	}
+
+	# ② 星洲本位五档 -> 阵营席位读数（0=星洲本位 / 100=南京本位）
+	#    只作党内力量对比读数，不凌驾于劳工、国防等其他议题。
+	set_variable = { MAL_kmt_local_seats = 0 }
+	set_variable = { MAL_kmt_nanjing_seats = 0 }
+	set_variable = { MAL_kmt_neutral_seats = 0 }
+	if = {
 		limit = { check_variable = { var = MAL_kmt_lodge_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_lodge_seats }
 	}
 	else_if = {
 		limit = { check_variable = { var = MAL_kmt_lodge_var value = 60 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_neutral_seats value = MAL_kmt_lodge_seats }
 	}
-	else_if = {
-		limit = { check_variable = { var = MAL_kmt_lodge_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_lodge_seats }
-	}
 	else = {
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_lodge_seats }
 	}
-	# 南京海外部
-	set_variable = { MAL_kmt_tmp = MAL_kmt_overseas_str }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_overseas_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_overseas_seats }
-	}
-	else_if = {
 		limit = { check_variable = { var = MAL_kmt_overseas_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_overseas_seats }
 	}
 	else_if = {
 		limit = { check_variable = { var = MAL_kmt_overseas_var value = 60 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_neutral_seats value = MAL_kmt_overseas_seats }
 	}
-	else_if = {
-		limit = { check_variable = { var = MAL_kmt_overseas_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_overseas_seats }
-	}
 	else = {
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_overseas_seats }
 	}
-	# 吾庐俱乐部
-	set_variable = { MAL_kmt_tmp = MAL_kmt_wulu_str }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_wulu_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_wulu_seats }
-	}
-	else_if = {
 		limit = { check_variable = { var = MAL_kmt_wulu_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_wulu_seats }
 	}
 	else_if = {
 		limit = { check_variable = { var = MAL_kmt_wulu_var value = 60 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_neutral_seats value = MAL_kmt_wulu_seats }
 	}
-	else_if = {
-		limit = { check_variable = { var = MAL_kmt_wulu_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_wulu_seats }
-	}
 	else = {
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_wulu_seats }
 	}
-	# 隆市派
-	set_variable = { MAL_kmt_tmp = MAL_kmt_longshi_str }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_longshi_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_longshi_seats }
-	}
-	else_if = {
 		limit = { check_variable = { var = MAL_kmt_longshi_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_longshi_seats }
 	}
 	else_if = {
 		limit = { check_variable = { var = MAL_kmt_longshi_var value = 60 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_neutral_seats value = MAL_kmt_longshi_seats }
 	}
-	else_if = {
-		limit = { check_variable = { var = MAL_kmt_longshi_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_longshi_seats }
-	}
 	else = {
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_longshi_seats }
 	}
-	# 同业公会
-	set_variable = { MAL_kmt_tmp = MAL_kmt_guild_str }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_guild_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_guild_seats }
-	}
-	else_if = {
 		limit = { check_variable = { var = MAL_kmt_guild_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_guild_seats }
 	}
 	else_if = {
 		limit = { check_variable = { var = MAL_kmt_guild_var value = 60 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_neutral_seats value = MAL_kmt_guild_seats }
 	}
-	else_if = {
-		limit = { check_variable = { var = MAL_kmt_guild_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_guild_seats }
-	}
 	else = {
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_guild_seats }
 	}
-	# 南侨同志会
-	set_variable = { MAL_kmt_tmp = MAL_kmt_nanqiao_str }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_nanqiao_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_nanqiao_seats }
-	}
-	else_if = {
 		limit = { check_variable = { var = MAL_kmt_nanqiao_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_nanqiao_seats }
 	}
 	else_if = {
 		limit = { check_variable = { var = MAL_kmt_nanqiao_var value = 60 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_neutral_seats value = MAL_kmt_nanqiao_seats }
 	}
-	else_if = {
-		limit = { check_variable = { var = MAL_kmt_nanqiao_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_nanqiao_seats }
-	}
 	else = {
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_nanqiao_seats }
 	}
-	# 平章会馆
-	set_variable = { MAL_kmt_tmp = MAL_kmt_pingzhang_str }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_pingzhang_var value = 20 compare = less_than_or_equals } }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_pingzhang_seats }
-	}
-	else_if = {
 		limit = { check_variable = { var = MAL_kmt_pingzhang_var value = 40 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_local_seats value = MAL_kmt_pingzhang_seats }
 	}
 	else_if = {
 		limit = { check_variable = { var = MAL_kmt_pingzhang_var value = 60 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_local_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_neutral_seats value = MAL_kmt_pingzhang_seats }
 	}
-	else_if = {
-		limit = { check_variable = { var = MAL_kmt_pingzhang_var value = 80 compare = less_than_or_equals } }
-		multiply_variable = { var = MAL_kmt_tmp value = 0.5 }
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
-		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_pingzhang_seats }
-	}
 	else = {
-		add_to_variable = { var = MAL_kmt_nanjing_votes value = MAL_kmt_tmp }
 		add_to_variable = { var = MAL_kmt_nanjing_seats value = MAL_kmt_pingzhang_seats }
 	}
 
-	# ③ 现任主席所属阵营的可动员席位
+	# ③ 主席可用委员数 = Σ floor(派系忠诚 × 该派席位数 / 100)（向下取整）
+	set_variable = { MAL_kmt_tmp = MAL_kmt_lodge_loyalty }
+	multiply_variable = { var = MAL_kmt_tmp value = MAL_kmt_lodge_seats }
+	divide_variable = { var = MAL_kmt_tmp value = 100 }
+	set_variable = { MAL_kmt_tmp_raw = MAL_kmt_tmp }
+	round_variable = MAL_kmt_tmp
 	if = {
-		limit = { has_country_flag = MAL_kmt_chair_lodge }
-		if = {
-			limit = { check_variable = { var = MAL_kmt_lodge_var value = 40 compare = less_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_local_seats }
-		}
-		else_if = {
-			limit = { check_variable = { var = MAL_kmt_lodge_var value = 61 compare = greater_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_nanjing_seats }
-		}
-		else = {
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_lodge_seats }
-		}
+		limit = { check_variable = { var = MAL_kmt_tmp value = MAL_kmt_tmp_raw compare = greater_than } }
+		add_to_variable = { var = MAL_kmt_tmp value = -1 }
 	}
-	else_if = {
-		limit = { has_country_flag = MAL_kmt_chair_overseas }
-		if = {
-			limit = { check_variable = { var = MAL_kmt_overseas_var value = 40 compare = less_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_local_seats }
-		}
-		else_if = {
-			limit = { check_variable = { var = MAL_kmt_overseas_var value = 61 compare = greater_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_nanjing_seats }
-		}
-		else = {
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_overseas_seats }
-		}
-	}
-	else_if = {
-		limit = { has_country_flag = MAL_kmt_chair_wulu }
-		if = {
-			limit = { check_variable = { var = MAL_kmt_wulu_var value = 40 compare = less_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_local_seats }
-		}
-		else_if = {
-			limit = { check_variable = { var = MAL_kmt_wulu_var value = 61 compare = greater_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_nanjing_seats }
-		}
-		else = {
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_wulu_seats }
-		}
-	}
-	else_if = {
-		limit = { has_country_flag = MAL_kmt_chair_longshi }
-		if = {
-			limit = { check_variable = { var = MAL_kmt_longshi_var value = 40 compare = less_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_local_seats }
-		}
-		else_if = {
-			limit = { check_variable = { var = MAL_kmt_longshi_var value = 61 compare = greater_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_nanjing_seats }
-		}
-		else = {
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_longshi_seats }
-		}
-	}
-	else_if = {
-		limit = { has_country_flag = MAL_kmt_chair_guild }
-		if = {
-			limit = { check_variable = { var = MAL_kmt_guild_var value = 40 compare = less_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_local_seats }
-		}
-		else_if = {
-			limit = { check_variable = { var = MAL_kmt_guild_var value = 61 compare = greater_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_nanjing_seats }
-		}
-		else = {
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_guild_seats }
-		}
-	}
-	else_if = {
-		limit = { has_country_flag = MAL_kmt_chair_nanqiao }
-		if = {
-			limit = { check_variable = { var = MAL_kmt_nanqiao_var value = 40 compare = less_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_local_seats }
-		}
-		else_if = {
-			limit = { check_variable = { var = MAL_kmt_nanqiao_var value = 61 compare = greater_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_nanjing_seats }
-		}
-		else = {
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_nanqiao_seats }
-		}
-	}
-	else_if = {
-		limit = { has_country_flag = MAL_kmt_chair_pingzhang }
-		if = {
-			limit = { check_variable = { var = MAL_kmt_pingzhang_var value = 40 compare = less_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_local_seats }
-		}
-		else_if = {
-			limit = { check_variable = { var = MAL_kmt_pingzhang_var value = 61 compare = greater_than_or_equals } }
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_nanjing_seats }
-		}
-		else = {
-			set_variable = { MAL_kmt_chair_seats = MAL_kmt_pingzhang_seats }
-		}
-	}
-	else = {
-		set_variable = { MAL_kmt_chair_seats = MAL_kmt_local_seats }
-	}
-
-	# ④ 中间派背书（拉拢决议置旗，席位计入主席阵营）
+	add_to_variable = { var = MAL_kmt_chair_seats value = MAL_kmt_tmp }
+	set_variable = { MAL_kmt_tmp = MAL_kmt_overseas_loyalty }
+	multiply_variable = { var = MAL_kmt_tmp value = MAL_kmt_overseas_seats }
+	divide_variable = { var = MAL_kmt_tmp value = 100 }
+	set_variable = { MAL_kmt_tmp_raw = MAL_kmt_tmp }
+	round_variable = MAL_kmt_tmp
 	if = {
-		limit = { has_country_flag = MAL_kmt_backing_wulu }
-		add_to_variable = { var = MAL_kmt_chair_seats value = MAL_kmt_wulu_seats }
+		limit = { check_variable = { var = MAL_kmt_tmp value = MAL_kmt_tmp_raw compare = greater_than } }
+		add_to_variable = { var = MAL_kmt_tmp value = -1 }
 	}
+	add_to_variable = { var = MAL_kmt_chair_seats value = MAL_kmt_tmp }
+	set_variable = { MAL_kmt_tmp = MAL_kmt_wulu_loyalty }
+	multiply_variable = { var = MAL_kmt_tmp value = MAL_kmt_wulu_seats }
+	divide_variable = { var = MAL_kmt_tmp value = 100 }
+	set_variable = { MAL_kmt_tmp_raw = MAL_kmt_tmp }
+	round_variable = MAL_kmt_tmp
 	if = {
-		limit = { has_country_flag = MAL_kmt_backing_guild }
-		add_to_variable = { var = MAL_kmt_chair_seats value = MAL_kmt_guild_seats }
+		limit = { check_variable = { var = MAL_kmt_tmp value = MAL_kmt_tmp_raw compare = greater_than } }
+		add_to_variable = { var = MAL_kmt_tmp value = -1 }
 	}
-	# ⑤ 陈嘉庚背书：背书主席 +2 / 背书反对派 -2 / 超然 0
+	add_to_variable = { var = MAL_kmt_chair_seats value = MAL_kmt_tmp }
+	set_variable = { MAL_kmt_tmp = MAL_kmt_longshi_loyalty }
+	multiply_variable = { var = MAL_kmt_tmp value = MAL_kmt_longshi_seats }
+	divide_variable = { var = MAL_kmt_tmp value = 100 }
+	set_variable = { MAL_kmt_tmp_raw = MAL_kmt_tmp }
+	round_variable = MAL_kmt_tmp
 	if = {
-		limit = { has_country_flag = MAL_kmt_jiageng_chair }
-		add_to_variable = { var = MAL_kmt_chair_seats value = 2 }
+		limit = { check_variable = { var = MAL_kmt_tmp value = MAL_kmt_tmp_raw compare = greater_than } }
+		add_to_variable = { var = MAL_kmt_tmp value = -1 }
 	}
-	else_if = {
-		limit = { has_country_flag = MAL_kmt_jiageng_opposition }
-		add_to_variable = { var = MAL_kmt_chair_seats value = -2 }
+	add_to_variable = { var = MAL_kmt_chair_seats value = MAL_kmt_tmp }
+	set_variable = { MAL_kmt_tmp = MAL_kmt_guild_loyalty }
+	multiply_variable = { var = MAL_kmt_tmp value = MAL_kmt_guild_seats }
+	divide_variable = { var = MAL_kmt_tmp value = 100 }
+	set_variable = { MAL_kmt_tmp_raw = MAL_kmt_tmp }
+	round_variable = MAL_kmt_tmp
+	if = {
+		limit = { check_variable = { var = MAL_kmt_tmp value = MAL_kmt_tmp_raw compare = greater_than } }
+		add_to_variable = { var = MAL_kmt_tmp value = -1 }
 	}
+	add_to_variable = { var = MAL_kmt_chair_seats value = MAL_kmt_tmp }
+	set_variable = { MAL_kmt_tmp = MAL_kmt_nanqiao_loyalty }
+	multiply_variable = { var = MAL_kmt_tmp value = MAL_kmt_nanqiao_seats }
+	divide_variable = { var = MAL_kmt_tmp value = 100 }
+	set_variable = { MAL_kmt_tmp_raw = MAL_kmt_tmp }
+	round_variable = MAL_kmt_tmp
+	if = {
+		limit = { check_variable = { var = MAL_kmt_tmp value = MAL_kmt_tmp_raw compare = greater_than } }
+		add_to_variable = { var = MAL_kmt_tmp value = -1 }
+	}
+	add_to_variable = { var = MAL_kmt_chair_seats value = MAL_kmt_tmp }
+	set_variable = { MAL_kmt_tmp = MAL_kmt_pingzhang_loyalty }
+	multiply_variable = { var = MAL_kmt_tmp value = MAL_kmt_pingzhang_seats }
+	divide_variable = { var = MAL_kmt_tmp value = 100 }
+	set_variable = { MAL_kmt_tmp_raw = MAL_kmt_tmp }
+	round_variable = MAL_kmt_tmp
+	if = {
+		limit = { check_variable = { var = MAL_kmt_tmp value = MAL_kmt_tmp_raw compare = greater_than } }
+		add_to_variable = { var = MAL_kmt_tmp value = -1 }
+	}
+	add_to_variable = { var = MAL_kmt_chair_seats value = MAL_kmt_tmp }
 	clamp_variable = { var = MAL_kmt_chair_seats max = 21 min = 0 }
 
-	# ⑥ 主导权判定：>=11 稳固 / 8-10 弱势 / <=7 悬峙；冻结期维持悬峙
-	# 【机构解耦】此处不读取任何 MAL_leg_* 状态；国家议会的退席不再扣减党内委员席位。
+	# ④ 主导权：>=11 稳固 / 8-10 弱势 / <8 悬峙；不足 11 时「党内弹劾」决议解锁
 	clr_country_flag = MAL_kmt_weak_chair
 	clr_country_flag = MAL_kmt_hung_committee
 	if = {
-		limit = { has_country_flag = MAL_kmt_frozen }
-		set_variable = { MAL_kmt_status = 0 }
-		set_country_flag = MAL_kmt_hung_committee
-	}
-	else_if = {
 		limit = { check_variable = { var = MAL_kmt_chair_seats value = MAL_kmt_quorum compare = greater_than_or_equals } }
 		set_variable = { MAL_kmt_status = 3 }
 	}
@@ -637,7 +479,7 @@ MAL_kmt_calc_effect = {
 }
 
 MAL_leg_calc_effect = {
-	# 国家机构定额：104 席、法定人数 53；席位变化变量不在本脚本归零，由月度总入口统一刷新
+	# 国家机构定额：104 席、法定人数 53
 	set_variable = { MAL_leg_total_seats = 104 }
 	set_variable = { MAL_leg_quorum = 53 }
 	set_variable = { MAL_leg_present_seats = 0 }
@@ -776,7 +618,7 @@ MAL_leg_calc_effect = {
 		add_to_variable = { var = MAL_leg_loyal_seats value = MAL_leg_tmp }
 	}
 	# ④ 法定人数与状态
-	# 【机构解耦】此处不读取任何 MAL_kmt_* 状态；中执委悬峙不再直接扣减议会票数。
+	# 【机构解耦】此处只读取党内三项派生量，不参与中执委席次重划。
 	if = {
 		limit = { check_variable = { var = MAL_leg_loyal_seats value = MAL_leg_quorum compare = greater_than_or_equals } }
 		set_variable = { MAL_leg_status = 3 }
@@ -790,7 +632,86 @@ MAL_leg_calc_effect = {
 	else = {
 		set_variable = { MAL_leg_status = 1 }
 		set_country_flag = MAL_leg_crisis
+	}	MAL_leg_reload_seat_frames_effect = yes
+}
+
+MAL_leg_bill_vote_effect = {
+	# 法案提交后的表决结算：先刷新院内票数，再按法定人数与可动员席位判定。
+	# MAL_leg_bill_result: 0 尚无表决 / 1 通过 / 2 否决 / 3 流会（法案留在议程，可再次提交）。
+	MAL_leg_calc_effect = yes
+	if = {
+		limit = {
+			check_variable = { var = MAL_leg_present_seats value = MAL_leg_quorum compare = greater_than_or_equals }
+			check_variable = { var = MAL_leg_loyal_seats value = MAL_leg_quorum compare = greater_than_or_equals }
+		}
+		set_variable = { MAL_leg_bill_result = 1 }
+		if = {
+			limit = { check_variable = { var = MAL_leg_bill_id value = 1 } }
+			add_political_power = 30
+			add_stability = 0.02
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			set_country_flag = MAL_leg_malay_parties_walkout
+			add_to_variable = { var = MAL_leg_mu_loyalty value = -10 }
+			clamp_variable = { var = MAL_leg_mu_loyalty max = 100 min = 0 }
+			add_to_variable = { var = MAL_leg_mpp_loyalty value = -10 }
+			clamp_variable = { var = MAL_leg_mpp_loyalty max = 100 min = 0 }
+		}
+		else_if = {
+			limit = { check_variable = { var = MAL_leg_bill_id value = 2 } }
+			add_political_power = 30
+			add_stability = 0.01
+			add_to_variable = { var = MAL_leg_mu_seats value = -2 }
+			clamp_variable = { var = MAL_leg_mu_seats max = 104 min = 0 }
+			add_to_variable = { var = MAL_leg_mu_loyalty value = -8 }
+			clamp_variable = { var = MAL_leg_mu_loyalty max = 100 min = 0 }
+			add_to_variable = { var = MAL_leg_vacant_seats value = 2 }
+			clamp_variable = { var = MAL_leg_vacant_seats max = 104 min = 0 }
+		}
+		else_if = {
+			limit = { check_variable = { var = MAL_leg_bill_id value = 3 } }
+			add_political_power = 20
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			custom_effect_tooltip = MAL_penang_unrest_fall_tt
+			add_to_variable = { var = TNW_penang_unrest value = -10 }
+			add_to_variable = { var = capital_reserves value = 4 }
+		}
 	}
+	else_if = {
+		limit = { check_variable = { var = MAL_leg_present_seats value = MAL_leg_quorum compare = less_than } }
+		set_variable = { MAL_leg_bill_result = 3 }
+		add_stability = -0.01
+		add_political_power = -10
+	}
+	else = {
+		set_variable = { MAL_leg_bill_result = 2 }
+		add_stability = -0.03
+		add_political_power = -25
+		add_to_variable = { var = MAL_leg_kmt_whip value = -6 }
+		clamp_variable = { var = MAL_leg_kmt_whip max = 30 min = -30 }
+		add_to_variable = { var = MAL_leg_kmt_left_whip value = -6 }
+		clamp_variable = { var = MAL_leg_kmt_left_whip max = 30 min = -30 }
+	}
+	# 通过或否决后法案结案；流会保留待议旗标
+	if = {
+		limit = { NOT = { check_variable = { var = MAL_leg_bill_result value = 3 } } }
+		if = {
+			limit = { check_variable = { var = MAL_leg_bill_id value = 1 } }
+			clr_country_flag = MAL_leg_bill_1_pending
+		}
+		else_if = {
+			limit = { check_variable = { var = MAL_leg_bill_id value = 2 } }
+			clr_country_flag = MAL_leg_bill_2_pending
+		}
+		else_if = {
+			limit = { check_variable = { var = MAL_leg_bill_id value = 3 } }
+			clr_country_flag = MAL_leg_bill_3_pending
+		}
+	}
+	MAL_leg_calc_effect = yes
 }
 
 # 中执委主席更替：星洲交通部（陈楚楠）
@@ -811,10 +732,8 @@ MAL_kmt_appoint_lodge_effect = {
 	remove_idea = MAL_kmt_dominant_guild
 	remove_idea = MAL_kmt_dominant_nanqiao
 	remove_idea = MAL_kmt_dominant_pingzhang
-	remove_idea = MAL_kmt_caretaker
 	add_ideas = MAL_kmt_dominant_lodge
 	clr_country_flag = MAL_kmt_hung_committee
-	clr_country_flag = MAL_kmt_frozen
 	clr_country_flag = MAL_kmt_congress_fired
 	clr_country_flag = MAL_kmt_warning_fired
 	clr_country_flag = MAL_kmt_backing_wulu
@@ -842,10 +761,8 @@ MAL_kmt_appoint_overseas_effect = {
 	remove_idea = MAL_kmt_dominant_guild
 	remove_idea = MAL_kmt_dominant_nanqiao
 	remove_idea = MAL_kmt_dominant_pingzhang
-	remove_idea = MAL_kmt_caretaker
 	add_ideas = MAL_kmt_dominant_overseas
 	clr_country_flag = MAL_kmt_hung_committee
-	clr_country_flag = MAL_kmt_frozen
 	clr_country_flag = MAL_kmt_congress_fired
 	clr_country_flag = MAL_kmt_warning_fired
 	clr_country_flag = MAL_kmt_backing_wulu
@@ -873,10 +790,8 @@ MAL_kmt_appoint_wulu_effect = {
 	remove_idea = MAL_kmt_dominant_guild
 	remove_idea = MAL_kmt_dominant_nanqiao
 	remove_idea = MAL_kmt_dominant_pingzhang
-	remove_idea = MAL_kmt_caretaker
 	add_ideas = MAL_kmt_dominant_wulu
 	clr_country_flag = MAL_kmt_hung_committee
-	clr_country_flag = MAL_kmt_frozen
 	clr_country_flag = MAL_kmt_congress_fired
 	clr_country_flag = MAL_kmt_warning_fired
 	clr_country_flag = MAL_kmt_backing_wulu
@@ -904,10 +819,8 @@ MAL_kmt_appoint_longshi_effect = {
 	remove_idea = MAL_kmt_dominant_guild
 	remove_idea = MAL_kmt_dominant_nanqiao
 	remove_idea = MAL_kmt_dominant_pingzhang
-	remove_idea = MAL_kmt_caretaker
 	add_ideas = MAL_kmt_dominant_longshi
 	clr_country_flag = MAL_kmt_hung_committee
-	clr_country_flag = MAL_kmt_frozen
 	clr_country_flag = MAL_kmt_congress_fired
 	clr_country_flag = MAL_kmt_warning_fired
 	clr_country_flag = MAL_kmt_backing_wulu
@@ -935,10 +848,8 @@ MAL_kmt_appoint_guild_effect = {
 	remove_idea = MAL_kmt_dominant_guild
 	remove_idea = MAL_kmt_dominant_nanqiao
 	remove_idea = MAL_kmt_dominant_pingzhang
-	remove_idea = MAL_kmt_caretaker
 	add_ideas = MAL_kmt_dominant_guild
 	clr_country_flag = MAL_kmt_hung_committee
-	clr_country_flag = MAL_kmt_frozen
 	clr_country_flag = MAL_kmt_congress_fired
 	clr_country_flag = MAL_kmt_warning_fired
 	clr_country_flag = MAL_kmt_backing_wulu
@@ -966,10 +877,8 @@ MAL_kmt_appoint_nanqiao_effect = {
 	remove_idea = MAL_kmt_dominant_guild
 	remove_idea = MAL_kmt_dominant_nanqiao
 	remove_idea = MAL_kmt_dominant_pingzhang
-	remove_idea = MAL_kmt_caretaker
 	add_ideas = MAL_kmt_dominant_nanqiao
 	clr_country_flag = MAL_kmt_hung_committee
-	clr_country_flag = MAL_kmt_frozen
 	clr_country_flag = MAL_kmt_congress_fired
 	clr_country_flag = MAL_kmt_warning_fired
 	clr_country_flag = MAL_kmt_backing_wulu
@@ -997,10 +906,8 @@ MAL_kmt_appoint_pingzhang_effect = {
 	remove_idea = MAL_kmt_dominant_guild
 	remove_idea = MAL_kmt_dominant_nanqiao
 	remove_idea = MAL_kmt_dominant_pingzhang
-	remove_idea = MAL_kmt_caretaker
 	add_ideas = MAL_kmt_dominant_pingzhang
 	clr_country_flag = MAL_kmt_hung_committee
-	clr_country_flag = MAL_kmt_frozen
 	clr_country_flag = MAL_kmt_congress_fired
 	clr_country_flag = MAL_kmt_warning_fired
 	clr_country_flag = MAL_kmt_backing_wulu
@@ -1010,6 +917,57 @@ MAL_kmt_appoint_pingzhang_effect = {
 	news_event = { id = MAL_kmt_news.1 hours = 6 }
 }
 
+MAL_kmt_outgoing_chair_effect = {
+	# 记录前任主席所属派系并把该派忠诚归零（用户定稿：换人前自动归零）
+	set_variable = { MAL_kmt_outgoing_faction = 0 }
+	if = {
+		limit = { has_country_flag = MAL_kmt_chair_lodge }
+		set_variable = { MAL_kmt_outgoing_faction = 1 }
+		set_variable = { MAL_kmt_lodge_loyalty = 0 }
+	}
+	if = {
+		limit = { has_country_flag = MAL_kmt_chair_overseas }
+		set_variable = { MAL_kmt_outgoing_faction = 2 }
+		set_variable = { MAL_kmt_overseas_loyalty = 0 }
+	}
+	if = {
+		limit = { has_country_flag = MAL_kmt_chair_wulu }
+		set_variable = { MAL_kmt_outgoing_faction = 3 }
+		set_variable = { MAL_kmt_wulu_loyalty = 0 }
+	}
+	if = {
+		limit = { has_country_flag = MAL_kmt_chair_longshi }
+		set_variable = { MAL_kmt_outgoing_faction = 4 }
+		set_variable = { MAL_kmt_longshi_loyalty = 0 }
+	}
+	if = {
+		limit = { has_country_flag = MAL_kmt_chair_guild }
+		set_variable = { MAL_kmt_outgoing_faction = 5 }
+		set_variable = { MAL_kmt_guild_loyalty = 0 }
+	}
+	if = {
+		limit = { has_country_flag = MAL_kmt_chair_nanqiao }
+		set_variable = { MAL_kmt_outgoing_faction = 6 }
+		set_variable = { MAL_kmt_nanqiao_loyalty = 0 }
+	}
+	if = {
+		limit = { has_country_flag = MAL_kmt_chair_pingzhang }
+		set_variable = { MAL_kmt_outgoing_faction = 7 }
+		set_variable = { MAL_kmt_pingzhang_loyalty = 0 }
+	}
+}
+
+MAL_kmt_impeachment_effect = {
+	# 可用委员不足 11 -> 弹劾；主席自动交给「席位最多的其它派系」领袖
+	# 排除前任派系，避免同一人刚被弹劾又因席位最多原地复职。
+	MAL_kmt_outgoing_chair_effect = yes
+	set_variable = { MAL_kmt_exclude_faction = MAL_kmt_outgoing_faction }
+	MAL_kmt_congress_verdict_effect = yes
+	set_variable = { MAL_kmt_exclude_faction = 0 }
+	MAL_kmt_calc_effect = yes
+	MAL_leg_calc_effect = yes
+}
+
 MAL_kmt_congress_verdict_effect = {
 	# 以中执委席位最多的一派推举新主席；差值用变量相减后与 0 比较
 	set_variable = { MAL_kmt_top_seats = 0 }
@@ -1017,49 +975,70 @@ MAL_kmt_congress_verdict_effect = {
 	set_variable = { MAL_kmt_tmp = MAL_kmt_lodge_seats }
 	subtract_from_variable = { var = MAL_kmt_tmp value = MAL_kmt_top_seats }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than } }
+		limit = {
+			check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than }
+			NOT = { check_variable = { var = MAL_kmt_exclude_faction value = 1 } }
+		}
 		set_variable = { MAL_kmt_top_seats = MAL_kmt_lodge_seats }
 		set_variable = { MAL_kmt_top_faction = 1 }
 	}
 	set_variable = { MAL_kmt_tmp = MAL_kmt_overseas_seats }
 	subtract_from_variable = { var = MAL_kmt_tmp value = MAL_kmt_top_seats }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than } }
+		limit = {
+			check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than }
+			NOT = { check_variable = { var = MAL_kmt_exclude_faction value = 2 } }
+		}
 		set_variable = { MAL_kmt_top_seats = MAL_kmt_overseas_seats }
 		set_variable = { MAL_kmt_top_faction = 2 }
 	}
 	set_variable = { MAL_kmt_tmp = MAL_kmt_wulu_seats }
 	subtract_from_variable = { var = MAL_kmt_tmp value = MAL_kmt_top_seats }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than } }
+		limit = {
+			check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than }
+			NOT = { check_variable = { var = MAL_kmt_exclude_faction value = 3 } }
+		}
 		set_variable = { MAL_kmt_top_seats = MAL_kmt_wulu_seats }
 		set_variable = { MAL_kmt_top_faction = 3 }
 	}
 	set_variable = { MAL_kmt_tmp = MAL_kmt_longshi_seats }
 	subtract_from_variable = { var = MAL_kmt_tmp value = MAL_kmt_top_seats }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than } }
+		limit = {
+			check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than }
+			NOT = { check_variable = { var = MAL_kmt_exclude_faction value = 4 } }
+		}
 		set_variable = { MAL_kmt_top_seats = MAL_kmt_longshi_seats }
 		set_variable = { MAL_kmt_top_faction = 4 }
 	}
 	set_variable = { MAL_kmt_tmp = MAL_kmt_guild_seats }
 	subtract_from_variable = { var = MAL_kmt_tmp value = MAL_kmt_top_seats }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than } }
+		limit = {
+			check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than }
+			NOT = { check_variable = { var = MAL_kmt_exclude_faction value = 5 } }
+		}
 		set_variable = { MAL_kmt_top_seats = MAL_kmt_guild_seats }
 		set_variable = { MAL_kmt_top_faction = 5 }
 	}
 	set_variable = { MAL_kmt_tmp = MAL_kmt_nanqiao_seats }
 	subtract_from_variable = { var = MAL_kmt_tmp value = MAL_kmt_top_seats }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than } }
+		limit = {
+			check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than }
+			NOT = { check_variable = { var = MAL_kmt_exclude_faction value = 6 } }
+		}
 		set_variable = { MAL_kmt_top_seats = MAL_kmt_nanqiao_seats }
 		set_variable = { MAL_kmt_top_faction = 6 }
 	}
 	set_variable = { MAL_kmt_tmp = MAL_kmt_pingzhang_seats }
 	subtract_from_variable = { var = MAL_kmt_tmp value = MAL_kmt_top_seats }
 	if = {
-		limit = { check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than } }
+		limit = {
+			check_variable = { var = MAL_kmt_tmp value = 0 compare = greater_than }
+			NOT = { check_variable = { var = MAL_kmt_exclude_faction value = 7 } }
+		}
 		set_variable = { MAL_kmt_top_seats = MAL_kmt_pingzhang_seats }
 		set_variable = { MAL_kmt_top_faction = 7 }
 	}
@@ -1094,89 +1073,11 @@ MAL_kmt_congress_verdict_effect = {
 	}
 }
 
-MAL_kmt_caretaker_effect = {
-	clr_country_flag = MAL_kmt_frozen
-	clr_country_flag = MAL_kmt_congress_fired
-	clr_country_flag = MAL_kmt_chair_lodge
-	clr_country_flag = MAL_kmt_chair_overseas
-	clr_country_flag = MAL_kmt_chair_wulu
-	clr_country_flag = MAL_kmt_chair_longshi
-	clr_country_flag = MAL_kmt_chair_guild
-	clr_country_flag = MAL_kmt_chair_nanqiao
-	clr_country_flag = MAL_kmt_chair_pingzhang
-	clr_country_flag = MAL_Chen_Chunan_flag
-	remove_idea = MAL_kmt_dominant_lodge
-	remove_idea = MAL_kmt_dominant_overseas
-	remove_idea = MAL_kmt_dominant_wulu
-	remove_idea = MAL_kmt_dominant_longshi
-	remove_idea = MAL_kmt_dominant_guild
-	remove_idea = MAL_kmt_dominant_nanqiao
-	remove_idea = MAL_kmt_dominant_pingzhang
-	add_ideas = MAL_kmt_caretaker
-	MAL_kmt_calc_effect = yes
-	MAL_leg_calc_effect = yes
-}
+
 
 MAL_kmt_monthly_effect = {
-	# 先算党内，再算国家议会：两党团忠诚派生自中执委，顺序不可颠倒
+	# 先算党内，再算国家议会；两党团忠诚派生自中执委，顺序不可颠倒
 	MAL_kmt_calc_effect = yes
 	MAL_leg_calc_effect = yes
-	# 席位变化变量月度归零，供圆点 GUI 读取本结算周期内的净变化
-	set_variable = { MAL_kmt_lodge_seat_change = 0 }
-	set_variable = { MAL_kmt_overseas_seat_change = 0 }
-	set_variable = { MAL_kmt_wulu_seat_change = 0 }
-	set_variable = { MAL_kmt_longshi_seat_change = 0 }
-	set_variable = { MAL_kmt_guild_seat_change = 0 }
-	set_variable = { MAL_kmt_nanqiao_seat_change = 0 }
-	set_variable = { MAL_kmt_pingzhang_seat_change = 0 }
-	set_variable = { MAL_leg_kmt_seat_change = 0 }
-	set_variable = { MAL_leg_kmt_left_seat_change = 0 }
-	set_variable = { MAL_leg_mu_seat_change = 0 }
-	set_variable = { MAL_leg_mpp_seat_change = 0 }
-	set_variable = { MAL_leg_mic_seat_change = 0 }
-	set_variable = { MAL_leg_pmftu_seat_change = 0 }
-	set_variable = { MAL_leg_cpc_seat_change = 0 }
-	set_variable = { MAL_leg_vacant_seat_change = 0 }
-	# 主导权稳固时清除预警/全会去重旗，允许下次危机再次触发
-	if = {
-		limit = { check_variable = { var = MAL_kmt_status value = 3 } }
-		clr_country_flag = MAL_kmt_warning_fired
-		clr_country_flag = MAL_kmt_congress_fired
-	}
-	# 弱势预警（独立 if，不与悬峙链合并，避免多事件同月堆叠）
-	if = {
-		limit = {
-			has_country_flag = MAL_kmt_weak_chair
-			NOT = { has_country_flag = MAL_kmt_hung_committee }
-			NOT = { has_country_flag = MAL_kmt_warning_fired }
-		}
-		set_country_flag = MAL_kmt_warning_fired
-		country_event = { id = MAL_kmt_congress.1 hours = 6 }
-	}
-	if = {
-		limit = {
-			has_country_flag = MAL_kmt_hung_committee
-			NOT = { has_country_flag = MAL_kmt_congress_fired }
-			NOT = { has_country_flag = MAL_kmt_frozen }
-		}
-		set_country_flag = MAL_kmt_congress_fired
-		country_event = { id = MAL_kmt_congress.2 hours = 6 }
-	}
+	MAL_leg_reload_seat_frames_effect = yes
 }
-
-# ============================================================================
-# 【圆点 GUI 预留位·本轮留空】
-# 用户将自行处理半圆议会坐标。后续接入时所需的变量层已全部就位：
-#   国家机构定额  MAL_leg_total_seats = 104 / MAL_leg_quorum = 53
-#   党内机构定额  MAL_kmt_total_seats = 21 / MAL_kmt_quorum = 11
-#   议席          MAL_leg_<g>_seats（kmt/kmt_left/mu/mpp/mic/pmftu/cpc/vacant）
-#   委员席位      MAL_kmt_<f>_seats（7 派，总和恒为 21）
-#   忠诚          MAL_leg_<g>_loyalty / MAL_kmt_<f>_loyalty
-#   党鞭修正      MAL_leg_kmt_whip / MAL_leg_kmt_left_whip
-#   席位变化      MAL_leg_<g>_seat_change / MAL_kmt_<f>_seat_change（月度结算刷新）
-#   派生          MAL_leg_present_seats / _loyal_seats / _status；MAL_kmt_chair_seats / _status
-# 建议后续自建：MAL_leg_seat_array、MAL_leg_member_array、MAL_leg_loyalty_array、
-#              MAL_leg_x_array / MAL_leg_y_array（坐标）与 MAL_leg_reload_gui 重绘脚本。
-# 变量改动后调用 MAL_leg_calc_effect = yes 即可刷新统计层；
-# 若改动了中执委派系实力/路线/主席，须先 MAL_kmt_calc_effect 再 MAL_leg_calc_effect。
-# ============================================================================

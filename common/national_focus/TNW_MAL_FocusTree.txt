@@ -44,6 +44,9 @@ focus_tree = {
 			focus = MAL_Dual_Nationality
 		}
 		completion_reward = {
+			custom_effect_tooltip = MAL_leg_focus_bill_tt
+			set_variable = { MAL_leg_bill_id = 1 }
+			set_country_flag = MAL_leg_bill_1_pending
 			log = "[GetLogRoot]: Focus Completed MAL_New_Citizenship_Act"
 			add_political_power = 25
 			add_stability = 0.02
@@ -177,6 +180,9 @@ focus_tree = {
 			focus = MAL_Land_Redemption_Exchange
 		}
 		completion_reward = {
+			custom_effect_tooltip = MAL_leg_focus_bill_tt
+			set_variable = { MAL_leg_bill_id = 2 }
+			set_country_flag = MAL_leg_bill_2_pending
 			log = "[GetLogRoot]: Focus Completed MAL_Declare_Republic"
 			add_political_power = 50
 			add_stability = -0.02
@@ -327,7 +333,6 @@ focus_tree = {
 			clamp_variable = { var = MAL_kmt_wulu_str max = 100 min = 0 }
 			add_to_variable = { var = MAL_kmt_guild_str value = 4 }
 			clamp_variable = { var = MAL_kmt_guild_str max = 100 min = 0 }
-			set_country_flag = MAL_kmt_jiageng_chair
 			MAL_kmt_calc_effect = yes
 		}
 	}
@@ -756,7 +761,6 @@ focus_tree = {
 			add_to_variable = { var = capital_reserves value = -3 }
 			custom_effect_tooltip = MAL_kmt_focus_press_tt
 			add_to_variable = { var = MAL_kmt_lodge_str value = 5 }
-			add_to_variable = { var = MAL_kmt_lodge_seat_change value = 1 }
 			clamp_variable = { var = MAL_kmt_lodge_str max = 100 min = 0 }
 			MAL_kmt_calc_effect = yes
 		}
@@ -1386,6 +1390,9 @@ focus_tree = {
 			focus = MAL_Negotiate_TanChengLock
 		}
 		completion_reward = {
+			custom_effect_tooltip = MAL_leg_focus_bill_tt
+			set_variable = { MAL_leg_bill_id = 3 }
+			set_country_flag = MAL_leg_bill_3_pending
 			log = "[GetLogRoot]: Focus Completed MAL_Free_Port_Legislation"
 			custom_effect_tooltip = MAL_penang_unrest_fall_tt
 			add_to_variable = { var = TNW_penang_unrest value = -15 }
@@ -1444,7 +1451,6 @@ focus_tree = {
 			add_political_power = 50
 			custom_effect_tooltip = MAL_kmt_focus_penang_vote_tt
 			add_to_variable = { var = MAL_kmt_pingzhang_str value = 6 }
-			add_to_variable = { var = MAL_kmt_pingzhang_seat_change value = 1 }
 			clamp_variable = { var = MAL_kmt_pingzhang_str max = 100 min = 0 }
 			add_to_variable = { var = MAL_leg_kmt_whip value = 4 }
 			clamp_variable = { var = MAL_leg_kmt_whip max = 30 min = -30 }
@@ -2212,7 +2218,6 @@ focus_tree = {
 			add_popularity = { ideology = Social_democracy popularity = 0.02 }
 			custom_effect_tooltip = MAL_kmt_focus_nanjing_tt
 			add_to_variable = { var = MAL_kmt_overseas_str value = 6 }
-			add_to_variable = { var = MAL_kmt_overseas_seat_change value = 1 }
 			clamp_variable = { var = MAL_kmt_overseas_str max = 100 min = 0 }
 			add_to_variable = { var = MAL_kmt_overseas_var value = 5 }
 			clamp_variable = { var = MAL_kmt_overseas_var max = 100 min = 0 }
@@ -3141,7 +3146,6 @@ focus = {
 			log = "[GetLogRoot]: Focus Completed MAL_Investigate_Leftist_Party_Ties"
 			custom_effect_tooltip = MAL_kmt_focus_investigate_tt
 			add_to_variable = { var = MAL_kmt_longshi_str value = -4 }
-			add_to_variable = { var = MAL_kmt_longshi_seat_change value = -1 }
 			clamp_variable = { var = MAL_kmt_longshi_str max = 100 min = 0 }
 			MAL_kmt_calc_effect = yes
 		}
