@@ -131,7 +131,7 @@ characters = {
 		}
 		corps_commander = {
 			desc = MAL_He_Wei_commander_desc
-			traits = { war_hero }
+			traits = { war_hero MAL_whampoa_immigrant_trait MAL_chinese_communist_trait }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 2
@@ -149,7 +149,7 @@ characters = {
 		}
 		corps_commander = {
 			desc = MAL_Liu_Yao_commander_desc
-			traits = { war_hero }
+			traits = { war_hero MAL_guerilla_leader_trait MAL_chinese_communist_trait }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 3
@@ -309,6 +309,15 @@ characters = {
 			slot = political_advisor
 			idea_cost = 100
 		}
+		field_marshal = {
+			desc = MAL_Zhuang_Huiquan_commander_desc
+			traits = { career_officer commando MAL_german_eastasia_trait MAL_expatriate_selfdefense_trait }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
 	}
 	#林谋盛
 	MAL_Lin_Mousheng = {
@@ -316,6 +325,15 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
+		}
+		field_marshal = {
+			desc = MAL_Lin_Mousheng_commander_desc
+			traits = { politically_connected organisational_leader MAL_german_eastasia_trait MAL_expatriate_selfdefense_trait }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
 		}
 	}
 	#胡愈之
@@ -500,6 +518,201 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
+		}
+	}
+	#龙朝英
+	MAL_Long_Chaoying = {
+		name = MAL_Long_Chaoying
+		corps_commander = {
+			desc = MAL_Long_Chaoying_commander_desc
+			traits = { commando MAL_german_eastasia_trait MAL_guerilla_leader_trait }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#李汉光
+	MAL_Li_Hanguang = {
+		name = MAL_Li_Hanguang
+		corps_commander = {
+			desc = MAL_Li_Hanguang_commander_desc
+			traits = { trickster MAL_german_eastasia_trait MAL_guerilla_leader_trait }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#谭显炎
+	MAL_Tan_Xianyan = {
+		name = MAL_Tan_Xianyan
+		corps_commander = {
+			desc = MAL_Tan_Xianyan_commander_desc
+			traits = { career_officer infantry_officer MAL_german_eastasia_trait MAL_guerilla_leader_trait MAL_whampoa_immigrant_trait MAL_NRA_stationed_trait }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	#吴在新
+	MAL_Wu_Zaixin = {
+		name = MAL_Wu_Zaixin
+		corps_commander = {
+			desc = MAL_Wu_Zaixin_commander_desc
+			traits = { trickster politically_connected MAL_german_eastasia_trait }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#林庆年
+	MAL_Lin_Qingnian = {
+		name = MAL_Lin_Qingnian
+		corps_commander = {
+			desc = MAL_Lin_Qingnian_commander_desc
+			traits = { organisational_leader MAL_expatriate_selfdefense_trait }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	#黄志洁
+	MAL_Huang_Zhijie = {
+		name = MAL_Huang_Zhijie
+		corps_commander = {
+			desc = MAL_Huang_Zhijie_commander_desc
+			traits = { politically_connected MAL_xingzhou_volunteer_trait MAL_expatriate_selfdefense_trait }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#陈田
+	MAL_Chen_Tian = {
+		name = MAL_Chen_Tian
+		corps_commander = {
+			desc = MAL_Chen_Tian_commander_desc
+			traits = { war_hero MAL_guerilla_leader_trait MAL_chinese_communist_trait }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#张凌云
+	MAL_Zhang_Lingyun = {
+		name = MAL_Zhang_Lingyun
+		corps_commander = {
+			desc = MAL_Zhang_Lingyun_commander_desc
+			traits = { politically_connected trickster MAL_guerilla_leader_trait MAL_chinese_communist_trait }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#陈天庆
+	MAL_Chen_Tianqing = {
+		name = MAL_Chen_Tianqing
+		corps_commander = {
+			desc = MAL_Chen_Tianqing_commander_desc
+			traits = { war_hero MAL_guerilla_leader_trait MAL_chinese_communist_trait }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#赖莱福
+	MAL_Lai_Laifu = {
+		name = MAL_Lai_Laifu
+		corps_commander = {
+			desc = MAL_Lai_Laifu_commander_desc
+			traits = { war_hero offensive_doctrine MAL_guerilla_leader_trait MAL_chinese_communist_trait }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	#胡铁君
+	MAL_Hu_Tiejun = {
+		name = MAL_Hu_Tiejun
+		corps_commander = {
+			desc = MAL_Hu_Tiejun_commander_desc
+			traits = { career_officer defensive_doctrine MAL_xingzhou_volunteer_trait MAL_whampoa_immigrant_trait MAL_NRA_stationed_trait }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	#林江石
+	MAL_Lin_Jiangshi = {
+		name = MAL_Lin_Jiangshi
+		corps_commander = {
+			desc = MAL_Lin_Jiangshi_commander_desc
+			traits = { politically_connected MAL_xingzhou_volunteer_trait MAL_chinese_communist_trait MAL_expatriate_selfdefense_trait }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#郑古悦
+	MAL_Zheng_Guyue = {
+		name = MAL_Zheng_Guyue
+		corps_commander = {
+			desc = MAL_Zheng_Guyue_commander_desc
+			traits = { old_guard MAL_expatriate_selfdefense_trait }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#郭益南
+	MAL_Guo_Yinan = {
+		name = MAL_Guo_Yinan
+		corps_commander = {
+			desc = MAL_Guo_Yinan_commander_desc
+			traits = { commando war_hero MAL_guerilla_leader_trait MAL_expatriate_selfdefense_trait }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#赵及泉
+	MAL_Zhao_Jiquan = {
+		name = MAL_Zhao_Jiquan
+		corps_commander = {
+			desc = MAL_Zhao_Jiquan_commander_desc
+			traits = { trait_reckless MAL_guerilla_leader_trait MAL_expatriate_selfdefense_trait }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 }

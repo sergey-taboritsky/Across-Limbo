@@ -3987,6 +3987,10 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Promote_Allied_Party_Officers"
+			# 何敬贤由军长晋升陆军元帅：原版 promote_leader 语义（单位领袖作用域），保留技能与 war_hero 特质
+			MAL_He_Wei = {
+				promote_leader = yes
+			}
 			army_experience = 20
 			add_political_power = 25
 			add_to_variable = { MAL_sfdf_planning = 0.05 }

@@ -47,6 +47,21 @@ recruit_character = MAL_Ponnudurai
 recruit_character = MAL_D_A_Mackay
 recruit_character = MAL_Rajaratnam
 recruit_character = MAL_Gerald_de_Cruz
+recruit_character = MAL_Long_Chaoying
+recruit_character = MAL_Li_Hanguang
+recruit_character = MAL_Tan_Xianyan
+recruit_character = MAL_Wu_Zaixin
+recruit_character = MAL_Lin_Qingnian
+recruit_character = MAL_Huang_Zhijie
+recruit_character = MAL_Chen_Tian
+recruit_character = MAL_Zhang_Lingyun
+recruit_character = MAL_Chen_Tianqing
+recruit_character = MAL_Lai_Laifu
+recruit_character = MAL_Hu_Tiejun
+recruit_character = MAL_Lin_Jiangshi
+recruit_character = MAL_Zheng_Guyue
+recruit_character = MAL_Guo_Yinan
+recruit_character = MAL_Zhao_Jiquan
 
 set_convoys = 25
 
