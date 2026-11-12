@@ -64,13 +64,78 @@
     }
   },
   "parties": [
-    {"id": "kmt", "name": "星洲国民党", "seats": 42, "frame": 1, "var": "MAL_leg_kmt_seats", "loc": "MAL_leg_party_kmt", "color": "#2b5fa8"},
-    {"id": "kmt_left", "name": "星洲国民党-左翼党团（南洋民主劳动党）", "seats": 14, "frame": 2, "var": "MAL_leg_kmt_left_seats", "loc": "MAL_leg_party_kmt_left", "color": "#c0504d"},
-    {"id": "mu", "name": "马来人协会", "seats": 12, "frame": 3, "var": "MAL_leg_mu_seats", "loc": "MAL_leg_party_mu", "color": "#2e8b6b"},
-    {"id": "mpp", "name": "穆斯林人民党", "seats": 9, "frame": 4, "var": "MAL_leg_mpp_seats", "loc": "MAL_leg_party_mpp", "color": "#d9a441"},
-    {"id": "mic", "name": "马来印度人国大党", "seats": 9, "frame": 5, "var": "MAL_leg_mic_seats", "loc": "MAL_leg_party_mic", "color": "#8e6bbf"},
-    {"id": "pmftu", "name": "泛马工会联合会", "seats": 7, "frame": 6, "var": "MAL_leg_pmftu_seats", "loc": "MAL_leg_party_pmftu", "color": "#b05252"},
-    {"id": "cpc", "name": "中国共产党-南洋委员会", "seats": 5, "frame": 7, "var": "MAL_leg_cpc_seats", "loc": "MAL_leg_party_cpc", "color": "#8f1d1d"},
-    {"id": "vacant", "name": "空缺议席", "seats": 6, "frame": 8, "var": "MAL_leg_vacant_seats", "loc": "MAL_leg_party_vacant", "color": "#9aa0a6"}
-  ]
+    {
+      "id": "kmt",
+      "name": "星洲国民党",
+      "seats": 42,
+      "frame": 1,
+      "var": "MAL_leg_kmt_seats",
+      "loc": "MAL_leg_party_kmt",
+      "color": "#2b5fa8"
+    },
+    {
+      "id": "kmt_left",
+      "name": "星洲国民党-左翼党团（南洋民主劳动党）",
+      "seats": 14,
+      "frame": 2,
+      "var": "MAL_leg_kmt_left_seats",
+      "loc": "MAL_leg_party_kmt_left",
+      "color": "#c0504d"
+    },
+    {
+      "id": "mu",
+      "name": "马来人协会",
+      "seats": 12,
+      "frame": 3,
+      "var": "MAL_leg_mu_seats",
+      "loc": "MAL_leg_party_mu",
+      "color": "#2e8b6b"
+    },
+    {
+      "id": "mpp",
+      "name": "穆斯林人民党",
+      "seats": 9,
+      "frame": 4,
+      "var": "MAL_leg_mpp_seats",
+      "loc": "MAL_leg_party_mpp",
+      "color": "#d9a441"
+    },
+    {
+      "id": "mic",
+      "name": "马来印度人国大党",
+      "seats": 9,
+      "frame": 5,
+      "var": "MAL_leg_mic_seats",
+      "loc": "MAL_leg_party_mic",
+      "color": "#8e6bbf"
+    },
+    {
+      "id": "pmftu",
+      "name": "泛马工会联合会",
+      "seats": 7,
+      "frame": 6,
+      "var": "MAL_leg_pmftu_seats",
+      "loc": "MAL_leg_party_pmftu",
+      "color": "#b05252"
+    },
+    {
+      "id": "cpc",
+      "name": "中国共产党-南洋委员会",
+      "seats": 5,
+      "frame": 7,
+      "var": "MAL_leg_cpc_seats",
+      "loc": "MAL_leg_party_cpc",
+      "color": "#8f1d1d"
+    },
+    {
+      "id": "vacant",
+      "name": "空缺议席",
+      "seats": 6,
+      "frame": 8,
+      "var": "MAL_leg_vacant_seats",
+      "loc": "MAL_leg_party_vacant",
+      "color": "#9aa0a6"
+    }
+  ],
+  "_layout_note": "第十四轮起为 13x8 等距矩形（spacing 20）；勿再用半圆生成器覆盖本实例"
 }

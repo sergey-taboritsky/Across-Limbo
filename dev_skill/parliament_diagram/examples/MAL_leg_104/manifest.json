@@ -1,17 +1,17 @@
 {
   "total_seats": 104,
-  "rows": 6,
+  "rows": 8,
   "radius_rows": 4.0,
   "spread": 1.85,
   "first_row_radius": 5.7,
   "ordering_factor": 0.0,
   "icon_size": 9,
-  "out_width": 335.89,
-  "out_height": 172.43,
+  "out_width": 249,
+  "out_height": 149,
   "x_min": 0,
-  "x_max": 327,
-  "y_min": 5,
-  "y_max": 158,
+  "x_max": 240,
+  "y_min": 0,
+  "y_max": 140,
   "title": "星洲联邦 · 联邦立法院",
   "tag": "MAL",
   "arrays": {
@@ -109,5 +109,12 @@
   "validation": [],
   "coord_count": 104,
   "frame_total": 104,
-  "passed": true
+  "passed": true,
+  "layout": "rect_grid",
+  "layout_note": "第十四轮（2026-11-12）改为 13x8 等距矩形；半圆参数仅作历史留档，生成器不再适用",
+  "cols": 13,
+  "spacing_x": 20,
+  "spacing_y": 20,
+  "grid_x": 100,
+  "grid_y": 50
 }

@@ -2889,4 +2889,36 @@ spriteTypes = {
 		name = "GFX_portrait_large_EGY_Ibrahim_Shoukri"
 		texturefile = "gfx/characters/EGY_Ibrahim_Shoukri.png"
 	}
+
+	#第十三轮（2026-11-12）：6 张用户立绘
+	#第十三轮（2026-11-12）用户立绘：BRN_Ahmad_Tajuddin.png
+	spriteType = {
+		name = "GFX_portrait_large_BRN_Ahmad_Tajuddin"
+		texturefile = "gfx/characters/BRN_Ahmad_Tajuddin.png"
+	}
+	#第十三轮（2026-11-12）用户立绘：PAR_Higinio_Morinigo.png
+	spriteType = {
+		name = "GFX_portrait_large_PAR_Higinio_Morinigo"
+		texturefile = "gfx/characters/PAR_Higinio_Morinigo.png"
+	}
+	#第十三轮（2026-11-12）用户立绘：OMA_said_bin_taimur.png
+	spriteType = {
+		name = "GFX_portrait_large_OMA_said_bin_taimur"
+		texturefile = "gfx/characters/OMA_said_bin_taimur.png"
+	}
+	#第十三轮（2026-11-12）用户立绘：KLT_Ahmad_Yar_Khan.png
+	spriteType = {
+		name = "GFX_portrait_large_KLT_Ahmad_Yar_Khan"
+		texturefile = "gfx/characters/KLT_Ahmad_Yar_Khan.png"
+	}
+	#第十三轮（2026-11-12）用户立绘：INS_Sukarni.png
+	spriteType = {
+		name = "GFX_portrait_large_INS_Sukarni"
+		texturefile = "gfx/characters/INS_Sukarni.png"
+	}
+	#第十三轮（2026-11-12）用户立绘：MUR_Sukarni.png
+	spriteType = {
+		name = "GFX_portrait_large_MUR_Sukarni"
+		texturefile = "gfx/characters/MUR_Sukarni.png"
+	}
 }

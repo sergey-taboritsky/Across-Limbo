@@ -1,4 +1,6 @@
 # 把下面两个 containerWindowType 并进目标 .gui 文件的 guiTypes = { ... } 内
+# ⚠️ 本文件是 2026-11-11 半圆版 player_context 独立浮窗留档，运行时不要整份照抄。
+# MAL 第十四轮已改为 13x8 等距矩形，运行时 gridbox 偏移为 100/50，见 SKILL.md §11。
 # 座位 iconType 必须放在「独立容器」里，才能被 dynamic_lists 复制成 N 份
 guiTypes = {
 	containerWindowType = {

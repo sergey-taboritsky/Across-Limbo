@@ -4,7 +4,7 @@ characters = {
 		name = PAR_Higinio_Morinigo
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_Higinio_Morinigo
+				large = GFX_portrait_large_PAR_Higinio_Morinigo
 			}
 		}
 		country_leader = {

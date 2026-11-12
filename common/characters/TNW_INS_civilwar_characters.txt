@@ -18,6 +18,11 @@ characters = {
 	}
 	MUR_Sukarni = {
 		name = MUR_Sukarni
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_MUR_Sukarni
+			}
+		}
 		country_leader = {
 			desc = MUR_Sukarni_desc
 			ideology = Left_wing_nationalism

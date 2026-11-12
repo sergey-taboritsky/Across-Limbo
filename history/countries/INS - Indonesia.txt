@@ -51,6 +51,21 @@ recruit_character = INS_Ismael_Lengah
 recruit_character = INS_Suryadi_Suryadarma
 recruit_character = INS_John_Lie
 recruit_character = INS_Ichiki_Tatsuo
+	#第十三轮第二批 14 位定稿将领
+recruit_character = INS_Soengkono
+recruit_character = INS_Arudji_Kartawinata
+recruit_character = INS_Daan_Jahja
+recruit_character = INS_Bambang_Sugeng
+recruit_character = INS_Soesalit_Djojoadhiningrat
+recruit_character = INS_Suhardjo_Hardjowardojo
+recruit_character = INS_Hidajat_Martaatmadja
+recruit_character = INS_Ahmad_Kemal_Idris
+recruit_character = INS_Alex_Kawilarang
+recruit_character = INS_Mohammad_Nazir
+recruit_character = INS_Tjilik_Riwut
+recruit_character = INS_Noer_Alie
+recruit_character = INS_Adolf_Lembong
+recruit_character = INS_D_I_Panjaitan
 
 add_ideas = {
 	INS_Republik_yang_Belum_Selesai

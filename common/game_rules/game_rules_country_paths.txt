@@ -224,41 +224,6 @@ RHI_path = {
 	}
 }
 
-### Eastern / Southeast Europe & Central Asia ###
-RUS_aftermath = {
-	name = RUS_VOZHD_DEATH
-	group = RULE_GROUP_TNW_RULES_ESE_EUROPE_CENTRAL_ASIA
-	default = {
-		name = DEFAULT
-		text = RULE_OPTION_RUS_VOZHD_DEATH_RANDOM
-		desc = RULE_OPTION_RUS_VOZHD_DEATH_RANDOM_DESC
-		allow_achievements = yes
-	}
-	option = {
-		name = RUS_VOZHD_DEATH_THOUGHTRULE
-		text = RULE_OPTION_RUS_VOZHD_DEATH_THOUGHTRULE
-		desc = RULE_OPTION_RUS_VOZHD_DEATH_THOUGHTRULE_DESC
-		allow_achievements = yes
-	}
-	option = {
-		name = RUS_VOZHD_DEATH_CENTER
-		text = RULE_OPTION_RUS_VOZHD_DEATH_CENTER
-		desc = RULE_OPTION_RUS_VOZHD_DEATH_CENTER_DESC
-		allow_achievements = yes
-	}
-	option = {
-		name = RUS_VOZHD_DEATH_HARDLINER
-		text = RULE_OPTION_RUS_VOZHD_DEATH_HARDLINER
-		desc = RULE_OPTION_RUS_VOZHD_DEATH_HARDLINER_DESC
-		allow_achievements = yes
-	}
-	option = {
-		name = RUS_VOZHD_DEATH_WWIII
-		text = RULE_OPTION_RUS_VOZHD_DEATH_WWIII
-		desc = RULE_OPTION_RUS_VOZHD_DEATH_WWIII_DESC
-		allow_achievements = no
-	}
-}
 
 ### Africa ###
 NFA_path = {

@@ -1,4 +1,4 @@
-# 议会席位图（半圆 Parliament Diagram）自动化 Skill
+# 议会席位图（半圆 / 矩形）自动化 Skill
 
 > 建立日期：2026-11-11　|　适用：Across-Limbo / 守望莱茵（HOI4 `1.18.*`）
 > 工具来源：`C:/Users/edwar/Documents/GitHub/hoi4-parliament-diagram-fork`（Flaxbeard 原版 + fedacking fork）
@@ -8,6 +8,8 @@
 ---
 
 ## 0. 给后续 AI 的执行契约（最高优先级）
+
+> ⚠️ **MAL 实例特例（第十四轮，2026-11-12）**：星洲立法院已按用户指令改为 **13 列 × 8 行等距矩形**，不再是半圆。**禁止**对 MAL 重跑半圆生成器覆盖坐标，详见 §11。下面 5 步只适用于「新做半圆议会」的国家。
 
 **只要用户说「给 X 国做议会 / 议会席位图 / 半圆议席 / parliament diagram」，直接执行下列 5 步，不要再问「要不要自己处理坐标」、不要重写算法、不要手工排圆点：**
 
@@ -225,3 +227,36 @@ python parliament_generator.py --config xxx.json --check-only             # 只�
 3. 若该国已有议会变量层，把 `parties[].var` 指过去；没有就先按 `TNW_MAL_scripted_effects.txt` 的范式建一套 `_seats / _loyalty / _seat_change`。
 4. 贴图换成对应帧数与配色。
 5. 跑 `--check-only` → 正式生成 → 落位 → §8 校验 → 交 `preview.html`。
+
+
+---
+
+## 11. MAL 立法院矩形特例（第十四轮，2026-11-12）
+
+用户指令：「立法院从半圆改成长 13 宽 8 的矩阵，每两个点之间的横向纵向距离都相等」。
+13 × 8 = 104，正好等于立法院总席位，无需增减圆点，只换坐标。
+
+| 项 | 值 |
+|---|---|
+| 布局 | 13 列 × 8 行，`index i -> 行 i//13、列 i%13`，按行填充 |
+| 横 / 纵间距 | 同为 **20 px**（用户要求「横向纵向距离都相等」） |
+| 坐标范围 | x 0..240　y 0..140（圆点 9×9 → 占位 249×149） |
+| 容器 / gridbox | 450×250 / `position = { x = 100 y = 50 }`（矩形居中） |
+| 总点数 | 104；`frame` 数组仍按 42/14/12/9/9/7/5/6 分段，顺序不变 |
+
+运行时文件：`common/scripted_effects/TNW_MAL_parliament_effects.txt`
+（`MAL_leg_init_seat_positions_effect`）、`interface/gui/TNW_MAL_National_Congress.gui`。
+留档文件：`examples/MAL_leg_104/01_seat_positions.txt`、`manifest.json`（含
+`layout = rect_grid` / `cols` / `spacing_x` / `spacing_y`）、`preview.svg`、`preview.html`。
+
+**硬规则**
+
+1. **不要**对 MAL 跑 `parliament_generator.py`——它是半圆算法，会覆盖矩形坐标。
+2. 只有「改总席位数」或「改矩阵形状」才需要重算坐标；只改党团席位而总数不变，
+   只需重算 `MAL_leg_reload_seat_frames_effect` 的 frame 分段，坐标不动。
+3. 校验口径：104 组 x/y、13 列 × 8 行、横纵间距相等、`x_max + grid_x <= 450`、
+   `y_max + grid_y <= 250`，已写入 `_mal_verify.py` 第 21 节。
+4. 半圆算法（§2）与本仓其余国家仍然有效，本特例只约束 MAL。
+
+> §7 的「6 圈 / x 0..327 / y 5..158」是 2026-11-11 第五轮的历史产物，
+> **不代表当前运行时状态**；现状以本节与运行时文件为准。

@@ -5,6 +5,9 @@ set_stability = 0.5
 set_war_support = 0.3
 # Starting tech
 
+	#第十三轮（2026-11-12）：开局元首换回萨文科夫。
+	#SKILL.md §7：第一个 recruit_character 即开局领袖，不用 set_country_leader。
+recruit_character = RUS_Boris_Savinkhov
 recruit_character = RUS_Mikhail_Levitov
 recruit_character = RUS_Tirumvirate
 recruit_character = RUS_Pyotr_Savitsky

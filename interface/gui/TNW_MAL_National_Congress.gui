@@ -6,7 +6,8 @@ guiTypes = {
 
 		gridboxtype = {
 			name = "TNW_MAL_parliament_diagram"
-			position = { x = 28 y = 52 }
+			# 第十四轮：13x8 矩形（240x140 + 9px 圆点）在 450x250 容器内居中
+			position = { x = 100 y = 50 }
 			size = { width = 100%% height = 100%% }
 			slotsize = { width = 100%% height = 0 }
 			max_slots_horizontal = 1

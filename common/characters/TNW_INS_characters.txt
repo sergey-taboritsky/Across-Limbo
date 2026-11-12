@@ -326,6 +326,11 @@ characters = {
 	#苏卡尔尼（穆尔巴党魁）
 	INS_Sukarni = {
 		name = INS_Sukarni
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Sukarni
+			}
+		}
 		country_leader = {
 			desc = INS_Sukarni_desc
 			ideology = Ultra_Nationalism
@@ -590,6 +595,189 @@ characters = {
 			attack_skill = 2
 			defense_skill = 3
 			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	#将领池·第十三轮（2026-11-12）第二批：14 位定稿将领
+	#苏恩科诺（PETA 义勇军·东爪哇）
+	INS_Soengkono = {
+		name = INS_Soengkono
+		corps_commander = {
+			desc = INS_Soengkono_commander_desc
+			traits = { infantry_officer commando }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	#阿鲁吉·卡尔塔维纳塔（PETA→西利万吉首任师长）
+	INS_Arudji_Kartawinata = {
+		name = INS_Arudji_Kartawinata
+		corps_commander = {
+			desc = INS_Arudji_Kartawinata_commander_desc
+			traits = { war_hero infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	#达安·贾赫亚（西利万吉师参谋长）
+	INS_Daan_Jahja = {
+		name = INS_Daan_Jahja
+		corps_commander = {
+			desc = INS_Daan_Jahja_commander_desc
+			traits = { brilliant_strategist infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	#班邦·苏庚（总参谋部编制）
+	INS_Bambang_Sugeng = {
+		name = INS_Bambang_Sugeng
+		corps_commander = {
+			desc = INS_Bambang_Sugeng_commander_desc
+			traits = { brilliant_strategist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#苏萨利特·佐约阿迪宁拉特（Diponegoro 师长·苏哈托上级）
+	INS_Soesalit_Djojoadhiningrat = {
+		name = INS_Soesalit_Djojoadhiningrat
+		corps_commander = {
+			desc = INS_Soesalit_Djojoadhiningrat_commander_desc
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	#苏哈佐·哈尔佐瓦尔多约（苏门答腊方面司令）
+	INS_Suhardjo_Hardjowardojo = {
+		name = INS_Suhardjo_Hardjowardojo
+		corps_commander = {
+			desc = INS_Suhardjo_Hardjowardojo_commander_desc
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	#希达亚特·马尔塔阿特马贾（全苏门答腊整编）
+	INS_Hidajat_Martaatmadja = {
+		name = INS_Hidajat_Martaatmadja
+		corps_commander = {
+			desc = INS_Hidajat_Martaatmadja_commander_desc
+			traits = { brilliant_strategist infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#凯末尔·伊德里斯（低阶·特别分队）
+	INS_Ahmad_Kemal_Idris = {
+		name = INS_Ahmad_Kemal_Idris
+		corps_commander = {
+			desc = INS_Ahmad_Kemal_Idris_commander_desc
+			traits = { commando infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#A.E.卡维拉朗（塔巴努里/东苏门答腊旅长）
+	INS_Alex_Kawilarang = {
+		name = INS_Alex_Kawilarang
+		corps_commander = {
+			desc = INS_Alex_Kawilarang_commander_desc
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	#穆罕默德·纳齐尔（海军参谋长·开局在职）
+	INS_Mohammad_Nazir = {
+		name = INS_Mohammad_Nazir
+		navy_leader = {
+			desc = INS_Mohammad_Nazir_commander_desc
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 3
+		}
+	}
+	#吉利克·里武特（空军伞降·达雅克部落）
+	INS_Tjilik_Riwut = {
+		name = INS_Tjilik_Riwut
+		corps_commander = {
+			desc = INS_Tjilik_Riwut_commander_desc
+			traits = { commando brilliant_strategist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#努尔·阿里（人民游击/反对派双属）
+	INS_Noer_Alie = {
+		name = INS_Noer_Alie
+		corps_commander = {
+			desc = INS_Noer_Alie_commander_desc
+			traits = { commando }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#阿道夫·伦邦（第十六旅·KRIS 米纳哈沙）
+	INS_Adolf_Lembong = {
+		name = INS_Adolf_Lembong
+		corps_commander = {
+			desc = INS_Adolf_Lembong_commander_desc
+			traits = { infantry_officer war_hero }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#D.I.潘贾伊坦（低阶后备·班登师教育司令）
+	INS_D_I_Panjaitan = {
+		name = INS_D_I_Panjaitan
+		corps_commander = {
+			desc = INS_D_I_Panjaitan_commander_desc
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
 			logistics_skill = 2
 		}
 	}

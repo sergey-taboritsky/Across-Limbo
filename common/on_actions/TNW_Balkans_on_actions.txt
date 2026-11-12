@@ -49,6 +49,8 @@
             }
             RUS = {
                 country_event = { id = RUS_event.3 days = 180 }
+                #第十三轮：萨文科夫开局后 90 天（约三个月）病故，接上原有 RUS_event.1→2 接班链
+                country_event = { id = RUS_event.1 days = 90 }
             }
 		}
 	}

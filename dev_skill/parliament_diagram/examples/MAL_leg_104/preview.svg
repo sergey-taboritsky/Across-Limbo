@@ -1,126 +1,124 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 406" width="375" height="406">
-<rect x="0" y="0" width="375" height="406" fill="#ffffff"/>
-<text x="24" y="20" font-size="14" font-family="sans-serif" fill="#222">星洲联邦 · 联邦立法院 · 104 席 · 6 圈</text>
-<g transform="translate(24,24)">
-<circle cx="0" cy="158" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="12" cy="158" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="23" cy="158" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="35" cy="158" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="46" cy="158" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="58" cy="158" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="3" cy="137" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="15" cy="135" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="27" cy="133" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="39" cy="133" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="52" cy="132" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="8" cy="116" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="21" cy="113" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="65" cy="128" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="35" cy="110" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="16" cy="96" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="49" cy="109" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="31" cy="93" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="63" cy="107" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="27" cy="77" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="47" cy="88" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="44" cy="74" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="63" cy="87" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="81" cy="101" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="40" cy="60" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="79" cy="86" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="63" cy="69" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="59" cy="57" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="55" cy="45" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="81" cy="69" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="82" cy="53" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="77" cy="42" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="72" cy="32" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="104" cy="80" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="100" cy="69" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="102" cy="55" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="91" cy="21" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="97" cy="31" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="103" cy="41" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="124" cy="57" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="111" cy="13" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="118" cy="23" r="4.5" fill="#2b5fa8" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="125" cy="45" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="133" cy="67" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="127" cy="32" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="131" cy="7" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="141" cy="17" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="150" cy="51" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="151" cy="40" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="151" cy="28" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="153" cy="5" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="163" cy="62" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="163" cy="16" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="174" cy="5" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="176" cy="28" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="176" cy="40" r="4.5" fill="#c0504d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="177" cy="51" r="4.5" fill="#2e8b6b" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="186" cy="17" r="4.5" fill="#2e8b6b" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="195" cy="7" r="4.5" fill="#2e8b6b" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="200" cy="32" r="4.5" fill="#2e8b6b" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="194" cy="67" r="4.5" fill="#2e8b6b" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="201" cy="45" r="4.5" fill="#2e8b6b" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="209" cy="23" r="4.5" fill="#2e8b6b" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="216" cy="13" r="4.5" fill="#2e8b6b" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="203" cy="57" r="4.5" fill="#2e8b6b" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="223" cy="41" r="4.5" fill="#2e8b6b" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="230" cy="31" r="4.5" fill="#2e8b6b" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="236" cy="21" r="4.5" fill="#2e8b6b" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="225" cy="55" r="4.5" fill="#d9a441" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="227" cy="69" r="4.5" fill="#d9a441" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="222" cy="80" r="4.5" fill="#d9a441" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="255" cy="32" r="4.5" fill="#d9a441" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="250" cy="42" r="4.5" fill="#d9a441" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="245" cy="53" r="4.5" fill="#d9a441" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="246" cy="69" r="4.5" fill="#d9a441" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="272" cy="45" r="4.5" fill="#d9a441" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="267" cy="57" r="4.5" fill="#d9a441" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="264" cy="69" r="4.5" fill="#8e6bbf" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="248" cy="86" r="4.5" fill="#8e6bbf" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="287" cy="60" r="4.5" fill="#8e6bbf" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="245" cy="101" r="4.5" fill="#8e6bbf" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="264" cy="87" r="4.5" fill="#8e6bbf" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="283" cy="74" r="4.5" fill="#8e6bbf" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="279" cy="88" r="4.5" fill="#8e6bbf" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="300" cy="77" r="4.5" fill="#8e6bbf" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="264" cy="107" r="4.5" fill="#8e6bbf" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="296" cy="93" r="4.5" fill="#b05252" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="278" cy="109" r="4.5" fill="#b05252" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="311" cy="96" r="4.5" fill="#b05252" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="292" cy="110" r="4.5" fill="#b05252" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="261" cy="128" r="4.5" fill="#b05252" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="306" cy="113" r="4.5" fill="#b05252" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="319" cy="116" r="4.5" fill="#b05252" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="275" cy="132" r="4.5" fill="#8f1d1d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="288" cy="133" r="4.5" fill="#8f1d1d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="300" cy="133" r="4.5" fill="#8f1d1d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="312" cy="135" r="4.5" fill="#8f1d1d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="324" cy="137" r="4.5" fill="#8f1d1d" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="269" cy="158" r="4.5" fill="#9aa0a6" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="281" cy="158" r="4.5" fill="#9aa0a6" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="292" cy="158" r="4.5" fill="#9aa0a6" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="304" cy="158" r="4.5" fill="#9aa0a6" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="315" cy="158" r="4.5" fill="#9aa0a6" stroke="#ffffff" stroke-width="0.6"/>
-<circle cx="327" cy="158" r="4.5" fill="#9aa0a6" stroke="#ffffff" stroke-width="0.6"/>
-</g>
-<rect x="24" y="205" width="12" height="12" fill="#2b5fa8"/>
-<text x="42" y="216" font-size="12" font-family="sans-serif" fill="#333">星洲国民党  42 席  (frame 1)</text>
-<rect x="24" y="225" width="12" height="12" fill="#c0504d"/>
-<text x="42" y="236" font-size="12" font-family="sans-serif" fill="#333">星洲国民党-左翼党团（南洋民主劳动党）  14 席  (frame 2)</text>
-<rect x="24" y="245" width="12" height="12" fill="#2e8b6b"/>
-<text x="42" y="256" font-size="12" font-family="sans-serif" fill="#333">马来人协会  12 席  (frame 3)</text>
-<rect x="24" y="265" width="12" height="12" fill="#d9a441"/>
-<text x="42" y="276" font-size="12" font-family="sans-serif" fill="#333">穆斯林人民党  9 席  (frame 4)</text>
-<rect x="24" y="285" width="12" height="12" fill="#8e6bbf"/>
-<text x="42" y="296" font-size="12" font-family="sans-serif" fill="#333">马来印度人国大党  9 席  (frame 5)</text>
-<rect x="24" y="305" width="12" height="12" fill="#b05252"/>
-<text x="42" y="316" font-size="12" font-family="sans-serif" fill="#333">泛马工会联合会  7 席  (frame 6)</text>
-<rect x="24" y="325" width="12" height="12" fill="#8f1d1d"/>
-<text x="42" y="336" font-size="12" font-family="sans-serif" fill="#333">中国共产党-南洋委员会  5 席  (frame 7)</text>
-<rect x="24" y="345" width="12" height="12" fill="#9aa0a6"/>
-<text x="42" y="356" font-size="12" font-family="sans-serif" fill="#333">空缺议席  6 席  (frame 8)</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="276" height="272" viewBox="0 0 276 272">
+<rect width="100%" height="100%" fill="#fafafa"/>
+<text x="18" y="20" font-family="sans-serif" font-size="14" fill="#222">星洲联邦 · 联邦立法院　13 列 × 8 行 = 104 席（横纵间距 20）</text>
+<circle cx="18" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="38" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="58" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="78" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="98" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="118" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="138" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="158" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="178" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="198" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="218" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="238" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="258" cy="34" r="4" fill="#2b5fa8"/>
+<circle cx="18" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="38" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="58" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="78" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="98" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="118" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="138" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="158" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="178" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="198" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="218" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="238" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="258" cy="54" r="4" fill="#2b5fa8"/>
+<circle cx="18" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="38" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="58" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="78" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="98" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="118" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="138" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="158" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="178" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="198" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="218" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="238" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="258" cy="74" r="4" fill="#2b5fa8"/>
+<circle cx="18" cy="94" r="4" fill="#2b5fa8"/>
+<circle cx="38" cy="94" r="4" fill="#2b5fa8"/>
+<circle cx="58" cy="94" r="4" fill="#2b5fa8"/>
+<circle cx="78" cy="94" r="4" fill="#c0504d"/>
+<circle cx="98" cy="94" r="4" fill="#c0504d"/>
+<circle cx="118" cy="94" r="4" fill="#c0504d"/>
+<circle cx="138" cy="94" r="4" fill="#c0504d"/>
+<circle cx="158" cy="94" r="4" fill="#c0504d"/>
+<circle cx="178" cy="94" r="4" fill="#c0504d"/>
+<circle cx="198" cy="94" r="4" fill="#c0504d"/>
+<circle cx="218" cy="94" r="4" fill="#c0504d"/>
+<circle cx="238" cy="94" r="4" fill="#c0504d"/>
+<circle cx="258" cy="94" r="4" fill="#c0504d"/>
+<circle cx="18" cy="114" r="4" fill="#c0504d"/>
+<circle cx="38" cy="114" r="4" fill="#c0504d"/>
+<circle cx="58" cy="114" r="4" fill="#c0504d"/>
+<circle cx="78" cy="114" r="4" fill="#c0504d"/>
+<circle cx="98" cy="114" r="4" fill="#2e8b6b"/>
+<circle cx="118" cy="114" r="4" fill="#2e8b6b"/>
+<circle cx="138" cy="114" r="4" fill="#2e8b6b"/>
+<circle cx="158" cy="114" r="4" fill="#2e8b6b"/>
+<circle cx="178" cy="114" r="4" fill="#2e8b6b"/>
+<circle cx="198" cy="114" r="4" fill="#2e8b6b"/>
+<circle cx="218" cy="114" r="4" fill="#2e8b6b"/>
+<circle cx="238" cy="114" r="4" fill="#2e8b6b"/>
+<circle cx="258" cy="114" r="4" fill="#2e8b6b"/>
+<circle cx="18" cy="134" r="4" fill="#2e8b6b"/>
+<circle cx="38" cy="134" r="4" fill="#2e8b6b"/>
+<circle cx="58" cy="134" r="4" fill="#2e8b6b"/>
+<circle cx="78" cy="134" r="4" fill="#d9a441"/>
+<circle cx="98" cy="134" r="4" fill="#d9a441"/>
+<circle cx="118" cy="134" r="4" fill="#d9a441"/>
+<circle cx="138" cy="134" r="4" fill="#d9a441"/>
+<circle cx="158" cy="134" r="4" fill="#d9a441"/>
+<circle cx="178" cy="134" r="4" fill="#d9a441"/>
+<circle cx="198" cy="134" r="4" fill="#d9a441"/>
+<circle cx="218" cy="134" r="4" fill="#d9a441"/>
+<circle cx="238" cy="134" r="4" fill="#d9a441"/>
+<circle cx="258" cy="134" r="4" fill="#8e6bbf"/>
+<circle cx="18" cy="154" r="4" fill="#8e6bbf"/>
+<circle cx="38" cy="154" r="4" fill="#8e6bbf"/>
+<circle cx="58" cy="154" r="4" fill="#8e6bbf"/>
+<circle cx="78" cy="154" r="4" fill="#8e6bbf"/>
+<circle cx="98" cy="154" r="4" fill="#8e6bbf"/>
+<circle cx="118" cy="154" r="4" fill="#8e6bbf"/>
+<circle cx="138" cy="154" r="4" fill="#8e6bbf"/>
+<circle cx="158" cy="154" r="4" fill="#8e6bbf"/>
+<circle cx="178" cy="154" r="4" fill="#b05252"/>
+<circle cx="198" cy="154" r="4" fill="#b05252"/>
+<circle cx="218" cy="154" r="4" fill="#b05252"/>
+<circle cx="238" cy="154" r="4" fill="#b05252"/>
+<circle cx="258" cy="154" r="4" fill="#b05252"/>
+<circle cx="18" cy="174" r="4" fill="#b05252"/>
+<circle cx="38" cy="174" r="4" fill="#b05252"/>
+<circle cx="58" cy="174" r="4" fill="#8f1d1d"/>
+<circle cx="78" cy="174" r="4" fill="#8f1d1d"/>
+<circle cx="98" cy="174" r="4" fill="#8f1d1d"/>
+<circle cx="118" cy="174" r="4" fill="#8f1d1d"/>
+<circle cx="138" cy="174" r="4" fill="#8f1d1d"/>
+<circle cx="158" cy="174" r="4" fill="#9aa0a6"/>
+<circle cx="178" cy="174" r="4" fill="#9aa0a6"/>
+<circle cx="198" cy="174" r="4" fill="#9aa0a6"/>
+<circle cx="218" cy="174" r="4" fill="#9aa0a6"/>
+<circle cx="238" cy="174" r="4" fill="#9aa0a6"/>
+<circle cx="258" cy="174" r="4" fill="#9aa0a6"/>
+<circle cx="23" cy="200" r="5" fill="#2b5fa8"/>
+<text x="34" y="204" font-family="sans-serif" font-size="10" fill="#333">星洲国民党 42</text>
+<circle cx="92" cy="200" r="5" fill="#c0504d"/>
+<text x="103" y="204" font-family="sans-serif" font-size="10" fill="#333">星洲国民党-左翼党团（南洋民主劳动党） 14</text>
+<circle cx="161" cy="200" r="5" fill="#2e8b6b"/>
+<text x="172" y="204" font-family="sans-serif" font-size="10" fill="#333">马来人协会 12</text>
+<circle cx="230" cy="200" r="5" fill="#d9a441"/>
+<text x="241" y="204" font-family="sans-serif" font-size="10" fill="#333">穆斯林人民党 9</text>
+<circle cx="23" cy="220" r="5" fill="#8e6bbf"/>
+<text x="34" y="224" font-family="sans-serif" font-size="10" fill="#333">马来印度人国大党 9</text>
+<circle cx="92" cy="220" r="5" fill="#b05252"/>
+<text x="103" y="224" font-family="sans-serif" font-size="10" fill="#333">泛马工会联合会 7</text>
+<circle cx="161" cy="220" r="5" fill="#8f1d1d"/>
+<text x="172" y="224" font-family="sans-serif" font-size="10" fill="#333">中共-南洋委员会 5</text>
+<circle cx="230" cy="220" r="5" fill="#9aa0a6"/>
+<text x="241" y="224" font-family="sans-serif" font-size="10" fill="#333">空缺议席 6</text>
 </svg>

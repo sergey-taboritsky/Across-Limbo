@@ -6,35 +6,38 @@
 # 圆点 GUI 已接入运行时：坐标 / frame 数组与刷新脚本见 TNW_MAL_parliament_effects.txt。
 
 MAL_kmt_init_effect = {
+	# 【第十四轮】党章固定 21 席：开局按七派实力划定（6/5/3/2/2/2/1 = 21），
+	# 与年度党会 MAL_kmt_reapportion_effect 的「比例->舍入->补齐」同算法，
+	# 故首年党会重划不会跳变。原七派全写 1 是占位值，导致名义 21 席实际只有 7。
 	# 星洲交通部
 	set_variable = { MAL_kmt_lodge_str = 30 }
 	set_variable = { MAL_kmt_lodge_var = 40 }
-	set_variable = { MAL_kmt_lodge_seats = 1 }
+	set_variable = { MAL_kmt_lodge_seats = 6 }
 	set_variable = { MAL_kmt_lodge_loyalty = 80 }
 	# 南京海外部
 	set_variable = { MAL_kmt_overseas_str = 26 }
 	set_variable = { MAL_kmt_overseas_var = 85 }
-	set_variable = { MAL_kmt_overseas_seats = 1 }
+	set_variable = { MAL_kmt_overseas_seats = 5 }
 	set_variable = { MAL_kmt_overseas_loyalty = 70 }
 	# 吾庐俱乐部
 	set_variable = { MAL_kmt_wulu_str = 18 }
 	set_variable = { MAL_kmt_wulu_var = 55 }
-	set_variable = { MAL_kmt_wulu_seats = 1 }
+	set_variable = { MAL_kmt_wulu_seats = 3 }
 	set_variable = { MAL_kmt_wulu_loyalty = 50 }
 	# 隆市派
 	set_variable = { MAL_kmt_longshi_str = 14 }
 	set_variable = { MAL_kmt_longshi_var = 15 }
-	set_variable = { MAL_kmt_longshi_seats = 1 }
+	set_variable = { MAL_kmt_longshi_seats = 2 }
 	set_variable = { MAL_kmt_longshi_loyalty = 35 }
 	# 同业公会
 	set_variable = { MAL_kmt_guild_str = 12 }
 	set_variable = { MAL_kmt_guild_var = 50 }
-	set_variable = { MAL_kmt_guild_seats = 1 }
+	set_variable = { MAL_kmt_guild_seats = 2 }
 	set_variable = { MAL_kmt_guild_loyalty = 55 }
 	# 南侨同志会
 	set_variable = { MAL_kmt_nanqiao_str = 10 }
 	set_variable = { MAL_kmt_nanqiao_var = 30 }
-	set_variable = { MAL_kmt_nanqiao_seats = 1 }
+	set_variable = { MAL_kmt_nanqiao_seats = 2 }
 	set_variable = { MAL_kmt_nanqiao_loyalty = 45 }
 	# 平章会馆
 	set_variable = { MAL_kmt_pingzhang_str = 8 }

@@ -100,7 +100,7 @@ bookmarks = {
 		}
 		RUS = {
 			history = RUS_ACROSSLIMBO_DESC
-			ideology = communism
+			ideology = Nationalism
 			ideas = {
 			}
 			focuses = {

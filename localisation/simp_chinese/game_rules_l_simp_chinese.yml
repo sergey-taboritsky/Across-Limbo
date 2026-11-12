@@ -30,17 +30,6 @@
  RULE_OPTION_RHI_PATH_KPD_DESC: "早在第一次世界大战时期，斯巴达克同盟便在莱茵工人群体中具有相当影响力。如今，他们以德国共产党的名义归来，并凭借书记奥托·尼伯格尔与巴黎的良好关系得以建立§c马克思主义§!政府。"
 ### EAST EUROPE ###
  RULE_GROUP_TNW_RULES_ESE_EUROPE_CENTRAL_ASIA: "东欧及南欧"
- RUS_VOZHD_DEATH: "伟大元首之终局"
- RULE_OPTION_RUS_VOZHD_DEATH_RANDOM: "随机"
- RULE_OPTION_RUS_VOZHD_DEATH_RANDOM_DESC: "尽管被尊奉为近神，但俄罗斯元首鲍里斯·萨文科夫仍是一介凡人，而且生活作息向来与健康不沾边。终有一日，他虚弱老迈的身躯将成为他征程的最后阻碍，而俄罗斯也将会走向命定的轨道......"
- RULE_OPTION_RUS_VOZHD_DEATH_THOUGHTRULE: "思想统治"
- RULE_OPTION_RUS_VOZHD_DEATH_THOUGHTRULE_DESC: "萨文科夫中风去世后，党内“三巨头”组成了临时国务委员会以暂时统治俄罗斯。不过，这一联盟终将破裂，最终杀出重围接任元首之位的是党内少数高级知识分子之一，著名的欧亚主义者彼得·萨维茨基。他将维护官方的§o斯沃博达主义§!路线，同时尝试整合势力范围，建立真正的§B欧亚联盟国§!。"
- RULE_OPTION_RUS_VOZHD_DEATH_CENTER: "中道得胜"
- RULE_OPTION_RUS_VOZHD_DEATH_CENTER_DESC: "萨文科夫中风去世后，党内“三巨头”组成了临时国务委员会以暂时统治俄罗斯。不过，这一联盟终将破裂，最终杀出重围接任元首之位的是党务系统长期以来的操盘手，保卫联盟中央书记卡罗尔·文贾戈利斯基。他将在进一步整合其§P民族协作主义§!盟友的同时，尽可能保证§o斯沃博达主义§!正统。"
- RULE_OPTION_RUS_VOZHD_DEATH_HARDLINER: "战鼓轰鸣"
- RULE_OPTION_RUS_VOZHD_DEATH_HARDLINER_DESC: "萨文科夫中风去世后，党内“三巨头”组成了临时国务委员会以暂时统治俄罗斯。不过，这一联盟终将破裂，最终杀出重围接任元首之位的是前彼得格勒市长，萨文科夫的宠臣维克多·拉里奥诺夫。他将尝试彻底政党化全国军政机构，并在时机恰当之时发动§o斯沃博达主义§!对西方无神论者的最终之战。"
- RULE_OPTION_RUS_VOZHD_DEATH_WWIII: "死神之畏"
- RULE_OPTION_RUS_VOZHD_DEATH_WWIII_DESC: "萨文科夫尽管经历中风，但却在抢救下奇迹般地恢复了部分健康。为确保其愿景得以贯彻落实，元首将在清洗一切党内反对声音后立刻发动§Y第三次世界大战§!，无论这一决定是否将毁灭人类文明。"
 ### EAST ASIA ###
  RULE_GROUP_TNW_RULES_EAST_ASIA: "东亚"
  CHI_PATH: "长虹贯日"
