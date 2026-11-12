@@ -326,3 +326,40 @@ prerequisite = {
 - 真死锁的修法：把互斥的两个 focus 从「多个块」合并进「同一个块」（AND → OR），而不是删国策或改互斥关系。
 - `mutually_exclusive` 只阻止两个国策同时被完成，**不阻止**它们作为 OR 候选挂在同一后续国策上。
 - 自动检测已固化在 `_mal_verify.py` 第 14 节，每次全量校验会扫全仓 focus 树验证此规则。
+
+## 13. MAL 本地化按 categories 归位（2026-11-12 第十五轮，用户定稿）
+
+`localisation/simp_chinese/TNW_MAL_l_simp_chinese.yml` 开头由用户列出 12 个类别标题，**必须保持这个顺序**：
+
+```
+#介绍 → #国名 → #政党名 → #领导人 → #民族精神 → #事件 → #新闻 → #GUI → #BOP → #决议 → #国策 → #其他
+```
+
+**硬规则**：
+1. 每条本地化 key 放进它对应的类别标题下面；**拿不准或不属于前 11 类的一律放 `#其他`**，禁止硬猜。
+2. **每个类别内部严格保持原文件从上到下的顺序**（只重排，不改写任何一行文本，含行尾注释和转义引号）。
+3. **追加新本地化后必须重新归位**：跑 `python _mal_loc_sort.py --apply`（工作区脚本，幂等）。它从代码侧提取 id 集合来判定归属，新增 key 若无法匹配代码侧对象会自动落 `#其他`；跑完再跑 `python _mal_verify.py`，第 22 节会逐 key 校验类别是否正确。
+4. ⚠️ **禁止重跑** `_mal_r10_descs.py` / `_mal_r11_traits.py`（已加 `R15_GUARD`）：它们会先从 `_backup_round10|11/` 恢复旧版 yml，会覆盖重排结果与用户新增文案。回退用 `_backup_round15/` 直接覆盖。
+
+**分类口径（以代码侧实际引用为准，不猜）**：
+
+| 类别 | 判定依据 |
+|---|---|
+| 介绍 | `TNW_welcome_MAL_intro_text_*` 开局介绍 |
+| 国名 | 国家/政权名 `*_DEF` / `_ADJ` 及其主名 |
+| 政党名 | `*_party` / `_party_long`、具名政党 `MAL_party_*`、立法院党团 `MAL_leg_party_*` |
+| 领导人 | `common/characters/` 定义的角色 key 及 `_desc` / `_commander_desc`（含 MRP / JHR 顶格写法） |
+| 民族精神 | `common/ideas/` 定义的 idea id 及 `_desc` |
+| 事件 | `country_event` 的 `.N.t/.d/.a/.b/.c` 与事件侧 tooltip |
+| 新闻 | `news_event` 的 `.N.t/.d/.a` |
+| GUI | 决议分类名 + `_desc`、scripted_localisation 面板读数（stance / status / bill_result / seat_tt） |
+| BOP | `common/bop/` 相关（本仓 MAL 暂无定义，**保留空栏**，不要塞别的内容） |
+| 决议 | decision id 及 `_desc` / `_tt`；`TNW_arch_*_tt` 整族跟随群岛争霸决议组 |
+| 国策 | focus id 及 `_desc` / `_tt` |
+| 其他 | 动态修正、dummy 占位、`MAL_focus_wip_desc`、7 组 unit_leader trait 名/说明、独立 tooltip |
+
+**两个易错点**：
+- `MAL_kmt_party` 以 `_party` 结尾，但它是 `common/decisions/categories/` 里的**决议分类**，必须归 `#GUI`；分类判定要**先于**政党名判定。
+- 附属 key（`_desc` / `_commander_desc` / `_tt` / `_ttN` / `_long` / `_DEF` / `_ADJ`）**跟随主 key 的类别**，不单独判断。
+
+**编码**：yml 单 BOM + 纯 CRLF；重排脚本会剥离旧类别标题再重建，因此幂等。
