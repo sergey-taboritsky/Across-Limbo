@@ -39,6 +39,18 @@ recruit_character = INS_Iskaq_Tjokrohadisurjo
 recruit_character = INS_Sukarni
 recruit_character = INS_Wikana
 recruit_character = INS_Abdul_Haris_Nasution
+	#既有 4 位将领补招募（此前开局不可用）
+recruit_character = INS_Sudirman
+recruit_character = INS_Tahi_Bonar_Simatupang
+recruit_character = INS_Achmad_Tahir
+recruit_character = INS_Suharto
+	#第十二轮第一批 6 位补位将领
+recruit_character = INS_Djatikoesoemo
+recruit_character = INS_Gatot_Soebroto
+recruit_character = INS_Ismael_Lengah
+recruit_character = INS_Suryadi_Suryadarma
+recruit_character = INS_John_Lie
+recruit_character = INS_Ichiki_Tatsuo
 
 add_ideas = {
 	INS_Republik_yang_Belum_Selesai

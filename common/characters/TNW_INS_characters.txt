@@ -514,6 +514,85 @@ characters = {
 			logistics_skill = 2
 		}
 	}
+	#将领池·第十二轮（2026-11-12）第一批：6 位补位人选
+	#贾蒂库苏莫（梭罗王室·西利万吉）
+	INS_Djatikoesoemo = {
+		name = INS_Djatikoesoemo
+		corps_commander = {
+			desc = INS_Djatikoesoemo_commander_desc
+			traits = { brilliant_strategist infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#加托·苏布罗托（宪兵与军事总督线）
+	INS_Gatot_Soebroto = {
+		name = INS_Gatot_Soebroto
+		corps_commander = {
+			desc = INS_Gatot_Soebroto_commander_desc
+			traits = { war_hero infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	#伊斯梅尔·伦加（中苏门答腊·班登师）
+	INS_Ismael_Lengah = {
+		name = INS_Ismael_Lengah
+		corps_commander = {
+			desc = INS_Ismael_Lengah_commander_desc
+			traits = { commando infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	#苏尔亚迪·苏尔亚达尔玛（空军主官，以 corps_commander 承载）
+	INS_Suryadi_Suryadarma = {
+		name = INS_Suryadi_Suryadarma
+		corps_commander = {
+			desc = INS_Suryadi_Suryadarma_commander_desc
+			traits = { brilliant_strategist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	#约翰·李（海军·华人双重身份）
+	INS_John_Lie = {
+		name = INS_John_Lie
+		navy_leader = {
+			desc = INS_John_Lie_commander_desc
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 3
+		}
+	}
+	#市来龙夫（东京派驻监督顾问）
+	INS_Ichiki_Tatsuo = {
+		name = INS_Ichiki_Tatsuo
+		corps_commander = {
+			desc = INS_Ichiki_Tatsuo_commander_desc
+			traits = { brilliant_strategist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
 	#穆罕默德·哈达（悬浮元老）
 	INS_Mohammad_Hatta = {
 		name = INS_Mohammad_Hatta
