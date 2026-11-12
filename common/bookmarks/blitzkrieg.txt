@@ -1,7 +1,7 @@
 bookmarks = {
 	bookmark = {
-		name = "BLITZKRIEG_NAME"
-		desc = "BLITZKRIEG_DESC"
+		name = "ACROSSLIMBO_NAME"
+		desc = "ACROSSLIMBO_DESC"
 		date = 1948.1.1.12
 		picture = "GFX_select_date_1939"
 		default_country = "JAP"
@@ -9,7 +9,7 @@ bookmarks = {
 		sort_unplayed_first = no
 
 		FRA = {
-			history = FRA_BLITZKRIEG_DESC
+			history = FRA_ACROSSLIMBO_DESC
 			ideology = Liberalism
 			ideas={
 				FRA_victors_of_wwi
@@ -23,7 +23,7 @@ bookmarks = {
 			}
 		}
 		USA = {
-			history = USA_BLITZKRIEG_DESC
+			history = USA_ACROSSLIMBO_DESC
 			ideology = Liberalism
 			ideas = {
 				home_of_the_free
@@ -39,7 +39,7 @@ bookmarks = {
 			}
 		}
 		ENG = {
-			history = ENG_BLITZKRIEG_DESC
+			history = ENG_ACROSSLIMBO_DESC
 			ideology = Liberalism
 			ideas = {
 				stiff_upper_lip
@@ -56,7 +56,7 @@ bookmarks = {
 			
 		}
 		CHI = {
-			history = CHI_BLITZKRIEG_DESC
+			history = CHI_ACROSSLIMBO_DESC
 			ideology = Conservatism
 			ideas = {
 				sour_loser
@@ -71,7 +71,7 @@ bookmarks = {
 			}
 		}
 		RAJ = {
-			history = RAJ_BLITZKRIEG_DESC
+			history = RAJ_ACROSSLIMBO_DESC
 			ideology = Conservatism
 			ideas={
 				vittorio_emanuele_albania_ethiopia
@@ -85,7 +85,7 @@ bookmarks = {
 			}			
 		}
 		PER = {
-			history = PER_BLITZKRIEG_DESC
+			history = PER_ACROSSLIMBO_DESC
 			ideology = Nationalism
 			ideas={
 				state_shintoism
@@ -99,7 +99,7 @@ bookmarks = {
 			}		
 		}
 		RUS = {
-			history = RUS_BLITZKRIEG_DESC
+			history = RUS_ACROSSLIMBO_DESC
 			ideology = communism
 			ideas = {
 			}
@@ -111,7 +111,7 @@ bookmarks = {
 		# minors from DLC ####
 		"JAP"={
 			minor = yes
-			history = "JAP_BLITZKRIEG_DESC"
+			history = "JAP_ACROSSLIMBO_DESC"
 			ideology = Authoritarianism
 			ideas = {
 			}
@@ -120,7 +120,7 @@ bookmarks = {
 		}
 		"PHI"={
 			minor = yes
-			history = "PHI_BLITZKRIEG_DESC"
+			history = "PHI_ACROSSLIMBO_DESC"
 			ideology = syndicalism
 			ideas = {
 			}
@@ -129,7 +129,7 @@ bookmarks = {
 		}
 		"TUR"={
 			minor = yes
-			history = "TUR_BLITZKRIEG_DESC"
+			history = "TUR_ACROSSLIMBO_DESC"
 			ideology = socialism
 			ideas = {
 			}
@@ -138,7 +138,7 @@ bookmarks = {
 		}
 		"MAL"={
 			minor = yes
-			history = "MAL_BLITZKRIEG_DESC"
+			history = "MAL_ACROSSLIMBO_DESC"
 			ideology = Authoritarianism
 			ideas = {
 			}
@@ -147,7 +147,7 @@ bookmarks = {
 		}
 		"SYR"={
 			minor = yes
-			history = "SYR_BLITZKRIEG_DESC"
+			history = "SYR_ACROSSLIMBO_DESC"
 			ideology = Absolutism
 			ideas = {
 			}
@@ -156,7 +156,7 @@ bookmarks = {
 		}
 		"IRQ"={
 			minor = yes
-			history = "IRQ_BLITZKRIEG_DESC"
+			history = "IRQ_ACROSSLIMBO_DESC"
 			ideology = Absolutism
 			ideas = {
 			}
@@ -165,7 +165,7 @@ bookmarks = {
 		}
 		"EGY"={
 			minor = yes
-			history = "EGY_BLITZKRIEG_DESC"
+			history = "EGY_ACROSSLIMBO_DESC"
 			ideology = Authoritarianism
 			ideas = {
 			}
@@ -174,16 +174,16 @@ bookmarks = {
 		}
 		"INS"={
 			minor = yes
-			history = "INS_BLITZKRIEG_DESC"
+			history = "INS_ACROSSLIMBO_DESC"
 			ideology = Absolutism
 			ideas = {
 			}
 			focuses = {
 			}
 		}
-			"AST"={
+		"AST"={
 			minor = yes
-			history = "AST_BLITZKRIEG_DESC"
+			history = "AST_ACROSSLIMBO_DESC"
 			ideology = progressivism
 			ideas = {
 			}
@@ -192,7 +192,7 @@ bookmarks = {
 		}
 		"AFF"={
 			minor = yes
-			history = "AFF_BLITZKRIEG_DESC"
+			history = "AFF_ACROSSLIMBO_DESC"
 			ideology = Liberalism
 			ideas = {
 			}

@@ -277,3 +277,52 @@ if = {
 - 议席图 = 3 个等长数组（x / y / frame）+ 1 个 `dynamic_lists` + 1 张多帧座位精灵图。原版工具只产出 x/y，frame 与接线由本仓生成器补齐。
 - 坐标数组只在首次打开时生成一次（`initialized_flag` 防重复），之后只重算 frame；不要每月重建 2×N 行 `add_to_array`。
 - 座位 dds 的 `noOfFrames` 必须 = 党团数，fork 自带的 4 帧图不能直接套到 7 党团议会。
+
+## 12. 国策前置条件 `prerequisite` 的 AND / OR 语义（2026-11-12 用户第三次纠正后固化）
+
+⚠️ **本仓反复翻车的基本知识点。判断任何「国策死锁 / 前置冲突」之前，先数 `prerequisite` 块的个数；不许因为两个 focus 名字出现在同一个国策定义里就判成 AND。**
+
+| 写法 | 语义 | 连接线 |
+|---|---|---|
+| 同一个 `prerequisite = { }` 块内写多个 `focus =` | **OR**，任一完成即可 | 虚线 |
+| 多个 `prerequisite = { }` 块并列 | **AND**，每块都要满足（每块内部仍按 OR） | 实线 |
+| 两者混用 | 块间 AND × 块内 OR | 混合 |
+
+三种写法对照（本仓真实代码）：
+
+```
+# ① OR：MAL_Transit_Trade_Nation —— 两个互斥分支任一完成即可继续
+prerequisite = {
+	focus = MAL_Free_Port_Status
+	focus = MAL_Fiscal_Autonomy
+}
+
+# ② AND：两颗国策都必须完成
+prerequisite = {
+	focus = MAL_Restore_German_East_Asia_Arsenal
+}
+prerequisite = {
+	focus = MAL_Recruit_Former_Singapore_Generals
+}
+
+# ③ 混合：(A 或 B) 且 C —— JAP 范式
+prerequisite = {
+	focus = JAP_Farmer_Comrade_Organization
+	focus = JAP_Farmer_Union_Organization
+}
+prerequisite = {
+	focus = JAP_Labor_Reliance_System
+}
+```
+
+**权威出处**：`dev_skill/HOI4_modding_rulebook.md`「国策 → 视觉指示器」节（约 19900 / 19903 行）：连接线「实线表示逻辑与，虚线表示逻辑或」；互斥分支之后的汇合国策「技术共享（通过*或*连接同时与双方相连）」——即互斥二选一后的汇合**必须写成单块 OR**。
+
+**本仓通用范式**：全仓 23 棵国策树 / 1144 个 focus 中，有 **60 处**「单块多 focus 且内部互斥」的 OR 汇合（ALP / BRA / CHI / DDR / EGY / ENG / FRA / INS / JAP / MAL / PHI / TUR / WGR），例如 `MAL_Transit_Trade_Nation`、`MAL_Declare_Republic`、`MAL_Next_Confrontation_Phase`、`JAP_Combat_Aethiests_Union`。这是**故意的设计**，不是 bug。
+
+**反面教材（本 AI 实犯）**：曾把 `MAL_Transit_Trade_Nation` 的单块 OR 读成「同时要求两个互斥国策」，据此判定为「死锁」，写进长期记忆、设计稿和多轮汇报。实际扫描：全仓 AND 结构中的互斥冲突 = **0**，该国策只有 1 个 `prerequisite` 块，设计正确。该错误结论已全部撤销。
+
+**执行规则**：
+- 报「死锁」前必须：解析出该 focus 的每个 `prerequisite` 块 → 块内取 OR 候选集 → 只在「存在两个块 A/B 使 A×B 全部互斥」时才判死锁；否则不许下结论。
+- 真死锁的修法：把互斥的两个 focus 从「多个块」合并进「同一个块」（AND → OR），而不是删国策或改互斥关系。
+- `mutually_exclusive` 只阻止两个国策同时被完成，**不阻止**它们作为 OR 候选挂在同一后续国策上。
+- 自动检测已固化在 `_mal_verify.py` 第 14 节，每次全量校验会扫全仓 focus 树验证此规则。
