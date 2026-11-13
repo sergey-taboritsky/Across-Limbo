@@ -2921,4 +2921,24 @@ spriteTypes = {
 		name = "GFX_portrait_large_MUR_Sukarni"
 		texturefile = "gfx/characters/MUR_Sukarni.png"
 	}
+	#2026-11-13 用户立绘：MLD_Abdul_Majeed_Didi.png
+	spriteType = {
+		name = "GFX_portrait_large_MLD_Abdul_Majeed_Didi"
+		texturefile = "gfx/characters/MLD_Abdul_Majeed_Didi.png"
+	}
+	#2026-11-13 用户立绘：SAU_abdulaziz_ibn_saud.png
+	spriteType = {
+		name = "GFX_portrait_large_SAU_abdulaziz_ibn_saud"
+		texturefile = "gfx/characters/SAU_abdulaziz_ibn_saud.png"
+	}
+	#2026-11-13 用户立绘：HAT_Mohammad_Hatta.png
+	spriteType = {
+		name = "GFX_portrait_large_HAT_Mohammad_Hatta"
+		texturefile = "gfx/characters/HAT_Mohammad_Hatta.png"
+	}
+	#2026-11-13 用户立绘：RYU_Gus_Hall.png
+	spriteType = {
+		name = "GFX_portrait_large_RYU_Gus_Hall"
+		texturefile = "gfx/characters/RYU_Gus_Hall.png"
+	}
 }

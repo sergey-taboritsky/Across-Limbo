@@ -47,6 +47,11 @@ characters = {
 	}
 	HAT_Mohammad_Hatta = {
 		name = HAT_Mohammad_Hatta
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_HAT_Mohammad_Hatta
+			}
+		}
 		country_leader = {
 			desc = HAT_Mohammad_Hatta_desc
 			ideology = Authoritarian_Liberalism

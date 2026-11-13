@@ -1,0 +1,18 @@
+add_namespace = AFF_event
+
+# 战后国体选择：恢复君主制 / 维持共和国
+country_event = {
+	id = AFF_event.1
+	title = AFF_event_1_t
+	desc = AFF_event_1_d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AFF_event_1_a
+		set_cosmetic_tag = AFF_monarchy
+	}
+	option = {
+		name = AFF_event_1_b
+		set_cosmetic_tag = AFF_republic
+	}
+}

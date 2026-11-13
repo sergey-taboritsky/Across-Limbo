@@ -1,0 +1,3384 @@
+# AFF 国策树（1948 澳大利亚内战）：一个 focus_tree，两棵字面意义上的树。
+# 结构照 TNW_MAL_FocusTree.txt：同一 focus_tree 定义内若干互不相连、各有根的
+# 独立树形结构，同时显示，不切换、不加载第二棵树。
+# 第一棵（战时，y 0..10，79 focus）：单根 -> 四主题分区 -> 跨区汇合。
+# 第二棵（战后，y 11..31，91 focus）：根为复员国策，其 available 是唯一开关；
+#   选举与组阁 y12..23，经济／军事／外交三区 y24..29，汇合 y30，终点 y31。
+# 两棵树之间零 prerequisite，全局 y 连续、x 全偶数步长 2、父节点恰在上一行。
+# 经济照 MAL/INS 私有化与集中；外交接既有 moscow_aligned_nation 势力范围标签；
+# 军事以特种部队与海军为主干，常规陆军／空军为侧枝。
+# 提示只配不会自动显示的自定义效果；派系读政党支持率；图标沿用既有占位图。
+
+focus_tree = {
+	id = AFF_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AFF
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 3200
+	}
+	default = no
+
+	### ===== 第一棵树：战时（y 0..10）=====
+
+	### 堪培拉的第一道命令
+	focus = {
+		id = AFF_war_outbreak
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 10
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_outbreak"
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+
+	### 东岸统帅部
+	focus = {
+		id = AFF_war_command_staff
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_outbreak }
+		x = 10
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_command_staff"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 东岸战局
+	focus = {
+		id = AFF_war_eastern_front
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_command_staff }
+		x = 2
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_eastern_front"
+			army_experience = 15
+			add_war_support = 0.02
+		}
+	}
+
+	### 后方内政
+	focus = {
+		id = AFF_war_home_front
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_command_staff }
+		x = 8
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_home_front"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 战时经济
+	focus = {
+		id = AFF_war_economy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_command_staff }
+		x = 14
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_economy"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 外援通道
+	focus = {
+		id = AFF_war_foreign
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_command_staff }
+		x = 20
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_foreign"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 猎人谷防线
+	focus = {
+		id = AFF_war_hunter_line
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_eastern_front }
+		x = 0
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_hunter_line"
+			army_experience = 15
+			add_war_support = 0.02
+		}
+	}
+
+	### 布里斯班港防务
+	focus = {
+		id = AFF_war_brisbane_port
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_eastern_front }
+		x = 4
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_brisbane_port"
+			navy_experience = 10
+			add_war_support = 0.02
+		}
+	}
+
+	### 战时动员广播
+	focus = {
+		id = AFF_war_morale_campaign
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_home_front }
+		x = 6
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_morale_campaign"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 工会停战协定
+	focus = {
+		id = AFF_war_union_truce
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_home_front }
+		x = 10
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_union_truce"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 小麦征购
+	focus = {
+		id = AFF_war_wheat_requisition
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_war_economy }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_wheat_requisition"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 港口关税
+	focus = {
+		id = AFF_war_port_tariff
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_economy }
+		x = 16
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_port_tariff"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 印度洋航路
+	focus = {
+		id = AFF_war_indian_ocean_route
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_foreign }
+		x = 18
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_indian_ocean_route"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 南洋商路
+	focus = {
+		id = AFF_war_nanyang_shipping
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_foreign }
+		x = 22
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_nanyang_shipping"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 猎人谷煤点堆栈
+	focus = {
+		id = AFF_war_hunter_depot
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_war_hunter_line }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 0
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_hunter_depot"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			add_stability = 0.01
+		}
+	}
+
+	### 统一东岸指挥
+	focus = {
+		id = AFF_war_joint_command
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_hunter_line }
+		prerequisite = { focus = AFF_war_brisbane_port }
+		x = 2
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_joint_command"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 引水与泊位规则
+	focus = {
+		id = AFF_war_port_pilotage
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_war_brisbane_port }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_port_pilotage"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 物价管制
+	focus = {
+		id = AFF_war_price_control
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_war_morale_campaign }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_price_control"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 配给证编号册
+	focus = {
+		id = AFF_war_ration_ledger
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_union_truce }
+		x = 8
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_ration_ledger"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 难民救济
+	focus = {
+		id = AFF_war_refugee_relief
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_war_union_truce }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 10
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_refugee_relief"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 铁路抢修
+	focus = {
+		id = AFF_war_rail_repair
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_war_wheat_requisition }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_rail_repair"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			add_stability = 0.01
+		}
+	}
+
+	### 军械工场
+	focus = {
+		id = AFF_war_munition_workshop
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_wheat_requisition }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 14
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_munition_workshop"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AFF_capital_cost_5_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			add_stability = 0.01
+		}
+	}
+
+	### 煤与焦炭配额
+	focus = {
+		id = AFF_war_coal_allocation
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_war_port_tariff }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_coal_allocation"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 北方供货谈判
+	focus = {
+		id = AFF_war_moscow_talks
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_indian_ocean_route }
+		x = 18
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_moscow_talks"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 不结盟声明
+	focus = {
+		id = AFF_war_no_alliance
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_indian_ocean_route }
+		x = 20
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_no_alliance"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 舱单格式统一
+	focus = {
+		id = AFF_war_manifest_rule
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_nanyang_shipping }
+		x = 22
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_manifest_rule"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 西北卫戍
+	focus = {
+		id = AFF_war_northwest_garrison
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_hunter_depot }
+		x = 0
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_northwest_garrison"
+			army_experience = 15
+			add_war_support = 0.02
+		}
+	}
+
+	### 墨累河渡口
+	focus = {
+		id = AFF_war_murray_crossing
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_joint_command }
+		x = 2
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_murray_crossing"
+			army_experience = 15
+			add_war_support = 0.02
+		}
+	}
+
+	### 沿岸船团
+	focus = {
+		id = AFF_war_coastal_convoy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_port_pilotage }
+		x = 4
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_coastal_convoy"
+			navy_experience = 10
+			add_war_support = 0.02
+		}
+	}
+
+	### 限价登记簿
+	focus = {
+		id = AFF_war_price_register
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_war_price_control }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_price_register"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 救济粮抽查
+	focus = {
+		id = AFF_war_relief_inspection
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_ration_ledger }
+		x = 8
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_relief_inspection"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 流动人口登记
+	focus = {
+		id = AFF_war_refugee_register
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_refugee_relief }
+		x = 10
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_refugee_register"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 征购总账
+	focus = {
+		id = AFF_war_wheat_ledger
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_rail_repair }
+		x = 12
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_wheat_ledger"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 燃油统筹
+	focus = {
+		id = AFF_war_fuel_pool
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_war_munition_workshop }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_fuel_pool"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 军运时刻表
+	focus = {
+		id = AFF_war_rail_timetable
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_coal_allocation }
+		x = 16
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_rail_timetable"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 供货清单备案
+	focus = {
+		id = AFF_war_supply_ledger
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_moscow_talks }
+		x = 18
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_supply_ledger"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 不结盟公告释文
+	focus = {
+		id = AFF_war_public_notice
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_no_alliance }
+		x = 20
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_public_notice"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 转运保险本地化
+	focus = {
+		id = AFF_war_insurance_local
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_war_manifest_rule }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_insurance_local"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 卫戍补给审计
+	focus = {
+		id = AFF_war_garrison_audit
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_northwest_garrison }
+		x = 0
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_garrison_audit"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 战线稳定
+	focus = {
+		id = AFF_war_front_stabilised
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_northwest_garrison }
+		prerequisite = { focus = AFF_war_murray_crossing }
+		prerequisite = { focus = AFF_war_coastal_convoy }
+		x = 2
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_front_stabilised"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 港口夜巡
+	focus = {
+		id = AFF_war_harbour_watch
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_coastal_convoy }
+		x = 4
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_harbour_watch"
+			army_experience = 15
+			add_war_support = 0.02
+		}
+	}
+
+	### 限价复核
+	focus = {
+		id = AFF_war_control_review
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_price_register }
+		x = 6
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_control_review"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 后方秩序
+	focus = {
+		id = AFF_war_home_order
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_relief_inspection }
+		prerequisite = { focus = AFF_war_refugee_register }
+		x = 8
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_home_order"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 街区管理员
+	focus = {
+		id = AFF_war_warden_network
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_refugee_register }
+		x = 10
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_warden_network"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 配额核发表
+	focus = {
+		id = AFF_war_quota_board
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_wheat_ledger }
+		x = 12
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_quota_board"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 战时生产委员会
+	focus = {
+		id = AFF_war_industrial_board
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_fuel_pool }
+		prerequisite = { focus = AFF_war_rail_timetable }
+		x = 14
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_industrial_board"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 零件规格统一
+	focus = {
+		id = AFF_war_workshop_spec
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_rail_timetable }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_workshop_spec"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AFF_capital_cost_5_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			add_stability = 0.01
+		}
+	}
+
+	### 运价结算办法
+	focus = {
+		id = AFF_war_freight_settlement
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_war_supply_ledger }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_freight_settlement"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 补给线落定
+	focus = {
+		id = AFF_war_supply_secured
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_public_notice }
+		x = 20
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_supply_secured"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 船期登记处
+	focus = {
+		id = AFF_war_route_registry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_insurance_local }
+		x = 22
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_route_registry"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 野战修械班
+	focus = {
+		id = AFF_war_field_repair
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_garrison_audit }
+		x = 0
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_field_repair"
+			army_experience = 15
+			add_war_support = 0.02
+		}
+	}
+
+	### 战线旬报
+	focus = {
+		id = AFF_war_front_report
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_front_stabilised }
+		x = 2
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_front_report"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 护航轮换
+	focus = {
+		id = AFF_war_escort_rotation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_harbour_watch }
+		x = 4
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_escort_rotation"
+			navy_experience = 10
+			add_war_support = 0.02
+		}
+	}
+
+	### 临时条例汇编
+	focus = {
+		id = AFF_war_ordinance_book
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_control_review }
+		x = 6
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_ordinance_book"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 申诉登记处
+	focus = {
+		id = AFF_war_appeal_office
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_home_order }
+		x = 8
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_appeal_office"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 防空演练
+	focus = {
+		id = AFF_war_air_raid_drill
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_warden_network }
+		x = 10
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_air_raid_drill"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 征购账复核
+	focus = {
+		id = AFF_war_procurement_audit
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_quota_board }
+		x = 12
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_procurement_audit"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 经济稳住
+	focus = {
+		id = AFF_war_economy_stable
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_industrial_board }
+		x = 14
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_economy_stable"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 工场月报
+	focus = {
+		id = AFF_war_factory_output
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_workshop_spec }
+		x = 16
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_factory_output"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 租船契约范本
+	focus = {
+		id = AFF_war_ship_charter
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_freight_settlement }
+		x = 18
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_ship_charter"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 对外口径统一
+	focus = {
+		id = AFF_war_external_wording
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_supply_secured }
+		x = 20
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_external_wording"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 中转仓台账
+	focus = {
+		id = AFF_war_warehouse_ledger
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_route_registry }
+		x = 22
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_warehouse_ledger"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 卫戍轮换
+	focus = {
+		id = AFF_war_garrison_rotation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_field_repair }
+		x = 0
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_garrison_rotation"
+			army_experience = 15
+			add_war_support = 0.02
+		}
+	}
+
+	### 前沿补给表
+	focus = {
+		id = AFF_war_front_supply_table
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_front_report }
+		x = 2
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_front_supply_table"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 船团航行簿
+	focus = {
+		id = AFF_war_convoy_ledger
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_escort_rotation }
+		x = 4
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_convoy_ledger"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 条例年度复核
+	focus = {
+		id = AFF_war_ordinance_review
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_ordinance_book }
+		x = 6
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_ordinance_review"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 申诉案卷归档
+	focus = {
+		id = AFF_war_appeal_archive
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_appeal_office }
+		x = 8
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_appeal_archive"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 街区月报
+	focus = {
+		id = AFF_war_warden_report
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_air_raid_drill }
+		x = 10
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_warden_report"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 配额结算
+	focus = {
+		id = AFF_war_quota_settlement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_procurement_audit }
+		x = 12
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_quota_settlement"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 生产月核
+	focus = {
+		id = AFF_war_production_review
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_economy_stable }
+		x = 14
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_production_review"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 燃油储备线
+	focus = {
+		id = AFF_war_fuel_reserve
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_factory_output }
+		x = 16
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_fuel_reserve"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 租船契约复核
+	focus = {
+		id = AFF_war_charter_audit
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_ship_charter }
+		x = 18
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_charter_audit"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 到港公告统一
+	focus = {
+		id = AFF_war_port_notice
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_external_wording }
+		x = 20
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_port_notice"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 舱单归档
+	focus = {
+		id = AFF_war_manifest_archive
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_warehouse_ledger }
+		x = 22
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_manifest_archive"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 战局分区结项
+	focus = {
+		id = AFF_war_front_settlement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_garrison_rotation }
+		prerequisite = { focus = AFF_war_front_supply_table }
+		prerequisite = { focus = AFF_war_convoy_ledger }
+		x = 2
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_front_settlement"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 内政分区结项
+	focus = {
+		id = AFF_war_home_settlement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_ordinance_review }
+		prerequisite = { focus = AFF_war_appeal_archive }
+		prerequisite = { focus = AFF_war_warden_report }
+		x = 8
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_home_settlement"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 经济分区结项
+	focus = {
+		id = AFF_war_economy_settlement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_quota_settlement }
+		prerequisite = { focus = AFF_war_production_review }
+		prerequisite = { focus = AFF_war_fuel_reserve }
+		x = 14
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_economy_settlement"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 外援分区结项
+	focus = {
+		id = AFF_war_foreign_settlement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_charter_audit }
+		prerequisite = { focus = AFF_war_port_notice }
+		prerequisite = { focus = AFF_war_manifest_archive }
+		x = 20
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_foreign_settlement"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 全面反攻准备
+	focus = {
+		id = AFF_war_all_fronts_ready
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_war_front_settlement }
+		prerequisite = { focus = AFF_war_home_settlement }
+		prerequisite = { focus = AFF_war_economy_settlement }
+		prerequisite = { focus = AFF_war_foreign_settlement }
+		x = 10
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_all_fronts_ready"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### ===== 第二棵树：战后（y 11..31）=====
+
+	### 战事结束与复员
+	focus = {
+		id = AFF_war_demobilisation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		available = {
+			has_war = no
+			NOT = { country_exists = AST }
+		}
+		x = 10
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_war_demobilisation"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 宣布大选
+	focus = {
+		id = AFF_election_announced
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AFF_war_demobilisation }
+		x = 10
+		y = 12
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_election_announced"
+			add_political_power = 75
+			add_stability = 0.02
+		}
+	}
+
+	### 选民名册
+	focus = {
+		id = AFF_election_voter_roll
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_election_announced }
+		x = 6
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_election_voter_roll"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 竞选广播
+	focus = {
+		id = AFF_election_broadcast
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_election_announced }
+		x = 10
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_election_broadcast"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 军警中立
+	focus = {
+		id = AFF_election_army_neutral
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_election_announced }
+		x = 14
+		y = 13
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_election_army_neutral"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 投票日
+	focus = {
+		id = AFF_election_polling
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AFF_election_voter_roll }
+		prerequisite = { focus = AFF_election_broadcast }
+		prerequisite = { focus = AFF_election_army_neutral }
+		x = 10
+		y = 14
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_election_polling"
+			add_political_power = 75
+			add_stability = 0.02
+		}
+	}
+
+	### 自由党组阁
+	focus = {
+		id = AFF_gov_liberal
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = { focus = AFF_election_polling }
+		mutually_exclusive = { focus = AFF_gov_country focus = AFF_gov_dlp focus = AFF_gov_radical }
+		cancellable = no
+		x = 2
+		y = 15
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_gov_liberal"
+			add_political_power = 75
+			add_stability = 0.02
+			set_politics = {
+				ruling_party = Liberalism
+				elections_allowed = yes
+			}
+			set_popularities = {
+				communist = 1
+				syndicalism = 0
+				socialism = 3
+				Social_democracy = 10
+				Liberalism = 55
+				Conservatism = 25
+				Absolutism = 0
+				Authoritarianism = 2
+				Nationalism = 4
+			}
+		}
+	}
+
+	### 国家党组阁
+	focus = {
+		id = AFF_gov_country
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = { focus = AFF_election_polling }
+		mutually_exclusive = { focus = AFF_gov_liberal focus = AFF_gov_dlp focus = AFF_gov_radical }
+		cancellable = no
+		x = 8
+		y = 15
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_gov_country"
+			add_political_power = 75
+			add_stability = 0.02
+			set_politics = {
+				ruling_party = Conservatism
+				elections_allowed = yes
+			}
+			set_popularities = {
+				communist = 1
+				syndicalism = 0
+				socialism = 3
+				Social_democracy = 8
+				Liberalism = 28
+				Conservatism = 48
+				Absolutism = 1
+				Authoritarianism = 5
+				Nationalism = 6
+			}
+		}
+	}
+
+	### 民主工党组阁
+	focus = {
+		id = AFF_gov_dlp
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = { focus = AFF_election_polling }
+		mutually_exclusive = { focus = AFF_gov_liberal focus = AFF_gov_country focus = AFF_gov_radical }
+		cancellable = no
+		x = 14
+		y = 15
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_gov_dlp"
+			add_political_power = 75
+			add_stability = 0.02
+			set_politics = {
+				ruling_party = Social_democracy
+				elections_allowed = yes
+			}
+			set_popularities = {
+				communist = 1
+				syndicalism = 0
+				socialism = 5
+				Social_democracy = 42
+				Liberalism = 20
+				Conservatism = 18
+				Absolutism = 1
+				Authoritarianism = 9
+				Nationalism = 4
+			}
+		}
+	}
+
+	### 极端派自由党组阁
+	focus = {
+		id = AFF_gov_radical
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = { focus = AFF_election_polling }
+		mutually_exclusive = { focus = AFF_gov_liberal focus = AFF_gov_country focus = AFF_gov_dlp }
+		cancellable = no
+		x = 20
+		y = 15
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_gov_radical"
+			add_political_power = 75
+			add_stability = 0.02
+			set_politics = {
+				ruling_party = Nationalism
+				elections_allowed = yes
+			}
+			set_popularities = {
+				communist = 1
+				syndicalism = 0
+				socialism = 3
+				Social_democracy = 7
+				Liberalism = 24
+				Conservatism = 16
+				Absolutism = 1
+				Authoritarianism = 10
+				Nationalism = 38
+			}
+		}
+	}
+
+	### 撤销战时管制
+	focus = {
+		id = AFF_lib_repeal_controls
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_gov_liberal }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_liberal_tt
+				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+			}
+		}
+		x = 0
+		y = 16
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_lib_repeal_controls"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 放宽新闻检查
+	focus = {
+		id = AFF_lib_press
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_gov_liberal }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_liberal_tt
+				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+			}
+		}
+		x = 4
+		y = 16
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_lib_press"
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.01
+			}
+			add_political_power = 25
+		}
+	}
+
+	### 乡村补贴
+	focus = {
+		id = AFF_country_farm_subsidy
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_gov_country }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_country_tt
+				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 6
+		y = 16
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_country_farm_subsidy"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 小麦关税
+	focus = {
+		id = AFF_country_wheat_tariff
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_gov_country }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_country_tt
+				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+			}
+		}
+		x = 10
+		y = 16
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_country_wheat_tariff"
+			add_popularity = {
+				ideology = Conservatism
+				popularity = 0.01
+			}
+			add_political_power = 25
+		}
+	}
+
+	### 社团议事会
+	focus = {
+		id = AFF_dlp_corporate_council
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_gov_dlp }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_dlp_tt
+				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+			}
+		}
+		x = 12
+		y = 16
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dlp_corporate_council"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 教派学校补助
+	focus = {
+		id = AFF_dlp_school_grant
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_gov_dlp }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_dlp_tt
+				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 16
+		y = 16
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dlp_school_grant"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 紧急权力延长
+	focus = {
+		id = AFF_rad_emergency_powers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_gov_radical }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_radical_tt
+				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+			}
+		}
+		x = 18
+		y = 16
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_rad_emergency_powers"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 街头动员
+	focus = {
+		id = AFF_rad_street_mobilisation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_gov_radical }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_radical_tt
+				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+			}
+		}
+		x = 22
+		y = 16
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_rad_street_mobilisation"
+			army_experience = 15
+			add_war_support = 0.02
+		}
+	}
+
+	### 恢复议会程序
+	focus = {
+		id = AFF_lib_parliament
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_lib_repeal_controls }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_liberal_tt
+				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+			}
+		}
+		x = 0
+		y = 17
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_lib_parliament"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 预算复核案
+	focus = {
+		id = AFF_lib_budget_audit
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_lib_press }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_liberal_tt
+				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 4
+		y = 17
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_lib_budget_audit"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 州权下放
+	focus = {
+		id = AFF_country_state_rights
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_country_farm_subsidy }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_country_tt
+				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+			}
+		}
+		x = 6
+		y = 17
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_country_state_rights"
+			add_popularity = {
+				ideology = Conservatism
+				popularity = 0.01
+			}
+			add_political_power = 25
+		}
+	}
+
+	### 铁路董事会
+	focus = {
+		id = AFF_country_rail_board
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_country_wheat_tariff }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_country_tt
+				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+			}
+		}
+		x = 10
+		y = 17
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_country_rail_board"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 劳资仲裁
+	focus = {
+		id = AFF_dlp_arbitration
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dlp_corporate_council }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_dlp_tt
+				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+			}
+		}
+		x = 12
+		y = 17
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dlp_arbitration"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 工会登记办法
+	focus = {
+		id = AFF_dlp_union_register
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dlp_school_grant }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_dlp_tt
+				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+			}
+		}
+		x = 16
+		y = 17
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dlp_union_register"
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.01
+			}
+			add_political_power = 25
+		}
+	}
+
+	### 反共清查
+	focus = {
+		id = AFF_rad_anti_red_purge
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_rad_emergency_powers }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_radical_tt
+				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+			}
+		}
+		x = 18
+		y = 17
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_rad_anti_red_purge"
+			add_popularity = {
+				ideology = Nationalism
+				popularity = 0.01
+			}
+			add_political_power = 25
+		}
+	}
+
+	### 集会报备规则
+	focus = {
+		id = AFF_rad_rally_rules
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_rad_street_mobilisation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_radical_tt
+				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+			}
+		}
+		x = 22
+		y = 17
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_rad_rally_rules"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 文官任用条例
+	focus = {
+		id = AFF_lib_civil_service
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_lib_parliament }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_liberal_tt
+				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+			}
+		}
+		x = 0
+		y = 18
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_lib_civil_service"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 地方选举恢复
+	focus = {
+		id = AFF_lib_local_election
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_lib_budget_audit }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_liberal_tt
+				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+			}
+		}
+		x = 4
+		y = 18
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_lib_local_election"
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.01
+			}
+			add_political_power = 25
+		}
+	}
+
+	### 耕地登记令
+	focus = {
+		id = AFF_country_land_register
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_country_state_rights }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_country_tt
+				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+			}
+		}
+		x = 6
+		y = 18
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_country_land_register"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 货运运价公示
+	focus = {
+		id = AFF_country_freight_rate
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_country_rail_board }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_country_tt
+				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+			}
+		}
+		x = 10
+		y = 18
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_country_freight_rate"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 工资评议会
+	focus = {
+		id = AFF_dlp_wage_board
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dlp_arbitration }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_dlp_tt
+				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+			}
+		}
+		x = 12
+		y = 18
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dlp_wage_board"
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.01
+			}
+			add_political_power = 25
+		}
+	}
+
+	### 教材报送规则
+	focus = {
+		id = AFF_dlp_school_report
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dlp_union_register }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_dlp_tt
+				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+			}
+		}
+		x = 16
+		y = 18
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dlp_school_report"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 公共秩序条例
+	focus = {
+		id = AFF_rad_public_order
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_rad_anti_red_purge }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_radical_tt
+				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+			}
+		}
+		x = 18
+		y = 18
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_rad_public_order"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 复员军人编队
+	focus = {
+		id = AFF_rad_veteran_corps
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_rad_rally_rules }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_radical_tt
+				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+			}
+		}
+		x = 22
+		y = 18
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_rad_veteran_corps"
+			army_experience = 15
+			add_war_support = 0.02
+		}
+	}
+
+	### 司法复核程序
+	focus = {
+		id = AFF_lib_court_review
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_lib_civil_service }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_liberal_tt
+				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+			}
+		}
+		x = 0
+		y = 19
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_lib_court_review"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 商事条例整理
+	focus = {
+		id = AFF_lib_trade_ordinance
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_lib_local_election }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_liberal_tt
+				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 4
+		y = 19
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_lib_trade_ordinance"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 乡村信贷案
+	focus = {
+		id = AFF_country_rural_credit
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_country_land_register }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_country_tt
+				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 6
+		y = 19
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_country_rural_credit"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 税则争议仲裁
+	focus = {
+		id = AFF_country_tariff_court
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_country_freight_rate }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_country_tt
+				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+			}
+		}
+		x = 10
+		y = 19
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_country_tariff_court"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 工时条例
+	focus = {
+		id = AFF_dlp_work_hours
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dlp_wage_board }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_dlp_tt
+				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+			}
+		}
+		x = 12
+		y = 19
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dlp_work_hours"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 救济征费案
+	focus = {
+		id = AFF_dlp_welfare_levy
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_dlp_school_report }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_dlp_tt
+				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 16
+		y = 19
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dlp_welfare_levy"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 延长清单复核
+	focus = {
+		id = AFF_rad_emergency_review
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_rad_public_order }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_radical_tt
+				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+			}
+		}
+		x = 18
+		y = 19
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_rad_emergency_review"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 常设动员委员会
+	focus = {
+		id = AFF_rad_command_council
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_rad_veteran_corps }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_radical_tt
+				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+			}
+		}
+		x = 22
+		y = 19
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_rad_command_council"
+			army_experience = 15
+			add_war_support = 0.02
+		}
+	}
+
+	### 孟席斯内阁就位
+	focus = {
+		id = AFF_lib_cabinet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_lib_court_review }
+		prerequisite = { focus = AFF_lib_trade_ordinance }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_liberal_tt
+				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+			}
+		}
+		x = 2
+		y = 20
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_lib_cabinet"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 法登内阁就位
+	focus = {
+		id = AFF_country_cabinet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_country_rural_credit }
+		prerequisite = { focus = AFF_country_tariff_court }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_country_tt
+				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+			}
+		}
+		x = 8
+		y = 20
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_country_cabinet"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 麦克马纳斯内阁就位
+	focus = {
+		id = AFF_dlp_cabinet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dlp_work_hours }
+		prerequisite = { focus = AFF_dlp_welfare_levy }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_dlp_tt
+				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+			}
+		}
+		x = 14
+		y = 20
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dlp_cabinet"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 休斯战时内阁
+	focus = {
+		id = AFF_rad_cabinet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_rad_emergency_review }
+		prerequisite = { focus = AFF_rad_command_council }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_radical_tt
+				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+			}
+		}
+		x = 20
+		y = 20
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_rad_cabinet"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 自由党共同遗产
+	focus = {
+		id = AFF_shared_liberal_legacy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_lib_cabinet focus = AFF_rad_cabinet }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_shared_tt
+				OR = {
+					check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+					check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+				}
+			}
+		}
+		x = 2
+		y = 21
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_shared_liberal_legacy"
+			add_political_power = 50
+			add_stability = 0.01
+		}
+	}
+
+	### 国家党施政清单
+	focus = {
+		id = AFF_country_cabinet_programme
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_country_cabinet }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_country_tt
+				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+			}
+		}
+		x = 8
+		y = 21
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_country_cabinet_programme"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 民主工党施政清单
+	focus = {
+		id = AFF_dlp_cabinet_programme
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dlp_cabinet }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_dlp_tt
+				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+			}
+		}
+		x = 14
+		y = 21
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dlp_cabinet_programme"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 党部机器重整
+	focus = {
+		id = AFF_shared_party_machine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_shared_liberal_legacy }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_shared_tt
+				OR = {
+					check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+					check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+				}
+			}
+		}
+		x = 2
+		y = 22
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_shared_party_machine"
+			add_political_power = 50
+			add_stability = 0.01
+		}
+	}
+
+	### 国家党宪制草案
+	focus = {
+		id = AFF_country_constitutional_draft
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_country_cabinet_programme }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_country_tt
+				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+			}
+		}
+		x = 8
+		y = 22
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_country_constitutional_draft"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 民主工党宪制草案
+	focus = {
+		id = AFF_dlp_constitutional_draft
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dlp_cabinet_programme }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_party_check_dlp_tt
+				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+			}
+		}
+		x = 14
+		y = 22
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dlp_constitutional_draft"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 战后宪制
+	focus = {
+		id = AFF_postwar_constitution
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AFF_shared_party_machine focus = AFF_country_constitutional_draft focus = AFF_dlp_constitutional_draft }
+		x = 8
+		y = 23
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_postwar_constitution"
+			add_political_power = 75
+			add_stability = 0.02
+			country_event = { id = AFF_event.1 days = 1 }
+		}
+	}
+
+	### 撤销战时管制
+	focus = {
+		id = AFF_econ_repeal_controls
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AFF_postwar_constitution }
+		x = 2
+		y = 24
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_repeal_controls"
+			add_political_power = 50
+			add_stability = 0.02
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.02
+			}
+			custom_effect_tooltip = AFF_deregulation_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = -4 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+
+	### 精锐建军方针
+	focus = {
+		id = AFF_mil_elite_doctrine
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AFF_postwar_constitution }
+		x = 10
+		y = 24
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_elite_doctrine"
+			add_political_power = 50
+			add_stability = 0.02
+			army_experience = 15
+		}
+	}
+
+	### 反社会主义路线
+	focus = {
+		id = AFF_dip_anti_socialist_line
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AFF_postwar_constitution }
+		x = 18
+		y = 24
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_anti_socialist_line"
+			add_political_power = 50
+			add_stability = 0.02
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.03
+			}
+		}
+	}
+
+	### 战时国有资产处置
+	focus = {
+		id = AFF_econ_asset_disposal
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_econ_repeal_controls }
+		x = 0
+		y = 25
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_asset_disposal"
+			add_political_power = 25
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.02
+			}
+			custom_effect_tooltip = AFF_deregulation_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = -4 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_stability = -0.01
+		}
+	}
+
+	### 限价与配给退场
+	focus = {
+		id = AFF_econ_price_release
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_econ_repeal_controls }
+		x = 2
+		y = 25
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_price_release"
+			add_political_power = 25
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.02
+			}
+			custom_effect_tooltip = AFF_deregulation_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = -4 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_stability = -0.01
+		}
+	}
+
+	### 银行复归私营
+	focus = {
+		id = AFF_econ_bank_reprivatisation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_econ_repeal_controls }
+		x = 4
+		y = 25
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_bank_reprivatisation"
+			add_political_power = 25
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.02
+			}
+			custom_effect_tooltip = AFF_deregulation_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = -4 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_stability = -0.01
+		}
+	}
+
+	### 特种兵选拔
+	focus = {
+		id = AFF_mil_special_selection
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_mil_elite_doctrine }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 8
+		y = 25
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_special_selection"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		}
+	}
+
+	### 海军参谋部
+	focus = {
+		id = AFF_mil_naval_staff
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_mil_elite_doctrine }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 10
+		y = 25
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_naval_staff"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			navy_experience = 25
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+		}
+	}
+
+	### 两栖训练学校
+	focus = {
+		id = AFF_mil_amphibious_school
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_mil_elite_doctrine }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 12
+		y = 25
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_amphibious_school"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		}
+	}
+
+	### 左翼组织清查
+	focus = {
+		id = AFF_dip_left_audit
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dip_anti_socialist_line }
+		x = 16
+		y = 25
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_left_audit"
+			add_political_power = 25
+			add_stability = 0.01
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.02
+			}
+		}
+	}
+
+	### 工会解散令
+	focus = {
+		id = AFF_dip_union_dissolution
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dip_anti_socialist_line }
+		x = 18
+		y = 25
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_union_dissolution"
+			add_political_power = 25
+			add_stability = 0.01
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.02
+			}
+		}
+	}
+
+	### 反共宣传
+	focus = {
+		id = AFF_dip_press_campaign
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dip_anti_socialist_line }
+		x = 20
+		y = 25
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_press_campaign"
+			add_political_power = 25
+			add_stability = 0.01
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.02
+			}
+		}
+	}
+
+	### 股权集中
+	focus = {
+		id = AFF_econ_share_consolidation
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_econ_asset_disposal }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 0
+		y = 26
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_share_consolidation"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_stability = -0.01
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 托拉斯登记
+	focus = {
+		id = AFF_econ_trust_register
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_econ_price_release }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 2
+		y = 26
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_trust_register"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_stability = -0.01
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 行业公会特许
+	focus = {
+		id = AFF_econ_guild_charter
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AFF_econ_bank_reprivatisation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 4
+		y = 26
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_guild_charter"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AFF_capital_cost_2_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_stability = -0.01
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 突击队装备
+	focus = {
+		id = AFF_mil_commando_equipment
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_mil_special_selection }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 8
+		y = 26
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_commando_equipment"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		}
+	}
+
+	### 船坞扩建
+	focus = {
+		id = AFF_mil_dockyard_expansion
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_mil_naval_staff }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 10
+		y = 26
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_dockyard_expansion"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AFF_capital_cost_5_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			navy_experience = 15
+		}
+	}
+
+	### 舰队编成
+	focus = {
+		id = AFF_mil_fleet_formation
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_mil_amphibious_school }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 12
+		y = 26
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_fleet_formation"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			navy_experience = 25
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+		}
+	}
+
+	### 断绝左翼国际联系
+	focus = {
+		id = AFF_dip_sever_socialist_ties
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dip_left_audit }
+		x = 16
+		y = 26
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_sever_socialist_ties"
+			add_political_power = 25
+			add_stability = 0.01
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.02
+			}
+		}
+	}
+
+	### 莫斯科经委会接洽
+	focus = {
+		id = AFF_dip_moscow_committee
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dip_union_dissolution }
+		x = 18
+		y = 26
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_moscow_committee"
+			add_political_power = 25
+			add_stability = 0.01
+			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
+		}
+	}
+
+	### 对俄商务代表团
+	focus = {
+		id = AFF_dip_trade_mission
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dip_press_campaign }
+		x = 20
+		y = 26
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_trade_mission"
+			add_political_power = 25
+			add_stability = 0.01
+			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
+		}
+	}
+
+	### 铁路托拉斯
+	focus = {
+		id = AFF_econ_rail_trust
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_econ_share_consolidation }
+		prerequisite = { focus = AFF_econ_trust_register }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 0
+		y = 27
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_rail_trust"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_stability = -0.01
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 航运托拉斯
+	focus = {
+		id = AFF_econ_shipping_trust
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_econ_trust_register }
+		prerequisite = { focus = AFF_econ_guild_charter }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 4
+		y = 27
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_shipping_trust"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_stability = -0.01
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 丛林与岛屿作战
+	focus = {
+		id = AFF_mil_jungle_warfare
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_mil_commando_equipment }
+		prerequisite = { focus = AFF_mil_dockyard_expansion }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 8
+		y = 27
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_jungle_warfare"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		}
+	}
+
+	### 远洋护航教范
+	focus = {
+		id = AFF_mil_escort_doctrine
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_mil_dockyard_expansion }
+		prerequisite = { focus = AFF_mil_fleet_formation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 10
+		y = 27
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_escort_doctrine"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			navy_experience = 25
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+		}
+	}
+
+	### 常规陆军整编
+	focus = {
+		id = AFF_mil_regular_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_mil_fleet_formation }
+		x = 14
+		y = 27
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_regular_army"
+			add_political_power = 25
+			army_experience = 10
+		}
+	}
+
+	### 经委会观察员
+	focus = {
+		id = AFF_dip_observer_status
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_dip_sever_socialist_ties }
+		prerequisite = { focus = AFF_dip_moscow_committee }
+		prerequisite = { focus = AFF_dip_trade_mission }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 18
+		y = 27
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_observer_status"
+			add_political_power = 25
+			add_stability = 0.01
+			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
+		}
+	}
+
+	### 反垄断豁免
+	focus = {
+		id = AFF_econ_antitrust_exemption
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_econ_rail_trust }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 0
+		y = 28
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_antitrust_exemption"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_stability = -0.01
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 军工承包制
+	focus = {
+		id = AFF_econ_defence_contracts
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AFF_econ_shipping_trust }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 4
+		y = 28
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_defence_contracts"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AFF_capital_cost_3_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_stability = -0.01
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 远洋补给船团
+	focus = {
+		id = AFF_mil_convoy_arm
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_mil_jungle_warfare }
+		prerequisite = { focus = AFF_mil_escort_doctrine }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 10
+		y = 28
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_convoy_arm"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AFF_capital_cost_5_tt
+			navy_experience = 25
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+		}
+	}
+
+	### 本土航空联队
+	focus = {
+		id = AFF_mil_air_wing
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_mil_regular_army }
+		x = 14
+		y = 28
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_air_wing"
+			add_political_power = 25
+			air_experience = 15
+		}
+	}
+
+	### 防务谅解
+	focus = {
+		id = AFF_dip_defence_understanding
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dip_observer_status }
+		x = 16
+		y = 28
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_defence_understanding"
+			add_political_power = 25
+			add_stability = 0.01
+			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
+		}
+	}
+
+	### 供货协定
+	focus = {
+		id = AFF_dip_supply_agreement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dip_observer_status }
+		x = 22
+		y = 28
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_supply_agreement"
+			add_political_power = 25
+			add_stability = 0.01
+			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
+		}
+	}
+
+	### 托拉斯体系定型
+	focus = {
+		id = AFF_econ_trust_settlement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_econ_antitrust_exemption }
+		prerequisite = { focus = AFF_econ_defence_contracts }
+		x = 2
+		y = 29
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_trust_settlement"
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+
+	### 军力结构定型
+	focus = {
+		id = AFF_mil_capability_settlement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_mil_convoy_arm }
+		prerequisite = { focus = AFF_mil_air_wing }
+		x = 10
+		y = 29
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_capability_settlement"
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+
+	### 加入俄罗斯势力范围
+	focus = {
+		id = AFF_dip_moscow_sphere
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_dip_defence_understanding }
+		prerequisite = { focus = AFF_dip_supply_agreement }
+		x = 18
+		y = 29
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_moscow_sphere"
+			custom_effect_tooltip = AFF_moscow_sphere_tt
+			hidden_effect = {
+				add_ideas = moscow_aligned_nation
+			}
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+
+	### 冷战定位
+	focus = {
+		id = AFF_postwar_cold_war_alignment
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AFF_econ_trust_settlement }
+		prerequisite = { focus = AFF_mil_capability_settlement }
+		prerequisite = { focus = AFF_dip_moscow_sphere }
+		x = 10
+		y = 30
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_postwar_cold_war_alignment"
+			add_political_power = 75
+			add_stability = 0.02
+		}
+	}
+
+	### 战后新秩序
+	focus = {
+		id = AFF_postwar_new_order
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AFF_postwar_cold_war_alignment }
+		x = 10
+		y = 31
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_postwar_new_order"
+			add_political_power = 75
+			add_stability = 0.02
+		}
+	}
+
+}

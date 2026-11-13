@@ -1,0 +1,3550 @@
+# AST 国策树（1948 澳大利亚内战／工党共和国）：一个 focus_tree，五棵字面意义上的树。
+# 结构照 TNW_MAL_FocusTree.txt：同一 focus_tree 定义内若干互不相连、各有根的
+# 独立树形结构，并排同时显示，不做任何树切换。
+# 五棵树横向分区：战时 x0..10 / 政治 x12..18 / 经济 x20..30 /
+#   军事 x32..38 / 外交 x40..46；各树 y 0..11 连续整数，共 170 focus。
+# 全局严格网格：x 全偶数、同行相邻间距 ≥2、每条 prerequisite 的父恰在上一行。
+# 战后四棵树各有独立根，入口锁只写在根上：和平 + 东岸对手不复存在，
+#   内战期间这四棵树都不可开始。
+# 经济树照 INS：社会化（工党温和派+澳共）/ 公社化（工党激进派+工会）
+#   两互斥根，后方共享政策用单块 OR 汇合；并行链用多块 AND 汇合。
+# 外交末端接既有法伦斯泰尔国际势力范围标签。
+# 提示只配不会自动显示的自定义效果；派系读政党支持率；
+# 图标沿用既有占位 GFX_goal_unknown，不新增 GFX / idea / 旗帜资源。
+
+focus_tree = {
+	id = AST_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AST
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 1600
+	}
+	default = no
+
+	### ===== 第一棵树：战时（x 0..10，34 focus）=====
+
+	### 战时内阁紧急会议
+	focus = {
+		id = AST_war_emergency_cabinet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 6
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_emergency_cabinet"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 西澳司令部
+	focus = {
+		id = AST_war_western_command
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_war_emergency_cabinet }
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_western_command"
+			air_experience = 15
+			add_political_power = 20
+		}
+	}
+
+	### 战时目标通电
+	focus = {
+		id = AST_war_cabinet_war_aims
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_war_emergency_cabinet }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 10
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_cabinet_war_aims"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			add_political_power = 20
+		}
+	}
+
+	### 珀斯要塞化
+	focus = {
+		id = AST_war_perth_garrison
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_war_western_command }
+		x = 0
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_perth_garrison"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 堪培拉卫戍
+	focus = {
+		id = AST_war_canberra_defence
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_war_western_command }
+		x = 4
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_canberra_defence"
+			air_experience = 15
+			add_political_power = 20
+		}
+	}
+
+	### 战时生产委员会
+	focus = {
+		id = AST_war_war_production_board
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_war_cabinet_war_aims }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_war_production_board"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AST_capital_cost_3_tt
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			add_political_power = 20
+		}
+	}
+
+	### 太平洋联络处
+	focus = {
+		id = AST_war_pacific_liaison
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_war_cabinet_war_aims }
+		x = 10
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_pacific_liaison"
+			random_owned_state = {
+				limit = { state = 711 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+			add_stability = 0.01
+		}
+	}
+
+	### 印度洋航线
+	focus = {
+		id = AST_war_indian_ocean_route
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_war_perth_garrison }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 0
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_indian_ocean_route"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			navy_experience = 15
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			add_stability = 0.01
+		}
+	}
+
+	### 工会动员令
+	focus = {
+		id = AST_war_union_mobilisation
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_war_canberra_defence }
+		x = 2
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_union_mobilisation"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 铁路征用
+	focus = {
+		id = AST_war_rail_requisition
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_war_war_production_board }
+		x = 4
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_rail_requisition"
+			air_experience = 15
+			add_political_power = 20
+		}
+	}
+
+	### 军械工场
+	focus = {
+		id = AST_war_munitions_works
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_war_war_production_board }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_munitions_works"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			add_political_power = 20
+		}
+	}
+
+	### 对美供货谈判
+	focus = {
+		id = AST_war_us_supply_talks
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_war_pacific_liaison }
+		x = 10
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_us_supply_talks"
+			random_owned_state = {
+				limit = { state = 1165 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+			add_stability = 0.01
+		}
+	}
+
+	### 志愿营
+	focus = {
+		id = AST_war_volunteer_battalions
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_war_indian_ocean_route }
+		x = 0
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_volunteer_battalions"
+			random_owned_state = {
+				limit = { state = 1165 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+			add_stability = 0.01
+		}
+	}
+
+	### 粮食配给
+	focus = {
+		id = AST_war_food_rationing
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_war_union_mobilisation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_food_rationing"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			navy_experience = 15
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			add_stability = 0.01
+		}
+	}
+
+	### 煤炭调拨
+	focus = {
+		id = AST_war_coal_allocation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_war_rail_requisition }
+		x = 4
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_coal_allocation"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 船坞抢修
+	focus = {
+		id = AST_war_shipyard_repair
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_war_munitions_works }
+		x = 8
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_shipyard_repair"
+			air_experience = 15
+			add_political_power = 20
+		}
+	}
+
+	### 战时新闻管制
+	focus = {
+		id = AST_war_public_information
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_war_us_supply_talks }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 10
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_public_information"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			add_political_power = 20
+		}
+	}
+
+	### 内陆补给线
+	focus = {
+		id = AST_war_outback_supply
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_war_volunteer_battalions }
+		x = 0
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_outback_supply"
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			add_political_power = 20
+		}
+	}
+
+	### 妇女劳工动员
+	focus = {
+		id = AST_war_women_labour
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_war_food_rationing }
+		x = 4
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_women_labour"
+			random_owned_state = {
+				limit = { state = 519 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+			add_stability = 0.01
+		}
+	}
+
+	### 机场抢修
+	focus = {
+		id = AST_war_airfield_program
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_war_shipyard_repair }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_airfield_program"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AST_capital_cost_3_tt
+			navy_experience = 15
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			add_stability = 0.01
+		}
+	}
+
+	### 港口民兵
+	focus = {
+		id = AST_war_port_militia
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_war_public_information }
+		x = 10
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_port_militia"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 战线协同
+	focus = {
+		id = AST_war_front_coordination
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_war_outback_supply }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 0
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_front_coordination"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			air_experience = 15
+			add_political_power = 20
+		}
+	}
+
+	### 运输总队
+	focus = {
+		id = AST_war_transport_corps
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_war_women_labour }
+		x = 4
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_transport_corps"
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			add_political_power = 20
+		}
+	}
+
+	### 野战医疗
+	focus = {
+		id = AST_war_medical_service
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_war_airfield_program }
+		x = 6
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_medical_service"
+			random_owned_state = {
+				limit = { state = 1164 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+			add_stability = 0.01
+		}
+	}
+
+	### 战时金融管制
+	focus = {
+		id = AST_war_finance_control
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_war_port_militia }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 10
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_finance_control"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			navy_experience = 15
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			add_stability = 0.01
+		}
+	}
+
+	### 东岸战线
+	focus = {
+		id = AST_war_eastern_front
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_war_front_coordination }
+		x = 0
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_eastern_front"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 后方秩序
+	focus = {
+		id = AST_war_rear_stability
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_war_medical_service }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_rear_stability"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			air_experience = 15
+			add_political_power = 20
+		}
+	}
+
+	### 盟国船期
+	focus = {
+		id = AST_war_allied_shipping
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_war_finance_control }
+		x = 10
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_allied_shipping"
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			add_political_power = 20
+		}
+	}
+
+	### 全线反击
+	focus = {
+		id = AST_war_general_offensive
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_war_eastern_front }
+		x = 0
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_general_offensive"
+			navy_experience = 15
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			add_stability = 0.01
+		}
+	}
+
+	### 停战接触
+	focus = {
+		id = AST_war_armistice_contact
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_war_allied_shipping }
+		x = 10
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_armistice_contact"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 复员令
+	focus = {
+		id = AST_war_demobilisation_order
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_war_general_offensive }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 0
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_demobilisation_order"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			random_owned_state = {
+				limit = { state = 1163 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+			add_stability = 0.01
+		}
+	}
+
+	### 胜利公报
+	focus = {
+		id = AST_war_victory_communique
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_war_armistice_contact }
+		x = 10
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_victory_communique"
+			navy_experience = 15
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			add_stability = 0.01
+		}
+	}
+
+	### 战局收束
+	focus = {
+		id = AST_war_all_fronts_settled
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_war_demobilisation_order }
+		prerequisite = { focus = AST_war_victory_communique }
+		x = 6
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_all_fronts_settled"
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			add_political_power = 20
+		}
+	}
+
+	### 内战结算
+	focus = {
+		id = AST_war_civil_war_conclusion
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = { focus = AST_war_all_fronts_settled }
+		x = 6
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_war_civil_war_conclusion"
+			add_political_power = 75
+			add_stability = 0.03
+			army_experience = 25
+			navy_experience = 15
+		}
+	}
+
+	### ===== 第二棵树：战后政治（x 12..18，32 focus）=====
+
+	### 宣布大选
+	focus = {
+		id = AST_pol_election_announced
+		icon = GFX_goal_unknown
+		cost = 5.00
+		available = {
+			has_war = no
+			NOT = { country_exists = AFF }
+		}
+		x = 16
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_election_announced"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 看守内阁
+	focus = {
+		id = AST_pol_caretaker_cabinet
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_pol_election_announced }
+		x = 12
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_caretaker_cabinet"
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_political_power = 25
+		}
+	}
+
+	### 选民名册重编
+	focus = {
+		id = AST_pol_electoral_roll
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_pol_election_announced }
+		x = 16
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_electoral_roll"
+			add_political_power = 25
+			add_stability = 0.02
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 工党全国代表大会
+	focus = {
+		id = AST_pol_party_congress
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_pol_election_announced }
+		x = 18
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_party_congress"
+			add_political_power = 30
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+		}
+	}
+
+	### 工党温和派席位
+	focus = {
+		id = AST_pol_alp_moderates
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_pol_caretaker_cabinet }
+		x = 12
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_alp_moderates"
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.06
+			}
+			add_political_power = 25
+			add_stability = 0.02
+			add_war_support = 0.01
+		}
+	}
+
+	### 工党激进派席位
+	focus = {
+		id = AST_pol_alp_radicals
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_pol_electoral_roll }
+		x = 14
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_alp_radicals"
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.06
+			}
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_political_power = 25
+		}
+	}
+
+	### 工会理事会席位
+	focus = {
+		id = AST_pol_actu_council
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_pol_electoral_roll }
+		x = 16
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_actu_council"
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.06
+			}
+			add_political_power = 25
+			add_stability = 0.02
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 澳共合法化
+	focus = {
+		id = AST_pol_cpa_status
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_pol_party_congress }
+		x = 18
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_cpa_status"
+			add_popularity = {
+				ideology = communist
+				popularity = 0.06
+			}
+			add_political_power = 30
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+		}
+	}
+
+	### 联合执政谈判
+	focus = {
+		id = AST_pol_coalition_talks
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_pol_alp_moderates }
+		x = 12
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_coalition_talks"
+			add_political_power = 25
+			add_war_support = 0.02
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 工会选举权
+	focus = {
+		id = AST_pol_union_franchise
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_pol_alp_radicals }
+		x = 14
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_union_franchise"
+			add_political_power = 25
+			add_stability = 0.02
+			add_war_support = 0.01
+		}
+	}
+
+	### 工场委员会条例
+	focus = {
+		id = AST_pol_factory_councils
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_pol_actu_council }
+		x = 16
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_factory_councils"
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_political_power = 25
+		}
+	}
+
+	### 新闻法修订
+	focus = {
+		id = AST_pol_press_law
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_pol_cpa_status }
+		x = 18
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_press_law"
+			add_political_power = 25
+			add_stability = 0.02
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 制宪会议
+	focus = {
+		id = AST_pol_constitutional_convention
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_pol_coalition_talks }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_party_check_moderate_tt
+				check_variable = { AST.party_popularity@Social_democracy > 0.30 }
+			}
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_constitutional_convention"
+			add_political_power = 30
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+		}
+	}
+
+	### 高等法院改革
+	focus = {
+		id = AST_pol_high_court_reform
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_pol_union_franchise }
+		x = 14
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_high_court_reform"
+			add_political_power = 25
+			add_war_support = 0.02
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 公务员体系
+	focus = {
+		id = AST_pol_public_service
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_pol_factory_councils }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_party_check_radical_tt
+				check_variable = { AST.party_popularity@socialism > 0.03 }
+			}
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_public_service"
+			add_political_power = 25
+			add_stability = 0.02
+			add_war_support = 0.01
+		}
+	}
+
+	### 州权划分
+	focus = {
+		id = AST_pol_state_autonomy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_pol_press_law }
+		x = 18
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_state_autonomy"
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_political_power = 25
+		}
+	}
+
+	### 新西兰安排
+	focus = {
+		id = AST_pol_new_zealand_settlement
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_pol_constitutional_convention }
+		x = 12
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_new_zealand_settlement"
+			add_political_power = 25
+			add_stability = 0.02
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 共和制辩论
+	focus = {
+		id = AST_pol_republic_debate
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_pol_high_court_reform }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_party_check_radical_tt
+				check_variable = { AST.party_popularity@socialism > 0.03 }
+			}
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_republic_debate"
+			add_political_power = 30
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+		}
+	}
+
+	### 地方政府重建
+	focus = {
+		id = AST_pol_local_government
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_pol_public_service }
+		x = 16
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_local_government"
+			add_political_power = 25
+			add_war_support = 0.02
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 复员军人权利
+	focus = {
+		id = AST_pol_veteran_franchise
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_pol_state_autonomy }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_party_check_moderate_tt
+				check_variable = { AST.party_popularity@Social_democracy > 0.30 }
+			}
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_veteran_franchise"
+			add_political_power = 25
+			add_stability = 0.02
+			add_war_support = 0.01
+		}
+	}
+
+	### 组阁
+	focus = {
+		id = AST_pol_cabinet_formation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_pol_new_zealand_settlement }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_party_check_radical_tt
+				check_variable = { AST.party_popularity@socialism > 0.03 }
+			}
+		}
+		x = 12
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_cabinet_formation"
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_political_power = 25
+		}
+	}
+
+	### 议事规则
+	focus = {
+		id = AST_pol_parliament_rules
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_pol_local_government }
+		x = 16
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_parliament_rules"
+			add_political_power = 25
+			add_stability = 0.02
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 公民权利法案
+	focus = {
+		id = AST_pol_civil_rights
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_pol_veteran_franchise }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_party_check_moderate_tt
+				check_variable = { AST.party_popularity@Social_democracy > 0.30 }
+			}
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_civil_rights"
+			add_political_power = 30
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+		}
+	}
+
+	### 宪法草案
+	focus = {
+		id = AST_pol_constitution_draft
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_pol_cabinet_formation }
+		x = 12
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_constitution_draft"
+			add_political_power = 25
+			add_stability = 0.02
+			add_war_support = 0.01
+		}
+	}
+
+	### 宪法公投
+	focus = {
+		id = AST_pol_referendum
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_pol_parliament_rules }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_party_check_moderate_tt
+				check_variable = { AST.party_popularity@Social_democracy > 0.30 }
+			}
+		}
+		x = 16
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_referendum"
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_political_power = 25
+		}
+	}
+
+	### 党内纪律
+	focus = {
+		id = AST_pol_party_discipline
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_pol_civil_rights }
+		x = 18
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_party_discipline"
+			add_political_power = 25
+			add_stability = 0.02
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 宪法批准
+	focus = {
+		id = AST_pol_constitution_ratified
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_pol_constitution_draft }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_party_check_moderate_tt
+				check_variable = { AST.party_popularity@Social_democracy > 0.30 }
+			}
+		}
+		x = 12
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_constitution_ratified"
+			add_political_power = 25
+			add_war_support = 0.02
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 新任期授权
+	focus = {
+		id = AST_pol_new_mandate
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_pol_party_discipline }
+		x = 18
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_new_mandate"
+			add_political_power = 25
+			add_stability = 0.02
+			add_war_support = 0.01
+		}
+	}
+
+	### 行政体系定型
+	focus = {
+		id = AST_pol_administration_settled
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_pol_constitution_ratified }
+		x = 12
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_administration_settled"
+			add_political_power = 30
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+		}
+	}
+
+	### 政治特赦
+	focus = {
+		id = AST_pol_political_amnesty
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_pol_new_mandate }
+		x = 18
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_political_amnesty"
+			add_political_power = 25
+			add_war_support = 0.02
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 共和国机构
+	focus = {
+		id = AST_pol_republic_institutions
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_pol_administration_settled }
+		prerequisite = { focus = AST_pol_political_amnesty }
+		x = 16
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_republic_institutions"
+			add_political_power = 25
+			add_stability = 0.02
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 战后政治秩序
+	focus = {
+		id = AST_pol_postwar_political_order
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = { focus = AST_pol_republic_institutions }
+		x = 16
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_pol_postwar_political_order"
+			add_political_power = 75
+			add_stability = 0.03
+			army_experience = 25
+			navy_experience = 15
+			set_cosmetic_tag = AST_democratic_republic
+		}
+	}
+
+	### ===== 第三棵树：战后经济（x 20..30，38 focus）=====
+
+	### 战时经济清点
+	focus = {
+		id = AST_econ_war_economy_audit
+		icon = GFX_goal_unknown
+		cost = 5.00
+		available = {
+			has_war = no
+			NOT = { country_exists = AFF }
+		}
+		x = 26
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_war_economy_audit"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 社会化派造势
+	focus = {
+		id = AST_econ_socialisation_mobilisation
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_econ_war_economy_audit }
+		x = 20
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_socialisation_mobilisation"
+			add_popularity = {
+				ideology = communist
+				popularity = 0.06
+			}
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.02
+			}
+			add_political_power = 20
+		}
+	}
+
+	### 公社化派造势
+	focus = {
+		id = AST_econ_communalisation_mobilisation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_econ_war_economy_audit }
+		x = 30
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_communalisation_mobilisation"
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.06
+			}
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.06
+			}
+			add_political_power = 20
+		}
+	}
+
+	### 社会化路线
+	focus = {
+		id = AST_econ_socialisation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_econ_socialisation_mobilisation }
+		mutually_exclusive = { focus = AST_econ_communalisation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_party_check_moderate_tt
+				check_variable = { AST.party_popularity@Social_democracy > 0.30 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = AST_party_check_cpa_tt
+				check_variable = { AST.party_popularity@communist > 0.02 }
+			}
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_socialisation"
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+			add_political_power = 25
+			add_stability = 0.02
+		}
+	}
+
+	### 公社化路线
+	focus = {
+		id = AST_econ_communalisation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_econ_communalisation_mobilisation }
+		mutually_exclusive = { focus = AST_econ_socialisation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_party_check_radical_tt
+				check_variable = { AST.party_popularity@socialism > 0.03 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = AST_party_check_union_tt
+				check_variable = { AST.party_popularity@syndicalism > 0.03 }
+			}
+		}
+		x = 30
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_communalisation"
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.03
+			}
+			add_political_power = 25
+			add_stability = 0.02
+		}
+	}
+
+	### 银行社会化
+	focus = {
+		id = AST_econ_state_banking
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_econ_socialisation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_state_banking"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_stability = 0.01
+		}
+	}
+
+	### 公用事业收归公共
+	focus = {
+		id = AST_econ_utility_nationalisation
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_econ_socialisation }
+		x = 22
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_utility_nationalisation"
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+			add_political_power = 20
+		}
+	}
+
+	### 合作信贷
+	focus = {
+		id = AST_econ_coop_credit
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_econ_socialisation }
+		x = 24
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_coop_credit"
+			random_owned_state = {
+				limit = { state = 518 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_industrial_complex_tt
+			add_political_power = 20
+		}
+	}
+
+	### 工人委员会
+	focus = {
+		id = AST_econ_workers_councils
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_econ_communalisation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_workers_councils"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 工场接管
+	focus = {
+		id = AST_econ_factory_seizure
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_econ_communalisation }
+		x = 28
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_factory_seizure"
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 公社土地
+	focus = {
+		id = AST_econ_communal_land
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_econ_communalisation }
+		x = 30
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_communal_land"
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_stability = 0.01
+		}
+	}
+
+	### 计划委员会
+	focus = {
+		id = AST_econ_planning_commission
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_econ_state_banking }
+		x = 20
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_planning_commission"
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 工资裁定局
+	focus = {
+		id = AST_econ_wage_board
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_econ_utility_nationalisation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_wage_board"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_stability = 0.01
+		}
+	}
+
+	### 公共住房
+	focus = {
+		id = AST_econ_housing_program
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_econ_coop_credit }
+		x = 24
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_housing_program"
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+			add_political_power = 20
+		}
+	}
+
+	### 工团特许
+	focus = {
+		id = AST_econ_syndical_charter
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_econ_workers_councils }
+		x = 26
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_syndical_charter"
+			random_owned_state = {
+				limit = { state = 1163 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_industrial_complex_tt
+			add_political_power = 20
+		}
+	}
+
+	### 生产者联合会
+	focus = {
+		id = AST_econ_producer_federations
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_econ_factory_seizure }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 28
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_producer_federations"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 公社配给
+	focus = {
+		id = AST_econ_rationing_communes
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_econ_communal_land }
+		x = 30
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_rationing_communes"
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 工业税
+	focus = {
+		id = AST_econ_industrial_levy
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_econ_planning_commission }
+		x = 20
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_industrial_levy"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 出口管理局
+	focus = {
+		id = AST_econ_export_board
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_econ_wage_board }
+		x = 22
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_export_board"
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 技工培训
+	focus = {
+		id = AST_econ_skills_program
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_econ_housing_program }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 24
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_skills_program"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AST_capital_cost_3_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_stability = 0.01
+		}
+	}
+
+	### 工场联合会
+	focus = {
+		id = AST_econ_workshop_federations
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_econ_syndical_charter }
+		x = 26
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_workshop_federations"
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+			add_political_power = 20
+		}
+	}
+
+	### 分配网络
+	focus = {
+		id = AST_econ_distribution_network
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_econ_producer_federations }
+		x = 28
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_distribution_network"
+			random_owned_state = {
+				limit = { state = 517 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_industrial_complex_tt
+			add_political_power = 20
+		}
+	}
+
+	### 互助基金
+	focus = {
+		id = AST_econ_mutual_aid
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_econ_rationing_communes }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 30
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_mutual_aid"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AST_capital_cost_3_tt
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 社会化定型
+	focus = {
+		id = AST_econ_socialisation_settlement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_econ_industrial_levy }
+		prerequisite = { focus = AST_econ_export_board }
+		prerequisite = { focus = AST_econ_skills_program }
+		x = 20
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_socialisation_settlement"
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.02
+			}
+			add_political_power = 35
+			add_stability = 0.02
+		}
+	}
+
+	### 公社化定型
+	focus = {
+		id = AST_econ_communalisation_settlement
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_econ_workshop_federations }
+		prerequisite = { focus = AST_econ_distribution_network }
+		prerequisite = { focus = AST_econ_mutual_aid }
+		x = 30
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_communalisation_settlement"
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.02
+			}
+			add_political_power = 35
+			add_stability = 0.02
+		}
+	}
+
+	### 中央银行法
+	focus = {
+		id = AST_econ_central_banking_law
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_econ_socialisation_settlement focus = AST_econ_communalisation_settlement }
+		x = 20
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_central_banking_law"
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+			add_political_power = 20
+		}
+	}
+
+	### 五年纲要
+	focus = {
+		id = AST_econ_five_year_outline
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_econ_socialisation_settlement focus = AST_econ_communalisation_settlement }
+		x = 24
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_five_year_outline"
+			random_owned_state = {
+				limit = { state = 1162 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_industrial_complex_tt
+			add_political_power = 20
+		}
+	}
+
+	### 价格裁判所
+	focus = {
+		id = AST_econ_price_tribunal
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_econ_socialisation_settlement focus = AST_econ_communalisation_settlement }
+		x = 30
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_price_tribunal"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 重工业投资
+	focus = {
+		id = AST_econ_heavy_industry
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_econ_central_banking_law }
+		x = 20
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_heavy_industry"
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_stability = 0.01
+		}
+	}
+
+	### 铁路统筹
+	focus = {
+		id = AST_econ_rail_coordination
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_econ_five_year_outline }
+		x = 24
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_rail_coordination"
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+			add_political_power = 20
+		}
+	}
+
+	### 农村电气化
+	focus = {
+		id = AST_econ_rural_electrification
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_econ_five_year_outline }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 26
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_rural_electrification"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AST_capital_cost_3_tt
+			random_owned_state = {
+				limit = { state = 285 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_industrial_complex_tt
+			add_political_power = 20
+		}
+	}
+
+	### 工会统计署
+	focus = {
+		id = AST_econ_union_statistics
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_econ_price_tribunal }
+		x = 30
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_union_statistics"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 充分就业
+	focus = {
+		id = AST_econ_full_employment
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_econ_heavy_industry }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 20
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_full_employment"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 财政结算
+	focus = {
+		id = AST_econ_fiscal_settlement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_econ_rural_electrification }
+		x = 24
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_fiscal_settlement"
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_stability = 0.01
+		}
+	}
+
+	### 生产率委员会
+	focus = {
+		id = AST_econ_productivity_council
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_econ_union_statistics }
+		x = 30
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_productivity_council"
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+			add_political_power = 20
+		}
+	}
+
+	### 经济宪法
+	focus = {
+		id = AST_econ_economic_constitution
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_econ_full_employment }
+		x = 20
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_economic_constitution"
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 复建完成
+	focus = {
+		id = AST_econ_reconstruction_done
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_econ_productivity_council }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 30
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_reconstruction_done"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.01
+			}
+		}
+	}
+
+	### 战后经济秩序
+	focus = {
+		id = AST_econ_postwar_economic_order
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = { focus = AST_econ_economic_constitution }
+		prerequisite = { focus = AST_econ_reconstruction_done }
+		x = 26
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_econ_postwar_economic_order"
+			add_political_power = 75
+			add_stability = 0.03
+			army_experience = 25
+			navy_experience = 15
+		}
+	}
+
+	### ===== 第四棵树：战后军事（x 32..38，32 focus）=====
+
+	### 防务检讨
+	focus = {
+		id = AST_mil_defence_review
+		icon = GFX_goal_unknown
+		cost = 5.00
+		available = {
+			has_war = no
+			NOT = { country_exists = AFF }
+		}
+		x = 36
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_defence_review"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 总参谋部
+	focus = {
+		id = AST_mil_general_staff
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_mil_defence_review }
+		x = 32
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_general_staff"
+			air_experience = 20
+			random_owned_state = {
+				limit = { state = 519 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+		}
+	}
+
+	### 复员计划
+	focus = {
+		id = AST_mil_demobilisation_plan
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_mil_defence_review }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 38
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_demobilisation_plan"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		}
+	}
+
+	### 步兵整编
+	focus = {
+		id = AST_mil_infantry_reform
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_mil_general_staff }
+		x = 32
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_infantry_reform"
+			random_owned_state = {
+				limit = { state = 884 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_arms_factory_tt
+			army_experience = 10
+		}
+	}
+
+	### 舰艇清点
+	focus = {
+		id = AST_mil_naval_inventory
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_mil_general_staff }
+		x = 36
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_naval_inventory"
+			air_experience = 20
+			random_owned_state = {
+				limit = { state = 1164 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+		}
+	}
+
+	### 航空清点
+	focus = {
+		id = AST_mil_air_inventory
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_mil_demobilisation_plan }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 38
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_air_inventory"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AST_capital_cost_3_tt
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		}
+	}
+
+	### 模范师
+	focus = {
+		id = AST_mil_model_division
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_mil_infantry_reform }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 32
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_model_division"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			navy_experience = 20
+			random_owned_state = {
+				limit = { state = 1162 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_dockyard_tt
+		}
+	}
+
+	### 船坞计划
+	focus = {
+		id = AST_mil_dockyard_program
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_mil_naval_inventory }
+		x = 34
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_dockyard_program"
+			random_owned_state = {
+				limit = { state = 1515 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_arms_factory_tt
+			army_experience = 10
+		}
+	}
+
+	### 飞行训练
+	focus = {
+		id = AST_mil_air_training
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_mil_naval_inventory }
+		x = 36
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_air_training"
+			air_experience = 20
+			random_owned_state = {
+				limit = { state = 518 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+		}
+	}
+
+	### 军械局
+	focus = {
+		id = AST_mil_ordnance_board
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_mil_air_inventory }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 38
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_ordnance_board"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		}
+	}
+
+	### 民兵整编
+	focus = {
+		id = AST_mil_militia_integration
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_mil_model_division }
+		x = 32
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_militia_integration"
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			add_political_power = 20
+		}
+	}
+
+	### 舰队编成
+	focus = {
+		id = AST_mil_fleet_formation
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_mil_dockyard_program }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 34
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_fleet_formation"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			navy_experience = 20
+			random_owned_state = {
+				limit = { state = 285 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_dockyard_tt
+		}
+	}
+
+	### 海岸司令部
+	focus = {
+		id = AST_mil_coastal_command
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_mil_air_training }
+		x = 36
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_coastal_command"
+			random_owned_state = {
+				limit = { state = 712 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_arms_factory_tt
+			army_experience = 10
+		}
+	}
+
+	### 后勤总队
+	focus = {
+		id = AST_mil_logistics_corps
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_mil_ordnance_board }
+		x = 38
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_logistics_corps"
+			air_experience = 20
+			random_owned_state = {
+				limit = { state = 1163 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+		}
+	}
+
+	### 丛林训练
+	focus = {
+		id = AST_mil_jungle_training
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_mil_militia_integration }
+		x = 32
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_jungle_training"
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		}
+	}
+
+	### 护航教范
+	focus = {
+		id = AST_mil_escort_doctrine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_mil_fleet_formation }
+		x = 34
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_escort_doctrine"
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			add_political_power = 20
+		}
+	}
+
+	### 本土防空
+	focus = {
+		id = AST_mil_air_defence
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_mil_coastal_command }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 36
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_air_defence"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AST_capital_cost_3_tt
+			navy_experience = 20
+			random_owned_state = {
+				limit = { state = 1161 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_dockyard_tt
+		}
+	}
+
+	### 预备军官团
+	focus = {
+		id = AST_mil_reserve_officers
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_mil_logistics_corps }
+		x = 38
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_reserve_officers"
+			random_owned_state = {
+				limit = { state = 1168 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_arms_factory_tt
+			army_experience = 10
+		}
+	}
+
+	### 两栖学校
+	focus = {
+		id = AST_mil_amphibious_school
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_mil_jungle_training }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 32
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_amphibious_school"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			air_experience = 20
+			random_owned_state = {
+				limit = { state = 517 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+		}
+	}
+
+	### 潜艇部队
+	focus = {
+		id = AST_mil_submarine_service
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_mil_escort_doctrine }
+		x = 34
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_submarine_service"
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		}
+	}
+
+	### 航空联队
+	focus = {
+		id = AST_mil_air_wing
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_mil_air_defence }
+		x = 36
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_air_wing"
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			add_political_power = 20
+		}
+	}
+
+	### 通信兵
+	focus = {
+		id = AST_mil_signals_corps
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_mil_reserve_officers }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 38
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_signals_corps"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			navy_experience = 20
+			random_owned_state = {
+				limit = { state = 1617 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_dockyard_tt
+		}
+	}
+
+	### 太平洋威慑
+	focus = {
+		id = AST_mil_pacific_deterrence
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_mil_amphibious_school }
+		x = 32
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_pacific_deterrence"
+			random_owned_state = {
+				limit = { state = 711 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_arms_factory_tt
+			army_experience = 10
+		}
+	}
+
+	### 印度洋巡逻
+	focus = {
+		id = AST_mil_indian_ocean_patrol
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_mil_air_wing }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 36
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_indian_ocean_patrol"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			air_experience = 20
+			random_owned_state = {
+				limit = { state = 1162 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+		}
+	}
+
+	### 联合演习
+	focus = {
+		id = AST_mil_joint_exercises
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_mil_signals_corps }
+		x = 38
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_joint_exercises"
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		}
+	}
+
+	### 军力评估
+	focus = {
+		id = AST_mil_capability_review
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_mil_pacific_deterrence }
+		x = 32
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_capability_review"
+			navy_experience = 20
+			random_owned_state = {
+				limit = { state = 900 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_dockyard_tt
+		}
+	}
+
+	### 防务白皮书
+	focus = {
+		id = AST_mil_defence_white_paper
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_mil_indian_ocean_patrol }
+		x = 36
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_defence_white_paper"
+			random_owned_state = {
+				limit = { state = 1165 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_arms_factory_tt
+			army_experience = 10
+		}
+	}
+
+	### 采购结算
+	focus = {
+		id = AST_mil_procurement_settlement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_mil_joint_exercises }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 38
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_procurement_settlement"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AST_capital_cost_3_tt
+			air_experience = 20
+			random_owned_state = {
+				limit = { state = 285 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_infrastructure_tt
+		}
+	}
+
+	### 编制定型
+	focus = {
+		id = AST_mil_structure_settled
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_mil_capability_review }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 32
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_structure_settled"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			add_political_power = 20
+		}
+	}
+
+	### 军工联动
+	focus = {
+		id = AST_mil_industry_link
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_mil_procurement_settlement }
+		x = 38
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_industry_link"
+			navy_experience = 20
+			random_owned_state = {
+				limit = { state = 1601 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = AST_build_dockyard_tt
+		}
+	}
+
+	### 防务教范
+	focus = {
+		id = AST_mil_defence_doctrine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_mil_structure_settled }
+		prerequisite = { focus = AST_mil_industry_link }
+		x = 36
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_defence_doctrine"
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		}
+	}
+
+	### 战后军事秩序
+	focus = {
+		id = AST_mil_postwar_defence_order
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = { focus = AST_mil_defence_doctrine }
+		x = 36
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_mil_postwar_defence_order"
+			add_political_power = 75
+			add_stability = 0.03
+			army_experience = 25
+			navy_experience = 15
+		}
+	}
+
+	### ===== 第五棵树：战后外交（x 40..46，34 focus）=====
+
+	### 战时外交清点
+	focus = {
+		id = AST_dip_wartime_review
+		icon = GFX_goal_unknown
+		cost = 5.00
+		available = {
+			has_war = no
+			NOT = { country_exists = AFF }
+		}
+		x = 44
+		y = 0
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_wartime_review"
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+
+	### 对美同盟续约
+	focus = {
+		id = AST_dip_us_alliance_renewal
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_dip_wartime_review }
+		x = 40
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_us_alliance_renewal"
+			add_to_variable = { var = capital_reserves value = 2 }
+			custom_effect_tooltip = AST_trade_income_tt
+			add_political_power = 20
+		}
+	}
+
+	### 自治领联络
+	focus = {
+		id = AST_dip_dominion_contacts
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_dip_wartime_review }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 46
+		y = 1
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_dominion_contacts"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 法伦斯泰尔问询
+	focus = {
+		id = AST_dip_phalanstere_inquiry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_dip_us_alliance_renewal }
+		x = 40
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_phalanstere_inquiry"
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 巴黎使团
+	focus = {
+		id = AST_dip_paris_mission
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_dip_us_alliance_renewal }
+		x = 44
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_paris_mission"
+			add_to_variable = { var = capital_reserves value = 2 }
+			custom_effect_tooltip = AST_trade_income_tt
+			add_political_power = 20
+		}
+	}
+
+	### 对外口径
+	focus = {
+		id = AST_dip_external_line
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_dip_dominion_contacts }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 46
+		y = 2
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_external_line"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AST_capital_cost_3_tt
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 贸易议定书
+	focus = {
+		id = AST_dip_trade_protocol
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_dip_phalanstere_inquiry }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 40
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_trade_protocol"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
+			add_stability = 0.01
+		}
+	}
+
+	### 工会—工团国际
+	focus = {
+		id = AST_dip_union_international
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_dip_paris_mission }
+		x = 42
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_union_international"
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 反殖民委员会
+	focus = {
+		id = AST_dip_anticolonial_committee
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_dip_paris_mission }
+		x = 44
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_anticolonial_committee"
+			add_to_variable = { var = capital_reserves value = 2 }
+			custom_effect_tooltip = AST_trade_income_tt
+			add_political_power = 20
+		}
+	}
+
+	### 航运协定
+	focus = {
+		id = AST_dip_shipping_agreement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_dip_external_line }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 46
+		y = 3
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_shipping_agreement"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 技术标准
+	focus = {
+		id = AST_dip_technical_standards
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_dip_trade_protocol }
+		x = 40
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_technical_standards"
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 留学生交换
+	focus = {
+		id = AST_dip_student_exchange
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_dip_union_international }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 42
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_student_exchange"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
+			add_stability = 0.01
+		}
+	}
+
+	### 粮食与机械
+	focus = {
+		id = AST_dip_grain_and_machinery
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_dip_anticolonial_committee }
+		x = 44
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_grain_and_machinery"
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 太平洋观察员
+	focus = {
+		id = AST_dip_pacific_observer
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_dip_shipping_agreement }
+		x = 46
+		y = 4
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_pacific_observer"
+			add_to_variable = { var = capital_reserves value = 2 }
+			custom_effect_tooltip = AST_trade_income_tt
+			add_political_power = 20
+		}
+	}
+
+	### 国际代表大会
+	focus = {
+		id = AST_dip_phalanstere_congress
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_dip_technical_standards }
+		x = 40
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_phalanstere_congress"
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 文化代表团
+	focus = {
+		id = AST_dip_cultural_delegation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_dip_student_exchange }
+		x = 42
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_cultural_delegation"
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 结算银行
+	focus = {
+		id = AST_dip_settlement_bank
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_dip_grain_and_machinery }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 44
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_settlement_bank"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AST_capital_cost_3_tt
+			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
+			add_stability = 0.01
+		}
+	}
+
+	### 移民规程
+	focus = {
+		id = AST_dip_migration_rules
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_dip_pacific_observer }
+		x = 46
+		y = 5
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_migration_rules"
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 经委会席位
+	focus = {
+		id = AST_dip_economic_council_seat
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_dip_phalanstere_congress }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 40
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_economic_council_seat"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			add_to_variable = { var = capital_reserves value = 2 }
+			custom_effect_tooltip = AST_trade_income_tt
+			add_political_power = 20
+		}
+	}
+
+	### 劳工宪章
+	focus = {
+		id = AST_dip_labour_charter
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_dip_cultural_delegation }
+		x = 42
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_labour_charter"
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 研究协作
+	focus = {
+		id = AST_dip_research_pool
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_dip_settlement_bank }
+		x = 44
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_research_pool"
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 港口准入
+	focus = {
+		id = AST_dip_port_access
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_dip_migration_rules }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 46
+		y = 6
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_port_access"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
+			add_stability = 0.01
+		}
+	}
+
+	### 选边声明
+	focus = {
+		id = AST_dip_alignment_declaration
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_dip_economic_council_seat }
+		x = 40
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_alignment_declaration"
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 与莫斯科划界
+	focus = {
+		id = AST_dip_moscow_distance
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_dip_labour_charter }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_5_tt
+				check_variable = { var = capital_reserves value = 5 compare = greater_than_or_equals }
+			}
+		}
+		x = 42
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_moscow_distance"
+			add_to_variable = { var = capital_reserves value = -5 }
+			custom_effect_tooltip = AST_capital_cost_5_tt
+			add_to_variable = { var = capital_reserves value = 2 }
+			custom_effect_tooltip = AST_trade_income_tt
+			add_political_power = 20
+		}
+	}
+
+	### 区域伙伴
+	focus = {
+		id = AST_dip_regional_partners
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_dip_research_pool }
+		x = 44
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_regional_partners"
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 条约批准
+	focus = {
+		id = AST_dip_treaty_ratification
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_dip_port_access }
+		x = 46
+		y = 7
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_treaty_ratification"
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 加入申请
+	focus = {
+		id = AST_dip_phalanstere_application
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = { focus = AST_dip_alignment_declaration }
+		x = 40
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_phalanstere_application"
+			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
+			add_stability = 0.01
+		}
+	}
+
+	### 阵营协调
+	focus = {
+		id = AST_dip_sphere_coordination
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_dip_moscow_distance }
+		x = 42
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_sphere_coordination"
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 对外说明
+	focus = {
+		id = AST_dip_public_explanation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_dip_regional_partners }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_3_tt
+				check_variable = { var = capital_reserves value = 3 compare = greater_than_or_equals }
+			}
+		}
+		x = 44
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_public_explanation"
+			add_to_variable = { var = capital_reserves value = -3 }
+			custom_effect_tooltip = AST_capital_cost_3_tt
+			add_to_variable = { var = capital_reserves value = 2 }
+			custom_effect_tooltip = AST_trade_income_tt
+			add_political_power = 20
+		}
+	}
+
+	### 领事网络
+	focus = {
+		id = AST_dip_consular_network
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = { focus = AST_dip_treaty_ratification }
+		x = 46
+		y = 8
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_consular_network"
+			add_opinion_modifier = { target = USA modifier = econo_trade_success }
+			add_political_power = 25
+		}
+	}
+
+	### 阵营条约
+	focus = {
+		id = AST_dip_alignment_treaty
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = { focus = AST_dip_phalanstere_application }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AST_capital_check_2_tt
+				check_variable = { var = capital_reserves value = 2 compare = greater_than_or_equals }
+			}
+		}
+		x = 40
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_alignment_treaty"
+			add_to_variable = { var = capital_reserves value = -2 }
+			custom_effect_tooltip = AST_capital_cost_2_tt
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 5 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
+			add_political_power = 20
+		}
+	}
+
+	### 成员资格表决
+	focus = {
+		id = AST_dip_membership_vote
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_dip_consular_network }
+		x = 46
+		y = 9
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_membership_vote"
+			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
+			add_stability = 0.01
+		}
+	}
+
+	### 加入法伦斯泰尔势力范围
+	focus = {
+		id = AST_dip_phalanstere_sphere
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AST_dip_alignment_treaty }
+		prerequisite = { focus = AST_dip_membership_vote }
+		x = 44
+		y = 10
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_phalanstere_sphere"
+			custom_effect_tooltip = AST_phalanstere_sphere_tt
+			hidden_effect = {
+				add_ideas = phalanstere_aligned_nation
+			}
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+
+	### 战后外交定位
+	focus = {
+		id = AST_dip_postwar_diplomatic_order
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = { focus = AST_dip_phalanstere_sphere }
+		x = 44
+		y = 11
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AST_dip_postwar_diplomatic_order"
+			add_political_power = 75
+			add_stability = 0.03
+			army_experience = 25
+			navy_experience = 15
+		}
+	}
+
+}

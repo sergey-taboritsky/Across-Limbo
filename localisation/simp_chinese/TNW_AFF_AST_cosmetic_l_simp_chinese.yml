@@ -1,0 +1,16 @@
+﻿l_simp_chinese:
+ #战后国号（外观标签）
+ AST_democratic_republic: "澳大利亚民主共和国"
+ AST_democratic_republic_DEF: "澳大利亚民主共和国"
+ AST_democratic_republic_ADJ: "澳大利亚"
+ AFF_monarchy: "澳大利亚联邦"
+ AFF_monarchy_DEF: "澳大利亚联邦"
+ AFF_monarchy_ADJ: "澳大利亚"
+ AFF_republic: "澳大利亚共和国"
+ AFF_republic_DEF: "澳大利亚共和国"
+ AFF_republic_ADJ: "澳大利亚"
+ #AFF 战后国体选择事件
+ AFF_event_1_t: "战后国体选择"
+ AFF_event_1_d: "内战结束、宪法草案落定之后，国体与正式国号需要作出最终决断：恢复君主制，还是维持共和国？"
+ AFF_event_1_a: "恢复君主制，国号改为澳大利亚联邦"
+ AFF_event_1_b: "维持共和国，国号改为澳大利亚共和国"
