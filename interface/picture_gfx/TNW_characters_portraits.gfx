@@ -2941,4 +2941,9 @@ spriteTypes = {
 		name = "GFX_portrait_large_RYU_Gus_Hall"
 		texturefile = "gfx/characters/RYU_Gus_Hall.png"
 	}
+	#2026-11-13 用户立绘：INS_Mohammad_Hatta.png
+	spriteType = {
+		name = "GFX_portrait_large_INS_Mohammad_Hatta"
+		texturefile = "gfx/characters/INS_Mohammad_Hatta.png"
+	}
 }

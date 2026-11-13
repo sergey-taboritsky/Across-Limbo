@@ -784,6 +784,11 @@ characters = {
 	#穆罕默德·哈达（悬浮元老）
 	INS_Mohammad_Hatta = {
 		name = INS_Mohammad_Hatta
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_INS_Mohammad_Hatta
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_cost = 100
