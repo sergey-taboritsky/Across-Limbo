@@ -2,7 +2,7 @@ version="1.18.*"
 tags={
 	"Balance"
 }
-name="Die Wacht Am Rhein守望莱茵"
+name="Across Limbo: Hours Before Showdown"
 replace_path="common/bookmarks"
 replace_path="common/countries"
 replace_path="common/characters"
