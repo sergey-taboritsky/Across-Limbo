@@ -1,0 +1,14 @@
+characters = {
+	#梅斯拉尔·阿格·阿马亚斯：凯尔阿哈加尔图阿雷格联盟阿梅诺卡尔（1941–1950 在位）
+	TUA_Meslar_ag_Amayas = {
+		name = TUA_Meslar_ag_Amayas
+		country_leader = {
+			desc = TUA_Meslar_ag_Amayas_desc
+			ideology = absolute_monarchy
+			traits = {
+			}
+			expire = "1970.1.1"
+			id = -1
+		}
+	}
+}

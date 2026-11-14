@@ -85,10 +85,18 @@ defined_text = {
 	}
 	text = {
 		trigger = { tag = PHI }
+		localization_key = GFX_TNW_welcome_ALP_intro_picture
+	}
 	text = {
 		trigger = { tag = INS }
 		localization_key = GFX_TNW_welcome_ALP_intro_picture
 	}
+	text = {
+		trigger = { tag = AFF }
+		localization_key = GFX_TNW_welcome_ALP_intro_picture
+	}
+	text = {
+		trigger = { tag = AST }
 		localization_key = GFX_TNW_welcome_ALP_intro_picture
 	}
 }
@@ -514,5 +522,62 @@ defined_text = {
 			check_variable = { current_page = 4 }
 		}
 		localization_key = TNW_welcome_PHI_intro_text_4
+	}
+	#R25 AFF / AST 开局介绍文本
+	text = {
+		trigger = { 
+			tag = AFF 
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_AFF_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = AFF 
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_AFF_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = AFF 
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_AFF_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = AFF 
+			check_variable = { current_page = 4 }
+		}
+		localization_key = TNW_welcome_AFF_intro_text_4
+	}
+	text = {
+		trigger = { 
+			tag = AST 
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_AST_intro_text_1
+	}
+	text = {
+		trigger = { 
+			tag = AST 
+			check_variable = { current_page = 2 }
+		}
+		localization_key = TNW_welcome_AST_intro_text_2
+	}
+	text = {
+		trigger = { 
+			tag = AST 
+			check_variable = { current_page = 3 }
+		}
+		localization_key = TNW_welcome_AST_intro_text_3
+	}
+	text = {
+		trigger = { 
+			tag = AST 
+			check_variable = { current_page = 4 }
+		}
+		localization_key = TNW_welcome_AST_intro_text_4
 	}
 }

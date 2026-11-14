@@ -1,6 +1,5 @@
 ﻿capital = 14104
 recruit_character = ZNB_Khalifa_bin_Harub
-ruling_party = Absolutism
 
 # Starting tech
 set_technology = {
@@ -35,7 +34,7 @@ set_convoys = 2
 	}
 }
 set_politics = {
-	ruling_party = Authoritarianism
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes

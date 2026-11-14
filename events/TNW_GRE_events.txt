@@ -1,200 +1,5 @@
 add_namespace = GRE_event
-add_namespace = GRE_news_event
 
-country_event = {
-	id = GRE_event.1
-	title = GRE_event.1.t
-	desc = GRE_event.1.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = GRE_event.1.a
-	}
-}
-
-country_event = {
-	id = GRE_event.2
-	title = GRE_event.2.t
-	desc = GRE_event.2.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = GRE_event.2.a
-	}
-}
-
-country_event = {
-	id = GRE_event.3
-	title = GRE_event.3.t
-	desc = GRE_event.3.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = GRE_event.3.a
-	}
-}
-
-country_event = {
-	id = GRE_event.4
-	title = GRE_event.4.t
-	desc = GRE_event.4.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = GRE_event.4.a
-	}
-}
-
-country_event = {
-	id = GRE_event.5
-	title = GRE_event.5.t
-	desc = GRE_event.5.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = GRE_event.5.a
-	}
-}
-
-country_event = {
-	id = GRE_event.6
-	title = GRE_event.6.t
-	desc = GRE_event.6.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = GRE_event.6.a
-	}
-}
-
-country_event = {
-	id = GRE_event.7
-	title = GRE_event.7.t
-	desc = GRE_event.7.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = GRE_event.7.a
-	}
-}
-
-country_event = {
-	id = GRE_event.8
-	title = GRE_event.8.t
-	desc = GRE_event.8.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = GRE_event.8.a
-	}
-}
-
-news_event = {
-	id = GRE_news_event.1
-	title = GRE_news_event.1.t
-	desc = GRE_news_event.1.d
-	picture = GFX_news_event_generic_funeral
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = GRE_news_event.1.a
-	}
-}
-
-news_event = {
-	id = GRE_news_event.2
-	title = GRE_news_event.2.t
-	desc = GRE_news_event.2.d
-	picture = GFX_news_event_generic_funeral
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = GRE_news_event.2.a
-	}
-}
-
-news_event = {
-	id = GRE_news_event.3
-	title = GRE_news_event.3.t
-	desc = GRE_news_event.3.d
-	picture = GFX_news_event_generic_funeral
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = GRE_news_event.3.a
-	}
-}
-
-news_event = {
-	id = GRE_news_event.4
-	title = GRE_news_event.4.t
-	desc = GRE_news_event.4.d
-	picture = GFX_news_event_generic_funeral
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = GRE_news_event.4.a
-	}
-}
-
-news_event = {
-	id = GRE_news_event.5
-	title = GRE_news_event.5.t
-	desc = GRE_news_event.5.d
-	picture = GFX_news_event_generic_funeral
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = GRE_news_event.5.a
-	}
-}
-
-news_event = {
-	id = GRE_news_event.6
-	title = GRE_news_event.6.t
-	desc = GRE_news_event.6.d
-	picture = GFX_news_event_generic_funeral
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = GRE_news_event.6.a
-	}
-}
-
-news_event = {
-	id = GRE_news_event.7
-	title = GRE_news_event.7.t
-	desc = GRE_news_event.7.d
-	picture = GFX_news_event_generic_funeral
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = GRE_news_event.7.a
-	}
-}
-
-news_event = {
-	id = GRE_news_event.8
-	title = GRE_news_event.8.t
-	desc = GRE_news_event.8.d
-	picture = GFX_news_event_generic_funeral
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = GRE_news_event.8.a
-	}
-}
-news_event = {
-	id = GRE_news_event.9
-	title = GRE_news_event.9.t
-	desc = GRE_news_event.9.d
-	picture = GFX_news_event_generic_funeral
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = GRE_news_event.9.a
-	}
-}
 country_event = {
 	id = GRE_event.9
 	title = GRE_event.9.t
@@ -203,26 +8,26 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = GRE_event.9.a
-		add_stability = 0.05
-		set_cosmetic_tag = GRK
-		retire_character = GRE_Pandelis_Pouliopoulos
-		set_country_leader = GRE_Regency_Council
-		set_politics = {
-			ruling_party = Authoritarianism
-			elections_allowed = no
+		# R28 战争路线：大陆与爱奥尼亚群岛共 9 州归 GRK；GRE 保留爱琴群岛(187/1117)与克里特(182)
+		47 = { transfer_state_to = GRK add_core_of = GRK }
+		185 = { transfer_state_to = GRK add_core_of = GRK }
+		186 = { transfer_state_to = GRK add_core_of = GRK }
+		731 = { transfer_state_to = GRK add_core_of = GRK }
+		1033 = { transfer_state_to = GRK add_core_of = GRK }
+		1112 = { transfer_state_to = GRK add_core_of = GRK }
+		1113 = { transfer_state_to = GRK add_core_of = GRK }
+		1114 = { transfer_state_to = GRK add_core_of = GRK }
+		1115 = { transfer_state_to = GRK add_core_of = GRK }
+		GRK = {
+			set_capital = { state = 731 remember_old_capital = no }
+			promote_character = GRK_Regency_Council
+			add_ideas = moscow_aligned_nation
 		}
-		set_popularities = {
-			communist = 10
-			syndicalism = 0
-			socialism = 5
-			Social_democracy = 10
-			Liberalism = 10
-			Conservatism = 20
-			Authoritarianism = 35
-			Absolutism = 10
-			Nationalism = 0
-		}
-		RUS = { add_to_faction = GRE }
+		# R29：冲突落幕（战争路线）——GRK 归莫斯科阵营 / GRE 归法伦斯泰尔阵营
+		RUS = { add_to_faction = GRK }
+		FRA = { add_to_faction = GRE }
+		# rulebook:637，1.11+ 语法；GRE 政体/领袖/cosmetic tag 均不改动，保持社会主义
+		set_capital = { state = 182 remember_old_capital = no }
 		hidden_effect = {
 			every_country = {
 				limit = { is_ai = no }

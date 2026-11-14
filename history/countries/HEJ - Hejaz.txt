@@ -32,7 +32,16 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
+	# R29 九桶饼图修复
+	communist = 0
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 0
+	Conservatism = 0
+	Authoritarianism = 0
 	Absolutism = 100
+	Nationalism = 0
 }
 
 add_ideas = {

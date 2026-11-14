@@ -126,3 +126,8 @@ set_variable = { JAP_food_crisis_stash_var = 0 }
 
 # 工团实验：生产管理模式在工厂中的占比（0-100），由 JAP_consumer_production_command 推高，1951 审查用作判定指标
 set_variable = { JAP_production_management_ratio_var = 0 }
+
+# R29 势力范围：法伦斯泰尔国际
+add_ideas = {
+	phalanstere_aligned_nation
+}

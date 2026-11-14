@@ -76,3 +76,8 @@ create_country_leader = {
 		#
 	}
 }
+
+# R29 势力范围：法伦斯泰尔国际
+add_ideas = {
+	phalanstere_aligned_nation
+}

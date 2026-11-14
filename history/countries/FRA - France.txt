@@ -50,6 +50,7 @@ add_to_faction = WUR
 	add_to_faction = COL
 
 	add_to_faction = BRA
+add_to_faction = SEN
 
 
 give_guarantee = DEN

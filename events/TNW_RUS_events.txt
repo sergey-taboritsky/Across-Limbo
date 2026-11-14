@@ -13,9 +13,9 @@ country_event = {
 		#Nationalism 是九父桶组名（00_ideologies.txt:155），原写法传的是父桶名而非子意识形态；
 		#改用 rulebook 1673 / 原版 Britain.txt:318 的精确写法，移除在位元首萨文科夫。
 		kill_country_leader = yes
-		promote_character = RUS_Tirumvirate
+		# R28：萨文科夫病故后由米哈伊尔·列维托夫直接继任，三巨头过渡与候选人分支全部移除
+		promote_character = RUS_Mikhail_Levitov
 		hidden_effect = {
-			country_event = { id = RUS_event.2 days = 105 }
 			every_country = {
 				limit = {
 					is_ai = no
@@ -25,53 +25,6 @@ country_event = {
 		}
 	}
 }
-country_event = {
-	id = RUS_event.2
-	title = RUS_event.2.t
-	desc = RUS_event.2.d
-	#picture = TTT_event1
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = RUS_event.2.a
-		promote_character = RUS_Pyotr_Savitsky
-		remove_ideas = RUS_Aleksandr_Dikgof_Derental_hog
-		add_ideas = RUS_Yury_Shirinsky_Shikhmatov_hog
-		set_party_name = {
-			ideology = Nationalism
-			name = RUS_SZRS_party_thoughtrule
-			long_name = RUS_SZRS_party_thoughtrule_long
-		}
-		hidden_effect = {
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				news_event = RUS_worldnews.2
-			}
-		}
-	}
-	option = {
-		name = RUS_event.2.c
-		promote_character = RUS_Viktor_Larionov
-		remove_ideas = RUS_Aleksandr_Dikgof_Derental_hog
-		add_ideas = RUS_Vladimir_Manstein_hog
-		set_party_name = {
-			ideology = Nationalism
-			name = RUS_SZRS_party_hardliner
-			long_name = RUS_SZRS_party_hardliner_long
-		}
-		hidden_effect = {
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				news_event = RUS_worldnews.6
-			}
-		}
-	}
-}
-
 news_event = {
 	id = RUS_worldnews.1
 	title = RUS_worldnews.1.t
@@ -88,49 +41,6 @@ news_event = {
 	}
 	option = {
 		name = RUS_worldnews.1.b
-		trigger = {
-			NOT = { tag = RUS }
-		}
-	}
-}
-news_event = {
-	id = RUS_worldnews.2
-	title = RUS_worldnews.2.t
-	desc = RUS_worldnews.2.d
-	#picture = GFX_news_event_generic_panzer_attack
-	fire_only_once = yes
-	is_triggered_only = yes
-	major = no
-	option = {
-		name = RUS_worldnews.2.a
-		trigger = {
-			tag = RUS
-		}
-	}
-	option = {
-		name = RUS_worldnews.2.b
-		trigger = {
-			NOT = { tag = RUS }
-		}
-	}
-}
-	# 接班链·拉里奥诺夫就任：原用 .4 与海峡危机链撞 id，第十四轮改为 .6
-news_event = {
-	id = RUS_worldnews.6
-	title = RUS_worldnews.6.t
-	desc = RUS_worldnews.6.d
-	#picture = GFX_news_event_generic_panzer_attack
-	fire_only_once = yes
-	is_triggered_only = yes
-	major = no
-	option = {
-		name = RUS_worldnews.6.a
-		trigger = {
-			tag = RUS
-		}
-	}
-	option = {
-		name = RUS_worldnews.6.b
 		trigger = {
 			NOT = { tag = RUS }
 		}

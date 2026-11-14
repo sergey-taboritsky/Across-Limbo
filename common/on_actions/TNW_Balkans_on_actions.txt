@@ -49,7 +49,7 @@
             }
             RUS = {
                 country_event = { id = RUS_event.3 days = 180 }
-                #第十三轮：萨文科夫开局后 90 天（约三个月）病故，接上原有 RUS_event.1→2 接班链
+                #第十三轮：萨文科夫开局后 90 天（约三个月）病故；R28 起由米哈伊尔·列维托夫直接继任，接班链终止于 RUS_event.1
                 country_event = { id = RUS_event.1 days = 90 }
             }
 		}

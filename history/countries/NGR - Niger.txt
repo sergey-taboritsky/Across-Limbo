@@ -1,6 +1,6 @@
 ﻿capital = 781
 
-recruit_character = NGR_Ahmadu_Bello
+recruit_character = NGR_Hamani_Diori
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -54,8 +54,14 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 25
-	Nationalism = 20
+	# R29 九桶饼图修复
 	communist = 5
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 25
+	Conservatism = 0
 	Authoritarianism = 50
+	Absolutism = 0
+	Nationalism = 20
 }

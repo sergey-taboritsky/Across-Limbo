@@ -1,18 +1,25 @@
 ﻿capital = 1127
+recruit_character = TUA_Meslar_ag_Amayas
 
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism = 60
-	Nationalism = 30
+	# R29 九桶饼图修复
 	communist = 10
+	syndicalism = 0
+	socialism = 0
+	Social_democracy = 0
+	Liberalism = 0
+	Conservatism = 0
 	Authoritarianism = 0
+	Absolutism = 60
+	Nationalism = 30
 }
 

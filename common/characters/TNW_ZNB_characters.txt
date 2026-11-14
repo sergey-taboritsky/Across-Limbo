@@ -1,11 +1,6 @@
 characters = {
 	ZNB_Khalifa_bin_Harub = {
 		name = ZNB_Khalifa_bin_Harub
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_ZNB_Khalifa_bin_Harub
-			}
-		}
 		country_leader = {
 			desc = ZNB_Khalifa_bin_Harub_desc
 			ideology = absolute_monarchy

@@ -65,6 +65,12 @@ on_actions = {
 			PHI = {
 				set_variable = { country_intro_page_max = 4 }
 			}
+			AFF = {
+				set_variable = { country_intro_page_max = 4 }
+			}
+			AST = {
+				set_variable = { country_intro_page_max = 4 }
+			}
 		}
 	}
 }

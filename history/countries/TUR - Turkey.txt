@@ -107,5 +107,7 @@ set_variable = { TUR_congress_central_var = 30 }
 set_variable = { TUR_congress_populist_var = 25 }
 set_variable = { TUR_congress_snowmoon_var = 15 }
 
-
-
+# R29 势力范围：法伦斯泰尔国际
+add_ideas = {
+	phalanstere_aligned_nation
+}

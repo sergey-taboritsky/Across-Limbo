@@ -21,3 +21,8 @@ set_politics = {
 			Nationalism = 30
 		}
 recruit_character = KLT_Ahmad_Yar_Khan
+
+# R29 势力范围：莫斯科经济委员会
+add_ideas = {
+	moscow_aligned_nation
+}

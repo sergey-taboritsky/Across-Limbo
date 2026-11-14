@@ -4,7 +4,7 @@
  TNW_straits_crisis_task: "50天调停窗口"
  TNW_straits_crisis_task_desc: "第三国际与欧亚协定的外交管道全速运转：要么莫斯科接受妥协方案，要么战争。窗口剩余 [?global.TNW_straits_timer|0] 天。"
  TNW_straits_accept_compromise: "接受妥协方案"
- TNW_straits_accept_compromise_desc: "以承认希腊王国临时政府控制塞萨洛尼基周边为条件，换取俄罗斯对爱琴海通航的保证。这是体面的退路——如果体面还值点钱的话。"
+ TNW_straits_accept_compromise_desc: "以承认希腊王国临时政府控制马其顿、伊庇鲁斯与色萨利一线为条件，换取俄罗斯对爱琴海通航的保证。这是体面的退路——如果体面还值点钱的话。"
  GRK: "希腊王国临时政府"
  GRK_DEF: "希腊王国临时政府"
  GRK_ADJ: "希腊"

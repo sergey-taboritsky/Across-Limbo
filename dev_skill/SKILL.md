@@ -363,3 +363,152 @@ prerequisite = {
 - 附属 key（`_desc` / `_commander_desc` / `_tt` / `_ttN` / `_long` / `_DEF` / `_ADJ`）**跟随主 key 的类别**，不单独判断。
 
 **编码**：yml 单 BOM + 纯 CRLF；重排脚本会剥离旧类别标题再重建，因此幂等。
+
+## 14. 国策效果库与「禁止只给政治点和稳定度」铁律（2026-11-14 第二十七轮，用户定稿）
+
+⚠️⚠️ **自动完成／重构一棵国策树时，绝不允许把 `completion_reward` 写成只有 `add_political_power` + `add_stability`（或再加 `add_war_support`）。**
+用户原话：「下次再让你自动完成国策树千万不能再只给政治点和稳定度了」。
+R24 之前 AFF 137 个、AST 114 个 focus 只灌政治点，被判定「又没地方花政治点，显得整条树很弱智」。
+**硬规则：每个 focus 至少给 1 个「实体 / 发展度 / 经济」效果，并按主题分配，不许全树复制同一个模板。**
+下面 14 类效果是本仓已在用的全部常用奖励；新写国策树必须从中按主题取用，写完按 §14.7 逐项统计验收。
+
+### 14.1 效果速查表（语法 / 作用域 / tooltip 纪律）
+
+| # | 类别 | 正确写法 | 作用域 / 注意 | tooltip 纪律 |
+|---|---|---|---|---|
+| 1 | 政治点 | `add_political_power = 25` | 国家；**不得作为唯一奖励** | 原生效果，**不写** tooltip |
+| 2 | 稳定度 | `add_stability = 0.01` | 国家；小数是百分点 | 原生效果，**不写** tooltip |
+| 3 | 战争支持 | `add_war_support = 0.05` | 国家 | 原生效果，**不写** tooltip |
+| 4 | 军事经验 | `army_experience = 15` / `navy_experience = 10` / `air_experience = 10` | 国家；**没有** `add_army_experience`，rulebook:663 | 原生效果，**不写** tooltip |
+| 5 | 库存装备 | `add_equipment_to_stockpile = { type = infantry_equipment amount = 400 }`；船队用 `type = convoy_1` | 国家；rulebook:1286 | 原生效果，**不写** tooltip |
+| 6 | 工厂 / 基建 / 船坞 | `random_owned_state = { limit = { state = N } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }` | **只能在地区作用域**；`type` 用 `arms_factory` / `industrial_complex` / `dockyard` / `infrastructure`；rulebook:1993-1994、5064 | 需 `custom_effect_tooltip`（**通用建造键**，不为每个国策造 `<id>_tt`） |
+| 7 | 共享建筑位 | `add_extra_state_shared_building_slots = 1` | 必须写在 `random_owned_state` 内，与建造配套 | 同上 |
+| 8 | 科研槽 | `add_research_slot = 1` | 国家；负数可移除；rulebook:1102 | 原生效果，**不写** tooltip |
+| 9 | 发展度 | `add_to_variable = { var = <进度变量> value = N }` + `clamp_variable`；或 `add_to_variable = { var = <月度变量> value = N }`（**不 clamp**） | 国家；见 §14.2 | **必须** `custom_effect_tooltip = TNW_dev_*_tt`（变量数值不显示） |
+| 10 | 国库资金 | `add_to_variable = { var = capital_reserves value = ±N }` | 国家；支出须在 `available` 里验资；见 §14.3 | **必须** `custom_effect_tooltip`（`JAP_capital_reserves_gain_tt` / `<TAG>_capital_cost_N_tt`） |
+| 11 | 自定义民族精神 | `common/ideas/*.txt` 定义 idea → 国策 `add_ideas = <idea>` | idea 需 `allowed`、`removal_cost = -1`、本地化名与 `_desc` | `add_ideas` 原生会显示；hidden idea 用 `custom_effect_tooltip` + `hidden_effect` |
+| 12 | 阶梯式民族精神 | 同名 `name = <spirit>` 的多个 idea 级；国策 `effect_tooltip = { swap_ideas = { remove_idea = prev add_idea = cur } }` + `hidden_effect = { remove_ideas = <各级> add_ideas = cur }` | 见 §14.4 | `swap_ideas` 放 `effect_tooltip` 才显示「升级」；`hidden_effect` 清旧级防残留 |
+| 13 | 动态修正 | `common/dynamic_modifiers/*.txt` 定义（值写 `var:<变量>` 或变量裸名）→ `add_dynamic_modifier = { modifier = <name> }` | 每日刷新；`force_update_dynamic_modifier = yes` 可强制；rulebook:268-274、5922-5979 | **变量值不显示在提示框**，需 dummy idea / `effect_tooltip` 补文字 |
+| 14 | 派系 / 政体 / 国号 | `set_politics = { ruling_party = <九桶> }`、`set_popularities`（9 桶和=100）、`has_government = <九桶>`、`set_cosmetic_tag = X` | 选举结果只由选举节点固化，下游一律读执政党 | `set_cosmetic_tag` **自带提示框，禁再写 `custom_effect_tooltip`** |
+
+**tooltip 总纪律（R18 用户定稿）**：
+- `custom_effect_tooltip` **只配不会自动显示的效果**：`add_to_variable` / `add_building_construction` / `add_extra_state_shared_building_slots` / `hidden_effect` / `country_event` / `swap_ideas` / 变量写入。
+- `add_political_power` / `add_stability` / `add_war_support` / `army_experience` / `navy_experience` / `air_experience` / `add_equipment_to_stockpile` / `add_research_slot` / `add_popularity` / `set_politics` / `set_popularities` / `add_ideas` 等**原生效果一律不写 tooltip**。
+- **禁止给每个国策造 `<id>_tt`**。通用机制键可跨国家共享，例：20 个 `TNW_dev_*_tt` 定义在 `localisation/simp_chinese/TNW_JAP_l_simp_chinese.yml:659-678`，`JAP_capital_reserves_gain_tt` 在 :655，全仓共用。
+- 新增的通用键放独立的 `TNW_<TAG>_rNN_l_simp_chinese.yml`，**不要塞进主 yml**（避免破坏 R20/R21 生成器的键数基线）。
+
+### 14.2 发展度系统（五维阶梯，不是死变量）
+
+**Reader**：`common/on_actions/TNW_level_development_on_actions.txt` 的 `on_monthly_FIJ`：
+`every_country` 里每条维度执行 `<进度> += <月度>` → 若 `> 100` 调 `TNW_level_development_<维度>_upgrade_effect`、发事件、`-100`、`月度 *= 0.5`；若 `< 0` 反向降级、`+100`、`月度 *= 0.5`；最后 `clamp_variable` 到 0..100。
+升级/降级效果在 `common/scripted_effects/TNW_level_development_scripted_effects.txt`，换的是 `common/ideas/_development.txt` 里 `TNW_dev_<分类>_1.._5` 五级 idea（玩家不可手动切换）。
+
+| 维度 | 进度变量 | 月度增速变量 | tooltip 缩写 |
+|---|---|---|---|
+| 教育（识字） | `TNW_Literacy_level_value` | `TNW_Literacy_level_monthly_value` | `edu` |
+| 工业化 | `TNW_Industrial_scale_value` | `TNW_Industrial_scale_monthly_value` | `ind` |
+| 富裕（民生） | `TNW_Affluence_value` | `TNW_Affluence_monthly_value` | `wel` |
+| 农业 | `TNW_Agriculture_value` | `TNW_Agriculture_monthly_value` | `agr` |
+| 行政 | `TNW_Bureaucracy_value` | `TNW_Bureaucracy_monthly_value` | `bur` |
+
+国策标准写法（进度 / 月度二选一）：
+```
+# 进度：加 6..12，clamp 到 0..100，等月度累加越过 100 触发升级
+custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
+
+# 月度增速：不加 clamp，可长期累加，升级时系统会 *= 0.5
+custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+```
+- 20 个通用键 = `TNW_dev_<edu|ind|wel|agr|bur>_<prog|month>_<rise|fall>_tt`，全仓共享。
+- ⚠️ **不要把一次性加值写成 >100 后立刻 clamp 掉**：`>100` 是升级信号，clamp 会吃掉这次升级。进度增量控制在 6..12，让月度累加去越界。
+- ⚠️ **月度增速变量绝不 clamp**（它不是 0..100 的进度条）。
+- 五维按主题分配：战时／军事／工业→工业；政治／制宪／选举→行政；经济／贸易／民生→富裕；农业／粮食／内陆→农业；教育／宣传／培训→识字。别把五维全塞进同一条线。
+
+### 14.3 经济系统：国库、GDP 变量与动态修正
+
+**初始化**：`common/on_actions/TNW_econ_gdp_on_actions.txt` 的 `on_startup` 给 `every_country` 设 `capital_reserves = 25`、三组税率、储蓄/投资意愿、`build_factory_start_growth = yes`、`upd_gdp = yes`。
+**Reader**：`common/scripted_effects/TNW_econ_GDP.txt` 的 `upd_gdp` / `upd_inflation` 等每月读取 `tax_from_people_rate` / `tax_from_company_rate` / `tax_from_consumption_rate` / `willingness_to_save` / `investment_willingness` / `bank_investment_willingness`。这些**不是死变量**，国策可写。
+⚠️ `factory_revenue_growth_coefficient` 会被 `upd_inflation` 月度重设（约 :387、:454-487），**不要**用国策改它。
+
+**动态修正链**（本仓「动态修正」的真实落点）：
+`common/dynamic_modifiers/TNW_econ_dynamic_modifiers.txt` 定义 `GDP_core_modifiers` / `TNW_econ_inflation_modifiers`（值写 `var:gdp_research_factor` 等）；`TNW_econ_GDP.txt:541+` 把它们 `add_dynamic_modifier` 挂到 `every_country`，每日刷新。因此**国策只要写上述经济变量，就会经动态修正生效**，无需在国策里再 `add_dynamic_modifier`。
+```
+custom_effect_tooltip = TNW_econ_invest_up_tt
+add_to_variable = { var = investment_willingness value = 0.02 }
+```
+
+**国库收支纪律**（MAL / AFF / AST 通用）：
+- 支出：`available = { custom_trigger_tooltip = { tooltip = <TAG>_capital_check_N_tt check_variable = { var = capital_reserves value = N compare = greater_than_or_equals } } }`，reward 里 `add_to_variable = { var = capital_reserves value = -N }` + `custom_effect_tooltip = <TAG>_capital_cost_N_tt`。**验资阈值必须等于支出额**。
+- 收益：`add_to_variable = { var = capital_reserves value = N }` + `custom_effect_tooltip = JAP_capital_reserves_gain_tt`（或自建通用键）；决议类收益一律 `fire_only_once = yes`，国策天然一次性。
+- 禁止在国策里既扣又加同一笔国库（R27 生成器对已有支出的国策改发发展度进度，正是为此）。
+
+### 14.4 自定义民族精神与阶梯式民族精神
+
+**自定义精神**：`common/ideas/*.txt` 里
+```
+ideas = {
+  country = {
+    MY_spirit = {
+      name = MY_spirit
+      allowed = { always = yes }
+      removal_cost = -1
+      modifier = { production_speed_buildings_factor = 0.05 }
+    }
+  }
+}
+```
+本地化 `MY_spirit` / `MY_spirit_desc`；国策 `add_ideas = MY_spirit`。纯标签用 hidden idea（`always = no`、`removal_cost = -1`），贴标签时 `custom_effect_tooltip` + `hidden_effect = { add_ideas = ... }`，**禁止露出 raw key**。
+本仓实例：`TNW_AFF_AST_r24_ideas.txt`（重建阶梯）、`TNW_AFF_AST_r25_spirits.txt`（8 条派别精神）、`spheres_ideas.txt`（`moscow_aligned_nation` / `phalanstere_aligned_nation`）。
+
+**阶梯式精神**：多个 idea 共用同一个 `name = <spirit>`，只是 id 后缀 `_0.._4` 不同；玩家只看到一个民族精神名，数值随级别变化。升级范式（R24/R25）：
+```
+effect_tooltip = {
+  swap_ideas = { remove_idea = MY_spirit_2 add_idea = MY_spirit_3 }
+}
+hidden_effect = {
+  remove_ideas = MY_spirit_0
+  remove_ideas = MY_spirit_1
+  remove_ideas = MY_spirit_2
+  remove_ideas = MY_spirit_3
+  remove_ideas = MY_spirit_4
+  add_ideas = MY_spirit_3
+}
+```
+- `hidden_effect` 清全部旧级是**必须的**，否则玩家从别的分线带进来的低级别会残留。
+- 每级都要有正数 buff 与负数 debuff，别做成纯线性变强。
+- 第一层挂「分线第一个国策」，第二层挂「分线最后一个国策」（R25 用户定稿）；跨派汇合段不算分线首尾。
+
+### 14.5 动态修正（变量值不显示，务必补提示）
+
+定义于 `common/dynamic_modifiers/*.txt`（rulebook:5922-5979）：
+```
+MY_development_dm = {
+  icon = GFX_idea_generic_army_war_college
+  enable = { always = yes }
+  production_speed_arms_factory_factor = MY_arms_build
+  research_speed_factor = var:MY_research
+}
+```
+- 值可写变量裸名或 `var:<变量>`；支持国家／地区／单位领袖作用域；`add_dynamic_modifier = { modifier = MY_development_dm scope = <country> days = N }`。
+- **变量驱动的修正值不会显示在提示框里**（rulebook:272），静态值会。所以要么用 `custom_effect_tooltip` 说明变化，要么像本仓 `TNW_MAL_dynamic_modifiers.txt` 的 `MAL_singapore_federal_defense_dm` 那样，用 dummy 精神 + `effect_tooltip` 显示幅度；变量由 `MAL_One_Nation_One_Army` 初始化为 0、后续 29 个国策逐级写入。
+- 默认每日刷新；需要立即生效加 `force_update_dynamic_modifier = yes`。
+- **能用静态 idea 解决就别用动态修正**（性能更差，且改动定义需重启游戏）。
+
+### 14.6 `add_to_variable` 的死变量禁令
+
+写变量前先确认有 reader：发展度 5 维看 §14.2，经济变量看 §14.3，`capital_reserves` 看 `TNW_econ_gdp_on_actions.txt`。**禁止只写不读的自创 flag/变量系统**（历史上 `AST_fac_*` 就是这么变成死代码的）。小国派系直接读 `<TAG>.party_popularity@<九桶>`，不要另建派系变量。
+
+### 14.7 自动完成国策树的强制验收清单
+
+写完一棵树（或批量改 `completion_reward`）后，至少跑以下检查，并在汇报里给出数字：
+1. `grep -c 'add_political_power'` 与 focus 总数对比：**不得出现「政治点+稳定度是唯一奖励」的 focus**。统计每个 focus 的 `completion_reward` 是否含至少 1 个 §14.1 的第 5~13 类效果。
+2. 覆盖率：实体建造 / 库存装备 / 科研槽 / 军种经验 / 五维发展度（进度 **和** 月度）/ 国库收支 / 经济变量，逐项计数，不许某几类为 0。
+3. tooltip：所有 `custom_effect_tooltip` 键能在 `localisation/simp_chinese/*.yml` 找到；无 `<id>_tt` 形式的 per-focus 键；原生效果旁没有多余 tooltip。
+4. 格式：`common/**` 无 BOM + 纯 CRLF；`localisation/**` 单 BOM + 纯 CRLF；括号配平；无 `{{`；引号成对。
+5. 隔离：注入类改动必须能用脚本「剔除注入段后与备份逐字节一致」验证（R27 `_r27_verify.py` 的 `strip_r27()` 是范例）。
+6. 结构：单 `focus_tree`、字面树棵数、严格网格（y 逐行 +1、x 全偶数、父在上一行）、`prerequisite` 的 AND/OR（见 §12）、零 `load_focus_tree` / `allow_branch`。
+7. 旧注入不丢：R22 cosmetic tag、R24 实体效果、R25 派别精神、R26 选举结果都在。
+8. 校验器：本轮新校验器 `--old` 必须有鉴别力（拒绝旧状态）；全部旧校验器按轮次演进基线后仍全 PASS。**格式校验通过 ≠ 质量验收**。

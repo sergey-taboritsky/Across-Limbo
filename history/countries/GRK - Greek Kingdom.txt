@@ -23,3 +23,8 @@ set_popularities = {
 }
 
 recruit_character = GRK_Regency_Council
+
+# R29 势力范围：莫斯科经济委员会
+add_ideas = {
+	moscow_aligned_nation
+}

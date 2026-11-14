@@ -1,19 +1,14 @@
 characters = {
-	#恩苏·莫赫勒
-	LTH_Ntsu_Mokhehle = {
-		name = LTH_Ntsu_Mokhehle
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_Ntsu_Mokhehle
-			}
-		}
+	#马特斯布·阿米利亚·马特萨巴：巴苏陀兰摄政大酋长（1941–1960），1948 开局实际在位者
+	LTH_Mantsebo = {
+		name = LTH_Mantsebo
 		country_leader = {
-			desc = LTH_Ntsu_Mokhehle_desc
-			ideology = market_socialism
-			expire = "1965.1.1"
-			id = -1
+			desc = LTH_Mantsebo_desc
+			ideology = absolute_monarchy
 			traits = {
 			}
+			expire = "1970.1.1"
+			id = -1
 		}
 	}
 }

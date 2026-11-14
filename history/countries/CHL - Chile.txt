@@ -25,4 +25,8 @@ set_popularities = {
 
 
 recruit_character = CHL_Marmaduque_Grove
+
+# R29 势力范围：法伦斯泰尔国际
+add_ideas = {
+	phalanstere_aligned_nation
 }

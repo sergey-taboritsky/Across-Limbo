@@ -27,6 +27,27 @@ TNW_straits_accept_compromise = {
 			transfer_state_to = GRK
 			add_core_of = GRK
 		}
+		# R28：妥协路线 GRK 五州（马其顿 731/1112、色萨利 1114、伊庇鲁斯 185/1033）
+		1114 = {
+			transfer_state_to = GRK
+			add_core_of = GRK
+		}
+		185 = {
+			transfer_state_to = GRK
+			add_core_of = GRK
+		}
+		1033 = {
+			transfer_state_to = GRK
+			add_core_of = GRK
+		}
+		GRK = {
+			set_capital = { state = 731 remember_old_capital = no }
+			promote_character = GRK_Regency_Council
+			add_ideas = moscow_aligned_nation
+		}
+		# R29：冲突落幕（妥协路线）——GRK 归莫斯科阵营 / GRE 归法伦斯泰尔阵营
+		RUS = { add_to_faction = GRK }
+		FRA = { add_to_faction = GRE }
 		TUR = { clr_country_flag = TNW_straits_tur_alert_flag }
 		hidden_effect = {
 			every_country = {

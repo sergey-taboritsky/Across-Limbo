@@ -35,8 +35,22 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_outbreak"
-			add_political_power = 50
 			add_stability = 0.02
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -50,8 +64,22 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_command_staff"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 7 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -67,6 +95,21 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_eastern_front"
 			army_experience = 15
 			add_war_support = 0.02
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -80,8 +123,13 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_home_front"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 350 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -95,8 +143,22 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_economy"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -110,8 +172,12 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_foreign"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 24 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
 		}
 	}
 
@@ -127,6 +193,11 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_hunter_line"
 			army_experience = 15
 			add_war_support = 0.02
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 400 }
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 4 }
 		}
 	}
 
@@ -142,6 +213,21 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_brisbane_port"
 			navy_experience = 10
 			add_war_support = 0.02
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_invest_up_tt
+			add_to_variable = { var = investment_willingness value = 0.02 }
 		}
 	}
 
@@ -155,8 +241,13 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_morale_campaign"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 400 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 9 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 
@@ -170,8 +261,22 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_union_truce"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -193,8 +298,22 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_wheat_requisition"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 6 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 
@@ -208,8 +327,22 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_port_tariff"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 7 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -223,8 +356,13 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_indian_ocean_route"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 400 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -238,8 +376,22 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_nanyang_shipping"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 9 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -272,6 +424,21 @@ focus_tree = {
 			}
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -286,8 +453,25 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_joint_command"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = TNW_AFF_reconstruction_0
+					add_idea = TNW_AFF_reconstruction_1
+				}
+			}
+			hidden_effect = {
+				remove_ideas = TNW_AFF_reconstruction_0
+				remove_ideas = TNW_AFF_reconstruction_1
+				remove_ideas = TNW_AFF_reconstruction_2
+				remove_ideas = TNW_AFF_reconstruction_3
+				remove_ideas = TNW_AFF_reconstruction_4
+				add_ideas = TNW_AFF_reconstruction_1
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 2 }
 		}
 	}
 
@@ -309,8 +493,22 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_port_pilotage"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 7 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -332,8 +530,13 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_price_control"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 450 }
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_bank_up_tt
+			add_to_variable = { var = bank_investment_willingness value = 0.02 }
 		}
 	}
 
@@ -347,8 +550,22 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_ration_ledger"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -370,8 +587,22 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_refugee_relief"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -404,6 +635,21 @@ focus_tree = {
 			}
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -436,6 +682,12 @@ focus_tree = {
 			}
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 450 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 7 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -457,8 +709,22 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_coal_allocation"
 			add_to_variable = { var = capital_reserves value = -3 }
 			custom_effect_tooltip = AFF_capital_cost_3_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -472,8 +738,13 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_moscow_talks"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 28 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -487,8 +758,22 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_no_alliance"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -502,8 +787,21 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_manifest_rule"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 2 }
 		}
 	}
 
@@ -519,6 +817,11 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_northwest_garrison"
 			army_experience = 15
 			add_war_support = 0.02
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 4 }
 		}
 	}
 
@@ -534,6 +837,21 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_murray_crossing"
 			army_experience = 15
 			add_war_support = 0.02
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_save_up_tt
+			add_to_variable = { var = willingness_to_save value = 0.01 }
 		}
 	}
 
@@ -549,6 +867,21 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_coastal_convoy"
 			navy_experience = 10
 			add_war_support = 0.02
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 9 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 
@@ -570,8 +903,22 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_price_register"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -585,8 +932,13 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_relief_inspection"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -600,8 +952,22 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_refugee_register"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 7 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -615,8 +981,13 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_wheat_ledger"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -638,8 +1009,22 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_fuel_pool"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -653,8 +1038,22 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_rail_timetable"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -668,8 +1067,21 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_supply_ledger"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 2 }
 		}
 	}
 
@@ -683,8 +1095,12 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_public_notice"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 2 }
 		}
 	}
 
@@ -706,8 +1122,22 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_insurance_local"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_tax_down_tt
+			add_to_variable = { var = tax_from_people_rate value = -0.01 }
 		}
 	}
 
@@ -721,8 +1151,22 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_garrison_audit"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -738,8 +1182,13 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_front_stabilised"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 550 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -755,6 +1204,21 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_harbour_watch"
 			army_experience = 15
 			add_war_support = 0.02
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -768,8 +1232,13 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_control_review"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 550 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 7 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -784,8 +1253,22 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_home_order"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -799,8 +1282,22 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_warden_network"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -814,8 +1311,22 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_quota_board"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -830,8 +1341,12 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_industrial_board"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 550 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 2 }
 		}
 	}
 
@@ -864,6 +1379,21 @@ focus_tree = {
 			}
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 7 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -885,8 +1415,13 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_freight_settlement"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 550 }
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_invest_up_tt
+			add_to_variable = { var = investment_willingness value = 0.02 }
 		}
 	}
 
@@ -900,8 +1435,22 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_supply_secured"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 9 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 
@@ -915,8 +1464,22 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_route_registry"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -932,6 +1495,12 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_field_repair"
 			army_experience = 15
 			add_war_support = 0.02
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -945,8 +1514,22 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_front_report"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 7 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -962,6 +1545,21 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_escort_rotation"
 			navy_experience = 10
 			add_war_support = 0.02
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -975,8 +1573,22 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_ordinance_book"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -990,8 +1602,13 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_appeal_office"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1005,8 +1622,21 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_air_raid_drill"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
 		}
 	}
 
@@ -1020,8 +1650,12 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_procurement_audit"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 2 }
 		}
 	}
 
@@ -1035,8 +1669,22 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_economy_stable"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_bank_up_tt
+			add_to_variable = { var = bank_investment_willingness value = 0.02 }
 		}
 	}
 
@@ -1050,8 +1698,22 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_factory_output"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1065,8 +1727,22 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_ship_charter"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1080,8 +1756,13 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_external_wording"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1095,8 +1776,22 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_warehouse_ledger"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 7 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1112,6 +1807,21 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_garrison_rotation"
 			army_experience = 15
 			add_war_support = 0.02
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1125,8 +1835,13 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_front_supply_table"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 650 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1140,8 +1855,22 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_convoy_ledger"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -1155,8 +1884,12 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_ordinance_review"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 650 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 2 }
 		}
 	}
 
@@ -1170,8 +1903,21 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_appeal_archive"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 4 }
 		}
 	}
 
@@ -1185,8 +1931,22 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_warden_report"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_save_up_tt
+			add_to_variable = { var = willingness_to_save value = 0.01 }
 		}
 	}
 
@@ -1200,8 +1960,22 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_quota_settlement"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 9 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 
@@ -1215,8 +1989,13 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_production_review"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 650 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1230,8 +2009,22 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_fuel_reserve"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1245,8 +2038,13 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_charter_audit"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 650 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 7 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1260,8 +2058,22 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_port_notice"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -1275,8 +2087,22 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_manifest_archive"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1292,8 +2118,26 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_front_settlement"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = TNW_AFF_reconstruction_1
+					add_idea = TNW_AFF_reconstruction_2
+				}
+			}
+			hidden_effect = {
+				remove_ideas = TNW_AFF_reconstruction_0
+				remove_ideas = TNW_AFF_reconstruction_1
+				remove_ideas = TNW_AFF_reconstruction_2
+				remove_ideas = TNW_AFF_reconstruction_3
+				remove_ideas = TNW_AFF_reconstruction_4
+				add_ideas = TNW_AFF_reconstruction_2
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1309,8 +2153,21 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_home_settlement"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 2 }
 		}
 	}
 
@@ -1326,8 +2183,21 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_economy_settlement"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 2 }
 		}
 	}
 
@@ -1343,8 +2213,22 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_foreign_settlement"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_tax_down_tt
+			add_to_variable = { var = tax_from_people_rate value = -0.01 }
 		}
 	}
 
@@ -1361,8 +2245,22 @@ focus_tree = {
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_all_fronts_ready"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1381,8 +2279,22 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_demobilisation"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1396,8 +2308,30 @@ focus_tree = {
 		y = 12
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_election_announced"
-			add_political_power = 75
+			# R26 选举结果进线
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = Conservatism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = Social_democracy
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = Nationalism
+				popularity = 0.02
+			}
 			add_stability = 0.02
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 850 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1411,8 +2345,13 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_election_voter_roll"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 900 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 7 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -1426,8 +2365,13 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_election_broadcast"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 46 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -1441,8 +2385,22 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_election_army_neutral"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 9 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -1458,8 +2416,13 @@ focus_tree = {
 		y = 14
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_election_polling"
-			add_political_power = 75
 			add_stability = 0.02
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 950 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -1471,11 +2434,16 @@ focus_tree = {
 		prerequisite = { focus = AFF_election_polling }
 		mutually_exclusive = { focus = AFF_gov_country focus = AFF_gov_dlp focus = AFF_gov_radical }
 		cancellable = no
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_election_liberal_tt
+				check_variable = { AFF.party_popularity@Liberalism > 0.01 }
+			}
+		}
 		x = 2
 		y = 15
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_gov_liberal"
-			add_political_power = 75
 			add_stability = 0.02
 			set_politics = {
 				ruling_party = Liberalism
@@ -1492,6 +2460,18 @@ focus_tree = {
 				Authoritarianism = 2
 				Nationalism = 4
 			}
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 50 }
+			# R25 派别民族精神（自由党温和派·太平洋自由灯塔·第一层）
+			effect_tooltip = {
+				add_ideas = TNW_AFF_pacific_beacon_1
+			}
+			hidden_effect = {
+				add_ideas = TNW_AFF_pacific_beacon_1
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 2 }
 		}
 	}
 
@@ -1503,11 +2483,16 @@ focus_tree = {
 		prerequisite = { focus = AFF_election_polling }
 		mutually_exclusive = { focus = AFF_gov_liberal focus = AFF_gov_dlp focus = AFF_gov_radical }
 		cancellable = no
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_election_country_tt
+				check_variable = { AFF.party_popularity@Conservatism > 0.01 }
+			}
+		}
 		x = 8
 		y = 15
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_gov_country"
-			add_political_power = 75
 			add_stability = 0.02
 			set_politics = {
 				ruling_party = Conservatism
@@ -1524,6 +2509,27 @@ focus_tree = {
 				Authoritarianism = 5
 				Nationalism = 6
 			}
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R25 派别民族精神（国家党·团结的澳大利亚·第一层）
+			effect_tooltip = {
+				add_ideas = TNW_AFF_united_australia_1
+			}
+			hidden_effect = {
+				add_ideas = TNW_AFF_united_australia_1
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 4 }
 		}
 	}
 
@@ -1535,11 +2541,16 @@ focus_tree = {
 		prerequisite = { focus = AFF_election_polling }
 		mutually_exclusive = { focus = AFF_gov_liberal focus = AFF_gov_country focus = AFF_gov_radical }
 		cancellable = no
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_election_dlp_tt
+				check_variable = { AFF.party_popularity@Social_democracy > 0.01 }
+			}
+		}
 		x = 14
 		y = 15
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_gov_dlp"
-			add_political_power = 75
 			add_stability = 0.02
 			set_politics = {
 				ruling_party = Social_democracy
@@ -1556,6 +2567,19 @@ focus_tree = {
 				Authoritarianism = 9
 				Nationalism = 4
 			}
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 }
+			# R25 派别民族精神（民主工党·反激进主义工人运动·第一层）
+			effect_tooltip = {
+				add_ideas = TNW_AFF_anti_radical_labour_1
+			}
+			hidden_effect = {
+				add_ideas = TNW_AFF_anti_radical_labour_1
+			}
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_invest_up_tt
+			add_to_variable = { var = investment_willingness value = 0.02 }
 		}
 	}
 
@@ -1567,11 +2591,16 @@ focus_tree = {
 		prerequisite = { focus = AFF_election_polling }
 		mutually_exclusive = { focus = AFF_gov_liberal focus = AFF_gov_country focus = AFF_gov_dlp }
 		cancellable = no
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AFF_election_radical_tt
+				check_variable = { AFF.party_popularity@Nationalism > 0.01 }
+			}
+		}
 		x = 20
 		y = 15
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_gov_radical"
-			add_political_power = 75
 			add_stability = 0.02
 			set_politics = {
 				ruling_party = Nationalism
@@ -1588,6 +2617,19 @@ focus_tree = {
 				Authoritarianism = 10
 				Nationalism = 38
 			}
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 50 }
+			# R25 派别民族精神（自由党激进派·反共民族主义·第一层）
+			effect_tooltip = {
+				add_ideas = TNW_AFF_anti_communist_nationalism_1
+			}
+			hidden_effect = {
+				add_ideas = TNW_AFF_anti_communist_nationalism_1
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 9 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 
@@ -1600,15 +2642,29 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_liberal_tt
-				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+				has_government = Liberalism
 			}
 		}
 		x = 0
 		y = 16
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_repeal_controls"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1621,7 +2677,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_liberal_tt
-				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+				has_government = Liberalism
 			}
 		}
 		x = 4
@@ -1632,7 +2688,12 @@ focus_tree = {
 				ideology = Liberalism
 				popularity = 0.01
 			}
-			add_political_power = 25
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1050 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 6 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -1645,7 +2706,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_country_tt
-				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+				has_government = Conservatism
 			}
 			custom_trigger_tooltip = {
 				tooltip = AFF_capital_check_3_tt
@@ -1658,8 +2719,13 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_farm_subsidy"
 			add_to_variable = { var = capital_reserves value = -3 }
 			custom_effect_tooltip = AFF_capital_cost_3_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 52 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 7 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 
@@ -1672,7 +2738,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_country_tt
-				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+				has_government = Conservatism
 			}
 		}
 		x = 10
@@ -1683,7 +2749,21 @@ focus_tree = {
 				ideology = Conservatism
 				popularity = 0.01
 			}
-			add_political_power = 25
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -1696,15 +2776,29 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_dlp_tt
-				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+				has_government = Social_democracy
 			}
 		}
 		x = 12
 		y = 16
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_corporate_council"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 9 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -1717,7 +2811,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_dlp_tt
-				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+				has_government = Social_democracy
 			}
 			custom_trigger_tooltip = {
 				tooltip = AFF_capital_check_2_tt
@@ -1730,8 +2824,13 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_school_grant"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 52 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -1744,15 +2843,28 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_radical_tt
-				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+				has_government = Nationalism
 			}
 		}
 		x = 18
 		y = 16
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_emergency_powers"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 2 }
 		}
 	}
 
@@ -1765,7 +2877,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_radical_tt
-				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+				has_government = Nationalism
 			}
 		}
 		x = 22
@@ -1774,6 +2886,11 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_street_mobilisation"
 			army_experience = 15
 			add_war_support = 0.02
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1050 }
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 2 }
 		}
 	}
 
@@ -1786,15 +2903,20 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_liberal_tt
-				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+				has_government = Liberalism
 			}
 		}
 		x = 0
 		y = 17
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_parliament"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 54 }
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_bank_up_tt
+			add_to_variable = { var = bank_investment_willingness value = 0.02 }
 		}
 	}
 
@@ -1807,7 +2929,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_liberal_tt
-				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+				has_government = Liberalism
 			}
 			custom_trigger_tooltip = {
 				tooltip = AFF_capital_check_2_tt
@@ -1820,8 +2942,22 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_budget_audit"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1834,7 +2970,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_country_tt
-				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+				has_government = Conservatism
 			}
 		}
 		x = 6
@@ -1845,7 +2981,12 @@ focus_tree = {
 				ideology = Conservatism
 				popularity = 0.01
 			}
-			add_political_power = 25
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1100 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1858,15 +2999,20 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_country_tt
-				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+				has_government = Conservatism
 			}
 		}
 		x = 10
 		y = 17
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_rail_board"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 54 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1879,15 +3025,20 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_dlp_tt
-				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+				has_government = Social_democracy
 			}
 		}
 		x = 12
 		y = 17
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_arbitration"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1100 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 7 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1900,7 +3051,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_dlp_tt
-				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+				has_government = Social_democracy
 			}
 		}
 		x = 16
@@ -1911,7 +3062,21 @@ focus_tree = {
 				ideology = Social_democracy
 				popularity = 0.01
 			}
-			add_political_power = 25
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1924,7 +3089,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_radical_tt
-				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+				has_government = Nationalism
 			}
 		}
 		x = 18
@@ -1935,7 +3100,12 @@ focus_tree = {
 				ideology = Nationalism
 				popularity = 0.01
 			}
-			add_political_power = 25
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 54 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -1948,15 +3118,29 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_radical_tt
-				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+				has_government = Nationalism
 			}
 		}
 		x = 22
 		y = 17
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_rally_rules"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -1969,15 +3153,28 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_liberal_tt
-				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+				has_government = Liberalism
 			}
 		}
 		x = 0
 		y = 18
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_civil_service"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
 		}
 	}
 
@@ -1990,7 +3187,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_liberal_tt
-				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+				has_government = Liberalism
 			}
 		}
 		x = 4
@@ -2001,7 +3198,11 @@ focus_tree = {
 				ideology = Liberalism
 				popularity = 0.01
 			}
-			add_political_power = 25
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 56 }
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 4 }
 		}
 	}
 
@@ -2014,15 +3215,29 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_country_tt
-				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+				has_government = Conservatism
 			}
 		}
 		x = 6
 		y = 18
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_land_register"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_save_up_tt
+			add_to_variable = { var = willingness_to_save value = 0.01 }
 		}
 	}
 
@@ -2035,15 +3250,20 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_country_tt
-				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+				has_government = Conservatism
 			}
 		}
 		x = 10
 		y = 18
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_freight_rate"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1150 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 9 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 
@@ -2056,7 +3276,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_dlp_tt
-				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+				has_government = Social_democracy
 			}
 		}
 		x = 12
@@ -2067,7 +3287,12 @@ focus_tree = {
 				ideology = Social_democracy
 				popularity = 0.01
 			}
-			add_political_power = 25
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 56 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -2080,15 +3305,20 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_dlp_tt
-				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+				has_government = Social_democracy
 			}
 		}
 		x = 16
 		y = 18
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_school_report"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1150 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 6 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -2101,15 +3331,29 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_radical_tt
-				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+				has_government = Nationalism
 			}
 		}
 		x = 18
 		y = 18
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_public_order"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 7 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -2122,7 +3366,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_radical_tt
-				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+				has_government = Nationalism
 			}
 		}
 		x = 22
@@ -2131,6 +3375,21 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_veteran_corps"
 			army_experience = 15
 			add_war_support = 0.02
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -2143,15 +3402,20 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_liberal_tt
-				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+				has_government = Liberalism
 			}
 		}
 		x = 0
 		y = 19
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_court_review"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 9 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -2164,7 +3428,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_liberal_tt
-				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+				has_government = Liberalism
 			}
 			custom_trigger_tooltip = {
 				tooltip = AFF_capital_check_2_tt
@@ -2177,8 +3441,13 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_trade_ordinance"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -2191,7 +3460,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_country_tt
-				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+				has_government = Conservatism
 			}
 			custom_trigger_tooltip = {
 				tooltip = AFF_capital_check_3_tt
@@ -2204,8 +3473,12 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_rural_credit"
 			add_to_variable = { var = capital_reserves value = -3 }
 			custom_effect_tooltip = AFF_capital_cost_3_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 58 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 2 }
 		}
 	}
 
@@ -2218,15 +3491,19 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_country_tt
-				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+				has_government = Conservatism
 			}
 		}
 		x = 10
 		y = 19
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_tariff_court"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 58 }
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 2 }
 		}
 	}
 
@@ -2239,15 +3516,20 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_dlp_tt
-				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+				has_government = Social_democracy
 			}
 		}
 		x = 12
 		y = 19
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_work_hours"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_tax_down_tt
+			add_to_variable = { var = tax_from_people_rate value = -0.01 }
 		}
 	}
 
@@ -2260,7 +3542,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_dlp_tt
-				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+				has_government = Social_democracy
 			}
 			custom_trigger_tooltip = {
 				tooltip = AFF_capital_check_2_tt
@@ -2273,8 +3555,13 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_welfare_levy"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 58 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 9 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -2287,15 +3574,20 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_radical_tt
-				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+				has_government = Nationalism
 			}
 		}
 		x = 18
 		y = 19
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_emergency_review"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -2308,7 +3600,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_radical_tt
-				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+				has_government = Nationalism
 			}
 		}
 		x = 22
@@ -2317,6 +3609,12 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_command_council"
 			army_experience = 15
 			add_war_support = 0.02
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -2330,15 +3628,32 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_liberal_tt
-				check_variable = { AFF.party_popularity@Liberalism > 0.4 }
+				has_government = Liberalism
 			}
 		}
 		x = 2
 		y = 20
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_cabinet"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 60 }
+			# R25 派别民族精神（自由党温和派·太平洋自由灯塔·第二层）
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = TNW_AFF_pacific_beacon_1
+					add_idea = TNW_AFF_pacific_beacon_2
+				}
+			}
+			hidden_effect = {
+				remove_ideas = TNW_AFF_pacific_beacon_1
+				remove_ideas = TNW_AFF_pacific_beacon_2
+				add_ideas = TNW_AFF_pacific_beacon_2
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 7 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -2352,15 +3667,32 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_country_tt
-				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+				has_government = Conservatism
 			}
 		}
 		x = 8
 		y = 20
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_cabinet"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1250 }
+			# R25 派别民族精神（国家党·团结的澳大利亚·第二层）
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = TNW_AFF_united_australia_1
+					add_idea = TNW_AFF_united_australia_2
+				}
+			}
+			hidden_effect = {
+				remove_ideas = TNW_AFF_united_australia_1
+				remove_ideas = TNW_AFF_united_australia_2
+				add_ideas = TNW_AFF_united_australia_2
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -2374,15 +3706,41 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_dlp_tt
-				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+				has_government = Social_democracy
 			}
 		}
 		x = 14
 		y = 20
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_cabinet"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R25 派别民族精神（民主工党·反激进主义工人运动·第二层）
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = TNW_AFF_anti_radical_labour_1
+					add_idea = TNW_AFF_anti_radical_labour_2
+				}
+			}
+			hidden_effect = {
+				remove_ideas = TNW_AFF_anti_radical_labour_1
+				remove_ideas = TNW_AFF_anti_radical_labour_2
+				add_ideas = TNW_AFF_anti_radical_labour_2
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 9 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -2396,15 +3754,45 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_radical_tt
-				check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+				has_government = Nationalism
 			}
 		}
 		x = 20
 		y = 20
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_cabinet"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = TNW_AFF_reconstruction_2
+					add_idea = TNW_AFF_reconstruction_3
+				}
+			}
+			hidden_effect = {
+				remove_ideas = TNW_AFF_reconstruction_0
+				remove_ideas = TNW_AFF_reconstruction_1
+				remove_ideas = TNW_AFF_reconstruction_2
+				remove_ideas = TNW_AFF_reconstruction_3
+				remove_ideas = TNW_AFF_reconstruction_4
+				add_ideas = TNW_AFF_reconstruction_3
+			}
+			# R25 派别民族精神（自由党激进派·反共民族主义·第二层）
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = TNW_AFF_anti_communist_nationalism_1
+					add_idea = TNW_AFF_anti_communist_nationalism_2
+				}
+			}
+			hidden_effect = {
+				remove_ideas = TNW_AFF_anti_communist_nationalism_1
+				remove_ideas = TNW_AFF_anti_communist_nationalism_2
+				add_ideas = TNW_AFF_anti_communist_nationalism_2
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -2418,8 +3806,8 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_shared_tt
 				OR = {
-					check_variable = { AFF.party_popularity@Liberalism > 0.4 }
-					check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+					has_government = Liberalism
+					has_government = Nationalism
 				}
 			}
 		}
@@ -2427,8 +3815,12 @@ focus_tree = {
 		y = 21
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_shared_liberal_legacy"
-			add_political_power = 50
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1300 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 2 }
 		}
 	}
 
@@ -2441,15 +3833,28 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_country_tt
-				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+				has_government = Conservatism
 			}
 		}
 		x = 8
 		y = 21
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_cabinet_programme"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 4 }
 		}
 	}
 
@@ -2462,15 +3867,20 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_dlp_tt
-				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+				has_government = Social_democracy
 			}
 		}
 		x = 14
 		y = 21
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_cabinet_programme"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 60 }
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_invest_up_tt
+			add_to_variable = { var = investment_willingness value = 0.02 }
 		}
 	}
 
@@ -2484,8 +3894,8 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_shared_tt
 				OR = {
-					check_variable = { AFF.party_popularity@Liberalism > 0.4 }
-					check_variable = { AFF.party_popularity@Nationalism > 0.32 }
+					has_government = Liberalism
+					has_government = Nationalism
 				}
 			}
 		}
@@ -2493,8 +3903,13 @@ focus_tree = {
 		y = 22
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_shared_party_machine"
-			add_political_power = 50
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1350 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 9 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 
@@ -2507,15 +3922,29 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_country_tt
-				check_variable = { AFF.party_popularity@Conservatism > 0.4 }
+				has_government = Conservatism
 			}
 		}
 		x = 8
 		y = 22
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_constitutional_draft"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -2528,15 +3957,20 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_party_check_dlp_tt
-				check_variable = { AFF.party_popularity@Social_democracy > 0.35 }
+				has_government = Social_democracy
 			}
 		}
 		x = 14
 		y = 22
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_constitutional_draft"
-			add_political_power = 25
 			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 60 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -2550,9 +3984,23 @@ focus_tree = {
 		y = 23
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_postwar_constitution"
-			add_political_power = 75
 			add_stability = 0.02
 			country_event = { id = AFF_event.1 days = 1 }
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 7 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -2562,11 +4010,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = { focus = AFF_postwar_constitution }
+		available = {
+			has_government = Liberalism
+		}
+		mutually_exclusive = { focus = AFF_econ_ballot_country focus = AFF_econ_ballot_dlp focus = AFF_econ_ballot_radical }
 		x = 2
 		y = 24
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_econ_repeal_controls"
-			add_political_power = 50
 			add_stability = 0.02
 			add_popularity = {
 				ideology = socialism
@@ -2575,55 +4026,301 @@ focus_tree = {
 			custom_effect_tooltip = AFF_deregulation_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = -4 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
 	### 精锐建军方针
 	focus = {
+		id = AFF_econ_ballot_country
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_postwar_constitution }
+		mutually_exclusive = { focus = AFF_econ_repeal_controls focus = AFF_econ_ballot_dlp focus = AFF_econ_ballot_radical }
+		available = {
+			has_government = Conservatism
+		}
+		x = 0
+		y = 24
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_ballot_country"
+			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 120 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 9 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = AFF_econ_ballot_dlp
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_postwar_constitution }
+		mutually_exclusive = { focus = AFF_econ_repeal_controls focus = AFF_econ_ballot_country focus = AFF_econ_ballot_radical }
+		available = {
+			has_government = Social_democracy
+		}
+		x = 4
+		y = 24
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_ballot_dlp"
+			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 120 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = AFF_econ_ballot_radical
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_postwar_constitution }
+		mutually_exclusive = { focus = AFF_econ_repeal_controls focus = AFF_econ_ballot_country focus = AFF_econ_ballot_dlp }
+		available = {
+			has_government = Nationalism
+		}
+		x = 6
+		y = 24
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_econ_ballot_radical"
+			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 120 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 2 }
+		}
+	}
+	focus = {
 		id = AFF_mil_elite_doctrine
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = { focus = AFF_postwar_constitution }
+		available = {
+			has_government = Liberalism
+		}
+		mutually_exclusive = { focus = AFF_mil_ballot_country focus = AFF_mil_ballot_dlp focus = AFF_mil_ballot_radical }
 		x = 10
 		y = 24
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_mil_elite_doctrine"
-			add_political_power = 50
 			add_stability = 0.02
 			army_experience = 15
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 2 }
 		}
 	}
 
 	### 反社会主义路线
 	focus = {
+		id = AFF_mil_ballot_country
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_postwar_constitution }
+		mutually_exclusive = { focus = AFF_mil_elite_doctrine focus = AFF_mil_ballot_dlp focus = AFF_mil_ballot_radical }
+		available = {
+			has_government = Conservatism
+		}
+		x = 8
+		y = 24
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_ballot_country"
+			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 120 }
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_bank_up_tt
+			add_to_variable = { var = bank_investment_willingness value = 0.02 }
+		}
+	}
+	focus = {
+		id = AFF_mil_ballot_dlp
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_postwar_constitution }
+		mutually_exclusive = { focus = AFF_mil_elite_doctrine focus = AFF_mil_ballot_country focus = AFF_mil_ballot_radical }
+		available = {
+			has_government = Social_democracy
+		}
+		x = 12
+		y = 24
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_ballot_dlp"
+			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 120 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 9 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = AFF_mil_ballot_radical
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_postwar_constitution }
+		mutually_exclusive = { focus = AFF_mil_elite_doctrine focus = AFF_mil_ballot_country focus = AFF_mil_ballot_dlp }
+		available = {
+			has_government = Nationalism
+		}
+		x = 14
+		y = 24
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_mil_ballot_radical"
+			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 120 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
 		id = AFF_dip_anti_socialist_line
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = { focus = AFF_postwar_constitution }
+		available = {
+			has_government = Liberalism
+		}
+		mutually_exclusive = { focus = AFF_dip_ballot_country focus = AFF_dip_ballot_dlp focus = AFF_dip_ballot_radical }
 		x = 18
 		y = 24
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_anti_socialist_line"
-			add_political_power = 50
 			add_stability = 0.02
 			add_popularity = {
 				ideology = socialism
 				popularity = -0.03
 			}
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
 	### 战时国有资产处置
 	focus = {
+		id = AFF_dip_ballot_country
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_postwar_constitution }
+		mutually_exclusive = { focus = AFF_dip_anti_socialist_line focus = AFF_dip_ballot_dlp focus = AFF_dip_ballot_radical }
+		available = {
+			has_government = Conservatism
+		}
+		x = 16
+		y = 24
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_ballot_country"
+			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 120 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 7 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = AFF_dip_ballot_dlp
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_postwar_constitution }
+		mutually_exclusive = { focus = AFF_dip_anti_socialist_line focus = AFF_dip_ballot_country focus = AFF_dip_ballot_radical }
+		available = {
+			has_government = Social_democracy
+		}
+		x = 20
+		y = 24
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_ballot_dlp"
+			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 120 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
+		id = AFF_dip_ballot_radical
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = AFF_postwar_constitution }
+		mutually_exclusive = { focus = AFF_dip_anti_socialist_line focus = AFF_dip_ballot_country focus = AFF_dip_ballot_dlp }
+		available = {
+			has_government = Nationalism
+		}
+		x = 22
+		y = 24
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed AFF_dip_ballot_radical"
+			add_stability = 0.01
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 120 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 9 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
+		}
+	}
+	focus = {
 		id = AFF_econ_asset_disposal
 		icon = GFX_goal_unknown
 		cost = 5.00
-		prerequisite = { focus = AFF_econ_repeal_controls }
+		prerequisite = { focus = AFF_econ_repeal_controls focus = AFF_econ_ballot_country focus = AFF_econ_ballot_dlp focus = AFF_econ_ballot_radical }
 		x = 0
 		y = 25
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_econ_asset_disposal"
-			add_political_power = 25
 			add_popularity = {
 				ideology = socialism
 				popularity = -0.02
@@ -2632,6 +4329,21 @@ focus_tree = {
 			add_to_variable = { var = TNW_Bureaucracy_value value = -4 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 			add_stability = -0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -2640,12 +4352,11 @@ focus_tree = {
 		id = AFF_econ_price_release
 		icon = GFX_goal_unknown
 		cost = 5.00
-		prerequisite = { focus = AFF_econ_repeal_controls }
+		prerequisite = { focus = AFF_econ_repeal_controls focus = AFF_econ_ballot_country focus = AFF_econ_ballot_dlp focus = AFF_econ_ballot_radical }
 		x = 2
 		y = 25
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_econ_price_release"
-			add_political_power = 25
 			add_popularity = {
 				ideology = socialism
 				popularity = -0.02
@@ -2654,6 +4365,20 @@ focus_tree = {
 			add_to_variable = { var = TNW_Bureaucracy_value value = -4 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 			add_stability = -0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 2 }
 		}
 	}
 
@@ -2662,12 +4387,11 @@ focus_tree = {
 		id = AFF_econ_bank_reprivatisation
 		icon = GFX_goal_unknown
 		cost = 5.00
-		prerequisite = { focus = AFF_econ_repeal_controls }
+		prerequisite = { focus = AFF_econ_repeal_controls focus = AFF_econ_ballot_country focus = AFF_econ_ballot_dlp focus = AFF_econ_ballot_radical }
 		x = 4
 		y = 25
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_econ_bank_reprivatisation"
-			add_political_power = 25
 			add_popularity = {
 				ideology = socialism
 				popularity = -0.02
@@ -2676,6 +4400,20 @@ focus_tree = {
 			add_to_variable = { var = TNW_Bureaucracy_value value = -4 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 			add_stability = -0.01
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 4 }
 		}
 	}
 
@@ -2684,7 +4422,7 @@ focus_tree = {
 		id = AFF_mil_special_selection
 		icon = GFX_goal_unknown
 		cost = 3.00
-		prerequisite = { focus = AFF_mil_elite_doctrine }
+		prerequisite = { focus = AFF_mil_elite_doctrine focus = AFF_mil_ballot_country focus = AFF_mil_ballot_dlp focus = AFF_mil_ballot_radical }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_capital_check_3_tt
@@ -2699,6 +4437,12 @@ focus_tree = {
 			custom_effect_tooltip = AFF_capital_cost_3_tt
 			army_experience = 20
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_save_up_tt
+			add_to_variable = { var = willingness_to_save value = 0.01 }
 		}
 	}
 
@@ -2707,7 +4451,7 @@ focus_tree = {
 		id = AFF_mil_naval_staff
 		icon = GFX_goal_unknown
 		cost = 3.00
-		prerequisite = { focus = AFF_mil_elite_doctrine }
+		prerequisite = { focus = AFF_mil_elite_doctrine focus = AFF_mil_ballot_country focus = AFF_mil_ballot_dlp focus = AFF_mil_ballot_radical }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_capital_check_3_tt
@@ -2722,6 +4466,21 @@ focus_tree = {
 			custom_effect_tooltip = AFF_capital_cost_3_tt
 			navy_experience = 25
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 9 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 
@@ -2730,7 +4489,7 @@ focus_tree = {
 		id = AFF_mil_amphibious_school
 		icon = GFX_goal_unknown
 		cost = 3.00
-		prerequisite = { focus = AFF_mil_elite_doctrine }
+		prerequisite = { focus = AFF_mil_elite_doctrine focus = AFF_mil_ballot_country focus = AFF_mil_ballot_dlp focus = AFF_mil_ballot_radical }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AFF_capital_check_3_tt
@@ -2745,6 +4504,12 @@ focus_tree = {
 			custom_effect_tooltip = AFF_capital_cost_3_tt
 			army_experience = 20
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -2753,17 +4518,31 @@ focus_tree = {
 		id = AFF_dip_left_audit
 		icon = GFX_goal_unknown
 		cost = 5.00
-		prerequisite = { focus = AFF_dip_anti_socialist_line }
+		prerequisite = { focus = AFF_dip_anti_socialist_line focus = AFF_dip_ballot_country focus = AFF_dip_ballot_dlp focus = AFF_dip_ballot_radical }
 		x = 16
 		y = 25
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_left_audit"
-			add_political_power = 25
 			add_stability = 0.01
 			add_popularity = {
 				ideology = socialism
 				popularity = -0.02
 			}
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 6 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -2772,17 +4551,31 @@ focus_tree = {
 		id = AFF_dip_union_dissolution
 		icon = GFX_goal_unknown
 		cost = 5.00
-		prerequisite = { focus = AFF_dip_anti_socialist_line }
+		prerequisite = { focus = AFF_dip_anti_socialist_line focus = AFF_dip_ballot_country focus = AFF_dip_ballot_dlp focus = AFF_dip_ballot_radical }
 		x = 18
 		y = 25
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_union_dissolution"
-			add_political_power = 25
 			add_stability = 0.01
 			add_popularity = {
 				ideology = socialism
 				popularity = -0.02
 			}
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 7 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -2791,17 +4584,31 @@ focus_tree = {
 		id = AFF_dip_press_campaign
 		icon = GFX_goal_unknown
 		cost = 5.00
-		prerequisite = { focus = AFF_dip_anti_socialist_line }
+		prerequisite = { focus = AFF_dip_anti_socialist_line focus = AFF_dip_ballot_country focus = AFF_dip_ballot_dlp focus = AFF_dip_ballot_radical }
 		x = 20
 		y = 25
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_press_campaign"
-			add_political_power = 25
 			add_stability = 0.01
 			add_popularity = {
 				ideology = socialism
 				popularity = -0.02
 			}
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -2831,6 +4638,21 @@ focus_tree = {
 				ideology = Liberalism
 				popularity = 0.01
 			}
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 9 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -2860,6 +4682,21 @@ focus_tree = {
 				ideology = Liberalism
 				popularity = 0.01
 			}
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -2889,6 +4726,20 @@ focus_tree = {
 				ideology = Liberalism
 				popularity = 0.01
 			}
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
 		}
 	}
 
@@ -2912,6 +4763,12 @@ focus_tree = {
 			custom_effect_tooltip = AFF_capital_cost_3_tt
 			army_experience = 20
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 7 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 
@@ -2944,6 +4801,21 @@ focus_tree = {
 			}
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			navy_experience = 15
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_tax_down_tt
+			add_to_variable = { var = tax_from_people_rate value = -0.01 }
 		}
 	}
 
@@ -2967,6 +4839,12 @@ focus_tree = {
 			custom_effect_tooltip = AFF_capital_cost_3_tt
 			navy_experience = 25
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -2980,12 +4858,26 @@ focus_tree = {
 		y = 26
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_sever_socialist_ties"
-			add_political_power = 25
 			add_stability = 0.01
 			add_popularity = {
 				ideology = socialism
 				popularity = -0.02
 			}
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -2999,9 +4891,23 @@ focus_tree = {
 		y = 26
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_moscow_committee"
-			add_political_power = 25
 			add_stability = 0.01
 			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -3015,9 +4921,23 @@ focus_tree = {
 		y = 26
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_trade_mission"
-			add_political_power = 25
 			add_stability = 0.01
 			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 7 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -3048,6 +4968,21 @@ focus_tree = {
 				ideology = Liberalism
 				popularity = 0.01
 			}
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -3078,6 +5013,21 @@ focus_tree = {
 				ideology = Liberalism
 				popularity = 0.01
 			}
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 9 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -3102,6 +5052,21 @@ focus_tree = {
 			custom_effect_tooltip = AFF_capital_cost_3_tt
 			army_experience = 20
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
+			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		}
 	}
 
@@ -3126,6 +5091,24 @@ focus_tree = {
 			custom_effect_tooltip = AFF_capital_cost_3_tt
 			navy_experience = 25
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			# R24 实体效果
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = TNW_AFF_reconstruction_3
+					add_idea = TNW_AFF_reconstruction_4
+				}
+			}
+			hidden_effect = {
+				remove_ideas = TNW_AFF_reconstruction_0
+				remove_ideas = TNW_AFF_reconstruction_1
+				remove_ideas = TNW_AFF_reconstruction_2
+				remove_ideas = TNW_AFF_reconstruction_3
+				remove_ideas = TNW_AFF_reconstruction_4
+				add_ideas = TNW_AFF_reconstruction_4
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 2 }
 		}
 	}
 
@@ -3139,8 +5122,21 @@ focus_tree = {
 		y = 27
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_mil_regular_army"
-			add_political_power = 25
 			army_experience = 10
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 4 }
 		}
 	}
 
@@ -3162,9 +5158,14 @@ focus_tree = {
 		y = 27
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_observer_status"
-			add_political_power = 25
 			add_stability = 0.01
 			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = convoy_1 amount = 60 }
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_invest_up_tt
+			add_to_variable = { var = investment_willingness value = 0.02 }
 		}
 	}
 
@@ -3194,6 +5195,12 @@ focus_tree = {
 				ideology = Liberalism
 				popularity = 0.01
 			}
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
+			add_to_variable = { var = TNW_Agriculture_value value = 9 }
+			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
 		}
 	}
 
@@ -3223,6 +5230,21 @@ focus_tree = {
 				ideology = Liberalism
 				popularity = 0.01
 			}
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -3247,6 +5269,12 @@ focus_tree = {
 			custom_effect_tooltip = AFF_capital_cost_5_tt
 			navy_experience = 25
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
+			# R24 实体效果
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -3260,8 +5288,22 @@ focus_tree = {
 		y = 28
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_mil_air_wing"
-			add_political_power = 25
 			air_experience = 15
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_arms_factory_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 7 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 
@@ -3275,9 +5317,23 @@ focus_tree = {
 		y = 28
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_defence_understanding"
-			add_political_power = 25
 			add_stability = 0.01
 			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 674 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -3291,9 +5347,23 @@ focus_tree = {
 		y = 28
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_supply_agreement"
-			add_political_power = 25
 			add_stability = 0.01
 			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 1116 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 9 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -3308,8 +5378,22 @@ focus_tree = {
 		y = 29
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_econ_trust_settlement"
-			add_political_power = 50
 			add_stability = 0.02
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_industrial_complex_tt
+			random_owned_state = {
+				limit = { state = 520 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 10 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 
@@ -3324,8 +5408,21 @@ focus_tree = {
 		y = 29
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_mil_capability_settlement"
-			add_political_power = 50
 			add_stability = 0.02
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_infrastructure_tt
+			random_owned_state = {
+				limit = { state = 521 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 2 }
 		}
 	}
 
@@ -3344,8 +5441,21 @@ focus_tree = {
 			hidden_effect = {
 				add_ideas = moscow_aligned_nation
 			}
-			add_political_power = 50
 			add_stability = 0.02
+			# R24 实体效果
+			custom_effect_tooltip = AFF_build_dockyard_tt
+			random_owned_state = {
+				limit = { state = 522 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			# R27 发展度与经济
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 2 }
 		}
 	}
 
@@ -3361,8 +5471,14 @@ focus_tree = {
 		y = 30
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_postwar_cold_war_alignment"
-			add_political_power = 75
 			add_stability = 0.02
+			# R24 实体效果
+			add_research_slot = 1
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			# R27 发展度与经济
+			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
+			custom_effect_tooltip = TNW_econ_bank_up_tt
+			add_to_variable = { var = bank_investment_willingness value = 0.02 }
 		}
 	}
 
@@ -3376,8 +5492,14 @@ focus_tree = {
 		y = 31
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_postwar_new_order"
-			add_political_power = 75
 			add_stability = 0.02
+			# R24 实体效果
+			add_research_slot = 1
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			# R27 发展度与经济
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 9 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		}
 	}
 

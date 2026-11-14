@@ -1,0 +1,200 @@
+ideas = {
+	country = {
+		# R25 太平洋自由灯塔（自由党温和派）两层阶梯
+		TNW_AFF_pacific_beacon_1 = {
+			name = TNW_AFF_pacific_beacon_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.02
+				stability_factor = -0.02
+			}
+		}
+		TNW_AFF_pacific_beacon_2 = {
+			name = TNW_AFF_pacific_beacon_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.03
+				consumer_goods_factor = 0.03
+				stability_factor = -0.03
+			}
+		}
+		# R25 团结的澳大利亚（国家党）两层阶梯
+		TNW_AFF_united_australia_1 = {
+			name = TNW_AFF_united_australia_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.03
+				war_support_factor = -0.02
+			}
+		}
+		TNW_AFF_united_australia_2 = {
+			name = TNW_AFF_united_australia_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.07
+				industrial_capacity_factory = 0.02
+				consumer_goods_factor = 0.03
+				war_support_factor = -0.03
+			}
+		}
+		# R25 反激进主义工人运动（民主工党）两层阶梯
+		TNW_AFF_anti_radical_labour_1 = {
+			name = TNW_AFF_anti_radical_labour_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.02
+				stability_factor = -0.02
+			}
+		}
+		TNW_AFF_anti_radical_labour_2 = {
+			name = TNW_AFF_anti_radical_labour_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.06
+				consumer_goods_factor = -0.03
+				stability_factor = -0.03
+			}
+		}
+		# R25 反共民族主义（自由党激进派）两层阶梯
+		TNW_AFF_anti_communist_nationalism_1 = {
+			name = TNW_AFF_anti_communist_nationalism_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.03
+				stability_factor = -0.03
+			}
+		}
+		TNW_AFF_anti_communist_nationalism_2 = {
+			name = TNW_AFF_anti_communist_nationalism_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.07
+				industrial_capacity_factory = 0.02
+				stability_factor = -0.04
+				consumer_goods_factor = 0.04
+			}
+		}
+		# R25 实现建党理想（工党温和派）两层阶梯
+		TNW_AST_party_ideal_1 = {
+			name = TNW_AST_party_ideal_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.02
+				stability_factor = -0.02
+			}
+		}
+		TNW_AST_party_ideal_2 = {
+			name = TNW_AST_party_ideal_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.06
+				consumer_goods_factor = -0.03
+				stability_factor = -0.03
+			}
+		}
+		# R25 社会化共和国（工党激进派）两层阶梯
+		TNW_AST_socialist_republic_1 = {
+			name = TNW_AST_socialist_republic_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				war_support_factor = -0.02
+			}
+		}
+		TNW_AST_socialist_republic_2 = {
+			name = TNW_AST_socialist_republic_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.07
+				industrial_capacity_factory = 0.03
+				war_support_factor = -0.04
+			}
+		}
+		# R25 公社联合体（工会派）两层阶梯
+		TNW_AST_commune_union_1 = {
+			name = TNW_AST_commune_union_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.03
+				consumer_goods_factor = -0.02
+				stability_factor = -0.02
+			}
+		}
+		TNW_AST_commune_union_2 = {
+			name = TNW_AST_commune_union_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.08
+				consumer_goods_factor = -0.04
+				stability_factor = -0.04
+			}
+		}
+		# R25 澳大利亚委员会制（澳共）两层阶梯
+		TNW_AST_council_system_1 = {
+			name = TNW_AST_council_system_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.02
+				production_speed_dockyard_factor = -0.02
+			}
+		}
+		TNW_AST_council_system_2 = {
+			name = TNW_AST_council_system_spirit
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				industrial_capacity_factory = 0.02
+				production_speed_dockyard_factor = -0.04
+			}
+		}
+	}
+}

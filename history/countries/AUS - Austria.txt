@@ -24,3 +24,8 @@ set_popularities = {
 }
 
 set_stability = 0.50
+
+# R29 势力范围：法伦斯泰尔国际
+add_ideas = {
+	phalanstere_aligned_nation
+}

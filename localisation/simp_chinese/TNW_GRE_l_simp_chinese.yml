@@ -46,21 +46,8 @@
  GRE_The_undercurrent_of_politics_desc: "1938年的希腊革命从未彻底改造国家：从各种拒绝社会主义改造的地方势力到随着战争重新活跃起来的新资产阶级，各路势力如今正日趋合流，并希望挑战社工党的执政地位。与此同时，对左翼阵营的整合激发了党内本就活跃的宗派主义倾向，使得即使在党内，推行某些政策也显得举步维艰。"
 
 #事件
- GRE_event.1.t: "希腊社工党第十二次全国代表大会"
- GRE_event.1.d: ""
- GRE_event.1.a: "主席的辞职信通过了......"
- GRE_event.1.b: "万幸的是，主席得以留任。"
 
 #新闻
- GRE_news_event.1.t:"康米"
- GRE_news_event.2.t:"社"
- GRE_news_event.3.t:"社民"
- GRE_news_event.4.t:"目田"
- GRE_news_event.5.t:"劳保"
- GRE_news_event.6.t:"威权"
- GRE_news_event.7.t:"专治"
- GRE_news_event.8.t:"希方极勒世界"
- GRE_news_event.9.t:"希腊赢赢赢"
 
 #国策
  GRE_calmdown_workers_onstrike: "安抚抗议工人"
@@ -81,8 +68,8 @@
  GRE_solidify_industry_base_desc: ""
  GRE_SEKE_twelfth_general_congress: "希社工党第十二次全国代表大会"
  GRE_SEKE_twelfth_general_congress_desc: ""
- GRE_event.9.t: "红旗落地"
- GRE_event.9.d: "没有宣战书，没有越境的坦克——只有一队队开进雅典的'志愿者'和一纸最后通牒。工人纠察队放下了武器，人民军的将领们销毁了文件。黄昏时分，蓝白旗在卫城升起：流亡的王室支持者宣布成立军政府，'恢复被激进分子窃取的希腊'。"
- GRE_event.9.a: "……红军去哪了？"
+ GRE_event.9.t: "退守克里特"
+ GRE_event.9.d: "没有宣战书，没有越境的坦克——只有一队队开进雅典的'志愿者'和一纸最后通牒。大陆各州转归在塞萨洛尼基成立的希腊王国临时政府，雅典的红旗随之落下。社工党中央与政府机关撤往克里特，以那里为新的首都；北爱琴与基克拉泽诸岛仍在手中，社会主义希腊没有结束，只是退到了海上。"
+ GRE_event.9.a: "红旗退到海上，政府南迁克里特。"
  GRE_Regency_Council: "希腊王国摄政委员会"
  GRE_Regency_Council_desc: ""

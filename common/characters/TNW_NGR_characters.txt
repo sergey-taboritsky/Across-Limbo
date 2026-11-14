@@ -1,13 +1,9 @@
 characters = {
-	NGR_Ahmadu_Bello = {
-		name = NGR_Ahmadu_Bello
-		portraits = {
-			civilian = {
-				large = GFX_portrait_large_NGR_Ahmadu_Bello
-			}
-		}
+	#哈马尼·迪奥里：1946 年尼日尔进步党（PPN）创始人，1946 年起任法国国民议会尼日尔议员
+	NGR_Hamani_Diori = {
+		name = NGR_Hamani_Diori
 		country_leader = {
-			desc = NGR_Ahmadu_Bello_desc
+			desc = NGR_Hamani_Diori_desc
 			ideology = oligarchy
 			traits = {
 			}

@@ -9,9 +9,6 @@ set_war_support = 0.3
 	#SKILL.md §7：第一个 recruit_character 即开局领袖，不用 set_country_leader。
 recruit_character = RUS_Boris_Savinkhov
 recruit_character = RUS_Mikhail_Levitov
-recruit_character = RUS_Tirumvirate
-recruit_character = RUS_Pyotr_Savitsky
-recruit_character = RUS_Viktor_Larionov
 recruit_character = RUS_Aleksandr_Dikgof_Derental
 recruit_character = RUS_Yury_Shirinsky_Shikhmatov
 recruit_character = RUS_Maksimilian_Filonenko
@@ -59,7 +56,6 @@ add_ideas = {
 	moscow_aligned_nation
 
 	RUS_Aleksandr_Dikgof_Derental_hog
-	RUS_Pyotr_Savitsky_advisor
 	RUS_Yury_Shirinsky_Shikhmatov_advisor
 	RUS_Maksimilian_Filonenko_advisor
 }

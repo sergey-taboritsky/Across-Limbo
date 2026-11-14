@@ -26,3 +26,8 @@ set_popularities = {
 	Absolutism = 0
 	Nationalism = 0
 }
+
+# R29 势力范围：法伦斯泰尔国际
+add_ideas = {
+	phalanstere_aligned_nation
+}

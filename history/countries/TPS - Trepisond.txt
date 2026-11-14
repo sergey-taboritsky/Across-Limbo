@@ -1,24 +1,32 @@
 ﻿capital = 354
 
+# R29b：扶正本都共和国开局领袖（history 第一个 recruit 即国家元首）
+recruit_character = TPS_Leonidas_Iasonidis
 recruit_character = TPS_Ioannis_Passalidis
 
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = Social_democracy
+	ruling_party = Liberalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
+	# R29b 亲俄本都共和国饼图（红色系 10，与莫斯科经委会其他成员同量级）
 	communist = 5
-	skyndicalism = 0
+	syndicalism = 0
 	socialism = 5
-	Social_democracy = 55
-	Liberalism = 20
-	Conservatism = 0
-	Authoritarianism = 0
+	Social_democracy = 0
+	Liberalism = 55
+	Conservatism = 15
+	Authoritarianism = 5
 	Absolutism = 0
 	Nationalism = 15
+}
+
+# R29 势力范围：莫斯科经济委员会
+add_ideas = {
+	moscow_aligned_nation
 }
