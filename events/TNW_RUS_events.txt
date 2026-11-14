@@ -60,7 +60,7 @@ country_event = {
 			set_variable = { global.TNW_straits_timer = 50 }
 			every_country = {
 				limit = { is_ai = no }
-				news_event = { id = RUS_worldnews.3 hours = 6 }
+				news_event = { id = TNW_straits_news.1 hours = 6 }
 			}
 			TUR = {
 				country_event = { id = TUR_event.6 days = 2 }

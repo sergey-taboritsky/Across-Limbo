@@ -261,6 +261,7 @@
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_War_Crimes_Special_Court"
+			country_event = { id = JAP_event.314 days = 1 }
 			add_political_power = 50
 			add_stability = 0.03
 			add_popularity = {

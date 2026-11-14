@@ -19,6 +19,10 @@ ideas = {
 		Nuke_Bomb_D = {}
 		Nuke_Bomb_A = {}
 
+		# R30 铁幕
+		Iron_Curtain = {}
+		Iron_Curtain_D = {}
+		Iron_Curtain_A = {}
 		SE_Turkish_Civil_War = {}
 		SE_Turkish_Civil_War_D = {}
 		SE_Turkish_Civil_War_A = {}

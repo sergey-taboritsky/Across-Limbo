@@ -53,4 +53,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/super_events/World_War_II.dds"
 		transparencecheck = yes
 	}
+
+	# R30 铁幕（用户未给专属超事件图，复用仓内既有 729x660 DDS）
+	spriteType = {
+		name = "GFX_Iron_Curtain"
+		texturefile = "gfx/interface/super_events/Bolsheviks_marched_westward.dds"
+		transparencecheck = yes
+	}
 }

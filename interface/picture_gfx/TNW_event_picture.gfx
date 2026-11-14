@@ -65,4 +65,18 @@ spriteTypes = {
 		name = "GFX_news_event_British_Civil_War"
 		texturefile = "gfx/event_pictures/British_Civil_War.dds"
 	}
+
+	# R30 海峡危机新闻配图（用户源图 140x419）
+	spriteType = {
+		name = "GFX_news_event_Straits_Crisis"
+		texturefile = "gfx/event_pictures/Straits_Crisis.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_Straits_Greek_Split"
+		texturefile = "gfx/event_pictures/Straits_Greek_Split.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_Straits_Red_Army_Athens"
+		texturefile = "gfx/event_pictures/Straits_Red_Army_Athens.png"
+	}
 }

@@ -512,3 +512,51 @@ MY_development_dm = {
 6. 结构：单 `focus_tree`、字面树棵数、严格网格（y 逐行 +1、x 全偶数、父在上一行）、`prerequisite` 的 AND/OR（见 §12）、零 `load_focus_tree` / `allow_branch`。
 7. 旧注入不丢：R22 cosmetic tag、R24 实体效果、R25 派别精神、R26 选举结果都在。
 8. 校验器：本轮新校验器 `--old` 必须有鉴别力（拒绝旧状态）；全部旧校验器按轮次演进基线后仍全 PASS。**格式校验通过 ≠ 质量验收**。
+
+## 15. 新闻事件配图注册流程（2026-11-14 第三十轮，用户要求「顺便学一下」）
+
+**定义**：`news_event` 的 `picture = <sprite>` 不是文件路径，而是 `interface/picture_gfx/*.gfx` 内注册的
+`spriteType` 名。`interface/eventwindow.gui` 的 `EventWindow_News / event_picture` 默认挂
+`GFX_news_event_001`，事件指定 `picture` 后由引擎替换为该 sprite。
+
+- **Step 1 落图**：`gfx/event_pictures/<key>.png`，规格 **140×419**（仓内 19 张新闻图全为此尺寸；
+  `.png` / `.dds` 均可，`texturefile` 指到它即可）。用户给的源图若已是该尺寸，直接落位，不加工。
+- **Step 2 注册**：在 `interface/picture_gfx/TNW_event_picture.gfx` 的 `spriteTypes = { }` 内追加
+  `spriteType = { name = "GFX_news_event_<key>" texturefile = "gfx/event_pictures/<key>.png" }`。
+- **Step 3 引用**：`news_event = { picture = GFX_news_event_<key> ... }`，`title/desc/option name` 指向 yml 键。
+- **铁律**：PNG 文件名 / texturefile / sprite 名 / `picture` 值四处一致；`interface/picture_gfx/*.gfx`
+  无 BOM + CRLF + tab；`major = yes/no` 不改变图片规格；缺图是常态，禁以「没图」为由补图。
+
+## 16. 超事件（Super Event）实现（2026-11-14 第三十轮，仓内自研 TNO 式）
+
+**定义**：本仓超事件**不是**原版 `major = yes`。它是一个 `player_context` scripted GUI 全屏弹窗，
+由「新闻/事件 option → token 变量 → scripted effect → GUI 显示 → 按钮清变量」驱动，五个部件：
+
+1. `common/scripted_effects/TNW_super_events_scripted_effect.txt`：`TNW_fire_super_event` 把
+   `TNW_temp_super_event` 转成 `TNW_super_event`，并 `scoped_play_song = "TNW_[SUPER]"`；
+   `d_fire_super_event` 是带参便捷入口。
+2. `common/scripted_guis/TNW_Super_Events.txt`：`has_variable = TNW_super_event` 时可见，
+   `SE_option_click` 清变量，`SE_image = "[TNWGetSuperEventImage]"`。
+3. `common/scripted_localisation/TNW_Super_Events_scripted_loc.txt`：
+   Title = `[?TNW_super_event.GetTokenLocalizedKey]`（即 token 名）；
+   Desc = `token:<SUPER>_D`；Option = `token:<SUPER>_A`；
+   Image = `localization_key = "GFX_[?...GetTokenKey]"`。
+   ⚠️ **该 `GFX_*` 本地化键故意不定义**：查不到时回显键名，正好等于 sprite 名，
+   所以 sprite 必须精确命名为 `GFX_<token>`。
+4. `interface/TNW_Super_Events.gfx` + `.gui`：729×660 图片 sprite、边框、按钮、文字框。
+5. `music/TNW_Super_events/TNW_Super_events.asset` + `TNW_Super_events.txt`：
+   歌曲名必须 = `TNW_<token>`，station 内 `factor = 0` 防随机播放；无专属 ogg 可复用既有 ogg。
+
+**新增一个超事件的 checklist**（六处，缺一不可）：
+
+| # | 文件 | 要注册什么 |
+|---|---|---|
+| 1 | `common/ideas/TNW_Super_Events.txt` | hidden ideas `<token>`、`<token>_D`、`<token>_A`（token 容器） |
+| 2 | `interface/TNW_Super_Events.gfx` | sprite `GFX_<token>` |
+| 3 | `music/TNW_Super_events/*.asset` + station | 歌曲 `TNW_<token>` |
+| 4 | `TNW_Super_Events_l_simp_chinese.yml` | `<token>` 标题、`<token>_D` 描述、`<token>_A` 按钮、`TNW_<token>` |
+| 5 | 触发它的 `news_event` / `country_event` option | `set_temp_variable = { TNW_temp_super_event = token:<token> }` + `TNW_fire_super_event = yes`（放在 `every_country { limit = { is_ai = no } }` 内） |
+| 6 | 本地化纪律 | 用户未给描述时 `_D` 一律留空，禁自撰设定；按钮可用中性 UI 词 |
+
+⚠️ 已知仓内既有偏差：`SE_Turkish_Civil_War` / `SE_Central_Plains_War` 的 token 与
+`song = TNW_Turkish_Civil_War` 不同名，会拼出 `TNW_SE_*` 而找不到音乐；新增超事件务必按上表同名注册。

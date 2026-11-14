@@ -49,3 +49,9 @@ music = {
 		modifier = { factor = 0 }
 	}
 }
+music = {
+	song = "TNW_Iron_Curtain"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}

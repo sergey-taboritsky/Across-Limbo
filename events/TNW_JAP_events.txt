@@ -835,3 +835,277 @@ country_event = {
 		name = JAP_event.202.a
 	}
 }
+
+# ===== R31：《事件文本(1).docx》补装的 16 个日本事件（2026-11-14） =====
+# 文案逐字取自 docx；括号内后端说明一律只作注释，不进玩家可见文案。
+# 日期触发者用 is_triggered_only = no；其余由上游选项 / mission / focus 触发。
+
+# R31 docx 0018：（2月10日爆发）
+country_event = {
+	id = JAP_event.300
+	title = JAP_event.300.t
+	desc = JAP_event.300.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date = 1948.2.10
+	}
+	option = {
+		name = JAP_event.300.a
+	}
+}
+
+# R31 docx 0023：（3月1日）
+country_event = {
+	id = JAP_event.301
+	title = JAP_event.301.t
+	desc = JAP_event.301.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date = 1948.3.1
+	}
+	option = {
+		name = JAP_event.301.a
+	}
+}
+
+# R31 docx 0029：（4月3日）
+country_event = {
+	id = JAP_event.302
+	title = JAP_event.302.t
+	desc = JAP_event.302.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date = 1948.4.3
+	}
+	option = {
+		name = JAP_event.302.a
+	}
+}
+
+# R31 docx 0035：（1948年5月1日）；0049 并入正文末尾，0051 为空编号已丢弃
+country_event = {
+	id = JAP_event.303
+	title = JAP_event.303.t
+	desc = JAP_event.303.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date = 1948.5.1
+	}
+	option = {
+		name = JAP_event.303.a
+	}
+	# docx 0052 括号内为后端动作说明「（启用食粮危机决议）」，仅按钮文字可见
+	option = {
+		name = JAP_event.303.b
+	}
+}
+
+# R31 由 JAP_food_crisis_trade_unions_impatience_mission.complete_effect 触发
+country_event = {
+	id = JAP_event.304
+	title = JAP_event.304.t
+	desc = JAP_event.304.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.304.a
+	}
+}
+
+# R31 由 JAP_food_crisis_trade_unions_impatience_mission.timeout_effect 触发
+country_event = {
+	id = JAP_event.305
+	title = JAP_event.305.t
+	desc = JAP_event.305.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.305.a
+	}
+}
+
+# R31 docx 0066：（5月8日）
+country_event = {
+	id = JAP_event.306
+	title = JAP_event.306.t
+	desc = JAP_event.306.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date = 1948.5.8
+	}
+	# docx 0072：「（食粮危机进程回退）」为机制说明，本轮只装文案、未实现变量效果
+	option = {
+		name = JAP_event.306.a
+	}
+}
+
+# R31 docx 0073：（1948年7月某日），取月初
+country_event = {
+	id = JAP_event.307
+	title = JAP_event.307.t
+	desc = JAP_event.307.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date = 1948.7.1
+	}
+	# docx 0080 括号内「（我们将在日后事件中支持共労党）」为后端说明，不进玩家可见文案
+	option = {
+		name = JAP_event.307.a
+	}
+	# docx 0081 括号内「（我们将在日后的事件支持社会党）」为后端说明，不进玩家可见文案
+	option = {
+		name = JAP_event.307.b
+	}
+}
+
+# R31 docx 0082：（1948年12月），取月初
+country_event = {
+	id = JAP_event.308
+	title = JAP_event.308.t
+	desc = JAP_event.308.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date = 1948.12.1
+	}
+	option = {
+		name = JAP_event.308.a
+	}
+}
+
+# R31 docx 0088：（1949年1月20日）
+country_event = {
+	id = JAP_event.309
+	title = JAP_event.309.t
+	desc = JAP_event.309.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date = 1949.1.20
+	}
+	# docx 0099：采纳折衷案 → 国铁反馘首斗争（实行折衷案）
+	option = {
+		name = JAP_event.309.a
+		country_event = { id = JAP_event.311 days = 2 }
+	}
+	# docx 0100：不采纳折衷案 → 国铁反馘首斗争（不实行折衷案）
+	option = {
+		name = JAP_event.309.b
+		country_event = { id = JAP_event.310 days = 2 }
+	}
+}
+
+# R31 由 JAP_event.309 第二选项触发；docx 0111：反馘首斗争后数日 → 下山案
+country_event = {
+	id = JAP_event.310
+	title = JAP_event.310.t
+	desc = JAP_event.310.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	# docx 未给按钮文案，复用仓内通用键 CLOSE（「关闭」），不自撰
+	option = {
+		name = CLOSE
+		country_event = { id = JAP_event.312 days = 4 }
+	}
+}
+
+# R31 由 JAP_event.309 第一选项触发；docx 0111：反馘首斗争后数日 → 下山案
+country_event = {
+	id = JAP_event.311
+	title = JAP_event.311.t
+	desc = JAP_event.311.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	# docx 未给按钮文案，复用仓内通用键 CLOSE（「关闭」），不自撰
+	option = {
+		name = CLOSE
+		country_event = { id = JAP_event.312 days = 4 }
+	}
+}
+
+# R31 docx 0111：（非常重要事件，在反斩首斗争后数日触发）
+country_event = {
+	id = JAP_event.312
+	title = JAP_event.312.t
+	desc = JAP_event.312.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	# docx 0121：三鹰事件在下山案 10 天之后
+	option = {
+		name = JAP_event.312.a
+		country_event = { id = JAP_event.313 days = 10 }
+	}
+	# docx 0121：三鹰事件在下山案 10 天之后
+	option = {
+		name = JAP_event.312.b
+		country_event = { id = JAP_event.313 days = 10 }
+	}
+	# docx 0121：三鹰事件在下山案 10 天之后
+	option = {
+		name = JAP_event.312.c
+		country_event = { id = JAP_event.313 days = 10 }
+	}
+}
+
+# R31 docx 0121：（下山案的10天之后）
+country_event = {
+	id = JAP_event.313
+	title = JAP_event.313.t
+	desc = JAP_event.313.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.313.a
+	}
+}
+
+# R31 docx 0128：（点完国策《战争罪与反人类罪特别法庭》）→ 挂该 focus 的 completion_reward
+country_event = {
+	id = JAP_event.314
+	title = JAP_event.314.t
+	desc = JAP_event.314.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	# docx 0134：对小林多喜二虐杀事件的审判在东京审判 5 天后
+	option = {
+		name = JAP_event.314.a
+		country_event = { id = JAP_event.315 days = 5 }
+	}
+}
+
+# R31 docx 0134：（东京审判5天后）
+country_event = {
+	id = JAP_event.315
+	title = JAP_event.315.t
+	desc = JAP_event.315.d
+	picture = GFX_event_JAP_taiwannanbowan
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.315.a
+	}
+	option = {
+		name = JAP_event.315.b
+	}
+}

@@ -30,6 +30,7 @@ JAP_food_crisis_category = {
 				max = JAP_socialist_reform_enthusiasm_cap_var
 			}
 			set_country_flag = JAP_Food_Crisis_enden_flag
+			country_event = { id = JAP_event.305 days = 1 }
 			#70日 总罢工
 			add_timed_idea = {
 				idea = JAP_Food_Crisis_Strike_idea
@@ -38,6 +39,7 @@ JAP_food_crisis_category = {
 		}
 		complete_effect = {
 			set_country_flag = JAP_Food_Crisis_enden_flag
+			country_event = { id = JAP_event.304 days = 1 }
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_large_rise_tt
 			add_to_variable = {
 				JAP_socialist_reform_enthusiasm_var = 10

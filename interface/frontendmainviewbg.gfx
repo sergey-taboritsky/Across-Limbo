@@ -26,6 +26,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_TNW_logo"
-		textureFile = "gfx//TNW_logo.dds"
+		textureFile = "gfx//TNW_logo.png"
 	}
 }

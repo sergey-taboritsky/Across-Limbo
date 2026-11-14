@@ -52,7 +52,7 @@ TNW_straits_accept_compromise = {
 		hidden_effect = {
 			every_country = {
 				limit = { is_ai = no }
-				news_event = { id = RUS_worldnews.5 hours = 6 }
+				news_event = { id = TNW_straits_news.2 hours = 6 }
 			}
 		}
 	}

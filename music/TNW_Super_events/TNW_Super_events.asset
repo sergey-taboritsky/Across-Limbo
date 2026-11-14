@@ -30,3 +30,7 @@ music = {
 	name = "TNW_Central_Plains_War"
 	file = "TNW_Central_Plains_War.ogg"
 }
+music = {
+	name = "TNW_Iron_Curtain"
+	file = "TNW_Bolsheviks_marched_westward.ogg"
+}
