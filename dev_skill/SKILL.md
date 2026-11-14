@@ -560,3 +560,48 @@ MY_development_dm = {
 
 ⚠️ 已知仓内既有偏差：`SE_Turkish_Civil_War` / `SE_Central_Plains_War` 的 token 与
 `song = TNW_Turkish_Civil_War` 不同名，会拼出 `TNW_SE_*` 而找不到音乐；新增超事件务必按上表同名注册。
+
+## 17. 国策精神瘦身：把大量民族精神融合成动态修正（2026-11-14 第三十三轮）
+
+适用：用户指出「每个国策给一个民族精神太多」，要求保留少量、其余融合或改成效果工具包。
+**先分类再动手**，不要直接批量删 `add_ideas`。
+
+### 17.1 判据（逐条查 `common/ideas/*.txt` 里的定义）
+
+| 判据 | 处理 |
+|---|---|
+| 顶层只有 `picture` / `allowed` / `removal_cost` / `modifier`，且 modifier 全是标量数值 | **可融合**进动态修正 |
+| 互斥路线、成对 `remove_ideas`、`research_bonus` / `equipment_bonus`、`on_add` / `on_remove`、限时且效果独特 | **必须保留**原 `add_ideas` / `add_timed_idea`（动态修正不支持非修正属性，见 §14.5） |
+| 其余（多为限时精神） | 删除引用，换成 §14.1 第 4/5/9/10 类效果工具包 |
+
+⚠️ **只删国策里的引用，不删 idea 定义**：仓内 `has_idea` / `remove_ideas` 仍可能指向它，删定义会留悬空引用。
+保留比例按用户要求走（R33 为 15/73 ≈ 1/5），别自己定。
+
+### 17.2 五步落地
+
+1. 建「modifier 键 → 变量」映射表，按动态修正分前缀（如 `JAP_sr_*` / `JAP_ldf_*`）；数值**逐字**取原 idea 的 modifier，禁止手填。
+2. 定义 `common/dynamic_modifiers/TNW_<TAG>_dynamic_modifiers.txt`（无 BOM + 纯 CRLF）：
+   `icon`、`enable = { always = yes }`、每个键写变量裸名（或 `var:<变量>`）。
+3. 在用户指定的挂载点（事件 option / 某国策 `completion_reward`）把**全部**变量
+   `set_variable = { X = 0 }`，随后 `add_dynamic_modifier = { modifier = <dm> }`。
+4. 国策里把 `add_ideas = X` 换成：轮次注释 + `custom_effect_tooltip = <共享进度键>`
+   + 若干 `add_to_variable = { var = ... value = 原数值 }`。**共享键只造 1~2 个**，禁 per-focus `_tt`。
+5. 非融合项把 `add_timed_idea` 换成效果工具包；进度变量可 clamp，**月度变量绝不 clamp**（§14.2）。
+
+### 17.3 时序铁律
+
+- 变量归零必须写在挂载**之前**。
+- 该动态修正覆盖的所有国策，必须在挂载点**之后**才可能解锁（查 focus 行号 / prerequisite 链）。
+  否则玩家先累加、挂载点再归零，已攒的效果会被吃掉。
+- 两个动态修正的变量各自归零，互不干扰；别在第二个挂载点重复归零第一个的变量。
+
+### 17.4 本地化与验收
+
+- 新增 `<dm>` / `<dm>_desc` 两键 + 共享进度 tooltip 键，统一放独立
+  `TNW_<TAG>_rNN_l_simp_chinese.yml`（单 BOM + 纯 CRLF），**不塞主 yml**（§14.1 纪律）。
+- `_desc` 只写中性状态描述，禁把「国策 / 变量 / 累积」等后端词写进玩家可见文案。
+- 验收缺一不可：① 三类数量与基线总数吻合、三分类互斥且并集完整；② 每个融合块的变量与数值
+  与原 idea modifier **逐项等价**（校验器应从 DM 定义反推映射，不 import 生成器，避免同源错误）；
+  ③ 保留项定义仍在、`remove_ideas` 配对未断；④ 挂载点归零/挂载顺序正确且各恰好 1 处；
+  ⑤ diff 证明只做行级替换（删除行全是原精神引用、新增行全是本轮效果），
+  骨架 id/x/y/prerequisite 不变；⑥ 按 §14.7 逐项统计并在汇报里给数字。

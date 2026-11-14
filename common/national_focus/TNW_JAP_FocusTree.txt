@@ -204,7 +204,9 @@
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
 			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
 			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
-			add_ideas = JAP_replanting_review
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_replanting_review）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_consumer_goods value = -0.02 }
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
 			add_to_variable = { var = TNW_Agriculture_value value = 30 }
 			clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
@@ -225,7 +227,9 @@
 			add_stability = 0.02
 			custom_effect_tooltip = JAP_capital_reserves_gain_tt
 			add_to_variable = { var = capital_reserves value = 10 }
-			add_ideas = JAP_agricultural_bank
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_agricultural_bank）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_buildings value = 0.03 }
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
 			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
 		}
@@ -247,7 +251,10 @@
 			add_political_power = 50
 			add_stability = 0.03
 			# 制宪扯皮期
-			add_timed_idea = { idea = JAP_constitution_drafting days = 180 }
+			# R33 效果工具包（原限时精神 JAP_constitution_drafting）
+			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
+			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		}
 	}
 	focus = {
@@ -269,7 +276,9 @@
 				popularity = 0.05
 			}
 			# 审判期社会撕裂
-			add_timed_idea = { idea = JAP_war_crimes_court days = 120 }
+			# R33 效果工具包（原限时精神 JAP_war_crimes_court）
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 1 }
 		}
 	}
 	focus = {
@@ -293,7 +302,10 @@
 			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
 			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
 			# 历史清算完成的和解红利
-			add_timed_idea = { idea = JAP_historical_settlement days = 90 }
+			# R33 效果工具包（原限时精神 JAP_historical_settlement）
+			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
+			add_to_variable = { var = TNW_Affluence_value value = 8 }
+			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		}
 	}
 	focus = {
@@ -312,7 +324,10 @@
 			log = "[GetLogRoot]: Focus Completed JAP_Clearup_Wartime_Rubble"
 			add_political_power = 50
 			add_stability = 0.03
-			add_timed_idea = { idea = JAP_reconstruction_fervor days = 180 }
+			# R33 效果工具包（原限时精神 JAP_reconstruction_fervor）
+			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
+			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 			# 关东重建
 			random_owned_state = {
 				limit = { state = 282 }
@@ -344,7 +359,10 @@
 				ideology = socialism
 				popularity = 0.05
 			}
-			add_ideas = JAP_agricoop_law
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_agricoop_law）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_consumer_goods value = -0.03 }
+			add_to_variable = { var = JAP_sr_stability value = 0.03 }
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
 			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
@@ -369,7 +387,10 @@
 				ideology = socialism
 				popularity = 0.05
 			}
-			add_ideas = JAP_women_suffrage
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_women_suffrage）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_manpower value = 0.03 }
+			add_to_variable = { var = JAP_sr_political_power value = 0.05 }
 			# 性别平等票仓
 			custom_effect_tooltip = JAP_diet_seat_shift_tt
 			add_to_variable = { var = JAP_Vacant value = -2 }
@@ -401,7 +422,9 @@
 				ideology = syndicalism
 				popularity = 0.05
 			}
-			add_ideas = JAP_electronics_labor_law
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_electronics_labor_law）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_factory_output value = 0.03 }
 			# 电产=产别王票
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
 			add_to_variable = { var = JAP_GenUn value = -4 }
@@ -430,7 +453,10 @@
 			log = "[GetLogRoot]: Focus Completed JAP_Pullback_Opressive_Policies"
 			add_political_power = 50
 			add_stability = 0.05
-			add_ideas = JAP_public_security_repeal
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_public_security_repeal）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_stability value = 0.05 }
+			add_to_variable = { var = JAP_sr_drift_defence value = -0.05 }
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
 			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 4 }
 			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
@@ -454,7 +480,9 @@
 				popularity = 0.03
 			}
 			# 教育等级：识字率条接入
-			add_ideas = JAP_socialist_education
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_socialist_education）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_research value = 0.02 }
 			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
 			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 5 }
 		}
@@ -515,7 +543,9 @@
 				ideology = syndicalism
 				popularity = 0.05
 			}
-			add_ideas = JAP_labor_management_coop
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_labor_management_coop）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_factory_output value = 0.03 }
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
 			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
 			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
@@ -540,7 +570,10 @@
 				ideology = syndicalism
 				popularity = 0.05
 			}
-			add_ideas = JAP_union_autonomy
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_union_autonomy）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_stability value = 0.05 }
+			add_to_variable = { var = JAP_sr_factory_output value = 0.02 }
 			set_country_flag = JAP_union_autonomy_route_flag
 		}
 	}
@@ -564,7 +597,9 @@
 				ideology = socialism
 				popularity = 0.05
 			}
-			add_ideas = JAP_production_democracy
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_production_democracy）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_factory_output value = 0.05 }
 			set_country_flag = JAP_production_democracy_route_flag
 			custom_effect_tooltip = JAP_production_ratio_rise_tt
 			add_to_variable = { var = JAP_production_management_ratio_var value = 5 }
@@ -595,7 +630,10 @@
 				ideology = syndicalism
 				popularity = 0.08
 			}
-			add_ideas = JAP_ajtfu
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_ajtfu）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_factory_output value = 0.05 }
+			add_to_variable = { var = JAP_sr_stability value = 0.05 }
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
 			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
 			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
@@ -732,7 +770,10 @@
 				ideology = socialism
 				popularity = 0.08
 			}
-			add_ideas = JAP_yamakawa_linearity
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_yamakawa_linearity）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_stability value = 0.05 }
+			add_to_variable = { var = JAP_sr_communist_drift value = 0.01 }
 			set_country_flag = JAP_yamakawa_econ_flag
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
 			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
@@ -759,7 +800,9 @@
 				ideology = communist
 				popularity = 0.05
 			}
-			add_ideas = JAP_farmer_comrade
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_farmer_comrade）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_consumer_goods value = -0.02 }
 			set_country_flag = JAP_farmer_comrade_route_flag
 		}
 	}
@@ -805,7 +848,10 @@
 			log = "[GetLogRoot]: Focus Completed JAP_Life_Sustaining_First"
 			add_stability = 0.05
 			add_political_power = 50
-			add_ideas = JAP_life_security
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_life_security）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_consumer_goods value = -0.05 }
+			add_to_variable = { var = JAP_sr_stability value = 0.03 }
 			# 富裕等级推升
 			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
 			add_to_variable = { var = TNW_Affluence_monthly_value value = 10 }
@@ -828,7 +874,9 @@
 				ideology = syndicalism
 				popularity = 0.05
 			}
-			add_ideas = JAP_union_state
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_union_state）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_factory_output value = 0.05 }
 			custom_effect_tooltip = JAP_congress_seat_shift_tt
 			add_to_variable = { var = JAP_IndUn value = -3 }
 			add_to_variable = { var = JAP_GTU value = 3 }
@@ -858,7 +906,10 @@
 				ideology = communist
 				popularity = 0.05
 			}
-			add_ideas = JAP_militant_atheism
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_militant_atheism）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_drift_defence value = 0.05 }
+			add_to_variable = { var = JAP_sr_stability value = 0.03 }
 		}
 	}
 	focus = {
@@ -881,7 +932,9 @@
 			add_war_support = 0.05
 			army_experience = 15
 			navy_experience = 15
-			add_timed_idea = { idea = JAP_border_readiness days = 365 }
+			# R33 效果工具包（原限时精神 JAP_border_readiness）
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 400 }
+			army_experience = 15
 		}
 	}
 	focus = {
@@ -961,7 +1014,9 @@
 			log = "[GetLogRoot]: Focus Completed JAP_physics_chemistry_lab"
 			add_political_power = 50
 			add_stability = 0.03
-			add_ideas = JAP_riken_lab
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_riken_lab）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_research value = 0.02 }
 			army_experience = 10
 			set_country_flag = JAP_nuclear_research_flag
 			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
@@ -988,7 +1043,9 @@
 				ideology = socialism
 				popularity = 0.05
 			}
-			add_ideas = JAP_econ_independence
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_econ_independence）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_consumer_goods value = -0.03 }
 		}
 	}
 	focus = {
@@ -1012,7 +1069,9 @@
 				popularity = 0.05
 			}
 			set_country_flag = JAP_metropolitan_renovation_done_flag
-			add_timed_idea = { idea = JAP_construction_boom days = 365 }
+			# R33 效果工具包（原限时精神 JAP_construction_boom）
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
 			random_owned_state = {
 				limit = { state = 282 }
 				add_extra_state_shared_building_slots = 2
@@ -1099,7 +1158,9 @@
 			log = "[GetLogRoot]: Focus Completed JAP_manufacturing_economy"
 			add_political_power = 50
 			add_stability = 0.03
-			add_ideas = JAP_manufacturing_econ
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_manufacturing_econ）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_factory_output value = 0.05 }
 			random_owned_state = {
 				limit = { state = 282 }
 				add_extra_state_shared_building_slots = 2
@@ -1146,7 +1207,10 @@
 		y = 12
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_electroproduction_salary_mode"
-			add_ideas = JAP_electroproduction_salary
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_electroproduction_salary）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_factory_output value = 0.05 }
+			add_to_variable = { var = JAP_sr_stability value = 0.03 }
 			custom_effect_tooltip = JAP_production_ratio_rise_tt
 			add_to_variable = { var = JAP_production_management_ratio_var value = 10 }
 			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
@@ -1177,7 +1241,10 @@
 			}
 			custom_effect_tooltip = JAP_capital_reserves_gain_tt
 			add_to_variable = { var = capital_reserves value = 15 }
-			add_ideas = JAP_best_taxation
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_best_taxation）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_political_power value = 0.10 }
+			add_to_variable = { var = JAP_sr_consumer_goods value = -0.02 }
 			# 税制建设也是行政工程
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 30 }
@@ -1387,7 +1454,9 @@
 			}
 			custom_effect_tooltip = JAP_capital_reserves_gain_tt
 			add_to_variable = { var = capital_reserves value = 20 }
-			add_ideas = JAP_jap_us_communion
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_jap_us_communion）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_factory_output value = 0.05 }
 		}
 	}
 	focus = {
@@ -1467,7 +1536,9 @@
 				ideology = syndicalism
 				popularity = 0.05
 			}
-			add_ideas = JAP_combined_production
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_combined_production）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_factory_output value = 0.06 }
 		}
 	}
 	focus = {
@@ -1487,7 +1558,10 @@
 				ideology = socialism
 				popularity = 0.05
 			}
-			add_ideas = JAP_labour_rights
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_labour_rights）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_stability value = 0.05 }
+			add_to_variable = { var = JAP_sr_consumer_goods value = -0.02 }
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_rise_tt
 			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
 			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
@@ -1512,7 +1586,9 @@
 			}
 			custom_effect_tooltip = JAP_capital_reserves_gain_tt
 			add_to_variable = { var = capital_reserves value = 25 }
-			add_timed_idea = { idea = JAP_american_aid days = 365 }
+			# R33 效果工具包（原限时精神 JAP_american_aid）
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 15 }
 		}
 	}
 	focus = {
@@ -1532,7 +1608,9 @@
 				ideology = syndicalism
 				popularity = 0.08
 			}
-			add_ideas = JAP_deleonism_japan
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_deleonism_japan）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_factory_output value = 0.05 }
 			set_country_flag = JAP_deleonism_flag
 		}
 	}
@@ -1553,7 +1631,9 @@
 				ideology = communist
 				popularity = 0.05
 			}
-			add_ideas = JAP_unified_agricoop
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_unified_agricoop）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_consumer_goods value = -0.03 }
 			set_country_flag = JAP_agricoop_unified_flag
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
 			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
@@ -1579,7 +1659,9 @@
 				ideology = syndicalism
 				popularity = 0.05
 			}
-			add_timed_idea = { idea = JAP_american_experts_idea days = 365 }
+			# R33 效果工具包（原限时精神 JAP_american_experts_idea）
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 2 }
 			army_experience = 10
 		}
 	}
@@ -1603,7 +1685,10 @@
 				ideology = communist
 				popularity = 0.05
 			}
-			add_ideas = JAP_forced_membership
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_forced_membership）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_consumer_goods value = -0.04 }
+			add_to_variable = { var = JAP_sr_stability value = -0.05 }
 			set_country_flag = JAP_rural_resentment_flag
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_fall_tt
 			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
@@ -1632,7 +1717,10 @@
 				ideology = socialism
 				popularity = 0.05
 			}
-			add_ideas = JAP_agricoop_autonomy
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_agricoop_autonomy）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_consumer_goods value = -0.01 }
+			add_to_variable = { var = JAP_sr_stability value = 0.03 }
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
 			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
 			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
@@ -1657,7 +1745,10 @@
 				ideology = socialism
 				popularity = 0.05
 			}
-			add_ideas = JAP_equal_distribution
+			# R33 融合：日本列岛社会主义改造计划（原 JAP_equal_distribution）
+			custom_effect_tooltip = JAP_sr_progress_tt
+			add_to_variable = { var = JAP_sr_factory_output value = 0.05 }
+			add_to_variable = { var = JAP_sr_political_power value = 0.05 }
 		}
 	}
 	focus = {
@@ -1676,7 +1767,9 @@
 			custom_effect_tooltip = JAP_production_ratio_rise_tt
 			add_to_variable = { var = JAP_production_management_ratio_var value = 10 }
 			clamp_variable = { var = JAP_production_management_ratio_var max = 100 min = 0 }
-			add_timed_idea = { idea = JAP_consumer_command days = 365 }
+			# R33 效果工具包（原限时精神 JAP_consumer_command）
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 2 }
 		}
 	}
 
@@ -1694,6 +1787,19 @@
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
 			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 1 }
 			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
+			# ===== R33：日本劳动自卫队（变量归零并挂载）=====
+			set_variable = { JAP_ldf_drift_defence = 0 }
+			set_variable = { JAP_ldf_stability = 0 }
+			set_variable = { JAP_ldf_political_power = 0 }
+			set_variable = { JAP_ldf_training_time = 0 }
+			set_variable = { JAP_ldf_conscription = 0 }
+			set_variable = { JAP_ldf_army_attack = 0 }
+			set_variable = { JAP_ldf_army_defence = 0 }
+			set_variable = { JAP_ldf_max_org = 0 }
+			set_variable = { JAP_ldf_planning = 0 }
+			set_variable = { JAP_ldf_war_support = 0 }
+			set_variable = { JAP_ldf_dockyard = 0 }
+			add_dynamic_modifier = { modifier = JAP_labor_defense_dm }
 		}
 	}
 	focus = {
@@ -1724,7 +1830,10 @@
 			log = "[GetLogRoot]: Focus Completed JAP_republic_security_council"
 			add_political_power = 50
 			add_stability = 0.05
-			add_ideas = JAP_security_council
+			# R33 融合：日本劳动自卫队（原 JAP_security_council）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_drift_defence value = 0.10 }
+			add_to_variable = { var = JAP_ldf_stability value = 0.03 }
 			set_country_flag = JAP_security_council_flag
 		}
 	}
@@ -1766,7 +1875,9 @@
 			log = "[GetLogRoot]: Focus Completed JAP_council_president_right"
 			add_political_power = 50
 			add_stability = 0.05
-			add_ideas = JAP_hardline_chief
+			# R33 融合：日本劳动自卫队（原 JAP_hardline_chief）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_drift_defence value = 0.10 }
 			set_country_flag = JAP_council_chief_right_flag
 		}
 	}
@@ -1783,7 +1894,9 @@
 			log = "[GetLogRoot]: Focus Completed JAP_survey_non_union_worker"
 			add_political_power = 50
 			add_stability = 0.03
-			add_ideas = JAP_surveillance_net
+			# R33 融合：日本劳动自卫队（原 JAP_surveillance_net）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_drift_defence value = 0.10 }
 			# 监控反噬
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_fall_tt
 			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 3 }
@@ -1889,7 +2002,9 @@
 			log = "[GetLogRoot]: Focus Completed JAP_cite_oppression_abolishment_code"
 			add_political_power = 50
 			add_stability = 0.03
-			add_ideas = JAP_legalism
+			# R33 融合：日本劳动自卫队（原 JAP_legalism）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_stability value = 0.05 }
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_rise_tt
 			add_to_variable = { var = JAP_socialist_reform_enthusiasm_var value = 2 }
 			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
@@ -1915,7 +2030,10 @@
 			log = "[GetLogRoot]: Focus Completed JAP_national_security_act"
 			add_political_power = 50
 			add_stability = 0.03
-			add_ideas = JAP_national_security
+			# R33 融合：日本劳动自卫队（原 JAP_national_security）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_drift_defence value = 0.15 }
+			add_to_variable = { var = JAP_ldf_political_power value = 0.10 }
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_fall_tt
 			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
 			clamp_variable = { var = JAP_socialist_reform_enthusiasm_var max = JAP_socialist_reform_enthusiasm_cap_var min = 0 }
@@ -2069,7 +2187,9 @@
 			add_political_power = 75
 			add_stability = 0.03
 			add_manpower = 25000
-			add_ideas = JAP_expansion_plan
+			# R33 融合：日本劳动自卫队（原 JAP_expansion_plan）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_conscription value = 0.01 }
 		}
 	}
 	focus = {
@@ -2134,7 +2254,9 @@
 			log = "[GetLogRoot]: Focus Completed JAP_american_military_direction"
 			army_experience = 35
 			add_political_power = 25
-			add_timed_idea = { idea = JAP_us_doctrine_idea days = 180 }
+			# R33 效果工具包（原限时精神 JAP_us_doctrine_idea）
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 300 }
 			set_country_flag = JAP_us_military_flag
 		}
 	}
@@ -2151,7 +2273,9 @@
 			log = "[GetLogRoot]: Focus Completed JAP_mechanized_red_army"
 			army_experience = 35
 			add_political_power = 25
-			add_timed_idea = { idea = JAP_armor_bonus days = 180 }
+			# R33 效果工具包（原限时精神 JAP_armor_bonus）
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 300 }
 			random_owned_state = {
 				limit = { state = 282 }
 				add_extra_state_shared_building_slots = 2
@@ -2180,7 +2304,8 @@
 			log = "[GetLogRoot]: Focus Completed JAP_chinese_military_direction"
 			army_experience = 35
 			add_political_power = 25
-			add_timed_idea = { idea = JAP_inf_doctrine_idea days = 180 }
+			# R33 效果工具包（原限时精神 JAP_inf_doctrine_idea）
+			army_experience = 20
 			set_country_flag = JAP_chinese_military_flag
 		}
 	}
@@ -2197,7 +2322,8 @@
 			log = "[GetLogRoot]: Focus Completed JAP_whampoa_experiences"
 			army_experience = 35
 			add_stability = 0.03
-			add_timed_idea = { idea = JAP_land_warfare days = 180 }
+			# R33 效果工具包（原限时精神 JAP_land_warfare）
+			army_experience = 25
 		}
 	}
 	focus = {
@@ -2236,7 +2362,10 @@
 			add_political_power = 50
 			add_stability = 0.03
 			army_experience = 25
-			add_ideas = JAP_old_officers
+			# R33 融合：日本劳动自卫队（原 JAP_old_officers）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_army_attack value = 0.05 }
+			add_to_variable = { var = JAP_ldf_stability value = -0.03 }
 		}
 	}
 	focus = {
@@ -2252,7 +2381,10 @@
 			log = "[GetLogRoot]: Focus Completed JAP_old_training_policy"
 			add_political_power = 50
 			add_stability = 0.03
-			add_ideas = JAP_old_training
+			# R33 融合：日本劳动自卫队（原 JAP_old_training）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_training_time value = -0.10 }
+			add_to_variable = { var = JAP_ldf_max_org value = 5 }
 		}
 	}
 	focus = {
@@ -2277,7 +2409,10 @@
 			add_political_power = 50
 			add_stability = 0.03
 			army_experience = 15
-			add_ideas = JAP_military_bureau_route
+			# R33 融合：日本劳动自卫队（原 JAP_military_bureau_route）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_planning value = 0.10 }
+			add_to_variable = { var = JAP_ldf_stability value = 0.03 }
 		}
 	}
 	focus = {
@@ -2305,7 +2440,10 @@
 				popularity = 0.05
 			}
 			add_war_support = 0.10
-			add_ideas = JAP_revolution_fervor
+			# R33 融合：日本劳动自卫队（原 JAP_revolution_fervor）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_army_attack value = 0.05 }
+			add_to_variable = { var = JAP_ldf_army_defence value = -0.05 }
 		}
 	}
 	focus = {
@@ -2322,7 +2460,10 @@
 			log = "[GetLogRoot]: Focus Completed JAP_soldier_comradeship"
 			add_political_power = 50
 			add_stability = 0.03
-			add_ideas = JAP_comradeship
+			# R33 融合：日本劳动自卫队（原 JAP_comradeship）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_max_org value = 5 }
+			add_to_variable = { var = JAP_ldf_stability value = 0.03 }
 		}
 	}
 	focus = {
@@ -2375,7 +2516,9 @@
 			add_political_power = 50
 			add_stability = 0.03
 			army_experience = 25
-			add_timed_idea = { idea = JAP_doctrine_analysis days = 180 }
+			# R33 效果工具包（原限时精神 JAP_doctrine_analysis）
+			army_experience = 15
+			air_experience = 10
 		}
 	}
 	focus = {
@@ -2392,7 +2535,9 @@
 			add_political_power = 75
 			add_stability = 0.05
 			army_experience = 50
-			add_ideas = JAP_land_defense
+			# R33 融合：日本劳动自卫队（原 JAP_land_defense）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_training_time value = -0.10 }
 		}
 	}
 	focus = {
@@ -2411,7 +2556,9 @@
 			log = "[GetLogRoot]: Focus Completed JAP_defense_initiative_whitebook"
 			add_political_power = 50
 			add_stability = 0.03
-			add_ideas = JAP_defense_whitebook
+			# R33 融合：日本劳动自卫队（原 JAP_defense_whitebook）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_army_defence value = 0.10 }
 		}
 	}
 	focus = {
@@ -2430,7 +2577,10 @@
 			log = "[GetLogRoot]: Focus Completed JAP_slanted_reform_direction"
 			add_political_power = 50
 			add_stability = 0.03
-			add_ideas = JAP_kashima_slant
+			# R33 融合：日本劳动自卫队（原 JAP_kashima_slant）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_army_attack value = 0.10 }
+			add_to_variable = { var = JAP_ldf_war_support value = 0.05 }
 		}
 	}
 	focus = {
@@ -2448,7 +2598,9 @@
 			add_stability = 0.05
 			navy_experience = 50
 			add_timed_idea = { idea = JAP_naval_doctrine_push days = 365 }
-			add_ideas = JAP_naval_construction
+			# R33 融合：日本劳动自卫队（原 JAP_naval_construction）
+			custom_effect_tooltip = JAP_ldf_progress_tt
+			add_to_variable = { var = JAP_ldf_dockyard value = 0.10 }
 			random_owned_state = {
 				limit = { state = 528 }
 				add_extra_state_shared_building_slots = 2

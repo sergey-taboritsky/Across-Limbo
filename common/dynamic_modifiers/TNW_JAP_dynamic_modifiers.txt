@@ -1,0 +1,33 @@
+# R33：日本国策树民族精神融合（2026-11-14）
+# 变量由 JAP_event.3 / 国策 JAP_report_on_Matsukawa_incident 归零，
+# 后续国策用 add_to_variable 逐级累加；每日刷新（rulebook:5922-5979）。
+
+JAP_socialist_reconstruction_dm = {
+	icon = GFX_idea_generic_production_bonus
+	enable = { always = yes }
+	consumer_goods_factor = JAP_sr_consumer_goods
+	industrial_capacity_factory = JAP_sr_factory_output
+	production_speed_buildings_factor = JAP_sr_buildings
+	stability_factor = JAP_sr_stability
+	political_power_factor = JAP_sr_political_power
+	research_speed_factor = JAP_sr_research
+	non_core_manpower = JAP_sr_manpower
+	drift_defence_factor = JAP_sr_drift_defence
+	communist_drift = JAP_sr_communist_drift
+}
+
+JAP_labor_defense_dm = {
+	icon = GFX_idea_generic_army_war_college
+	enable = { always = yes }
+	drift_defence_factor = JAP_ldf_drift_defence
+	stability_factor = JAP_ldf_stability
+	political_power_factor = JAP_ldf_political_power
+	training_time_army_factor = JAP_ldf_training_time
+	conscription_factor = JAP_ldf_conscription
+	army_attack_factor = JAP_ldf_army_attack
+	army_defence_factor = JAP_ldf_army_defence
+	max_organization = JAP_ldf_max_org
+	planning_speed = JAP_ldf_planning
+	war_support_factor = JAP_ldf_war_support
+	industrial_capacity_dockyard = JAP_ldf_dockyard
+}

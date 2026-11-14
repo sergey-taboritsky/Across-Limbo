@@ -56,6 +56,28 @@ country_event = {
 		}
 		set_country_flag = JAP_bisson_age_began_flag
 		mark_focus_tree_layout_dirty = yes
+		# ===== R33：日本列岛社会主义改造计划（变量归零并挂载）=====
+		set_variable = { JAP_sr_consumer_goods = 0 }
+		set_variable = { JAP_sr_factory_output = 0 }
+		set_variable = { JAP_sr_buildings = 0 }
+		set_variable = { JAP_sr_stability = 0 }
+		set_variable = { JAP_sr_political_power = 0 }
+		set_variable = { JAP_sr_research = 0 }
+		set_variable = { JAP_sr_manpower = 0 }
+		set_variable = { JAP_sr_drift_defence = 0 }
+		set_variable = { JAP_sr_communist_drift = 0 }
+		set_variable = { JAP_ldf_drift_defence = 0 }
+		set_variable = { JAP_ldf_stability = 0 }
+		set_variable = { JAP_ldf_political_power = 0 }
+		set_variable = { JAP_ldf_training_time = 0 }
+		set_variable = { JAP_ldf_conscription = 0 }
+		set_variable = { JAP_ldf_army_attack = 0 }
+		set_variable = { JAP_ldf_army_defence = 0 }
+		set_variable = { JAP_ldf_max_org = 0 }
+		set_variable = { JAP_ldf_planning = 0 }
+		set_variable = { JAP_ldf_war_support = 0 }
+		set_variable = { JAP_ldf_dockyard = 0 }
+		add_dynamic_modifier = { modifier = JAP_socialist_reconstruction_dm }
 	}
 }
 country_event = {

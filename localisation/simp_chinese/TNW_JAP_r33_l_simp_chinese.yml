@@ -1,0 +1,8 @@
+﻿l_simp_chinese:
+ # ===== R33：日本国策树动态修正与通用提示（2026-11-14）=====
+ JAP_socialist_reconstruction_dm: "日本列岛社会主义改造计划"
+ JAP_socialist_reconstruction_dm_desc: "日本列岛社会主义改造计划的当前进度。"
+ JAP_labor_defense_dm: "日本劳动自卫队"
+ JAP_labor_defense_dm_desc: "日本劳动自卫队的当前整备状况。"
+ JAP_sr_progress_tt: "「日本列岛社会主义改造计划」将§G取得进展§!"
+ JAP_ldf_progress_tt: "「日本劳动自卫队」的整备将§G取得进展§!"
