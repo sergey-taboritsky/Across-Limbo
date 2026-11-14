@@ -1,0 +1,146 @@
+﻿### 澳大利亚国民自由阵线 OOB（1948） ###
+# R32：此前 AFF / AST 两国 history 均未声明 set_oob，开局没有陆军序列。
+# 三部分：正规军 / 少量澳大拉西亚卫队师 / 英联邦志愿军师（1 个）。
+# 正规军：9 步 1 炮 + 炮兵/工兵支援连
+division_template = {
+	name = "澳大利亚国民军师"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+# 少量澳大拉西亚卫队师：8 步 1 炮 1 宪兵
+division_template = {
+	name = "澳大拉西亚卫队师"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		military_police = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+# 英联邦志愿军师：1 个，9 步 1 炮的志愿部队
+division_template = {
+	name = "英联邦志愿军师"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "澳大利亚国民军第1师"
+		location = 7859
+		division_template = "澳大利亚国民军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大利亚国民军第2师"
+		location = 7859
+		division_template = "澳大利亚国民军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大利亚国民军第3师"
+		location = 7859
+		division_template = "澳大利亚国民军师"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大利亚国民军第4师"
+		location = 7564
+		division_template = "澳大利亚国民军师"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大利亚国民军第5师"
+		location = 7564
+		division_template = "澳大利亚国民军师"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大利亚国民军第6师"
+		location = 7520
+		division_template = "澳大利亚国民军师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大利亚国民军第7师"
+		location = 1652
+		division_template = "澳大利亚国民军师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大利亚国民军第8师"
+		location = 2201
+		division_template = "澳大利亚国民军师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大拉西亚卫队第1师"
+		location = 7669
+		division_template = "澳大拉西亚卫队师"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大拉西亚卫队第2师"
+		location = 12990
+		division_template = "澳大拉西亚卫队师"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "英联邦志愿军师"
+		location = 7859
+		division_template = "英联邦志愿军师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+}

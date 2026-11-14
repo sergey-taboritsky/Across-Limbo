@@ -29,6 +29,8 @@ set_popularities = {
 
 set_convoys = 50
 
+set_oob = "AFF_1948"
+
 	declare_war_on = {
 		target = AST
 		type = civil_war

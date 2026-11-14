@@ -37,5 +37,7 @@ set_popularities = {
 
 set_convoys = 100
 
+set_oob = "AST_1948"
+
 # 澳大利亚内战：AFF 在其自身 history/countries (AFF - East Australia.txt) 内 declare_war_on AST (type=civil_war)；AST 派系/旗标初始化仍由事件 AST_event.1 (on_startup) 负责
 

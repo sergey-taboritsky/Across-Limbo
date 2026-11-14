@@ -1,0 +1,168 @@
+﻿### 澳大拉西亚联合共和国 OOB（1948） ###
+# R32：此前 AFF / AST 两国 history 均未声明 set_oob，开局没有陆军序列。
+# 三部分：正规军 / 工人民兵 / 国际志愿兵师（1 个）。
+# 正规军：9 步 1 炮 + 炮兵/工兵/侦察支援连
+division_template = {
+	name = "澳大拉西亚正规军师"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+# 工人民兵：6 民兵 1 工兵
+division_template = {
+	name = "工人民兵师"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 2 y = 1 }
+		engineer = { x = 3 y = 0 }
+	}
+}
+
+# 国际志愿兵师：1 个，9 步 1 炮的志愿兵精锐
+division_template = {
+	name = "国际志愿兵师"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "澳大拉西亚正规军第1师"
+		location = 12406
+		division_template = "澳大拉西亚正规军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大拉西亚正规军第2师"
+		location = 12406
+		division_template = "澳大拉西亚正规军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大拉西亚正规军第3师"
+		location = 12406
+		division_template = "澳大拉西亚正规军师"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大拉西亚正规军第4师"
+		location = 7798
+		division_template = "澳大拉西亚正规军师"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大拉西亚正规军第5师"
+		location = 7798
+		division_template = "澳大拉西亚正规军师"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大拉西亚正规军第6师"
+		location = 12910
+		division_template = "澳大拉西亚正规军师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大拉西亚正规军第7师"
+		location = 7566
+		division_template = "澳大拉西亚正规军师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "澳大拉西亚正规军第8师"
+		location = 12934
+		division_template = "澳大拉西亚正规军师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "工人民兵第1师"
+		location = 5187
+		division_template = "工人民兵师"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "工人民兵第2师"
+		location = 1667
+		division_template = "工人民兵师"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "工人民兵第3师"
+		location = 10473
+		division_template = "工人民兵师"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "工人民兵第4师"
+		location = 10927
+		division_template = "工人民兵师"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "工人民兵第5师"
+		location = 5198
+		division_template = "工人民兵师"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "工人民兵第6师"
+		location = 8165
+		division_template = "工人民兵师"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "国际志愿兵师"
+		location = 12406
+		division_template = "国际志愿兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+}
