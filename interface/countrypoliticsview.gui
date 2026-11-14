@@ -33,13 +33,13 @@ guiTypes = {
 		iconType ={
 			name ="production_header_bg"
 			spriteType = "GFX_header_bg"
-			position = { x= 5 y = 07 }
+			position = { x= -5 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextboxType = {
 			name = "political_title"
-			position = { x = 45 y = 8 }
+			position = { x = 45 y = 10 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
@@ -584,8 +584,10 @@ guiTypes = {
 			containerWindowType = {
 				name = "national_spirit_container"
 				position = { x = -3 y = 20 }
-				size = { width = 513 height = 74 }
-				verticalScrollbar = "right_vertical_slider"
+				size = { width = 520 height = 85 }
+				horizontalScrollbar = "bottom_horizontal_slider"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
 
 				background = {
 					name = "Background"
@@ -604,7 +606,7 @@ guiTypes = {
 					name = "spirit_grid_over_defined"
 					position = { x = 10 y = 1 }
 					size = { width = 480 height = 68 }
-					slotsize = { width = 33 height = 34 }
+					slotsize = { width = 68 height = 34 }
 					max_slots_horizontal = 15
 					format = "UPPER_LEFT"
 				}
@@ -670,7 +672,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "close_button"
-			position = { x = -42 y = 9 }
+			position = { x = -44 y = 9 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -690,7 +692,7 @@ guiTypes = {
 		iconType = {
 			name = "rules"
 			spriteType = "GFX_rules_sum_icon"
-			position = { x = 460 y = 7 }
+			position = { x = 460 y = 10 }
 		}
 
 		buttonType = {
