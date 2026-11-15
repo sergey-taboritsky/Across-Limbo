@@ -605,3 +605,66 @@ MY_development_dm = {
   ③ 保留项定义仍在、`remove_ideas` 配对未断；④ 挂载点归零/挂载顺序正确且各恰好 1 处；
   ⑤ diff 证明只做行级替换（删除行全是原精神引用、新增行全是本轮效果），
   骨架 id/x/y/prerequisite 不变；⑥ 按 §14.7 逐项统计并在汇报里给数字。
+
+## 18. 傀儡 / 宗主关系：块必须放在附庸 history 的最上面（R35 用户两轮纠正）
+
+⚠️ **用户判据**：「你把傀儡代码写在傀儡历史文件，对，但是你写最下面是几个意思……你没看清楚
+瑞典文件里的傀儡代码在最上面吗」。**文件归属一直是对的，错的只是文件内的行位置。**
+
+### 18.1 唯一正确范式（history/countries/SWE - Sweden.txt 第 1-14 行）
+
+```txt
+capital = 141
+
+NOR = {
+	set_autonomy = {
+		target = SWE
+		autonomous_state = autonomy_puppet
+	}
+}
+```
+
+第 14 行才是 `set_politics`，第 20 行才是 `set_popularities`。
+
+- 块写在**附庸（傀儡）自己的 history 文件**里；外层作用域 = 宗主 TAG，`target` = 附庸 TAG。
+  规则书 `:858` 同款：「在附属国历史文件中，在政治效果之前，将其作用域设定为宗主国的标签」。
+- **位置是硬约束**：必须紧跟在 `capital` 行之后、所有 `set_politics` / `set_popularities`
+  之前，块前后各留一个空行。HOI4 country history 按**从上到下顺序执行**；
+  `set_autonomy` 放在文件末尾（政治效果之后）会覆盖已经设好的开局执政党与饼图，
+  表现就是用户说的「开局意识形态和饼图出错」。
+- 宗主国 history **不写**这条关系，也别去动它。
+
+### 18.2 反例（R29）：形状对、位置错
+
+```txt
+# SEN - Senegal.txt —— 块被放在文件最末尾，add_ideas 之后
+add_ideas = {
+	phalanstere_aligned_nation
+}
+
+FRA = {
+	set_autonomy = {
+		target = SEN
+		autonomous_state = autonomy_puppet
+	}
+}
+```
+
+形状本身没错（附庸 history + 宗主作用域 + target 指附庸），**只有位置错**。
+修复 = 把这一块整体剪下、贴到 `capital = 272` 之后，**其余一字不改**。
+
+### 18.3 R35 第一次误改（反面教材，禁止重犯）
+
+我曾把块搬进**宗主** history、把外层 TAG 换成附庸、并把 `target` 翻成宗主，
+理由是「瑞典在自己的 history 里傀儡自己」。用户当场驳回。
+**禁止再以这句话为由改文件归属或翻 `target`**；它说的只是「块在瑞典文件的最上面」。
+
+### 18.4 落地 checklist
+
+1. 块在**附庸** history，紧跟 `capital` 行之后，块前后各一空行。
+2. `set_autonomy` 的行号必须小于 `set_politics` 的行号；文件末尾不得再出现 `set_autonomy`。
+3. 块文本逐字不变：注释、外层 TAG、`target`、`autonomous_state` 全都不改。
+4. 宗主 history 零改动；「势力范围」（隐藏 idea）与「阵营」（`add_to_faction`）是另外两套机制。
+5. 校验器从 `SWE - Sweden.txt` 现场反解析「capital 之后、政治效果之前」这个位置关系，
+   再套到 3 组关系上；不要照抄生成器常量。
+

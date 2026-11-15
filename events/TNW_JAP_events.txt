@@ -913,7 +913,9 @@ country_event = {
 	}
 }
 
-# R31 docx 0035：（1948年5月1日）；0049 并入正文末尾，0051 为空编号已丢弃
+# R34 docx 0035：（1948年5月1日）
+# 0050 为唯一选项文案；0052「（启用食粮危机决议）」是该选项的效果，不是第二个按钮。
+# 本事件是食粮危机的唯一开启标志：决议分类门控 + 40 天倒计时同时在这里生效。
 country_event = {
 	id = JAP_event.303
 	title = JAP_event.303.t
@@ -927,10 +929,9 @@ country_event = {
 	}
 	option = {
 		name = JAP_event.303.a
-	}
-	# docx 0052 括号内为后端动作说明「（启用食粮危机决议）」，仅按钮文字可见
-	option = {
-		name = JAP_event.303.b
+		# R34：启用食粮危机决议（docx 0052 括号内后端说明）
+		set_country_flag = JAP_food_crisis_began_flag
+		activate_mission = JAP_food_crisis_trade_unions_impatience_mission
 	}
 }
 

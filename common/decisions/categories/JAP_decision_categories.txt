@@ -38,8 +38,9 @@ JAP_food_crisis_category = {
 	allowed = {
 		original_tag = JAP
 	}
+	# R34：1948.5.1「食粮劳动节」事件设置 JAP_food_crisis_began_flag 后才开放
 	visible = {
-		always = yes
+		has_country_flag = JAP_food_crisis_began_flag
 	}
 	visible_when_empty = yes
 	priority = 800

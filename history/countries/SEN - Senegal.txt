@@ -1,5 +1,13 @@
 ﻿capital = 272
 
+# R29 宗主关系（写法参考 SWE - Sweden.txt）
+FRA = {
+	set_autonomy = {
+		target = SEN
+		autonomous_state = autonomy_puppet
+	}
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -89,12 +97,4 @@ set_popularities = {
 # R29 势力范围：法伦斯泰尔国际
 add_ideas = {
 	phalanstere_aligned_nation
-}
-
-# R29 宗主关系（写法参考 SWE - Sweden.txt）
-FRA = {
-	set_autonomy = {
-		target = SEN
-		autonomous_state = autonomy_puppet
-	}
 }

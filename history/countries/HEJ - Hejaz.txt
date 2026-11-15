@@ -1,5 +1,5 @@
 ﻿capital = 292
-
+recruit_character = HEJ_abd_al_ilah
 #oob = "SAU_1936"
 
 # Starting tech
@@ -50,5 +50,3 @@ add_ideas = {
 	TNW_HEJ_shadow_of_britain
 	TNW_HEJ_hashem_armaco
 }
-
-recruit_character = HEJ_abd_al_ilah

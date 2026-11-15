@@ -1,4 +1,13 @@
 ﻿capital = 268
+
+# R29 宗主关系（写法参考 SWE - Sweden.txt）
+SOM = {
+	set_autonomy = {
+		target = DJI
+		autonomous_state = autonomy_puppet
+	}
+}
+
 recruit_character = DJI_Mahamoud_Harbi
 ruling_party = Nationalism
 
@@ -72,12 +81,4 @@ set_popularities = {
 # R29 势力范围：莫斯科经济委员会
 add_ideas = {
 	moscow_aligned_nation
-}
-
-# R29 宗主关系（写法参考 SWE - Sweden.txt）
-SOM = {
-	set_autonomy = {
-		target = DJI
-		autonomous_state = autonomy_puppet
-	}
 }
