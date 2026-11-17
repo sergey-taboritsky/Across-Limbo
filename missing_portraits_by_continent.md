@@ -16,7 +16,7 @@
 | FLO | Flores | FLO_Don_Thomas_Ximenes_da_Silva | MISSING_ASSET |
 | GTL | Gorontalo | GTL_Nani_Wartabone | MISSING_ASSET |
 | HAT | Hatta Government | HAT_Mohammad_Hatta | NO_PORTRAIT_REF |
-| HEJ | Hejaz | HEJ_ali_bin_hussein | NO_PORTRAIT_REF |
+| HEJ | Hejaz | HEJ_abd_al_ilah | NO_PORTRAIT_REF |
 | HYD | Hyderabad | HYD_Swami_Ramanand_Tirtha | MISSING_ASSET |
 | JGS | Jogja Sultanate | JGS_Hamengkubuwono_IX | NO_PORTRAIT_REF |
 | JHR | Johor | JHR_Sultan_Ibrahim_Johor | NO_PORTRAIT_REF |

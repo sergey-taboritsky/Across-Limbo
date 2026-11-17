@@ -668,3 +668,36 @@ FRA = {
 5. 校验器从 `SWE - Sweden.txt` 现场反解析「capital 之后、政治效果之前」这个位置关系，
    再套到 3 组关系上；不要照抄生成器常量。
 
+## 19. 开局已故人物不得留在角色池（R36 用户设定）
+
+⚠️ **用户判据**：「老国王阿里应该删除因为他开局早就死了，现在的约旦国王应当是
+abd al-illah，otl 的伊拉克摄政」。阿里一世 1935 年即去世，本模组开局 `1948.1.1.12`，
+故 `HEJ_ali_bin_hussein` 不应作为可招募 `country_leader` 留在角色池。
+
+### 19.1 TAG 区分（不要混称）
+
+| TAG | 本地化国名 | 开局领袖 | 角色文件 |
+|---|---|---|---|
+| HEJ | 汉志王国 | `HEJ_abd_al_ilah`（OTL 伊拉克摄政） | `common/characters/TNW_HEJ_characters.txt` |
+| JOR | 外约旦王国 / 叙利亚王国（流亡） | `JOR_Ghazi_bin_Faisal` | `common/characters/TNW_SYR_gov_characters.txt` |
+
+用户口语里的「约旦」在这条指令中指**阿里与阿卜杜勒·伊拉所在的 HEJ**；
+`JOR` 是完全不同的流亡宫廷线（加齐国王、王储费萨尔、巴格达津贴），**不得顺手改它**。
+
+### 19.2 删除一个角色的完整闭环
+
+1. `common/characters/TNW_<TAG>_characters.txt`：删整块定义（含紧邻的注释行），
+   其余角色一字不动。
+2. `localisation/simp_chinese/TNW_<TAG>_l_simp_chinese.yml`：删角色名与
+   `<key>_desc` 两个键；保留单 BOM + 纯 CRLF。
+3. `missing_portraits_by_continent.md`：若清单里 cid 指向被删角色，更新为当前
+   开局领袖（该清单是扫描快照，不会随代码自动刷新）。
+4. `history/countries/<TAG> - *.txt`：确认 `recruit_character` 唯一且指向现任；
+   §7 铁律，禁止 `set_country_leader`。
+
+### 19.3 边界
+
+- 只删**角色定义与它的本地化键**；他人 desc / 注释里作为 OTL 血缘提及
+  「阿里一世之子」不是角色，用户未给新文案，**不自撰、不改写玩家可见文案**（铁律 1/3）。
+- 角色 key 沿用仓内既有 `HEJ_abd_al_ilah`（用户写作 abd al-illah），不因拼写差异改名，
+  避免牵动 history / 本地化 / 校验器四处。
