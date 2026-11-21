@@ -11,4 +11,18 @@ characters = {
 			id = -1
 		}
 	}
+	#恩楚·莫赫勒（恢复角色，非开局统治者）
+	LTH_Ntsu_Mokhehle = {
+		name = LTH_Ntsu_Mokhehle
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_LTH_Ntsu_Mokhehle
+			}
+		}
+		country_leader = {
+			desc = LTH_Ntsu_Mokhehle_desc
+			ideology = socialism
+			traits = { }
+		}
+	}
 }

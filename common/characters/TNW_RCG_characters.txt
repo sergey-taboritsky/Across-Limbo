@@ -1,6 +1,11 @@
 characters = {
 	RCG_Fulbert_Youlou = {
 		name = RCG_Fulbert_Youlou
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RCG_Fulbert_Youlou
+			}
+		}
 		country_leader = {
 			desc = RCG_Fulbert_Youlou_desc
 			ideology = National_Conservatism

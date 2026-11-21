@@ -2951,4 +2951,166 @@ spriteTypes = {
 		name = "GFX_portrait_large_TPS_Leonidas_Iasonidis"
 		texturefile = "gfx/characters/TPS_Leonidas_Iasonidis.png"
 	}
+
+	#2026-11-18 用户立绘：安藤正純.png（北日本IAS）
+	spriteType = {
+		name = "GFX_portrait_large_IAS_Ando_Masazumi"
+		texturefile = "gfx/characters/IAS_Ando_Masazumi.png"
+	}
+	#2026-11-18 用户立绘：椎名悦三郎.png（北日本IAS）
+	spriteType = {
+		name = "GFX_portrait_large_IAS_Shiina_Etsusaburo"
+		texturefile = "gfx/characters/IAS_Shiina_Etsusaburo.png"
+	}
+	#2026-11-18 用户立绘：三木武吉.png（北日本IAS）
+	spriteType = {
+		name = "GFX_portrait_large_IAS_Miki_Bukichi"
+		texturefile = "gfx/characters/IAS_Miki_Bukichi.png"
+	}
+	#2026-11-18 用户立绘：加藤鐐五郎.png（北日本IAS）
+	spriteType = {
+		name = "GFX_portrait_large_IAS_Kato_Ryogoro"
+		texturefile = "gfx/characters/IAS_Kato_Ryogoro.png"
+	}
+	#2026-11-18 用户立绘：牧野良三.png（北日本IAS）
+	spriteType = {
+		name = "GFX_portrait_large_IAS_Makino_Ryozo"
+		texturefile = "gfx/characters/IAS_Makino_Ryozo.png"
+	}
+	#2026-11-18 用户立绘：鶴見祐輔.png（北日本IAS）
+	spriteType = {
+		name = "GFX_portrait_large_IAS_Tsurumi_Yusuke"
+		texturefile = "gfx/characters/IAS_Tsurumi_Yusuke.png"
+	}
+	#2026-11-18 用户立绘：东乡实.png（北日本IAS）
+	spriteType = {
+		name = "GFX_portrait_large_IAS_Togo_Minoru"
+		texturefile = "gfx/characters/IAS_Togo_Minoru.png"
+	}
+	#2026-11-18 用户立绘：船田中.png（北日本IAS）
+	spriteType = {
+		name = "GFX_portrait_large_IAS_Funada_Naka"
+		texturefile = "gfx/characters/IAS_Funada_Naka.png"
+	}
+	#2026-11-18 用户立绘：岸信介.png（北日本IAS）
+	spriteType = {
+		name = "GFX_portrait_large_IAS_Kishi_Nobusuke"
+		texturefile = "gfx/characters/IAS_Kishi_Nobusuke.png"
+	}
+	#2026-11-18 用户立绘：盛世才2.png（新疆SIK）
+	spriteType = {
+		name = "GFX_portrait_large_SIK_Sheng_Shicai"
+		texturefile = "gfx/characters/SIK_Sheng_Shicai.png"
+	}
+	#2026-11-18 用户立绘：Abd al-Ilah.png（HEJ 国王头像）
+	spriteType = {
+		name = "GFX_portrait_large_HEJ_abd_al_ilah"
+		texturefile = "gfx/characters/HEJ_abd_al_ilah.png"
+	}
+	#2026-11-18 用户立绘：Yacine Diallo.png（几内亚GNA）
+	spriteType = {
+		name = "GFX_portrait_large_GNA_Yacine_Diallo"
+		texturefile = "gfx/characters/GNA_Yacine_Diallo.png"
+	}
+
+	#2026-11-18 用户立绘：Galo Plaza.png（ECU 总统头像）
+	spriteType = {
+		name = "GFX_portrait_large_Galo_Plaza"
+		texturefile = "gfx/characters/Galo_Plaza.png"
+	}
+	#GAM
+	spriteType = {
+		name = "GFX_portrait_large_GAM_EF_Small"
+		texturefile = "gfx/characters/GAM_EF_Small.png"
+	}
+	#ETH
+	spriteType = {
+		name = "GFX_portrait_large_ETH_haile_selassie"
+		texturefile = "gfx/characters/ETH_haile_selassie.png"
+	}
+	#GNB
+	spriteType = {
+		name = "GFX_portrait_large_GNB_Amilcar_Cabral"
+		texturefile = "gfx/characters/GNB_Amilcar_Cabral.png"
+	}
+	#RCG
+	spriteType = {
+		name = "GFX_portrait_large_RCG_Fulbert_Youlou"
+		texturefile = "gfx/characters/RCG_Fulbert_Youlou.png"
+	}
+	#COG
+	spriteType = {
+		name = "GFX_portrait_large_COG_Fritz_Bayerlein"
+		texturefile = "gfx/characters/COG_Fritz_Bayerlein.png"
+	}
+	#TZN
+	spriteType = {
+		name = "GFX_portrait_large_TZN_Hans_Jurgen_von_Arnim"
+		texturefile = "gfx/characters/TZN_Hans_Jurgen_von_Arnim.png"
+	}
+	#KNM
+	spriteType = {
+		name = "GFX_portrait_large_KNM_Sanda_Kyarimi"
+		texturefile = "gfx/characters/KNM_Sanda_Kyarimi.png"
+	}
+	#DAH
+	spriteType = {
+		name = "GFX_portrait_large_DAH_Sourou_Migan_Apithy"
+		texturefile = "gfx/characters/DAH_Sourou_Migan_Apithy.png"
+	}
+	#LIB
+	spriteType = {
+		name = "GFX_portrait_large_LIB_William_Tubman"
+		texturefile = "gfx/characters/LIB_William_Tubman.png"
+	}
+	#ZIM
+	spriteType = {
+		name = "GFX_portrait_large_Godfrey_Huggins"
+		texturefile = "gfx/characters/Godfrey_Huggins.png"
+	}
+	#SOM
+	spriteType = {
+		name = "GFX_portrait_large_SOM_Sheikh_Bashir_Yussuf"
+		texturefile = "gfx/characters/SOM_Sheikh_Bashir_Yussuf.png"
+	}
+	#SWZ
+	spriteType = {
+		name = "GFX_portrait_large_Sobhuza_II"
+		texturefile = "gfx/characters/Sobhuza_II.png"
+	}
+	#NGA
+	spriteType = {
+		name = "GFX_portrait_large_NGA_Nnamdi_Azikiwe"
+		texturefile = "gfx/characters/NGA_Nnamdi_Azikiwe.png"
+	}
+	#MAD
+	spriteType = {
+		name = "GFX_portrait_large_MAD_Philibert_Tsiranana"
+		texturefile = "gfx/characters/MAD_Philibert_Tsiranana.png"
+	}
+	#TOG
+	spriteType = {
+		name = "GFX_portrait_large_TOG_Sylvanus_Olympio"
+		texturefile = "gfx/characters/TOG_Sylvanus_Olympio.png"
+	}
+	#MOR
+	spriteType = {
+		name = "GFX_portrait_large_MOR_Ahmed_Balafrej"
+		texturefile = "gfx/characters/MOR_Ahmed_Balafrej.png"
+	}
+	#RUS
+	spriteType = {
+		name = "GFX_portrait_large_RUS_Viktor_Baidalkov"
+		texturefile = "gfx/characters/RUS_Viktor_Baidalkov.png"
+	}
+	#ALG
+	spriteType = {
+		name = "GFX_portrait_large_ALG_Albert_Camus"
+		texturefile = "gfx/characters/ALG_Albert_Camus.png"
+	}
+	#LTH
+	spriteType = {
+		name = "GFX_portrait_large_LTH_Ntsu_Mokhehle"
+		texturefile = "gfx/characters/LTH_Ntsu_Mokhehle.png"
+	}
 }

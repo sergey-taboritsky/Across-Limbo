@@ -319,4 +319,18 @@ characters = {
 		}
 	}
 
+	#维克托·拜达拉科夫
+	RUS_Viktor_Baidalkov = {
+		name = RUS_Viktor_Baidalkov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_RUS_Viktor_Baidalkov
+			}
+		}
+		country_leader = {
+			desc = RUS_Viktor_Baidalkov_desc
+			ideology = National_Socialism
+			traits = { }
+		}
+	}
 }

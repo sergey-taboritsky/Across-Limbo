@@ -13,4 +13,20 @@ characters = {
 		}
 		
 	}
+
+	#盛世才
+	SIK_Sheng_Shicai = {
+		name = SIK_Sheng_Shicai
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SIK_Sheng_Shicai
+			}
+		}
+		country_leader = {
+			desc = SIK_Sheng_Shicai_desc
+			ideology = tridemism_authdem
+			traits = {
+			}
+		}
+	}
 }

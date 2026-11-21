@@ -100,7 +100,7 @@ characters = {
 		name = JAP_Thomas_Bisson
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_JAP_Thomas_Bisson
+				large = GFX_portrait_large_JAP_Thomas_Arthur_Bisson
 			}
 		}
 		country_leader = {

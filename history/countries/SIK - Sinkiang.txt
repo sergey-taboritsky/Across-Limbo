@@ -8,6 +8,7 @@ set_technology = {
 }
 
 recruit_character = CHI_Ji_Hongchang
+recruit_character = SIK_Sheng_Shicai
 
 set_politics = {
 	ruling_party = Authoritarianism

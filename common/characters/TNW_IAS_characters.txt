@@ -15,4 +15,140 @@ characters = {
 			}
 		}
 	}
+
+	#安藤正纯
+	IAS_Ando_Masazumi = {
+		name = IAS_Ando_Masazumi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IAS_Ando_Masazumi
+			}
+		}
+		country_leader = {
+			desc = IAS_Ando_Masazumi_desc
+			ideology = interim_government
+			traits = {
+			}
+		}
+	}
+	#椎名悦三郎
+	IAS_Shiina_Etsusaburo = {
+		name = IAS_Shiina_Etsusaburo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IAS_Shiina_Etsusaburo
+			}
+		}
+		country_leader = {
+			desc = IAS_Shiina_Etsusaburo_desc
+			ideology = interim_government
+			traits = {
+			}
+		}
+	}
+	#三木武吉
+	IAS_Miki_Bukichi = {
+		name = IAS_Miki_Bukichi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IAS_Miki_Bukichi
+			}
+		}
+		country_leader = {
+			desc = IAS_Miki_Bukichi_desc
+			ideology = interim_government
+			traits = {
+			}
+		}
+	}
+	#加藤镣五郎
+	IAS_Kato_Ryogoro = {
+		name = IAS_Kato_Ryogoro
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IAS_Kato_Ryogoro
+			}
+		}
+		country_leader = {
+			desc = IAS_Kato_Ryogoro_desc
+			ideology = interim_government
+			traits = {
+			}
+		}
+	}
+	#牧野良三
+	IAS_Makino_Ryozo = {
+		name = IAS_Makino_Ryozo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IAS_Makino_Ryozo
+			}
+		}
+		country_leader = {
+			desc = IAS_Makino_Ryozo_desc
+			ideology = interim_government
+			traits = {
+			}
+		}
+	}
+	#鹤见祐辅
+	IAS_Tsurumi_Yusuke = {
+		name = IAS_Tsurumi_Yusuke
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IAS_Tsurumi_Yusuke
+			}
+		}
+		country_leader = {
+			desc = IAS_Tsurumi_Yusuke_desc
+			ideology = interim_government
+			traits = {
+			}
+		}
+	}
+	#东乡实
+	IAS_Togo_Minoru = {
+		name = IAS_Togo_Minoru
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IAS_Togo_Minoru
+			}
+		}
+		country_leader = {
+			desc = IAS_Togo_Minoru_desc
+			ideology = interim_government
+			traits = {
+			}
+		}
+	}
+	#船田中
+	IAS_Funada_Naka = {
+		name = IAS_Funada_Naka
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IAS_Funada_Naka
+			}
+		}
+		country_leader = {
+			desc = IAS_Funada_Naka_desc
+			ideology = interim_government
+			traits = {
+			}
+		}
+	}
+	#岸信介
+	IAS_Kishi_Nobusuke = {
+		name = IAS_Kishi_Nobusuke
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_IAS_Kishi_Nobusuke
+			}
+		}
+		country_leader = {
+			desc = IAS_Kishi_Nobusuke_desc
+			ideology = interim_government
+			traits = {
+			}
+		}
+	}
 }

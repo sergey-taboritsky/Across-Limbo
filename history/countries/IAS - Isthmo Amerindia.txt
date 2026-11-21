@@ -47,6 +47,15 @@ IF = {
 		has_dlc = "Trial of Allegiance"
 	}
 	recruit_character = IAS_fushimi_hiroyasu
+	recruit_character = IAS_Ando_Masazumi
+	recruit_character = IAS_Shiina_Etsusaburo
+	recruit_character = IAS_Miki_Bukichi
+	recruit_character = IAS_Kato_Ryogoro
+	recruit_character = IAS_Makino_Ryozo
+	recruit_character = IAS_Tsurumi_Yusuke
+	recruit_character = IAS_Togo_Minoru
+	recruit_character = IAS_Funada_Naka
+	recruit_character = IAS_Kishi_Nobusuke
 }
 
 
