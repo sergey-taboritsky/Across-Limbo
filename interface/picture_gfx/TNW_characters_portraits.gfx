@@ -3113,4 +3113,60 @@ spriteTypes = {
 		name = "GFX_portrait_large_LTH_Ntsu_Mokhehle"
 		texturefile = "gfx/characters/LTH_Ntsu_Mokhehle.png"
 	}
+
+	#JAP
+	#增山太助
+	spriteType = {
+		name = "GFX_portrait_large_JAP_Masuyama_Taisuke"
+		texturefile = "gfx/characters/JAP_Masuyama_Taisuke.png"
+	}
+
+	#JAP
+	#林敬三
+	spriteType = {
+		name = "GFX_portrait_large_JAP_Hayashi_Keizo"
+		texturefile = "gfx/characters/JAP_Hayashi_Keizo.png"
+	}
+
+	#SUD
+	#阿卜杜拉·哈利勒
+	spriteType = {
+		name = "GFX_portrait_large_SUD_Abdallah_Khalil"
+		texturefile = "gfx/characters/SUD_Abdallah_Khalil.png"
+	}
+
+	#MLW
+	#杰弗里·科尔比爵士
+	spriteType = {
+		name = "GFX_portrait_large_Sir_Geoffrey_Colby"
+		texturefile = "gfx/characters/Sir_Geoffrey_Colby.png"
+	}
+
+	#NMB
+	#彼得鲁斯·胡根豪特
+	spriteType = {
+		name = "GFX_portrait_large_Petrus_Imker_Hoogenhout"
+		texturefile = "gfx/characters/Petrus_Imker_Hoogenhout.png"
+	}
+
+	#ZAM
+	#吉尔伯特·伦尼爵士
+	spriteType = {
+		name = "GFX_portrait_large_Sir_Gilbert_Rennie"
+		texturefile = "gfx/characters/Sir_Gilbert_Rennie.png"
+	}
+
+	#SOK
+	#艾哈迈杜·贝洛
+	spriteType = {
+		name = "GFX_portrait_large_SOK_Ahmadu_Bello"
+		texturefile = "gfx/characters/SOK_Ahmadu_Bello.png"
+	}
+
+	#BOT
+	#查尔斯·雷伊爵士
+	spriteType = {
+		name = "GFX_portrait_large_Sir_Charles_Rey"
+		texturefile = "gfx/characters/Sir_Charles_Rey.png"
+	}
 }

@@ -28,5 +28,5 @@ set_popularities = {
 	Nationalism = 0
 }
 
-recruit_character = BOT_Sir_William_Forsyth
+recruit_character = BOT_Sir_Charles_Rey
 }

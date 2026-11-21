@@ -27,4 +27,20 @@ characters = {
 			id = -1
 		}
 	}
+	SOK_Ahmadu_Bello = {
+		name = SOK_Ahmadu_Bello
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_SOK_Ahmadu_Bello
+			}
+		}
+		country_leader = {
+			desc = SOK_Ahmadu_Bello_desc
+			ideology = oligarchy
+			expire = "1999.1.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
 }

@@ -1,14 +1,14 @@
 characters = {
-	#威廉·福赛斯爵士
-	BOT_Sir_William_Forsyth = {
-		name = BOT_Sir_William_Forsyth
+	#查尔斯·雷伊爵士
+	BOT_Sir_Charles_Rey = {
+		name = BOT_Sir_Charles_Rey
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_Sir_William_Forsyth
+				large = GFX_portrait_large_Sir_Charles_Rey
 			}
 		}
 		country_leader = {
-			desc = BOT_Sir_William_Forsyth_desc
+			desc = BOT_Sir_Charles_Rey_desc
 			ideology = oligarchy
 			expire = "1999.1.1.1"
 			id = -1

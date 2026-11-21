@@ -308,6 +308,11 @@ characters = {
 	#增山太助（产别派）
 	JAP_Masuyama_Taisuke = {
 		name = JAP_Masuyama_Taisuke
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Masuyama_Taisuke
+			}
+		}
 		desc = JAP_Masuyama_Taisuke_desc
 		role = general
 		skill = 2
@@ -359,6 +364,11 @@ characters = {
 	#林敬三（起义军官）
 	JAP_Hayashi_Keizo = {
 		name = JAP_Hayashi_Keizo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Hayashi_Keizo
+			}
+		}
 	}
 	#山崎小五郎（旧士官）
 	JAP_Yamazaki_Kogoro = {
