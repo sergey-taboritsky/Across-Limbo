@@ -9,7 +9,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Marxism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -22,7 +23,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Classical_Syndicalism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -35,7 +37,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Liberalism_socialism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -48,7 +51,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Liberalism_socialism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -61,7 +65,8 @@ characters = {
 		}
 		country_leader={
 			ideology= progressivism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -74,7 +79,8 @@ characters = {
 		}
 		country_leader={
 			ideology= oligarchy
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -87,7 +93,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Red_military_government
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}

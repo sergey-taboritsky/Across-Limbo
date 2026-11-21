@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = MON_Tseren_Ochiryn_Dambadorj_desc
 			ideology = National_Conservatism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = { }
 		}
@@ -32,7 +32,7 @@ characters = {
 		country_leader = {
 			desc = MON_Ajvaagiin_Danzan_desc
 			ideology = Social_democratic
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = { }
 		}
@@ -69,7 +69,7 @@ characters = {
 		country_leader = {
 			desc = MON_Sonombaljiriin_Buyannemeh_desc
 			ideology = National_liberalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = { }
 		}
@@ -91,7 +91,7 @@ characters = {
 		country_leader = {
 			desc = MON_Sainbayar_desc
 			ideology = oligarchy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = { }
 		}
@@ -132,7 +132,7 @@ characters = {
 		country_leader = {
 			desc = MON_Olziin_Badrakh_desc
 			ideology = socialist_nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = { }
 		}

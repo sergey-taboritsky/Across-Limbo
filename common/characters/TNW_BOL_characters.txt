@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = BOL_Victor_Paz_Estenssoro_desc
 			ideology = Social_Liberalism
-			expire = "1971.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

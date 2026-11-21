@@ -12,6 +12,8 @@ characters = {
 			ideology = absolute_monarchy
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

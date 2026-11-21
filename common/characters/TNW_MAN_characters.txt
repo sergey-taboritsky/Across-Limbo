@@ -8,7 +8,8 @@ characters = {
 		}
 		country_leader={
 			ideology= oligarchy
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -21,7 +22,8 @@ characters = {
 		}
 		country_leader={
 			ideology= oligarchy
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -35,7 +37,8 @@ characters = {
 		}
 		country_leader={
 			ideology= oligarchy
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}

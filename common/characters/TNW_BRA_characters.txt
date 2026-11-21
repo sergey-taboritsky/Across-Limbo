@@ -9,7 +9,7 @@ characters = {
 		country_leader = {
 			desc = BRA_Luis_Carlos_Prestes_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -33,7 +33,7 @@ characters = {
 		country_leader = {
 			desc = BRA_Antonio_Bonfim_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -49,7 +49,7 @@ characters = {
 		country_leader = {
 			desc = BRA_Carlos_Marighella_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -121,7 +121,7 @@ characters = {
 		country_leader = {
 			desc = BRA_Getulio_Vargas_desc
 			ideology = civilian_dictatorship
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -145,8 +145,8 @@ characters = {
 		}
 		country_leader = {
 			desc = BRA_Gustavo_Barroso_desc
-			ideology = National_Socialism
-			expire = "2022.10.20.1"
+			ideology = National_populism
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -162,7 +162,7 @@ characters = {
 		country_leader = {
 			desc = BRA_Carlos_Lacerda_desc
 			ideology = Centralised_Syndicalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -178,7 +178,7 @@ characters = {
 		country_leader = {
 			desc = BRA_Adhemar_Barros_desc
 			ideology = market_socialism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -194,7 +194,7 @@ characters = {
 		country_leader = {
 			desc = BRA_Jose_Almerico_Almeida_desc
 			ideology = one_party_democracy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

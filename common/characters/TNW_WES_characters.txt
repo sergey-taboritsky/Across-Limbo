@@ -7,6 +7,8 @@ characters = {
 			ideology = Ultra_Nationalism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

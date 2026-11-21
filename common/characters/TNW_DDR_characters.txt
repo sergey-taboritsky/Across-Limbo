@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = DDR_Paul_Frolich_desc
 			ideology = Marxism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -27,7 +27,7 @@ characters = {
 		country_leader = {
 			desc = DDR_Anton_Rosinke_desc
 			ideology = Anarchist_Syndicalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -44,7 +44,7 @@ characters = {
 		country_leader = {
 			desc = DDR_Otto_Grotewohl_desc
 			ideology = Liberalism_socialism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -61,7 +61,7 @@ characters = {
 		country_leader = {
 			desc = DDR_Kurt_Schumacher_desc
 			ideology = Popular_Front
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -78,7 +78,7 @@ characters = {
 		country_leader = {
 			desc = DDR_Albert_Einstein_desc
 			ideology = Left_wing_populism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -95,7 +95,7 @@ characters = {
 		country_leader = {
 			desc = DDR_Willi_Bleicher_desc
 			ideology = Centralised_Syndicalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -112,7 +112,7 @@ characters = {
 		country_leader = {
 			desc = DDR_Georg_Elser_desc
 			ideology = Marxism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -129,7 +129,7 @@ characters = {
 		country_leader = {
 			desc = DDR_libu_ke_neixi_desc
 			ideology = Committee_Communism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

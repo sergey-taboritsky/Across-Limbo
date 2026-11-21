@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = SUR_Johan_Pengel_desc
 			ideology = Social_Liberalism
-			expire = "1970.6.5"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

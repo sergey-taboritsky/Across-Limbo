@@ -9,8 +9,8 @@ characters = {
 		}
 		country_leader = {
 			desc = GER_Adolf_hitler_desc
-			ideology = National_Socialism
-			expire = "2022.10.20.1"
+			ideology = National_populism
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

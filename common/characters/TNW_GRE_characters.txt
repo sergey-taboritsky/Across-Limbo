@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = GRE_Pandelis_Pouliopoulos_desc
 			ideology = Marxism_Leninism
-			expire = "2022.1.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 				GRE_Maker_of_Greece
@@ -28,7 +28,7 @@ characters = {
 		country_leader = {
 			desc = GRE_Constantinos_Speras_desc
 			ideology = Anarchist_Syndicalism
-			expire = "2022.1.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -43,7 +43,7 @@ characters = {
 		country_leader = {
 			desc = GRE_Markos_Vafiadis_desc
 			ideology = market_socialism
-			expire = "2022.1.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -58,7 +58,7 @@ characters = {
 		country_leader = {
 			desc = GRE_Avraam_Benaroya_desc
 			ideology = reformism
-			expire = "2022.1.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -93,7 +93,7 @@ characters = {
 		country_leader = {
 			desc = GRE_Aris_Velouchiotis_desc
 			ideology = Red_military_government
-			expire = "2022.1.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 		advisor = {
@@ -116,6 +116,8 @@ characters = {
 			ideology = interim_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

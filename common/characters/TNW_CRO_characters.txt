@@ -9,7 +9,7 @@ characters = {
 		country_leader = {
 			desc = CRO_Andrija_Hebrang_desc
 			ideology = Popular_front
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -24,7 +24,7 @@ characters = {
 		country_leader = {
 			desc = CRO_Vladko_Macek_desc
 			ideology = Social_Conservatism
-			expire = "1965.1.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}

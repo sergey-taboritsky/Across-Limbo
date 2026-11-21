@@ -10,7 +10,7 @@ characters = {
 			desc = TZN_Hans_Jurgen_von_Arnim_desc
 			ideology = oligarchy
 			traits = { }
-			expire = "1965.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}

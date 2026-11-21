@@ -11,7 +11,7 @@ characters = {
 		country_leader = {
 			desc = ENG_Oswald_Mosley_desc
 			ideology = Socialism_Britain
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 				ENG_Popular_prime_minister
@@ -30,7 +30,7 @@ characters = {
 		country_leader = {
 			desc = ENG_Clement_Attlee_desc
 			ideology = reformism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

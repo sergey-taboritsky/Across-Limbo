@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = PER_Mohammad_Tadayyon_desc
 			ideology = National_liberalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			    
@@ -28,7 +28,7 @@ characters = {
 		country_leader = {
 			desc = PER_Mohammad_Hosayn_Ayrom_desc
 			ideology = military_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			    
@@ -45,8 +45,8 @@ characters = {
 		}
 		country_leader = {
 			desc = PER_Ali_Akbar_Davar_desc
-			ideology = National_Socialism
-			expire = "2022.10.20.1"
+			ideology = National_populism
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 
@@ -64,7 +64,7 @@ characters = {
 		country_leader = {
 			desc = PER_Ali_Razmara_desc
 			ideology = military_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 
@@ -126,7 +126,7 @@ characters = {
 		country_leader = {
 			desc = PER_Mohammad_Ali_Foroughi_desc
 			ideology = one_party_democracy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 
@@ -144,7 +144,7 @@ characters = {
 		country_leader = {
 			desc = PER_Iraj_Eskandari_desc
 			ideology = Marxism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 
@@ -162,7 +162,7 @@ characters = {
 		country_leader = {
 			desc = PER_Mohammad_Mosaddeq_desc
 			ideology = interim_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 
@@ -180,7 +180,7 @@ characters = {
 		country_leader = {
 			desc = PER_Hamid_Mirza_desc
 			ideology = Patriarchal_Conservatism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

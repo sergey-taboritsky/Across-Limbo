@@ -9,7 +9,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Social_nationalism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -23,11 +24,13 @@ characters = {
 		}
 		country_leader={
 			ideology= Left_wing_corporatism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		country_leader={
 			ideology= Left_wing_nationalism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}

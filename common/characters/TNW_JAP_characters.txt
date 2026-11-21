@@ -11,7 +11,7 @@ characters = {
 			desc = JAP_Yamakawa_Hitoshi_desc
 			ideology = Japanese_Marxism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -27,7 +27,7 @@ characters = {
 			desc = JAP_Minoru_Takano_desc
 			ideology = Japanese_Syndicalism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -43,7 +43,7 @@ characters = {
 			desc = JAP_Suzuki_Mosaburo_desc
 			ideology = Liberalism_socialism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -59,7 +59,7 @@ characters = {
 			desc = JAP_Matsubara_Toshiro_desc
 			ideology = reformism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -75,7 +75,7 @@ characters = {
 			desc = JAP_Kataoka_Tetsuo_desc
 			ideology = national_liberalism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -91,7 +91,7 @@ characters = {
 			desc = JAP_Okubo_Yukio_desc
 			ideology = social_conservatism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -107,7 +107,7 @@ characters = {
 			desc = JAP_Thomas_Bisson_desc
 			ideology = Classical_Syndicalism
 			traits = { JAP_A_swimmer_in_a_muddy_stream }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -123,7 +123,7 @@ characters = {
 			desc = JAP_Oyama_Ikuo_desc
 			ideology = Liberalism_socialism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -139,7 +139,7 @@ characters = {
 			desc = JAP_Eda_Saburo_desc
 			ideology = reformism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -155,7 +155,7 @@ characters = {
 			desc = JAP_Nishio_Suehiro_desc
 			ideology = Social_democratic
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -171,7 +171,7 @@ characters = {
 			desc = JAP_Sakisaka_Itsuro_desc
 			ideology = Japanese_Marxism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -187,7 +187,7 @@ characters = {
 			desc = JAP_Asanuma_Inejiro_desc
 			ideology = Left_wing_nationalism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -203,7 +203,7 @@ characters = {
 			desc = JAP_Jack_Shirai_desc
 			ideology = Red_military_government
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -219,7 +219,7 @@ characters = {
 			desc = JAP_Fukumoto_Kazuo_desc
 			ideology = Fukumotoism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -235,7 +235,7 @@ characters = {
 			desc = JAP_Kazahaya_Yasoji_desc
 			ideology = Production_Supremacism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -251,7 +251,7 @@ characters = {
 			desc = JAP_Kuroda_Hisao_desc
 			ideology = Marxism_Leninism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -267,7 +267,7 @@ characters = {
 			desc = JAP_Inamura_Junzo_desc
 			ideology = Japanese_Marxism
 			traits = { }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}

@@ -6,7 +6,7 @@ characters = {
 			ideology = Social_democratic
 			traits = {
 			}
-			expire = "1970.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -17,7 +17,7 @@ characters = {
 			ideology = Marxism_Leninism
 			traits = {
 			}
-			expire = "1970.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}

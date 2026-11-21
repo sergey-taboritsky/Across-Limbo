@@ -8,6 +8,8 @@
 			ideology = American_Unionism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor
@@ -27,6 +29,8 @@
 			ideology = agrarian_socialism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor
@@ -46,6 +50,8 @@
 			ideology = Marxism_Leninism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor

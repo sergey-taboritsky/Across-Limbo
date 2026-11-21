@@ -270,20 +270,20 @@ defined_text = {
 	}
 	#Nationalism
 	text = { 
-		trigger = { has_country_leader_ideology = nationalism }
-		localization_key = nationalism
+		trigger = { has_country_leader_ideology = Combat_nationalism }
+		localization_key = Combat_nationalism
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = Fascism }
 		localization_key = Fascism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = National_Socialism }
-		localization_key = National_Socialism
+		trigger = { has_country_leader_ideology = National_populism }
+		localization_key = National_populism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = Strassianism }
-		localization_key = Strassianism
+		trigger = { has_country_leader_ideology = Nationalist_Socialism }
+		localization_key = Nationalist_Socialism
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = Ultra_Nationalism }
@@ -598,20 +598,20 @@ defined_text = {
 defined_text = {
 	name = GetSubIdeologyLocNationalism
 	text = { 
-		trigger = { has_country_leader_ideology = nationalism }
-		localization_key = nationalism
+		trigger = { has_country_leader_ideology = Combat_nationalism }
+		localization_key = Combat_nationalism
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = Fascism }
 		localization_key = Fascism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = National_Socialism }
-		localization_key = National_Socialism
+		trigger = { has_country_leader_ideology = National_populism }
+		localization_key = National_populism
 	}
 	text = { 
-		trigger = { has_country_leader_ideology = Strassianism }
-		localization_key = Strassianism
+		trigger = { has_country_leader_ideology = Nationalist_Socialism }
+		localization_key = Nationalist_Socialism
 	}
 	text = { 
 		trigger = { has_country_leader_ideology = Ultra_Nationalism }

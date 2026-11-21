@@ -10,6 +10,8 @@ characters = {
 			desc = ALG_Larbi_Bouhali_desc
 			ideology = Marxism_Leninism
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#阿尔贝·加缪（恢复角色，非开局统治者）
@@ -24,6 +26,8 @@ characters = {
 			desc = ALG_Albert_Camus_desc
 			ideology = Social_democratic
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

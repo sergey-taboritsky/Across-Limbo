@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = TUR_Sadrettin_Celal_Andel_desc
 			ideology = socialist_nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -39,7 +39,7 @@ characters = {
 		country_leader = {
 			desc = TUR_Mustapha_Subhi_desc
 			ideology = Marxism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -68,7 +68,7 @@ characters = {
 		country_leader = {
 			desc = TUR_Ismail_Hakki_desc
 			ideology = Marxism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -97,7 +97,7 @@ characters = {
 		country_leader = {
 			desc = TUR_Sevfik_Husnu_desc
 			ideology = socialist_nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -147,7 +147,7 @@ characters = {
 		country_leader = {
 			desc = TUR_Ismail_Bilen_desc
 			ideology = Anarchist_Communism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -196,7 +196,7 @@ characters = {
 		country_leader = {
 			desc = TUR_Sevket_Surreya_Aydemir_desc
 			ideology = agrarian_socialism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -255,7 +255,7 @@ characters = {
 		country_leader = {
 			desc = TUR_Mehmed_VII_desc
 			ideology = Guided_democracy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = { 
 				TUR_Puppet_sultan
@@ -274,7 +274,7 @@ characters = {
 		country_leader = {
 			desc = TUR_Ahmed_V_Nihad_desc
 			ideology = Guided_democracy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = { 
 				TUR_Puppet_sultan
@@ -311,7 +311,7 @@ characters = {
 		country_leader = {
 			desc = TUR_Ismet_Inonu_desc
 			ideology = transitional_democracy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -338,7 +338,7 @@ characters = {
 		country_leader = {
 			desc = TUR_Fevzi_Cakmak_desc
 			ideology = National_liberalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -365,7 +365,7 @@ characters = {
 		country_leader = {
 			desc = TUR_Celal_Bayar_desc
 			ideology = National_liberalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -392,7 +392,7 @@ characters = {
 		country_leader = {
 			desc = TUR_Adnan_Menderes_desc
 			ideology = Social_Conservatism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -498,7 +498,7 @@ characters = {
 		country_leader = {
 			desc = DAG_Ibrahim_Sukru_Sokmensuer_desc
 			ideology = civilian_dictatorship
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -527,7 +527,7 @@ characters = {
 		country_leader = {
 			desc = DAG_Recep_Peker_desc
 			ideology = Ultra_Nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

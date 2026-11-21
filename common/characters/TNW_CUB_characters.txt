@@ -10,7 +10,7 @@ characters = {
 			desc = CUB_Carlos_Prio_Socarras_desc
 			ideology = Social_democratic
 			traits = { }
-			expire = "1977.4.5"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -25,7 +25,7 @@ characters = {
 			desc = CUB_Ramon_Grau_San_Martin_desc
 			ideology = Social_democratic
 			traits = { }
-			expire = "1969.7.6"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -40,7 +40,7 @@ characters = {
 			desc = CUB_fulgencio_batista_desc
 			ideology = Social_democratic
 			traits = { }
-			expire = "1973.8.6"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -55,7 +55,7 @@ characters = {
 			desc = CUB_fidel_castro_desc
 			ideology = Social_democratic
 			traits = { }
-			expire = "2016.11.25"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -70,7 +70,7 @@ characters = {
 			desc = CUB_eduardo_chibas_desc
 			ideology = Social_democratic
 			traits = { }
-			expire = "1951.8.16"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -85,7 +85,7 @@ characters = {
 			desc = CUB_gerardo_machado_desc
 			ideology = Social_democratic
 			traits = { }
-			expire = "1939.3.29"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}

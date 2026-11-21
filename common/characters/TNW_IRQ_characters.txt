@@ -48,6 +48,8 @@
 			ideology = Ultra_Nationalism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor
@@ -67,6 +69,8 @@
 			ideology = absolute_monarchy
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#塔拉勒王储（国王长子）
@@ -193,12 +197,16 @@
 			ideology = military_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		country_leader = {
 			desc = IRQ_abd_al_karim_qasim_desc2
 			ideology = military_socialism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = high_command
@@ -218,6 +226,8 @@
 			ideology = military_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = high_command
@@ -232,6 +242,8 @@
 			ideology = Marxism_Leninism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor

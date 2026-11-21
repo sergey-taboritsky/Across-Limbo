@@ -131,17 +131,17 @@ guiTypes = {
 #				maxHeight = 20
 #			}
 
-			instantTextboxType = {
-				name = "ideology"
-				position = { x = 5 y = 12 }
-				font = "hoi_16mbs"
-				text = "ideology"
-				maxWidth = 155
-				maxHeight = 20
-				format = centre
-				vertical_alignment = center
-				fixedsize = yes
-			}
+#			instantTextboxType = {
+#				name = "ideology"
+#				position = { x = 5 y = 12 }
+#				font = "hoi_16mbs"
+#				text = "ideology"
+#				maxWidth = 155
+#				maxHeight = 20
+#				format = centre
+#				vertical_alignment = center
+#				fixedsize = yes
+#			}
 
 			instantTextboxType = {
 				name = "elections"

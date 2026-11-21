@@ -6,6 +6,8 @@ characters = {
 			desc = DIJ_Kartosuwirjo_desc
 			ideology = religious_socialism
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	JGS_Hamengkubuwono_IX = {
@@ -14,6 +16,8 @@ characters = {
 			desc = JGS_Hamengkubuwono_IX_desc
 			ideology = absolute_monarchy
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	MUR_Sukarni = {
@@ -27,6 +31,8 @@ characters = {
 			desc = MUR_Sukarni_desc
 			ideology = Left_wing_nationalism
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	SJR_Sutan_Sjahrir = {
@@ -35,6 +41,8 @@ characters = {
 			desc = SJR_Sutan_Sjahrir_desc
 			ideology = Liberalism_socialism
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	SJR_Dipa_Nusantara_Aidit = {
@@ -43,6 +51,8 @@ characters = {
 			desc = SJR_Dipa_Nusantara_Aidit_desc
 			ideology = Left_wing_communism
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	HAT_Mohammad_Hatta = {
@@ -56,6 +66,8 @@ characters = {
 			desc = HAT_Mohammad_Hatta_desc
 			ideology = Authoritarian_Liberalism
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	PON_R_Murdiyono = {
@@ -64,6 +76,8 @@ characters = {
 			desc = PON_R_Murdiyono_desc
 			ideology = military_government
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

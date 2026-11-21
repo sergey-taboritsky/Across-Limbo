@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = SAR_Marie_Pierre_Koenig_desc
 			ideology = Red_military_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -27,7 +27,7 @@ characters = {
 		country_leader = {
 			desc = SAR_otto_niebergall_desc
 			ideology = Marxism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -44,7 +44,7 @@ characters = {
 		country_leader = {
 			desc = SAR_Berthold_Cahn_desc
 			ideology = Anarchist_Syndicalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -61,7 +61,7 @@ characters = {
 		country_leader = {
 			desc = SAR_kate_frankenthal_desc
 			ideology = Liberalism_socialism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

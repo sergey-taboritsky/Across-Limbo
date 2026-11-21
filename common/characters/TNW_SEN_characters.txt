@@ -10,6 +10,8 @@ characters = {
 			desc = SEN_Lamine_Gueye_desc
 			ideology = Liberalism_socialism
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

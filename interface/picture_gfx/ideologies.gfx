@@ -264,15 +264,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/Fascism.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_National_Socialism"
+		name = "GFX_ideology_National_populism"
 		texturefile = "gfx/interface/ideologies/National_Socialism.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_National_Socialism_RUS"
+		name = "GFX_ideology_National_populism_RUS"
 		texturefile = "gfx/interface/ideologies/Savinkovism.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_Strassianism"
+		name = "GFX_ideology_Nationalist_Socialism"
 		texturefile = "gfx/interface/ideologies/Strassianism.png"
 	}
 	spriteType = {

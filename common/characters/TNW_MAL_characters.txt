@@ -30,7 +30,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Chen_Chunan_desc
 			ideology = tridemism_authdem
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -47,7 +47,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Lin_Wenqing_desc
 			ideology = tridemism_authdem
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -64,7 +64,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Li_Guangqian_desc
 			ideology = tridemism_authdem
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -81,7 +81,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Peng_Zemin_desc
 			ideology = tridemism_revolutionary
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -98,7 +98,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Fu_Daqing_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -115,7 +115,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Yang_Guo_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -169,7 +169,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Dato_Onn_Jaafar_desc
 			ideology = Singular_Nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -186,7 +186,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Musa_Ahmad_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -203,7 +203,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Abdullah_CD_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -220,7 +220,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Ishak_Haj_Muhammad_desc
 			ideology = Left_wing_nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -232,7 +232,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Chen_Jiageng_desc
 			ideology = Popular_Front
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -244,7 +244,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Chen_Liushi_desc
 			ideology = tridemism_conservative
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -280,7 +280,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Chen_Ping_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -398,7 +398,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Burhanuddin_desc
 			ideology = Singular_Nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -410,7 +410,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Ibrahim_Yaacob_desc
 			ideology = Left_wing_nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -446,7 +446,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Sultan_Ibrahim_Johor_desc
 			ideology = absolute_monarchy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -458,7 +458,7 @@ characters = {
 		country_leader = {
 			desc = MAL_Sultan_Abu_Bakar_Pahang_desc
 			ideology = absolute_monarchy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

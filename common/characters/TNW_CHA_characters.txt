@@ -10,7 +10,7 @@ characters = {
 			desc = CHA_Pierre_Messmer_desc
 			ideology = oligarchy
 			traits = { }
-			expire = "1965.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -25,7 +25,7 @@ characters = {
 			desc = CHA_Gabriel_Lisette_desc
 			ideology = Social_democratic
 			traits = { }
-			expire = "1965.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}

@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = MLW_Sir_Geoffrey_Colby_desc
 			ideology = oligarchy
-			expire = "1957.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

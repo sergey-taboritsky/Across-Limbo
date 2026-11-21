@@ -12,6 +12,8 @@ characters = {
 			ideology = absolute_monarchy
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#胡斯尼·扎伊姆
@@ -27,6 +29,8 @@ characters = {
 			ideology = military_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#哈希姆·阿塔西
@@ -42,6 +46,8 @@ characters = {
 			ideology = National_liberalism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = head_of_government
@@ -64,6 +70,8 @@ characters = {
 			ideology = military_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#阿迪卜·希沙克利
@@ -79,6 +87,8 @@ characters = {
 			ideology = military_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#加齐·本·费萨尔（外约旦，跨tag独立角色）
@@ -94,6 +104,8 @@ characters = {
 			ideology = absolute_monarchy
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#安通·萨阿德（贝鲁特，社会民族党领袖）
@@ -109,6 +121,8 @@ characters = {
 			ideology = Social_nationalism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor
@@ -131,6 +145,8 @@ characters = {
 			ideology = agrarian_socialism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor

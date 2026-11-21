@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = CAY_Rene_Jadfard_desc
 			ideology = Social_Liberalism
-			expire = "1953.7.4"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

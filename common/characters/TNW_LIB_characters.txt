@@ -10,6 +10,8 @@ characters = {
 			desc = LIB_William_Tubman_desc
 			ideology = National_Conservatism
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

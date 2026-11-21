@@ -7,7 +7,7 @@ characters = {
 			ideology = absolute_monarchy
 			traits = {
 			}
-			expire = "1970.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -23,6 +23,8 @@ characters = {
 			desc = LTH_Ntsu_Mokhehle_desc
 			ideology = socialism
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

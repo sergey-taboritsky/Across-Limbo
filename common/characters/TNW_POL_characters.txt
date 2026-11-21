@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = POL_Edward_Rydz_Smigly_desc
 			ideology = military_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -27,7 +27,7 @@ characters = {
 		country_leader = {
 			desc = POL_Konstantin_Rokossovsky_desc
 			ideology = Red_military_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 				POL_Mental_imbalance
@@ -45,7 +45,7 @@ characters = {
 		country_leader = {
 			desc = POL_Julian_Leschinski_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 				POL_Biting_publicist
@@ -63,7 +63,7 @@ characters = {
 		country_leader = {
 			desc = POL_Stanislaw_Patek_desc
 			ideology = Liberalism_socialism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 				POL_Excellent_defender
@@ -81,8 +81,8 @@ characters = {
 		}
 		country_leader = {
 			desc = POL_Karol_Vendzyagolsky_desc
-			ideology = National_Socialism
-			expire = "2022.10.20.1"
+			ideology = National_populism
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -178,7 +178,7 @@ characters = {
 		country_leader = {
 			desc = POL_Wladyslaw_Sikorski_desc
 			ideology = National_Conservatism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

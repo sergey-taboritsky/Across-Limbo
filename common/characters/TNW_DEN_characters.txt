@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = DEN_Frederick_IX_desc
 			ideology = Social_democratic
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -27,7 +27,7 @@ characters = {
 		country_leader = {
 			desc = DEN_Alsing_Andersen_desc
 			ideology = Social_democratic
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

@@ -48,6 +48,7 @@ ideologies = {
 			socialist_nationalism = { can_be_randomly_selected = no }
 			military_socialism = { can_be_randomly_selected = no }
 			Dengism_red = {can_be_randomly_selected = no}
+			structural_reformism = {can_be_randomly_selected = no}
 		}
 		modifiers = {
 			
@@ -154,14 +155,15 @@ ideologies = {
 	}
 	Nationalism = {
 		types = {
-			nationalism = {can_be_randomly_selected = no}
+			Combat_nationalism = {can_be_randomly_selected = no}
 			Fascism = {can_be_randomly_selected = no}
-			National_Socialism = {can_be_randomly_selected = no}
-			Strassianism = {can_be_randomly_selected = no}
+			National_populism = {can_be_randomly_selected = no}
+			Nationalist_Socialism = {can_be_randomly_selected = no}
+			Nationalist_Syndicalism = {can_be_randomly_selected = no}
 			Ultra_Nationalism = {can_be_randomly_selected = no}
 			Renewal_System = {can_be_randomly_selected = no}
 			Singular_Nationalism = {can_be_randomly_selected = no}
-			Combat_Nationalism = {can_be_randomly_selected = no}
+			Religious_fundamentalism = {can_be_randomly_selected = no}
 		}
 		modifiers = {
 			

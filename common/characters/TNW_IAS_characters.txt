@@ -13,6 +13,8 @@ characters = {
 			ideology = interim_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 
@@ -29,6 +31,8 @@ characters = {
 			ideology = interim_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#椎名悦三郎
@@ -44,6 +48,8 @@ characters = {
 			ideology = interim_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#三木武吉
@@ -59,6 +65,8 @@ characters = {
 			ideology = interim_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#加藤镣五郎
@@ -74,6 +82,8 @@ characters = {
 			ideology = interim_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#牧野良三
@@ -89,6 +99,8 @@ characters = {
 			ideology = interim_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#鹤见祐辅
@@ -104,6 +116,8 @@ characters = {
 			ideology = interim_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#东乡实
@@ -119,6 +133,8 @@ characters = {
 			ideology = interim_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#船田中
@@ -134,6 +150,8 @@ characters = {
 			ideology = interim_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	#岸信介
@@ -149,6 +167,8 @@ characters = {
 			ideology = interim_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

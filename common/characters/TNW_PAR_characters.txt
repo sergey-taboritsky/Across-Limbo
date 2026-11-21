@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = PAR_Higinio_Morinigo_desc
 			ideology = oligarchy
-			expire = "1949.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

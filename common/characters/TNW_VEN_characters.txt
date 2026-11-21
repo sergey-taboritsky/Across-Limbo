@@ -9,7 +9,7 @@ characters = {
 		country_leader = {
 			desc = VEN_Isaias_Angarita_desc
 			ideology = oligarchy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}

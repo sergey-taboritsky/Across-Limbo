@@ -10,7 +10,7 @@ characters = {
 			desc = RWA_Mutara_III_Rudahigwa_desc
 			ideology = absolute_monarchy
 			traits = { }
-			expire = "2000.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}

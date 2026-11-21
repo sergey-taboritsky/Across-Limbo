@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = ROM_Constantin_Argetoianu_desc
 			ideology = one_party_democracy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			    HUN_Sword_wielder

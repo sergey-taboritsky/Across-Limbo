@@ -8,7 +8,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Popular_Front
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -21,7 +22,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Marxism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}

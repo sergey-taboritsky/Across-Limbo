@@ -11,7 +11,7 @@ characters = {
 		country_leader = {
 			desc = INS_Raden_Soetomo_desc
 			ideology = Social_nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -29,7 +29,7 @@ characters = {
 		country_leader = {
 			desc = INS_Christiaan_Robbert_Steven_Soumokil_desc
 			ideology = military_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -47,7 +47,7 @@ characters = {
 		country_leader = {
 			desc = INS_Maulana_Muhammad_Djalaluddin_II_desc
 			ideology = absolute_monarchy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -65,7 +65,7 @@ characters = {
 		country_leader = {
 			desc = INS_Andi_Mappanyukki_desc
 			ideology = absolute_monarchy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -83,7 +83,7 @@ characters = {
 		country_leader = {
 			desc = INS_Muhammad_Tahir_Muhibuddin_desc
 			ideology = absolute_monarchy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -101,7 +101,7 @@ characters = {
 		country_leader = {
 			desc = INS_Andi_Djemma_desc
 			ideology = absolute_monarchy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -119,7 +119,7 @@ characters = {
 		country_leader = {
 			desc = INS_Muhammad_Falihi_desc
 			ideology = absolute_monarchy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -137,7 +137,7 @@ characters = {
 		country_leader = {
 			desc = INS_Tjokorda_Gde_Raka_Soekawati_desc
 			ideology = interim_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -155,7 +155,7 @@ characters = {
 		country_leader = {
 			desc = INS_Flores_Federal_Council_desc
 			ideology = Patriarchal_Conservatism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -173,7 +173,7 @@ characters = {
 		country_leader = {
 			desc = INS_Tuanku_Raja_Ibrahim_desc
 			ideology = Guided_democracy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -191,7 +191,7 @@ characters = {
 		country_leader = {
 			desc = INS_Bernard_Wilhelm_Lapian_desc
 			ideology = Patriarchal_Conservatism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -209,7 +209,7 @@ characters = {
 		country_leader = {
 			desc = INS_Nai_Sobe_Sonbai_III_desc
 			ideology = Patriarchal_Conservatism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -223,6 +223,8 @@ characters = {
 			ideology = oligarchy
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor
@@ -317,6 +319,8 @@ characters = {
 			ideology = Left_wing_nationalism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor
@@ -336,6 +340,8 @@ characters = {
 			ideology = Ultra_Nationalism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor
@@ -358,6 +364,8 @@ characters = {
 			ideology = Classical_Syndicalism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor
@@ -372,6 +380,8 @@ characters = {
 			ideology = Liberalism_socialism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor
@@ -394,6 +404,8 @@ characters = {
 			ideology = Social_Conservatism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor
@@ -469,6 +481,8 @@ characters = {
 			ideology = military_government
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		field_marshal = {
 			desc = INS_Abdul_Haris_Nasution_commander_desc
@@ -810,6 +824,8 @@ characters = {
 			ideology = Left_wing_communism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor
@@ -824,6 +840,8 @@ characters = {
 			ideology = National_liberalism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = political_advisor

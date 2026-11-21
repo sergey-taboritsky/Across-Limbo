@@ -10,6 +10,8 @@ characters = {
 			desc = GNA_Yacine_Diallo_desc
 			ideology = socialist_nationalism
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

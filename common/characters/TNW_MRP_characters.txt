@@ -8,7 +8,7 @@ MRP_Ishak_Haj_Muhammad = {
 	country_leader = {
 		desc = MRP_Ishak_Haj_Muhammad_desc
 		ideology = Left_wing_nationalism
-		expire = "2022.10.20.1"
+		expire = "1999.1.1.1"
 		id = -1
 		traits = {
 		}

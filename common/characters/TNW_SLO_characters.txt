@@ -10,6 +10,8 @@ characters = {
 			desc = SLO_jozef_tiso_desc
 			ideology = Fascism
 			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

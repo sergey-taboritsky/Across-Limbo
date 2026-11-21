@@ -11,6 +11,8 @@ characters = {
 			ideology = Social_Liberalism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

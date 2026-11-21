@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = GYA_Cheddi_Jagan_desc
 			ideology = Social_Liberalism
-			expire = "1997.3.6"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

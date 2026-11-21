@@ -11,7 +11,7 @@ characters = {
 			desc = WGR_Gottfried_Reinhold_Treviranus_desc
 			ideology = National_Conservatism 
 			traits = { WGR_traits_01 }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -29,7 +29,7 @@ characters = {
 			desc = WGR_Franz_von_Papen_desc
 			ideology = National_Conservatism 
 			traits = { WGR_traits_01 }
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

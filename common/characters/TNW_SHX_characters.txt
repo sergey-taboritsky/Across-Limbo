@@ -8,11 +8,13 @@ characters = {
 		}
 		country_leader={
 			ideology= oligarchy
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		country_leader={
 			ideology= military_government
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}

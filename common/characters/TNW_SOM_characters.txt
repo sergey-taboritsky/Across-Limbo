@@ -9,7 +9,8 @@ characters = {
 		country_leader={
 			ideology= military_government
 			desc = SOM_Sheikh_Bashir_Yussuf_desc
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -21,9 +22,10 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology= National_Socialism
+			ideology= National_populism
 			desc = SOM_Osman_Yusuf_Kenadid_desc
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -37,7 +39,8 @@ characters = {
 		country_leader={
 			ideology= National_Conservatism
 			desc = SOM_Aden_Abdulle_Osman_Daar_desc
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}

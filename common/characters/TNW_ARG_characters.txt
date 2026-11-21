@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = ARG_liborio_justo_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -27,7 +27,7 @@ characters = {
 		country_leader = {
 			desc = ARG_Pedro_Chiarante_desc
 			ideology = Centralised_Syndicalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -197,7 +197,7 @@ characters = {
 		country_leader = {
 			desc = ARG_Pedro_Pablo_Ramirez_desc
 			ideology = military_government
-			expire = "1955.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

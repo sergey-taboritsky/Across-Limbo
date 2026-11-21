@@ -8,7 +8,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Marxism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	CHI_Bai_Haifeng = {
@@ -20,11 +21,13 @@ characters = {
 		}
 		country_leader={
 			ideology= agrarian_socialism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		country_leader={
 			ideology= Popular_Front
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	CHI_Demchukdonrub = {
@@ -36,11 +39,13 @@ characters = {
 		}
 		country_leader={
 			ideology= National_Conservatism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		country_leader={
 			ideology= Ultra_Nationalism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	CHI_Bai_Yunti = {
@@ -52,7 +57,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Social_nationalism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	CHI_Fu_Zuoyi = {
@@ -64,11 +70,13 @@ characters = {
 		}
 		country_leader={
 			ideology= oligarchy
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		country_leader={
 			ideology= Junshen_government
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}

@@ -14,4 +14,27 @@ guiTypes = {
 			maxHeight = 20
 		}
 	}
+
+	#countrypoliticsview：在原生 ideology 框相同位置/相同字体处叠加子意识形态
+	containerWindowType = {
+		name = "added_ruling_party_info_countrypoliticsview"
+		containerWindowType = {
+			name = "ruling_party_info"
+			position = { x = 175 y = 213 }
+			size = { width = 255 height = 60 }
+			clipping = no
+
+			instantTextBoxType = {
+				name = "subideology"
+				position = { x = 5 y = 12 }
+				font = "hoi_16mbs"
+				text = "[GetRulingIdeologySubtype]"
+				maxWidth = 155
+				maxHeight = 20
+				format = centre
+				vertical_alignment = center
+				fixedsize = yes
+			}
+		}
+	}
 }

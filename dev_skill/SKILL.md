@@ -34,7 +34,7 @@ description: HOI4 Across-Limbo（TNO 框架，前缀 TNW_）模组开发铁律�
     - `Conservatism` 下：`Social_Conservatism` / `National_Conservatism` / `Patriarchal_Conservatism` / `Zionism` / `tridemism_conservative`
     - `Authoritarianism` 下：`Guided_democracy` / `oligarchy` / `transitional_democracy` / `discipline` / `interim_government` / `one_party_democracy` / `Left_wing_corporatism` / `Social_nationalism` / `tridemism_authdem`
     - `Absolutism` 下：`Tibet_theocracy` / `Junshen_government` / `absolute_monarchy` / `military_government` / `colonial_government` / `warlord` / `civilian_dictatorship` / `theocracy` / `Red_military_government`
-    - `Nationalism` 下：`nationalism`（本项目新增）/ `Fascism` / `National_Socialism` / `Strassianism` / `Ultra_Nationalism` / `Renewal_System`（及其余）
+    - `Nationalism` 下：`Combat_nationalism`（本项目新增）/ `Fascism` / `National_populism` / `Nationalist_Socialism` / `Ultra_Nationalism` / `Renewal_System`（及其余）
   - ⚠️ 常见错误：`ideology = socialism` / `Liberalism` / `Social_democracy` / `Authoritarianism` / `Nationalism`（这些是**父桶**，填了领袖不显示）。
   - ⚠️ 禁止 `types = {}` 块——它会删掉必需字段；用扁平 `ideology = <子项>`。
   - `recruit_character` 只需列出角色文件里真实定义的领袖，与意识形态填法无关；领袖不出现多半是 `ruling_party` 错填子项，或角色文件 `ideology` 格式错。
@@ -42,7 +42,7 @@ description: HOI4 Across-Limbo（TNO 框架，前缀 TNW_）模组开发铁律�
   `communist / syndicalism / socialism / Social_democracy / Liberalism / Conservatism / Authoritarianism / Absolutism / Nationalism`
   - `set_popularities` 必须 **9 桶、和=100**，且主导桶 = `ruling_party` 所用的父桶。否则系统 fallback 到全共产主义饼图、政治系统崩坏，所有领袖回退通用。
   - ⚠️ 常见错误：`ruling_party = military_government`（子意识形态，非法）→ 应填其所属父桶（`military_government ∈ Absolutism` → 填 `Absolutism`），并把 popularities 里的 `military_government = 65` 改成 `Absolutism = 65`（同时删掉原先重复的 `Absolutism = 0` 行）。
-- **子→父映射速查**：`oligarchy`/`discipline`→Authoritarianism；`absolute_monarchy`/`colonial_government`/`military_government`→Absolutism；`Social_democratic`/`progressivism`→Social_democracy；`Social_Liberalism`→Liberalism；`Social_Conservatism`→Conservatism；`Marxism`→communist；`market_socialism`/`agrarian_socialism`→socialism；`nationalism`/`Fascism`→Nationalism。
+- **子→父映射速查**：`oligarchy`/`discipline`→Authoritarianism；`absolute_monarchy`/`colonial_government`/`military_government`→Absolutism；`Social_democratic`/`progressivism`→Social_democracy；`Social_Liberalism`→Liberalism；`Social_Conservatism`→Conservatism；`Marxism`→communist；`market_socialism`/`agrarian_socialism`→socialism；`Combat_nationalism`/`Fascism`→Nationalism。
 
 ## 3. 角色"不显示"排查清单（按概率排序）
 1. 历史 `ruling_party` 错填子意识形态 → 全体回退通用。**先查这个。**

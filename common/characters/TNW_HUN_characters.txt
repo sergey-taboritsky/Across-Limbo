@@ -8,9 +8,11 @@ characters = {
 		}
 		country_leader = {
 			desc = HUN_Ferenc_Szalasi_desc
-			ideology = National_Socialism
+			ideology = National_populism
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

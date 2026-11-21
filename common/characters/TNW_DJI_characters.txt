@@ -3,10 +3,10 @@ characters = {
 		name = DJI_Mahamoud_Harbi
 		country_leader = {
 			desc = DJI_Mahamoud_Harbi_desc
-			ideology = nationalism
+			ideology = Combat_nationalism
 			traits = {
 			}
-			expire = "1965.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}

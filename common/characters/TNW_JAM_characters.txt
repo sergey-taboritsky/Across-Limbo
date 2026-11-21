@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = JAM_Norman_Manley_desc
 			ideology = Social_Liberalism
-			expire = "1997.9.4"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

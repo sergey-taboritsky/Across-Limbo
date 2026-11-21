@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = ALP_Constantin_Zureik_desc
 			ideology = Popular_Front
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = { 
 			}
@@ -27,7 +27,7 @@ characters = {
 		country_leader = {
 			desc = ALP_Farajallah_El_Helou_desc
 			ideology = Marxism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = { 
 			}
@@ -55,7 +55,7 @@ characters = {
 		country_leader = {
 			desc = ALP_Khalid_Bakdash_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -83,7 +83,7 @@ characters = {
 		country_leader = {
 			desc = ALP_Mustapha_Aris_desc
 			ideology = Classical_Syndicalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = { 
 			}
@@ -120,7 +120,7 @@ characters = {
 		country_leader = {
 			desc = ALP_Wadie_Haddad_desc
 			ideology = Liberalism_socialism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = { 
 			}
@@ -148,7 +148,7 @@ characters = {
 		country_leader = {
 			desc = ALP_Hani_al_Hindi_desc
 			ideology = Social_nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = { 
 			}
@@ -185,7 +185,7 @@ characters = {
 		country_leader = {
 			desc = ALP_Jassem_Alwan_desc
 			ideology = military_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

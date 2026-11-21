@@ -10,7 +10,7 @@ characters = {
 			desc = MAH_KM_Cariappa_desc
 			ideology = oligarchy
 			traits = { }
-			expire = "1993.5.15"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}

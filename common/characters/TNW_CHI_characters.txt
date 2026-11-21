@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = CHI_Zhang_Zhiben_desc
 			ideology = tridemism_conservative
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -36,7 +36,7 @@ characters = {
 		country_leader = {
 			desc = CHI_Chen_Lifu_desc
 			ideology = tridemism_left
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -1211,7 +1211,7 @@ characters = {
 		country_leader = {
 			desc = CHI_Zhu_De_desc
 			ideology = interim_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -1228,7 +1228,7 @@ characters = {
 		country_leader = {
 			desc = CHI_Xiong_Xianghui_desc
 			ideology = military_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -1244,11 +1244,13 @@ characters = {
 		}
 		country_leader={
 			ideology= tridemism_authdem
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		country_leader={
 			ideology= Junshen_government
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -1264,7 +1266,7 @@ characters = {
 		country_leader = {
 			desc = CHI_Song_Qingling_desc
 			ideology = tridemism_left
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 				CHI_great_president_who_isin_adilemma
@@ -1312,7 +1314,7 @@ characters = {
 		country_leader = {
 			desc = CHI_Dong_Biwu_desc
 			ideology = Marxism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -1320,7 +1322,7 @@ characters = {
 		country_leader = {
 			desc = CHI_Dong_Biwu_desc
 			ideology = tridemism_revolutionary
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -1346,7 +1348,7 @@ characters = {
 		country_leader = {
 			desc = CHI_Tan_Pingshan_desc
 			ideology = Liberalism_socialism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -1363,7 +1365,7 @@ characters = {
 		country_leader = {
 			desc = CHI_Yan_Xishan_desc
 			ideology = military_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -1398,7 +1400,7 @@ characters = {
 		country_leader = {
 			desc = CHI_Tan_Pingshan_desc
 			ideology = tridemism_revolutionary
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

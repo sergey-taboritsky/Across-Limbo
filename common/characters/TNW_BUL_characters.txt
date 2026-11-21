@@ -8,7 +8,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Marxism_Leninism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Manol_Vasev = {
@@ -20,7 +21,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Anarchist_Syndicalism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Alexander_Stamboliyski = {
@@ -32,7 +34,8 @@ characters = {
 		}
 		country_leader={
 			ideology= agrarian_socialism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Dimitar_Kazasov = {
@@ -44,7 +47,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Social_democratic
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Nikola_Mushanov = {
@@ -56,7 +60,8 @@ characters = {
 		}
 		country_leader={
 			ideology= National_liberalism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Ivan_Valkov = {
@@ -68,7 +73,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Social_Conservatism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Kimon_Georgiev = {
@@ -80,7 +86,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Social_nationalism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Simeon_II = {
@@ -92,7 +99,8 @@ characters = {
 		}
 		country_leader={
 			ideology= absolute_monarchy
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Hristo_Lukov = {
@@ -104,8 +112,9 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology= National_Socialism
-			expire="1936.1.1"
+			ideology= National_populism
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = army_chief
@@ -130,7 +139,8 @@ characters = {
 		}
 		country_leader={
 			ideology= absolute_monarchy
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = head_of_government
@@ -154,7 +164,8 @@ characters = {
 		}
 		country_leader={
 			ideology= absolute_monarchy
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		advisor = {
 			slot = head_of_government
@@ -409,7 +420,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Marxism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Anton_Yugov = {
@@ -421,7 +433,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Marxism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Ivan_Gorunia = {
@@ -433,7 +446,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Left_wing_communism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Ferdinand_Kozovsky = {
@@ -445,7 +459,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Red_military_government
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Traycho_Kostov = {
@@ -457,7 +472,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Centralised_Syndicalism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Todor_Zhivkov = {
@@ -469,7 +485,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Socialism_Britain
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Ivan_Mihailov_Popov = {
@@ -481,7 +498,8 @@ characters = {
 		}
 		country_leader={
 			ideology= Marxism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Nikolai_Vaptsarov = {
@@ -493,7 +511,8 @@ characters = {
 		}
 		country_leader={
 			ideology= religious_socialism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Lev_Glavinchev = {
@@ -505,7 +524,8 @@ characters = {
 		}
 		country_leader={
 			ideology= National_Syndicalism
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	
@@ -518,7 +538,8 @@ characters = {
 		}
 		country_leader={
 			ideology= colonial_government
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 
@@ -531,7 +552,8 @@ characters = {
 		}
 		country_leader={
 			ideology= absolute_monarchy
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	MAC_Hristo_Tatarchev = {
@@ -543,7 +565,8 @@ characters = {
 		}
 		country_leader={
 			ideology= absolute_monarchy
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	MAC_Ivan_Mikhailov = {
@@ -555,7 +578,8 @@ characters = {
 		}
 		country_leader={
 			ideology= absolute_monarchy
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	BUL_Aleksandar_Kishov = {
@@ -1981,7 +2005,8 @@ characters = {
 		}
 		country_leader = {
 			ideology = absolute_monarchy
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

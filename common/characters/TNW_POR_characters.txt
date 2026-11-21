@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = POR_Jose_Carlos_Rates_desc
 			ideology = Marxism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 				POL_Mental_imbalance

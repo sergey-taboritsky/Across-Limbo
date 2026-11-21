@@ -11,7 +11,7 @@ characters = {
 		country_leader = {
 			desc = BLF_CPGB_committee_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 				
@@ -31,7 +31,7 @@ characters = {
 		country_leader = {
 			desc = BLF_Left_wing_coalition_government_desc
 			ideology = Popular_Front
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 				BLF_Coalition_government

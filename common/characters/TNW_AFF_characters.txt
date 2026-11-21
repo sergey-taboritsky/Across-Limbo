@@ -9,7 +9,7 @@ characters = {
 		country_leader = {
 			desc = AFF_Robert_Menzies_desc
 			ideology = Social_Liberalism
-			expire = "1965.1.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -26,7 +26,7 @@ characters = {
 		country_leader = {
 			desc = AFF_Arthur_Fadden_desc
 			ideology = Social_Conservatism
-			expire = "1973.4.21"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -41,7 +41,7 @@ characters = {
 		country_leader = {
 			desc = AFF_Bob_Santamaria_desc
 			ideology = progressivism
-			expire = "1998.2.25"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -56,7 +56,7 @@ characters = {
 		country_leader = {
 			desc = AFF_Frank_McManus_desc
 			ideology = progressivism
-			expire = "1984.4.1"
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}
@@ -70,8 +70,8 @@ characters = {
 		}
 		country_leader = {
 			desc = AFF_Billy_Hughes_desc
-			ideology = nationalism
-			expire = "1952.10.28"
+			ideology = Combat_nationalism
+			expire = "1999.1.1.1"
 			id = -1
 		}
 	}

@@ -8,7 +8,8 @@ characters = {
 		}
 		country_leader = {
 			ideology = National_Conservatism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KOR_Kim_Koo = {
@@ -20,14 +21,16 @@ characters = {
 		}
 		country_leader = {
 			ideology = tridemism_conservative
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KOR_Lyuh_Woon_Hyung = {
 		name = KOR_Lyuh_Woon_Hyung
 		country_leader = {
 			ideology = triequism_center
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KOR_Kim_Won_Bong = {
@@ -39,77 +42,88 @@ characters = {
 		}
 		country_leader = {
 			ideology = triequism_left
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KOR_Kim_Du_Han = {
 		name = KOR_Kim_Du_Han
 		country_leader = {
 			ideology = National_Syndicalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KOR_Park_Han_Yong = {
 		name = KOR_Park_Han_Yong
 		country_leader = {
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KOR_Kim_Kyu_Sik = {
 		name = KOR_Kim_Kyu_Sik
 		country_leader = {
 			ideology = triequism_right
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KOR_Cho_So_Ang = {
 		name = KOR_Cho_So_Ang
 		country_leader = {
 			ideology = triequism_center
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KOR_Yun_Bo_Seon = {
 		name = KOR_Yun_Bo_Seon
 		country_leader = {
 			ideology = triequism_right
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KOR_Ji_Cheong_Cheon = {
 		name = KOR_Ji_Cheong_Cheon
 		country_leader = {
 			ideology = National_Conservatism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KNR_Shin_Sung_Mo = {
 		name = KNR_Shin_Sung_Mo
 		country_leader = {
 			ideology = Singular_Nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KNR_Lee_Beom_Seok = {
 		name = KNR_Lee_Beom_Seok
 		country_leader = {
 			ideology = Singular_Nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KNR_Baek_Sun_Yup = {
 		name = KNR_Baek_Sun_Yup
 		country_leader = {
 			ideology = Singular_Nationalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 	KOR_Choi_Jae_Hyung = {
 		name = KOR_Choi_Jae_Hyung
 		country_leader = {
 			ideology = National_Conservatism
-			expire = "1940.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

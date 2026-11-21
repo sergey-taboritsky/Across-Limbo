@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = RAJ_Sardar_Patel_desc
 			ideology = National_Conservatism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -22,7 +22,7 @@ characters = {
 		country_leader = {
 			desc = RAJ_Chandra_Bose_desc
 			ideology = military_government
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}

@@ -9,7 +9,8 @@ characters = {
 		country_leader={
 			ideology= tridemism_authdem
 			desc = CHI_Ji_Hongchang_desc
-			expire="1936.1.1"
+			expire = "1999.1.1.1"
+			id = -1
 		}
 		
 	}
@@ -27,6 +28,8 @@ characters = {
 			ideology = tridemism_authdem
 			traits = {
 			}
+			expire = "1999.1.1.1"
+			id = -1
 		}
 	}
 }

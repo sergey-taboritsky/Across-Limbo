@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = FRA_Marcel_Cachin_desc
 			ideology = Marxism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -27,7 +27,7 @@ characters = {
 		country_leader = {
 			desc = FRA_Jean_Zyromski_desc
 			ideology = Classical_Syndicalism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -44,7 +44,7 @@ characters = {
 		country_leader = {
 			desc = FRA_Albert_Treint_desc
 			ideology = Marxism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -72,7 +72,7 @@ characters = {
 		country_leader = {
 			desc = FRA_Boris_Souvarine_desc
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -100,7 +100,7 @@ characters = {
 		country_leader = {
 			desc = FRA_Communard_Central_Committee_desc
 			ideology = Marxism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -339,7 +339,7 @@ characters = {
 		country_leader = {
 			desc = FRA_Victor_Serge_desc
 			ideology = Liberalism_socialism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -356,7 +356,7 @@ characters = {
 		country_leader = {
 			desc = FRA_Paul_Rassinier_desc
 			ideology = reformism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -560,7 +560,7 @@ characters = {
 		country_leader = {
 			desc = FRA_Pierre_Laval_desc
 			ideology = civilian_dictatorship
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 				FRA_Coriolanus

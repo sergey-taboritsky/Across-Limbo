@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = PRC_Chen_Qiyuan_desc
 			ideology = tridemism_left
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -27,7 +27,7 @@ characters = {
 		country_leader = {
 			desc = PRC_Ji_Fang_desc
 			ideology = Popular_Front
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
@@ -62,7 +62,7 @@ characters = {
 		country_leader = {
 			desc = PRC_Politburo_of_the_CCP
 			ideology = Marxism_Leninism
-			expire = "2022.10.20.1"
+			expire = "1999.1.1.1"
 			id = -1
 			traits = {
 			}
