@@ -3169,4 +3169,18 @@ spriteTypes = {
 		name = "GFX_portrait_large_Sir_Charles_Rey"
 		texturefile = "gfx/characters/Sir_Charles_Rey.png"
 	}
+
+	#SUR
+	#约翰·阿道夫·彭赫尔
+	spriteType = {
+		name = "GFX_portrait_large_SUR_Johan_Pengel"
+		texturefile = "gfx/characters/SUR_Johan_Pengel.png"
+	}
+
+	#KSM
+	#戈帕拉斯瓦米·阿扬加尔
+	spriteType = {
+		name = "GFX_portrait_large_KSM_Gopalaswami_Ayyangar"
+		texturefile = "gfx/characters/KSM_Gopalaswami_Ayyangar.png"
+	}
 }
