@@ -54,8 +54,6 @@ country_event = {
 			name = JAP_GHQ_Social_democracy_party
 			ideology = social_democracy
 		}
-		set_country_flag = JAP_bisson_age_began_flag
-		mark_focus_tree_layout_dirty = yes
 		# ===== R33：日本列岛社会主义改造计划（变量归零并挂载）=====
 		set_variable = { JAP_sr_consumer_goods = 0 }
 		set_variable = { JAP_sr_factory_output = 0 }
@@ -770,8 +768,8 @@ country_event = {
 			limit = {
 				has_country_flag = JAP_yamakawa_econ_flag
 				has_country_flag = JAP_metropolitan_renovation_done_flag
-				check_variable = { var = JAP_socialist_reform_enthusiasm_var value = 50 compare = greater_than_or_equals }
-				check_variable = { var = JAP_production_management_ratio_var value = 50 compare = greater_than_or_equals }
+				check_variable = { var = JAP_socialist_reform_enthusiasm_var value = 100 compare = greater_than_or_equals }
+				check_variable = { var = JAP_production_management_ratio_var value = 100 compare = greater_than_or_equals }
 				NOT = { has_country_flag = JAP_karl_dependence_flag }
 			}
 			set_country_flag = JAP_experiment_success_flag
@@ -805,6 +803,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = JAP_event.12.a
+		# R52: 大山接掌七日后，东京大学宇野报告解锁论战决议组
+		country_event = { id = JAP_event.317 days = 7 }
 	}
 }
 
@@ -1110,6 +1110,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = JAP_event.313.a
+		# R48：松川/三鹰事件后解锁一阶段军事树
+		set_country_flag = JAP_Matsukawa_incident_flag
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 
@@ -1139,5 +1142,31 @@ country_event = {
 	}
 	option = {
 		name = JAP_event.315.b
+	}
+}
+
+country_event = {
+	id = JAP_event.316
+	title = JAP_event.316.t
+	desc = JAP_event.316.d
+	picture = GFX_news_event_JAP_Syndicalism_Failure
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.316.a
+	}
+}
+
+# ===== R52: 宇野报告（大山接掌后七日，进入围攻宇野机制）=====
+country_event = {
+	id = JAP_event.317
+	title = JAP_event.317.t
+	desc = JAP_event.317.d
+	picture = GFX_news_event_JAP_Syndicalism_Failure
+	is_triggered_only = yes
+	option = {
+		name = JAP_event.317.a
+		# R52: 宇野报告 -> 解锁论战决议组 + 激活28天论战任务
+		set_country_flag = JAP_Uno_debate_began_flag
+		activate_mission = JAP_Uno_28days_mission
 	}
 }

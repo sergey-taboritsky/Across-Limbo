@@ -45,3 +45,15 @@ JAP_food_crisis_category = {
 	visible_when_empty = yes
 	priority = 800
 }
+# R49: 围攻宇野弘藏的二十八日 决议组类别
+JAP_Uno_debate_category = {
+	icon = GFX_decision_category_JAP_socialist_reform
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		has_country_flag = JAP_Uno_debate_began_flag
+	}
+	visible_when_empty = yes
+	priority = 750
+}

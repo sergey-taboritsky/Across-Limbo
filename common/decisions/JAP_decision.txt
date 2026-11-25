@@ -441,4 +441,198 @@ JAP_food_crisis_category = {
 			}
 		}
 	}
+	JAP_food_crisis_convince_comintern_decision = {
+		cost = 25
+		days_remove = 15
+		fixed_random_seed = no
+		complete_effect = {
+			random_list = {
+				1 = {
+					set_country_flag = JAP_food_crisis_convince_comintern_success_flag
+				}
+				JAP_food_crisis_convince_comintern_rate_var = {
+					custom_effect_tooltip = JAP_socialist_reform_enthusiasm_small_fall_tt
+					add_to_variable = {
+						JAP_socialist_reform_enthusiasm_var = -0.5
+					}
+					clamp_variable = {
+						var = JAP_socialist_reform_enthusiasm_var
+						min = 0
+						max = JAP_socialist_reform_enthusiasm_cap_var
+					}
+				}
+			}
+			add_to_variable = {
+				JAP_food_crisis_convince_comintern_rate_var = 1
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_country_flag = JAP_food_crisis_convince_comintern_success_flag
+				}
+				custom_effect_tooltip = JAP_food_crisis_delayed_stash_tt
+				add_days_mission_timeout = {
+					mission = JAP_food_crisis_trade_unions_impatience_mission
+					days = 7
+				}
+				add_to_variable = {
+					JAP_food_crisis_stash_var = 20
+				}
+				clear_country_flag = JAP_food_crisis_convince_comintern_success_flag
+			}
+		}
+	}
+}
+
+
+# ===== R50: 宇野决议类别归属修正（R49 决议原在类别块外）=====
+JAP_Uno_debate_category = {
+	# ===== R49: 围攻宇野弘藏的二十八日（二维变量四象限）=====
+	# 变量：JAP_uno_debate_stance_var(立场 0-100, 50中线, 低=左 高=右)
+	#       JAP_uno_debate_intensity_var(烈度 0-100, 50中线, 低=温和 高=激烈)
+	# 四象限：左激烈=计划经济 / 左温和=劳农派 / 右激烈=控制论 / 右温和=市民社会派
+	JAP_Uno_convene_symposium_decision = {
+		cost = 10
+		fire_only_once = yes
+		complete_effect = {
+			set_variable = { JAP_uno_debate_stance_var = 50 }
+			set_variable = { JAP_uno_debate_intensity_var = 50 }
+			activate_mission = JAP_Uno_28days_mission
+		}
+	}
+	JAP_Uno_28days_mission = {
+		available = {
+			always = yes
+		}
+		is_good = yes
+		fire_only_once = yes
+		days_mission_timeout = 28
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { var = JAP_uno_debate_stance_var value = 50 compare = less_than }
+					check_variable = { var = JAP_uno_debate_intensity_var value = 50 compare = greater_than_or_equals }
+				}
+				set_country_flag = JAP_Uno_route_planned_economy_flag
+				custom_effect_tooltip = JAP_Uno_route_planned_economy_tt
+			complete_national_focus = JAP_Uno_debate_28_days
+			complete_national_focus = JAP_Uno_koza_school_return
+			}
+			else_if = {
+				limit = {
+					check_variable = { var = JAP_uno_debate_stance_var value = 50 compare = less_than }
+				}
+				set_country_flag = JAP_Uno_route_korouha_flag
+				custom_effect_tooltip = JAP_Uno_route_korouha_tt
+			complete_national_focus = JAP_Uno_debate_28_days
+			complete_national_focus = JAP_Uno_korouha_economics_continued
+			}
+			else_if = {
+				limit = {
+					check_variable = { var = JAP_uno_debate_intensity_var value = 50 compare = greater_than_or_equals }
+				}
+				set_country_flag = JAP_Uno_route_cybernetics_flag
+				custom_effect_tooltip = JAP_Uno_route_cybernetics_tt
+			complete_national_focus = JAP_Uno_debate_28_days
+			complete_national_focus = JAP_Uno_mathematical_marxist_economics
+			}
+			else = {
+				set_country_flag = JAP_Uno_route_civil_society_flag
+				custom_effect_tooltip = JAP_Uno_route_civil_society_tt
+			complete_national_focus = JAP_Uno_debate_28_days
+			complete_national_focus = JAP_Uno_civil_society_school
+			}
+			country_event = { id = JAP_event.316 days = 1 }
+		}
+	}
+	JAP_Uno_back_uno_decision = {
+		cost = 25
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = JAP_Uno_shift_right_radical_tt
+			add_to_variable = { JAP_uno_debate_stance_var = 20 }
+			add_to_variable = { JAP_uno_debate_intensity_var = 20 }
+			clamp_variable = { var = JAP_uno_debate_stance_var min = 0 max = 100 }
+			clamp_variable = { var = JAP_uno_debate_intensity_var min = 0 max = 100 }
+		}
+	}
+	JAP_Uno_back_korouha_decision = {
+		cost = 25
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = JAP_Uno_shift_left_moderate_tt
+			add_to_variable = { JAP_uno_debate_stance_var = -20 }
+			add_to_variable = { JAP_uno_debate_intensity_var = -20 }
+			clamp_variable = { var = JAP_uno_debate_stance_var min = 0 max = 100 }
+			clamp_variable = { var = JAP_uno_debate_intensity_var min = 0 max = 100 }
+		}
+	}
+	JAP_Uno_back_fukumoto_decision = {
+		cost = 25
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = JAP_Uno_shift_left_radical_tt
+			add_to_variable = { JAP_uno_debate_stance_var = -20 }
+			add_to_variable = { JAP_uno_debate_intensity_var = 20 }
+			clamp_variable = { var = JAP_uno_debate_stance_var min = 0 max = 100 }
+			clamp_variable = { var = JAP_uno_debate_intensity_var min = 0 max = 100 }
+		}
+	}
+	JAP_Uno_back_morishima_decision = {
+		cost = 25
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = JAP_Uno_shift_right_moderate_tt
+			add_to_variable = { JAP_uno_debate_stance_var = 20 }
+			add_to_variable = { JAP_uno_debate_intensity_var = -20 }
+			clamp_variable = { var = JAP_uno_debate_stance_var min = 0 max = 100 }
+			clamp_variable = { var = JAP_uno_debate_intensity_var min = 0 max = 100 }
+		}
+	}
+	# ===== R50: 四条单轴决议（只改立场或只改烈度）=====
+	JAP_Uno_heat_debate_decision = {
+		cost = 25
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = JAP_Uno_intensity_up_tt
+			add_to_variable = { JAP_uno_debate_intensity_var = 20 }
+			clamp_variable = { var = JAP_uno_debate_intensity_var min = 0 max = 100 }
+		}
+	}
+	JAP_Uno_cool_debate_decision = {
+		cost = 25
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = JAP_Uno_intensity_down_tt
+			add_to_variable = { JAP_uno_debate_intensity_var = -20 }
+			clamp_variable = { var = JAP_uno_debate_intensity_var min = 0 max = 100 }
+		}
+	}
+	JAP_Uno_support_left_orthodoxy_decision = {
+		cost = 25
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = JAP_Uno_stance_left_tt
+			add_to_variable = { JAP_uno_debate_stance_var = -20 }
+			clamp_variable = { var = JAP_uno_debate_stance_var min = 0 max = 100 }
+		}
+	}
+	JAP_Uno_support_uno_decision = {
+		cost = 25
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = JAP_Uno_stance_right_tt
+			add_to_variable = { JAP_uno_debate_stance_var = 20 }
+			clamp_variable = { var = JAP_uno_debate_stance_var min = 0 max = 100 }
+		}
+	}
 }

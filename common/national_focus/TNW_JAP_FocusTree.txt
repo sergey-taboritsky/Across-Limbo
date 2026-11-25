@@ -9,7 +9,7 @@
 	}
 	continuous_focus_position = {
 		x = -200
-		y = 2500
+		y = 500
 	}
 	default = no
 
@@ -41,9 +41,6 @@
 				has_country_flag = JAP_Food_Crisis_enden_flag
 			}
 		}
-		allow_branch = {
-			has_country_flag = JAP_bisson_age_began_flag
-		}
 		x = 7
 		y = 2
 		completion_reward = {
@@ -72,9 +69,6 @@
 		cost = 7.00
 		x = 18
 		y = 2
-		allow_branch = {
-			has_country_flag = JAP_bisson_age_began_flag
-		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_General_Congress_Conference"
 			add_political_power = 50
@@ -100,9 +94,6 @@
 		cost = 7.00
 		x = 21
 		y = 2
-		allow_branch = {
-			has_country_flag = JAP_bisson_age_began_flag
-		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Worker_Alliance_Congress"
 			add_political_power = 50
@@ -244,9 +235,6 @@
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_Far_East_Council
-		}
-		allow_branch = {
-			has_country_flag = JAP_bisson_age_began_flag
 		}
 		x = 13
 		y = 2
@@ -1780,6 +1768,9 @@
 	# ================= 治安线（松川事件起） =================
 	focus = {
 		id = JAP_report_on_Matsukawa_incident
+		allow_branch = {
+			has_country_flag = JAP_Matsukawa_incident_flag
+		}
 		icon = GFX_goal_unknown
 		cost = 5.00
 		x = 40
@@ -1944,6 +1935,9 @@
 	}
 	focus = {
 		id = JAP_calm_general_unions
+		allow_branch = {
+			has_country_flag = JAP_Matsukawa_incident_flag
+		}
 		icon = GFX_goal_unknown
 		cost = 5.00
 		x = 39
@@ -2511,6 +2505,9 @@
 	}
 	focus = {
 		id = JAP_posthumous_analysis_of_Nigata_battle
+		allow_branch = {
+			has_country_flag = JAP_Nigata_invasion_ended_flag
+		}
 		icon = GFX_goal_unknown
 		cost = 5.00
 		x = 40
@@ -2589,6 +2586,9 @@
 	}
 	focus = {
 		id = JAP_naval_polls_high
+		allow_branch = {
+			has_country_flag = JAP_Nigata_invasion_ended_flag
+		}
 		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 50
@@ -2613,6 +2613,1590 @@
 					level = 2
 				}
 			}
+		}
+	}
+
+	# ===== R50: 宇野经济国策树（语义id / x>=0 / 5条横向互斥）=====
+	focus = {
+		id = JAP_Uno_debate_28_days
+		icon = GFX_JAP_Far_East_Council
+		cost = 4.00
+		x = 20
+		y = 15
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_debate_28_days"
+			# ===== R52: 效果（线=根）=====
+			add_political_power = 105
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = JAP_Uno_koza_school_return
+		icon = GFX_JAP_Far_East_Council
+		cost = 5.00
+		x = 6
+		y = 16
+		prerequisite = {
+			focus = JAP_Uno_debate_28_days
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_koza_school_return"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 110
+			add_stability = 0.02
+			custom_effect_tooltip = JAP_Uno_dm_tt
+			add_dynamic_modifier = { modifier = JAP_Uno_fpe_dm }
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_korouha_economics_continued
+		icon = GFX_JAP_Far_East_Council
+		cost = 5.00
+		x = 16
+		y = 16
+		prerequisite = {
+			focus = JAP_Uno_debate_28_days
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_korouha_economics_continued"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 110
+			add_stability = 0.02
+			custom_effect_tooltip = JAP_Uno_dm_tt
+			add_dynamic_modifier = { modifier = JAP_Uno_ke_dm }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_stability value = 0.03 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_mathematical_marxist_economics
+		icon = GFX_JAP_Far_East_Council
+		cost = 5.00
+		x = 24
+		y = 16
+		prerequisite = {
+			focus = JAP_Uno_debate_28_days
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_mathematical_marxist_economics"
+			# ===== R52: 效果（线=as）=====
+			add_political_power = 110
+			add_stability = 0.02
+			custom_effect_tooltip = JAP_Uno_dm_tt
+			add_dynamic_modifier = { modifier = JAP_Uno_as_dm }
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_stability value = 0.03 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_civil_society_school
+		icon = GFX_JAP_Far_East_Council
+		cost = 5.00
+		x = 31
+		y = 16
+		prerequisite = {
+			focus = JAP_Uno_debate_28_days
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_civil_society_school"
+			# ===== R52: 效果（线=cm）=====
+			add_political_power = 110
+			add_stability = 0.02
+			custom_effect_tooltip = JAP_Uno_dm_tt
+			add_dynamic_modifier = { modifier = JAP_Uno_cm_dm }
+			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_cm_dm_factory_output value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_tax_and_monopoly_reform
+		icon = GFX_JAP_Far_East_Council
+		cost = 6.00
+		x = 3
+		y = 17
+		prerequisite = {
+			focus = JAP_Uno_koza_school_return
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_tax_and_monopoly_reform"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 115
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_research value = 0.02 }
+			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
+			add_to_variable = { var = government_investment_modifier value = 1 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_railway_nationalization
+		icon = GFX_JAP_Far_East_Council
+		cost = 6.00
+		x = 6
+		y = 17
+		prerequisite = {
+			focus = JAP_Uno_koza_school_return
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_railway_nationalization"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 115
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
+			random_owned_state = {
+				limit = { state = 282 }
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_planned_economy
+		icon = GFX_JAP_Far_East_Council
+		cost = 6.00
+		x = 10
+		y = 17
+		prerequisite = {
+			focus = JAP_Uno_koza_school_return
+			focus = JAP_Uno_korouha_economics_continued
+		}
+		mutually_exclusive = {
+			focus = JAP_Uno_reform_production_management
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_planned_economy"
+			# ===== R52: 效果（线=fpe+ke）=====
+			add_political_power = 115
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_stability value = 0.03 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_stability value = 0.03 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_reform_production_management
+		icon = GFX_JAP_Far_East_Council
+		cost = 6.00
+		x = 13
+		y = 17
+		prerequisite = {
+			focus = JAP_Uno_korouha_economics_continued
+		}
+		mutually_exclusive = {
+			focus = JAP_Uno_planned_economy
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_reform_production_management"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 115
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_improve_social_welfare_system
+		icon = GFX_JAP_Far_East_Council
+		cost = 6.00
+		x = 17
+		y = 17
+		prerequisite = {
+			focus = JAP_Uno_korouha_economics_continued
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_improve_social_welfare_system"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 115
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_full_employment_priority
+		icon = GFX_JAP_Far_East_Council
+		cost = 6.00
+		x = 19
+		y = 17
+		prerequisite = {
+			focus = JAP_Uno_korouha_economics_continued
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_full_employment_priority"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 115
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
+			custom_effect_tooltip = JAP_Uno_spirit_tt
+			add_ideas = JAP_Uno_ke_spirit
+		}
+	}
+	focus = {
+		id = JAP_Uno_economic_cybernetics
+		icon = GFX_JAP_Far_East_Council
+		cost = 6.00
+		x = 22
+		y = 17
+		prerequisite = {
+			focus = JAP_Uno_mathematical_marxist_economics
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_economic_cybernetics"
+			# ===== R52: 效果（线=as）=====
+			add_political_power = 115
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_build_speed value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_leontief_input_output
+		icon = GFX_JAP_Far_East_Council
+		cost = 6.00
+		x = 24
+		y = 17
+		prerequisite = {
+			focus = JAP_Uno_mathematical_marxist_economics
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_leontief_input_output"
+			# ===== R52: 效果（线=as）=====
+			add_political_power = 115
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_stability value = 0.03 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_morishima_growth_model
+		icon = GFX_JAP_Far_East_Council
+		cost = 6.00
+		x = 26
+		y = 17
+		prerequisite = {
+			focus = JAP_Uno_mathematical_marxist_economics
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_morishima_growth_model"
+			# ===== R52: 效果（线=as）=====
+			add_political_power = 115
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_factory_output value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_reframe_three_stages_of_history
+		icon = GFX_JAP_Far_East_Council
+		cost = 6.00
+		x = 30
+		y = 17
+		prerequisite = {
+			focus = JAP_Uno_civil_society_school
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_reframe_three_stages_of_history"
+			# ===== R52: 效果（线=cm）=====
+			add_political_power = 115
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_cm_dm_consumer_goods value = 0.03 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_civil_publicness_program
+		icon = GFX_JAP_Far_East_Council
+		cost = 6.00
+		x = 32
+		y = 17
+		prerequisite = {
+			focus = JAP_Uno_civil_society_school
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_civil_publicness_program"
+			# ===== R52: 效果（线=cm）=====
+			add_political_power = 115
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_cm_dm_research value = 0.02 }
+			custom_effect_tooltip = JAP_Uno_spirit_tt
+			add_ideas = JAP_Uno_cm_spirit
+		}
+	}
+	focus = {
+		id = JAP_Uno_rural_collectivization_act
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 1
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_tax_and_monopoly_reform
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_rural_collectivization_act"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_factory_output value = 0.02 }
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_secure_electricity_supply
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 3
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_tax_and_monopoly_reform
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_secure_electricity_supply"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_research value = 0.02 }
+			random_owned_state = {
+				limit = { state = 531 }
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_criticize_syndicalism
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 5
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_railway_nationalization
+		}
+		mutually_exclusive = {
+			focus = JAP_Uno_adopt_labor_union_strengths
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_criticize_syndicalism"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_eff_cap value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_adopt_labor_union_strengths
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 7
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_railway_nationalization
+		}
+		mutually_exclusive = {
+			focus = JAP_Uno_criticize_syndicalism
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_adopt_labor_union_strengths"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_factory_output value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_nationalize_output
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 9
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_planned_economy
+		}
+		mutually_exclusive = {
+			focus = JAP_Uno_nationalize_key_industries
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_nationalize_output"
+			# ===== R52: 效果（线=fpe+ke）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_research value = 0.02 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_nationalize_key_industries
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 11
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_planned_economy
+		}
+		mutually_exclusive = {
+			focus = JAP_Uno_nationalize_output
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_nationalize_key_industries"
+			# ===== R52: 效果（线=fpe+ke）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_eff_cap value = 0.02 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_reinvest_industrial_dividends
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 13
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_reform_production_management
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_reinvest_industrial_dividends"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
+			add_to_variable = { var = domestic_investment_modifier value = 1 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_long_term_resistance_line
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 15
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_reform_production_management
+		}
+		prerequisite = {
+			focus = JAP_Uno_improve_social_welfare_system
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_long_term_resistance_line"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_food_rationing_and_price_control_act
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 17
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_improve_social_welfare_system
+		}
+		prerequisite = {
+			focus = JAP_Uno_full_employment_priority
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_food_rationing_and_price_control_act"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_socialist_party_backing
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 19
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_full_employment_priority
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_socialist_party_backing"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_national_economic_census
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 21
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_full_employment_priority
+			focus = JAP_Uno_economic_cybernetics
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_national_economic_census"
+			# ===== R52: 效果（线=ke+as）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.02 }
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_factory_output value = 0.02 }
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_paperless_office_trend
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 23
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_economic_cybernetics
+		}
+		prerequisite = {
+			focus = JAP_Uno_leontief_input_output
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_paperless_office_trend"
+			# ===== R52: 效果（线=as）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_eff_cap value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_national_economic_computing_center
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 25
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_leontief_input_output
+		}
+		prerequisite = {
+			focus = JAP_Uno_morishima_growth_model
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_national_economic_computing_center"
+			# ===== R52: 效果（线=as）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_research value = 0.02 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_mass_investment_in_research
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 27
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_morishima_growth_model
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_mass_investment_in_research"
+			# R50: 玩法效果待填（除 log 外为空）
+		}
+	}
+	focus = {
+		id = JAP_Uno_law_of_value_and_freedom
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 29
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_reframe_three_stages_of_history
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_law_of_value_and_freedom"
+			# ===== R52: 效果（线=cm）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_cm_dm_local_slots value = 0.03 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_market_economy_intervention
+		icon = GFX_JAP_Far_East_Council
+		cost = 7.00
+		x = 32
+		y = 18
+		prerequisite = {
+			focus = JAP_Uno_civil_publicness_program
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_market_economy_intervention"
+			# ===== R52: 效果（线=cm）=====
+			add_political_power = 120
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_cm_dm_research value = 0.02 }
+			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
+			add_to_variable = { var = market_available_for_dumping_modifier value = 1 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_rural_enterprise_support_act
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 2
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_rural_collectivization_act
+		}
+		prerequisite = {
+			focus = JAP_Uno_secure_electricity_supply
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_rural_enterprise_support_act"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 125
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_build_speed value = 0.02 }
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_rationalize_state_industries
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 4
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_secure_electricity_supply
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_rationalize_state_industries"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 125
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_stability value = 0.03 }
+			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
+			add_to_variable = { var = domestic_investment_modifier value = 1 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_central_fiscal_plan
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 6
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_criticize_syndicalism
+			focus = JAP_Uno_adopt_labor_union_strengths
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_central_fiscal_plan"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 125
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
+			add_to_variable = { var = government_investment_modifier value = 1 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_equal_pay_policy
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 10
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_nationalize_output
+			focus = JAP_Uno_nationalize_key_industries
+		}
+		mutually_exclusive = {
+			focus = JAP_Uno_industry_specific_wage_program
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_equal_pay_policy"
+			# ===== R52: 效果（线=fpe+ke）=====
+			add_political_power = 125
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_stability value = 0.03 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_stability value = 0.03 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_industry_specific_wage_program
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 12
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_nationalize_key_industries
+			focus = JAP_Uno_reinvest_industrial_dividends
+		}
+		mutually_exclusive = {
+			focus = JAP_Uno_equal_pay_policy
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_industry_specific_wage_program"
+			# ===== R52: 效果（线=fpe+ke）=====
+			add_political_power = 125
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_consumer_goods value = 0.03 }
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_low_income_farm_subsidy_act
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 14
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_reinvest_industrial_dividends
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_low_income_farm_subsidy_act"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 125
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_build_speed value = 0.02 }
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_farmer_worker_integration_program
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 17
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_food_rationing_and_price_control_act
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_farmer_worker_integration_program"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 125
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_eight_hour_workday
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 19
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_food_rationing_and_price_control_act
+		}
+		prerequisite = {
+			focus = JAP_Uno_socialist_party_backing
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_eight_hour_workday"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 125
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_apply_kantorovich_linear_programming
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 24
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_paperless_office_trend
+		}
+		prerequisite = {
+			focus = JAP_Uno_national_economic_computing_center
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_apply_kantorovich_linear_programming"
+			# ===== R52: 效果（线=as）=====
+			add_political_power = 125
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_stability value = 0.03 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_research_vacuum_tube_computer
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 26
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_national_economic_computing_center
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_research_vacuum_tube_computer"
+			# ===== R52: 效果（线=as）=====
+			add_political_power = 125
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_factory_output value = 0.02 }
+			custom_effect_tooltip = TNW_dev_lit_month_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_vocational_education_program
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 28
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_mass_investment_in_research
+		}
+		prerequisite = {
+			focus = JAP_Uno_law_of_value_and_freedom
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_vocational_education_program"
+			# R50: 玩法效果待填（除 log 外为空）
+		}
+	}
+	focus = {
+		id = JAP_Uno_cooperative_law
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 31
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_law_of_value_and_freedom
+		}
+		prerequisite = {
+			focus = JAP_Uno_market_economy_intervention
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_cooperative_law"
+			# ===== R52: 效果（线=cm）=====
+			add_political_power = 125
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_cm_dm_factory_output value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_rationalize_division_and_exchange
+		icon = GFX_JAP_Far_East_Council
+		cost = 8.00
+		x = 33
+		y = 19
+		prerequisite = {
+			focus = JAP_Uno_market_economy_intervention
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_rationalize_division_and_exchange"
+			# ===== R52: 效果（线=cm）=====
+			add_political_power = 125
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_cm_dm_stability value = 0.03 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_japan_france_economic_pact
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 0
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_rural_enterprise_support_act
+		}
+		mutually_exclusive = {
+			focus = JAP_Uno_promote_kyoto_model
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_japan_france_economic_pact"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 130
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
+			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
+			add_to_variable = { var = goods_export_modifier value = 1 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_promote_kyoto_model
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 2
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_rural_enterprise_support_act
+		}
+		mutually_exclusive = {
+			focus = JAP_Uno_japan_france_economic_pact
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_promote_kyoto_model"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 130
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_build_speed value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_new_long_term_economic_plan
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 4
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_rural_enterprise_support_act
+		}
+		prerequisite = {
+			focus = JAP_Uno_rationalize_state_industries
+		}
+		prerequisite = {
+			focus = JAP_Uno_central_fiscal_plan
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_new_long_term_economic_plan"
+			# R52硬性: 新长期经济计划
+			add_research_slot = 1
+			# 法式计划经济追加: 生产效率上限+10% 科研速度+5%
+			add_to_variable = { var = JAP_Uno_fpe_dm_eff_cap value = 0.10 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_research value = 0.05 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			# 2张工业科技75%加成卡 + 2张工业科技2年超前卡
+			add_tech_bonus = { bonus = 0.75 uses = 2 category = industry }
+			add_tech_bonus = { bonus = 1.00 ahead_reduction = 2 uses = 2 category = industry }
+			# 东京(282)、大阪(531) + 两个随机地块：+1建筑位；基建未满级+1
+			random_owned_state = {
+				limit = { state = 282 }
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			random_owned_state = {
+				limit = { state = 531 }
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			# 增加工业水平发展度 + 扣除国库资金
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
+			custom_effect_tooltip = JAP_capital_reserves_fall_tt
+			add_to_variable = { var = capital_reserves value = -15 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_comprehensive_land_development_act
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 7
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_central_fiscal_plan
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_comprehensive_land_development_act"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 130
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_factory_output value = 0.02 }
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+		}
+	}
+	focus = {
+		id = JAP_Uno_pigeonhole_housing_promotion
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 9
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_equal_pay_policy
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_pigeonhole_housing_promotion"
+			# ===== R52: 效果（线=fpe+ke）=====
+			add_political_power = 130
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_research value = 0.02 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.02 }
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_kansai_economic_proposal
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 11
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_equal_pay_policy
+			focus = JAP_Uno_industry_specific_wage_program
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_kansai_economic_proposal"
+			# ===== R52: 效果（线=fpe+ke）=====
+			add_political_power = 130
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_eff_cap value = 0.02 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
+			random_owned_state = {
+				limit = { state = 531 }
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+		}
+	}
+	focus = {
+		id = JAP_Uno_kanto_industrial_proposal
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 13
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_industry_specific_wage_program
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_kanto_industrial_proposal"
+			# ===== R52: 效果（线=fpe+ke）=====
+			add_political_power = 130
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_factory_output value = 0.02 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
+			random_owned_state = {
+				limit = { state = 282 }
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_universal_pension_system
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 15
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_long_term_resistance_line
+		}
+		prerequisite = {
+			focus = JAP_Uno_low_income_farm_subsidy_act
+		}
+		prerequisite = {
+			focus = JAP_Uno_farmer_worker_integration_program
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_universal_pension_system"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 130
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.02 }
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_workers_education_and_culture_program
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 18
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_farmer_worker_integration_program
+		}
+		prerequisite = {
+			focus = JAP_Uno_eight_hour_workday
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_workers_education_and_culture_program"
+			# R52硬性: 劳动者教育文化纲要
+			add_research_slot = 1
+			# 劳农派经济学追加: 建造速度+5% 科研速度+5% 地区最大工业值+15%
+			add_to_variable = { var = JAP_Uno_ke_dm_build_speed value = 0.05 }
+			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.05 }
+			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.15 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			# 3张工业科技100%加成卡
+			add_tech_bonus = { bonus = 1.00 uses = 3 category = industry }
+			# 增加教育水平和工业水平发展度 + 扣除国库资金
+			custom_effect_tooltip = TNW_dev_lit_month_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 5 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 3 }
+			custom_effect_tooltip = JAP_capital_reserves_fall_tt
+			add_to_variable = { var = capital_reserves value = -15 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_joint_industrial_revival_plan
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 21
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_national_economic_census
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_joint_industrial_revival_plan"
+			# ===== R52: 效果（线=ke+as）=====
+			add_political_power = 130
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.02 }
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_factory_output value = 0.02 }
+			random_owned_state = {
+				limit = { state = 282 }
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			random_owned_state = {
+				limit = { state = 531 }
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_econometric_model_development
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 24
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_apply_kantorovich_linear_programming
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_econometric_model_development"
+			# ===== R52: 效果（线=as）=====
+			add_political_power = 130
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_stability value = 0.03 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_dream_of_automated_socialism
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 26
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_research_vacuum_tube_computer
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_dream_of_automated_socialism"
+			# ===== R52: 效果（线=as）=====
+			add_political_power = 130
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_factory_output value = 0.02 }
+			custom_effect_tooltip = JAP_Uno_spirit_tt
+			add_ideas = JAP_Uno_as_spirit
+		}
+	}
+	focus = {
+		id = JAP_Uno_reconstruct_individual_ownership
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 30
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_cooperative_law
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_reconstruct_individual_ownership"
+			# ===== R52: 效果（线=cm）=====
+			add_political_power = 130
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_cm_dm_consumer_goods value = 0.03 }
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+		}
+	}
+	focus = {
+		id = JAP_Uno_high_wage_regulation
+		icon = GFX_JAP_Far_East_Council
+		cost = 9.00
+		x = 32
+		y = 20
+		prerequisite = {
+			focus = JAP_Uno_cooperative_law
+		}
+		prerequisite = {
+			focus = JAP_Uno_rationalize_division_and_exchange
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_high_wage_regulation"
+			# ===== R52: 效果（线=cm）=====
+			add_political_power = 130
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_cm_dm_research value = 0.02 }
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_guesdism_in_economic_guidance
+		icon = GFX_JAP_Far_East_Council
+		cost = 10.00
+		x = 0
+		y = 21
+		prerequisite = {
+			focus = JAP_Uno_japan_france_economic_pact
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_guesdism_in_economic_guidance"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 135
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_negawa_doctrine
+		icon = GFX_JAP_Far_East_Council
+		cost = 10.00
+		x = 2
+		y = 21
+		prerequisite = {
+			focus = JAP_Uno_promote_kyoto_model
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_negawa_doctrine"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 135
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_build_speed value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_accelerate_urbanization
+		icon = GFX_JAP_Far_East_Council
+		cost = 10.00
+		x = 8
+		y = 21
+		prerequisite = {
+			focus = JAP_Uno_comprehensive_land_development_act
+		}
+		prerequisite = {
+			focus = JAP_Uno_pigeonhole_housing_promotion
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_accelerate_urbanization"
+			# ===== R52: 效果（线=fpe+ke）=====
+			add_political_power = 135
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_build_speed value = 0.02 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_build_speed value = 0.02 }
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+		}
+	}
+	focus = {
+		id = JAP_Uno_reform_education_system
+		icon = GFX_JAP_Far_East_Council
+		cost = 10.00
+		x = 10
+		y = 21
+		prerequisite = {
+			focus = JAP_Uno_pigeonhole_housing_promotion
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_reform_education_system"
+			# ===== R52: 效果（线=fpe+ke）=====
+			add_political_power = 135
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_stability value = 0.03 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_stability value = 0.03 }
+			custom_effect_tooltip = TNW_dev_lit_month_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_industrial_rise
+		icon = GFX_JAP_Far_East_Council
+		cost = 10.00
+		x = 12
+		y = 21
+		prerequisite = {
+			focus = JAP_Uno_kansai_economic_proposal
+			focus = JAP_Uno_kanto_industrial_proposal
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_industrial_rise"
+			# ===== R52: 效果（线=fpe+ke）=====
+			add_political_power = 135
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_consumer_goods value = 0.03 }
+			random_owned_state = {
+				limit = { state = 282 }
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			random_owned_state = {
+				limit = { state = 531 }
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_occupational_safety_and_health_act
+		icon = GFX_JAP_Far_East_Council
+		cost = 10.00
+		x = 15
+		y = 21
+		prerequisite = {
+			focus = JAP_Uno_universal_pension_system
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_occupational_safety_and_health_act"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 135
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.02 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_general_plan_outline
+		icon = GFX_JAP_Far_East_Council
+		cost = 10.00
+		x = 25
+		y = 21
+		prerequisite = {
+			focus = JAP_Uno_econometric_model_development
+		}
+		prerequisite = {
+			focus = JAP_Uno_dream_of_automated_socialism
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_general_plan_outline"
+			# ===== R52: 效果（线=as）=====
+			add_political_power = 135
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_research value = 0.02 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_build_local_cooperative_network
+		icon = GFX_JAP_Far_East_Council
+		cost = 10.00
+		x = 31
+		y = 21
+		prerequisite = {
+			focus = JAP_Uno_reconstruct_individual_ownership
+		}
+		prerequisite = {
+			focus = JAP_Uno_high_wage_regulation
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_build_local_cooperative_network"
+			# ===== R52: 效果（线=cm）=====
+			add_political_power = 135
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_cm_dm_factory_output value = 0.02 }
+			custom_effect_tooltip = JAP_Uno_spirit_tt
+			add_ideas = JAP_Uno_cm_spirit
+		}
+	}
+	focus = {
+		id = JAP_Uno_toward_greater_endeavors
+		icon = GFX_JAP_Far_East_Council
+		cost = 10.00
+		x = 4
+		y = 22
+		prerequisite = {
+			focus = JAP_Uno_new_long_term_economic_plan
+		}
+		prerequisite = {
+			focus = JAP_Uno_comprehensive_land_development_act
+		}
+		prerequisite = {
+			focus = JAP_Uno_guesdism_in_economic_guidance
+			focus = JAP_Uno_negawa_doctrine
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_toward_greater_endeavors"
+			# ===== R52: 效果（线=fpe）=====
+			add_political_power = 140
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_stability value = 0.03 }
+			custom_effect_tooltip = JAP_Uno_spirit_tt
+			add_ideas = JAP_Uno_fpe_spirit
+		}
+	}
+	focus = {
+		id = JAP_Uno_world_class_industrial_system
+		icon = GFX_JAP_Far_East_Council
+		cost = 10.00
+		x = 11
+		y = 22
+		prerequisite = {
+			focus = JAP_Uno_reform_education_system
+			focus = JAP_Uno_industrial_rise
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_world_class_industrial_system"
+			# ===== R52: 效果（线=fpe+ke）=====
+			add_political_power = 140
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_fpe_dm_eff_cap value = 0.02 }
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
+			random_owned_state = {
+				limit = { state = 282 }
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			random_owned_state = {
+				limit = { state = 531 }
+				add_extra_state_shared_building_slots = 1
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_innovative_urban_plan
+		icon = GFX_JAP_Far_East_Council
+		cost = 10.00
+		x = 18
+		y = 22
+		prerequisite = {
+			focus = JAP_Uno_workers_education_and_culture_program
+		}
+		prerequisite = {
+			focus = JAP_Uno_occupational_safety_and_health_act
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_innovative_urban_plan"
+			# ===== R52: 效果（线=ke）=====
+			add_political_power = 140
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_ke_dm_consumer_goods value = 0.03 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+		}
+	}
+	focus = {
+		id = JAP_Uno_okishio_theorem
+		icon = GFX_JAP_Far_East_Council
+		cost = 10.00
+		x = 25
+		y = 22
+		prerequisite = {
+			focus = JAP_Uno_general_plan_outline
+		}
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed JAP_Uno_okishio_theorem"
+			# ===== R52: 效果（线=as）=====
+			add_political_power = 140
+			add_stability = 0.02
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_as_dm_research value = 0.02 }
+			custom_effect_tooltip = JAP_Uno_spirit_tt
+			add_ideas = JAP_Uno_as_spirit
 		}
 	}
 }

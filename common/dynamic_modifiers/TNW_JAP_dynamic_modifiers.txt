@@ -31,3 +31,106 @@ JAP_labor_defense_dm = {
 	war_support_factor = JAP_ldf_war_support
 	industrial_capacity_dockyard = JAP_ldf_dockyard
 }
+# ===== R52: 宇野经济四路线动态修正（变量驱动，随国策累加）=====
+
+JAP_Uno_fpe_dm = {
+
+	icon = GFX_idea_generic_production_bonus
+
+	enable = {
+
+		check_variable = { var = JAP_Uno_fpe_dm_total value = 0 compare = greater_than }
+
+	}
+
+	consumer_goods_factor = JAP_Uno_fpe_dm_consumer_goods
+
+	industrial_capacity_factory = JAP_Uno_fpe_dm_factory_output
+
+	production_speed_buildings_factor = JAP_Uno_fpe_dm_build_speed
+
+	research_speed_factor = JAP_Uno_fpe_dm_research
+
+	stability_factor = JAP_Uno_fpe_dm_stability
+
+	political_power_factor = JAP_Uno_fpe_dm_political_power
+
+	production_factory_max_efficiency_factor = JAP_Uno_fpe_dm_eff_cap
+
+}
+
+JAP_Uno_ke_dm = {
+
+	icon = GFX_idea_generic_production_bonus
+
+	enable = {
+
+		check_variable = { var = JAP_Uno_ke_dm_total value = 0 compare = greater_than }
+
+	}
+
+	consumer_goods_factor = JAP_Uno_ke_dm_consumer_goods
+
+	industrial_capacity_factory = JAP_Uno_ke_dm_factory_output
+
+	production_speed_buildings_factor = JAP_Uno_ke_dm_build_speed
+
+	research_speed_factor = JAP_Uno_ke_dm_research
+
+	stability_factor = JAP_Uno_ke_dm_stability
+
+	global_building_slots_factor = JAP_Uno_ke_dm_slots_factor
+
+	production_factory_max_efficiency_factor = JAP_Uno_ke_dm_eff_cap
+
+}
+
+JAP_Uno_as_dm = {
+
+	icon = GFX_idea_generic_production_bonus
+
+	enable = {
+
+		check_variable = { var = JAP_Uno_as_dm_total value = 0 compare = greater_than }
+
+	}
+
+	research_speed_factor = JAP_Uno_as_dm_research
+
+	industrial_capacity_factory = JAP_Uno_as_dm_factory_output
+
+	production_speed_buildings_factor = JAP_Uno_as_dm_build_speed
+
+	production_factory_max_efficiency_factor = JAP_Uno_as_dm_eff_cap
+
+	stability_factor = JAP_Uno_as_dm_stability
+
+	political_power_factor = JAP_Uno_as_dm_political_power
+
+	local_building_slots = JAP_Uno_as_dm_local_slots
+
+}
+
+JAP_Uno_cm_dm = {
+
+	icon = GFX_idea_generic_production_bonus
+
+	enable = {
+
+		check_variable = { var = JAP_Uno_cm_dm_total value = 0 compare = greater_than }
+
+	}
+
+	consumer_goods_factor = JAP_Uno_cm_dm_consumer_goods
+
+	industrial_capacity_factory = JAP_Uno_cm_dm_factory_output
+
+	research_speed_factor = JAP_Uno_cm_dm_research
+
+	stability_factor = JAP_Uno_cm_dm_stability
+
+	political_power_factor = JAP_Uno_cm_dm_political_power
+
+	local_building_slots = JAP_Uno_cm_dm_local_slots
+
+}
