@@ -966,6 +966,10 @@
  JAP_Uno_ke_spirit: "劳农同盟的节律"
  JAP_Uno_as_spirit: "计算中心的脉冲"
  JAP_Uno_cm_spirit: "合作社的纽带"
- JAP_Uno_spirit_tt: "获得该路线的经济民族精神"
- JAP_Uno_dm_tt: "确立本路线的动态修正：后续国策将持续强化该修正"
  JAP_Uno_econ_modifier_tt: "改善经济系统的投资与贸易修正"
+# ===== R53: 大规模投资科研与职业教育 =====
+ JAP_Uno_mega_research_investment_spirit: "超大规模科研投资"
+ JAP_Uno_advanced_vocational_education_spirit: "发达的职业教育"
+ JAP_Uno_infra_build_tt: "基础设施未满级的地区将增加1级基础设施"
+ JAP_Uno_slots_factory_tt: "随机地区获得建筑位与民用工厂"
+ JAP_Uno_dm_dummy: "路线经济修正"

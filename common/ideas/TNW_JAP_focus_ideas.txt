@@ -690,5 +690,197 @@ ideas = {
 			}
 
 		}
+		# ===== R53: 大规模投资科研与职业教育精神 =====
+
+		JAP_Uno_mega_research_investment_spirit = {
+
+			picture = RUS_one_five_jihua
+
+			allowed = { original_tag = JAP }
+
+			removal_cost = -1
+
+			modifier = {
+
+				political_power_cost = 0.05
+
+				research_speed_factor = 0.10
+
+				industrial_capacity_factory = -0.05
+
+			}
+
+		}
+
+		JAP_Uno_advanced_vocational_education_spirit = {
+
+			picture = gong_chang_guo_ji
+
+			allowed = { original_tag = JAP }
+
+			removal_cost = -1
+
+			modifier = {
+
+				production_speed_industrial_complex_factor = 0.15
+
+				production_speed_infrastructure_factor = 0.25
+
+				global_building_slots_factor = 0.10
+
+			}
+
+		}
+
+		# ===== R54: 动态修正变化显示用 dummy（effect_tooltip 只显示不执行，绝不实际添加）=====
+		JAP_Uno_dm_dummy_0 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		JAP_Uno_dm_dummy_01 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+		}
+		JAP_Uno_dm_dummy_02 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+			}
+		}
+		JAP_Uno_dm_dummy_03 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.02
+			}
+		}
+		JAP_Uno_dm_dummy_04 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.02
+			}
+		}
+		JAP_Uno_dm_dummy_05 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+			}
+		}
+		JAP_Uno_dm_dummy_06 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				global_building_slots_factor = 0.02
+			}
+		}
+		JAP_Uno_dm_dummy_07 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.02
+			}
+		}
+		JAP_Uno_dm_dummy_08 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.02
+			}
+		}
+		JAP_Uno_dm_dummy_09 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.04
+			}
+		}
+		JAP_Uno_dm_dummy_10 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				global_building_slots_factor = 0.02
+				production_factory_max_efficiency_factor = 0.02
+			}
+		}
+		JAP_Uno_dm_dummy_11 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.02
+				research_speed_factor = 0.02
+			}
+		}
+		JAP_Uno_dm_dummy_12 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				research_speed_factor = 0.15
+			}
+		}
+		JAP_Uno_dm_dummy_13 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				local_building_slots = 0.03
+			}
+		}
+		JAP_Uno_dm_dummy_14 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.06
+			}
+		}
+		JAP_Uno_dm_dummy_15 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				line_change_production_efficiency_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_buildings_factor = 0.20
+			}
+		}
+		JAP_Uno_dm_dummy_16 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				research_speed_factor = 0.05
+			}
+		}
+		JAP_Uno_dm_dummy_17 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.04
+			}
+		}
+		JAP_Uno_dm_dummy_18 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				global_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		JAP_Uno_dm_dummy_19 = {
+			name = JAP_Uno_dm_dummy
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.04
+			}
+		}
+
 	}
 }

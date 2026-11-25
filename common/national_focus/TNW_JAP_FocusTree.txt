@@ -2623,6 +2623,14 @@
 		cost = 4.00
 		x = 20
 		y = 15
+		available = {
+			OR = {
+				has_country_flag = JAP_Uno_route_planned_economy_flag
+				has_country_flag = JAP_Uno_route_korouha_flag
+				has_country_flag = JAP_Uno_route_cybernetics_flag
+				has_country_flag = JAP_Uno_route_civil_society_flag
+			}
+		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_debate_28_days"
 			# ===== R52: 效果（线=根）=====
@@ -2636,6 +2644,14 @@
 		cost = 5.00
 		x = 6
 		y = 16
+		available = {
+			OR = {
+				has_country_flag = JAP_Uno_route_planned_economy_flag
+				has_country_flag = JAP_Uno_route_korouha_flag
+				has_country_flag = JAP_Uno_route_cybernetics_flag
+				has_country_flag = JAP_Uno_route_civil_society_flag
+			}
+		}
 		prerequisite = {
 			focus = JAP_Uno_debate_28_days
 		}
@@ -2644,7 +2660,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 110
 			add_stability = 0.02
-			custom_effect_tooltip = JAP_Uno_dm_tt
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_01
+				}
+			}
 			add_dynamic_modifier = { modifier = JAP_Uno_fpe_dm }
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
@@ -2656,6 +2677,14 @@
 		cost = 5.00
 		x = 16
 		y = 16
+		available = {
+			OR = {
+				has_country_flag = JAP_Uno_route_planned_economy_flag
+				has_country_flag = JAP_Uno_route_korouha_flag
+				has_country_flag = JAP_Uno_route_cybernetics_flag
+				has_country_flag = JAP_Uno_route_civil_society_flag
+			}
+		}
 		prerequisite = {
 			focus = JAP_Uno_debate_28_days
 		}
@@ -2664,7 +2693,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 110
 			add_stability = 0.02
-			custom_effect_tooltip = JAP_Uno_dm_tt
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_02
+				}
+			}
 			add_dynamic_modifier = { modifier = JAP_Uno_ke_dm }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_stability value = 0.03 }
@@ -2676,6 +2710,14 @@
 		cost = 5.00
 		x = 24
 		y = 16
+		available = {
+			OR = {
+				has_country_flag = JAP_Uno_route_planned_economy_flag
+				has_country_flag = JAP_Uno_route_korouha_flag
+				has_country_flag = JAP_Uno_route_cybernetics_flag
+				has_country_flag = JAP_Uno_route_civil_society_flag
+			}
+		}
 		prerequisite = {
 			focus = JAP_Uno_debate_28_days
 		}
@@ -2684,7 +2726,12 @@
 			# ===== R52: 效果（线=as）=====
 			add_political_power = 110
 			add_stability = 0.02
-			custom_effect_tooltip = JAP_Uno_dm_tt
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_02
+				}
+			}
 			add_dynamic_modifier = { modifier = JAP_Uno_as_dm }
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_stability value = 0.03 }
@@ -2696,6 +2743,14 @@
 		cost = 5.00
 		x = 31
 		y = 16
+		available = {
+			OR = {
+				has_country_flag = JAP_Uno_route_planned_economy_flag
+				has_country_flag = JAP_Uno_route_korouha_flag
+				has_country_flag = JAP_Uno_route_cybernetics_flag
+				has_country_flag = JAP_Uno_route_civil_society_flag
+			}
+		}
 		prerequisite = {
 			focus = JAP_Uno_debate_28_days
 		}
@@ -2704,7 +2759,12 @@
 			# ===== R52: 效果（线=cm）=====
 			add_political_power = 110
 			add_stability = 0.02
-			custom_effect_tooltip = JAP_Uno_dm_tt
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_dynamic_modifier = { modifier = JAP_Uno_cm_dm }
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_factory_output value = 0.02 }
@@ -2724,6 +2784,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 115
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_04
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_research value = 0.02 }
 			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
@@ -2744,10 +2810,15 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 115
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_01
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
-			random_owned_state = {
-				limit = { state = 282 }
+			282 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
 			}
@@ -2773,6 +2844,12 @@
 			# ===== R52: 效果（线=fpe+ke）=====
 			add_political_power = 115
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_05
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_stability value = 0.03 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -2798,6 +2875,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 115
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
 		}
@@ -2816,6 +2899,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 115
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_06
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
 			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
@@ -2836,9 +2925,14 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 115
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
-			custom_effect_tooltip = JAP_Uno_spirit_tt
 			add_ideas = JAP_Uno_ke_spirit
 		}
 	}
@@ -2856,6 +2950,12 @@
 			# ===== R52: 效果（线=as）=====
 			add_political_power = 115
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_07
+				}
+			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_build_speed value = 0.02 }
 		}
@@ -2874,6 +2974,12 @@
 			# ===== R52: 效果（线=as）=====
 			add_political_power = 115
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_02
+				}
+			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_stability value = 0.03 }
 		}
@@ -2892,6 +2998,12 @@
 			# ===== R52: 效果（线=as）=====
 			add_political_power = 115
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_factory_output value = 0.02 }
 		}
@@ -2910,6 +3022,12 @@
 			# ===== R52: 效果（线=cm）=====
 			add_political_power = 115
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_01
+				}
+			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_consumer_goods value = 0.03 }
 		}
@@ -2928,9 +3046,14 @@
 			# ===== R52: 效果（线=cm）=====
 			add_political_power = 115
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_04
+				}
+			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_research value = 0.02 }
-			custom_effect_tooltip = JAP_Uno_spirit_tt
 			add_ideas = JAP_Uno_cm_spirit
 		}
 	}
@@ -2948,6 +3071,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_factory_output value = 0.02 }
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
@@ -2968,10 +3097,15 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_04
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_research value = 0.02 }
-			random_owned_state = {
-				limit = { state = 531 }
+			531 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
 			}
@@ -2996,6 +3130,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_08
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_eff_cap value = 0.02 }
 		}
@@ -3017,6 +3157,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_factory_output value = 0.02 }
 		}
@@ -3038,6 +3184,12 @@
 			# ===== R52: 效果（线=fpe+ke）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_09
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_research value = 0.02 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -3061,6 +3213,12 @@
 			# ===== R52: 效果（线=fpe+ke）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_10
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_eff_cap value = 0.02 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -3081,6 +3239,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
@@ -3106,6 +3270,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_04
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.02 }
 		}
@@ -3127,6 +3297,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_06
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
@@ -3147,6 +3323,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
 		}
@@ -3166,6 +3348,12 @@
 			# ===== R52: 效果（线=ke+as）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_11
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.02 }
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
@@ -3191,6 +3379,12 @@
 			# ===== R52: 效果（线=as）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_08
+				}
+			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_eff_cap value = 0.02 }
 		}
@@ -3212,6 +3406,12 @@
 			# ===== R52: 效果（线=as）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_04
+				}
+			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_research value = 0.02 }
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
@@ -3229,7 +3429,44 @@
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_mass_investment_in_research"
-			# R50: 玩法效果待填（除 log 外为空）
+			# ===== R53: 大规模投资科研（逐字实现）=====
+			add_research_slot = 1
+			# 自动化社会主义追加: 科研速度+15% 生产效率增长-5%
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_12
+				}
+			}
+			add_to_variable = { var = JAP_Uno_as_dm_research value = 0.15 }
+			add_to_variable = { var = JAP_Uno_as_dm_eff_gain value = -0.05 }
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			# 730天民族精神: 超大规模科研投资（政治点数消耗+0.05 科研速度+10% 工厂产出-5%）
+			add_timed_idea = { idea = JAP_Uno_mega_research_investment_spirit days = 730 }
+			# 随机最多三个基础设施未满级地区 +1基础设施
+			custom_effect_tooltip = JAP_Uno_infra_build_tt
+			random_owned_state = {
+				limit = { infrastructure_level < 5 }
+				add_building_construction = { type = infrastructure level = 1 }
+			}
+			random_owned_state = {
+				limit = { infrastructure_level < 5 }
+				add_building_construction = { type = infrastructure level = 1 }
+			}
+			random_owned_state = {
+				limit = { infrastructure_level < 5 }
+				add_building_construction = { type = infrastructure level = 1 }
+			}
+			# 大幅增加教育发展度 / 小幅降低工业发展度 / 小幅降低经济发展度(富裕水平)
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 8 }
+			custom_effect_tooltip = TNW_dev_ind_month_fall_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = -2 }
+			custom_effect_tooltip = TNW_dev_wel_month_fall_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = -2 }
+			# 从国库扣除资金
+			custom_effect_tooltip = JAP_capital_reserves_fall_tt
+			add_to_variable = { var = capital_reserves value = -15 }
 		}
 	}
 	focus = {
@@ -3246,6 +3483,12 @@
 			# ===== R52: 效果（线=cm）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_13
+				}
+			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_local_slots value = 0.03 }
 		}
@@ -3264,6 +3507,12 @@
 			# ===== R52: 效果（线=cm）=====
 			add_political_power = 120
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_04
+				}
+			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_research value = 0.02 }
 			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
@@ -3287,6 +3536,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 125
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_07
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_build_speed value = 0.02 }
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
@@ -3307,6 +3562,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 125
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_02
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_stability value = 0.03 }
 			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
@@ -3328,6 +3589,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 125
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_01
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
@@ -3354,6 +3621,12 @@
 			# ===== R52: 效果（线=fpe+ke）=====
 			add_political_power = 125
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_05
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_stability value = 0.03 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -3378,6 +3651,12 @@
 			# ===== R52: 效果（线=fpe+ke）=====
 			add_political_power = 125
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_14
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -3400,6 +3679,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 125
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_07
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_build_speed value = 0.02 }
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
@@ -3420,6 +3705,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 125
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_06
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
@@ -3443,6 +3734,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 125
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
 		}
@@ -3464,6 +3761,12 @@
 			# ===== R52: 效果（线=as）=====
 			add_political_power = 125
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_02
+				}
+			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_stability value = 0.03 }
 		}
@@ -3482,9 +3785,15 @@
 			# ===== R52: 效果（线=as）=====
 			add_political_power = 125
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_factory_output value = 0.02 }
-			custom_effect_tooltip = TNW_dev_lit_month_rise_tt
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
 			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 2 }
 		}
 	}
@@ -3502,7 +3811,51 @@
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_vocational_education_program"
-			# R50: 玩法效果待填（除 log 外为空）
+			# ===== R53: 职业教育纲要（逐字实现）=====
+			# 自动化社会主义或合作社市场经济追加: 建造速度+10% 生产效率保留+5% 生产效率上限+5% 工厂产出+5%
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_15
+				}
+			}
+			add_to_variable = { var = JAP_Uno_as_dm_build_speed value = 0.10 }
+			add_to_variable = { var = JAP_Uno_as_dm_eff_retain value = 0.05 }
+			add_to_variable = { var = JAP_Uno_as_dm_eff_cap value = 0.05 }
+			add_to_variable = { var = JAP_Uno_as_dm_factory_output value = 0.05 }
+			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
+			add_to_variable = { var = JAP_Uno_cm_dm_build_speed value = 0.10 }
+			add_to_variable = { var = JAP_Uno_cm_dm_eff_retain value = 0.05 }
+			add_to_variable = { var = JAP_Uno_cm_dm_eff_cap value = 0.05 }
+			add_to_variable = { var = JAP_Uno_cm_dm_factory_output value = 0.05 }
+			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
+			# 民族精神: 发达的职业教育（民工建造+15% 基建建造+25% 地区最大工厂数+10%）
+			add_ideas = JAP_Uno_advanced_vocational_education_spirit
+			# 随机3个地区 +2建筑位 +1民用工厂，基建未满再+1
+			custom_effect_tooltip = JAP_Uno_slots_factory_tt
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 1 }
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 1 }
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 1 }
+				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			# 增加教育发展度 / 增加工业发展度
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
+			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 3 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 3 }
+			# 从国库扣除资金
+			custom_effect_tooltip = JAP_capital_reserves_fall_tt
+			add_to_variable = { var = capital_reserves value = -15 }
 		}
 	}
 	focus = {
@@ -3522,6 +3875,12 @@
 			# ===== R52: 效果（线=cm）=====
 			add_political_power = 125
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_factory_output value = 0.02 }
 		}
@@ -3540,6 +3899,12 @@
 			# ===== R52: 效果（线=cm）=====
 			add_political_power = 125
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_02
+				}
+			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_stability value = 0.03 }
 		}
@@ -3561,6 +3926,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 130
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_01
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
 			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
@@ -3584,6 +3955,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 130
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_07
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_build_speed value = 0.02 }
 		}
@@ -3608,6 +3985,12 @@
 			# R52硬性: 新长期经济计划
 			add_research_slot = 1
 			# 法式计划经济追加: 生产效率上限+10% 科研速度+5%
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_16
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_eff_cap value = 0.10 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_research value = 0.05 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -3615,13 +3998,11 @@
 			add_tech_bonus = { bonus = 0.75 uses = 2 category = industry }
 			add_tech_bonus = { bonus = 1.00 ahead_reduction = 2 uses = 2 category = industry }
 			# 东京(282)、大阪(531) + 两个随机地块：+1建筑位；基建未满级+1
-			random_owned_state = {
-				limit = { state = 282 }
+			282 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
 			}
-			random_owned_state = {
-				limit = { state = 531 }
+			531 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
 			}
@@ -3654,6 +4035,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 130
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_factory_output value = 0.02 }
 			random_owned_state = {
@@ -3676,6 +4063,12 @@
 			# ===== R52: 效果（线=fpe+ke）=====
 			add_political_power = 130
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_09
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_research value = 0.02 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -3699,12 +4092,17 @@
 			# ===== R52: 效果（线=fpe+ke）=====
 			add_political_power = 130
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_10
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_eff_cap value = 0.02 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
-			random_owned_state = {
-				limit = { state = 531 }
+			531 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
 			}
@@ -3724,12 +4122,17 @@
 			# ===== R52: 效果（线=fpe+ke）=====
 			add_political_power = 130
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_17
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_factory_output value = 0.02 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
-			random_owned_state = {
-				limit = { state = 282 }
+			282 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
 			}
@@ -3757,6 +4160,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 130
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_04
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.02 }
 			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
@@ -3780,6 +4189,12 @@
 			# R52硬性: 劳动者教育文化纲要
 			add_research_slot = 1
 			# 劳农派经济学追加: 建造速度+5% 科研速度+5% 地区最大工业值+15%
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_18
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_build_speed value = 0.05 }
 			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.05 }
 			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.15 }
@@ -3787,7 +4202,7 @@
 			# 3张工业科技100%加成卡
 			add_tech_bonus = { bonus = 1.00 uses = 3 category = industry }
 			# 增加教育水平和工业水平发展度 + 扣除国库资金
-			custom_effect_tooltip = TNW_dev_lit_month_rise_tt
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
 			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 5 }
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 3 }
@@ -3809,17 +4224,21 @@
 			# ===== R52: 效果（线=ke+as）=====
 			add_political_power = 130
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_11
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.02 }
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_factory_output value = 0.02 }
-			random_owned_state = {
-				limit = { state = 282 }
+			282 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
 			}
-			random_owned_state = {
-				limit = { state = 531 }
+			531 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
 			}
@@ -3841,6 +4260,12 @@
 			# ===== R52: 效果（线=as）=====
 			add_political_power = 130
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_02
+				}
+			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_stability value = 0.03 }
 		}
@@ -3859,9 +4284,14 @@
 			# ===== R52: 效果（线=as）=====
 			add_political_power = 130
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_factory_output value = 0.02 }
-			custom_effect_tooltip = JAP_Uno_spirit_tt
 			add_ideas = JAP_Uno_as_spirit
 		}
 	}
@@ -3879,6 +4309,12 @@
 			# ===== R52: 效果（线=cm）=====
 			add_political_power = 130
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_01
+				}
+			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_consumer_goods value = 0.03 }
 			random_owned_state = {
@@ -3904,6 +4340,12 @@
 			# ===== R52: 效果（线=cm）=====
 			add_political_power = 130
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_04
+				}
+			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_research value = 0.02 }
 			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
@@ -3924,6 +4366,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 135
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_01
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
 		}
@@ -3942,6 +4390,12 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 135
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_07
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_build_speed value = 0.02 }
 		}
@@ -3963,6 +4417,12 @@
 			# ===== R52: 效果（线=fpe+ke）=====
 			add_political_power = 135
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_19
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_build_speed value = 0.02 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -3991,11 +4451,17 @@
 			# ===== R52: 效果（线=fpe+ke）=====
 			add_political_power = 135
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_05
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_stability value = 0.03 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_stability value = 0.03 }
-			custom_effect_tooltip = TNW_dev_lit_month_rise_tt
+			custom_effect_tooltip = TNW_dev_edu_month_rise_tt
 			add_to_variable = { var = TNW_Literacy_level_monthly_value value = 2 }
 		}
 	}
@@ -4014,17 +4480,21 @@
 			# ===== R52: 效果（线=fpe+ke）=====
 			add_political_power = 135
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_14
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_consumer_goods value = 0.03 }
-			random_owned_state = {
-				limit = { state = 282 }
+			282 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
 			}
-			random_owned_state = {
-				limit = { state = 531 }
+			531 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
 			}
@@ -4046,6 +4516,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 135
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_04
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_research value = 0.02 }
 		}
@@ -4067,6 +4543,12 @@
 			# ===== R52: 效果（线=as）=====
 			add_political_power = 135
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_04
+				}
+			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_research value = 0.02 }
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
@@ -4090,9 +4572,14 @@
 			# ===== R52: 效果（线=cm）=====
 			add_political_power = 135
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_03
+				}
+			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_factory_output value = 0.02 }
-			custom_effect_tooltip = JAP_Uno_spirit_tt
 			add_ideas = JAP_Uno_cm_spirit
 		}
 	}
@@ -4117,9 +4604,14 @@
 			# ===== R52: 效果（线=fpe）=====
 			add_political_power = 140
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_02
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_stability value = 0.03 }
-			custom_effect_tooltip = JAP_Uno_spirit_tt
 			add_ideas = JAP_Uno_fpe_spirit
 		}
 	}
@@ -4138,17 +4630,21 @@
 			# ===== R52: 效果（线=fpe+ke）=====
 			add_political_power = 140
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_10
+				}
+			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_eff_cap value = 0.02 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
-			random_owned_state = {
-				limit = { state = 282 }
+			282 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
 			}
-			random_owned_state = {
-				limit = { state = 531 }
+			531 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
 			}
@@ -4173,6 +4669,12 @@
 			# ===== R52: 效果（线=ke）=====
 			add_political_power = 140
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_01
+				}
+			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_consumer_goods value = 0.03 }
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
@@ -4193,9 +4695,14 @@
 			# ===== R52: 效果（线=as）=====
 			add_political_power = 140
 			add_stability = 0.02
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_dm_dummy_0
+					add_idea = JAP_Uno_dm_dummy_04
+				}
+			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_research value = 0.02 }
-			custom_effect_tooltip = JAP_Uno_spirit_tt
 			add_ideas = JAP_Uno_as_spirit
 		}
 	}

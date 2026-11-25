@@ -109,6 +109,10 @@ JAP_Uno_as_dm = {
 
 	local_building_slots = JAP_Uno_as_dm_local_slots
 
+	production_factory_efficiency_gain_factor = JAP_Uno_as_dm_eff_gain
+
+	line_change_production_efficiency_factor = JAP_Uno_as_dm_eff_retain
+
 }
 
 JAP_Uno_cm_dm = {
@@ -132,5 +136,11 @@ JAP_Uno_cm_dm = {
 	political_power_factor = JAP_Uno_cm_dm_political_power
 
 	local_building_slots = JAP_Uno_cm_dm_local_slots
+
+	production_speed_buildings_factor = JAP_Uno_cm_dm_build_speed
+
+	production_factory_max_efficiency_factor = JAP_Uno_cm_dm_eff_cap
+
+	line_change_production_efficiency_factor = JAP_Uno_cm_dm_eff_retain
 
 }
