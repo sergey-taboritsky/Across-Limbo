@@ -48,7 +48,11 @@
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_End_Food_Crisis"
-			remove_ideas = JAP_Food_Crisis_Strike_idea
+			remove_ideas = JAP_Food_Crisis_Strike_idea_1
+			remove_ideas = JAP_Food_Crisis_Strike_idea_2
+			remove_ideas = JAP_Food_Crisis_Strike_idea_3
+			remove_ideas = JAP_Food_Crisis_Strike_idea_4
+			remove_ideas = JAP_Food_Crisis_Strike_idea_5
 			add_stability = 0.05
 			add_political_power = 50
 			if = {

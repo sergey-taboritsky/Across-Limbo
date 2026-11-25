@@ -971,9 +971,18 @@ country_event = {
 		tag = JAP
 		date = 1948.5.8
 	}
-	# docx 0072：「（食粮危机进程回退）」为机制说明，本轮只装文案、未实现变量效果
+	# docx 0072：「（食粮危机进程回退）」已按现有变量 JAP_food_crisis_stash_var 实现
 	option = {
 		name = JAP_event.306.a
+		custom_effect_tooltip = JAP_food_crisis_stash_fall_tt
+		add_to_variable = {
+			JAP_food_crisis_stash_var = -30
+		}
+		clamp_variable = {
+			var = JAP_food_crisis_stash_var
+			min = 0
+			max = 100
+		}
 	}
 }
 

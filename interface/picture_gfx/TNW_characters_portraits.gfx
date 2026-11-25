@@ -3183,4 +3183,18 @@ spriteTypes = {
 		name = "GFX_portrait_large_KSM_Gopalaswami_Ayyangar"
 		texturefile = "gfx/characters/KSM_Gopalaswami_Ayyangar.png"
 	}
+
+	#MAH
+	#K·M·卡里亚帕
+	spriteType = {
+		name = "GFX_portrait_large_MAH_KM_Cariappa"
+		texturefile = "gfx/characters/MAH_KM_Cariappa.png"
+	}
+
+	#SWE
+	#塔格·埃兰德
+	spriteType = {
+		name = "GFX_portrait_large_SWE_Tage_Erland"
+		texturefile = "gfx/characters/SWE_Tage_Erland.png"
+	}
 }

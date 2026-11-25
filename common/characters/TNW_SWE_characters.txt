@@ -1,15 +1,15 @@
 characters = {
-	#弗朗斯·塞韦林
-	SWE_Frans_Severin = {
-		name = SWE_Frans_Severin
+	#塔格·埃兰德
+	SWE_Tage_Erland = {
+		name = SWE_Tage_Erland
 		portraits = {
 			civilian = {
-				large = GFX_portrait_large_SWE_Frans_Severin
+				large = GFX_portrait_large_SWE_Tage_Erland
 			}
 		}
 		country_leader = {
-			desc = SWE_Frans_Severin_desc
-			ideology = Centralised_Syndicalism
+			desc = SWE_Tage_Erland_desc
+			ideology = progressivism
 			expire = "1999.1.1.1"
 			id = -1
 			traits = {

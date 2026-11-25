@@ -71,19 +71,89 @@ ideas = {
 			}
 		}
 		#总罢工（食粮危机功能钩子，由决议授予，勿删）
-		JAP_Food_Crisis_Strike_idea = {
+		JAP_Food_Crisis_Strike_idea_1 = {
+			name = JAP_Food_Crisis_Strike_idea
 			picture = JAP_Food_Crisis_Strike_idea
 			allowed = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				conscription_factor = -0.5
-				drift_defence_factor = -0.5
+				political_power_factor = 0.10
+				conscription_factor = -0.50
+				drift_defence_factor = -0.50
+				stability_factor = -0.35
+				consumer_goods_factor = 0.60
+				production_speed_buildings_factor = -0.50
+				production_speed_arms_factory_factor = -0.80
+			}
+		}
+		JAP_Food_Crisis_Strike_idea_2 = {
+			name = JAP_Food_Crisis_Strike_idea
+			picture = JAP_Food_Crisis_Strike_idea
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.08
+				conscription_factor = -0.40
+				drift_defence_factor = -0.40
 				stability_factor = -0.25
-				consumer_goods_factor = 0.40
-				production_speed_buildings_factor = -0.33
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.40
 				production_speed_arms_factory_factor = -0.66
+			}
+		}
+		JAP_Food_Crisis_Strike_idea_3 = {
+			name = JAP_Food_Crisis_Strike_idea
+			picture = JAP_Food_Crisis_Strike_idea
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.06
+				conscription_factor = -0.30
+				drift_defence_factor = -0.30
+				stability_factor = -0.18
+				consumer_goods_factor = 0.30
+				production_speed_buildings_factor = -0.30
+				production_speed_arms_factory_factor = -0.50
+			}
+		}
+		JAP_Food_Crisis_Strike_idea_4 = {
+			name = JAP_Food_Crisis_Strike_idea
+			picture = JAP_Food_Crisis_Strike_idea
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.04
+				conscription_factor = -0.20
+				drift_defence_factor = -0.20
+				stability_factor = -0.10
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.20
+				production_speed_arms_factory_factor = -0.33
+			}
+		}
+		JAP_Food_Crisis_Strike_idea_5 = {
+			name = JAP_Food_Crisis_Strike_idea
+			picture = JAP_Food_Crisis_Strike_idea
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.02
+				conscription_factor = -0.10
+				drift_defence_factor = -0.10
+				stability_factor = -0.05
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.10
+				production_speed_arms_factory_factor = -0.16
 			}
 		}
 	}
