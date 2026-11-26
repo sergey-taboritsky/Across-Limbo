@@ -455,19 +455,9 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_joint_command"
 			add_stability = 0.01
 			# R24 实体效果
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AFF_reconstruction_0
-					add_idea = TNW_AFF_reconstruction_1
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AFF_reconstruction_0
-				remove_ideas = TNW_AFF_reconstruction_1
-				remove_ideas = TNW_AFF_reconstruction_2
-				remove_ideas = TNW_AFF_reconstruction_3
-				remove_ideas = TNW_AFF_reconstruction_4
-				add_ideas = TNW_AFF_reconstruction_1
+			swap_ideas = {
+				remove_idea = TNW_AFF_reconstruction_0
+				add_idea = TNW_AFF_reconstruction_1
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
@@ -2120,19 +2110,9 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_front_settlement"
 			add_stability = 0.01
 			# R24 实体效果
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AFF_reconstruction_1
-					add_idea = TNW_AFF_reconstruction_2
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AFF_reconstruction_0
-				remove_ideas = TNW_AFF_reconstruction_1
-				remove_ideas = TNW_AFF_reconstruction_2
-				remove_ideas = TNW_AFF_reconstruction_3
-				remove_ideas = TNW_AFF_reconstruction_4
-				add_ideas = TNW_AFF_reconstruction_2
+			swap_ideas = {
+				remove_idea = TNW_AFF_reconstruction_1
+				add_idea = TNW_AFF_reconstruction_2
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
@@ -2463,12 +2443,7 @@ focus_tree = {
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 50 }
 			# R25 派别民族精神（自由党温和派·太平洋自由灯塔·第一层）
-			effect_tooltip = {
-				add_ideas = TNW_AFF_pacific_beacon_1
-			}
-			hidden_effect = {
-				add_ideas = TNW_AFF_pacific_beacon_1
-			}
+			add_ideas = TNW_AFF_pacific_beacon_1
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
 			add_to_variable = { var = TNW_Agriculture_monthly_value value = 2 }
@@ -2521,12 +2496,7 @@ focus_tree = {
 				}
 			}
 			# R25 派别民族精神（国家党·团结的澳大利亚·第一层）
-			effect_tooltip = {
-				add_ideas = TNW_AFF_united_australia_1
-			}
-			hidden_effect = {
-				add_ideas = TNW_AFF_united_australia_1
-			}
+			add_ideas = TNW_AFF_united_australia_1
 			# R27 发展度与经济
 			custom_effect_tooltip = JAP_capital_reserves_gain_tt
 			add_to_variable = { var = capital_reserves value = 4 }
@@ -2570,12 +2540,7 @@ focus_tree = {
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 }
 			# R25 派别民族精神（民主工党·反激进主义工人运动·第一层）
-			effect_tooltip = {
-				add_ideas = TNW_AFF_anti_radical_labour_1
-			}
-			hidden_effect = {
-				add_ideas = TNW_AFF_anti_radical_labour_1
-			}
+			add_ideas = TNW_AFF_anti_radical_labour_1
 			# R27 发展度与经济
 			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
 			custom_effect_tooltip = TNW_econ_invest_up_tt
@@ -2620,12 +2585,7 @@ focus_tree = {
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 50 }
 			# R25 派别民族精神（自由党激进派·反共民族主义·第一层）
-			effect_tooltip = {
-				add_ideas = TNW_AFF_anti_communist_nationalism_1
-			}
-			hidden_effect = {
-				add_ideas = TNW_AFF_anti_communist_nationalism_1
-			}
+			add_ideas = TNW_AFF_anti_communist_nationalism_1
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
 			add_to_variable = { var = TNW_Agriculture_value value = 9 }
@@ -3639,16 +3599,9 @@ focus_tree = {
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 60 }
 			# R25 派别民族精神（自由党温和派·太平洋自由灯塔·第二层）
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AFF_pacific_beacon_1
-					add_idea = TNW_AFF_pacific_beacon_2
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AFF_pacific_beacon_1
-				remove_ideas = TNW_AFF_pacific_beacon_2
-				add_ideas = TNW_AFF_pacific_beacon_2
+			swap_ideas = {
+				remove_idea = TNW_AFF_pacific_beacon_1
+				add_idea = TNW_AFF_pacific_beacon_2
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
@@ -3678,16 +3631,9 @@ focus_tree = {
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1250 }
 			# R25 派别民族精神（国家党·团结的澳大利亚·第二层）
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AFF_united_australia_1
-					add_idea = TNW_AFF_united_australia_2
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AFF_united_australia_1
-				remove_ideas = TNW_AFF_united_australia_2
-				add_ideas = TNW_AFF_united_australia_2
+			swap_ideas = {
+				remove_idea = TNW_AFF_united_australia_1
+				add_idea = TNW_AFF_united_australia_2
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
@@ -3726,16 +3672,9 @@ focus_tree = {
 				}
 			}
 			# R25 派别民族精神（民主工党·反激进主义工人运动·第二层）
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AFF_anti_radical_labour_1
-					add_idea = TNW_AFF_anti_radical_labour_2
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AFF_anti_radical_labour_1
-				remove_ideas = TNW_AFF_anti_radical_labour_2
-				add_ideas = TNW_AFF_anti_radical_labour_2
+			swap_ideas = {
+				remove_idea = TNW_AFF_anti_radical_labour_1
+				add_idea = TNW_AFF_anti_radical_labour_2
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
@@ -3763,31 +3702,14 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_cabinet"
 			add_stability = 0.01
 			# R24 实体效果
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AFF_reconstruction_2
-					add_idea = TNW_AFF_reconstruction_3
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AFF_reconstruction_0
-				remove_ideas = TNW_AFF_reconstruction_1
-				remove_ideas = TNW_AFF_reconstruction_2
-				remove_ideas = TNW_AFF_reconstruction_3
-				remove_ideas = TNW_AFF_reconstruction_4
-				add_ideas = TNW_AFF_reconstruction_3
+			swap_ideas = {
+				remove_idea = TNW_AFF_reconstruction_2
+				add_idea = TNW_AFF_reconstruction_3
 			}
 			# R25 派别民族精神（自由党激进派·反共民族主义·第二层）
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AFF_anti_communist_nationalism_1
-					add_idea = TNW_AFF_anti_communist_nationalism_2
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AFF_anti_communist_nationalism_1
-				remove_ideas = TNW_AFF_anti_communist_nationalism_2
-				add_ideas = TNW_AFF_anti_communist_nationalism_2
+			swap_ideas = {
+				remove_idea = TNW_AFF_anti_communist_nationalism_1
+				add_idea = TNW_AFF_anti_communist_nationalism_2
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
@@ -5092,19 +5014,9 @@ focus_tree = {
 			navy_experience = 25
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
 			# R24 实体效果
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AFF_reconstruction_3
-					add_idea = TNW_AFF_reconstruction_4
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AFF_reconstruction_0
-				remove_ideas = TNW_AFF_reconstruction_1
-				remove_ideas = TNW_AFF_reconstruction_2
-				remove_ideas = TNW_AFF_reconstruction_3
-				remove_ideas = TNW_AFF_reconstruction_4
-				add_ideas = TNW_AFF_reconstruction_4
+			swap_ideas = {
+				remove_idea = TNW_AFF_reconstruction_3
+				add_idea = TNW_AFF_reconstruction_4
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_bur_month_rise_tt

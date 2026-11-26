@@ -260,7 +260,7 @@
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_War_Crimes_Special_Court"
-			country_event = { id = JAP_event.314 days = 1 }
+			country_event = { id = JAP_event.27 days = 1 }
 			add_political_power = 50
 			add_stability = 0.03
 			add_popularity = {
@@ -757,6 +757,16 @@
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Accept_Social_Revolution_Linearity"
+			# R62: JAP_noro_hegemony_dm 动态修正挂载与变量初始化
+			set_variable = { JAP_noro_dm_factory = 0 }
+			set_variable = { JAP_noro_dm_build = 0 }
+			set_variable = { JAP_noro_dm_research = 0 }
+			set_variable = { JAP_noro_dm_stability = 0 }
+			set_variable = { JAP_noro_dm_arms = 0 }
+			set_variable = { JAP_noro_dm_ic = 0 }
+			set_variable = { JAP_noro_dm_consumer = 0 }
+			set_variable = { JAP_noro_dm_total = 1 }
+			add_dynamic_modifier = { modifier = JAP_noro_hegemony_dm }
 			add_political_power = 75
 			add_popularity = {
 				ideology = socialism
@@ -786,6 +796,15 @@
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Farmer_Comrade_Organization"
+			custom_effect_tooltip = JAP_noro_hegemony_dm_tt
+			add_to_variable = { var = JAP_noro_dm_factory value = 0.05 }
+			random_owned_state = {
+				limit = { state = 531 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = infrastructure level = 1 }
+			}
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 3 }
 			add_political_power = 50
 			add_stability = 0.03
 			add_popularity = {
@@ -838,6 +857,14 @@
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Life_Sustaining_First"
+			custom_effect_tooltip = JAP_noro_hegemony_dm_tt
+			add_to_variable = { var = JAP_noro_dm_consumer value = -0.05 }
+			add_to_variable = { var = JAP_noro_dm_stability value = 0.05 }
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 10 }
+			# R62: 每完成一个重建国策消一层废墟debuff
+			subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 			add_stability = 0.05
 			add_political_power = 50
 			# R33 融合：日本列岛社会主义改造计划（原 JAP_life_security）
@@ -860,6 +887,17 @@
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Labor_Reliance_System"
+			custom_effect_tooltip = JAP_noro_hegemony_dm_tt
+			add_to_variable = { var = JAP_noro_dm_factory value = 0.05 }
+			random_owned_state = {
+				limit = { state = 282 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 }
+			}
+			army_experience = 10
+			# R62: 每完成一个重建国策消一层废墟debuff
+			subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 			add_political_power = 50
 			add_stability = 0.03
 			add_popularity = {
@@ -943,6 +981,12 @@
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Production_Management_Model"
+			custom_effect_tooltip = JAP_noro_hegemony_dm_tt
+			add_to_variable = { var = JAP_noro_dm_build value = 0.05 }
+			add_to_variable = { var = JAP_noro_dm_research value = 0.02 }
+			# R62: 每完成一个重建国策消一层废墟debuff
+			subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 			add_political_power = 50
 			add_stability = 0.03
 			add_popularity = {
@@ -980,6 +1024,12 @@
 		y = 12
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Support_China_Revolution"
+			custom_effect_tooltip = JAP_noro_hegemony_dm_tt
+			add_to_variable = { var = JAP_noro_dm_stability value = 0.03 }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 200 }
+			# R62: 每完成一个重建国策消一层废墟debuff
+			subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 			add_political_power = 50
 			add_stability = 0.03
 			add_popularity = {
@@ -1029,6 +1079,13 @@
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_economic_independence"
+			custom_effect_tooltip = JAP_noro_hegemony_dm_tt
+			add_to_variable = { var = JAP_noro_dm_factory value = 0.05 }
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 3 }
+			# R62: 每完成一个重建国策消一层废墟debuff
+			subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 			add_political_power = 75
 			add_stability = 0.05
 			add_popularity = {
@@ -1054,6 +1111,13 @@
 		y = 14
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_metropolitan_renovation"
+			custom_effect_tooltip = JAP_noro_hegemony_dm_tt
+			add_to_variable = { var = JAP_noro_dm_build value = 0.10 }
+			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
+			add_to_variable = { var = TNW_Affluence_monthly_value value = 5 }
+			# R62: 每完成一个重建国策消一层废墟debuff
+			subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 			add_political_power = 75
 			add_stability = 0.05
 			add_popularity = {
@@ -1122,7 +1186,10 @@
 				ideology = socialism
 				popularity = 0.05
 			}
-			add_ideas = JAP_leaned_production_idea
+			# R62: 倾斜生产精神效果融入劳农派政治霸权动态修正
+			custom_effect_tooltip = JAP_noro_hegemony_dm_tt
+			add_to_variable = { var = JAP_noro_dm_arms value = 0.15 }
+			add_to_variable = { var = JAP_noro_dm_ic value = -0.10 }
 			# 直接加煤/钢资源（九州煤田）
 			add_resource = { resource = coal amount = 40 state = 528 }
 			random_owned_state = {
@@ -1499,9 +1566,20 @@
 				ideology = syndicalism
 				popularity = 0.08
 			}
-			add_ideas = JAP_yoshida_cooperation
+			# R62: 吉田合作精神效果融入日式德莱昂主义动态修正
+			# R62: JAP_deleonism_dm 动态修正挂载与变量初始化
+			set_variable = { JAP_deleon_dm_pp = 0.1 }
+			set_variable = { JAP_deleon_dm_stability = -0.05 }
+			set_variable = { JAP_deleon_dm_factory = 0 }
+			set_variable = { JAP_deleon_dm_research = 0 }
+			set_variable = { JAP_deleon_dm_build = 0 }
+			set_variable = { JAP_deleon_dm_consumer = 0 }
+			set_variable = { JAP_deleon_dm_total = 1 }
+			add_dynamic_modifier = { modifier = JAP_deleonism_dm }
 			# 对美依赖：1951 审查的"自主线"反 flag
 			set_country_flag = JAP_karl_dependence_flag
+			# R62: 美式依附路线直接压低工团实验热情上限，确保1951必然失败
+			add_to_variable = { var = JAP_socialist_reform_enthusiasm_cap_var value = -30 }
 			# 左翼反弹
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_mid_fall_tt
 			subtract_from_variable = { var = JAP_socialist_reform_enthusiasm_var value = 5 }
@@ -1522,6 +1600,18 @@
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_combined_manufacturing"
+			custom_effect_tooltip = JAP_deleonism_dm_tt
+			add_to_variable = { var = JAP_deleon_dm_factory value = 0.06 }
+			random_owned_state = {
+				limit = { state = 528 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 }
+			}
+			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
+			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 3 }
+			# R62: 右线每完成一个重建国策消一层废墟debuff
+			subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 			add_political_power = 50
 			add_stability = 0.03
 			add_popularity = {
@@ -1544,6 +1634,12 @@
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_labour_rights_law"
+			custom_effect_tooltip = JAP_deleonism_dm_tt
+			add_to_variable = { var = JAP_deleon_dm_stability value = 0.05 }
+			add_to_variable = { var = JAP_deleon_dm_pp value = 0.05 }
+			# R62: 右线每完成一个重建国策消一层废墟debuff
+			subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 			add_political_power = 75
 			add_stability = 0.05
 			add_popularity = {
@@ -1570,6 +1666,13 @@
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_american_economic_assistance"
+			custom_effect_tooltip = JAP_deleonism_dm_tt
+			add_to_variable = { var = JAP_deleon_dm_build value = 0.05 }
+			custom_effect_tooltip = JAP_capital_reserves_gain_tt
+			add_to_variable = { var = capital_reserves value = 15 }
+			# R62: 右线每完成一个重建国策消一层废墟debuff
+			subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 			add_political_power = 50
 			add_stability = 0.03
 			add_popularity = {
@@ -1594,6 +1697,12 @@
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_japanese_deleonism"
+			custom_effect_tooltip = JAP_deleonism_dm_tt
+			add_to_variable = { var = JAP_deleon_dm_research value = 0.05 }
+			add_resource = { resource = steel amount = 15 state = 535 }
+			# R62: 右线每完成一个重建国策消一层废墟debuff
+			subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 			add_political_power = 50
 			add_stability = 0.03
 			add_popularity = {
@@ -1617,6 +1726,13 @@
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_unite_farmer_association"
+			custom_effect_tooltip = JAP_deleonism_dm_tt
+			add_to_variable = { var = JAP_deleon_dm_consumer value = -0.03 }
+			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
+			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
+			# R62: 右线每完成一个重建国策消一层废墟debuff
+			subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 			add_political_power = 50
 			add_stability = 0.03
 			add_popularity = {
@@ -1645,6 +1761,12 @@
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_american_experts"
+			custom_effect_tooltip = JAP_deleonism_dm_tt
+			add_to_variable = { var = JAP_deleon_dm_research value = 0.03 }
+			navy_experience = 10
+			# R62: 右线每完成一个重建国策消一层废墟debuff
+			subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 			add_political_power = 50
 			add_stability = 0.03
 			add_popularity = {
@@ -2619,7 +2741,7 @@
 	# ===== R50: 宇野经济国策树（语义id / x>=0 / 5条横向互斥）=====
 	focus = {
 		id = JAP_Uno_debate_28_days
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 4.00
 		x = 20
 		y = 15
@@ -2631,16 +2753,24 @@
 				has_country_flag = JAP_Uno_route_civil_society_flag
 			}
 		}
+		allow_branch = {
+			OR = {
+				has_country_flag = JAP_Uno_route_planned_economy_flag
+				has_country_flag = JAP_Uno_route_korouha_flag
+				has_country_flag = JAP_Uno_route_cybernetics_flag
+				has_country_flag = JAP_Uno_route_civil_society_flag
+			}
+		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_debate_28_days"
+			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
+			add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 1 }
 			# ===== R52: 效果（线=根）=====
-			add_political_power = 105
-			add_stability = 0.02
 		}
 	}
 	focus = {
 		id = JAP_Uno_koza_school_return
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 5.00
 		x = 6
 		y = 16
@@ -2658,22 +2788,13 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_koza_school_return"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 110
-			add_stability = 0.02
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_01
-				}
-			}
 			add_dynamic_modifier = { modifier = JAP_Uno_fpe_dm }
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
-			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
 		}
 	}
 	focus = {
 		id = JAP_Uno_korouha_economics_continued
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 5.00
 		x = 16
 		y = 16
@@ -2691,12 +2812,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_korouha_economics_continued"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 110
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_02
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_05
 				}
 			}
 			add_dynamic_modifier = { modifier = JAP_Uno_ke_dm }
@@ -2706,7 +2825,7 @@
 	}
 	focus = {
 		id = JAP_Uno_mathematical_marxist_economics
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 5.00
 		x = 24
 		y = 16
@@ -2724,12 +2843,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_mathematical_marxist_economics"
 			# ===== R52: 效果（线=as）=====
-			add_political_power = 110
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_02
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_05
 				}
 			}
 			add_dynamic_modifier = { modifier = JAP_Uno_as_dm }
@@ -2739,7 +2856,7 @@
 	}
 	focus = {
 		id = JAP_Uno_civil_society_school
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 5.00
 		x = 31
 		y = 16
@@ -2757,12 +2874,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_civil_society_school"
 			# ===== R52: 效果（线=cm）=====
-			add_political_power = 110
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_cm_dm_dummy_0
+					add_idea = JAP_Uno_cm_dm_dummy_01
 				}
 			}
 			add_dynamic_modifier = { modifier = JAP_Uno_cm_dm }
@@ -2772,7 +2887,7 @@
 	}
 	focus = {
 		id = JAP_Uno_tax_and_monopoly_reform
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 6.00
 		x = 3
 		y = 17
@@ -2782,23 +2897,49 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_tax_and_monopoly_reform"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 115
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_04
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_04
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_research value = 0.02 }
-			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
 			add_to_variable = { var = government_investment_modifier value = 1 }
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_railway_nationalization
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 6.00
 		x = 6
 		y = 17
@@ -2808,16 +2949,7 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_railway_nationalization"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 115
-			add_stability = 0.02
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_01
-				}
-			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
-			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
 			282 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
@@ -2828,7 +2960,7 @@
 	}
 	focus = {
 		id = JAP_Uno_planned_economy
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 6.00
 		x = 10
 		y = 17
@@ -2842,12 +2974,16 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_planned_economy"
 			# ===== R52: 效果（线=fpe+ke）=====
-			add_political_power = 115
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_05
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_05
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_05
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -2860,7 +2996,7 @@
 	}
 	focus = {
 		id = JAP_Uno_reform_production_management
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 6.00
 		x = 13
 		y = 17
@@ -2873,12 +3009,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_reform_production_management"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 115
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_02
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -2887,7 +3021,7 @@
 	}
 	focus = {
 		id = JAP_Uno_improve_social_welfare_system
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 6.00
 		x = 17
 		y = 17
@@ -2897,12 +3031,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_improve_social_welfare_system"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 115
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_06
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -2913,7 +3045,7 @@
 	}
 	focus = {
 		id = JAP_Uno_full_employment_priority
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 6.00
 		x = 19
 		y = 17
@@ -2923,22 +3055,49 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_full_employment_priority"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 115
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_02
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
 			add_ideas = JAP_Uno_ke_spirit
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_economic_cybernetics
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 6.00
 		x = 22
 		y = 17
@@ -2948,12 +3107,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_economic_cybernetics"
 			# ===== R52: 效果（线=as）=====
-			add_political_power = 115
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_07
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_03
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
@@ -2962,7 +3119,7 @@
 	}
 	focus = {
 		id = JAP_Uno_leontief_input_output
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 6.00
 		x = 24
 		y = 17
@@ -2972,12 +3129,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_leontief_input_output"
 			# ===== R52: 效果（线=as）=====
-			add_political_power = 115
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_02
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_05
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
@@ -2986,7 +3141,7 @@
 	}
 	focus = {
 		id = JAP_Uno_morishima_growth_model
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 6.00
 		x = 26
 		y = 17
@@ -2996,21 +3151,48 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_morishima_growth_model"
 			# ===== R52: 效果（线=as）=====
-			add_political_power = 115
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_factory_output value = 0.02 }
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_reframe_three_stages_of_history
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 6.00
 		x = 30
 		y = 17
@@ -3020,21 +3202,12 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_reframe_three_stages_of_history"
 			# ===== R52: 效果（线=cm）=====
-			add_political_power = 115
-			add_stability = 0.02
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_01
-				}
-			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
-			add_to_variable = { var = JAP_Uno_cm_dm_consumer_goods value = 0.03 }
 		}
 	}
 	focus = {
 		id = JAP_Uno_civil_publicness_program
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 6.00
 		x = 32
 		y = 17
@@ -3044,22 +3217,49 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_civil_publicness_program"
 			# ===== R52: 效果（线=cm）=====
-			add_political_power = 115
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_04
+					remove_idea = JAP_Uno_cm_dm_dummy_0
+					add_idea = JAP_Uno_cm_dm_dummy_03
 				}
 			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_research value = 0.02 }
 			add_ideas = JAP_Uno_cm_spirit
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_rural_collectivization_act
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 1
 		y = 18
@@ -3069,12 +3269,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_rural_collectivization_act"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -3085,7 +3283,7 @@
 	}
 	focus = {
 		id = JAP_Uno_secure_electricity_supply
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 3
 		y = 18
@@ -3095,12 +3293,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_secure_electricity_supply"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_04
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_04
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -3111,11 +3307,40 @@
 			}
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_criticize_syndicalism
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 5
 		y = 18
@@ -3128,12 +3353,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_criticize_syndicalism"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_08
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_02
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -3142,7 +3365,7 @@
 	}
 	focus = {
 		id = JAP_Uno_adopt_labor_union_strengths
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 7
 		y = 18
@@ -3155,12 +3378,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_adopt_labor_union_strengths"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -3169,7 +3390,7 @@
 	}
 	focus = {
 		id = JAP_Uno_nationalize_output
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 9
 		y = 18
@@ -3182,12 +3403,16 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_nationalize_output"
 			# ===== R52: 效果（线=fpe+ke）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_09
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_04
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_04
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -3198,7 +3423,7 @@
 	}
 	focus = {
 		id = JAP_Uno_nationalize_key_industries
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 11
 		y = 18
@@ -3211,12 +3436,16 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_nationalize_key_industries"
 			# ===== R52: 效果（线=fpe+ke）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_10
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_02
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -3227,7 +3456,7 @@
 	}
 	focus = {
 		id = JAP_Uno_reinvest_industrial_dividends
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 13
 		y = 18
@@ -3237,25 +3466,22 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_reinvest_industrial_dividends"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_02
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
-			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
 			add_to_variable = { var = domestic_investment_modifier value = 1 }
 		}
 	}
 	focus = {
 		id = JAP_Uno_long_term_resistance_line
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 15
 		y = 18
@@ -3268,12 +3494,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_long_term_resistance_line"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_04
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_04
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -3282,7 +3506,7 @@
 	}
 	focus = {
 		id = JAP_Uno_food_rationing_and_price_control_act
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 17
 		y = 18
@@ -3295,23 +3519,50 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_food_rationing_and_price_control_act"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_06
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
 			add_to_variable = { var = TNW_Agriculture_monthly_value value = 2 }
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_socialist_party_backing
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 19
 		y = 18
@@ -3321,12 +3572,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_socialist_party_backing"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_02
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -3335,7 +3584,7 @@
 	}
 	focus = {
 		id = JAP_Uno_national_economic_census
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 21
 		y = 18
@@ -3346,12 +3595,16 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_national_economic_census"
 			# ===== R52: 效果（线=ke+as）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_11
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_04
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -3364,7 +3617,7 @@
 	}
 	focus = {
 		id = JAP_Uno_paperless_office_trend
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 23
 		y = 18
@@ -3377,12 +3630,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_paperless_office_trend"
 			# ===== R52: 效果（线=as）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_08
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_02
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
@@ -3391,7 +3642,7 @@
 	}
 	focus = {
 		id = JAP_Uno_national_economic_computing_center
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 25
 		y = 18
@@ -3404,23 +3655,50 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_national_economic_computing_center"
 			# ===== R52: 效果（线=as）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_04
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_04
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_research value = 0.02 }
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_mass_investment_in_research
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 27
 		y = 18
@@ -3434,8 +3712,8 @@
 			# 自动化社会主义追加: 科研速度+15% 生产效率增长-5%
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_12
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_06
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_research value = 0.15 }
@@ -3471,7 +3749,7 @@
 	}
 	focus = {
 		id = JAP_Uno_law_of_value_and_freedom
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 29
 		y = 18
@@ -3481,12 +3759,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_law_of_value_and_freedom"
 			# ===== R52: 效果（线=cm）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_13
+					remove_idea = JAP_Uno_cm_dm_dummy_0
+					add_idea = JAP_Uno_cm_dm_dummy_02
 				}
 			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
@@ -3495,7 +3771,7 @@
 	}
 	focus = {
 		id = JAP_Uno_market_economy_intervention
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 7.00
 		x = 32
 		y = 18
@@ -3505,23 +3781,49 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_market_economy_intervention"
 			# ===== R52: 效果（线=cm）=====
-			add_political_power = 120
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_04
+					remove_idea = JAP_Uno_cm_dm_dummy_0
+					add_idea = JAP_Uno_cm_dm_dummy_03
 				}
 			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_research value = 0.02 }
-			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
 			add_to_variable = { var = market_available_for_dumping_modifier value = 1 }
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_rural_enterprise_support_act
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 2
 		y = 19
@@ -3534,12 +3836,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_rural_enterprise_support_act"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 125
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_07
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_03
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -3550,7 +3850,7 @@
 	}
 	focus = {
 		id = JAP_Uno_rationalize_state_industries
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 4
 		y = 19
@@ -3560,23 +3860,20 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_rationalize_state_industries"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 125
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_02
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_05
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_stability value = 0.03 }
-			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
 			add_to_variable = { var = domestic_investment_modifier value = 1 }
 		}
 	}
 	focus = {
 		id = JAP_Uno_central_fiscal_plan
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 6
 		y = 19
@@ -3587,25 +3884,15 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_central_fiscal_plan"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 125
-			add_stability = 0.02
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_01
-				}
-			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
-			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
-			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
 			add_to_variable = { var = government_investment_modifier value = 1 }
 		}
 	}
 	focus = {
 		id = JAP_Uno_equal_pay_policy
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 10
 		y = 19
@@ -3619,12 +3906,16 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_equal_pay_policy"
 			# ===== R52: 效果（线=fpe+ke）=====
-			add_political_power = 125
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_05
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_05
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_05
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -3635,7 +3926,7 @@
 	}
 	focus = {
 		id = JAP_Uno_industry_specific_wage_program
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 12
 		y = 19
@@ -3649,25 +3940,15 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_industry_specific_wage_program"
 			# ===== R52: 效果（线=fpe+ke）=====
-			add_political_power = 125
-			add_stability = 0.02
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_14
-				}
-			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
-			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
-			add_to_variable = { var = JAP_Uno_ke_dm_consumer_goods value = 0.03 }
 			custom_effect_tooltip = TNW_dev_wel_month_rise_tt
 			add_to_variable = { var = TNW_Affluence_monthly_value value = 2 }
 		}
 	}
 	focus = {
 		id = JAP_Uno_low_income_farm_subsidy_act
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 14
 		y = 19
@@ -3677,12 +3958,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_low_income_farm_subsidy_act"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 125
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_07
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_03
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -3693,7 +3972,7 @@
 	}
 	focus = {
 		id = JAP_Uno_farmer_worker_integration_program
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 17
 		y = 19
@@ -3703,23 +3982,50 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_farmer_worker_integration_program"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 125
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_06
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_slots_factor value = 0.02 }
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
 			add_to_variable = { var = TNW_Agriculture_monthly_value value = 2 }
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_eight_hour_workday
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 19
 		y = 19
@@ -3732,21 +4038,48 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_eight_hour_workday"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 125
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_02
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_ke_dm_factory_output value = 0.02 }
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_apply_kantorovich_linear_programming
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 24
 		y = 19
@@ -3759,21 +4092,48 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_apply_kantorovich_linear_programming"
 			# ===== R52: 效果（线=as）=====
-			add_political_power = 125
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_02
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_05
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_as_dm_stability value = 0.03 }
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_research_vacuum_tube_computer
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 26
 		y = 19
@@ -3783,12 +4143,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_research_vacuum_tube_computer"
 			# ===== R52: 效果（线=as）=====
-			add_political_power = 125
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
@@ -3799,7 +4157,7 @@
 	}
 	focus = {
 		id = JAP_Uno_vocational_education_program
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 28
 		y = 19
@@ -3815,8 +4173,14 @@
 			# 自动化社会主义或合作社市场经济追加: 建造速度+10% 生产效率保留+5% 生产效率上限+5% 工厂产出+5%
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_15
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_07
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_cm_dm_dummy_0
+					add_idea = JAP_Uno_cm_dm_dummy_05
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_build_speed value = 0.10 }
@@ -3860,7 +4224,7 @@
 	}
 	focus = {
 		id = JAP_Uno_cooperative_law
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 31
 		y = 19
@@ -3873,21 +4237,48 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_cooperative_law"
 			# ===== R52: 效果（线=cm）=====
-			add_political_power = 125
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_cm_dm_dummy_0
+					add_idea = JAP_Uno_cm_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_cm_dm_factory_output value = 0.02 }
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_rationalize_division_and_exchange
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 8.00
 		x = 33
 		y = 19
@@ -3897,12 +4288,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_rationalize_division_and_exchange"
 			# ===== R52: 效果（线=cm）=====
-			add_political_power = 125
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_02
+					remove_idea = JAP_Uno_cm_dm_dummy_0
+					add_idea = JAP_Uno_cm_dm_dummy_04
 				}
 			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
@@ -3911,7 +4300,7 @@
 	}
 	focus = {
 		id = JAP_Uno_japan_france_economic_pact
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 0
 		y = 20
@@ -3924,23 +4313,13 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_japan_france_economic_pact"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 130
-			add_stability = 0.02
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_01
-				}
-			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
-			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
-			custom_effect_tooltip = JAP_Uno_econ_modifier_tt
 			add_to_variable = { var = goods_export_modifier value = 1 }
 		}
 	}
 	focus = {
 		id = JAP_Uno_promote_kyoto_model
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 2
 		y = 20
@@ -3953,12 +4332,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_promote_kyoto_model"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 130
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_07
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_03
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -3967,7 +4344,7 @@
 	}
 	focus = {
 		id = JAP_Uno_new_long_term_economic_plan
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 4
 		y = 20
@@ -3987,8 +4364,8 @@
 			# 法式计划经济追加: 生产效率上限+10% 科研速度+5%
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_16
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_06
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_eff_cap value = 0.10 }
@@ -4023,7 +4400,7 @@
 	}
 	focus = {
 		id = JAP_Uno_comprehensive_land_development_act
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 7
 		y = 20
@@ -4033,12 +4410,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_comprehensive_land_development_act"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 130
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -4051,7 +4426,7 @@
 	}
 	focus = {
 		id = JAP_Uno_pigeonhole_housing_promotion
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 9
 		y = 20
@@ -4061,12 +4436,16 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_pigeonhole_housing_promotion"
 			# ===== R52: 效果（线=fpe+ke）=====
-			add_political_power = 130
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_09
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_04
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_04
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -4079,7 +4458,7 @@
 	}
 	focus = {
 		id = JAP_Uno_kansai_economic_proposal
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 11
 		y = 20
@@ -4090,12 +4469,16 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_kansai_economic_proposal"
 			# ===== R52: 效果（线=fpe+ke）=====
-			add_political_power = 130
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_10
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_02
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -4110,7 +4493,7 @@
 	}
 	focus = {
 		id = JAP_Uno_kanto_industrial_proposal
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 13
 		y = 20
@@ -4120,12 +4503,16 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_kanto_industrial_proposal"
 			# ===== R52: 效果（线=fpe+ke）=====
-			add_political_power = 130
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_17
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_01
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_02
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -4142,7 +4529,7 @@
 	}
 	focus = {
 		id = JAP_Uno_universal_pension_system
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 15
 		y = 20
@@ -4158,12 +4545,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_universal_pension_system"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 130
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_04
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_04
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -4174,7 +4559,7 @@
 	}
 	focus = {
 		id = JAP_Uno_workers_education_and_culture_program
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 18
 		y = 20
@@ -4191,8 +4576,8 @@
 			# 劳农派经济学追加: 建造速度+5% 科研速度+5% 地区最大工业值+15%
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_18
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_06
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_build_speed value = 0.05 }
@@ -4212,7 +4597,7 @@
 	}
 	focus = {
 		id = JAP_Uno_joint_industrial_revival_plan
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 21
 		y = 20
@@ -4222,12 +4607,16 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_joint_industrial_revival_plan"
 			# ===== R52: 效果（线=ke+as）=====
-			add_political_power = 130
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_11
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_04
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -4248,7 +4637,7 @@
 	}
 	focus = {
 		id = JAP_Uno_econometric_model_development
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 24
 		y = 20
@@ -4258,12 +4647,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_econometric_model_development"
 			# ===== R52: 效果（线=as）=====
-			add_political_power = 130
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_02
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_05
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
@@ -4272,7 +4659,7 @@
 	}
 	focus = {
 		id = JAP_Uno_dream_of_automated_socialism
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 26
 		y = 20
@@ -4282,12 +4669,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_dream_of_automated_socialism"
 			# ===== R52: 效果（线=as）=====
-			add_political_power = 130
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
@@ -4297,7 +4682,7 @@
 	}
 	focus = {
 		id = JAP_Uno_reconstruct_individual_ownership
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 30
 		y = 20
@@ -4307,25 +4692,45 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_reconstruct_individual_ownership"
 			# ===== R52: 效果（线=cm）=====
-			add_political_power = 130
-			add_stability = 0.02
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_01
-				}
-			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
-			add_to_variable = { var = JAP_Uno_cm_dm_consumer_goods value = 0.03 }
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
+			}
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
 			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_high_wage_regulation
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 9.00
 		x = 32
 		y = 20
@@ -4338,12 +4743,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_high_wage_regulation"
 			# ===== R52: 效果（线=cm）=====
-			add_political_power = 130
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_04
+					remove_idea = JAP_Uno_cm_dm_dummy_0
+					add_idea = JAP_Uno_cm_dm_dummy_03
 				}
 			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
@@ -4354,7 +4757,7 @@
 	}
 	focus = {
 		id = JAP_Uno_guesdism_in_economic_guidance
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 0
 		y = 21
@@ -4364,21 +4767,41 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_guesdism_in_economic_guidance"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 135
-			add_stability = 0.02
-			effect_tooltip = {
+			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_01
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
 				}
 			}
-			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
-			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_negawa_doctrine
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 2
 		y = 21
@@ -4388,21 +4811,48 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_negawa_doctrine"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 135
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_07
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_03
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_build_speed value = 0.02 }
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_accelerate_urbanization
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 8
 		y = 21
@@ -4415,12 +4865,16 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_accelerate_urbanization"
 			# ===== R52: 效果（线=fpe+ke）=====
-			add_political_power = 135
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_19
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_03
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_03
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -4439,7 +4893,7 @@
 	}
 	focus = {
 		id = JAP_Uno_reform_education_system
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 10
 		y = 21
@@ -4449,12 +4903,16 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_reform_education_system"
 			# ===== R52: 效果（线=fpe+ke）=====
-			add_political_power = 135
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_05
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_05
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_05
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -4467,7 +4925,7 @@
 	}
 	focus = {
 		id = JAP_Uno_industrial_rise
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 12
 		y = 21
@@ -4478,18 +4936,8 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_industrial_rise"
 			# ===== R52: 效果（线=fpe+ke）=====
-			add_political_power = 135
-			add_stability = 0.02
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_14
-				}
-			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
-			add_to_variable = { var = JAP_Uno_fpe_dm_consumer_goods value = 0.03 }
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
-			add_to_variable = { var = JAP_Uno_ke_dm_consumer_goods value = 0.03 }
 			282 = {
 				add_extra_state_shared_building_slots = 1
 				if = { limit = { infrastructure_level < 5 } add_building_construction = { type = infrastructure level = 1 } }
@@ -4504,7 +4952,7 @@
 	}
 	focus = {
 		id = JAP_Uno_occupational_safety_and_health_act
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 15
 		y = 21
@@ -4514,12 +4962,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_occupational_safety_and_health_act"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 135
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_04
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_04
 				}
 			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
@@ -4528,7 +4974,7 @@
 	}
 	focus = {
 		id = JAP_Uno_general_plan_outline
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 25
 		y = 21
@@ -4541,12 +4987,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_general_plan_outline"
 			# ===== R52: 效果（线=as）=====
-			add_political_power = 135
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_04
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_04
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }
@@ -4557,7 +5001,7 @@
 	}
 	focus = {
 		id = JAP_Uno_build_local_cooperative_network
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 31
 		y = 21
@@ -4570,12 +5014,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_build_local_cooperative_network"
 			# ===== R52: 效果（线=cm）=====
-			add_political_power = 135
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_03
+					remove_idea = JAP_Uno_cm_dm_dummy_0
+					add_idea = JAP_Uno_cm_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_cm_dm_total value = 1 }
@@ -4585,7 +5027,7 @@
 	}
 	focus = {
 		id = JAP_Uno_toward_greater_endeavors
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 4
 		y = 22
@@ -4602,22 +5044,49 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_toward_greater_endeavors"
 			# ===== R52: 效果（线=fpe）=====
-			add_political_power = 140
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_02
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_05
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
 			add_to_variable = { var = JAP_Uno_fpe_dm_stability value = 0.03 }
 			add_ideas = JAP_Uno_fpe_spirit
+			# ===== R55: 经济崩溃debuff逐级消除 =====
+			if = {
+				limit = { has_idea = JAP_Uno_collapse_4 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_4
+					add_idea = JAP_Uno_collapse_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_3 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_3
+					add_idea = JAP_Uno_collapse_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_2 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_2
+					add_idea = JAP_Uno_collapse_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = JAP_Uno_collapse_1 }
+				swap_ideas = {
+					remove_idea = JAP_Uno_collapse_1
+					add_idea = JAP_Uno_collapse_0
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_Uno_world_class_industrial_system
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 11
 		y = 22
@@ -4628,12 +5097,16 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_world_class_industrial_system"
 			# ===== R52: 效果（线=fpe+ke）=====
-			add_political_power = 140
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_10
+					remove_idea = JAP_Uno_fpe_dm_dummy_0
+					add_idea = JAP_Uno_fpe_dm_dummy_02
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_Uno_ke_dm_dummy_0
+					add_idea = JAP_Uno_ke_dm_dummy_01
 				}
 			}
 			add_to_variable = { var = JAP_Uno_fpe_dm_total value = 1 }
@@ -4654,7 +5127,7 @@
 	}
 	focus = {
 		id = JAP_Uno_innovative_urban_plan
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 18
 		y = 22
@@ -4667,23 +5140,14 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_innovative_urban_plan"
 			# ===== R52: 效果（线=ke）=====
-			add_political_power = 140
-			add_stability = 0.02
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_01
-				}
-			}
 			add_to_variable = { var = JAP_Uno_ke_dm_total value = 1 }
-			add_to_variable = { var = JAP_Uno_ke_dm_consumer_goods value = 0.03 }
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
 		}
 	}
 	focus = {
 		id = JAP_Uno_okishio_theorem
-		icon = GFX_JAP_Far_East_Council
+		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 25
 		y = 22
@@ -4693,12 +5157,10 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed JAP_Uno_okishio_theorem"
 			# ===== R52: 效果（线=as）=====
-			add_political_power = 140
-			add_stability = 0.02
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = JAP_Uno_dm_dummy_0
-					add_idea = JAP_Uno_dm_dummy_04
+					remove_idea = JAP_Uno_as_dm_dummy_0
+					add_idea = JAP_Uno_as_dm_dummy_04
 				}
 			}
 			add_to_variable = { var = JAP_Uno_as_dm_total value = 1 }

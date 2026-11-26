@@ -1237,12 +1237,7 @@ focus_tree = {
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 350 }
 			# R25 派别民族精神（工党温和派·实现建党理想·第一层）
-			effect_tooltip = {
-				add_ideas = TNW_AST_party_ideal_1
-			}
-			hidden_effect = {
-				add_ideas = TNW_AST_party_ideal_1
-			}
+			add_ideas = TNW_AST_party_ideal_1
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 9 }
@@ -1302,12 +1297,7 @@ focus_tree = {
 				}
 			}
 			# R25 派别民族精神（工党激进派·社会化共和国·第一层）
-			effect_tooltip = {
-				add_ideas = TNW_AST_socialist_republic_1
-			}
-			hidden_effect = {
-				add_ideas = TNW_AST_socialist_republic_1
-			}
+			add_ideas = TNW_AST_socialist_republic_1
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
@@ -1360,12 +1350,7 @@ focus_tree = {
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 24 }
 			# R25 派别民族精神（工会派·公社联合体·第一层）
-			effect_tooltip = {
-				add_ideas = TNW_AST_commune_union_1
-			}
-			hidden_effect = {
-				add_ideas = TNW_AST_commune_union_1
-			}
+			add_ideas = TNW_AST_commune_union_1
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
@@ -1426,12 +1411,7 @@ focus_tree = {
 				}
 			}
 			# R25 派别民族精神（澳共·澳大利亚委员会制·第一层）
-			effect_tooltip = {
-				add_ideas = TNW_AST_council_system_1
-			}
-			hidden_effect = {
-				add_ideas = TNW_AST_council_system_1
-			}
+			add_ideas = TNW_AST_council_system_1
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 7 }
@@ -1999,16 +1979,9 @@ focus_tree = {
 				}
 			}
 			# R25 派别民族精神（工党温和派·实现建党理想·第二层）
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AST_party_ideal_1
-					add_idea = TNW_AST_party_ideal_2
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AST_party_ideal_1
-				remove_ideas = TNW_AST_party_ideal_2
-				add_ideas = TNW_AST_party_ideal_2
+			swap_ideas = {
+				remove_idea = TNW_AST_party_ideal_1
+				add_idea = TNW_AST_party_ideal_2
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
@@ -2035,16 +2008,9 @@ focus_tree = {
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 700 }
 			# R25 派别民族精神（澳共·澳大利亚委员会制·第二层）
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AST_council_system_1
-					add_idea = TNW_AST_council_system_2
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AST_council_system_1
-				remove_ideas = TNW_AST_council_system_2
-				add_ideas = TNW_AST_council_system_2
+			swap_ideas = {
+				remove_idea = TNW_AST_council_system_1
+				add_idea = TNW_AST_council_system_2
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
@@ -2174,16 +2140,9 @@ focus_tree = {
 				}
 			}
 			# R25 派别民族精神（工党激进派·社会化共和国·第二层）
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AST_socialist_republic_1
-					add_idea = TNW_AST_socialist_republic_2
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AST_socialist_republic_1
-				remove_ideas = TNW_AST_socialist_republic_2
-				add_ideas = TNW_AST_socialist_republic_2
+			swap_ideas = {
+				remove_idea = TNW_AST_socialist_republic_1
+				add_idea = TNW_AST_socialist_republic_2
 			}
 			# R27 发展度与经济
 			# 经 GDP_core_modifiers / TNW_econ_inflation_modifiers 动态修正生效
@@ -2250,16 +2209,9 @@ focus_tree = {
 				}
 			}
 			# R25 派别民族精神（工会派·公社联合体·第二层）
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AST_commune_union_1
-					add_idea = TNW_AST_commune_union_2
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AST_commune_union_1
-				remove_ideas = TNW_AST_commune_union_2
-				add_ideas = TNW_AST_commune_union_2
+			swap_ideas = {
+				remove_idea = TNW_AST_commune_union_1
+				add_idea = TNW_AST_commune_union_2
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
@@ -2283,19 +2235,9 @@ focus_tree = {
 				popularity = 0.01
 			}
 			# R24 实体效果
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AST_collective_3
-					add_idea = TNW_AST_collective_4
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AST_collective_0
-				remove_ideas = TNW_AST_collective_1
-				remove_ideas = TNW_AST_collective_2
-				remove_ideas = TNW_AST_collective_3
-				remove_ideas = TNW_AST_collective_4
-				add_ideas = TNW_AST_collective_4
+			swap_ideas = {
+				remove_idea = TNW_AST_collective_3
+				add_idea = TNW_AST_collective_4
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
@@ -3209,19 +3151,9 @@ focus_tree = {
 			}
 			add_stability = 0.02
 			# R24 实体效果
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AST_collective_0
-					add_idea = TNW_AST_collective_1
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AST_collective_0
-				remove_ideas = TNW_AST_collective_1
-				remove_ideas = TNW_AST_collective_2
-				remove_ideas = TNW_AST_collective_3
-				remove_ideas = TNW_AST_collective_4
-				add_ideas = TNW_AST_collective_1
+			swap_ideas = {
+				remove_idea = TNW_AST_collective_0
+				add_idea = TNW_AST_collective_1
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
@@ -3243,19 +3175,9 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_ind_month_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 2 }
 			# R24 实体效果
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AST_collective_1
-					add_idea = TNW_AST_collective_2
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AST_collective_0
-				remove_ideas = TNW_AST_collective_1
-				remove_ideas = TNW_AST_collective_2
-				remove_ideas = TNW_AST_collective_3
-				remove_ideas = TNW_AST_collective_4
-				add_ideas = TNW_AST_collective_2
+			swap_ideas = {
+				remove_idea = TNW_AST_collective_1
+				add_idea = TNW_AST_collective_2
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
@@ -5873,19 +5795,9 @@ focus_tree = {
 			}
 			add_stability = 0.02
 			# R24 实体效果
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = TNW_AST_collective_2
-					add_idea = TNW_AST_collective_3
-				}
-			}
-			hidden_effect = {
-				remove_ideas = TNW_AST_collective_0
-				remove_ideas = TNW_AST_collective_1
-				remove_ideas = TNW_AST_collective_2
-				remove_ideas = TNW_AST_collective_3
-				remove_ideas = TNW_AST_collective_4
-				add_ideas = TNW_AST_collective_3
+			swap_ideas = {
+				remove_idea = TNW_AST_collective_2
+				add_idea = TNW_AST_collective_3
 			}
 			# R27 发展度与经济
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt

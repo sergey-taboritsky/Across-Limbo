@@ -2,26 +2,6 @@ add_namespace = JAP_event
 add_namespace = JAP_news_event
 
 country_event = {
-	id = JAP_event.1
-	title = JAP_event.1.t
-	desc = JAP_event.1.d
-	picture = GFX_event_JAP_taiwannanbowan
-	is_triggered_only = yes
-	option = {
-		name = JAP_event.1.a
-	}
-}
-country_event = {
-	id = JAP_event.2
-	title = JAP_event.2.t
-	desc = JAP_event.2.d
-	picture = GFX_event_JAP_taiwannanbowan
-	is_triggered_only = yes
-	option = {
-		name = JAP_event.2.a
-	}
-}
-country_event = {
 	id = JAP_event.3
 	title = JAP_event.3.t
 	desc = JAP_event.3.d
@@ -233,38 +213,18 @@ country_event = {
 	option = {
 		name = JAP_event.9.a
 		drop_cosmetic_tag = JAP
-		country_event = { id = JAP_event.12 days = 5 }
+		country_event = { id = JAP_event.15 days = 5 }
 	}
 }
 # （原此处有一个无 trigger 的重复 JAP_event.10 空壳定义，与 1951 审查事件冲突，2026-10-10 删除）
 country_event = {
-	id = JAP_event.11
-	title = JAP_event.11.t
-	desc = JAP_event.11.d
+	id = JAP_event.15
+	title = JAP_event.15.t
+	desc = JAP_event.15.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	option = {
-		name = JAP_event.11.a
-	}
-}
-country_event = {
-	id = JAP_event.12
-	title = JAP_event.12.t
-	desc = JAP_event.12.d
-	picture = GFX_event_JAP_taiwannanbowan
-	is_triggered_only = yes
-	option = {
-		name = JAP_event.12.a
-	}
-}
-country_event = {
-	id = JAP_event.13
-	title = JAP_event.13.t
-	desc = JAP_event.13.d
-	picture = GFX_event_JAP_taiwannanbowan
-	is_triggered_only = yes
-	option = {
-		name = JAP_event.13.a
+		name = JAP_event.15.a
 	}
 }
 
@@ -588,13 +548,13 @@ country_event = {
 }
 
 country_event = {
-	id = JAP_event.100
-	title = JAP_event.100.t
-	desc = JAP_event.100.d
+	id = JAP_event.103
+	title = JAP_event.103.t
+	desc = JAP_event.103.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	option = {
-		name = JAP_event.100.a
+		name = JAP_event.103.a
 		set_politics = {
 			ruling_party = communist
 		}
@@ -610,7 +570,7 @@ country_event = {
 		promote_character = JAP_Fukumoto_Kazuo
 	}
 	option = {
-		name = JAP_event.100.b
+		name = JAP_event.103.b
 		set_politics = {
 			ruling_party = communist
 		}
@@ -626,7 +586,7 @@ country_event = {
 		promote_character = JAP_Sakisaka_Itsuro
 	}
 	option = {
-		name = JAP_event.100.c
+		name = JAP_event.103.c
 		set_politics = {
 			ruling_party = communist
 		}
@@ -643,13 +603,13 @@ country_event = {
 	}
 }
 country_event = {
-	id = JAP_event.101
-	title = JAP_event.101.t
-	desc = JAP_event.101.d
+	id = JAP_event.104
+	title = JAP_event.104.t
+	desc = JAP_event.104.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	option = {
-		name = JAP_event.101.a
+		name = JAP_event.104.a
 		set_politics = {
 			ruling_party = syndicalism
 		}
@@ -665,7 +625,7 @@ country_event = {
 		promote_character = JAP_Minoru_Takano
 	}
 	option = {
-		name = JAP_event.101.b
+		name = JAP_event.104.b
 		set_politics = {
 			ruling_party = socialism
 		}
@@ -681,7 +641,7 @@ country_event = {
 		promote_character = JAP_Oyama_Ikuo
 	}
 	option = {
-		name = JAP_event.101.c
+		name = JAP_event.104.c
 		set_politics = {
 			ruling_party = socialism
 		}
@@ -698,13 +658,13 @@ country_event = {
 	}
 }
 country_event = {
-	id = JAP_event.102
-	title = JAP_event.102.t
-	desc = JAP_event.102.d
+	id = JAP_event.105
+	title = JAP_event.105.t
+	desc = JAP_event.105.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	option = {
-		name = JAP_event.102.a
+		name = JAP_event.105.a
 		set_politics = {
 			ruling_party = Social_democracy
 		}
@@ -720,7 +680,7 @@ country_event = {
 		promote_character = JAP_Nishio_Suehiro
 	}
 	option = {
-		name = JAP_event.102.b
+		name = JAP_event.105.b
 		set_politics = {
 			ruling_party = Social_democracy
 		}
@@ -736,7 +696,7 @@ country_event = {
 		promote_character = JAP_Eda_Saburo
 	}
 	option = {
-		name = JAP_event.102.c
+		name = JAP_event.105.c
 		set_politics = {
 			ruling_party = Absolutism
 		}
@@ -768,17 +728,35 @@ country_event = {
 			limit = {
 				has_country_flag = JAP_yamakawa_econ_flag
 				has_country_flag = JAP_metropolitan_renovation_done_flag
+				# R62: development LEVEL (not raw variable) >= 3 (or = lower-second tier)
+				OR = {
+					has_idea = TNW_dev_industry_3
+					has_idea = TNW_dev_industry_4
+					has_idea = TNW_dev_industry_5
+				}
+				OR = {
+					has_idea = TNW_dev_welfare_3
+					has_idea = TNW_dev_welfare_4
+					has_idea = TNW_dev_welfare_5
+				}
+				has_stability > 0.5
 				check_variable = { var = JAP_socialist_reform_enthusiasm_var value = 100 compare = greater_than_or_equals }
 				check_variable = { var = JAP_production_management_ratio_var value = 100 compare = greater_than_or_equals }
 				NOT = { has_country_flag = JAP_karl_dependence_flag }
 			}
 			set_country_flag = JAP_experiment_success_flag
-			country_event = { id = JAP_event.11 days = 5 }
+			# R62: success clears the last two ruins layers at once
+			subtract_from_variable = { var = JAP_ruins_level_var value = 2 }
+			clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
+			country_event = { id = JAP_event.200 days = 5 }
 			add_stability = 0.05
 		}
 		else = {
 			set_country_flag = JAP_experiment_failure_flag
-			country_event = { id = JAP_event.12 days = 5 }
+			# R62: failure worsens ruins from tier 2 back to tier 3, to be cleared later
+			set_variable = { JAP_ruins_level_var = 3 }
+			add_ideas = JAP_Uno_collapse_4
+			country_event = { id = JAP_event.100 days = 5 }
 		}
 	}
 	option = {
@@ -786,33 +764,33 @@ country_event = {
 	}
 }
 country_event = {
-	id = JAP_event.11
-	title = JAP_event.11.t
-	desc = JAP_event.11.d
+	id = JAP_event.200
+	title = JAP_event.200.t
+	desc = JAP_event.200.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	option = {
-		name = JAP_event.11.a
+		name = JAP_event.200.a
 	}
 }
 country_event = {
-	id = JAP_event.12
-	title = JAP_event.12.t
-	desc = JAP_event.12.d
+	id = JAP_event.100
+	title = JAP_event.100.t
+	desc = JAP_event.100.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	option = {
-		name = JAP_event.12.a
+		name = JAP_event.100.a
 		# R52: 大山接掌七日后，东京大学宇野报告解锁论战决议组
-		country_event = { id = JAP_event.317 days = 7 }
+		country_event = { id = JAP_event.101 days = 7 }
 	}
 }
 
 # ===== docx 新增事件（2026-11-03）：阿波舞 / 感谢信 / 社会主义风味 =====
 country_event = {
-	id = JAP_event.200
-	title = JAP_event.200.t
-	desc = JAP_event.200.d
+	id = JAP_event.900
+	title = JAP_event.900.t
+	desc = JAP_event.900.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = no
 	trigger = {
@@ -821,14 +799,14 @@ country_event = {
 	}
 	fire_only_once = yes
 	option = {
-		name = JAP_event.200.a
+		name = JAP_event.900.a
 		add_stability = 0.02
 	}
 }
 country_event = {
-	id = JAP_event.201
-	title = JAP_event.201.t
-	desc = JAP_event.201.d
+	id = JAP_event.901
+	title = JAP_event.901.t
+	desc = JAP_event.901.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = no
 	trigger = {
@@ -837,14 +815,14 @@ country_event = {
 	}
 	fire_only_once = yes
 	option = {
-		name = JAP_event.201.a
+		name = JAP_event.901.a
 		add_stability = 0.02
 	}
 }
 country_event = {
-	id = JAP_event.202
-	title = JAP_event.202.t
-	desc = JAP_event.202.d
+	id = JAP_event.902
+	title = JAP_event.902.t
+	desc = JAP_event.902.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = no
 	minor_flavor = yes
@@ -854,7 +832,7 @@ country_event = {
 	}
 	fire_only_once = yes
 	option = {
-		name = JAP_event.202.a
+		name = JAP_event.902.a
 	}
 }
 
@@ -864,9 +842,9 @@ country_event = {
 
 # R31 docx 0018：（2月10日爆发）
 country_event = {
-	id = JAP_event.300
-	title = JAP_event.300.t
-	desc = JAP_event.300.d
+	id = JAP_event.20
+	title = JAP_event.20.t
+	desc = JAP_event.20.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = no
 	fire_only_once = yes
@@ -875,15 +853,15 @@ country_event = {
 		date = 1948.2.10
 	}
 	option = {
-		name = JAP_event.300.a
+		name = JAP_event.20.a
 	}
 }
 
 # R31 docx 0023：（3月1日）
 country_event = {
-	id = JAP_event.301
-	title = JAP_event.301.t
-	desc = JAP_event.301.d
+	id = JAP_event.21
+	title = JAP_event.21.t
+	desc = JAP_event.21.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = no
 	fire_only_once = yes
@@ -892,15 +870,15 @@ country_event = {
 		date = 1948.3.1
 	}
 	option = {
-		name = JAP_event.301.a
+		name = JAP_event.21.a
 	}
 }
 
 # R31 docx 0029：（4月3日）
 country_event = {
-	id = JAP_event.302
-	title = JAP_event.302.t
-	desc = JAP_event.302.d
+	id = JAP_event.22
+	title = JAP_event.22.t
+	desc = JAP_event.22.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = no
 	fire_only_once = yes
@@ -909,7 +887,7 @@ country_event = {
 		date = 1948.4.3
 	}
 	option = {
-		name = JAP_event.302.a
+		name = JAP_event.22.a
 	}
 }
 
@@ -917,9 +895,9 @@ country_event = {
 # 0050 为唯一选项文案；0052「（启用食粮危机决议）」是该选项的效果，不是第二个按钮。
 # 本事件是食粮危机的唯一开启标志：决议分类门控 + 40 天倒计时同时在这里生效。
 country_event = {
-	id = JAP_event.303
-	title = JAP_event.303.t
-	desc = JAP_event.303.d
+	id = JAP_event.23
+	title = JAP_event.23.t
+	desc = JAP_event.23.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = no
 	fire_only_once = yes
@@ -928,7 +906,7 @@ country_event = {
 		date = 1948.5.1
 	}
 	option = {
-		name = JAP_event.303.a
+		name = JAP_event.23.a
 		# R34：启用食粮危机决议（docx 0052 括号内后端说明）
 		set_country_flag = JAP_food_crisis_began_flag
 		activate_mission = JAP_food_crisis_trade_unions_impatience_mission
@@ -937,33 +915,33 @@ country_event = {
 
 # R31 由 JAP_food_crisis_trade_unions_impatience_mission.complete_effect 触发
 country_event = {
-	id = JAP_event.304
-	title = JAP_event.304.t
-	desc = JAP_event.304.d
+	id = JAP_event.24
+	title = JAP_event.24.t
+	desc = JAP_event.24.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	option = {
-		name = JAP_event.304.a
+		name = JAP_event.24.a
 	}
 }
 
 # R31 由 JAP_food_crisis_trade_unions_impatience_mission.timeout_effect 触发
 country_event = {
-	id = JAP_event.305
-	title = JAP_event.305.t
-	desc = JAP_event.305.d
+	id = JAP_event.25
+	title = JAP_event.25.t
+	desc = JAP_event.25.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	option = {
-		name = JAP_event.305.a
+		name = JAP_event.25.a
 	}
 }
 
 # R31 docx 0066：（5月8日）
 country_event = {
-	id = JAP_event.306
-	title = JAP_event.306.t
-	desc = JAP_event.306.d
+	id = JAP_event.26
+	title = JAP_event.26.t
+	desc = JAP_event.26.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = no
 	fire_only_once = yes
@@ -973,7 +951,7 @@ country_event = {
 	}
 	# docx 0072：「（食粮危机进程回退）」已按现有变量 JAP_food_crisis_stash_var 实现
 	option = {
-		name = JAP_event.306.a
+		name = JAP_event.26.a
 		custom_effect_tooltip = JAP_food_crisis_stash_fall_tt
 		add_to_variable = {
 			JAP_food_crisis_stash_var = -30
@@ -988,9 +966,9 @@ country_event = {
 
 # R31 docx 0073：（1948年7月某日），取月初
 country_event = {
-	id = JAP_event.307
-	title = JAP_event.307.t
-	desc = JAP_event.307.d
+	id = JAP_event.300
+	title = JAP_event.300.t
+	desc = JAP_event.300.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = no
 	fire_only_once = yes
@@ -1000,19 +978,19 @@ country_event = {
 	}
 	# docx 0080 括号内「（我们将在日后事件中支持共労党）」为后端说明，不进玩家可见文案
 	option = {
-		name = JAP_event.307.a
+		name = JAP_event.300.a
 	}
 	# docx 0081 括号内「（我们将在日后的事件支持社会党）」为后端说明，不进玩家可见文案
 	option = {
-		name = JAP_event.307.b
+		name = JAP_event.300.b
 	}
 }
 
 # R31 docx 0082：（1948年12月），取月初
 country_event = {
-	id = JAP_event.308
-	title = JAP_event.308.t
-	desc = JAP_event.308.d
+	id = JAP_event.301
+	title = JAP_event.301.t
+	desc = JAP_event.301.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = no
 	fire_only_once = yes
@@ -1021,15 +999,15 @@ country_event = {
 		date = 1948.12.1
 	}
 	option = {
-		name = JAP_event.308.a
+		name = JAP_event.301.a
 	}
 }
 
 # R31 docx 0088：（1949年1月20日）
 country_event = {
-	id = JAP_event.309
-	title = JAP_event.309.t
-	desc = JAP_event.309.d
+	id = JAP_event.302
+	title = JAP_event.302.t
+	desc = JAP_event.302.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = no
 	fire_only_once = yes
@@ -1039,77 +1017,77 @@ country_event = {
 	}
 	# docx 0099：采纳折衷案 → 国铁反馘首斗争（实行折衷案）
 	option = {
-		name = JAP_event.309.a
-		country_event = { id = JAP_event.311 days = 2 }
+		name = JAP_event.302.a
+		country_event = { id = JAP_event.304 days = 2 }
 	}
 	# docx 0100：不采纳折衷案 → 国铁反馘首斗争（不实行折衷案）
 	option = {
-		name = JAP_event.309.b
-		country_event = { id = JAP_event.310 days = 2 }
+		name = JAP_event.302.b
+		country_event = { id = JAP_event.303 days = 2 }
 	}
 }
 
-# R31 由 JAP_event.309 第二选项触发；docx 0111：反馘首斗争后数日 → 下山案
+# R31 由 JAP_event.302 第二选项触发；docx 0111：反馘首斗争后数日 → 下山案
 country_event = {
-	id = JAP_event.310
-	title = JAP_event.310.t
-	desc = JAP_event.310.d
+	id = JAP_event.303
+	title = JAP_event.303.t
+	desc = JAP_event.303.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	# docx 未给按钮文案，复用仓内通用键 CLOSE（「关闭」），不自撰
 	option = {
 		name = CLOSE
-		country_event = { id = JAP_event.312 days = 4 }
+		country_event = { id = JAP_event.305 days = 4 }
 	}
 }
 
-# R31 由 JAP_event.309 第一选项触发；docx 0111：反馘首斗争后数日 → 下山案
+# R31 由 JAP_event.302 第一选项触发；docx 0111：反馘首斗争后数日 → 下山案
 country_event = {
-	id = JAP_event.311
-	title = JAP_event.311.t
-	desc = JAP_event.311.d
+	id = JAP_event.304
+	title = JAP_event.304.t
+	desc = JAP_event.304.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	# docx 未给按钮文案，复用仓内通用键 CLOSE（「关闭」），不自撰
 	option = {
 		name = CLOSE
-		country_event = { id = JAP_event.312 days = 4 }
+		country_event = { id = JAP_event.305 days = 4 }
 	}
 }
 
 # R31 docx 0111：（非常重要事件，在反斩首斗争后数日触发）
 country_event = {
-	id = JAP_event.312
-	title = JAP_event.312.t
-	desc = JAP_event.312.d
+	id = JAP_event.305
+	title = JAP_event.305.t
+	desc = JAP_event.305.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	# docx 0121：三鹰事件在下山案 10 天之后
 	option = {
-		name = JAP_event.312.a
-		country_event = { id = JAP_event.313 days = 10 }
+		name = JAP_event.305.a
+		country_event = { id = JAP_event.306 days = 10 }
 	}
 	# docx 0121：三鹰事件在下山案 10 天之后
 	option = {
-		name = JAP_event.312.b
-		country_event = { id = JAP_event.313 days = 10 }
+		name = JAP_event.305.b
+		country_event = { id = JAP_event.306 days = 10 }
 	}
 	# docx 0121：三鹰事件在下山案 10 天之后
 	option = {
-		name = JAP_event.312.c
-		country_event = { id = JAP_event.313 days = 10 }
+		name = JAP_event.305.c
+		country_event = { id = JAP_event.306 days = 10 }
 	}
 }
 
 # R31 docx 0121：（下山案的10天之后）
 country_event = {
-	id = JAP_event.313
-	title = JAP_event.313.t
-	desc = JAP_event.313.d
+	id = JAP_event.306
+	title = JAP_event.306.t
+	desc = JAP_event.306.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	option = {
-		name = JAP_event.313.a
+		name = JAP_event.306.a
 		# R48：松川/三鹰事件后解锁一阶段军事树
 		set_country_flag = JAP_Matsukawa_incident_flag
 		mark_focus_tree_layout_dirty = yes
@@ -1118,55 +1096,61 @@ country_event = {
 
 # R31 docx 0128：（点完国策《战争罪与反人类罪特别法庭》）→ 挂该 focus 的 completion_reward
 country_event = {
-	id = JAP_event.314
-	title = JAP_event.314.t
-	desc = JAP_event.314.d
+	id = JAP_event.27
+	title = JAP_event.27.t
+	desc = JAP_event.27.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	# docx 0134：对小林多喜二虐杀事件的审判在东京审判 5 天后
 	option = {
-		name = JAP_event.314.a
-		country_event = { id = JAP_event.315 days = 5 }
+		name = JAP_event.27.a
+		country_event = { id = JAP_event.28 days = 5 }
 	}
 }
 
 # R31 docx 0134：（东京审判5天后）
 country_event = {
-	id = JAP_event.315
-	title = JAP_event.315.t
-	desc = JAP_event.315.d
+	id = JAP_event.28
+	title = JAP_event.28.t
+	desc = JAP_event.28.d
 	picture = GFX_event_JAP_taiwannanbowan
 	is_triggered_only = yes
 	option = {
-		name = JAP_event.315.a
+		name = JAP_event.28.a
 	}
 	option = {
-		name = JAP_event.315.b
+		name = JAP_event.28.b
 	}
 }
 
 country_event = {
-	id = JAP_event.316
-	title = JAP_event.316.t
-	desc = JAP_event.316.d
+	id = JAP_event.102
+	title = JAP_event.102.t
+	desc = JAP_event.102.d
 	picture = GFX_news_event_JAP_Syndicalism_Failure
 	is_triggered_only = yes
 	option = {
-		name = JAP_event.316.a
+		name = JAP_event.102.a
+		# R62: last ruins layer cleared after the 28-day debate
+		subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+		clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 	}
 }
 
 # ===== R52: 宇野报告（大山接掌后七日，进入围攻宇野机制）=====
 country_event = {
-	id = JAP_event.317
-	title = JAP_event.317.t
-	desc = JAP_event.317.d
+	id = JAP_event.101
+	title = JAP_event.101.t
+	desc = JAP_event.101.d
 	picture = GFX_news_event_JAP_Syndicalism_Failure
 	is_triggered_only = yes
 	option = {
-		name = JAP_event.317.a
+		name = JAP_event.101.a
 		# R52: 宇野报告 -> 解锁论战决议组 + 激活28天论战任务
 		set_country_flag = JAP_Uno_debate_began_flag
+		# R62: continue clearing ruins layers after failure
+		subtract_from_variable = { var = JAP_ruins_level_var value = 1 }
+		clamp_variable = { var = JAP_ruins_level_var min = 0 max = 8 }
 		activate_mission = JAP_Uno_28days_mission
 	}
 }

@@ -43,8 +43,6 @@ JAP_Uno_fpe_dm = {
 
 	}
 
-	consumer_goods_factor = JAP_Uno_fpe_dm_consumer_goods
-
 	industrial_capacity_factory = JAP_Uno_fpe_dm_factory_output
 
 	production_speed_buildings_factor = JAP_Uno_fpe_dm_build_speed
@@ -68,8 +66,6 @@ JAP_Uno_ke_dm = {
 		check_variable = { var = JAP_Uno_ke_dm_total value = 0 compare = greater_than }
 
 	}
-
-	consumer_goods_factor = JAP_Uno_ke_dm_consumer_goods
 
 	industrial_capacity_factory = JAP_Uno_ke_dm_factory_output
 
@@ -125,8 +121,6 @@ JAP_Uno_cm_dm = {
 
 	}
 
-	consumer_goods_factor = JAP_Uno_cm_dm_consumer_goods
-
 	industrial_capacity_factory = JAP_Uno_cm_dm_factory_output
 
 	research_speed_factor = JAP_Uno_cm_dm_research
@@ -143,4 +137,159 @@ JAP_Uno_cm_dm = {
 
 	line_change_production_efficiency_factor = JAP_Uno_cm_dm_eff_retain
 
+}
+
+JAP_noro_hegemony_dm = {
+	icon = GFX_idea_generic_production_bonus
+	enable = {
+		check_variable = { var = JAP_noro_dm_total value = 0 compare = greater_than }
+	}
+	industrial_capacity_factory = JAP_noro_dm_factory
+	production_speed_buildings_factor = JAP_noro_dm_build
+	research_speed_factor = JAP_noro_dm_research
+	stability_factor = JAP_noro_dm_stability
+	production_speed_arms_factory_factor = JAP_noro_dm_arms
+	production_speed_industrial_complex_factor = JAP_noro_dm_ic
+	consumer_goods_factor = JAP_noro_dm_consumer
+}
+
+JAP_deleonism_dm = {
+	icon = GFX_idea_generic_production_bonus
+	enable = {
+		check_variable = { var = JAP_deleon_dm_total value = 0 compare = greater_than }
+	}
+	political_power_factor = JAP_deleon_dm_pp
+	stability_factor = JAP_deleon_dm_stability
+	industrial_capacity_factory = JAP_deleon_dm_factory
+	research_speed_factor = JAP_deleon_dm_research
+	production_speed_buildings_factor = JAP_deleon_dm_build
+	consumer_goods_factor = JAP_deleon_dm_consumer
+}
+
+JAP_ruins_dm_1 = {
+	icon = GFX_idea_generic_production_bonus
+	enable = {
+		check_variable = { var = JAP_ruins_level_var value = 1 compare = equals }
+	}
+	production_speed_buildings_factor = -0.10
+	production_speed_infrastructure_factor = 0.05
+	consumer_goods_factor = 0.05
+	production_speed_arms_factory_factor = -0.10
+	research_speed_factor = -0.05
+	stability_factor = -0.10
+	war_support_factor = -0.15
+	manpower_factor = -0.15
+	political_power_factor = -0.10
+}
+
+JAP_ruins_dm_2 = {
+	icon = GFX_idea_generic_production_bonus
+	enable = {
+		check_variable = { var = JAP_ruins_level_var value = 2 compare = equals }
+	}
+	production_speed_buildings_factor = -0.20
+	production_speed_infrastructure_factor = 0.10
+	consumer_goods_factor = 0.10
+	production_speed_arms_factory_factor = -0.20
+	research_speed_factor = -0.10
+	stability_factor = -0.20
+	war_support_factor = -0.25
+	manpower_factor = -0.25
+	political_power_factor = -0.15
+}
+
+JAP_ruins_dm_3 = {
+	icon = GFX_idea_generic_production_bonus
+	enable = {
+		check_variable = { var = JAP_ruins_level_var value = 3 compare = equals }
+	}
+	production_speed_buildings_factor = -0.30
+	production_speed_infrastructure_factor = 0.10
+	consumer_goods_factor = 0.10
+	production_speed_arms_factory_factor = -0.30
+	research_speed_factor = -0.15
+	stability_factor = -0.25
+	war_support_factor = -0.35
+	manpower_factor = -0.30
+	political_power_factor = -0.20
+}
+
+JAP_ruins_dm_4 = {
+	icon = GFX_idea_generic_production_bonus
+	enable = {
+		check_variable = { var = JAP_ruins_level_var value = 4 compare = equals }
+	}
+	production_speed_buildings_factor = -0.40
+	production_speed_infrastructure_factor = 0.15
+	consumer_goods_factor = 0.15
+	production_speed_arms_factory_factor = -0.40
+	research_speed_factor = -0.20
+	stability_factor = -0.35
+	war_support_factor = -0.50
+	manpower_factor = -0.45
+	political_power_factor = -0.25
+}
+
+JAP_ruins_dm_5 = {
+	icon = GFX_idea_generic_production_bonus
+	enable = {
+		check_variable = { var = JAP_ruins_level_var value = 5 compare = equals }
+	}
+	production_speed_buildings_factor = -0.50
+	production_speed_infrastructure_factor = 0.20
+	consumer_goods_factor = 0.20
+	production_speed_arms_factory_factor = -0.50
+	research_speed_factor = -0.25
+	stability_factor = -0.45
+	war_support_factor = -0.65
+	manpower_factor = -0.60
+	political_power_factor = -0.35
+}
+
+JAP_ruins_dm_6 = {
+	icon = GFX_idea_generic_production_bonus
+	enable = {
+		check_variable = { var = JAP_ruins_level_var value = 6 compare = equals }
+	}
+	production_speed_buildings_factor = -0.60
+	production_speed_infrastructure_factor = 0.25
+	consumer_goods_factor = 0.25
+	production_speed_arms_factory_factor = -0.60
+	research_speed_factor = -0.30
+	stability_factor = -0.55
+	war_support_factor = -0.80
+	manpower_factor = -0.70
+	political_power_factor = -0.40
+}
+
+JAP_ruins_dm_7 = {
+	icon = GFX_idea_generic_production_bonus
+	enable = {
+		check_variable = { var = JAP_ruins_level_var value = 7 compare = equals }
+	}
+	production_speed_buildings_factor = -0.70
+	production_speed_infrastructure_factor = 0.25
+	consumer_goods_factor = 0.25
+	production_speed_arms_factory_factor = -0.70
+	research_speed_factor = -0.35
+	stability_factor = -0.65
+	war_support_factor = -0.90
+	manpower_factor = -0.80
+	political_power_factor = -0.45
+}
+
+JAP_ruins_dm_8 = {
+	icon = GFX_idea_generic_production_bonus
+	enable = {
+		check_variable = { var = JAP_ruins_level_var value = 8 compare = equals }
+	}
+	production_speed_buildings_factor = -0.80
+	production_speed_infrastructure_factor = 0.30
+	consumer_goods_factor = 0.30
+	production_speed_arms_factory_factor = -0.80
+	research_speed_factor = -0.40
+	stability_factor = -0.70
+	war_support_factor = -1.00
+	manpower_factor = -0.90
+	political_power_factor = -0.50
 }

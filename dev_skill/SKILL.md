@@ -387,7 +387,7 @@ R24 之前 AFF 137 个、AST 114 个 focus 只灌政治点，被判定「又没�
 | 9 | 发展度 | `add_to_variable = { var = <进度变量> value = N }` + `clamp_variable`；或 `add_to_variable = { var = <月度变量> value = N }`（**不 clamp**） | 国家；见 §14.2 | **必须** `custom_effect_tooltip = TNW_dev_*_tt`（变量数值不显示） |
 | 10 | 国库资金 | `add_to_variable = { var = capital_reserves value = ±N }` | 国家；支出须在 `available` 里验资；见 §14.3 | **必须** `custom_effect_tooltip`（`JAP_capital_reserves_gain_tt` / `<TAG>_capital_cost_N_tt`） |
 | 11 | 自定义民族精神 | `common/ideas/*.txt` 定义 idea → 国策 `add_ideas = <idea>` | idea 需 `allowed`、`removal_cost = -1`、本地化名与 `_desc` | `add_ideas` 原生会显示；hidden idea 用 `custom_effect_tooltip` + `hidden_effect` |
-| 12 | 阶梯式民族精神 | 同名 `name = <spirit>` 的多个 idea 级；国策 `effect_tooltip = { swap_ideas = { remove_idea = prev add_idea = cur } }` + `hidden_effect = { remove_ideas = <各级> add_ideas = cur }` | 见 §14.4 | `swap_ideas` 放 `effect_tooltip` 才显示「升级」；`hidden_effect` 清旧级防残留 |
+| 12 | 阶梯式民族精神 | 同名 `name = <spirit>` 的多个 idea 级；国策直接写裸 `swap_ideas = { remove_idea = prev add_idea = cur }`（首次挂用裸 `add_ideas`） | 见 §14.4 | `swap_ideas` 本身就会显示修正差异，**禁止**再包 `effect_tooltip` + `hidden_effect` 重复一遍 |
 | 13 | 动态修正 | `common/dynamic_modifiers/*.txt` 定义（值写 `var:<变量>` 或变量裸名）→ `add_dynamic_modifier = { modifier = <name> }` | 每日刷新；`force_update_dynamic_modifier = yes` 可强制；rulebook:268-274、5922-5979 | **变量值不显示在提示框**，需 dummy idea / `effect_tooltip` 补文字 |
 | 14 | 派系 / 政体 / 国号 | `set_politics = { ruling_party = <九桶> }`、`set_popularities`（9 桶和=100）、`has_government = <九桶>`、`set_cosmetic_tag = X` | 选举结果只由选举节点固化，下游一律读执政党 | `set_cosmetic_tag` **自带提示框，禁再写 `custom_effect_tooltip`** |
 
@@ -465,19 +465,10 @@ ideas = {
 
 **阶梯式精神**：多个 idea 共用同一个 `name = <spirit>`，只是 id 后缀 `_0.._4` 不同；玩家只看到一个民族精神名，数值随级别变化。升级范式（R24/R25）：
 ```
-effect_tooltip = {
-  swap_ideas = { remove_idea = MY_spirit_2 add_idea = MY_spirit_3 }
-}
-hidden_effect = {
-  remove_ideas = MY_spirit_0
-  remove_ideas = MY_spirit_1
-  remove_ideas = MY_spirit_2
-  remove_ideas = MY_spirit_3
-  remove_ideas = MY_spirit_4
-  add_ideas = MY_spirit_3
-}
+swap_ideas = { remove_idea = MY_spirit_2 add_idea = MY_spirit_3 }
 ```
-- `hidden_effect` 清全部旧级是**必须的**，否则玩家从别的分线带进来的低级别会残留。
+- ⚠️ R56 用户定稿：民族精神**本身就会显示修正差异**，裸 `swap_ideas` 既真实切级又显示变化。旧写法 `effect_tooltip = { swap_ideas }` + `hidden_effect = { remove_ideas/add_ideas }` 是「先藏起来再在外面显示同一效果」的重复变态写法，已全模组清除。
+- 唯一例外：动态修正的变量值不显示，才用 dummy idea 的 `effect_tooltip = { swap_ideas = ... }`；dummy 绝不实际添加，且其 `name` 本地化必须与对应动态修正**同名**（仿 INS `INS_nre_dummy` / MAL `MAL_sfdf_dummy`）。
 - 每级都要有正数 buff 与负数 debuff，别做成纯线性变强。
 - 第一层挂「分线第一个国策」，第二层挂「分线最后一个国策」（R25 用户定稿）；跨派汇合段不算分线首尾。
 
@@ -512,6 +503,18 @@ MY_development_dm = {
 6. 结构：单 `focus_tree`、字面树棵数、严格网格（y 逐行 +1、x 全偶数、父在上一行）、`prerequisite` 的 AND/OR（见 §12）、零 `load_focus_tree` / `allow_branch`。
 7. 旧注入不丢：R22 cosmetic tag、R24 实体效果、R25 派别精神、R26 选举结果都在。
 8. 校验器：本轮新校验器 `--old` 必须有鉴别力（拒绝旧状态）；全部旧校验器按轮次演进基线后仍全 PASS。**格式校验通过 ≠ 质量验收**。
+
+### 14.8 事件专属定时任务（R57 定稿，仿原版 SOV 大清洗/paranoia）
+
+`days_mission_timeout` 任务**默认会自动激活**，于是类别跟着 active mission 在开局显示、28/40 天后提前超时。事件专属任务必须三件套：
+
+```
+available = { hidden_trigger = { always = no } }   # 纯事件任务；若任务仍需成功条件则保留真条件
+activation = { always = no }                        # 禁止开局/条件自动激活
+visible    = { has_country_flag = <began_flag> }    # 与类别门控同旗，双保险
+```
+
+事件里用 `activate_mission = <mission>` 启动，它忽略 `available`/`activation`（规则书「任务」节）。R57 前 `JAP_Uno_28days_mission` / `JAP_food_crisis_trade_unions_impatience_mission` 都漏了 `activation`，是「开局就显示、只有主任务失败」的根因；两者已补齐。写新读条任务先看原版 `common/decisions/SOV.txt` 的 `SOV_operation_countenance_preparation` / `SOV_sinkiang_*_mission_dummy`。
 
 ## 15. 新闻事件配图注册流程（2026-11-14 第三十轮，用户要求「顺便学一下」）
 

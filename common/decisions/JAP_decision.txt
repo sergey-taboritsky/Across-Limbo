@@ -8,6 +8,13 @@ JAP_food_crisis_category = {
 				}
 			}
 		}
+		# R57: 仿原版苏联动议任务，禁止自动激活/手动点击；只能由事件 activate_mission 启动
+		activation = {
+			always = no
+		}
+		visible = {
+			has_country_flag = JAP_food_crisis_began_flag
+		}
 		is_good = no
 		fire_only_once = yes
 		days_mission_timeout = 40
@@ -30,7 +37,7 @@ JAP_food_crisis_category = {
 				max = JAP_socialist_reform_enthusiasm_cap_var
 			}
 			set_country_flag = JAP_Food_Crisis_enden_flag
-			country_event = { id = JAP_event.305 days = 1 }
+			country_event = { id = JAP_event.25 days = 1 }
 			#70日 总罢工：按粮食供给度分五档（每20分一层）
 			if = {
 				limit = {
@@ -77,7 +84,7 @@ JAP_food_crisis_category = {
 		}
 		complete_effect = {
 			set_country_flag = JAP_Food_Crisis_enden_flag
-			country_event = { id = JAP_event.304 days = 1 }
+			country_event = { id = JAP_event.24 days = 1 }
 			custom_effect_tooltip = JAP_socialist_reform_enthusiasm_large_rise_tt
 			add_to_variable = {
 				JAP_socialist_reform_enthusiasm_var = 10
@@ -503,7 +510,14 @@ JAP_Uno_debate_category = {
 	}
 	JAP_Uno_28days_mission = {
 		available = {
-			always = yes
+			hidden_trigger = { always = no }
+		}
+		# R57: 仿原版苏联动议任务，禁止自动激活/手动点击；只能由事件 activate_mission 启动
+		activation = {
+			always = no
+		}
+		visible = {
+			has_country_flag = JAP_Uno_debate_began_flag
 		}
 		is_good = yes
 		fire_only_once = yes
@@ -543,7 +557,7 @@ JAP_Uno_debate_category = {
 			complete_national_focus = JAP_Uno_debate_28_days
 			complete_national_focus = JAP_Uno_civil_society_school
 			}
-			country_event = { id = JAP_event.316 days = 1 }
+			country_event = { id = JAP_event.102 days = 1 }
 		}
 	}
 	JAP_Uno_back_uno_decision = {

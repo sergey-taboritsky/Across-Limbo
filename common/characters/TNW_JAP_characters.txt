@@ -414,4 +414,293 @@ characters = {
 	#久保田英一（转向派）
 	JAP_Kubota_Eiichi = {
 		name = JAP_Kubota_Eiichi
-	}}
+	}
+	#长谷午麿（策划案具名人物，无职位）
+	JAP_Hase_Gomaro = {
+		name = JAP_Hase_Gomaro
+	}
+	#巴特勒（策划案具名人物，无职位）
+	JAP_Butler = {
+		name = JAP_Butler
+	}
+	#爱奥多尔·科恩（策划案具名人物，无职位）
+	JAP_Theodore_Cohen = {
+		name = JAP_Theodore_Cohen
+	}
+	#佐野学（策划案具名人物，无职位）
+	JAP_Sano_Manabu = {
+		name = JAP_Sano_Manabu
+	}
+	#蒙穆（策划案具名人物，无职位）
+	JAP_Monmousseau = {
+		name = JAP_Monmousseau
+	}
+	#大内兵卫（策划案具名人物，无职位）
+	JAP_Ouchi_Hyoe = {
+		name = JAP_Ouchi_Hyoe
+	}
+	#片山潜（策划案具名人物，无职位）
+	JAP_Katayama_Sen = {
+		name = JAP_Katayama_Sen
+	}
+	#渡边正之辅（策划案具名人物，无职位）
+	JAP_Watanabe_Masanosuke = {
+		name = JAP_Watanabe_Masanosuke
+	}
+	#德田球一（策划案具名人物，无职位）
+	JAP_Tokuda_Kyuichi = {
+		name = JAP_Tokuda_Kyuichi
+	}
+	#河合悦三（策划案具名人物，无职位）
+	JAP_Kawai_Etsuzo = {
+		name = JAP_Kawai_Etsuzo
+	}
+	#市川正一（策划案具名人物，无职位）
+	JAP_Ichikawa_Shoichi = {
+		name = JAP_Ichikawa_Shoichi
+	}
+	#国领五一郎（策划案具名人物，无职位）
+	JAP_Kokuryo_Goichiro = {
+		name = JAP_Kokuryo_Goichiro
+	}
+	#荒田寒村（策划案具名人物，无职位）
+	JAP_Arada_Kanson = {
+		name = JAP_Arada_Kanson
+	}
+	#太田熏（策划案具名人物，无职位）
+	JAP_Ota_Kaoru = {
+		name = JAP_Ota_Kaoru
+	}
+	#伊藤律（策划案具名人物，无职位）
+	JAP_Ito_Ritsu = {
+		name = JAP_Ito_Ritsu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Ito_Ritsu
+			}
+		}
+	}
+	#冈田春夫（策划案具名人物，无职位）
+	JAP_Okada_Haruo = {
+		name = JAP_Okada_Haruo
+	}
+	#西泽隆二（策划案具名人物，无职位）
+	JAP_Nishizawa_Ryuji = {
+		name = JAP_Nishizawa_Ryuji
+	}
+	#太田龙（策划案具名人物，无职位）
+	JAP_Ota_Ryu = {
+		name = JAP_Ota_Ryu
+	}
+	#黑田宽一（策划案具名人物，无职位）
+	JAP_Kuroda_Kanichi = {
+		name = JAP_Kuroda_Kanichi
+	}
+	#野坂参三（策划案具名人物，无职位）
+	JAP_Nosaka_Sanzo = {
+		name = JAP_Nosaka_Sanzo
+	}
+	#三田村四郎（策划案具名人物，无职位）
+	JAP_Mitamura_Shiro = {
+		name = JAP_Mitamura_Shiro
+	}
+	#田中青玄（策划案具名人物，无职位）
+	JAP_Tanaka_Seigen = {
+		name = JAP_Tanaka_Seigen
+	}
+	#宫本显治（策划案具名人物，无职位）
+	JAP_Miyamoto_Kenji = {
+		name = JAP_Miyamoto_Kenji
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Miyamoto_Kenji
+			}
+		}
+	}
+	#卡尔·约内达（策划案具名人物，无职位）
+	JAP_Karl_Yoneda = {
+		name = JAP_Karl_Yoneda
+	}
+	#听涛克巳（策划案具名人物，无职位）
+	JAP_Kikunami_Katsumi = {
+		name = JAP_Kikunami_Katsumi
+	}
+	#佐佐木忽一（策划案具名人物，无职位）
+	JAP_Sasaki_Koichi = {
+		name = JAP_Sasaki_Koichi
+	}
+	#布施辰治（策划案具名人物，无职位）
+	JAP_Fuse_Tatsuji = {
+		name = JAP_Fuse_Tatsuji
+	}
+	#邵力子（策划案具名人物，无职位）
+	JAP_Shao_Lizi = {
+		name = JAP_Shao_Lizi
+	}
+	#查尔斯·赛迪斯（策划案具名人物，无职位）
+	JAP_Charles_Seydis = {
+		name = JAP_Charles_Seydis
+	}
+	#伊井弥四郎（策划案具名人物，无职位）
+	JAP_Ii_Yashiro = {
+		name = JAP_Ii_Yashiro
+	}
+	#鹿地亘（策划案具名人物，无职位）
+	JAP_Kaji_Wataru = {
+		name = JAP_Kaji_Wataru
+	}
+	#伊藤好道（策划案具名人物，无职位）
+	JAP_Ito_Yoshimichi = {
+		name = JAP_Ito_Yoshimichi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Ito_Yoshimichi
+			}
+		}
+	}
+	#中野重治（策划案具名人物，无职位）
+	JAP_Nakano_Shigeharu = {
+		name = JAP_Nakano_Shigeharu
+	}
+	#平冢雷鸟（策划案具名人物，无职位）
+	JAP_Hiratsuka_Raicho = {
+		name = JAP_Hiratsuka_Raicho
+	}
+	#山本悬藏（策划案具名人物，无职位）
+	JAP_Yamamoto_Kenzo = {
+		name = JAP_Yamamoto_Kenzo
+	}
+	#入江浩（策划案具名人物，无职位）
+	JAP_Irie_Hiroshi = {
+		name = JAP_Irie_Hiroshi
+	}
+	#铃木市藏（策划案具名人物，无职位）
+	JAP_Suzuki_Ichizo = {
+		name = JAP_Suzuki_Ichizo
+	}
+	#末弘严太郎（策划案具名人物，无职位）
+	JAP_Suehiro_Iwataro = {
+		name = JAP_Suehiro_Iwataro
+	}
+	#有泽广巳（策划案具名人物，无职位）
+	JAP_Arisawa_Hiromi = {
+		name = JAP_Arisawa_Hiromi
+	}
+	#美浓部亮吉（策划案具名人物，无职位）
+	JAP_Minobe_Ryokichi = {
+		name = JAP_Minobe_Ryokichi
+	}
+	#比尔·夏克农（策划案具名人物，无职位）
+	JAP_Bill_Shaknough = {
+		name = JAP_Bill_Shaknough
+	}
+	#志田重男（策划案具名人物，无职位）
+	JAP_Shida_Shigeo = {
+		name = JAP_Shida_Shigeo
+	}
+	#下山定则（策划案具名人物，无职位）
+	JAP_Shimoyama_Sadanori = {
+		name = JAP_Shimoyama_Sadanori
+	}
+	#增田甲子七（策划案具名人物，无职位）
+	JAP_Masuda_Koshichi = {
+		name = JAP_Masuda_Koshichi
+	}
+	#贾荣卿（策划案具名人物，无职位）
+	JAP_Jia_Rongqing = {
+		name = JAP_Jia_Rongqing
+	}
+	#马塞尔·德阿（策划案具名人物，无职位）
+	JAP_Marcel_Deat = {
+		name = JAP_Marcel_Deat
+	}
+	#松本蔚（策划案具名人物，无职位）
+	JAP_Matsumoto_Kaoru = {
+		name = JAP_Matsumoto_Kaoru
+	}
+	#石井四郎（策划案具名人物，无职位）
+	JAP_Ishii_Shiro = {
+		name = JAP_Ishii_Shiro
+	}
+	#华西列夫斯基（策划案具名人物，无职位）
+	JAP_Vasilevsky = {
+		name = JAP_Vasilevsky
+	}
+	#白鸟一雄（策划案具名人物，无职位）
+	JAP_Shiratori_Kazuo = {
+		name = JAP_Shiratori_Kazuo
+	}
+	#塔博里茨基（策划案具名人物，无职位）
+	JAP_Taboritsky = {
+		name = JAP_Taboritsky
+	}
+	#向井一郎（策划案具名人物，无职位）
+	JAP_Mukai_Ichiro = {
+		name = JAP_Mukai_Ichiro
+	}
+	#闵炳一（策划案具名人物，无职位）
+	JAP_Min_Byeongil = {
+		name = JAP_Min_Byeongil
+	}
+	#罗扎耶夫斯基（策划案具名人物，无职位）
+	JAP_Rodzayevsky = {
+		name = JAP_Rodzayevsky
+	}
+	#方虎山（策划案具名人物，无职位）
+	JAP_Fang_Hushan = {
+		name = JAP_Fang_Hushan
+	}
+	#宇野弘藏（策划案具名人物，无职位）
+	JAP_Uno_Hirozo = {
+		name = JAP_Uno_Hirozo
+	}
+	#久留间鲛造（策划案具名人物，无职位）
+	JAP_Kuruma_Samezo = {
+		name = JAP_Kuruma_Samezo
+	}
+	#三本高行（策划案具名人物，无职位）
+	JAP_Sanmoto_Takayuki = {
+		name = JAP_Sanmoto_Takayuki
+	}
+	#稻叶秀三（策划案具名人物，无职位）
+	JAP_Inaba_Shuzo = {
+		name = JAP_Inaba_Shuzo
+	}
+	#山田盛太郎（策划案具名人物，无职位）
+	JAP_Yamada_Moritaro = {
+		name = JAP_Yamada_Moritaro
+	}
+	#蜷川虎三（策划案具名人物，无职位）
+	JAP_Ninagawa_Torazo = {
+		name = JAP_Ninagawa_Torazo
+	}
+	#柴田敬（策划案具名人物，无职位）
+	JAP_Shibata_Kei = {
+		name = JAP_Shibata_Kei
+	}
+	#置盐信雄（策划案具名人物，无职位）
+	JAP_Okishio_Nobuo = {
+		name = JAP_Okishio_Nobuo
+	}
+	#森岛通夫（策划案具名人物，无职位）
+	JAP_Morishima_Michio = {
+		name = JAP_Morishima_Michio
+	}
+	#黑木崇德（策划案具名人物，无职位）
+	JAP_Kuroki_Takanori = {
+		name = JAP_Kuroki_Takanori
+	}
+	#胜间田清一（策划案具名人物，无职位）
+	JAP_Katsumata_Seiichi = {
+		name = JAP_Katsumata_Seiichi
+	}
+	#森户辰男（策划案具名人物，无职位）
+	JAP_Morito_Tatsuo = {
+		name = JAP_Morito_Tatsuo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_large_JAP_Morito_Tatsuo
+			}
+		}
+	}
+	}

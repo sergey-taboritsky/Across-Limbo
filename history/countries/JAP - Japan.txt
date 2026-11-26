@@ -15,7 +15,6 @@ set_war_support = 0.8
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
-	JAP_rising_from_ruins
 	JAP_emperor_terrorism
 	JAP_narrow_gauge
 	JAP_commune_army
@@ -131,3 +130,31 @@ set_variable = { JAP_production_management_ratio_var = 0 }
 add_ideas = {
 	phalanstere_aligned_nation
 }
+
+# R62: 废墟重建 debuff 8 层（第8层最重，两条路线各消6层）
+set_variable = { JAP_ruins_level_var = 8 }
+add_dynamic_modifier = { modifier = JAP_ruins_dm_1 }
+add_dynamic_modifier = { modifier = JAP_ruins_dm_2 }
+add_dynamic_modifier = { modifier = JAP_ruins_dm_3 }
+add_dynamic_modifier = { modifier = JAP_ruins_dm_4 }
+add_dynamic_modifier = { modifier = JAP_ruins_dm_5 }
+add_dynamic_modifier = { modifier = JAP_ruins_dm_6 }
+add_dynamic_modifier = { modifier = JAP_ruins_dm_7 }
+add_dynamic_modifier = { modifier = JAP_ruins_dm_8 }
+
+# R62: 两条路线动态修正变量初始化
+set_variable = { JAP_noro_dm_factory = 0 }
+set_variable = { JAP_noro_dm_build = 0 }
+set_variable = { JAP_noro_dm_research = 0 }
+set_variable = { JAP_noro_dm_stability = 0 }
+set_variable = { JAP_noro_dm_arms = 0 }
+set_variable = { JAP_noro_dm_ic = 0 }
+set_variable = { JAP_noro_dm_consumer = 0 }
+set_variable = { JAP_noro_dm_total = 0 }
+set_variable = { JAP_deleon_dm_pp = 0 }
+set_variable = { JAP_deleon_dm_stability = 0 }
+set_variable = { JAP_deleon_dm_factory = 0 }
+set_variable = { JAP_deleon_dm_research = 0 }
+set_variable = { JAP_deleon_dm_build = 0 }
+set_variable = { JAP_deleon_dm_consumer = 0 }
+set_variable = { JAP_deleon_dm_total = 0 }

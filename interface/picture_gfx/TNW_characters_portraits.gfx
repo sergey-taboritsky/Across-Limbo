@@ -3197,4 +3197,29 @@ spriteTypes = {
 		name = "GFX_portrait_large_SWE_Tage_Erland"
 		texturefile = "gfx/characters/SWE_Tage_Erland.png"
 	}
+	#伊藤律
+	spriteType = {
+		name = "GFX_portrait_large_JAP_Ito_Ritsu"
+		texturefile = "gfx/characters/JAP_Ito_Ritsu.png"
+	}
+	#宫本显治
+	spriteType = {
+		name = "GFX_portrait_large_JAP_Miyamoto_Kenji"
+		texturefile = "gfx/characters/JAP_Miyamoto_Kenji.png"
+	}
+	#伊藤好道
+	spriteType = {
+		name = "GFX_portrait_large_JAP_Ito_Yoshimichi"
+		texturefile = "gfx/characters/JAP_Ito_Yoshimichi.png"
+	}
+	#森户辰男
+	spriteType = {
+		name = "GFX_portrait_large_JAP_Morito_Tatsuo"
+		texturefile = "gfx/characters/JAP_Morito_Tatsuo.png"
+	}
+	#铃木 茂三郎（补既有角色悬空引用）
+	spriteType = {
+		name = "GFX_portrait_large_JAP_Suzuki_Mosaburo"
+		texturefile = "gfx/characters/JAP_Suzuki_Mosaburo.png"
+	}
 }
