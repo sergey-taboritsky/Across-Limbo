@@ -38,7 +38,6 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_war_emergency_cabinet"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_arms_factory_tt
 			random_owned_state = {
@@ -214,7 +213,6 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = AST_build_infrastructure_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_arms_factory_tt
 			random_owned_state = {
@@ -252,7 +250,6 @@ focus_tree = {
 			custom_effect_tooltip = AST_capital_cost_2_tt
 			navy_experience = 15
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_dockyard_tt
 			random_owned_state = {
@@ -380,7 +377,6 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = AST_build_infrastructure_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_arms_factory_tt
 			random_owned_state = {
@@ -419,7 +415,6 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = AST_build_infrastructure_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_arms_factory_tt
 			random_owned_state = {
@@ -458,7 +453,6 @@ focus_tree = {
 			custom_effect_tooltip = AST_capital_cost_5_tt
 			navy_experience = 15
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_infrastructure_tt
 			random_owned_state = {
@@ -615,7 +609,6 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = AST_build_infrastructure_tt
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
 			# R27 发展度与经济
@@ -645,7 +638,6 @@ focus_tree = {
 			custom_effect_tooltip = AST_capital_cost_3_tt
 			navy_experience = 15
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_dockyard_tt
 			random_owned_state = {
@@ -764,7 +756,6 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = AST_build_infrastructure_tt
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 550 }
 			# R27 发展度与经济
@@ -794,7 +785,6 @@ focus_tree = {
 			custom_effect_tooltip = AST_capital_cost_2_tt
 			navy_experience = 15
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_arms_factory_tt
 			random_owned_state = {
@@ -913,7 +903,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AST_war_general_offensive"
 			navy_experience = 15
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_dockyard_tt
 			random_owned_state = {
@@ -982,7 +971,6 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = AST_build_infrastructure_tt
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 700 }
 			# R27 发展度与经济
@@ -1004,7 +992,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AST_war_victory_communique"
 			navy_experience = 15
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_dockyard_tt
 			random_owned_state = {
@@ -1064,7 +1051,6 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_war_civil_war_conclusion"
-			add_stability = 0.03
 			army_experience = 25
 			navy_experience = 15
 			# R24 实体效果
@@ -1150,11 +1136,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_electoral_roll"
-			add_stability = 0.02
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_industrial_complex_tt
 			random_owned_state = {
@@ -1182,10 +1163,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_party_congress"
-			add_popularity = {
-				ideology = communist
-				popularity = 0.02
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 22 }
 			# R27 发展度与经济
@@ -1429,11 +1406,6 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_coalition_talks"
-			add_war_support = 0.02
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_industrial_complex_tt
 			random_owned_state = {
@@ -1462,8 +1434,6 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_union_franchise"
-			add_stability = 0.02
-			add_war_support = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 26 }
 			# R27 发展度与经济
@@ -1514,11 +1484,6 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_press_law"
-			add_stability = 0.02
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 400 }
 			# R27 发展度与经济
@@ -1543,10 +1508,6 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_constitutional_convention"
-			add_popularity = {
-				ideology = communist
-				popularity = 0.02
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 28 }
 			# R27 发展度与经济
@@ -1565,11 +1526,6 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_high_court_reform"
-			add_war_support = 0.02
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_infrastructure_tt
 			random_owned_state = {
@@ -1604,8 +1560,6 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_public_service"
-			add_stability = 0.02
-			add_war_support = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 450 }
 			# R27 发展度与经济
@@ -1647,11 +1601,6 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_new_zealand_settlement"
-			add_stability = 0.02
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_infrastructure_tt
 			random_owned_state = {
@@ -1686,10 +1635,6 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_republic_debate"
-			add_popularity = {
-				ideology = communist
-				popularity = 0.02
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
 			# R27 发展度与经济
@@ -1709,11 +1654,6 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_local_government"
-			add_war_support = 0.02
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
 			# R27 发展度与经济
@@ -1739,8 +1679,6 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_veteran_franchise"
-			add_stability = 0.02
-			add_war_support = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
 			# R27 发展度与经济
@@ -1788,11 +1726,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_parliament_rules"
-			add_stability = 0.02
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 32 }
 			# R27 发展度与经济
@@ -1817,10 +1750,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_civil_rights"
-			add_popularity = {
-				ideology = communist
-				popularity = 0.02
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 550 }
 			# R27 发展度与经济
@@ -1839,8 +1768,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_constitution_draft"
-			add_stability = 0.02
-			add_war_support = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
 			# R27 发展度与经济
@@ -1888,11 +1815,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_party_discipline"
-			add_stability = 0.02
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
 			# R27 发展度与经济
@@ -1918,11 +1840,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_constitution_ratified"
-			add_war_support = 0.02
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 650 }
 			# R27 发展度与经济
@@ -1942,8 +1859,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_new_mandate"
-			add_stability = 0.02
-			add_war_support = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 36 }
 			# R27 发展度与经济
@@ -1963,10 +1878,6 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_administration_settled"
-			add_popularity = {
-				ideology = communist
-				popularity = 0.02
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_infrastructure_tt
 			random_owned_state = {
@@ -2000,11 +1911,6 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_political_amnesty"
-			add_war_support = 0.02
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 700 }
 			# R25 派别民族精神（澳共·澳大利亚委员会制·第二层）
@@ -2029,11 +1935,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_socialisation_decree"
-			add_stability = 0.01
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_industrial_complex_tt
 			random_owned_state = {
@@ -2061,11 +1962,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_worker_control_charter"
-			add_stability = 0.01
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_arms_factory_tt
 			random_owned_state = {
@@ -2092,11 +1988,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_socialist_plan_sync"
-			add_stability = 0.01
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_infrastructure_tt
 			random_owned_state = {
@@ -2123,11 +2014,6 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_socialist_republic_settled"
-			add_stability = 0.01
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_dockyard_tt
 			random_owned_state = {
@@ -2160,11 +2046,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_commune_federation"
-			add_stability = 0.01
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_industrial_complex_tt
 			random_owned_state = {
@@ -2192,11 +2073,6 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_commune_union_settled"
-			add_stability = 0.01
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_infrastructure_tt
 			random_owned_state = {
@@ -2229,11 +2105,6 @@ focus_tree = {
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_republic_institutions"
-			add_stability = 0.02
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.01
-			}
 			# R24 实体效果
 			swap_ideas = {
 				remove_idea = TNW_AST_collective_3
@@ -2256,7 +2127,6 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_pol_postwar_political_order"
-			add_stability = 0.03
 			army_experience = 25
 			navy_experience = 15
 			set_cosmetic_tag = AST_democratic_republic
@@ -2384,14 +2254,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_econ_socialisation_mobilisation"
-			add_popularity = {
-				ideology = communist
-				popularity = 0.06
-			}
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.02
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_infrastructure_tt
 			random_owned_state = {
@@ -2419,14 +2281,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_econ_communalisation_mobilisation"
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.06
-			}
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.06
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 22 }
 			# R27 发展度与经济
@@ -2494,15 +2348,6 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_econ_communalisation"
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.03
-			}
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.03
-			}
-			add_stability = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_infrastructure_tt
 			random_owned_state = {
@@ -2542,7 +2387,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 6 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_industrial_complex_tt
 			random_owned_state = {
@@ -2663,10 +2507,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_industrial_complex_tt
 			random_owned_state = {
@@ -2698,7 +2538,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 6 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_arms_factory_tt
 			random_owned_state = {
@@ -2729,10 +2568,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 28 }
 			# R27 发展度与经济
@@ -2762,7 +2597,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 6 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_industrial_complex_tt
 			random_owned_state = {
@@ -2892,10 +2726,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_infrastructure_tt
 			random_owned_state = {
@@ -2958,10 +2788,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
 			# R27 发展度与经济
@@ -2992,7 +2818,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 6 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_infrastructure_tt
 			random_owned_state = {
@@ -3119,11 +2944,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_econ_socialisation_settlement"
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.02
-			}
-			add_stability = 0.02
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 32 }
 			# R27 发展度与经济
@@ -3145,11 +2965,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_econ_communalisation_settlement"
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.02
-			}
-			add_stability = 0.02
 			# R24 实体效果
 			swap_ideas = {
 				remove_idea = TNW_AST_collective_0
@@ -3259,7 +3074,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 6 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_infrastructure_tt
 			random_owned_state = {
@@ -3395,10 +3209,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 38 }
 			# R27 发展度与经济
@@ -3421,7 +3231,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 6 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_industrial_complex_tt
 			random_owned_state = {
@@ -3513,10 +3322,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_industrial_complex_tt
 			random_owned_state = {
@@ -3546,7 +3351,6 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_econ_postwar_economic_order"
-			add_stability = 0.03
 			army_experience = 25
 			navy_experience = 15
 			# R24 实体效果
@@ -4731,7 +4535,6 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_mil_postwar_defence_order"
-			add_stability = 0.03
 			army_experience = 25
 			navy_experience = 15
 			# R24 实体效果
@@ -5021,7 +4824,6 @@ focus_tree = {
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AST_capital_cost_2_tt
 			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_dockyard_tt
 			random_owned_state = {
@@ -5178,7 +4980,6 @@ focus_tree = {
 			add_to_variable = { var = capital_reserves value = -5 }
 			custom_effect_tooltip = AST_capital_cost_5_tt
 			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 450 }
 			# R27 发展度与经济
@@ -5307,7 +5108,6 @@ focus_tree = {
 			add_to_variable = { var = capital_reserves value = -3 }
 			custom_effect_tooltip = AST_capital_cost_3_tt
 			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 30 }
 			# R27 发展度与经济
@@ -5455,7 +5255,6 @@ focus_tree = {
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AST_capital_cost_2_tt
 			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_dockyard_tt
 			random_owned_state = {
@@ -5602,7 +5401,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_dip_phalanstere_application"
 			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_dockyard_tt
 			random_owned_state = {
@@ -5759,7 +5557,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_dip_membership_vote"
 			add_opinion_modifier = { target = FRA modifier = econo_trade_success }
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AST_build_dockyard_tt
 			random_owned_state = {
@@ -5793,7 +5590,6 @@ focus_tree = {
 			hidden_effect = {
 				add_ideas = phalanstere_aligned_nation
 			}
-			add_stability = 0.02
 			# R24 实体效果
 			swap_ideas = {
 				remove_idea = TNW_AST_collective_2
@@ -5816,7 +5612,6 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AST_dip_postwar_diplomatic_order"
-			add_stability = 0.03
 			army_experience = 25
 			navy_experience = 15
 			# R24 实体效果

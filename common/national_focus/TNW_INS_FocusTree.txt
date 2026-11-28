@@ -59,8 +59,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed INS_Sumatra_Planting_Expansion"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = INS_capital_cost_2_tt
-			add_political_power = 25
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -81,8 +79,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed INS_Raise_Procurement_Prices"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = INS_capital_cost_2_tt
-			add_political_power = 50
-			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -114,8 +110,6 @@ focus_tree = {
 					add_idea = INS_nre_dummy_2
 				}
 			}
-			add_political_power = 50
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -145,7 +139,6 @@ focus_tree = {
 				}
 			}
 			add_manpower = 5000
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -176,7 +169,6 @@ focus_tree = {
 				}
 			}
 			add_ideas = INS_Rus_Grain_Trade
-			add_political_power = 50
 			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
@@ -198,7 +190,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed INS_Fertilizer_Seeds"
 			add_to_variable = { var = capital_reserves value = -4 }
 			custom_effect_tooltip = INS_capital_cost_4_tt
-			add_stability = 0.02
 			add_manpower = 2000
 		}
 	}
@@ -220,8 +211,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed INS_Balance_Cash_Crops"
 			add_to_variable = { var = capital_reserves value = -4 }
 			custom_effect_tooltip = INS_capital_cost_4_tt
-			add_political_power = 50
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -255,7 +244,6 @@ focus_tree = {
 				}
 			}
 			add_offsite_building = { type = industrial_complex level = 1 }
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -283,7 +271,6 @@ focus_tree = {
 					add_idea = INS_nre_dummy_6
 				}
 			}
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -315,8 +302,6 @@ focus_tree = {
 					add_idea = INS_nre_dummy_7
 				}
 			}
-			add_political_power = 50
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -348,7 +333,6 @@ focus_tree = {
 					add_idea = INS_nre_dummy_7
 				}
 			}
-			add_political_power = 50
 			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
@@ -409,7 +393,6 @@ focus_tree = {
 					add_idea = INS_nre_dummy_8
 				}
 			}
-			add_political_power = 75
 		}
 	}
 	focus = {
@@ -438,8 +421,6 @@ focus_tree = {
 					add_idea = INS_nre_dummy_9
 				}
 			}
-			add_political_power = 50
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -471,8 +452,6 @@ focus_tree = {
 					add_idea = INS_nre_dummy_10
 				}
 			}
-			add_political_power = 50
-			add_stability = 0.01
 			set_country_flag = INS_benteng_announced
 		}
 	}
@@ -502,7 +481,6 @@ focus_tree = {
 					add_idea = INS_nre_dummy_10
 				}
 			}
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -532,8 +510,6 @@ focus_tree = {
 					add_idea = INS_nre_dummy_11
 				}
 			}
-			add_political_power = 50
-			add_stability = -0.01
 		}
 	}
 	focus = {
@@ -563,7 +539,6 @@ focus_tree = {
 				}
 			}
 			add_offsite_building = { type = industrial_complex level = 1 }
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -595,7 +570,6 @@ focus_tree = {
 				}
 			}
 			add_offsite_building = { type = industrial_complex level = 1 }
-			add_stability = -0.01
 		}
 	}
 	focus = {
@@ -640,8 +614,6 @@ focus_tree = {
 				add_ideas = INS_five_year_plan_1
 			}
 			custom_effect_tooltip = INS_fyp_upgrade_tt
-			add_political_power = 75
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -679,9 +651,6 @@ focus_tree = {
 				add_ideas = INS_econ_sovereignty_1
 			}
 			custom_effect_tooltip = INS_econsov_upgrade_tt
-			add_war_support = 0.02
-			add_stability = -0.01
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -807,7 +776,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = INS_fyp_upgrade_tt
 			add_offsite_building = { type = industrial_complex level = 2 }
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -845,8 +813,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = INS_econsov_upgrade_tt
 			add_offsite_building = { type = industrial_complex level = 1 }
-			add_stability = -0.02
-			add_war_support = 0.01
 		}
 	}
 	focus = {
@@ -883,8 +849,6 @@ focus_tree = {
 				add_ideas = INS_econ_sovereignty_1
 			}
 			custom_effect_tooltip = INS_econsov_upgrade_tt
-			add_political_power = 50
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -922,7 +886,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = INS_econsov_upgrade_tt
 			add_offsite_building = { type = industrial_complex level = 1 }
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -951,7 +914,6 @@ focus_tree = {
 					add_idea = INS_nre_dummy_8
 				}
 			}
-			add_political_power = 100
 		}
 	}
 	focus = {
@@ -980,8 +942,6 @@ focus_tree = {
 					add_idea = INS_nre_dummy_13
 				}
 			}
-			add_political_power = 50
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -1011,8 +971,6 @@ focus_tree = {
 					add_idea = INS_nre_dummy_12
 				}
 			}
-			add_political_power = 50
-			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -1078,8 +1036,6 @@ focus_tree = {
 				}
 			}
 			add_army_experience = 10
-			add_political_power = 50
-			add_stability = 0.01
 			custom_effect_tooltip = INS_ft_demob_forces_tt
 			hidden_effect = {
 				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
@@ -1121,7 +1077,6 @@ focus_tree = {
 			}
 			add_army_experience = 10
 			add_manpower = 5000
-			add_war_support = 0.01
 			custom_effect_tooltip = INS_ft_keep_forces_tt
 			hidden_effect = {
 				add_to_variable = { var = INS_army_guerrilla_str value = 15 }
@@ -1223,7 +1178,6 @@ focus_tree = {
 				}
 			}
 			add_army_experience = 10
-			add_war_support = 0.02
 			add_manpower = 2000
 		}
 	}
@@ -1255,7 +1209,6 @@ focus_tree = {
 				}
 			}
 			add_army_experience = 10
-			add_war_support = 0.01
 			add_manpower = 2000
 		}
 	}
@@ -1296,7 +1249,6 @@ focus_tree = {
 				swap_ideas = { remove_idea = INS_Tentara_Gado_Gado add_idea = INS_Tentara_Gado_Gado_3 }
 			}
 			custom_effect_tooltip = INS_idf_upgrade_tt
-			add_political_power = 50
 			army_experience = 10
 		}
 	}
@@ -1327,8 +1279,6 @@ focus_tree = {
 				}
 			}
 			add_army_experience = 10
-			add_political_power = 100
-			add_stability = -0.01
 		}
 	}
 	focus = {
@@ -1358,8 +1308,6 @@ focus_tree = {
 				}
 			}
 			add_army_experience = 10
-			add_political_power = 75
-			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -1422,7 +1370,6 @@ focus_tree = {
 				}
 			}
 			add_army_experience = 10
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -1453,8 +1400,6 @@ focus_tree = {
 				}
 			}
 			add_army_experience = 10
-			add_political_power = 50
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -1517,7 +1462,6 @@ focus_tree = {
 			}
 			add_army_experience = 10
 			army_experience = 10
-			add_war_support = 0.01
 		}
 	}
 	focus = {
@@ -1549,7 +1493,6 @@ focus_tree = {
 				}
 			}
 			add_army_experience = 10
-			add_war_support = 0.02
 		}
 	}
 	focus = {
@@ -1593,7 +1536,6 @@ focus_tree = {
 			}
 			add_research_slot = 1
 			army_experience = 25
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -1630,7 +1572,6 @@ focus_tree = {
 				clamp_variable = { var = INS_marhaen_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -1655,7 +1596,6 @@ focus_tree = {
 				clamp_variable = { var = INS_sartono_var max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -1678,7 +1618,6 @@ focus_tree = {
 				clamp_variable = { var = INS_marhaen_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -1701,7 +1640,6 @@ focus_tree = {
 				clamp_variable = { var = INS_hokokai_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -1868,7 +1806,6 @@ focus_tree = {
 				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -1908,8 +1845,6 @@ focus_tree = {
 		prerequisite = { focus = INS_Suppress_Parliamentary_Islam focus = INS_Amnesty_Peripheral_Fighters }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_End_Darul_Islam"
-			add_stability = 0.05
-			add_war_support = 0.02
 			clr_country_flag = INS_crisis_kartosuwirjo
 			set_country_flag = INS_di_defeated
 			if = {
@@ -1957,7 +1892,6 @@ focus_tree = {
 				clamp_variable = { var = INS_goni_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -1982,7 +1916,6 @@ focus_tree = {
 				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -2019,7 +1952,6 @@ focus_tree = {
 				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
 				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
 			}
-			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -2041,7 +1973,6 @@ focus_tree = {
 				add_to_variable = { var = INS_army_guerrilla_str value = 10 }
 				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
 			}
-			add_war_support = 0.01
 		}
 	}
 	focus = {
@@ -2056,8 +1987,7 @@ focus_tree = {
 		prerequisite = { focus = INS_Stabilize_Frontier_Garrisons focus = INS_Preventive_Deterrence }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_May_Tragedy"
-			add_war_support = 0.02
-			add_stability = -0.02
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -2072,7 +2002,7 @@ focus_tree = {
 		prerequisite = { focus = INS_May_Tragedy }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Panchasila_Copyright"
-			add_political_power = 50
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -2087,7 +2017,7 @@ focus_tree = {
 		prerequisite = { focus = INS_May_Tragedy }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Show_the_Vision"
-			add_political_power = 50
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -2125,7 +2055,6 @@ focus_tree = {
 				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -2150,7 +2079,6 @@ focus_tree = {
 				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -2165,7 +2093,7 @@ focus_tree = {
 		prerequisite = { focus = INS_Deny_Forgery focus = INS_Internal_Council_Vote }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Second_Panchasila_Speech"
-			add_political_power = 75
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -2190,7 +2118,6 @@ focus_tree = {
 				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			add_war_support = 0.02
 		}
 	}
 	focus = {
@@ -2213,7 +2140,6 @@ focus_tree = {
 				clamp_variable = { var = INS_marhaen_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -2228,7 +2154,7 @@ focus_tree = {
 		prerequisite = { focus = INS_Great_Indonesia_Territory focus = INS_Urgency_of_Unity }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Interpret_Sumpah_Palapa"
-			add_political_power = 75
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -2250,7 +2176,6 @@ focus_tree = {
 				add_to_variable = { var = INS_army_siliwangi_str value = 10 }
 				clamp_variable = { var = INS_army_siliwangi_str max = 100 min = 0 }
 			}
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -2272,7 +2197,6 @@ focus_tree = {
 				add_to_variable = { var = INS_army_guerrilla_str value = 10 }
 				clamp_variable = { var = INS_army_guerrilla_str max = 100 min = 0 }
 			}
-			add_war_support = 0.01
 		}
 	}
 	focus = {
@@ -2288,7 +2212,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Secure_Army_Cooperation"
 			army_experience = 10
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -2305,8 +2228,7 @@ focus_tree = {
 		prerequisite = { focus = INS_Secure_Army_Cooperation }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed INS_Dust_Settles"
-			add_stability = 0.05
-			add_political_power = 100
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -2339,7 +2261,6 @@ focus_tree = {
 				}
 				clr_country_flag = INS_crisis_ongoing
 			}
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -2404,7 +2325,6 @@ focus_tree = {
 				clamp_variable = { var = INS_murba_str max = 100 min = 0 }
 				INS_calc_scores_effect = yes
 			}
-			add_war_support = 0.02
 			if = {
 				limit = {
 					NOT = { has_country_flag = INS_crisis_constitutional }

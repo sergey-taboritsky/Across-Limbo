@@ -55,7 +55,6 @@
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Kazan_Legacy"
-			add_political_power = 25
 			custom_effect_tooltip = TUR_congress_shift_tt
 			hidden_effect = {
 				add_to_variable = { var = TUR_congress_eastern_var value = 8 }
@@ -78,7 +77,6 @@
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Countryside_Surveys"
-			add_political_power = 25
 			custom_effect_tooltip = TUR_congress_shift_tt
 			hidden_effect = {
 				add_to_variable = { var = TUR_congress_populist_var value = 8 }
@@ -104,7 +102,6 @@
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Party_Audit"
-			add_political_power = 25
 			custom_effect_tooltip = TUR_congress_shift_tt
 			hidden_effect = {
 				add_to_variable = { var = TUR_congress_central_var value = 8 }
@@ -127,7 +124,6 @@
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Paris_Letters"
-			add_political_power = 25
 			custom_effect_tooltip = TUR_congress_shift_tt
 			hidden_effect = {
 				add_to_variable = { var = TUR_congress_snowmoon_var value = 8 }
@@ -194,11 +190,6 @@
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Route_Eastern"
-			add_political_power = 100
-			add_popularity = {
-				ideology = communist
-				popularity = 0.05
-			}
 			set_country_flag = TUR_route_eastern_flag
 			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_eastern
@@ -231,8 +222,6 @@
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Route_Central"
-			add_political_power = 100
-			add_stability = 0.05
 			set_country_flag = TUR_route_central_flag
 			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_central
@@ -263,11 +252,6 @@
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Route_Populist"
-			add_political_power = 100
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.05
-			}
 			set_country_flag = TUR_route_populist_flag
 			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_populist
@@ -303,11 +287,6 @@
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Route_Snowmoon"
-			add_political_power = 100
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.05
-			}
 			set_country_flag = TUR_route_snowmoon_flag
 			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_snowmoon
@@ -343,8 +322,6 @@
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Congress_Compromise"
-			add_political_power = 50
-			add_stability = 0.03
 			set_country_flag = TUR_route_compromise_flag
 			clr_country_flag = TUR_congress_concluded_flag
 			add_ideas = TUR_route_compromise
@@ -366,8 +343,6 @@
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Snowmoon_Dominance"
-			add_political_power = 50
-			add_stability = 0.03
 			set_country_flag = TUR_snowmoon_dominant_flag
 		}
 	}
@@ -385,7 +360,6 @@
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Union_Power_Share"
-			add_stability = 0.02
 			add_ideas = TUR_union_participation
 		}
 	}
@@ -405,8 +379,6 @@
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Party_Constitution"
-			add_political_power = 50
-			add_stability = 0.05
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 15 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -427,7 +399,6 @@
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_State_Apparatus"
-			add_political_power = 50
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -444,7 +415,6 @@
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Literacy_Campaign"
-			add_political_power = 50
 			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
 			add_to_variable = { var = TNW_Literacy_level_value value = 15 }
 			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
@@ -461,7 +431,6 @@
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Spring_Sowing"
-			add_political_power = 25
 			custom_effect_tooltip = TNW_dev_agr_month_rise_tt
 			add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
@@ -483,7 +452,6 @@
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Rebuild_Anatolia"
-			add_political_power = 50
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -511,7 +479,6 @@
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Reorganize_Revolutionary_Army"
-			add_political_power = 25
 			army_experience = 20
 			swap_ideas = {
 				remove_idea = TUR_peoples_revolutionary_army
@@ -541,7 +508,6 @@
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Red_Army_Reorganization"
-			add_war_support = 0.05
 			army_experience = 30
 			swap_ideas = {
 				remove_idea = TUR_peoples_revolutionary_army_2
@@ -572,7 +538,6 @@
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Retain_Old_Officers"
-			add_political_power = 25
 			army_experience = 40
 			swap_ideas = {
 				remove_idea = TUR_peoples_revolutionary_army_2
@@ -602,7 +567,6 @@
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Militia_Doctrine"
-			add_war_support = 0.05
 			army_experience = 20
 			swap_ideas = {
 				remove_idea = TUR_peoples_revolutionary_army_2
@@ -621,7 +585,6 @@
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Southern_Campaign"
-			add_war_support = 0.03
 			army_experience = 20
 			set_country_flag = TUR_south_pacified_flag
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
@@ -640,8 +603,6 @@
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Straits_Defense_Plans"
-			add_political_power = 25
-			add_war_support = 0.05
 			army_experience = 15
 		}
 	}
@@ -658,7 +619,6 @@
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Revolutionary_Army_Unified"
-			add_political_power = 50
 			army_experience = 50
 			swap_ideas = {
 				remove_idea = TUR_peoples_revolutionary_army_3
@@ -677,7 +637,6 @@
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Army_Professionalization"
-			add_political_power = 25
 			army_experience = 15
 		}
 	}
@@ -706,7 +665,6 @@
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Officer_Academy_Reform"
-			add_political_power = 25
 			army_experience = 25
 		}
 	}
@@ -755,7 +713,6 @@
 		y = 12
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Border_Guard_Forces"
-			add_war_support = 0.02
 			army_experience = 15
 		}
 	}
@@ -788,7 +745,6 @@
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Fortress_Network"
-			add_political_power = 25
 			army_experience = 20
 		}
 	}
@@ -803,7 +759,6 @@
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Logistics_Command"
-			add_political_power = 25
 			army_experience = 20
 		}
 	}
@@ -821,7 +776,6 @@
 		y = 14
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Combined_Arms_Staff"
-			add_war_support = 0.03
 			army_experience = 40
 		}
 	}
@@ -836,8 +790,6 @@
 		y = 15
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Shield_of_Revolution"
-			add_political_power = 50
-			add_war_support = 0.05
 			army_experience = 50
 		}
 	}
@@ -852,7 +804,6 @@
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Internationalist_Liaison"
-			add_political_power = 25
 			army_experience = 10
 		}
 	}
@@ -884,7 +835,6 @@
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Aegean_Joint_Exercises"
 			navy_experience = 25
-			add_war_support = 0.02
 		}
 	}
 	focus = {
@@ -1003,7 +953,6 @@
 		y = 14
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Socialist_Defense_Council"
-			add_political_power = 50
 			army_experience = 25
 			navy_experience = 25
 			air_experience = 25
@@ -1020,7 +969,6 @@
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Defense_Industry_Board"
-			add_political_power = 25
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1138,7 +1086,6 @@
 		y = 12
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Field_Radio_Network"
-			add_political_power = 25
 			army_experience = 15
 		}
 	}
@@ -1181,7 +1128,6 @@
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Military_Research_Institute"
-			add_political_power = 25
 			army_experience = 30
 		}
 	}
@@ -1223,7 +1169,6 @@
 		y = 16
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_Red_Mediterranean_Army"
-			add_war_support = 0.05
 			army_experience = 50
 			navy_experience = 50
 			air_experience = 50
@@ -1242,7 +1187,6 @@
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Econ_Reconstruction"
 		add_ideas = TUR_econ_reconstruction
-		add_political_power = 50
 	}
 }
 	focus = {
@@ -1267,7 +1211,6 @@
 	y = 11
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Tax_Unification"
-		add_political_power = 25
 		custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 		add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
 		clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -1338,7 +1281,7 @@
 	y = 14
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Economic_Roadmap"
-		add_political_power = 100
+		army_experience = 5
 	}
 }
 	focus = {
@@ -1392,8 +1335,7 @@
 	y = 17
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Factory_Committees"
-		add_political_power = 25
-		add_stability = 0.03
+		army_experience = 5
 	}
 }
 	focus = {
@@ -1405,7 +1347,6 @@
 	y = 17
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Production_Conferences"
-		add_political_power = 25
 		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 		add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
 		clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -1420,8 +1361,7 @@
 	y = 18
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Workers_Audit_Councils"
-		add_political_power = 50
-		add_stability = 0.03
+		army_experience = 5
 	}
 }
 	focus = {
@@ -1433,7 +1373,6 @@
 	y = 18
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Collective_Bonus_System"
-		add_political_power = 25
 		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 		add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
 		clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -1455,7 +1394,6 @@
 			remove_idea = TUR_econ_reconstruction
 			add_idea = TUR_econ_committee
 		}
-		add_political_power = 100
 	}
 }
 	focus = {
@@ -1468,7 +1406,6 @@
 	y = 16
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_State_Ownership"
-		add_political_power = 50
 		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 		add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
 		clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -1483,7 +1420,6 @@
 	y = 17
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Full_Nationalization"
-		add_political_power = 25
 		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 		add_to_variable = { var = TNW_Industrial_scale_value value = 15 }
 		clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -1498,7 +1434,6 @@
 	y = 17
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_State_Farms_System"
-		add_political_power = 25
 		custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
 		add_to_variable = { var = TNW_Agriculture_value value = 15 }
 		clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
@@ -1513,7 +1448,6 @@
 	y = 18
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Unified_Procurement"
-		add_political_power = 50
 		custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 		add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
 		clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -1560,7 +1494,6 @@
 			remove_idea = TUR_econ_reconstruction
 			add_idea = TUR_econ_statist
 		}
-		add_political_power = 100
 	}
 }
 	focus = {
@@ -1573,7 +1506,6 @@
 	y = 16
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Cooperative_Mode"
-		add_political_power = 50
 		custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 		add_to_variable = { var = TNW_Affluence_value value = 10 }
 		clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -1588,7 +1520,6 @@
 	y = 17
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Handicraft_Cooperatives"
-		add_political_power = 25
 		custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 		add_to_variable = { var = TNW_Affluence_value value = 10 }
 		clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -1603,7 +1534,6 @@
 	y = 17
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Agricultural_Cooperatives"
-		add_political_power = 25
 		custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
 		add_to_variable = { var = TNW_Agriculture_value value = 15 }
 		clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
@@ -1618,8 +1548,7 @@
 	y = 18
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Cooperative_Credit_Union"
-		add_political_power = 50
-		add_stability = 0.03
+		army_experience = 5
 	}
 }
 	focus = {
@@ -1631,7 +1560,6 @@
 	y = 18
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Cooperative_Markets"
-		add_political_power = 25
 		custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 		add_to_variable = { var = TNW_Affluence_value value = 15 }
 		clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -1650,7 +1578,6 @@
 			remove_idea = TUR_econ_reconstruction
 			add_idea = TUR_econ_coop
 		}
-		add_political_power = 100
 	}
 }
 	focus = {
@@ -1663,7 +1590,6 @@
 	y = 16
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Keynesian_Mode"
-		add_political_power = 50
 		custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 		add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
 		clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -1692,7 +1618,6 @@
 							instant_build = yes
 						}
 					}
-		add_political_power = 25
 	}
 }
 	focus = {
@@ -1718,7 +1643,6 @@
 							instant_build = yes
 						}
 					}
-		add_political_power = 25
 	}
 }
 	focus = {
@@ -1730,7 +1654,6 @@
 	y = 18
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Tariff_Protection_System"
-		add_political_power = 50
 		custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 		add_to_variable = { var = TNW_Affluence_value value = 10 }
 		clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -1745,7 +1668,6 @@
 	y = 18
 	completion_reward = {
 		log = "[GetLogRoot]: Focus Completed TUR_Demand_Stimulus_Program"
-		add_political_power = 25
 		custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 		add_to_variable = { var = TNW_Affluence_value value = 15 }
 		clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -1764,7 +1686,6 @@
 			remove_idea = TUR_econ_reconstruction
 			add_idea = TUR_econ_keynes
 		}
-		add_political_power = 100
 	}
 }
 	#—————— 海峡危机（事件 TNW_straits 门控分支，平时隐藏）——————
@@ -1796,7 +1717,6 @@
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed TUR_STR_Fortify"
-			add_war_support = 0.02
 			army_experience = 15
 		}
 	}

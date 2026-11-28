@@ -35,7 +35,6 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_outbreak"
-			add_stability = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -64,7 +63,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_command_staff"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -94,7 +92,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_eastern_front"
 			army_experience = 15
-			add_war_support = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -123,7 +120,6 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_home_front"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 350 }
 			# R27 发展度与经济
@@ -143,7 +139,6 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_economy"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -172,7 +167,6 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_foreign"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 24 }
 			# R27 发展度与经济
@@ -192,7 +186,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_hunter_line"
 			army_experience = 15
-			add_war_support = 0.02
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 400 }
 			# R27 发展度与经济
@@ -212,7 +205,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_brisbane_port"
 			navy_experience = 10
-			add_war_support = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -241,7 +233,6 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_morale_campaign"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 400 }
 			# R27 发展度与经济
@@ -261,7 +252,6 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_union_truce"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -298,7 +288,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_wheat_requisition"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -327,7 +316,6 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_port_tariff"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -356,7 +344,6 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_indian_ocean_route"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 400 }
 			# R27 发展度与经济
@@ -376,7 +363,6 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_nanyang_shipping"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -423,7 +409,6 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = AFF_build_infrastructure_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -453,7 +438,6 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_joint_command"
-			add_stability = 0.01
 			# R24 实体效果
 			swap_ideas = {
 				remove_idea = TNW_AFF_reconstruction_0
@@ -483,7 +467,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_port_pilotage"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -520,7 +503,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_price_control"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 450 }
 			# R27 发展度与经济
@@ -540,7 +522,6 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_ration_ledger"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -577,7 +558,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_refugee_relief"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -624,7 +604,6 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = AFF_build_infrastructure_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -671,7 +650,6 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = AFF_build_arms_factory_tt
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 450 }
 			# R27 发展度与经济
@@ -699,7 +677,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_coal_allocation"
 			add_to_variable = { var = capital_reserves value = -3 }
 			custom_effect_tooltip = AFF_capital_cost_3_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -728,7 +705,6 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_moscow_talks"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 28 }
 			# R27 发展度与经济
@@ -748,7 +724,6 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_no_alliance"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -777,7 +752,6 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_manifest_rule"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -806,7 +780,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_northwest_garrison"
 			army_experience = 15
-			add_war_support = 0.02
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
 			# R27 发展度与经济
@@ -826,7 +799,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_murray_crossing"
 			army_experience = 15
-			add_war_support = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -856,7 +828,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_coastal_convoy"
 			navy_experience = 10
-			add_war_support = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -893,7 +864,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_price_register"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -922,7 +892,6 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_relief_inspection"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
 			# R27 发展度与经济
@@ -942,7 +911,6 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_refugee_register"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -971,7 +939,6 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_wheat_ledger"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
 			# R27 发展度与经济
@@ -999,7 +966,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_fuel_pool"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -1028,7 +994,6 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_rail_timetable"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -1057,7 +1022,6 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_supply_ledger"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -1085,7 +1049,6 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_public_notice"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
 			# R27 发展度与经济
@@ -1112,7 +1075,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_insurance_local"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -1141,7 +1103,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_garrison_audit"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -1172,7 +1133,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_front_stabilised"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 550 }
 			# R27 发展度与经济
@@ -1193,7 +1153,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_harbour_watch"
 			army_experience = 15
-			add_war_support = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -1222,7 +1181,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_control_review"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 550 }
 			# R27 发展度与经济
@@ -1243,7 +1201,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_home_order"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -1272,7 +1229,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_warden_network"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -1301,7 +1257,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_quota_board"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -1331,7 +1286,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_industrial_board"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 550 }
 			# R27 发展度与经济
@@ -1368,7 +1322,6 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -1405,7 +1358,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_freight_settlement"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 550 }
 			# R27 发展度与经济
@@ -1425,7 +1377,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_supply_secured"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -1454,7 +1405,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_route_registry"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -1484,7 +1434,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_field_repair"
 			army_experience = 15
-			add_war_support = 0.02
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
 			# R27 发展度与经济
@@ -1504,7 +1453,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_front_report"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -1534,7 +1482,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_escort_rotation"
 			navy_experience = 10
-			add_war_support = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -1563,7 +1510,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_ordinance_book"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -1592,7 +1538,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_appeal_office"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
 			# R27 发展度与经济
@@ -1612,7 +1557,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_air_raid_drill"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -1640,7 +1584,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_procurement_audit"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
 			# R27 发展度与经济
@@ -1659,7 +1602,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_economy_stable"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -1688,7 +1630,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_factory_output"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -1717,7 +1658,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_ship_charter"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -1746,7 +1686,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_external_wording"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
 			# R27 发展度与经济
@@ -1766,7 +1705,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_warehouse_ledger"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -1796,7 +1734,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_garrison_rotation"
 			army_experience = 15
-			add_war_support = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -1825,7 +1762,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_front_supply_table"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 650 }
 			# R27 发展度与经济
@@ -1845,7 +1781,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_convoy_ledger"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -1874,7 +1809,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_ordinance_review"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 650 }
 			# R27 发展度与经济
@@ -1893,7 +1827,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_appeal_archive"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -1921,7 +1854,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_warden_report"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -1950,7 +1882,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_quota_settlement"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -1979,7 +1910,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_production_review"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 650 }
 			# R27 发展度与经济
@@ -1999,7 +1929,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_fuel_reserve"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -2028,7 +1957,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_charter_audit"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 650 }
 			# R27 发展度与经济
@@ -2048,7 +1976,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_port_notice"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -2077,7 +2004,6 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_manifest_archive"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -2108,7 +2034,6 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_front_settlement"
-			add_stability = 0.01
 			# R24 实体效果
 			swap_ideas = {
 				remove_idea = TNW_AFF_reconstruction_1
@@ -2133,7 +2058,6 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_home_settlement"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -2163,7 +2087,6 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_economy_settlement"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -2193,7 +2116,6 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_foreign_settlement"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -2225,7 +2147,6 @@ focus_tree = {
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_all_fronts_ready"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -2259,7 +2180,6 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_war_demobilisation"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -2325,7 +2245,6 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_election_voter_roll"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 900 }
 			# R27 发展度与经济
@@ -2345,7 +2264,6 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_election_broadcast"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 46 }
 			# R27 发展度与经济
@@ -2365,7 +2283,6 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_election_army_neutral"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -2396,7 +2313,6 @@ focus_tree = {
 		y = 14
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_election_polling"
-			add_stability = 0.02
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 950 }
 			# R27 发展度与经济
@@ -2609,7 +2525,6 @@ focus_tree = {
 		y = 16
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_repeal_controls"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -2644,10 +2559,6 @@ focus_tree = {
 		y = 16
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_press"
-			add_popularity = {
-				ideology = Liberalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1050 }
 			# R27 发展度与经济
@@ -2679,7 +2590,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_farm_subsidy"
 			add_to_variable = { var = capital_reserves value = -3 }
 			custom_effect_tooltip = AFF_capital_cost_3_tt
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 52 }
 			# R27 发展度与经济
@@ -2705,10 +2615,6 @@ focus_tree = {
 		y = 16
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_wheat_tariff"
-			add_popularity = {
-				ideology = Conservatism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -2743,7 +2649,6 @@ focus_tree = {
 		y = 16
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_corporate_council"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -2784,7 +2689,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_school_grant"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 52 }
 			# R27 发展度与经济
@@ -2810,7 +2714,6 @@ focus_tree = {
 		y = 16
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_emergency_powers"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -2845,7 +2748,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_street_mobilisation"
 			army_experience = 15
-			add_war_support = 0.02
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1050 }
 			# R27 发展度与经济
@@ -2870,7 +2772,6 @@ focus_tree = {
 		y = 17
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_parliament"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 54 }
 			# R27 发展度与经济
@@ -2902,7 +2803,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_budget_audit"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -2937,10 +2837,6 @@ focus_tree = {
 		y = 17
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_state_rights"
-			add_popularity = {
-				ideology = Conservatism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1100 }
 			# R27 发展度与经济
@@ -2966,7 +2862,6 @@ focus_tree = {
 		y = 17
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_rail_board"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 54 }
 			# R27 发展度与经济
@@ -2992,7 +2887,6 @@ focus_tree = {
 		y = 17
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_arbitration"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1100 }
 			# R27 发展度与经济
@@ -3018,10 +2912,6 @@ focus_tree = {
 		y = 17
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_union_register"
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -3056,10 +2946,6 @@ focus_tree = {
 		y = 17
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_anti_red_purge"
-			add_popularity = {
-				ideology = Nationalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 54 }
 			# R27 发展度与经济
@@ -3085,7 +2971,6 @@ focus_tree = {
 		y = 17
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_rally_rules"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -3120,7 +3005,6 @@ focus_tree = {
 		y = 18
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_civil_service"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -3154,10 +3038,6 @@ focus_tree = {
 		y = 18
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_local_election"
-			add_popularity = {
-				ideology = Liberalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 56 }
 			# R27 发展度与经济
@@ -3182,7 +3062,6 @@ focus_tree = {
 		y = 18
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_land_register"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -3217,7 +3096,6 @@ focus_tree = {
 		y = 18
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_freight_rate"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1150 }
 			# R27 发展度与经济
@@ -3243,10 +3121,6 @@ focus_tree = {
 		y = 18
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_wage_board"
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 56 }
 			# R27 发展度与经济
@@ -3272,7 +3146,6 @@ focus_tree = {
 		y = 18
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_school_report"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1150 }
 			# R27 发展度与经济
@@ -3298,7 +3171,6 @@ focus_tree = {
 		y = 18
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_public_order"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -3334,7 +3206,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_veteran_corps"
 			army_experience = 15
-			add_war_support = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -3369,7 +3240,6 @@ focus_tree = {
 		y = 19
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_court_review"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
 			# R27 发展度与经济
@@ -3401,7 +3271,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_trade_ordinance"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
 			# R27 发展度与经济
@@ -3433,7 +3302,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_rural_credit"
 			add_to_variable = { var = capital_reserves value = -3 }
 			custom_effect_tooltip = AFF_capital_cost_3_tt
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 58 }
 			# R27 发展度与经济
@@ -3458,7 +3326,6 @@ focus_tree = {
 		y = 19
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_tariff_court"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 58 }
 			# R27 发展度与经济
@@ -3483,7 +3350,6 @@ focus_tree = {
 		y = 19
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_work_hours"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
 			# R27 发展度与经济
@@ -3515,7 +3381,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_welfare_levy"
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = AFF_capital_cost_2_tt
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 58 }
 			# R27 发展度与经济
@@ -3541,7 +3406,6 @@ focus_tree = {
 		y = 19
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_emergency_review"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
 			# R27 发展度与经济
@@ -3568,7 +3432,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_command_council"
 			army_experience = 15
-			add_war_support = 0.02
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
 			# R27 发展度与经济
@@ -3595,7 +3458,6 @@ focus_tree = {
 		y = 20
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_lib_cabinet"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 60 }
 			# R25 派别民族精神（自由党温和派·太平洋自由灯塔·第二层）
@@ -3627,7 +3489,6 @@ focus_tree = {
 		y = 20
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_cabinet"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1250 }
 			# R25 派别民族精神（国家党·团结的澳大利亚·第二层）
@@ -3659,7 +3520,6 @@ focus_tree = {
 		y = 20
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_cabinet"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -3700,7 +3560,6 @@ focus_tree = {
 		y = 20
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_rad_cabinet"
-			add_stability = 0.01
 			# R24 实体效果
 			swap_ideas = {
 				remove_idea = TNW_AFF_reconstruction_2
@@ -3737,7 +3596,6 @@ focus_tree = {
 		y = 21
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_shared_liberal_legacy"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1300 }
 			# R27 发展度与经济
@@ -3762,7 +3620,6 @@ focus_tree = {
 		y = 21
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_cabinet_programme"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -3796,7 +3653,6 @@ focus_tree = {
 		y = 21
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_cabinet_programme"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 60 }
 			# R27 发展度与经济
@@ -3825,7 +3681,6 @@ focus_tree = {
 		y = 22
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_shared_party_machine"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1350 }
 			# R27 发展度与经济
@@ -3851,7 +3706,6 @@ focus_tree = {
 		y = 22
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_country_constitutional_draft"
-			add_stability = 0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -3886,7 +3740,6 @@ focus_tree = {
 		y = 22
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dlp_constitutional_draft"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 60 }
 			# R27 发展度与经济
@@ -4225,7 +4078,6 @@ focus_tree = {
 		y = 24
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_ballot_radical"
-			add_stability = 0.01
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 120 }
 			# R27 发展度与经济
@@ -4243,14 +4095,9 @@ focus_tree = {
 		y = 25
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_econ_asset_disposal"
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.02
-			}
 			custom_effect_tooltip = AFF_deregulation_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = -4 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
-			add_stability = -0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -4279,14 +4126,9 @@ focus_tree = {
 		y = 25
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_econ_price_release"
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.02
-			}
 			custom_effect_tooltip = AFF_deregulation_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = -4 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
-			add_stability = -0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -4314,14 +4156,9 @@ focus_tree = {
 		y = 25
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_econ_bank_reprivatisation"
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.02
-			}
 			custom_effect_tooltip = AFF_deregulation_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = -4 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
-			add_stability = -0.01
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -4445,11 +4282,6 @@ focus_tree = {
 		y = 25
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_left_audit"
-			add_stability = 0.01
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.02
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -4478,11 +4310,6 @@ focus_tree = {
 		y = 25
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_union_dissolution"
-			add_stability = 0.01
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.02
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -4511,11 +4338,6 @@ focus_tree = {
 		y = 25
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_press_campaign"
-			add_stability = 0.01
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.02
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -4555,11 +4377,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
-			add_stability = -0.01
-			add_popularity = {
-				ideology = Liberalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -4599,11 +4416,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
-			add_stability = -0.01
-			add_popularity = {
-				ideology = Liberalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -4643,11 +4455,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
-			add_stability = -0.01
-			add_popularity = {
-				ideology = Liberalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -4780,11 +4587,6 @@ focus_tree = {
 		y = 26
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_sever_socialist_ties"
-			add_stability = 0.01
-			add_popularity = {
-				ideology = socialism
-				popularity = -0.02
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -4813,7 +4615,6 @@ focus_tree = {
 		y = 26
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_moscow_committee"
-			add_stability = 0.01
 			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
@@ -4843,7 +4644,6 @@ focus_tree = {
 		y = 26
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_trade_mission"
-			add_stability = 0.01
 			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
@@ -4885,11 +4685,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
-			add_stability = -0.01
-			add_popularity = {
-				ideology = Liberalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -4930,11 +4725,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
-			add_stability = -0.01
-			add_popularity = {
-				ideology = Liberalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_arms_factory_tt
 			random_owned_state = {
@@ -5070,7 +4860,6 @@ focus_tree = {
 		y = 27
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_observer_status"
-			add_stability = 0.01
 			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = convoy_1 amount = 60 }
@@ -5102,11 +4891,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
-			add_stability = -0.01
-			add_popularity = {
-				ideology = Liberalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
 			# R27 发展度与经济
@@ -5137,11 +4921,6 @@ focus_tree = {
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
-			add_stability = -0.01
-			add_popularity = {
-				ideology = Liberalism
-				popularity = 0.01
-			}
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -5229,7 +5008,6 @@ focus_tree = {
 		y = 28
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_defence_understanding"
-			add_stability = 0.01
 			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
@@ -5259,7 +5037,6 @@ focus_tree = {
 		y = 28
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_dip_supply_agreement"
-			add_stability = 0.01
 			add_opinion_modifier = { target = RUS modifier = econo_trade_success }
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
@@ -5290,7 +5067,6 @@ focus_tree = {
 		y = 29
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_econ_trust_settlement"
-			add_stability = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_industrial_complex_tt
 			random_owned_state = {
@@ -5320,7 +5096,6 @@ focus_tree = {
 		y = 29
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_mil_capability_settlement"
-			add_stability = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_infrastructure_tt
 			random_owned_state = {
@@ -5353,7 +5128,6 @@ focus_tree = {
 			hidden_effect = {
 				add_ideas = moscow_aligned_nation
 			}
-			add_stability = 0.02
 			# R24 实体效果
 			custom_effect_tooltip = AFF_build_dockyard_tt
 			random_owned_state = {
@@ -5383,7 +5157,6 @@ focus_tree = {
 		y = 30
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_postwar_cold_war_alignment"
-			add_stability = 0.02
 			# R24 实体效果
 			add_research_slot = 1
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
@@ -5404,7 +5177,6 @@ focus_tree = {
 		y = 31
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed AFF_postwar_new_order"
-			add_stability = 0.02
 			# R24 实体效果
 			add_research_slot = 1
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }

@@ -24,7 +24,6 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_German_Legacy"
-			add_political_power = 25
 			country_event = { id = IRQ_event.3 days = 45 }
 		}
 	}
@@ -43,7 +42,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Seek_New_Patron"
-			add_political_power = 50
 			army_experience = 10
 		}
 	}
@@ -62,8 +60,7 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Foreign_Credit"
-			add_political_power = 25
-			add_war_support = 0.02
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -107,8 +104,6 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Crown_League"
-			add_political_power = 50
-			add_war_support = 0.02
 			custom_effect_tooltip = IRQ_army_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_army_morale_var value = 5 }
@@ -134,8 +129,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Nuri_Strongman"
-			add_political_power = 75
-			add_stability = 0.03
 			custom_effect_tooltip = IRQ_army_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_army_morale_var value = 5 }
@@ -163,7 +156,6 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Constitutional_Facade"
-			add_stability = 0.05
 			custom_effect_tooltip = IRQ_pop_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_pop_morale_var value = 5 }
@@ -217,8 +209,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Fertile_Crescent"
-			add_political_power = 100
-			add_war_support = 0.03
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -236,7 +227,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Liberal_Cabinet"
-			add_political_power = 50
 			custom_effect_tooltip = IRQ_pop_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_pop_morale_var value = 10 }
@@ -264,7 +254,6 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Party_Legislation"
-			add_political_power = 25
 			custom_effect_tooltip = IRQ_pop_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_pop_morale_var value = 8 }
@@ -287,7 +276,6 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Free_Press"
-			add_stability = -0.02
 			custom_effect_tooltip = IRQ_pop_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_pop_morale_var value = 10 }
@@ -313,8 +301,6 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Union_Tolerance"
-			add_political_power = 25
-			add_popularity = { ideology = communist popularity = 0.03 }
 			custom_effect_tooltip = IRQ_pop_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_pop_morale_var value = 10 }
@@ -337,7 +323,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_IPC_Renegotiation"
-			add_political_power = 100
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -443,7 +429,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Denaturalization_Law"
-			add_political_power = 75
 			custom_effect_tooltip = IRQ_pop_fall_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_pop_morale_var value = -5 }
@@ -491,8 +476,6 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Communists_Crackdown"
-			add_stability = 0.03
-			add_popularity = { ideology = communist popularity = -0.05 }
 			custom_effect_tooltip = IRQ_pop_fall_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_pop_morale_var value = -8 }
@@ -521,8 +504,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Palestine_Expedition"
-			add_war_support = 0.05
-			add_political_power = 50
 			country_event = { id = IRQ_event.4 days = 90 }
 		}
 	}
@@ -590,7 +571,6 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Barzan_Campaign"
-			add_stability = 0.02
 			custom_effect_tooltip = IRQ_army_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_army_morale_var value = 5 }
@@ -618,7 +598,6 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Royal_Guard"
-			add_stability = 0.05
 			custom_effect_tooltip = IRQ_army_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_army_morale_var value = 5 }
@@ -637,7 +616,7 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Qasim_Revolution"
-			add_political_power = 50
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -655,8 +634,7 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Peoples_Tribunal"
-			add_political_power = 50
-			add_stability = 0.03
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -675,7 +653,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Republican_Army"
 			army_experience = 20
-			add_war_support = 0.03
 		}
 	}
 	focus = {
@@ -696,7 +673,7 @@ focus_tree = {
 		y = 10
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Oil_Sovereignty"
-			add_political_power = 100
+			army_experience = 5
 			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
@@ -733,7 +710,6 @@ focus_tree = {
 		y = 12
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Left_Unity"
-			add_popularity = { ideology = socialism popularity = 0.10 }
 			custom_effect_tooltip = IRQ_pop_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_pop_morale_var value = 10 }
@@ -754,7 +730,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Workers_Militia"
 			add_manpower = 10000
-			add_war_support = 0.03
 			custom_effect_tooltip = IRQ_army_rise_tt
 			hidden_effect = {
 				add_to_variable = { var = IRQ_army_morale_var value = 10 }
@@ -777,7 +752,7 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Internationalist_Course"
-			add_political_power = 100
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -813,8 +788,7 @@ focus_tree = {
 		y = 12
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Party_State"
-			add_popularity = { ideology = communist popularity = 0.10 }
-			add_stability = 0.05
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -888,7 +862,7 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Neutral_Course"
-			add_political_power = 100
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -924,8 +898,7 @@ focus_tree = {
 		y = 12
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Settle_Old_Treaties"
-			add_war_support = 0.05
-			add_political_power = 50
+			army_experience = 5
 		}
 	}
 	focus = {
@@ -940,7 +913,7 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed IRQ_Moscow_Station"
-			add_political_power = 100
+			army_experience = 5
 		}
 	}
 }

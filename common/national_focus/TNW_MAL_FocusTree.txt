@@ -21,12 +21,6 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Dual_Nationality"
-			add_political_power = 25
-			add_stability = 0.02
-			add_popularity = {
-				ideology = Authoritarianism
-				popularity = 0.02
-			}
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -48,16 +42,6 @@ focus_tree = {
 			set_variable = { MAL_leg_bill_id = 1 }
 			set_country_flag = MAL_leg_bill_1_pending
 			log = "[GetLogRoot]: Focus Completed MAL_New_Citizenship_Act"
-			add_political_power = 25
-			add_stability = 0.02
-			add_popularity = {
-				ideology = Liberalism
-				popularity = 0.03
-			}
-			add_popularity = {
-				ideology = Nationalism
-				popularity = -0.01
-			}
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -90,8 +74,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Repatriate_Mechanics"
-			add_political_power = -50
-			add_stability = 0.03
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 5 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -108,8 +90,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Malay_Reserve_Reform"
-			add_political_power = 10
-			add_stability = 0.01
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
 			TNW_level_development_agriculture_upgrade_effect = yes
 		}
@@ -128,15 +108,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Abolish_Land_Privilege"
-			add_stability = -0.05
-			add_popularity = {
-				ideology = Nationalism
-				popularity = 0.04
-			}
-			add_popularity = {
-				ideology = Conservatism
-				popularity = -0.02
-			}
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
 			TNW_level_development_agriculture_upgrade_effect = yes
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
@@ -163,8 +134,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Land_Redemption_Exchange"
-			add_political_power = -75
-			add_stability = 0.03
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
 			TNW_level_development_agriculture_upgrade_effect = yes
 		}
@@ -184,16 +153,6 @@ focus_tree = {
 			set_variable = { MAL_leg_bill_id = 2 }
 			set_country_flag = MAL_leg_bill_2_pending
 			log = "[GetLogRoot]: Focus Completed MAL_Declare_Republic"
-			add_political_power = 50
-			add_stability = -0.02
-			add_popularity = {
-				ideology = Authoritarianism
-				popularity = 0.03
-			}
-			add_popularity = {
-				ideology = Liberalism
-				popularity = 0.02
-			}
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -224,15 +183,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Sultan_Representation"
-			add_stability = 0.03
-			add_popularity = {
-				ideology = Conservatism
-				popularity = 0.03
-			}
-			add_popularity = {
-				ideology = Nationalism
-				popularity = -0.02
-			}
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 5 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -257,11 +207,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Purge_Malacca_Royals"
-			add_stability = -0.04
-			add_popularity = {
-				ideology = Nationalism
-				popularity = 0.05
-			}
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 10 }
 			custom_effect_tooltip = TNW_arch_treasury_up_tt
@@ -285,8 +230,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Plantation_Labor"
-			add_political_power = 10
-			add_stability = 0.01
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 5 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -303,8 +246,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Indian_Labor_Rights"
-			add_political_power = 25
-			add_stability = 0.02
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 5 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -325,9 +266,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Compromise_KMT_Congress"
-			add_political_power = 25
-			add_stability = 0.02
-			add_popularity = { ideology = Social_democracy popularity = 0.03 }
 			custom_effect_tooltip = MAL_kmt_focus_congress_tt
 			add_to_variable = { var = MAL_kmt_wulu_str value = 4 }
 			clamp_variable = { var = MAL_kmt_wulu_str max = 100 min = 0 }
@@ -347,15 +285,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Handle_Veerasenan"
-			add_political_power = -25
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.03
-			}
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.02
-			}
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -377,10 +306,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Chinese_Official_Language"
-			add_popularity = {
-				ideology = Nationalism
-				popularity = 0.03
-			}
 			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
 			add_to_variable = { var = TNW_Literacy_level_value value = 10 }
 			clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
@@ -404,11 +329,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Second_Language_Referendum"
-			add_stability = -0.02
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.03
-			}
 			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
 			add_to_variable = { var = TNW_Literacy_level_value value = 6 }
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
@@ -466,11 +386,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Tighten_Textbook_Review"
-			add_political_power = 25
-			add_popularity = {
-				ideology = Authoritarianism
-				popularity = 0.02
-			}
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 8 }
 			custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
@@ -496,7 +411,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Fund_English_Malay_Schools"
-			add_stability = 0.02
 			custom_effect_tooltip = MAL_penang_unrest_fall_tt
 			add_to_variable = { var = TNW_penang_unrest value = -5 }
 		}
@@ -566,7 +480,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_End_Rationing"
-			add_stability = 0.02
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 10 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -584,10 +497,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_War_Crimes_Trials"
-			add_war_support = 0.03
-			add_stability = 0.02
-			add_political_power = 25
-			add_popularity = { ideology = Authoritarianism popularity = -0.02 }
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -609,7 +518,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Patriotic_Sanitation"
-			add_stability = 0.02
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 5 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -632,11 +540,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Recognize_MinLao"
-			add_political_power = -25
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.04
-			}
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 5 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -661,14 +564,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Nurture_New_Left"
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.03
-			}
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.02
-			}
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 6 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -690,11 +585,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_PanMalaya_Federation"
-			add_popularity = {
-				ideology = syndicalism
-				popularity = 0.03
-			}
-			add_stability = 0.02
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 10 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -718,9 +608,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Mediate_Press_Dispute"
-			add_political_power = 10
-			add_stability = 0.03
-			add_popularity = { ideology = Liberalism popularity = 0.02 }
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 5 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -745,11 +632,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Party_Press_Broadcast"
-			add_political_power = 25
-			add_popularity = {
-				ideology = Authoritarianism
-				popularity = 0.03
-			}
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 5 }
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
@@ -779,11 +661,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Nanyang_Daily_Competition"
-			add_popularity = {
-				ideology = Social_democracy
-				popularity = 0.02
-			}
-			add_stability = 0.01
 			custom_effect_tooltip = MAL_penang_unrest_fall_tt
 			add_to_variable = { var = TNW_penang_unrest value = -5 }
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
@@ -806,7 +683,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Migration_Labor_Control"
-			add_political_power = 25
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 5 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -825,9 +701,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Secret_Society_Security"
-			add_political_power = 10
-			add_stability = 0.01
-			add_war_support = 0.02
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			TNW_level_development_bureaucracy_upgrade_effect = yes
 			custom_effect_tooltip = TNW_dev_bur_month_rise_tt
@@ -853,8 +726,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Society_Forces_Public_Security"
-			add_political_power = -50
-			add_stability = 0.03
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			TNW_level_development_bureaucracy_upgrade_effect = yes
 		}
@@ -873,8 +744,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Sweep_Gangs"
-			add_stability = 0.02
-			add_war_support = 0.02
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 5 }
 			custom_effect_tooltip = TNW_arch_treasury_up_tt
@@ -912,7 +781,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Military_Scrip_Liquidation"
-			add_political_power = 25
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 10 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -929,8 +797,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Scrip_Victim_Compensation"
-			add_political_power = -75
-			add_stability = 0.03
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 5 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -947,8 +813,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Colonial_Sin_Taxes"
-			add_political_power = 50
-			add_stability = -0.01
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 10 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -965,7 +829,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Banking_Coordination"
-			add_political_power = 25
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -982,7 +845,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Central_Bank_Unification"
-			add_political_power = 25
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -1003,7 +865,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Overseas_Remittance"
-			add_political_power = 25
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 10 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -1063,7 +924,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Rubber_Tin_Boom"
-			add_political_power = 50
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 10 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -1080,7 +940,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Malacca_Chokepoint"
-			add_political_power = 25
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 10 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -1123,7 +982,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Fiscal_Autonomy"
-			add_political_power = 75
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 5 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -1199,7 +1057,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Criticize_Ponnudurai"
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 3 }
-			add_political_power = 25
 		}
 	}
 
@@ -1216,7 +1073,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Mobilize_Wulu_Club"
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 5 }
-			add_war_support = 0.02
 		}
 	}
 
@@ -1231,8 +1087,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Guard_Malay_Separatism"
-			add_political_power = 25
-			add_stability = 0.02
 			custom_effect_tooltip = MAL_penang_unrest_fall_tt
 			add_to_variable = { var = TNW_penang_unrest value = -5 }
 		}
@@ -1254,7 +1108,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Strangle_Penang_Industry"
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 8 }
-			add_political_power = 25
 		}
 	}
 
@@ -1274,7 +1127,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Business_Compromise"
 			custom_effect_tooltip = MAL_penang_unrest_fall_tt
 			add_to_variable = { var = TNW_penang_unrest value = -5 }
-			add_political_power = -25
 		}
 	}
 
@@ -1293,7 +1145,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Deny_Peoples_Assembly"
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 5 }
-			add_war_support = 0.02
 			custom_effect_tooltip = MAL_leg_focus_deny_tt
 			set_country_flag = MAL_leg_malay_parties_walkout
 			add_to_variable = { var = MAL_leg_mu_loyalty value = -5 }
@@ -1318,7 +1169,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Calm_Strike_Wave"
 			custom_effect_tooltip = MAL_penang_unrest_fall_tt
 			add_to_variable = { var = TNW_penang_unrest value = -5 }
-			add_political_power = 25
 		}
 	}
 
@@ -1335,7 +1185,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Negotiate_TanChengLock"
 			custom_effect_tooltip = MAL_penang_unrest_fall_tt
 			add_to_variable = { var = TNW_penang_unrest value = -5 }
-			add_political_power = -25
 		}
 	}
 
@@ -1353,7 +1202,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Arrest_Mackay"
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 10 }
-			add_political_power = 25
 			hidden_effect = {
 				set_country_flag = MAL_mackay_arrested
 			}
@@ -1374,8 +1222,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Martial_Law_Volunteers"
 			custom_effect_tooltip = MAL_penang_unrest_rise_tt
 			add_to_variable = { var = TNW_penang_unrest value = 5 }
-			add_war_support = 0.02
-			add_stability = -0.02
 		}
 	}
 
@@ -1396,7 +1242,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Free_Port_Legislation"
 			custom_effect_tooltip = MAL_penang_unrest_fall_tt
 			add_to_variable = { var = TNW_penang_unrest value = -15 }
-			add_political_power = -50
 		}
 	}
 
@@ -1414,10 +1259,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Pingzhang_KMT_Merger"
 			custom_effect_tooltip = MAL_penang_unrest_fall_tt
 			add_to_variable = { var = TNW_penang_unrest value = -10 }
-			add_popularity = {
-				ideology = Authoritarianism
-				popularity = 0.03
-			}
 		}
 	}
 
@@ -1447,8 +1288,6 @@ focus_tree = {
 			log = "[GetLogRoot]: Focus Completed MAL_Penang_Vote"
 			custom_effect_tooltip = MAL_penang_unrest_fall_tt
 			add_to_variable = { var = TNW_penang_unrest value = -25 }
-			add_stability = 0.03
-			add_political_power = 50
 			custom_effect_tooltip = MAL_kmt_focus_penang_vote_tt
 			add_to_variable = { var = MAL_kmt_pingzhang_str value = 6 }
 			clamp_variable = { var = MAL_kmt_pingzhang_str max = 100 min = 0 }
@@ -1481,8 +1320,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Separatism_End"
-			add_political_power = 50
-			add_stability = 0.02
 			custom_effect_tooltip = MAL_penang_unrest_fall_tt
 			add_to_variable = { var = TNW_penang_unrest value = -10 }
 			set_variable = { var = TNW_penang_unrest value = 10 }
@@ -1511,8 +1348,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Bitter_Failure"
-			add_stability = -0.10
-			add_political_power = -50
 			set_variable = { var = TNW_penang_unrest value = 100 }
 			hidden_effect = {
 				set_country_flag = MAL_penang_separation_won
@@ -1585,7 +1420,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Receive_German_Bases"
 			navy_experience = 25
-			add_political_power = 25
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -1608,9 +1442,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Reorganize_German_Intel"
-			add_political_power = 25
 			army_experience = 10
-			add_war_support = 0.01
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -1633,7 +1465,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Share_Nanjing_Aid"
 			army_experience = 15
-			add_war_support = 0.02
 			custom_effect_tooltip = TNW_arch_treasury_up_tt
 			add_to_variable = { var = capital_reserves value = 8 }
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
@@ -1656,11 +1487,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Invite_ZhuangHuiquan"
-			add_political_power = 25
-			add_popularity = {
-				ideology = Authoritarianism
-				popularity = 0.02
-			}
 			hidden_effect = {
 				set_country_flag = MAL_zhuang_in_party
 			}
@@ -1713,7 +1539,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Model_Division"
 			army_experience = 25
-			add_war_support = 0.03
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -1737,9 +1562,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Statistics_Bureau"
-			add_political_power = 25
 			army_experience = 10
-			add_war_support = 0.01
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 12 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -1810,8 +1633,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Northern_Defense_Line"
-			add_political_power = 25
-			add_war_support = 0.02
 			army_experience = 15
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
@@ -1835,7 +1656,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Assess_Left_Generals"
-			add_political_power = 25
 			army_experience = 10
 			hidden_effect = { set_country_flag = MAL_officers_assessed }
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
@@ -1860,9 +1680,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Reorganize_Volunteers_Ethnic"
-			add_political_power = 25
 			army_experience = 10
-			add_stability = 0.01
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -1888,8 +1706,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Volunteer_Integration"
-			add_political_power = 25
-			add_stability = 0.02
 			army_experience = 10
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
@@ -1913,7 +1729,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Militia_Reserve"
-			add_war_support = 0.02
 			army_experience = 10
 			custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
 			add_to_variable = { var = TNW_Agriculture_value value = 6 }
@@ -1937,8 +1752,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_City_Defense_Plan"
-			add_political_power = 25
-			add_war_support = 0.02
 			army_experience = 15
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 8 }
@@ -1997,7 +1810,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Fight_NRA_Factionalism"
-			add_political_power = -25
 			army_experience = 15
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
@@ -2018,7 +1830,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Merge_Chinese_Units"
-			add_political_power = -25
 			army_experience = 15
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
@@ -2045,8 +1856,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Localize_Garrison"
-			add_political_power = 25
-			add_stability = 0.02
 			army_experience = 15
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
@@ -2137,12 +1946,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Follow_Nanjing"
-			add_political_power = 25
-			add_war_support = 0.02
 			hidden_effect = {
 			set_country_flag = MAL_follow_nanjing
 			}
-			add_stability = 0.01
 		}
 	}
 
@@ -2157,12 +1963,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_US_Recognition"
-			add_political_power = 25
 			hidden_effect = {
 			set_country_flag = MAL_us_recognition
 			}
-			add_stability = 0.01
-			add_war_support = 0.01
 		}
 	}
 
@@ -2194,9 +1997,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Pan_Indonesia_Shock"
-			add_popularity = { ideology = Nationalism popularity = 0.04 }
-			add_popularity = { ideology = Authoritarianism popularity = -0.02 }
-			add_stability = -0.02
 			custom_effect_tooltip = TNW_arch_influence_down_tt
 			add_to_variable = { var = TNW_nanyang_influence value = -5 }
 			clamp_variable = { var = TNW_nanyang_influence max = 100 min = 0 }
@@ -2214,8 +2014,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Party_Ties"
-			add_political_power = 25
-			add_popularity = { ideology = Social_democracy popularity = 0.02 }
 			custom_effect_tooltip = MAL_kmt_focus_nanjing_tt
 			add_to_variable = { var = MAL_kmt_overseas_str value = 6 }
 			clamp_variable = { var = MAL_kmt_overseas_str max = 100 min = 0 }
@@ -2236,8 +2034,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Reclaim_War_Debts"
-			add_political_power = 50
-			add_stability = 0.01
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 5 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -2255,11 +2051,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Fu_Daqing_Europe"
-			add_political_power = -25
 			hidden_effect = {
 			set_country_flag = MAL_envoy_europe
 			}
-			add_stability = 0.01
 		}
 	}
 
@@ -2311,9 +2105,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Weaken_Malay_Indian_Congress"
-			add_political_power = 25
-			add_stability = 0.01
-			add_popularity = { ideology = Authoritarianism popularity = -0.02 }
 			custom_effect_tooltip = MAL_leg_focus_mic_tt
 			add_to_variable = { var = MAL_leg_mu_loyalty value = -3 }
 			clamp_variable = { var = MAL_leg_mu_loyalty max = 100 min = 0 }
@@ -2431,9 +2222,6 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Contain_Indian_Infiltration"
-			add_popularity = { ideology = syndicalism popularity = -0.03 }
-			add_popularity = { ideology = communist popularity = -0.02 }
-			add_popularity = { ideology = Authoritarianism popularity = 0.02 }
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -2455,7 +2243,6 @@ focus = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Indo_Star_Confrontation_Front"
 			army_experience = 30
-			add_war_support = 0.05
 			custom_effect_tooltip = TNW_arch_treasury_fall_tt
 			add_to_variable = { var = capital_reserves value = -20 }
 			custom_effect_tooltip = TNW_arch_influence_up_tt
@@ -2499,8 +2286,6 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Secure_KL_Control"
-			add_stability = 0.03
-			add_popularity = { ideology = Authoritarianism popularity = 0.02 }
 			custom_effect_tooltip = TNW_arch_treasury_fall_tt
 			add_to_variable = { var = capital_reserves value = -2 }
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
@@ -2523,8 +2308,6 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Monitor_Singapore_Indian"
-			add_stability = 0.02
-			add_popularity = { ideology = socialism popularity = -0.02 }
 			custom_effect_tooltip = TNW_arch_surveillance_tt
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
@@ -2575,8 +2358,6 @@ focus = {
 		mutually_exclusive = { focus = MAL_Prioritize_Suppress_Indian_Labor }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Disassemble_Indian_Nationalism"
-			add_stability = 0.03
-			add_popularity = { ideology = Nationalism popularity = -0.03 }
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -2598,9 +2379,6 @@ focus = {
 		mutually_exclusive = { focus = MAL_Disassemble_Indian_Nationalism }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Prioritize_Suppress_Indian_Labor"
-			add_popularity = { ideology = syndicalism popularity = -0.03 }
-			add_popularity = { ideology = communist popularity = -0.02 }
-			add_popularity = { ideology = Authoritarianism popularity = 0.02 }
 			custom_effect_tooltip = TNW_dev_ind_prog_rise_tt
 			add_to_variable = { var = TNW_Industrial_scale_value value = 6 }
 			clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
@@ -2670,8 +2448,6 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Mobilize_Chinese_Civilians"
-			add_war_support = 0.03
-			add_popularity = { ideology = Liberalism popularity = 0.02 }
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 6 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -2945,7 +2721,6 @@ focus = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Use_Australian_Labor_ColdWar"
 			add_opinion_modifier = { target = AST modifier = econo_trade_success }
-			add_popularity = { ideology = socialism popularity = 0.02 }
 			custom_effect_tooltip = TNW_arch_labor_coldwar_tt
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 4 }
@@ -2975,7 +2750,6 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Rekindle_White_Australia"
-			add_popularity = { ideology = Nationalism popularity = 0.02 }
 			custom_effect_tooltip = TNW_arch_white_aus_tt
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
@@ -2997,8 +2771,6 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Suppress_Unity_Separatism"
-			add_stability = 0.04
-			add_popularity = { ideology = Nationalism popularity = -0.03 }
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -3020,9 +2792,6 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Sever_MIC_PMFTU_Ties"
-			add_stability = 0.03
-			add_popularity = { ideology = socialism popularity = -0.03 }
-			add_popularity = { ideology = syndicalism popularity = -0.03 }
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 8 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -3043,8 +2812,6 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Mobilize_CPC_South_Bureau"
-			add_popularity = { ideology = communist popularity = 0.02 }
-			add_popularity = { ideology = syndicalism popularity = 0.02 }
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 6 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -3071,7 +2838,6 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Disassemble_Indo_Indonesian_Union"
-			add_war_support = 0.03
 			army_experience = 15
 			custom_effect_tooltip = TNW_arch_treasury_fall_tt
 			add_to_variable = { var = capital_reserves value = -4 }
@@ -3112,7 +2878,6 @@ focus = {
 			log = "[GetLogRoot]: Focus Completed MAL_Next_Confrontation_Phase"
 			set_country_flag = MAL_confrontation_phase_2
 			unlock_decision_tooltip = TNW_archipelago_proclaim_victory
-			add_war_support = 0.03
 			army_experience = 15
 			custom_effect_tooltip = TNW_arch_treasury_up_tt
 			add_to_variable = { var = capital_reserves value = 10 }
@@ -3138,11 +2903,7 @@ focus = {
 			focus = MAL_Militarize_Malacca
 		}
 		completion_reward = {
-			add_stability = 0.03
 			set_country_flag = MAL_leftist_ties_investigated
-			add_political_power = 25
-			add_popularity = { ideology = Authoritarianism popularity = -0.02 }
-			add_stability = 0.01
 			log = "[GetLogRoot]: Focus Completed MAL_Investigate_Leftist_Party_Ties"
 			custom_effect_tooltip = MAL_kmt_focus_investigate_tt
 			add_to_variable = { var = MAL_kmt_longshi_str value = -4 }
@@ -3162,8 +2923,6 @@ focus = {
 		}
 		mutually_exclusive = { focus = MAL_Investigate_Peng_Labor_Congress }
 		completion_reward = {
-			add_stability = 0.02
-			add_popularity = { ideology = syndicalism popularity = -0.02 }
 			set_country_flag = MAL_cpc_mcp_comms_investigated
 		}
 	}
@@ -3178,8 +2937,6 @@ focus = {
 			focus = MAL_Militarize_Malacca
 		}
 		completion_reward = {
-			add_stability = 0.03
-			add_popularity = { ideology = Authoritarianism popularity = 0.02 }
 			set_country_flag = MAL_collab_swept
 		}
 	}
@@ -3195,8 +2952,6 @@ focus = {
 		}
 		mutually_exclusive = { focus = MAL_Investigate_CPC_MCP_Comms }
 		completion_reward = {
-			add_stability = 0.02
-			add_popularity = { ideology = syndicalism popularity = -0.02 }
 			set_country_flag = MAL_peng_congress_investigated
 			log = "[GetLogRoot]: Focus Completed MAL_Investigate_Peng_Labor_Congress"
 			custom_effect_tooltip = MAL_kmt_focus_peng_tt
@@ -3219,8 +2974,6 @@ focus = {
 			focus = MAL_Investigate_Peng_Labor_Congress
 		}
 		completion_reward = {
-			add_stability = 0.02
-			add_popularity = { ideology = socialism popularity = -0.04 }
 			set_country_flag = MAL_malay_left_struck
 		}
 	}
@@ -3235,9 +2988,6 @@ focus = {
 			focus = MAL_Further_Sweep_Collaborationism
 		}
 		completion_reward = {
-			add_stability = 0.02
-			add_popularity = { ideology = Conservatism popularity = -0.03 }
-			add_popularity = { ideology = Nationalism popularity = -0.02 }
 			set_country_flag = MAL_malay_right_struck
 		}
 	}
@@ -3332,7 +3082,6 @@ focus = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Tactical_Doctrine_Training"
 			army_experience = 25
-			add_political_power = 20
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 4 }
 			clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -3359,8 +3108,6 @@ focus = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Commission_Young_Officers"
 			army_experience = 20
-			add_political_power = 25
-			add_stability = 0.01
 			add_to_variable = { MAL_sfdf_army_org = 0.03 }
 			add_to_variable = { MAL_sfdf_planning = 0.05 }
 			effect_tooltip = {
@@ -3692,7 +3439,6 @@ focus = {
 			log = "[GetLogRoot]: Focus Completed MAL_Secure_Troop_Supplies"
 			custom_effect_tooltip = TNW_arch_treasury_fall_tt
 			add_to_variable = { var = capital_reserves value = -3 }
-			add_stability = 0.02
 			custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 			add_to_variable = { var = TNW_Affluence_value value = 4 }
 			clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -3931,7 +3677,6 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed MAL_Stabilize_Military_Deployment"
-			add_stability = 0.03
 			army_experience = 15
 			custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 			add_to_variable = { var = TNW_Bureaucracy_value value = 5 }
@@ -3992,7 +3737,6 @@ focus = {
 				promote_leader = yes
 			}
 			army_experience = 20
-			add_political_power = 25
 			add_to_variable = { MAL_sfdf_planning = 0.05 }
 			add_to_variable = { MAL_sfdf_max_planning = 0.05 }
 			effect_tooltip = {

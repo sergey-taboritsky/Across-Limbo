@@ -755,6 +755,9 @@ country_event = {
 			set_country_flag = JAP_experiment_failure_flag
 			# R62: failure worsens ruins from tier 2 back to tier 3, to be cleared later
 			set_variable = { JAP_ruins_level_var = 3 }
+			# R64: failure ends both route-specific dynamic modifiers
+			remove_dynamic_modifier = { modifier = JAP_noro_hegemony_dm }
+			remove_dynamic_modifier = { modifier = JAP_deleonism_dm }
 			add_ideas = JAP_Uno_collapse_4
 			country_event = { id = JAP_event.100 days = 5 }
 		}

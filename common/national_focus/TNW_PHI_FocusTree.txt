@@ -33,11 +33,6 @@ add_stability = 0.02
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Constitutional_Revision"
-add_political_power = 25
-add_popularity = {
-	ideology = socialism
-	popularity = 0.02
-}
 custom_effect_tooltip = TNW_dev_bur_prog_rise_tt
 add_to_variable = { var = TNW_Bureaucracy_value value = 10 }
 clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
@@ -56,15 +51,6 @@ clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Collaborator_Trials"
-add_stability = 0.02
-add_popularity = {
-	ideology = Nationalism
-	popularity = -0.02
-}
-add_popularity = {
-	ideology = Authoritarianism
-	popularity = -0.01
-}
 custom_effect_tooltip = PHI_huk_up_tt
 add_to_variable = { var = PHI_huk_power value = 5 }
 clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
@@ -83,8 +69,6 @@ clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Collaborator_Amnesty"
-add_stability = 0.03
-add_political_power = -25
 custom_effect_tooltip = PHI_union_up_tt
 add_to_variable = { var = PHI_union_power value = 5 }
 clamp_variable = { var = PHI_union_power max = 100 min = 0 }
@@ -106,7 +90,7 @@ clamp_variable = { var = PHI_union_power max = 100 min = 0 }
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Democratic_Alliance"
-add_political_power = 50
+			army_experience = 5
 		}
 	}
 
@@ -121,7 +105,6 @@ add_political_power = 50
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Civil_Service_Bill"
-add_political_power = 25
 custom_effect_tooltip = TNW_dev_bur_month_rise_tt
 add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 5 }
 		}
@@ -138,7 +121,6 @@ add_to_variable = { var = TNW_Bureaucracy_monthly_value value = 5 }
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_University_Restoration"
-add_political_power = 25
 custom_effect_tooltip = TNW_dev_edu_prog_rise_tt
 add_to_variable = { var = TNW_Literacy_level_value value = 10 }
 clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
@@ -156,7 +138,6 @@ clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Mass_Literacy"
-add_political_power = 25
 custom_effect_tooltip = TNW_dev_edu_month_rise_tt
 add_to_variable = { var = TNW_Literacy_level_monthly_value value = 5 }
 custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
@@ -200,7 +181,6 @@ clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Sugar_And_Hemp"
-add_political_power = 25
 custom_effect_tooltip = TNW_dev_wel_prog_rise_tt
 add_to_variable = { var = TNW_Affluence_value value = 10 }
 clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
@@ -239,7 +219,6 @@ add_to_variable = { var = TNW_Industrial_scale_monthly_value value = 5 }
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Roads_And_Rails"
-add_political_power = 25
 628 = {
 	add_building_construction = {
 		type = infrastructure
@@ -283,7 +262,6 @@ clamp_variable = { var = TNW_Industrial_scale_value max = 100 min = 0 }
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Tenancy_Inquiry"
-add_political_power = 25
 custom_effect_tooltip = TNW_dev_agr_month_rise_tt
 add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
 		}
@@ -300,7 +278,6 @@ add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
 		y = 4
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Rice_Share_Act"
-add_stability = -0.01
 custom_effect_tooltip = TNW_dev_agr_month_rise_tt
 add_to_variable = { var = TNW_Agriculture_monthly_value value = 5 }
 custom_effect_tooltip = PHI_huk_up_tt
@@ -320,7 +297,6 @@ clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Land_Reform_Corps"
-add_political_power = 25
 custom_effect_tooltip = TNW_dev_agr_prog_rise_tt
 add_to_variable = { var = TNW_Agriculture_value value = 15 }
 clamp_variable = { var = TNW_Agriculture_value max = 100 min = 0 }
@@ -362,7 +338,6 @@ clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Veterans_Pensions"
-add_political_power = 25
 army_experience = 25
 		}
 	}
@@ -441,7 +416,6 @@ clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Military_Academy"
-add_political_power = 25
 army_experience = 30
 		}
 	}
@@ -457,7 +431,6 @@ army_experience = 30
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Offshore_Patrol"
-add_political_power = 25
 navy_experience = 25
 		}
 	}
@@ -473,7 +446,6 @@ navy_experience = 25
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Internationale_Seat"
-add_political_power = 50
 custom_effect_tooltip = PHI_lava_up_tt
 add_to_variable = { var = PHI_lava_power value = 5 }
 clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
@@ -491,7 +463,6 @@ clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
 		y = 1
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Japan_Reparations"
-add_political_power = 75
 add_building_construction = {
 	type = industrial_complex
 	level = 1
@@ -511,7 +482,6 @@ add_building_construction = {
 		y = 2
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_US_Special_Relations"
-add_political_power = 25
 custom_effect_tooltip = PHI_union_up_tt
 add_to_variable = { var = PHI_union_power value = 10 }
 clamp_variable = { var = PHI_union_power max = 100 min = 0 }
@@ -529,8 +499,7 @@ clamp_variable = { var = PHI_union_power max = 100 min = 0 }
 		y = 3
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Malaya_Goodwill"
-add_political_power = 25
-add_stability = 0.01
+			army_experience = 5
 		}
 	}
 
@@ -546,7 +515,6 @@ add_stability = 0.01
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Party_Congress"
 set_country_flag = PHI_race_begun
-add_political_power = 25
 		}
 	}
 
@@ -561,7 +529,6 @@ add_political_power = 25
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_CLO_Unity"
-add_political_power = 25
 custom_effect_tooltip = PHI_union_up_tt
 add_to_variable = { var = PHI_union_power value = 10 }
 clamp_variable = { var = PHI_union_power max = 100 min = 0 }
@@ -579,7 +546,6 @@ clamp_variable = { var = PHI_union_power max = 100 min = 0 }
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Minimum_Wage"
-add_stability = 0.02
 custom_effect_tooltip = PHI_union_up_tt
 add_to_variable = { var = PHI_union_power value = 8 }
 clamp_variable = { var = PHI_union_power max = 100 min = 0 }
@@ -600,7 +566,6 @@ clamp_variable = { var = TNW_Affluence_value max = 100 min = 0 }
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Profit_Sharing"
-add_political_power = 25
 custom_effect_tooltip = PHI_union_up_tt
 add_to_variable = { var = PHI_union_power value = 8 }
 clamp_variable = { var = PHI_union_power max = 100 min = 0 }
@@ -623,7 +588,6 @@ add_to_variable = { var = TNW_Affluence_monthly_value value = 5 }
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Free_Labor_Mandate"
-add_political_power = 50
 custom_effect_tooltip = PHI_union_up_tt
 add_to_variable = { var = PHI_union_power value = 12 }
 clamp_variable = { var = PHI_union_power max = 100 min = 0 }
@@ -641,7 +605,6 @@ clamp_variable = { var = PHI_union_power max = 100 min = 0 }
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Peasant_Leagues"
-add_political_power = 25
 custom_effect_tooltip = PHI_huk_up_tt
 add_to_variable = { var = PHI_huk_power value = 10 }
 clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
@@ -659,7 +622,6 @@ clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Arms_Registration"
-add_stability = -0.01
 custom_effect_tooltip = PHI_huk_up_tt
 add_to_variable = { var = PHI_huk_power value = 8 }
 clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
@@ -680,7 +642,6 @@ clamp_variable = { var = PHI_union_power max = 100 min = 0 }
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Barrio_Government"
-add_political_power = 25
 custom_effect_tooltip = PHI_huk_up_tt
 add_to_variable = { var = PHI_huk_power value = 8 }
 clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
@@ -704,7 +665,6 @@ clamp_variable = { var = TNW_Bureaucracy_value max = 100 min = 0 }
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Huk_Vanguard"
-add_political_power = 50
 custom_effect_tooltip = PHI_huk_up_tt
 add_to_variable = { var = PHI_huk_power value = 12 }
 clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
@@ -722,7 +682,6 @@ clamp_variable = { var = PHI_huk_power max = 100 min = 0 }
 		y = 5
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_PKP_Reorganization"
-add_political_power = 25
 custom_effect_tooltip = PHI_lava_up_tt
 add_to_variable = { var = PHI_lava_power value = 10 }
 clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
@@ -740,7 +699,6 @@ clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Paris_Liaison"
-add_political_power = 25
 custom_effect_tooltip = PHI_lava_up_tt
 add_to_variable = { var = PHI_lava_power value = 8 }
 clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
@@ -758,7 +716,6 @@ clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
 		y = 6
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Cadre_Schools"
-add_political_power = 25
 custom_effect_tooltip = PHI_lava_up_tt
 add_to_variable = { var = PHI_lava_power value = 8 }
 clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
@@ -782,7 +739,6 @@ clamp_variable = { var = TNW_Literacy_level_value max = 100 min = 0 }
 		y = 7
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed PHI_Insurrection_Thesis"
-add_war_support = 0.03
 custom_effect_tooltip = PHI_lava_up_tt
 add_to_variable = { var = PHI_lava_power value = 12 }
 clamp_variable = { var = PHI_lava_power max = 100 min = 0 }
